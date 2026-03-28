@@ -336,3 +336,9 @@ export default function HomePage() {
     </main>
   );
 }
+cd C:\Users\user\Desktop\Octus-site
+git add .
+git commit -m "Force rebuild — clear Netlify cache"
+git push origin main
+
+
