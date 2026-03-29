@@ -323,7 +323,7 @@ export default function LegalArchitecturePage() {
         </div>
       </section>
 
-      {/* ─── CTA FINAL ────────────────────────────────────────────── */}}
+      {/* ─── CTA FINAL ────────────────────────────────────────────── */}
       <section className="cta-block">
         <div className="cta-block__bg" />
         <div className="cta-block__inner">
