@@ -916,5 +916,5 @@ export function getPostsByCategory(category: string): Post[] {
 }
 
 export function getAllCategories(): string[] {
-  return [...new Set(posts.map((p) => p.category))].sort();
+  return Array.from(new Set(posts.map((p) => p.category))).sort();
 }
