@@ -1,86 +1,403 @@
-import { Metadata } from 'next'
-import ServicePage from '@/components/ServicePage'
-import { jurisdictions } from '@/data/services'
+import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: 'Regulatory Structuring',
-  description: 'We design and execute licensing strategies across jurisdictions. iGaming, fintech, crypto, payments, Brazil SPA/MF.',
-}
+export const metadata = {
+  title: "Regulatory Structuring — Octus Consulting",
+  description:
+    "Regulatory structuring across iGaming, betting, fintech, crypto, VASP, forex and other regulated models. Octus structures licensing strategies, jurisdiction fit and operational readiness — before the application starts.",
+};
 
 export default function RegulatoryPage() {
   return (
-    <ServicePage
-      tag="Module 01 — Core Service"
-      headline="Licensing is not a transaction."
-      subheadline="It is the foundation of your entire operation."
-      sub="We design and execute licensing strategies across jurisdictions — from jurisdiction selection to full application management and post-license compliance."
-      whenItems={[
-        "You are entering a new regulated market and don't know which jurisdiction fits your model",
-        "Your application has been delayed or rejected and you don't know why",
-        "You have a license but banks won't open accounts",
-        "You are expanding to a new jurisdiction and need a parallel structure",
-        "You are operating under a sublicense and need your own",
-        "You need to add domains to an existing license",
-        "You are restructuring and need a defensible multi-jurisdiction setup",
-      ]}
-      forWhom={[
-        "Operators entering a new regulated market for the first time",
-        "Companies with active license but blocked banking",
-        "Fintechs and crypto businesses requiring regulatory authorization",
-        "Operators expanding from one jurisdiction to multiple",
-      ]}
-      whatWeDo="We design, execute and take responsibility for the regulatory structure behind your operation — from strategy to submission to post-approval. We build licensing together with banking viability and compliance from day one. Most licensing problems are not about the license. They are about structure."
-      phases={[
-        {
-          title: "Jurisdiction Strategy",
-          items: [
-            "Licensing strategy memo with jurisdiction comparison",
-            "Risk matrix: regulatory, banking, operational",
-            "Jurisdiction recommendation with rationale",
-            "Cost and timeline projections per option",
-            "Domain and corporate structure requirements",
-          ],
-        },
-        {
-          title: "Corporate Structuring",
-          items: [
-            "Offshore company formation (Curaçao, UK, BVI, Cyprus, others)",
-            "Resident director arrangement where required",
-            "Registered address and operational structure",
-            "UBO documentation and declaration",
-            "Apostille and international certification of corporate documents",
-          ],
-        },
-        {
-          title: "Application Management",
-          items: [
-            "Full licensing dossier preparation",
-            "AML/KYC policies for regulatory submission",
-            "Business plan for banks and regulators",
-            "Regulatory form completion and submission",
-            "Direct coordination with licensing authority",
-            "Response to regulatory requirements and queries",
-          ],
-        },
-        {
-          title: "Banking & Operational Setup",
-          items: [
-            "High-risk banking account opening (SEPA, SWIFT, crypto)",
-            "Payment provider integration (PSPs, crypto rails)",
-            "Platform policies: T&Cs, AML, responsible gaming, GDPR",
-            "Post-license compliance deployment",
-          ],
-        },
-      ]}
-      outcomes={[
-        "License approved and operational",
-        "Banking structure in place",
-        "Payment infrastructure connected",
-        "Operation ready for audit",
-        "Structure replicable to new markets",
-      ]}
-      industries={["iGaming & Betting", "Fintech", "Crypto", "Payments", "Public sector"]}
-      jurisdictions={jurisdictions}
-    />
-  )
+    <main>
+
+      {/* ─── HERO ─────────────────────────────────────────────────── */}
+      <section className="page-hero section-padded">
+        <div className="container">
+          <span className="label">Regulatory Structuring</span>
+          <h1 className="heading-xl sp-headline">
+            When licensing fails,
+            <br />
+            <span style={{ color: "var(--white-40)" }}>
+              the structure was already wrong.
+            </span>
+          </h1>
+          <p className="body-lg sp-sub">
+            Wrong jurisdiction. Wrong structure. Wrong sequence. By the time
+            most operations reach a regulator, the structural decisions that
+            determine the outcome have already been made.
+          </p>
+          <p className="body sp-sub" style={{ marginTop: "16px", color: "var(--white-40)" }}>
+            Octus structures regulatory pathways across iGaming, betting,
+            payments, fintech, crypto, VASP, forex and other high-risk or
+            emerging regulated models — from jurisdiction selection to full
+            operational readiness.
+          </p>
+          <div style={{ marginTop: "48px" }}>
+            <Link href="/contact" className="btn-primary btn-primary-lg">
+              Discuss your operation →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── WHERE REGULATORY FAILS ───────────────────────────────── */}
+      <section className="section-dark section-padded">
+        <div className="container" style={{ maxWidth: "760px" }}>
+          <span className="label">Where licensing breaks</span>
+          <h2 className="heading-md" style={{ marginBottom: "32px" }}>
+            Most licensing failures are not regulatory.
+            <br />
+            <span style={{ color: "var(--white-40)" }}>
+              They are structural decisions made too early or too late.
+            </span>
+          </h2>
+          <ul className="problem-list">
+            {[
+              "Application submitted before the banking and payment path was resolved — license approved, operation blocked",
+              "Jurisdiction selected based on cost, not on the operation's actual business model and regulatory fit",
+              "Corporate structure built for the holding — incompatible with the licensing jurisdiction's UBO and ownership requirements",
+              "Legal, banking and compliance setup started in sequence — each step waiting for the previous, timeline lost",
+              "Mid-process jurisdiction change after regulator signals rejection — cost and timeline reset to zero",
+              "Documentation prepared without regulatory logic — gaps identified only after submission, process stalled",
+            ].map((item) => (
+              <li key={item}>
+                <span className="problem-dot" />
+                {item}
+              </li>
+            ))}
+          </ul>
+          <p
+            className="heading-sm"
+            style={{
+              marginTop: "48px",
+              paddingTop: "32px",
+              borderTop: "1px solid var(--border)",
+              color: "var(--white)",
+            }}
+          >
+            A licensing process that starts with the wrong structure will not
+            be saved by a good application.{" "}
+            <span style={{ color: "var(--blue-light)" }}>
+              Structure first. Application second.
+            </span>
+          </p>
+        </div>
+      </section>
+
+      {/* ─── APPROACH ─────────────────────────────────────────────── */}
+      <section className="section-blue section-padded">
+        <div className="container" style={{ maxWidth: "760px" }}>
+          <span className="label">How we work</span>
+          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+            We don&apos;t manage applications.
+            <br />
+            <span style={{ color: "var(--blue-light)" }}>
+              We design the structure before the application starts.
+            </span>
+          </h2>
+          <p className="body-lg" style={{ marginBottom: "20px" }}>
+            Octus enters before the process — mapping the regulatory
+            environment, selecting the right jurisdiction, aligning the
+            corporate and compliance structure, and building the operational
+            framework required for approval and post-approval operation.
+          </p>
+          <p className="body" style={{ marginBottom: "20px" }}>
+            Banking access, compliance readiness and regulatory filing run in
+            parallel — not in sequence. By the time an application is
+            submitted, the structure is already built to hold.
+          </p>
+          <p className="body">
+            This is not advisory. It is pre-licensing structure, licensing
+            path design, regulator interface and operational readiness —
+            coordinated as a single execution layer.
+          </p>
+        </div>
+      </section>
+
+      {/* ─── WHAT WE STRUCTURE ────────────────────────────────────── */}
+      <section className="sp-what section-padded">
+        <div className="container">
+          <span className="label">What we structure</span>
+          <h2 className="heading-lg sp-headline">
+            Regulatory pathways, structured end-to-end.
+          </h2>
+          <p className="body-lg sp-what-body" style={{ marginBottom: "64px" }}>
+            From the first regulatory map to the moment the license becomes
+            operational — Octus coordinates every layer.
+          </p>
+
+          <div className="grid-auto-lg">
+            {[
+              {
+                title: "Jurisdiction Selection & Risk Mapping",
+                body: "Systematic analysis of the regulatory landscape across target jurisdictions — including timeline, cost, operational requirements, banking access and risk exposure. We select where to license, not just how.",
+              },
+              {
+                title: "Licensing Strategy Design",
+                body: "Full licensing strategy — onshore or offshore — structured around the operation's actual commercial model, ownership structure and banking requirements. Not generic. Built for the specific operation.",
+              },
+              {
+                title: "Corporate Structure Alignment",
+                body: "The legal entity behind the license must match what the regulator expects and what the bank will accept. We align corporate structure, UBO disclosure and governance before submission.",
+              },
+              {
+                title: "Regulatory Filing Coordination",
+                body: "End-to-end coordination of the regulatory process — documentation, filing, response management and escalation. We manage the process and the regulatory interface, not just the paperwork.",
+              },
+              {
+                title: "Regulator Interaction & Representation",
+                body: "Direct coordination with regulatory authorities — questions, clarification requests, additional documentation and formal submissions. Octus manages regulatory communication as the operational layer.",
+              },
+              {
+                title: "Brazil Regulatory Framework (SPA/MF)",
+                body: "Specialist execution for the Brazilian sports betting regulatory process — corporate structuring, regulatory dossier preparation and direct interaction with SPA and Ministry of Finance authorities.",
+              },
+            ].map((item) => (
+              <div key={item.title} className="card-lg">
+                <h3 className="heading-card" style={{ marginBottom: "12px" }}>
+                  {item.title}
+                </h3>
+                <p className="body">{item.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-dark section-padded">
+        <div className="container">
+          <span className="label">Jurisdiction strategy</span>
+          <h2 className="heading-md" style={{ marginBottom: "16px" }}>
+            Jurisdiction strategy is not about geography.
+            <br />
+            <span style={{ color: "var(--blue-light)" }}>It&apos;s about fit.</span>
+          </h2>
+          <p className="body-lg" style={{ marginBottom: "56px", maxWidth: "640px", color: "var(--white-60)" }}>
+            The right jurisdiction depends on the operation&apos;s commercial model,
+            risk profile, banking requirements and expansion path — not on cost
+            or convenience.
+          </p>
+          <div className="grid-3">
+            {[
+              {
+                layer: "Offshore frameworks",
+                desc: "Speed and structural flexibility for early-stage operations and complex offshore setups. Curaçao, Anjouan and equivalent frameworks — selected based on operational fit, not default.",
+              },
+              {
+                layer: "Regulated environments",
+                desc: "Full regulatory compliance in established markets. Brazil (SPA/MF), UK, Malta, Italy and other jurisdictions requiring direct regulatory interaction and structural alignment.",
+              },
+              {
+                layer: "Emerging markets",
+                desc: "Market entry strategy in LATAM and Africa — including Peru, Nigeria and other markets in active regulatory transition. Entry structured before the framework is final.",
+              },
+            ].map((t) => (
+              <div key={t.layer} className="card-lg">
+                <h3 className="heading-card" style={{ marginBottom: "12px" }}>{t.layer}</h3>
+                <p className="body">{t.desc}</p>
+              </div>
+            ))}
+          </div>
+          <p className="body-sm" style={{ marginTop: "32px", color: "var(--white-25)" }}>
+            Each jurisdiction is selected based on operational design, not convenience.
+            The right jurisdiction is the one your operation can actually run on.
+          </p>
+        </div>
+      </section>
+
+      {/* ─── REAL SITUATIONS ──────────────────────────────────────── */}
+      <section className="section-padded" style={{ padding: "130px 40px" }}>
+        <div className="container">
+          <span className="label">Real situations. Real outcomes.</span>
+          <h2 className="heading-md" style={{ marginBottom: "56px" }}>
+            Not theory.
+          </h2>
+          <div className="grid-3">
+            {[
+              {
+                tag: "iGaming · Curaçao",
+                title: "License active.\nNo bank account.",
+                body: "Active Curaçao license for 6 months. No operational account. Corporate documentation restructured, AML policies aligned and three banks coordinated simultaneously. Account open in 11 weeks.",
+              },
+              {
+                tag: "Betting · Brazil",
+                title: "Cross-border operator.\nSPA/MF authorization.",
+                body: "International group entering the Brazilian sports betting market. Corporate structure redesigned for SPA compliance, entity sequencing aligned across jurisdictions, regulatory dossier prepared and SPA/MF interaction managed directly. Authorization process coordinated end-to-end.",
+              },
+              {
+                tag: "Licensing · Jurisdiction",
+                title: "Wrong jurisdiction.\nApplication stalled.",
+                body: "Operator mid-application in a jurisdiction incompatible with their actual business model. Regulatory path remapped, corporate layer restructured, process relaunched in the correct framework.",
+              },
+            ].map((c) => (
+              <div
+                key={c.tag}
+                className="card-lg"
+                style={{ display: "flex", flexDirection: "column" }}
+              >
+                <span className="case-tag">{c.tag}</span>
+                <h3
+                  className="heading-sm"
+                  style={{ margin: "16px 0", whiteSpace: "pre-line" }}
+                >
+                  {c.title}
+                </h3>
+                <p className="body">{c.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── INDUSTRIES ───────────────────────────────────────────── */}
+      <section className="section-dark section-padded">
+        <div className="container">
+          <span className="label">Who this is for</span>
+          <h2 className="heading-md" style={{ marginBottom: "48px" }}>
+            Operations where licensing is not optional.
+          </h2>
+          <div className="grid-auto-lg">
+            {[
+              {
+                name: "iGaming & Betting",
+                desc: "Offshore and onshore licensing across established and newly regulated markets. Including full execution of the Brazilian SPA/MF authorization process.",
+              },
+              {
+                name: "Fintech & Payments",
+                desc: "Payment institution and e-money licensing across regulated jurisdictions — structured alongside banking and compliance from the start.",
+              },
+              {
+                name: "Crypto & Digital Assets",
+                desc: "VASP licensing and regulatory registration across jurisdictions with active crypto frameworks — Europe, offshore and emerging regulated markets.",
+              },
+              {
+                name: "High-risk cross-border operations",
+                desc: "Multi-jurisdiction licensing strategies for groups operating across borders — jurisdiction selection, structure alignment and parallel regulatory processes.",
+              },
+            ].map((ind) => (
+              <div key={ind.name} className="card">
+                <h3 className="heading-card" style={{ marginBottom: "12px" }}>
+                  {ind.name}
+                </h3>
+                <p className="body-sm">{ind.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── ENGAGEMENT MODELS ────────────────────────────────────── */}
+      <section className="section-padded" style={{ padding: "130px 40px" }}>
+        <div className="container">
+          <span className="label">How we work with you</span>
+          <h2 className="heading-md" style={{ marginBottom: "12px" }}>
+            Every licensing process requires a different scope.
+          </h2>
+          <p className="body-lg" style={{ marginBottom: "56px" }}>
+            Choose what fits.
+          </p>
+          <div className="grid-3">
+            {[
+              {
+                title: "Full licensing execution",
+                sub: "End-to-end",
+                body: "From jurisdiction selection to license in hand. Octus coordinates every layer — structure, application, regulator interaction and banking alignment.",
+              },
+              {
+                title: "Strategic intervention",
+                sub: "Targeted scope",
+                body: "For processes already underway that need structural correction. We identify the gap, redesign the approach and take over execution at the right point.",
+              },
+              {
+                title: "Advisory & mapping",
+                sub: "Pre-decision support",
+                body: "For operators evaluating markets before committing to a licensing process. Jurisdiction mapping, risk analysis and regulatory framework assessment.",
+              },
+            ].map((m) => (
+              <div key={m.title} className="card-lg">
+                <h3 className="heading-card">{m.title}</h3>
+                <p
+                  className="chip-blue"
+                  style={{ display: "inline-block", margin: "8px 0 16px" }}
+                >
+                  {m.sub}
+                </p>
+                <p className="body">{m.body}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-faint" style={{ textAlign: "center", marginTop: "24px" }}>
+            All models include direct access to the Octus team — no account
+            managers, no ticket systems.
+          </p>
+        </div>
+      </section>
+
+      {/* ─── HOW THE PROCESS WORKS ────────────────────────────── */}
+      <section className="section-dark section-padded">
+        <div className="container" style={{ maxWidth: "760px" }}>
+          <span className="label">How the process works</span>
+          <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
+            {[
+              { step: "01", title: "Regulatory diagnostic", body: "We assess the operation, target markets and structural constraints. No licensing path is defined until the full picture is mapped." },
+              { step: "02", title: "Regulatory path design", body: "We select the right jurisdiction, define the sequencing and structure the filing logic around operational fit — not speed or convenience." },
+              { step: "03", title: "Coordination & execution", body: "We coordinate the process end-to-end: documentation, regulatory interaction, banking alignment and corporate structure, running in parallel." },
+            ].map((s, i) => (
+              <div key={s.step} style={{ display: "grid", gridTemplateColumns: "48px 1fr", gap: "24px", padding: "28px 0", borderBottom: i < 2 ? "1px solid var(--border)" : "none" }}>
+                <span style={{ fontFamily: "var(--font-unigeo), Unigeo64, sans-serif", fontSize: "11px", fontWeight: 700, letterSpacing: "0.1em", color: "var(--blue-light)", paddingTop: "4px" }}>{s.step}</span>
+                <div>
+                  <h3 className="heading-card" style={{ marginBottom: "8px" }}>{s.title}</h3>
+                  <p className="body">{s.body}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── FAQ ──────────────────────────────────────────────────── */}
+      <section className="section-padded" style={{ padding: "130px 40px" }}>
+        <div className="container" style={{ maxWidth: "760px" }}>
+          <span className="label">Common questions</span>
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            {[
+              { q: "How long does a licensing process take?", a: "It depends on jurisdiction, structure and sequencing. We do not commit to timelines before the regulatory path is mapped correctly — starting without that map is usually what causes delays." },
+              { q: "Can we start licensing before the corporate structure is fully ready?", a: "In some cases, yes. In most serious cases, structure and licensing need to move in parallel. Starting too early without the right structure usually creates delays that cost more to fix than getting it right from the start." },
+              { q: "What happens if we are already mid-process in the wrong jurisdiction?", a: "That is one of the most common situations we work on. The first step is to assess whether the process can be corrected or needs to be restructured. The cost depends on how far the process has advanced." },
+              { q: "Do you only work with iGaming licenses?", a: "No. We structure regulatory pathways across multiple regulated and high-risk models — including betting, payments, fintech, crypto, VASP, forex and other cross-border operations." },
+            ].map((item, i) => (
+              <div key={i} style={{ padding: "28px 0", borderBottom: "1px solid var(--border)" }}>
+                <h3 className="heading-card" style={{ marginBottom: "12px", color: "var(--white)" }}>{item.q}</h3>
+                <p className="body">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── CTA FINAL ────────────────────────────────────────────── */}
+      <section className="cta-block">
+        <div className="cta-block__bg" />
+        <div className="cta-block__inner">
+          <p className="body" style={{ color: "var(--white-40)", marginBottom: "12px" }}>
+            If your licensing strategy needs to hold under regulatory scrutiny —
+          </p>
+          <h2 className="heading-lg cta-block__title">
+            Structure it before you submit it.
+          </h2>
+          <Link href="/contact" className="btn-primary btn-primary-lg">
+            Discuss your operation →
+          </Link>
+          <p
+            className="body-sm cta-block__note"
+            style={{ color: "var(--white-25)" }}
+          >
+            Initial diagnostic call. We start by mapping where the structure breaks.
+          </p>
+        </div>
+      </section>
+
+    </main>
+  );
 }
+

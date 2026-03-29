@@ -1,0 +1,4 @@
+INSTRUÇÃO:
+1. Copia "app/page.tsx"     → Octus-site\app\page.tsx          (substituir)
+2. Copia "styles/globals.css" → Octus-site\styles\globals.css  (substituir)
+3. git add . → commit → push

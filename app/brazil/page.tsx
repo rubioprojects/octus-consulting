@@ -1,76 +1,59 @@
-import { Metadata } from 'next'
-import CTABlock from '@/components/CTABlock'
+import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: 'Brazil — Regulated Market',
-  description: 'Brazil is one of the most complex and fastest-moving regulated markets in the world. Octus has been operating inside it since before the regulations were finalized.',
-}
+export const metadata = {
+  title: "Brazil — Octus Consulting",
+  description: "Regulatory structuring, compliance and corporate architecture for regulated operations entering or operating in Brazil.",
+};
 
 export default function BrazilPage() {
   return (
-    <>
+    <main>
       <section className="page-hero section-padded">
         <div className="container">
-          <span className="tag-blue">Brazil</span>
-          <h1 className="heading-xl brazil-headline">
-            One of the most complex regulated markets in the world.
+          <span className="label">Brazil</span>
+          <h1 className="heading-xl sp-headline">
+            Brazil&apos;s regulated market<br />
+            <span style={{ color: "var(--white-40)" }}>requires a different architecture.</span>
           </h1>
-          <p className="body-lg brazil-sub">
-            Brazil&apos;s regulatory environment — from sports betting (SPA/MF) to fintech (BACEN) and crypto — is moving fast. Octus has been operating inside it since before the regulations were finalized.
+          <p className="body-lg sp-sub" style={{ maxWidth: "600px" }}>
+            Brazil is one of the most complex regulated environments in the
+            world — with its own licensing framework (SPA/MF), data protection
+            regime (LGPD), banking infrastructure and corporate requirements.
+            Octus has been operating inside Brazilian regulatory processes since
+            2019.
           </p>
+          <div style={{ marginTop: "48px" }}>
+            <Link href="/contact" className="btn-primary btn-primary-lg">Discuss your operation →</Link>
+          </div>
         </div>
       </section>
-
-      <div className="section-dark section-padded">
-        <div className="container grid-2">
-          <div>
-            <span className="label">What we do in Brazil</span>
-            <h2 className="heading-md">Full execution,<br />not just advisory.</h2>
-            <p className="body brazil-body">
-              We have been inside the Brazilian regulatory process from the beginning — directly involved in licensing structuring, certification coordination and corporate setup for operators entering the market.
-            </p>
-          </div>
-          <ul className="check-list">
+      <section className="section-dark section-padded">
+        <div className="container">
+          <span className="label">What we structure for Brazil</span>
+          <div className="grid-3" style={{ marginTop: "48px" }}>
             {[
-              'Sports betting licensing (SPA/MF) — full application management',
-              'Corporate structuring for Brazilian regulated operations',
-              'Compliance and AML frameworks aligned with BACEN requirements',
-              'Certification coordination with GLI and local bodies',
-              'Banking and payment infrastructure for regulated operators',
-              'Legal architecture and contract framework for BR operations',
-              'Ongoing regulatory monitoring as rules evolve',
-            ].map((item, i) => <li key={i}>{item}</li>)}
-          </ul>
-        </div>
-      </div>
-
-      <section className="section-padded">
-        <div className="container grid-2">
-          <div>
-            <span className="label">The regulatory context</span>
-            <h2 className="heading-md">What operators need to know.</h2>
-          </div>
-          <div>
-            {[
-              { title: 'License cost', body: 'BRL 30 million (~EUR 5 million) for a five-year term, paid upfront to the SPA.' },
-              { title: 'Local entity required', body: 'A Brazilian subsidiary is mandatory. Offshore structures alone are not sufficient.' },
-              { title: 'Platform certification', body: 'GLI-accredited lab certification required before go-live. Typically 3–6 months.' },
-              { title: 'Realistic timeline', body: '12–18 months from decision to operation for most operators starting from scratch.' },
-            ].map((item, i) => (
-              <div key={i} className="card brazil-fact-card">
-                <div className="heading-card brazil-fact-title">{item.title}</div>
-                <p className="body-sm">{item.body}</p>
+              { title: "SPA/MF Licensing", body: "Brazilian sports betting and gaming licensing under the Secretaria de Prêmios e Apostas and Ministério da Fazenda framework. From pre-application structuring to regulatory coordination." },
+              { title: "LGPD Compliance", body: "Data protection framework design and implementation aligned with the Lei Geral de Proteção de Dados — including DPO coordination and operational compliance." },
+              { title: "Corporate & Banking Setup", body: "Corporate structuring, CNPJ registration and banking access for international operators entering the Brazilian market." },
+              { title: "Regulatory Monitoring", body: "Ongoing tracking of Brazil's evolving regulated gaming and fintech frameworks — ensuring structures adapt as the regulatory environment develops." },
+              { title: "Payment & Fintech Access", body: "Payment institution structuring, Bacen coordination and fintech regulatory requirements for operators requiring Brazilian payment infrastructure." },
+              { title: "Cross-border Coordination", body: "Alignment between Brazilian operations and international corporate structures — ensuring coherence across jurisdictions." },
+            ].map((item) => (
+              <div key={item.title} className="card-lg">
+                <h3 className="heading-card" style={{ marginBottom: "12px" }}>{item.title}</h3>
+                <p className="body">{item.body}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
-
-      <CTABlock
-        title="Operating in Brazil?"
-        sub="We have been inside the process since before the regulations were final."
-        cta="Start a diagnostic →"
-      />
-    </>
-  )
+      <section className="cta-block">
+        <div className="cta-block__bg" />
+        <div className="cta-block__inner">
+          <h2 className="heading-lg cta-block__title">Structure your Brazil operation.</h2>
+          <Link href="/contact" className="btn-primary btn-primary-lg">Request a diagnostic →</Link>
+        </div>
+      </section>
+    </main>
+  );
 }

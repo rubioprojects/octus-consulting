@@ -1,24 +1,277 @@
-import { Metadata } from 'next'
-import ServicePage from '@/components/ServicePage'
-export const metadata: Metadata = { title: 'Audit & Readiness', description: 'We prepare operations for scrutiny before scrutiny arrives.' }
+import Link from "next/link";
+
+export const metadata = {
+  title: "Audit & Readiness — Octus Consulting",
+  description:
+    "Preparation for regulatory audit, certification and external scrutiny. Octus structures the evidence, closes the gaps and coordinates readiness before scrutiny arrives.",
+};
+
 export default function AuditPage() {
   return (
-    <ServicePage
-      tag="Module 06"
-      headline="Audit failures are not surprises."
-      subheadline="They are gaps that were never closed."
-      sub="We prepare operations for regulatory scrutiny before it arrives — gap analysis, evidence organization, GLI readiness and full pre-audit preparation."
-      whenItems={["Audit or regulatory inspection is scheduled or expected", "Evidence is disorganized and documentation is incomplete", "Previous audit found gaps that need closing", "Operation is growing and readiness hasn't kept pace", "You are preparing for certification or investment due diligence"]}
-      forWhom={["Companies facing imminent regulatory audit", "Operations preparing for GLI or similar certification", "Businesses preparing for investment due diligence", "Groups restructuring compliance after regulatory pressure"]}
-      whatWeDo="We simulate the audit before the audit happens. We map every gap, organize every piece of evidence, and build the documentation pack that gives regulators and auditors nothing to find."
-      phases={[
-        { title: "Readiness Assessment", items: ["Scope mapping against applicable audit framework", "Documentation and evidence inventory", "Control testing and gap identification", "Risk prioritization and remediation roadmap"] },
-        { title: "Gap Closure", items: ["Documentation creation and alignment", "Policy and procedure remediation", "Evidence organization and register", "Internal control strengthening"] },
-        { title: "Pre-Audit Preparation", items: ["Full evidence pack organized by audit category", "Mock audit simulation", "Team preparation for auditor interaction", "Last-mile gap closure"] },
-        { title: "Post-Audit Support", items: ["Finding response and remediation planning", "Corrective action documentation", "Follow-up audit preparation", "Ongoing compliance maintenance"] },
-      ]}
-      outcomes={["Operation enters audit with zero critical documentation gaps", "Evidence organized by audit requirement", "Team prepared for auditor interaction", "Remediation plan in place for identified gaps"]}
-      industries={["iGaming (GLI)", "Fintech", "Payments", "Any regulated sector"]}
-    />
-  )
+    <main>
+
+      {/* ─── HERO ─────────────────────────────────────────────────── */}
+      <section className="page-hero section-padded">
+        <div className="container">
+          <span className="label">Audit & Readiness</span>
+          <h1 className="heading-xl sp-headline">
+            Prepare for scrutiny
+            <br />
+            <span style={{ color: "var(--white-40)" }}>
+              before scrutiny arrives.
+            </span>
+          </h1>
+          <p className="body-lg sp-sub">
+            Regulatory audit, laboratory certification and external review do
+            not create problems. They reveal problems that were already there.
+            The question is whether those problems are discovered before or
+            during the process.
+          </p>
+          <p className="body-lg sp-sub" style={{ marginTop: "16px" }}>
+            Octus prepares the operation for audit, certification and
+            regulatory review — it does not act as the certifying or auditing
+            body. This is readiness built before scrutiny starts.
+          </p>
+          <div style={{ marginTop: "48px" }}>
+            <Link href="/contact" className="btn-primary btn-primary-lg">
+              Stress-test your operation →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── WHERE AUDIT FAILS ────────────────────────────────────── */}
+      <section className="section-dark section-padded">
+        <div className="container" style={{ maxWidth: "760px" }}>
+          <span className="label">Where audit preparation fails</span>
+          <h2 className="heading-md" style={{ marginBottom: "32px" }}>
+            The audit doesn&apos;t fail during the audit.
+            <br />
+            <span style={{ color: "var(--white-40)" }}>
+              It fails in the preparation.
+            </span>
+          </h2>
+          <ul className="problem-list">
+            {[
+              "Compliance framework exists on paper but evidence of actual operation cannot be produced at audit",
+              "Gap analysis done internally — gaps identified but not closed before the external review",
+              "GLI or regulatory audit scheduled without a structured evidence register — documentation spread across systems and individuals",
+              "Certification attempted without a mock audit — first test of readiness happens in front of the auditor",
+              "Remediation items from a previous audit still open when the next cycle starts",
+              "Operational changes made after certification — creating drift between the certified state and the actual operation",
+            ].map((item) => (
+              <li key={item}>
+                <span className="problem-dot" />
+                {item}
+              </li>
+            ))}
+          </ul>
+          <p
+            className="heading-sm"
+            style={{
+              marginTop: "48px",
+              paddingTop: "32px",
+              borderTop: "1px solid var(--border)",
+              color: "var(--white)",
+            }}
+          >
+            An operation that is not ready for audit is not compliant.{" "}
+            <span style={{ color: "var(--blue-light)" }}>
+              It has simply not been tested yet.
+            </span>
+          </p>
+        </div>
+      </section>
+
+      {/* ─── WHAT WE STRUCTURE ────────────────────────────────────── */}
+      <section className="sp-what section-padded">
+        <div className="container">
+          <span className="label">What we structure</span>
+          <h2 className="heading-lg sp-headline">
+            Readiness as an operational state,
+            not a pre-audit exercise.
+          </h2>
+          <p className="body-lg sp-what-body" style={{ marginBottom: "64px" }}>
+            Audit preparation is not a one-time project before a review. It is
+            a continuous operational condition. Octus structures the gap
+            analysis, evidence architecture and remediation process — so
+            readiness is embedded, not rushed.
+          </p>
+          <div className="grid-auto-lg">
+            {[
+              {
+                title: "Gap Analysis & Risk Assessment",
+                body: "Systematic identification of structural gaps across compliance, documentation and operational controls — assessed against the specific regulatory or certification standard being targeted.",
+              },
+              {
+                title: "Evidence Register & Documentation Architecture",
+                body: "Structuring of the evidence base required for audit — organised by control, mapped to regulatory requirement and maintained in a state that can be produced on demand.",
+              },
+              {
+                title: "Pre-audit Preparation",
+                body: "Full readiness preparation before a scheduled regulatory audit, GLI certification or external review — gap closure, evidence organisation, process alignment and direct coordination with the audit team.",
+              },
+              {
+                title: "Mock Audit & Readiness Testing",
+                body: "Simulated audit process against the relevant standard — identifying weaknesses in the evidence base, documentation and operational controls before the actual review.",
+              },
+              {
+                title: "GLI & Technical Compliance Readiness",
+                body: "Specialist preparation for gaming laboratory certification — gap analysis against GLI technical standards, evidence register construction and coordination with the laboratory across the review process.",
+              },
+              {
+                title: "Post-audit Remediation",
+                body: "Structured remediation of audit findings — identifying root causes, closing gaps and applying changes to prevent recurrence. Coordinated to maintain operational continuity during the remediation process.",
+              },
+            ].map((item) => (
+              <div key={item.title} className="card-lg">
+                <h3 className="heading-card" style={{ marginBottom: "12px" }}>
+                  {item.title}
+                </h3>
+                <p className="body">{item.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── REAL SITUATIONS ──────────────────────────────────────── */}
+      <section className="section-dark section-padded">
+        <div className="container">
+          <span className="label">Real situations. Real outcomes.</span>
+          <h2 className="heading-md" style={{ marginBottom: "56px" }}>Not theory.</h2>
+          <div className="grid-3">
+            {[
+              {
+                tag: "Compliance · Audit readiness",
+                title: "GLI audit scheduled.\nNo evidence organized.",
+                body: "Full gap analysis, evidence register and readiness pack delivered in 6 weeks. Client entered audit with complete documentation and zero critical findings.",
+              },
+              {
+                tag: "Regulatory · Remediation",
+                title: "Audit findings open.\nNext cycle approaching.",
+                body: "Operator with unresolved remediation items from a previous regulatory review. Root cause analysis, gap closure and documentation rebuild completed before the next audit cycle. All items closed.",
+              },
+              {
+                tag: "Compliance · ISO readiness",
+                title: "ISO certification targeted.\nProcesses not documented.",
+                body: "Company targeting ISO 27001 without documented processes or evidence architecture. Full control framework structured, evidence registers built and mock audit completed. Certification obtained on first submission.",
+              },
+            ].map((c) => (
+              <div
+                key={c.tag}
+                className="card-lg"
+                style={{ display: "flex", flexDirection: "column" }}
+              >
+                <span className="case-tag">{c.tag}</span>
+                <h3
+                  className="heading-sm"
+                  style={{ margin: "16px 0", whiteSpace: "pre-line" }}
+                >
+                  {c.title}
+                </h3>
+                <p className="body">{c.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+      {/* ─── HOW THE PROCESS WORKS ────────────────────────────── */}
+      <section className="section-dark section-padded">
+        <div className="container" style={{ maxWidth: "760px" }}>
+          <span className="label">How the process works</span>
+          <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
+            {[
+              { step: "01", title: "Readiness assessment", body: "We map the gaps between the operation as it runs and the requirements of the audit, certification or regulatory review it needs to pass." },
+              { step: "02", title: "Evidence and control structure", body: "We organise the controls, documentation and evidence base required to support the operation under external scrutiny." },
+              { step: "03", title: "Remediation and coordination", body: "We coordinate the fixes required so the operation enters the review already prepared — not scrambling during it." },
+            ].map((s, i) => (
+              <div key={s.step} style={{ display: "grid", gridTemplateColumns: "48px 1fr", gap: "24px", padding: "28px 0", borderBottom: i < 2 ? "1px solid var(--border)" : "none" }}>
+                <span style={{ fontFamily: "var(--font-unigeo), Unigeo64, sans-serif", fontSize: "11px", fontWeight: 700, letterSpacing: "0.1em", color: "var(--blue-light)", paddingTop: "4px" }}>{s.step}</span>
+                <div>
+                  <h3 className="heading-card" style={{ marginBottom: "8px" }}>{s.title}</h3>
+                  <p className="body">{s.body}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── FAQ ──────────────────────────────────────────────────── */}
+      <section className="section-padded" style={{ padding: "130px 40px" }}>
+        <div className="container" style={{ maxWidth: "760px" }}>
+          <span className="label">Common questions</span>
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            {[
+              { q: "Do you perform formal audits?", a: "No. Octus prepares the operation for audit, certification and regulatory review — it does not act as the certifying or auditing body." },
+              { q: "When should readiness work start?", a: "Before the audit or certification process is scheduled. Late preparation compresses timelines, increases pressure and reduces the quality of the outcome." },
+              { q: "What kind of gaps do you typically find?", a: "Usually: control gaps, missing evidence, fragmented process ownership and frameworks that exist on paper but do not operate in practice." },
+              { q: "Is this only relevant for certification?", a: "No. The same readiness logic applies to labs, certifiers, counterparties, investors, banks and regulators. Any external scrutiny requires the same preparation." },
+            ].map((item, i) => (
+              <div key={i} style={{ padding: "28px 0", borderBottom: "1px solid var(--border)" }}>
+                <h3 className="heading-card" style={{ marginBottom: "12px", color: "var(--white)" }}>{item.q}</h3>
+                <p className="body">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── CERTIFICATION ENVIRONMENTS ───────────────────────── */}
+      <section className="section-padded" style={{ padding: "0 40px 130px" }}>
+        <div className="container" style={{ maxWidth: "760px" }}>
+          <span className="label">Certification and review environments</span>
+          <h2 className="heading-md" style={{ marginBottom: "20px" }}>
+            Prepared for operations that need to stand up to external scrutiny.
+          </h2>
+          <p className="body-lg" style={{ marginBottom: "40px" }}>
+            Audit and certification do not start when the review begins. They
+            start with how the operation is structured. Octus prepares
+            operations to meet the expectations of laboratories, certifiers,
+            counterparties and regulators — before scrutiny starts.
+          </p>
+          <ul className="check-list" style={{ marginBottom: "32px" }}>
+            {[
+              "GLI and technical certification environments — preparation for testing, certification and technical validation",
+              "ISO-aligned operational structures — frameworks designed to support certification and audit requirements",
+              "GDPR and LGPD compliance environments — structures aligned with European and Brazilian data protection standards",
+              "Internal and external audit readiness — evidence, controls and processes prepared for independent review",
+              "Counterparty and banking due diligence — operational readiness for financial institutions, partners and investors",
+            ].map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+          <p className="body-sm" style={{ color: "var(--white-25)", fontStyle: "italic" }}>
+            Octus prepares the operation for audit and certification — it does
+            not act as the certifying or auditing body.
+          </p>
+        </div>
+      </section>
+
+      {/* ─── CTA FINAL ────────────────────────────────────────────── */}
+
+      <section className="cta-block">
+        <div className="cta-block__bg" />
+        <div className="cta-block__inner">
+          <p className="body" style={{ color: "var(--white-40)", marginBottom: "12px" }}>
+            If your operation needs to hold under regulatory, certification or
+            external scrutiny —
+          </p>
+          <h2 className="heading-lg cta-block__title">
+            Don&apos;t find out during the audit.
+          </h2>
+          <Link href="/contact" className="btn-primary btn-primary-lg">
+            Stress-test your operation →
+          </Link>
+          <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
+            Initial diagnostic call. We start by mapping where the gaps are.
+          </p>
+        </div>
+      </section>
+
+    </main>
+  );
 }

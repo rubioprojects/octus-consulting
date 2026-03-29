@@ -3,7 +3,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Octus Consulting — Regulatory & Operational Structuring",
   description:
-    "We identify what is broken — and fix it. Regulatory, licensing and banking structuring for highly regulated markets.",
+    "Regulated operations don't fail randomly. They fail structurally. Octus identifies what is broken — and fixes it.",
 };
 
 export default function HomePage() {
@@ -24,11 +24,7 @@ export default function HomePage() {
           <p className="body-lg hero-sub">
             We identify what is broken — and fix it.
           </p>
-          <p className="body hero-sub" style={{ marginTop: "0", marginBottom: "0" }}>
-            Regulatory, licensing and banking structuring for businesses operating
-            in highly regulated markets — from market entry to full-scale operation.
-          </p>
-          <div className="hero-actions" style={{ marginTop: "48px" }}>
+          <div className="hero-actions">
             <Link href="/contact" className="btn-primary btn-primary-lg">
               Discuss your operation →
             </Link>
@@ -159,10 +155,10 @@ export default function HomePage() {
           <div className="tile-grid grid-auto modules-grid">
             {[
               { num: "01", title: "Regulatory Structuring", desc: "We design and execute licensing strategies across jurisdictions.", tags: ["iGaming", "Fintech", "Crypto", "Payments"], href: "/regulatory" },
-              { num: "02", title: "Compliance & Risk", desc: "We implement compliance that holds under regulatory pressure.", tags: ["KYC", "AML", "DPO", "GLI"], href: "/compliance" },
+              { num: "02", title: "Compliance & Risk", desc: "we structure compliance that holds under regulatory pressure.", tags: ["KYC", "AML", "DPO", "GLI"], href: "/compliance" },
               { num: "03", title: "Legal & Structural Architecture", desc: "We design the legal backbone behind complex operations.", tags: ["Contracts", "Multi-jurisdiction"], href: "/legal-architecture" },
               { num: "04", title: "Corporate Structuring", desc: "We build scalable and defensible corporate structures.", tags: ["Onshore", "Offshore", "Governance"], href: "/corporate" },
-              { num: "05", title: "Private Clients & UBO", desc: "We structure the individuals behind complex operations.", tags: ["UBO", "PEP", "KYC", "Residency"], href: "/private-clients" },
+              { num: "05", title: "Ownership & UBO", desc: "We structure the individuals behind complex operations.", tags: ["UBO", "PEP", "KYC", "Residency"], href: "/private-clients" },
               { num: "06", title: "Audit & Readiness", desc: "We prepare operations for scrutiny before scrutiny arrives.", tags: ["Gap analysis", "Pre-audit"], href: "/audit" },
               { num: "07", title: "International Hub", desc: "We enable execution across jurisdictions.", tags: ["Market entry", "Cross-border"], href: "/international-hub" },
             ].map((m) => (
@@ -221,7 +217,7 @@ export default function HomePage() {
               <div className="juris-strip operate-juris" style={{ marginTop: "16px" }}>
                 <p className="juris-strip-label">Active jurisdictions</p>
                 <div className="chip-row">
-                  {["Curaçao", "Malta", "Isle of Man", "Gibraltar", "UK", "Cyprus", "BVI", "Brazil", "Kahnawake", "Belize", "Mexico", "Panama", "Cayman"].map((j) => (
+                  {["Brazil (SPA/MF)", "UK", "Malta (MGA)", "Cyprus", "BVI", "Portugal", "Curaçao", "Cayman Islands", "Mexico", "Panama", "Isle of Man", "Gibraltar"].map((j) => (
                     <span key={j} className="chip-juris">{j}</span>
                   ))}
                   <span className="chip-juris-more">+more</span>
@@ -251,7 +247,7 @@ export default function HomePage() {
                 body: "We coordinated full corporate structuring, regulatory dossier and direct interaction with SPA/MF authorities for the Brazilian sports betting authorization process.",
               },
               {
-                tag: "iGaming · GLI",
+                tag: "Compliance · Audit readiness",
                 title: "GLI audit scheduled.\nNo evidence organized.",
                 body: "Full gap analysis, evidence register and readiness pack delivered in 6 weeks. Client entered audit with complete documentation and zero critical findings.",
               },
@@ -336,9 +332,3 @@ export default function HomePage() {
     </main>
   );
 }
-cd C:\Users\user\Desktop\Octus-site
-git add .
-git commit -m "Force rebuild — clear Netlify cache"
-git push origin main
-
-
