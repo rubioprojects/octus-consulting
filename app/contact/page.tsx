@@ -43,7 +43,7 @@ export default function ContactPage() {
       });
       if (res.ok) {
         setStatus("success");
-        setForm({ name: "", company: "", operation: "", jurisdictions: "", stage: "", situation: "" });
+        setForm({ name: "", email: "", company: "", operation: "", jurisdictions: "", stage: "", situation: "", _honey: "" });
       } else {
         setStatus("error");
       }
