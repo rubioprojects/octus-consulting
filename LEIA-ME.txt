@@ -1,4 +1,104 @@
-INSTRUÇÃO:
-1. Copia "app/page.tsx"     → Octus-site\app\page.tsx          (substituir)
-2. Copia "styles/globals.css" → Octus-site\styles\globals.css  (substituir)
-3. git add . → commit → push
+OCTUS CONSULTING — v34 DEPLOY INSTRUCTIONS
+============================================
+
+IMPORTANT: This ZIP contains source files only.
+DO NOT use this as a standalone project.
+Apply these files ON TOP of the existing GitHub repo.
+
+REQUIRED: package.json, next.config.js, tsconfig.json, tailwind.config
+already exist in the repo. Do NOT delete them.
+
+---
+
+FILES CHANGED (replace in repo)
+─────────────────────────────────
+components/Nav.tsx               — New nav (Markets/Jurisdictions/Solutions/About)
+components/CookieBanner.tsx      — NEW: Cookie consent banner
+app/layout.tsx                   — Updated metadata + WhatsApp float + CookieBanner
+app/page.tsx                     — Full homepage restructure
+app/contact/page.tsx             — Server-side form (Resend) + honeypot + success state
+app/team/page.tsx                — Leadership/Core hierarchy, P&B circular photos
+app/careers/page.tsx             — Selective positioning, "We hire for complexity"
+styles/globals.css               — Full CSS (deep-blue, authority strip, team, contacts, cookie, WhatsApp)
+
+NEW FILES (add to repo)
+─────────────────────────────────
+app/api/diagnostic/route.ts      — Server-side form handler (Resend + lead scoring)
+app/markets/page.tsx             — NEW PAGE: Markets
+app/jurisdictions/page.tsx       — NEW PAGE: Jurisdictions (10 jurisdictions)
+app/solutions/page.tsx           — NEW PAGE: Solutions (4 consolidated pillars)
+app/contact/layout.tsx           — NEW: Contact page metadata (SSR)
+app/sitemap.ts                   — NEW: Auto-generated sitemap.xml
+components/CookieBanner.tsx      — NEW COMPONENT: Cookie banner
+public/robots.txt                — NEW: Search engine directives
+public/careers-team.webp         — Team photo for careers page
+
+LEGACY PAGES (noindex applied, still accessible by URL)
+─────────────────────────────────
+app/brazil/page.tsx
+app/regulatory/page.tsx
+app/compliance/page.tsx
+app/corporate/page.tsx
+app/legal-architecture/page.tsx
+app/what-we-do/page.tsx
+app/private-clients/page.tsx
+app/audit/page.tsx
+app/international-hub/page.tsx
+
+ENVIRONMENT VARIABLES (set in Vercel dashboard)
+─────────────────────────────────
+RESEND_API_KEY          — REQUIRED in production. Get from resend.com (free: 100/day)
+RESEND_FROM_EMAIL       — Optional. Default: "Octus Website <diagnostics@octusconsulting.com>"
+DIAGNOSTIC_TO_EMAIL     — Optional. Default: "info@octusconsulting.com"
+REPLY_TO_EMAIL          — Optional. Default: "info@octusconsulting.com"
+
+LEAD INTELLIGENCE (built-in, zero config)
+─────────────────────────────────
+The diagnostic form includes automatic lead scoring.
+Emails arrive with:
+- Subject: [HIGH] / [MEDIUM] / [LOW] + company name
+- Lead Intelligence block: priority, score, detected signals
+- Timestamp UTC
+Scoring is heuristic based on keywords (sector, licensing,
+compliance, jurisdictions, banking, expansion, etc.).
+No CRM needed. Triagem visual direto no inbox.
+
+RESEND SETUP
+─────────────────────────────────
+1. Go to resend.com → create free account
+2. Add and verify domain: octusconsulting.com (or subdomain send.octusconsulting.com)
+3. Copy API key
+4. In Vercel: Settings → Environment Variables → add RESEND_API_KEY
+5. Redeploy
+
+DEPLOY STEPS
+─────────────────────────────────
+1. In GitHub repo, replace/add all files listed above
+2. Commit: "v34 FINAL — architecture restructure + form + cookie banner"
+3. Push to main
+4. Vercel auto-deploys
+5. Set RESEND_API_KEY in Vercel env vars
+6. Trigger redeploy after env var is set
+
+POST-DEPLOY VALIDATION CHECKLIST
+─────────────────────────────────
+[ ] Homepage loads correctly
+[ ] Nav shows: Markets / Jurisdictions / Solutions / About / Contact
+[ ] /markets page loads
+[ ] /jurisdictions page loads
+[ ] /solutions page loads
+[ ] Contact form submits → success state appears
+[ ] Email received at info@octusconsulting.com
+[ ] Honeypot test: filling hidden field does NOT send email
+[ ] Missing required fields blocks submission
+[ ] Error state renders if API fails
+[ ] WhatsApp floating button visible (desktop + mobile)
+[ ] WhatsApp opens correct pre-filled message
+[ ] Cookie banner appears on first visit
+[ ] Cookie banner disappears after "Accept"
+[ ] Mobile: no layout overlap (WhatsApp + cookie banner)
+[ ] Mobile: nav hamburger works
+[ ] Mobile: contact form stacks correctly
+[ ] Team photos: circular, B&W, consistent
+[ ] Legacy pages (/brazil, /regulatory, etc.) return noindex in meta
+[ ] OG image and meta description match new positioning

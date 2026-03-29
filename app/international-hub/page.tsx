@@ -1,8 +1,9 @@
 import Link from "next/link";
 
-export const metadata = {
+export const metadata: import("next").Metadata = {
   title: "International Hub — Octus Consulting",
   description:
+  robots: { index: false, follow: false },
     "Market entry and cross-border coordination for regulated operations. Octus structures international expansion across jurisdictions — from jurisdiction mapping to full operational setup.",
 };
 
@@ -236,7 +237,7 @@ export default function InternationalHubPage() {
         </div>
       </section>
 
-      {/* ─── CTA FINAL ────────────────────────────────────────────── */}
+      {/* ─── CTA FINAL ────────────────────────────────────────────── */}}
       <section className="cta-block">
         <div className="cta-block__bg" />
         <div className="cta-block__inner">

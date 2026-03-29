@@ -1,8 +1,9 @@
 import Link from "next/link";
 
-export const metadata = {
+export const metadata: import("next").Metadata = {
   title: "Ownership & UBO Architecture — Octus Consulting",
   description:
+  robots: { index: false, follow: false },
     "Ownership architecture for individuals behind regulated operations. The individual is part of the regulated structure — not separate from it. Octus structures UBO frameworks, personal holding design and individual compliance exposure.",
 };
 
@@ -213,7 +214,7 @@ export default function PrivateClientsPage() {
         </div>
       </section>
 
-      {/* ─── CTA FINAL ────────────────────────────────────────────── */}
+      {/* ─── CTA FINAL ────────────────────────────────────────────── */}}
       <section className="cta-block">
         <div className="cta-block__bg" />
         <div className="cta-block__inner">

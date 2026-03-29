@@ -1,8 +1,9 @@
 import Link from "next/link";
 
-export const metadata = {
+export const metadata: import("next").Metadata = {
   title: "Corporate Structuring — Octus Consulting",
   description:
+  robots: { index: false, follow: false },
     "Corporate architecture designed for regulated operations. Octus structures and coordinates international corporate setups, holding design, governance and ownership architecture — built to hold across jurisdictions.",
 };
 
@@ -343,7 +344,7 @@ export default function CorporatePage() {
         </div>
       </section>
 
-      {/* ─── CTA FINAL ────────────────────────────────────────────── */}
+      {/* ─── CTA FINAL ────────────────────────────────────────────── */}}
       <section className="cta-block">
         <div className="cta-block__bg" />
         <div className="cta-block__inner">

@@ -1,8 +1,9 @@
 import Link from "next/link";
 
-export const metadata = {
+export const metadata: import("next").Metadata = {
   title: "Compliance & Risk — Octus Consulting",
   description:
+  robots: { index: false, follow: false },
     "Compliance structured to operate continuously — not just pass an audit. Octus designs, implements and coordinates compliance operations across regulatory, banking and risk environments.",
 };
 
@@ -132,9 +133,9 @@ export default function CompliancePage() {
             Three compliance layers. One operational structure.
           </h2>
           <p className="body-lg sp-what-body" style={{ marginBottom: "72px" }}>
-            We don&apos;t deliver policy documents. We structure and coordinate
-            the operation of compliance — built to run continuously under real
-            regulatory conditions.
+            We don&apos;t deliver policy documents. We structure, implement and
+            coordinate the operation of compliance — built to run continuously
+            under real regulatory conditions.
           </p>
 
           {[
@@ -358,7 +359,7 @@ export default function CompliancePage() {
         </div>
       </section>
 
-      {/* ─── CTA FINAL ────────────────────────────────────────────── */}
+      {/* ─── CTA FINAL ────────────────────────────────────────────── */}}
       <section className="cta-block">
         <div className="cta-block__bg" />
         <div className="cta-block__inner">

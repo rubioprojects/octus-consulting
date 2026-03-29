@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://octusconsulting.com/sitemap.xml
+
+# Legacy pages (noindex via meta, but also block here)
+Disallow: /brazil
+Disallow: /regulatory
+Disallow: /compliance
+Disallow: /corporate
+Disallow: /legal-architecture
+Disallow: /what-we-do
+Disallow: /private-clients
+Disallow: /audit
+Disallow: /international-hub

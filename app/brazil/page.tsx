@@ -1,8 +1,9 @@
 import Link from "next/link";
 
-export const metadata = {
+export const metadata: import("next").Metadata = {
   title: "Brazil — Octus Consulting",
   description: "Regulatory structuring, compliance and corporate architecture for regulated operations entering or operating in Brazil.",
+  robots: { index: false, follow: false },
 };
 
 export default function BrazilPage() {
@@ -23,7 +24,7 @@ export default function BrazilPage() {
             2019.
           </p>
           <div style={{ marginTop: "48px" }}>
-            <Link href="/contact" className="btn-primary btn-primary-lg">Discuss your operation →</Link>
+            <Link href="/contact" className="btn-primary btn-primary-lg">Discuss your Brazil operation →</Link>
           </div>
         </div>
       </section>

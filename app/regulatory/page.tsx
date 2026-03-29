@@ -1,8 +1,9 @@
 import Link from "next/link";
 
-export const metadata = {
+export const metadata: import("next").Metadata = {
   title: "Regulatory Structuring — Octus Consulting",
   description:
+  robots: { index: false, follow: false },
     "Regulatory structuring across iGaming, betting, fintech, crypto, VASP, forex and other regulated models. Octus structures licensing strategies, jurisdiction fit and operational readiness — before the application starts.",
 };
 
@@ -34,7 +35,7 @@ export default function RegulatoryPage() {
           </p>
           <div style={{ marginTop: "48px" }}>
             <Link href="/contact" className="btn-primary btn-primary-lg">
-              Discuss your operation →
+              Discuss your licensing strategy →
             </Link>
           </div>
         </div>
@@ -386,7 +387,7 @@ export default function RegulatoryPage() {
             Structure it before you submit it.
           </h2>
           <Link href="/contact" className="btn-primary btn-primary-lg">
-            Discuss your operation →
+            Discuss your licensing strategy →
           </Link>
           <p
             className="body-sm cta-block__note"

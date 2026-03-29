@@ -279,15 +279,18 @@ export default function AboutPage() {
           </p>
           <div className="grid-auto-lg">
             {[
-              { name: "GDPR & Data Protection", desc: "Structured to operate under European data protection and privacy requirements. Compliance coordination across GDPR-regulated jurisdictions." },
-              { name: "LGPD Readiness (Brazil)", desc: "Aligned with Brazilian data protection obligations and operational enforcement expectations for regulated businesses." },
-              { name: "ESG & Governance Standards", desc: "Experience in environments requiring governance discipline, transparency and institutional accountability standards." },
-              { name: "Diversity & Institutional Recognition", desc: "Participation in programs and initiatives that reflect institutional accountability and representation in regulated markets." },
-              { name: "Certification-ready Environments", desc: "Structures prepared to meet ISO, laboratory and technical certification requirements when applicable to the operation." },
+              { name: "EXIN Data Protection Officer", desc: "EXIN-certified Data Protection Officer credential. Structured to design, implement and manage data protection frameworks.", img: "/seals/exin-dpo.png" },
+              { name: "GDPR Compliance", desc: "Certified under GDPR standards. Compliance coordination across European data protection jurisdictions.", img: "/seals/gdpr.png" },
+              { name: "LGPD Compliance", desc: "Certified under Brazilian LGPD data protection framework. Aligned with operational enforcement expectations for regulated businesses.", img: "/seals/lgpd.png" },
+              { name: "ESG — Environmental, Social & Governance", desc: "ESG-certified operations meeting environmental, social and governance accountability standards.", img: "/seals/esg.png" },
+              { name: "Diversity & Institutional Recognition", desc: "Certified commitment to institutional accountability, equity and representation in regulated markets.", img: "/seals/diversity.png" },
             ].map((item) => (
-              <div key={item.name} className="card" style={{ borderLeft: "2px solid var(--blue-border)" }}>
-                <h3 className="heading-card" style={{ marginBottom: "8px" }}>{item.name}</h3>
-                <p className="body-sm">{item.desc}</p>
+              <div key={item.name} className="card" style={{ borderLeft: "2px solid var(--blue-border)", display: "flex", gap: "16px", alignItems: "flex-start" }}>
+                <img src={item.img} alt={item.name} style={{ width: "56px", height: "56px", objectFit: "contain", flexShrink: 0 }} />
+                <div>
+                  <h3 className="heading-card" style={{ marginBottom: "8px" }}>{item.name}</h3>
+                  <p className="body-sm">{item.desc}</p>
+                </div>
               </div>
             ))}
           </div>
