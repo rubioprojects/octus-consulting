@@ -236,7 +236,7 @@ export default function InternationalHubPage() {
         </div>
       </section>
 
-      {/* ─── CTA FINAL ────────────────────────────────────────────── */}}
+      {/* ─── CTA FINAL ────────────────────────────────────────────── */}
       <section className="cta-block">
         <div className="cta-block__bg" />
         <div className="cta-block__inner">
