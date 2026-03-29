@@ -1,10 +1,10 @@
 import Link from "next/link";
 
-export const metadata: import("next").Metadata = {
+export const metadata = {
   title: "Audit & Readiness — Octus Consulting",
   description:
-  robots: { index: false, follow: false },
     "Preparation for regulatory audit, certification and external scrutiny. Octus structures the evidence, closes the gaps and coordinates readiness before scrutiny arrives.",
+  robots: { index: false, follow: false },
 };
 
 export default function AuditPage() {

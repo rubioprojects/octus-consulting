@@ -1,10 +1,10 @@
 import Link from "next/link";
 
-export const metadata: import("next").Metadata = {
+export const metadata = {
   title: "International Hub — Octus Consulting",
   description:
-  robots: { index: false, follow: false },
     "Market entry and cross-border coordination for regulated operations. Octus structures international expansion across jurisdictions — from jurisdiction mapping to full operational setup.",
+  robots: { index: false, follow: false },
 };
 
 export default function InternationalHubPage() {

@@ -1,10 +1,10 @@
 import Link from "next/link";
 
-export const metadata: import("next").Metadata = {
+export const metadata = {
   title: "Legal & Structural Architecture — Octus Consulting",
   description:
-  robots: { index: false, follow: false },
     "Legal architecture is not documentation. It is the structural backbone behind regulated operations — contracts, corporate design, cross-border setups and governance that hold under real conditions.",
+  robots: { index: false, follow: false },
 };
 
 export default function LegalArchitecturePage() {

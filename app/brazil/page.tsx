@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export const metadata: import("next").Metadata = {
+export const metadata = {
   title: "Brazil — Octus Consulting",
   description: "Regulatory structuring, compliance and corporate architecture for regulated operations entering or operating in Brazil.",
   robots: { index: false, follow: false },
