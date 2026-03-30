@@ -4,7 +4,6 @@ export const metadata = {
   title: "Corporate Structuring — Octus Consulting",
   description:
     "Corporate architecture designed for regulated operations. Octus structures and coordinates international corporate setups, holding design, governance and ownership architecture — built to hold across jurisdictions.",
-  robots: { index: false, follow: false },
 };
 
 export default function CorporatePage() {

@@ -4,7 +4,6 @@ export const metadata = {
   title: "Audit & Readiness — Octus Consulting",
   description:
     "Preparation for regulatory audit, certification and external scrutiny. Octus structures the evidence, closes the gaps and coordinates readiness before scrutiny arrives.",
-  robots: { index: false, follow: false },
 };
 
 export default function AuditPage() {

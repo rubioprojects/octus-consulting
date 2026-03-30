@@ -4,7 +4,6 @@ export const metadata = {
   title: "International Hub — Octus Consulting",
   description:
     "Market entry and cross-border coordination for regulated operations. Octus structures international expansion across jurisdictions — from jurisdiction mapping to full operational setup.",
-  robots: { index: false, follow: false },
 };
 
 export default function InternationalHubPage() {

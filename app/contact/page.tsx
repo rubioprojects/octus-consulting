@@ -58,21 +58,80 @@ export default function ContactPage() {
       {/* ─── HERO ─── */}
       <section className="page-hero section-padded">
         <div className="container">
-          <span className="label">Contact</span>
+          <span className="label">Start a diagnostic</span>
           <h1 className="heading-xl sp-headline">
-            Discuss your operation.
+            If your operation is not working,
             <br />
-            <span style={{ color: "var(--white-40)" }}>Before the structure becomes the problem.</span>
+            <span style={{ color: "var(--white-40)" }}>
+              this is where we start.
+            </span>
           </h1>
-          <p className="body-lg sp-sub" style={{ maxWidth: "560px" }}>
-            We start every engagement with a structured diagnostic — identifying
-            where the operation is blocked and what needs to change.
+          <p className="body-lg sp-sub" style={{ maxWidth: "580px" }}>
+            Not a sales call. A structured diagnostic — we identify where the
+            structure is broken before deciding what needs to be fixed.
           </p>
         </div>
       </section>
 
+      {/* ─── WHAT HAPPENS NEXT ────────────────────────────────────── */}
+      <section className="section-dark section-padded">
+        <div className="container" style={{ maxWidth: "760px" }}>
+          <span className="label">What happens after you submit</span>
+          <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
+            {[
+              {
+                step: "01",
+                title: "We review your situation",
+                body: "Within 24 hours, we review the information you submitted. If we can help, we confirm and schedule a diagnostic call.",
+              },
+              {
+                step: "02",
+                title: "Diagnostic call",
+                body: "A structured call — not a pitch. We map the structural failure, the regulatory position and the scope of what needs to be done.",
+              },
+              {
+                step: "03",
+                title: "Scope and engagement",
+                body: "If there is a clear path forward, we define the scope and the engagement model. No ambiguity on what will be done, by whom and on what timeline.",
+              },
+            ].map((s, i) => (
+              <div
+                key={s.step}
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "48px 1fr",
+                  gap: "24px",
+                  padding: "32px 0",
+                  borderBottom: i < 2 ? "1px solid var(--border)" : "none",
+                  alignItems: "start",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "var(--font-unigeo), Unigeo64, sans-serif",
+                    fontSize: "11px",
+                    fontWeight: 700,
+                    letterSpacing: "0.1em",
+                    color: "var(--blue-light)",
+                    paddingTop: "4px",
+                  }}
+                >
+                  {s.step}
+                </span>
+                <div>
+                  <h3 className="heading-card" style={{ marginBottom: "8px" }}>
+                    {s.title}
+                  </h3>
+                  <p className="body">{s.body}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ─── WHATSAPP ─── */}
-      <section style={{ padding: "0 40px 60px" }}>
+      <section style={{ padding: "60px 40px" }}>
         <div className="container">
           <div className="card-lg" style={{ display: "flex", alignItems: "center", gap: "20px", flexWrap: "wrap" }}>
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
@@ -84,7 +143,7 @@ export default function ContactPage() {
               <p className="body-sm" style={{ color: "var(--white-60)" }}>Talk to Octus on WhatsApp for an initial strategic intake. We usually respond within the same business day.</p>
             </div>
             <a
-              href="https://wa.me/5511974273000?text=Hello%2C%20I%27d%20like%20an%20initial%20strategic%20assessment%20regarding%20a%20regulated%20or%20cross-border%20operation."
+              href="https://wa.me/5511974273000?text=Hello%2C%20I%27d%20like%20to%20start%20a%20diagnostic%20with%20Octus%20regarding%20a%20regulated%20operation."
               target="_blank" rel="noopener noreferrer"
               className="btn-primary" style={{ whiteSpace: "nowrap" }}
             >
@@ -133,7 +192,7 @@ export default function ContactPage() {
                   <p className="body-sm" style={{ color: "var(--white-40)", marginBottom: "32px" }}>We respond within 24 hours.</p>
 
                   <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-                    {/* Honeypot — hidden from humans, visible to bots */}
+                    {/* Honeypot */}
                     <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", opacity: 0, height: 0, overflow: "hidden" }}>
                       <input type="text" name="_honey" tabIndex={-1} autoComplete="off" value={form._honey} onChange={(e) => setForm({ ...form, _honey: e.target.value })} />
                     </div>
@@ -209,13 +268,13 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* ─── REASSURANCE ─── */}
+      {/* ─── REASSURANCE ──────────────────────────────────────────── */}
       <section className="section-dark section-padded">
         <div className="container">
           <div className="grid-3">
             {[
               { title: "Direct diagnostic, not generic advice", body: "The diagnostic is structured around your specific structural situation — not a template response or a pitch." },
-              { title: "Built for active operations", body: "We work with businesses where the operation is real and the problem has regulatory or structural consequences." },
+              { title: "Built for active operations, not general inquiries", body: "We work with businesses where the operation is real and the problem has regulatory or structural consequences." },
               { title: "Direct access to decision-makers", body: "You communicate directly with the Octus team from the first conversation — no account managers, no onboarding process." },
             ].map((item) => (
               <div key={item.title} className="card">

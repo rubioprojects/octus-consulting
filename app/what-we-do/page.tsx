@@ -3,7 +3,6 @@ import Link from "next/link";
 export const metadata = {
   title: "What We Do — Octus Consulting",
   description: "Seven operational modules. One working structure. Regulatory structuring, compliance, legal architecture, corporate design, ownership, audit and international hub.",
-  robots: { index: false, follow: false },
 };
 
 const services = [

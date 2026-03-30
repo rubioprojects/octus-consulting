@@ -4,7 +4,6 @@ export const metadata = {
   title: "Regulatory Structuring — Octus Consulting",
   description:
     "Regulatory structuring across iGaming, betting, fintech, crypto, VASP, forex and other regulated models. Octus structures licensing strategies, jurisdiction fit and operational readiness — before the application starts.",
-  robots: { index: false, follow: false },
 };
 
 export default function RegulatoryPage() {
