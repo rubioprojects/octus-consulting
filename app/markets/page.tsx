@@ -66,7 +66,7 @@ export default function MarketsPage() {
         </div>
       </section>
 
-      {/* ─── ADDITIONAL MARKETS (not linkable yet) ─── */}
+      {/* ─── ADDITIONAL MARKETS ─── */}
       <section className="section-dark section-padded">
         <div className="container">
           <p className="label">Also active in</p>
@@ -79,22 +79,25 @@ export default function MarketsPage() {
                 title: "Crypto & Digital Assets",
                 desc: "VASP registration, regulatory positioning and compliance architecture for crypto exchanges, custodians and token issuers.",
                 tags: ["VASP", "MiCA", "AML", "Custody"],
+                href: "/markets/crypto",
               },
               {
                 title: "High-Risk Digital Businesses",
                 desc: "Structural and compliance solutions for businesses that banks and regulators classify as high-risk. We make the structure work — not the label go away.",
                 tags: ["Banking", "Risk", "Structure", "Compliance"],
+                href: "/markets/high-risk",
               },
             ].map((m) => (
-              <div key={m.title} className="card" style={{ padding: "32px" }}>
+              <Link key={m.title} href={m.href} className="card-grid" style={{ padding: "32px" }}>
                 <h3 className="heading-card" style={{ marginBottom: "12px" }}>{m.title}</h3>
                 <p className="body-sm" style={{ marginBottom: "16px" }}>{m.desc}</p>
-                <div className="chip-row">
+                <div className="chip-row" style={{ marginBottom: "16px" }}>
                   {m.tags.map((t) => (
                     <span key={t} className="chip">{t}</span>
                   ))}
                 </div>
-              </div>
+                <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Learn more →</span>
+              </Link>
             ))}
           </div>
         </div>

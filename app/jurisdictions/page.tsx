@@ -121,7 +121,7 @@ export default function JurisdictionsPage() {
         </div>
       </section>
 
-      {/* ─── STRATEGIC JURISDICTIONS (non-clickable) ─── */}
+      {/* ─── STRATEGIC JURISDICTIONS ─── */}
       <section className="section-dark section-padded">
         <div className="container">
           <p className="label">Strategic jurisdictions</p>
@@ -138,6 +138,7 @@ export default function JurisdictionsPage() {
               {
                 name: "Isle of Man",
                 desc: "Tier-1 jurisdiction for operators and B2B providers prioritizing regulatory credibility, institutional positioning and long-term banking stability. Typically suitable for well-capitalized operations with a long-term market strategy.",
+                href: "/jurisdictions/isle-of-man",
               },
               {
                 name: "UK",
@@ -159,12 +160,20 @@ export default function JurisdictionsPage() {
                 name: "Cyprus",
                 desc: "EU jurisdiction with growing regulatory infrastructure for fintech and gaming operations.",
               },
-            ].map((j) => (
-              <div key={j.name} className="card" style={{ padding: "24px" }}>
-                <h3 className="heading-card" style={{ marginBottom: "8px" }}>{j.name}</h3>
-                <p className="body-sm" style={{ color: "var(--white-60)" }}>{j.desc}</p>
-              </div>
-            ))}
+            ].map((j) =>
+              "href" in j && j.href ? (
+                <Link key={j.name} href={j.href} className="card-grid" style={{ padding: "24px" }}>
+                  <h3 className="heading-card" style={{ marginBottom: "8px" }}>{j.name}</h3>
+                  <p className="body-sm" style={{ color: "var(--white-60)", marginBottom: "12px" }}>{j.desc}</p>
+                  <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Learn more →</span>
+                </Link>
+              ) : (
+                <div key={j.name} className="card" style={{ padding: "24px" }}>
+                  <h3 className="heading-card" style={{ marginBottom: "8px" }}>{j.name}</h3>
+                  <p className="body-sm" style={{ color: "var(--white-60)" }}>{j.desc}</p>
+                </div>
+              ),
+            )}
           </div>
         </div>
       </section>

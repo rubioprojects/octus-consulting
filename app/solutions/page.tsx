@@ -56,6 +56,8 @@ export default function SolutionsPage() {
                 href: "/compliance",
                 featured: [
                   { label: "AML & KYC Framework", href: "/solutions/compliance/aml-kyc" },
+                  { label: "Compliance-as-a-Service", href: "/solutions/compliance/compliance-as-a-service" },
+                  { label: "DPO-as-a-Service", href: "/solutions/compliance/dpo-as-a-service" },
                 ],
               },
               {
@@ -101,29 +103,33 @@ export default function SolutionsPage() {
                 featured: [],
               },
             ].map((m) => (
-              <Link key={m.num} href={m.href} className="card-grid module-card" style={{ padding: "28px" }}>
-                <p className="label module-num">{m.num}</p>
-                <h3 className="heading-card module-title" style={{ marginBottom: "8px" }}>
-                  {m.title}
-                </h3>
-                <p className="body-sm module-desc" style={{ marginBottom: "12px" }}>{m.desc}</p>
-                <div className="chip-row module-chips" style={{ marginBottom: m.featured.length > 0 ? "16px" : "0" }}>
-                  {m.tags.map((t) => (
-                    <span key={t} className="chip">{t}</span>
-                  ))}
-                </div>
+              <div key={m.num} className="card-grid module-card" style={{ padding: "28px" }}>
+                <Link href={m.href} style={{ color: "inherit", textDecoration: "none", display: "block" }}>
+                  <p className="label module-num">{m.num}</p>
+                  <h3 className="heading-card module-title" style={{ marginBottom: "8px" }}>
+                    {m.title}
+                  </h3>
+                  <p className="body-sm module-desc" style={{ marginBottom: "12px" }}>{m.desc}</p>
+                  <div className="chip-row module-chips" style={{ marginBottom: m.featured.length > 0 ? "16px" : "0" }}>
+                    {m.tags.map((t) => (
+                      <span key={t} className="chip">{t}</span>
+                    ))}
+                  </div>
+                </Link>
                 {m.featured.length > 0 && (
-                  <div style={{ borderTop: "1px solid var(--border)", paddingTop: "12px", marginTop: "4px" }}>
-                    <p className="label" style={{ fontSize: "9px", marginBottom: "6px", color: "var(--white-25)" }}>Featured</p>
+                  <div style={{ borderTop: "1px solid var(--border)", paddingTop: "12px", marginTop: "4px", marginBottom: "40px", display: "flex", flexDirection: "column", gap: "8px" }}>
+                    <p className="label" style={{ fontSize: "9px", marginBottom: "4px", color: "var(--white-25)" }}>Featured</p>
                     {m.featured.map((s) => (
-                      <span key={s.href} style={{ color: "var(--blue-light)", fontSize: "13px" }}>
+                      <Link key={s.href} href={s.href} style={{ color: "var(--blue-light)", fontSize: "13px" }}>
                         {s.label} →
-                      </span>
+                      </Link>
                     ))}
                   </div>
                 )}
-                <span className="module-arrow">→</span>
-              </Link>
+                <Link href={m.href} className="module-arrow" aria-label={`${m.title} — overview`}>
+                  →
+                </Link>
+              </div>
             ))}
           </div>
         </div>

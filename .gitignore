@@ -3,3 +3,5 @@ node_modules/
 out/
 
 .pr_body.md
+files/
+files.zip

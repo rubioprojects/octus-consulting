@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "iGaming Licensing Execution — From Application to Bank Account | Octus",
+  title: "iGaming Licensing — Octus Consulting",
   description:
-    "Full licensing execution for iGaming and betting operators. Jurisdiction selection, regulatory dossier, compliance structure, banking coordination and post-license stabilization.",
+    "iGaming licensing strategy across jurisdictions. Octus structures the regulatory, corporate and compliance architecture that determines whether a licence gets approved — not just submitted.",
 };
 
 export default function SolutionsIGamingLicensingPage() {
@@ -15,20 +15,24 @@ export default function SolutionsIGamingLicensingPage() {
         <div className="container">
           <span className="label">Solutions · Regulatory · iGaming Licensing</span>
           <h1 className="heading-xl sp-headline">
-            Getting an iGaming license is not the problem.
+            Licensing does not fail at submission.
             <br />
             <span style={{ color: "var(--white-40)" }}>
-              Getting one that actually works is.
+              It fails before the application starts.
             </span>
           </h1>
           <p className="body-lg sp-sub" style={{ maxWidth: "640px" }}>
-            A license without the right corporate structure, compliance
-            framework and banking access is a piece of paper. We deliver the
-            full structure — not just the application.
+            Wrong jurisdiction. Wrong corporate structure. Wrong sequence. By the
+            time most operators reach a regulator, the structural decisions that
+            determine the outcome have already been made.
+          </p>
+          <p className="body-lg sp-sub" style={{ maxWidth: "640px", marginTop: "16px" }}>
+            Octus structures licensing strategies built to be approved, not just
+            filed.
           </p>
           <div style={{ marginTop: "32px", display: "flex", gap: "16px", flexWrap: "wrap" }}>
             <Link href="/contact" className="btn-primary btn-primary-lg">
-              Fix your structure before you scale →
+              Discuss your licensing strategy →
             </Link>
             <Link href="/markets/igaming" className="btn-ghost">
               iGaming operations →
@@ -37,124 +41,131 @@ export default function SolutionsIGamingLicensingPage() {
         </div>
       </section>
 
-      {/* ─── THE REAL PROBLEM ─── */}
+      {/* ─── POV ─── */}
       <section className="section-dark section-padded">
         <div className="container" style={{ maxWidth: "760px" }}>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
-            Why most licensing projects fail.
-          </h2>
+          <p className="label">Perspective</p>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
-            Operators hire a lawyer to file the application. The lawyer files
-            it. Six months later, the license is approved — and the operator
-            discovers they can&apos;t open a bank account, their compliance
-            framework doesn&apos;t meet real audit standards, and their
-            corporate structure is incompatible with the payment processors
-            they need.
+            The jurisdiction is rarely the problem. The structure is.
           </p>
-          <p className="body-lg" style={{ marginBottom: "20px" }}>
-            The license worked. Everything around it didn&apos;t.
-          </p>
-          <p
-            className="heading-sm"
-            style={{ color: "var(--white)", borderTop: "1px solid var(--border)", paddingTop: "24px", marginTop: "8px" }}
-          >
-            Licensing is not a legal task.{" "}
-            <span style={{ color: "var(--blue-light)" }}>It&apos;s a structural one.</span>
+          <p className="body-lg">
+            Choosing where to apply is easy. Designing how the operation will
+            function after approval — licensing, banking, compliance and scale —
+            is where most fail.
           </p>
         </div>
       </section>
 
-      {/* ─── WHAT WE DELIVER ─── */}
+      {/* ─── WHERE LICENSING FAILS ─── */}
       <section className="section-padded">
         <div className="container">
-          <p className="label">What Octus delivers</p>
-          <h2 className="heading-md" style={{ marginBottom: "12px" }}>
-            Full licensing execution.
+          <p className="label">The structural problem</p>
+          <h2 className="heading-md" style={{ marginBottom: "24px", maxWidth: "760px" }}>
+            Most licensing failures are not regulatory. They are structural.
           </h2>
-          <p className="body-lg" style={{ marginBottom: "40px", maxWidth: "620px", color: "var(--white-60)" }}>
-            From jurisdiction selection to post-license stabilization. One
-            point of contact. One coordinated structure.
+          <p className="body-lg" style={{ marginBottom: "40px", maxWidth: "760px" }}>
+            Regulators do not reject applications because of paperwork. They
+            reject applications because the underlying structure does not hold.
+            The corporate design does not fit the jurisdiction. The compliance
+            framework does not match the regulatory expectation. The banking
+            path was not resolved before submission. The UBO structure is
+            incompatible with the fit-and-proper assessment.
           </p>
-          <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
+          <div className="grid-auto-lg">
             {[
               {
-                step: "01",
-                title: "Jurisdiction selection & risk mapping",
-                body: "We assess your operation, target markets, ownership structure and commercial objectives. We select the jurisdiction that fits — or tell you why your current choice doesn\u2019t.",
+                title: "Jurisdiction mismatch",
+                body: "The operation chose a jurisdiction for speed or cost, not for regulatory fit. Now the licence does not unlock banking, payment processing or market access.",
               },
               {
-                step: "02",
-                title: "Regulatory strategy & licensing roadmap",
-                body: "We design the regulatory path — timeline, milestones, entity requirements, compliance obligations. No ambiguity on what needs to happen and when.",
+                title: "Structural sequencing failure",
+                body: "Corporate structure, compliance architecture and banking were built in the wrong order. The regulator sees gaps that did not need to exist.",
               },
               {
-                step: "03",
-                title: "Corporate & entity structuring",
-                body: "The entity behind the license must be designed for both the regulator and the banking layer. We structure ownership, governance and UBO disclosure to pass both reviews.",
+                title: "Compliance built after the fact",
+                body: "AML/KYC, responsible gambling and internal controls were designed to satisfy a checklist, not to pass operational scrutiny. Regulators see through this.",
               },
               {
-                step: "04",
-                title: "Full licensing dossier",
-                body: "We prepare the complete regulatory application — documentation, compliance framework, AML policies, technical requirements, business plan, financial projections.",
+                title: "Mid-process correction",
+                body: "The operation changed direction during the application. Every change resets the clock and increases cost.",
               },
-              {
-                step: "05",
-                title: "Regulatory coordination & submission",
-                body: "We handle the submission and manage the relationship with the regulator. Questions, amendments, additional requirements — all coordinated through Octus.",
-              },
-              {
-                step: "06",
-                title: "Compliance structure (pre-launch)",
-                body: "Before the license is active, the compliance framework must be operational. KYC/AML, responsible gaming, DPO, internal controls — built to survive real scrutiny.",
-              },
-              {
-                step: "07",
-                title: "Banking & payment coordination",
-                body: "We align the corporate and compliance structure with banking requirements and coordinate with banks and payment providers. Licensed and bankable.",
-              },
-              {
-                step: "08",
-                title: "Lab & certification readiness",
-                body: "GLI, BMM, iTech Labs — we prepare the technical compliance layer. Gap analysis, evidence register, coordination with testing laboratories.",
-              },
-              {
-                step: "09",
-                title: "Post-license stabilization",
-                body: "License approved is the beginning. We stabilize compliance cycles, regulatory reporting, banking maintenance and operational readiness.",
-              },
-            ].map((s, i) => (
-              <div
-                key={s.step}
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "48px 1fr",
-                  gap: "24px",
-                  padding: "28px 0",
-                  borderBottom: i < 8 ? "1px solid var(--border)" : "none",
-                  alignItems: "start",
-                }}
-              >
-                <span
-                  style={{
-                    fontFamily: "var(--font-unigeo), Unigeo64, sans-serif",
-                    fontSize: "11px",
-                    fontWeight: 700,
-                    letterSpacing: "0.1em",
-                    color: "var(--blue-light)",
-                    paddingTop: "4px",
-                  }}
-                >
-                  {s.step}
-                </span>
-                <div>
-                  <h3 className="heading-card" style={{ marginBottom: "8px" }}>
-                    {s.title}
-                  </h3>
-                  <p className="body">{s.body}</p>
-                </div>
+            ].map((c) => (
+              <div key={c.title} className="card" style={{ padding: "28px" }}>
+                <h3 className="heading-card" style={{ marginBottom: "12px" }}>{c.title}</h3>
+                <p className="body-sm" style={{ color: "var(--white-60)" }}>{c.body}</p>
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ─── MULTI-JURISDICTION ─── */}
+      <section className="section-dark section-padded">
+        <div className="container" style={{ maxWidth: "760px" }}>
+          <p className="label">Jurisdiction strategy</p>
+          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+            The jurisdiction is not a detail. It is the first structural decision.
+          </h2>
+          <p className="body-lg" style={{ marginBottom: "28px" }}>
+            Jurisdiction is a strategic decision, not a checklist item. Every
+            licensing strategy starts here — as a decision that determines
+            approval probability, banking access, payment processing, market
+            reach and long-term viability.
+          </p>
+          <div style={{ display: "flex", flexDirection: "column", gap: "14px", marginBottom: "28px" }}>
+            {[
+              "Isle of Man — Tier-1 regulatory credential for institutional operators and B2B providers",
+              "Malta — EU-regulated framework for scalable operations targeting regulated markets",
+              "Curaçao — Structured offshore framework for growth-stage operators",
+              "Brazil — Local regulatory pathway requiring direct alignment with SPA expectations",
+            ].map((item) => (
+              <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
+                <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
+                <p className="body-sm">{item}</p>
+              </div>
+            ))}
+          </div>
+          <p className="body" style={{ marginBottom: "20px", color: "var(--white-60)" }}>
+            Additional jurisdictions are assessed case by case based on
+            regulatory fit and operational design.
+          </p>
+          <p className="body-sm" style={{ color: "var(--white-40)", fontStyle: "italic" }}>
+            Octus does not recommend jurisdictions based on speed or cost. The
+            choice is driven by what allows the operation to function — not
+            just to launch.
+          </p>
+        </div>
+      </section>
+
+      {/* ─── WHAT OCTUS STRUCTURES ─── */}
+      <section className="section-padded">
+        <div className="container" style={{ maxWidth: "760px" }}>
+          <p className="label">Execution</p>
+          <h2 className="heading-md" style={{ marginBottom: "16px" }}>
+            We design the structure behind the licence.
+          </h2>
+          <p className="body-lg" style={{ marginBottom: "28px" }}>
+            Licensing is not a filing exercise. It is a coordinated build across
+            multiple layers that must align before submission.
+          </p>
+          <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginBottom: "24px" }}>
+            {[
+              "Jurisdiction strategy — regulatory path, risk matrix, cost and timeline modelling.",
+              "Corporate and operational architecture — entities, governance, UBO alignment, jurisdictional requirements.",
+              "Compliance systems — AML/CFT, KYC, responsible gambling, internal controls. Built for ongoing supervision.",
+              "Regulatory coordination — application, documentation, regulator interaction.",
+              "Banking and payment readiness — from day one, not after approval.",
+            ].map((item) => (
+              <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
+                <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
+                <p className="body">{item}</p>
+              </div>
+            ))}
+          </div>
+          <p className="heading-sm" style={{ color: "var(--white)", borderTop: "1px solid var(--border)", paddingTop: "24px" }}>
+            The licence is the output.{" "}
+            <span style={{ color: "var(--blue-light)" }}>The structure determines whether it is granted.</span>
+          </p>
         </div>
       </section>
 
@@ -168,30 +179,30 @@ export default function SolutionsIGamingLicensingPage() {
           <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
             {[
               {
-                title: "Curaçao — license + banking in one process",
-                body: "Full licensing dossier, entity structuring, compliance framework and banking coordination delivered as a single project. License approved and bank account operational before launch.",
+                tag: "Curaçao · iGaming",
+                title: "Licence active. No banking.",
+                body: "Compliance documentation did not meet banking standards. Octus restructured AML policies and coordinated with multiple institutions. Operational account secured within 11 weeks.",
               },
               {
-                title: "Brazil (SPA/MF) — sports betting authorization",
-                body: "Complete regulatory dossier, corporate structuring and direct interaction with SPA/MF authorities for the Brazilian sports betting authorization process.",
+                tag: "Brazil · Betting",
+                title: "Cross-border operator entering a regulated market.",
+                body: "Corporate structure redesigned for SPA compliance. Regulatory dossier prepared and submission coordinated. Authorization process managed end-to-end.",
               },
               {
-                title: "Multi-jurisdiction — 3 licenses, unified structure",
-                body: "Coordinated licensing across Curaçao, Malta and Brazil with harmonized compliance framework and centralized banking strategy.",
-              },
-              {
-                title: "GLI audit — zero critical findings",
-                body: "Full gap analysis, evidence register and readiness pack delivered in 6 weeks. Client entered GLI audit with complete documentation and zero critical findings.",
+                tag: "iGaming · Certification",
+                title: "GLI audit scheduled. No evidence readiness.",
+                body: "Full compliance gap analysis and evidence framework delivered. Client entered audit with complete documentation and zero critical findings.",
               },
             ].map((m, i) => (
               <div
                 key={i}
                 style={{
                   padding: "24px 0",
-                  borderBottom: i < 3 ? "1px solid var(--border)" : "none",
+                  borderBottom: i < 2 ? "1px solid var(--border)" : "none",
                 }}
               >
-                <h3 className="heading-card" style={{ marginBottom: "8px", color: "var(--white)" }}>
+                <span className="case-tag">{m.tag}</span>
+                <h3 className="heading-card" style={{ marginBottom: "8px", color: "var(--white)", marginTop: "12px" }}>
                   {m.title}
                 </h3>
                 <p className="body" style={{ color: "var(--white-60)" }}>{m.body}</p>
@@ -201,89 +212,90 @@ export default function SolutionsIGamingLicensingPage() {
         </div>
       </section>
 
-      {/* ─── JURISDICTIONS ─── */}
+      {/* ─── ENGAGEMENT MODELS ─── */}
       <section className="section-padded">
-        <div className="container">
-          <p className="label">Active iGaming licensing jurisdictions</p>
-          <h2 className="heading-md" style={{ marginBottom: "32px" }}>
-            Where we execute.
+        <div className="container" style={{ maxWidth: "760px" }}>
+          <h2 className="heading-md" style={{ marginBottom: "28px" }}>
+            Three models. One standard.
           </h2>
-          <div className="grid-auto-lg">
+          <div style={{ display: "flex", flexDirection: "column", gap: "24px", marginBottom: "28px" }}>
+            <p className="body">
+              <strong style={{ color: "var(--white)" }}>Full execution</strong>
+              {" "}— End-to-end licensing and structuring. From jurisdiction selection to operational readiness.
+            </p>
+            <p className="body">
+              <strong style={{ color: "var(--white)" }}>Strategic intervention</strong>
+              {" "}— Correction of existing structures, licensing processes or regulatory misalignment.
+            </p>
+            <p className="body">
+              <strong style={{ color: "var(--white)" }}>Advisory and mapping</strong>
+              {" "}— Strategic assessment and regulatory pathway definition before execution.
+            </p>
+          </div>
+          <p className="body-sm" style={{ marginBottom: "24px", color: "var(--white-60)" }}>
+            All engagements provide direct access to the Octus team. No
+            intermediaries, no account layers.
+          </p>
+          <p className="body" style={{ marginBottom: "28px", padding: "20px", borderLeft: "3px solid var(--blue-light)", background: "rgba(0, 98, 222, 0.06)" }}>
+            <strong style={{ color: "var(--white)" }}>Qualification:</strong>
+            {" "}We do not support shortcut licensing strategies or fast-track
+            approaches without structural backing. If your objective is speed
+            over sustainability, we are not the right partner.
+          </p>
+          <Link href="/contact" className="btn-primary btn-primary-lg">
+            Request a licensing diagnostic →
+          </Link>
+        </div>
+      </section>
+
+      {/* ─── FAQ ─── */}
+      <section className="section-dark section-padded">
+        <div className="container" style={{ maxWidth: "760px" }}>
+          <p className="label">Common questions</p>
+          <div style={{ display: "flex", flexDirection: "column" }}>
             {[
               {
-                jurisdiction: "Brazil (SPA/MF)",
-                desc: "Sports betting authorization under the new regulatory framework. Full structuring for the Brazilian market.",
-                timeline: "6–12 months",
+                q: "How long does a licensing process take?",
+                a: "Timelines are only reliable after the regulatory path is correctly defined.",
               },
               {
-                jurisdiction: "Curaçao",
-                desc: "iGaming and betting licensing under the new GCB framework. Entity, compliance and banking in one coordinated process.",
-                timeline: "3–6 months",
+                q: "Can we start licensing before the corporate structure is ready?",
+                a: "In some cases, steps run in parallel. In most cases, starting without the correct structure creates delays that cost more than proper sequencing.",
               },
               {
-                jurisdiction: "Malta (MGA)",
-                desc: "B2C and B2B licensing. Full regulatory dossier, compliance framework and operational setup for the European market.",
-                timeline: "6–12 months",
+                q: "What if we are already mid-process?",
+                a: "We assess whether the process can be corrected or needs restructuring. Both scenarios are common.",
               },
               {
-                jurisdiction: "Anjouan",
-                desc: "Fast-track licensing for operators targeting specific markets. Corporate structuring and compliance alignment included.",
-                timeline: "2–4 months",
+                q: "Do you handle only the licence application?",
+                a: "No. Licensing only works when corporate structure, compliance framework, banking path and operational model are aligned. Octus structures the full process.",
               },
               {
-                jurisdiction: "Isle of Man",
-                desc: "Tier-1 jurisdiction for operators requiring premium regulatory positioning. Full structuring and banking coordination.",
-                timeline: "6–12 months",
+                q: "What is the difference between Octus and a law firm?",
+                a: "Law firms focus on legal interpretation and documentation. Octus structures the full licensing pathway as an operating model: jurisdiction, corporate design, compliance architecture, banking alignment and regulatory coordination.",
               },
-              {
-                jurisdiction: "Gibraltar",
-                desc: "B2B and B2C licensing. Structured for operators with European and UK-facing operations.",
-                timeline: "6–12 months",
-              },
-            ].map((j) => (
-              <div key={j.jurisdiction} className="card" style={{ padding: "28px" }}>
-                <h3 className="heading-card" style={{ marginBottom: "8px" }}>{j.jurisdiction}</h3>
-                <p className="body-sm" style={{ marginBottom: "12px" }}>{j.desc}</p>
-                <p className="label" style={{ fontSize: "10px" }}>Typical timeline: {j.timeline}</p>
+            ].map((item, i) => (
+              <div key={i} style={{ padding: "28px 0", borderBottom: "1px solid var(--border)" }}>
+                <h3 className="heading-card" style={{ marginBottom: "12px", color: "var(--white)" }}>{item.q}</h3>
+                <p className="body">{item.a}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ─── NOT JUST LEGAL ─── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
-            This is not a legal service.
-          </h2>
-          <p className="body-lg" style={{ marginBottom: "20px" }}>
-            A lawyer files applications. We structure operations.
-          </p>
-          <p className="body" style={{ marginBottom: "20px" }}>
-            The difference is that when you work with Octus, the licensing
-            process is coordinated with the corporate structure, the compliance
-            framework, the banking layer and the payment infrastructure — from
-            day one. Not as separate workstreams managed by different providers.
-            As one integrated structure.
-          </p>
-          <p className="body">
-            Your point of contact is always Octus. We coordinate everything
-            behind the structure — regulatory, legal, compliance, banking. You
-            fix the operation. We make sure it&apos;s built right.
-          </p>
-        </div>
-      </section>
-
       {/* ─── CROSS-LINKS ─── */}
       <section className="section-padded">
         <div className="container">
-          <p className="label">Go deeper</p>
-          <div className="grid-3">
+          <p className="label">Related</p>
+          <div className="grid-auto-lg">
             {[
-              { title: "iGaming Operations", desc: "Market-level view of how we work with iGaming operators.", href: "/markets/igaming" },
-              { title: "Curaçao Licensing", desc: "How we structure operations in Curaçao specifically.", href: "/jurisdictions/curacao" },
-              { title: "Audit & Readiness", desc: "Prepared for scrutiny before it arrives.", href: "/audit" },
+              { title: "Isle of Man (GSC)", desc: "Tier-1 credential with continuous regulatory scrutiny", href: "/jurisdictions/isle-of-man" },
+              { title: "Malta (MGA)", desc: "EU-regulated framework with high compliance standards", href: "/jurisdictions/malta" },
+              { title: "Curaçao", desc: "Established offshore framework undergoing reform", href: "/jurisdictions/curacao" },
+              { title: "Compliance-as-a-Service", desc: "What keeps the operation compliant after licensing", href: "/solutions/compliance/compliance-as-a-service" },
+              { title: "AML/KYC", desc: "Compliance architecture for licensing and banking", href: "/solutions/compliance/aml-kyc" },
+              { title: "iGaming Market", desc: "Sector overview and Octus positioning", href: "/markets/igaming" },
             ].map((r) => (
               <Link key={r.title} href={r.href} className="card-grid" style={{ padding: "28px" }}>
                 <h3 className="heading-card" style={{ marginBottom: "8px" }}>{r.title}</h3>
@@ -295,22 +307,25 @@ export default function SolutionsIGamingLicensingPage() {
         </div>
       </section>
 
-      {/* ─── CTA FINAL ─── */}
+      {/* ─── CTA FINAL (CAS transition) ─── */}
       <section className="cta-block">
         <div className="cta-block__bg" />
         <div className="cta-block__inner">
-          <p className="body" style={{ color: "var(--white-40)", marginBottom: "16px" }}>
-            If your operation depends on an iGaming license —
+          <p className="body" style={{ color: "var(--white-40)", marginBottom: "8px" }}>
+            Getting licensed is the first step. Without continuous operation, it breaks.
+          </p>
+          <p className="body-sm" style={{ color: "var(--white-25)", marginBottom: "16px", fontStyle: "italic" }}>
+            Most licensing failures are not visible at application. They appear when the operation goes live.
           </p>
           <h2 className="heading-lg cta-block__title">
-            Don&apos;t just get licensed.{" "}
-            <span style={{ color: "var(--blue-light)" }}>Get structured.</span>
+            Get the structure right{" "}
+            <span style={{ color: "var(--blue-light)" }}>before the regulator sees it.</span>
           </h2>
           <Link href="/contact" className="btn-primary btn-primary-lg">
-            Understand what&apos;s broken →
+            Request a licensing assessment →
           </Link>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
-            We respond within 24 hours.
+            Diagnostic call. We assess model, jurisdiction fit and structural readiness before recommending a path.
           </p>
         </div>
       </section>
