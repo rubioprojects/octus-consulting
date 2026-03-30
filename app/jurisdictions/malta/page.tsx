@@ -1,0 +1,332 @@
+import Link from "next/link";
+
+export const metadata = {
+  title: "Malta Gaming & Fintech License — EU Regulatory Framework | Octus",
+  description:
+    "MGA and MFSA licensing for iGaming, fintech and crypto operators. Corporate substance, compliance infrastructure and EU banking coordination.",
+};
+
+export default function JurisdictionsMaltaPage() {
+  return (
+    <main>
+
+      {/* ─── HERO ─── */}
+      <section className="page-hero section-padded">
+        <div className="container">
+          <span className="label">Jurisdictions · Malta</span>
+          <h1 className="heading-xl sp-headline">
+            Malta Gaming License.
+            <br />
+            <span style={{ color: "var(--white-40)" }}>
+              Not designed for speed-driven or low-cost operations.
+            </span>
+          </h1>
+          <p className="body-lg sp-sub" style={{ maxWidth: "620px" }}>
+            A structured EU regulatory framework for operators and B2B
+            providers seeking credibility, scalability and access to regulated
+            markets.
+          </p>
+          <div style={{ marginTop: "32px", display: "flex", gap: "16px", flexWrap: "wrap" }}>
+            <Link href="/contact" className="btn-primary btn-primary-lg">
+              Request strategic assessment →
+            </Link>
+            <Link href="/markets/igaming" className="btn-ghost">
+              iGaming operations →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── POSITIONING ─── */}
+      <section className="section-dark section-padded">
+        <div className="container" style={{ maxWidth: "760px" }}>
+          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+            Malta is not an entry-level jurisdiction.
+          </h2>
+          <p className="body-lg" style={{ marginBottom: "20px" }}>
+            It is a regulated European framework designed for companies that
+            require credibility, operational structure and long-term market
+            access. This licensing model is typically adopted by operators and
+            B2B providers targeting regulated markets, institutional
+            partnerships and scalable operations.
+          </p>
+          <p className="body" style={{ marginBottom: "20px" }}>
+            Malta gives you MGA credibility, serious banking infrastructure
+            and can support access to European markets within the right
+            regulatory and operational structure. It also demands real
+            compliance, real substance and real governance.
+          </p>
+          <p
+            className="heading-sm"
+            style={{ color: "var(--white)", borderTop: "1px solid var(--border)", paddingTop: "24px", marginTop: "8px" }}
+          >
+            If you&apos;re going to do Malta,{" "}
+            <span style={{ color: "var(--blue-light)" }}>do it right.</span>
+          </p>
+        </div>
+      </section>
+
+      {/* ─── WHEN IT MAKES SENSE ─── */}
+      <section className="section-padded">
+        <div className="container">
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "40px", maxWidth: "900px" }}>
+            <div>
+              <p className="label" style={{ marginBottom: "16px", color: "var(--blue-light)" }}>When Malta makes sense</p>
+              <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+                {[
+                  "Access to regulated European or international markets is required",
+                  "Credibility with partners, platforms and regulators is critical",
+                  "The operation needs a structured and scalable framework",
+                  "The business is preparing for long-term growth or institutional exposure",
+                  "Banking and payment stability are core requirements",
+                ].map((item) => (
+                  <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
+                    <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
+                    <p className="body-sm">{item}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div>
+              <p className="label" style={{ marginBottom: "16px", color: "var(--white-40)" }}>When it does not</p>
+              <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+                {[
+                  "Speed to market is the priority",
+                  "Budget constraints limit regulatory and operational investment",
+                  "The operation is still in early-stage validation",
+                  "The focus is short-term deployment or arbitrage",
+                ].map((item) => (
+                  <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
+                    <span style={{ color: "var(--white-40)", marginTop: "2px", flexShrink: 0 }}>—</span>
+                    <p className="body-sm" style={{ color: "var(--white-40)" }}>{item}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── OPERATIONAL IMPLICATIONS ─── */}
+      <section className="section-dark section-padded">
+        <div className="container" style={{ maxWidth: "760px" }}>
+          <p className="label">Operational implications</p>
+          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+            This is not just a license.{" "}
+            <span style={{ color: "var(--blue-light)" }}>It&apos;s a full operational framework.</span>
+          </h2>
+          <p className="body-lg" style={{ marginBottom: "24px" }}>
+            Choosing Malta impacts multiple layers of the operation:
+          </p>
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            {[
+              "Corporate structure, governance and local substance requirements",
+              "Compliance infrastructure, reporting obligations and ongoing supervision",
+              "Technical certification, systems audits and platform requirements",
+              "Payment and banking relationships across EU markets",
+              "Key personnel requirements and operational readiness",
+            ].map((item) => (
+              <div key={item} style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
+                <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
+                <p className="body">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── HOW WE OPERATE ─── */}
+      <section className="section-padded">
+        <div className="container">
+          <p className="label">Octus role</p>
+          <h2 className="heading-md" style={{ marginBottom: "12px" }}>
+            From strategy to operational license.
+          </h2>
+          <p className="body" style={{ marginBottom: "40px", maxWidth: "620px", color: "var(--white-60)" }}>
+            Engagements are structured as mandates due to regulatory complexity
+            and execution requirements.
+          </p>
+          <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
+            {[
+              {
+                step: "01",
+                title: "Strategic assessment & jurisdiction fit",
+                body: "We assess the operation, commercial model and regulatory objectives. If Malta isn\u2019t the right fit, we tell you before you invest.",
+              },
+              {
+                step: "02",
+                title: "Licensing pathway & class selection",
+                body: "B2C or B2B. Class 1 through 4. We select the right license class based on the operation, not the easiest one.",
+              },
+              {
+                step: "03",
+                title: "Corporate substance & governance",
+                body: "Malta requires real substance. We structure the local entity, key personnel, governance framework and operational infrastructure.",
+              },
+              {
+                step: "04",
+                title: "Regulatory documentation & submission",
+                body: "Complete MGA application: compliance framework, business plan, financial projections, systems documentation. Coordinated through Octus.",
+              },
+              {
+                step: "05",
+                title: "Compliance infrastructure",
+                body: "AML/KYC, responsible gaming, GDPR/DPO, player protection, built as operational systems with audit trails.",
+              },
+              {
+                step: "06",
+                title: "Banking & payment coordination",
+                body: "Malta-based banking, EU payment processors, multi-currency accounts. Structure aligned with banking requirements from day one.",
+              },
+            ].map((s, i) => (
+              <div
+                key={s.step}
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "48px 1fr",
+                  gap: "24px",
+                  padding: "32px 0",
+                  borderBottom: i < 5 ? "1px solid var(--border)" : "none",
+                  alignItems: "start",
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "var(--font-unigeo), Unigeo64, sans-serif",
+                    fontSize: "11px",
+                    fontWeight: 700,
+                    letterSpacing: "0.1em",
+                    color: "var(--blue-light)",
+                    paddingTop: "4px",
+                  }}
+                >
+                  {s.step}
+                </span>
+                <div>
+                  <h3 className="heading-card" style={{ marginBottom: "8px" }}>{s.title}</h3>
+                  <p className="body">{s.body}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── KEY FACTS ─── */}
+      <section className="section-dark section-padded">
+        <div className="container">
+          <p className="label">Malta at a glance</p>
+          <div className="grid-auto-lg">
+            {[
+              { label: "Gaming regulator", value: "Malta Gaming Authority (MGA)" },
+              { label: "Financial regulator", value: "Malta Financial Services Authority (MFSA)" },
+              { label: "License types", value: "B2C (Class 1-2), B2B (Class 3-4), VFA, EMI" },
+              { label: "Substance", value: "Local key personnel, office, operational infrastructure" },
+              { label: "Banking", value: "Strong EU banking infrastructure — tier-1 access" },
+              { label: "Timeline", value: "6\u201312 months (MGA), 9\u201318 months (MFSA)" },
+            ].map((item) => (
+              <div key={item.label} className="card" style={{ padding: "24px" }}>
+                <p className="label" style={{ marginBottom: "8px", fontSize: "10px" }}>{item.label}</p>
+                <p className="body" style={{ color: "var(--white)" }}>{item.value}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── SELECTED MANDATES ─── */}
+      <section className="section-padded">
+        <div className="container" style={{ maxWidth: "760px" }}>
+          <p className="label">Selected mandates — Malta</p>
+          <h2 className="heading-md" style={{ marginBottom: "32px" }}>
+            Real operations. Real outcomes.
+          </h2>
+          <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
+            {[
+              {
+                title: "B2C operator — full MGA licensing",
+                body: "Complete licensing process from jurisdiction assessment to operational license. Corporate substance, compliance framework and EU banking coordination.",
+              },
+              {
+                title: "Multi-brand group — B2B platform licensing",
+                body: "Class 4 B2B license for platform provider serving multiple brands. Technical compliance, systems documentation and MGA coordination.",
+              },
+              {
+                title: "Cross-jurisdiction — Malta + Curaçao dual structure",
+                body: "Malta for EU markets, Curaçao for non-EU. Unified compliance framework with jurisdiction-specific adaptations and centralized banking.",
+              },
+            ].map((m, i) => (
+              <div key={i} style={{ padding: "24px 0", borderBottom: i < 2 ? "1px solid var(--border)" : "none" }}>
+                <h3 className="heading-card" style={{ marginBottom: "8px", color: "var(--white)" }}>{m.title}</h3>
+                <p className="body" style={{ color: "var(--white-60)" }}>{m.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── COMPARATIVE POSITIONING ─── */}
+      <section className="section-dark section-padded">
+        <div className="container" style={{ maxWidth: "760px" }}>
+          <p className="label">How jurisdictions compare</p>
+          <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "16px" }}>
+            {[
+              { name: "Curaçao", role: "Speed and flexibility for entry-level or mid-market operations" },
+              { name: "Malta", role: "Structured EU framework with scalability and regulatory credibility" },
+              { name: "Isle of Man", role: "Institutional positioning with stronger banking alignment" },
+            ].map((j) => (
+              <div key={j.name} style={{ display: "grid", gridTemplateColumns: "120px 1fr", gap: "16px", padding: "12px 0", borderBottom: "1px solid var(--border)" }}>
+                <span className="heading-card" style={{ fontSize: "13px", color: j.name === "Malta" ? "var(--blue-light)" : "var(--white-40)" }}>{j.name}</span>
+                <p className="body-sm" style={{ color: "var(--white-60)" }}>{j.role}</p>
+              </div>
+            ))}
+          </div>
+          <p className="body-sm" style={{ color: "var(--white-25)", marginTop: "20px", fontStyle: "italic" }}>
+            The right choice depends on business model, capital structure and long-term objectives.
+          </p>
+        </div>
+      </section>
+
+      {/* ─── CROSS-LINKS ─── */}
+      <section className="section-padded">
+        <div className="container">
+          <p className="label">Related</p>
+          <div className="grid-3">
+            {[
+              { title: "Curaçao Licensing", desc: "Structured entry framework for mid-market operations.", href: "/jurisdictions/curacao" },
+              { title: "Full Licensing Process", desc: "End-to-end licensing execution.", href: "/solutions/regulatory/igaming-licensing" },
+              { title: "Compliance & Risk", desc: "The framework that supports your license.", href: "/compliance" },
+            ].map((r) => (
+              <Link key={r.title} href={r.href} className="card-grid" style={{ padding: "28px" }}>
+                <h3 className="heading-card" style={{ marginBottom: "8px" }}>{r.title}</h3>
+                <p className="body-sm" style={{ marginBottom: "12px" }}>{r.desc}</p>
+                <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Learn more →</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── CTA FINAL ─── */}
+      <section className="cta-block">
+        <div className="cta-block__bg" />
+        <div className="cta-block__inner">
+          <p className="body" style={{ color: "var(--white-40)", marginBottom: "16px" }}>
+            Malta is a strategic licensing decision with long-term implications.
+          </p>
+          <h2 className="heading-lg cta-block__title">
+            A structured assessment is required{" "}
+            <span style={{ color: "var(--blue-light)" }}>before proceeding.</span>
+          </h2>
+          <Link href="/contact" className="btn-primary btn-primary-lg">
+            Request strategic assessment →
+          </Link>
+          <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
+            We respond within 24 hours.
+          </p>
+        </div>
+      </section>
+
+    </main>
+  );
+}
