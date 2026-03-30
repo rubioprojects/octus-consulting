@@ -4,7 +4,6 @@ export const metadata = {
   title: "Compliance & Risk — Octus Consulting",
   description:
     "Compliance structured to operate continuously — not just pass an audit. Octus designs, implements and coordinates compliance operations across regulatory, banking and risk environments.",
-  robots: { index: false, follow: false },
 };
 
 export default function CompliancePage() {

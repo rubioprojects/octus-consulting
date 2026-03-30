@@ -4,7 +4,6 @@ export const metadata = {
   title: "Legal & Structural Architecture — Octus Consulting",
   description:
     "Legal architecture is not documentation. It is the structural backbone behind regulated operations — contracts, corporate design, cross-border setups and governance that hold under real conditions.",
-  robots: { index: false, follow: false },
 };
 
 export default function LegalArchitecturePage() {

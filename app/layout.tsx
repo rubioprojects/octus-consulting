@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: "%s — Octus Consulting",
   },
   description:
-    "We structure and operate regulated businesses across jurisdictions. Licensing, compliance, corporate architecture and operational execution for complex international markets.",
+    "Regulated operations don't fail randomly. They fail structurally. Octus identifies what is broken — and fixes it.",
   metadataBase: new URL("https://octusconsulting.com"),
   icons: {
     icon: "/favicon.ico",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Octus Consulting — Regulatory & Operational Structuring",
-    description: "We structure and operate regulated businesses across jurisdictions. Licensing, compliance, corporate architecture and operational execution for complex international markets.",
+    description: "Regulated operations don't fail randomly. They fail structurally. Octus identifies what is broken — and fixes it.",
     url: "https://octusconsulting.com",
     siteName: "Octus Consulting",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Octus Consulting" }],
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Octus Consulting",
-    description: "We structure and operate regulated businesses across jurisdictions.",
+    description: "Regulated operations don't fail randomly. They fail structurally.",
     images: ["/og-image.png"],
   },
 };
@@ -64,7 +64,7 @@ export default function RootLayout({
 
         {/* ─── WHATSAPP FLOATING CTA ─── */}
         <a
-          href="https://wa.me/5511974273000?text=Hello%2C%20I%27d%20like%20an%20initial%20strategic%20assessment%20regarding%20a%20regulated%20or%20cross-border%20operation."
+          href="https://wa.me/5511974273000?text=Hello%2C%20I%27d%20like%20to%20start%20a%20diagnostic%20with%20Octus%20regarding%20a%20regulated%20operation."
           target="_blank"
           rel="noopener noreferrer"
           className="wa-float"
@@ -103,16 +103,16 @@ export default function RootLayout({
             </div>
 
             <div>
-              <p className="footer-col-title">Explore</p>
+              <p className="footer-col-title">Services</p>
               <ul className="footer-list">
                 {[
-                  { label: "Markets", href: "/markets" },
-                  { label: "Jurisdictions", href: "/jurisdictions" },
-                  { label: "Solutions", href: "/solutions" },
-                  { label: "About", href: "/about" },
-                  { label: "Team", href: "/team" },
-                  { label: "Insights", href: "/insights" },
-                  { label: "Careers", href: "/careers" },
+                  { label: "Regulatory Structuring", href: "/regulatory" },
+                  { label: "Compliance & Risk", href: "/compliance" },
+                  { label: "Legal Architecture", href: "/legal-architecture" },
+                  { label: "Corporate Structuring", href: "/corporate" },
+                  { label: "Ownership & UBO", href: "/private-clients" },
+                  { label: "Audit & Readiness", href: "/audit" },
+                  { label: "International Hub", href: "/international-hub" },
                 ].map((l) => (
                   <li key={l.href}>
                     <a href={l.href} className="footer-link">{l.label}</a>
@@ -122,16 +122,18 @@ export default function RootLayout({
             </div>
 
             <div>
-              <p className="footer-col-title">Solutions</p>
+              <p className="footer-col-title">Company</p>
               <ul className="footer-list">
                 {[
-                  { label: "Regulatory & Licensing", href: "/solutions" },
-                  { label: "Compliance & Risk", href: "/solutions" },
-                  { label: "Corporate Structuring", href: "/solutions" },
-                  { label: "Operational Implementation", href: "/solutions" },
-                  { label: "Request an assessment", href: "/contact" },
+                  { label: "About", href: "/about" },
+                  { label: "Team", href: "/team" },
+                  { label: "What we do", href: "/what-we-do" },
+                  { label: "Brazil", href: "/brazil" },
+                  { label: "Insights", href: "/insights" },
+                  { label: "Request a diagnostic", href: "/contact" },
+                  { label: "Careers", href: "/careers" },
                 ].map((l) => (
-                  <li key={l.label}>
+                  <li key={l.href}>
                     <a href={l.href} className="footer-link">{l.label}</a>
                   </li>
                 ))}

@@ -3,19 +3,17 @@
 @tailwind utilities;
 
 /* ─── DESIGN TOKENS ─── */
-/* SOL: 3-atmosphere system — deep blue, dark neutral, light neutral */
 :root {
   --black: #0b0b0b;
-  --deep-blue: #0a1628;
-  --off-black: #141414;
-  --card: #1a1a1a;
+  --off-black: #2b2b2b;
+  --card: #2b2b2b;
   --card-hover: #1f1f1f;
   --border: rgba(255, 255, 255, 0.08);
   --border-light: rgba(255, 255, 255, 0.04);
   --blue: #0062de;
   --blue-light: #0074f8;
-  --blue-dim: rgba(0, 98, 222, 0.10);
-  --blue-border: rgba(0, 98, 222, 0.18);
+  --blue-dim: rgba(0, 98, 222, 0.12);
+  --blue-border: rgba(0, 98, 222, 0.20);
   --white: #fafafa;
   --white-60: rgba(245, 245, 245, 0.6);
   --white-40: rgba(245, 245, 245, 0.4);
@@ -23,6 +21,7 @@
   --white-10: rgba(245, 245, 245, 0.1);
   --white-05: rgba(245, 245, 245, 0.05);
   --accent-primary: #0062de;
+  --deep-blue: #0a1628;
 }
 
 /* ─── BASE ─── */
@@ -54,9 +53,8 @@ body {
   padding: 100px 40px;
 }
 
-/* SOL: alternate dark/blue sections for rhythm */
 .section-dark {
-  background: var(--deep-blue);
+  background: var(--off-black);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   padding: 130px 40px;
@@ -500,54 +498,22 @@ body {
 }
 
 /* ─── HERO BACKGROUNDS ─── */
-/* SOL: hero needs depth and atmosphere, not flat black */
 .hero-gradient {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 60% at 70% 30%, rgba(0, 98, 222, 0.08) 0%, transparent 60%),
-    radial-gradient(ellipse 50% 70% at 10% 80%, rgba(0, 98, 222, 0.05) 0%, transparent 50%),
-    linear-gradient(180deg, var(--deep-blue) 0%, var(--black) 100%);
-}
-
-/* SOL: brand watermark — 5% opacity, corner, never centered */
-.hero-watermark {
-  position: absolute;
-  top: 10%;
-  right: 5%;
-  width: 340px;
-  height: auto;
-  opacity: 0.04;
-  pointer-events: none;
-  user-select: none;
-}
-
-/* SOL: section watermarks for brand depth */
-.section-watermark {
-  position: absolute;
-  width: 280px;
-  height: auto;
-  opacity: 0.03;
-  pointer-events: none;
-  user-select: none;
-}
-.section-watermark--right {
-  top: 15%;
-  right: -40px;
-}
-.section-watermark--left {
-  bottom: 15%;
-  left: -40px;
+    radial-gradient(ellipse 60% 50% at 70% 40%, rgba(37, 99, 235, 0.07) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 60% at 20% 80%, rgba(37, 99, 235, 0.04) 0%, transparent 50%);
 }
 
 .hero-grid {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    linear-gradient(var(--border-light) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border-light) 1px, transparent 1px);
   background-size: 60px 60px;
-  mask-image: radial-gradient(ellipse 70% 70% at 50% 40%, black 10%, transparent 80%);
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 20%, transparent 100%);
 }
 
 /* ─── PAGE HERO ─── */
@@ -701,7 +667,7 @@ body {
 }
 
 /* ─── FOOTER ─── */
-.footer { background: var(--deep-blue); border-top: 1px solid var(--border); padding: 70px 40px 36px; }
+.footer { background: var(--off-black); border-top: 1px solid var(--border); padding: 70px 40px 36px; }
 .footer-grid { display: grid; grid-template-columns: 260px 1fr 1fr 1fr; gap: 60px; margin-bottom: 60px; }
 .footer-brand { display: flex; flex-direction: column; gap: 12px; }
 .footer-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
@@ -803,9 +769,8 @@ body {
 /* ─── AUTHORITY STRIP ─── */
 /* SOL: credibility above the fold — don't hide authority */
 .authority-strip {
-  border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-  background: var(--deep-blue);
+  background: rgba(0, 98, 222, 0.04);
 }
 .authority-strip__inner {
   max-width: 1140px;
@@ -813,25 +778,23 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-  padding: 28px 40px;
+  gap: 32px;
+  padding: 20px 40px;
   flex-wrap: wrap;
 }
 .authority-strip__item {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--white-40);
   letter-spacing: 0.02em;
 }
 .authority-strip__item strong {
   color: var(--white);
-  font-weight: 700;
-  font-size: 18px;
-  margin-right: 4px;
+  font-weight: 600;
 }
 .authority-strip__sep {
   width: 1px;
-  height: 20px;
-  background: var(--white-10);
+  height: 14px;
+  background: var(--border);
   flex-shrink: 0;
 }
 
@@ -855,17 +818,6 @@ body {
 .why-fail-wrap { padding: 0 40px 100px; }
 .why-fail-title { margin-bottom: 40px; }
 .compare-label { margin-bottom: 16px; color: var(--white-25) !important; }
-
-/* ─── MARKETS + JURISDICTIONS (HOME) ─── */
-/* SOL: client-facing architecture, not internal departments */
-.market-card { text-decoration: none; display: block; }
-.market-card:hover { border-color: rgba(0, 116, 248, 0.2); }
-.juris-card { text-decoration: none; display: block; }
-.juris-card:hover { border-color: rgba(0, 116, 248, 0.2); }
-.juris-featured-grid { gap: 20px; }
-@media (max-width: 768px) {
-  .juris-featured-grid { grid-template-columns: 1fr !important; }
-}
 
 /* ─── LEAD CONTRACTOR ─── */
 /* SOL: most important differentiator needs visual treatment */
@@ -1024,92 +976,6 @@ body {
 .post-body li { font-size: 15px; color: var(--white-60); line-height: 1.7; font-weight: 300; }
 .post-body hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
 
-/* ─── TEAM ─── */
-/* SOL: circular photos, B&W filter, consistent sizing, focused on face */
-.team-leader-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-}
-.team-leader-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 24px;
-  padding: 32px;
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  transition: border-color 0.2s;
-}
-.team-leader-card:hover { border-color: rgba(0, 116, 248, 0.2); }
-.team-photo--lg {
-  width: 120px;
-  height: 120px;
-  flex-shrink: 0;
-}
-.team-card {
-  display: flex;
-  flex-direction: column;
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 36px 30px;
-  transition: border-color 0.2s;
-}
-.team-card:hover { border-color: rgba(0, 116, 248, 0.2); }
-.team-photo {
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-bottom: 24px;
-  border: 2px solid var(--border);
-  flex-shrink: 0;
-}
-.team-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 15%;
-  filter: grayscale(100%) contrast(1.1) brightness(1.05);
-  transition: filter 0.3s, transform 0.3s;
-}
-.team-card:hover .team-photo img,
-.team-leader-card:hover .team-photo img {
-  filter: grayscale(20%) contrast(1.02) brightness(1.05);
-  transform: scale(1.02);
-}
-.team-name {
-  font-family: var(--font-unigeo), Unigeo64, sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  color: var(--white);
-  letter-spacing: -0.02em;
-  margin-bottom: 6px;
-}
-.team-role {
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--blue-light);
-  margin-bottom: 16px;
-}
-.team-linkedin {
-  display: inline-block;
-  margin-top: 16px;
-  font-size: 12px;
-  color: var(--white-25);
-  transition: color 0.2s;
-}
-.team-card:hover .team-linkedin,
-.team-leader-card:hover .team-linkedin { color: var(--blue-light); }
-@media (max-width: 768px) {
-  .team-leader-grid { grid-template-columns: 1fr; gap: 20px; }
-  .team-leader-card { flex-direction: column; gap: 16px; }
-  .team-photo--lg { width: 96px; height: 96px; }
-}
-
 /* ─── ABOUT ─── */
 .about-headline { margin-top: 16px; margin-bottom: 24px; max-width: 800px; }
 .about-sub { max-width: 680px; }
@@ -1162,37 +1028,33 @@ body {
 .wwd-closing-body { max-width: 680px; margin: 0 auto 40px; }
 .dash-list-item { display: flex; gap: 8px; font-size: 13px; color: var(--white-60); margin-bottom: 4px; }
 
-/* ─── CAREERS ─── */
-.careers-photo {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 40px;
-  overflow: hidden;
-}
-.careers-photo img {
-  width: 100%;
-  height: auto;
-  max-height: 380px;
-  object-fit: cover;
-  object-position: center 25%;
-  border-radius: 16px;
-  filter: grayscale(60%) contrast(1.05) brightness(0.95);
-  border: 1px solid var(--border);
+/* ─── SIMPLE PAGES ─── */
+.simple-page-title { margin-top: 68px; margin-bottom: 24px; }
+.simple-page-body { max-width: 600px; margin-bottom: 16px; }
+.simple-page-contact { color: var(--white-40); }
+.simple-page-link { color: var(--blue-light); text-decoration: none; }
+
+/* ─── RESPONSIVE ADDITIONS ─── */
+@media (max-width: 1024px) {
+  .wwd-module-row { grid-template-columns: 1fr; gap: 16px; }
 }
 @media (max-width: 768px) {
-  .careers-photo { padding: 0 20px; }
-  .careers-photo img { max-height: 240px; border-radius: 12px; }
+  .insights-section { padding: 40px 20px 80px; }
+  .post-body-section { padding: 40px 20px 80px; }
+  .about-stats-section { padding: 50px 20px; }
+  .wwd-modules-section, .about-juris-strip { padding-left: 20px; padding-right: 20px; }
+  .wwd-industries-grid { grid-template-columns: 1fr; }
 }
 
-/* ─── AUTHORITY + CREDENTIAL BLOCK (unified) ─── */
-/* SOL: hero → authority → credentials must read as single block */
-.authority-block {
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
+/* ═══════════════════════════════════════════════════════════════════
+   V34 MERGE — Credentials, WhatsApp, Contact Grid, Cookie Banner
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ─── CREDENTIALS & SEALS ─── */
 .credential-block {
   padding: 40px 40px 48px;
   background: var(--deep-blue);
+  border-bottom: 1px solid var(--border);
 }
 .credential-block__inner {
   max-width: 1140px;
@@ -1249,7 +1111,6 @@ body {
 }
 
 /* ─── WHATSAPP FLOATING CTA ─── */
-/* SOL: institutional, not consumer green bubble */
 .wa-float {
   position: fixed;
   bottom: 24px;
@@ -1289,7 +1150,7 @@ body {
   .wa-float { padding: 14px; }
 }
 
-/* ─── CONTACT ─── */
+/* ─── CONTACT GRID ─── */
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 420px;
@@ -1345,22 +1206,4 @@ body {
 @media (max-width: 768px) {
   .cookie-banner { padding: 14px 20px; flex-direction: column; gap: 12px; text-align: center; }
   .wa-float { bottom: 80px; }
-}
-
-/* ─── SIMPLE PAGES ─── */
-.simple-page-title { margin-top: 68px; margin-bottom: 24px; }
-.simple-page-body { max-width: 600px; margin-bottom: 16px; }
-.simple-page-contact { color: var(--white-40); }
-.simple-page-link { color: var(--blue-light); text-decoration: none; }
-
-/* ─── RESPONSIVE ADDITIONS ─── */
-@media (max-width: 1024px) {
-  .wwd-module-row { grid-template-columns: 1fr; gap: 16px; }
-}
-@media (max-width: 768px) {
-  .insights-section { padding: 40px 20px 80px; }
-  .post-body-section { padding: 40px 20px 80px; }
-  .about-stats-section { padding: 50px 20px; }
-  .wwd-modules-section, .about-juris-strip { padding-left: 20px; padding-right: 20px; }
-  .wwd-industries-grid { grid-template-columns: 1fr; }
 }
