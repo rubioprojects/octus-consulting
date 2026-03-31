@@ -4,21 +4,15 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 const whatWeDoLinks = [
-  { label: "Regulatory Structuring", href: "/regulatory" },
-  { label: "Compliance & Risk", href: "/compliance" },
-  { label: "Legal & Structural Architecture", href: "/legal-architecture" },
-  { label: "Corporate Structuring", href: "/corporate" },
-  { label: "Ownership & UBO", href: "/private-clients" },
-  { label: "Audit & Readiness", href: "/audit" },
-  { label: "International Hub", href: "/international-hub" },
-  { label: "Team", href: "/team" },
+  { label: "Markets", href: "/markets" },
+  { label: "Jurisdictions", href: "/jurisdictions" },
+  { label: "Solutions", href: "/solutions" },
 ];
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [mobileWwdOpen, setMobileWwdOpen] = useState(false);
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 10);
@@ -55,10 +49,6 @@ export default function Nav() {
             </button>
             {dropdownOpen && (
               <div className="nav-dropdown">
-                <Link href="/what-we-do" className="nav-dropdown-overview" onClick={() => setDropdownOpen(false)}>
-                  Overview →
-                </Link>
-                <div className="nav-dropdown-divider" />
                 {whatWeDoLinks.map((l) => (
                   <Link key={l.href} href={l.href} className="nav-dropdown-item" onClick={() => setDropdownOpen(false)}>
                     {l.label}
@@ -68,10 +58,9 @@ export default function Nav() {
             )}
           </div>
 
-          <Link href="/brazil" className="nav-link">Brazil</Link>
           <Link href="/insights" className="nav-link">Insights</Link>
           <Link href="/contact" className="btn-primary nav-cta">
-            Discuss your operation →
+            Discuss your structure →
           </Link>
         </div>
 
@@ -95,33 +84,14 @@ export default function Nav() {
       {mobileOpen && (
         <div className="nav-mobile-drawer">
           <Link href="/about" className="nav-mobile-link" onClick={() => setMobileOpen(false)}>About</Link>
-
-          <button
-            className="nav-mobile-link"
-            style={{ background: "none", border: "none", cursor: "pointer", textAlign: "left", width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center", color: "var(--white)", fontSize: "15px", padding: "14px 0", borderBottom: "1px solid var(--border-light)" }}
-            onClick={() => setMobileWwdOpen((p) => !p)}
-          >
-            What we do
-            <span style={{ fontSize: "10px", opacity: 0.5 }}>{mobileWwdOpen ? "▲" : "▾"}</span>
-          </button>
-
-          {mobileWwdOpen && (
-            <>
-              <div className="nav-mobile-section-label">Services</div>
-              {whatWeDoLinks.map((l) => (
-                <Link key={l.href} href={l.href} className="nav-mobile-link nav-mobile-indent" onClick={() => setMobileOpen(false)}>
-                  {l.label}
-                </Link>
-              ))}
-            </>
-          )}
-
-          <Link href="/brazil" className="nav-mobile-link" onClick={() => setMobileOpen(false)}>Brazil</Link>
+          <Link href="/markets" className="nav-mobile-link" onClick={() => setMobileOpen(false)}>Markets</Link>
+          <Link href="/jurisdictions" className="nav-mobile-link" onClick={() => setMobileOpen(false)}>Jurisdictions</Link>
+          <Link href="/solutions" className="nav-mobile-link" onClick={() => setMobileOpen(false)}>Solutions</Link>
           <Link href="/insights" className="nav-mobile-link" onClick={() => setMobileOpen(false)}>Insights</Link>
 
           <div className="nav-mobile-cta">
             <Link href="/contact" className="btn-primary nav-mobile-cta-btn" onClick={() => setMobileOpen(false)}>
-              Discuss your operation →
+              Discuss your structure →
             </Link>
           </div>
         </div>
