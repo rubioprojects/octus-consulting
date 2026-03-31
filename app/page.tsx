@@ -44,6 +44,27 @@ const moduleRows = [
   { num: "07", title: "International Hub", href: "/international-hub", featured: [] },
 ];
 
+const testimonials = [
+  {
+    quote:
+      "Octus restructured what three other firms could not. Banking resolved in weeks, after months of failed attempts.",
+    name: "Available on request",
+    sector: "iGaming operator",
+  },
+  {
+    quote:
+      "The diagnostic exposed structural gaps we were about to submit with. Fixing them avoided a failed licensing process.",
+    name: "Available on request",
+    sector: "Fintech founder",
+  },
+  {
+    quote:
+      "We thought we had compliance. We had documentation. Octus built an operational system.",
+    name: "Available on request",
+    sector: "Crypto platform",
+  },
+];
+
 export default function HomePage() {
   return (
     <main>
@@ -386,6 +407,43 @@ export default function HomePage() {
             ].map(([title, body]) => (
               <div key={title} className="home-engagement-row">
                 <p className="body"><strong>{title}</strong> — {body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-dark section-padded">
+        <div className="container">
+          <p className="label">Trusted where structure matters</p>
+          <div className="grid-3">
+            {testimonials.map((item) => (
+              <div
+                key={item.quote}
+                className="card-lg"
+                style={{
+                  padding: "32px",
+                  background: "rgba(11, 15, 22, 0.92)",
+                  border: "1px solid var(--border)",
+                }}
+              >
+                <p
+                  className="body-lg"
+                  style={{
+                    marginBottom: "20px",
+                    fontStyle: "italic",
+                    color: "var(--white)",
+                    lineHeight: 1.7,
+                  }}
+                >
+                  "{item.quote}"
+                </p>
+                <p className="body-sm" style={{ marginBottom: "4px", color: "var(--white)" }}>
+                  {item.name}
+                </p>
+                <p className="body-sm" style={{ color: "var(--white-40)" }}>
+                  {item.sector}
+                </p>
               </div>
             ))}
           </div>

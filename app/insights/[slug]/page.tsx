@@ -22,6 +22,9 @@ export default function PostPage({ params }: { params: { slug: string } }) {
   const date = new Date(post.date).toLocaleDateString("en-GB", {
     day: "numeric", month: "long", year: "numeric",
   });
+  const contentBlocks = post.content
+    .replace(/^###\s+.+\n\n/, "")
+    .split("\n\n");
 
   return (
     <main>
@@ -58,7 +61,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
 
       <section className="section-padded" style={{ padding: "0 40px 130px" }}>
         <div className="container post-body" style={{ maxWidth: "800px" }}>
-          {post.content.split("\n\n").map((para, i) => {
+          {contentBlocks.map((para, i) => {
             if (para.startsWith("**") && para.endsWith("**") && !para.slice(2, -2).includes("\n")) {
               return (
                 <h2 key={i} className="heading-sm" style={{ marginTop: "48px", marginBottom: "16px" }}>
@@ -92,14 +95,48 @@ export default function PostPage({ params }: { params: { slug: string } }) {
           })}
         </div>
 
-        <div className="container" style={{ maxWidth: "800px", marginTop: "64px", paddingTop: "40px", borderTop: "1px solid var(--border)" }}>
-          <p className="body-sm" style={{ color: "var(--white-40)", marginBottom: "16px" }}>
-            Questions about how this affects your operation?
-          </p>
-          <Link href="/contact" className="btn-primary">
-            Discuss your operation →
-          </Link>
-        </div>
+        {(post.related || post.cta) && (
+          <div
+            className="container"
+            style={{
+              maxWidth: "800px",
+              marginTop: "64px",
+              paddingTop: "40px",
+              borderTop: "1px solid var(--border)",
+            }}
+          >
+            {post.related && post.related.length > 0 && (
+              <div style={{ marginBottom: post.cta ? "32px" : "0" }}>
+                <p className="body-sm" style={{ color: "var(--white-40)", marginBottom: "14px" }}>
+                  Related
+                </p>
+                <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
+                  {post.related.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className="chip-juris-link"
+                      style={{ textDecoration: "none" }}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {post.cta && (
+              <>
+                <p className="body-sm" style={{ color: "var(--white-40)", marginBottom: "16px" }}>
+                  {post.cta.label}
+                </p>
+                <Link href={post.cta.href} className="btn-primary">
+                  Request assessment →
+                </Link>
+              </>
+            )}
+          </div>
+        )}
       </section>
     </main>
   );
