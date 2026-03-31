@@ -125,6 +125,12 @@ export default function HoldingDesignPage() {
       <section className="section-dark section-padded">
         <div className="container">
           <p className="label">Related</p>
+          <p className="body-sm" style={{ marginBottom: "20px", color: "var(--white-40)" }}>
+            Where group structures are typically anchored:{" "}
+            <Link href="/jurisdictions/portugal" style={{ color: "var(--blue-light)" }}>Portugal</Link>
+            {" · "}
+            <Link href="/jurisdictions/uae" style={{ color: "var(--blue-light)" }}>UAE</Link>
+          </p>
           <div className="grid-auto-lg">
             {[
               { title: "Offshore Structuring", desc: "Offshore Structuring", href: "/solutions/corporate/offshore-structuring" },

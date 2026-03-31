@@ -193,6 +193,12 @@ export default function FintechLicensingPage() {
       <section className="section-dark section-padded">
         <div className="container">
           <p className="label">Related</p>
+          <p className="body-sm" style={{ marginBottom: "20px", color: "var(--white-40)" }}>
+            Where this is typically structured:{" "}
+            <Link href="/jurisdictions/uae" style={{ color: "var(--blue-light)" }}>UAE</Link>
+            {" · "}
+            <Link href="/jurisdictions/portugal" style={{ color: "var(--blue-light)" }}>Portugal</Link>
+          </p>
           <div className="grid-auto-lg">
             {[
               { title: "iGaming Licensing", desc: "Same structural logic, different regulatory framework", href: "/solutions/regulatory/igaming-licensing" },

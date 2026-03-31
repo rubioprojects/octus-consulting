@@ -175,6 +175,12 @@ export default function BankingPaymentsPage() {
       <section className="section-padded">
         <div className="container">
           <p className="label">Related</p>
+          <p className="body-sm" style={{ marginBottom: "20px", color: "var(--white-40)" }}>
+            Where banking becomes the constraint:{" "}
+            <Link href="/jurisdictions/uae" style={{ color: "var(--blue-light)" }}>UAE</Link>
+            {" · "}
+            <Link href="/jurisdictions/anjouan" style={{ color: "var(--blue-light)" }}>Anjouan</Link>
+          </p>
           <div className="grid-auto-lg">
             {[
               { title: "iGaming Licensing", desc: "Banking integral to licensing", href: "/solutions/regulatory/igaming-licensing" },

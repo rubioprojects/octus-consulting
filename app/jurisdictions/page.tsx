@@ -53,7 +53,7 @@ export default function JurisdictionsPage() {
           <div style={{ display: "flex", flexDirection: "column", gap: "0", marginTop: "32px" }}>
             {[
               { tier: "Institutional", focus: "Credibility, banking alignment, long-term positioning", examples: "Isle of Man · Malta", profile: "Established operators, B2B providers, institutional growth" },
-              { tier: "Structured", focus: "Operational balance, regulatory framework, scalability", examples: "Curaçao · Brazil", profile: "Growing operators, mid-market, regulated market entry" },
+              { tier: "Structured", focus: "Operational balance, regulatory framework, scalability", examples: "Curaçao · Brazil · Portugal · UAE", profile: "Growing operators, mid-market, regulated market entry" },
               { tier: "Tactical", focus: "Speed, flexibility, transitional entry", examples: "Anjouan", profile: "Early-stage or fast-moving operations" },
             ].map((t, i) => (
               <div key={t.tier} style={{ display: "grid", gridTemplateColumns: "120px 1fr", gap: "24px", padding: "24px 0", borderBottom: i < 2 ? "1px solid var(--border)" : "none", alignItems: "start" }}>
@@ -104,6 +104,13 @@ export default function JurisdictionsPage() {
                 desc: "B2C and B2B licensing. Tier-1 European jurisdiction with full regulatory and banking infrastructure.",
                 href: "/jurisdictions/malta",
               },
+              {
+                name: "Isle of Man",
+                regulator: "GSC",
+                sectors: "iGaming, B2B, Tier-1",
+                desc: "Institutional licensing framework for operators and suppliers needing stronger banking alignment and long-term credibility.",
+                href: "/jurisdictions/isle-of-man",
+              },
             ].map((j) => (
               <Link key={j.name} href={j.href} className="card-grid" style={{ padding: "28px" }}>
                 <h3 className="heading-card" style={{ marginBottom: "4px" }}>{j.name}</h3>
@@ -151,10 +158,12 @@ export default function JurisdictionsPage() {
               {
                 name: "UAE",
                 desc: "Emerging regulatory hub for crypto and fintech. ADGM, DFSA and VARA frameworks with growing international recognition.",
+                href: "/jurisdictions/uae",
               },
               {
                 name: "Portugal",
                 desc: "SRIJ-regulated iGaming market with local licensing requirements and EU market access.",
+                href: "/jurisdictions/portugal",
               },
               {
                 name: "Cyprus",
@@ -190,14 +199,15 @@ export default function JurisdictionsPage() {
             speed, flexibility or transitional strategies are prioritized over
             institutional positioning.
           </p>
-          <div className="card" style={{ padding: "28px" }}>
+          <Link href="/jurisdictions/anjouan" className="card-grid" style={{ padding: "28px" }}>
             <h3 className="heading-card" style={{ marginBottom: "8px" }}>Anjouan</h3>
-            <p className="body-sm" style={{ color: "var(--white-60)" }}>
+            <p className="body-sm" style={{ color: "var(--white-60)", marginBottom: "12px" }}>
               Alternative licensing framework used in specific scenarios
               requiring speed and flexibility, often as a transitional solution
               where regulatory flexibility outweighs institutional positioning.
             </p>
-          </div>
+            <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Learn more →</span>
+          </Link>
         </div>
       </section>
 

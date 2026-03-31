@@ -305,8 +305,9 @@ export default function HomePage() {
                   <Link href="/jurisdictions/malta" className="chip-juris chip-juris-link">Malta (MGA)</Link>
                   <span className="chip-juris">Cyprus</span>
                   <span className="chip-juris">BVI</span>
-                  <span className="chip-juris">Portugal</span>
+                  <Link href="/jurisdictions/portugal" className="chip-juris chip-juris-link">Portugal</Link>
                   <Link href="/jurisdictions/curacao" className="chip-juris chip-juris-link">Curaçao (GCB)</Link>
+                  <Link href="/jurisdictions/uae" className="chip-juris chip-juris-link">UAE</Link>
                   <span className="chip-juris">Cayman Islands</span>
                   <span className="chip-juris">Mexico</span>
                   <span className="chip-juris">Panama</span>

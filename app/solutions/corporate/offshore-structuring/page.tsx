@@ -129,6 +129,12 @@ export default function OffshoreStructuringPage() {
       <section className="section-dark section-padded">
         <div className="container">
           <p className="label">Related</p>
+          <p className="body-sm" style={{ marginBottom: "20px", color: "var(--white-40)" }}>
+            Where offshore structures are anchored:{" "}
+            <Link href="/jurisdictions/anjouan" style={{ color: "var(--blue-light)" }}>Anjouan</Link>
+            {" · "}
+            <Link href="/jurisdictions/uae" style={{ color: "var(--blue-light)" }}>UAE</Link>
+          </p>
           <div className="grid-auto-lg">
             {[
               { title: "Company Formation", desc: "Company Formation", href: "/solutions/corporate/company-formation" },
