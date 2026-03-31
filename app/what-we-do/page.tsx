@@ -52,7 +52,7 @@ export default function WhatWeDoPage() {
         <div className="container" style={{ maxWidth: "640px" }}>
           <h2 className="heading-md" style={{ marginBottom: "20px" }}>Not sure where your operation fits?</h2>
           <p className="body-lg" style={{ marginBottom: "32px" }}>Start with a diagnostic. We map the structure before defining the scope.</p>
-          <Link href="/contact" className="btn-primary btn-primary-lg">Request a diagnostic →</Link>
+          <Link href="/diagnostic" className="btn-primary btn-primary-lg">Request a diagnostic →</Link>
         </div>
       </section>
     </main>

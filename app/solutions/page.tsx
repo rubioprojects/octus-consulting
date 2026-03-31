@@ -46,6 +46,9 @@ export default function SolutionsPage() {
                 href: "/regulatory",
                 featured: [
                   { label: "iGaming Licensing", href: "/solutions/regulatory/igaming-licensing" },
+                  { label: "Fintech Licensing", href: "/solutions/regulatory/fintech-licensing" },
+                  { label: "Market Entry", href: "/solutions/regulatory/market-entry" },
+                  { label: "Banking & Payments", href: "/solutions/regulatory/banking-payments" },
                 ],
               },
               {
@@ -58,6 +61,8 @@ export default function SolutionsPage() {
                   { label: "AML & KYC Framework", href: "/solutions/compliance/aml-kyc" },
                   { label: "Compliance-as-a-Service", href: "/solutions/compliance/compliance-as-a-service" },
                   { label: "DPO-as-a-Service", href: "/solutions/compliance/dpo-as-a-service" },
+                  { label: "GLI & Certification Readiness", href: "/solutions/compliance/gli-readiness" },
+                  { label: "Internal Controls & Governance", href: "/solutions/compliance/internal-controls" },
                 ],
               },
               {
@@ -76,6 +81,8 @@ export default function SolutionsPage() {
                 href: "/corporate",
                 featured: [
                   { label: "Company Formation", href: "/solutions/corporate/company-formation" },
+                  { label: "Offshore Structuring", href: "/solutions/corporate/offshore-structuring" },
+                  { label: "Holding Design", href: "/solutions/corporate/holding-design" },
                 ],
               },
               {

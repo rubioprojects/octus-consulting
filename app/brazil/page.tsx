@@ -51,7 +51,7 @@ export default function BrazilPage() {
         <div className="cta-block__bg" />
         <div className="cta-block__inner">
           <h2 className="heading-lg cta-block__title">Structure your Brazil operation.</h2>
-          <Link href="/contact" className="btn-primary btn-primary-lg">Request a diagnostic →</Link>
+          <Link href="/diagnostic" className="btn-primary btn-primary-lg">Request a diagnostic →</Link>
         </div>
       </section>
     </main>

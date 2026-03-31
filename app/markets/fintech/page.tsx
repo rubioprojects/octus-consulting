@@ -190,7 +190,7 @@ export default function MarketsFintechPage() {
           <h2 className="heading-lg cta-block__title">
             Build the structure right. Then move fast.
           </h2>
-          <Link href="/contact" className="btn-primary btn-primary-lg">
+          <Link href="/diagnostic" className="btn-primary btn-primary-lg">
             Start your fintech diagnostic →
           </Link>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>

@@ -1,9 +1,20 @@
 import { NextResponse } from "next/server";
 
-function scoreLead(data: { email: string; company: string; operation: string; jurisdictions: string; stage: string; situation: string }) {
+type DiagnosticPayload = {
+  email: string;
+  company?: string;
+  operation?: string;
+  jurisdictions?: string;
+  stage?: string;
+  situation?: string;
+  mainIssue?: string;
+};
+
+function scoreLead(data: DiagnosticPayload) {
   let score = 0;
   const signals: string[] = [];
-  const text = `${data.company} ${data.operation} ${data.jurisdictions} ${data.stage} ${data.situation}`.toLowerCase();
+  const text = `${data.company || ""} ${data.operation || ""} ${data.jurisdictions || ""} ${data.stage || ""} ${data.situation || ""} ${data.mainIssue || ""}`.toLowerCase();
+  const stage = (data.stage || "").toLowerCase();
 
   // Core sectors
   if (text.includes("igaming") || text.includes("bet") || text.includes("casino") || text.includes("gaming")) { score += 2; signals.push("iGaming"); }
@@ -18,8 +29,13 @@ function scoreLead(data: { email: string; company: string; operation: string; ju
   if (text.includes("banking") || text.includes("bank account")) { score += 2; signals.push("banking"); }
 
   // Maturity
+  if (text.includes("live") || text.includes("scaling")) { score += 3; signals.push("active-stage"); }
+  if (text.includes("idea / pre-incorporation") || text.includes("idea")) { score -= 2; signals.push("early-stage"); }
   if (text.includes("expansion") || text.includes("scale")) { score += 1; signals.push("expansion"); }
   if (text.includes("international") || text.includes("cross-border") || text.includes("multi")) { score += 1; signals.push("international"); }
+
+  if (text.includes("banking / payment access") || text.includes("banking")) { score += 2; signals.push("banking-priority"); }
+  if (text.includes("licensing (new application or restructuring)") || text.includes("licensing")) { score += 2; signals.push("licensing-priority"); }
 
   // Email quality (corporate > generic)
   const genericDomains = ["gmail", "hotmail", "yahoo", "outlook", "icloud", "protonmail", "aol"];
@@ -28,25 +44,36 @@ function scoreLead(data: { email: string; company: string; operation: string; ju
   if (isGeneric) { score -= 1; }
 
   // Company quality
-  if (data.company.length < 3) score -= 1;
+  if ((data.company || "").length > 0 && (data.company || "").length < 3) score -= 1;
 
   // Form completeness
   if (data.operation) score += 1;
   if (data.jurisdictions && data.jurisdictions.length > 3) score += 1;
 
-  const priority = score >= 6 ? "HIGH" : score >= 3 ? "MEDIUM" : "LOW";
+  let priority = score >= 6 ? "HIGH" : score >= 3 ? "MEDIUM" : "LOW";
+
+  // Explicit stage overrides from spec.
+  if (stage.includes("idea")) priority = "LOW";
+  if (stage.includes("live") || stage.includes("scaling")) priority = "HIGH";
+
   return { priority, signals: signals.slice(0, 3) };
 }
 
 export async function POST(req: Request) {
   try {
     const data = await req.json();
-    const { name, email, company, operation, jurisdictions, stage, situation, _honey } = data;
+    const { name, email, company, operation, jurisdictions, stage, situation, mainIssue, context, _honey } = data;
 
     if (_honey) return NextResponse.json({ success: true });
 
-    if (!name || !email || !company || !situation) {
-      return NextResponse.json({ error: "Name, email, company and situation are required." }, { status: 400 });
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!name || !email) {
+      return NextResponse.json({ error: "Name and email are required." }, { status: 400 });
+    }
+
+    if (!emailPattern.test(String(email).trim())) {
+      return NextResponse.json({ error: "Valid email is required." }, { status: 400 });
     }
 
     const apiKey = process.env.RESEND_API_KEY;
@@ -58,9 +85,12 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Form service not configured." }, { status: 500 });
     }
 
-    const { priority, signals } = scoreLead({ email, company, operation, jurisdictions, stage, situation });
+    const { priority, signals } = scoreLead({ email, company, operation, jurisdictions, stage, situation, mainIssue });
     const timestamp = new Date().toISOString().replace("T", " ").slice(0, 19) + " UTC";
-    const subject = `[${priority}] ${company} — Diagnostic Request`;
+    const subjectCompany = company || name;
+    const subjectSector = operation || "General";
+    const subjectIssue = mainIssue || "Assessment";
+    const subject = `[Diagnostic] ${subjectCompany} — ${subjectSector} — ${subjectIssue}`;
 
     if (!apiKey) {
       console.log(`── DEV: ${subject} ──`);
@@ -91,22 +121,28 @@ export async function POST(req: Request) {
   <p style="margin:0 0 4px;font-size:13px;color:#888;">Email</p>
   <p style="margin:0 0 12px;font-size:14px;"><a href="mailto:${email}" style="color:#0062de;">${email}</a></p>
 
-  <p style="margin:0 0 4px;font-size:13px;color:#888;">Company</p>
-  <p style="margin:0 0 12px;font-size:14px;">${company}</p>
+  <p style="margin:0 0 4px;font-size:13px;color:#888;">Priority</p>
+  <p style="margin:0 0 12px;font-size:14px;">${priority}</p>
 
-  <p style="margin:0 0 4px;font-size:13px;color:#888;">Operation</p>
+  <p style="margin:0 0 4px;font-size:13px;color:#888;">Company</p>
+  <p style="margin:0 0 12px;font-size:14px;">${company || "—"}</p>
+
+  <p style="margin:0 0 4px;font-size:13px;color:#888;">Sector</p>
   <p style="margin:0 0 12px;font-size:14px;">${operation || "—"}</p>
 
   <p style="margin:0 0 4px;font-size:13px;color:#888;">Jurisdictions</p>
   <p style="margin:0 0 12px;font-size:14px;">${jurisdictions || "—"}</p>
 
-  <p style="margin:0 0 4px;font-size:13px;color:#888;">Blocked at</p>
+  <p style="margin:0 0 4px;font-size:13px;color:#888;">Stage</p>
   <p style="margin:0 0 20px;font-size:14px;">${stage || "—"}</p>
+
+  <p style="margin:0 0 4px;font-size:13px;color:#888;">Main issue</p>
+  <p style="margin:0 0 20px;font-size:14px;">${mainIssue || "—"}</p>
 
   <hr style="border:none;border-top:1px solid #e5e7eb;margin:20px 0;" />
 
-  <p style="margin:0 0 4px;font-size:13px;color:#888;">Situation</p>
-  <p style="margin:0;font-size:14px;line-height:1.6;white-space:pre-wrap;">${situation}</p>
+  <p style="margin:0 0 4px;font-size:13px;color:#888;">Context</p>
+  <p style="margin:0;font-size:14px;line-height:1.6;white-space:pre-wrap;">${context || situation || "—"}</p>
 
   <p style="margin:32px 0 0;color:#bbb;font-size:11px;">${timestamp} · octusconsulting.com</p>
 

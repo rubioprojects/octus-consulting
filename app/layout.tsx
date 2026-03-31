@@ -130,7 +130,7 @@ export default function RootLayout({
                   { label: "What we do", href: "/what-we-do" },
                   { label: "Brazil", href: "/brazil" },
                   { label: "Insights", href: "/insights" },
-                  { label: "Request a diagnostic", href: "/contact" },
+                  { label: "Request a diagnostic", href: "/diagnostic" },
                   { label: "Careers", href: "/careers" },
                 ].map((l) => (
                   <li key={l.href}>
