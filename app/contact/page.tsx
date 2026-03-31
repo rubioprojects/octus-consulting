@@ -5,22 +5,21 @@ import { useState } from "react";
 
 const inputStyle = {
   width: "100%",
-  background: "var(--black)",
+  background: "#FFFFFF",
   border: "1px solid var(--border)",
-  borderRadius: "6px",
-  padding: "12px 16px",
-  fontSize: "14px",
-  color: "var(--white)",
+  borderRadius: "8px",
+  padding: "14px 16px",
+  fontSize: "15px",
+  color: "var(--text-primary)",
   outline: "none",
 };
 
 const labelStyle = {
   display: "block" as const,
-  fontSize: "11px",
-  fontWeight: 600,
-  letterSpacing: "0.08em",
-  textTransform: "uppercase" as const,
-  color: "var(--white-25)",
+  fontSize: "14px",
+  fontWeight: 500,
+  letterSpacing: "0.01em",
+  color: "var(--text-muted)",
   marginBottom: "8px",
 };
 
@@ -74,7 +73,7 @@ export default function ContactPage() {
       </section>
 
       {/* ─── WHAT HAPPENS NEXT ────────────────────────────────────── */}
-      <section className="section-dark section-padded">
+      <section className="section-padded">
         <div className="container" style={{ maxWidth: "760px" }}>
           <span className="label">What happens after you submit</span>
           <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
@@ -140,7 +139,7 @@ export default function ContactPage() {
             <div style={{ flexGrow: 1 }}>
               <p className="label" style={{ marginBottom: "8px", fontSize: "10px" }}>Direct intake</p>
               <p className="heading-card" style={{ marginBottom: "8px" }}>Prefer direct contact?</p>
-              <p className="body-sm" style={{ color: "var(--white-60)" }}>Talk to Octus on WhatsApp for an initial strategic intake. We usually respond within the same business day.</p>
+              <p className="body-sm">Talk to Octus on WhatsApp for an initial strategic intake. We usually respond within the same business day.</p>
             </div>
             <a
               href="https://wa.me/5511974273000?text=Hello%2C%20I%27d%20like%20to%20start%20a%20diagnostic%20with%20Octus%20regarding%20a%20regulated%20operation."
@@ -182,14 +181,14 @@ export default function ContactPage() {
             <div className="card-lg contact-form-card">
               {status === "success" ? (
                 <div style={{ textAlign: "center", padding: "40px 0" }}>
-                  <p className="heading-sm" style={{ marginBottom: "16px", color: "var(--blue-light)" }}>Request received.</p>
+                  <p className="heading-sm" style={{ marginBottom: "16px", color: "var(--primary-blue)" }}>Request received.</p>
                   <p className="body" style={{ marginBottom: "24px" }}>We will review your situation and respond within 24 hours.</p>
                   <button onClick={() => setStatus("idle")} className="btn-ghost">Submit another request →</button>
                 </div>
               ) : (
                 <>
                   <h3 className="heading-sm" style={{ marginBottom: "8px" }}>Start your diagnostic</h3>
-                  <p className="body-sm" style={{ color: "var(--white-40)", marginBottom: "32px" }}>We respond within 24 hours.</p>
+                  <p className="body-sm" style={{ color: "var(--text-muted)", marginBottom: "32px" }}>We respond within 24 hours.</p>
 
                   <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
                     {/* Honeypot */}
@@ -248,7 +247,7 @@ export default function ContactPage() {
                       className="btn-primary btn-primary-lg"
                       style={{ width: "100%", justifyContent: "center", marginTop: "8px", opacity: status === "sending" ? 0.6 : 1 }}
                     >
-                      {status === "sending" ? "Sending..." : "Send diagnostic request →"}
+                      {status === "sending" ? "Sending..." : "Submit your diagnostic →"}
                     </button>
 
                     {status === "error" && (

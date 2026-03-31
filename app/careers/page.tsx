@@ -15,11 +15,7 @@ export default function CareersPage() {
         <div className="container">
           <span className="label">Careers</span>
           <h1 className="heading-xl sp-headline">
-            Built for people who know
-            <br />
-            <span style={{ color: "var(--white-40)" }}>
-              how regulated operations actually work.
-            </span>
+            Built for people who know how regulated operations actually work.
           </h1>
           <p className="body-lg sp-sub" style={{ maxWidth: "580px" }}>
             Octus operates at the intersection of regulatory structuring,
@@ -29,8 +25,16 @@ export default function CareersPage() {
         </div>
       </section>
 
-      {/* ─── HOW WE WORK ──────────────────────────────────────────── */}
-      <section className="section-dark section-padded">
+      <section className="section-padded" style={{ paddingTop: 0, paddingBottom: "80px" }}>
+        <div className="container" style={{ maxWidth: "1000px" }}>
+          <span className="label">Life at Octus</span>
+          <div className="careers-culture-visual">
+            <img src="/team-group.jpg" alt="Octus team culture" className="careers-culture-image" />
+          </div>
+        </div>
+      </section>
+
+      <section className="section-padded">
         <div className="container" style={{ maxWidth: "760px" }}>
           <span className="label">How we work</span>
           <h2 className="heading-md" style={{ marginBottom: "32px" }}>
@@ -66,10 +70,10 @@ export default function CareersPage() {
                   padding: "16px 20px",
                   background: "var(--card-bg)",
                   border: "1px solid var(--border)",
-                  borderRadius: "8px",
+                  borderRadius: "12px",
                   fontSize: "14px",
                   fontWeight: 500,
-                  color: "var(--white-80)",
+                  color: "var(--text-primary)",
                 }}
               >
                 {item}
@@ -117,7 +121,7 @@ export default function CareersPage() {
       </section>
 
       {/* ─── PROCESS ──────────────────────────────────────────────── */}
-      <section className="section-dark section-padded">
+      <section className="section-padded">
         <div className="container" style={{ maxWidth: "760px" }}>
           <span className="label">Our recruitment process</span>
           <div style={{ display: "flex", flexDirection: "column" }}>

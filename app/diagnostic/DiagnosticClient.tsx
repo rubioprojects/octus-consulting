@@ -5,12 +5,12 @@ import { useMemo, useState } from "react";
 
 const inputStyle = {
   width: "100%",
-  background: "var(--black)",
+  background: "#FFFFFF",
   border: "1px solid var(--border)",
   borderRadius: "10px",
   padding: "14px 16px",
-  fontSize: "14px",
-  color: "var(--white)",
+  fontSize: "15px",
+  color: "var(--text-primary)",
   outline: "none",
 };
 
@@ -142,7 +142,7 @@ export default function DiagnosticClient() {
           <h1 className="heading-xl sp-headline">
             5 questions.
             <br />
-            <span style={{ color: "var(--white-40)" }}>Clear assessment.</span>
+            <span style={{ color: "var(--text-muted)" }}>Clear assessment.</span>
           </h1>
           <p className="body-lg sp-sub" style={{ maxWidth: "620px" }}>
             We evaluate your regulatory exposure, jurisdiction fit and structural readiness before recommending a path.
@@ -150,8 +150,16 @@ export default function DiagnosticClient() {
         </div>
       </section>
 
-      <section className="section-dark section-padded" style={{ paddingTop: "70px" }}>
+      <section className="section-padded" style={{ paddingTop: "70px" }}>
         <div className="container" style={{ maxWidth: "820px" }}>
+          <div style={{ marginBottom: "16px", display: "flex", justifyContent: "space-between", gap: "16px", flexWrap: "wrap" }}>
+            <p className="body-sm" style={{ color: "var(--text-muted)" }}>
+              Step {step} of 5
+            </p>
+            <p className="body-sm" style={{ color: "var(--text-muted)" }}>
+              Designed to qualify structure, exposure and urgency.
+            </p>
+          </div>
           <div style={{ display: "flex", gap: "10px", marginBottom: "32px" }}>
             {[1, 2, 3, 4, 5].map((dot) => (
               <div
@@ -160,7 +168,7 @@ export default function DiagnosticClient() {
                   height: "6px",
                   flex: 1,
                   borderRadius: "999px",
-                  background: dot <= step ? "var(--blue)" : "var(--border)",
+                  background: dot <= step ? "var(--primary-blue)" : "rgba(26, 29, 33, 0.12)",
                 }}
               />
             ))}
@@ -173,6 +181,9 @@ export default function DiagnosticClient() {
                 <h2 className="heading-md" style={{ marginBottom: "28px" }}>
                   What sector does your operation belong to?
                 </h2>
+                <p className="body" style={{ marginBottom: "24px" }}>
+                  We start with sector because regulation, banking appetite and compliance exposure shift materially from one market to another.
+                </p>
                 <div className="grid-2">
                   {sectors.map((item) => (
                     <button
@@ -194,6 +205,9 @@ export default function DiagnosticClient() {
                 <h2 className="heading-md" style={{ marginBottom: "28px" }}>
                   What stage is your operation at?
                 </h2>
+                <p className="body" style={{ marginBottom: "24px" }}>
+                  Stage determines urgency. The structural requirements for an idea, a live operation and a scaling business are not the same.
+                </p>
                 <div style={{ display: "grid", gap: "14px" }}>
                   {stages.map((item) => (
                     <button
@@ -215,6 +229,9 @@ export default function DiagnosticClient() {
                 <h2 className="heading-md" style={{ marginBottom: "28px" }}>
                   Which jurisdictions are relevant to your operation?
                 </h2>
+                <p className="body" style={{ marginBottom: "24px" }}>
+                  Jurisdiction fit affects licensing path, banking viability and supervisory burden. We need to understand where the structure has to hold.
+                </p>
                 <div className="grid-2">
                   {jurisdictionsList.map((item) => (
                     <button
@@ -236,6 +253,9 @@ export default function DiagnosticClient() {
                 <h2 className="heading-md" style={{ marginBottom: "28px" }}>
                   What is the primary challenge?
                 </h2>
+                <p className="body" style={{ marginBottom: "24px" }}>
+                  This tells us where the structure is failing first: licensing, payments, compliance, corporate design or a broader coordination issue.
+                </p>
                 <div style={{ display: "grid", gap: "14px" }}>
                   {issues.map((item) => (
                     <button
@@ -257,6 +277,9 @@ export default function DiagnosticClient() {
                 <h2 className="heading-md" style={{ marginBottom: "28px" }}>
                   How can we reach you?
                 </h2>
+                <p className="body" style={{ marginBottom: "24px" }}>
+                  Final step. We use this to review the situation and decide whether there is a clear mandate path.
+                </p>
 
                 <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", opacity: 0, height: 0, overflow: "hidden" }}>
                   <input
@@ -347,7 +370,7 @@ export default function DiagnosticClient() {
                   disabled={!form.name.trim() || !hasValidEmail || status === "sending"}
                   style={{ opacity: form.name.trim() && hasValidEmail && status !== "sending" ? 1 : 0.5 }}
                 >
-                  {status === "sending" ? "Sending..." : "Request diagnostic →"}
+                      {status === "sending" ? "Sending..." : "Submit your diagnostic →"}
                 </button>
               )}
             </div>
@@ -374,11 +397,11 @@ function optionStyle(selected: boolean) {
   return {
     width: "100%",
     textAlign: "left" as const,
-    background: selected ? "rgba(0, 98, 222, 0.12)" : "var(--card)",
-    border: `1px solid ${selected ? "var(--blue)" : "var(--border)"}`,
+    background: selected ? "rgba(22, 59, 104, 0.08)" : "#FFFFFF",
+    border: `1px solid ${selected ? "var(--primary-blue)" : "var(--border)"}`,
     borderRadius: "12px",
     padding: "18px 20px",
-    color: "var(--white)",
+    color: "var(--text-primary)",
     fontSize: "15px",
     cursor: "pointer",
     transition: "border-color 0.2s, background 0.2s",

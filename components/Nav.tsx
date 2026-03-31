@@ -13,6 +13,7 @@ export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [closeTimer, setCloseTimer] = useState<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 10);
@@ -20,15 +21,31 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", handler);
   }, []);
 
+  useEffect(() => {
+    return () => {
+      if (closeTimer) clearTimeout(closeTimer);
+    };
+  }, [closeTimer]);
+
+  const openDropdown = () => {
+    if (closeTimer) clearTimeout(closeTimer);
+    setDropdownOpen(true);
+  };
+
+  const closeDropdown = () => {
+    const timer = setTimeout(() => setDropdownOpen(false), 200);
+    setCloseTimer(timer);
+  };
+
   return (
     <>
       <nav className={`nav${scrolled ? " nav--scrolled" : ""}`}>
         <Link href="/" className="nav-logo" aria-label="Octus Consulting">
           <img
-            src="/logo-nav.png"
+            src="/logo-nav-light.png"
             alt="Octus Consulting"
-            height={32}
-            style={{ height: "32px", width: "auto", display: "block" }}
+            height={34}
+            style={{ height: "34px", width: "auto", display: "block" }}
           />
         </Link>
 
@@ -37,8 +54,8 @@ export default function Nav() {
 
           <div
             className="nav-dropdown-wrap"
-            onMouseEnter={() => setDropdownOpen(true)}
-            onMouseLeave={() => setDropdownOpen(false)}
+            onMouseEnter={openDropdown}
+            onMouseLeave={closeDropdown}
           >
             <button
               className="nav-link nav-link--arrow"

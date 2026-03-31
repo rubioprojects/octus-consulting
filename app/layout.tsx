@@ -103,6 +103,23 @@ export default function RootLayout({
             </div>
 
             <div>
+              <p className="footer-col-title">Navigation</p>
+              <ul className="footer-list">
+                {[
+                  { label: "About", href: "/about" },
+                  { label: "Markets", href: "/markets" },
+                  { label: "Jurisdictions", href: "/jurisdictions" },
+                  { label: "Solutions", href: "/solutions" },
+                  { label: "Insights", href: "/insights" },
+                ].map((l) => (
+                  <li key={l.href}>
+                    <a href={l.href} className="footer-link">{l.label}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
               <p className="footer-col-title">Services</p>
               <ul className="footer-list">
                 {[
@@ -110,9 +127,7 @@ export default function RootLayout({
                   { label: "Compliance & Risk", href: "/compliance" },
                   { label: "Legal Architecture", href: "/legal-architecture" },
                   { label: "Corporate Structuring", href: "/corporate" },
-                  { label: "Ownership & UBO", href: "/private-clients" },
                   { label: "Audit & Readiness", href: "/audit" },
-                  { label: "International Hub", href: "/international-hub" },
                 ].map((l) => (
                   <li key={l.href}>
                     <a href={l.href} className="footer-link">{l.label}</a>
@@ -122,16 +137,13 @@ export default function RootLayout({
             </div>
 
             <div>
-              <p className="footer-col-title">Company</p>
+              <p className="footer-col-title">Contact</p>
               <ul className="footer-list">
                 {[
-                  { label: "About", href: "/about" },
-                  { label: "Team", href: "/team" },
-                  { label: "What we do", href: "/what-we-do" },
-                  { label: "Brazil", href: "/brazil" },
-                  { label: "Insights", href: "/insights" },
-                  { label: "Request a diagnostic", href: "/diagnostic" },
-                  { label: "Careers", href: "/careers" },
+                  { label: "Discuss your structure", href: "/contact" },
+                  { label: "Run a diagnostic", href: "/diagnostic" },
+                  { label: "info@octusconsulting.com", href: "mailto:info@octusconsulting.com" },
+                  { label: "WhatsApp", href: "https://wa.me/5511974273000" },
                 ].map((l) => (
                   <li key={l.href}>
                     <a href={l.href} className="footer-link">{l.label}</a>
@@ -139,21 +151,19 @@ export default function RootLayout({
                 ))}
               </ul>
             </div>
+          </div>
 
-            <div>
-              <p className="footer-col-title">Legal</p>
-              <ul className="footer-list">
-                {[
-                  { label: "Privacy Policy", href: "/privacy" },
-                  { label: "Terms of Use", href: "/terms" },
-                  { label: "Cookie Policy", href: "/cookies" },
-                  { label: "Compliance Channel", href: "/compliance-channel" },
-                ].map((l) => (
-                  <li key={l.href}>
-                    <a href={l.href} className="footer-link">{l.label}</a>
-                  </li>
-                ))}
-              </ul>
+          <div className="container" style={{ paddingBottom: "28px" }}>
+            <p className="footer-col-title">Legal</p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "12px 20px" }}>
+              {[
+                { label: "Privacy Policy", href: "/privacy" },
+                { label: "Terms of Use", href: "/terms" },
+                { label: "Cookie Policy", href: "/cookies" },
+                { label: "Compliance Channel", href: "/compliance-channel" },
+              ].map((l) => (
+                <a key={l.href} href={l.href} className="footer-link">{l.label}</a>
+              ))}
             </div>
           </div>
 

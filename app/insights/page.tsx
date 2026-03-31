@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getAllPosts, getAllCategories } from "../../lib/posts";
+import { getAllPosts } from "../../lib/posts";
 
 export const metadata = {
   title: "Insights — Octus Consulting",
@@ -8,7 +8,6 @@ export const metadata = {
 
 export default function InsightsPage() {
   const posts = getAllPosts();
-  const categories = getAllCategories();
   const [featured, ...rest] = posts;
 
   const fmt = (d: string) =>
@@ -21,7 +20,7 @@ export default function InsightsPage() {
           <span className="label">Insights</span>
           <h1 className="heading-xl sp-headline">
             Regulatory intelligence.<br />
-            <span style={{ color: "var(--white-40)" }}>From the field.</span>
+            <span style={{ color: "var(--text-muted)" }}>From the field.</span>
           </h1>
           <p className="body-lg sp-sub" style={{ maxWidth: "560px" }}>
             Analysis, legal developments and operational intelligence from the
@@ -66,7 +65,7 @@ export default function InsightsPage() {
       </section>
 
       {/* Post grid */}
-      <section className="section-dark section-padded">
+      <section className="section-padded">
         <div className="container">
           <div className="grid-3">
             {rest.map((post) => (
@@ -109,7 +108,7 @@ export default function InsightsPage() {
             Questions about how a regulatory development affects your operation?
           </h2>
           <Link href="/contact" className="btn-primary btn-primary-lg">
-            Discuss your operation →
+            Discuss your structure →
           </Link>
         </div>
       </section>

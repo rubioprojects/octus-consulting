@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CertificationsBlock from "../components/CertificationsBlock";
 
 export const metadata = {
   title: "Octus Consulting — Regulatory & Operational Structuring",
@@ -342,24 +343,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <div className="credential-block">
-        <div className="credential-block__inner">
-          <div className="credential-primary">
-            <img src="/seals/exin-dpo.png" alt="EXIN Data Protection Officer Certified" className="credential-primary__img" />
-            <p className="credential-primary__label">Certified data protection capability (EXIN)</p>
-          </div>
-          <div className="credential-secondary">
-            <p className="credential-secondary__label">Aligned with regulatory and compliance frameworks</p>
-            <div className="credential-secondary__row">
-              <img src="/seals/gdpr.png" alt="GDPR" className="credential-secondary__img" />
-              <img src="/seals/lgpd.png" alt="LGPD" className="credential-secondary__img" />
-              <img src="/seals/esg.png" alt="ESG" className="credential-secondary__img" />
-              <img src="/seals/diversity.png" alt="Diversity & Inclusion" className="credential-secondary__img" />
-            </div>
-          </div>
-        </div>
-      </div>
-
       <section className="cases-section">
         <div className="container">
           <p className="label cases-eyebrow">Selected mandates.</p>
@@ -413,18 +396,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section-dark section-padded">
+      <section className="section-padded">
         <div className="container">
           <p className="label">Trusted where structure matters</p>
           <div className="grid-3">
             {testimonials.map((item) => (
               <div
                 key={item.quote}
-                className="card-lg"
+                className="proof-card"
                 style={{
                   padding: "32px",
-                  background: "rgba(11, 15, 22, 0.92)",
-                  border: "1px solid var(--border)",
                 }}
               >
                 <p
@@ -432,16 +413,16 @@ export default function HomePage() {
                   style={{
                     marginBottom: "20px",
                     fontStyle: "italic",
-                    color: "var(--white)",
+                    color: "var(--text-primary)",
                     lineHeight: 1.7,
                   }}
                 >
                   "{item.quote}"
                 </p>
-                <p className="body-sm" style={{ marginBottom: "4px", color: "var(--white)" }}>
+                <p className="body-sm" style={{ marginBottom: "4px", color: "var(--text-primary)" }}>
                   {item.name}
                 </p>
-                <p className="body-sm" style={{ color: "var(--white-40)" }}>
+                <p className="body-sm" style={{ color: "var(--text-muted)" }}>
                   {item.sector}
                 </p>
               </div>
@@ -450,7 +431,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section-dark section-padded">
+      <CertificationsBlock />
+
+      <section className="section-padded">
         <div className="container" style={{ maxWidth: "760px" }}>
           <h2 className="heading-md" style={{ marginBottom: "20px" }}>This is not for everyone.</h2>
           <p className="body-lg" style={{ marginBottom: "16px" }}>
