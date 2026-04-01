@@ -1,5 +1,4 @@
 import Link from "next/link";
-import CertificationsBlock from "../components/CertificationsBlock";
 
 export const metadata = {
   title: "Octus Consulting — Regulatory & Operational Structuring",
@@ -75,16 +74,13 @@ export default function HomePage() {
         <div className="hero-inner">
           <span className="tag-blue">Regulated Operations</span>
           <h1 className="heading-xl hero-headline">
-            <span>We design and operate regulatory infrastructure</span>
+            We fix that.
             <br />
-            <span className="hero-headline-dim">for high-risk and regulated businesses.</span>
+            <span className="hero-headline-dim">Structurally.</span>
           </h1>
           <p className="body-lg hero-sub" style={{ maxWidth: "760px", marginBottom: "12px" }}>
             Licensing, compliance and banking don&apos;t fail in isolation.
             They break when the structure behind them does not hold.
-          </p>
-          <p className="body-lg hero-sub" style={{ color: "var(--white)", fontWeight: 500 }}>
-            We fix that. Structurally.
           </p>
           <div className="hero-actions">
             <Link href="/contact" className="btn-primary btn-primary-lg">
@@ -376,6 +372,24 @@ export default function HomePage() {
         </div>
       </section>
 
+      <div className="credential-block">
+        <div className="credential-block__inner">
+          <div className="credential-primary">
+            <img src="/seal-exin-dpo.png" alt="EXIN Data Protection Officer Certified" className="credential-primary__img" />
+            <p className="credential-primary__label">Certified data protection capability (EXIN)</p>
+          </div>
+          <div className="credential-secondary">
+            <p className="credential-secondary__label">Aligned with regulatory and compliance frameworks</p>
+            <div className="credential-secondary__row">
+              <img src="/seal-gdpr.png" alt="GDPR" className="credential-secondary__img" />
+              <img src="/seal-lgpd.png" alt="LGPD" className="credential-secondary__img" />
+              <img src="/seal-esg.png" alt="ESG" className="credential-secondary__img" />
+              <img src="/seal-mulher.png" alt="Women-Led Business Recognition" className="credential-secondary__img" />
+            </div>
+          </div>
+        </div>
+      </div>
+
       <section className="models-outer">
         <div className="container">
           <p className="label">How we work with you</p>
@@ -430,8 +444,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      <CertificationsBlock />
 
       <section className="section-padded">
         <div className="container" style={{ maxWidth: "760px" }}>
