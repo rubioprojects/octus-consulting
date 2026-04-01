@@ -1786,13 +1786,19 @@ main {
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px 32px;
+}
+
+.team-card-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .team-card {
   text-align: center;
   padding: 24px 12px;
+  height: 100%;
 }
 
 .team-card-photo-wrap {
@@ -1885,6 +1891,18 @@ main {
     padding-bottom: 88px;
   }
 
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
   .team-grid {
     grid-template-columns: 1fr;
   }

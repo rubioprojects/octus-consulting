@@ -28,7 +28,7 @@ export default function AboutPage() {
           </p>
           <div style={{ marginTop: "48px" }}>
             <Link href="/contact" className="btn-primary btn-primary-lg">
-              Discuss your operation →
+              Discuss your structure →
             </Link>
           </div>
         </div>
@@ -307,7 +307,7 @@ export default function AboutPage() {
             <br />You need a structure that works.
           </h2>
           <Link href="/contact" className="btn-primary btn-primary-lg">
-            Discuss your operation →
+            Request assessment →
           </Link>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
             Initial diagnostic call. We start by identifying where the

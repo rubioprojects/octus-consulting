@@ -28,7 +28,7 @@ export default function MarketsHighRiskPage() {
           </p>
           <div style={{ marginTop: "32px" }}>
             <Link href="/contact" className="btn-primary btn-primary-lg">
-              Discuss your operational structure →
+              Discuss your structure →
             </Link>
           </div>
         </div>
@@ -235,7 +235,7 @@ export default function MarketsHighRiskPage() {
             <span style={{ color: "var(--blue-light)" }}>Not around it.</span>
           </h2>
           <Link href="/contact" className="btn-primary btn-primary-lg">
-            Discuss your operational structure →
+            Request assessment →
           </Link>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
             We respond within 24 hours.
