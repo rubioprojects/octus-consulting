@@ -1,5 +1,39 @@
 import Link from "next/link";
+import { Fragment } from "react";
 import HomeModulesAccordion from "../components/HomeModulesAccordion";
+import OctusStripSeparatorIcon from "../components/OctusStripSeparatorIcon";
+
+/**
+ * Authority strip copy: aligned with homepage language.
+ * Today the site UI is English-only (`app/layout.tsx` → `lang="en"`).
+ * When the homepage is fully translated to PT, set `homeAuthorityLocale` to `"pt"`.
+ */
+const AUTHORITY_STRIP = {
+  en: {
+    aria: "Core services",
+    items: [
+      "Licensing",
+      "Regulatory Structuring",
+      "Compliance",
+      "Banking & Payments",
+      "Market Entry",
+      "High-Risk Operations",
+    ],
+  },
+  pt: {
+    aria: "Serviços centrais",
+    items: [
+      "Licenciamento",
+      "Estruturação regulatória",
+      "Compliance",
+      "Banking e pagamentos",
+      "Entrada em mercado",
+      "Operações de alto risco",
+    ],
+  },
+} as const;
+
+const homeAuthorityLocale: keyof typeof AUTHORITY_STRIP = "en";
 
 export const metadata = {
   title: "Octus Consulting — Regulatory & Operational Structuring",
@@ -67,6 +101,8 @@ const testimonials = [
 ];
 
 export default function HomePage() {
+  const authority = AUTHORITY_STRIP[homeAuthorityLocale];
+
   return (
     <main>
       <section className="home-hero relative flex min-h-[90vh] items-center overflow-hidden pt-20 surface-dark px-4 sm:px-6 lg:px-8">
@@ -97,6 +133,26 @@ export default function HomePage() {
             >
               Run a regulatory diagnostic →
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section
+        className="w-full border-b border-white/[0.06]"
+        style={{ backgroundColor: "#0F172A" }}
+        aria-label={authority.aria}
+      >
+        {/* min-w-full + w-max: center when it fits; on narrow screens scroll without “cropped center” */}
+        <div className="w-full overflow-x-auto overflow-y-hidden overscroll-x-contain scroll-smooth [-webkit-overflow-scrolling:touch] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <div className="flex h-[52px] min-h-[48px] max-h-[60px] w-max min-w-full items-center justify-center gap-x-3 px-5 font-sans text-[13px] font-medium tracking-wide text-white sm:gap-x-4 sm:px-6 sm:text-sm md:px-8 md:text-[15px]">
+            {authority.items.map((label, i) => (
+              <Fragment key={label}>
+                {i > 0 && (
+                  <OctusStripSeparatorIcon className="h-4 w-4 shrink-0 text-white opacity-70" />
+                )}
+                <span className="whitespace-nowrap">{label}</span>
+              </Fragment>
+            ))}
           </div>
         </div>
       </section>
