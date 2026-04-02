@@ -11,25 +11,25 @@ export default function CompliancePage() {
     <main>
 
       {/* ─── HERO ─────────────────────────────────────────────────── */}
-      <section className="page-hero section-padded">
-        <div className="container">
+      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Compliance & Risk</span>
-          <h1 className="heading-xl sp-headline">
+          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
             When compliance fails,
             <br />
             <span style={{ color: "var(--white-40)" }}>the structure was already broken.</span>
           </h1>
-          <p className="body-lg sp-sub">
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl">
             Most compliance frameworks look correct. They fail when it matters —
             under audit, under regulatory pressure, or when a bank reviews your
             operation.
           </p>
-          <p className="body-lg sp-sub" style={{ marginTop: "16px" }}>
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ marginTop: "16px" }}>
             Octus structures and coordinates compliance frameworks designed to
             hold under real operational conditions.
           </p>
           <div style={{ marginTop: "48px" }}>
-            <Link href="/contact" className="btn-primary btn-primary-lg">
+            <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
               Stabilize your compliance framework →
             </Link>
           </div>
@@ -37,13 +37,13 @@ export default function CompliancePage() {
       </section>
 
       {/* ─── WHERE COMPLIANCE FAILS ───────────────────────────────── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">The real problem</span>
-          <h2 className="heading-md" style={{ marginBottom: "32px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "32px" }}>
             Compliance doesn&apos;t fail because companies don&apos;t try.
             <br />
-            <span style={{ color: "var(--white-40)" }}>
+            <span className="text-muted-foreground">
               It fails because the structure was never built to hold.
             </span>
           </h2>
@@ -63,20 +63,20 @@ export default function CompliancePage() {
             ))}
           </ul>
           <p
-            className="heading-sm"
-            style={{ marginTop: "48px", paddingTop: "32px", borderTop: "1px solid var(--border)", color: "var(--white)" }}
+            className="heading-sm text-foreground"
+            style={{ marginTop: "48px", paddingTop: "32px", borderTop: "1px solid var(--border-solid)" }}
           >
             A compliance framework that passes internal review but fails under
             real pressure is not a framework.{" "}
-            <span style={{ color: "var(--blue-light)" }}>It is a liability.</span>
+            <span className="text-primary">It is a liability.</span>
           </p>
         </div>
       </section>
 
-      <section className="section-blue section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">How we structure and operate</span>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             Compliance is not a project.
             <br />
             <span style={{ color: "var(--blue-light)" }}>It is an operation.</span>
@@ -85,7 +85,7 @@ export default function CompliancePage() {
             Most compliance engagements end when the framework is delivered.
             That is exactly when the real work begins.
           </p>
-          <p className="body" style={{ marginBottom: "20px" }}>
+          <p className="body-text" style={{ marginBottom: "20px" }}>
             Octus structures compliance in four phases — each building on the
             previous and designed to lead to continuous operation:
           </p>
@@ -112,12 +112,12 @@ export default function CompliancePage() {
               Certification as a consequence of an operation that already runs.
             </li>
           </ul>
-          <p className="body">
+          <p className="body-text">
             Compliance doesn&apos;t run in documents. It runs through systems,
             monitoring processes and integrated data flows — coordinated as a
             single operational layer inside the client&apos;s structure.
           </p>
-          <p className="body" style={{ marginTop: "16px", color: "var(--white-40)" }}>
+          <p className="body-text mt-4 text-muted-foreground">
             Onboarding flows, risk logic, monitoring and evidence are built to
             run inside your operation — not to sit in documentation.
           </p>
@@ -125,8 +125,8 @@ export default function CompliancePage() {
       </section>
 
       {/* ─── 3 BUCKETS ────────────────────────────────────────────── */}
-      <section className="sp-what section-padded">
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">What we build and operate</span>
           <h2 className="heading-lg sp-headline">
             Three compliance layers. One operational structure.
@@ -190,9 +190,9 @@ export default function CompliancePage() {
               <p className="label" style={{ marginBottom: "32px" }}>{bucket.bucket}</p>
               <div className="grid-3">
                 {bucket.items.map((item) => (
-                  <div key={item.title} className="card-lg">
-                    <h3 className="heading-card" style={{ marginBottom: "12px" }}>{item.title}</h3>
-                    <p className="body">{item.body}</p>
+                  <div key={item.title} className="bg-background rounded-lg p-6 md:p-8 border border-transparent transition-all duration-300 hover:border-border">
+                    <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>{item.title}</h3>
+                    <p className="body-text">{item.body}</p>
                   </div>
                 ))}
               </div>
@@ -202,10 +202,10 @@ export default function CompliancePage() {
       </section>
 
       {/* ─── REAL SITUATIONS ──────────────────────────────────────── */}
-      <section className="section-dark section-padded">
-        <div className="container">
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Real situations. Real outcomes.</span>
-          <h2 className="heading-md" style={{ marginBottom: "56px" }}>Not theory.</h2>
+          <h2 className="heading-section" style={{ marginBottom: "56px" }}>Not theory.</h2>
           <div className="grid-3">
             {[
               {
@@ -224,10 +224,13 @@ export default function CompliancePage() {
                 body: "KYC and onboarding framework rebuilt from the ground up. New framework passed PSP review in first submission. Integration completed without further escalation.",
               },
             ].map((c) => (
-              <div key={c.tag} className="card-lg" style={{ display: "flex", flexDirection: "column" }}>
-                <span className="case-tag">{c.tag}</span>
-                <h3 className="heading-sm" style={{ margin: "16px 0", whiteSpace: "pre-line" }}>{c.title}</h3>
-                <p className="body">{c.body}</p>
+              <div
+                key={c.tag}
+                className="flex flex-col rounded-lg border border-y border-r border-border/50 border-l-[3px] border-l-primary bg-background p-6 md:p-8"
+              >
+                <span className="mb-4 font-sans text-xs font-medium uppercase tracking-wider text-accent">{c.tag}</span>
+                <h3 className="mb-4 whitespace-pre-line font-sans text-lg font-semibold text-primary">{c.title}</h3>
+                <p className="body-text">{c.body}</p>
               </div>
             ))}
           </div>
@@ -235,10 +238,10 @@ export default function CompliancePage() {
       </section>
 
       {/* ─── INDUSTRIES ───────────────────────────────────────────── */}
-      <section className="section-padded" style={{ padding: "130px 40px" }}>
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Who we work with</span>
-          <h2 className="heading-md" style={{ marginBottom: "48px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "48px" }}>
             Regulated operations where compliance is not optional.
           </h2>
           <div className="grid-auto-lg">
@@ -261,7 +264,7 @@ export default function CompliancePage() {
               },
             ].map((ind) => (
               <div key={ind.name} className="card">
-                <h3 className="heading-card" style={{ marginBottom: "12px" }}>{ind.name}</h3>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>{ind.name}</h3>
                 <p className="body-sm">{ind.desc}</p>
               </div>
             ))}
@@ -269,10 +272,10 @@ export default function CompliancePage() {
         </div>
       </section>
 
-      <section className="section-dark section-padded">
-        <div className="container">
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">How we work with you</span>
-          <h2 className="heading-md" style={{ marginBottom: "12px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "12px" }}>
             Most clients come in through a project.
           </h2>
           <p className="body-lg" style={{ marginBottom: "56px" }}>
@@ -296,15 +299,10 @@ export default function CompliancePage() {
                 body: "GLI, ISO and regulatory audit preparation. Evidence registers, mock audits and remediation. For operations that need to pass formal scrutiny — inside or outside of an ongoing engagement.",
               },
             ].map((m) => (
-              <div key={m.title} className="card-lg">
-                <h3 className="heading-card">{m.title}</h3>
-                <p
-                  className="chip-blue"
-                  style={{ display: "inline-block", margin: "8px 0 16px" }}
-                >
-                  {m.sub}
-                </p>
-                <p className="body">{m.body}</p>
+              <div key={m.title} className="rounded-lg bg-secondary p-6 text-center md:p-8">
+                <h3 className="mb-3 font-sans text-lg font-semibold text-primary">{m.title}</h3>
+                <p className="mb-3 font-sans text-xs text-muted-foreground">{m.sub}</p>
+                <p className="body-text">{m.body}</p>
               </div>
             ))}
           </div>
@@ -317,8 +315,8 @@ export default function CompliancePage() {
 
 
       {/* ─── HOW THE PROCESS WORKS ────────────────────────────── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">How the process works</span>
           <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
             {[
@@ -326,11 +324,11 @@ export default function CompliancePage() {
               { step: "02", title: "Framework design", body: "We structure the controls, flows, ownership and monitoring logic required for the operation to hold under scrutiny." },
               { step: "03", title: "Operational rollout", body: "We coordinate implementation so compliance runs inside the operation — not as a layer of documentation outside it." },
             ].map((s, i) => (
-              <div key={s.step} style={{ display: "grid", gridTemplateColumns: "48px 1fr", gap: "24px", padding: "28px 0", borderBottom: i < 2 ? "1px solid var(--border)" : "none" }}>
+              <div key={s.step} style={{ display: "grid", gridTemplateColumns: "48px 1fr", gap: "24px", padding: "28px 0", borderBottom: i < 2 ? "1px solid var(--border-solid)" : "none" }}>
                 <span style={{ fontFamily: "var(--font-unigeo), Unigeo64, sans-serif", fontSize: "11px", fontWeight: 700, letterSpacing: "0.1em", color: "var(--blue-light)", paddingTop: "4px" }}>{s.step}</span>
                 <div>
-                  <h3 className="heading-card" style={{ marginBottom: "8px" }}>{s.title}</h3>
-                  <p className="body">{s.body}</p>
+                  <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{s.title}</h3>
+                  <p className="body-text">{s.body}</p>
                 </div>
               </div>
             ))}
@@ -339,8 +337,8 @@ export default function CompliancePage() {
       </section>
 
       {/* ─── FAQ ──────────────────────────────────────────────────── */}
-      <section className="section-padded" style={{ padding: "130px 40px" }}>
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">Common questions</span>
           <div style={{ display: "flex", flexDirection: "column" }}>
             {[
@@ -349,9 +347,9 @@ export default function CompliancePage() {
               { q: "Can compliance be structured before licensing is complete?", a: "Yes. In many cases it should be. Waiting too long creates avoidable operational gaps that become visible at the worst possible moment." },
               { q: "Do you act as the compliance team?", a: "Octus structures and coordinates the compliance layer required for the operation, working with the right execution model depending on the scope and jurisdiction." },
             ].map((item, i) => (
-              <div key={i} style={{ padding: "28px 0", borderBottom: "1px solid var(--border)" }}>
-                <h3 className="heading-card" style={{ marginBottom: "12px", color: "var(--white)" }}>{item.q}</h3>
-                <p className="body">{item.a}</p>
+              <div key={i} style={{ padding: "28px 0", borderBottom: "1px solid var(--border-solid)" }}>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>{item.q}</h3>
+                <p className="body-text">{item.a}</p>
               </div>
             ))}
           </div>
@@ -362,13 +360,13 @@ export default function CompliancePage() {
       <section className="cta-block">
         <div className="cta-block__bg" />
         <div className="cta-block__inner">
-          <p className="body" style={{ color: "var(--white-40)", marginBottom: "12px" }}>
+          <p className="body-text" style={{ color: "var(--white-40)", marginBottom: "12px" }}>
             If your compliance framework needs to hold under real pressure —
           </p>
           <h2 className="heading-lg cta-block__title">
             Build compliance that actually operates.
           </h2>
-          <Link href="/contact" className="btn-primary btn-primary-lg">
+          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
             Stabilize your compliance framework →
           </Link>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>

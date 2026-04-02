@@ -6,11 +6,11 @@ export const metadata = {
 export default function ComplianceChannelPage() {
   return (
     <main>
-      <section className="page-hero section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">Compliance</span>
-          <h1 className="heading-xl sp-headline">Compliance Channel</h1>
-          <p className="body-lg sp-sub" style={{ maxWidth: "560px" }}>
+          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">Compliance Channel</h1>
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "560px" }}>
             A confidential channel for reporting compliance concerns, ethical
             issues or potential irregularities related to Octus operations or
             client engagements.
@@ -18,10 +18,10 @@ export default function ComplianceChannelPage() {
         </div>
       </section>
 
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">About this channel</span>
-          <h2 className="heading-md" style={{ margin: "24px 0 20px" }}>
+          <h2 className="heading-section" style={{ margin: "24px 0 20px" }}>
             Independent, confidential and secure.
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
@@ -30,7 +30,7 @@ export default function ComplianceChannelPage() {
             suspected violation of applicable law, international regulation, or
             Octus internal policies, including our Code of Ethics and Conduct.
           </p>
-          <p className="body" style={{ color: "var(--white-60)" }}>
+          <p className="body-text">
             Reports are managed in an independent, secure environment monitored
             by our designated Compliance Officer. Confidentiality and anonymity
             are guaranteed.
@@ -38,8 +38,8 @@ export default function ComplianceChannelPage() {
         </div>
       </section>
 
-      <section className="section-padded" style={{ padding: "80px 40px" }}>
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <div
             style={{
               display: "grid",
@@ -66,7 +66,7 @@ export default function ComplianceChannelPage() {
             ].map((item) => (
               <div
                 key={item.label}
-                className="card-lg"
+                className="bg-background rounded-lg p-6 md:p-8 border border-transparent transition-all duration-300 hover:border-border"
                 style={{ display: "flex", flexDirection: "column" }}
               >
                 <span
@@ -75,7 +75,7 @@ export default function ComplianceChannelPage() {
                 >
                   {item.label}
                 </span>
-                <p className="body-sm" style={{ color: "var(--white-60)", flexGrow: 1, marginBottom: "20px" }}>
+                <p className="body-sm flex-grow mb-5 text-muted-foreground">
                   {item.desc}
                 </p>
                 <a
@@ -103,7 +103,7 @@ export default function ComplianceChannelPage() {
             style={{
               padding: "24px",
               background: "var(--card-bg)",
-              border: "1px solid var(--border)",
+              border: "1px solid var(--border-solid)",
               borderRadius: "10px",
             }}
           >
@@ -117,12 +117,9 @@ export default function ComplianceChannelPage() {
             </p>
           </div>
 
-          <p
-            className="body-sm"
-            style={{ color: "var(--white-25)", marginTop: "32px" }}
-          >
+          <p className="body-sm mt-8 text-muted-foreground">
             This channel is governed by our{" "}
-            <a href="/privacy" style={{ color: "var(--white-40)", textDecoration: "underline" }}>
+            <a href="/privacy" className="text-primary underline">
               Privacy Policy
             </a>{" "}
             and applicable data protection law, including GDPR and LGPD where

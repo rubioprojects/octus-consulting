@@ -8,14 +8,14 @@ export const metadata = {
 export default function BrazilPage() {
   return (
     <main>
-      <section className="page-hero section-padded">
-        <div className="container">
+      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Brazil</span>
-          <h1 className="heading-xl sp-headline">
+          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
             Brazil&apos;s regulated market<br />
             <span style={{ color: "var(--white-40)" }}>requires a different architecture.</span>
           </h1>
-          <p className="body-lg sp-sub" style={{ maxWidth: "600px" }}>
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "600px" }}>
             Brazil is one of the most complex regulated environments in the
             world — with its own licensing framework (SPA/MF), data protection
             regime (LGPD), banking infrastructure and corporate requirements.
@@ -23,12 +23,12 @@ export default function BrazilPage() {
             2019.
           </p>
           <div style={{ marginTop: "48px" }}>
-            <Link href="/contact" className="btn-primary btn-primary-lg">Discuss your Brazil operation →</Link>
+            <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">Discuss your Brazil operation →</Link>
           </div>
         </div>
       </section>
-      <section className="section-dark section-padded">
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">What we structure for Brazil</span>
           <div className="grid-3" style={{ marginTop: "48px" }}>
             {[
@@ -39,9 +39,9 @@ export default function BrazilPage() {
               { title: "Payment & Fintech Access", body: "Payment institution structuring, Bacen coordination and fintech regulatory requirements for operators requiring Brazilian payment infrastructure." },
               { title: "Cross-border Coordination", body: "Alignment between Brazilian operations and international corporate structures — ensuring coherence across jurisdictions." },
             ].map((item) => (
-              <div key={item.title} className="card-lg">
-                <h3 className="heading-card" style={{ marginBottom: "12px" }}>{item.title}</h3>
-                <p className="body">{item.body}</p>
+              <div key={item.title} className="bg-background rounded-lg p-6 md:p-8 border border-transparent transition-all duration-300 hover:border-border">
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>{item.title}</h3>
+                <p className="body-text">{item.body}</p>
               </div>
             ))}
           </div>
@@ -51,7 +51,7 @@ export default function BrazilPage() {
         <div className="cta-block__bg" />
         <div className="cta-block__inner">
           <h2 className="heading-lg cta-block__title">Structure your Brazil operation.</h2>
-          <Link href="/diagnostic" className="btn-primary btn-primary-lg">Request a diagnostic →</Link>
+          <Link href="/diagnostic" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">Request a diagnostic →</Link>
         </div>
       </section>
     </main>

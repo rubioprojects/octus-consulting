@@ -9,30 +9,30 @@ export const metadata = {
 export default function HoldingDesignPage() {
   return (
     <main>
-      <section className="page-hero section-padded">
-        <div className="container">
+      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Solutions · Corporate · Holding Design</span>
-          <h1 className="heading-xl sp-headline">
+          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
             A holding structure is not an org chart.
             <br />
             <span style={{ color: "var(--white-40)" }}>It is risk architecture.</span>
           </h1>
-          <p className="body-lg sp-sub" style={{ maxWidth: "660px" }}>
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "660px" }}>
             For regulated operations, holding design determines how risk is
             contained, how entities relate, and how regulators and banks
             evaluate the group. Built for ownership convenience, it fails under
             institutional scrutiny.
           </p>
           <div style={{ marginTop: "32px" }}>
-            <Link href="/contact" className="btn-primary btn-primary-lg">
+            <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
               Request a structural assessment →
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Problem</p>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {[
@@ -42,15 +42,15 @@ export default function HoldingDesignPage() {
               "What works at one-entity scale breaks at multi-jurisdiction group level.",
             ].map((item) => (
               <div key={item} className="card" style={{ padding: "20px 24px" }}>
-                <p className="body">{item}</p>
+                <p className="body-text">{item}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">What we actually build</p>
           <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
             {[
@@ -61,19 +61,19 @@ export default function HoldingDesignPage() {
               ["Flow of funds", "Treasury management, transfer pricing and payment flows designed for compliance and audit readiness."],
             ].map(([title, body]) => (
               <div key={title}>
-                <h3 className="heading-card" style={{ marginBottom: "8px" }}>{title}</h3>
-                <p className="body">{body}</p>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{title}</h3>
+                <p className="body-text">{body}</p>
               </div>
             ))}
           </div>
-          <p className="body" style={{ marginTop: "24px", color: "var(--white)" }}>
+          <p className="body-text mt-6">
             If the holding structure does not contain risk, it creates it.
           </p>
         </div>
       </section>
 
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Consequence</p>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {[
@@ -84,15 +84,15 @@ export default function HoldingDesignPage() {
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
-                <p className="body">{item}</p>
+                <p className="body-text">{item}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Qualification</p>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginBottom: "28px" }}>
             {[
@@ -103,29 +103,29 @@ export default function HoldingDesignPage() {
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
-                <p className="body">{item}</p>
+                <p className="body-text">{item}</p>
               </div>
             ))}
           </div>
-          <h3 className="heading-card" style={{ marginBottom: "12px" }}>Not relevant if</h3>
+          <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>Not relevant if</h3>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {[
               "Single entity, single jurisdiction, no group complexity.",
               "Looking for incorporation without structural depth.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                <span style={{ color: "var(--white-40)", marginTop: "2px", flexShrink: 0 }}>—</span>
-                <p className="body" style={{ color: "var(--white-40)" }}>{item}</p>
+                <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                <p className="body-text text-muted-foreground">{item}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section-dark section-padded">
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <p className="label">Related</p>
-          <p className="body-sm" style={{ marginBottom: "20px", color: "var(--white-40)" }}>
+          <p className="body-sm text-muted-foreground mb-5">
             Where group structures are typically anchored:{" "}
             <Link href="/jurisdictions/portugal" style={{ color: "var(--blue-light)" }}>Portugal</Link>
             {" · "}
@@ -139,7 +139,7 @@ export default function HoldingDesignPage() {
               { title: "Banking & Payments", desc: "Banking & Payments", href: "/solutions/regulatory/banking-payments" },
             ].map((item) => (
               <Link key={item.href} href={item.href} className="card-grid" style={{ padding: "28px" }}>
-                <h3 className="heading-card" style={{ marginBottom: "8px" }}>{item.title}</h3>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{item.title}</h3>
                 <p className="body-sm" style={{ marginBottom: "12px" }}>{item.desc}</p>
                 <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Learn more →</span>
               </Link>
@@ -154,7 +154,7 @@ export default function HoldingDesignPage() {
           <h2 className="heading-lg cta-block__title">
             Design the group for regulation. Not for convenience.
           </h2>
-          <Link href="/contact" className="btn-primary btn-primary-lg">
+          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
             Request a structural assessment →
           </Link>
         </div>

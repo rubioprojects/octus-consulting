@@ -18,25 +18,25 @@ const services = [
 export default function WhatWeDoPage() {
   return (
     <main>
-      <section className="page-hero section-padded">
-        <div className="container">
+      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">What we do</span>
-          <h1 className="heading-xl sp-headline">
+          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
             Seven operational modules.<br />
             <span style={{ color: "var(--white-40)" }}>One working structure.</span>
           </h1>
-          <p className="body-lg sp-sub" style={{ maxWidth: "560px" }}>
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "560px" }}>
             Octus structures and coordinates regulated operations across seven
             interconnected layers — each one designed to hold under real
             regulatory and operational pressure.
           </p>
         </div>
       </section>
-      <section className="section-padded" style={{ padding: "0 40px 130px" }}>
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           {services.map((s, i) => (
             <Link key={s.href} href={s.href} style={{ textDecoration: "none", display: "block" }}>
-              <div style={{ display: "grid", gridTemplateColumns: "48px 1fr 40px", gap: "32px", alignItems: "center", padding: "32px 0", borderBottom: "1px solid var(--border)", cursor: "pointer" }}>
+              <div style={{ display: "grid", gridTemplateColumns: "48px 1fr 40px", gap: "32px", alignItems: "center", padding: "32px 0", borderBottom: "1px solid var(--border-solid)", cursor: "pointer" }}>
                 <span style={{ fontFamily: "var(--font-unigeo), Unigeo64, sans-serif", fontSize: "11px", fontWeight: 700, letterSpacing: "0.1em", color: "var(--blue-light)" }}>{s.num}</span>
                 <div>
                   <h2 className="heading-sm" style={{ marginBottom: "6px" }}>{s.title}</h2>
@@ -48,11 +48,11 @@ export default function WhatWeDoPage() {
           ))}
         </div>
       </section>
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "640px" }}>
-          <h2 className="heading-md" style={{ marginBottom: "20px" }}>Not sure where your operation fits?</h2>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "640px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "20px" }}>Not sure where your operation fits?</h2>
           <p className="body-lg" style={{ marginBottom: "32px" }}>Start with a diagnostic. We map the structure before defining the scope.</p>
-          <Link href="/diagnostic" className="btn-primary btn-primary-lg">Request a diagnostic →</Link>
+          <Link href="/diagnostic" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">Request a diagnostic →</Link>
         </div>
       </section>
     </main>

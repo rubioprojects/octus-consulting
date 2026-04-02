@@ -100,20 +100,20 @@ const team = [
 export default function TeamPage() {
   return (
     <main>
-      <section className="page-hero section-padded">
-        <div className="container">
+      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Our Team</span>
-          <h1 className="heading-xl sp-headline">
+          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
             People who understand how regulated operations hold together.
           </h1>
-          <p className="body-lg sp-sub" style={{ maxWidth: "720px" }}>
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "720px" }}>
             Octus combines regulatory structuring with operational execution. The team is built around people who work inside complex regulated environments, not around generic advisory roles.
           </p>
         </div>
       </section>
 
-      <section className="section-padded" style={{ paddingTop: 0 }}>
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <div className="team-grid">
             {team.map((member) => (
               member.linkedin ? (
@@ -154,14 +154,14 @@ export default function TeamPage() {
 
       <section className="cta-block">
         <div className="cta-block__bg" />
-        <div className="container" style={{ maxWidth: "760px" }}>
-          <h2 className="heading-md" style={{ marginBottom: "20px" }}>
+        <div className="cta-block__inner">
+          <h2 className="heading-lg cta-block__title" style={{ marginBottom: "20px" }}>
             Work with a team built for regulatory execution.
           </h2>
-          <p className="body-lg" style={{ marginBottom: "32px" }}>
+          <p className="body-large" style={{ marginBottom: "32px" }}>
             We work with operators who need regulatory clarity, operational discipline and structures that survive scrutiny.
           </p>
-          <Link href="/careers" className="btn-primary btn-primary-lg">
+          <Link href="/careers" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
             See careers →
           </Link>
         </div>

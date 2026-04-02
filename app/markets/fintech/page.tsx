@@ -11,26 +11,29 @@ export default function MarketsFintechPage() {
     <main>
 
       {/* ─── HERO ─── */}
-      <section className="page-hero section-padded">
-        <div className="container">
+      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Markets · Fintech & Payments</span>
-          <h1 className="heading-xl sp-headline">
+          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
             Building a fintech is hard.
             <br />
             <span style={{ color: "var(--white-40)" }}>
               Getting it regulated shouldn&apos;t be the part that kills it.
             </span>
           </h1>
-          <p className="body-lg sp-sub" style={{ maxWidth: "620px" }}>
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "620px" }}>
             Payment institutions, EMIs, remittance platforms, all need
             regulatory approval, banking access and compliance frameworks
             that actually work. Most fintech founders discover this too late.
           </p>
           <div style={{ marginTop: "32px", display: "flex", gap: "16px", flexWrap: "wrap" }}>
-            <Link href="/contact" className="btn-primary btn-primary-lg">
+            <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
               Get a structural diagnosis →
             </Link>
-            <Link href="/solutions" className="btn-ghost">
+            <Link
+              href="/solutions"
+              className="inline-flex h-12 items-center justify-center rounded-full border border-white/20 bg-transparent px-10 text-base font-medium text-white/80 transition-colors hover:border-white/40 hover:text-white"
+            >
               See our solutions →
             </Link>
           </div>
@@ -38,9 +41,9 @@ export default function MarketsFintechPage() {
       </section>
 
       {/* ─── PROBLEM ─── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             The fintech regulatory trap.
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
@@ -54,20 +57,20 @@ export default function MarketsFintechPage() {
             The product worked. The structure around it didn&apos;t.
           </p>
           <p
-            className="heading-sm"
-            style={{ color: "var(--white)", borderTop: "1px solid var(--border)", paddingTop: "24px", marginTop: "8px" }}
+            className="heading-sm text-foreground"
+            style={{ borderTop: "1px solid var(--border-solid)", paddingTop: "24px", marginTop: "8px" }}
           >
             Regulation is not the blocker.{" "}
-            <span style={{ color: "var(--blue-light)" }}>Bad structure is.</span>
+            <span className="text-primary">Bad structure is.</span>
           </p>
         </div>
       </section>
 
       {/* ─── WHAT WE DO ─── */}
-      <section className="section-padded">
-        <div className="container">
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <p className="label">What Octus does for fintech operators</p>
-          <h2 className="heading-md" style={{ marginBottom: "40px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "40px" }}>
             Structure that survives regulators and banks.
           </h2>
           <div className="grid-auto-lg">
@@ -98,7 +101,7 @@ export default function MarketsFintechPage() {
               },
             ].map((item) => (
               <div key={item.title} className="card" style={{ padding: "28px" }}>
-                <h3 className="heading-card" style={{ marginBottom: "12px" }}>{item.title}</h3>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>{item.title}</h3>
                 <p className="body-sm">{item.desc}</p>
               </div>
             ))}
@@ -107,13 +110,13 @@ export default function MarketsFintechPage() {
       </section>
 
       {/* ─── SELECTED MANDATES ─── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Selected mandates</p>
-          <h2 className="heading-md" style={{ marginBottom: "32px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "32px" }}>
             Real operations. Real outcomes.
           </h2>
-          <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
+          <div className="grid gap-6 md:grid-cols-1">
             {[
               {
                 title: "Remittance platform — multi-jurisdiction",
@@ -130,15 +133,10 @@ export default function MarketsFintechPage() {
             ].map((m, i) => (
               <div
                 key={i}
-                style={{
-                  padding: "24px 0",
-                  borderBottom: i < 2 ? "1px solid var(--border)" : "none",
-                }}
+                className="flex flex-col rounded-lg border border-y border-r border-border/50 border-l-[3px] border-l-primary bg-background p-6 md:p-8"
               >
-                <h3 className="heading-card" style={{ marginBottom: "8px", color: "var(--white)" }}>
-                  {m.title}
-                </h3>
-                <p className="body" style={{ color: "var(--white-60)" }}>{m.body}</p>
+                <h3 className="mb-4 font-sans text-lg font-semibold text-primary">{m.title}</h3>
+                <p className="body-text">{m.body}</p>
               </div>
             ))}
           </div>
@@ -146,10 +144,10 @@ export default function MarketsFintechPage() {
       </section>
 
       {/* ─── JURISDICTIONS ─── */}
-      <section className="section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Where we operate</p>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             Active fintech jurisdictions.
           </h2>
           <div className="chip-row" style={{ gap: "10px", flexWrap: "wrap" }}>
@@ -161,8 +159,8 @@ export default function MarketsFintechPage() {
       </section>
 
       {/* ─── CROSS-LINKS ─── */}
-      <section className="section-dark section-padded">
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <p className="label">Go deeper</p>
           <div className="grid-3">
             {[
@@ -171,7 +169,7 @@ export default function MarketsFintechPage() {
               { title: "Corporate Structuring", desc: "Entity design for regulated operations.", href: "/corporate" },
             ].map((r) => (
               <Link key={r.title} href={r.href} className="card-grid" style={{ padding: "28px" }}>
-                <h3 className="heading-card" style={{ marginBottom: "8px" }}>{r.title}</h3>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{r.title}</h3>
                 <p className="body-sm" style={{ marginBottom: "12px" }}>{r.desc}</p>
                 <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Learn more →</span>
               </Link>
@@ -184,13 +182,13 @@ export default function MarketsFintechPage() {
       <section className="cta-block">
         <div className="cta-block__bg" />
         <div className="cta-block__inner">
-          <p className="body" style={{ color: "var(--white-40)", marginBottom: "16px" }}>
+          <p className="body-text" style={{ color: "var(--white-40)", marginBottom: "16px" }}>
             Your fintech is only as strong as its regulatory foundation.
           </p>
           <h2 className="heading-lg cta-block__title">
             Build the structure right. Then move fast.
           </h2>
-          <Link href="/diagnostic" className="btn-primary btn-primary-lg">
+          <Link href="/diagnostic" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
             Start your fintech diagnostic →
           </Link>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>

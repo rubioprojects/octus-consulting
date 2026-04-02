@@ -11,17 +11,17 @@ export default function JurisdictionsPage() {
     <main>
 
       {/* ─── HERO ─── */}
-      <section className="page-hero section-padded">
-        <div className="container">
+      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Jurisdictions</span>
-          <h1 className="heading-xl sp-headline">
+          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
             Jurisdictions don&apos;t solve problems.
             <br />
             <span style={{ color: "var(--white-40)" }}>
               Structures do.
             </span>
           </h1>
-          <p className="body-lg sp-sub" style={{ maxWidth: "620px" }}>
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "620px" }}>
             Choosing the right jurisdiction is a strategic decision that impacts
             regulation, banking access, operational flexibility and long-term
             scalability. Octus supports jurisdiction selection based on business
@@ -29,7 +29,7 @@ export default function JurisdictionsPage() {
             preferences.
           </p>
           <div style={{ marginTop: "32px" }}>
-            <Link href="/contact" className="btn-primary btn-primary-lg">
+            <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
               Request a strategic assessment →
             </Link>
           </div>
@@ -37,9 +37,9 @@ export default function JurisdictionsPage() {
       </section>
 
       {/* ─── HOW TO THINK ABOUT JURISDICTIONS ─── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             Jurisdictions are not interchangeable.
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
@@ -56,12 +56,12 @@ export default function JurisdictionsPage() {
               { tier: "Structured", focus: "Operational balance, regulatory framework, scalability", examples: "Curaçao · Brazil · Portugal · UAE", profile: "Growing operators, mid-market, regulated market entry" },
               { tier: "Tactical", focus: "Speed, flexibility, transitional entry", examples: "Anjouan", profile: "Early-stage or fast-moving operations" },
             ].map((t, i) => (
-              <div key={t.tier} style={{ display: "grid", gridTemplateColumns: "120px 1fr", gap: "24px", padding: "24px 0", borderBottom: i < 2 ? "1px solid var(--border)" : "none", alignItems: "start" }}>
-                <span className="heading-card" style={{ fontSize: "13px", color: "var(--blue-light)", paddingTop: "2px" }}>{t.tier}</span>
+              <div key={t.tier} style={{ display: "grid", gridTemplateColumns: "120px 1fr", gap: "24px", padding: "24px 0", borderBottom: i < 2 ? "1px solid var(--border-solid)" : "none", alignItems: "start" }}>
+                <span className="text-lg font-semibold text-primary font-sans" style={{ fontSize: "13px", color: "var(--blue-light)", paddingTop: "2px" }}>{t.tier}</span>
                 <div>
-                  <p className="body" style={{ color: "var(--white)", marginBottom: "4px" }}>{t.focus}</p>
-                  <p className="body-sm" style={{ color: "var(--white-40)", marginBottom: "4px" }}>{t.examples}</p>
-                  <p className="body-sm" style={{ color: "var(--white-25)", fontStyle: "italic" }}>{t.profile}</p>
+                  <p className="body-text mb-1 text-foreground">{t.focus}</p>
+                  <p className="body-sm mb-1 text-muted-foreground">{t.examples}</p>
+                  <p className="body-sm italic text-muted-foreground">{t.profile}</p>
                 </div>
               </div>
             ))}
@@ -70,13 +70,13 @@ export default function JurisdictionsPage() {
       </section>
 
       {/* ─── PRIMARY JURISDICTIONS (pages exist, clickable) ─── */}
-      <section className="section-padded">
-        <div className="container">
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <p className="label">Primary jurisdictions</p>
-          <h2 className="heading-md" style={{ marginBottom: "16px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "16px" }}>
             Active execution, established processes.
           </h2>
-          <p className="body" style={{ marginBottom: "40px", color: "var(--white-60)", maxWidth: "620px" }}>
+          <p className="body-text mb-10 max-w-[620px]">
             Primary jurisdictions represent the core licensing frameworks
             currently supported with active execution, established processes
             and ongoing mandates.
@@ -113,7 +113,7 @@ export default function JurisdictionsPage() {
               },
             ].map((j) => (
               <Link key={j.name} href={j.href} className="card-grid" style={{ padding: "28px" }}>
-                <h3 className="heading-card" style={{ marginBottom: "4px" }}>{j.name}</h3>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "4px" }}>{j.name}</h3>
                 <p className="label" style={{ fontSize: "10px", marginBottom: "12px" }}>{j.regulator}</p>
                 <p className="body-sm" style={{ marginBottom: "12px" }}>{j.desc}</p>
                 <div className="chip-row">
@@ -129,13 +129,13 @@ export default function JurisdictionsPage() {
       </section>
 
       {/* ─── STRATEGIC JURISDICTIONS ─── */}
-      <section className="section-dark section-padded">
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <p className="label">Strategic jurisdictions</p>
-          <h2 className="heading-md" style={{ marginBottom: "16px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "16px" }}>
             Selected frameworks for specific requirements.
           </h2>
-          <p className="body" style={{ marginBottom: "32px", maxWidth: "680px", color: "var(--white-60)" }}>
+          <p className="body-text mb-8 max-w-[680px]">
             Octus supports selected strategic jurisdictions for clients
             requiring higher regulatory positioning or specific market access,
             depending on scale, structure and objectives.
@@ -172,14 +172,14 @@ export default function JurisdictionsPage() {
             ].map((j) =>
               "href" in j && j.href ? (
                 <Link key={j.name} href={j.href} className="card-grid" style={{ padding: "24px" }}>
-                  <h3 className="heading-card" style={{ marginBottom: "8px" }}>{j.name}</h3>
-                  <p className="body-sm" style={{ color: "var(--white-60)", marginBottom: "12px" }}>{j.desc}</p>
+                  <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{j.name}</h3>
+                  <p className="body-sm mb-3 text-muted-foreground">{j.desc}</p>
                   <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Learn more →</span>
                 </Link>
               ) : (
                 <div key={j.name} className="card" style={{ padding: "24px" }}>
-                  <h3 className="heading-card" style={{ marginBottom: "8px" }}>{j.name}</h3>
-                  <p className="body-sm" style={{ color: "var(--white-60)" }}>{j.desc}</p>
+                  <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{j.name}</h3>
+                  <p className="body-sm text-muted-foreground">{j.desc}</p>
                 </div>
               ),
             )}
@@ -188,20 +188,20 @@ export default function JurisdictionsPage() {
       </section>
 
       {/* ─── ALTERNATIVE FRAMEWORKS (Anjouan — separate tier) ─── */}
-      <section className="section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Alternative frameworks</p>
-          <h2 className="heading-md" style={{ marginBottom: "16px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "16px" }}>
             Tactical and transitional options.
           </h2>
-          <p className="body" style={{ marginBottom: "32px", color: "var(--white-60)" }}>
+          <p className="body-text mb-8">
             Alternative frameworks are used selectively in scenarios where
             speed, flexibility or transitional strategies are prioritized over
             institutional positioning.
           </p>
           <Link href="/jurisdictions/anjouan" className="card-grid" style={{ padding: "28px" }}>
-            <h3 className="heading-card" style={{ marginBottom: "8px" }}>Anjouan</h3>
-            <p className="body-sm" style={{ color: "var(--white-60)", marginBottom: "12px" }}>
+            <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>Anjouan</h3>
+            <p className="body-sm mb-3 text-muted-foreground">
               Alternative licensing framework used in specific scenarios
               requiring speed and flexibility, often as a transitional solution
               where regulatory flexibility outweighs institutional positioning.
@@ -212,10 +212,10 @@ export default function JurisdictionsPage() {
       </section>
 
       {/* ─── OCTUS APPROACH ─── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Our approach</p>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             We don&apos;t recommend jurisdictions based on popularity or cost.
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
@@ -223,7 +223,7 @@ export default function JurisdictionsPage() {
             operational structure, payment infrastructure and long-term
             objectives.
           </p>
-          <p className="body">
+          <p className="body-text">
             In many cases, the optimal approach involves a combination of
             jurisdictions rather than a single license. We design the structure
             first, then select the jurisdictions that support it.
@@ -232,8 +232,8 @@ export default function JurisdictionsPage() {
       </section>
 
       {/* ─── CROSS-LINKS ─── */}
-      <section className="section-padded">
-        <div className="container">
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <p className="label">Go deeper</p>
           <div className="grid-3">
             {[
@@ -242,7 +242,7 @@ export default function JurisdictionsPage() {
               { title: "Start a Diagnostic", desc: "Identify what's broken.", href: "/contact" },
             ].map((r) => (
               <Link key={r.title} href={r.href} className="card-grid" style={{ padding: "28px" }}>
-                <h3 className="heading-card" style={{ marginBottom: "8px" }}>{r.title}</h3>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{r.title}</h3>
                 <p className="body-sm" style={{ marginBottom: "12px" }}>{r.desc}</p>
                 <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Explore →</span>
               </Link>
@@ -255,7 +255,7 @@ export default function JurisdictionsPage() {
       <section className="cta-block">
         <div className="cta-block__bg" />
         <div className="cta-block__inner">
-          <p className="body" style={{ color: "var(--white-40)", marginBottom: "16px" }}>
+          <p className="body-text" style={{ color: "var(--white-40)", marginBottom: "16px" }}>
             Selecting the wrong jurisdiction creates long-term operational and
             financial constraints.
           </p>
@@ -263,7 +263,7 @@ export default function JurisdictionsPage() {
             A structured assessment is required{" "}
             <span style={{ color: "var(--blue-light)" }}>before any decision.</span>
           </h2>
-          <Link href="/contact" className="btn-primary btn-primary-lg">
+          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
             Request a strategic assessment →
           </Link>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>

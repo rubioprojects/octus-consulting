@@ -6,7 +6,7 @@ import { useMemo, useState } from "react";
 const inputStyle = {
   width: "100%",
   background: "#FFFFFF",
-  border: "1px solid var(--border)",
+  border: "1px solid var(--border-solid)",
   borderRadius: "10px",
   padding: "14px 16px",
   fontSize: "15px",
@@ -119,13 +119,13 @@ export default function DiagnosticClient() {
     return (
       <main>
         <section className="page-hero section-padded">
-          <div className="container" style={{ maxWidth: "760px" }}>
+          <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
             <span className="label">Diagnostic</span>
             <h1 className="heading-xl sp-headline">Diagnostic submitted.</h1>
             <p className="body-lg sp-sub" style={{ maxWidth: "580px" }}>
               We review every submission individually. Expect a response within 24 hours.
             </p>
-            <Link href="/" className="btn-primary btn-primary-lg">
+            <Link href="/" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
               Return to homepage →
             </Link>
           </div>
@@ -137,7 +137,7 @@ export default function DiagnosticClient() {
   return (
     <main>
       <section className="page-hero section-padded">
-        <div className="container" style={{ maxWidth: "820px" }}>
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "820px" }}>
           <span className="label">Regulatory Diagnostic</span>
           <h1 className="heading-xl sp-headline">
             5 questions.
@@ -151,7 +151,7 @@ export default function DiagnosticClient() {
       </section>
 
       <section className="section-padded" style={{ paddingTop: "70px" }}>
-        <div className="container" style={{ maxWidth: "820px" }}>
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "820px" }}>
           <div style={{ marginBottom: "16px", display: "flex", justifyContent: "space-between", gap: "16px", flexWrap: "wrap" }}>
             <p className="body-sm" style={{ color: "var(--text-muted)" }}>
               Step {step} of 5
@@ -366,7 +366,7 @@ export default function DiagnosticClient() {
                 <button
                   type="button"
                   onClick={submit}
-                  className="btn-primary btn-primary-lg"
+                  className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90"
                   disabled={!form.name.trim() || !hasValidEmail || status === "sending"}
                   style={{ opacity: form.name.trim() && hasValidEmail && status !== "sending" ? 1 : 0.5 }}
                 >
@@ -398,7 +398,7 @@ function optionStyle(selected: boolean) {
     width: "100%",
     textAlign: "left" as const,
     background: selected ? "rgba(22, 59, 104, 0.08)" : "#FFFFFF",
-    border: `1px solid ${selected ? "var(--primary-blue)" : "var(--border)"}`,
+    border: `1px solid ${selected ? "var(--primary-blue)" : "var(--border-solid)"}`,
     borderRadius: "12px",
     padding: "18px 20px",
     color: "var(--text-primary)",

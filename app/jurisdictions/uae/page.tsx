@@ -9,26 +9,26 @@ export const metadata = {
 export default function JurisdictionsUaePage() {
   return (
     <main>
-      <section className="page-hero section-padded">
-        <div className="container">
+      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Jurisdictions · UAE / Dubai</span>
-          <h1 className="heading-xl sp-headline">
+          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
             Most companies fail in the UAE before they even choose the right authority.
           </h1>
-          <p className="body-lg sp-sub" style={{ maxWidth: "620px" }}>
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "620px" }}>
             Not because the UAE is unclear. Because they treat it as a single jurisdiction. It is not.
           </p>
           <div style={{ marginTop: "32px" }}>
-            <Link href="/contact" className="btn-primary btn-primary-lg">
+            <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
               Request a structural assessment →
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             The UAE is not one licensing regime. It is a landscape of overlapping authorities.
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginBottom: "24px" }}>
@@ -45,21 +45,21 @@ export default function JurisdictionsUaePage() {
               </div>
             ))}
           </div>
-          <p className="body">
+          <p className="body-text">
             Each comes with different expectations, different timelines and different levels of scrutiny. Corporate tax at 9% on profits above AED 375,000. Free zone entities may qualify for 0% on qualifying income. No personal income tax.
           </p>
-          <p className="body" style={{ marginTop: "20px" }}>
+          <p className="body-text" style={{ marginTop: "20px" }}>
             Choosing wrong does not delay your operation. It breaks it.
           </p>
         </div>
       </section>
 
-      <section className="section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             What this jurisdiction allows.
           </h2>
-          <p className="body" style={{ marginBottom: "16px", color: "var(--white)" }}>The UAE enables:</p>
+          <p className="body-text mb-4 font-semibold text-primary">The UAE enables:</p>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginBottom: "28px" }}>
             {[
               "Regulated crypto and virtual asset operations (VARA, ADGM FSRA)",
@@ -69,11 +69,11 @@ export default function JurisdictionsUaePage() {
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
-                <p className="body">{item}</p>
+                <p className="body-text">{item}</p>
               </div>
             ))}
           </div>
-          <p className="body" style={{ marginBottom: "16px", color: "var(--white)" }}>But:</p>
+          <p className="body-text mb-4 font-semibold text-primary">But:</p>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {[
               "Not every activity fits every authority",
@@ -82,20 +82,20 @@ export default function JurisdictionsUaePage() {
               "Free zone vs mainland creates operational scope limitations most operators discover too late",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                <span style={{ color: "var(--white-40)", marginTop: "2px", flexShrink: 0 }}>—</span>
-                <p className="body" style={{ color: "var(--white-60)" }}>{item}</p>
+                <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                <p className="body-text text-muted-foreground">{item}</p>
               </div>
             ))}
           </div>
-          <p className="body" style={{ marginTop: "24px" }}>
+          <p className="body-text" style={{ marginTop: "24px" }}>
             A licence in the UAE is not the outcome. A viable structure is.
           </p>
         </div>
       </section>
 
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             What most people get wrong.
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -107,23 +107,23 @@ export default function JurisdictionsUaePage() {
               "They underestimate substance and governance requirements.",
             ].map((item) => (
               <div key={item} className="card" style={{ padding: "20px 24px" }}>
-                <p className="body">{item}</p>
+                <p className="body-text">{item}</p>
               </div>
             ))}
           </div>
-          <p className="body" style={{ marginTop: "24px" }}>
+          <p className="body-text" style={{ marginTop: "24px" }}>
             The result: wrong regulator, misaligned structure, delayed or rejected applications. Or worse: approved but non-operational entities.
           </p>
         </div>
       </section>
 
-      <section className="section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Execution</p>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             What we actually structure.
           </h2>
-          <p className="body" style={{ marginBottom: "28px" }}>
+          <p className="body-text" style={{ marginBottom: "28px" }}>
             We do not set up companies in the UAE. We design regulatory-ready
             operations aligned with the correct authority from day one.
           </p>
@@ -136,19 +136,19 @@ export default function JurisdictionsUaePage() {
               ["Banking and payments strategy", "Designed in parallel, not after approval. Avoiding the most common failure: licensed but unbanked."],
             ].map(([title, body]) => (
               <div key={title}>
-                <h3 className="heading-card" style={{ marginBottom: "8px" }}>{title}</h3>
-                <p className="body">{body}</p>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{title}</h3>
+                <p className="body-text">{body}</p>
               </div>
             ))}
           </div>
-          <p className="body" style={{ marginTop: "24px", color: "var(--white)" }}>
+          <p className="body-text mt-6 text-foreground">
             We structure first. Licensing follows.
           </p>
         </div>
       </section>
 
-      <section className="section-dark section-padded">
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "40px", maxWidth: "900px" }}>
             <div>
               <p className="label" style={{ marginBottom: "16px", color: "var(--blue-light)" }}>Makes sense</p>
@@ -167,7 +167,7 @@ export default function JurisdictionsUaePage() {
               </div>
             </div>
             <div>
-              <p className="label" style={{ marginBottom: "16px", color: "var(--white-40)" }}>Does not</p>
+              <p className="label mb-4 text-muted-foreground">Does not</p>
               <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
                 {[
                   "Looking for a fast or low-cost licence.",
@@ -176,22 +176,22 @@ export default function JurisdictionsUaePage() {
                   "Expect the licence to solve structural problems.",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                    <span style={{ color: "var(--white-40)", marginTop: "2px", flexShrink: 0 }}>—</span>
-                    <p className="body-sm" style={{ color: "var(--white-40)" }}>{item}</p>
+                    <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                    <p className="body-sm text-muted-foreground">{item}</p>
                   </div>
                 ))}
               </div>
             </div>
           </div>
-          <p className="body" style={{ marginTop: "32px" }}>
+          <p className="body-text" style={{ marginTop: "32px" }}>
             The UAE will not compensate for weak structure. It will expose it.
           </p>
         </div>
       </section>
 
-      <section className="section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             What happens if you get this wrong.
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -204,18 +204,18 @@ export default function JurisdictionsUaePage() {
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
-                <p className="body">{item}</p>
+                <p className="body-text">{item}</p>
               </div>
             ))}
           </div>
-          <p className="body" style={{ marginTop: "20px" }}>
+          <p className="body-text" style={{ marginTop: "20px" }}>
             Most of these failures happen before the application is submitted.
           </p>
         </div>
       </section>
 
-      <section className="section-dark section-padded">
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <p className="label">Related</p>
           <div className="grid-auto-lg">
             {[
@@ -225,7 +225,7 @@ export default function JurisdictionsUaePage() {
               { title: "Crypto", desc: "VASP regulation and structural consequences", href: "/markets/crypto" },
             ].map((item) => (
               <Link key={item.href} href={item.href} className="card-grid" style={{ padding: "28px" }}>
-                <h3 className="heading-card" style={{ marginBottom: "8px" }}>{item.title}</h3>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{item.title}</h3>
                 <p className="body-sm" style={{ marginBottom: "12px" }}>{item.desc}</p>
                 <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Learn more →</span>
               </Link>
@@ -240,7 +240,7 @@ export default function JurisdictionsUaePage() {
           <h2 className="heading-lg cta-block__title">
             Design for the right authority. Not for the right postcode.
           </h2>
-          <Link href="/contact" className="btn-primary btn-primary-lg">
+          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
             Request a structural assessment →
           </Link>
           <p className="body-sm" style={{ color: "var(--white-25)", marginTop: "16px" }}>

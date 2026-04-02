@@ -1,4 +1,5 @@
 import Link from "next/link";
+import HomeModulesAccordion from "../components/HomeModulesAccordion";
 
 export const metadata = {
   title: "Octus Consulting — Regulatory & Operational Structuring",
@@ -68,56 +69,122 @@ const testimonials = [
 export default function HomePage() {
   return (
     <main>
-      <section className="hero">
-        <div className="hero-gradient" />
-        <div className="hero-grid" />
-        <div className="hero-inner">
-          <span className="tag-blue">Regulated Operations</span>
-          <h1 className="heading-xl hero-headline">
+      <section className="home-hero relative flex min-h-[90vh] items-center overflow-hidden pt-20 surface-dark px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 mx-auto w-full max-w-3xl">
+          <div className="mb-10 flex items-center gap-2 text-xs font-medium uppercase tracking-[0.2em] text-white/50">
+            <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-accent" aria-hidden />
+            Regulated Operations
+          </div>
+          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem]">
             We fix that.
             <br />
-            <span className="hero-headline-dim">Structurally.</span>
+            <span className="text-white/50 italic">Structurally.</span>
           </h1>
-          <p className="body-lg hero-sub" style={{ maxWidth: "760px", marginBottom: "12px" }}>
+          <p className="mb-12 max-w-xl text-lg leading-relaxed text-white/60">
             Licensing, compliance and banking don&apos;t fail in isolation.
             They break when the structure behind them does not hold.
           </p>
-          <div className="hero-actions">
-            <Link href="/contact" className="btn-primary btn-primary-lg">
+          <div className="flex flex-wrap gap-4">
+            <Link
+              href="/contact"
+              className="inline-flex h-12 items-center justify-center rounded-full bg-white px-10 text-base font-medium tracking-wide text-primary transition-colors hover:bg-white/90"
+            >
               Discuss your structure →
             </Link>
-            <Link href="/diagnostic" className="btn-ghost">
+            <Link
+              href="/diagnostic"
+              className="inline-flex h-12 items-center justify-center rounded-full border border-white/20 bg-transparent px-10 text-base font-medium text-white/80 transition-colors hover:border-white/40 hover:text-white"
+            >
               Run a regulatory diagnostic →
             </Link>
           </div>
         </div>
       </section>
 
-      <div className="authority-strip">
-        <div className="authority-strip__inner">
-          <span className="authority-strip__item"><strong>15+</strong> jurisdictions</span>
-          <span className="authority-strip__sep" />
-          <span className="authority-strip__item">Operating since <strong>2019</strong></span>
-          <span className="authority-strip__sep" />
-          <span className="authority-strip__item"><strong>48h</strong> first response</span>
-          <span className="authority-strip__sep" />
-          <span className="authority-strip__item"><strong>7</strong> operational modules</span>
-        </div>
-      </div>
+      <section className="border-b border-border bg-background py-16 md:py-20">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+          <div className="mb-12 grid grid-cols-2 gap-8 md:grid-cols-4 md:gap-0">
+            <div className="flex flex-col items-center text-center md:border-r md:border-border md:last:border-r-0">
+              <span className="font-heading text-3xl font-bold text-primary md:text-4xl">
+                <strong>15+</strong>
+              </span>
+              <span className="mt-2 font-sans text-sm text-muted-foreground">jurisdictions</span>
+            </div>
+            <div className="flex flex-col items-center text-center md:border-r md:border-border md:last:border-r-0">
+              <span className="font-heading text-3xl font-bold text-primary md:text-4xl">
+                <strong>2019</strong>
+              </span>
+              <span className="mt-2 font-sans text-sm text-muted-foreground">Operating since</span>
+            </div>
+            <div className="flex flex-col items-center text-center md:border-r md:border-border md:last:border-r-0">
+              <span className="font-heading text-3xl font-bold text-primary md:text-4xl">
+                <strong>48h</strong>
+              </span>
+              <span className="mt-2 font-sans text-sm text-muted-foreground">first response</span>
+            </div>
+            <div className="flex flex-col items-center text-center md:border-r md:border-border md:last:border-r-0">
+              <span className="font-heading text-3xl font-bold text-primary md:text-4xl">
+                <strong>7</strong>
+              </span>
+              <span className="mt-2 font-sans text-sm text-muted-foreground">operational modules</span>
+            </div>
+          </div>
 
-      <section className="problem-cards-section">
-        <div className="container">
-          <p className="label">What we fix</p>
-          <h2 className="heading-md problem-cards-title">What we fix.</h2>
-          <div style={{ maxWidth: "760px", marginBottom: "40px" }}>
-            <p className="body-lg" style={{ marginBottom: "18px" }}>
+          <div className="flex flex-col flex-wrap items-center justify-center gap-8 md:flex-row md:gap-12">
+            <div className="flex max-w-md flex-col items-center gap-3 sm:flex-row sm:items-start">
+              <img
+                src="/seal-exin-dpo.png"
+                alt="EXIN Data Protection Officer Certified"
+                className="h-16 w-auto object-contain opacity-80 transition-opacity hover:opacity-100 md:h-20"
+              />
+              <p className="text-center text-sm text-muted-foreground sm:text-left">
+                Certified data protection capability (EXIN)
+              </p>
+            </div>
+            <div className="flex w-full max-w-2xl flex-col items-center gap-4 sm:items-start">
+              <p className="text-center text-xs text-muted-foreground sm:text-left">
+                Aligned with regulatory and compliance frameworks
+              </p>
+              <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8">
+                <img
+                  src="/seal-gdpr.png"
+                  alt="GDPR"
+                  className="h-16 w-auto object-contain opacity-80 transition-opacity hover:opacity-100 md:h-20"
+                />
+                <img
+                  src="/seal-lgpd.png"
+                  alt="LGPD"
+                  className="h-16 w-auto object-contain opacity-80 transition-opacity hover:opacity-100 md:h-20"
+                />
+                <img
+                  src="/seal-esg.png"
+                  alt="ESG"
+                  className="h-16 w-auto object-contain opacity-80 transition-opacity hover:opacity-100 md:h-20"
+                />
+                <img
+                  src="/seal-mulher.png"
+                  alt="Women-Led Business Recognition"
+                  className="h-16 w-auto object-contain opacity-80 transition-opacity hover:opacity-100 md:h-20"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+          <div className="mb-12 max-w-2xl md:mb-16">
+            <p className="section-label mb-4 block">What we fix</p>
+            <h2 className="heading-section mb-6">What we fix.</h2>
+            <p className="body-large mb-4">
               Licences get approved but banking fails. Compliance exists but does not function. Payment providers exit. Growth exposes structural weaknesses.
             </p>
-            <p className="body">
+            <p className="body-text">
               Operations don&apos;t break because of regulation. They break because they are not built to operate under it.
             </p>
           </div>
-          <div className="grid-auto-lg">
+          <div className="grid gap-6 md:grid-cols-2 md:gap-8">
             {[
               {
                 tag: "Licensing",
@@ -140,28 +207,29 @@ export default function HomePage() {
                 desc: "What worked in one market breaks in the next. Corporate design, compliance and banking are not coordinated across borders.",
               },
             ].map((c) => (
-              <div key={c.title} className="card problem-card">
-                <span className="chip-blue" style={{ marginBottom: "16px", display: "inline-block" }}>
+              <div
+                key={c.title}
+                className="rounded-lg border border-transparent bg-background p-6 transition-all duration-300 hover:border-border md:p-8"
+              >
+                <span className="mb-3 block font-sans text-xs font-medium uppercase tracking-wider text-muted-foreground">
                   {c.tag}
                 </span>
-                <h3 className="heading-card problem-card-q">{c.title}</h3>
-                <p className="body problem-card-desc">{c.desc}</p>
+                <h3 className="mb-3 font-sans text-lg font-semibold text-primary">{c.title}</h3>
+                <p className="body-text">{c.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section-blue">
-        <div className="container">
-          <p className="label">How we work</p>
-          <h2 className="heading-md" style={{ marginBottom: "12px" }}>
-            A structural approach to regulated operations.
-          </h2>
-          <p className="body-lg" style={{ marginBottom: "40px", color: "var(--white-60)" }}>
-            This is how we approach regulated operations.
-          </p>
-          <div className="grid-3">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+          <div className="mb-12 max-w-2xl md:mb-16">
+            <p className="section-label mb-4 block">How we work</p>
+            <h2 className="heading-section mb-6">A structural approach to regulated operations.</h2>
+            <p className="body-large">This is how we approach regulated operations.</p>
+          </div>
+          <div className="grid gap-8 md:grid-cols-3">
             {[
               {
                 title: "Structuring",
@@ -189,13 +257,23 @@ export default function HomePage() {
                   { label: "Audit", href: "/audit" },
                 ],
               },
-            ].map((item) => (
-              <div key={item.title} className="card">
-                <h3 className="heading-card" style={{ marginBottom: "12px" }}>{item.title}</h3>
-                <p className="body-sm" style={{ marginBottom: "18px" }}>{item.body}</p>
-                <div style={{ display: "flex", flexWrap: "wrap", gap: "10px 14px" }}>
+            ].map((item, stepIndex) => (
+              <div
+                key={item.title}
+                className="flex flex-col border-border md:border-r md:px-2 md:last:border-r-0"
+              >
+                <div className="font-heading text-4xl font-light text-primary/20">
+                  {String(stepIndex + 1).padStart(2, "0")}
+                </div>
+                <h3 className="mb-3 mt-4 font-sans text-lg font-semibold text-primary">{item.title}</h3>
+                <p className="body-text mb-4">{item.body}</p>
+                <div className="flex flex-wrap gap-x-3 gap-y-2">
                   {item.links.map((link) => (
-                    <Link key={link.href} href={link.href} style={{ color: "var(--blue-light)", fontSize: "12px", textDecoration: "none" }}>
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className="font-sans text-sm text-primary no-underline transition-colors hover:text-primary/80"
+                    >
                       {link.label} →
                     </Link>
                   ))}
@@ -206,21 +284,40 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section-padded" style={{ paddingTop: "90px", paddingBottom: "90px" }}>
-        <div className="container">
-          <p className="label">Industries</p>
-          <h2 className="heading-md" style={{ marginBottom: "32px" }}>Where we operate.</h2>
-          <div className="grid-auto-lg">
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+          <div className="mb-12 max-w-2xl md:mb-16">
+            <p className="section-label mb-4 block">Industries</p>
+            <h2 className="heading-section mb-6">Where we operate.</h2>
+          </div>
+          <div className="grid gap-6 md:grid-cols-2 md:gap-8">
             {[
               ["iGaming & Betting", "Licensing, compliance, banking, post-license operations", "/markets/igaming"],
               ["Fintech & Payments", "EMI licensing, payment infrastructure, cross-border compliance", "/markets/fintech"],
               ["Crypto & Digital Assets", "CASP/VASP licensing, MiCA compliance, banking access", "/markets/crypto"],
               ["High-Risk Operations", "Banking resilience, enhanced compliance, institutional access", "/markets/high-risk"],
             ].map(([title, desc, href]) => (
-              <Link key={title} href={href} className="card-grid" style={{ padding: "28px", textDecoration: "none" }}>
-                <h3 className="heading-card" style={{ marginBottom: "10px" }}>{title}</h3>
-                <p className="body-sm" style={{ marginBottom: "14px" }}>{desc}</p>
-                <span style={{ color: "var(--blue-light)", fontSize: "12px" }}>Explore →</span>
+              <Link
+                key={title}
+                href={href}
+                className="group relative block rounded-lg border border-transparent bg-background p-6 transition-all duration-300 hover:border-border md:p-8"
+              >
+                <svg
+                  className="absolute right-6 top-6 h-5 w-5 shrink-0 text-muted-foreground transition-colors group-hover:text-primary"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  aria-hidden
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+                <h3 className="mb-2 pr-10 font-sans text-lg font-semibold text-primary transition-colors group-hover:text-primary/80">
+                  {title}
+                </h3>
+                <p className="body-text mb-3">{desc}</p>
+                <span className="font-sans text-sm text-primary">Explore →</span>
               </Link>
             ))}
           </div>
@@ -228,7 +325,7 @@ export default function HomePage() {
       </section>
 
       <section className="section-dark section-padded" style={{ paddingTop: "90px", paddingBottom: "90px" }}>
-        <div className="container" style={{ maxWidth: "900px" }}>
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "900px" }}>
           <p className="label">Outcomes</p>
           <h2 className="heading-md" style={{ marginBottom: "32px" }}>What this structure allows.</h2>
           <div className="grid-2" style={{ gap: "20px 40px" }}>
@@ -238,7 +335,7 @@ export default function HomePage() {
               "Scalable operations without structural failure",
               "Reduced dependency on single providers",
             ].map((item) => (
-              <div key={item} style={{ paddingBottom: "16px", borderBottom: "1px solid var(--border)" }}>
+              <div key={item} style={{ paddingBottom: "16px", borderBottom: "1px solid var(--border-solid)" }}>
                 <p className="body" style={{ color: "var(--white)" }}>{item}</p>
               </div>
             ))}
@@ -246,50 +343,90 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="modules-section">
-        <div className="container">
-          <p className="label">Explore</p>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "10px 16px", marginBottom: "20px" }}>
-            {[
-              { label: "Markets", href: "/markets" },
-              { label: "Jurisdictions", href: "/jurisdictions" },
-              { label: "Solutions", href: "/solutions" },
-            ].map((item) => (
-              <Link key={item.href} href={item.href} style={{ color: "var(--blue-light)", fontSize: "12px", textDecoration: "none" }}>
-                {item.label} →
-              </Link>
-            ))}
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+          <div className="mb-12 max-w-2xl md:mb-16">
+            <p className="section-label mb-4 block">Selected mandates.</p>
+            <h2 className="heading-section mb-6">Selected mandates.</h2>
+            <p className="body-large">Real operations under pressure.</p>
           </div>
-          <h2 className="heading-md" style={{ marginBottom: "32px" }}>Seven operational modules.</h2>
-          <div className="home-module-list">
-            {moduleRows.map((module) => (
-              <div key={module.num} className="home-module-row">
-                <div className="home-module-main">
-                  <span className="label" style={{ color: "var(--blue-light)" }}>{module.num}</span>
-                  <Link href={module.href} className="home-module-link">
-                    {module.title} →
-                  </Link>
-                </div>
-                {module.featured.length > 0 && (
-                  <div className="home-module-featured">
-                    {module.featured.map((item, index) => (
-                      <span key={item.href}>
-                        {index > 0 && <span style={{ color: "var(--white-25)" }}> · </span>}
-                        <Link href={item.href} className="home-module-featured-link">
-                          {item.label}
-                        </Link>
-                      </span>
-                    ))}
-                  </div>
-                )}
+          <div className="grid gap-6 md:grid-cols-3 md:gap-8">
+            {[
+              {
+                tag: "iGaming · Curaçao",
+                title: "License active.\nNo bank account.",
+                body: "Active Curaçao license for 6 months, no operational account. We restructured the documentation, aligned AML policies and coordinated with three banks simultaneously. Account open in 11 weeks.",
+              },
+              {
+                tag: "Fintech · Brazil",
+                title: "International operator.\nNew regulated market.",
+                body: "We coordinated full corporate structuring, regulatory dossier and direct interaction with SPA/MF authorities for the Brazilian sports betting authorization process.",
+              },
+              {
+                tag: "Compliance · Audit readiness",
+                title: "GLI audit scheduled.\nNo evidence organized.",
+                body: "Full gap analysis, evidence register and readiness pack delivered in 6 weeks. Client entered audit with complete documentation and zero critical findings.",
+              },
+            ].map((c) => (
+              <div
+                key={c.tag}
+                className="flex flex-col rounded-lg border border-y border-r border-border/50 border-l-[3px] border-l-primary bg-background p-6 md:p-8"
+              >
+                <span className="mb-4 font-sans text-xs font-medium uppercase tracking-wider text-accent">
+                  {c.tag}
+                </span>
+                <h3 className="mb-4 whitespace-pre-line font-sans text-lg font-semibold text-primary">{c.title}</h3>
+                <p className="body-text flex-1">{c.body}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
+      <section className="surface-dark py-24 md:py-32">
+        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
+          <h2 className="mb-6 font-heading text-3xl font-semibold leading-[1.12] tracking-tight text-white md:text-4xl">
+            If your operation is stuck, blocked or exposed, we can fix it.
+          </h2>
+          <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-white/60">
+            We don&apos;t consult on theory. We step into live operations and restructure what isn&apos;t working.
+          </p>
+          <Link
+            href="/diagnostic"
+            className="inline-flex h-12 items-center justify-center rounded-full bg-white px-10 text-base font-medium tracking-wide text-primary transition-colors hover:bg-white/90"
+          >
+            Request assessment →
+          </Link>
+        </div>
+      </section>
+
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+          <div className="mb-12 max-w-2xl md:mb-16">
+            <p className="section-label mb-4 block">Explore</p>
+            <div className="mb-4 flex flex-wrap gap-x-4 gap-y-2">
+              {[
+                { label: "Markets", href: "/markets" },
+                { label: "Jurisdictions", href: "/jurisdictions" },
+                { label: "Solutions", href: "/solutions" },
+              ].map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="font-sans text-sm text-primary no-underline transition-colors hover:text-primary/80"
+                >
+                  {item.label} →
+                </Link>
+              ))}
+            </div>
+            <h2 className="heading-section mb-6">Seven operational modules.</h2>
+          </div>
+          <HomeModulesAccordion modules={moduleRows} />
+        </div>
+      </section>
+
       <section className="operate-section">
-        <div className="container">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <div className="operate-grid">
             <div>
               <p className="label">How we operate</p>
@@ -302,7 +439,7 @@ export default function HomePage() {
               </p>
             </div>
             <div>
-              <div className="grid-2 operate-stats" style={{ gap: "1px", background: "var(--border)", borderRadius: "12px", overflow: "hidden" }}>
+              <div className="grid-2 operate-stats" style={{ gap: "1px", background: "var(--border-solid)", borderRadius: "12px", overflow: "hidden" }}>
                 {[
                   { num: "15+", label: "Jurisdictions" },
                   { num: "2019", label: "Operating since" },
@@ -339,127 +476,70 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="cases-section">
-        <div className="container">
-          <p className="label cases-eyebrow">Selected mandates.</p>
-          <h2 className="heading-md cases-title">Selected mandates.</h2>
-          <p className="body-lg cases-sub">Real operations under pressure.</p>
-          <div className="grid-3 cases-grid">
-            {[
-              {
-                tag: "iGaming · Curaçao",
-                title: "License active.\nNo bank account.",
-                body: "Active Curaçao license for 6 months, no operational account. We restructured the documentation, aligned AML policies and coordinated with three banks simultaneously. Account open in 11 weeks.",
-              },
-              {
-                tag: "Fintech · Brazil",
-                title: "International operator.\nNew regulated market.",
-                body: "We coordinated full corporate structuring, regulatory dossier and direct interaction with SPA/MF authorities for the Brazilian sports betting authorization process.",
-              },
-              {
-                tag: "Compliance · Audit readiness",
-                title: "GLI audit scheduled.\nNo evidence organized.",
-                body: "Full gap analysis, evidence register and readiness pack delivered in 6 weeks. Client entered audit with complete documentation and zero critical findings.",
-              },
-            ].map((c) => (
-              <div key={c.tag} className="card-lg case-card">
-                <span className="case-tag">{c.tag}</span>
-                <h3 className="heading-sm case-title">{c.title}</h3>
-                <p className="body case-body">{c.body}</p>
-              </div>
-            ))}
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+          <div className="mb-12 max-w-2xl md:mb-16">
+            <p className="section-label mb-4 block">How we work with you</p>
+            <h2 className="heading-section">
+              Every operation requires a different level of involvement.
+            </h2>
           </div>
-        </div>
-      </section>
-
-      <div className="credential-block">
-        <div className="credential-block__inner">
-          <div className="credential-primary">
-            <img src="/seal-exin-dpo.png" alt="EXIN Data Protection Officer Certified" className="credential-primary__img" />
-            <p className="credential-primary__label">Certified data protection capability (EXIN)</p>
-          </div>
-          <div className="credential-secondary">
-            <p className="credential-secondary__label">Aligned with regulatory and compliance frameworks</p>
-            <div className="credential-secondary__row">
-              <img src="/seal-gdpr.png" alt="GDPR" className="credential-secondary__img" />
-              <img src="/seal-lgpd.png" alt="LGPD" className="credential-secondary__img" />
-              <img src="/seal-esg.png" alt="ESG" className="credential-secondary__img" />
-              <img src="/seal-mulher.png" alt="Women-Led Business Recognition" className="credential-secondary__img" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <section className="models-outer">
-        <div className="container">
-          <p className="label">How we work with you</p>
-          <h2 className="heading-md" style={{ marginBottom: "32px" }}>
-            Every operation requires a different level of involvement.
-          </h2>
-          <div className="home-engagement-list">
+          <div className="grid gap-6 md:grid-cols-3 md:gap-8">
             {[
               ["Project", "Fixed scope for licensing or market entry"],
               ["Ongoing", "Continuous regulatory and compliance coverage"],
               ["Hour Package", "Pre-paid hours for recurring demands"],
             ].map(([title, body]) => (
-              <div key={title} className="home-engagement-row">
-                <p className="body"><strong>{title}</strong> — {body}</p>
+              <div key={title} className="rounded-lg bg-secondary p-6 text-center md:p-8">
+                <h3 className="mb-3 font-sans text-lg font-semibold text-primary">{title}</h3>
+                <p className="body-text">{body}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section-padded">
-        <div className="container">
-          <p className="label">Trusted where structure matters</p>
-          <div className="grid-3">
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+          <div className="mb-12 max-w-2xl md:mb-16">
+            <p className="section-label mb-4 block">Trusted where structure matters</p>
+          </div>
+          <div className="grid gap-6 md:grid-cols-3 md:gap-8">
             {testimonials.map((item) => (
               <div
                 key={item.quote}
-                className="proof-card"
-                style={{
-                  padding: "32px",
-                }}
+                className="flex flex-col rounded-lg border border-y border-r border-border/50 border-l-[3px] border-l-primary bg-background p-6 md:p-8"
               >
-                <p
-                  className="body-lg"
-                  style={{
-                    marginBottom: "20px",
-                    fontStyle: "italic",
-                    color: "var(--text-primary)",
-                    lineHeight: 1.7,
-                  }}
-                >
-                  "{item.quote}"
-                </p>
-                <p className="body-sm" style={{ marginBottom: "4px", color: "var(--text-primary)" }}>
-                  {item.name}
-                </p>
-                <p className="body-sm" style={{ color: "var(--text-muted)" }}>
-                  {item.sector}
-                </p>
+                <p className="mb-6 font-sans text-base leading-relaxed text-foreground">&quot;{item.quote}&quot;</p>
+                <p className="font-sans text-sm text-muted-foreground">— {item.name}</p>
+                <p className="mt-1 font-sans text-sm text-muted-foreground">— {item.sector}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
-          <h2 className="heading-md" style={{ marginBottom: "20px" }}>This is not for everyone.</h2>
-          <p className="body-lg" style={{ marginBottom: "16px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
+          <h2 className="heading-section mb-4">This is not for everyone.</h2>
+          <p className="body-large mx-auto mb-4 max-w-2xl">
             We don&apos;t work on short-term strategies, regulatory arbitrage or experimental setups.
           </p>
-          <p className="body" style={{ marginBottom: "12px" }}>
+          <p className="body-large mx-auto mb-4 max-w-2xl">
             If you are looking for a workaround, this will not work.
           </p>
-          <p className="body" style={{ marginBottom: "12px", color: "var(--white)" }}>
+          <p className="mx-auto mb-12 max-w-2xl font-sans text-lg font-medium text-foreground">
             If you are building something real, it will.
           </p>
-          <p className="body">
+          <p className="body-large mx-auto mb-12 max-w-2xl">
             This is for operators building real businesses under regulatory and operational constraints.
           </p>
+          <Link
+            href="/contact"
+            className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+          >
+            Discuss your structure →
+          </Link>
         </div>
       </section>
 
@@ -474,7 +554,7 @@ export default function HomePage() {
           <h2 className="heading-lg cta-block__title">
             If your structure breaks, your operation stops.
           </h2>
-          <Link href="/contact" className="btn-primary btn-primary-lg">
+          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
             Discuss your structure →
           </Link>
         </div>

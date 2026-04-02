@@ -11,17 +11,17 @@ export default function SolutionsPage() {
     <main>
 
       {/* ─── HERO ─── */}
-      <section className="page-hero section-padded">
-        <div className="container">
+      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Solutions</span>
-          <h1 className="heading-xl sp-headline">
+          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
             You don&apos;t need services.
             <br />
             <span style={{ color: "var(--white-40)" }}>
               You need a working structure.
             </span>
           </h1>
-          <p className="body-lg sp-sub" style={{ maxWidth: "620px" }}>
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "620px" }}>
             Licensing, compliance, banking, corporate setup. Isolated, none
             of it works. We design and coordinate the entire structure from the
             start, with one point of contact.
@@ -30,10 +30,10 @@ export default function SolutionsPage() {
       </section>
 
       {/* ─── 7 PILLARS ─── */}
-      <section className="section-padded">
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <p className="label">Core modules</p>
-          <h2 className="heading-md" style={{ marginBottom: "40px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "40px" }}>
             Seven operational modules. One working structure.
           </h2>
           <div className="tile-grid grid-auto modules-grid">
@@ -124,8 +124,8 @@ export default function SolutionsPage() {
                   </div>
                 </Link>
                 {m.featured.length > 0 && (
-                  <div style={{ borderTop: "1px solid var(--border)", paddingTop: "12px", marginTop: "4px", marginBottom: "40px", display: "flex", flexDirection: "column", gap: "8px" }}>
-                    <p className="label" style={{ fontSize: "9px", marginBottom: "4px", color: "var(--white-25)" }}>Featured</p>
+                  <div style={{ borderTop: "1px solid var(--border-solid)", paddingTop: "12px", marginTop: "4px", marginBottom: "40px", display: "flex", flexDirection: "column", gap: "8px" }}>
+                    <p className="label mb-1 text-[9px] text-muted-foreground">Featured</p>
                     {m.featured.map((s) => (
                       <Link key={s.href} href={s.href} style={{ color: "var(--blue-light)", fontSize: "13px" }}>
                         {s.label} →
@@ -143,9 +143,9 @@ export default function SolutionsPage() {
       </section>
 
       {/* ─── HOW IT WORKS ─── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             One structure. One point of contact.
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
@@ -153,7 +153,7 @@ export default function SolutionsPage() {
             legal, compliance and corporate. Each works in isolation. None takes
             responsibility for the overall structure.
           </p>
-          <p className="body">
+          <p className="body-text">
             Octus acts as lead contractor. We coordinate everything: regulatory
             filing, compliance framework, corporate layer, banking access. As
             a single operation. You don&apos;t manage multiple providers. You
@@ -163,8 +163,8 @@ export default function SolutionsPage() {
       </section>
 
       {/* ─── CROSS-LINKS ─── */}
-      <section className="section-padded">
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <p className="label">Explore by angle</p>
           <div className="grid-3">
             {[
@@ -173,7 +173,7 @@ export default function SolutionsPage() {
               { title: "Start a Diagnostic", desc: "Identify what's broken in your structure.", href: "/contact" },
             ].map((r) => (
               <Link key={r.title} href={r.href} className="card-grid" style={{ padding: "28px" }}>
-                <h3 className="heading-card" style={{ marginBottom: "8px" }}>{r.title}</h3>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{r.title}</h3>
                 <p className="body-sm" style={{ marginBottom: "12px" }}>{r.desc}</p>
                 <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Explore →</span>
               </Link>
@@ -186,13 +186,13 @@ export default function SolutionsPage() {
       <section className="cta-block">
         <div className="cta-block__bg" />
         <div className="cta-block__inner">
-          <p className="body" style={{ color: "var(--white-40)", marginBottom: "16px" }}>
+          <p className="body-text" style={{ color: "var(--white-40)", marginBottom: "16px" }}>
             Your operation doesn&apos;t need more advisors.
           </p>
           <h2 className="heading-lg cta-block__title">
             Fix the structure before you scale.
           </h2>
-          <Link href="/contact" className="btn-primary btn-primary-lg">
+          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
             Get a structural diagnosis →
           </Link>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>

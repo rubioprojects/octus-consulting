@@ -11,26 +11,29 @@ export default function JurisdictionsMaltaPage() {
     <main>
 
       {/* ─── HERO ─── */}
-      <section className="page-hero section-padded">
-        <div className="container">
+      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Jurisdictions · Malta</span>
-          <h1 className="heading-xl sp-headline">
+          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
             Malta Gaming License.
             <br />
             <span style={{ color: "var(--white-40)" }}>
               Not designed for speed-driven or low-cost operations.
             </span>
           </h1>
-          <p className="body-lg sp-sub" style={{ maxWidth: "620px" }}>
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "620px" }}>
             A structured EU regulatory framework for operators and B2B
             providers seeking credibility, scalability and access to regulated
             markets.
           </p>
           <div style={{ marginTop: "32px", display: "flex", gap: "16px", flexWrap: "wrap" }}>
-            <Link href="/contact" className="btn-primary btn-primary-lg">
+            <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
               Request strategic assessment →
             </Link>
-            <Link href="/markets/igaming" className="btn-ghost">
+            <Link
+              href="/markets/igaming"
+              className="inline-flex h-12 items-center justify-center rounded-full border border-white/20 bg-transparent px-10 text-base font-medium text-white/80 transition-colors hover:border-white/40 hover:text-white"
+            >
               iGaming operations →
             </Link>
           </div>
@@ -38,9 +41,9 @@ export default function JurisdictionsMaltaPage() {
       </section>
 
       {/* ─── POSITIONING ─── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             Malta is not an entry-level jurisdiction.
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
@@ -50,25 +53,25 @@ export default function JurisdictionsMaltaPage() {
             B2B providers targeting regulated markets, institutional
             partnerships and scalable operations.
           </p>
-          <p className="body" style={{ marginBottom: "20px" }}>
+          <p className="body-text" style={{ marginBottom: "20px" }}>
             Malta gives you MGA credibility, serious banking infrastructure
             and can support access to European markets within the right
             regulatory and operational structure. It also demands real
             compliance, real substance and real governance.
           </p>
           <p
-            className="heading-sm"
-            style={{ color: "var(--white)", borderTop: "1px solid var(--border)", paddingTop: "24px", marginTop: "8px" }}
+            className="heading-sm text-foreground"
+            style={{ borderTop: "1px solid var(--border-solid)", paddingTop: "24px", marginTop: "8px" }}
           >
             If you&apos;re going to do Malta,{" "}
-            <span style={{ color: "var(--blue-light)" }}>do it right.</span>
+            <span className="text-primary">do it right.</span>
           </p>
         </div>
       </section>
 
       {/* ─── WHEN IT MAKES SENSE ─── */}
-      <section className="section-padded">
-        <div className="container">
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "40px", maxWidth: "900px" }}>
             <div>
               <p className="label" style={{ marginBottom: "16px", color: "var(--blue-light)" }}>When Malta makes sense</p>
@@ -88,7 +91,7 @@ export default function JurisdictionsMaltaPage() {
               </div>
             </div>
             <div>
-              <p className="label" style={{ marginBottom: "16px", color: "var(--white-40)" }}>When it does not</p>
+              <p className="label mb-4 text-muted-foreground">When it does not</p>
               <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
                 {[
                   "Speed to market is the priority",
@@ -97,8 +100,8 @@ export default function JurisdictionsMaltaPage() {
                   "The focus is short-term deployment or arbitrage",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                    <span style={{ color: "var(--white-40)", marginTop: "2px", flexShrink: 0 }}>—</span>
-                    <p className="body-sm" style={{ color: "var(--white-40)" }}>{item}</p>
+                    <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                    <p className="body-sm text-muted-foreground">{item}</p>
                   </div>
                 ))}
               </div>
@@ -108,10 +111,10 @@ export default function JurisdictionsMaltaPage() {
       </section>
 
       {/* ─── OPERATIONAL IMPLICATIONS ─── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Operational implications</p>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             This is not just a license.{" "}
             <span style={{ color: "var(--blue-light)" }}>It&apos;s a full operational framework.</span>
           </h2>
@@ -128,7 +131,7 @@ export default function JurisdictionsMaltaPage() {
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
-                <p className="body">{item}</p>
+                <p className="body-text">{item}</p>
               </div>
             ))}
           </div>
@@ -136,13 +139,13 @@ export default function JurisdictionsMaltaPage() {
       </section>
 
       {/* ─── HOW WE OPERATE ─── */}
-      <section className="section-padded">
-        <div className="container">
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <p className="label">Octus role</p>
-          <h2 className="heading-md" style={{ marginBottom: "12px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "12px" }}>
             From strategy to operational license.
           </h2>
-          <p className="body" style={{ marginBottom: "40px", maxWidth: "620px", color: "var(--white-60)" }}>
+          <p className="body-text mb-10 max-w-[620px]">
             Engagements are structured as mandates due to regulatory complexity
             and execution requirements.
           </p>
@@ -186,7 +189,7 @@ export default function JurisdictionsMaltaPage() {
                   gridTemplateColumns: "48px 1fr",
                   gap: "24px",
                   padding: "32px 0",
-                  borderBottom: i < 5 ? "1px solid var(--border)" : "none",
+                  borderBottom: i < 5 ? "1px solid var(--border-solid)" : "none",
                   alignItems: "start",
                 }}
               >
@@ -203,8 +206,8 @@ export default function JurisdictionsMaltaPage() {
                   {s.step}
                 </span>
                 <div>
-                  <h3 className="heading-card" style={{ marginBottom: "8px" }}>{s.title}</h3>
-                  <p className="body">{s.body}</p>
+                  <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{s.title}</h3>
+                  <p className="body-text">{s.body}</p>
                 </div>
               </div>
             ))}
@@ -213,8 +216,8 @@ export default function JurisdictionsMaltaPage() {
       </section>
 
       {/* ─── KEY FACTS ─── */}
-      <section className="section-dark section-padded">
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <p className="label">Malta at a glance</p>
           <div className="grid-auto-lg">
             {[
@@ -227,7 +230,7 @@ export default function JurisdictionsMaltaPage() {
             ].map((item) => (
               <div key={item.label} className="card" style={{ padding: "24px" }}>
                 <p className="label" style={{ marginBottom: "8px", fontSize: "10px" }}>{item.label}</p>
-                <p className="body" style={{ color: "var(--white)" }}>{item.value}</p>
+                <p className="body-text">{item.value}</p>
               </div>
             ))}
           </div>
@@ -235,13 +238,13 @@ export default function JurisdictionsMaltaPage() {
       </section>
 
       {/* ─── SELECTED MANDATES ─── */}
-      <section className="section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Selected mandates — Malta</p>
-          <h2 className="heading-md" style={{ marginBottom: "32px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "32px" }}>
             Real operations. Real outcomes.
           </h2>
-          <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
+          <div className="grid gap-6 md:grid-cols-1">
             {[
               {
                 title: "B2C operator — full MGA licensing",
@@ -256,9 +259,12 @@ export default function JurisdictionsMaltaPage() {
                 body: "Malta for EU markets, Curaçao for non-EU. Unified compliance framework with jurisdiction-specific adaptations and centralized banking.",
               },
             ].map((m, i) => (
-              <div key={i} style={{ padding: "24px 0", borderBottom: i < 2 ? "1px solid var(--border)" : "none" }}>
-                <h3 className="heading-card" style={{ marginBottom: "8px", color: "var(--white)" }}>{m.title}</h3>
-                <p className="body" style={{ color: "var(--white-60)" }}>{m.body}</p>
+              <div
+                key={i}
+                className="flex flex-col rounded-lg border border-y border-r border-border/50 border-l-[3px] border-l-primary bg-background p-6 md:p-8"
+              >
+                <h3 className="mb-4 font-sans text-lg font-semibold text-primary">{m.title}</h3>
+                <p className="body-text">{m.body}</p>
               </div>
             ))}
           </div>
@@ -266,8 +272,8 @@ export default function JurisdictionsMaltaPage() {
       </section>
 
       {/* ─── COMPARATIVE POSITIONING ─── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">How jurisdictions compare</p>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "16px" }}>
             {[
@@ -275,21 +281,21 @@ export default function JurisdictionsMaltaPage() {
               { name: "Malta", role: "Structured EU framework with scalability and regulatory credibility" },
               { name: "Isle of Man", role: "Institutional positioning with stronger banking alignment" },
             ].map((j) => (
-              <div key={j.name} style={{ display: "grid", gridTemplateColumns: "120px 1fr", gap: "16px", padding: "12px 0", borderBottom: "1px solid var(--border)" }}>
-                <span className="heading-card" style={{ fontSize: "13px", color: j.name === "Malta" ? "var(--blue-light)" : "var(--white-40)" }}>{j.name}</span>
-                <p className="body-sm" style={{ color: "var(--white-60)" }}>{j.role}</p>
+              <div key={j.name} style={{ display: "grid", gridTemplateColumns: "120px 1fr", gap: "16px", padding: "12px 0", borderBottom: "1px solid var(--border-solid)" }}>
+                <span className={`text-lg font-semibold font-sans text-[13px] ${j.name === "Malta" ? "text-primary" : "text-muted-foreground"}`}>{j.name}</span>
+                <p className="body-sm text-muted-foreground">{j.role}</p>
               </div>
             ))}
           </div>
-          <p className="body-sm" style={{ color: "var(--white-25)", marginTop: "20px", fontStyle: "italic" }}>
+          <p className="body-sm mt-5 italic text-muted-foreground">
             The right choice depends on business model, capital structure and long-term objectives.
           </p>
         </div>
       </section>
 
       {/* ─── CROSS-LINKS ─── */}
-      <section className="section-padded">
-        <div className="container">
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <p className="label">Related</p>
           <div className="grid-3">
             {[
@@ -298,7 +304,7 @@ export default function JurisdictionsMaltaPage() {
               { title: "Compliance & Risk", desc: "The framework that supports your license.", href: "/compliance" },
             ].map((r) => (
               <Link key={r.title} href={r.href} className="card-grid" style={{ padding: "28px" }}>
-                <h3 className="heading-card" style={{ marginBottom: "8px" }}>{r.title}</h3>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{r.title}</h3>
                 <p className="body-sm" style={{ marginBottom: "12px" }}>{r.desc}</p>
                 <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Learn more →</span>
               </Link>
@@ -311,14 +317,14 @@ export default function JurisdictionsMaltaPage() {
       <section className="cta-block">
         <div className="cta-block__bg" />
         <div className="cta-block__inner">
-          <p className="body" style={{ color: "var(--white-40)", marginBottom: "16px" }}>
+          <p className="body-text" style={{ color: "var(--white-40)", marginBottom: "16px" }}>
             Malta is a strategic licensing decision with long-term implications.
           </p>
           <h2 className="heading-lg cta-block__title">
             A structured assessment is required{" "}
             <span style={{ color: "var(--blue-light)" }}>before proceeding.</span>
           </h2>
-          <Link href="/contact" className="btn-primary btn-primary-lg">
+          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
             Request strategic assessment →
           </Link>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>

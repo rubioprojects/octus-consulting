@@ -11,27 +11,30 @@ export default function JurisdictionsIsleOfManPage() {
     <main>
 
       {/* ─── HERO ─── */}
-      <section className="page-hero section-padded">
-        <div className="container">
+      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Jurisdictions · Isle of Man</span>
-          <h1 className="heading-xl sp-headline">
+          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
             Isle of Man is not a shortcut.
             <br />
             <span style={{ color: "var(--white-40)" }}>
               It is a regulatory credential.
             </span>
           </h1>
-          <p className="body-lg sp-sub" style={{ maxWidth: "620px" }}>
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "620px" }}>
             A GSC licence is recognised globally as Tier-1. Banks trust it.
             Payment processors accept it. Regulators in other jurisdictions
             respect it. But the standard required to obtain and maintain it is
             high — and the margin for structural error is narrow.
           </p>
           <div style={{ marginTop: "32px", display: "flex", gap: "16px", flexWrap: "wrap" }}>
-            <Link href="/contact" className="btn-primary btn-primary-lg">
+            <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
               Discuss an Isle of Man strategy →
             </Link>
-            <Link href="/solutions/regulatory/igaming-licensing" className="btn-ghost">
+            <Link
+              href="/solutions/regulatory/igaming-licensing"
+              className="inline-flex h-12 items-center justify-center rounded-full border border-white/20 bg-transparent px-10 text-base font-medium text-white/80 transition-colors hover:border-white/40 hover:text-white"
+            >
               Full licensing process →
             </Link>
           </div>
@@ -39,10 +42,10 @@ export default function JurisdictionsIsleOfManPage() {
       </section>
 
       {/* ─── POSITIONING ─── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label" style={{ marginBottom: "12px" }}>Why Isle of Man</p>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             This is not the jurisdiction you choose to save time.
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
@@ -70,10 +73,10 @@ export default function JurisdictionsIsleOfManPage() {
       </section>
 
       {/* ─── WHEN / WHEN NOT ─── */}
-      <section className="section-padded">
-        <div className="container">
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <p className="label" style={{ marginBottom: "12px" }}>Qualification</p>
-          <h2 className="heading-md" style={{ marginBottom: "32px", maxWidth: "760px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "32px", maxWidth: "760px" }}>
             Isle of Man is the right jurisdiction — but not for every operation.
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "40px", maxWidth: "900px" }}>
@@ -96,7 +99,7 @@ export default function JurisdictionsIsleOfManPage() {
               </div>
             </div>
             <div>
-              <p className="label" style={{ marginBottom: "16px", color: "var(--white-40)" }}>When it does not</p>
+              <p className="label mb-4 text-muted-foreground">When it does not</p>
               <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
                 {[
                   "You need the cheapest or fastest path to market. Isle of Man is neither.",
@@ -106,14 +109,14 @@ export default function JurisdictionsIsleOfManPage() {
                   "You expect to launch and leave. The GSC\u2019s supervision is continuous, risk-based and increasingly enforcement-oriented.",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                    <span style={{ color: "var(--white-40)", marginTop: "2px", flexShrink: 0 }}>—</span>
-                    <p className="body-sm" style={{ color: "var(--white-40)" }}>{item}</p>
+                    <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                    <p className="body-sm text-muted-foreground">{item}</p>
                   </div>
                 ))}
               </div>
             </div>
           </div>
-          <p className="body" style={{ marginTop: "32px", maxWidth: "760px", color: "var(--white-60)" }}>
+          <p className="body-text mt-8 max-w-[760px]">
             If your operation is not ready for this level of scrutiny, a different
             jurisdiction may be a better starting point. Octus can help determine
             that before you commit.
@@ -122,10 +125,10 @@ export default function JurisdictionsIsleOfManPage() {
       </section>
 
       {/* ─── WHAT OCTUS STRUCTURES ─── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Execution</p>
-          <h2 className="heading-md" style={{ marginBottom: "12px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "12px" }}>
             The licence is the outcome.{" "}
             <span style={{ color: "var(--blue-light)" }}>The structure is the work.</span>
           </h2>
@@ -135,14 +138,14 @@ export default function JurisdictionsIsleOfManPage() {
             before submission: corporate design, compliance architecture, banking
             relationships, technical infrastructure, personnel arrangements.
           </p>
-          <p className="body" style={{ marginBottom: "32px" }}>
+          <p className="body-text" style={{ marginBottom: "32px" }}>
             Octus structures and coordinates the full pre-application and
             application process.
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: "28px" }}>
             <div>
-              <h3 className="heading-card" style={{ marginBottom: "10px" }}>Corporate structuring</h3>
-              <p className="body" style={{ color: "var(--white-60)" }}>
+              <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "10px" }}>Corporate structuring</h3>
+              <p className="body-text">
                 Isle of Man company incorporation with appropriate director
                 appointments. Resident director sourcing. Designated official or
                 operations manager identification. Registered office and substance
@@ -150,8 +153,8 @@ export default function JurisdictionsIsleOfManPage() {
               </p>
             </div>
             <div>
-              <h3 className="heading-card" style={{ marginBottom: "10px" }}>Compliance architecture</h3>
-              <p className="body" style={{ color: "var(--white-60)" }}>
+              <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "10px" }}>Compliance architecture</h3>
+              <p className="body-text">
                 AML/CFT programme designed to GSC and FATF standards. KYC
                 procedures, transaction monitoring, suspicious activity reporting.
                 Responsible gambling framework. Data protection alignment
@@ -159,8 +162,8 @@ export default function JurisdictionsIsleOfManPage() {
               </p>
             </div>
             <div>
-              <h3 className="heading-card" style={{ marginBottom: "10px" }}>Banking and payments</h3>
-              <p className="body" style={{ color: "var(--white-60)" }}>
+              <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "10px" }}>Banking and payments</h3>
+              <p className="body-text">
                 Corporate bank account in the Isle of Man for player fund
                 segregation. Operational accounts. Payment processor onboarding
                 aligned to the licence type. Coordination with island-based
@@ -168,8 +171,8 @@ export default function JurisdictionsIsleOfManPage() {
               </p>
             </div>
             <div>
-              <h3 className="heading-card" style={{ marginBottom: "10px" }}>Technical readiness</h3>
-              <p className="body" style={{ color: "var(--white-60)" }}>
+              <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "10px" }}>Technical readiness</h3>
+              <p className="body-text">
                 Server hosting arrangements on the island (or approved fail-over
                 mirrors). RNG certification through GSC-approved testing
                 laboratories. Platform documentation and technical architecture
@@ -177,8 +180,8 @@ export default function JurisdictionsIsleOfManPage() {
               </p>
             </div>
             <div>
-              <h3 className="heading-card" style={{ marginBottom: "10px" }}>Application management</h3>
-              <p className="body" style={{ color: "var(--white-60)" }}>
+              <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "10px" }}>Application management</h3>
+              <p className="body-text">
                 Full licensing dossier preparation. Business plan aligned to GSC
                 expectations. Regulatory form completion. Direct coordination with
                 the GSC inspectorate. Response management throughout typical review
@@ -190,10 +193,10 @@ export default function JurisdictionsIsleOfManPage() {
       </section>
 
       {/* ─── REGULATORY LANDSCAPE ─── */}
-      <section className="section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Current regulatory environment</p>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             The GSC is tightening. Not loosening.
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
@@ -210,7 +213,7 @@ export default function JurisdictionsIsleOfManPage() {
             expected in late 2026, driving heightened enforcement activity and
             stricter AML compliance expectations.
           </p>
-          <p className="body">
+          <p className="body-text">
             For operators applying now: the regulatory bar is moving upward.
             Applications submitted with yesterday&apos;s compliance standards will
             face tomorrow&apos;s review criteria.
@@ -219,13 +222,13 @@ export default function JurisdictionsIsleOfManPage() {
       </section>
 
       {/* ─── LICENCE STRUCTURE ─── */}
-      <section className="section-dark section-padded">
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <p className="label">Licence types</p>
-          <h2 className="heading-md" style={{ marginBottom: "32px", maxWidth: "760px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "32px", maxWidth: "760px" }}>
             One framework. Multiple licence categories.
           </h2>
-          <p className="body" style={{ marginBottom: "32px", maxWidth: "760px", color: "var(--white-60)" }}>
+          <p className="body-text mb-8 max-w-[760px]">
             All licences are issued under the Online Gambling Regulation Act 2001
             (OGRA). Each has a five-year validity period.
           </p>
@@ -249,8 +252,8 @@ export default function JurisdictionsIsleOfManPage() {
               },
             ].map((item) => (
               <div key={item.title} className="card" style={{ padding: "24px" }}>
-                <h3 className="heading-card" style={{ marginBottom: "10px" }}>{item.title}</h3>
-                <p className="body-sm" style={{ color: "var(--white-60)" }}>{item.body}</p>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "10px" }}>{item.title}</h3>
+                <p className="body-sm text-muted-foreground">{item.body}</p>
               </div>
             ))}
           </div>
@@ -262,7 +265,7 @@ export default function JurisdictionsIsleOfManPage() {
             ].map((item) => (
               <div key={item.label} className="card" style={{ padding: "24px" }}>
                 <p className="label" style={{ marginBottom: "8px", fontSize: "10px" }}>{item.label}</p>
-                <p className="body" style={{ color: "var(--white)" }}>{item.value}</p>
+                <p className="body-text text-foreground">{item.value}</p>
               </div>
             ))}
           </div>
@@ -270,10 +273,10 @@ export default function JurisdictionsIsleOfManPage() {
       </section>
 
       {/* ─── MANDATE ─── */}
-      <section className="section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Engagement</p>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             Octus operates on a mandate basis for Isle of Man licensing.
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
@@ -282,27 +285,27 @@ export default function JurisdictionsIsleOfManPage() {
             readiness, corporate design, compliance maturity and regulatory
             expectations.
           </p>
-          <p className="body" style={{ marginBottom: "32px" }}>
+          <p className="body-text" style={{ marginBottom: "32px" }}>
             Octus accepts Isle of Man mandates after a diagnostic assessment
             confirms operational fit. The diagnostic determines whether Isle of
             Man is the right jurisdiction, identifies structural gaps, and
             produces a strategy memo with timeline, cost projection and execution
             roadmap.
           </p>
-          <p className="body" style={{ marginBottom: "32px" }}>
+          <p className="body-text" style={{ marginBottom: "32px" }}>
             If Isle of Man is not the right fit, the diagnostic will make that
             clear. Octus does not recommend jurisdictions that do not align with
             the operation.
           </p>
-          <Link href="/contact" className="btn-primary btn-primary-lg">
+          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
             Request an Isle of Man diagnostic →
           </Link>
         </div>
       </section>
 
       {/* ─── CROSS-LINKS ─── */}
-      <section className="section-dark section-padded">
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <p className="label">Related</p>
           <div className="grid-auto-lg">
             {[
@@ -312,7 +315,7 @@ export default function JurisdictionsIsleOfManPage() {
               { title: "AML/KYC", desc: "Compliance architecture for regulated operations", href: "/solutions/compliance/aml-kyc" },
             ].map((r) => (
               <Link key={r.title} href={r.href} className="card-grid" style={{ padding: "28px" }}>
-                <h3 className="heading-card" style={{ marginBottom: "8px" }}>{r.title}</h3>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{r.title}</h3>
                 <p className="body-sm" style={{ marginBottom: "12px" }}>{r.desc}</p>
                 <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Learn more →</span>
               </Link>
@@ -325,7 +328,7 @@ export default function JurisdictionsIsleOfManPage() {
       <section className="cta-block">
         <div className="cta-block__bg" />
         <div className="cta-block__inner">
-          <p className="body" style={{ color: "var(--white-40)", marginBottom: "16px" }}>
+          <p className="body-text" style={{ color: "var(--white-40)", marginBottom: "16px" }}>
             If your operation needs a licence that institutional partners take
             seriously, the structure behind it needs to be built to that standard.
           </p>
@@ -333,7 +336,7 @@ export default function JurisdictionsIsleOfManPage() {
             Structure it for the jurisdiction.{" "}
             <span style={{ color: "var(--blue-light)" }}>Not around it.</span>
           </h2>
-          <Link href="/contact" className="btn-primary btn-primary-lg">
+          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
             Discuss an Isle of Man strategy →
           </Link>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>

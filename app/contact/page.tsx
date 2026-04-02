@@ -6,7 +6,7 @@ import { useState } from "react";
 const inputStyle = {
   width: "100%",
   background: "#FFFFFF",
-  border: "1px solid var(--border)",
+  border: "1px solid var(--border-solid)",
   borderRadius: "8px",
   padding: "14px 16px",
   fontSize: "15px",
@@ -55,17 +55,17 @@ export default function ContactPage() {
     <main>
 
       {/* ─── HERO ─── */}
-      <section className="page-hero section-padded">
-        <div className="container">
+      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Start a diagnostic</span>
-          <h1 className="heading-xl sp-headline">
+          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
             If your operation is not working,
             <br />
             <span style={{ color: "var(--white-40)" }}>
               this is where we start.
             </span>
           </h1>
-          <p className="body-lg sp-sub" style={{ maxWidth: "580px" }}>
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "580px" }}>
             Not a sales call. A structured diagnostic — we identify where the
             structure is broken before deciding what needs to be fixed.
           </p>
@@ -73,8 +73,8 @@ export default function ContactPage() {
       </section>
 
       {/* ─── WHAT HAPPENS NEXT ────────────────────────────────────── */}
-      <section className="section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">What happens after you submit</span>
           <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
             {[
@@ -101,7 +101,7 @@ export default function ContactPage() {
                   gridTemplateColumns: "48px 1fr",
                   gap: "24px",
                   padding: "32px 0",
-                  borderBottom: i < 2 ? "1px solid var(--border)" : "none",
+                  borderBottom: i < 2 ? "1px solid var(--border-solid)" : "none",
                   alignItems: "start",
                 }}
               >
@@ -118,10 +118,10 @@ export default function ContactPage() {
                   {s.step}
                 </span>
                 <div>
-                  <h3 className="heading-card" style={{ marginBottom: "8px" }}>
+                  <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>
                     {s.title}
                   </h3>
-                  <p className="body">{s.body}</p>
+                  <p className="body-text">{s.body}</p>
                 </div>
               </div>
             ))}
@@ -131,14 +131,14 @@ export default function ContactPage() {
 
       {/* ─── WHATSAPP ─── */}
       <section style={{ padding: "60px 40px" }}>
-        <div className="container">
-          <div className="card-lg" style={{ display: "flex", alignItems: "center", gap: "20px", flexWrap: "wrap" }}>
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+          <div className="bg-background rounded-lg p-6 md:p-8 border border-transparent transition-all duration-300 hover:border-border" style={{ display: "flex", alignItems: "center", gap: "20px", flexWrap: "wrap" }}>
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="#25D366"/>
             </svg>
             <div style={{ flexGrow: 1 }}>
               <p className="label" style={{ marginBottom: "8px", fontSize: "10px" }}>Direct intake</p>
-              <p className="heading-card" style={{ marginBottom: "8px" }}>Prefer direct contact?</p>
+              <p className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>Prefer direct contact?</p>
               <p className="body-sm">Talk to Octus on WhatsApp for an initial strategic intake. We usually respond within the same business day.</p>
             </div>
             <a
@@ -153,12 +153,12 @@ export default function ContactPage() {
       </section>
 
       {/* ─── FORM ─── */}
-      <section className="section-padded" style={{ padding: "80px 40px 130px" }}>
-        <div className="container">
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <div className="contact-grid">
             <div>
               <span className="label">Who this is for</span>
-              <h2 className="heading-md" style={{ marginBottom: "32px" }}>
+              <h2 className="heading-section" style={{ marginBottom: "32px" }}>
                 Operators building serious businesses in regulated environments.
               </h2>
               <ul className="check-list" style={{ marginBottom: "40px" }}>
@@ -173,7 +173,7 @@ export default function ContactPage() {
                   <li key={item}>{item}</li>
                 ))}
               </ul>
-              <p className="body-sm" style={{ color: "var(--white-25)", fontStyle: "italic", paddingTop: "24px", borderTop: "1px solid var(--border)" }}>
+              <p className="body-sm border-t border-border pt-6 italic text-muted-foreground">
                 This is a structured diagnostic for active operations, not a general inquiry.
               </p>
             </div>
@@ -182,7 +182,7 @@ export default function ContactPage() {
               {status === "success" ? (
                 <div style={{ textAlign: "center", padding: "40px 0" }}>
                   <p className="heading-sm" style={{ marginBottom: "16px", color: "var(--primary-blue)" }}>Request received.</p>
-                  <p className="body" style={{ marginBottom: "24px" }}>We will review your situation and respond within 24 hours.</p>
+                  <p className="body-text" style={{ marginBottom: "24px" }}>We will review your situation and respond within 24 hours.</p>
                   <button onClick={() => setStatus("idle")} className="btn-ghost">Submit another request →</button>
                 </div>
               ) : (
@@ -244,7 +244,7 @@ export default function ContactPage() {
                       type="button"
                       onClick={handleSubmit}
                       disabled={status === "sending" || !form.name || !form.email || !form.company || !form.situation}
-                      className="btn-primary btn-primary-lg"
+                      className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90"
                       style={{ width: "100%", justifyContent: "center", marginTop: "8px", opacity: status === "sending" ? 0.6 : 1 }}
                     >
                       {status === "sending" ? "Sending..." : "Submit your diagnostic →"}
@@ -256,7 +256,7 @@ export default function ContactPage() {
                       </p>
                     )}
 
-                    <p className="body-sm" style={{ color: "var(--white-25)", textAlign: "center", fontStyle: "italic" }}>
+                    <p className="body-sm text-center italic text-muted-foreground">
                       We review every submission personally.
                     </p>
                   </div>
@@ -268,8 +268,8 @@ export default function ContactPage() {
       </section>
 
       {/* ─── REASSURANCE ──────────────────────────────────────────── */}
-      <section className="section-dark section-padded">
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <div className="grid-3">
             {[
               { title: "Direct diagnostic, not generic advice", body: "The diagnostic is structured around your specific structural situation — not a template response or a pitch." },
@@ -277,7 +277,7 @@ export default function ContactPage() {
               { title: "Direct access to decision-makers", body: "You communicate directly with the Octus team from the first conversation — no account managers, no onboarding process." },
             ].map((item) => (
               <div key={item.title} className="card">
-                <h3 className="heading-card" style={{ marginBottom: "12px" }}>{item.title}</h3>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>{item.title}</h3>
                 <p className="body-sm">{item.body}</p>
               </div>
             ))}

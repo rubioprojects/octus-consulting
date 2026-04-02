@@ -28,8 +28,8 @@ export default function PostPage({ params }: { params: { slug: string } }) {
 
   return (
     <main>
-      <section className="page-hero section-padded">
-        <div className="container" style={{ maxWidth: "800px" }}>
+      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "800px" }}>
           <div style={{ display: "flex", gap: "16px", alignItems: "center", marginBottom: "32px", flexWrap: "wrap" }}>
             <Link
               href="/insights"
@@ -48,18 +48,18 @@ export default function PostPage({ params }: { params: { slug: string } }) {
             <span className="label">{post.category}</span>
           </div>
           <h1
-            className="heading-xl sp-headline"
+            className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline"
             style={{ fontSize: "clamp(24px, 3.5vw, 44px)", lineHeight: 1.2 }}
           >
             {post.title}
           </h1>
-          <p className="body-lg sp-sub" style={{ color: "var(--white-40)" }}>
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ color: "var(--white-40)" }}>
             {date}{post.author ? ` · ${post.author}` : ""}
           </p>
         </div>
       </section>
 
-      <section className="section-padded" style={{ padding: "0 40px 130px" }}>
+      <section className="bg-background py-24 md:py-32">
         <div className="container post-body" style={{ maxWidth: "800px" }}>
           {contentBlocks.map((para, i) => {
             if (para.startsWith("**") && para.endsWith("**") && !para.slice(2, -2).includes("\n")) {
@@ -77,7 +77,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
               return (
                 <ul key={i} style={{ marginBottom: "20px", paddingLeft: "24px" }}>
                   {items.map((item, j) => (
-                    <li key={j} className="body" style={{ marginBottom: "8px" }}
+                    <li key={j} className="body-text" style={{ marginBottom: "8px" }}
                       dangerouslySetInnerHTML={{ __html: item.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>") }}
                     />
                   ))}
@@ -87,7 +87,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
             return (
               <p
                 key={i}
-                className="body"
+                className="body-text"
                 style={{ marginBottom: "20px", lineHeight: 1.8 }}
                 dangerouslySetInnerHTML={{ __html: formatted }}
               />
@@ -97,17 +97,17 @@ export default function PostPage({ params }: { params: { slug: string } }) {
 
         {(post.related || post.cta) && (
           <div
-            className="container"
+            className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8"
             style={{
               maxWidth: "800px",
               marginTop: "64px",
               paddingTop: "40px",
-              borderTop: "1px solid var(--border)",
+              borderTop: "1px solid var(--border-solid)",
             }}
           >
             {post.related && post.related.length > 0 && (
               <div style={{ marginBottom: post.cta ? "32px" : "0" }}>
-                <p className="body-sm" style={{ color: "var(--white-40)", marginBottom: "14px" }}>
+                <p className="body-sm mb-3.5 text-muted-foreground">
                   Related
                 </p>
                 <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
@@ -127,7 +127,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
 
             {post.cta && (
               <>
-                <p className="body-sm" style={{ color: "var(--white-40)", marginBottom: "16px" }}>
+                <p className="body-sm mb-4 text-muted-foreground">
                   {post.cta.label}
                 </p>
                 <Link href={post.cta.href} className="btn-primary">

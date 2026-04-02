@@ -11,23 +11,23 @@ export default function CorporatePage() {
     <main>
 
       {/* ─── HERO ─────────────────────────────────────────────────── */}
-      <section className="page-hero section-padded">
-        <div className="container">
+      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Corporate Structuring</span>
-          <h1 className="heading-xl sp-headline">
+          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
             Corporate structure is not a formality.
             <br />
             <span style={{ color: "var(--white-40)" }}>
               It is the architecture the operation depends on.
             </span>
           </h1>
-          <p className="body-lg sp-sub">
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl">
             Most corporate structures are designed for a single purpose — tax
             efficiency, incorporation speed or a specific transaction. They
             become a problem when the operation tries to license, open banking
             or expand across jurisdictions.
           </p>
-          <p className="body-lg sp-sub" style={{ marginTop: "16px" }}>
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ marginTop: "16px" }}>
             Octus structures and coordinates corporate architecture designed
             for regulated operations — across US structures (including
             Delaware), European frameworks (Malta, Cyprus, Portugal, UK),
@@ -38,7 +38,7 @@ export default function CorporatePage() {
             required.
           </p>
           <div style={{ marginTop: "48px" }}>
-            <Link href="/contact" className="btn-primary btn-primary-lg">
+            <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
               Design your structure →
             </Link>
           </div>
@@ -46,22 +46,22 @@ export default function CorporatePage() {
       </section>
 
       {/* ─── WHERE CORPORATE STRUCTURE FAILS ─────────────────────── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">Where corporate structure fails</span>
-          <h2 className="heading-md" style={{ marginBottom: "32px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "32px" }}>
             The structure was built for one thing.
             <br />
-            <span style={{ color: "var(--white-40)" }}>
+            <span className="text-muted-foreground">
               The operation required something different.
             </span>
           </h2>
-          <p className="body" style={{ marginBottom: "32px", color: "var(--white-60)" }}>
+          <p className="body-text text-muted-foreground mb-8">
             Corporate structure defines how the operation is owned, controlled,
             financed and scaled. It also determines what is possible — which
             licenses are available, which banks will operate and which
             jurisdictions will accept the entity.{" "}
-            <span style={{ color: "var(--blue-light)" }}>
+            <span className="text-primary">
               Banking outcomes are a direct consequence of corporate structure.
             </span>
           </p>
@@ -81,17 +81,16 @@ export default function CorporatePage() {
             ))}
           </ul>
           <p
-            className="heading-sm"
+            className="heading-sm text-foreground"
             style={{
               marginTop: "48px",
               paddingTop: "32px",
-              borderTop: "1px solid var(--border)",
-              color: "var(--white)",
+              borderTop: "1px solid var(--border-solid)",
             }}
           >
             A corporate structure that works for one layer but fails under
             another is not an architecture.{" "}
-            <span style={{ color: "var(--blue-light)" }}>
+            <span className="text-primary">
               It is a liability waiting to surface.
             </span>
           </p>
@@ -99,10 +98,10 @@ export default function CorporatePage() {
       </section>
 
       {/* ─── APPROACH ─────────────────────────────────────────────── */}
-      <section className="section-blue section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">Our approach</span>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             Designed for the full operational stack.
             <br />
             <span style={{ color: "var(--blue-light)" }}>
@@ -115,14 +114,14 @@ export default function CorporatePage() {
             what regulators require and what banks need to see — and coordinates
             the corporate design to support all of it simultaneously.
           </p>
-          <p className="body" style={{ marginBottom: "20px" }}>
+          <p className="body-text" style={{ marginBottom: "20px" }}>
             Regulatory requirements, banking access, UBO disclosure and
             governance design are not separate workstreams. They are constraints
             that the corporate structure must satisfy at the same time. Most
             corporate failures happen because these layers were designed
             independently.
           </p>
-          <p className="body">
+          <p className="body-text">
             Octus coordinates the architecture as a single integrated structure
             — working alongside the appropriate financial, tax and corporate
             specialists required for each jurisdiction. Where local accounting
@@ -133,8 +132,8 @@ export default function CorporatePage() {
       </section>
 
       {/* ─── WHAT WE STRUCTURE ────────────────────────────────────── */}
-      <section className="sp-what section-padded">
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">What we structure and coordinate</span>
           <h2 className="heading-lg sp-headline">
             Corporate architecture across the full operational stack.
@@ -172,11 +171,11 @@ export default function CorporatePage() {
                 body: "For groups operating across multiple jurisdictions — coordinating entity design, inter-company relationships and governance so the corporate architecture holds under the regulatory and banking standards of each market.",
               },
             ].map((item) => (
-              <div key={item.title} className="card-lg">
-                <h3 className="heading-card" style={{ marginBottom: "12px" }}>
+              <div key={item.title} className="bg-background rounded-lg p-6 md:p-8 border border-transparent transition-all duration-300 hover:border-border">
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>
                   {item.title}
                 </h3>
-                <p className="body">{item.body}</p>
+                <p className="body-text">{item.body}</p>
               </div>
             ))}
           </div>
@@ -184,10 +183,10 @@ export default function CorporatePage() {
       </section>
 
       {/* ─── HOW IT CONNECTS ──────────────────────────────────────── */}
-      <section className="section-dark section-padded">
-        <div className="container">
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">How corporate connects with the rest</span>
-          <h2 className="heading-md" style={{ marginBottom: "48px", maxWidth: "700px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "48px", maxWidth: "700px" }}>
             Corporate architecture is not built in isolation.
           </h2>
           <div className="grid-3">
@@ -205,14 +204,14 @@ export default function CorporatePage() {
                 body: "KYC, AML and data protection obligations flow through the corporate structure. Gaps in entity design or governance create compliance failures that surface under regulatory review or banking scrutiny.",
               },
             ].map((item) => (
-              <div key={item.layer} className="card-lg">
+              <div key={item.layer} className="bg-background rounded-lg p-6 md:p-8 border border-transparent transition-all duration-300 hover:border-border">
                 <h3
-                  className="heading-card"
+                  className="text-lg font-semibold text-primary font-sans"
                   style={{ color: "var(--blue-light)", marginBottom: "12px" }}
                 >
                   {item.layer}
                 </h3>
-                <p className="body">{item.body}</p>
+                <p className="body-text">{item.body}</p>
               </div>
             ))}
           </div>
@@ -220,10 +219,10 @@ export default function CorporatePage() {
       </section>
 
       {/* ─── REAL SITUATIONS ──────────────────────────────────────── */}
-      <section className="section-padded" style={{ padding: "130px 40px" }}>
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Real situations. Real outcomes.</span>
-          <h2 className="heading-md" style={{ marginBottom: "56px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "56px" }}>
             Not theory.
           </h2>
           <div className="grid-3">
@@ -246,17 +245,11 @@ export default function CorporatePage() {
             ].map((c) => (
               <div
                 key={c.tag}
-                className="card-lg"
-                style={{ display: "flex", flexDirection: "column" }}
+                className="flex flex-col rounded-lg border border-y border-r border-border/50 border-l-[3px] border-l-primary bg-background p-6 md:p-8"
               >
-                <span className="case-tag">{c.tag}</span>
-                <h3
-                  className="heading-sm"
-                  style={{ margin: "16px 0", whiteSpace: "pre-line" }}
-                >
-                  {c.title}
-                </h3>
-                <p className="body">{c.body}</p>
+                <span className="mb-4 font-sans text-xs font-medium uppercase tracking-wider text-accent">{c.tag}</span>
+                <h3 className="mb-4 whitespace-pre-line font-sans text-lg font-semibold text-primary">{c.title}</h3>
+                <p className="body-text">{c.body}</p>
               </div>
             ))}
           </div>
@@ -264,10 +257,10 @@ export default function CorporatePage() {
       </section>
 
       {/* ─── WHO THIS IS FOR ──────────────────────────────────────── */}
-      <section className="section-dark section-padded">
-        <div className="container">
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Who this is for</span>
-          <h2 className="heading-md" style={{ marginBottom: "48px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "48px" }}>
             Operations where corporate structure determines what is possible.
           </h2>
           <div className="grid-auto-lg">
@@ -290,7 +283,7 @@ export default function CorporatePage() {
               },
             ].map((ind) => (
               <div key={ind.name} className="card">
-                <h3 className="heading-card" style={{ marginBottom: "12px" }}>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>
                   {ind.name}
                 </h3>
                 <p className="body-sm">{ind.desc}</p>
@@ -302,8 +295,8 @@ export default function CorporatePage() {
 
 
       {/* ─── HOW THE PROCESS WORKS ────────────────────────────── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">How the process works</span>
           <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
             {[
@@ -311,11 +304,11 @@ export default function CorporatePage() {
               { step: "02", title: "Corporate design", body: "We structure the right corporate architecture across jurisdictions, aligned with regulatory requirements, banking access and operational governance." },
               { step: "03", title: "Coordination", body: "We coordinate local corporate and accounting execution where required by law, ensuring the full structure holds across all relevant jurisdictions." },
             ].map((s, i) => (
-              <div key={s.step} style={{ display: "grid", gridTemplateColumns: "48px 1fr", gap: "24px", padding: "28px 0", borderBottom: i < 2 ? "1px solid var(--border)" : "none" }}>
+              <div key={s.step} style={{ display: "grid", gridTemplateColumns: "48px 1fr", gap: "24px", padding: "28px 0", borderBottom: i < 2 ? "1px solid var(--border-solid)" : "none" }}>
                 <span style={{ fontFamily: "var(--font-unigeo), Unigeo64, sans-serif", fontSize: "11px", fontWeight: 700, letterSpacing: "0.1em", color: "var(--blue-light)", paddingTop: "4px" }}>{s.step}</span>
                 <div>
-                  <h3 className="heading-card" style={{ marginBottom: "8px" }}>{s.title}</h3>
-                  <p className="body">{s.body}</p>
+                  <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{s.title}</h3>
+                  <p className="body-text">{s.body}</p>
                 </div>
               </div>
             ))}
@@ -324,8 +317,8 @@ export default function CorporatePage() {
       </section>
 
       {/* ─── FAQ ──────────────────────────────────────────────────── */}
-      <section className="section-padded" style={{ padding: "130px 40px" }}>
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">Common questions</span>
           <div style={{ display: "flex", flexDirection: "column" }}>
             {[
@@ -334,9 +327,9 @@ export default function CorporatePage() {
               { q: "Do you directly provide accounting services?", a: "No. Octus structures and coordinates the corporate and financial layer, working alongside jurisdiction-specific accounting and corporate expertise where required by local law." },
               { q: "Can we reorganise after the structure is already in place?", a: "Yes, but the cost, timing and risk depend on how far the current structure diverges from what the operation actually needs. Earlier is almost always better." },
             ].map((item, i) => (
-              <div key={i} style={{ padding: "28px 0", borderBottom: "1px solid var(--border)" }}>
-                <h3 className="heading-card" style={{ marginBottom: "12px", color: "var(--white)" }}>{item.q}</h3>
-                <p className="body">{item.a}</p>
+              <div key={i} style={{ padding: "28px 0", borderBottom: "1px solid var(--border-solid)" }}>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>{item.q}</h3>
+                <p className="body-text">{item.a}</p>
               </div>
             ))}
           </div>
@@ -347,14 +340,14 @@ export default function CorporatePage() {
       <section className="cta-block">
         <div className="cta-block__bg" />
         <div className="cta-block__inner">
-          <p className="body" style={{ color: "var(--white-40)", marginBottom: "12px" }}>
+          <p className="body-text" style={{ color: "var(--white-40)", marginBottom: "12px" }}>
             If your corporate structure needs to hold under regulatory, banking
             and operational pressure —
           </p>
           <h2 className="heading-lg cta-block__title">
             Design it before it becomes a problem.
           </h2>
-          <Link href="/contact" className="btn-primary btn-primary-lg">
+          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
             Design your structure →
           </Link>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>

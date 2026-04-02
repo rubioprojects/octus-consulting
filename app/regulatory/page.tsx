@@ -11,29 +11,29 @@ export default function RegulatoryPage() {
     <main>
 
       {/* ─── HERO ─────────────────────────────────────────────────── */}
-      <section className="page-hero section-padded">
-        <div className="container">
+      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Regulatory Structuring</span>
-          <h1 className="heading-xl sp-headline">
+          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
             When licensing fails,
             <br />
             <span style={{ color: "var(--white-40)" }}>
               the structure was already wrong.
             </span>
           </h1>
-          <p className="body-lg sp-sub">
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl">
             Wrong jurisdiction. Wrong structure. Wrong sequence. By the time
             most operations reach a regulator, the structural decisions that
             determine the outcome have already been made.
           </p>
-          <p className="body sp-sub" style={{ marginTop: "16px", color: "var(--white-40)" }}>
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/60">
             Octus structures regulatory pathways across iGaming, betting,
             payments, fintech, crypto, VASP, forex and other high-risk or
             emerging regulated models — from jurisdiction selection to full
             operational readiness.
           </p>
           <div style={{ marginTop: "48px" }}>
-            <Link href="/contact" className="btn-primary btn-primary-lg">
+            <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
               Discuss your licensing strategy →
             </Link>
           </div>
@@ -41,13 +41,13 @@ export default function RegulatoryPage() {
       </section>
 
       {/* ─── WHERE REGULATORY FAILS ───────────────────────────────── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">Where licensing breaks</span>
-          <h2 className="heading-md" style={{ marginBottom: "32px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "32px" }}>
             Most licensing failures are not regulatory.
             <br />
-            <span style={{ color: "var(--white-40)" }}>
+            <span className="text-muted-foreground">
               They are structural decisions made too early or too late.
             </span>
           </h2>
@@ -67,17 +67,16 @@ export default function RegulatoryPage() {
             ))}
           </ul>
           <p
-            className="heading-sm"
+            className="heading-sm text-foreground"
             style={{
               marginTop: "48px",
               paddingTop: "32px",
-              borderTop: "1px solid var(--border)",
-              color: "var(--white)",
+              borderTop: "1px solid var(--border-solid)",
             }}
           >
             A licensing process that starts with the wrong structure will not
             be saved by a good application.{" "}
-            <span style={{ color: "var(--blue-light)" }}>
+            <span className="text-primary">
               Structure first. Application second.
             </span>
           </p>
@@ -85,10 +84,10 @@ export default function RegulatoryPage() {
       </section>
 
       {/* ─── APPROACH ─────────────────────────────────────────────── */}
-      <section className="section-blue section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">How we work</span>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             We don&apos;t manage applications.
             <br />
             <span style={{ color: "var(--blue-light)" }}>
@@ -101,12 +100,12 @@ export default function RegulatoryPage() {
             corporate and compliance structure, and building the operational
             framework required for approval and post-approval operation.
           </p>
-          <p className="body" style={{ marginBottom: "20px" }}>
+          <p className="body-text" style={{ marginBottom: "20px" }}>
             Banking access, compliance readiness and regulatory filing run in
             parallel — not in sequence. By the time an application is
             submitted, the structure is already built to hold.
           </p>
-          <p className="body">
+          <p className="body-text">
             This is not advisory. It is pre-licensing structure, licensing
             path design, regulator interface and operational readiness —
             coordinated as a single execution layer.
@@ -115,8 +114,8 @@ export default function RegulatoryPage() {
       </section>
 
       {/* ─── WHAT WE STRUCTURE ────────────────────────────────────── */}
-      <section className="sp-what section-padded">
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">What we structure</span>
           <h2 className="heading-lg sp-headline">
             Regulatory pathways, structured end-to-end.
@@ -153,26 +152,26 @@ export default function RegulatoryPage() {
                 body: "Specialist execution for the Brazilian sports betting regulatory process — corporate structuring, regulatory dossier preparation and direct interaction with SPA and Ministry of Finance authorities.",
               },
             ].map((item) => (
-              <div key={item.title} className="card-lg">
-                <h3 className="heading-card" style={{ marginBottom: "12px" }}>
+              <div key={item.title} className="bg-background rounded-lg p-6 md:p-8 border border-transparent transition-all duration-300 hover:border-border">
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>
                   {item.title}
                 </h3>
-                <p className="body">{item.body}</p>
+                <p className="body-text">{item.body}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section-dark section-padded">
-        <div className="container">
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Jurisdiction strategy</span>
-          <h2 className="heading-md" style={{ marginBottom: "16px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "16px" }}>
             Jurisdiction strategy is not about geography.
             <br />
             <span style={{ color: "var(--blue-light)" }}>It&apos;s about fit.</span>
           </h2>
-          <p className="body-lg" style={{ marginBottom: "56px", maxWidth: "640px", color: "var(--white-60)" }}>
+          <p className="body-lg text-muted-foreground" style={{ marginBottom: "56px", maxWidth: "640px" }}>
             The right jurisdiction depends on the operation&apos;s commercial model,
             risk profile, banking requirements and expansion path — not on cost
             or convenience.
@@ -192,13 +191,13 @@ export default function RegulatoryPage() {
                 desc: "Market entry strategy in LATAM and Africa — including Peru, Nigeria and other markets in active regulatory transition. Entry structured before the framework is final.",
               },
             ].map((t) => (
-              <div key={t.layer} className="card-lg">
-                <h3 className="heading-card" style={{ marginBottom: "12px" }}>{t.layer}</h3>
-                <p className="body">{t.desc}</p>
+              <div key={t.layer} className="bg-background rounded-lg p-6 md:p-8 border border-transparent transition-all duration-300 hover:border-border">
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>{t.layer}</h3>
+                <p className="body-text">{t.desc}</p>
               </div>
             ))}
           </div>
-          <p className="body-sm" style={{ marginTop: "32px", color: "var(--white-25)" }}>
+          <p className="body-sm text-muted-foreground mt-8">
             Each jurisdiction is selected based on operational design, not convenience.
             The right jurisdiction is the one your operation can actually run on.
           </p>
@@ -206,10 +205,10 @@ export default function RegulatoryPage() {
       </section>
 
       {/* ─── REAL SITUATIONS ──────────────────────────────────────── */}
-      <section className="section-padded" style={{ padding: "130px 40px" }}>
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Real situations. Real outcomes.</span>
-          <h2 className="heading-md" style={{ marginBottom: "56px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "56px" }}>
             Not theory.
           </h2>
           <div className="grid-3">
@@ -232,17 +231,15 @@ export default function RegulatoryPage() {
             ].map((c) => (
               <div
                 key={c.tag}
-                className="card-lg"
-                style={{ display: "flex", flexDirection: "column" }}
+                className="flex flex-col rounded-lg border border-y border-r border-border/50 border-l-[3px] border-l-primary bg-background p-6 md:p-8"
               >
-                <span className="case-tag">{c.tag}</span>
-                <h3
-                  className="heading-sm"
-                  style={{ margin: "16px 0", whiteSpace: "pre-line" }}
-                >
+                <span className="mb-4 font-sans text-xs font-medium uppercase tracking-wider text-accent">
+                  {c.tag}
+                </span>
+                <h3 className="mb-4 whitespace-pre-line font-sans text-lg font-semibold text-primary">
                   {c.title}
                 </h3>
-                <p className="body">{c.body}</p>
+                <p className="body-text">{c.body}</p>
               </div>
             ))}
           </div>
@@ -250,10 +247,10 @@ export default function RegulatoryPage() {
       </section>
 
       {/* ─── INDUSTRIES ───────────────────────────────────────────── */}
-      <section className="section-dark section-padded">
-        <div className="container">
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Who this is for</span>
-          <h2 className="heading-md" style={{ marginBottom: "48px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "48px" }}>
             Operations where licensing is not optional.
           </h2>
           <div className="grid-auto-lg">
@@ -276,7 +273,7 @@ export default function RegulatoryPage() {
               },
             ].map((ind) => (
               <div key={ind.name} className="card">
-                <h3 className="heading-card" style={{ marginBottom: "12px" }}>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>
                   {ind.name}
                 </h3>
                 <p className="body-sm">{ind.desc}</p>
@@ -287,10 +284,10 @@ export default function RegulatoryPage() {
       </section>
 
       {/* ─── ENGAGEMENT MODELS ────────────────────────────────────── */}
-      <section className="section-padded" style={{ padding: "130px 40px" }}>
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">How we work with you</span>
-          <h2 className="heading-md" style={{ marginBottom: "12px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "12px" }}>
             Every licensing process requires a different scope.
           </h2>
           <p className="body-lg" style={{ marginBottom: "56px" }}>
@@ -314,15 +311,10 @@ export default function RegulatoryPage() {
                 body: "For operators evaluating markets before committing to a licensing process. Jurisdiction mapping, risk analysis and regulatory framework assessment.",
               },
             ].map((m) => (
-              <div key={m.title} className="card-lg">
-                <h3 className="heading-card">{m.title}</h3>
-                <p
-                  className="chip-blue"
-                  style={{ display: "inline-block", margin: "8px 0 16px" }}
-                >
-                  {m.sub}
-                </p>
-                <p className="body">{m.body}</p>
+              <div key={m.title} className="rounded-lg bg-secondary p-6 text-center md:p-8">
+                <h3 className="mb-3 font-sans text-lg font-semibold text-primary">{m.title}</h3>
+                <p className="mb-3 font-sans text-xs text-muted-foreground">{m.sub}</p>
+                <p className="body-text">{m.body}</p>
               </div>
             ))}
           </div>
@@ -334,8 +326,8 @@ export default function RegulatoryPage() {
       </section>
 
       {/* ─── HOW THE PROCESS WORKS ────────────────────────────── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">How the process works</span>
           <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
             {[
@@ -343,11 +335,11 @@ export default function RegulatoryPage() {
               { step: "02", title: "Regulatory path design", body: "We select the right jurisdiction, define the sequencing and structure the filing logic around operational fit — not speed or convenience." },
               { step: "03", title: "Coordination & execution", body: "We coordinate the process end-to-end: documentation, regulatory interaction, banking alignment and corporate structure, running in parallel." },
             ].map((s, i) => (
-              <div key={s.step} style={{ display: "grid", gridTemplateColumns: "48px 1fr", gap: "24px", padding: "28px 0", borderBottom: i < 2 ? "1px solid var(--border)" : "none" }}>
+              <div key={s.step} style={{ display: "grid", gridTemplateColumns: "48px 1fr", gap: "24px", padding: "28px 0", borderBottom: i < 2 ? "1px solid var(--border-solid)" : "none" }}>
                 <span style={{ fontFamily: "var(--font-unigeo), Unigeo64, sans-serif", fontSize: "11px", fontWeight: 700, letterSpacing: "0.1em", color: "var(--blue-light)", paddingTop: "4px" }}>{s.step}</span>
                 <div>
-                  <h3 className="heading-card" style={{ marginBottom: "8px" }}>{s.title}</h3>
-                  <p className="body">{s.body}</p>
+                  <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{s.title}</h3>
+                  <p className="body-text">{s.body}</p>
                 </div>
               </div>
             ))}
@@ -356,8 +348,8 @@ export default function RegulatoryPage() {
       </section>
 
       {/* ─── FAQ ──────────────────────────────────────────────────── */}
-      <section className="section-padded" style={{ padding: "130px 40px" }}>
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">Common questions</span>
           <div style={{ display: "flex", flexDirection: "column" }}>
             {[
@@ -366,9 +358,9 @@ export default function RegulatoryPage() {
               { q: "What happens if we are already mid-process in the wrong jurisdiction?", a: "That is one of the most common situations we work on. The first step is to assess whether the process can be corrected or needs to be restructured. The cost depends on how far the process has advanced." },
               { q: "Do you only work with iGaming licenses?", a: "No. We structure regulatory pathways across multiple regulated and high-risk models — including betting, payments, fintech, crypto, VASP, forex and other cross-border operations." },
             ].map((item, i) => (
-              <div key={i} style={{ padding: "28px 0", borderBottom: "1px solid var(--border)" }}>
-                <h3 className="heading-card" style={{ marginBottom: "12px", color: "var(--white)" }}>{item.q}</h3>
-                <p className="body">{item.a}</p>
+              <div key={i} style={{ padding: "28px 0", borderBottom: "1px solid var(--border-solid)" }}>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>{item.q}</h3>
+                <p className="body-text">{item.a}</p>
               </div>
             ))}
           </div>
@@ -379,13 +371,13 @@ export default function RegulatoryPage() {
       <section className="cta-block">
         <div className="cta-block__bg" />
         <div className="cta-block__inner">
-          <p className="body" style={{ color: "var(--white-40)", marginBottom: "12px" }}>
+          <p className="body-text" style={{ color: "var(--white-40)", marginBottom: "12px" }}>
             If your licensing strategy needs to hold under regulatory scrutiny —
           </p>
           <h2 className="heading-lg cta-block__title">
             Structure it before you submit it.
           </h2>
-          <Link href="/contact" className="btn-primary btn-primary-lg">
+          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
             Discuss your licensing strategy →
           </Link>
           <p

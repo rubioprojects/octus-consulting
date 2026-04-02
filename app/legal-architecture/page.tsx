@@ -11,30 +11,30 @@ export default function LegalArchitecturePage() {
     <main>
 
       {/* ─── HERO ─────────────────────────────────────────────────── */}
-      <section className="page-hero section-padded">
-        <div className="container">
+      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Legal & Structural Architecture</span>
-          <h1 className="heading-xl sp-headline">
+          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
             Legal structure is not paperwork.
             <br />
             <span style={{ color: "var(--white-40)" }}>
               It is what the operation runs on.
             </span>
           </h1>
-          <p className="body-lg sp-sub">
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl">
             Most legal failures in regulated operations are not compliance
             failures or licensing failures. They are structural failures — wrong
             entity design, misaligned contracts, ownership structures that don&apos;t
             support the operation they were built for.
           </p>
-          <p className="body-lg sp-sub" style={{ marginTop: "16px" }}>
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ marginTop: "16px" }}>
             Octus structures and coordinates the legal architecture required for
             the operation — ensuring alignment across jurisdictions, regulatory
             requirements and banking conditions, working alongside
             jurisdiction-specific legal expertise where required.
           </p>
           <div style={{ marginTop: "48px" }}>
-            <Link href="/contact" className="btn-primary btn-primary-lg">
+            <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
               Structure your legal framework →
             </Link>
           </div>
@@ -42,13 +42,13 @@ export default function LegalArchitecturePage() {
       </section>
 
       {/* ─── WHERE LEGAL STRUCTURE FAILS ──────────────────────────── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">Where legal structure fails</span>
-          <h2 className="heading-md" style={{ marginBottom: "32px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "32px" }}>
             The legal structure fails first.
             <br />
-            <span style={{ color: "var(--white-40)" }}>
+            <span className="text-muted-foreground">
               Everything else follows.
             </span>
           </h2>
@@ -68,17 +68,16 @@ export default function LegalArchitecturePage() {
             ))}
           </ul>
           <p
-            className="heading-sm"
+            className="heading-sm text-foreground"
             style={{
               marginTop: "48px",
               paddingTop: "32px",
-              borderTop: "1px solid var(--border)",
-              color: "var(--white)",
+              borderTop: "1px solid var(--border-solid)",
             }}
           >
             Legal structure is not a document you prepare before the operation
             starts.{" "}
-            <span style={{ color: "var(--blue-light)" }}>
+            <span className="text-primary">
               It is the architecture the operation runs on.
             </span>
           </p>
@@ -86,10 +85,10 @@ export default function LegalArchitecturePage() {
       </section>
 
       {/* ─── HOW WE APPROACH ──────────────────────────────────────── */}
-      <section className="section-blue section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">Our approach</span>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             Legal architecture is designed from the operation backward.
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
@@ -99,7 +98,7 @@ export default function LegalArchitecturePage() {
             requires — and then aligns the legal architecture to support all of
             it simultaneously.
           </p>
-          <p className="body" style={{ marginBottom: "20px" }}>
+          <p className="body-text" style={{ marginBottom: "20px" }}>
             This is the opposite of how most legal structures are designed. Most
             are approached from a single angle — tax, incorporation, or a
             specific contract — and then adapted as the operation evolves.
@@ -107,7 +106,7 @@ export default function LegalArchitecturePage() {
             support licensing, contracts that don&apos;t reflect operations,
             governance that doesn&apos;t scale.
           </p>
-          <p className="body">
+          <p className="body-text">
             Octus coordinates it as a single integrated architecture — designed
             to align across regulatory, banking and operational dimensions from
             the start.
@@ -116,8 +115,8 @@ export default function LegalArchitecturePage() {
       </section>
 
       {/* ─── WHAT WE STRUCTURE ────────────────────────────────────── */}
-      <section className="sp-what section-padded">
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">What we structure</span>
           <h2 className="heading-lg sp-headline">
             Legal architecture across the full operational stack.
@@ -154,11 +153,11 @@ export default function LegalArchitecturePage() {
                 body: "Restructuring of existing corporate architectures that no longer support the operation — for groups expanding into new markets, undergoing regulatory transition or preparing for institutional scrutiny.",
               },
             ].map((item) => (
-              <div key={item.title} className="card-lg">
-                <h3 className="heading-card" style={{ marginBottom: "12px" }}>
+              <div key={item.title} className="bg-background rounded-lg p-6 md:p-8 border border-transparent transition-all duration-300 hover:border-border">
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>
                   {item.title}
                 </h3>
-                <p className="body">{item.body}</p>
+                <p className="body-text">{item.body}</p>
               </div>
             ))}
           </div>
@@ -166,10 +165,10 @@ export default function LegalArchitecturePage() {
       </section>
 
       {/* ─── HOW IT CONNECTS ──────────────────────────────────────── */}
-      <section className="section-dark section-padded">
-        <div className="container">
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">How legal connects with the rest</span>
-          <h2 className="heading-md" style={{ marginBottom: "48px", maxWidth: "700px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "48px", maxWidth: "700px" }}>
             Legal architecture does not operate in isolation.
           </h2>
           <div className="grid-3">
@@ -187,11 +186,11 @@ export default function LegalArchitecturePage() {
                 body: "Banks assess legal structure before opening accounts. Holding design, UBO clarity, inter-company agreements and operational contracts all affect banking access — legal architecture is part of the banking strategy.",
               },
             ].map((item) => (
-              <div key={item.layer} className="card-lg">
-                <h3 className="heading-card" style={{ color: "var(--blue-light)", marginBottom: "12px" }}>
+              <div key={item.layer} className="bg-background rounded-lg p-6 md:p-8 border border-transparent transition-all duration-300 hover:border-border">
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ color: "var(--blue-light)", marginBottom: "12px" }}>
                   {item.layer}
                 </h3>
-                <p className="body">{item.body}</p>
+                <p className="body-text">{item.body}</p>
               </div>
             ))}
           </div>
@@ -199,10 +198,10 @@ export default function LegalArchitecturePage() {
       </section>
 
       {/* ─── REAL SITUATIONS ──────────────────────────────────────── */}
-      <section className="section-padded" style={{ padding: "130px 40px" }}>
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Real situations. Real outcomes.</span>
-          <h2 className="heading-md" style={{ marginBottom: "56px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "56px" }}>
             Not theory.
           </h2>
           <div className="grid-3">
@@ -225,17 +224,11 @@ export default function LegalArchitecturePage() {
             ].map((c) => (
               <div
                 key={c.tag}
-                className="card-lg"
-                style={{ display: "flex", flexDirection: "column" }}
+                className="flex flex-col rounded-lg border border-y border-r border-border/50 border-l-[3px] border-l-primary bg-background p-6 md:p-8"
               >
-                <span className="case-tag">{c.tag}</span>
-                <h3
-                  className="heading-sm"
-                  style={{ margin: "16px 0", whiteSpace: "pre-line" }}
-                >
-                  {c.title}
-                </h3>
-                <p className="body">{c.body}</p>
+                <span className="mb-4 font-sans text-xs font-medium uppercase tracking-wider text-accent">{c.tag}</span>
+                <h3 className="mb-4 whitespace-pre-line font-sans text-lg font-semibold text-primary">{c.title}</h3>
+                <p className="body-text">{c.body}</p>
               </div>
             ))}
           </div>
@@ -243,10 +236,10 @@ export default function LegalArchitecturePage() {
       </section>
 
       {/* ─── WHO THIS IS FOR ──────────────────────────────────────── */}
-      <section className="section-dark section-padded">
-        <div className="container">
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Who this is for</span>
-          <h2 className="heading-md" style={{ marginBottom: "48px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "48px" }}>
             Operations where structure determines outcome.
           </h2>
           <div className="grid-auto-lg">
@@ -269,7 +262,7 @@ export default function LegalArchitecturePage() {
               },
             ].map((ind) => (
               <div key={ind.name} className="card">
-                <h3 className="heading-card" style={{ marginBottom: "12px" }}>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>
                   {ind.name}
                 </h3>
                 <p className="body-sm">{ind.desc}</p>
@@ -281,8 +274,8 @@ export default function LegalArchitecturePage() {
 
 
       {/* ─── HOW THE PROCESS WORKS ────────────────────────────── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">How the process works</span>
           <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
             {[
@@ -290,11 +283,11 @@ export default function LegalArchitecturePage() {
               { step: "02", title: "Architecture design", body: "We structure the legal framework required for the operation to hold across jurisdictions — built around operational requirements, not just regulatory text." },
               { step: "03", title: "Coordination", body: "We coordinate the legal architecture alongside jurisdiction-specific expertise where required — ensuring the entire structure holds simultaneously." },
             ].map((s, i) => (
-              <div key={s.step} style={{ display: "grid", gridTemplateColumns: "48px 1fr", gap: "24px", padding: "28px 0", borderBottom: i < 2 ? "1px solid var(--border)" : "none" }}>
+              <div key={s.step} style={{ display: "grid", gridTemplateColumns: "48px 1fr", gap: "24px", padding: "28px 0", borderBottom: i < 2 ? "1px solid var(--border-solid)" : "none" }}>
                 <span style={{ fontFamily: "var(--font-unigeo), Unigeo64, sans-serif", fontSize: "11px", fontWeight: 700, letterSpacing: "0.1em", color: "var(--blue-light)", paddingTop: "4px" }}>{s.step}</span>
                 <div>
-                  <h3 className="heading-card" style={{ marginBottom: "8px" }}>{s.title}</h3>
-                  <p className="body">{s.body}</p>
+                  <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{s.title}</h3>
+                  <p className="body-text">{s.body}</p>
                 </div>
               </div>
             ))}
@@ -303,8 +296,8 @@ export default function LegalArchitecturePage() {
       </section>
 
       {/* ─── FAQ ──────────────────────────────────────────────────── */}
-      <section className="section-padded" style={{ padding: "130px 40px" }}>
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">Common questions</span>
           <div style={{ display: "flex", flexDirection: "column" }}>
             {[
@@ -313,9 +306,9 @@ export default function LegalArchitecturePage() {
               { q: "Can legal structure affect licensing and banking outcomes?", a: "Directly. Ownership presentation, governance design and contractual architecture often determine whether the broader operational structure works or fails." },
               { q: "Do you work across multiple jurisdictions?", a: "Yes. The legal layer is typically coordinated across jurisdictions — depending on where ownership, operations and regulatory exposure sit." },
             ].map((item, i) => (
-              <div key={i} style={{ padding: "28px 0", borderBottom: "1px solid var(--border)" }}>
-                <h3 className="heading-card" style={{ marginBottom: "12px", color: "var(--white)" }}>{item.q}</h3>
-                <p className="body">{item.a}</p>
+              <div key={i} style={{ padding: "28px 0", borderBottom: "1px solid var(--border-solid)" }}>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>{item.q}</h3>
+                <p className="body-text">{item.a}</p>
               </div>
             ))}
           </div>
@@ -326,14 +319,14 @@ export default function LegalArchitecturePage() {
       <section className="cta-block">
         <div className="cta-block__bg" />
         <div className="cta-block__inner">
-          <p className="body" style={{ color: "var(--white-40)", marginBottom: "12px" }}>
+          <p className="body-text" style={{ color: "var(--white-40)", marginBottom: "12px" }}>
             If your legal structure needs to hold under regulatory, banking and
             operational pressure —
           </p>
           <h2 className="heading-lg cta-block__title">
             Design it before it fails.
           </h2>
-          <Link href="/contact" className="btn-primary btn-primary-lg">
+          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
             Structure your legal framework →
           </Link>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>

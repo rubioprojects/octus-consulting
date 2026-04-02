@@ -11,30 +11,33 @@ export default function SolutionsIGamingLicensingPage() {
     <main>
 
       {/* ─── HERO ─── */}
-      <section className="page-hero section-padded">
-        <div className="container">
+      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Solutions · Regulatory · iGaming Licensing</span>
-          <h1 className="heading-xl sp-headline">
+          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
             Licensing does not fail at submission.
             <br />
             <span style={{ color: "var(--white-40)" }}>
               It fails before the application starts.
             </span>
           </h1>
-          <p className="body-lg sp-sub" style={{ maxWidth: "640px" }}>
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "640px" }}>
             Wrong jurisdiction. Wrong corporate structure. Wrong sequence. By the
             time most operators reach a regulator, the structural decisions that
             determine the outcome have already been made.
           </p>
-          <p className="body-lg sp-sub" style={{ maxWidth: "640px", marginTop: "16px" }}>
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "640px", marginTop: "16px" }}>
             Octus structures licensing strategies built to be approved, not just
             filed.
           </p>
           <div style={{ marginTop: "32px", display: "flex", gap: "16px", flexWrap: "wrap" }}>
-            <Link href="/contact" className="btn-primary btn-primary-lg">
+            <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
               Discuss your licensing strategy →
             </Link>
-            <Link href="/markets/igaming" className="btn-ghost">
+            <Link
+              href="/markets/igaming"
+              className="inline-flex h-12 items-center justify-center rounded-full border border-white/20 bg-transparent px-10 text-base font-medium text-white/80 transition-colors hover:border-white/40 hover:text-white"
+            >
               iGaming operations →
             </Link>
           </div>
@@ -42,8 +45,8 @@ export default function SolutionsIGamingLicensingPage() {
       </section>
 
       {/* ─── POV ─── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Perspective</p>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
             The jurisdiction is rarely the problem. The structure is.
@@ -57,10 +60,10 @@ export default function SolutionsIGamingLicensingPage() {
       </section>
 
       {/* ─── WHERE LICENSING FAILS ─── */}
-      <section className="section-padded">
-        <div className="container">
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <p className="label">The structural problem</p>
-          <h2 className="heading-md" style={{ marginBottom: "24px", maxWidth: "760px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px", maxWidth: "760px" }}>
             Most licensing failures are not regulatory. They are structural.
           </h2>
           <p className="body-lg" style={{ marginBottom: "40px", maxWidth: "760px" }}>
@@ -91,8 +94,8 @@ export default function SolutionsIGamingLicensingPage() {
               },
             ].map((c) => (
               <div key={c.title} className="card" style={{ padding: "28px" }}>
-                <h3 className="heading-card" style={{ marginBottom: "12px" }}>{c.title}</h3>
-                <p className="body-sm" style={{ color: "var(--white-60)" }}>{c.body}</p>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>{c.title}</h3>
+                <p className="body-text">{c.body}</p>
               </div>
             ))}
           </div>
@@ -100,10 +103,10 @@ export default function SolutionsIGamingLicensingPage() {
       </section>
 
       {/* ─── MULTI-JURISDICTION ─── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Jurisdiction strategy</p>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             The jurisdiction is not a detail. It is the first structural decision.
           </h2>
           <p className="body-lg" style={{ marginBottom: "28px" }}>
@@ -125,11 +128,11 @@ export default function SolutionsIGamingLicensingPage() {
               </div>
             ))}
           </div>
-          <p className="body" style={{ marginBottom: "20px", color: "var(--white-60)" }}>
+          <p className="body-text mb-5">
             Additional jurisdictions are assessed case by case based on
             regulatory fit and operational design.
           </p>
-          <p className="body-sm" style={{ color: "var(--white-40)", fontStyle: "italic" }}>
+          <p className="body-sm italic text-muted-foreground">
             Octus does not recommend jurisdictions based on speed or cost. The
             choice is driven by what allows the operation to function — not
             just to launch.
@@ -138,10 +141,10 @@ export default function SolutionsIGamingLicensingPage() {
       </section>
 
       {/* ─── WHAT OCTUS STRUCTURES ─── */}
-      <section className="section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Execution</p>
-          <h2 className="heading-md" style={{ marginBottom: "16px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "16px" }}>
             We design the structure behind the licence.
           </h2>
           <p className="body-lg" style={{ marginBottom: "28px" }}>
@@ -158,25 +161,25 @@ export default function SolutionsIGamingLicensingPage() {
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
-                <p className="body">{item}</p>
+                <p className="body-text">{item}</p>
               </div>
             ))}
           </div>
-          <p className="heading-sm" style={{ color: "var(--white)", borderTop: "1px solid var(--border)", paddingTop: "24px" }}>
+          <p className="heading-sm border-t border-border pt-6 text-foreground">
             The licence is the output.{" "}
-            <span style={{ color: "var(--blue-light)" }}>The structure determines whether it is granted.</span>
+            <span className="text-primary">The structure determines whether it is granted.</span>
           </p>
         </div>
       </section>
 
       {/* ─── SELECTED MANDATES ─── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Selected mandates</p>
-          <h2 className="heading-md" style={{ marginBottom: "32px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "32px" }}>
             Real operations. Real outcomes.
           </h2>
-          <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
+          <div className="grid gap-6 md:grid-cols-1">
             {[
               {
                 tag: "Curaçao · iGaming",
@@ -196,16 +199,11 @@ export default function SolutionsIGamingLicensingPage() {
             ].map((m, i) => (
               <div
                 key={i}
-                style={{
-                  padding: "24px 0",
-                  borderBottom: i < 2 ? "1px solid var(--border)" : "none",
-                }}
+                className="flex flex-col rounded-lg border border-y border-r border-border/50 border-l-[3px] border-l-primary bg-background p-6 md:p-8"
               >
-                <span className="case-tag">{m.tag}</span>
-                <h3 className="heading-card" style={{ marginBottom: "8px", color: "var(--white)", marginTop: "12px" }}>
-                  {m.title}
-                </h3>
-                <p className="body" style={{ color: "var(--white-60)" }}>{m.body}</p>
+                <span className="mb-4 font-sans text-xs font-medium uppercase tracking-wider text-accent">{m.tag}</span>
+                <h3 className="mb-4 font-sans text-lg font-semibold text-primary">{m.title}</h3>
+                <p className="body-text">{m.body}</p>
               </div>
             ))}
           </div>
@@ -213,44 +211,44 @@ export default function SolutionsIGamingLicensingPage() {
       </section>
 
       {/* ─── ENGAGEMENT MODELS ─── */}
-      <section className="section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
-          <h2 className="heading-md" style={{ marginBottom: "28px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "28px" }}>
             Three models. One standard.
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "24px", marginBottom: "28px" }}>
-            <p className="body">
-              <strong style={{ color: "var(--white)" }}>Full execution</strong>
+            <p className="body-text">
+              <strong className="font-semibold text-foreground">Full execution</strong>
               {" "}— End-to-end licensing and structuring. From jurisdiction selection to operational readiness.
             </p>
-            <p className="body">
-              <strong style={{ color: "var(--white)" }}>Strategic intervention</strong>
+            <p className="body-text">
+              <strong className="font-semibold text-foreground">Strategic intervention</strong>
               {" "}— Correction of existing structures, licensing processes or regulatory misalignment.
             </p>
-            <p className="body">
-              <strong style={{ color: "var(--white)" }}>Advisory and mapping</strong>
+            <p className="body-text">
+              <strong className="font-semibold text-foreground">Advisory and mapping</strong>
               {" "}— Strategic assessment and regulatory pathway definition before execution.
             </p>
           </div>
-          <p className="body-sm" style={{ marginBottom: "24px", color: "var(--white-60)" }}>
+          <p className="body-sm mb-6 text-muted-foreground">
             All engagements provide direct access to the Octus team. No
             intermediaries, no account layers.
           </p>
-          <p className="body" style={{ marginBottom: "28px", padding: "20px", borderLeft: "3px solid var(--blue-light)", background: "rgba(0, 98, 222, 0.06)" }}>
-            <strong style={{ color: "var(--white)" }}>Qualification:</strong>
+          <p className="body-text mb-7 border-l-[3px] border-l-primary bg-primary/5 p-5">
+            <strong className="font-semibold text-foreground">Qualification:</strong>
             {" "}We do not support shortcut licensing strategies or fast-track
             approaches without structural backing. If your objective is speed
             over sustainability, we are not the right partner.
           </p>
-          <Link href="/contact" className="btn-primary btn-primary-lg">
+          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
             Request a licensing diagnostic →
           </Link>
         </div>
       </section>
 
       {/* ─── FAQ ─── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Common questions</p>
           <div style={{ display: "flex", flexDirection: "column" }}>
             {[
@@ -275,9 +273,9 @@ export default function SolutionsIGamingLicensingPage() {
                 a: "Law firms focus on legal interpretation and documentation. Octus structures the full licensing pathway as an operating model: jurisdiction, corporate design, compliance architecture, banking alignment and regulatory coordination.",
               },
             ].map((item, i) => (
-              <div key={i} style={{ padding: "28px 0", borderBottom: "1px solid var(--border)" }}>
-                <h3 className="heading-card" style={{ marginBottom: "12px", color: "var(--white)" }}>{item.q}</h3>
-                <p className="body">{item.a}</p>
+              <div key={i} style={{ padding: "28px 0", borderBottom: "1px solid var(--border-solid)" }}>
+                <h3 className="mb-3 font-sans text-lg font-semibold text-primary">{item.q}</h3>
+                <p className="body-text">{item.a}</p>
               </div>
             ))}
           </div>
@@ -285,8 +283,8 @@ export default function SolutionsIGamingLicensingPage() {
       </section>
 
       {/* ─── CROSS-LINKS ─── */}
-      <section className="section-padded">
-        <div className="container">
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <p className="label">Related</p>
           <div className="grid-auto-lg">
             {[
@@ -298,7 +296,7 @@ export default function SolutionsIGamingLicensingPage() {
               { title: "iGaming Market", desc: "Sector overview and Octus positioning", href: "/markets/igaming" },
             ].map((r) => (
               <Link key={r.title} href={r.href} className="card-grid" style={{ padding: "28px" }}>
-                <h3 className="heading-card" style={{ marginBottom: "8px" }}>{r.title}</h3>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{r.title}</h3>
                 <p className="body-sm" style={{ marginBottom: "12px" }}>{r.desc}</p>
                 <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Learn more →</span>
               </Link>
@@ -311,7 +309,7 @@ export default function SolutionsIGamingLicensingPage() {
       <section className="cta-block">
         <div className="cta-block__bg" />
         <div className="cta-block__inner">
-          <p className="body" style={{ color: "var(--white-40)", marginBottom: "8px" }}>
+          <p className="body-text" style={{ color: "var(--white-40)", marginBottom: "8px" }}>
             Getting licensed is the first step. Without continuous operation, it breaks.
           </p>
           <p className="body-sm" style={{ color: "var(--white-25)", marginBottom: "16px", fontStyle: "italic" }}>
@@ -321,7 +319,7 @@ export default function SolutionsIGamingLicensingPage() {
             Get the structure right{" "}
             <span style={{ color: "var(--blue-light)" }}>before the regulator sees it.</span>
           </h2>
-          <Link href="/contact" className="btn-primary btn-primary-lg">
+          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
             Request a licensing assessment →
           </Link>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>

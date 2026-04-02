@@ -53,29 +53,29 @@ const sections = [
 export default function PrivacyPage() {
   return (
     <main>
-      <section className="page-hero section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">Legal</span>
-          <h1 className="heading-xl sp-headline">Privacy Policy</h1>
-          <p className="body-lg sp-sub">Last updated: March 2026</p>
+          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">Privacy Policy</h1>
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl">Last updated: March 2026</p>
         </div>
       </section>
-      <section className="section-padded" style={{ padding: "0 40px 130px" }}>
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           {sections.map((s, i) => (
             <div
               key={s.title}
               style={{
                 marginBottom: "40px",
                 paddingBottom: "40px",
-                borderBottom: i < sections.length - 1 ? "1px solid var(--border)" : "none",
+                borderBottom: i < sections.length - 1 ? "1px solid var(--border-solid)" : "none",
               }}
             >
               <h2 className="heading-sm" style={{ marginBottom: "16px" }}>
                 {s.title}
               </h2>
               {s.body.split("\n\n").map((para, j) => (
-                <p key={j} className="body" style={{ marginBottom: "12px", whiteSpace: "pre-line" }}>
+                <p key={j} className="body-text" style={{ marginBottom: "12px", whiteSpace: "pre-line" }}>
                   {para}
                 </p>
               ))}

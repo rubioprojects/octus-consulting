@@ -11,10 +11,10 @@ export default function PrivateClientsPage() {
     <main>
 
       {/* ─── HERO ─────────────────────────────────────────────────── */}
-      <section className="page-hero section-padded">
-        <div className="container">
+      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Ownership & UBO Architecture</span>
-          <h1 className="heading-xl sp-headline">
+          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
             The individual behind the operation
             <br />
             <span style={{ color: "var(--white-40)" }}>
@@ -35,19 +35,19 @@ export default function PrivateClientsPage() {
             architecture tied to regulated operations, licensing exposure and
             banking scrutiny.
           </p>
-          <p className="body-lg sp-sub">
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl">
             Regulated operations are scrutinised at every layer — including the
             individuals who own, control and benefit from them. UBO disclosure,
             personal holding structures and individual compliance exposure are
             not afterthoughts. They are part of whether the operation holds.
           </p>
-          <p className="body-lg sp-sub" style={{ marginTop: "16px" }}>
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ marginTop: "16px" }}>
             Octus structures and coordinates ownership architecture and
             individual compliance frameworks — designed to satisfy regulatory
             and banking requirements while managing personal exposure.
           </p>
           <div style={{ marginTop: "48px" }}>
-            <Link href="/contact" className="btn-primary btn-primary-lg">
+            <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
               Structure your exposure →
             </Link>
           </div>
@@ -55,10 +55,10 @@ export default function PrivateClientsPage() {
       </section>
 
       {/* ─── WHERE IT FAILS ───────────────────────────────────────── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">Where individual structure fails</span>
-          <h2 className="heading-md" style={{ marginBottom: "32px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "32px" }}>
             The operation was structured. The individual was not.
           </h2>
           <ul className="problem-list">
@@ -80,8 +80,8 @@ export default function PrivateClientsPage() {
       </section>
 
       {/* ─── WHAT WE STRUCTURE ────────────────────────────────────── */}
-      <section className="sp-what section-padded">
-        <div className="container">
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">What we structure</span>
           <h2 className="heading-lg sp-headline">
             Ownership architecture designed to hold.
@@ -121,11 +121,11 @@ export default function PrivateClientsPage() {
                 body: "Structural separation between private wealth and operating entities — designed to protect personal assets from operational risk while maintaining the corporate coherence required for regulatory and banking purposes.",
               },
             ].map((item) => (
-              <div key={item.title} className="card-lg">
-                <h3 className="heading-card" style={{ marginBottom: "12px" }}>
+              <div key={item.title} className="bg-background rounded-lg p-6 md:p-8 border border-transparent transition-all duration-300 hover:border-border">
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>
                   {item.title}
                 </h3>
-                <p className="body">{item.body}</p>
+                <p className="body-text">{item.body}</p>
               </div>
             ))}
           </div>
@@ -133,10 +133,10 @@ export default function PrivateClientsPage() {
       </section>
 
       {/* ─── WHO THIS IS FOR ──────────────────────────────────────── */}
-      <section className="section-dark section-padded">
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Who this is for</span>
-          <h2 className="heading-md" style={{ marginBottom: "48px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "48px" }}>
             Individuals whose personal structure affects
             their operation.
           </h2>
@@ -160,7 +160,7 @@ export default function PrivateClientsPage() {
               },
             ].map((ind) => (
               <div key={ind.name} className="card">
-                <h3 className="heading-card" style={{ marginBottom: "12px" }}>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>
                   {ind.name}
                 </h3>
                 <p className="body-sm">{ind.desc}</p>
@@ -172,8 +172,8 @@ export default function PrivateClientsPage() {
 
 
       {/* ─── HOW THE PROCESS WORKS ────────────────────────────── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">How the process works</span>
           <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
             {[
@@ -181,11 +181,11 @@ export default function PrivateClientsPage() {
               { step: "02", title: "Ownership architecture", body: "We structure the ownership and UBO layer to satisfy banking, disclosure and licensing requirements while managing personal exposure." },
               { step: "03", title: "Alignment", body: "We coordinate the personal structure with the wider corporate and regulatory architecture — ensuring coherence across the full operational stack." },
             ].map((s, i) => (
-              <div key={s.step} style={{ display: "grid", gridTemplateColumns: "48px 1fr", gap: "24px", padding: "28px 0", borderBottom: i < 2 ? "1px solid var(--border)" : "none" }}>
+              <div key={s.step} style={{ display: "grid", gridTemplateColumns: "48px 1fr", gap: "24px", padding: "28px 0", borderBottom: i < 2 ? "1px solid var(--border-solid)" : "none" }}>
                 <span style={{ fontFamily: "var(--font-unigeo), Unigeo64, sans-serif", fontSize: "11px", fontWeight: 700, letterSpacing: "0.1em", color: "var(--blue-light)", paddingTop: "4px" }}>{s.step}</span>
                 <div>
-                  <h3 className="heading-card" style={{ marginBottom: "8px" }}>{s.title}</h3>
-                  <p className="body">{s.body}</p>
+                  <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{s.title}</h3>
+                  <p className="body-text">{s.body}</p>
                 </div>
               </div>
             ))}
@@ -194,8 +194,8 @@ export default function PrivateClientsPage() {
       </section>
 
       {/* ─── FAQ ──────────────────────────────────────────────────── */}
-      <section className="section-padded" style={{ padding: "130px 40px" }}>
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">Common questions</span>
           <div style={{ display: "flex", flexDirection: "column" }}>
             {[
@@ -204,9 +204,9 @@ export default function PrivateClientsPage() {
               { q: "Can personal exposure affect banking and licensing outcomes?", a: "Yes. Ownership transparency, source-of-funds questions and disclosure inconsistencies can all directly affect whether accounts are opened and licenses granted." },
               { q: "Is this only relevant for founders?", a: "No. It also matters for investors, controllers, silent partners and other individuals with real ownership or control exposure across the structure." },
             ].map((item, i) => (
-              <div key={i} style={{ padding: "28px 0", borderBottom: "1px solid var(--border)" }}>
-                <h3 className="heading-card" style={{ marginBottom: "12px", color: "var(--white)" }}>{item.q}</h3>
-                <p className="body">{item.a}</p>
+              <div key={i} style={{ padding: "28px 0", borderBottom: "1px solid var(--border-solid)" }}>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>{item.q}</h3>
+                <p className="body-text">{item.a}</p>
               </div>
             ))}
           </div>
@@ -217,14 +217,14 @@ export default function PrivateClientsPage() {
       <section className="cta-block">
         <div className="cta-block__bg" />
         <div className="cta-block__inner">
-          <p className="body" style={{ color: "var(--white-40)", marginBottom: "12px" }}>
+          <p className="body-text" style={{ color: "var(--white-40)", marginBottom: "12px" }}>
             If your personal structure affects the regulatory or banking
             position of your operation —
           </p>
           <h2 className="heading-lg cta-block__title">
             Structure your exposure before it surfaces.
           </h2>
-          <Link href="/contact" className="btn-primary btn-primary-lg">
+          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
             Structure your exposure →
           </Link>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>

@@ -11,23 +11,23 @@ export default function AboutPage() {
     <main>
 
       {/* ─── HERO ─────────────────────────────────────────────────── */}
-      <section className="page-hero section-padded">
-        <div className="container">
+      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">About Octus</span>
-          <h1 className="heading-xl sp-headline">
+          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
             Octus is not an advisory firm.
             <br />
             <span style={{ color: "var(--white-40)" }}>
               It is the execution layer behind regulated operations.
             </span>
           </h1>
-          <p className="body-lg sp-sub">
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl">
             We don&apos;t produce reports. We structure, coordinate and operate
             what needs to work — across regulatory, compliance, banking and
             corporate layers simultaneously.
           </p>
           <div style={{ marginTop: "48px" }}>
-            <Link href="/contact" className="btn-primary btn-primary-lg">
+            <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
               Discuss your structure →
             </Link>
           </div>
@@ -35,10 +35,10 @@ export default function AboutPage() {
       </section>
 
       {/* ─── WHAT OCTUS IS ────────────────────────────────────────── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">What Octus actually is</span>
-          <h2 className="heading-md" style={{ marginBottom: "32px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "32px" }}>
             Structuring, coordinating and operating what others only advise on.
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
@@ -47,12 +47,12 @@ export default function AboutPage() {
             — entering the structure, coordinating across layers and taking
             responsibility for what needs to work.
           </p>
-          <p className="body" style={{ marginBottom: "20px" }}>
+          <p className="body-text" style={{ marginBottom: "20px" }}>
             Clients bring us in when licensing is stuck, banking is blocked,
             compliance is failing or a structure needs to be rebuilt from the
             ground up. We step in, diagnose the structural failure and fix it.
           </p>
-          <p className="body">
+          <p className="body-text">
             Octus structures what needs to hold — and coordinates until it
             actually does.
           </p>
@@ -60,10 +60,10 @@ export default function AboutPage() {
       </section>
 
       {/* ─── HOW WE WORK ──────────────────────────────────────────── */}
-      <section className="section-blue section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">How we work</span>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             We act as lead contractor.
             <br />
             <span style={{ color: "var(--blue-light)" }}>
@@ -76,12 +76,12 @@ export default function AboutPage() {
             pace, managed by different providers, with no one accountable for
             the whole.
           </p>
-          <p className="body" style={{ marginBottom: "20px" }}>
+          <p className="body-text" style={{ marginBottom: "20px" }}>
             Octus coordinates the entire structure — from jurisdiction selection
             and licensing strategy to compliance operations and corporate
             architecture — as a single execution layer.
           </p>
-          <p className="body">
+          <p className="body-text">
             You don&apos;t manage multiple advisors. You have one point of contact
             accountable for the structure that needs to work.
           </p>
@@ -89,8 +89,8 @@ export default function AboutPage() {
       </section>
 
       {/* ─── WHEN CLIENTS COME ────────────────────────────────────── */}
-      <section className="section-padded" style={{ padding: "130px 40px" }}>
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">When clients come to us</span>
           <h2 className="heading-lg" style={{ marginBottom: "56px", maxWidth: "700px" }}>
             Usually when the structure is already broken.
@@ -110,11 +110,11 @@ export default function AboutPage() {
                 body: "New regulated market, complex multi-jurisdiction setup, or transition from offshore to regulated. Entry structured before the consequences of a wrong decision become irreversible.",
               },
             ].map((item) => (
-              <div key={item.title} className="card-lg">
-                <h3 className="heading-card" style={{ marginBottom: "12px" }}>
+              <div key={item.title} className="bg-background rounded-lg p-6 md:p-8 border border-transparent transition-all duration-300 hover:border-border">
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>
                   {item.title}
                 </h3>
-                <p className="body">{item.body}</p>
+                <p className="body-text">{item.body}</p>
               </div>
             ))}
           </div>
@@ -122,10 +122,10 @@ export default function AboutPage() {
       </section>
 
       {/* ─── WHERE WE COME FROM ───────────────────────────────────── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">Where we come from</span>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             Built inside complexity. Applied across regulated sectors.
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
@@ -135,28 +135,28 @@ export default function AboutPage() {
             regulatory transitions, laboratory certifications, banking
             structures and cross-border operations, not observing them.
           </p>
-          <p className="body" style={{ marginBottom: "20px" }}>
+          <p className="body-text" style={{ marginBottom: "20px" }}>
             That experience — how operations actually break, and what is
             required to fix them — is what we apply across every regulated
             industry today: fintech, payments, crypto, VASP, forex, corporate
             structuring and international market entry.
           </p>
-          <p className="body">
+          <p className="body-text">
             The sector changes. The structural problem does not.
           </p>
         </div>
       </section>
 
       {/* ─── AUTHORITY ────────────────────────────────────────────── */}
-      <section className="section-padded" style={{ padding: "130px 40px" }}>
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">What we have done</span>
-          <h2 className="heading-md" style={{ marginBottom: "48px", maxWidth: "700px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "48px", maxWidth: "700px" }}>
             Real operations under real pressure.
           </h2>
           <div className="grid-2">
             <div>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1px", background: "var(--border)", borderRadius: "12px", overflow: "hidden", marginBottom: "24px" }}>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1px", background: "var(--border-solid)", borderRadius: "12px", overflow: "hidden", marginBottom: "24px" }}>
                 {[
                   { num: "15+", label: "Active jurisdictions" },
                   { num: "2019", label: "Operating since" },
@@ -198,10 +198,10 @@ export default function AboutPage() {
       </section>
 
       {/* ─── WHO WE WORK WITH ─────────────────────────────────────── */}
-      <section className="section-dark section-padded">
-        <div className="container">
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Who we work with</span>
-          <h2 className="heading-md" style={{ marginBottom: "16px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "16px" }}>
             Operators building serious businesses in regulated environments.
           </h2>
           <p className="body-lg" style={{ marginBottom: "48px", maxWidth: "640px", color: "var(--white-60)" }}>
@@ -228,7 +228,7 @@ export default function AboutPage() {
               },
             ].map((item) => (
               <div key={item.name} className="card">
-                <h3 className="heading-card" style={{ marginBottom: "12px" }}>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>
                   {item.name}
                 </h3>
                 <p className="body-sm">{item.desc}</p>
@@ -239,10 +239,10 @@ export default function AboutPage() {
       </section>
 
       {/* ─── JURISDICTION COORDINATION ────────────────────────── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">How execution works</span>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             One point of responsibility.
             <br />
             <span style={{ color: "var(--white-40)" }}>
@@ -255,7 +255,7 @@ export default function AboutPage() {
             regulatory bodies and corporate frameworks. Octus coordinates
             that layer as part of a single integrated structure.
           </p>
-          <p className="body">
+          <p className="body-text">
             Clients do not manage multiple providers across multiple markets.
             Where local execution is required, Octus structures and
             coordinates jurisdiction-specific expertise as part of one
@@ -266,10 +266,10 @@ export default function AboutPage() {
       </section>
 
       {/* ─── CERTIFICATIONS ───────────────────────────────────────── */}
-      <section className="section-padded" style={{ padding: "0 40px 130px" }}>
-        <div className="container">
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Selected certifications and recognitions</span>
-          <h2 className="heading-md" style={{ marginBottom: "16px", maxWidth: "640px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "16px", maxWidth: "640px" }}>
             Credentials and operational environments relevant to regulated,
             high-scrutiny structures.
           </h2>
@@ -286,7 +286,7 @@ export default function AboutPage() {
               { name: "Certification-ready Environments", desc: "Structures prepared to meet ISO, laboratory and technical certification requirements when applicable to the operation." },
             ].map((item) => (
               <div key={item.name} className="card" style={{ borderLeft: "2px solid var(--blue-border)" }}>
-                <h3 className="heading-card" style={{ marginBottom: "8px" }}>{item.name}</h3>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{item.name}</h3>
                 <p className="body-sm">{item.desc}</p>
               </div>
             ))}
@@ -298,7 +298,7 @@ export default function AboutPage() {
       <section className="cta-block">
         <div className="cta-block__bg" />
         <div className="cta-block__inner">
-          <p className="body" style={{ color: "var(--white-40)", marginBottom: "12px" }}>
+          <p className="body-text" style={{ color: "var(--white-40)", marginBottom: "12px" }}>
             If your operation depends on regulatory approval, compliance
             integrity and structural stability —
           </p>
@@ -306,7 +306,7 @@ export default function AboutPage() {
             You don&apos;t need more advisors.
             <br />You need a structure that works.
           </h2>
-          <Link href="/contact" className="btn-primary btn-primary-lg">
+          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
             Request assessment →
           </Link>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>

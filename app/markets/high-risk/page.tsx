@@ -10,34 +10,34 @@ export default function MarketsHighRiskPage() {
   return (
     <main>
 
-      <section className="page-hero section-padded">
-        <div className="container">
+      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Markets · High-Risk Operations</span>
-          <h1 className="heading-xl sp-headline">
+          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
             High-risk is not a problem to solve.
             <br />
             <span style={{ color: "var(--white-40)" }}>
               It is a classification to structure around.
             </span>
           </h1>
-          <p className="body-lg sp-sub" style={{ maxWidth: "620px" }}>
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "620px" }}>
             Banks, payment processors, regulators and partners use risk
             classifications to determine access. If your sector, jurisdiction or
             business model triggers a high-risk flag, every structural decision
             must account for it. Most operators discover this too late.
           </p>
           <div style={{ marginTop: "32px" }}>
-            <Link href="/contact" className="btn-primary btn-primary-lg">
+            <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
               Discuss your structure →
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Definition</p>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             High-risk is not about what you do. It is about how institutions classify what you do.
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
@@ -56,10 +56,10 @@ export default function MarketsHighRiskPage() {
         </div>
       </section>
 
-      <section className="section-padded">
-        <div className="container">
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <p className="label">What breaks</p>
-          <h2 className="heading-md" style={{ marginBottom: "32px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "32px" }}>
             The classification creates consequences at every layer.
           </h2>
           <div className="grid-auto-lg">
@@ -82,18 +82,18 @@ export default function MarketsHighRiskPage() {
               },
             ].map((c) => (
               <div key={c.title} className="card" style={{ padding: "28px" }}>
-                <h3 className="heading-card" style={{ marginBottom: "12px" }}>{c.title}</h3>
-                <p className="body-sm" style={{ color: "var(--white-60)" }}>{c.body}</p>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>{c.title}</h3>
+                <p className="body-sm text-muted-foreground">{c.body}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Growth exposure</p>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             Most high-risk operations do not fail at setup. They fail under pressure.
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
@@ -109,10 +109,10 @@ export default function MarketsHighRiskPage() {
         </div>
       </section>
 
-      <section className="section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Execution</p>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             We structure operations to function under constraint.
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -125,40 +125,40 @@ export default function MarketsHighRiskPage() {
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
-                <p className="body">{item}</p>
+                <p className="body-text">{item}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Where the classification applies</p>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             High-risk is not one sector. It is a pattern.
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
             The classification applies across industries that share regulatory
             sensitivity, transaction complexity and institutional caution:
           </p>
-          <p className="body" style={{ marginBottom: "24px" }}>
+          <p className="body-text" style={{ marginBottom: "24px" }}>
             iGaming and betting. Crypto and digital assets. Fintech and payments.
             Forex and CFDs. Adult content and entertainment. Nutraceuticals and
             supplements. Travel and timeshare. Debt collection and financial
             intermediation.
           </p>
-          <p className="body-sm" style={{ color: "var(--white-40)", fontStyle: "italic" }}>
+          <p className="body-sm italic text-muted-foreground">
             The sector varies. The structural problem is the same: institutional
             access depends on how the operation is built, not what it sells.
           </p>
         </div>
       </section>
 
-      <section className="section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Fit</p>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             This is for operations that take the classification seriously.
           </h2>
           <p className="label" style={{ marginBottom: "12px", color: "var(--blue-light)" }}>This is relevant if:</p>
@@ -176,7 +176,7 @@ export default function MarketsHighRiskPage() {
               </div>
             ))}
           </div>
-          <p className="label" style={{ marginBottom: "12px", color: "var(--white-40)" }}>This is not relevant if:</p>
+          <p className="label mb-3 text-muted-foreground">This is not relevant if:</p>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginBottom: "28px" }}>
             {[
               "You are looking for a bank that does not ask questions.",
@@ -185,12 +185,12 @@ export default function MarketsHighRiskPage() {
               "The operation has no substance, no product and no real users.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                <span style={{ color: "var(--white-40)", marginTop: "2px", flexShrink: 0 }}>—</span>
-                <p className="body-sm" style={{ color: "var(--white-40)" }}>{item}</p>
+                <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                <p className="body-sm text-muted-foreground">{item}</p>
               </div>
             ))}
           </div>
-          <p className="body-sm" style={{ color: "var(--white-40)", fontStyle: "italic" }}>
+          <p className="body-sm italic text-muted-foreground">
             We do not build structures for workarounds. If your model depends on
             &quot;finding a way around&quot;, this will not work. This is for
             operators who intend to run sustainable businesses under real
@@ -199,8 +199,8 @@ export default function MarketsHighRiskPage() {
         </div>
       </section>
 
-      <section className="section-dark section-padded">
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <p className="label">Related</p>
           <div className="grid-auto-lg">
             {[
@@ -212,7 +212,7 @@ export default function MarketsHighRiskPage() {
               { title: "iGaming Licensing", desc: "Licensing for regulated high-risk sectors", href: "/solutions/regulatory/igaming-licensing" },
             ].map((r) => (
               <Link key={r.title} href={r.href} className="card-grid" style={{ padding: "28px" }}>
-                <h3 className="heading-card" style={{ marginBottom: "8px" }}>{r.title}</h3>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{r.title}</h3>
                 <p className="body-sm" style={{ marginBottom: "12px" }}>{r.desc}</p>
                 <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Learn more →</span>
               </Link>
@@ -234,7 +234,7 @@ export default function MarketsHighRiskPage() {
             Build for the scrutiny.{" "}
             <span style={{ color: "var(--blue-light)" }}>Not around it.</span>
           </h2>
-          <Link href="/contact" className="btn-primary btn-primary-lg">
+          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
             Request assessment →
           </Link>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>

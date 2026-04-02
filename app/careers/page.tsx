@@ -11,13 +11,13 @@ export default function CareersPage() {
     <main>
 
       {/* ─── HERO ─────────────────────────────────────────────────── */}
-      <section className="page-hero section-padded">
-        <div className="container">
+      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Careers</span>
-          <h1 className="heading-xl sp-headline">
+          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
             Built for people who know how regulated operations actually work.
           </h1>
-          <p className="body-lg sp-sub" style={{ maxWidth: "580px" }}>
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "580px" }}>
             Octus operates at the intersection of regulatory structuring,
             compliance, legal architecture and corporate design. We look for
             people with operational depth — not just credentials.
@@ -25,8 +25,8 @@ export default function CareersPage() {
         </div>
       </section>
 
-      <section className="section-padded" style={{ paddingTop: 0, paddingBottom: "80px" }}>
-        <div className="container" style={{ maxWidth: "1000px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "1000px" }}>
           <span className="label">Life at Octus</span>
           <div className="careers-culture-visual">
             <img src="/team-group.jpg" alt="Octus team culture" className="careers-culture-image" />
@@ -34,10 +34,10 @@ export default function CareersPage() {
         </div>
       </section>
 
-      <section className="section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">How we work</span>
-          <h2 className="heading-md" style={{ marginBottom: "32px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "32px" }}>
             Serious operations require serious people.
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
@@ -45,12 +45,12 @@ export default function CareersPage() {
             structures and coordinate execution across multiple regulatory and
             corporate layers simultaneously.
           </p>
-          <p className="body" style={{ marginBottom: "20px" }}>
+          <p className="body-text" style={{ marginBottom: "20px" }}>
             The work is complex, international and requires people who
             understand the difference between what is written and what
             actually holds under real conditions.
           </p>
-          <p className="body">
+          <p className="body-text">
             We work remotely across multiple time zones, with clients across
             Europe, LATAM, Middle East and Asia.
           </p>
@@ -69,7 +69,7 @@ export default function CareersPage() {
                 style={{
                   padding: "16px 20px",
                   background: "var(--card-bg)",
-                  border: "1px solid var(--border)",
+                  border: "1px solid var(--border-solid)",
                   borderRadius: "12px",
                   fontSize: "14px",
                   fontWeight: 500,
@@ -84,10 +84,10 @@ export default function CareersPage() {
       </section>
 
       {/* ─── WHO WE LOOK FOR ──────────────────────────────────────── */}
-      <section className="section-padded" style={{ padding: "130px 40px" }}>
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Who we look for</span>
-          <h2 className="heading-md" style={{ marginBottom: "48px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "48px" }}>
             Across four operational areas.
           </h2>
           <div className="grid-auto-lg">
@@ -110,7 +110,7 @@ export default function CareersPage() {
               },
             ].map((item) => (
               <div key={item.area} className="card">
-                <h3 className="heading-card" style={{ marginBottom: "12px", color: "var(--blue-light)" }}>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px", color: "var(--blue-light)" }}>
                   {item.area}
                 </h3>
                 <p className="body-sm">{item.desc}</p>
@@ -121,8 +121,8 @@ export default function CareersPage() {
       </section>
 
       {/* ─── PROCESS ──────────────────────────────────────────────── */}
-      <section className="section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <span className="label">Our recruitment process</span>
           <div style={{ display: "flex", flexDirection: "column" }}>
             {[
@@ -139,7 +139,7 @@ export default function CareersPage() {
                   gridTemplateColumns: "48px 1fr",
                   gap: "24px",
                   padding: "24px 0",
-                  borderBottom: i < 4 ? "1px solid var(--border)" : "none",
+                  borderBottom: i < 4 ? "1px solid var(--border-solid)" : "none",
                 }}
               >
                 <span
@@ -155,7 +155,7 @@ export default function CareersPage() {
                   {s.step}
                 </span>
                 <div>
-                  <h3 className="heading-card" style={{ marginBottom: "6px" }}>{s.title}</h3>
+                  <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "6px" }}>{s.title}</h3>
                   <p className="body-sm">{s.body}</p>
                 </div>
               </div>
@@ -168,7 +168,7 @@ export default function CareersPage() {
       <section className="cta-block">
         <div className="cta-block__bg" />
         <div className="cta-block__inner">
-          <p className="body" style={{ color: "var(--white-40)", marginBottom: "12px" }}>
+          <p className="body-text" style={{ color: "var(--white-40)", marginBottom: "12px" }}>
             No open positions listed? Send your profile anyway.
           </p>
           <h2 className="heading-lg cta-block__title">
@@ -176,7 +176,7 @@ export default function CareersPage() {
           </h2>
           <a
             href="mailto:talentos@octusconsulting.com?subject=Octus Careers"
-            className="btn-primary btn-primary-lg"
+            className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90"
           >
             Send your profile →
           </a>

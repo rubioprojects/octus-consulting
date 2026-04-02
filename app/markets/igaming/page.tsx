@@ -11,26 +11,29 @@ export default function MarketsIGamingPage() {
     <main>
 
       {/* ─── HERO ─── */}
-      <section className="page-hero section-padded">
-        <div className="container">
+      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Markets · iGaming & Betting</span>
-          <h1 className="heading-xl sp-headline">
+          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
             Most iGaming operations don&apos;t fail
             <br />
             <span style={{ color: "var(--white-40)" }}>
               because of regulation.
             </span>
           </h1>
-          <p className="body-lg sp-sub" style={{ maxWidth: "620px" }}>
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "620px" }}>
             They fail because the structure behind the operation was wrong from
             day one. Wrong jurisdiction. Wrong entity. Wrong compliance layer.
             By the time the regulator asks questions, the damage is already done.
           </p>
           <div style={{ marginTop: "32px", display: "flex", gap: "16px", flexWrap: "wrap" }}>
-            <Link href="/contact" className="btn-primary btn-primary-lg">
+            <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
               Get a structural diagnosis →
             </Link>
-            <Link href="/solutions/regulatory/igaming-licensing" className="btn-ghost">
+            <Link
+              href="/solutions/regulatory/igaming-licensing"
+              className="inline-flex h-12 items-center justify-center rounded-full border border-white/20 bg-transparent px-10 text-base font-medium text-white/80 transition-colors hover:border-white/40 hover:text-white"
+            >
               See full licensing process →
             </Link>
           </div>
@@ -38,9 +41,9 @@ export default function MarketsIGamingPage() {
       </section>
 
       {/* ─── PROBLEM ─── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             The iGaming industry has a structural problem
             <br />
             <span style={{ color: "var(--blue-light)" }}>disguised as a regulatory one.</span>
@@ -56,20 +59,20 @@ export default function MarketsIGamingPage() {
             payment processor actually require.
           </p>
           <p
-            className="heading-sm"
-            style={{ color: "var(--white)", borderTop: "1px solid var(--border)", paddingTop: "24px", marginTop: "8px" }}
+            className="heading-sm text-foreground"
+            style={{ borderTop: "1px solid var(--border-solid)", paddingTop: "24px", marginTop: "8px" }}
           >
             That gap is structural.{" "}
-            <span style={{ color: "var(--blue-light)" }}>We close it.</span>
+            <span className="text-primary">We close it.</span>
           </p>
         </div>
       </section>
 
       {/* ─── WHAT WE DO ─── */}
-      <section className="section-padded">
-        <div className="container">
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <p className="label">What Octus does for iGaming operators</p>
-          <h2 className="heading-md" style={{ marginBottom: "40px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "40px" }}>
             End-to-end structuring.{" "}
             <span style={{ color: "var(--blue-light)" }}>Not advisory.</span>
           </h2>
@@ -101,7 +104,7 @@ export default function MarketsIGamingPage() {
               },
             ].map((item) => (
               <div key={item.title} className="card" style={{ padding: "28px" }}>
-                <h3 className="heading-card" style={{ marginBottom: "12px" }}>{item.title}</h3>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>{item.title}</h3>
                 <p className="body-sm">{item.desc}</p>
               </div>
             ))}
@@ -110,13 +113,13 @@ export default function MarketsIGamingPage() {
       </section>
 
       {/* ─── SELECTED MANDATES ─── */}
-      <section className="section-dark section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Selected mandates</p>
-          <h2 className="heading-md" style={{ marginBottom: "32px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "32px" }}>
             Real operations. Real outcomes.
           </h2>
-          <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
+          <div className="grid gap-6 md:grid-cols-2">
             {[
               {
                 title: "iGaming operator — Curaçao",
@@ -137,15 +140,10 @@ export default function MarketsIGamingPage() {
             ].map((m, i) => (
               <div
                 key={i}
-                style={{
-                  padding: "24px 0",
-                  borderBottom: i < 3 ? "1px solid var(--border)" : "none",
-                }}
+                className="flex flex-col rounded-lg border border-y border-r border-border/50 border-l-[3px] border-l-primary bg-background p-6 md:p-8"
               >
-                <h3 className="heading-card" style={{ marginBottom: "8px", color: "var(--white)" }}>
-                  {m.title}
-                </h3>
-                <p className="body" style={{ color: "var(--white-60)" }}>{m.body}</p>
+                <h3 className="mb-4 font-sans text-lg font-semibold text-primary">{m.title}</h3>
+                <p className="body-text">{m.body}</p>
               </div>
             ))}
           </div>
@@ -153,10 +151,10 @@ export default function MarketsIGamingPage() {
       </section>
 
       {/* ─── JURISDICTIONS ─── */}
-      <section className="section-padded">
-        <div className="container" style={{ maxWidth: "760px" }}>
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Where we operate</p>
-          <h2 className="heading-md" style={{ marginBottom: "24px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             Active across the jurisdictions that matter.
           </h2>
           <p className="body-lg" style={{ marginBottom: "32px" }}>
@@ -169,7 +167,10 @@ export default function MarketsIGamingPage() {
             ))}
           </div>
           <div style={{ marginTop: "32px", display: "flex", gap: "16px", flexWrap: "wrap" }}>
-            <Link href="/jurisdictions/curacao" className="btn-ghost">
+            <Link
+              href="/jurisdictions/curacao"
+              className="inline-flex h-12 items-center justify-center rounded-full border border-border bg-transparent px-10 text-base font-medium text-primary transition-colors hover:bg-secondary"
+            >
               Curaçao licensing →
             </Link>
           </div>
@@ -177,10 +178,10 @@ export default function MarketsIGamingPage() {
       </section>
 
       {/* ─── SITUATIONS ─── */}
-      <section className="section-dark section-padded">
-        <div className="container">
+      <section className="bg-background py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <p className="label">Situations we resolve</p>
-          <h2 className="heading-md" style={{ marginBottom: "32px" }}>
+          <h2 className="heading-section" style={{ marginBottom: "32px" }}>
             If this sounds familiar, we can help.
           </h2>
           <div className="grid-3">
@@ -201,10 +202,13 @@ export default function MarketsIGamingPage() {
                 body: "Expanding to Brazil, Malta or another jurisdiction without a clear structural path. Wrong entity, wrong compliance, wrong timeline.",
               },
             ].map((c) => (
-              <div key={c.tag} className="card-lg case-card">
-                <span className="case-tag">{c.tag}</span>
-                <h3 className="heading-sm case-title">{c.title}</h3>
-                <p className="body case-body">{c.body}</p>
+              <div
+                key={c.tag}
+                className="flex flex-col rounded-lg border border-y border-r border-border/50 border-l-[3px] border-l-primary bg-background p-6 md:p-8"
+              >
+                <span className="mb-4 font-sans text-xs font-medium uppercase tracking-wider text-accent">{c.tag}</span>
+                <h3 className="mb-4 font-sans text-lg font-semibold text-primary">{c.title}</h3>
+                <p className="body-text">{c.body}</p>
               </div>
             ))}
           </div>
@@ -212,8 +216,8 @@ export default function MarketsIGamingPage() {
       </section>
 
       {/* ─── CROSS-LINKS ─── */}
-      <section className="section-padded">
-        <div className="container">
+      <section className="surface-elevated py-24 md:py-32">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <p className="label">Go deeper</p>
           <div className="grid-3">
             {[
@@ -222,7 +226,7 @@ export default function MarketsIGamingPage() {
               { title: "Compliance & Risk", desc: "The compliance framework that supports your license.", href: "/compliance" },
             ].map((r) => (
               <Link key={r.title} href={r.href} className="card-grid" style={{ padding: "28px" }}>
-                <h3 className="heading-card" style={{ marginBottom: "8px" }}>{r.title}</h3>
+                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{r.title}</h3>
                 <p className="body-sm" style={{ marginBottom: "12px" }}>{r.desc}</p>
                 <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Learn more →</span>
               </Link>
@@ -235,13 +239,13 @@ export default function MarketsIGamingPage() {
       <section className="cta-block">
         <div className="cta-block__bg" />
         <div className="cta-block__inner">
-          <p className="body" style={{ color: "var(--white-40)", marginBottom: "16px" }}>
+          <p className="body-text" style={{ color: "var(--white-40)", marginBottom: "16px" }}>
             Your iGaming operation is only as strong as the structure behind it.
           </p>
           <h2 className="heading-lg cta-block__title">
             Fix the structure before you scale.
           </h2>
-          <Link href="/contact" className="btn-primary btn-primary-lg">
+          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
             Understand what&apos;s broken →
           </Link>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
