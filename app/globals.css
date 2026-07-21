@@ -1559,15 +1559,19 @@ footer .heading-lg,
 }
 
 .team-card-photo-wrap {
+  /* Institutional portrait frame — circular, uniform diameter */
+  position: relative;
   width: 180px;
   height: 180px;
   margin: 0 auto 24px;
   border-radius: 9999px;
   overflow: hidden;
   aspect-ratio: 1 / 1;
-  background: var(--surface-2, #eef1f5);
-  border: 1px solid rgba(15, 23, 42, 0.08);
-  box-shadow: none;
+  background: #e8edf4;
+  border: 1.5px solid rgba(11, 18, 32, 0.28);
+  box-shadow:
+    0 0 0 5px #f8fafc,
+    0 0 0 6.5px rgba(22, 59, 104, 0.2);
 }
 
 .team-card-photo {
@@ -1576,8 +1580,22 @@ footer .heading-lg,
   display: block;
   object-fit: cover;
   object-position: center;
-  /* Desaturation removed for clearer face recognition under interim portraits */
-  filter: none;
+  /* Unified advisory grayscale — CSS only; no pixel retouching */
+  filter: grayscale(1) contrast(1.07) brightness(1.02);
+  transform: scale(1.02);
+  transform-origin: center;
+}
+
+.team-card-link:hover .team-card-photo,
+.team-card-link:focus-visible .team-card-photo {
+  /* Keep grayscale on interaction — institutional, not lifestyle */
+  filter: grayscale(1) contrast(1.1) brightness(1.03);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .team-card-photo {
+    transform: none;
+  }
 }
 
 .team-card-role {
