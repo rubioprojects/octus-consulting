@@ -48,10 +48,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/careers`, priority: 0.5, changeFrequency: "monthly" as const },
     { url: `${base}/insights`, priority: 0.8, changeFrequency: "weekly" as const },
     { url: `${base}/brazil`, priority: 0.5, changeFrequency: "monthly" as const },
+    // KEEP_CANONICAL: deliberate Ownership & UBO commercial surface under Corporate hub
+    { url: `${base}/private-clients`, priority: 0.7, changeFrequency: "monthly" as const },
     { url: `${base}/privacy`, priority: 0.3, changeFrequency: "yearly" as const },
     { url: `${base}/terms`, priority: 0.3, changeFrequency: "yearly" as const },
     { url: `${base}/cookies`, priority: 0.3, changeFrequency: "yearly" as const },
     { url: `${base}/compliance-channel`, priority: 0.3, changeFrequency: "yearly" as const },
+    // Intentionally omitted legacy commercial faces (live, unpromoted; redirect queue later):
+    // what-we-do, regulatory, corporate, compliance, audit, legal-architecture, international-hub
   ];
 
   const insightPages = posts.map((p) => ({
