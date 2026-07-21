@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
 
 export const metadata = {
-  title: "Offshore Structuring — Octus Consulting",
+  title: "Offshore Structuring",
   description:
     "Offshore structuring for regulated operations is not about tax. It is about corporate architecture that passes regulatory, banking and institutional scrutiny.",
 };

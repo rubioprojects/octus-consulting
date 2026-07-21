@@ -7,7 +7,7 @@ import {
 } from "../../lib/cta";
 
 export const metadata = {
-  title: "Contact — Octus Consulting",
+  title: "Contact",
   description:
     "Discuss your regulated operation with Octus. High-ticket consultancy intake via WhatsApp or email — no mass forms.",
 };

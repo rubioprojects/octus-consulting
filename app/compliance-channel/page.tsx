@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Compliance Channel — Octus Consulting",
+  title: "Compliance Channel",
   description: "Octus Consulting compliance and ethics reporting channel. Confidential reporting for internal and external stakeholders.",
 };
 

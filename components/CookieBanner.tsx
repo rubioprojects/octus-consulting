@@ -2,6 +2,12 @@
 
 import { useState, useEffect } from "react";
 
+/**
+ * Essential-cookie notice only.
+ * Current site: static export + localStorage preference for this banner.
+ * No advertising pixels or Meta trackers are loaded by this component.
+ * Consent UX is intentionally compact so it does not compete with primary CTAs.
+ */
 export default function CookieBanner() {
   const [show, setShow] = useState(false);
 
@@ -18,12 +24,18 @@ export default function CookieBanner() {
   if (!show) return null;
 
   return (
-    <div className="cookie-banner">
+    <div
+      className="cookie-banner"
+      role="region"
+      aria-label="Cookie notice"
+    >
       <p>
-        We use essential cookies to operate this website.{" "}
+        This site uses essential cookies to operate.{" "}
         <a href="/cookies">Cookie Policy</a>
       </p>
-      <button onClick={accept}>Accept</button>
+      <button type="button" onClick={accept}>
+        Continue
+      </button>
     </div>
   );
 }

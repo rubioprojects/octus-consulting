@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
 
 export const metadata = {
-  title: "Internal Controls & Governance — Octus Consulting",
+  title: "Internal Controls & Governance",
   description:
     "Controls that exist on paper do not exist at all. Octus designs governance frameworks and control systems that function under real operational pressure.",
 };

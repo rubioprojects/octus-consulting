@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 
 export const metadata = {
-  title: "Compliance & Risk — Octus Consulting",
+  title: "Compliance & Risk",
   description:
     "Compliance structured to operate continuously — not just pass an audit. Octus designs, implements and coordinates compliance operations across regulatory, banking and risk environments.",
 };

@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Terms & Conditions — Octus Consulting",
+  title: "Terms & Conditions",
   description: "Terms and Conditions for Octus Technology LLC, operating as Octus Consulting.",
 };
 

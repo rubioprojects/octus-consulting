@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
 
 export const metadata = {
-  title: "High-Risk Operations — Octus Consulting",
+  title: "High-Risk Operations",
   description:
     "High-risk is not a business problem. It is a classification that creates structural consequences for licensing, banking, compliance and partnerships. Octus structures operations to function within that classification.",
 };

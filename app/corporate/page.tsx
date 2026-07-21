@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 
 export const metadata = {
-  title: "Corporate Structuring — Octus Consulting",
+  title: "Corporate Structuring",
   description:
     "Corporate architecture designed for regulated operations. Octus structures and coordinates international corporate setups, holding design, governance and ownership architecture — built to hold across jurisdictions.",
 };

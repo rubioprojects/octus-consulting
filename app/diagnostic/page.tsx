@@ -7,7 +7,7 @@ import {
 } from "../../lib/cta";
 
 export const metadata = {
-  title: "Regulatory Diagnostic — Octus Consulting",
+  title: "Regulatory Diagnostic",
   description:
     "Request a structural diagnostic conversation with Octus — regulatory exposure, jurisdiction fit and readiness, via WhatsApp.",
 };

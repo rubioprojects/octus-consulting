@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 
 export const metadata = {
-  title: "Ownership & UBO Architecture — Octus Consulting",
+  title: "Ownership & UBO Architecture",
   description:
     "Ownership architecture for individuals behind regulated operations. The individual is part of the regulated structure — not separate from it. Octus structures UBO frameworks, personal holding design and individual compliance exposure.",
 };

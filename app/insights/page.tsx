@@ -3,7 +3,7 @@ import Link from "next/link";
 import { getAllPosts } from "../../lib/posts";
 
 export const metadata = {
-  title: "Insights — Octus Consulting",
+  title: "Insights",
   description: "Regulatory analysis, legal developments and operational intelligence from the Octus team — covering Brazil, iGaming, compliance and international structured markets.",
 };
 
@@ -21,12 +21,12 @@ export default function InsightsPage() {
           <span className="label">Insights</span>
           <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
             Regulatory intelligence.<br />
-            <span style={{ color: "var(--text-muted)" }}>From the field.</span>
+            <span className="text-white/80">From the field.</span>
           </h1>
-          <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "560px" }}>
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/75" style={{ maxWidth: "560px" }}>
             Analysis, legal developments and operational intelligence from the
             Octus team — covering Brazil, iGaming, compliance and international
-            regulated markets.
+            regulated markets. Ready for the future Octus Intelligence Hub.
           </p>
         </div>
       </section>

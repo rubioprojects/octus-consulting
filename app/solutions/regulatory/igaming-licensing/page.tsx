@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
 
 export const metadata = {
-  title: "iGaming Licensing — Octus Consulting",
+  title: "iGaming Licensing",
   description:
     "iGaming licensing strategy across jurisdictions. Octus structures the regulatory, corporate and compliance architecture that determines whether a licence gets approved — not just submitted.",
 };

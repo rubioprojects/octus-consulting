@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
 
 export const metadata = {
-  title: "Isle of Man — Octus Consulting",
+  title: "Isle of Man",
   description:
     "Isle of Man licensing through the GSC is a Tier-1 credential. Octus structures the corporate, compliance and banking architecture required to reach approval and sustain operations.",
 };

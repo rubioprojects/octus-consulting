@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 
 export const metadata = {
-  title: "About — Octus Consulting",
+  title: "About",
   description:
     "Octus is not a law firm. Not a consultancy. Not a vendor. It is the execution layer behind regulated operations — structuring, coordinating and operating what others only advise on.",
 };

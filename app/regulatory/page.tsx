@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 
 export const metadata = {
-  title: "Regulatory Structuring — Octus Consulting",
+  title: "Regulatory Structuring",
   description:
     "Regulatory structuring across iGaming, betting, fintech, crypto, VASP, forex and other regulated models. Octus structures licensing strategies, jurisdiction fit and operational readiness — before the application starts.",
 };

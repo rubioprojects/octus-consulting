@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
 
 export const metadata = {
-  title: "Anjouan — Octus Consulting",
+  title: "Anjouan",
   description:
     "Anjouan is fast and affordable. That is also the risk. Octus structures offshore operations that work beyond the licence — banking, payments and transition to stronger jurisdictions.",
 };

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 
 export const metadata = {
-  title: "Audit & Readiness — Octus Consulting",
+  title: "Audit & Readiness",
   description:
     "Preparation for regulatory audit, certification and external scrutiny. Octus structures the evidence, closes the gaps and coordinates readiness before scrutiny arrives.",
 };

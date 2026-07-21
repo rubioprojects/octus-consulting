@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
 
 export const metadata = {
-  title: "Banking & Payments — Octus Consulting",
+  title: "Banking & Payments",
   description:
     "Banks do not reject your business. They reject your structure. Octus designs banking strategy, compliance documentation and payment infrastructure for regulated and high-risk operations.",
 };

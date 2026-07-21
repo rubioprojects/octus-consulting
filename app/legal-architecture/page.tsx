@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 
 export const metadata = {
-  title: "Legal & Structural Architecture — Octus Consulting",
+  title: "Legal & Structural Architecture",
   description:
     "Legal architecture is not documentation. It is the structural backbone behind regulated operations — contracts, corporate design, cross-border setups and governance that hold under real conditions.",
 };

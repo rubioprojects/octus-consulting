@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
 
 export const metadata = {
-  title: "GLI & Certification Readiness — Octus Consulting",
+  title: "GLI & Certification Readiness",
   description:
     "The audit does not find problems. It confirms they were always there. Octus prepares operations for certification and regulatory review before the auditor arrives.",
 };

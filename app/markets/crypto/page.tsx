@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
 
 export const metadata = {
-  title: "Crypto & Digital Assets — Octus Consulting",
+  title: "Crypto & Digital Assets",
   description:
     "Crypto operators build technology. Regulators see financial institutions. Octus structures the corporate, compliance and licensing architecture that bridges that gap.",
 };

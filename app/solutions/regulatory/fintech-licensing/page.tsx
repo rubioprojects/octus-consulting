@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
 
 export const metadata = {
-  title: "Fintech Licensing — Octus Consulting",
+  title: "Fintech Licensing",
   description:
     "EMI and Payment Institution licensing is not a filing exercise. Octus structures fintech operations so they can be authorised, operated and sustained under regulatory scrutiny.",
 };

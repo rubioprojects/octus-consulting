@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 
 export const metadata = {
-  title: "International Hub — Octus Consulting",
+  title: "International Hub",
   description:
     "Market entry and cross-border coordination for regulated operations. Octus structures international expansion across jurisdictions — from jurisdiction mapping to full operational setup.",
 };

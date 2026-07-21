@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
 
 export const metadata = {
-  title: "DPO-as-a-Service — Octus Consulting",
+  title: "DPO-as-a-Service",
   description:
     "A DPO is not a contact point. Octus operates the Data Protection Officer function as a continuous regulatory role: incident response, regulatory interaction and operational data protection.",
 };

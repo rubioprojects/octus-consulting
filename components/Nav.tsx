@@ -11,6 +11,12 @@ const primaryLinks = [
   { label: "Insights", href: "/insights" },
 ];
 
+const linkClass =
+  "font-sans text-[13px] tracking-wide text-muted-foreground no-underline transition-colors hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary md:text-sm";
+
+const ctaClass =
+  "inline-flex items-center rounded-md bg-primary px-5 py-2.5 font-sans text-[13px] font-medium tracking-wide text-primary-foreground no-underline transition-colors hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary md:px-6 md:text-sm";
+
 export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -25,32 +31,40 @@ export default function Nav() {
     };
   }, [mobileOpen]);
 
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setMobileOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
+
   return (
     <>
       <nav
-        className="fixed left-0 right-0 top-0 z-50 flex h-16 items-center border-b border-border/60 bg-background/95 backdrop-blur-md md:h-20"
+        className="fixed left-0 right-0 top-0 z-50 flex h-16 items-center border-b border-border/60 bg-background/95 backdrop-blur-md md:h-[4.5rem]"
         aria-label="Main"
       >
         <div className="mx-auto flex h-full w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-          <Link href="/" className="flex shrink-0 items-center no-underline" aria-label="Octus Consulting">
+          <Link
+            href="/"
+            className="flex shrink-0 items-center no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+            aria-label="Octus Consulting home"
+          >
             <img
               src="/logo-nav-light.png"
-              alt="Octus Consulting"
-              width={200}
-              height={48}
+              alt=""
+              width={180}
+              height={44}
               decoding="async"
-              className="h-8 w-auto md:h-10"
+              className="h-7 w-auto translate-y-px md:h-8"
               style={{ imageRendering: "auto" }}
             />
           </Link>
 
-          <div className="hidden items-center gap-8 md:flex">
+          <div className="hidden items-center gap-7 lg:gap-9 md:flex">
             {primaryLinks.map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                className="font-sans text-sm text-muted-foreground no-underline transition-colors hover:text-primary"
-              >
+              <Link key={l.href} href={l.href} className={linkClass}>
                 {l.label}
               </Link>
             ))}
@@ -58,7 +72,7 @@ export default function Nav() {
               href={WHATSAPP_DISCUSS_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center rounded-full bg-primary px-6 py-2.5 font-sans text-sm font-medium text-primary-foreground no-underline transition-colors hover:bg-primary/90"
+              className={ctaClass}
             >
               {CTA_DISCUSS_LABEL}
             </a>
@@ -66,10 +80,11 @@ export default function Nav() {
 
           <button
             type="button"
-            className="flex border-0 bg-transparent p-2 text-foreground md:hidden"
+            className="flex rounded-md border-0 bg-transparent p-2 text-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary md:hidden"
             onClick={() => setMobileOpen((p) => !p)}
-            aria-label="Menu"
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileOpen}
+            aria-controls="mobile-nav"
           >
             {mobileOpen ? (
               <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
@@ -86,7 +101,8 @@ export default function Nav() {
 
       {mobileOpen && (
         <div
-          className="fixed inset-x-0 bottom-0 top-16 z-40 overflow-y-auto bg-background px-4 pb-12 pt-4 sm:px-6 md:hidden"
+          id="mobile-nav"
+          className="fixed inset-x-0 bottom-0 top-16 z-40 overflow-y-auto bg-background px-4 pb-12 pt-2 sm:px-6 md:hidden"
           role="dialog"
           aria-modal="true"
           aria-label="Navigation menu"
@@ -95,7 +111,7 @@ export default function Nav() {
             <Link
               key={l.href}
               href={l.href}
-              className="block border-b border-border py-4 font-sans text-sm text-foreground no-underline transition-colors hover:text-primary"
+              className="block border-b border-border py-4 font-sans text-base text-foreground no-underline transition-colors hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-primary"
               onClick={() => setMobileOpen(false)}
             >
               {l.label}
@@ -107,7 +123,7 @@ export default function Nav() {
               href={WHATSAPP_DISCUSS_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex w-full items-center justify-center rounded-full bg-primary px-6 py-2.5 font-sans text-sm font-medium text-primary-foreground no-underline transition-colors hover:bg-primary/90"
+              className={`${ctaClass} w-full justify-center`}
               onClick={() => setMobileOpen(false)}
             >
               {CTA_DISCUSS_LABEL}

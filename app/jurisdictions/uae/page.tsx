@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
 
 export const metadata = {
-  title: "UAE / Dubai — Octus Consulting",
+  title: "UAE / Dubai",
   description:
     "Most companies fail in the UAE before they even choose the right authority. Octus structures operations aligned with the correct regulator, entity type and activity from day one.",
 };

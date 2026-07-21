@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
 
 export const metadata = {
-  title: "Compliance-as-a-Service — Octus Consulting",
+  title: "Compliance-as-a-Service",
   description:
     "Compliance is not a document. Octus builds and operates compliance as a continuous function: AML/KYC, controls, monitoring and regulatory alignment embedded in the business.",
 };

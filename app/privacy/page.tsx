@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Privacy Policy — Octus Consulting",
+  title: "Privacy Policy",
   description: "Privacy Policy for Octus Technology LLC, operating as Octus Consulting.",
 };
 

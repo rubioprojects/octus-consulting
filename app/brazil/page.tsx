@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 
 export const metadata = {
-  title: "Brazil — Octus Consulting",
+  title: "Brazil",
   description: "Regulatory structuring, compliance and corporate architecture for regulated operations entering or operating in Brazil.",
 };
 
