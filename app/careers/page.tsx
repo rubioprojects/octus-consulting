@@ -28,8 +28,32 @@ export default function CareersPage() {
       <section className="bg-background py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "1000px" }}>
           <span className="label">Life at Octus</span>
-          <div className="careers-culture-visual">
-            <img src="/team-group.jpg" alt="Octus team culture" className="careers-culture-image" />
+          <h2 className="heading-section mb-6">Execution culture — without a catalogue of faces.</h2>
+          <p className="body-large mb-8 max-w-2xl text-muted-foreground">
+            We look for people with operational depth in regulated environments. Culture is
+            measured in how structures hold under scrutiny — not in group photography.
+          </p>
+          <div
+            className="careers-culture-visual careers-culture-visual--abstract"
+            role="img"
+            aria-label="Abstract institutional panel representing Octus culture"
+          >
+            <div className="careers-culture-abstract">
+              <p className="careers-culture-abstract__eyebrow">Culture</p>
+              <p className="careers-culture-abstract__title">
+                Remote-first. International. Built for regulated operations.
+              </p>
+              <p className="careers-culture-abstract__body">
+                Meet the people who represent Octus capability on the Team page — leadership,
+                specialists and delivery.
+              </p>
+              <Link
+                href="/team"
+                className="mt-6 inline-flex font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
+              >
+                Meet the team →
+              </Link>
+            </div>
           </div>
         </div>
       </section>

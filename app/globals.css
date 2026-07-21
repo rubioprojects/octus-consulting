@@ -1540,6 +1540,13 @@ footer .heading-lg,
   gap: 40px 32px;
 }
 
+.team-grid--leadership {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .team-card-link {
   text-decoration: none;
   color: inherit;
@@ -1552,20 +1559,25 @@ footer .heading-lg,
 }
 
 .team-card-photo-wrap {
-  width: 140px;
-  height: 140px;
+  width: 180px;
+  height: 180px;
   margin: 0 auto 24px;
-  border-radius: 50%;
+  border-radius: 9999px;
   overflow: hidden;
-  background: var(--surface-2);
+  aspect-ratio: 1 / 1;
+  background: var(--surface-2, #eef1f5);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: none;
 }
 
 .team-card-photo {
   width: 100%;
   height: 100%;
+  display: block;
   object-fit: cover;
-  object-position: center top;
-  filter: saturate(0.75);
+  object-position: center;
+  /* Desaturation removed for clearer face recognition under interim portraits */
+  filter: none;
 }
 
 .team-card-role {
@@ -1578,8 +1590,42 @@ footer .heading-lg,
 
 .careers-culture-visual {
   overflow: hidden;
-  border-radius: 16px;
-  box-shadow: 0 8px 28px rgba(26, 29, 33, 0.08);
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.careers-culture-visual--abstract {
+  border: 1px solid var(--border-solid, rgba(15, 23, 42, 0.1));
+  background: linear-gradient(145deg, #0b1220 0%, #152038 55%, #1a2740 100%);
+}
+
+.careers-culture-abstract {
+  padding: 48px 40px;
+  color: #fff;
+  max-width: 36rem;
+}
+
+.careers-culture-abstract__eyebrow {
+  font-family: var(--font-sans, system-ui);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 16px;
+}
+
+.careers-culture-abstract__title {
+  font-family: var(--font-heading, Georgia, serif);
+  font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 14px;
+}
+
+.careers-culture-abstract__body {
+  font-size: 15px;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .careers-culture-image {
@@ -1636,6 +1682,16 @@ footer .heading-lg,
 @media (max-width: 768px) {
   .team-grid {
     grid-template-columns: 1fr;
+  }
+
+  .team-grid--leadership {
+    grid-template-columns: 1fr;
+    max-width: none;
+  }
+
+  .team-card-photo-wrap {
+    width: 136px;
+    height: 136px;
   }
 
   .certifications-row {
