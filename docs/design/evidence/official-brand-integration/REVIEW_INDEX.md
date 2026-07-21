@@ -1,35 +1,31 @@
 # Official Brand Integration — Review Index
 
-**Mission:** `OCTUS_OFFICIAL_BRAND_SYSTEM_INTEGRATION`  
-**Date:** 2026-07-21
+**Mission:** `OCTUS_PR10_FINAL_BRAND_APPLICATION_REFINEMENT`  
+**Date:** 2026-07-21  
+**SHA:** `26c93c3e6e0038ec18a95d20c4076380b757acfe`  
+**PR:** https://github.com/rubioprojects/octus-consulting/pull/10
 
 | # | Artifact | File |
 |---|----------|------|
-| 1 | Homepage hero desktop | `home-hero-desktop.png` |
-| 2 | Homepage hero mobile | `home-hero-mobile.png` |
-| 3 | Header | `header-desktop.png` |
+| 1 | Homepage header (dark-hero mode) | `header-desktop.png` |
+| 2 | Mobile header | `header-mobile.png` |
+| 3 | Homepage hero | `home-hero-desktop.png` / `home-hero-mobile.png` |
 | 4 | Footer | `footer-desktop.png` |
-| 5 | Favicon board | `favicon-board.png` |
-| 6 | Jurisdictions index | `jurisdictions-desktop.png` |
-| 7 | Malta | `malta-desktop.png` |
-| 8 | Curaçao | `curacao-desktop.png` |
-| 9 | Solutions index | `solutions-desktop.png` |
-| 10 | Solution hub | `solution-hub-desktop.png` |
-| 11 | Intelligence | `intelligence-desktop.png` |
-| 12 | Mobile navigation | `mobile-nav.png` |
-| 13 | OG image | `og-image.png` |
-| 14 | Logo before/after | `before-after-logo.png` |
+| 5 | Jurisdictions | `jurisdictions-desktop.png` |
+| 6 | Solutions | `solutions-desktop.png` |
+| 7 | Markets | `markets-desktop.png` |
+| 8 | Favicon board | `favicon-board.png` |
+| 9 | OG | `og-image.png` |
 
-Cookie banner: open on first visit in Preview (local capture may not show dismissed state).
+See `PR10_REFINEMENT_NOTE.md` for change list.
 
 ## Human checklist
 
-- [ ] Symbol silhouette matches Brand Kit (not Pegasus/star)
-- [ ] Header lockup legible on light
-- [ ] Footer white lockup legible on dark
-- [ ] Favicon reads as Octus at 16px
-- [ ] Hero arcs restrained (not decorative overload)
-- [ ] Primary blue buttons acceptable (`#0052C4`)
-- [ ] Cream surfaces acceptable (`#F7F0D4`)
-- [ ] No copy/IA/People regressions
-- [ ] Approve or reject reconstructed SVG (`HUMAN_REVIEW_REQUIRED`)
+- [ ] Header over dark hero: blue symbol + white wordmark readable
+- [ ] Nav links readable on dark hero header
+- [ ] After scroll on light sections: blue+dark lockup returns
+- [ ] Footer blue+white lockup
+- [ ] Jurisdictions language no longer reads as licence catalogue
+- [ ] Section arcs restrained (not noisy)
+- [ ] Dark heroes feel Octus-owned, not generic
+- [ ] No IA / People / route regressions
