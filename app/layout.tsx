@@ -80,8 +80,8 @@ export default function RootLayout({
         <CookieBanner />
         <footer className="surface-dark py-16 md:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:gap-8 lg:grid-cols-5">
-              <div className="flex flex-col gap-3">
+            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:gap-8 lg:grid-cols-3 xl:grid-cols-6">
+              <div className="flex flex-col gap-3 xl:col-span-1">
                 <a href="/" className="inline-flex items-center no-underline" aria-label="Octus Consulting">
                   <img
                     src="/logo-nav.png"
@@ -93,8 +93,7 @@ export default function RootLayout({
                   />
                 </a>
                 <p className="max-w-xs text-sm font-normal leading-relaxed text-white/70">
-                  Structuring, coordinating and operating regulated businesses
-                  across jurisdictions.
+                  Premium international execution partner for highly regulated operations.
                 </p>
                 <div className="mt-2 flex gap-3">
                   <a
@@ -128,11 +127,12 @@ export default function RootLayout({
                 </p>
                 <ul className="flex list-none flex-col gap-2.5">
                   {[
-                    { label: "Regulatory Structuring", href: "/regulatory" },
-                    { label: "Compliance & Risk", href: "/compliance" },
-                    { label: "Corporate Structuring", href: "/corporate" },
-                    { label: "Legal Architecture", href: "/legal-architecture" },
-                    { label: "International Hub", href: "/international-hub" },
+                    { label: "Regulatory Strategy & Licensing", href: "/solutions/regulatory-strategy-licensing" },
+                    { label: "Banking & Payments", href: "/solutions/banking-payments-infrastructure" },
+                    { label: "Compliance & Risk", href: "/solutions/compliance-risk-systems" },
+                    { label: "Corporate & Cross-Border", href: "/solutions/corporate-cross-border" },
+                    { label: "Legal & Contractual Architecture", href: "/solutions/legal-contractual-architecture" },
+                    { label: "Remediation & Readiness", href: "/solutions/operational-remediation-readiness" },
                   ].map((l) => (
                     <li key={l.href}>
                       <a
@@ -171,14 +171,38 @@ export default function RootLayout({
 
               <div>
                 <p className="mb-5 font-sans text-xs font-medium uppercase tracking-[0.15em] text-white/75">
+                  Engage
+                </p>
+                <ul className="flex list-none flex-col gap-2.5">
+                  {[
+                    { label: "How we engage", href: "/how-we-engage" },
+                    { label: "Intelligence", href: "/intelligence" },
+                    { label: "Insights", href: "/insights" },
+                    { label: "Partners", href: "/partners" },
+                    { label: "Remediation assess", href: "/diagnostic" },
+                  ].map((l) => (
+                    <li key={l.href}>
+                      <a
+                        href={l.href}
+                        className="font-sans text-sm text-white/65 no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                      >
+                        {l.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div>
+                <p className="mb-5 font-sans text-xs font-medium uppercase tracking-[0.15em] text-white/75">
                   Company
                 </p>
                 <ul className="flex list-none flex-col gap-2.5">
                   {[
                     { label: "About", href: "/about" },
                     { label: "Team", href: "/team" },
-                    { label: "Insights", href: "/insights" },
                     { label: "Careers", href: "/careers" },
+                    { label: "Jurisdictions", href: "/jurisdictions" },
                     { label: "Contact", href: "/contact" },
                   ].map((l) => (
                     <li key={l.href}>

@@ -18,6 +18,14 @@ export const MAILTO_INFO = "mailto:info@octusconsulting.com";
 export const CTA_DISCUSS_LABEL = "Discuss your operation →";
 export const CTA_ASSESS_LABEL = "Assess your situation →";
 
+/** Proposed partnership intake — HUMAN_REVIEW_REQUIRED (Wave 3). */
+export const WA_PARTNERSHIP_TEXT =
+  "Hello Octus team — I represent an advisory firm, CSP, law firm or specialist practice and would like to discuss collaboration on regulated operations.";
+
+export const WHATSAPP_PARTNERSHIP_URL = `https://wa.me/${OCTUS_WHATSAPP_E164}?text=${encodeURIComponent(WA_PARTNERSHIP_TEXT)}`;
+
+export const CTA_PARTNERSHIP_LABEL = "Discuss partnership →";
+
 /** @deprecated Use WHATSAPP_ASSESS_URL / CTA_ASSESS_LABEL */
 export const WA_REQUEST_DIAGNOSTIC_TEXT = WA_ASSESS_SITUATION_TEXT;
 /** @deprecated Use WHATSAPP_ASSESS_URL */
