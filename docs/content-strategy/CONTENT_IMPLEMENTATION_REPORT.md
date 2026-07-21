@@ -2,6 +2,8 @@
 
 **Branch:** `docs/strategic-content-review`  
 **Base architecture SHA:** `602ae1891b4fda35a416ef92c118087c1a168a93`  
+**Content commit SHA:** `a97063c7bbf3f815d37a57ea6b0b113adc1097f4`  
+**PR:** https://github.com/rubioprojects/octus-consulting/pull/3 (base: `feat/wave1-closeout-conversion-cta`)  
 **Dependency:** `PREPARE_WITHOUT_MERGING_DESIGN_PR`
 
 ## Implemented (low-risk only)
