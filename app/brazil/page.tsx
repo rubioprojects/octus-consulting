@@ -1,5 +1,9 @@
-import Link from "next/link";
-import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
+import {
+  CTA_ASSESS_LABEL,
+  CTA_DISCUSS_LABEL,
+  WHATSAPP_ASSESS_URL,
+  WHATSAPP_DISCUSS_URL,
+} from "../../lib/cta";
 
 export const metadata = {
   title: "Brazil",
@@ -24,7 +28,7 @@ export default function BrazilPage() {
             2019.
           </p>
           <div style={{ marginTop: "48px" }}>
-            <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+            <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           </div>
         </div>
       </section>
@@ -52,7 +56,7 @@ export default function BrazilPage() {
         <div className="cta-block__bg" />
         <div className="cta-block__inner">
           <h2 className="heading-lg cta-block__title">Structure your Brazil operation.</h2>
-          <Link href="/diagnostic" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">Request a diagnostic →</Link>
+          <a href={WHATSAPP_ASSESS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_ASSESS_LABEL}</a>
         </div>
       </section>
     </main>

@@ -176,7 +176,7 @@ export default function CareersPage() {
           </h2>
           <a
             href="mailto:talentos@octusconsulting.com?subject=Octus Careers"
-            className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90"
+            className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90"
           >
             Send your profile →
           </a>

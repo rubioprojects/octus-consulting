@@ -161,7 +161,7 @@ export default function TeamPage() {
           <p className="body-large" style={{ marginBottom: "32px" }}>
             We work with operators who need regulatory clarity, operational discipline and structures that survive scrutiny.
           </p>
-          <Link href="/careers" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
+          <Link href="/careers" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
             See careers →
           </Link>
         </div>

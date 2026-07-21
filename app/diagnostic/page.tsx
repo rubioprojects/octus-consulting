@@ -32,7 +32,7 @@ export default function DiagnosticPage() {
               href={WHATSAPP_DIAGNOSTIC_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-12 items-center justify-center rounded-full bg-white px-10 text-base font-medium tracking-wide text-primary transition-colors hover:bg-white/90"
+              className="inline-flex h-12 items-center justify-center rounded-sm bg-white px-10 text-base font-medium tracking-wide text-primary transition-colors hover:bg-white/90"
             >
               {CTA_DIAGNOSTIC_LABEL}
             </a>
@@ -40,7 +40,7 @@ export default function DiagnosticPage() {
               href={WHATSAPP_DISCUSS_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-12 items-center justify-center rounded-full border border-white/20 px-10 text-base font-medium text-white/80 transition-colors hover:border-white/40 hover:text-white"
+              className="inline-flex h-12 items-center justify-center rounded-sm border border-white/20 px-10 text-base font-medium text-white/80 transition-colors hover:border-white/40 hover:text-white"
             >
               {CTA_DISCUSS_LABEL}
             </a>

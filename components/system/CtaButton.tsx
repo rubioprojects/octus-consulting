@@ -13,8 +13,9 @@ const variants: Record<Variant, string> = {
     "border border-white/25 bg-transparent text-white/85 hover:border-white/45 hover:text-white focus-visible:outline-white",
 };
 
+/* Institutional: slight radius, not SaaS pills (avoid rounded-full). */
 const base =
-  "inline-flex h-12 items-center justify-center rounded-md px-8 text-sm font-medium tracking-wide transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:px-10 sm:text-base no-underline";
+  "inline-flex h-11 items-center justify-center rounded-sm px-7 text-[13px] font-medium tracking-[0.04em] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:h-12 sm:px-9 sm:text-sm no-underline";
 
 type Common = {
   variant?: Variant;

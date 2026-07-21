@@ -30,13 +30,13 @@ export default function ContactPage() {
               href={WHATSAPP_DISCUSS_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-12 items-center justify-center rounded-full bg-white px-10 text-base font-medium tracking-wide text-primary transition-colors hover:bg-white/90"
+              className="inline-flex h-12 items-center justify-center rounded-sm bg-white px-10 text-base font-medium tracking-wide text-primary transition-colors hover:bg-white/90"
             >
               {CTA_DISCUSS_LABEL}
             </a>
             <a
               href={MAILTO_INFO}
-              className="inline-flex h-12 items-center justify-center rounded-full border border-white/20 bg-transparent px-10 text-base font-medium text-white/80 transition-colors hover:border-white/40 hover:text-white"
+              className="inline-flex h-12 items-center justify-center rounded-sm border border-white/20 bg-transparent px-10 text-base font-medium text-white/80 transition-colors hover:border-white/40 hover:text-white"
             >
               info@octusconsulting.com
             </a>
@@ -80,7 +80,7 @@ export default function ContactPage() {
               href={WHATSAPP_DIAGNOSTIC_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+              className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium text-primary-foreground transition-colors hover:bg-primary/90"
             >
               {CTA_DIAGNOSTIC_LABEL}
             </a>
