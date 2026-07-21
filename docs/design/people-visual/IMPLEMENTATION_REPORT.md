@@ -3,6 +3,8 @@
 **Mission:** `OCTUS_PEOPLE_VISUAL_TREATMENT_UPDATE`  
 **Date:** 2026-07-21  
 **Base:** `feat/wave4-people-trust-implementation` @ `4216a2e` (PR #6)  
+**Tip SHA:** `1e913d1` · **PR:** https://github.com/rubioprojects/octus-consulting/pull/9  
+**Preview:** https://octus-consulting-m3tc5znt3-axle1.vercel.app  
 **Policy:** CSS-only presentation · no AI · no facial retouch · identity preserved  
 
 ---
