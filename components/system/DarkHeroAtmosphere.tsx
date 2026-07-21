@@ -1,6 +1,6 @@
 import { BRAND } from "../../lib/brand";
 
-/** Shared navy atmosphere + mesh + official arc motif for dark heroes. */
+/** Shared navy atmosphere + mesh + official arc/symbol motifs for dark heroes. */
 export default function DarkHeroAtmosphere() {
   return (
     <>
@@ -11,6 +11,13 @@ export default function DarkHeroAtmosphere() {
         aria-hidden="true"
         style={{
           backgroundImage: `url('${BRAND.motifs.arcSecondary}')`,
+        }}
+      />
+      <div
+        className="octus-dark-hero__mark"
+        aria-hidden="true"
+        style={{
+          backgroundImage: `url('${BRAND.symbol.blue}')`,
         }}
       />
     </>

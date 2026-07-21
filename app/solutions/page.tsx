@@ -3,6 +3,7 @@ import { SOLUTION_HUBS } from "../../lib/commercial";
 import { CTA_ASSESS_LABEL, CTA_DISCUSS_LABEL, WHATSAPP_ASSESS_URL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 import PageHero from "../../components/system/PageHero";
 import { CtaLink } from "../../components/system/CtaButton";
+import BrandSectionMotif from "../../components/system/BrandSectionMotif";
 
 export const metadata = {
   title: "Solutions — Execution for Regulated Operations",
@@ -22,7 +23,8 @@ export default function SolutionsPage() {
         secondaryCta={{ href: WHATSAPP_ASSESS_URL, label: CTA_ASSESS_LABEL, external: true }}
       />
 
-      <section className="bg-background py-20 md:py-28">
+      <section className="octus-section-relative bg-background py-20 md:py-28">
+        <BrandSectionMotif />
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="section-label mb-4 block">Commercial map</p>
           <h2 className="heading-section mb-4 max-w-2xl">Six solutions. One execution partner.</h2>

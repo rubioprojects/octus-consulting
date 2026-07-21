@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 import PageHero from "../../components/system/PageHero";
+import BrandSectionMotif from "../../components/system/BrandSectionMotif";
 
 export const metadata = {
   title: "Jurisdictions — Where We Structure Operations",
   description:
-    "Active across 15+ jurisdictions. Licensing, compliance and corporate structuring in Brazil, Curaçao, Malta, Isle of Man, UAE and more.",
+    "Operating environments for regulated structures across Brazil, Curaçao, Malta, Isle of Man, UAE and more — selected for structural fit, not a licence catalogue.",
 };
 
 export default function JurisdictionsPage() {
@@ -15,7 +16,7 @@ export default function JurisdictionsPage() {
         eyebrow="Jurisdictions"
         title="Jurisdictions don't solve problems."
         titleSecondLine="Structures do."
-        description="Choosing the right jurisdiction is a strategic decision that impacts regulation, banking access, operational flexibility and long-term scalability. Octus supports jurisdiction selection based on business model, capital structure and growth objectives, not generic preferences."
+        description="Selecting an operating environment is a strategic decision — regulatory posture, banking access, operational flexibility and long-term scalability. Octus advises on structural fit from the business model, capital design and growth path — not from a catalogue of places."
         primaryCta={{
           href: WHATSAPP_DISCUSS_URL,
           label: CTA_DISCUSS_LABEL,
@@ -24,23 +25,24 @@ export default function JurisdictionsPage() {
       />
 
       {/* ─── HOW TO THINK ABOUT JURISDICTIONS ─── */}
-      <section className="bg-background py-24 md:py-32">
+      <section className="octus-section-relative bg-background py-24 md:py-32">
+        <BrandSectionMotif />
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <h2 className="heading-section" style={{ marginBottom: "24px" }}>
-            Jurisdictions are not interchangeable.
+            Operating environments are not interchangeable.
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
-            Each framework reflects a different balance between regulatory
-            credibility, operational flexibility, cost and banking
-            compatibility. The right choice depends on where your operation
-            sits today, and where it needs to go.
+            Each environment balances regulatory credibility, operational
+            flexibility, cost and banking compatibility differently. The right
+            fit depends on where the operation sits today — and where it must
+            hold under scrutiny next.
           </p>
 
           {/* ─── 3-TIER FRAMEWORK ─── */}
           <div style={{ display: "flex", flexDirection: "column", gap: "0", marginTop: "32px" }}>
             {[
               { tier: "Institutional", focus: "Credibility, banking alignment, long-term positioning", examples: "Isle of Man · Malta", profile: "Established operators, B2B providers, institutional growth" },
-              { tier: "Structured", focus: "Operational balance, regulatory framework, scalability", examples: "Curaçao · Brazil · Portugal · UAE", profile: "Growing operators, mid-market, regulated market entry" },
+              { tier: "Structured", focus: "Operational balance, regulatory strategy, scalability", examples: "Curaçao · Brazil · Portugal · UAE", profile: "Growing operators, mid-market, regulated market entry" },
               { tier: "Tactical", focus: "Speed, flexibility, transitional entry", examples: "Anjouan", profile: "Early-stage or fast-moving operations" },
             ].map((t, i) => (
               <div key={t.tier} style={{ display: "grid", gridTemplateColumns: "120px 1fr", gap: "24px", padding: "24px 0", borderBottom: i < 2 ? "1px solid var(--border-solid)" : "none", alignItems: "start" }}>
@@ -57,16 +59,17 @@ export default function JurisdictionsPage() {
       </section>
 
       {/* ─── PRIMARY JURISDICTIONS (pages exist, clickable) ─── */}
-      <section className="surface-elevated py-24 md:py-32">
+      <section className="octus-section-relative surface-elevated py-24 md:py-32">
+        <BrandSectionMotif />
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <p className="label">Primary jurisdictions</p>
+          <p className="label">Primary operating environments</p>
           <h2 className="heading-section" style={{ marginBottom: "16px" }}>
             Active execution, established processes.
           </h2>
           <p className="body-text mb-10 max-w-[620px]">
-            Primary jurisdictions represent the core licensing frameworks
-            currently supported with active execution, established processes
-            and ongoing mandates.
+            These are the environments where Octus runs active mandates —
+            established processes, coordinated execution and ongoing structural
+            support.
           </p>
           <div className="grid-3">
             {[
@@ -74,28 +77,28 @@ export default function JurisdictionsPage() {
                 name: "Brazil",
                 regulator: "SPA/MF · BACEN",
                 sectors: "iGaming, Fintech, Payments",
-                desc: "Sports betting authorization, payment institutions and fintech regulatory structuring for the Brazilian market.",
+                desc: "Market-entry structuring for sports betting, payment institutions and fintech operators in Brazil — regulatory strategy and operational fit.",
                 href: "/brazil",
               },
               {
                 name: "Curaçao",
                 regulator: "GCB",
                 sectors: "iGaming, Betting",
-                desc: "iGaming licensing under the new regulatory framework. Entity, compliance and banking in one coordinated process.",
+                desc: "iGaming operating environment under the current regulatory regime. Entity, compliance and banking coordinated as one execution path.",
                 href: "/jurisdictions/curacao",
               },
               {
                 name: "Malta",
                 regulator: "MGA · MFSA",
                 sectors: "iGaming, Fintech, Crypto",
-                desc: "B2C and B2B licensing. Tier-1 European jurisdiction with full regulatory and banking infrastructure.",
+                desc: "European institutional environment for B2C and B2B operators — regulatory strategy with banking and operational infrastructure in view.",
                 href: "/jurisdictions/malta",
               },
               {
                 name: "Isle of Man",
                 regulator: "GSC",
                 sectors: "iGaming, B2B, Tier-1",
-                desc: "Institutional licensing framework for operators and suppliers needing stronger banking alignment and long-term credibility.",
+                desc: "Institutional operating environment for operators and suppliers prioritizing banking alignment and long-term credibility.",
                 href: "/jurisdictions/isle-of-man",
               },
             ].map((j) => (
@@ -116,45 +119,46 @@ export default function JurisdictionsPage() {
       </section>
 
       {/* ─── STRATEGIC JURISDICTIONS ─── */}
-      <section className="bg-background py-24 md:py-32">
+      <section className="octus-section-relative bg-background py-24 md:py-32">
+        <BrandSectionMotif />
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <p className="label">Strategic jurisdictions</p>
+          <p className="label">Strategic environments</p>
           <h2 className="heading-section" style={{ marginBottom: "16px" }}>
-            Selected frameworks for specific requirements.
+            Selected environments for specific structural requirements.
           </h2>
           <p className="body-text mb-8 max-w-[680px]">
-            Octus supports selected strategic jurisdictions for clients
-            requiring higher regulatory positioning or specific market access,
-            depending on scale, structure and objectives.
+            Octus supports selected strategic environments when clients need
+            higher regulatory positioning or specific market access — based on
+            scale, structure and objectives, not jurisdiction shopping.
           </p>
           <div className="grid-auto-lg">
             {[
               {
                 name: "Isle of Man",
-                desc: "Tier-1 jurisdiction for operators and B2B providers prioritizing regulatory credibility, institutional positioning and long-term banking stability. Typically suitable for well-capitalized operations with a long-term market strategy.",
+                desc: "Institutional environment for operators and B2B providers prioritizing regulatory credibility, positioning and long-term banking stability — typically for well-capitalized operations with a durable market strategy.",
                 href: "/jurisdictions/isle-of-man",
               },
               {
                 name: "UK",
-                desc: "Gambling Commission and FCA-regulated markets. High compliance bar, strong banking infrastructure and institutional credibility.",
+                desc: "High-compliance operating environment (Gambling Commission / FCA). Strong banking infrastructure and institutional credibility where the structure can meet the bar.",
               },
               {
                 name: "Gibraltar",
-                desc: "B2B and B2C licensing for operators with European and UK-facing operations. Strong regulatory reputation.",
+                desc: "Operating environment for B2B and B2C groups with European and UK-facing operations — strong regulatory reputation when structural fit is clear.",
               },
               {
                 name: "UAE",
-                desc: "Emerging regulatory hub for crypto and fintech. ADGM, DFSA and VARA frameworks with growing international recognition.",
+                desc: "Emerging hub for crypto and fintech. ADGM, DFSA and VARA as execution considerations within a broader group structure.",
                 href: "/jurisdictions/uae",
               },
               {
                 name: "Portugal",
-                desc: "SRIJ-regulated iGaming market with local licensing requirements and EU market access.",
+                desc: "SRIJ-regulated market with local operating requirements and EU access — assessed for structural fit, not as a default destination.",
                 href: "/jurisdictions/portugal",
               },
               {
                 name: "Cyprus",
-                desc: "EU jurisdiction with growing regulatory infrastructure for fintech and gaming operations.",
+                desc: "EU environment with growing regulatory infrastructure for fintech and gaming operations — used when it supports the structure.",
               },
             ].map((j) =>
               "href" in j && j.href ? (
@@ -177,21 +181,21 @@ export default function JurisdictionsPage() {
       {/* ─── ALTERNATIVE FRAMEWORKS (Anjouan — separate tier) ─── */}
       <section className="surface-elevated py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
-          <p className="label">Alternative frameworks</p>
+          <p className="label">Tactical environments</p>
           <h2 className="heading-section" style={{ marginBottom: "16px" }}>
-            Tactical and transitional options.
+            Transitional options when speed is structural.
           </h2>
           <p className="body-text mb-8">
-            Alternative frameworks are used selectively in scenarios where
-            speed, flexibility or transitional strategies are prioritized over
-            institutional positioning.
+            Used selectively when speed or flexibility must outweigh institutional
+            positioning — always as part of a wider structure, not as a destination
+            by default.
           </p>
           <Link href="/jurisdictions/anjouan" className="card-grid" style={{ padding: "28px" }}>
             <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>Anjouan</h3>
             <p className="body-sm mb-3 text-muted-foreground">
-              Alternative licensing framework used in specific scenarios
-              requiring speed and flexibility, often as a transitional solution
-              where regulatory flexibility outweighs institutional positioning.
+              Tactical operating environment used in specific scenarios where
+              speed and flexibility are execution considerations — often
+              transitional within a longer structural path.
             </p>
             <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Learn more →</span>
           </Link>
@@ -203,17 +207,16 @@ export default function JurisdictionsPage() {
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Our approach</p>
           <h2 className="heading-section" style={{ marginBottom: "24px" }}>
-            We don&apos;t recommend jurisdictions based on popularity or cost.
+            We don&apos;t recommend environments based on popularity or cost.
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
-            Each licensing strategy is defined based on regulatory risk,
-            operational structure, payment infrastructure and long-term
-            objectives.
+            Each regulatory strategy is defined from operational risk, capital
+            structure, payment infrastructure and long-term objectives.
           </p>
           <p className="body-text">
-            In many cases, the optimal approach involves a combination of
-            jurisdictions rather than a single license. We design the structure
-            first, then select the jurisdictions that support it.
+            In many cases the durable path combines environments rather than a
+            single seat. We design the structure first, then select the operating
+            environments that support it.
           </p>
         </div>
       </section>
@@ -243,8 +246,8 @@ export default function JurisdictionsPage() {
         <div className="cta-block__bg" />
         <div className="cta-block__inner">
           <p className="body-text" style={{ color: "var(--white-40)", marginBottom: "16px" }}>
-            Selecting the wrong jurisdiction creates long-term operational and
-            financial constraints.
+            Selecting the wrong operating environment creates long-term
+            structural and financial constraints.
           </p>
           <h2 className="heading-lg cta-block__title">
             A structured assessment is required{" "}

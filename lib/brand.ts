@@ -7,10 +7,12 @@ export const BRAND = {
     dark: "/brand/symbol/octus-symbol-dark.svg",
   },
   lockup: {
-    /** Blue symbol + dark wordmark — light surfaces (header) */
+    /** Blue symbol + dark wordmark — light surfaces */
     horizontalOnLight: "/brand/lockup/octus-lockup-horizontal-blue-dark.png",
-    /** White lockup — dark surfaces (footer) */
-    horizontalOnDark: "/brand/lockup/octus-lockup-horizontal-white.png",
+    /** Blue symbol + white wordmark — dark surfaces (preferred) */
+    horizontalOnDark: "/brand/lockup/octus-lockup-horizontal-blue-white.png",
+    /** Full white lockup — alternate dark-surface option */
+    horizontalWhite: "/brand/lockup/octus-lockup-horizontal-white.png",
     horizontalDark: "/brand/lockup/octus-lockup-horizontal-dark.png",
     horizontalBlueWhite: "/brand/lockup/octus-lockup-horizontal-blue-white.png",
     stacked: "/brand/lockup/octus-lockup-stacked-blue-dark.png",

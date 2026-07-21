@@ -1472,9 +1472,9 @@ footer .heading-lg,
   z-index: 0;
   pointer-events: none;
   background:
-    radial-gradient(ellipse 72% 58% at 70% 36%, rgba(0, 101, 255, 0.22) 0%, transparent 56%),
-    radial-gradient(ellipse 52% 48% at 16% 82%, rgba(0, 82, 196, 0.36) 0%, transparent 50%),
-    linear-gradient(168deg, #060a12 0%, #0b1220 46%, #2b2b2b 100%);
+    radial-gradient(ellipse 72% 58% at 70% 36%, rgba(0, 101, 255, 0.28) 0%, transparent 56%),
+    radial-gradient(ellipse 52% 48% at 16% 82%, rgba(0, 82, 196, 0.4) 0%, transparent 50%),
+    linear-gradient(168deg, #060a12 0%, #0b1220 46%, #121a28 100%);
 }
 .home-hero__mesh,
 .octus-dark-hero__mesh {
@@ -1506,6 +1506,51 @@ footer .heading-lg,
   background-size: contain;
   background-position: center;
   mask-image: linear-gradient(120deg, transparent 10%, #000 45%, transparent 85%);
+}
+.octus-dark-hero__mark {
+  position: absolute;
+  right: 6%;
+  bottom: 12%;
+  width: min(18vw, 140px);
+  height: min(18vw, 140px);
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.07;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.site-header--on-dark .site-header__brand-rule {
+  background: linear-gradient(90deg, transparent 0%, rgba(0, 101, 255, 0.55) 18%, rgba(0, 101, 255, 0.55) 82%, transparent 100%);
+}
+
+/* Light-section restrained arcs (Solutions / Markets / Jurisdictions) */
+.octus-section-motif {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.octus-section-motif__arcs {
+  position: absolute;
+  right: -12%;
+  top: 8%;
+  width: min(55vw, 520px);
+  height: min(55vw, 520px);
+  opacity: 0.45;
+  background-image: url("/brand/motifs/octus-arc-primary.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  mask-image: linear-gradient(135deg, transparent 15%, #000 50%, transparent 88%);
+}
+.octus-section-relative {
+  position: relative;
+  isolation: isolate;
+}
+.octus-section-relative > *:not(.octus-section-motif) {
+  position: relative;
+  z-index: 1;
 }
 .octus-dark-hero__seam {
   position: absolute;

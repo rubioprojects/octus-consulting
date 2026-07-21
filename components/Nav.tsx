@@ -20,14 +20,10 @@ const supportingLinks = [
   { label: "Jurisdictions", href: "/jurisdictions" },
 ];
 
-const linkClass =
-  "font-sans text-[13px] tracking-wide text-muted-foreground no-underline transition-colors hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary md:text-sm";
-
-const ctaClass =
-  "inline-flex items-center rounded-sm bg-primary px-5 py-2.5 font-sans text-[13px] font-medium tracking-[0.04em] text-primary-foreground no-underline transition-colors hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary md:px-6 md:text-sm";
-
 export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  /** True while sticky header overlaps a dark hero — use blue+white lockup + light nav. */
+  const [overDarkHero, setOverDarkHero] = useState(false);
 
   useEffect(() => {
     if (mobileOpen) {
@@ -48,20 +44,58 @@ export default function Nav() {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
+  useEffect(() => {
+    const update = () => {
+      const hero = document.querySelector<HTMLElement>(".home-hero, .octus-dark-hero");
+      if (!hero) {
+        setOverDarkHero(false);
+        return;
+      }
+      const headerH = 76;
+      const bottom = hero.getBoundingClientRect().bottom;
+      setOverDarkHero(bottom > headerH);
+    };
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    return () => {
+      window.removeEventListener("scroll", update);
+      window.removeEventListener("resize", update);
+    };
+  }, []);
+
+  const linkClass = overDarkHero
+    ? "font-sans text-[13px] tracking-wide text-white/70 no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white md:text-sm"
+    : "font-sans text-[13px] tracking-wide text-muted-foreground no-underline transition-colors hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary md:text-sm";
+
+  const ctaClass =
+    "inline-flex items-center rounded-sm bg-primary px-5 py-2.5 font-sans text-[13px] font-medium tracking-[0.04em] text-primary-foreground no-underline transition-colors hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary md:px-6 md:text-sm";
+
   return (
     <>
       <nav
-        className="site-header fixed left-0 right-0 top-0 z-50 flex h-[4.25rem] items-center border-b border-border/50 bg-background/92 backdrop-blur-md md:h-[4.75rem]"
+        className={
+          overDarkHero
+            ? "site-header site-header--on-dark fixed left-0 right-0 top-0 z-50 flex h-[4.25rem] items-center border-b border-white/10 bg-[#0B1220] md:h-[4.75rem]"
+            : "site-header fixed left-0 right-0 top-0 z-50 flex h-[4.25rem] items-center border-b border-border/50 bg-background md:h-[4.75rem]"
+        }
         aria-label="Main"
+        data-over-dark-hero={overDarkHero ? "true" : "false"}
       >
         <div className="site-header__brand-rule" aria-hidden="true" />
         <div className="relative z-10 mx-auto flex h-full w-full max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8">
           <Link
             href="/"
-            className="flex shrink-0 items-center no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+            className={`flex shrink-0 items-center no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 ${
+              overDarkHero ? "focus-visible:outline-white" : "focus-visible:outline-primary"
+            }`}
             aria-label="Octus Consulting home"
           >
-            <BrandLockup variant="on-light" className="site-header__logo h-8 w-auto md:h-9" priority />
+            <BrandLockup
+              variant={overDarkHero ? "on-dark" : "on-light"}
+              className="site-header__logo h-8 w-auto md:h-9"
+              priority
+            />
           </Link>
 
           <div className="hidden items-center gap-8 lg:gap-10 md:flex">
@@ -82,7 +116,11 @@ export default function Nav() {
 
           <button
             type="button"
-            className="flex rounded-md border-0 bg-transparent p-2 text-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary md:hidden"
+            className={`flex rounded-md border-0 bg-transparent p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 md:hidden ${
+              overDarkHero
+                ? "text-white focus-visible:outline-white"
+                : "text-foreground focus-visible:outline-primary"
+            }`}
             onClick={() => setMobileOpen((p) => !p)}
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileOpen}
@@ -104,41 +142,38 @@ export default function Nav() {
       {mobileOpen && (
         <div
           id="mobile-nav"
-          className="fixed inset-x-0 bottom-0 top-[4.25rem] z-40 overflow-y-auto bg-background px-4 pb-12 pt-2 sm:px-6 md:hidden"
+          className="fixed inset-0 z-40 bg-background pt-[4.25rem] md:hidden"
           role="dialog"
           aria-modal="true"
-          aria-label="Navigation menu"
+          aria-label="Mobile navigation"
         >
-          {primaryLinks.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className="block border-b border-border py-4 font-sans text-base text-foreground no-underline transition-colors hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-primary"
-              onClick={() => setMobileOpen(false)}
-            >
-              {l.label}
-            </Link>
-          ))}
-          <p className="pt-6 pb-2 font-sans text-xs font-medium uppercase tracking-[0.15em] text-muted-foreground">
-            More
-          </p>
-          {supportingLinks.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className="block border-b border-border py-3 font-sans text-sm text-muted-foreground no-underline transition-colors hover:text-primary"
-              onClick={() => setMobileOpen(false)}
-            >
-              {l.label}
-            </Link>
-          ))}
-
-          <div className="pt-6">
+          <div className="flex flex-col gap-1 px-4 py-6">
+            {primaryLinks.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="rounded-sm px-3 py-3 font-sans text-base text-foreground no-underline hover:bg-muted"
+                onClick={() => setMobileOpen(false)}
+              >
+                {l.label}
+              </Link>
+            ))}
+            <div className="my-3 border-t border-border" />
+            {supportingLinks.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="rounded-sm px-3 py-3 font-sans text-sm text-muted-foreground no-underline hover:bg-muted"
+                onClick={() => setMobileOpen(false)}
+              >
+                {l.label}
+              </Link>
+            ))}
             <a
               href={WHATSAPP_DISCUSS_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className={`${ctaClass} w-full justify-center`}
+              className={`${ctaClass} mt-4 justify-center`}
               onClick={() => setMobileOpen(false)}
             >
               {CTA_DISCUSS_LABEL}

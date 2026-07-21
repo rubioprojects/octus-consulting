@@ -4,7 +4,8 @@ type Variant = "on-light" | "on-dark";
 
 /**
  * Official Octus lockup — uses approved Brand Kit exports (PNG masters).
- * Do not CSS-recolor; pick the correct variant for surface.
+ * on-light: blue symbol + dark wordmark
+ * on-dark: blue symbol + white wordmark (preferred on navy / charcoal)
  */
 export default function BrandLockup({
   variant = "on-light",

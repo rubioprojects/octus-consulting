@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 import PageHero from "../../components/system/PageHero";
+import BrandSectionMotif from "../../components/system/BrandSectionMotif";
 
 export const metadata = {
   title: "Markets — Regulated Sectors We Structure",
@@ -25,7 +26,8 @@ export default function MarketsPage() {
       />
 
       {/* ─── ACTIVE MARKETS (linkable) ─── */}
-      <section className="bg-background py-24 md:py-32">
+      <section className="octus-section-relative bg-background py-24 md:py-32">
+        <BrandSectionMotif />
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <p className="label">Active markets</p>
           <h2 className="heading-section" style={{ marginBottom: "40px" }}>
@@ -62,7 +64,8 @@ export default function MarketsPage() {
       </section>
 
       {/* ─── ADDITIONAL MARKETS ─── */}
-      <section className="surface-elevated py-24 md:py-32">
+      <section className="octus-section-relative surface-elevated py-24 md:py-32">
+        <BrandSectionMotif />
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <p className="label">Also active in</p>
           <h2 className="heading-section" style={{ marginBottom: "32px" }}>
