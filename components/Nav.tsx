@@ -51,7 +51,7 @@ export default function Nav() {
         setOverDarkHero(false);
         return;
       }
-      const headerH = 76;
+      const headerH = 80;
       const bottom = hero.getBoundingClientRect().bottom;
       setOverDarkHero(bottom > headerH);
     };
@@ -76,8 +76,8 @@ export default function Nav() {
       <nav
         className={
           overDarkHero
-            ? "site-header site-header--on-dark fixed left-0 right-0 top-0 z-50 flex h-[4.25rem] items-center border-b border-white/10 bg-[#0B1220] md:h-[4.75rem]"
-            : "site-header fixed left-0 right-0 top-0 z-50 flex h-[4.25rem] items-center border-b border-border/50 bg-background md:h-[4.75rem]"
+            ? "site-header site-header--on-dark fixed left-0 right-0 top-0 z-50 flex h-[4.5rem] items-center border-b border-white/10 bg-[#0B1220] md:h-[5rem]"
+            : "site-header fixed left-0 right-0 top-0 z-50 flex h-[4.5rem] items-center border-b border-border/50 bg-background md:h-[5rem]"
         }
         aria-label="Main"
         data-over-dark-hero={overDarkHero ? "true" : "false"}
@@ -93,7 +93,7 @@ export default function Nav() {
           >
             <BrandLockup
               variant={overDarkHero ? "on-dark" : "on-light"}
-              className="site-header__logo h-8 w-auto md:h-9"
+              className="site-header__logo h-9 w-auto md:h-10"
               priority
             />
           </Link>
@@ -142,7 +142,7 @@ export default function Nav() {
       {mobileOpen && (
         <div
           id="mobile-nav"
-          className="fixed inset-0 z-40 bg-background pt-[4.25rem] md:hidden"
+          className="fixed inset-0 z-40 bg-background pt-[4.5rem] md:hidden"
           role="dialog"
           aria-modal="true"
           aria-label="Mobile navigation"

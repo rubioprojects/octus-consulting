@@ -94,7 +94,7 @@ export default function RootLayout({
             <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:gap-8 lg:grid-cols-3 xl:grid-cols-6">
               <div className="flex flex-col gap-3 xl:col-span-1">
                 <a href="/" className="inline-flex items-center no-underline" aria-label="Octus Consulting">
-                  <BrandLockup variant="on-dark" className="h-8 w-auto" />
+                  <BrandLockup variant="on-dark" className="h-9 w-auto md:h-10" />
                 </a>
                 <p className="max-w-xs text-sm font-normal leading-relaxed text-white/70">
                   Premium international execution partner for highly regulated operations.

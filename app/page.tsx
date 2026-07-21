@@ -1,10 +1,9 @@
 import Link from "next/link";
-import { Fragment } from "react";
 import HomeModulesAccordion from "../components/HomeModulesAccordion";
 import { CtaLink } from "../components/system/CtaButton";
+import CapabilityRail from "../components/system/CapabilityRail";
 import Eyebrow from "../components/system/Eyebrow";
 import OctusIcon from "../components/icons/OctusIcon";
-import OctusStripSeparatorIcon from "../components/OctusStripSeparatorIcon";
 import { ENGAGEMENT_MODELS, SOLUTION_HUBS } from "../lib/commercial";
 import { BRAND } from "../lib/brand";
 import {
@@ -15,13 +14,13 @@ import {
 } from "../lib/cta";
 
 /**
- * Authority strip copy: aligned with homepage language.
+ * Capability rail copy: six Solutions — brand signature, not navigation.
  * Today the site UI is English-only (`app/layout.tsx` → `lang="en"`).
- * When the homepage is fully translated to PT, set `homeAuthorityLocale` to `"pt"`.
+ * When the homepage is fully translated to PT, set `homeCapabilityLocale` to `"pt"`.
  */
-const AUTHORITY_STRIP = {
+const CAPABILITY_RAIL = {
   en: {
-    aria: "Core solutions",
+    aria: "Core capabilities",
     items: [
       { label: "Regulatory Strategy", icon: "regulatory" as const },
       { label: "Banking & Payments", icon: "banking" as const },
@@ -32,7 +31,7 @@ const AUTHORITY_STRIP = {
     ],
   },
   pt: {
-    aria: "Soluções centrais",
+    aria: "Capacidades centrais",
     items: [
       { label: "Estratégia regulatória", icon: "regulatory" as const },
       { label: "Banking e pagamentos", icon: "banking" as const },
@@ -44,7 +43,7 @@ const AUTHORITY_STRIP = {
   },
 } as const;
 
-const homeAuthorityLocale: keyof typeof AUTHORITY_STRIP = "en";
+const homeCapabilityLocale: keyof typeof CAPABILITY_RAIL = "en";
 
 export const metadata = {
   title: "Premium Execution for Regulated Operations",
@@ -60,7 +59,7 @@ const solutionRows = SOLUTION_HUBS.map((hub) => ({
 }));
 
 export default function HomePage() {
-  const authority = AUTHORITY_STRIP[homeAuthorityLocale];
+  const capability = CAPABILITY_RAIL[homeCapabilityLocale];
 
   return (
     <main>
@@ -112,27 +111,7 @@ export default function HomePage() {
         <div className="octus-dark-hero__seam" aria-hidden="true" />
       </section>
 
-      <section
-        className="authority-strip w-full border-b border-white/[0.06]"
-        style={{ backgroundColor: "#0B1220" }}
-        aria-label="Practice areas"
-      >
-        <div className="w-full overflow-x-auto overflow-y-hidden overscroll-x-contain scroll-smooth [-webkit-overflow-scrolling:touch] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-          <div className="flex h-14 min-w-full w-max items-center justify-center gap-x-5 px-6 font-sans text-[11px] font-medium uppercase tracking-[0.18em] text-white/55 sm:gap-x-7 sm:px-10 sm:text-[12px] md:h-16">
-            {authority.items.map((item, i) => (
-              <Fragment key={item.label}>
-                {i > 0 && (
-                  <OctusStripSeparatorIcon className="h-2.5 w-2.5 shrink-0 text-white/22" />
-                )}
-                <span className="pointer-events-none inline-flex select-none items-center gap-2.5 whitespace-nowrap">
-                  <OctusIcon name={item.icon} size={13} className="text-white/45 opacity-90" />
-                  {item.label}
-                </span>
-              </Fragment>
-            ))}
-          </div>
-        </div>
-      </section>
+      <CapabilityRail items={capability.items} ariaLabel={capability.aria} />
 
       <section className="border-b border-border bg-background py-14 md:py-16">
         <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">

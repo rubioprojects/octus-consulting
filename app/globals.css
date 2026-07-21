@@ -1847,6 +1847,101 @@ footer .heading-lg,
   pointer-events: none;
 }
 
+.site-header__logo {
+  max-height: 2.5rem;
+}
+
+/* Capability rail — Octus signature (not navigation) */
+.capability-rail {
+  position: relative;
+  overflow: hidden;
+  height: 3.5rem;
+}
+@media (min-width: 768px) {
+  .capability-rail {
+    height: 4rem;
+  }
+}
+.capability-rail__viewport {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.capability-rail__track,
+.capability-rail__static {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  height: 100%;
+  width: max-content;
+  padding-inline: 1.5rem;
+  font-family: var(--font-inter), Inter, system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+}
+@media (min-width: 640px) {
+  .capability-rail__track,
+  .capability-rail__static {
+    gap: 1.75rem;
+    padding-inline: 2.5rem;
+    font-size: 12px;
+  }
+}
+.capability-rail__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  white-space: nowrap;
+  user-select: none;
+  pointer-events: none;
+}
+.capability-rail__track {
+  animation: octus-capability-marquee 48s linear infinite;
+}
+.capability-rail__static {
+  display: none;
+  position: absolute;
+  inset: 0;
+  margin-inline: auto;
+  width: max-content;
+  max-width: 100%;
+  justify-content: center;
+}
+.capability-rail__fade {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3.5rem;
+  z-index: 2;
+  pointer-events: none;
+}
+.capability-rail__fade--left {
+  left: 0;
+  background: linear-gradient(90deg, #0b1220 0%, transparent 100%);
+}
+.capability-rail__fade--right {
+  right: 0;
+  background: linear-gradient(270deg, #0b1220 0%, transparent 100%);
+}
+@keyframes octus-capability-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .capability-rail__track {
+    display: none;
+  }
+  .capability-rail__static {
+    display: flex;
+  }
+  .capability-rail__fade {
+    display: none;
+  }
+}
+
 .post-body strong {
   color: var(--text-primary);
 }
