@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
 
 export const metadata = {
   title: "UAE / Dubai — Octus Consulting",
@@ -19,9 +20,7 @@ export default function JurisdictionsUaePage() {
             Not because the UAE is unclear. Because they treat it as a single jurisdiction. It is not.
           </p>
           <div style={{ marginTop: "32px" }}>
-            <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
-              Request a structural assessment →
-            </Link>
+            <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           </div>
         </div>
       </section>
@@ -240,9 +239,7 @@ export default function JurisdictionsUaePage() {
           <h2 className="heading-lg cta-block__title">
             Design for the right authority. Not for the right postcode.
           </h2>
-          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
-            Request a structural assessment →
-          </Link>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           <p className="body-sm" style={{ color: "var(--white-25)", marginTop: "16px" }}>
             We review your intended operation, map the correct regulatory path
             and define what needs to be built. If there is no viable structure,

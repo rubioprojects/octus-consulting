@@ -2,23 +2,17 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../lib/cta";
 
-const whatWeDoLinks = [
-  { label: "Markets", href: "/markets" },
-  { label: "Jurisdictions", href: "/jurisdictions" },
+const primaryLinks = [
+  { label: "About", href: "/about" },
   { label: "Solutions", href: "/solutions" },
+  { label: "Markets", href: "/markets" },
+  { label: "Insights", href: "/insights" },
 ];
 
 export default function Nav() {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [closeTimer, setCloseTimer] = useState<ReturnType<typeof setTimeout> | null>(null);
-
-  useEffect(() => {
-    return () => {
-      if (closeTimer) clearTimeout(closeTimer);
-    };
-  }, [closeTimer]);
 
   useEffect(() => {
     if (mobileOpen) {
@@ -30,16 +24,6 @@ export default function Nav() {
       document.body.style.overflow = "";
     };
   }, [mobileOpen]);
-
-  const openDropdown = () => {
-    if (closeTimer) clearTimeout(closeTimer);
-    setDropdownOpen(true);
-  };
-
-  const closeDropdown = () => {
-    const timer = setTimeout(() => setDropdownOpen(false), 200);
-    setCloseTimer(timer);
-  };
 
   return (
     <>
@@ -61,51 +45,23 @@ export default function Nav() {
           </Link>
 
           <div className="hidden items-center gap-8 md:flex">
-            <Link
-              href="/about"
-              className="font-sans text-sm text-muted-foreground no-underline transition-colors hover:text-primary"
-            >
-              About
-            </Link>
-
-            <div className="relative" onMouseEnter={openDropdown} onMouseLeave={closeDropdown}>
-              <button
-                type="button"
-                className="flex items-center gap-1 border-0 bg-transparent p-0 font-sans text-sm text-muted-foreground transition-colors hover:text-primary"
-                onClick={() => setDropdownOpen((p) => !p)}
-                aria-expanded={dropdownOpen}
-                aria-haspopup="true"
+            {primaryLinks.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="font-sans text-sm text-muted-foreground no-underline transition-colors hover:text-primary"
               >
-                What we do <span className="text-[10px] opacity-50">▾</span>
-              </button>
-              {dropdownOpen && (
-                <div className="absolute left-0 top-full z-50 mt-2 min-w-[220px] rounded-lg border border-border bg-background p-2 shadow-lg">
-                  {whatWeDoLinks.map((l) => (
-                    <Link
-                      key={l.href}
-                      href={l.href}
-                      className="block rounded-md px-3 py-2 font-sans text-sm text-muted-foreground no-underline transition-colors hover:bg-muted/40 hover:text-primary"
-                      onClick={() => setDropdownOpen(false)}
-                    >
-                      {l.label}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            <Link
-              href="/insights"
-              className="font-sans text-sm text-muted-foreground no-underline transition-colors hover:text-primary"
-            >
-              Insights
-            </Link>
-            <Link
-              href="/contact"
+                {l.label}
+              </Link>
+            ))}
+            <a
+              href={WHATSAPP_DISCUSS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center rounded-full bg-primary px-6 py-2.5 font-sans text-sm font-medium text-primary-foreground no-underline transition-colors hover:bg-primary/90"
             >
-              Discuss your structure →
-            </Link>
+              {CTA_DISCUSS_LABEL}
+            </a>
           </div>
 
           <button
@@ -135,50 +91,27 @@ export default function Nav() {
           aria-modal="true"
           aria-label="Navigation menu"
         >
-          <Link
-            href="/about"
-            className="block border-b border-border py-4 font-sans text-sm text-foreground no-underline transition-colors hover:text-primary"
-            onClick={() => setMobileOpen(false)}
-          >
-            About
-          </Link>
-          <Link
-            href="/markets"
-            className="block border-b border-border py-4 font-sans text-sm text-foreground no-underline transition-colors hover:text-primary"
-            onClick={() => setMobileOpen(false)}
-          >
-            Markets
-          </Link>
-          <Link
-            href="/jurisdictions"
-            className="block border-b border-border py-4 font-sans text-sm text-foreground no-underline transition-colors hover:text-primary"
-            onClick={() => setMobileOpen(false)}
-          >
-            Jurisdictions
-          </Link>
-          <Link
-            href="/solutions"
-            className="block border-b border-border py-4 font-sans text-sm text-foreground no-underline transition-colors hover:text-primary"
-            onClick={() => setMobileOpen(false)}
-          >
-            Solutions
-          </Link>
-          <Link
-            href="/insights"
-            className="block border-b border-border py-4 font-sans text-sm text-foreground no-underline transition-colors hover:text-primary"
-            onClick={() => setMobileOpen(false)}
-          >
-            Insights
-          </Link>
+          {primaryLinks.map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              className="block border-b border-border py-4 font-sans text-sm text-foreground no-underline transition-colors hover:text-primary"
+              onClick={() => setMobileOpen(false)}
+            >
+              {l.label}
+            </Link>
+          ))}
 
           <div className="pt-6">
-            <Link
-              href="/contact"
+            <a
+              href={WHATSAPP_DISCUSS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex w-full items-center justify-center rounded-full bg-primary px-6 py-2.5 font-sans text-sm font-medium text-primary-foreground no-underline transition-colors hover:bg-primary/90"
               onClick={() => setMobileOpen(false)}
             >
-              Discuss your structure →
-            </Link>
+              {CTA_DISCUSS_LABEL}
+            </a>
           </div>
         </div>
       )}

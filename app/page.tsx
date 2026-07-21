@@ -2,6 +2,12 @@ import Link from "next/link";
 import { Fragment } from "react";
 import HomeModulesAccordion from "../components/HomeModulesAccordion";
 import OctusStripSeparatorIcon from "../components/OctusStripSeparatorIcon";
+import {
+  CTA_DIAGNOSTIC_LABEL,
+  CTA_DISCUSS_LABEL,
+  WHATSAPP_DIAGNOSTIC_URL,
+  WHATSAPP_DISCUSS_URL,
+} from "../lib/cta";
 
 /**
  * Authority strip copy: aligned with homepage language.
@@ -38,7 +44,7 @@ const homeAuthorityLocale: keyof typeof AUTHORITY_STRIP = "en";
 export const metadata = {
   title: "Octus Consulting — Regulatory & Operational Structuring",
   description:
-    "We design and operate regulatory infrastructure for high-risk and regulated businesses.",
+    "Regulated operations don't fail randomly. They fail structurally. Octus fixes regulatory, licensing and banking problems in highly regulated markets.",
 };
 
 const moduleRows = [
@@ -112,27 +118,31 @@ export default function HomePage() {
             Regulated Operations
           </div>
           <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem]">
-            We fix that.
+            Regulated operations don&apos;t fail randomly.
             <br />
-            <span className="text-white/50 italic">Structurally.</span>
+            <span className="text-white/70">They fail structurally.</span>
           </h1>
           <p className="mb-12 max-w-xl text-lg leading-relaxed text-white/60">
-            Licensing, compliance and banking don&apos;t fail in isolation.
-            They break when the structure behind them does not hold.
+            We fix regulatory, licensing and banking problems in highly regulated markets — and build
+            the structures that prevent them from happening again.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Link
-              href="/contact"
+            <a
+              href={WHATSAPP_DISCUSS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex h-12 items-center justify-center rounded-full bg-white px-10 text-base font-medium tracking-wide text-primary transition-colors hover:bg-white/90"
             >
-              Discuss your structure →
-            </Link>
-            <Link
-              href="/diagnostic"
+              {CTA_DISCUSS_LABEL}
+            </a>
+            <a
+              href={WHATSAPP_DIAGNOSTIC_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex h-12 items-center justify-center rounded-full border border-white/20 bg-transparent px-10 text-base font-medium text-white/80 transition-colors hover:border-white/40 hover:text-white"
             >
-              Run a regulatory diagnostic →
-            </Link>
+              {CTA_DIAGNOSTIC_LABEL}
+            </a>
           </div>
         </div>
       </section>
@@ -447,12 +457,14 @@ export default function HomePage() {
           <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-white/60">
             We don&apos;t consult on theory. We step into live operations and restructure what isn&apos;t working.
           </p>
-          <Link
-            href="/diagnostic"
+          <a
+            href={WHATSAPP_DIAGNOSTIC_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex h-12 items-center justify-center rounded-full bg-white px-10 text-base font-medium tracking-wide text-primary transition-colors hover:bg-white/90"
           >
-            Request assessment →
-          </Link>
+            {CTA_DIAGNOSTIC_LABEL}
+          </a>
         </div>
       </section>
 
@@ -590,12 +602,14 @@ export default function HomePage() {
           <p className="body-large mx-auto mb-12 max-w-2xl">
             This is for operators building real businesses under regulatory and operational constraints.
           </p>
-          <Link
-            href="/contact"
+          <a
+            href={WHATSAPP_DISCUSS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium text-primary-foreground transition-colors hover:bg-primary/90"
           >
-            Discuss your structure →
-          </Link>
+            {CTA_DISCUSS_LABEL}
+          </a>
         </div>
       </section>
 
@@ -610,9 +624,9 @@ export default function HomePage() {
           <h2 className="heading-lg cta-block__title">
             If your structure breaks, your operation stops.
           </h2>
-          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
-            Discuss your structure →
-          </Link>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
+            {CTA_DISCUSS_LABEL}
+          </a>
         </div>
       </section>
     </main>
