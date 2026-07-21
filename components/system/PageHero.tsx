@@ -34,7 +34,7 @@ export default function PageHero({
       }`}
     >
       <DarkHeroAtmosphere />
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="octus-hero-copy relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <Eyebrow tone="dark">{eyebrow}</Eyebrow>
         <h1 className="font-heading max-w-[56rem] text-4xl font-bold leading-[1.1] tracking-[-0.02em] text-white md:text-5xl lg:text-[3.5rem] lg:leading-[1.08]">
           {title}

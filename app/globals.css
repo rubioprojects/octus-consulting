@@ -53,11 +53,12 @@
     --primary: 215 100% 38%; /* official deep blue #0052C4 */
     --primary-foreground: 0 0% 100%;
 
+    /* Cream reserved for strategic highlight — not section chrome */
     --secondary: 48 69% 90%;
     --secondary-foreground: 0 0% 17%;
 
-    --muted: 0 0% 93%;
-    --muted-foreground: 0 0% 32%;
+    --muted: 220 16% 94%;
+    --muted-foreground: 220 10% 36%;
 
     --accent: 0 93% 34%;
     --accent-foreground: 0 0% 100%;
@@ -65,11 +66,11 @@
     --destructive: 0 93% 34%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 40 8% 88%;
+    --border: 220 14% 88%;
     /* Resolved border color for inline styles in TSX */
     --border-solid: hsl(var(--border));
-    --input: 40 8% 88%;
-    --ring: 213 64% 25%;
+    --input: 220 14% 88%;
+    --ring: 215 100% 38%;
 
     --radius: 0.5rem;
 
@@ -80,12 +81,14 @@
     --brand-blue-mid: 212 100% 49%; /* #0074F8 */
     --brand-blue-deep: 214 100% 44%; /* #0062DE royal */
     --brand-red: 0 93% 34%; /* #A80606 */
-    --brand-cream: 48 69% 90%; /* #F7F0D4 */
+    --brand-cream: 48 69% 90%; /* #F7F0D4 — strategic highlight only */
     --brand-dark: 0 0% 17%; /* #2B2B2B charcoal */
     --brand-off-white: 0 0% 98%; /* #FAFAFA */
+    --brand-navy: 220 48% 8%; /* #0B1220 primary environment */
 
-    --surface-elevated: 48 69% 90%;
-    --surface-dark: 0 0% 17%;
+    /* Elevated sections: cool navy-tinted light — not cream blocks */
+    --surface-elevated: 220 28% 96%;
+    --surface-dark: 220 48% 8%; /* navy primary environment */
 
     --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.06), 0 1px 2px -1px rgb(0 0 0 / 0.06);
     --shadow-card-hover: 0 4px 12px -2px rgb(0 0 0 / 0.08), 0 2px 6px -2px rgb(0 0 0 / 0.04);
@@ -141,6 +144,21 @@
   .surface-dark {
     background: hsl(var(--surface-dark));
     color: hsl(0 0% 96%);
+  }
+
+  /* Strategic cream highlight — never full-page chrome */
+  .surface-cream {
+    background: hsl(var(--brand-cream));
+  }
+
+  .accent-cream-bar {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      hsl(var(--brand-cream) / 0.85) 18%,
+      hsl(var(--brand-cream) / 0.85) 82%,
+      transparent 100%
+    );
   }
 }
 
@@ -1451,11 +1469,13 @@ footer .heading-lg,
 .cta-block {
   padding-top: 112px;
   padding-bottom: 112px;
-  background: #1a1d21;
+  background: #0b1220;
 }
 
 .cta-block__bg {
-  background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+  background:
+    radial-gradient(ellipse 55% 70% at 72% 40%, rgba(0, 101, 255, 0.16) 0%, transparent 62%),
+    radial-gradient(ellipse 40% 50% at 18% 78%, rgba(0, 82, 196, 0.12) 0%, transparent 55%);
 }
 
 /* wa-float / cookie-banner: primary rules above (executive polish) — no flat-bar overrides */
@@ -1479,7 +1499,7 @@ footer .heading-lg,
 .home-hero__mesh,
 .octus-dark-hero__mesh {
   position: absolute;
-  inset: 0;
+  inset: -8%;
   z-index: 1;
   pointer-events: none;
   opacity: 0.9;
@@ -1492,6 +1512,7 @@ footer .heading-lg,
       rgba(66, 161, 255, 0.045) 12px
     );
   mask-image: radial-gradient(ellipse 88% 78% at 48% 42%, #000 18%, transparent 76%);
+  animation: octus-mesh-drift 48s linear infinite;
 }
 .octus-dark-hero__arcs {
   position: absolute;
@@ -1506,6 +1527,8 @@ footer .heading-lg,
   background-size: contain;
   background-position: center;
   mask-image: linear-gradient(120deg, transparent 10%, #000 45%, transparent 85%);
+  animation: octus-arc-breathe 22s ease-in-out infinite;
+  transform-origin: 62% 48%;
 }
 .octus-dark-hero__mark {
   position: absolute;
@@ -1519,12 +1542,13 @@ footer .heading-lg,
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  animation: octus-mark-fade 18s ease-in-out infinite;
 }
 .site-header--on-dark .site-header__brand-rule {
   background: linear-gradient(90deg, transparent 0%, rgba(0, 101, 255, 0.55) 18%, rgba(0, 101, 255, 0.55) 82%, transparent 100%);
 }
 
-/* Light-section restrained arcs (Solutions / Markets / Jurisdictions) */
+/* Light-section restrained arcs (Solutions / Markets / Jurisdictions / Intelligence) */
 .octus-section-motif {
   position: absolute;
   inset: 0;
@@ -1538,11 +1562,43 @@ footer .heading-lg,
   top: 8%;
   width: min(55vw, 520px);
   height: min(55vw, 520px);
-  opacity: 0.45;
+  opacity: 0.42;
   background-image: url("/brand/motifs/octus-arc-primary.svg");
   background-repeat: no-repeat;
   background-size: contain;
   mask-image: linear-gradient(135deg, transparent 15%, #000 50%, transparent 88%);
+  animation: octus-arc-breathe 28s ease-in-out infinite;
+  transform-origin: center;
+}
+.octus-section-motif__mark {
+  position: absolute;
+  left: 4%;
+  bottom: 10%;
+  width: min(12vw, 88px);
+  height: min(12vw, 88px);
+  opacity: 0.04;
+  background-image: url("/brand/symbol/octus-symbol-blue.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.octus-section-motif--start .octus-section-motif__arcs {
+  right: auto;
+  left: -14%;
+  top: auto;
+  bottom: -8%;
+}
+.octus-section-motif--center .octus-section-motif__arcs {
+  right: 18%;
+  top: 20%;
+  opacity: 0.28;
+}
+.octus-section-motif--navy .octus-section-motif__arcs {
+  background-image: url("/brand/motifs/octus-arc-secondary.svg");
+  opacity: 0.5;
+}
+.octus-section-motif--navy .octus-section-motif__mark {
+  background-image: url("/brand/symbol/octus-symbol-white.svg");
+  opacity: 0.06;
 }
 .octus-section-relative {
   position: relative;
@@ -1562,21 +1618,224 @@ footer .heading-lg,
   pointer-events: none;
   background: linear-gradient(to bottom, transparent, rgba(248, 250, 252, 0.06));
 }
-@media (prefers-reduced-motion: reduce) {
-  .home-hero__mesh,
-  .octus-dark-hero__mesh { opacity: 0.4; }
+
+/* Institutional motion keyframes */
+@keyframes octus-mesh-drift {
+  0% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(-1.2%, 1%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes octus-arc-breathe {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.035) rotate(1.2deg); }
+}
+@keyframes octus-mark-fade {
+  0%, 100% { opacity: 0.055; }
+  50% { opacity: 0.09; }
+}
+@keyframes octus-hero-enter {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.octus-hero-copy {
+  animation: octus-hero-enter 0.95s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
+.octus-reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.octus-reveal--in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Six-solution identity mark */
+.solution-id-mark {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+}
+.solution-id-mark__arc {
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(0, 82, 196, 0.28);
+  border-radius: 9999px;
+  border-top-color: rgba(0, 101, 255, 0.75);
+  border-right-color: rgba(0, 101, 255, 0.35);
+}
+.solution-id-mark--accent .solution-id-mark__arc {
+  border-color: rgba(168, 6, 6, 0.22);
+  border-top-color: rgba(168, 6, 6, 0.7);
+  border-right-color: rgba(168, 6, 6, 0.35);
+}
+.solution-id-mark__num {
+  font-family: var(--font-unigeo), "Unigeo64", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: hsl(var(--brand-blue));
+}
+.solution-id-mark--accent .solution-id-mark__num {
+  color: hsl(var(--brand-red));
+}
+
+.solution-card {
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.35s ease, box-shadow 0.35s ease, transform 0.35s ease;
+}
+.solution-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, #0065ff 0%, rgba(0, 82, 196, 0.2) 100%);
+  opacity: 0.7;
+}
+.solution-card--crisis::before {
+  background: linear-gradient(180deg, #a80606 0%, rgba(168, 6, 6, 0.2) 100%);
+}
+.solution-card:hover {
+  border-color: rgba(0, 82, 196, 0.28);
+  box-shadow: 0 8px 28px -18px rgba(11, 18, 32, 0.35);
+  transform: translateY(-2px);
+}
+
+.octus-story-rail {
+  width: 2px;
+  min-height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 101, 255, 0.55) 0%,
+    rgba(11, 18, 32, 0.18) 55%,
+    transparent 100%
+  );
+  border-radius: 1px;
+}
+
+.jurisdiction-tier {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid hsl(var(--border));
+  align-items: start;
+}
+.jurisdiction-tier:last-child {
+  border-bottom: none;
+}
+.jurisdiction-tier__label {
+  font-family: var(--font-inter), Inter, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: hsl(var(--brand-blue));
+  padding-top: 0.15rem;
+}
+.jurisdiction-card {
+  position: relative;
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.jurisdiction-card:hover {
+  border-color: rgba(0, 82, 196, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px -20px rgba(11, 18, 32, 0.4);
+}
+
+.market-story-card {
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.market-story-card::after {
+  content: "";
+  position: absolute;
+  right: -20%;
+  top: -30%;
+  width: 55%;
+  height: 90%;
+  pointer-events: none;
+  opacity: 0.12;
+  background-image: url("/brand/motifs/octus-arc-primary.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.market-story-card:hover {
+  border-color: rgba(0, 82, 196, 0.28);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px -20px rgba(11, 18, 32, 0.4);
+}
+
+.intelligence-authority {
+  background:
+    linear-gradient(165deg, #0b1220 0%, #10182a 55%, #0b1220 100%);
+  color: #fff;
+}
+.intelligence-authority .heading-section {
+  color: #fff;
+}
+.intelligence-authority .body-text,
+.intelligence-authority .body-large {
+  color: rgba(255, 255, 255, 0.72);
+}
 .intelligence-pillar {
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.1) !important;
 }
 .intelligence-pillar:hover {
-  border-color: rgba(22, 59, 104, 0.28);
-  box-shadow: 0 1px 0 rgba(37, 99, 235, 0.06);
+  border-color: rgba(66, 161, 255, 0.35) !important;
+  box-shadow: 0 12px 32px -22px rgba(0, 101, 255, 0.55);
+  transform: translateY(-2px);
 }
 .intelligence-pillar__mark {
-  color: #163b68;
+  color: #42a1ff;
+  border-color: rgba(66, 161, 255, 0.25) !important;
+  background: rgba(0, 101, 255, 0.1) !important;
 }
+.intelligence-pillar h3 {
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-hero__mesh,
+  .octus-dark-hero__mesh,
+  .octus-dark-hero__arcs,
+  .octus-dark-hero__mark,
+  .octus-section-motif__arcs,
+  .octus-hero-copy {
+    animation: none !important;
+  }
+  .home-hero__mesh,
+  .octus-dark-hero__mesh {
+    opacity: 0.4;
+  }
+  .octus-reveal,
+  .octus-hero-copy {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .solution-card:hover,
+  .jurisdiction-card:hover,
+  .market-story-card:hover,
+  .intelligence-pillar:hover {
+    transform: none;
+  }
+}
+
 .site-header__brand-rule {
   position: absolute;
   left: 0;
@@ -1586,17 +1845,6 @@ footer .heading-lg,
   background: linear-gradient(90deg, transparent 0%, rgba(0, 101, 255, 0.5) 18%, rgba(0, 101, 255, 0.5) 82%, transparent 100%);
   opacity: 0.85;
   pointer-events: none;
-}
-
-.intelligence-pillar {
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-.intelligence-pillar:hover {
-  border-color: rgba(22, 59, 104, 0.28);
-  box-shadow: 0 1px 0 rgba(37, 99, 235, 0.06);
-}
-.intelligence-pillar__mark {
-  color: #163b68;
 }
 
 .post-body strong {

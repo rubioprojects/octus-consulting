@@ -72,7 +72,12 @@ export default function HomePage() {
           aria-hidden="true"
           style={{ backgroundImage: `url('${BRAND.motifs.arcSecondary}')` }}
         />
-        <div className="relative z-10 mx-auto w-full max_w-[56rem]">
+        <div
+          className="octus-dark-hero__mark"
+          aria-hidden="true"
+          style={{ backgroundImage: `url('${BRAND.symbol.blue}')` }}
+        />
+        <div className="octus-hero-copy relative z-10 mx-auto w-full max-w-[56rem]">
           <Eyebrow tone="dark" className="mb-8 md:mb-10">
             Regulated Operations
           </Eyebrow>
