@@ -4,10 +4,11 @@ import HomeModulesAccordion from "../components/HomeModulesAccordion";
 import { CtaLink } from "../components/system/CtaButton";
 import Eyebrow from "../components/system/Eyebrow";
 import OctusIcon from "../components/icons/OctusIcon";
+import OctusStripSeparatorIcon from "../components/OctusStripSeparatorIcon";
 import {
-  CTA_DIAGNOSTIC_LABEL,
+  CTA_ASSESS_LABEL,
   CTA_DISCUSS_LABEL,
-  WHATSAPP_DIAGNOSTIC_URL,
+  WHATSAPP_ASSESS_URL,
   WHATSAPP_DISCUSS_URL,
 } from "../lib/cta";
 
@@ -116,30 +117,30 @@ export default function HomePage() {
               {CTA_DISCUSS_LABEL}
             </CtaLink>
             <CtaLink
-              href={WHATSAPP_DIAGNOSTIC_URL}
+              href={WHATSAPP_ASSESS_URL}
               variant="on-dark-secondary"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {CTA_DIAGNOSTIC_LABEL}
+              {CTA_ASSESS_LABEL}
             </CtaLink>
           </div>
         </div>
       </section>
 
       <section
-        className="authority-strip w-full border-b border-white/[0.08]"
+        className="authority-strip w-full border-b border-white/[0.06]"
         style={{ backgroundColor: "#0B1220" }}
-        aria-label="Capabilities"
+        aria-label="Practice areas"
       >
         <div className="w-full overflow-x-auto overflow-y-hidden overscroll-x-contain scroll-smooth [-webkit-overflow-scrolling:touch] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-          <div className="flex h-12 min-w-full w-max items-center justify-center gap-x-3 px-5 font-sans text-[12px] font-medium uppercase tracking-[0.14em] text-white/70 sm:gap-x-5 sm:px-8 sm:text-[13px] md:h-14">
+          <div className="flex h-14 min-w-full w-max items-center justify-center gap-x-4 px-6 font-sans text-[11px] font-medium uppercase tracking-[0.18em] text-white/55 sm:gap-x-6 sm:px-10 sm:text-[12px] md:h-16">
             {authority.items.map((label, i) => (
               <Fragment key={label}>
                 {i > 0 && (
-                  <span className="h-3 w-px shrink-0 bg-white/20" aria-hidden />
+                  <OctusStripSeparatorIcon className="h-3 w-3 shrink-0 text-white/25" />
                 )}
-                <span className="whitespace-nowrap">{label}</span>
+                <span className="pointer-events-none select-none whitespace-nowrap">{label}</span>
               </Fragment>
             ))}
           </div>
@@ -391,14 +392,14 @@ export default function HomePage() {
           <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-white/75">
             We don&apos;t consult on theory. We step into live operations and restructure what isn&apos;t working.
           </p>
-          <a
-            href={WHATSAPP_DIAGNOSTIC_URL}
+          <CtaLink
+            href={WHATSAPP_ASSESS_URL}
+            variant="on-dark"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex h-12 items-center justify-center rounded-md bg-white px-10 text-base font-medium tracking-wide text-primary transition-colors hover:bg-white/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
           >
-            {CTA_DIAGNOSTIC_LABEL}
-          </a>
+            {CTA_ASSESS_LABEL}
+          </CtaLink>
         </div>
       </section>
 

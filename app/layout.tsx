@@ -80,8 +80,8 @@ export default function RootLayout({
         <CookieBanner />
         <footer className="surface-dark py-16 md:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-8 lg:grid-cols-5">
-              <div className="flex flex-col gap-3 lg:col-span-2">
+            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:gap-8 lg:grid-cols-5">
+              <div className="flex flex-col gap-3">
                 <a href="/" className="inline-flex items-center no-underline" aria-label="Octus Consulting">
                   <img
                     src="/logo-nav.png"
@@ -124,17 +124,38 @@ export default function RootLayout({
 
               <div>
                 <p className="mb-5 font-sans text-xs font-medium uppercase tracking-[0.15em] text-white/75">
-                  Services
+                  Solutions
                 </p>
                 <ul className="flex list-none flex-col gap-2.5">
                   {[
                     { label: "Regulatory Structuring", href: "/regulatory" },
                     { label: "Compliance & Risk", href: "/compliance" },
-                    { label: "Legal Architecture", href: "/legal-architecture" },
                     { label: "Corporate Structuring", href: "/corporate" },
-                    { label: "Ownership & UBO", href: "/private-clients" },
-                    { label: "Audit & Readiness", href: "/audit" },
+                    { label: "Legal Architecture", href: "/legal-architecture" },
                     { label: "International Hub", href: "/international-hub" },
+                  ].map((l) => (
+                    <li key={l.href}>
+                      <a
+                        href={l.href}
+                        className="font-sans text-sm text-white/65 no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                      >
+                        {l.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div>
+                <p className="mb-5 font-sans text-xs font-medium uppercase tracking-[0.15em] text-white/75">
+                  Markets
+                </p>
+                <ul className="flex list-none flex-col gap-2.5">
+                  {[
+                    { label: "iGaming", href: "/markets/igaming" },
+                    { label: "Fintech", href: "/markets/fintech" },
+                    { label: "Digital Assets", href: "/markets/crypto" },
+                    { label: "High-Risk Operations", href: "/markets/high-risk" },
                   ].map((l) => (
                     <li key={l.href}>
                       <a
@@ -156,7 +177,6 @@ export default function RootLayout({
                   {[
                     { label: "About", href: "/about" },
                     { label: "Team", href: "/team" },
-                    { label: "What we do", href: "/what-we-do" },
                     { label: "Insights", href: "/insights" },
                     { label: "Careers", href: "/careers" },
                     { label: "Contact", href: "/contact" },
@@ -170,16 +190,6 @@ export default function RootLayout({
                       </a>
                     </li>
                   ))}
-                  <li>
-                    <a
-                      href={WHATSAPP_DISCUSS_URL}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-sans text-sm text-white/65 no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                    >
-                      {CTA_DISCUSS_LABEL}
-                    </a>
-                  </li>
                 </ul>
               </div>
 
