@@ -4,7 +4,8 @@
 **Authority:** `OCTUS_FINAL_EXECUTIVE_ART_DIRECTION_READY`  
 **Date:** 2026-07-21  
 **PR:** https://github.com/rubioprojects/octus-consulting/pull/10  
-**Branch:** `feat/official-brand-system-integration`
+**Branch:** `feat/official-brand-system-integration`  
+**SHA:** `5301bae`
 
 ---
 
