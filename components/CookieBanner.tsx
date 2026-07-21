@@ -4,9 +4,8 @@ import { useState, useEffect } from "react";
 
 /**
  * Essential-cookie notice only.
- * Current site: static export + localStorage preference for this banner.
- * No advertising pixels or Meta trackers are loaded by this component.
- * Consent UX is intentionally compact so it does not compete with primary CTAs.
+ * Card presentation (legacy principle) — bottom-left so it does not cover WhatsApp (bottom-right).
+ * No advertising pixels or Meta trackers.
  */
 export default function CookieBanner() {
   const [show, setShow] = useState(false);
@@ -15,6 +14,13 @@ export default function CookieBanner() {
     const accepted = localStorage.getItem("octus-cookies-accepted");
     if (!accepted) setShow(true);
   }, []);
+
+  useEffect(() => {
+    document.documentElement.dataset.cookieBanner = show ? "open" : "closed";
+    return () => {
+      delete document.documentElement.dataset.cookieBanner;
+    };
+  }, [show]);
 
   const accept = () => {
     localStorage.setItem("octus-cookies-accepted", "true");
@@ -29,13 +35,16 @@ export default function CookieBanner() {
       role="region"
       aria-label="Cookie notice"
     >
-      <p>
+      <p className="cookie-banner__title">Essential cookies</p>
+      <p className="cookie-banner__body">
         This site uses essential cookies to operate.{" "}
         <a href="/cookies">Cookie Policy</a>
       </p>
-      <button type="button" onClick={accept}>
-        Continue
-      </button>
+      <div className="cookie-banner__actions">
+        <button type="button" onClick={accept} className="cookie-banner__accept">
+          Continue
+        </button>
+      </div>
     </div>
   );
 }

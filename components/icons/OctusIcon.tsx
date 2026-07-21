@@ -10,6 +10,7 @@ export type OctusIconName =
   | "jurisdictions"
   | "intelligence"
   | "contact"
+  | "remediation"
   | "chevron"
   | "arrow";
 
@@ -103,6 +104,14 @@ export default function OctusIcon({
         <svg {...common}>
           <path {...stroke} d="M4 6h16v12H4z" />
           <path {...stroke} d="M4 7l8 6 8-6" />
+        </svg>
+      );
+    case "remediation":
+      return (
+        <svg {...common}>
+          <path {...stroke} d="M12 4v6l4 2" />
+          <circle {...stroke} cx="12" cy="12" r="8" />
+          <path {...stroke} d="M8 16h8" />
         </svg>
       );
     case "chevron":

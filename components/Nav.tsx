@@ -50,27 +50,27 @@ export default function Nav() {
   return (
     <>
       <nav
-        className="fixed left-0 right-0 top-0 z-50 flex h-16 items-center border-b border-border/60 bg-background/95 backdrop-blur-md md:h-[4.5rem]"
+        className="site-header fixed left-0 right-0 top-0 z-50 flex h-[4.25rem] items-center border-b border-border/50 bg-background/92 backdrop-blur-md md:h-[4.75rem]"
         aria-label="Main"
       >
-        <div className="mx-auto flex h-full w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto flex h-full w-full max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8">
           <Link
             href="/"
             className="flex shrink-0 items-center no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
             aria-label="Octus Consulting home"
           >
             <img
-              src="/logo-nav-light.png"
+              src="/logo-nav.png"
               alt=""
-              width={180}
-              height={44}
+              width={200}
+              height={52}
               decoding="async"
-              className="h-7 w-auto translate-y-px md:h-8"
+              className="site-header__logo h-8 w-auto md:h-9"
               style={{ imageRendering: "auto" }}
             />
           </Link>
 
-          <div className="hidden items-center gap-7 lg:gap-9 md:flex">
+          <div className="hidden items-center gap-8 lg:gap-10 md:flex">
             {primaryLinks.map((l) => (
               <Link key={l.href} href={l.href} className={linkClass}>
                 {l.label}
@@ -80,7 +80,7 @@ export default function Nav() {
               href={WHATSAPP_DISCUSS_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className={ctaClass}
+              className={`${ctaClass} min-h-11`}
             >
               {CTA_DISCUSS_LABEL}
             </a>
@@ -110,7 +110,7 @@ export default function Nav() {
       {mobileOpen && (
         <div
           id="mobile-nav"
-          className="fixed inset-x-0 bottom-0 top-16 z-40 overflow-y-auto bg-background px-4 pb-12 pt-2 sm:px-6 md:hidden"
+          className="fixed inset-x-0 bottom-0 top-[4.25rem] z-40 overflow-y-auto bg-background px-4 pb-12 pt-2 sm:px-6 md:hidden"
           role="dialog"
           aria-modal="true"
           aria-label="Navigation menu"
