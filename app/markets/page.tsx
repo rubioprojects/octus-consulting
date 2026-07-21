@@ -13,13 +13,17 @@ export const metadata = {
 const ACTIVE = [
   {
     title: "iGaming & Betting",
-    desc: "Licensing, compliance and banking for online gambling and sports betting operators. From Curaçao to Brazil, Malta to Isle of Man.",
+    signal: "Licensed operations under scrutiny",
+    constraint: "Licence without bankable structure fails post-approval.",
+    desc: "Licensing, compliance and banking coordinated for online gambling and sports betting — from Curaçao to Brazil, Malta to Isle of Man.",
     tags: ["Licensing", "Banking", "GLI", "Compliance"],
     href: "/markets/igaming",
   },
   {
     title: "Fintech & Payments",
-    desc: "Regulatory structuring for payment institutions, EMIs and fintech operators. Banking access, compliance frameworks and cross-border licensing.",
+    signal: "Authorisation meets infrastructure",
+    constraint: "EMI / payments paths stall when banking readiness lags filings.",
+    desc: "Regulatory structuring for payment institutions, EMIs and fintech operators — banking access, compliance frameworks and cross-border licensing.",
     tags: ["EMI", "Payments", "Banking", "Cross-border"],
     href: "/markets/fintech",
   },
@@ -28,15 +32,21 @@ const ACTIVE = [
 const ADDITIONAL = [
   {
     title: "Crypto & Digital Assets",
-    desc: "VASP registration, regulatory positioning and compliance architecture for crypto exchanges, custodians and token issuers.",
+    signal: "Regime and custody gravity",
+    constraint: "VASP / MiCA positioning without operable controls does not survive review.",
+    desc: "VASP registration, regulatory positioning and compliance architecture for exchanges, custodians and token issuers.",
     tags: ["VASP", "MiCA", "AML", "Custody"],
     href: "/markets/crypto",
+    pressure: false,
   },
   {
     title: "High-Risk Digital Businesses",
-    desc: "Structural and compliance solutions for businesses that banks and regulators classify as high-risk. We make the structure work — not the label go away.",
+    signal: "Structural resilience under classification",
+    constraint: "Banks and regulators classify risk — structure must absorb it.",
+    desc: "Structural and compliance solutions for businesses classified as high-risk. We make the structure work — not the label go away.",
     tags: ["Banking", "Risk", "Structure", "Compliance"],
     href: "/markets/high-risk",
+    pressure: true,
   },
 ] as const;
 
@@ -63,19 +73,21 @@ export default function MarketsPage() {
             <div className="mb-10 flex items-stretch gap-4">
               <div className="octus-story-rail w-0.5 shrink-0 self-stretch min-h-[3.5rem]" />
               <div>
-                <p className="label">Active markets</p>
+                <p className="label">Market intelligence</p>
                 <h2 className="heading-section">Deep expertise, not broad coverage.</h2>
               </div>
             </div>
           </Reveal>
-          <div className="grid-auto-lg">
+          <div className="grid gap-6 md:grid-cols-2">
             {ACTIVE.map((m, i) => (
               <Reveal key={m.title} delayMs={i * 80}>
-                <Link href={m.href} className="card-grid market-story-card block p-8">
-                  <h3 className="relative z-10 mb-3 font-sans text-lg font-semibold text-primary">
+                <Link href={m.href} className="market-intel-card market-story-card no-underline">
+                  <p className="market-intel-card__signal relative z-10">{m.signal}</p>
+                  <h3 className="relative z-10 mb-2 font-heading text-xl font-semibold text-foreground">
                     {m.title}
                   </h3>
-                  <p className="relative z-10 body-sm mb-4">{m.desc}</p>
+                  <p className="market-intel-card__constraint relative z-10">{m.constraint}</p>
+                  <p className="relative z-10 body-text mb-4 text-sm">{m.desc}</p>
                   <div className="relative z-10 chip-row mb-4">
                     {m.tags.map((t) => (
                       <span key={t} className="chip">
@@ -83,7 +95,9 @@ export default function MarketsPage() {
                       </span>
                     ))}
                   </div>
-                  <span className="relative z-10 text-[13px] text-primary">Learn more →</span>
+                  <span className="relative z-10 text-[13px] font-medium text-primary">
+                    Open market brief →
+                  </span>
                 </Link>
               </Reveal>
             ))}
@@ -98,14 +112,21 @@ export default function MarketsPage() {
             <p className="label">Also active in</p>
             <h2 className="heading-section mb-8">Expanding coverage.</h2>
           </Reveal>
-          <div className="grid-auto-lg">
+          <div className="grid gap-6 md:grid-cols-2">
             {ADDITIONAL.map((m, i) => (
               <Reveal key={m.title} delayMs={i * 80}>
-                <Link href={m.href} className="card-grid market-story-card block p-8">
-                  <h3 className="relative z-10 mb-3 font-sans text-lg font-semibold text-primary">
+                <Link
+                  href={m.href}
+                  className={`market-intel-card market-story-card no-underline ${
+                    m.pressure ? "market-intel-card--pressure" : ""
+                  }`}
+                >
+                  <p className="market-intel-card__signal relative z-10">{m.signal}</p>
+                  <h3 className="relative z-10 mb-2 font-heading text-xl font-semibold text-foreground">
                     {m.title}
                   </h3>
-                  <p className="relative z-10 body-sm mb-4">{m.desc}</p>
+                  <p className="market-intel-card__constraint relative z-10">{m.constraint}</p>
+                  <p className="relative z-10 body-text mb-4 text-sm">{m.desc}</p>
                   <div className="relative z-10 chip-row mb-4">
                     {m.tags.map((t) => (
                       <span key={t} className="chip">
@@ -113,7 +134,9 @@ export default function MarketsPage() {
                       </span>
                     ))}
                   </div>
-                  <span className="relative z-10 text-[13px] text-primary">Learn more →</span>
+                  <span className="relative z-10 text-[13px] font-medium text-primary">
+                    Open market brief →
+                  </span>
                 </Link>
               </Reveal>
             ))}
@@ -150,7 +173,7 @@ export default function MarketsPage() {
               { title: "Start a Diagnostic", desc: "Identify what's broken.", href: "/contact" },
             ].map((r) => (
               <Link key={r.title} href={r.href} className="card-grid market-story-card block p-7">
-                <h3 className="relative z-10 mb-2 font-sans text-lg font-semibold text-primary">
+                <h3 className="relative z-10 mb-2 font-sans text-lg font-semibold text-foreground">
                   {r.title}
                 </h3>
                 <p className="relative z-10 body-sm mb-3">{r.desc}</p>

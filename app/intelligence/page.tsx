@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 import { INTELLIGENCE_PILLARS } from "../../lib/commercial";
 import PageHero from "../../components/system/PageHero";
@@ -32,15 +31,19 @@ export default function IntelligencePage() {
         secondaryCta={{ href: WHATSAPP_DISCUSS_URL, label: CTA_DISCUSS_LABEL, external: true }}
       />
 
-      <section className="intelligence-authority octus-section-relative py-20 md:py-28">
+      <section className="intelligence-authority octus-section-relative py-24 md:py-32">
         <BrandSectionMotif tone="navy" position="end" />
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
+            <div className="mb-3 h-px w-16 accent-cream-bar opacity-80" aria-hidden="true" />
             <p className="section-label mb-4 block">Coverage</p>
             <h2 className="heading-section mb-4 max-w-2xl">What Intelligence covers</h2>
-            <p className="body-large mb-12 max-w-2xl">
+            <p className="body-large mb-4 max-w-2xl">
               Authority through clarity — not volume. Each pillar maps to decisions operators face
               under regulatory and banking pressure.
+            </p>
+            <p className="mb-12 max-w-xl font-sans text-sm text-white/55">
+              Editorial signals for regulated operations — not a product surface.
             </p>
           </Reveal>
           <div className="grid gap-6 md:grid-cols-2">

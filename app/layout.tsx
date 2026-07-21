@@ -89,17 +89,26 @@ export default function RootLayout({
         </a>
 
         <CookieBanner />
-        <footer className="surface-dark py-16 md:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:gap-8 lg:grid-cols-3 xl:grid-cols-6">
-              <div className="flex flex-col gap-3 xl:col-span-1">
-                <a href="/" className="inline-flex items-center no-underline" aria-label="Octus Consulting">
-                  <BrandLockup variant="on-dark" className="h-9 w-auto md:h-10" />
+        <footer className="site-footer surface-dark py-16 md:py-20">
+          <div className="site-footer__mark" aria-hidden="true" />
+          <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="site-footer__brand-close">
+              <a href="/" className="inline-flex items-center no-underline" aria-label="Octus Consulting">
+                <BrandLockup variant="on-dark" className="h-10 w-auto md:h-11" />
+              </a>
+              <p className="mt-4 max-w-md text-sm font-normal leading-relaxed text-white/75">
+                Premium international execution partner for highly regulated operations.
+              </p>
+              <div className="mt-4 flex flex-wrap items-center gap-4">
+                <a
+                  href={WHATSAPP_DISCUSS_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex h-10 items-center rounded-sm bg-primary px-5 font-sans text-[13px] font-medium text-primary-foreground no-underline transition-colors hover:bg-primary/90"
+                >
+                  {CTA_DISCUSS_LABEL}
                 </a>
-                <p className="max-w-xs text-sm font-normal leading-relaxed text-white/70">
-                  Premium international execution partner for highly regulated operations.
-                </p>
-                <div className="mt-2 flex gap-3">
+                <div className="flex gap-3">
                   <a
                     href="https://www.linkedin.com/company/octusconsulting/"
                     target="_blank"
@@ -124,7 +133,9 @@ export default function RootLayout({
                   </a>
                 </div>
               </div>
+            </div>
 
+            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:gap-8 lg:grid-cols-3 xl:grid-cols-5">
               <div>
                 <p className="mb-5 font-sans text-xs font-medium uppercase tracking-[0.15em] text-white/75">
                   Solutions
@@ -221,8 +232,8 @@ export default function RootLayout({
                 </ul>
               </div>
 
-              <div>
-                <p className="mb-5 font-sans text-xs font-medium uppercase tracking-[0.15em] text-white/75">Legal</p>
+              <div className="site-footer__legal">
+                <p className="mb-5 font-sans text-xs font-medium uppercase tracking-[0.15em] text-white/55">Legal</p>
                 <ul className="flex list-none flex-col gap-2.5">
                   {[
                     { label: "Privacy Policy", href: "/privacy" },
@@ -243,16 +254,16 @@ export default function RootLayout({
               </div>
             </div>
 
-            <div className="mt-16 border-t border-white/10 pt-8">
+            <div className="site-footer__legal mt-16 border-t border-white/10 pt-8">
               <div className="font-sans">
-                <p className="text-xs text-white/55">© 2026 Octus Consulting. All rights reserved.</p>
-                <p className="mt-1 text-xs text-white/55">
+                <p className="text-xs text-white/45">© 2026 Octus Consulting. All rights reserved.</p>
+                <p className="mt-1 text-xs text-white/45">
                   Octus Technology LLC · 900 Foulk Rd Suite 201 · Wilmington, DE 19803
                 </p>
                 <p className="mt-2 text-xs">
                   <a
                     href={MAILTO_INFO}
-                    className="inline text-white/70 no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                    className="inline text-white/55 no-underline transition-colors hover:text-white/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                   >
                     info@octusconsulting.com
                   </a>{" "}
@@ -261,7 +272,7 @@ export default function RootLayout({
                     href={WHATSAPP_DISCUSS_URL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline text-white/70 no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                    className="inline text-white/55 no-underline transition-colors hover:text-white/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                   >
                     WhatsApp
                   </a>{" "}
@@ -270,7 +281,7 @@ export default function RootLayout({
                     href="https://www.linkedin.com/company/octusconsulting/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline text-white/70 no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                    className="inline text-white/55 no-underline transition-colors hover:text-white/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                   >
                     LinkedIn
                   </a>

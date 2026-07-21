@@ -58,7 +58,9 @@
     --secondary-foreground: 0 0% 17%;
 
     --muted: 220 16% 94%;
-    --muted-foreground: 220 10% 36%;
+    /* Raised contrast for body authority (was ~36% L — too gray) */
+    --muted-foreground: 220 12% 28%;
+    --body-secondary: 220 10% 38%;
 
     --accent: 0 93% 34%;
     --accent-foreground: 0 0% 100%;
@@ -171,22 +173,32 @@
 
   .heading-display {
     @apply text-4xl md:text-5xl lg:text-6xl leading-[1.08] tracking-tight font-bold;
-    color: hsl(var(--primary));
+    color: hsl(var(--brand-navy));
   }
 
   .heading-section {
     @apply text-3xl md:text-4xl leading-[1.12] tracking-tight font-semibold;
-    color: hsl(var(--primary));
+    /* Long section titles: navy for authority; blue reserved for short brand beats / links */
+    color: hsl(var(--brand-navy));
+  }
+
+  .heading-section--brand {
+    color: hsl(var(--brand-blue));
   }
 
   .body-large {
     @apply text-lg leading-relaxed;
-    color: hsl(var(--muted-foreground));
+    color: hsl(220 12% 26%);
   }
 
   .body-text {
     @apply text-base leading-relaxed;
-    color: hsl(var(--muted-foreground));
+    color: hsl(220 12% 28%);
+  }
+
+  .body-secondary {
+    @apply text-sm leading-relaxed;
+    color: hsl(var(--body-secondary));
   }
 }
 
@@ -1711,6 +1723,166 @@ footer .heading-lg,
   box-shadow: 0 8px 28px -18px rgba(11, 18, 32, 0.35);
   transform: translateY(-2px);
 }
+.solution-card--motif-regulatory::after,
+.solution-card--motif-banking::after,
+.solution-card--motif-compliance::after,
+.solution-card--motif-corporate::after,
+.solution-card--motif-legal::after,
+.solution-card--motif-remediation::after {
+  content: "";
+  position: absolute;
+  right: -12%;
+  top: -18%;
+  width: 48%;
+  height: 70%;
+  pointer-events: none;
+  opacity: 0.1;
+  background-image: url("/brand/motifs/octus-arc-primary.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.solution-card--motif-banking::after {
+  opacity: 0.12;
+  transform: rotate(12deg);
+}
+.solution-card--motif-compliance::after {
+  right: auto;
+  left: -10%;
+  top: auto;
+  bottom: -15%;
+  opacity: 0.09;
+}
+.solution-card--motif-corporate::after {
+  opacity: 0.11;
+  transform: scaleX(-1);
+}
+.solution-card--motif-legal::after {
+  opacity: 0.08;
+  top: 20%;
+  right: -8%;
+}
+.solution-card--motif-remediation::after {
+  background-image: url("/brand/motifs/octus-arc-secondary.svg");
+  opacity: 0.14;
+}
+
+.market-intel-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid hsl(var(--border));
+  background: hsl(var(--background));
+  padding: 1.75rem 1.75rem 1.5rem;
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.market-intel-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, #0065ff 0%, rgba(0, 82, 196, 0.15) 100%);
+}
+.market-intel-card--pressure::before {
+  background: linear-gradient(180deg, #0b1220 0%, #0052c4 100%);
+}
+.market-intel-card:hover {
+  border-color: rgba(0, 82, 196, 0.28);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px -20px rgba(11, 18, 32, 0.4);
+}
+.market-intel-card__signal {
+  font-family: var(--font-inter), Inter, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: hsl(var(--brand-blue));
+  margin-bottom: 0.75rem;
+}
+.market-intel-card__constraint {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: hsl(220 12% 26%);
+  margin-bottom: 0.75rem;
+  line-height: 1.45;
+}
+
+.site-footer {
+  position: relative;
+  overflow: hidden;
+}
+.site-footer__brand-close {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.site-footer__mark {
+  position: absolute;
+  right: -2%;
+  bottom: 8%;
+  width: min(22vw, 180px);
+  height: min(22vw, 180px);
+  opacity: 0.04;
+  background-image: url("/brand/symbol/octus-symbol-white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+.site-footer__legal {
+  opacity: 0.85;
+}
+.site-footer__legal a {
+  color: rgba(255, 255, 255, 0.45) !important;
+}
+.site-footer__legal a:hover {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.team-band-label {
+  font-family: var(--font-inter), Inter, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: hsl(var(--brand-red));
+  margin-bottom: 1.5rem;
+}
+.team-grid--leadership {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 52rem;
+  margin-inline: auto;
+  gap: 48px 40px;
+  margin-bottom: 4rem;
+}
+.team-card--leadership .team-card-photo-wrap {
+  width: 180px;
+  height: 180px;
+}
+.team-card--specialist .team-card-photo-wrap {
+  width: 140px;
+  height: 140px;
+}
+.team-card--operations .team-card-photo-wrap {
+  width: 120px;
+  height: 120px;
+}
+.team-card-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+  filter: grayscale(1) contrast(1.05);
+}
+.team-capability {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: hsl(var(--brand-blue));
+  margin-bottom: 8px;
+}
 
 .octus-story-rail {
   width: 2px;
@@ -1848,7 +2020,13 @@ footer .heading-lg,
 }
 
 .site-header__logo {
-  max-height: 2.5rem;
+  max-height: 2.75rem;
+}
+
+@media (min-width: 768px) {
+  .site-header__logo {
+    max-height: 2.75rem; /* ~44px optical */
+  }
 }
 
 /* Capability rail — Octus signature (not navigation) */
@@ -2065,8 +2243,8 @@ footer .heading-lg,
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
-  filter: saturate(0.75);
+  object-position: center 18%;
+  filter: grayscale(1) contrast(1.05);
 }
 
 .team-card-role {
