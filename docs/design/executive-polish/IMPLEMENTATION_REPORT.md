@@ -5,7 +5,10 @@
 **Repo:** `rubioprojects/octus-consulting`  
 **Base:** `main` @ `5b6d4a0a6893442bd97d58b7d621de3cee5c7fe8`  
 **Branch:** `feat/executive-visual-polish`  
-**People PR #6:** untouched (no merge, no People file changes)
+**Commit:** `bca9f763959e5235baea343c51353aa8b2f75f45`  
+**PR:** https://github.com/rubioprojects/octus-consulting/pull/7  
+**Immutable Preview:** https://octus-consulting-b41jxr96r-axle1.vercel.app  
+**People PR #6:** untouched (`4216a2e`, OPEN — no merge, no People file changes)
 
 ---
 
