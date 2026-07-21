@@ -12,7 +12,7 @@
 | Field | Value |
 |-------|-------|
 | Branch | `feat/official-brand-system-integration` |
-| Commit SHA | _(set at push)_ |
+| Commit SHA | `c6c7c9006a70af8f022c2cbe22fc2b6afee5a8c3` |
 | PR | https://github.com/rubioprojects/octus-consulting/pull/10 |
 | Preview | https://octus-consulting-git-feat-official-brand-system-in-65173f-axle1.vercel.app |
 
