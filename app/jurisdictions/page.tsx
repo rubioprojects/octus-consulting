@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
+import PageHero from "../../components/system/PageHero";
 
 export const metadata = {
-  title: "Jurisdictions — Where We Structure Operations | Octus",
+  title: "Jurisdictions — Where We Structure Operations",
   description:
     "Active across 15+ jurisdictions. Licensing, compliance and corporate structuring in Brazil, Curaçao, Malta, Isle of Man, UAE and more.",
 };
@@ -10,30 +11,17 @@ export const metadata = {
 export default function JurisdictionsPage() {
   return (
     <main>
-
-      {/* ─── HERO ─── */}
-      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
-        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <span className="label">Jurisdictions</span>
-          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
-            Jurisdictions don&apos;t solve problems.
-            <br />
-            <span style={{ color: "var(--white-40)" }}>
-              Structures do.
-            </span>
-          </h1>
-          <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "620px" }}>
-            Choosing the right jurisdiction is a strategic decision that impacts
-            regulation, banking access, operational flexibility and long-term
-            scalability. Octus supports jurisdiction selection based on business
-            model, capital structure and growth objectives, not generic
-            preferences.
-          </p>
-          <div style={{ marginTop: "32px" }}>
-            <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Jurisdictions"
+        title="Jurisdictions don't solve problems."
+        titleSecondLine="Structures do."
+        description="Choosing the right jurisdiction is a strategic decision that impacts regulation, banking access, operational flexibility and long-term scalability. Octus supports jurisdiction selection based on business model, capital structure and growth objectives, not generic preferences."
+        primaryCta={{
+          href: WHATSAPP_DISCUSS_URL,
+          label: CTA_DISCUSS_LABEL,
+          external: true,
+        }}
+      />
 
       {/* ─── HOW TO THINK ABOUT JURISDICTIONS ─── */}
       <section className="bg-background py-24 md:py-32">

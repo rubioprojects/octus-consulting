@@ -114,6 +114,18 @@
     --white-05: rgba(26, 29, 33, 0.05);
     --accent-primary: hsl(var(--accent));
     --deep-blue: hsl(var(--surface-dark));
+
+    /* Design architecture spacing scale */
+    --oct-space-1: 0.25rem;
+    --oct-space-2: 0.5rem;
+    --oct-space-3: 0.75rem;
+    --oct-space-4: 1rem;
+    --oct-space-5: 1.5rem;
+    --oct-space-6: 2rem;
+    --oct-space-7: 3rem;
+    --oct-space-8: 4rem;
+    --oct-authority: #0b1220;
+    --oct-radius: 0.375rem;
   }
 }
 

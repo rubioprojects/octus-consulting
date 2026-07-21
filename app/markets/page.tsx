@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
+import PageHero from "../../components/system/PageHero";
 
 export const metadata = {
-  title: "Markets — Regulated Sectors We Structure | Octus",
+  title: "Markets — Regulated Sectors We Structure",
   description:
     "We structure operations in iGaming, fintech, crypto and high-risk digital sectors. Licensing, compliance and corporate architecture for regulated markets.",
 };
@@ -10,25 +11,18 @@ export const metadata = {
 export default function MarketsPage() {
   return (
     <main>
-
-      {/* ─── HERO ─── */}
-      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
-        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <span className="label">Markets</span>
-          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
-            Different industries.{" "}
-            <span style={{ color: "var(--white-40)" }}>
-              Same structural problem.
-            </span>
-          </h1>
-          <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "620px" }}>
-            Whether it&apos;s iGaming, fintech or crypto, regulated operations
-            fail for the same reason: the structure doesn&apos;t hold. We
-            don&apos;t specialize in industries. We specialize in fixing
-            regulated operations.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Markets"
+        title="Different industries."
+        titleSecondLine="Same structural problem."
+        description={
+          <>
+            Whether it&apos;s iGaming, fintech or crypto, regulated operations fail for the same
+            reason: the structure doesn&apos;t hold. We don&apos;t specialize in industries. We
+            specialize in fixing regulated operations.
+          </>
+        }
+      />
 
       {/* ─── ACTIVE MARKETS (linkable) ─── */}
       <section className="bg-background py-24 md:py-32">

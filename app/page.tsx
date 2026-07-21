@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { Fragment } from "react";
 import HomeModulesAccordion from "../components/HomeModulesAccordion";
+import { CtaLink } from "../components/system/CtaButton";
+import Eyebrow from "../components/system/Eyebrow";
+import OctusIcon from "../components/icons/OctusIcon";
 import {
   CTA_DIAGNOSTIC_LABEL,
   CTA_DISCUSS_LABEL,
@@ -91,10 +94,9 @@ export default function HomePage() {
     <main>
       <section className="home-hero relative flex min-h-[88vh] items-center overflow-hidden pt-24 surface-dark px-4 sm:px-6 lg:px-8 md:pt-28">
         <div className="relative z-10 mx-auto w-full max-w-4xl">
-          <div className="mb-8 flex items-center gap-2.5 text-[11px] font-medium uppercase tracking-[0.22em] text-white/55 md:mb-10 md:text-xs">
-            <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-accent" aria-hidden />
+          <Eyebrow tone="dark" className="mb-8 md:mb-10">
             Regulated Operations
-          </div>
+          </Eyebrow>
           <h1 className="font-heading text-[2.35rem] font-bold leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-[4rem]">
             Regulated operations don&apos;t fail randomly.
             <br />
@@ -105,22 +107,22 @@ export default function HomePage() {
             the structures that prevent them from happening again.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
-            <a
+            <CtaLink
               href={WHATSAPP_DISCUSS_URL}
+              variant="on-dark"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-12 items-center justify-center rounded-md bg-white px-8 text-sm font-medium tracking-wide text-primary transition-colors hover:bg-white/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:px-10 sm:text-base"
             >
               {CTA_DISCUSS_LABEL}
-            </a>
-            <a
+            </CtaLink>
+            <CtaLink
               href={WHATSAPP_DIAGNOSTIC_URL}
+              variant="on-dark-secondary"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-12 items-center justify-center rounded-md border border-white/25 bg-transparent px-8 text-sm font-medium text-white/85 transition-colors hover:border-white/45 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:px-10 sm:text-base"
             >
               {CTA_DIAGNOSTIC_LABEL}
-            </a>
+            </CtaLink>
           </div>
         </div>
       </section>
@@ -482,6 +484,28 @@ export default function HomePage() {
                 <p className="body-text">{body}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-background py-20 md:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
+            <div className="max-w-2xl">
+              <p className="section-label mb-4 block">Intelligence</p>
+              <h2 className="heading-section">Institutional intelligence, not a blog.</h2>
+              <p className="body-large mt-4">
+                Insights is becoming the Octus Intelligence Hub — regulatory, market, operational
+                and founder intelligence for operators who need structure, not noise.
+              </p>
+            </div>
+            <Link
+              href="/insights"
+              className="inline-flex items-center gap-2 font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
+            >
+              Explore Insights
+              <OctusIcon name="arrow" size={16} />
+            </Link>
           </div>
         </div>
       </section>
