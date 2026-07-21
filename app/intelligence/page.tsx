@@ -2,12 +2,20 @@ import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 import { INTELLIGENCE_PILLARS } from "../../lib/commercial";
 import PageHero from "../../components/system/PageHero";
 import { CtaLink } from "../../components/system/CtaButton";
+import OctusIcon, { type OctusIconName } from "../../components/icons/OctusIcon";
 
 export const metadata = {
   title: "Intelligence",
   description:
     "Public analysis covering regulatory developments, market signals, operational risk and executive decision-making in highly regulated markets.",
 };
+
+const PILLAR_ICONS: OctusIconName[] = [
+  "regulatory",
+  "markets",
+  "compliance",
+  "corporate",
+];
 
 export default function IntelligencePage() {
   return (
@@ -26,9 +34,17 @@ export default function IntelligencePage() {
           <p className="section-label mb-4 block">Coverage</p>
           <h2 className="heading-section mb-12 max-w-2xl">What Intelligence covers</h2>
           <div className="grid gap-6 md:grid-cols-2">
-            {INTELLIGENCE_PILLARS.map((p) => (
-              <article key={p.title} className="rounded-sm border border-border p-6 md:p-8">
-                <h3 className="mb-3 font-heading text-lg font-semibold text-foreground">{p.title}</h3>
+            {INTELLIGENCE_PILLARS.map((p, i) => (
+              <article
+                key={p.title}
+                className="intelligence-pillar rounded-sm border border-border/80 bg-background p-6 md:p-8"
+              >
+                <div className="mb-4 flex items-center gap-3">
+                  <span className="intelligence-pillar__mark inline-flex h-9 w-9 items-center justify-center rounded-sm border border-border bg-muted/40 text-primary">
+                    <OctusIcon name={PILLAR_ICONS[i] ?? "intelligence"} size={18} />
+                  </span>
+                  <h3 className="font-heading text-lg font-semibold text-foreground">{p.title}</h3>
+                </div>
                 <p className="body-text text-muted-foreground">{p.body}</p>
               </article>
             ))}

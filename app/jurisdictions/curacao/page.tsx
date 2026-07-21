@@ -1,10 +1,11 @@
 import Link from "next/link";
+import DarkHeroAtmosphere from "../../../components/system/DarkHeroAtmosphere";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
 
 export const metadata = {
-  title: "Curaçao Gaming License — Structured Entry Framework | Octus",
+  title: "Curaçao — Structured Entry Under an Evolving Framework | Octus",
   description:
-    "Licensing, corporate structuring and banking coordination for iGaming operators in Curaçao. Structured framework under the evolving regulatory landscape.",
+    "Curaçao as a structured entry seat: licensing posture, corporate structuring and banking coordination under an evolving regulatory landscape.",
 };
 
 export default function JurisdictionsCuracaoPage() {
@@ -12,11 +13,12 @@ export default function JurisdictionsCuracaoPage() {
     <main>
 
       {/* ─── HERO ─── */}
-      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
-        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+      <section className="octus-dark-hero surface-dark relative flex min-h-[70vh] flex-col justify-center overflow-hidden pt-28 pb-16 md:min-h-[80vh] md:pt-32 md:pb-24">
+        <DarkHeroAtmosphere />
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <span className="label">Jurisdictions · Curaçao</span>
           <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
-            Curaçao Gaming License.
+            Curaçao — structured entry under an evolving framework.
             <br />
             <span style={{ color: "var(--white-40)" }}>
               Suitable for scalable operations, not short-term setups.
@@ -30,13 +32,14 @@ export default function JurisdictionsCuracaoPage() {
           <div style={{ marginTop: "32px", display: "flex", gap: "16px", flexWrap: "wrap" }}>
             <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
             <Link
-              href="/markets/igaming"
+              href="/how-we-engage"
               className="inline-flex h-12 items-center justify-center rounded-sm border border-white/20 bg-transparent px-10 text-base font-medium text-white/80 transition-colors hover:border-white/40 hover:text-white"
             >
-              iGaming operations →
+              How we engage →
             </Link>
           </div>
         </div>
+        <div className="octus-dark-hero__seam" aria-hidden="true" />
       </section>
 
       {/* ─── REGULATORY EVOLUTION ─── */}

@@ -1,10 +1,11 @@
 import Link from "next/link";
+import DarkHeroAtmosphere from "../../../components/system/DarkHeroAtmosphere";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
 
 export const metadata = {
-  title: "Malta Gaming & Fintech License — EU Regulatory Framework | Octus",
+  title: "Malta — EU Regulatory Seat for Regulated Operations | Octus",
   description:
-    "MGA and MFSA licensing for iGaming, fintech and crypto operators. Corporate substance, compliance infrastructure and EU banking coordination.",
+    "Malta as an EU regulatory seat: MGA and MFSA frameworks, corporate substance, compliance infrastructure and banking coordination for regulated operations.",
 };
 
 export default function JurisdictionsMaltaPage() {
@@ -12,14 +13,15 @@ export default function JurisdictionsMaltaPage() {
     <main>
 
       {/* ─── HERO ─── */}
-      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
-        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+      <section className="octus-dark-hero surface-dark relative flex min-h-[70vh] flex-col justify-center overflow-hidden pt-28 pb-16 md:min-h-[80vh] md:pt-32 md:pb-24">
+        <DarkHeroAtmosphere />
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <span className="label">Jurisdictions · Malta</span>
           <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
-            Malta Gaming License.
+            Malta — EU regulatory seat for regulated operations.
             <br />
             <span style={{ color: "var(--white-40)" }}>
-              Not designed for speed-driven or low-cost operations.
+              Not designed for speed-driven or low-cost setups.
             </span>
           </h1>
           <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "620px" }}>
@@ -30,13 +32,14 @@ export default function JurisdictionsMaltaPage() {
           <div style={{ marginTop: "32px", display: "flex", gap: "16px", flexWrap: "wrap" }}>
             <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
             <Link
-              href="/markets/igaming"
+              href="/how-we-engage"
               className="inline-flex h-12 items-center justify-center rounded-sm border border-white/20 bg-transparent px-10 text-base font-medium text-white/80 transition-colors hover:border-white/40 hover:text-white"
             >
-              iGaming operations →
+              How we engage →
             </Link>
           </div>
         </div>
+        <div className="octus-dark-hero__seam" aria-hidden="true" />
       </section>
 
       {/* ─── POSITIONING ─── */}

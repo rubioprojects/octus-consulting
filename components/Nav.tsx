@@ -53,7 +53,8 @@ export default function Nav() {
         className="site-header fixed left-0 right-0 top-0 z-50 flex h-[4.25rem] items-center border-b border-border/50 bg-background/92 backdrop-blur-md md:h-[4.75rem]"
         aria-label="Main"
       >
-        <div className="mx-auto flex h-full w-full max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8">
+        <div className="site-header__brand-rule" aria-hidden="true" />
+        <div className="relative z-10 mx-auto flex h-full w-full max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8">
           <Link
             href="/"
             className="flex shrink-0 items-center no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
