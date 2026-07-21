@@ -114,6 +114,18 @@
     --white-05: rgba(26, 29, 33, 0.05);
     --accent-primary: hsl(var(--accent));
     --deep-blue: hsl(var(--surface-dark));
+
+    /* Design architecture spacing scale */
+    --oct-space-1: 0.25rem;
+    --oct-space-2: 0.5rem;
+    --oct-space-3: 0.75rem;
+    --oct-space-4: 1rem;
+    --oct-space-5: 1.5rem;
+    --oct-space-6: 2rem;
+    --oct-space-7: 3rem;
+    --oct-space-8: 4rem;
+    --oct-authority: #0b1220;
+    --oct-radius: 0.375rem;
   }
 }
 
@@ -1063,33 +1075,35 @@ body {
   background: var(--deep-blue);
   color: var(--white);
   border: 1px solid var(--white-10);
-  border-radius: 999px;
-  padding: 14px 20px;
+  border-radius: 8px;
+  padding: 12px 16px;
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.01em;
   text-decoration: none;
-  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  transition: box-shadow 0.2s, border-color 0.2s, background 0.2s;
   backdrop-filter: blur(12px);
 }
 .wa-float:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
   border-color: var(--white-25);
+}
+.wa-float:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
 }
 .wa-float svg {
   color: #25D366;
 }
 @media (max-width: 768px) {
   .wa-float {
-    bottom: 16px;
+    bottom: 88px; /* clear essential-cookie bar when visible */
     right: 16px;
-    padding: 12px 16px;
-    font-size: 12px;
+    padding: 14px;
   }
   .wa-float__label { display: none; }
-  .wa-float { padding: 14px; }
 }
+/* When cookie banner dismissed, mobile float can sit lower via body attribute if needed later */
 
 /* ─── CONTACT GRID ─── */
 .contact-grid {
@@ -1107,7 +1121,7 @@ body {
   .contact-form-card { position: static; }
 }
 
-/* ─── COOKIE BANNER ─── */
+/* ─── COOKIE BANNER (essential-only; compact) ─── */
 .cookie-banner {
   position: fixed;
   bottom: 0;
@@ -1116,27 +1130,34 @@ body {
   z-index: 95;
   background: var(--deep-blue);
   border-top: 1px solid hsl(var(--border));
-  padding: 16px 40px;
+  padding: 12px 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
   flex-wrap: wrap;
 }
 .cookie-banner p {
   font-size: 13px;
-  color: var(--white-60);
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.78);
   margin: 0;
+  max-width: 42rem;
 }
 .cookie-banner a {
-  color: var(--blue-light);
-  text-decoration: none;
+  color: #9ec5ff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.cookie-banner a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
 }
 .cookie-banner button {
   background: var(--white-10);
   border: 1px solid hsl(var(--border));
   color: var(--white);
-  padding: 8px 20px;
+  padding: 8px 18px;
   border-radius: 6px;
   font-size: 13px;
   font-weight: 500;
@@ -1144,9 +1165,19 @@ body {
   transition: background 0.2s;
 }
 .cookie-banner button:hover { background: var(--white-25); }
+.cookie-banner button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
 @media (max-width: 768px) {
-  .cookie-banner { padding: 14px 20px; flex-direction: column; gap: 12px; text-align: center; }
-  .wa-float { bottom: 80px; }
+  .cookie-banner {
+    padding: 12px 16px 14px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+    text-align: left;
+  }
+  .cookie-banner p { font-size: 12px; }
 }
 
 html {
@@ -1374,41 +1405,40 @@ footer .heading-lg,
 }
 
 .wa-float {
-  background: #ffffff;
-  color: var(--text-primary);
-  border: 1px solid rgba(26, 29, 33, 0.12);
-  box-shadow: 0 8px 24px rgba(26, 29, 33, 0.08);
+  background: #0b1220;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 8px 24px rgba(11, 18, 32, 0.28);
 }
 
 .wa-float:hover {
-  transform: none;
-  box-shadow: 0 10px 28px rgba(26, 29, 33, 0.12);
-  border-color: rgba(26, 29, 33, 0.18);
+  box-shadow: 0 10px 28px rgba(11, 18, 32, 0.36);
+  border-color: rgba(255, 255, 255, 0.28);
 }
 
 .cookie-banner {
-  background: rgba(255, 255, 255, 0.94);
-  border-top: 1px solid hsl(var(--border));
-  box-shadow: 0 -4px 20px rgba(26, 29, 33, 0.06);
+  background: rgba(11, 18, 32, 0.96);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 -4px 20px rgba(11, 18, 32, 0.2);
 }
 
 .cookie-banner p {
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.78);
 }
 
 .cookie-banner a {
-  color: var(--primary-blue);
+  color: #9ec5ff;
 }
 
 .cookie-banner button {
-  background: var(--primary-blue);
-  color: #ffffff;
+  background: #ffffff;
+  color: #0b1220;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 .cookie-banner button:hover {
-  background: var(--primary-blue-hover);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .post-body strong {

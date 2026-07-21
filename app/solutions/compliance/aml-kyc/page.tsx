@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
 
 export const metadata = {
   title: "AML & KYC Framework — Compliance That Holds | Octus",
@@ -27,9 +28,7 @@ export default function SolutionsAMLKYCPage() {
             due diligence, or a real-world audit. We build the ones that do.
           </p>
           <div style={{ marginTop: "32px", display: "flex", gap: "16px", flexWrap: "wrap" }}>
-            <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
-              Fix your compliance structure →
-            </Link>
+            <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
             <Link
               href="/compliance"
               className="inline-flex h-12 items-center justify-center rounded-full border border-white/20 bg-transparent px-10 text-base font-medium text-white/80 transition-colors hover:border-white/40 hover:text-white"
@@ -202,9 +201,7 @@ export default function SolutionsAMLKYCPage() {
           <h2 className="heading-lg cta-block__title">
             Build it to survive. Not to check a box.
           </h2>
-          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
-            Fix your compliance structure →
-          </Link>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
             We respond within 24 hours.
           </p>

@@ -1,7 +1,8 @@
 import Link from "next/link";
+import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 
 export const metadata = {
-  title: "Ownership & UBO Architecture — Octus Consulting",
+  title: "Ownership & UBO Architecture",
   description:
     "Ownership architecture for individuals behind regulated operations. The individual is part of the regulated structure — not separate from it. Octus structures UBO frameworks, personal holding design and individual compliance exposure.",
 };
@@ -47,9 +48,7 @@ export default function PrivateClientsPage() {
             and banking requirements while managing personal exposure.
           </p>
           <div style={{ marginTop: "48px" }}>
-            <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
-              Structure your exposure →
-            </Link>
+            <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           </div>
         </div>
       </section>
@@ -224,9 +223,7 @@ export default function PrivateClientsPage() {
           <h2 className="heading-lg cta-block__title">
             Structure your exposure before it surfaces.
           </h2>
-          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
-            Structure your exposure →
-          </Link>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
             Initial diagnostic call. We start by mapping where the individual
             structure creates operational risk.

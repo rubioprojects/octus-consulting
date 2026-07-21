@@ -1,7 +1,8 @@
 import Link from "next/link";
+import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
 
 export const metadata = {
-  title: "Offshore Structuring — Octus Consulting",
+  title: "Offshore Structuring",
   description:
     "Offshore structuring for regulated operations is not about tax. It is about corporate architecture that passes regulatory, banking and institutional scrutiny.",
 };
@@ -24,9 +25,7 @@ export default function OffshoreStructuringPage() {
             satisfies all three simultaneously.
           </p>
           <div style={{ marginTop: "32px" }}>
-            <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
-              Request a structural assessment →
-            </Link>
+            <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           </div>
         </div>
       </section>
@@ -162,9 +161,7 @@ export default function OffshoreStructuringPage() {
           <h2 className="heading-lg cta-block__title">
             Build it for scrutiny. Not for convenience.
           </h2>
-          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
-            Request a structural assessment →
-          </Link>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
         </div>
       </section>
     </main>

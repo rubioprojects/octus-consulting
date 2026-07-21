@@ -2,23 +2,23 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../lib/cta";
 
-const whatWeDoLinks = [
-  { label: "Markets", href: "/markets" },
-  { label: "Jurisdictions", href: "/jurisdictions" },
+const primaryLinks = [
+  { label: "About", href: "/about" },
   { label: "Solutions", href: "/solutions" },
+  { label: "Markets", href: "/markets" },
+  { label: "Insights", href: "/insights" },
 ];
 
-export default function Nav() {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [mobileOpen, setMobileOpen] = useState(false);
-  const [closeTimer, setCloseTimer] = useState<ReturnType<typeof setTimeout> | null>(null);
+const linkClass =
+  "font-sans text-[13px] tracking-wide text-muted-foreground no-underline transition-colors hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary md:text-sm";
 
-  useEffect(() => {
-    return () => {
-      if (closeTimer) clearTimeout(closeTimer);
-    };
-  }, [closeTimer]);
+const ctaClass =
+  "inline-flex items-center rounded-md bg-primary px-5 py-2.5 font-sans text-[13px] font-medium tracking-wide text-primary-foreground no-underline transition-colors hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary md:px-6 md:text-sm";
+
+export default function Nav() {
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
     if (mobileOpen) {
@@ -31,89 +31,60 @@ export default function Nav() {
     };
   }, [mobileOpen]);
 
-  const openDropdown = () => {
-    if (closeTimer) clearTimeout(closeTimer);
-    setDropdownOpen(true);
-  };
-
-  const closeDropdown = () => {
-    const timer = setTimeout(() => setDropdownOpen(false), 200);
-    setCloseTimer(timer);
-  };
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setMobileOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
 
   return (
     <>
       <nav
-        className="fixed left-0 right-0 top-0 z-50 flex h-16 items-center border-b border-border/60 bg-background/95 backdrop-blur-md md:h-20"
+        className="fixed left-0 right-0 top-0 z-50 flex h-16 items-center border-b border-border/60 bg-background/95 backdrop-blur-md md:h-[4.5rem]"
         aria-label="Main"
       >
         <div className="mx-auto flex h-full w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-          <Link href="/" className="flex shrink-0 items-center no-underline" aria-label="Octus Consulting">
+          <Link
+            href="/"
+            className="flex shrink-0 items-center no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+            aria-label="Octus Consulting home"
+          >
             <img
               src="/logo-nav-light.png"
-              alt="Octus Consulting"
-              width={200}
-              height={48}
+              alt=""
+              width={180}
+              height={44}
               decoding="async"
-              className="h-8 w-auto md:h-10"
+              className="h-7 w-auto translate-y-px md:h-8"
               style={{ imageRendering: "auto" }}
             />
           </Link>
 
-          <div className="hidden items-center gap-8 md:flex">
-            <Link
-              href="/about"
-              className="font-sans text-sm text-muted-foreground no-underline transition-colors hover:text-primary"
+          <div className="hidden items-center gap-7 lg:gap-9 md:flex">
+            {primaryLinks.map((l) => (
+              <Link key={l.href} href={l.href} className={linkClass}>
+                {l.label}
+              </Link>
+            ))}
+            <a
+              href={WHATSAPP_DISCUSS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={ctaClass}
             >
-              About
-            </Link>
-
-            <div className="relative" onMouseEnter={openDropdown} onMouseLeave={closeDropdown}>
-              <button
-                type="button"
-                className="flex items-center gap-1 border-0 bg-transparent p-0 font-sans text-sm text-muted-foreground transition-colors hover:text-primary"
-                onClick={() => setDropdownOpen((p) => !p)}
-                aria-expanded={dropdownOpen}
-                aria-haspopup="true"
-              >
-                What we do <span className="text-[10px] opacity-50">▾</span>
-              </button>
-              {dropdownOpen && (
-                <div className="absolute left-0 top-full z-50 mt-2 min-w-[220px] rounded-lg border border-border bg-background p-2 shadow-lg">
-                  {whatWeDoLinks.map((l) => (
-                    <Link
-                      key={l.href}
-                      href={l.href}
-                      className="block rounded-md px-3 py-2 font-sans text-sm text-muted-foreground no-underline transition-colors hover:bg-muted/40 hover:text-primary"
-                      onClick={() => setDropdownOpen(false)}
-                    >
-                      {l.label}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            <Link
-              href="/insights"
-              className="font-sans text-sm text-muted-foreground no-underline transition-colors hover:text-primary"
-            >
-              Insights
-            </Link>
-            <Link
-              href="/contact"
-              className="inline-flex items-center rounded-full bg-primary px-6 py-2.5 font-sans text-sm font-medium text-primary-foreground no-underline transition-colors hover:bg-primary/90"
-            >
-              Discuss your structure →
-            </Link>
+              {CTA_DISCUSS_LABEL}
+            </a>
           </div>
 
           <button
             type="button"
-            className="flex border-0 bg-transparent p-2 text-foreground md:hidden"
+            className="flex rounded-md border-0 bg-transparent p-2 text-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary md:hidden"
             onClick={() => setMobileOpen((p) => !p)}
-            aria-label="Menu"
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileOpen}
+            aria-controls="mobile-nav"
           >
             {mobileOpen ? (
               <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
@@ -130,55 +101,33 @@ export default function Nav() {
 
       {mobileOpen && (
         <div
-          className="fixed inset-x-0 bottom-0 top-16 z-40 overflow-y-auto bg-background px-4 pb-12 pt-4 sm:px-6 md:hidden"
+          id="mobile-nav"
+          className="fixed inset-x-0 bottom-0 top-16 z-40 overflow-y-auto bg-background px-4 pb-12 pt-2 sm:px-6 md:hidden"
           role="dialog"
           aria-modal="true"
           aria-label="Navigation menu"
         >
-          <Link
-            href="/about"
-            className="block border-b border-border py-4 font-sans text-sm text-foreground no-underline transition-colors hover:text-primary"
-            onClick={() => setMobileOpen(false)}
-          >
-            About
-          </Link>
-          <Link
-            href="/markets"
-            className="block border-b border-border py-4 font-sans text-sm text-foreground no-underline transition-colors hover:text-primary"
-            onClick={() => setMobileOpen(false)}
-          >
-            Markets
-          </Link>
-          <Link
-            href="/jurisdictions"
-            className="block border-b border-border py-4 font-sans text-sm text-foreground no-underline transition-colors hover:text-primary"
-            onClick={() => setMobileOpen(false)}
-          >
-            Jurisdictions
-          </Link>
-          <Link
-            href="/solutions"
-            className="block border-b border-border py-4 font-sans text-sm text-foreground no-underline transition-colors hover:text-primary"
-            onClick={() => setMobileOpen(false)}
-          >
-            Solutions
-          </Link>
-          <Link
-            href="/insights"
-            className="block border-b border-border py-4 font-sans text-sm text-foreground no-underline transition-colors hover:text-primary"
-            onClick={() => setMobileOpen(false)}
-          >
-            Insights
-          </Link>
-
-          <div className="pt-6">
+          {primaryLinks.map((l) => (
             <Link
-              href="/contact"
-              className="inline-flex w-full items-center justify-center rounded-full bg-primary px-6 py-2.5 font-sans text-sm font-medium text-primary-foreground no-underline transition-colors hover:bg-primary/90"
+              key={l.href}
+              href={l.href}
+              className="block border-b border-border py-4 font-sans text-base text-foreground no-underline transition-colors hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-primary"
               onClick={() => setMobileOpen(false)}
             >
-              Discuss your structure →
+              {l.label}
             </Link>
+          ))}
+
+          <div className="pt-6">
+            <a
+              href={WHATSAPP_DISCUSS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${ctaClass} w-full justify-center`}
+              onClick={() => setMobileOpen(false)}
+            >
+              {CTA_DISCUSS_LABEL}
+            </a>
           </div>
         </div>
       )}

@@ -1,7 +1,9 @@
 import Link from "next/link";
+import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
+import PageHero from "../../components/system/PageHero";
 
 export const metadata = {
-  title: "Solutions — Regulatory, Compliance & Structuring | Octus",
+  title: "Solutions — Regulatory, Compliance & Structuring",
   description:
     "Full-spectrum regulatory, compliance and corporate structuring. Licensing, AML/KYC, corporate design, audit readiness and cross-border execution.",
 };
@@ -9,25 +11,17 @@ export const metadata = {
 export default function SolutionsPage() {
   return (
     <main>
-
-      {/* ─── HERO ─── */}
-      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
-        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <span className="label">Solutions</span>
-          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
-            You don&apos;t need services.
-            <br />
-            <span style={{ color: "var(--white-40)" }}>
-              You need a working structure.
-            </span>
-          </h1>
-          <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "620px" }}>
-            Licensing, compliance, banking, corporate setup. Isolated, none
-            of it works. We design and coordinate the entire structure from the
-            start, with one point of contact.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Solutions"
+        title="You don't need services."
+        titleSecondLine="You need a working structure."
+        description="Licensing, compliance, banking, corporate setup. Isolated, none of it works. We design and coordinate the entire structure from the start, with one point of contact."
+        primaryCta={{
+          href: WHATSAPP_DISCUSS_URL,
+          label: CTA_DISCUSS_LABEL,
+          external: true,
+        }}
+      />
 
       {/* ─── 7 PILLARS ─── */}
       <section className="bg-background py-24 md:py-32">
@@ -192,9 +186,7 @@ export default function SolutionsPage() {
           <h2 className="heading-lg cta-block__title">
             Fix the structure before you scale.
           </h2>
-          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
-            Get a structural diagnosis →
-          </Link>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
             We respond within 24 hours.
           </p>

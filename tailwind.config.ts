@@ -8,7 +8,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        heading: ["Unigeo64", "Outfit", "system-ui", "sans-serif"],
+        heading: ["Unigeo64", "var(--font-unigeo)", "system-ui", "sans-serif"],
         sans: ["var(--font-inter)", "Inter", "system-ui", "sans-serif"],
       },
       colors: {

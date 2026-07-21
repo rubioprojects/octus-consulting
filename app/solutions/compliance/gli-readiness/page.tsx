@@ -1,7 +1,8 @@
 import Link from "next/link";
+import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
 
 export const metadata = {
-  title: "GLI & Certification Readiness — Octus Consulting",
+  title: "GLI & Certification Readiness",
   description:
     "The audit does not find problems. It confirms they were always there. Octus prepares operations for certification and regulatory review before the auditor arrives.",
 };
@@ -26,9 +27,7 @@ export default function GliReadinessPage() {
             Octus prepares the operation for audit. It does not act as the certifying or auditing body.
           </p>
           <div style={{ marginTop: "32px" }}>
-            <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
-              Request a readiness assessment →
-            </Link>
+            <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           </div>
         </div>
       </section>
@@ -159,9 +158,7 @@ export default function GliReadinessPage() {
           <h2 className="heading-lg cta-block__title">
             Prepare before scrutiny arrives.
           </h2>
-          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
-            Request a readiness assessment →
-          </Link>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
         </div>
       </section>
     </main>

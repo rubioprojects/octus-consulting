@@ -1,7 +1,15 @@
 import Link from "next/link";
 import { Fragment } from "react";
 import HomeModulesAccordion from "../components/HomeModulesAccordion";
-import OctusStripSeparatorIcon from "../components/OctusStripSeparatorIcon";
+import { CtaLink } from "../components/system/CtaButton";
+import Eyebrow from "../components/system/Eyebrow";
+import OctusIcon from "../components/icons/OctusIcon";
+import {
+  CTA_DIAGNOSTIC_LABEL,
+  CTA_DISCUSS_LABEL,
+  WHATSAPP_DIAGNOSTIC_URL,
+  WHATSAPP_DISCUSS_URL,
+} from "../lib/cta";
 
 /**
  * Authority strip copy: aligned with homepage language.
@@ -36,9 +44,9 @@ const AUTHORITY_STRIP = {
 const homeAuthorityLocale: keyof typeof AUTHORITY_STRIP = "en";
 
 export const metadata = {
-  title: "Octus Consulting — Regulatory & Operational Structuring",
+  title: "Regulatory & Operational Structuring",
   description:
-    "We design and operate regulatory infrastructure for high-risk and regulated businesses.",
+    "Regulated operations don't fail randomly. They fail structurally. Octus fixes regulatory, licensing and banking problems in highly regulated markets.",
 };
 
 const moduleRows = [
@@ -79,76 +87,57 @@ const moduleRows = [
   { num: "07", title: "International Hub", href: "/international-hub", featured: [] },
 ];
 
-const testimonials = [
-  {
-    quote:
-      "Octus restructured what three other firms could not. Banking resolved in weeks, after months of failed attempts.",
-    name: "Available on request",
-    sector: "iGaming operator",
-  },
-  {
-    quote:
-      "The diagnostic exposed structural gaps we were about to submit with. Fixing them avoided a failed licensing process.",
-    name: "Available on request",
-    sector: "Fintech founder",
-  },
-  {
-    quote:
-      "We thought we had compliance. We had documentation. Octus built an operational system.",
-    name: "Available on request",
-    sector: "Crypto platform",
-  },
-];
-
 export default function HomePage() {
   const authority = AUTHORITY_STRIP[homeAuthorityLocale];
 
   return (
     <main>
-      <section className="home-hero relative flex min-h-[90vh] items-center overflow-hidden pt-20 surface-dark px-4 sm:px-6 lg:px-8">
-        <div className="relative z-10 mx-auto w-full max-w-3xl">
-          <div className="mb-10 flex items-center gap-2 text-xs font-medium uppercase tracking-[0.2em] text-white/50">
-            <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-accent" aria-hidden />
+      <section className="home-hero relative flex min-h-[88vh] items-center overflow-hidden pt-24 surface-dark px-4 sm:px-6 lg:px-8 md:pt-28">
+        <div className="relative z-10 mx-auto w-full max-w-4xl">
+          <Eyebrow tone="dark" className="mb-8 md:mb-10">
             Regulated Operations
-          </div>
-          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem]">
-            We fix that.
+          </Eyebrow>
+          <h1 className="font-heading text-[2.35rem] font-bold leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-[4rem]">
+            Regulated operations don&apos;t fail randomly.
             <br />
-            <span className="text-white/50 italic">Structurally.</span>
+            <span className="text-white/85">They fail structurally.</span>
           </h1>
-          <p className="mb-12 max-w-xl text-lg leading-relaxed text-white/60">
-            Licensing, compliance and banking don&apos;t fail in isolation.
-            They break when the structure behind them does not hold.
+          <p className="mt-8 mb-12 max-w-2xl text-base leading-[1.7] text-white/75 sm:text-lg md:mt-10 md:mb-14">
+            We fix regulatory, licensing and banking problems in highly regulated markets — and build
+            the structures that prevent them from happening again.
           </p>
-          <div className="flex flex-wrap gap-4">
-            <Link
-              href="/contact"
-              className="inline-flex h-12 items-center justify-center rounded-full bg-white px-10 text-base font-medium tracking-wide text-primary transition-colors hover:bg-white/90"
+          <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
+            <CtaLink
+              href={WHATSAPP_DISCUSS_URL}
+              variant="on-dark"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Discuss your structure →
-            </Link>
-            <Link
-              href="/diagnostic"
-              className="inline-flex h-12 items-center justify-center rounded-full border border-white/20 bg-transparent px-10 text-base font-medium text-white/80 transition-colors hover:border-white/40 hover:text-white"
+              {CTA_DISCUSS_LABEL}
+            </CtaLink>
+            <CtaLink
+              href={WHATSAPP_DIAGNOSTIC_URL}
+              variant="on-dark-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Run a regulatory diagnostic →
-            </Link>
+              {CTA_DIAGNOSTIC_LABEL}
+            </CtaLink>
           </div>
         </div>
       </section>
 
       <section
-        className="w-full border-b border-white/[0.06]"
-        style={{ backgroundColor: "#0F172A" }}
-        aria-label={authority.aria}
+        className="authority-strip w-full border-b border-white/[0.08]"
+        style={{ backgroundColor: "#0B1220" }}
+        aria-label="Capabilities"
       >
-        {/* min-w-full + w-max: center when it fits; on narrow screens scroll without “cropped center” */}
         <div className="w-full overflow-x-auto overflow-y-hidden overscroll-x-contain scroll-smooth [-webkit-overflow-scrolling:touch] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-          <div className="flex h-[52px] min-h-[48px] max-h-[60px] w-max min-w-full items-center justify-center gap-x-3 px-5 font-sans text-[13px] font-medium tracking-wide text-white sm:gap-x-4 sm:px-6 sm:text-sm md:px-8 md:text-[15px]">
+          <div className="flex h-12 min-w-full w-max items-center justify-center gap-x-3 px-5 font-sans text-[12px] font-medium uppercase tracking-[0.14em] text-white/70 sm:gap-x-5 sm:px-8 sm:text-[13px] md:h-14">
             {authority.items.map((label, i) => (
               <Fragment key={label}>
                 {i > 0 && (
-                  <OctusStripSeparatorIcon className="h-4 w-4 shrink-0 text-white opacity-70" />
+                  <span className="h-3 w-px shrink-0 bg-white/20" aria-hidden />
                 )}
                 <span className="whitespace-nowrap">{label}</span>
               </Fragment>
@@ -157,74 +146,29 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="border-b border-border bg-background py-16 md:py-20">
-        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <div className="mb-12 grid grid-cols-2 gap-8 md:grid-cols-4 md:gap-0">
-            <div className="flex flex-col items-center text-center md:border-r md:border-border md:last:border-r-0">
-              <span className="font-heading text-3xl font-bold text-primary md:text-4xl">
-                <strong>15+</strong>
-              </span>
+      <section className="border-b border-border bg-background py-14 md:py-16">
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 gap-8 md:grid-cols-4 md:gap-0">
+            <div className="flex flex-col items-center text-center md:border-r md:border-border">
+              <span className="font-heading text-3xl font-bold text-primary md:text-4xl">15+</span>
               <span className="mt-2 font-sans text-sm text-muted-foreground">jurisdictions</span>
             </div>
-            <div className="flex flex-col items-center text-center md:border-r md:border-border md:last:border-r-0">
-              <span className="font-heading text-3xl font-bold text-primary md:text-4xl">
-                <strong>2019</strong>
-              </span>
+            <div className="flex flex-col items-center text-center md:border-r md:border-border">
+              <span className="font-heading text-3xl font-bold text-primary md:text-4xl">2019</span>
               <span className="mt-2 font-sans text-sm text-muted-foreground">Operating since</span>
             </div>
-            <div className="flex flex-col items-center text-center md:border-r md:border-border md:last:border-r-0">
-              <span className="font-heading text-3xl font-bold text-primary md:text-4xl">
-                <strong>48h</strong>
-              </span>
+            <div className="flex flex-col items-center text-center md:border-r md:border-border">
+              <span className="font-heading text-3xl font-bold text-primary md:text-4xl">48h</span>
               <span className="mt-2 font-sans text-sm text-muted-foreground">first response</span>
             </div>
-            <div className="flex flex-col items-center text-center md:border-r md:border-border md:last:border-r-0">
-              <span className="font-heading text-3xl font-bold text-primary md:text-4xl">
-                <strong>7</strong>
-              </span>
+            <div className="flex flex-col items-center text-center">
+              <span className="font-heading text-3xl font-bold text-primary md:text-4xl">7</span>
               <span className="mt-2 font-sans text-sm text-muted-foreground">operational modules</span>
             </div>
           </div>
-
-          <div className="flex flex-col flex-wrap items-center justify-center gap-8 md:flex-row md:gap-12">
-            <div className="flex max-w-md flex-col items-center gap-3 sm:flex-row sm:items-start">
-              <img
-                src="/seal-exin-dpo.png"
-                alt="EXIN Data Protection Officer Certified"
-                className="h-16 w-auto object-contain opacity-80 transition-opacity hover:opacity-100 md:h-20"
-              />
-              <p className="text-center text-sm text-muted-foreground sm:text-left">
-                Certified data protection capability (EXIN)
-              </p>
-            </div>
-            <div className="flex w-full max-w-2xl flex-col items-center gap-4 sm:items-start">
-              <p className="text-center text-xs text-muted-foreground sm:text-left">
-                Aligned with regulatory and compliance frameworks
-              </p>
-              <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8">
-                <img
-                  src="/seal-gdpr.png"
-                  alt="GDPR"
-                  className="h-16 w-auto object-contain opacity-80 transition-opacity hover:opacity-100 md:h-20"
-                />
-                <img
-                  src="/seal-lgpd.png"
-                  alt="LGPD"
-                  className="h-16 w-auto object-contain opacity-80 transition-opacity hover:opacity-100 md:h-20"
-                />
-                <img
-                  src="/seal-esg.png"
-                  alt="ESG"
-                  className="h-16 w-auto object-contain opacity-80 transition-opacity hover:opacity-100 md:h-20"
-                />
-                <img
-                  src="/seal-mulher.png"
-                  alt="Women-Led Business Recognition"
-                  className="h-16 w-auto object-contain opacity-80 transition-opacity hover:opacity-100 md:h-20"
-                />
-              </div>
-            </div>
-          </div>
+          <p className="mx-auto mt-10 max-w-xl text-center font-sans text-sm leading-relaxed text-muted-foreground">
+            Certified data protection capability (EXIN DPO). Proof is operational — not a certificate wall.
+          </p>
         </div>
       </section>
 
@@ -444,15 +388,17 @@ export default function HomePage() {
           <h2 className="mb-6 font-heading text-3xl font-semibold leading-[1.12] tracking-tight text-white md:text-4xl">
             If your operation is stuck, blocked or exposed, we can fix it.
           </h2>
-          <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-white/60">
+          <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-white/75">
             We don&apos;t consult on theory. We step into live operations and restructure what isn&apos;t working.
           </p>
-          <Link
-            href="/diagnostic"
-            className="inline-flex h-12 items-center justify-center rounded-full bg-white px-10 text-base font-medium tracking-wide text-primary transition-colors hover:bg-white/90"
+          <a
+            href={WHATSAPP_DIAGNOSTIC_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex h-12 items-center justify-center rounded-md bg-white px-10 text-base font-medium tracking-wide text-primary transition-colors hover:bg-white/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
           >
-            Request assessment →
-          </Link>
+            {CTA_DIAGNOSTIC_LABEL}
+          </a>
         </div>
       </section>
 
@@ -495,20 +441,7 @@ export default function HomePage() {
               </p>
             </div>
             <div>
-              <div className="grid-2 operate-stats" style={{ gap: "1px", background: "var(--border-solid)", borderRadius: "12px", overflow: "hidden" }}>
-                {[
-                  { num: "15+", label: "Jurisdictions" },
-                  { num: "2019", label: "Operating since" },
-                  { num: "48h", label: "First response" },
-                  { num: "7", label: "Operational modules" },
-                ].map((s) => (
-                  <div key={s.num} className="card operate-stat" style={{ borderRadius: "0", border: "none" }}>
-                    <p className="stat-num">{s.num}</p>
-                    <p className="stat-label">{s.label}</p>
-                  </div>
-                ))}
-              </div>
-              <div className="juris-strip operate-juris" style={{ marginTop: "16px" }}>
+              <div className="juris-strip operate-juris">
                 <p className="juris-strip-label">Active jurisdictions</p>
                 <div className="chip-row">
                   <span className="chip-juris">Brazil (SPA/MF)</span>
@@ -555,22 +488,24 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="surface-elevated py-24 md:py-32">
-        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <div className="mb-12 max-w-2xl md:mb-16">
-            <p className="section-label mb-4 block">Trusted where structure matters</p>
-          </div>
-          <div className="grid gap-6 md:grid-cols-3 md:gap-8">
-            {testimonials.map((item) => (
-              <div
-                key={item.quote}
-                className="flex flex-col rounded-lg border border-y border-r border-border/50 border-l-[3px] border-l-primary bg-background p-6 md:p-8"
-              >
-                <p className="mb-6 font-sans text-base leading-relaxed text-foreground">&quot;{item.quote}&quot;</p>
-                <p className="font-sans text-sm text-muted-foreground">— {item.name}</p>
-                <p className="mt-1 font-sans text-sm text-muted-foreground">— {item.sector}</p>
-              </div>
-            ))}
+      <section className="bg-background py-20 md:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
+            <div className="max-w-2xl">
+              <p className="section-label mb-4 block">Intelligence</p>
+              <h2 className="heading-section">Institutional intelligence, not a blog.</h2>
+              <p className="body-large mt-4">
+                Insights is becoming the Octus Intelligence Hub — regulatory, market, operational
+                and founder intelligence for operators who need structure, not noise.
+              </p>
+            </div>
+            <Link
+              href="/insights"
+              className="inline-flex items-center gap-2 font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
+            >
+              Explore Insights
+              <OctusIcon name="arrow" size={16} />
+            </Link>
           </div>
         </div>
       </section>
@@ -584,35 +519,24 @@ export default function HomePage() {
           <p className="body-large mx-auto mb-4 max-w-2xl">
             If you are looking for a workaround, this will not work.
           </p>
-          <p className="mx-auto mb-12 max-w-2xl font-sans text-lg font-medium text-foreground">
+          <p className="mx-auto mb-8 max-w-2xl font-sans text-lg font-medium text-foreground">
             If you are building something real, it will.
           </p>
           <p className="body-large mx-auto mb-12 max-w-2xl">
             This is for operators building real businesses under regulatory and operational constraints.
           </p>
-          <Link
-            href="/contact"
-            className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-          >
-            Discuss your structure →
-          </Link>
-        </div>
-      </section>
-
-      <section className="cta-block">
-        <div className="cta-block__bg" />
-        <div className="cta-block__inner">
-          <p className="body cta-block__sub" style={{ color: "var(--white-40)" }}>
+          <p className="mx-auto mb-10 max-w-xl font-sans text-base leading-relaxed text-muted-foreground">
             If your business depends on approval, it will eventually fail.
-            <br />
             If it is designed to operate, it can scale.
           </p>
-          <h2 className="heading-lg cta-block__title">
-            If your structure breaks, your operation stops.
-          </h2>
-          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
-            Discuss your structure →
-          </Link>
+          <a
+            href={WHATSAPP_DISCUSS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex h-12 items-center justify-center rounded-md bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
+            {CTA_DISCUSS_LABEL}
+          </a>
         </div>
       </section>
     </main>

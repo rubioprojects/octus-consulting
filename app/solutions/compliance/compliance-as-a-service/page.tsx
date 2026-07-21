@@ -1,7 +1,8 @@
 import Link from "next/link";
+import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
 
 export const metadata = {
-  title: "Compliance-as-a-Service — Octus Consulting",
+  title: "Compliance-as-a-Service",
   description:
     "Compliance is not a document. Octus builds and operates compliance as a continuous function: AML/KYC, controls, monitoring and regulatory alignment embedded in the business.",
 };
@@ -26,9 +27,7 @@ export default function ComplianceAsAServicePage() {
             regulator requests evidence, or a partner runs due diligence.
           </p>
           <div style={{ marginTop: "32px" }}>
-            <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
-              Discuss your compliance structure →
-            </Link>
+            <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           </div>
         </div>
       </section>
@@ -213,9 +212,7 @@ export default function ComplianceAsAServicePage() {
             jurisdictions and operational complexity. This is not a one-time
             delivery. It is a continuous function embedded in the business.
           </p>
-          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
-            Request a compliance assessment →
-          </Link>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
         </div>
       </section>
 
@@ -274,9 +271,7 @@ export default function ComplianceAsAServicePage() {
           <h2 className="heading-lg cta-block__title">
             Build it before it is tested.
           </h2>
-          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
-            Request a compliance assessment →
-          </Link>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
             We respond within 24 hours.
           </p>

@@ -1,7 +1,8 @@
 import Link from "next/link";
+import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 
 export const metadata = {
-  title: "Compliance & Risk — Octus Consulting",
+  title: "Compliance & Risk",
   description:
     "Compliance structured to operate continuously — not just pass an audit. Octus designs, implements and coordinates compliance operations across regulatory, banking and risk environments.",
 };
@@ -29,9 +30,7 @@ export default function CompliancePage() {
             hold under real operational conditions.
           </p>
           <div style={{ marginTop: "48px" }}>
-            <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
-              Stabilize your compliance framework →
-            </Link>
+            <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           </div>
         </div>
       </section>
@@ -366,9 +365,7 @@ export default function CompliancePage() {
           <h2 className="heading-lg cta-block__title">
             Build compliance that actually operates.
           </h2>
-          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
-            Stabilize your compliance framework →
-          </Link>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
             Initial diagnostic call. We start by identifying where the framework breaks.
           </p>

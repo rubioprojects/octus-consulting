@@ -1,7 +1,9 @@
 import Link from "next/link";
+import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
+import PageHero from "../../components/system/PageHero";
 
 export const metadata = {
-  title: "About — Octus Consulting",
+  title: "About",
   description:
     "Octus is not a law firm. Not a consultancy. Not a vendor. It is the execution layer behind regulated operations — structuring, coordinating and operating what others only advise on.",
 };
@@ -9,30 +11,22 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <main>
-
-      {/* ─── HERO ─────────────────────────────────────────────────── */}
-      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
-        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <span className="label">About Octus</span>
-          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
-            Octus is not an advisory firm.
-            <br />
-            <span style={{ color: "var(--white-40)" }}>
-              It is the execution layer behind regulated operations.
-            </span>
-          </h1>
-          <p className="text-lg leading-relaxed text-white/60 max-w-2xl">
-            We don&apos;t produce reports. We structure, coordinate and operate
-            what needs to work — across regulatory, compliance, banking and
-            corporate layers simultaneously.
-          </p>
-          <div style={{ marginTop: "48px" }}>
-            <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
-              Discuss your structure →
-            </Link>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="About Octus"
+        title="Octus is not an advisory firm."
+        titleSecondLine="It is the execution layer behind regulated operations."
+        description={
+          <>
+            We don&apos;t produce reports. We structure, coordinate and operate what needs to
+            work — across regulatory, compliance, banking and corporate layers simultaneously.
+          </>
+        }
+        primaryCta={{
+          href: WHATSAPP_DISCUSS_URL,
+          label: CTA_DISCUSS_LABEL,
+          external: true,
+        }}
+      />
 
       {/* ─── WHAT OCTUS IS ────────────────────────────────────────── */}
       <section className="bg-background py-24 md:py-32">
@@ -306,9 +300,7 @@ export default function AboutPage() {
             You don&apos;t need more advisors.
             <br />You need a structure that works.
           </h2>
-          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
-            Request assessment →
-          </Link>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
             Initial diagnostic call. We start by identifying where the
             structure breaks.

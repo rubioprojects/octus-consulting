@@ -1,7 +1,8 @@
 import Link from "next/link";
+import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
 
 export const metadata = {
-  title: "iGaming Licensing — Octus Consulting",
+  title: "iGaming Licensing",
   description:
     "iGaming licensing strategy across jurisdictions. Octus structures the regulatory, corporate and compliance architecture that determines whether a licence gets approved — not just submitted.",
 };
@@ -31,9 +32,7 @@ export default function SolutionsIGamingLicensingPage() {
             filed.
           </p>
           <div style={{ marginTop: "32px", display: "flex", gap: "16px", flexWrap: "wrap" }}>
-            <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
-              Discuss your licensing strategy →
-            </Link>
+            <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
             <Link
               href="/markets/igaming"
               className="inline-flex h-12 items-center justify-center rounded-full border border-white/20 bg-transparent px-10 text-base font-medium text-white/80 transition-colors hover:border-white/40 hover:text-white"
@@ -240,9 +239,7 @@ export default function SolutionsIGamingLicensingPage() {
             approaches without structural backing. If your objective is speed
             over sustainability, we are not the right partner.
           </p>
-          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
-            Request a licensing diagnostic →
-          </Link>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
         </div>
       </section>
 
@@ -319,9 +316,7 @@ export default function SolutionsIGamingLicensingPage() {
             Get the structure right{" "}
             <span style={{ color: "var(--blue-light)" }}>before the regulator sees it.</span>
           </h2>
-          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
-            Request a licensing assessment →
-          </Link>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
             Diagnostic call. We assess model, jurisdiction fit and structural readiness before recommending a path.
           </p>
