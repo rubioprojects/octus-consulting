@@ -41,8 +41,7 @@ export default function PartnersPage() {
             execution owner.
           </p>
           <p className="body-text text-muted-foreground">
-            We do not list partner names or logos without explicit approval. Network participants
-            are not published on the Team page.
+            Partner names and logos appear only with explicit approval.
           </p>
         </div>
       </section>

@@ -119,18 +119,14 @@ export default function HomePage() {
 
       <section className="border-b border-border bg-background py-14 md:py-16">
         <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-4 md:gap-0">
-            <div className="flex flex-col items-center text-center md:border-r md:border-border">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 md:gap-0">
+            <div className="flex flex-col items-center text-center sm:border-r sm:border-border">
               <span className="font-heading text-3xl font-bold text-primary md:text-4xl">15+</span>
               <span className="mt-2 font-sans text-sm text-muted-foreground">jurisdictions</span>
             </div>
-            <div className="flex flex-col items-center text-center md:border-r md:border-border">
+            <div className="flex flex-col items-center text-center sm:border-r sm:border-border">
               <span className="font-heading text-3xl font-bold text-primary md:text-4xl">2019</span>
               <span className="mt-2 font-sans text-sm text-muted-foreground">Operating since</span>
-            </div>
-            <div className="flex flex-col items-center text-center md:border-r md:border-border">
-              <span className="font-heading text-3xl font-bold text-primary md:text-4xl">48h</span>
-              <span className="mt-2 font-sans text-sm text-muted-foreground">first response</span>
             </div>
             <div className="flex flex-col items-center text-center">
               <span className="font-heading text-3xl font-bold text-primary md:text-4xl">6</span>
@@ -497,7 +493,7 @@ export default function HomePage() {
             <div className="max-w-2xl">
               <p className="section-label mb-4 block">How we engage</p>
               <h2 className="heading-section">
-                Accountability scales with involvement — not with hour packages.
+                Accountability scales with the mandate.
               </h2>
             </div>
             <Link

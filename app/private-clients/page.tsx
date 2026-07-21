@@ -32,9 +32,9 @@ export default function PrivateClientsPage() {
               letterSpacing: "-0.01em",
             }}
           >
-            Ownership &amp; UBO architecture sits under Corporate &amp; Cross-Border
-            Structuring — not as a separate private-wealth product. This URL remains
-            active; no redirect.
+            Ownership &amp; UBO architecture for individuals behind regulated operations —
+            coordinated with Corporate &amp; Cross-Border Structuring, not as standalone
+            private-wealth planning.
           </p>
           <p className="text-lg leading-relaxed text-white/60 max-w-2xl">
             Regulated operations are scrutinised at every layer — including the

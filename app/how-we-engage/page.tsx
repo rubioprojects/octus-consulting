@@ -45,7 +45,7 @@ export default function HowWeEngagePage() {
 
       <section className="surface-elevated py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <p className="section-label mb-4 block">Commercial ladder</p>
+          <p className="section-label mb-4 block">Engagement models</p>
           <h2 className="heading-section mb-12 max-w-2xl">How engagement scales</h2>
           <div className="grid gap-6 md:grid-cols-2">
             {ENGAGEMENT_MODELS.map((m) => (
@@ -58,11 +58,6 @@ export default function HowWeEngagePage() {
               </article>
             ))}
           </div>
-          <p className="mt-10 max-w-2xl font-sans text-sm leading-relaxed text-muted-foreground">
-            Hour packages may exist operationally for discrete follow-on work. They are not a
-            primary market-facing engagement model and are not presented as a peer to Lead
-            Contractor.
-          </p>
         </div>
       </section>
 

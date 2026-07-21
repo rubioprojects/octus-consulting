@@ -10,7 +10,7 @@ import {
 export const metadata = {
   title: "Operational Remediation & Readiness — Assess",
   description:
-    "Assess licensing delays, banking rejection, compliance gaps, audit readiness and blocked market entry. Soft landing into Operational Remediation & Readiness — no guaranteed resolution.",
+    "Assess licensing delays, banking rejection, compliance gaps, audit readiness and blocked market entry. Octus engages through qualified conversations — no guaranteed resolution.",
 };
 
 const situations = [
@@ -89,8 +89,7 @@ export default function DiagnosticPage() {
             .
           </p>
           <p className="body-text text-muted-foreground">
-            Route preserved: <code className="text-sm">/diagnostic</code> remains active. No
-            redirect. Octus engages through qualified conversations.
+            Octus engages through qualified conversations — not mass lead-capture forms.
           </p>
         </div>
       </section>

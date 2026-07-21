@@ -87,7 +87,7 @@ export default function SolutionsPage() {
           <div>
             <p className="section-label mb-2 block">How we engage</p>
             <p className="body-large max-w-xl">
-              Lead Contractor first — not hour packages as the commercial face.
+              Lead Contractor Programme and engagement models built for accountability.
             </p>
           </div>
           <CtaLink href="/how-we-engage" variant="primary">

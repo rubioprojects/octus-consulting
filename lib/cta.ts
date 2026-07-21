@@ -18,9 +18,9 @@ export const MAILTO_INFO = "mailto:info@octusconsulting.com";
 export const CTA_DISCUSS_LABEL = "Discuss your operation →";
 export const CTA_ASSESS_LABEL = "Assess your situation →";
 
-/** Proposed partnership intake — HUMAN_REVIEW_REQUIRED (Wave 3). */
+/** Partnership intake — human-approved for Wave 3 public copy. */
 export const WA_PARTNERSHIP_TEXT =
-  "Hello Octus team — I represent an advisory firm, CSP, law firm or specialist practice and would like to discuss collaboration on regulated operations.";
+  "Hello Octus team — I would like to discuss a potential partnership or collaboration on regulated operations.";
 
 export const WHATSAPP_PARTNERSHIP_URL = `https://wa.me/${OCTUS_WHATSAPP_E164}?text=${encodeURIComponent(WA_PARTNERSHIP_TEXT)}`;
 
