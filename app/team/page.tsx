@@ -20,12 +20,12 @@ export const metadata = {
 function PersonCard({ person }: { person: PersonProfile }) {
   const body = (
     <article className="team-card">
-      <div className="team-card-photo-wrap">
+      <div className="team-card-photo-wrap team-portrait">
         <img
           src={person.photo}
           alt={personAlt(person)}
-          className="team-card-photo"
-          style={{ objectPosition: person.photoPosition ?? "center" }}
+          className="team-card-photo team-portrait__image"
+          style={{ objectPosition: person.photoPosition ?? "50% 30%" }}
           width={200}
           height={200}
           decoding="async"
