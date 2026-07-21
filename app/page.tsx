@@ -22,23 +22,23 @@ const AUTHORITY_STRIP = {
   en: {
     aria: "Core solutions",
     items: [
-      "Regulatory Strategy",
-      "Banking & Payments",
-      "Compliance & Risk",
-      "Corporate Structure",
-      "Legal Architecture",
-      "Remediation",
+      { label: "Regulatory Strategy", icon: "regulatory" as const },
+      { label: "Banking & Payments", icon: "banking" as const },
+      { label: "Compliance & Risk", icon: "compliance" as const },
+      { label: "Corporate Structure", icon: "corporate" as const },
+      { label: "Legal Architecture", icon: "licensing" as const },
+      { label: "Remediation", icon: "remediation" as const },
     ],
   },
   pt: {
     aria: "Soluções centrais",
     items: [
-      "Estratégia regulatória",
-      "Banking e pagamentos",
-      "Compliance e risco",
-      "Estrutura societária",
-      "Arquitetura jurídica",
-      "Remediação",
+      { label: "Estratégia regulatória", icon: "regulatory" as const },
+      { label: "Banking e pagamentos", icon: "banking" as const },
+      { label: "Compliance e risco", icon: "compliance" as const },
+      { label: "Estrutura societária", icon: "corporate" as const },
+      { label: "Arquitetura jurídica", icon: "licensing" as const },
+      { label: "Remediação", icon: "remediation" as const },
     ],
   },
 } as const;
@@ -63,17 +63,19 @@ export default function HomePage() {
 
   return (
     <main>
-      <section className="home-hero relative flex min-h-[88vh] items-center overflow-hidden pt-24 surface-dark px-4 sm:px-6 lg:px-8 md:pt-28">
-        <div className="relative z-10 mx-auto w-full max-w-4xl">
+      <section className="home-hero relative flex min-h-[88vh] items-center overflow-hidden pt-28 surface-dark px-4 sm:px-6 lg:px-8 md:pt-32">
+        <div className="home-hero__atmosphere" aria-hidden="true" />
+        <div className="home-hero__mesh" aria-hidden="true" />
+        <div className="relative z-10 mx-auto w-full max-w-[56rem]">
           <Eyebrow tone="dark" className="mb-8 md:mb-10">
             Regulated Operations
           </Eyebrow>
-          <h1 className="font-heading text-[2.35rem] font-bold leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-[4rem]">
+          <h1 className="font-heading text-[2.35rem] font-bold leading-[1.1] tracking-[-0.02em] text-white sm:text-5xl md:text-6xl lg:text-[3.75rem] lg:leading-[1.08]">
             Regulated operations don&apos;t fail randomly.
             <br />
             <span className="text-white/85">They fail structurally.</span>
           </h1>
-          <p className="mt-8 mb-12 max-w-2xl text-base leading-[1.7] text-white/75 sm:text-lg md:mt-10 md:mb-14">
+          <p className="mt-8 mb-12 max-w-[38rem] text-base leading-[1.7] text-white/75 sm:text-lg md:mt-10 md:mb-14">
             Complex regulated problems need an accountable execution partner — licensing, banking,
             compliance and structure coordinated so the operation can hold under scrutiny.
           </p>
@@ -104,13 +106,16 @@ export default function HomePage() {
         aria-label="Practice areas"
       >
         <div className="w-full overflow-x-auto overflow-y-hidden overscroll-x-contain scroll-smooth [-webkit-overflow-scrolling:touch] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-          <div className="flex h-14 min-w-full w-max items-center justify-center gap-x-4 px-6 font-sans text-[11px] font-medium uppercase tracking-[0.18em] text-white/55 sm:gap-x-6 sm:px-10 sm:text-[12px] md:h-16">
-            {authority.items.map((label, i) => (
-              <Fragment key={label}>
+          <div className="flex h-14 min-w-full w-max items-center justify-center gap-x-5 px-6 font-sans text-[11px] font-medium uppercase tracking-[0.18em] text-white/55 sm:gap-x-7 sm:px-10 sm:text-[12px] md:h-16">
+            {authority.items.map((item, i) => (
+              <Fragment key={item.label}>
                 {i > 0 && (
                   <OctusStripSeparatorIcon className="h-3 w-3 shrink-0 text-white/25" />
                 )}
-                <span className="pointer-events-none select-none whitespace-nowrap">{label}</span>
+                <span className="pointer-events-none inline-flex select-none items-center gap-2 whitespace-nowrap">
+                  <OctusIcon name={item.icon} size={14} className="text-white/40" />
+                  {item.label}
+                </span>
               </Fragment>
             ))}
           </div>

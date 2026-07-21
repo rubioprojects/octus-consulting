@@ -1063,47 +1063,56 @@ body {
 
 /* Homepage credentials/seals: app/page.tsx (authority section) */
 
-/* ─── WHATSAPP FLOATING CTA ─── */
+/* ─── WHATSAPP FLOATING CTA (bottom-right; clears cookie card on left) ─── */
 .wa-float {
   position: fixed;
   bottom: 24px;
   right: 24px;
-  z-index: 90;
+  z-index: 96;
   display: flex;
   align-items: center;
-  gap: 8px;
-  background: var(--deep-blue);
-  color: var(--white);
-  border: 1px solid var(--white-10);
-  border-radius: 8px;
-  padding: 12px 16px;
+  gap: 10px;
+  min-height: 44px;
+  background: #0f1a2e;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 10px;
+  padding: 12px 18px;
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.01em;
   text-decoration: none;
-  transition: box-shadow 0.2s, border-color 0.2s, background 0.2s;
+  transition: box-shadow 0.2s, border-color 0.2s, background 0.2s, transform 0.2s;
   backdrop-filter: blur(12px);
+  box-shadow: 0 10px 28px rgba(7, 11, 20, 0.45);
 }
 .wa-float:hover {
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
-  border-color: var(--white-25);
+  background: #15243d;
+  box-shadow: 0 12px 32px rgba(7, 11, 20, 0.5);
+  border-color: rgba(255, 255, 255, 0.34);
 }
 .wa-float:focus-visible {
-  outline: 2px solid #fff;
+  outline: 2px solid #ffffff;
   outline-offset: 3px;
 }
 .wa-float svg {
-  color: #25D366;
+  color: #3dde7d;
+  filter: drop-shadow(0 0 0.5px rgba(0, 0, 0, 0.35));
 }
 @media (max-width: 768px) {
   .wa-float {
-    bottom: 88px; /* clear essential-cookie bar when visible */
+    bottom: 20px;
     right: 16px;
     padding: 14px;
+    min-width: 44px;
+    min-height: 44px;
+    justify-content: center;
   }
   .wa-float__label { display: none; }
+  html[data-cookie-banner="open"] .wa-float {
+    bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+  }
 }
-/* When cookie banner dismissed, mobile float can sit lower via body attribute if needed later */
 
 /* ─── CONTACT GRID ─── */
 .contact-grid {
@@ -1121,28 +1130,41 @@ body {
   .contact-form-card { position: static; }
 }
 
-/* ─── COOKIE BANNER (essential-only; compact) ─── */
+/* ─── COOKIE BANNER (essential-only; Octus card — bottom-left, clears WhatsApp) ─── */
 .cookie-banner {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  bottom: 24px;
+  left: 24px;
+  right: auto;
   z-index: 95;
-  background: var(--deep-blue);
-  border-top: 1px solid hsl(var(--border));
-  padding: 12px 24px;
+  width: min(22.5rem, calc(100vw - 5.5rem));
+  max-width: calc(100vw - 5.5rem);
+  background: #0b1220;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 18px 18px 16px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  box-shadow: 0 16px 40px rgba(7, 11, 20, 0.42);
 }
+.cookie-banner__title {
+  margin: 0;
+  font-family: var(--font-unigeo), "Unigeo64", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.cookie-banner__body,
 .cookie-banner p {
   font-size: 13px;
-  line-height: 1.45;
+  line-height: 1.5;
   color: rgba(255, 255, 255, 0.78);
   margin: 0;
-  max-width: 42rem;
+  max-width: none;
 }
 .cookie-banner a {
   color: #9ec5ff;
@@ -1153,30 +1175,44 @@ body {
   outline: 2px solid #fff;
   outline-offset: 2px;
 }
+.cookie-banner__actions {
+  display: flex;
+  width: 100%;
+  margin-top: 4px;
+}
+.cookie-banner__accept,
 .cookie-banner button {
-  background: var(--white-10);
-  border: 1px solid hsl(var(--border));
-  color: var(--white);
-  padding: 8px 18px;
-  border-radius: 6px;
+  background: #ffffff;
+  border: none;
+  color: #0b1220;
+  padding: 10px 18px;
+  border-radius: 8px;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   transition: background 0.2s;
+  min-height: 40px;
 }
-.cookie-banner button:hover { background: var(--white-25); }
-.cookie-banner button:focus-visible {
+.cookie-banner button:hover,
+.cookie-banner__accept:hover {
+  background: rgba(255, 255, 255, 0.92);
+}
+.cookie-banner button:focus-visible,
+.cookie-banner__accept:focus-visible {
   outline: 2px solid #fff;
   outline-offset: 2px;
 }
 @media (max-width: 768px) {
   .cookie-banner {
-    padding: 12px 16px 14px;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 12px;
-    text-align: left;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    width: auto;
+    max-width: none;
+    /* Leave clear lane for WhatsApp at bottom-right */
+    padding-right: 4.5rem;
   }
+  .cookie-banner__body,
   .cookie-banner p { font-size: 12px; }
 }
 
@@ -1404,41 +1440,40 @@ footer .heading-lg,
   background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
 }
 
-.wa-float {
-  background: #0b1220;
-  color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  box-shadow: 0 8px 24px rgba(11, 18, 32, 0.28);
-}
+/* wa-float / cookie-banner: primary rules above (executive polish) — no flat-bar overrides */
 
-.wa-float:hover {
-  box-shadow: 0 10px 28px rgba(11, 18, 32, 0.36);
-  border-color: rgba(255, 255, 255, 0.28);
+/* Homepage hero atmosphere — legacy navy depth without restoring old copy */
+.home-hero {
+  background-color: #070b14;
 }
-
-.cookie-banner {
-  background: rgba(11, 18, 32, 0.96);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 -4px 20px rgba(11, 18, 32, 0.2);
+.home-hero__atmosphere {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 70% 55% at 72% 38%, rgba(37, 99, 235, 0.16) 0%, transparent 58%),
+    radial-gradient(ellipse 55% 50% at 18% 78%, rgba(15, 45, 100, 0.28) 0%, transparent 52%),
+    linear-gradient(165deg, #070b14 0%, #0b1220 48%, #101a2c 100%);
 }
-
-.cookie-banner p {
-  color: rgba(255, 255, 255, 0.78);
+.home-hero__mesh {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.85;
+  background-image:
+    repeating-linear-gradient(
+      -28deg,
+      transparent 0,
+      transparent 12px,
+      rgba(148, 180, 255, 0.035) 12px,
+      rgba(148, 180, 255, 0.035) 13px
+    );
+  mask-image: radial-gradient(ellipse 85% 75% at 50% 45%, #000 20%, transparent 78%);
 }
-
-.cookie-banner a {
-  color: #9ec5ff;
-}
-
-.cookie-banner button {
-  background: #ffffff;
-  color: #0b1220;
-  border: none;
-  border-radius: 6px;
-}
-
-.cookie-banner button:hover {
-  background: rgba(255, 255, 255, 0.9);
+@media (prefers-reduced-motion: reduce) {
+  .home-hero__mesh { opacity: 0.35; }
 }
 
 .post-body strong {
