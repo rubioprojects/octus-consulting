@@ -6,6 +6,7 @@ import Eyebrow from "../components/system/Eyebrow";
 import OctusIcon from "../components/icons/OctusIcon";
 import OctusStripSeparatorIcon from "../components/OctusStripSeparatorIcon";
 import { ENGAGEMENT_MODELS, SOLUTION_HUBS } from "../lib/commercial";
+import { BRAND } from "../lib/brand";
 import {
   CTA_ASSESS_LABEL,
   CTA_DISCUSS_LABEL,
@@ -66,7 +67,12 @@ export default function HomePage() {
       <section className="home-hero relative flex min-h-[88vh] items-center overflow-hidden pt-28 surface-dark px-4 sm:px-6 lg:px-8 md:pt-32">
         <div className="home-hero__atmosphere" aria-hidden="true" />
         <div className="home-hero__mesh" aria-hidden="true" />
-        <div className="relative z-10 mx-auto w-full max-w-[56rem]">
+        <div
+          className="octus-dark-hero__arcs"
+          aria-hidden="true"
+          style={{ backgroundImage: `url('${BRAND.motifs.arcSecondary}')` }}
+        />
+        <div className="relative z-10 mx-auto w-full max_w-[56rem]">
           <Eyebrow tone="dark" className="mb-8 md:mb-10">
             Regulated Operations
           </Eyebrow>

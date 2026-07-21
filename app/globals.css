@@ -50,19 +50,19 @@
     --popover: 50 10% 98%;
     --popover-foreground: 220 14% 11%;
 
-    --primary: 213 64% 25%;
+    --primary: 215 100% 38%; /* official deep blue #0052C4 */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 40 13% 94%;
-    --secondary-foreground: 220 14% 11%;
+    --secondary: 48 69% 90%;
+    --secondary-foreground: 0 0% 17%;
 
-    --muted: 40 13% 94%;
-    --muted-foreground: 215 10% 37%;
+    --muted: 0 0% 93%;
+    --muted-foreground: 0 0% 32%;
 
-    --accent: 0 50% 37%;
+    --accent: 0 93% 34%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 50% 37%;
+    --destructive: 0 93% 34%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 40 8% 88%;
@@ -73,15 +73,19 @@
 
     --radius: 0.5rem;
 
-    --brand-blue: 213 64% 25%;
-    --brand-blue-light: 212 100% 63%;
-    --brand-blue-deep: 215 100% 38%;
-    --brand-red: 0 50% 37%;
-    --brand-cream: 40 13% 94%;
-    --brand-dark: 220 14% 11%;
+    /* Official Brand Kit OCTUS CONSULTING (Canva kAG50O4qY6Q) — HEX locked 2026-07-21 */
+    --brand-mark: 216 100% 50%; /* #0065FF symbol blue */
+    --brand-blue: 215 100% 38%; /* #0052C4 deep / primary chrome */
+    --brand-blue-light: 210 100% 63%; /* #42A1FF */
+    --brand-blue-mid: 212 100% 49%; /* #0074F8 */
+    --brand-blue-deep: 214 100% 44%; /* #0062DE royal */
+    --brand-red: 0 93% 34%; /* #A80606 */
+    --brand-cream: 48 69% 90%; /* #F7F0D4 */
+    --brand-dark: 0 0% 17%; /* #2B2B2B charcoal */
+    --brand-off-white: 0 0% 98%; /* #FAFAFA */
 
-    --surface-elevated: 40 13% 94%;
-    --surface-dark: 220 14% 11%;
+    --surface-elevated: 48 69% 90%;
+    --surface-dark: 0 0% 17%;
 
     --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.06), 0 1px 2px -1px rgb(0 0 0 / 0.06);
     --shadow-card-hover: 0 4px 12px -2px rgb(0 0 0 / 0.08), 0 2px 6px -2px rgb(0 0 0 / 0.04);
@@ -1468,9 +1472,9 @@ footer .heading-lg,
   z-index: 0;
   pointer-events: none;
   background:
-    radial-gradient(ellipse 72% 58% at 70% 36%, rgba(37, 99, 235, 0.2) 0%, transparent 56%),
-    radial-gradient(ellipse 52% 48% at 16% 82%, rgba(12, 42, 96, 0.34) 0%, transparent 50%),
-    linear-gradient(168deg, #060a12 0%, #0b1220 46%, #121c30 100%);
+    radial-gradient(ellipse 72% 58% at 70% 36%, rgba(0, 101, 255, 0.22) 0%, transparent 56%),
+    radial-gradient(ellipse 52% 48% at 16% 82%, rgba(0, 82, 196, 0.36) 0%, transparent 50%),
+    linear-gradient(168deg, #060a12 0%, #0b1220 46%, #2b2b2b 100%);
 }
 .home-hero__mesh,
 .octus-dark-hero__mesh {
@@ -1484,10 +1488,24 @@ footer .heading-lg,
       -28deg,
       transparent 0,
       transparent 11px,
-      rgba(148, 180, 255, 0.04) 11px,
-      rgba(148, 180, 255, 0.04) 12px
+      rgba(66, 161, 255, 0.045) 11px,
+      rgba(66, 161, 255, 0.045) 12px
     );
   mask-image: radial-gradient(ellipse 88% 78% at 48% 42%, #000 18%, transparent 76%);
+}
+.octus-dark-hero__arcs {
+  position: absolute;
+  right: -8%;
+  top: -12%;
+  width: min(72vw, 720px);
+  height: min(72vw, 720px);
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.55;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  mask-image: linear-gradient(120deg, transparent 10%, #000 45%, transparent 85%);
 }
 .octus-dark-hero__seam {
   position: absolute;
@@ -1520,7 +1538,7 @@ footer .heading-lg,
   right: 0;
   bottom: 0;
   height: 2px;
-  background: linear-gradient(90deg, transparent 0%, rgba(37, 99, 235, 0.45) 18%, rgba(37, 99, 235, 0.45) 82%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, rgba(0, 101, 255, 0.5) 18%, rgba(0, 101, 255, 0.5) 82%, transparent 100%);
   opacity: 0.85;
   pointer-events: none;
 }

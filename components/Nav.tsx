@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../lib/cta";
+import BrandLockup from "./BrandLockup";
 
 const primaryLinks = [
   { label: "Solutions", href: "/solutions" },
@@ -60,15 +61,7 @@ export default function Nav() {
             className="flex shrink-0 items-center no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
             aria-label="Octus Consulting home"
           >
-            <img
-              src="/logo-nav.png"
-              alt=""
-              width={200}
-              height={52}
-              decoding="async"
-              className="site-header__logo h-8 w-auto md:h-9"
-              style={{ imageRendering: "auto" }}
-            />
+            <BrandLockup variant="on-light" className="site-header__logo h-8 w-auto md:h-9" priority />
           </Link>
 
           <div className="hidden items-center gap-8 lg:gap-10 md:flex">

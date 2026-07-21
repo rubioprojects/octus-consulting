@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import Nav from "../components/Nav";
 import CookieBanner from "../components/CookieBanner";
+import BrandLockup from "../components/BrandLockup";
 import { CTA_DISCUSS_LABEL, MAILTO_INFO, WHATSAPP_DISCUSS_URL } from "../lib/cta";
 import "./globals.css";
 
@@ -49,14 +50,16 @@ export const metadata: Metadata = {
     description: "Regulated operations don't fail randomly. They fail structurally. Octus identifies what is broken — and fixes it.",
     url: "https://octusconsulting.com",
     siteName: "Octus Consulting",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Octus Consulting" }],
+    images: [
+      { url: "/brand/social/octus-og-default.png", width: 1200, height: 630, alt: "Octus Consulting" },
+    ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Octus Consulting",
     description: "Regulated operations don't fail randomly. They fail structurally.",
-    images: ["/og-image.png"],
+    images: ["/brand/social/octus-og-default.png"],
   },
 };
 
@@ -91,14 +94,7 @@ export default function RootLayout({
             <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:gap-8 lg:grid-cols-3 xl:grid-cols-6">
               <div className="flex flex-col gap-3 xl:col-span-1">
                 <a href="/" className="inline-flex items-center no-underline" aria-label="Octus Consulting">
-                  <img
-                    src="/logo-nav.png"
-                    alt="Octus Consulting"
-                    width={200}
-                    height={40}
-                    decoding="async"
-                    className="h-8 w-auto"
-                  />
+                  <BrandLockup variant="on-dark" className="h-8 w-auto" />
                 </a>
                 <p className="max-w-xs text-sm font-normal leading-relaxed text-white/70">
                   Premium international execution partner for highly regulated operations.
