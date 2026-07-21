@@ -1,38 +1,40 @@
 # Wave 4 dependency — People Decision Register
 
-**Status:** BLOCKING_INPUT_FOR_WAVE_4  
-**Created:** 2026-07-21  
-**Wave:** 3 (Commercial R1 Soft IA) — note only; no `/team` mutation in this wave.
+**Status:** `GOVERNANCE_PACKAGE_READY` — **Wave 4 code still blocked** until human decisions + `WAVE_4_CODE_IMPLEMENTATION: AUTHORIZED`  
+**Updated:** 2026-07-21 (`OCTUS_PEOPLE_FINAL_LOCK_AND_IMPLEMENTATION_READINESS`)  
+**Main SHA (subject):** `5b6d4a0a6893442bd97d58b7d621de3cee5c7fe8`
 
 ## Requirement
 
-Wave 4 (People / Trust presentation) must not start until the **People Decision Register** is completed and human-approved.
+Wave 4 (People / Trust presentation) must not start code mutation until:
 
-Governing references (axle-dev-agent):
+1. People Final Lock human approvals completed (`docs/people/OCTUS_PEOPLE_FINAL_LOCK.md` in axle-dev-agent);  
+2. People Decision Register STATUS fields filled;  
+3. Explicit `WAVE_4_CODE_IMPLEMENTATION: AUTHORIZED`.
 
-- `docs/people/OCTUS_PEOPLE_DECISION_REGISTER.md`
-- `docs/people/OCTUS_PEOPLE_CURRENT_STATE.md`
-- `docs/people/OCTUS_LEADERSHIP_ARCHITECTURE.md`
-- `docs/website-closeout/OCTUS_WEBSITE_PRODUCTION_CLOSEOUT_PROGRAM.md`
+## Architecture locked
 
-## Wave 3 constraints (honoured)
+Option A: Leadership · Core Specialists · (optional Operations & Delivery) · International Network on `/partners`.
 
-- `/team` was **not** rebuilt.
-- No people were removed, added or renamed.
-- Titles, bios and portraits were **not** altered.
-- Network participants belong on `/partners` (generic classes only) — not on `/team`.
+## Strategic inclusion locked (do not remove without human authorization)
 
-## Human context (do not remove without explicit authorization)
+- Esther Vendrami  
+- Caroline Giovanetti  
+- Larissa Carvalho  
+- Bianca Carolina Oliveira Andrade  
 
-The following individuals are strategically important and must not be removed from the public people surface without explicit human authorization:
+Titles, bios, grouping labels, and photography for these profiles remain human-approval items.
 
-- Esther Vendrami
-- Caroline Giovanetti
-- Larissa Carvalho
-- Bianca Carolina Oliveira Andrade
+## Still blocking code
 
-This is context for Wave 4 planning only.
+- Employment STATUS for unresolved roster members  
+- Leadership titles (Rubio / Maria Cristina)  
+- Scrubbed bios  
+- 1200² photo acquisition  
+- Careers `team-group.jpg` risk decision  
 
-## Next action
+## Wave 3 constraints (honoured; still true)
 
-Complete and approve the People Decision Register before authorizing Wave 4 code mutation on `/team`.
+- `/team` not rebuilt in Wave 3  
+- No people mutation in Wave 3  
+- Network on `/partners`, not `/team`

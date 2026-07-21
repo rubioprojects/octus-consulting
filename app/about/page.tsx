@@ -50,6 +50,11 @@ export default function AboutPage() {
             Octus structures what needs to hold — and coordinates until it
             actually does.
           </p>
+          <p className="body-text" style={{ marginTop: "24px" }}>
+            <Link href="/team" className="text-primary underline-offset-4 hover:underline">
+              Meet the team →
+            </Link>
+          </p>
         </div>
       </section>
 
