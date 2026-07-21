@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import OctusStripSeparatorIcon from "./OctusStripSeparatorIcon";
 
 /**
  * Essential-cookie notice only.
@@ -35,7 +36,10 @@ export default function CookieBanner() {
       role="region"
       aria-label="Cookie notice"
     >
-      <p className="cookie-banner__title">Essential cookies</p>
+      <div className="cookie-banner__header">
+        <OctusStripSeparatorIcon className="cookie-banner__mark" />
+        <p className="cookie-banner__title">Essential cookies</p>
+      </div>
       <p className="cookie-banner__body">
         This site uses essential cookies to operate.{" "}
         <a href="/cookies">Cookie Policy</a>

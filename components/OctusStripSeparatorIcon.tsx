@@ -1,6 +1,6 @@
 /**
  * Octus mark for inline separators (authority strip, etc.).
- * Vector version avoids PNG black-matte boxes on dark blue backgrounds.
+ * Optical size tuned for dark navy strips — slightly tighter circles than logo-symbol.
  */
 export default function OctusStripSeparatorIcon({ className }: { className?: string }) {
   return (
@@ -13,9 +13,9 @@ export default function OctusStripSeparatorIcon({ className }: { className?: str
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden
     >
-      <circle cx="13" cy="16" r="9.5" fill="currentColor" />
-      <circle cx="25.5" cy="11" r="5" fill="currentColor" />
-      <circle cx="25.5" cy="21" r="5" fill="currentColor" />
+      <circle cx="12.5" cy="16" r="9" fill="currentColor" />
+      <circle cx="24.75" cy="11.25" r="4.5" fill="currentColor" />
+      <circle cx="24.75" cy="20.75" r="4.5" fill="currentColor" />
     </svg>
   );
 }

@@ -98,6 +98,7 @@ export default function HomePage() {
             </CtaLink>
           </div>
         </div>
+        <div className="octus-dark-hero__seam" aria-hidden="true" />
       </section>
 
       <section
@@ -110,10 +111,10 @@ export default function HomePage() {
             {authority.items.map((item, i) => (
               <Fragment key={item.label}>
                 {i > 0 && (
-                  <OctusStripSeparatorIcon className="h-3 w-3 shrink-0 text-white/25" />
+                  <OctusStripSeparatorIcon className="h-2.5 w-2.5 shrink-0 text-white/22" />
                 )}
-                <span className="pointer-events-none inline-flex select-none items-center gap-2 whitespace-nowrap">
-                  <OctusIcon name={item.icon} size={14} className="text-white/40" />
+                <span className="pointer-events-none inline-flex select-none items-center gap-2.5 whitespace-nowrap">
+                  <OctusIcon name={item.icon} size={13} className="text-white/45 opacity-90" />
                   {item.label}
                 </span>
               </Fragment>
