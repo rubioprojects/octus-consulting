@@ -5,10 +5,18 @@ import { useState, useEffect } from "react";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../lib/cta";
 
 const primaryLinks = [
-  { label: "About", href: "/about" },
   { label: "Solutions", href: "/solutions" },
   { label: "Markets", href: "/markets" },
-  { label: "Insights", href: "/insights" },
+  { label: "How we engage", href: "/how-we-engage" },
+  { label: "Intelligence", href: "/intelligence" },
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
+];
+
+const supportingLinks = [
+  { label: "Team", href: "/team" },
+  { label: "Careers", href: "/careers" },
+  { label: "Jurisdictions", href: "/jurisdictions" },
 ];
 
 const linkClass =
@@ -112,6 +120,19 @@ export default function Nav() {
               key={l.href}
               href={l.href}
               className="block border-b border-border py-4 font-sans text-base text-foreground no-underline transition-colors hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-primary"
+              onClick={() => setMobileOpen(false)}
+            >
+              {l.label}
+            </Link>
+          ))}
+          <p className="pt-6 pb-2 font-sans text-xs font-medium uppercase tracking-[0.15em] text-muted-foreground">
+            More
+          </p>
+          {supportingLinks.map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              className="block border-b border-border py-3 font-sans text-sm text-muted-foreground no-underline transition-colors hover:text-primary"
               onClick={() => setMobileOpen(false)}
             >
               {l.label}

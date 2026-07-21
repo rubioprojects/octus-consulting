@@ -14,7 +14,7 @@ export default function PrivateClientsPage() {
       {/* ─── HERO ─────────────────────────────────────────────────── */}
       <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <span className="label">Ownership & UBO Architecture</span>
+          <span className="label">Corporate &amp; Cross-Border · Ownership layer</span>
           <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
             The individual behind the operation
             <br />
@@ -32,9 +32,9 @@ export default function PrivateClientsPage() {
               letterSpacing: "-0.01em",
             }}
           >
-            This is not private structuring in isolation. It is ownership
-            architecture tied to regulated operations, licensing exposure and
-            banking scrutiny.
+            Ownership &amp; UBO architecture for individuals behind regulated operations —
+            coordinated with Corporate &amp; Cross-Border Structuring, not as standalone
+            private-wealth planning.
           </p>
           <p className="text-lg leading-relaxed text-white/60 max-w-2xl">
             Regulated operations are scrutinised at every layer — including the
@@ -47,8 +47,14 @@ export default function PrivateClientsPage() {
             individual compliance frameworks — designed to satisfy regulatory
             and banking requirements while managing personal exposure.
           </p>
-          <div style={{ marginTop: "48px" }}>
+          <div style={{ marginTop: "48px" }} className="flex flex-wrap gap-4">
             <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+            <Link
+              href="/solutions/corporate-cross-border"
+              className="inline-flex h-12 items-center justify-center rounded-sm border border-white/25 px-8 text-base font-medium text-white/80 no-underline transition-colors hover:border-white/45 hover:text-white"
+            >
+              Corporate &amp; Cross-Border hub →
+            </Link>
           </div>
         </div>
       </section>

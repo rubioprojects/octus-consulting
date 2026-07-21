@@ -5,6 +5,7 @@ import { CtaLink } from "../components/system/CtaButton";
 import Eyebrow from "../components/system/Eyebrow";
 import OctusIcon from "../components/icons/OctusIcon";
 import OctusStripSeparatorIcon from "../components/OctusStripSeparatorIcon";
+import { ENGAGEMENT_MODELS, SOLUTION_HUBS } from "../lib/commercial";
 import {
   CTA_ASSESS_LABEL,
   CTA_DISCUSS_LABEL,
@@ -19,25 +20,25 @@ import {
  */
 const AUTHORITY_STRIP = {
   en: {
-    aria: "Core services",
+    aria: "Core solutions",
     items: [
-      "Licensing",
-      "Regulatory Structuring",
-      "Compliance",
+      "Regulatory Strategy",
       "Banking & Payments",
-      "Market Entry",
-      "High-Risk Operations",
+      "Compliance & Risk",
+      "Corporate Structure",
+      "Legal Architecture",
+      "Remediation",
     ],
   },
   pt: {
-    aria: "Serviços centrais",
+    aria: "Soluções centrais",
     items: [
-      "Licenciamento",
-      "Estruturação regulatória",
-      "Compliance",
+      "Estratégia regulatória",
       "Banking e pagamentos",
-      "Entrada em mercado",
-      "Operações de alto risco",
+      "Compliance e risco",
+      "Estrutura societária",
+      "Arquitetura jurídica",
+      "Remediação",
     ],
   },
 } as const;
@@ -45,48 +46,17 @@ const AUTHORITY_STRIP = {
 const homeAuthorityLocale: keyof typeof AUTHORITY_STRIP = "en";
 
 export const metadata = {
-  title: "Regulatory & Operational Structuring",
+  title: "Premium Execution for Regulated Operations",
   description:
-    "Regulated operations don't fail randomly. They fail structurally. Octus fixes regulatory, licensing and banking problems in highly regulated markets.",
+    "Octus is a premium international execution partner for highly regulated operations — licensing, banking, compliance, structure and remediation under one accountable layer.",
 };
 
-const moduleRows = [
-  {
-    num: "01",
-    title: "Regulatory Structuring",
-    href: "/regulatory",
-    featured: [
-      { label: "iGaming Licensing", href: "/solutions/regulatory/igaming-licensing" },
-      { label: "Fintech Licensing", href: "/solutions/regulatory/fintech-licensing" },
-      { label: "Banking & Payments", href: "/solutions/regulatory/banking-payments" },
-    ],
-  },
-  {
-    num: "02",
-    title: "Compliance & Risk",
-    href: "/compliance",
-    featured: [
-      { label: "Compliance-as-a-Service", href: "/solutions/compliance/compliance-as-a-service" },
-      { label: "DPO-as-a-Service", href: "/solutions/compliance/dpo-as-a-service" },
-      { label: "AML/KYC", href: "/solutions/compliance/aml-kyc" },
-      { label: "GLI Readiness", href: "/solutions/compliance/gli-readiness" },
-    ],
-  },
-  { num: "03", title: "Legal Architecture", href: "/legal-architecture", featured: [] },
-  {
-    num: "04",
-    title: "Corporate Structuring",
-    href: "/corporate",
-    featured: [
-      { label: "Company Formation", href: "/solutions/corporate/company-formation" },
-      { label: "Offshore Structuring", href: "/solutions/corporate/offshore-structuring" },
-      { label: "Holding Design", href: "/solutions/corporate/holding-design" },
-    ],
-  },
-  { num: "05", title: "Ownership & UBO Architecture", href: "/private-clients", featured: [] },
-  { num: "06", title: "Audit & Readiness", href: "/audit", featured: [] },
-  { num: "07", title: "International Hub", href: "/international-hub", featured: [] },
-];
+const solutionRows = SOLUTION_HUBS.map((hub) => ({
+  num: hub.num,
+  title: hub.title,
+  href: hub.href,
+  featured: hub.relatedDeep.slice(0, 3),
+}));
 
 export default function HomePage() {
   const authority = AUTHORITY_STRIP[homeAuthorityLocale];
@@ -104,8 +74,8 @@ export default function HomePage() {
             <span className="text-white/85">They fail structurally.</span>
           </h1>
           <p className="mt-8 mb-12 max-w-2xl text-base leading-[1.7] text-white/75 sm:text-lg md:mt-10 md:mb-14">
-            We fix regulatory, licensing and banking problems in highly regulated markets — and build
-            the structures that prevent them from happening again.
+            Complex regulated problems need an accountable execution partner — licensing, banking,
+            compliance and structure coordinated so the operation can hold under scrutiny.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
             <CtaLink
@@ -149,22 +119,18 @@ export default function HomePage() {
 
       <section className="border-b border-border bg-background py-14 md:py-16">
         <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-4 md:gap-0">
-            <div className="flex flex-col items-center text-center md:border-r md:border-border">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 md:gap-0">
+            <div className="flex flex-col items-center text-center sm:border-r sm:border-border">
               <span className="font-heading text-3xl font-bold text-primary md:text-4xl">15+</span>
               <span className="mt-2 font-sans text-sm text-muted-foreground">jurisdictions</span>
             </div>
-            <div className="flex flex-col items-center text-center md:border-r md:border-border">
+            <div className="flex flex-col items-center text-center sm:border-r sm:border-border">
               <span className="font-heading text-3xl font-bold text-primary md:text-4xl">2019</span>
               <span className="mt-2 font-sans text-sm text-muted-foreground">Operating since</span>
             </div>
-            <div className="flex flex-col items-center text-center md:border-r md:border-border">
-              <span className="font-heading text-3xl font-bold text-primary md:text-4xl">48h</span>
-              <span className="mt-2 font-sans text-sm text-muted-foreground">first response</span>
-            </div>
             <div className="flex flex-col items-center text-center">
-              <span className="font-heading text-3xl font-bold text-primary md:text-4xl">7</span>
-              <span className="mt-2 font-sans text-sm text-muted-foreground">operational modules</span>
+              <span className="font-heading text-3xl font-bold text-primary md:text-4xl">6</span>
+              <span className="mt-2 font-sans text-sm text-muted-foreground">solutions</span>
             </div>
           </div>
           <p className="mx-auto mt-10 max-w-xl text-center font-sans text-sm leading-relaxed text-muted-foreground">
@@ -176,7 +142,7 @@ export default function HomePage() {
       <section className="surface-elevated py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <div className="mb-12 max-w-2xl md:mb-16">
-            <p className="section-label mb-4 block">What we fix</p>
+            <p className="section-label mb-4 block">The regulated problem</p>
             <h2 className="heading-section mb-6">What we fix.</h2>
             <p className="body-large mb-4">
               Licences get approved but banking fails. Compliance exists but does not function. Payment providers exit. Growth exposes structural weaknesses.
@@ -347,26 +313,28 @@ export default function HomePage() {
       <section className="bg-background py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <div className="mb-12 max-w-2xl md:mb-16">
-            <p className="section-label mb-4 block">Selected mandates.</p>
-            <h2 className="heading-section mb-6">Selected mandates.</h2>
-            <p className="body-large">Real operations under pressure.</p>
+            <p className="section-label mb-4 block">Pressure patterns</p>
+            <h2 className="heading-section mb-6">Where regulated operations stall.</h2>
+            <p className="body-large">
+              Illustrative situations — not case studies, guarantees or claimed outcomes.
+            </p>
           </div>
           <div className="grid gap-6 md:grid-cols-3 md:gap-8">
             {[
               {
-                tag: "iGaming · Curaçao",
-                title: "License active.\nNo bank account.",
-                body: "Active Curaçao license for 6 months, no operational account. We restructured the documentation, aligned AML policies and coordinated with three banks simultaneously. Account open in 11 weeks.",
+                tag: "Banking · Licensed operator",
+                title: "License in place.\nInfrastructure blocked.",
+                body: "The regulatory layer advanced while banking and payments rejected the operating reality. Structure, compliance and payment readiness need to move as one programme.",
               },
               {
-                tag: "Fintech · Brazil",
-                title: "International operator.\nNew regulated market.",
-                body: "We coordinated full corporate structuring, regulatory dossier and direct interaction with SPA/MF authorities for the Brazilian sports betting authorization process.",
+                tag: "Market entry · New venue",
+                title: "Expansion planned.\nPathway unclear.",
+                body: "Entering a regulated market requires sequencing of licensing, corporate architecture and banking readiness — not parallel vendors without a single accountable layer.",
               },
               {
-                tag: "Compliance · Audit readiness",
-                title: "GLI audit scheduled.\nNo evidence organized.",
-                body: "Full gap analysis, evidence register and readiness pack delivered in 6 weeks. Client entered audit with complete documentation and zero critical findings.",
+                tag: "Remediation · Under pressure",
+                title: "Audit or rejection.\nEvidence not operable.",
+                body: "Policies exist on paper while operational evidence, controls and ownership presentation cannot survive scrutiny. Remediation starts with assessment, not a catalogue.",
               },
             ].map((c) => (
               <div
@@ -406,12 +374,12 @@ export default function HomePage() {
       <section className="surface-elevated py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <div className="mb-12 max-w-2xl md:mb-16">
-            <p className="section-label mb-4 block">Explore</p>
+            <p className="section-label mb-4 block">Solutions</p>
             <div className="mb-4 flex flex-wrap gap-x-4 gap-y-2">
               {[
+                { label: "All solutions", href: "/solutions" },
                 { label: "Markets", href: "/markets" },
-                { label: "Jurisdictions", href: "/jurisdictions" },
-                { label: "Solutions", href: "/solutions" },
+                { label: "How we engage", href: "/how-we-engage" },
               ].map((item) => (
                 <Link
                   key={item.href}
@@ -422,9 +390,59 @@ export default function HomePage() {
                 </Link>
               ))}
             </div>
-            <h2 className="heading-section mb-6">Seven operational modules.</h2>
+            <h2 className="heading-section mb-6">Six solutions. One execution partner.</h2>
+            <p className="body-large text-muted-foreground">
+              Complex regulated problem → Octus assumes coordination → regulatory and operational
+              execution → stable operation.
+            </p>
           </div>
-          <HomeModulesAccordion modules={moduleRows} />
+          <HomeModulesAccordion modules={solutionRows} />
+        </div>
+      </section>
+
+      <section className="border-y border-border bg-background py-20 md:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-10 md:grid-cols-[1.2fr_1fr] md:items-center md:gap-16">
+            <div>
+              <p className="section-label mb-4 block">Crisis entry</p>
+              <h2 className="heading-section mb-4">
+                Operational Remediation &amp; Readiness
+              </h2>
+              <p className="body-large mb-6 text-muted-foreground">
+                When licensing is delayed, banking rejects the structure, compliance gaps surface, or
+                market entry is blocked — start here. Assessment before catalogue.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <CtaLink
+                  href={WHATSAPP_ASSESS_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {CTA_ASSESS_LABEL}
+                </CtaLink>
+                <Link
+                  href="/solutions/operational-remediation-readiness"
+                  className="inline-flex items-center font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
+                >
+                  Open remediation hub →
+                </Link>
+              </div>
+            </div>
+            <ul className="space-y-3 font-sans text-sm text-muted-foreground">
+              {[
+                "Licensing delay or stalled filings",
+                "Banking rejection or payment instability",
+                "Compliance gaps under scrutiny",
+                "Audit readiness problems",
+                "Blocked market entry or regulatory exposure",
+              ].map((item) => (
+                <li key={item} className="flex gap-3 border-b border-border/60 pb-3">
+                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" aria-hidden />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -433,32 +451,35 @@ export default function HomePage() {
           <div className="operate-grid">
             <div>
               <p className="label">How we operate</p>
-              <h2 className="heading-md operate-title">Execution, not advisory.</h2>
+              <h2 className="heading-md operate-title">Accountable execution.</h2>
               <p className="body-lg operate-body">
-                Octus acts as the execution layer behind your operation. We align licensing, compliance, banking and structure under one point of contact.
+                Octus is the coordination and execution layer behind regulated operations — licensing,
+                compliance, banking and structure under one point of accountability.
               </p>
               <p className="body operate-body" style={{ marginTop: "16px" }}>
-                Built in iGaming and applied across fintech, crypto and other regulated sectors since 2019.
+                Built in iGaming and applied across fintech, digital assets and other regulated
+                sectors. We do not guarantee licensing, banking or outcomes outside Octus control.
               </p>
+              <Link
+                href="/how-we-engage"
+                className="mt-6 inline-flex font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
+              >
+                How we engage →
+              </Link>
             </div>
             <div>
               <div className="juris-strip operate-juris">
-                <p className="juris-strip-label">Active jurisdictions</p>
+                <p className="juris-strip-label">Markets &amp; jurisdictions</p>
                 <div className="chip-row">
-                  <span className="chip-juris">Brazil (SPA/MF)</span>
-                  <span className="chip-juris">UK</span>
-                  <Link href="/jurisdictions/malta" className="chip-juris chip-juris-link">Malta (MGA)</Link>
-                  <span className="chip-juris">Cyprus</span>
-                  <span className="chip-juris">BVI</span>
+                  <Link href="/markets/igaming" className="chip-juris chip-juris-link">iGaming</Link>
+                  <Link href="/markets/fintech" className="chip-juris chip-juris-link">Fintech</Link>
+                  <Link href="/markets/crypto" className="chip-juris chip-juris-link">Digital Assets</Link>
+                  <Link href="/markets/high-risk" className="chip-juris chip-juris-link">High-Risk</Link>
+                  <Link href="/jurisdictions/malta" className="chip-juris chip-juris-link">Malta</Link>
                   <Link href="/jurisdictions/portugal" className="chip-juris chip-juris-link">Portugal</Link>
-                  <Link href="/jurisdictions/curacao" className="chip-juris chip-juris-link">Curaçao (GCB)</Link>
+                  <Link href="/jurisdictions/curacao" className="chip-juris chip-juris-link">Curaçao</Link>
                   <Link href="/jurisdictions/uae" className="chip-juris chip-juris-link">UAE</Link>
-                  <span className="chip-juris">Cayman Islands</span>
-                  <span className="chip-juris">Mexico</span>
-                  <span className="chip-juris">Panama</span>
-                  <Link href="/jurisdictions/isle-of-man" className="chip-juris chip-juris-link">Isle of Man</Link>
-                  <span className="chip-juris">Gibraltar</span>
-                  <span className="chip-juris-more">+more</span>
+                  <Link href="/jurisdictions" className="chip-juris chip-juris-link">All jurisdictions →</Link>
                 </div>
               </div>
             </div>
@@ -468,21 +489,29 @@ export default function HomePage() {
 
       <section className="bg-background py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <div className="mb-12 max-w-2xl md:mb-16">
-            <p className="section-label mb-4 block">How we work with you</p>
-            <h2 className="heading-section">
-              Every operation requires a different level of involvement.
-            </h2>
+          <div className="mb-12 flex flex-wrap items-end justify-between gap-4 md:mb-16">
+            <div className="max-w-2xl">
+              <p className="section-label mb-4 block">How we engage</p>
+              <h2 className="heading-section">
+                Accountability scales with the mandate.
+              </h2>
+            </div>
+            <Link
+              href="/how-we-engage"
+              className="inline-flex items-center gap-2 font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
+            >
+              Full engagement models
+              <OctusIcon name="arrow" size={16} />
+            </Link>
           </div>
-          <div className="grid gap-6 md:grid-cols-3 md:gap-8">
-            {[
-              ["Project", "Fixed scope for licensing or market entry"],
-              ["Ongoing", "Continuous regulatory and compliance coverage"],
-              ["Hour Package", "Pre-paid hours for recurring demands"],
-            ].map(([title, body]) => (
-              <div key={title} className="rounded-lg bg-secondary p-6 text-center md:p-8">
-                <h3 className="mb-3 font-sans text-lg font-semibold text-primary">{title}</h3>
-                <p className="body-text">{body}</p>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+            {ENGAGEMENT_MODELS.map((model) => (
+              <div key={model.num} className="border-t border-border pt-6">
+                <span className="mb-3 block font-sans text-xs font-medium text-muted-foreground">
+                  {model.num}
+                </span>
+                <h3 className="mb-3 font-sans text-base font-semibold text-primary">{model.title}</h3>
+                <p className="body-text text-sm">{model.body}</p>
               </div>
             ))}
           </div>
@@ -494,17 +523,17 @@ export default function HomePage() {
           <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
             <div className="max-w-2xl">
               <p className="section-label mb-4 block">Intelligence</p>
-              <h2 className="heading-section">Institutional intelligence, not a blog.</h2>
+              <h2 className="heading-section">Authority for operators who need structure.</h2>
               <p className="body-large mt-4">
-                Insights is becoming the Octus Intelligence Hub — regulatory, market, operational
-                and founder intelligence for operators who need structure, not noise.
+                Regulatory intelligence, market signals, operational insights and executive
+                perspectives — bridged to the existing Insights library.
               </p>
             </div>
             <Link
-              href="/insights"
+              href="/intelligence"
               className="inline-flex items-center gap-2 font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
             >
-              Explore Insights
+              Open Intelligence
               <OctusIcon name="arrow" size={16} />
             </Link>
           </div>
