@@ -3,9 +3,9 @@ import { BRAND } from "../lib/brand";
 type Variant = "on-light" | "on-dark";
 
 /**
- * Official Octus lockup — uses approved Brand Kit exports (PNG masters).
- * on-light: blue symbol + dark wordmark
- * on-dark: blue symbol + white wordmark (preferred on navy / charcoal)
+ * Official Octus lockup.
+ * Uses approved symbol SVG (scalable) + Unigeo wordmark text.
+ * Full lockup SVG masters are not in the repository — PNG lockups remain available as fallback assets.
  */
 export default function BrandLockup({
   variant = "on-light",
@@ -16,19 +16,25 @@ export default function BrandLockup({
   className?: string;
   priority?: boolean;
 }) {
-  const src =
-    variant === "on-dark" ? BRAND.lockup.horizontalOnDark : BRAND.lockup.horizontalOnLight;
+  const symbolSrc = BRAND.symbol.blue;
+  const wordTone = variant === "on-dark" ? "brand-lockup__wordmark--on-dark" : "brand-lockup__wordmark--on-light";
+
   return (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img
-      src={src}
-      alt="Octus Consulting"
-      width={200}
-      height={52}
-      decoding="async"
-      {...(priority ? { fetchPriority: "high" as const } : {})}
-      className={className}
-      style={{ imageRendering: "auto" }}
-    />
+    <span className={`brand-lockup ${className}`} role="img" aria-label="Octus Consulting">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={symbolSrc}
+        alt=""
+        width={36}
+        height={36}
+        decoding="async"
+        aria-hidden="true"
+        {...(priority ? { fetchPriority: "high" as const } : {})}
+        className="brand-lockup__symbol"
+      />
+      <span className={`brand-lockup__wordmark ${wordTone}`} aria-hidden="true">
+        OCTUS
+      </span>
+    </span>
   );
 }

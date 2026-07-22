@@ -2263,7 +2263,7 @@ footer .heading-lg,
 /* Intelligence — editorial index band */
 .intelligence-editorial-band {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
   margin-bottom: 2.5rem;
   padding: 1.5rem 0;
@@ -2272,7 +2272,7 @@ footer .heading-lg,
 }
 @media (min-width: 1024px) {
   .intelligence-editorial-band {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 @media (max-width: 768px) {
@@ -2764,5 +2764,39 @@ footer .heading-lg,
   }
   .authority-asset__section {
     break-inside: avoid;
+  }
+}
+
+/* Brand lockup — SVG symbol + Unigeo wordmark */
+.brand-lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  height: 100%;
+  max-height: inherit;
+}
+.brand-lockup__symbol {
+  display: block;
+  height: 100%;
+  width: auto;
+  max-height: 2.75rem;
+}
+.brand-lockup__wordmark {
+  font-family: var(--font-unigeo), "Unigeo64", sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.brand-lockup__wordmark--on-light {
+  color: #0b1220;
+}
+.brand-lockup__wordmark--on-dark {
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .brand-lockup__wordmark {
+    font-size: 1.15rem;
   }
 }

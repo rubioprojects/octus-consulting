@@ -51,15 +51,21 @@ export const metadata: Metadata = {
     url: "https://octusconsulting.com",
     siteName: "Octus Consulting",
     images: [
-      { url: "/brand/social/octus-og-default.png", width: 1200, height: 630, alt: "Octus Consulting" },
+      {
+        url: "https://octusconsulting.com/brand/social/octus-og-default.png",
+        width: 1200,
+        height: 630,
+        alt: "Octus Consulting",
+      },
     ],
     type: "website",
+    locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
     title: "Octus Consulting",
     description: "Regulated operations don't fail randomly. They fail structurally.",
-    images: ["/brand/social/octus-og-default.png"],
+    images: ["https://octusconsulting.com/brand/social/octus-og-default.png"],
   },
 };
 

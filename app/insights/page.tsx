@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 import { getAllPosts } from "../../lib/posts";
 import PageHero from "../../components/system/PageHero";
@@ -9,7 +10,16 @@ import { CtaLink } from "../../components/system/CtaButton";
 export const metadata = {
   title: "Insights",
   description:
-    "Regulatory analysis, legal developments and operational intelligence from the Octus team — covering Brazil, iGaming, compliance and international structured markets.",
+    "Published articles and analysis from Octus — regulatory developments, market infrastructure and operational risk across regulated markets.",
+  openGraph: {
+    title: "Insights | Octus Consulting",
+    description:
+      "Published analysis from the Octus Intelligence system — Brazil, iGaming, compliance and international regulated markets.",
+    url: "https://octusconsulting.com/insights",
+  },
+  alternates: {
+    canonical: "https://octusconsulting.com/insights",
+  },
 };
 
 export default function InsightsPage() {
@@ -19,9 +29,18 @@ export default function InsightsPage() {
     <main>
       <PageHero
         eyebrow="Insights"
-        title="Regulatory intelligence."
+        title="Published analysis."
         titleSecondLine="From the field."
-        description="Analysis, legal developments and operational intelligence from the Octus team — covering Brazil, iGaming, compliance and international regulated markets. Visual shell for the Octus Intelligence Hub."
+        description={
+          <>
+            Articles and regulatory analysis from the Octus team. Insights is the published library
+            inside{" "}
+            <Link href="/intelligence" className="text-white underline-offset-4 hover:underline">
+              Octus Intelligence
+            </Link>
+            — the broader knowledge system for regulated decisions.
+          </>
+        }
       />
 
       <Section>

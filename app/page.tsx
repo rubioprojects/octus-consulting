@@ -11,12 +11,12 @@ import OctusChapterTransition from "../components/system/OctusChapterTransition"
 import { SOLUTION_HUBS } from "../lib/commercial";
 import { BRAND } from "../lib/brand";
 import {
+  ASSESS_PATH,
   CTA_ASSESS_LABEL,
   CTA_DISCUSS_LABEL,
   CTA_EMAIL_LABEL,
   CTA_HOW_WE_WORK_LABEL,
   MAILTO_DISCUSS,
-  WHATSAPP_ASSESS_URL,
   WHATSAPP_DISCUSS_URL,
 } from "../lib/cta";
 
@@ -110,12 +110,7 @@ export default function HomePage() {
             >
               {CTA_DISCUSS_LABEL}
             </CtaLink>
-            <CtaLink
-              href={WHATSAPP_ASSESS_URL}
-              variant="on-dark-secondary"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <CtaLink href={ASSESS_PATH} variant="on-dark-secondary">
               {CTA_ASSESS_LABEL}
             </CtaLink>
             <CtaLink href="/how-we-engage" variant="on-dark-secondary">
@@ -252,7 +247,7 @@ export default function HomePage() {
             <p className="section-label mb-4 block">How we work</p>
             <h2 className="heading-section mb-6">A structural approach to regulated operations.</h2>
             <p className="body-large">
-              Six solutions under one accountable layer — not a catalogue of legacy service pages.
+              Six solutions under one accountable layer — not a catalogue of disconnected services.
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-3">
@@ -416,12 +411,7 @@ export default function HomePage() {
           <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-white/80">
             We don&apos;t consult on theory. We step into live operations and restructure what isn&apos;t working.
           </p>
-          <CtaLink
-            href={WHATSAPP_ASSESS_URL}
-            variant="on-dark"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <CtaLink href={ASSESS_PATH} variant="on-dark">
             {CTA_ASSESS_LABEL}
           </CtaLink>
         </div>
@@ -471,13 +461,7 @@ export default function HomePage() {
                 market entry is blocked — start here. Assessment before catalogue.
               </p>
               <div className="flex flex-wrap gap-4">
-                <CtaLink
-                  href={WHATSAPP_ASSESS_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {CTA_ASSESS_LABEL}
-                </CtaLink>
+                <CtaLink href={ASSESS_PATH}>{CTA_ASSESS_LABEL}</CtaLink>
                 <Link
                   href="/solutions/operational-remediation-readiness"
                   className="inline-flex items-center font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
@@ -566,7 +550,7 @@ export default function HomePage() {
               <h2 className="heading-section">Authority for operators who need structure.</h2>
               <p className="body-large mt-4">
                 Regulatory intelligence, market signals, operational insights and executive
-                perspectives — bridged to the existing Insights library.
+                perspectives — connected to our intelligence resources.
               </p>
             </div>
             <Link
@@ -587,7 +571,7 @@ export default function HomePage() {
             We don&apos;t work on short-term strategies, regulatory arbitrage or experimental setups.
           </p>
           <p className="mx-auto mb-10 max-w-2xl font-sans text-lg font-medium text-foreground">
-            If you are building something real under regulatory constraint, it will.
+            If you are building a real operation under regulatory constraint, we should talk.
           </p>
           <a
             href={WHATSAPP_DISCUSS_URL}

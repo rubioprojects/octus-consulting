@@ -179,7 +179,7 @@ function MemberCard({
         className={`team-card-photo-wrap${member.photoKey ? ` team-photo--${member.photoKey}` : ""}`}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={member.photo} alt={member.name} className="team-card-photo" />
+        <img src={member.photo} alt="" className="team-card-photo" aria-hidden="true" />
       </div>
       {member.capability && <p className="team-capability">{member.capability}</p>}
       <h3 className="heading-sm" style={{ marginBottom: "6px" }}>
@@ -197,6 +197,7 @@ function MemberCard({
         target="_blank"
         rel="noopener noreferrer"
         className="team-card-link"
+        aria-label={`${member.name} on LinkedIn`}
       >
         {inner}
       </a>

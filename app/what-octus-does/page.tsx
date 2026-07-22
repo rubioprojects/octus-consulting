@@ -17,6 +17,14 @@ export const metadata = {
     description:
       "Plain-language positioning for regulated companies — licensing, banking, compliance, structure and remediation under one accountable team.",
     url: "https://octusconsulting.com/what-octus-does",
+    images: [
+      {
+        url: "https://octusconsulting.com/brand/social/octus-og-default.png",
+        width: 1200,
+        height: 630,
+        alt: "Octus Consulting",
+      },
+    ],
   },
   alternates: {
     canonical: "https://octusconsulting.com/what-octus-does",

@@ -1,10 +1,10 @@
 import Link from "next/link";
 import {
+  ASSESS_PATH,
   CTA_ASSESS_LABEL,
   CTA_DISCUSS_LABEL,
   CTA_EMAIL_LABEL,
   MAILTO_DISCUSS,
-  WHATSAPP_ASSESS_URL,
   WHATSAPP_DISCUSS_URL,
 } from "../../../lib/cta";
 import OctusSymbolMarker from "../../../components/system/OctusSymbolMarker";
@@ -19,6 +19,14 @@ export const metadata = {
     description:
       "Identify missing workstreams before licensing, banking and launch. Educational only — not a regulatory determination.",
     url: "https://octusconsulting.com/resources/igaming-operator-readiness",
+    images: [
+      {
+        url: "https://octusconsulting.com/brand/social/octus-og-default.png",
+        width: 1200,
+        height: 630,
+        alt: "Octus Consulting",
+      },
+    ],
   },
   alternates: {
     canonical: "https://octusconsulting.com/resources/igaming-operator-readiness",
@@ -259,10 +267,8 @@ export default function IgamingOperatorReadinessPage() {
                 {CTA_DISCUSS_LABEL}
               </a>
               <a
-                href={WHATSAPP_ASSESS_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex h-12 items-center justify-center rounded-sm border border-border px-8 text-base font-medium text-primary transition-colors hover:bg-secondary"
+                href={ASSESS_PATH}
+                className="inline-flex h-12 items-center justify-center rounded-sm border border-border px-8 text-base font-medium text-primary transition-colors hover:bg-secondary no-underline"
               >
                 {CTA_ASSESS_LABEL}
               </a>

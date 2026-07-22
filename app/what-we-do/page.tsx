@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CTA_ASSESS_LABEL, WHATSAPP_ASSESS_URL } from "../../lib/cta";
+import { ASSESS_PATH, CTA_ASSESS_LABEL } from "../../lib/cta";
 
 export const metadata = {
   title: "What We Do",
@@ -53,7 +53,7 @@ export default function WhatWeDoPage() {
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "640px" }}>
           <h2 className="heading-section" style={{ marginBottom: "20px" }}>Not sure where your operation fits?</h2>
           <p className="body-lg" style={{ marginBottom: "32px" }}>Start with a diagnostic. We map the structure before defining the scope.</p>
-          <a href={WHATSAPP_ASSESS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_ASSESS_LABEL}</a>
+          <a href={ASSESS_PATH} className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_ASSESS_LABEL}</a>
         </div>
       </section>
     </main>

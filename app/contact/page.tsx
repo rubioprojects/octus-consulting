@@ -1,8 +1,9 @@
 import {
+  ASSESS_PATH,
   CTA_ASSESS_LABEL,
   CTA_DISCUSS_LABEL,
   CTA_EMAIL_LABEL,
-  MAILTO_ASSESS,
+  CTA_WHATSAPP_ASSESS_LABEL,
   MAILTO_DISCUSS,
   OCTUS_EMAIL,
   WHATSAPP_ASSESS_URL,
@@ -95,19 +96,19 @@ export default function ContactPage() {
                 pressure or structural exposure. Same accountability; different entry framing.
               </p>
               <div className="flex flex-col gap-3">
+                <Link
+                  href={ASSESS_PATH}
+                  className="font-sans text-sm font-medium text-primary no-underline hover:underline"
+                >
+                  {CTA_ASSESS_LABEL}
+                </Link>
                 <a
                   href={WHATSAPP_ASSESS_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-sans text-sm font-medium text-primary no-underline hover:underline"
                 >
-                  {CTA_ASSESS_LABEL}
-                </a>
-                <a
-                  href={MAILTO_ASSESS}
-                  className="font-sans text-sm font-medium text-primary no-underline hover:underline"
-                >
-                  Email for assessment →
+                  {CTA_WHATSAPP_ASSESS_LABEL}
                 </a>
               </div>
             </article>

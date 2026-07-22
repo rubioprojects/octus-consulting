@@ -12,7 +12,16 @@ import { INTELLIGENCE_PILLARS } from "../../lib/commercial";
 export const metadata = {
   title: "Intelligence",
   description:
-    "Octus Intelligence: regulatory signals, guides and checklists, and insights for operators under regulatory and banking pressure — editorial authority, not a product surface.",
+    "Octus Intelligence — the strategic knowledge system for regulated operators: signals, guides, checklists and published Insights.",
+  openGraph: {
+    title: "Intelligence | Octus Consulting",
+    description:
+      "Strategic knowledge for operators under regulatory and banking pressure — connected to published Insights.",
+    url: "https://octusconsulting.com/intelligence",
+  },
+  alternates: {
+    canonical: "https://octusconsulting.com/intelligence",
+  },
 };
 
 const PILLAR_ICONS: OctusIconName[] = [
@@ -22,14 +31,14 @@ const PILLAR_ICONS: OctusIconName[] = [
   "corporate",
 ];
 
-/** Launch taxonomy — only types with live destinations (no empty shelves). */
+/** Client-facing resources with live destinations only. */
 const LAUNCH_TYPES = [
   {
     num: "01",
     title: "Regulatory Signals",
     body: "Short analysis of developments that change filings, banking pressure or operating posture.",
     href: "/insights",
-    cta: "Browse Insights →",
+    cta: "Read published Insights →",
   },
   {
     num: "02",
@@ -40,17 +49,10 @@ const LAUNCH_TYPES = [
   },
   {
     num: "03",
-    title: "Plain-language positioning",
-    body: "A shareable explanation of what Octus does — for boards, partners and non-specialists.",
+    title: "What Octus Does",
+    body: "A shareable explanation of Octus — for boards, partners and non-specialists.",
     href: "/what-octus-does",
-    cta: "What Octus does →",
-  },
-  {
-    num: "04",
-    title: "Insights library",
-    body: "Published analysis on regulatory developments, market infrastructure and operational risk.",
-    href: "/insights",
-    cta: "Explore Insights →",
+    cta: "Read the overview →",
   },
 ] as const;
 
@@ -59,10 +61,10 @@ export default function IntelligencePage() {
     <main>
       <PageHero
         eyebrow="Intelligence"
-        title="Analysis that helps regulated operators decide."
-        titleSecondLine="Not a product. Not a feed."
-        description="Octus Intelligence is editorial material for founders, counsel and operators under regulatory and banking pressure — signals, guides and insights that connect knowledge to execution."
-        primaryCta={{ href: "/insights", label: "Explore Insights →" }}
+        title="The knowledge system for regulated decisions."
+        titleSecondLine="Execution still happens with people."
+        description="Octus Intelligence is our strategic knowledge layer — signals, guides and checklists for founders, counsel and operators under regulatory and banking pressure. Published articles live in Insights."
+        primaryCta={{ href: "/insights", label: "Browse Insights →" }}
         secondaryCta={{ href: WHATSAPP_DISCUSS_URL, label: CTA_DISCUSS_LABEL, external: true }}
       />
 
@@ -70,17 +72,30 @@ export default function IntelligencePage() {
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <Reveal>
             <OctusSymbolMarker size={18} />
-            <p className="section-label mb-4 block">Who it is for</p>
-            <h2 className="heading-section mb-4">Decisions under scrutiny</h2>
-            <p className="body-large mb-4">
-              Use this section when you need clarity on market entry, licensing posture, compliance
-              pressure, banking friction or structural remediation — before or during an engagement
-              with Octus.
-            </p>
-            <p className="body-text">
-              It is not a chatbot, dashboard or content marketplace. It is a curated library and a
-              small set of practical assets.
-            </p>
+            <p className="section-label mb-4 block">How this is organised</p>
+            <h2 className="heading-section mb-4">Intelligence and Insights</h2>
+            <div className="grid gap-6 md:grid-cols-2">
+              <article className="rounded-sm border border-border p-5">
+                <h3 className="font-sans text-base font-semibold text-primary">Intelligence</h3>
+                <p className="body-sm mt-2">
+                  The strategic knowledge system — how we frame regulated decisions, guides and
+                  checklists.
+                </p>
+              </article>
+              <article className="rounded-sm border border-border p-5">
+                <h3 className="font-sans text-base font-semibold text-primary">Insights</h3>
+                <p className="body-sm mt-2">
+                  Published articles and analysis from the field — the reading library inside
+                  Intelligence.
+                </p>
+                <Link
+                  href="/insights"
+                  className="mt-3 inline-block font-sans text-sm font-medium text-primary no-underline hover:underline"
+                >
+                  Open Insights →
+                </Link>
+              </article>
+            </div>
           </Reveal>
         </div>
       </section>
@@ -91,12 +106,11 @@ export default function IntelligencePage() {
           <Reveal>
             <OctusSymbolMarker tone="white" size={20} />
             <div className="mb-3 h-px w-16 accent-cream-bar opacity-80" aria-hidden="true" />
-            <p className="section-label mb-4 block">Launch structure</p>
+            <p className="section-label mb-4 block">Resources</p>
             <h2 className="heading-section mb-4 max-w-2xl">What you can use today</h2>
             <p className="body-large mb-8 max-w-2xl">
-              Only categories with live content appear here. Future verticals (Tax, Compliance,
-              Banking, Corporate, iGaming series) will be added when material exists — not as empty
-              shelves.
+              Practical material for operators under scrutiny — not a product dashboard or content
+              marketplace.
             </p>
             <div className="intelligence-editorial-band mb-12">
               {LAUNCH_TYPES.map((t) => (
@@ -144,7 +158,7 @@ export default function IntelligencePage() {
             </p>
             <div className="flex flex-wrap gap-4">
               <CtaLink href="/insights" variant="primary">
-                Explore Insights →
+                Browse Insights →
               </CtaLink>
               <CtaLink href={WHATSAPP_DISCUSS_URL} variant="secondary" target="_blank" rel="noopener noreferrer">
                 {CTA_DISCUSS_LABEL}

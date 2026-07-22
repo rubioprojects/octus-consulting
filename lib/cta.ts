@@ -28,6 +28,11 @@ export const CTA_EMAIL_LABEL = "Email Octus →";
 export const CTA_HOW_WE_WORK_LABEL = "See how we work →";
 export const CTA_CONTACT_LABEL = "Contact Octus →";
 
+/** Primary institutional Assess path — WhatsApp remains secondary. */
+export const ASSESS_PATH = "/diagnostic";
+
+export const CTA_WHATSAPP_ASSESS_LABEL = "Continue on WhatsApp →";
+
 /** Partnership intake — human-approved for Wave 3 public copy. */
 export const WA_PARTNERSHIP_TEXT =
   "Hello Octus team — I would like to discuss a potential partnership or collaboration on regulated operations.";
