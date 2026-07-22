@@ -4,7 +4,7 @@ import localFont from "next/font/local";
 import Nav from "../components/Nav";
 import CookieBanner from "../components/CookieBanner";
 import BrandLockup from "../components/BrandLockup";
-import { CTA_DISCUSS_LABEL, MAILTO_INFO, WHATSAPP_DISCUSS_URL } from "../lib/cta";
+import { CTA_DISCUSS_LABEL, CTA_EMAIL_LABEL, MAILTO_DISCUSS, MAILTO_INFO, WHATSAPP_DISCUSS_URL } from "../lib/cta";
 import "./globals.css";
 
 const unigeo = localFont({
@@ -111,6 +111,12 @@ export default function RootLayout({
                 >
                   {CTA_DISCUSS_LABEL}
                 </a>
+                <a
+                  href={MAILTO_DISCUSS}
+                  className="inline-flex h-10 items-center rounded-sm border border-white/20 px-5 font-sans text-[13px] font-medium text-white/80 no-underline transition-colors hover:border-white/40 hover:text-white"
+                >
+                  {CTA_EMAIL_LABEL}
+                </a>
                 <div className="flex gap-3">
                   <a
                     href="https://www.linkedin.com/company/octusconsulting/"
@@ -188,8 +194,10 @@ export default function RootLayout({
                 <ul className="flex list-none flex-col gap-2.5">
                   {[
                     { label: "How we engage", href: "/how-we-engage" },
+                    { label: "What Octus does", href: "/what-octus-does" },
                     { label: "Intelligence", href: "/intelligence" },
                     { label: "Insights", href: "/insights" },
+                    { label: "iGaming readiness", href: "/resources/igaming-operator-readiness" },
                     { label: "Partners", href: "/partners" },
                     { label: "Remediation assess", href: "/diagnostic" },
                   ].map((l) => (

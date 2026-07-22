@@ -4,7 +4,7 @@ import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
 export const metadata = {
   title: "iGaming Licensing & Regulatory Structuring | Octus",
   description:
-    "End-to-end regulatory structuring, licensing execution and banking coordination for iGaming and betting operators across jurisdictions.",
+    "Regulatory structuring, licensing execution and banking coordination for iGaming and betting operators — accountable execution across jurisdictions.",
 };
 
 export default function MarketsIGamingPage() {
@@ -72,8 +72,8 @@ export default function MarketsIGamingPage() {
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <p className="label">What Octus does for iGaming operators</p>
           <h2 className="heading-section" style={{ marginBottom: "40px" }}>
-            End-to-end structuring.{" "}
-            <span style={{ color: "var(--blue-light)" }}>Not advisory.</span>
+            Structuring that holds.{" "}
+            <span style={{ color: "var(--blue-light)" }}>Not advisory alone.</span>
           </h2>
           <div className="grid-auto-lg">
             {[
@@ -111,30 +111,34 @@ export default function MarketsIGamingPage() {
         </div>
       </section>
 
-      {/* ─── SELECTED MANDATES ─── */}
+          {/* ─── SITUATION PATTERNS (claim-governed) ─── */}
       <section className="bg-background py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
-          <p className="label">Selected mandates</p>
-          <h2 className="heading-section" style={{ marginBottom: "32px" }}>
-            Real operations. Real outcomes.
+          <p className="label">Situation patterns</p>
+          <h2 className="heading-section" style={{ marginBottom: "16px" }}>
+            Problems we are brought in to resolve.
           </h2>
+          <p className="body-text mb-8 text-muted-foreground">
+            Illustrative patterns from regulated iGaming work — not case studies, guarantees or
+            published client results.
+          </p>
           <div className="grid gap-6 md:grid-cols-2">
             {[
               {
-                title: "iGaming operator — Curaçao",
-                body: "Full licensing + corporate structuring + banking setup. Operational bank account open in 11 weeks after 6 months of failed attempts with previous advisors.",
+                title: "iGaming operator — licensing and banking together",
+                body: "License path and corporate design advanced while banking and AML documentation were aligned — so approval does not stall at account opening.",
               },
               {
-                title: "Multi-brand sportsbook — 3 jurisdictions",
-                body: "Cross-border restructuring across Brazil, Curaçao and Malta. Entity realignment, compliance harmonization and unified banking strategy.",
+                title: "Multi-brand sportsbook — cross-border structure",
+                body: "Entity, compliance and banking strategy coordinated across more than one jurisdiction when expansion exposed structural gaps.",
               },
               {
-                title: "Affiliate-led betting operation",
-                body: "Compliance remediation after regulatory inquiry. AML framework rebuild, evidence register reconstruction and payment processor recovery.",
+                title: "Affiliate-led betting operation — remediation",
+                body: "Compliance rebuild after regulatory pressure: AML framework, evidence register and payment-processor recovery workstreams.",
               },
               {
-                title: "Sports betting operator — Brazil (SPA/MF)",
-                body: "Full regulatory dossier, corporate structuring and direct coordination with SPA/MF authorities for the Brazilian sports betting authorization process.",
+                title: "Sports betting — Brazil regulatory coordination",
+                body: "Regulatory dossier, corporate structuring and coordination with Brazilian sports-betting authorization processes under the applicable framework.",
               },
             ].map((m, i) => (
               <div
@@ -146,6 +150,14 @@ export default function MarketsIGamingPage() {
               </div>
             ))}
           </div>
+          <p className="mt-8">
+            <Link
+              href="/resources/igaming-operator-readiness"
+              className="font-sans text-sm font-medium text-primary no-underline hover:underline"
+            >
+              iGaming Operator Readiness Checklist →
+            </Link>
+          </p>
         </div>
       </section>
 

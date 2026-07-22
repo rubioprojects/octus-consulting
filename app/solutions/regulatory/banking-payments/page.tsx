@@ -120,12 +120,15 @@ export default function BankingPaymentsPage() {
 
       <section className="surface-elevated py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
-          <p className="label">Selected mandates</p>
+          <p className="label">Situation patterns</p>
+          <p className="body-text mb-8 text-muted-foreground">
+            Illustrative patterns — not published timelines, guarantees or client results.
+          </p>
           <div className="grid gap-6 md:grid-cols-1">
             {[
-              ["Case 1 · iGaming · Curaçao", "Licence active 6 months. No operational account.", "AML documentation did not meet banking standards. Octus restructured compliance and coordinated with three institutions. Account operational in 11 weeks."],
-              ["Case 2 · Payments · Cross-border", "PSP terminated. Operations halted.", "Single provider dependency, no contingency. Octus restructured payment infrastructure across multiple providers and jurisdictions. Processing restored within 4 weeks."],
-              ["Case 3 · Fintech · EU", "Licensed EMI. Banks refused onboarding.", "Safeguarding and AML documentation insufficient for banking due diligence. Octus rebuilt compliance layer and coordinated with specialist partners. Accounts operational."],
+              ["iGaming · Banking", "Licence active. No operational account.", "AML and corporate documentation did not meet banking standards. Work focused on compliance rebuild and coordinated outreach to institutions."],
+              ["Payments · Cross-border", "PSP terminated. Operations at risk.", "Single-provider dependency with no contingency. Work focused on restructuring payment access across providers and jurisdictions."],
+              ["Fintech · Banking", "Licensed EMI. Banks refused onboarding.", "Safeguarding and AML documentation insufficient for due diligence. Work focused on rebuilding the compliance layer with specialist partners."],
             ].map(([tag, title, body]) => (
               <div
                 key={title}

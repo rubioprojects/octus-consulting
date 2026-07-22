@@ -2,7 +2,8 @@ import Link from "next/link";
 import {
   CTA_ASSESS_LABEL,
   CTA_DISCUSS_LABEL,
-  MAILTO_INFO,
+  CTA_EMAIL_LABEL,
+  MAILTO_ASSESS,
   WHATSAPP_ASSESS_URL,
   WHATSAPP_DISCUSS_URL,
 } from "../../lib/cta";
@@ -82,11 +83,10 @@ export default function DiagnosticPage() {
             .
           </p>
           <p className="body-large mb-8">
-            Prefer email? Write to{" "}
-            <a href={MAILTO_INFO} className="text-primary underline-offset-4 hover:underline">
-              info@octusconsulting.com
+            Prefer email?{" "}
+            <a href={MAILTO_ASSESS} className="text-primary underline-offset-4 hover:underline">
+              {CTA_EMAIL_LABEL}
             </a>
-            .
           </p>
           <p className="body-text text-muted-foreground">
             Octus engages through qualified conversations — not mass lead-capture forms.

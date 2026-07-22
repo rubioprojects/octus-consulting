@@ -2263,12 +2263,17 @@ footer .heading-lg,
 /* Intelligence — editorial index band */
 .intelligence-editorial-band {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
   margin-bottom: 2.5rem;
   padding: 1.5rem 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+@media (min-width: 1024px) {
+  .intelligence-editorial-band {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 @media (max-width: 768px) {
   .intelligence-editorial-band {
@@ -2694,5 +2699,70 @@ footer .heading-lg,
 
   .cert-modal {
     padding: 28px;
+  }
+}
+
+/* ─── Authority assets (printable HTML, Octus grammar) ─── */
+.authority-asset__inner {
+  max-width: 48rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+@media (min-width: 640px) {
+  .authority-asset__inner {
+    padding-inline: 1.5rem;
+  }
+}
+.authority-asset__hero {
+  padding-top: 7rem;
+  padding-bottom: 3.5rem;
+}
+@media (min-width: 768px) {
+  .authority-asset__hero {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+  }
+}
+.authority-asset__table th,
+.authority-asset__table td {
+  border-bottom: 1px solid hsl(var(--border));
+  padding: 0.75rem 0.5rem;
+  vertical-align: top;
+}
+.authority-asset__table th {
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: hsl(var(--muted-foreground));
+  font-weight: 600;
+}
+.authority-asset__table td:first-child {
+  color: hsl(var(--muted-foreground));
+  width: 38%;
+}
+@media print {
+  .site-header,
+  .wa-float,
+  .cookie-banner,
+  .site-footer,
+  .print\:hidden {
+    display: none !important;
+  }
+  .authority-asset__hero {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background: #0b1220 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .authority-asset__body {
+    padding-top: 1.5rem !important;
+  }
+  .authority-asset a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .authority-asset__section {
+    break-inside: avoid;
   }
 }

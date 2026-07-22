@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../lib/cta";
+import { CTA_DISCUSS_LABEL, CTA_EMAIL_LABEL, MAILTO_DISCUSS, WHATSAPP_DISCUSS_URL } from "../lib/cta";
 import BrandLockup from "./BrandLockup";
 
 const primaryLinks = [
@@ -16,6 +16,7 @@ const primaryLinks = [
 
 const supportingLinks = [
   { label: "Team", href: "/team" },
+  { label: "What Octus does", href: "/what-octus-does" },
   { label: "Careers", href: "/careers" },
   { label: "Jurisdictions", href: "/jurisdictions" },
 ];
@@ -112,6 +113,13 @@ export default function Nav() {
             >
               {CTA_DISCUSS_LABEL}
             </a>
+            <a
+              href={MAILTO_DISCUSS}
+              className={linkClass}
+              aria-label="Email Octus at info@octusconsulting.com"
+            >
+              {CTA_EMAIL_LABEL}
+            </a>
           </div>
 
           <button
@@ -177,6 +185,13 @@ export default function Nav() {
               onClick={() => setMobileOpen(false)}
             >
               {CTA_DISCUSS_LABEL}
+            </a>
+            <a
+              href={MAILTO_DISCUSS}
+              className="mt-2 rounded-sm px-3 py-3 text-center font-sans text-base text-primary no-underline hover:bg-muted"
+              onClick={() => setMobileOpen(false)}
+            >
+              {CTA_EMAIL_LABEL}
             </a>
           </div>
         </div>

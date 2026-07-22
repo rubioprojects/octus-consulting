@@ -1,4 +1,10 @@
 import Link from "next/link";
+import {
+  CTA_DISCUSS_LABEL,
+  CTA_EMAIL_LABEL,
+  MAILTO_DISCUSS,
+  WHATSAPP_DISCUSS_URL,
+} from "../../lib/cta";
 import DarkHeroAtmosphere from "../../components/system/DarkHeroAtmosphere";
 
 export const metadata = {
@@ -265,12 +271,28 @@ export default function TeamPage() {
             We work with operators who need regulatory clarity, operational discipline and
             structures that survive scrutiny.
           </p>
-          <Link
-            href="/careers"
-            className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90"
-          >
-            See careers →
-          </Link>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a
+              href={WHATSAPP_DISCUSS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90"
+            >
+              {CTA_DISCUSS_LABEL}
+            </a>
+            <a
+              href={MAILTO_DISCUSS}
+              className="inline-flex h-12 items-center justify-center rounded-sm border border-white/25 px-10 text-base font-medium text-white/85 transition-colors hover:border-white/50 hover:text-white"
+            >
+              {CTA_EMAIL_LABEL}
+            </a>
+            <Link
+              href="/careers"
+              className="inline-flex h-12 items-center justify-center rounded-sm border border-white/25 px-10 text-base font-medium text-white/85 transition-colors hover:border-white/50 hover:text-white"
+            >
+              See careers →
+            </Link>
+          </div>
         </div>
       </section>
     </main>

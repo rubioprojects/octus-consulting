@@ -1,6 +1,8 @@
 import {
   CTA_ASSESS_LABEL,
   CTA_DISCUSS_LABEL,
+  CTA_EMAIL_LABEL,
+  MAILTO_DISCUSS,
   WHATSAPP_ASSESS_URL,
   WHATSAPP_DISCUSS_URL,
 } from "../../lib/cta";
@@ -70,6 +72,15 @@ export default function HowWeEngagePage() {
             <CtaLink href="/solutions/operational-remediation-readiness" variant="secondary">
               Remediation →
             </CtaLink>
+            <CtaLink href={MAILTO_DISCUSS} variant="secondary">
+              {CTA_EMAIL_LABEL}
+            </CtaLink>
+            <Link
+              href="/what-octus-does"
+              className="inline-flex items-center font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
+            >
+              What Octus does →
+            </Link>
             <Link
               href="/partners"
               className="inline-flex items-center font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
