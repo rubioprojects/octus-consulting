@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- HUMAN_REVIEW_REQUIRED: reconstructed from official raster masters; geometry = three-circle Octus mark. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 48" role="img" aria-label="Octus symbol">
+  <g fill="#0065FF">
+    <circle cx="22" cy="24" r="18"/>
+    <circle cx="46" cy="14.5" r="9.5"/>
+    <circle cx="46" cy="33.5" r="9.5"/>
+  </g>
+</svg>
