@@ -3,6 +3,8 @@
 **Terminal:** `OCTUS_AUTHORITY_AND_CONVERSION_P0_READY`  
 **Audit source:** `docs/design/authority-conversion-audit/` (accepted)  
 **Branch:** `feat/authority-conversion-p0`  
+**PR:** https://github.com/rubioprojects/octus-consulting/pull/11  
+**SHA:** `fd77071`  
 **Base:** `feat/official-brand-system-integration` @ `5bfacb4`  
 **Date:** 2026-07-22
 
