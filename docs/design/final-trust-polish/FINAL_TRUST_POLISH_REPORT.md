@@ -4,7 +4,7 @@
 **Date:** 2026-07-21  
 **PR:** https://github.com/rubioprojects/octus-consulting/pull/10  
 **Branch:** `feat/official-brand-system-integration`  
-**SHA:** _(see git tip after push)_  
+**SHA:** `dc5862d`  
 **Baseline:** OCTUS_FINAL_EXECUTIVE_POLISH_READY_FOR_HUMAN_REVIEW  
 **Preview:** https://octus-consulting-git-feat-official-brand-system-in-65173f-axle1.vercel.app
 
