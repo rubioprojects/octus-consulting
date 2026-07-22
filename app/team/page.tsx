@@ -27,7 +27,7 @@ const leadership: Member[] = [
     photo: "/team/rubio-teixeira.jpg",
     photoKey: "rubio",
     focus:
-      "Regulatory structuring, international licensing and market entry strategy. Operational presence across Brazil, Portugal, EU and offshore jurisdictions since 2019.",
+      "Final accountability for Octus. Regulatory structuring, international licensing and market entry strategy across Brazil, Portugal, EU and offshore jurisdictions.",
     linkedin: "https://www.linkedin.com/in/rubioteixeiraoctus/",
   },
   {
@@ -36,22 +36,37 @@ const leadership: Member[] = [
     photo: "/team/maria-cristina.jpg",
     photoKey: "maria",
     focus:
-      "Operational leadership and client engagement across Octus' regulatory and compliance mandates. Senior depth across regulated markets in Brazil and internationally.",
+      "Executive operational leadership and client engagement across Octus' regulatory and compliance mandates. Senior depth across regulated markets in Brazil and internationally.",
     linkedin: "https://www.linkedin.com/in/maria-cristina-060241b6/",
   },
 ];
 
-/** Executive profile under Leadership — does not compete with founders */
+/** Secondary leadership — trust layer, not a specialist card */
 const leadershipSupport: Member[] = [
   {
     name: "Rodrigo Coelho Lopes",
-    title: "Legal Architecture Lead",
+    title: "Leadership Support",
     photo: "/team/rodrigo-lopes.jpg",
     photoKey: "rodrigo",
-    capability: "Legal architecture",
+    capability: "Strategic legal architecture",
     focus:
-      "Legal strategy and coordination across the group's regulatory and corporate mandates. Oversight of legal architecture, cross-border structure and jurisdictional risk.",
+      "Leadership support with responsibility for strategic legal architecture across the group's regulatory and corporate mandates — cross-border structure and jurisdictional risk.",
     linkedin: null,
+  },
+];
+
+/** Operational leadership — financial continuity (restrained title) */
+const operationalLeadership: Member[] = [
+  {
+    name: "Claudia Nery",
+    title: "Financial Operations",
+    photo: "/team/claudia-nery.jpg",
+    photoKey: "claudia",
+    capability: "Financial continuity",
+    focus:
+      "Financial operations, banking relationships and financial continuity across the Octus group.",
+    linkedin: "https://www.linkedin.com/in/claudia-nery/",
+    featured: true,
   },
 ];
 
@@ -102,6 +117,7 @@ const specialists: Member[] = [
   },
 ];
 
+/** Operational delivery support */
 const operations: Member[] = [
   {
     name: "Bianca Carolina Oliveira Andrade",
@@ -115,24 +131,15 @@ const operations: Member[] = [
     featured: true,
   },
   {
-    name: "Claudia Nery",
-    title: "Chief Financial Officer",
-    photo: "/team/claudia-nery.jpg",
-    photoKey: "claudia",
-    capability: "Financial governance",
-    focus:
-      "Corporate and financial architecture. Financial governance, group structuring and reporting across jurisdictions.",
-    linkedin: "https://www.linkedin.com/in/claudia-nery/",
-  },
-  {
     name: "Luciana Santos Veloso",
     title: "Operations Coordinator",
     photo: "/team/luciana-santos-veloso.jpg",
     photoKey: "luciana",
     capability: "Operations",
     focus:
-      "Operational workflows, client documentation and cross-functional coordination across multiple jurisdictions.",
+      "Operational delivery support — workflows, client documentation and cross-functional coordination across jurisdictions.",
     linkedin: null,
+    featured: true,
   },
 ];
 
@@ -141,14 +148,21 @@ function MemberCard({
   tier,
 }: {
   member: Member;
-  tier: "leadership" | "leadership-support" | "specialist" | "operations";
+  tier:
+    | "leadership"
+    | "leadership-support"
+    | "operational-leadership"
+    | "specialist"
+    | "operations";
 }) {
   const cardTier =
     tier === "operations" && member.featured
       ? "operations-featured"
       : tier === "leadership-support"
         ? "leadership-support"
-        : tier;
+        : tier === "operational-leadership"
+          ? "operational-leadership"
+          : tier;
   const quiet = !member.featured && (tier === "specialist" || tier === "operations");
 
   const inner = (
@@ -212,9 +226,16 @@ export default function TeamPage() {
             ))}
           </div>
 
-          <div className="team-grid team-grid--leadership-support mb-16">
+          <div className="team-grid team-grid--leadership-support">
             {leadershipSupport.map((m) => (
               <MemberCard key={m.name} member={m} tier="leadership-support" />
+            ))}
+          </div>
+
+          <p className="team-band-label">Operational Leadership</p>
+          <div className="team-grid team-grid--operational-leadership mb-16">
+            {operationalLeadership.map((m) => (
+              <MemberCard key={m.name} member={m} tier="operational-leadership" />
             ))}
           </div>
 

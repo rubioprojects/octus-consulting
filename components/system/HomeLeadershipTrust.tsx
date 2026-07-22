@@ -38,7 +38,11 @@ export default function HomeLeadershipTrust() {
         <div className="home-leadership-trust__grid">
           {leaders.map((l) => (
             <Link key={l.name} href={l.href} className="home-leadership-trust__card no-underline">
-              <div className="home-leadership-trust__photo-wrap">
+              <div
+                className={`home-leadership-trust__photo-wrap team-photo--${
+                  l.name.startsWith("Rubio") ? "rubio" : "maria"
+                }`}
+              >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={l.photo} alt={l.name} className="home-leadership-trust__photo" />
               </div>
