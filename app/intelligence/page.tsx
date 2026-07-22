@@ -5,6 +5,8 @@ import { CtaLink } from "../../components/system/CtaButton";
 import OctusIcon, { type OctusIconName } from "../../components/icons/OctusIcon";
 import BrandSectionMotif from "../../components/system/BrandSectionMotif";
 import Reveal from "../../components/system/Reveal";
+import OctusSymbolMarker from "../../components/system/OctusSymbolMarker";
+import OctusEditorialDivider from "../../components/system/OctusEditorialDivider";
 
 export const metadata = {
   title: "Intelligence",
@@ -35,6 +37,7 @@ export default function IntelligencePage() {
         <BrandSectionMotif tone="navy" position="end" />
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
+            <OctusSymbolMarker tone="white" size={20} />
             <div className="mb-3 h-px w-16 accent-cream-bar opacity-80" aria-hidden="true" />
             <p className="section-label mb-4 block">Authority platform</p>
             <h2 className="heading-section mb-4 max-w-2xl">Editorial signals that scale</h2>
@@ -43,9 +46,27 @@ export default function IntelligencePage() {
               decisions operators face under scrutiny — built to grow without becoming a chatbot
               or product UI.
             </p>
-            <p className="mb-12 max-w-xl font-sans text-sm text-white/70">
+            <p className="mb-8 max-w-xl font-sans text-sm text-white/70">
               Editorial authority for regulated operations — not a product surface.
             </p>
+            <div className="intelligence-editorial-band">
+              <div className="intelligence-editorial-band__item">
+                <div className="editorial-numeral editorial-numeral--sm">01</div>
+                <p className="intelligence-editorial-band__label">Regulatory signals</p>
+                <p className="intelligence-editorial-band__hint">Pressure that changes filings</p>
+              </div>
+              <div className="intelligence-editorial-band__item">
+                <div className="editorial-numeral editorial-numeral--sm">02</div>
+                <p className="intelligence-editorial-band__label">Market intelligence</p>
+                <p className="intelligence-editorial-band__hint">Structure under classification</p>
+              </div>
+              <div className="intelligence-editorial-band__item">
+                <div className="editorial-numeral editorial-numeral--sm">03</div>
+                <p className="intelligence-editorial-band__label">Operational insights</p>
+                <p className="intelligence-editorial-band__hint">Execution under scrutiny</p>
+              </div>
+            </div>
+            <OctusEditorialDivider tone="dark" className="mb-12 ml-0 mr-auto" />
           </Reveal>
           <div className="grid gap-6 md:grid-cols-2">
             {INTELLIGENCE_PILLARS.map((p, i) => (

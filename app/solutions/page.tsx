@@ -6,6 +6,8 @@ import { CtaLink } from "../../components/system/CtaButton";
 import BrandSectionMotif from "../../components/system/BrandSectionMotif";
 import Reveal from "../../components/system/Reveal";
 import SolutionIdentityMark from "../../components/system/SolutionIdentityMark";
+import OctusSymbolMarker from "../../components/system/OctusSymbolMarker";
+import OctusEditorialDivider from "../../components/system/OctusEditorialDivider";
 
 export const metadata = {
   title: "Solutions — Execution for Regulated Operations",
@@ -38,15 +40,17 @@ export default function SolutionsPage() {
         <BrandSectionMotif />
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
+            <OctusSymbolMarker size={18} />
             <p className="section-label mb-4 block">Octus capabilities</p>
             <h2 className="heading-section heading-section--brand mb-4 max-w-2xl">
               Six capabilities. One accountable layer.
             </h2>
-            <p className="body-large mb-12 max-w-2xl">
+            <p className="body-large mb-8 max-w-2xl">
               Not a service catalogue — coordinated execution across regulatory, banking,
               compliance, corporate and contractual layers. Markets describe where we operate.
               Capabilities describe what we own.
             </p>
+            <OctusEditorialDivider className="mb-12 ml-0 mr-auto" />
           </Reveal>
 
           <div className="grid gap-6 md:grid-cols-2 lg:gap-8">

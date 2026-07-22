@@ -3,6 +3,8 @@ import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 import PageHero from "../../components/system/PageHero";
 import BrandSectionMotif from "../../components/system/BrandSectionMotif";
 import Reveal from "../../components/system/Reveal";
+import OctusSymbolMarker from "../../components/system/OctusSymbolMarker";
+import { BRAND } from "../../lib/brand";
 
 export const metadata = {
   title: "Markets — Regulated Sectors We Structure",
@@ -73,9 +75,22 @@ export default function MarketsPage() {
             <div className="mb-10 flex items-stretch gap-4">
               <div className="octus-story-rail w-0.5 shrink-0 self-stretch min-h-[3.5rem]" />
               <div>
+                <OctusSymbolMarker size={18} />
                 <p className="label">Market intelligence</p>
                 <h2 className="heading-section">Strategic briefs, not category tiles.</h2>
               </div>
+            </div>
+            <div className="markets-symbol-strip" aria-hidden="true">
+              <span>iGaming</span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={BRAND.symbol.blue} alt="" />
+              <span>Fintech</span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={BRAND.symbol.blue} alt="" />
+              <span>Digital Assets</span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={BRAND.symbol.blue} alt="" />
+              <span>High-Risk</span>
             </div>
           </Reveal>
           <div className="grid gap-6 md:grid-cols-2">

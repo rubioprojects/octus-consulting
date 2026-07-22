@@ -58,9 +58,9 @@
     --secondary-foreground: 0 0% 17%;
 
     --muted: 220 16% 94%;
-    /* Raised again for final polish — premium ≠ faded */
-    --muted-foreground: 220 14% 24%;
-    --body-secondary: 220 12% 34%;
+    /* Institutional deepening — charcoal body authority */
+    --muted-foreground: 220 16% 22%;
+    --body-secondary: 220 12% 32%;
 
     --accent: 0 93% 34%;
     --accent-foreground: 0 0% 100%;
@@ -188,17 +188,35 @@
 
   .body-large {
     @apply text-lg leading-relaxed;
-    color: hsl(220 14% 22%);
+    color: #2a303c;
   }
 
   .body-text {
     @apply text-base leading-relaxed;
-    color: hsl(220 14% 24%);
+    color: #2a303c;
   }
 
   .body-secondary {
     @apply text-sm leading-relaxed;
     color: hsl(var(--body-secondary));
+  }
+
+  /* Editorial numerals — Unigeo, Solutions / stats / chapter index */
+  .editorial-numeral {
+    font-family: var(--font-unigeo), "Unigeo64", sans-serif;
+    font-weight: 700;
+    font-size: clamp(2.75rem, 5vw, 4rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: hsl(var(--brand-navy));
+  }
+
+  .editorial-numeral--sm {
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+  }
+
+  .editorial-numeral--on-dark {
+    color: rgba(255, 255, 255, 0.92);
   }
 }
 
@@ -1503,10 +1521,11 @@ footer .heading-lg,
   inset: 0;
   z-index: 0;
   pointer-events: none;
+  /* Hero B — architectural depth, fewer competing radials */
   background:
-    radial-gradient(ellipse 72% 58% at 70% 36%, rgba(0, 101, 255, 0.28) 0%, transparent 56%),
-    radial-gradient(ellipse 52% 48% at 16% 82%, rgba(0, 82, 196, 0.4) 0%, transparent 50%),
-    linear-gradient(168deg, #060a12 0%, #0b1220 46%, #121a28 100%);
+    radial-gradient(ellipse 58% 52% at 78% 28%, rgba(0, 101, 255, 0.2) 0%, transparent 58%),
+    radial-gradient(ellipse 42% 40% at 12% 88%, rgba(0, 82, 196, 0.22) 0%, transparent 52%),
+    linear-gradient(172deg, #05080f 0%, #0b1220 42%, #0e1624 100%);
 }
 .home-hero__mesh,
 .octus-dark-hero__mesh {
@@ -1514,47 +1533,54 @@ footer .heading-lg,
   inset: -8%;
   z-index: 1;
   pointer-events: none;
-  opacity: 0.9;
+  opacity: 0.72;
   background-image:
     repeating-linear-gradient(
-      -28deg,
+      -32deg,
       transparent 0,
-      transparent 11px,
-      rgba(66, 161, 255, 0.045) 11px,
-      rgba(66, 161, 255, 0.045) 12px
+      transparent 14px,
+      rgba(66, 161, 255, 0.038) 14px,
+      rgba(66, 161, 255, 0.038) 15px
+    ),
+    repeating-linear-gradient(
+      58deg,
+      transparent 0,
+      transparent 28px,
+      rgba(11, 18, 32, 0.15) 28px,
+      rgba(11, 18, 32, 0.15) 29px
     );
-  mask-image: radial-gradient(ellipse 88% 78% at 48% 42%, #000 18%, transparent 76%);
-  animation: octus-mesh-drift 48s linear infinite;
+  mask-image: radial-gradient(ellipse 82% 72% at 55% 38%, #000 12%, transparent 78%);
+  animation: octus-mesh-drift 56s linear infinite;
 }
 .octus-dark-hero__arcs {
   position: absolute;
-  right: -8%;
-  top: -12%;
-  width: min(72vw, 720px);
-  height: min(72vw, 720px);
+  right: -6%;
+  top: -8%;
+  width: min(64vw, 640px);
+  height: min(64vw, 640px);
   z-index: 1;
   pointer-events: none;
-  opacity: 0.55;
+  opacity: 0.42;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  mask-image: linear-gradient(120deg, transparent 10%, #000 45%, transparent 85%);
-  animation: octus-arc-breathe 22s ease-in-out infinite;
+  mask-image: linear-gradient(125deg, transparent 8%, #000 48%, transparent 88%);
+  animation: octus-arc-breathe 28s ease-in-out infinite;
   transform-origin: 62% 48%;
 }
 .octus-dark-hero__mark {
   position: absolute;
-  right: 6%;
-  bottom: 12%;
-  width: min(18vw, 140px);
-  height: min(18vw, 140px);
+  right: 7%;
+  bottom: 14%;
+  width: min(14vw, 112px);
+  height: min(14vw, 112px);
   z-index: 1;
   pointer-events: none;
-  opacity: 0.07;
+  opacity: 0.055;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  animation: octus-mark-fade 18s ease-in-out infinite;
+  animation: octus-mark-fade 22s ease-in-out infinite;
 }
 .site-header--on-dark .site-header__brand-rule {
   background: linear-gradient(90deg, transparent 0%, rgba(0, 101, 255, 0.55) 18%, rgba(0, 101, 255, 0.55) 82%, transparent 100%);
@@ -2062,6 +2088,194 @@ footer .heading-lg,
     transparent 100%
   );
   border-radius: 1px;
+}
+
+/* ─── Institutional symbol system (structural, not decorative) ─── */
+.octus-symbol-marker {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+.octus-symbol-marker img {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+.octus-editorial-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 28rem;
+  margin: 0 auto 2rem;
+}
+.octus-editorial-divider__line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 101, 255, 0.45) 40%,
+    rgba(0, 101, 255, 0.45) 60%,
+    transparent 100%
+  );
+}
+.octus-editorial-divider--dark .octus-editorial-divider__line {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.28) 40%,
+    rgba(255, 255, 255, 0.28) 60%,
+    transparent 100%
+  );
+}
+.octus-editorial-divider__mark {
+  flex-shrink: 0;
+  opacity: 0.85;
+}
+
+.octus-chapter-transition {
+  position: relative;
+  height: 3.5rem;
+  overflow: hidden;
+  pointer-events: none;
+}
+.octus-chapter-transition__mark {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 48px;
+  height: 36px;
+  transform: translate(-50%, -50%);
+  opacity: 0.07;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.octus-chapter-transition__rule {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 50%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 101, 255, 0.22) 30%,
+    rgba(0, 101, 255, 0.22) 70%,
+    transparent
+  );
+}
+
+.home-leadership-trust__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.5rem 3rem;
+  max-width: 36rem;
+}
+@media (max-width: 640px) {
+  .home-leadership-trust__grid {
+    grid-template-columns: 1fr;
+    max-width: 14rem;
+  }
+}
+.home-leadership-trust__card {
+  color: inherit;
+  text-align: left;
+}
+.home-leadership-trust__photo-wrap {
+  width: 148px;
+  height: 148px;
+  border-radius: 9999px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  background: hsl(220 18% 93%);
+  box-shadow:
+    0 0 0 2px hsl(var(--background)),
+    0 0 0 3.5px rgba(0, 101, 255, 0.38);
+}
+@media (min-width: 768px) {
+  .home-leadership-trust__photo-wrap {
+    width: 168px;
+    height: 168px;
+  }
+}
+.home-leadership-trust__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+  filter: grayscale(1) contrast(1.1) brightness(0.97);
+}
+.home-leadership-trust__name {
+  font-family: var(--font-unigeo), "Unigeo64", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: hsl(var(--brand-navy));
+}
+.home-leadership-trust__role {
+  margin-top: 0.25rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: hsl(var(--brand-blue));
+}
+
+/* Markets — symbol separator strip (editorial, light) */
+.markets-symbol-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.75rem 1.25rem;
+  margin-bottom: 2rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: hsl(var(--brand-navy));
+}
+.markets-symbol-strip img {
+  width: 14px;
+  height: auto;
+  opacity: 0.65;
+}
+
+/* Intelligence — editorial index band */
+.intelligence-editorial-band {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+@media (max-width: 768px) {
+  .intelligence-editorial-band {
+    grid-template-columns: 1fr;
+  }
+}
+.intelligence-editorial-band__item {
+  color: rgba(255, 255, 255, 0.88);
+}
+.intelligence-editorial-band__item .editorial-numeral {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.intelligence-editorial-band__label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+.intelligence-editorial-band__hint {
+  margin-top: 0.35rem;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  letter-spacing: 0;
 }
 
 .jurisdiction-tier {

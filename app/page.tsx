@@ -4,6 +4,10 @@ import { CtaLink } from "../components/system/CtaButton";
 import CapabilityRail from "../components/system/CapabilityRail";
 import Eyebrow from "../components/system/Eyebrow";
 import OctusIcon from "../components/icons/OctusIcon";
+import HomeLeadershipTrust from "../components/system/HomeLeadershipTrust";
+import OctusSymbolMarker from "../components/system/OctusSymbolMarker";
+import OctusEditorialDivider from "../components/system/OctusEditorialDivider";
+import OctusChapterTransition from "../components/system/OctusChapterTransition";
 import { SOLUTION_HUBS } from "../lib/commercial";
 import { BRAND } from "../lib/brand";
 import {
@@ -115,17 +119,20 @@ export default function HomePage() {
 
       <section className="border-b border-border bg-background py-14 md:py-16">
         <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-8 flex justify-center">
+            <OctusSymbolMarker size={20} />
+          </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 md:gap-0">
             <div className="flex flex-col items-center text-center sm:border-r sm:border-border">
-              <span className="font-heading text-3xl font-bold text-primary md:text-4xl">15+</span>
+              <span className="editorial-numeral editorial-numeral--sm">15+</span>
               <span className="mt-2 font-sans text-sm text-muted-foreground">jurisdictions</span>
             </div>
             <div className="flex flex-col items-center text-center sm:border-r sm:border-border">
-              <span className="font-heading text-3xl font-bold text-primary md:text-4xl">2019</span>
+              <span className="editorial-numeral editorial-numeral--sm">2019</span>
               <span className="mt-2 font-sans text-sm text-muted-foreground">Operating since</span>
             </div>
             <div className="flex flex-col items-center text-center">
-              <span className="font-heading text-3xl font-bold text-primary md:text-4xl">6</span>
+              <span className="editorial-numeral editorial-numeral--sm">06</span>
               <span className="mt-2 font-sans text-sm text-muted-foreground">solutions</span>
             </div>
           </div>
@@ -135,9 +142,14 @@ export default function HomePage() {
         </div>
       </section>
 
+      <HomeLeadershipTrust />
+
+      <OctusChapterTransition />
+
       <section className="surface-elevated py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <div className="mb-12 max-w-2xl md:mb-16">
+            <OctusSymbolMarker size={18} />
             <p className="section-label mb-4 block">The regulated problem</p>
             <h2 className="heading-section mb-6">What we fix.</h2>
             <p className="body-large mb-4">
@@ -391,6 +403,7 @@ export default function HomePage() {
       <section className="surface-elevated py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <div className="mb-12 max-w-2xl md:mb-16">
+            <OctusSymbolMarker size={18} />
             <p className="section-label mb-4 block">Solutions</p>
             <div className="mb-4 flex flex-wrap gap-x-4 gap-y-2">
               {[
@@ -412,6 +425,7 @@ export default function HomePage() {
               Complex regulated problem → Octus assumes coordination → regulatory and operational
               execution → stable operation.
             </p>
+            <OctusEditorialDivider className="mt-8 ml-0 mr-auto" />
           </div>
           <HomeModulesAccordion modules={solutionRows} />
         </div>
