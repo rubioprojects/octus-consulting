@@ -15,13 +15,17 @@ type Member = {
   linkedin: string | null;
   capability?: string;
   featured?: boolean;
+  /** CSS hook for object-position fine-tune (crop only) */
+  photoKey?: string;
 };
 
+/** Dominant row: Rubio LEFT · Maria RIGHT */
 const leadership: Member[] = [
   {
     name: "Rubio Teixeira",
     title: "Founder",
     photo: "/team/rubio-teixeira.jpg",
+    photoKey: "rubio",
     focus:
       "Regulatory structuring, international licensing and market entry strategy. Operational presence across Brazil, Portugal, EU and offshore jurisdictions since 2019.",
     linkedin: "https://www.linkedin.com/in/rubioteixeiraoctus/",
@@ -30,18 +34,33 @@ const leadership: Member[] = [
     name: "Maria Cristina",
     title: "Managing Director",
     photo: "/team/maria-cristina.jpg",
+    photoKey: "maria",
     focus:
       "Operational leadership and client engagement across Octus' regulatory and compliance mandates. Senior depth across regulated markets in Brazil and internationally.",
     linkedin: "https://www.linkedin.com/in/maria-cristina-060241b6/",
   },
 ];
 
-/** Hierarchy order: Esther, Caroline, Larissa, Milla first — roster unchanged */
+/** Executive profile under Leadership — does not compete with founders */
+const leadershipSupport: Member[] = [
+  {
+    name: "Rodrigo Coelho Lopes",
+    title: "Legal Architecture Lead",
+    photo: "/team/rodrigo-lopes.jpg",
+    photoKey: "rodrigo",
+    capability: "Legal architecture",
+    focus:
+      "Legal strategy and coordination across the group's regulatory and corporate mandates. Oversight of legal architecture, cross-border structure and jurisdictional risk.",
+    linkedin: null,
+  },
+];
+
 const specialists: Member[] = [
   {
     name: "Esther Vendrami",
     title: "International Regulatory & Compliance Lead",
     photo: "/team/esther-vendrami.jpg",
+    photoKey: "esther",
     capability: "International regulatory",
     focus:
       "International licensing, outsourced compliance operations (CO as a service), company formations and banking access across offshore and regulated environments.",
@@ -52,6 +71,7 @@ const specialists: Member[] = [
     name: "Caroline Giovanetti",
     title: "Brazil Regulatory Lead",
     photo: "/team/caroline-giovanetti.jpg",
+    photoKey: "caroline",
     capability: "Brazil regulatory",
     focus:
       "Regulatory processes, licensing and administrative operations for Brazil. Coordination of all Brazil-facing regulatory and compliance activities.",
@@ -62,6 +82,7 @@ const specialists: Member[] = [
     name: "Larissa Carvalho",
     title: "Regulatory & Compliance Specialist",
     photo: "/team/larissa-carvalho.jpg",
+    photoKey: "larissa",
     capability: "Regulatory & compliance",
     focus:
       "Operational support across regulatory and compliance engagements. Coordination of documentation, processes and client-facing deliverables.",
@@ -72,38 +93,21 @@ const specialists: Member[] = [
     name: "Milla Ludovico",
     title: "Business Development Lead",
     photo: "/team/milla-ludovico.jpg",
+    photoKey: "milla",
     capability: "Commercial intake",
     focus:
       "New business development, client intake and commercial strategy. Works directly with the founding team across new mandates and market opportunities.",
     linkedin: "https://www.linkedin.com/in/milla-ludovico-6a9945a2/",
     featured: true,
   },
-  {
-    name: "Rodrigo Coelho Lopes",
-    title: "Legal Architecture Lead",
-    photo: "/team/rodrigo-lopes.jpg",
-    capability: "Legal architecture",
-    focus:
-      "Legal strategy and coordination across the group's regulatory and corporate mandates. Oversight of legal architecture, cross-border structure and jurisdictional risk.",
-    linkedin: null,
-  },
-  {
-    name: "Daniel Cruz Fonseca",
-    title: "Regulatory & Compliance Specialist",
-    photo: "/team-daniel.jpg",
-    capability: "Regulatory & compliance",
-    focus:
-      "Regulatory and compliance structuring across iGaming, fintech and betting. Multi-jurisdictional experience: Curaçao, Malta, Isle of Man, Dubai, Anjouan.",
-    linkedin: null,
-  },
 ];
 
-/** Hierarchy: Bianca primary — Claudia & Luciana retained */
 const operations: Member[] = [
   {
     name: "Bianca Carolina Oliveira Andrade",
     title: "People & Operations",
     photo: "/team/bianca.jpg",
+    photoKey: "bianca",
     capability: "People & delivery",
     focus:
       "People operations, talent coordination and internal processes. Supports team structure, recruitment and operational management across the Octus group.",
@@ -114,6 +118,7 @@ const operations: Member[] = [
     name: "Claudia Nery",
     title: "Chief Financial Officer",
     photo: "/team/claudia-nery.jpg",
+    photoKey: "claudia",
     capability: "Financial governance",
     focus:
       "Corporate and financial architecture. Financial governance, group structuring and reporting across jurisdictions.",
@@ -122,7 +127,8 @@ const operations: Member[] = [
   {
     name: "Luciana Santos Veloso",
     title: "Operations Coordinator",
-    photo: "/team-luciana.jpg",
+    photo: "/team/luciana-santos-veloso.jpg",
+    photoKey: "luciana",
     capability: "Operations",
     focus:
       "Operational workflows, client documentation and cross-functional coordination across multiple jurisdictions.",
@@ -135,17 +141,23 @@ function MemberCard({
   tier,
 }: {
   member: Member;
-  tier: "leadership" | "specialist" | "operations";
+  tier: "leadership" | "leadership-support" | "specialist" | "operations";
 }) {
   const cardTier =
-    tier === "operations" && member.featured ? "operations-featured" : tier;
-  const quiet = !member.featured && tier !== "leadership";
+    tier === "operations" && member.featured
+      ? "operations-featured"
+      : tier === "leadership-support"
+        ? "leadership-support"
+        : tier;
+  const quiet = !member.featured && (tier === "specialist" || tier === "operations");
 
   const inner = (
     <article
       className={`team-card team-card--${cardTier}${quiet ? " team-card--quiet" : ""}`}
     >
-      <div className="team-card-photo-wrap">
+      <div
+        className={`team-card-photo-wrap${member.photoKey ? ` team-photo--${member.photoKey}` : ""}`}
+      >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={member.photo} alt={member.name} className="team-card-photo" />
       </div>
@@ -200,6 +212,12 @@ export default function TeamPage() {
             ))}
           </div>
 
+          <div className="team-grid team-grid--leadership-support mb-16">
+            {leadershipSupport.map((m) => (
+              <MemberCard key={m.name} member={m} tier="leadership-support" />
+            ))}
+          </div>
+
           <p className="team-band-label">Core Specialists</p>
           <div className="team-grid team-grid--core mb-16">
             {specialists.map((m) => (
@@ -208,7 +226,7 @@ export default function TeamPage() {
           </div>
 
           <p className="team-band-label">Operations</p>
-          <div className="team-grid">
+          <div className="team-grid team-grid--operations">
             {operations.map((m) => (
               <MemberCard key={m.name} member={m} tier="operations" />
             ))}

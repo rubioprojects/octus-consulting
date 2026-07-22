@@ -94,7 +94,7 @@ export default function RootLayout({
           <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="site-footer__brand-close">
               <a href="/" className="inline-flex items-center no-underline" aria-label="Octus Consulting">
-                <BrandLockup variant="on-dark" className="h-11 w-auto md:h-12" />
+                <BrandLockup variant="on-dark" className="h-10 w-auto md:h-11" />
               </a>
               <p className="site-footer__brand-close__wordmark" aria-hidden="true">
                 OCTUS CONSULTING

@@ -1840,25 +1840,25 @@ footer .heading-lg,
 }
 .site-footer__brand-close {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding-bottom: 3rem;
+  padding-bottom: 3.25rem;
   margin-bottom: 2.75rem;
 }
 .site-footer__brand-close__wordmark {
   font-family: var(--font-unigeo), "Unigeo64", sans-serif;
-  font-size: clamp(1.35rem, 2.4vw, 1.75rem);
+  font-size: clamp(1.5rem, 2.6vw, 1.875rem);
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
   color: #fff;
-  margin-top: 1.25rem;
-  line-height: 1.15;
+  margin-top: 1.35rem;
+  line-height: 1.1;
 }
 .site-footer__brand-close__line {
-  font-size: 0.9375rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.55;
-  color: rgba(255, 255, 255, 0.82);
-  max-width: 28rem;
-  margin-top: 0.75rem;
+  color: rgba(255, 255, 255, 0.86);
+  max-width: 30rem;
+  margin-top: 0.85rem;
 }
 .site-footer__nav-label {
   font-family: var(--font-inter), Inter, sans-serif;
@@ -1889,25 +1889,25 @@ footer .heading-lg,
   pointer-events: none;
 }
 .site-footer__legal {
-  opacity: 0.72;
+  opacity: 0.62;
 }
 .site-footer__legal .site-footer__nav-label {
-  color: rgba(255, 255, 255, 0.42);
+  color: rgba(255, 255, 255, 0.36);
   font-weight: 500;
 }
 .site-footer__legal a {
-  color: rgba(255, 255, 255, 0.38) !important;
-  font-size: 0.8125rem !important;
+  color: rgba(255, 255, 255, 0.32) !important;
+  font-size: 0.75rem !important;
 }
 .site-footer__legal a:hover {
-  color: rgba(255, 255, 255, 0.65) !important;
+  color: rgba(255, 255, 255, 0.58) !important;
 }
 .site-footer__bar {
-  opacity: 0.9;
+  opacity: 0.85;
 }
 .site-footer__bar p,
 .site-footer__bar a {
-  color: rgba(255, 255, 255, 0.38) !important;
+  color: rgba(255, 255, 255, 0.34) !important;
   font-size: 0.6875rem !important;
 }
 
@@ -1925,7 +1925,7 @@ footer .heading-lg,
   max-width: 52rem;
   margin-inline: auto;
   gap: 48px 40px;
-  margin-bottom: 4rem;
+  margin-bottom: 1.75rem;
 }
 @media (max-width: 640px) {
   .team-grid--leadership {
@@ -1933,16 +1933,30 @@ footer .heading-lg,
     max-width: 20rem;
   }
 }
+.team-grid--leadership-support {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 18rem;
+  margin-inline: auto;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid hsl(var(--border));
+}
 .team-grid--core {
   margin-bottom: 1rem;
 }
-.team-grid--ops-primary {
-  max-width: 18rem;
-  margin-bottom: 0.5rem;
+.team-grid--operations {
+  max-width: 56rem;
+  margin-inline: auto;
 }
 .team-card--leadership .team-card-photo-wrap {
-  width: 188px;
-  height: 188px;
+  width: 196px;
+  height: 196px;
+}
+.team-card--leadership-support .team-card-photo-wrap {
+  width: 148px;
+  height: 148px;
 }
 .team-card--specialist .team-card-photo-wrap {
   width: 140px;
@@ -1953,34 +1967,59 @@ footer .heading-lg,
   height: 120px;
 }
 .team-card--operations-featured .team-card-photo-wrap {
-  width: 132px;
-  height: 132px;
+  width: 136px;
+  height: 136px;
 }
 .team-card--quiet {
-  opacity: 0.88;
+  opacity: 0.9;
 }
 .team-card--quiet .team-card-photo-wrap {
-  width: 116px;
-  height: 116px;
+  width: 112px;
+  height: 112px;
 }
-.team-card--quiet.team-card--specialist .team-card-photo-wrap {
-  width: 124px;
-  height: 124px;
+.team-card-link {
+  text-decoration: none;
+  color: inherit;
 }
+.team-card {
+  text-align: center;
+  padding: 20px 12px;
+  height: 100%;
+}
+/* Institutional portrait system */
 .team-card-photo-wrap {
   border-radius: 9999px;
   overflow: hidden;
-  background: hsl(220 20% 92%);
+  background: hsl(220 18% 93%);
   margin-inline: auto;
   margin-bottom: 1.25rem;
+  box-shadow:
+    0 0 0 2px hsl(var(--background)),
+    0 0 0 3px rgba(0, 101, 255, 0.35);
+}
+.team-card--leadership .team-card-photo-wrap {
+  box-shadow:
+    0 0 0 3px hsl(var(--background)),
+    0 0 0 4.5px rgba(0, 101, 255, 0.42);
 }
 .team-card-photo {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 20%;
-  filter: grayscale(1) contrast(1.08) brightness(0.98);
+  object-position: center 18%;
+  filter: grayscale(1) contrast(1.1) brightness(0.97);
 }
+/* Crop fine-tunes only — eyes / face recognition */
+.team-photo--rubio .team-card-photo { object-position: center 16%; }
+.team-photo--maria .team-card-photo { object-position: center 20%; }
+.team-photo--rodrigo .team-card-photo { object-position: center 14%; }
+.team-photo--esther .team-card-photo { object-position: center 18%; }
+.team-photo--caroline .team-card-photo { object-position: center 20%; }
+.team-photo--larissa .team-card-photo { object-position: center 18%; }
+.team-photo--milla .team-card-photo { object-position: center 22%; }
+.team-photo--bianca .team-card-photo { object-position: center 18%; }
+.team-photo--claudia .team-card-photo { object-position: center 16%; }
+.team-photo--luciana .team-card-photo { object-position: center 12%; }
 .team-capability {
   font-size: 11px;
   letter-spacing: 0.1em;
@@ -1988,16 +2027,29 @@ footer .heading-lg,
   color: hsl(var(--brand-blue));
   margin-bottom: 8px;
 }
-.team-card {
-  text-align: center;
-}
 .team-card--leadership .heading-sm {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
+}
+.team-card--leadership-support .heading-sm {
+  font-size: 1.05rem;
 }
 .team-card-role {
-  color: hsl(220 14% 28%);
+  color: hsl(220 14% 26%);
   font-weight: 500;
   margin-bottom: 0.75rem;
+  font-size: 0.8125rem;
+  letter-spacing: 0.04em;
+}
+@media (max-width: 768px) {
+  .team-card--leadership .team-card-photo-wrap {
+    width: 168px;
+    height: 168px;
+  }
+  .team-grid {
+    grid-template-columns: 1fr;
+    max-width: 22rem;
+    margin-inline: auto;
+  }
 }
 
 .octus-story-rail {
@@ -2136,7 +2188,7 @@ footer .heading-lg,
 }
 
 .site-header__logo {
-  max-height: 3rem; /* ~48px optical dominance */
+  max-height: 2.75rem; /* ~44px optical balance — not endless growth */
   width: auto;
 }
 .site-header__brand {
@@ -2144,7 +2196,7 @@ footer .heading-lg,
 }
 @media (min-width: 768px) {
   .site-header__logo {
-    max-height: 3rem;
+    max-height: 2.75rem;
   }
 }
 
@@ -2336,42 +2388,6 @@ footer .heading-lg,
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 40px 32px;
-}
-
-.team-card-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.team-card {
-  text-align: center;
-  padding: 24px 12px;
-  height: 100%;
-}
-
-.team-card-photo-wrap {
-  width: 140px;
-  height: 140px;
-  margin: 0 auto 24px;
-  border-radius: 50%;
-  overflow: hidden;
-  background: var(--surface-2);
-}
-
-.team-card-photo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 18%;
-  filter: grayscale(1) contrast(1.05);
-}
-
-.team-card-role {
-  font-size: 13px;
-  color: var(--primary-blue);
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  margin-bottom: 14px;
 }
 
 .careers-culture-visual {
