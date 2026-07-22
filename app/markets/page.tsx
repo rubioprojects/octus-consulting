@@ -59,9 +59,9 @@ export default function MarketsPage() {
         titleSecondLine="Same structural problem."
         description={
           <>
-            Whether it&apos;s iGaming, fintech or crypto, regulated operations fail for the same
-            reason: the structure doesn&apos;t hold. We don&apos;t specialize in industries. We
-            specialize in fixing regulated operations.
+            Market intelligence for operators under pressure — iGaming, fintech, digital assets and
+            high-risk digital businesses. We don&apos;t specialize in industries as categories. We
+            specialize in structures that hold under regulatory and banking scrutiny.
           </>
         }
       />
@@ -74,7 +74,7 @@ export default function MarketsPage() {
               <div className="octus-story-rail w-0.5 shrink-0 self-stretch min-h-[3.5rem]" />
               <div>
                 <p className="label">Market intelligence</p>
-                <h2 className="heading-section">Deep expertise, not broad coverage.</h2>
+                <h2 className="heading-section">Strategic briefs, not category tiles.</h2>
               </div>
             </div>
           </Reveal>

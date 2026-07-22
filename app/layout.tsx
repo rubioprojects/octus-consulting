@@ -94,12 +94,15 @@ export default function RootLayout({
           <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="site-footer__brand-close">
               <a href="/" className="inline-flex items-center no-underline" aria-label="Octus Consulting">
-                <BrandLockup variant="on-dark" className="h-10 w-auto md:h-11" />
+                <BrandLockup variant="on-dark" className="h-11 w-auto md:h-12" />
               </a>
-              <p className="mt-4 max-w-md text-sm font-normal leading-relaxed text-white/75">
+              <p className="site-footer__brand-close__wordmark" aria-hidden="true">
+                OCTUS CONSULTING
+              </p>
+              <p className="site-footer__brand-close__line">
                 Premium international execution partner for highly regulated operations.
               </p>
-              <div className="mt-4 flex flex-wrap items-center gap-4">
+              <div className="mt-6 flex flex-wrap items-center gap-4">
                 <a
                   href={WHATSAPP_DISCUSS_URL}
                   target="_blank"
@@ -137,9 +140,7 @@ export default function RootLayout({
 
             <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:gap-8 lg:grid-cols-3 xl:grid-cols-5">
               <div>
-                <p className="mb-5 font-sans text-xs font-medium uppercase tracking-[0.15em] text-white/75">
-                  Solutions
-                </p>
+                <p className="site-footer__nav-label">Solutions</p>
                 <ul className="flex list-none flex-col gap-2.5">
                   {[
                     { label: "Regulatory Strategy & Licensing", href: "/solutions/regulatory-strategy-licensing" },
@@ -152,7 +153,7 @@ export default function RootLayout({
                     <li key={l.href}>
                       <a
                         href={l.href}
-                        className="font-sans text-sm text-white/65 no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                        className="site-footer__nav-link font-sans no-underline transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                       >
                         {l.label}
                       </a>
@@ -162,9 +163,7 @@ export default function RootLayout({
               </div>
 
               <div>
-                <p className="mb-5 font-sans text-xs font-medium uppercase tracking-[0.15em] text-white/75">
-                  Markets
-                </p>
+                <p className="site-footer__nav-label">Markets</p>
                 <ul className="flex list-none flex-col gap-2.5">
                   {[
                     { label: "iGaming", href: "/markets/igaming" },
@@ -175,7 +174,7 @@ export default function RootLayout({
                     <li key={l.href}>
                       <a
                         href={l.href}
-                        className="font-sans text-sm text-white/65 no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                        className="site-footer__nav-link font-sans no-underline transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                       >
                         {l.label}
                       </a>
@@ -185,9 +184,7 @@ export default function RootLayout({
               </div>
 
               <div>
-                <p className="mb-5 font-sans text-xs font-medium uppercase tracking-[0.15em] text-white/75">
-                  Engage
-                </p>
+                <p className="site-footer__nav-label">Engage</p>
                 <ul className="flex list-none flex-col gap-2.5">
                   {[
                     { label: "How we engage", href: "/how-we-engage" },
@@ -199,7 +196,7 @@ export default function RootLayout({
                     <li key={l.href}>
                       <a
                         href={l.href}
-                        className="font-sans text-sm text-white/65 no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                        className="site-footer__nav-link font-sans no-underline transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                       >
                         {l.label}
                       </a>
@@ -209,9 +206,7 @@ export default function RootLayout({
               </div>
 
               <div>
-                <p className="mb-5 font-sans text-xs font-medium uppercase tracking-[0.15em] text-white/75">
-                  Company
-                </p>
+                <p className="site-footer__nav-label">Company</p>
                 <ul className="flex list-none flex-col gap-2.5">
                   {[
                     { label: "About", href: "/about" },
@@ -223,7 +218,7 @@ export default function RootLayout({
                     <li key={l.href}>
                       <a
                         href={l.href}
-                        className="font-sans text-sm text-white/65 no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                        className="site-footer__nav-link font-sans no-underline transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                       >
                         {l.label}
                       </a>
@@ -233,7 +228,7 @@ export default function RootLayout({
               </div>
 
               <div className="site-footer__legal">
-                <p className="mb-5 font-sans text-xs font-medium uppercase tracking-[0.15em] text-white/55">Legal</p>
+                <p className="site-footer__nav-label">Legal</p>
                 <ul className="flex list-none flex-col gap-2.5">
                   {[
                     { label: "Privacy Policy", href: "/privacy" },
@@ -244,7 +239,7 @@ export default function RootLayout({
                     <li key={l.href}>
                       <a
                         href={l.href}
-                        className="font-sans text-sm text-white/65 no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                        className="font-sans no-underline transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                       >
                         {l.label}
                       </a>
@@ -254,7 +249,7 @@ export default function RootLayout({
               </div>
             </div>
 
-            <div className="site-footer__legal mt-16 border-t border-white/10 pt-8">
+            <div className="site-footer__bar site-footer__legal mt-16 border-t border-white/10 pt-8">
               <div className="font-sans">
                 <p className="text-xs text-white/45">© 2026 Octus Consulting. All rights reserved.</p>
                 <p className="mt-1 text-xs text-white/45">

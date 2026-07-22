@@ -38,7 +38,7 @@ export default function CapabilityRail({
                 <OctusStripSeparatorIcon className="h-2.5 w-2.5 shrink-0 text-white/22" />
               )}
               <span className="capability-rail__item">
-                <OctusIcon name={item.icon} size={13} className="text-white/45 opacity-90" />
+                <OctusIcon name={item.icon} size={14} className="text-white/55 opacity-95" />
                 {item.label}
               </span>
             </Fragment>
@@ -52,7 +52,7 @@ export default function CapabilityRail({
                 <OctusStripSeparatorIcon className="h-2.5 w-2.5 shrink-0 text-white/22" />
               )}
               <span className="capability-rail__item">
-                <OctusIcon name={item.icon} size={13} className="text-white/45 opacity-90" />
+                <OctusIcon name={item.icon} size={14} className="text-white/55 opacity-95" />
                 {item.label}
               </span>
             </Fragment>

@@ -24,9 +24,9 @@ export default function IntelligencePage() {
     <main>
       <PageHero
         eyebrow="Intelligence"
-        title="Intelligence for regulated operations."
-        titleSecondLine="Signals that inform execution."
-        description="Public analysis covering regulatory developments, market signals, operational risk and executive decision-making in highly regulated markets."
+        title="Regulatory signals. Market intelligence."
+        titleSecondLine="Operational insights."
+        description="Public analysis for operators under regulatory and banking pressure — clarity for executive decisions, not a product surface."
         primaryCta={{ href: "/insights", label: "Explore Insights →" }}
         secondaryCta={{ href: WHATSAPP_DISCUSS_URL, label: CTA_DISCUSS_LABEL, external: true }}
       />
@@ -36,14 +36,15 @@ export default function IntelligencePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
             <div className="mb-3 h-px w-16 accent-cream-bar opacity-80" aria-hidden="true" />
-            <p className="section-label mb-4 block">Coverage</p>
-            <h2 className="heading-section mb-4 max-w-2xl">What Intelligence covers</h2>
+            <p className="section-label mb-4 block">Authority platform</p>
+            <h2 className="heading-section mb-4 max-w-2xl">Editorial signals that scale</h2>
             <p className="body-large mb-4 max-w-2xl">
-              Authority through clarity — not volume. Each pillar maps to decisions operators face
-              under regulatory and banking pressure.
+              Regulatory signals. Market intelligence. Operational insights. Each pillar maps to
+              decisions operators face under scrutiny — built to grow without becoming a chatbot
+              or product UI.
             </p>
-            <p className="mb-12 max-w-xl font-sans text-sm text-white/55">
-              Editorial signals for regulated operations — not a product surface.
+            <p className="mb-12 max-w-xl font-sans text-sm text-white/70">
+              Editorial authority for regulated operations — not a product surface.
             </p>
           </Reveal>
           <div className="grid gap-6 md:grid-cols-2">

@@ -14,6 +14,7 @@ type Member = {
   focus: string;
   linkedin: string | null;
   capability?: string;
+  featured?: boolean;
 };
 
 const leadership: Member[] = [
@@ -35,7 +36,48 @@ const leadership: Member[] = [
   },
 ];
 
+/** Hierarchy order: Esther, Caroline, Larissa, Milla first — roster unchanged */
 const specialists: Member[] = [
+  {
+    name: "Esther Vendrami",
+    title: "International Regulatory & Compliance Lead",
+    photo: "/team/esther-vendrami.jpg",
+    capability: "International regulatory",
+    focus:
+      "International licensing, outsourced compliance operations (CO as a service), company formations and banking access across offshore and regulated environments.",
+    linkedin: "https://www.linkedin.com/in/esthervendrami/",
+    featured: true,
+  },
+  {
+    name: "Caroline Giovanetti",
+    title: "Brazil Regulatory Lead",
+    photo: "/team/caroline-giovanetti.jpg",
+    capability: "Brazil regulatory",
+    focus:
+      "Regulatory processes, licensing and administrative operations for Brazil. Coordination of all Brazil-facing regulatory and compliance activities.",
+    linkedin: "https://www.linkedin.com/in/caroline-cubas-giovanetti-400820144/",
+    featured: true,
+  },
+  {
+    name: "Larissa Carvalho",
+    title: "Regulatory & Compliance Specialist",
+    photo: "/team/larissa-carvalho.jpg",
+    capability: "Regulatory & compliance",
+    focus:
+      "Operational support across regulatory and compliance engagements. Coordination of documentation, processes and client-facing deliverables.",
+    linkedin: "https://www.linkedin.com/in/larissaocarvalho/",
+    featured: true,
+  },
+  {
+    name: "Milla Ludovico",
+    title: "Business Development Lead",
+    photo: "/team/milla-ludovico.jpg",
+    capability: "Commercial intake",
+    focus:
+      "New business development, client intake and commercial strategy. Works directly with the founding team across new mandates and market opportunities.",
+    linkedin: "https://www.linkedin.com/in/milla-ludovico-6a9945a2/",
+    featured: true,
+  },
   {
     name: "Rodrigo Coelho Lopes",
     title: "Legal Architecture Lead",
@@ -46,33 +88,6 @@ const specialists: Member[] = [
     linkedin: null,
   },
   {
-    name: "Esther Vendrami",
-    title: "International Regulatory & Compliance Lead",
-    photo: "/team/esther-vendrami.jpg",
-    capability: "International regulatory",
-    focus:
-      "International licensing, outsourced compliance operations (CO as a service), company formations and banking access across offshore and regulated environments.",
-    linkedin: "https://www.linkedin.com/in/esthervendrami/",
-  },
-  {
-    name: "Caroline Giovanetti",
-    title: "Brazil Regulatory Lead",
-    photo: "/team/caroline-giovanetti.jpg",
-    capability: "Brazil regulatory",
-    focus:
-      "Regulatory processes, licensing and administrative operations for Brazil. Coordination of all Brazil-facing regulatory and compliance activities.",
-    linkedin: "https://www.linkedin.com/in/caroline-cubas-giovanetti-400820144/",
-  },
-  {
-    name: "Larissa Carvalho",
-    title: "Regulatory & Compliance Specialist",
-    photo: "/team/larissa-carvalho.jpg",
-    capability: "Regulatory & compliance",
-    focus:
-      "Operational support across regulatory and compliance engagements. Coordination of documentation, processes and client-facing deliverables.",
-    linkedin: "https://www.linkedin.com/in/larissaocarvalho/",
-  },
-  {
     name: "Daniel Cruz Fonseca",
     title: "Regulatory & Compliance Specialist",
     photo: "/team-daniel.jpg",
@@ -81,27 +96,10 @@ const specialists: Member[] = [
       "Regulatory and compliance structuring across iGaming, fintech and betting. Multi-jurisdictional experience: Curaçao, Malta, Isle of Man, Dubai, Anjouan.",
     linkedin: null,
   },
-  {
-    name: "Milla Ludovico",
-    title: "Business Development Lead",
-    photo: "/team/milla-ludovico.jpg",
-    capability: "Commercial intake",
-    focus:
-      "New business development, client intake and commercial strategy. Works directly with the founding team across new mandates and market opportunities.",
-    linkedin: "https://www.linkedin.com/in/milla-ludovico-6a9945a2/",
-  },
 ];
 
+/** Hierarchy: Bianca primary — Claudia & Luciana retained */
 const operations: Member[] = [
-  {
-    name: "Claudia Nery",
-    title: "Chief Financial Officer",
-    photo: "/team/claudia-nery.jpg",
-    capability: "Financial governance",
-    focus:
-      "Corporate and financial architecture. Financial governance, group structuring and reporting across jurisdictions.",
-    linkedin: "https://www.linkedin.com/in/claudia-nery/",
-  },
   {
     name: "Bianca Carolina Oliveira Andrade",
     title: "People & Operations",
@@ -110,6 +108,16 @@ const operations: Member[] = [
     focus:
       "People operations, talent coordination and internal processes. Supports team structure, recruitment and operational management across the Octus group.",
     linkedin: "https://www.linkedin.com/in/rh2463365recursoshumanos/",
+    featured: true,
+  },
+  {
+    name: "Claudia Nery",
+    title: "Chief Financial Officer",
+    photo: "/team/claudia-nery.jpg",
+    capability: "Financial governance",
+    focus:
+      "Corporate and financial architecture. Financial governance, group structuring and reporting across jurisdictions.",
+    linkedin: "https://www.linkedin.com/in/claudia-nery/",
   },
   {
     name: "Luciana Santos Veloso",
@@ -129,8 +137,14 @@ function MemberCard({
   member: Member;
   tier: "leadership" | "specialist" | "operations";
 }) {
+  const cardTier =
+    tier === "operations" && member.featured ? "operations-featured" : tier;
+  const quiet = !member.featured && tier !== "leadership";
+
   const inner = (
-    <article className={`team-card team-card--${tier}`}>
+    <article
+      className={`team-card team-card--${cardTier}${quiet ? " team-card--quiet" : ""}`}
+    >
       <div className="team-card-photo-wrap">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={member.photo} alt={member.name} className="team-card-photo" />
@@ -169,10 +183,9 @@ export default function TeamPage() {
           <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
             People who understand how regulated operations hold together.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/75">
-            Octus combines regulatory structuring with operational execution. The team is built
-            around people who work inside complex regulated environments, not around generic
-            advisory roles.
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">
+            Accountability starts with clear leadership. Octus is built around people who work
+            inside complex regulated environments — not a generic advisory directory.
           </p>
         </div>
         <div className="octus-dark-hero__seam" aria-hidden="true" />
@@ -188,13 +201,13 @@ export default function TeamPage() {
           </div>
 
           <p className="team-band-label">Core Specialists</p>
-          <div className="team-grid mb-16">
+          <div className="team-grid team-grid--core mb-16">
             {specialists.map((m) => (
               <MemberCard key={m.name} member={m} tier="specialist" />
             ))}
           </div>
 
-          <p className="team-band-label">Operations &amp; Delivery</p>
+          <p className="team-band-label">Operations</p>
           <div className="team-grid">
             {operations.map((m) => (
               <MemberCard key={m.name} member={m} tier="operations" />
@@ -209,7 +222,7 @@ export default function TeamPage() {
           <h2 className="heading-lg cta-block__title" style={{ marginBottom: "20px" }}>
             Work with a team built for regulatory execution.
           </h2>
-          <p className="body-large" style={{ marginBottom: "32px", color: "rgba(255,255,255,0.72)" }}>
+          <p className="body-large" style={{ marginBottom: "32px", color: "rgba(255,255,255,0.78)" }}>
             We work with operators who need regulatory clarity, operational discipline and
             structures that survive scrutiny.
           </p>

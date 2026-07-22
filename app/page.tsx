@@ -85,7 +85,7 @@ export default function HomePage() {
             <br />
             <span className="text-white/85">They fail structurally.</span>
           </h1>
-          <p className="mt-8 mb-12 max-w-[38rem] text-base leading-[1.7] text-white/75 sm:text-lg md:mt-10 md:mb-14">
+          <p className="mt-8 mb-12 max-w-[38rem] text-base leading-[1.7] text-white/80 sm:text-lg md:mt-10 md:mb-14">
             Complex regulated problems need an accountable execution partner — licensing, banking,
             compliance and structure coordinated so the operation can hold under scrutiny.
           </p>
@@ -374,7 +374,7 @@ export default function HomePage() {
           <h2 className="mb-6 font-heading text-3xl font-semibold leading-[1.12] tracking-tight text-white md:text-4xl">
             If your operation is stuck, blocked or exposed, we can fix it.
           </h2>
-          <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-white/75">
+          <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-white/80">
             We don&apos;t consult on theory. We step into live operations and restructure what isn&apos;t working.
           </p>
           <CtaLink

@@ -51,7 +51,7 @@ export default function Nav() {
         setOverDarkHero(false);
         return;
       }
-      const headerH = 84;
+      const headerH = 88;
       const bottom = hero.getBoundingClientRect().bottom;
       setOverDarkHero(bottom > headerH);
     };
@@ -65,40 +65,40 @@ export default function Nav() {
   }, []);
 
   const linkClass = overDarkHero
-    ? "font-sans text-[13px] tracking-wide text-white/55 no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white md:text-[13px]"
-    : "font-sans text-[13px] tracking-wide text-foreground/55 no-underline transition-colors hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary md:text-[13px]";
+    ? "font-sans text-[12px] tracking-[0.02em] text-white/70 no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white md:text-[12.5px]"
+    : "font-sans text-[12px] tracking-[0.02em] text-foreground/65 no-underline transition-colors hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary md:text-[12.5px]";
 
   const ctaClass =
-    "inline-flex items-center rounded-sm bg-primary px-5 py-2.5 font-sans text-[13px] font-medium tracking-[0.04em] text-primary-foreground no-underline transition-colors hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary md:px-5 md:text-[13px]";
+    "inline-flex items-center rounded-sm bg-primary px-4 py-2 font-sans text-[12px] font-medium tracking-[0.03em] text-primary-foreground no-underline transition-colors hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary md:px-5 md:text-[12.5px]";
 
   return (
     <>
       <nav
         className={
           overDarkHero
-            ? "site-header site-header--on-dark fixed left-0 right-0 top-0 z-50 flex h-[4.75rem] items-center border-b border-white/10 bg-[#0B1220] md:h-[5.25rem]"
-            : "site-header fixed left-0 right-0 top-0 z-50 flex h-[4.75rem] items-center border-b border-border/50 bg-background md:h-[5.25rem]"
+            ? "site-header site-header--on-dark fixed left-0 right-0 top-0 z-50 flex h-[5rem] items-center border-b border-white/10 bg-[#0B1220] md:h-[5.5rem]"
+            : "site-header fixed left-0 right-0 top-0 z-50 flex h-[5rem] items-center border-b border-border/50 bg-background md:h-[5.5rem]"
         }
         aria-label="Main"
         data-over-dark-hero={overDarkHero ? "true" : "false"}
       >
         <div className="site-header__brand-rule" aria-hidden="true" />
-        <div className="relative z-10 mx-auto flex h-full w-full max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 mx-auto flex h-full w-full max-w-7xl items-center justify-between gap-8 px-4 sm:px-6 lg:px-8">
           <Link
             href="/"
-            className={`flex shrink-0 items-center no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 ${
+            className={`site-header__brand flex shrink-0 items-center no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 ${
               overDarkHero ? "focus-visible:outline-white" : "focus-visible:outline-primary"
             }`}
             aria-label="Octus Consulting home"
           >
             <BrandLockup
               variant={overDarkHero ? "on-dark" : "on-light"}
-              className="site-header__logo h-10 w-auto md:h-11"
+              className="site-header__logo h-11 w-auto md:h-12"
               priority
             />
           </Link>
 
-          <div className="hidden items-center gap-6 lg:gap-8 md:flex">
+          <div className="hidden items-center gap-5 lg:gap-6 md:flex">
             {primaryLinks.map((l) => (
               <Link key={l.href} href={l.href} className={linkClass}>
                 {l.label}
@@ -142,7 +142,7 @@ export default function Nav() {
       {mobileOpen && (
         <div
           id="mobile-nav"
-          className="fixed inset-0 z-40 bg-background pt-[4.75rem] md:hidden"
+          className="fixed inset-0 z-40 bg-background pt-[5rem] md:hidden"
           role="dialog"
           aria-modal="true"
           aria-label="Mobile navigation"

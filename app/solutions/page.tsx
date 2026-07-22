@@ -38,13 +38,14 @@ export default function SolutionsPage() {
         <BrandSectionMotif />
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
-            <p className="section-label mb-4 block">Commercial map</p>
+            <p className="section-label mb-4 block">Octus capabilities</p>
             <h2 className="heading-section heading-section--brand mb-4 max-w-2xl">
-              Six solutions. One execution partner.
+              Six capabilities. One accountable layer.
             </h2>
             <p className="body-large mb-12 max-w-2xl">
-              Markets describe where we operate. Solutions describe what we coordinate. Jurisdictions
-              remain education — not products.
+              Not a service catalogue — coordinated execution across regulatory, banking,
+              compliance, corporate and contractual layers. Markets describe where we operate.
+              Capabilities describe what we own.
             </p>
           </Reveal>
 
@@ -76,7 +77,7 @@ export default function SolutionsPage() {
                     <p className="relative z-10 mb-3 font-sans text-sm font-medium text-foreground">
                       {hub.problem}
                     </p>
-                    <p className="relative z-10 mb-6 flex-1 font-sans text-sm leading-relaxed text-[hsl(220_12%_28%)]">
+                    <p className="relative z-10 mb-6 flex-1 font-sans text-sm leading-relaxed text-[hsl(220_14%_24%)]">
                       {hub.summary}
                     </p>
                     {hub.legalBoundary && (
@@ -93,7 +94,7 @@ export default function SolutionsPage() {
                       href={hub.href}
                       className="relative z-10 font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
                     >
-                      Open solution →
+                      Open capability →
                     </Link>
                   </article>
                 </Reveal>

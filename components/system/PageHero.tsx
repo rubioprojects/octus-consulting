@@ -41,12 +41,12 @@ export default function PageHero({
           {titleSecondLine != null && (
             <>
               <br />
-              <span className="text-white/80">{titleSecondLine}</span>
+              <span className="text-white/85">{titleSecondLine}</span>
             </>
           )}
         </h1>
         {description != null && (
-          <div className="mt-6 max-w-[38rem] text-base leading-[1.7] text-white/75 sm:text-lg">
+          <div className="mt-6 max-w-[38rem] text-base leading-[1.7] text-white/80 sm:text-lg">
             {description}
           </div>
         )}
