@@ -5,7 +5,7 @@
 **Date:** 2026-07-21  
 **PR:** https://github.com/rubioprojects/octus-consulting/pull/10  
 **Branch:** `feat/official-brand-system-integration`  
-**SHA:** _(tip after push)_  
+**SHA:** `70cb232`  
 **Build:** `npm run build` — **PASS**
 
 ---
