@@ -7,6 +7,7 @@
 **PR:** https://github.com/rubioprojects/octus-consulting/pull/10  
 **Branch:** `feat/official-brand-system-integration`  
 **Baseline:** Institutional Deepening (PR #10)  
+**SHA:** `94f127f`  
 **Build:** `npm run build` — **PASS**
 
 ---
