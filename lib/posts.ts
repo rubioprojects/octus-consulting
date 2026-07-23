@@ -771,7 +771,7 @@ Quinel Limited is a globally recognised and accredited gaming certification labo
 
 **About Octus**
 
-Octus was founded in 2019 in Portugal by Rubio Teixeira and operates across regulated markets internationally, with offices in the United States, Portugal, the United Kingdom and Brazil. The firm supports clients in navigating complex regulatory environments with a specialised and proactive approach.`,
+Octus Technology LLC (Delaware), operating as Octus Consulting, supports regulated companies internationally, with operating roots in Brazil and Portugal.`,
   },
   {
     slug: "senate-commission-approves-casino-bingo-gaming-bill-brazil",

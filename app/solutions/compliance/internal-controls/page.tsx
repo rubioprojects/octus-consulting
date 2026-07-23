@@ -129,7 +129,7 @@ export default function InternalControlsPage() {
               { title: "Compliance-as-a-Service", desc: "Operational layer", href: "/solutions/compliance/compliance-as-a-service" },
               { title: "GLI Readiness", desc: "Depends on controls", href: "/solutions/compliance/gli-readiness" },
               { title: "AML/KYC", desc: "Controls regulators evaluate first", href: "/solutions/compliance/aml-kyc" },
-              { title: "Compliance & Risk", desc: "Full pillar", href: "/compliance" },
+              { title: "Compliance & Risk", desc: "Full pillar", href: "/solutions/compliance-risk-systems" },
             ].map((item) => (
               <Link key={item.href} href={item.href} className="card-grid" style={{ padding: "28px" }}>
                 <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{item.title}</h3>

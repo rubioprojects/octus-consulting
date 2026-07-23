@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/what-we-do",
+      "destination": "/what-octus-does",
+      "permanent": true
+    },
+    {
+      "source": "/what-we-do/",
+      "destination": "/what-octus-does",
+      "permanent": true
+    }
+  ]
+}

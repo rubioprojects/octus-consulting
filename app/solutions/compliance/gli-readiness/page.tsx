@@ -137,7 +137,7 @@ export default function GliReadinessPage() {
               { title: "Compliance-as-a-Service", desc: "Prevents audit gaps", href: "/solutions/compliance/compliance-as-a-service" },
               { title: "Internal Controls", desc: "Governance that supports readiness", href: "/solutions/compliance/internal-controls" },
               { title: "AML/KYC", desc: "What auditors evaluate first", href: "/solutions/compliance/aml-kyc" },
-              { title: "Audit & Readiness", desc: "Full pillar", href: "/audit" },
+              { title: "Audit & Readiness", desc: "Full pillar", href: "/solutions/operational-remediation-readiness" },
             ].map((item) => (
               <Link key={item.href} href={item.href} className="card-grid" style={{ padding: "28px" }}>
                 <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{item.title}</h3>
