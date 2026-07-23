@@ -13,10 +13,25 @@ export const WHATSAPP_DISCUSS_URL = `https://wa.me/${OCTUS_WHATSAPP_E164}?text=$
 
 export const WHATSAPP_ASSESS_URL = `https://wa.me/${OCTUS_WHATSAPP_E164}?text=${encodeURIComponent(WA_ASSESS_SITUATION_TEXT)}`;
 
-export const MAILTO_INFO = "mailto:info@octusconsulting.com";
+export const OCTUS_EMAIL = "info@octusconsulting.com";
+
+export const MAILTO_INFO = `mailto:${OCTUS_EMAIL}`;
+
+/** Formal institutional path — subject line for accessibility / share trails. */
+export const MAILTO_DISCUSS = `${MAILTO_INFO}?subject=${encodeURIComponent("Discuss operation with Octus")}`;
+
+export const MAILTO_ASSESS = `${MAILTO_INFO}?subject=${encodeURIComponent("Assess regulated operation — Octus")}`;
 
 export const CTA_DISCUSS_LABEL = "Discuss your operation →";
 export const CTA_ASSESS_LABEL = "Assess your situation →";
+export const CTA_EMAIL_LABEL = "Email Octus →";
+export const CTA_HOW_WE_WORK_LABEL = "See how we work →";
+export const CTA_CONTACT_LABEL = "Contact Octus →";
+
+/** Primary institutional Assess path — WhatsApp remains secondary. */
+export const ASSESS_PATH = "/diagnostic";
+
+export const CTA_WHATSAPP_ASSESS_LABEL = "Continue on WhatsApp →";
 
 /** Partnership intake — human-approved for Wave 3 public copy. */
 export const WA_PARTNERSHIP_TEXT =

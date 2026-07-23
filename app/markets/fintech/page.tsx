@@ -165,7 +165,7 @@ export default function MarketsFintechPage() {
             {[
               { title: "iGaming Operations", desc: "Our largest sector by volume.", href: "/markets/igaming" },
               { title: "AML & KYC Framework", desc: "Compliance that holds under scrutiny.", href: "/solutions/compliance/aml-kyc" },
-              { title: "Corporate Structuring", desc: "Entity design for regulated operations.", href: "/corporate" },
+              { title: "Corporate Structuring", desc: "Entity design for regulated operations.", href: "/solutions/corporate-cross-border" },
             ].map((r) => (
               <Link key={r.title} href={r.href} className="card-grid" style={{ padding: "28px" }}>
                 <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{r.title}</h3>

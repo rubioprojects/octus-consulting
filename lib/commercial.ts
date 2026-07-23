@@ -231,8 +231,7 @@ export const SOLUTION_HUBS: SolutionHub[] = [
     ],
     relatedDeep: [
       { label: "GLI & Certification Readiness", href: "/solutions/compliance/gli-readiness" },
-      { label: "Audit (legacy)", href: "/audit" },
-      { label: "Assess / diagnostic path", href: "/diagnostic" },
+      { label: "Assess your situation", href: "/diagnostic" },
     ],
     crisis: true,
     primaryCta: "assess",

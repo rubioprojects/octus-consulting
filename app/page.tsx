@@ -11,9 +11,12 @@ import OctusChapterTransition from "../components/system/OctusChapterTransition"
 import { SOLUTION_HUBS } from "../lib/commercial";
 import { BRAND } from "../lib/brand";
 import {
+  ASSESS_PATH,
   CTA_ASSESS_LABEL,
   CTA_DISCUSS_LABEL,
-  WHATSAPP_ASSESS_URL,
+  CTA_EMAIL_LABEL,
+  CTA_HOW_WE_WORK_LABEL,
+  MAILTO_DISCUSS,
   WHATSAPP_DISCUSS_URL,
 } from "../lib/cta";
 
@@ -89,9 +92,14 @@ export default function HomePage() {
             <br />
             <span className="text-white/85">They fail structurally.</span>
           </h1>
-          <p className="mt-8 mb-12 max-w-[38rem] text-base leading-[1.7] text-white/80 sm:text-lg md:mt-10 md:mb-14">
-            Complex regulated problems need an accountable execution partner — licensing, banking,
-            compliance and structure coordinated so the operation can hold under scrutiny.
+          <p className="mt-8 max-w-[40rem] text-base leading-[1.7] text-white/80 sm:text-lg md:mt-10">
+            Octus helps regulated companies — betting, fintech and similar sectors — enter markets,
+            get licensed, bank, stay compliant and fix structural failures. We coordinate and execute
+            the work until the structure holds, with one team accountable for the whole.
+          </p>
+          <p className="mt-4 mb-12 max-w-[38rem] text-sm leading-relaxed text-white/65 sm:text-base md:mb-14">
+            Not a law firm, license shop or software platform — an execution partner for operations
+            under regulatory and banking pressure.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
             <CtaLink
@@ -102,15 +110,29 @@ export default function HomePage() {
             >
               {CTA_DISCUSS_LABEL}
             </CtaLink>
-            <CtaLink
-              href={WHATSAPP_ASSESS_URL}
-              variant="on-dark-secondary"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <CtaLink href={ASSESS_PATH} variant="on-dark-secondary">
               {CTA_ASSESS_LABEL}
             </CtaLink>
+            <CtaLink href="/how-we-engage" variant="on-dark-secondary">
+              {CTA_HOW_WE_WORK_LABEL}
+            </CtaLink>
           </div>
+          <p className="mt-5 font-sans text-sm text-white/55">
+            Prefer email?{" "}
+            <a
+              href={MAILTO_DISCUSS}
+              className="text-white/80 underline-offset-4 transition-colors hover:text-white hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            >
+              {CTA_EMAIL_LABEL}
+            </a>
+            {" · "}
+            <Link
+              href="/what-octus-does"
+              className="text-white/80 underline-offset-4 transition-colors hover:text-white hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            >
+              What Octus does →
+            </Link>
+          </p>
         </div>
         <div className="octus-dark-hero__seam" aria-hidden="true" />
       </section>
@@ -124,8 +146,8 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 md:gap-0">
             <div className="flex flex-col items-center text-center sm:border-r sm:border-border">
-              <span className="editorial-numeral editorial-numeral--sm">15+</span>
-              <span className="mt-2 font-sans text-sm text-muted-foreground">jurisdictions</span>
+              <span className="editorial-numeral editorial-numeral--sm">Multi</span>
+              <span className="mt-2 font-sans text-sm text-muted-foreground">jurisdiction work</span>
             </div>
             <div className="flex flex-col items-center text-center sm:border-r sm:border-border">
               <span className="editorial-numeral editorial-numeral--sm">2019</span>
@@ -225,7 +247,7 @@ export default function HomePage() {
             <p className="section-label mb-4 block">How we work</p>
             <h2 className="heading-section mb-6">A structural approach to regulated operations.</h2>
             <p className="body-large">
-              Six solutions under one accountable layer — not a catalogue of legacy service pages.
+              Six solutions under one accountable layer — not a catalogue of disconnected services.
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-3">
@@ -389,12 +411,7 @@ export default function HomePage() {
           <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-white/80">
             We don&apos;t consult on theory. We step into live operations and restructure what isn&apos;t working.
           </p>
-          <CtaLink
-            href={WHATSAPP_ASSESS_URL}
-            variant="on-dark"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <CtaLink href={ASSESS_PATH} variant="on-dark">
             {CTA_ASSESS_LABEL}
           </CtaLink>
         </div>
@@ -444,13 +461,7 @@ export default function HomePage() {
                 market entry is blocked — start here. Assessment before catalogue.
               </p>
               <div className="flex flex-wrap gap-4">
-                <CtaLink
-                  href={WHATSAPP_ASSESS_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {CTA_ASSESS_LABEL}
-                </CtaLink>
+                <CtaLink href={ASSESS_PATH}>{CTA_ASSESS_LABEL}</CtaLink>
                 <Link
                   href="/solutions/operational-remediation-readiness"
                   className="inline-flex items-center font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
@@ -539,7 +550,7 @@ export default function HomePage() {
               <h2 className="heading-section">Authority for operators who need structure.</h2>
               <p className="body-large mt-4">
                 Regulatory intelligence, market signals, operational insights and executive
-                perspectives — bridged to the existing Insights library.
+                perspectives — connected to our intelligence resources.
               </p>
             </div>
             <Link
@@ -560,7 +571,7 @@ export default function HomePage() {
             We don&apos;t work on short-term strategies, regulatory arbitrage or experimental setups.
           </p>
           <p className="mx-auto mb-10 max-w-2xl font-sans text-lg font-medium text-foreground">
-            If you are building something real under regulatory constraint, it will.
+            If you are building a real operation under regulatory constraint, we should talk.
           </p>
           <a
             href={WHATSAPP_DISCUSS_URL}

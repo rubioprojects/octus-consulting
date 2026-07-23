@@ -200,26 +200,29 @@ export default function JurisdictionsCuracaoPage() {
         </div>
       </section>
 
-      {/* ─── SELECTED MANDATES ─── */}
+          {/* ─── SITUATION PATTERNS (claim-governed) ─── */}
       <section className="bg-background py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
-          <p className="label">Selected mandates — Curaçao</p>
-          <h2 className="heading-section" style={{ marginBottom: "32px" }}>
-            Real operations. Real outcomes.
+          <p className="label">Situation patterns — Curaçao</p>
+          <h2 className="heading-section" style={{ marginBottom: "16px" }}>
+            Problems we are brought in to resolve.
           </h2>
+          <p className="body-text mb-8 text-muted-foreground">
+            Illustrative patterns — not published timelines, guarantees or client results.
+          </p>
           <div className="grid gap-6 md:grid-cols-1">
             {[
               {
-                title: "Licensed for 6 months. No bank account.",
-                body: "Active Curaçao license, rejected by three banks. We restructured the corporate layer, rebuilt AML policies, aligned UBO disclosure and coordinated with three banks simultaneously. Operational account open in 11 weeks.",
+                title: "Licensed. Banking still blocked.",
+                body: "Active license with repeated bank rejections. Work typically focuses on corporate layer, AML policies, UBO disclosure and coordinated outreach to institutions.",
               },
               {
-                title: "New operator — full setup from zero",
-                body: "Entity formation, licensing dossier, compliance framework and banking, delivered as a single coordinated project. License granted, bank account operational before launch.",
+                title: "New operator — structure before launch",
+                body: "Entity formation, licensing dossier, compliance framework and banking preparation treated as one coordinated workstream rather than separate vendors.",
               },
               {
-                title: "Compliance remediation under regulatory pressure",
-                body: "Existing operator flagged by the regulator for compliance gaps. Full KYC/AML rebuild, responsible gaming framework and evidence register delivered in 6 weeks.",
+                title: "Compliance remediation under pressure",
+                body: "Operator facing regulatory pressure on KYC/AML or responsible-gaming gaps. Rebuild of frameworks and evidence registers so the operation can respond with documentation that holds.",
               },
             ].map((m, i) => (
               <div

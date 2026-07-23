@@ -1,7 +1,9 @@
 import {
+  ASSESS_PATH,
   CTA_ASSESS_LABEL,
   CTA_DISCUSS_LABEL,
-  WHATSAPP_ASSESS_URL,
+  CTA_EMAIL_LABEL,
+  MAILTO_DISCUSS,
   WHATSAPP_DISCUSS_URL,
 } from "../../lib/cta";
 import { ENGAGEMENT_MODELS } from "../../lib/commercial";
@@ -24,7 +26,7 @@ export default function HowWeEngagePage() {
         titleSecondLine="Not one more provider."
         description="Octus assumes coordination across regulatory, compliance, banking and corporate layers — so you are not managing a fragmented stack of advisors."
         primaryCta={{ href: WHATSAPP_DISCUSS_URL, label: CTA_DISCUSS_LABEL, external: true }}
-        secondaryCta={{ href: WHATSAPP_ASSESS_URL, label: CTA_ASSESS_LABEL, external: true }}
+        secondaryCta={{ href: ASSESS_PATH, label: CTA_ASSESS_LABEL }}
       />
 
       <section className="bg-background py-20 md:py-28">
@@ -70,6 +72,15 @@ export default function HowWeEngagePage() {
             <CtaLink href="/solutions/operational-remediation-readiness" variant="secondary">
               Remediation →
             </CtaLink>
+            <CtaLink href={MAILTO_DISCUSS} variant="secondary">
+              {CTA_EMAIL_LABEL}
+            </CtaLink>
+            <Link
+              href="/what-octus-does"
+              className="inline-flex items-center font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
+            >
+              What Octus does →
+            </Link>
             <Link
               href="/partners"
               className="inline-flex items-center font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"

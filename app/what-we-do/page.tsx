@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CTA_ASSESS_LABEL, WHATSAPP_ASSESS_URL } from "../../lib/cta";
+import { ASSESS_PATH, CTA_ASSESS_LABEL } from "../../lib/cta";
 
 export const metadata = {
   title: "What We Do",
@@ -8,11 +8,11 @@ export const metadata = {
 
 const services = [
   { num: "01", title: "Regulatory Structuring", desc: "Jurisdiction selection, licensing strategy and regulatory pathway design for regulated operations.", href: "/regulatory" },
-  { num: "02", title: "Compliance & Risk", desc: "Compliance framework design, operational rollout and ongoing compliance management.", href: "/compliance" },
+  { num: "02", title: "Compliance & Risk", desc: "Compliance framework design, operational rollout and ongoing compliance management.", href: "/solutions/compliance-risk-systems" },
   { num: "03", title: "Legal & Structural Architecture", desc: "Legal architecture coordinated across jurisdictions — ownership, governance and contractual frameworks.", href: "/legal-architecture" },
-  { num: "04", title: "Corporate Structuring", desc: "Corporate architecture for regulated operations — onshore, offshore and cross-border.", href: "/corporate" },
+  { num: "04", title: "Corporate Structuring", desc: "Corporate architecture for regulated operations — onshore, offshore and cross-border.", href: "/solutions/corporate-cross-border" },
   { num: "05", title: "Ownership & UBO", desc: "Ownership architecture and UBO structuring for individuals behind regulated operations.", href: "/private-clients" },
-  { num: "06", title: "Audit & Readiness", desc: "Preparation for regulatory audit, certification and external review. Readiness before scrutiny starts.", href: "/audit" },
+  { num: "06", title: "Audit & Readiness", desc: "Preparation for regulatory audit, certification and external review. Readiness before scrutiny starts.", href: "/solutions/operational-remediation-readiness" },
   { num: "07", title: "International Hub", desc: "Market entry coordination and cross-border expansion for regulated businesses.", href: "/international-hub" },
 ];
 
@@ -53,7 +53,7 @@ export default function WhatWeDoPage() {
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "640px" }}>
           <h2 className="heading-section" style={{ marginBottom: "20px" }}>Not sure where your operation fits?</h2>
           <p className="body-lg" style={{ marginBottom: "32px" }}>Start with a diagnostic. We map the structure before defining the scope.</p>
-          <a href={WHATSAPP_ASSESS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_ASSESS_LABEL}</a>
+          <a href={ASSESS_PATH} className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_ASSESS_LABEL}</a>
         </div>
       </section>
     </main>

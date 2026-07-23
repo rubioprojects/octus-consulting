@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
+import { CTA_DISCUSS_LABEL, CTA_EMAIL_LABEL, MAILTO_DISCUSS, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 import PageHero from "../../components/system/PageHero";
 
 export const metadata = {
@@ -152,7 +152,7 @@ export default function AboutPage() {
             <div>
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1px", background: "var(--border-solid)", borderRadius: "12px", overflow: "hidden", marginBottom: "24px" }}>
                 {[
-                  { num: "15+", label: "Active jurisdictions" },
+                  { num: "Multi", label: "Jurisdiction workstreams" },
                   { num: "2019", label: "Operating since" },
                 ].map((s) => (
                   <div key={s.num} className="card" style={{ borderRadius: "0", border: "none" }}>
@@ -301,6 +301,15 @@ export default function AboutPage() {
             <br />You need a structure that works.
           </h2>
           <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+          <p className="mt-4 print:hidden">
+            <a href={MAILTO_DISCUSS} className="font-sans text-sm text-white/70 no-underline hover:text-white">
+              {CTA_EMAIL_LABEL}
+            </a>
+            {" · "}
+            <Link href="/what-octus-does" className="font-sans text-sm text-white/70 no-underline hover:text-white">
+              What Octus does →
+            </Link>
+          </p>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
             Initial diagnostic call. We start by identifying where the
             structure breaks.

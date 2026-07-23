@@ -44,6 +44,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/solutions/regulatory/banking-payments`, priority: 0.8, changeFrequency: "monthly" as const },
     { url: `${base}/diagnostic`, priority: 0.7, changeFrequency: "monthly" as const },
     { url: `${base}/contact`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${base}/what-octus-does`, priority: 0.85, changeFrequency: "monthly" as const },
+    { url: `${base}/resources/igaming-operator-readiness`, priority: 0.8, changeFrequency: "monthly" as const },
     { url: `${base}/team`, priority: 0.7, changeFrequency: "monthly" as const },
     { url: `${base}/careers`, priority: 0.5, changeFrequency: "monthly" as const },
     { url: `${base}/insights`, priority: 0.8, changeFrequency: "weekly" as const },

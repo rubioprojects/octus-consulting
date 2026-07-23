@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { SOLUTION_HUBS } from "../../lib/commercial";
-import { CTA_ASSESS_LABEL, CTA_DISCUSS_LABEL, WHATSAPP_ASSESS_URL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
+import { ASSESS_PATH, CTA_ASSESS_LABEL, CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 import PageHero from "../../components/system/PageHero";
 import { CtaLink } from "../../components/system/CtaButton";
 import BrandSectionMotif from "../../components/system/BrandSectionMotif";
@@ -33,7 +33,7 @@ export default function SolutionsPage() {
         titleSecondLine="You need accountable execution."
         description="Octus coordinates regulatory, banking, compliance, corporate and contractual layers as one structure — with a clear door when the operation is already failing."
         primaryCta={{ href: WHATSAPP_DISCUSS_URL, label: CTA_DISCUSS_LABEL, external: true }}
-        secondaryCta={{ href: WHATSAPP_ASSESS_URL, label: CTA_ASSESS_LABEL, external: true }}
+        secondaryCta={{ href: ASSESS_PATH, label: CTA_ASSESS_LABEL }}
       />
 
       <section className="octus-section-relative bg-background py-20 md:py-28">

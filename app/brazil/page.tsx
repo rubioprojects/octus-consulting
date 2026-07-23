@@ -1,7 +1,7 @@
 import {
+  ASSESS_PATH,
   CTA_ASSESS_LABEL,
   CTA_DISCUSS_LABEL,
-  WHATSAPP_ASSESS_URL,
   WHATSAPP_DISCUSS_URL,
 } from "../../lib/cta";
 
@@ -56,7 +56,7 @@ export default function BrazilPage() {
         <div className="cta-block__bg" />
         <div className="cta-block__inner">
           <h2 className="heading-lg cta-block__title">Structure your Brazil operation.</h2>
-          <a href={WHATSAPP_ASSESS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_ASSESS_LABEL}</a>
+          <a href={ASSESS_PATH} className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_ASSESS_LABEL}</a>
         </div>
       </section>
     </main>

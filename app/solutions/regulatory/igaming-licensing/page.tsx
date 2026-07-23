@@ -171,29 +171,32 @@ export default function SolutionsIGamingLicensingPage() {
         </div>
       </section>
 
-      {/* ─── SELECTED MANDATES ─── */}
+          {/* ─── SITUATION PATTERNS (claim-governed) ─── */}
       <section className="bg-background py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
-          <p className="label">Selected mandates</p>
-          <h2 className="heading-section" style={{ marginBottom: "32px" }}>
-            Real operations. Real outcomes.
+          <p className="label">Situation patterns</p>
+          <h2 className="heading-section" style={{ marginBottom: "16px" }}>
+            Problems we are brought in to resolve.
           </h2>
+          <p className="body-text mb-8 text-muted-foreground">
+            Illustrative patterns — not published client results, timelines or guarantees.
+          </p>
           <div className="grid gap-6 md:grid-cols-1">
             {[
               {
                 tag: "Curaçao · iGaming",
-                title: "Licence active. No banking.",
-                body: "Compliance documentation did not meet banking standards. Octus restructured AML policies and coordinated with multiple institutions. Operational account secured within 11 weeks.",
+                title: "Licence active. Banking blocked.",
+                body: "Compliance and corporate documentation did not meet banking standards. Work focused on AML alignment, UBO clarity and coordinated bank outreach.",
               },
               {
                 tag: "Brazil · Betting",
                 title: "Cross-border operator entering a regulated market.",
-                body: "Corporate structure redesigned for SPA compliance. Regulatory dossier prepared and submission coordinated. Authorization process managed end-to-end.",
+                body: "Corporate structure reviewed for local authorization readiness. Regulatory dossier prepared and submission coordinated under the applicable Brazilian framework.",
               },
               {
                 tag: "iGaming · Certification",
-                title: "GLI audit scheduled. No evidence readiness.",
-                body: "Full compliance gap analysis and evidence framework delivered. Client entered audit with complete documentation and zero critical findings.",
+                title: "Lab audit approaching. Evidence incomplete.",
+                body: "Gap analysis and evidence framework prepared so technical certification does not stall on missing documentation.",
               },
             ].map((m, i) => (
               <div

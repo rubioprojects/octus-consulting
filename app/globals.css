@@ -2270,6 +2270,11 @@ footer .heading-lg,
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+@media (min-width: 1024px) {
+  .intelligence-editorial-band {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
 @media (max-width: 768px) {
   .intelligence-editorial-band {
     grid-template-columns: 1fr;
@@ -2694,5 +2699,104 @@ footer .heading-lg,
 
   .cert-modal {
     padding: 28px;
+  }
+}
+
+/* ─── Authority assets (printable HTML, Octus grammar) ─── */
+.authority-asset__inner {
+  max-width: 48rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+@media (min-width: 640px) {
+  .authority-asset__inner {
+    padding-inline: 1.5rem;
+  }
+}
+.authority-asset__hero {
+  padding-top: 7rem;
+  padding-bottom: 3.5rem;
+}
+@media (min-width: 768px) {
+  .authority-asset__hero {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+  }
+}
+.authority-asset__table th,
+.authority-asset__table td {
+  border-bottom: 1px solid hsl(var(--border));
+  padding: 0.75rem 0.5rem;
+  vertical-align: top;
+}
+.authority-asset__table th {
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: hsl(var(--muted-foreground));
+  font-weight: 600;
+}
+.authority-asset__table td:first-child {
+  color: hsl(var(--muted-foreground));
+  width: 38%;
+}
+@media print {
+  .site-header,
+  .wa-float,
+  .cookie-banner,
+  .site-footer,
+  .print\:hidden {
+    display: none !important;
+  }
+  .authority-asset__hero {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background: #0b1220 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .authority-asset__body {
+    padding-top: 1.5rem !important;
+  }
+  .authority-asset a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .authority-asset__section {
+    break-inside: avoid;
+  }
+}
+
+/* Brand lockup — SVG symbol + Unigeo wordmark */
+.brand-lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  height: 100%;
+  max-height: inherit;
+}
+.brand-lockup__symbol {
+  display: block;
+  height: 100%;
+  width: auto;
+  max-height: 2.75rem;
+}
+.brand-lockup__wordmark {
+  font-family: var(--font-unigeo), "Unigeo64", sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.brand-lockup__wordmark--on-light {
+  color: #0b1220;
+}
+.brand-lockup__wordmark--on-dark {
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .brand-lockup__wordmark {
+    font-size: 1.15rem;
   }
 }

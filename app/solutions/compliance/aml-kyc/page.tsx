@@ -30,7 +30,7 @@ export default function SolutionsAMLKYCPage() {
           <div style={{ marginTop: "32px", display: "flex", gap: "16px", flexWrap: "wrap" }}>
             <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
             <Link
-              href="/compliance"
+              href="/solutions/compliance-risk-systems"
               className="inline-flex h-12 items-center justify-center rounded-sm border border-white/20 bg-transparent px-10 text-base font-medium text-white/80 transition-colors hover:border-white/40 hover:text-white"
             >
               Full compliance services →
@@ -177,8 +177,8 @@ export default function SolutionsAMLKYCPage() {
           <p className="label">Related</p>
           <div className="grid-3">
             {[
-              { title: "Compliance & Risk", desc: "Full compliance services beyond AML.", href: "/compliance" },
-              { title: "Audit & Readiness", desc: "Prepared for scrutiny before it arrives.", href: "/audit" },
+              { title: "Compliance & Risk", desc: "Full compliance services beyond AML.", href: "/solutions/compliance-risk-systems" },
+              { title: "Audit & Readiness", desc: "Prepared for scrutiny before it arrives.", href: "/solutions/operational-remediation-readiness" },
               { title: "iGaming Operations", desc: "Compliance in the iGaming context.", href: "/markets/igaming" },
             ].map((r) => (
               <Link key={r.title} href={r.href} className="card-grid" style={{ padding: "28px" }}>

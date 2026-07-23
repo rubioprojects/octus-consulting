@@ -1,8 +1,10 @@
 import Link from "next/link";
 import type { SolutionHub } from "../../lib/commercial";
 import {
+  ASSESS_PATH,
   CTA_ASSESS_LABEL,
   CTA_DISCUSS_LABEL,
+  CTA_WHATSAPP_ASSESS_LABEL,
   WHATSAPP_ASSESS_URL,
   WHATSAPP_DISCUSS_URL,
 } from "../../lib/cta";
@@ -10,8 +12,10 @@ import PageHero from "./PageHero";
 import { CtaLink } from "./CtaButton";
 
 export default function SolutionHubPage({ hub }: { hub: SolutionHub }) {
-  const primaryHref = hub.primaryCta === "assess" ? WHATSAPP_ASSESS_URL : WHATSAPP_DISCUSS_URL;
-  const primaryLabel = hub.primaryCta === "assess" ? CTA_ASSESS_LABEL : CTA_DISCUSS_LABEL;
+  const isAssess = hub.primaryCta === "assess";
+  const primaryHref = isAssess ? ASSESS_PATH : WHATSAPP_DISCUSS_URL;
+  const primaryLabel = isAssess ? CTA_ASSESS_LABEL : CTA_DISCUSS_LABEL;
+  const primaryExternal = !isAssess;
 
   return (
     <main>
@@ -20,11 +24,15 @@ export default function SolutionHubPage({ hub }: { hub: SolutionHub }) {
         title={hub.title}
         titleSecondLine={hub.problem}
         description={hub.role}
-        primaryCta={{ href: primaryHref, label: primaryLabel, external: true }}
+        primaryCta={{
+          href: primaryHref,
+          label: primaryLabel,
+          external: primaryExternal,
+        }}
         secondaryCta={
-          hub.primaryCta === "assess"
-            ? { href: WHATSAPP_DISCUSS_URL, label: CTA_DISCUSS_LABEL, external: true }
-            : { href: WHATSAPP_ASSESS_URL, label: CTA_ASSESS_LABEL, external: true }
+          isAssess
+            ? { href: WHATSAPP_ASSESS_URL, label: CTA_WHATSAPP_ASSESS_LABEL, external: true }
+            : { href: ASSESS_PATH, label: CTA_ASSESS_LABEL, external: false }
         }
       />
 

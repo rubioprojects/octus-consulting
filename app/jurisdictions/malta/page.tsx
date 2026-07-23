@@ -303,7 +303,7 @@ export default function JurisdictionsMaltaPage() {
             {[
               { title: "Curaçao Licensing", desc: "Structured entry framework for mid-market operations.", href: "/jurisdictions/curacao" },
               { title: "Full Licensing Process", desc: "End-to-end licensing execution.", href: "/solutions/regulatory/igaming-licensing" },
-              { title: "Compliance & Risk", desc: "The framework that supports your license.", href: "/compliance" },
+              { title: "Compliance & Risk", desc: "The framework that supports your license.", href: "/solutions/compliance-risk-systems" },
             ].map((r) => (
               <Link key={r.title} href={r.href} className="card-grid" style={{ padding: "28px" }}>
                 <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{r.title}</h3>
