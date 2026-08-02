@@ -435,7 +435,7 @@ export const PUBLIC_AREAS: PublicArea[] = [
     href: "/solutions/remediation-readiness",
     name: "Remediation & Readiness",
     oneSentence: "Diagnosis and fix when licensing, banking, compliance, corporate, finance or operations are already blocked or failing.",
-    summary: "Diagnosis and remediation when licensing, banking, compliance, corporate, finance or operations are already blocked or failing \u2014 with a separate diagnostic intake path.",
+    summary: "Diagnosis and remediation when licensing, banking, compliance, corporate, finance or operations are already blocked or failing.",
     whenNeeded: [
       "Licensing delayed or failing",
       "Banking rejection or instability",
@@ -447,7 +447,7 @@ export const PUBLIC_AREAS: PublicArea[] = [
       {
         id: "SVC-REM-01",
         name: "Crisis entry and structural assessment",
-        oneSentence: "A single intake when the operation is blocked, delayed, rejected or failing.",
+        oneSentence: "A focused assessment when the operation is blocked, delayed, rejected or failing.",
       },
       {
         id: "SVC-REM-02",
@@ -477,7 +477,7 @@ export const PUBLIC_AREAS: PublicArea[] = [
     ],
     relatedDeep: [
       {
-        label: "Diagnostic intake",
+        label: "Diagnostic assessment",
         href: "/diagnostic",
       },
       {
