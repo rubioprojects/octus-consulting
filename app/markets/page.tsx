@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 import PageHero from "../../components/system/PageHero";
+import { pageSocialMeta } from "../../lib/pageMeta";
 
-export const metadata = {
-  title: "Markets — Regulated Sectors We Structure",
+export const metadata = pageSocialMeta({
+  title: "Industries — Regulated sectors we structure",
   description:
     "We structure operations in iGaming, fintech, crypto and high-risk digital sectors. Licensing, compliance and corporate architecture for regulated markets.",
-};
+  path: "/markets",
+});
 
 export default function MarketsPage() {
   return (

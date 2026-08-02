@@ -7,11 +7,14 @@ import {
   WHATSAPP_DISCUSS_URL,
 } from "../../lib/cta";
 
-export const metadata = {
-  title: "Diagnostic assessment — Remediation & Readiness",
+import { pageSocialMeta } from "../../lib/pageMeta";
+
+export const metadata = pageSocialMeta({
+  title: "Diagnostic assessment",
   description:
     "Start with a diagnostic assessment for licensing delays, banking rejection, compliance gaps, audit readiness and blocked market entry.",
-};
+  path: "/diagnostic",
+});
 
 const situations = [
   "Licensing delayed, deferred or stalling",

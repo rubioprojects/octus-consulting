@@ -149,8 +149,12 @@ function AreaSpecificModule({ area }: { area: PublicArea }) {
 }
 
 export default function AreaHubPage({ area }: { area: PublicArea }) {
-  const primaryHref = area.primaryCta === "assess" ? WHATSAPP_ASSESS_URL : WHATSAPP_DISCUSS_URL;
-  const primaryLabel = area.primaryCta === "assess" ? CTA_ASSESS_LABEL : CTA_DISCUSS_LABEL;
+  const isRemediation = area.primaryCta === "assess";
+  const primaryHref = isRemediation ? WHATSAPP_ASSESS_URL : WHATSAPP_DISCUSS_URL;
+  const primaryLabel = isRemediation ? CTA_ASSESS_LABEL : CTA_DISCUSS_LABEL;
+  const secondaryCta = isRemediation
+    ? { href: WHATSAPP_DISCUSS_URL, label: CTA_DISCUSS_LABEL, external: true as const }
+    : { href: "/contact", label: "Contact Octus →" };
   const eyebrow = area.crisis ? "Crisis entry" : "Services";
 
   return (
@@ -161,11 +165,7 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
         titleSecondLine={area.oneSentence}
         description={area.summary}
         primaryCta={{ href: primaryHref, label: primaryLabel, external: true }}
-        secondaryCta={
-          area.primaryCta === "assess"
-            ? { href: WHATSAPP_DISCUSS_URL, label: CTA_DISCUSS_LABEL, external: true }
-            : { href: WHATSAPP_ASSESS_URL, label: CTA_ASSESS_LABEL, external: true }
-        }
+        secondaryCta={secondaryCta}
       />
 
       {area.legalBoundary && (

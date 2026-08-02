@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 import PageHero from "../../components/system/PageHero";
+import { pageSocialMeta } from "../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "About",
   description:
     "Octus is the execution layer behind regulated operations — structuring, coordinating and operating what needs to work across regulatory, compliance, banking and corporate layers.",
-};
+  path: "/about",
+});
 
 export default function AboutPage() {
   return (

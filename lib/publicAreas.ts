@@ -213,7 +213,7 @@ export const PUBLIC_AREAS: PublicArea[] = [
     href: "/solutions/legal-structural-architecture",
     name: "Legal & Structural Architecture",
     oneSentence: "Legal and contractual frameworks for regulated operations, coordinated with counsel where needed.",
-    summary: "Contractual architecture, multi-jurisdiction legal frameworks, opinions support and counsel coordination for regulated operations \u2014 not a law-firm shopfront.",
+    summary: "Contractual architecture, multi-jurisdiction legal frameworks, opinions support and counsel coordination for regulated operations.",
     whenNeeded: [
       "Contracts and structures do not match the operating model",
       "Multi-jurisdiction frameworks need a coordinating layer",
@@ -241,12 +241,7 @@ export const PUBLIC_AREAS: PublicArea[] = [
         oneSentence: "We support legal opinions and related certification paperwork as part of a regulated programme.",
       },
     ],
-    relatedDeep: [
-      {
-        label: "Legacy Legal Architecture",
-        href: "/legal-architecture",
-      },
-    ],
+    relatedDeep: [],
     markets: [
       {
         label: "iGaming",
@@ -523,7 +518,7 @@ export const PUBLIC_AREAS: PublicArea[] = [
     href: "/international-hub",
     name: "International Hub",
     oneSentence: "Finding, connecting and coordinating the banks, PSPs, CSPs, labs, counsel and other specialists a regulated operation needs.",
-    summary: "Finding, connecting and coordinating banks, PSPs, CSPs, labs, counsel and other specialists a regulated operation needs \u2014 without implying endorsement or guaranteed onboarding.",
+    summary: "Finding, connecting and coordinating banks, PSPs, CSPs, labs, counsel and other specialists a regulated operation needs.",
     whenNeeded: [
       "Market entry requires coordinated specialist introductions",
       "Banking or PSP conversations need structural readiness first",

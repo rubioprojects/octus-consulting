@@ -1,13 +1,14 @@
 import AreaHubPage from "../../../components/system/AreaHubPage";
 import { getPublicAreaBySlug } from "../../../lib/publicAreas";
+import { pageSocialMeta } from "../../../lib/pageMeta";
 
 const area = getPublicAreaBySlug("corporate-structuring")!;
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: area.name,
   description: area.oneSentence,
-  alternates: { canonical: `https://octusconsulting.com${area.href}` },
-};
+  path: area.href,
+});
 
 export default function Page() {
   return <AreaHubPage area={area} />;

@@ -26,6 +26,31 @@
       "permanent": true
     },
     {
+      "source": "/regulatory",
+      "destination": "/solutions/regulatory-structuring",
+      "permanent": true
+    },
+    {
+      "source": "/compliance",
+      "destination": "/solutions/compliance-risk",
+      "permanent": true
+    },
+    {
+      "source": "/corporate",
+      "destination": "/solutions/corporate-structuring",
+      "permanent": true
+    },
+    {
+      "source": "/audit",
+      "destination": "/solutions/remediation-readiness",
+      "permanent": true
+    },
+    {
+      "source": "/legal-architecture",
+      "destination": "/solutions/legal-structural-architecture",
+      "permanent": true
+    },
+    {
       "source": "/services",
       "destination": "/solutions",
       "permanent": true

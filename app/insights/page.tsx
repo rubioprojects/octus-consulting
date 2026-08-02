@@ -5,12 +5,14 @@ import PageHero from "../../components/system/PageHero";
 import Section from "../../components/system/Section";
 import InsightsHubClient from "../../components/system/InsightsHubClient";
 import { CtaLink } from "../../components/system/CtaButton";
+import { pageSocialMeta } from "../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Insights",
   description:
     "Regulatory analysis, legal developments and operational intelligence from the Octus team — covering Brazil, iGaming, compliance and international structured markets.",
-};
+  path: "/insights",
+});
 
 export default function InsightsPage() {
   const posts = getAllPosts();

@@ -24,11 +24,11 @@
 | `/partners` | `/partners` | KEEP; linked from Hub | — | self | Hub related | Low |
 | `/markets` | `/markets` | KEEP; nav label Industries | — | self | Nav | Low |
 | `/insights/*` | `/insights/*` | KEEP; linking hygiene | — | self | Enrichment only | Low |
-| `/regulatory` | TBD after route-by-route testing | H-02 APPROVED WITH VALIDATION | permanent after validation | Regulatory area | Legacy | Medium |
-| `/compliance` | TBD after route-by-route testing | H-02 APPROVED WITH VALIDATION | permanent after validation | Compliance area | Legacy | Medium |
-| `/corporate` | TBD after route-by-route testing | H-02 APPROVED WITH VALIDATION | permanent after validation | Corporate area | Legacy | Medium |
-| `/audit` | TBD after route-by-route testing | H-02 APPROVED WITH VALIDATION | permanent after validation | Remediation area | Legacy | Medium |
-| `/legal-architecture` | KEEP related depth for now | H-02 pending per-route test | TBD | Legal area | Legacy | Medium |
+| `/regulatory` | `/solutions/regulatory-structuring` | REDIRECT | permanent (308) | new area | Legacy pillar | Low |
+| `/compliance` | `/solutions/compliance-risk` | REDIRECT | permanent (308) | new area | Legacy pillar | Low |
+| `/corporate` | `/solutions/corporate-structuring` | REDIRECT | permanent (308) | new area | Legacy pillar | Low |
+| `/audit` | `/solutions/remediation-readiness` | REDIRECT | permanent (308) | new area | Legacy pillar | Low |
+| `/legal-architecture` | `/solutions/legal-structural-architecture` | REDIRECT | permanent (308) | new area | Legacy pillar | Low |
 
 ## Banking & Payments supporting treatment (H-03)
 

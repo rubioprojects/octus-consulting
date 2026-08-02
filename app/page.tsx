@@ -13,6 +13,7 @@ import {
   WHATSAPP_ASSESS_URL,
   WHATSAPP_DISCUSS_URL,
 } from "../lib/cta";
+import { pageSocialMeta } from "../lib/pageMeta";
 
 const AUTHORITY_STRIP = PUBLIC_AREAS.map((a) => a.name);
 
@@ -23,11 +24,11 @@ const areaRows = PUBLIC_AREAS.map((area) => ({
   featured: area.services.slice(0, 3).map((s) => ({ label: s.name, href: area.href })),
 }));
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Premium Execution for Regulated Operations",
   description: OCTUS_WHAT_WE_DO,
-  alternates: { canonical: "https://octusconsulting.com/" },
-};
+  path: "/",
+});
 
 export default function HomePage() {
   return (

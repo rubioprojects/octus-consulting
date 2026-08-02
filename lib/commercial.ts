@@ -177,7 +177,7 @@ export const SOLUTION_HUBS: SolutionHub[] = [
     shortTitle: "Legal & Contractual Architecture",
     problem:
       "Regulated operations fail when contracts and legal frameworks are treated as paperwork after the fact.",
-    role: "Octus coordinates the legal structures required for regulated operations — architecture and contracts, not a law-firm shopfront.",
+    role: "Octus coordinates the legal structures required for regulated operations — architecture and contracts, delivered or coordinated through qualified counsel.",
     summary:
       "Legal and contractual architecture for multi-jurisdiction regulated operations: coordination, frameworks and structural requirements.",
     whenNeeded: [
@@ -198,7 +198,7 @@ export const SOLUTION_HUBS: SolutionHub[] = [
       { label: "Fintech", href: "/markets/fintech" },
       { label: "High-Risk Operations", href: "/markets/high-risk" },
     ],
-    relatedDeep: [{ label: "Legacy Legal Architecture page", href: "/legal-architecture" }],
+    relatedDeep: [{ label: "Legal & Structural Architecture", href: "/solutions/legal-structural-architecture" }],
     legalBoundary: true,
     primaryCta: "discuss",
   },

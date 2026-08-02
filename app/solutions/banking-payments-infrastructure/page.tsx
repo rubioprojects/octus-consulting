@@ -1,22 +1,15 @@
 import Link from "next/link";
 import PageHero from "../../../components/system/PageHero";
 import { CtaLink } from "../../../components/system/CtaButton";
-import {
-  CTA_DISCUSS_LABEL,
-  CTA_ASSESS_LABEL,
-  WHATSAPP_DISCUSS_URL,
-  WHATSAPP_ASSESS_URL,
-} from "../../../lib/cta";
+import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
+import { pageSocialMeta } from "../../../lib/pageMeta";
 
-export const metadata = {
-  title: "Banking & Payments — How Octus coordinates the work",
+export const metadata = pageSocialMeta({
+  title: "Banking & Payments",
   description:
-    "Banking and payments for regulated operations are coordinated through Corporate Structuring, International Hub and Remediation & Readiness — not as a standalone service area.",
-  // Supporting routing page — preserve SEO URL; self-canonical.
-  alternates: {
-    canonical: "https://octusconsulting.com/solutions/banking-payments-infrastructure",
-  },
-};
+    "Octus coordinates the corporate, compliance, provider and remediation workstreams required for banking and payment operations in regulated markets.",
+  path: "/solutions/banking-payments-infrastructure",
+});
 
 const routes = [
   {
@@ -57,19 +50,19 @@ export default function BankingPaymentsRoutingPage() {
       <PageHero
         eyebrow="Supporting guidance"
         title="Banking & Payments"
-        titleSecondLine="Coordinated across the structure — not a standalone catalogue item."
-        description="When banking or payments is the pressure point, Octus routes the work through the service areas that actually carry readiness, introductions and remediation."
+        titleSecondLine="Prepare the structure, identify the right providers and resolve existing banking or payment constraints."
+        description="Octus coordinates the corporate, compliance, provider and remediation workstreams required for banking and payment operations in regulated markets."
         primaryCta={{ href: WHATSAPP_DISCUSS_URL, label: CTA_DISCUSS_LABEL, external: true }}
-        secondaryCta={{ href: WHATSAPP_ASSESS_URL, label: CTA_ASSESS_LABEL, external: true }}
+        secondaryCta={{ href: "/contact", label: "Contact Octus →" }}
       />
 
       <section className="bg-background py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <p className="section-label mb-4 block">Where the work sits</p>
-          <h2 className="heading-section mb-4 max-w-2xl">Three coordinated paths.</h2>
+          <p className="section-label mb-4 block">How we can help</p>
+          <h2 className="heading-section mb-4 max-w-2xl">Choose the support you need</h2>
           <p className="body-large mb-12 max-w-2xl text-muted-foreground">
-            Choose the path that matches your situation. Depth pages on banking and payments remain
-            available where useful.
+            Select the path that matches your situation — readiness, provider coordination, or
+            remediation when banking or payments are already blocked.
           </p>
           <div className="grid gap-6 lg:grid-cols-3">
             {routes.map((route) => (
@@ -103,7 +96,7 @@ export default function BankingPaymentsRoutingPage() {
               Banking &amp; Payments depth →
             </CtaLink>
             <CtaLink href="/solutions" variant="secondary">
-              All services →
+              Explore related services →
             </CtaLink>
           </div>
         </div>

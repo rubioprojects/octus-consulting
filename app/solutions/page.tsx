@@ -1,15 +1,16 @@
 import Link from "next/link";
 import { PUBLIC_AREAS } from "../../lib/publicAreas";
-import { CTA_ASSESS_LABEL, CTA_DISCUSS_LABEL, WHATSAPP_ASSESS_URL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
+import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 import PageHero from "../../components/system/PageHero";
 import { CtaLink } from "../../components/system/CtaButton";
+import { pageSocialMeta } from "../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Services — Execution for regulated operations",
   description:
     "Services for regulated operations: Regulatory Structuring, Compliance & Risk, Legal & Structural Architecture, Corporate Structuring, Private Clients, Remediation & Readiness, and International Hub.",
-  alternates: { canonical: "https://octusconsulting.com/solutions" },
-};
+  path: "/solutions",
+});
 
 export default function ServicesIndexPage() {
   return (
@@ -20,7 +21,7 @@ export default function ServicesIndexPage() {
         titleSecondLine="One coordinated mandate."
         description="Octus coordinates regulatory, compliance, legal, corporate, private-client, remediation and specialist-network workstreams so the operation can hold under scrutiny."
         primaryCta={{ href: WHATSAPP_DISCUSS_URL, label: CTA_DISCUSS_LABEL, external: true }}
-        secondaryCta={{ href: WHATSAPP_ASSESS_URL, label: CTA_ASSESS_LABEL, external: true }}
+        secondaryCta={{ href: "/contact", label: "Contact Octus →" }}
       />
 
       <section className="bg-background py-20 md:py-28">

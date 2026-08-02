@@ -180,7 +180,7 @@ export default function RootLayout({
                     { label: "Intelligence", href: "/intelligence" },
                     { label: "Insights", href: "/insights" },
                     { label: "Partners", href: "/partners" },
-                    { label: "Remediation assess", href: "/diagnostic" },
+                    { label: "Diagnostic assessment", href: "/diagnostic" },
                   ].map((l) => (
                     <li key={l.href}>
                       <a
