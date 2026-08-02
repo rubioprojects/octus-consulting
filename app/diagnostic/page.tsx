@@ -8,9 +8,9 @@ import {
 } from "../../lib/cta";
 
 export const metadata = {
-  title: "Diagnostic intake — Remediation & Readiness",
+  title: "Diagnostic assessment — Remediation & Readiness",
   description:
-    "Diagnostic intake for licensing delays, banking rejection, compliance gaps, audit readiness and blocked market entry. Separate from the Remediation & Readiness service area. No guaranteed resolution.",
+    "Start with a diagnostic assessment for licensing delays, banking rejection, compliance gaps, audit readiness and blocked market entry.",
 };
 
 const situations = [
@@ -34,10 +34,13 @@ export default function DiagnosticPage() {
             <span className="text-white/70">Then sequence remediation.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/60">
-            Diagnostic is the intake path. Remediation &amp; Readiness is the service area — they
-            are connected, not the same thing. We start with a structured conversation about
-            exposure and readiness. We do not guarantee licensing, banking outcomes or regulatory
-            resolution.
+            Already facing a licensing, banking, compliance or operational blockage? Start with a
+            diagnostic assessment. We begin with a structured conversation about exposure and
+            readiness — then sequence remediation through{" "}
+            <Link href="/solutions/remediation-readiness" className="text-white underline underline-offset-4">
+              Remediation &amp; Readiness
+            </Link>
+            .
           </p>
           <div className="mt-12 flex flex-wrap gap-4">
             <a

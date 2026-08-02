@@ -514,7 +514,7 @@ export const PUBLIC_AREAS: PublicArea[] = [
     crisis: true,
     historicalAlias: "Audit & Readiness",
     intakeHref: "/diagnostic",
-    intakeLabel: "Start with diagnostic intake",
+    intakeLabel: "Start diagnostic assessment",
   },
   {
     id: "AREA-HUB",
@@ -620,12 +620,16 @@ export function getPublicAreaByHref(href: string): PublicArea | undefined {
   return PUBLIC_AREAS.find((a) => a.href === href);
 }
 
-/** Former six-Solution banking hub — demoted; not a public area. */
-export const BANKING_DEMOTE = {
-  formerHref: "/solutions/banking-payments-infrastructure",
-  redirectTo: "/international-hub",
-  alsoSee: [
+/**
+ * Former six-Solution banking hub — supporting routing page only (not a public area).
+ * Route retained for SEO; content routes visitors to Corp / Hub / Remediation.
+ */
+export const BANKING_SUPPORTING_ROUTE = {
+  href: "/solutions/banking-payments-infrastructure",
+  canonical: "/solutions/banking-payments-infrastructure",
+  routesThrough: [
     { label: "Corporate Structuring (banking readiness)", href: "/solutions/corporate-structuring" },
+    { label: "International Hub (introductions / payment architecture)", href: "/international-hub" },
     { label: "Remediation & Readiness", href: "/solutions/remediation-readiness" },
     { label: "Banking & Payments depth", href: "/solutions/regulatory/banking-payments" },
   ],

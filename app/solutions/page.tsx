@@ -5,9 +5,9 @@ import PageHero from "../../components/system/PageHero";
 import { CtaLink } from "../../components/system/CtaButton";
 
 export const metadata = {
-  title: "Services — Seven public areas for regulated operations",
+  title: "Services — Execution for regulated operations",
   description:
-    "Seven public service areas: Regulatory Structuring, Compliance & Risk, Legal & Structural Architecture, Corporate Structuring, Private Clients, Remediation & Readiness, and International Hub.",
+    "Services for regulated operations: Regulatory Structuring, Compliance & Risk, Legal & Structural Architecture, Corporate Structuring, Private Clients, Remediation & Readiness, and International Hub.",
   alternates: { canonical: "https://octusconsulting.com/solutions" },
 };
 
@@ -16,20 +16,20 @@ export default function ServicesIndexPage() {
     <main>
       <PageHero
         eyebrow="Services"
-        title="Seven public areas."
-        titleSecondLine="One accountable execution partner."
-        description="Octus coordinates regulatory, compliance, legal, corporate, private-client, remediation and specialist-network layers as one structure — with a clear door when the operation is already failing."
+        title="Services for regulated operations."
+        titleSecondLine="One coordinated mandate."
+        description="Octus coordinates regulatory, compliance, legal, corporate, private-client, remediation and specialist-network workstreams so the operation can hold under scrutiny."
         primaryCta={{ href: WHATSAPP_DISCUSS_URL, label: CTA_DISCUSS_LABEL, external: true }}
         secondaryCta={{ href: WHATSAPP_ASSESS_URL, label: CTA_ASSESS_LABEL, external: true }}
       />
 
       <section className="bg-background py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <p className="section-label mb-4 block">Public service areas</p>
-          <h2 className="heading-section mb-4 max-w-2xl">Approved catalog, plain language.</h2>
+          <p className="section-label mb-4 block">Service areas</p>
+          <h2 className="heading-section mb-4 max-w-2xl">What Octus coordinates.</h2>
           <p className="body-large mb-12 max-w-2xl text-muted-foreground">
-            Industries describe where we operate. These seven areas describe what we coordinate.
-            Banking and tax are capabilities inside the architecture — not eighth public areas.
+            From licensing and corporate structure to compliance, remediation and specialist
+            coordination — each area links to the representative services and next steps.
           </p>
 
           <div className="grid gap-6 md:grid-cols-2 lg:gap-8">
@@ -72,11 +72,6 @@ export default function ServicesIndexPage() {
                     </li>
                   )}
                 </ul>
-                {area.legalBoundary && (
-                  <p className="mb-4 font-sans text-xs leading-relaxed text-muted-foreground">
-                    Not a law firm — legal structures for regulated operations.
-                  </p>
-                )}
                 <Link
                   href={area.href}
                   className="font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"

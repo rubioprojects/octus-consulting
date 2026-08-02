@@ -32,10 +32,10 @@ export default function SolutionHubPage({ hub }: { hub: SolutionHub }) {
         <section className="border-b border-border bg-secondary/40 py-10">
           <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
             <p className="font-sans text-sm leading-relaxed text-muted-foreground">
-              <span className="font-medium text-foreground">Boundary: </span>
-              Octus is not a law firm. This solution covers legal and contractual{" "}
-              <em>architecture</em> for regulated operations — coordination, frameworks and
-              structural requirements — working with independent counsel where appropriate.
+              Legal work is delivered or coordinated through qualified counsel according to the
+              jurisdiction and scope of the matter. This page covers legal and contractual
+              architecture for regulated operations — coordination, frameworks and structural
+              requirements.
             </p>
           </div>
         </section>

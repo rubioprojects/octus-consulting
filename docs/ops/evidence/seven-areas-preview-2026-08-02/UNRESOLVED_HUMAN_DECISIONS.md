@@ -1,16 +1,17 @@
-# Unresolved human decisions
+# Human decisions — seven-areas website (PR #17)
 
 | ID | Decision |
 |----|----------|
-| H-01 | Whether `/intelligence` stays in footer permanently after Insights elevation |
-| H-02 | Whether legacy pillar routes (`/regulatory`, `/compliance`, `/corporate`, `/audit`) get host 301s to new area URLs in production |
-| H-03 | Banking demote landing: currently Hub; confirm vs Corporate Structuring as primary redirect |
-| H-04 | Post count: repo has 33 Insights posts; prior planning cited 38 — confirm SoT |
-| H-05 | Production deploy authorization (explicitly out of scope for this terminal) |
-| H-06 | Whether `/how-we-engage` should return to primary nav or remain supporting/footer |
+| H-01 | **APPROVED:** `/intelligence` remains in footer as a secondary surface |
+| H-02 | **APPROVED WITH VALIDATION:** legacy pillar routes receive permanent redirects after route-by-route testing |
+| H-03 | **APPROVED:** Banking legacy route becomes a supporting routing page, not a direct Hub-only redirect |
+| H-04 | **CLOSED (technical reconciliation):** Insights SoT = **33** posts; prior “38” was a planning audit error — see `INSIGHTS_COUNT_RECONCILIATION.md` |
+| H-05 | **NOT AUTHORIZED:** production deployment |
+| H-06 | **APPROVED:** `/how-we-engage` remains supporting / homepage / footer, not primary navigation |
 
-## Production-readiness recommendation
+## Remaining production blockers
 
-**Preview-ready for Rubio review. Not production-ready.**
-
-Do not merge or promote until Rubio visual/human rescreen and confirmation of H-01–H-03.
+1. Rubio visual / human rescreen of updated preview  
+2. H-02 route-by-route validation before enabling permanent redirects on `/regulatory`, `/compliance`, `/corporate`, `/audit` (and peers)  
+3. Explicit production deploy authorization (H-05)  
+4. Merge authorization for PR #17 (not granted by this mission)

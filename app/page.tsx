@@ -65,7 +65,7 @@ export default function HomePage() {
       <section
         className="authority-strip w-full border-b border-white/[0.06]"
         style={{ backgroundColor: "#0B1220" }}
-        aria-label="Public service areas"
+        aria-label="Services"
       >
         <div className="w-full overflow-x-auto overflow-y-hidden overscroll-x-contain scroll-smooth [-webkit-overflow-scrolling:touch] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           <div className="flex h-14 min-w-full w-max items-center justify-center gap-x-4 px-6 font-sans text-[11px] font-medium uppercase tracking-[0.18em] text-white/55 sm:gap-x-6 sm:px-10 sm:text-[12px] md:h-16">
@@ -84,33 +84,20 @@ export default function HomePage() {
       {/* 2. What Octus does */}
       <section className="border-b border-border bg-background py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-10 md:grid-cols-[1.2fr_1fr] md:items-end">
-            <div>
-              <p className="section-label mb-4 block">What Octus does</p>
-              <h2 className="heading-section mb-6">
-                Structure regulated operations so they can hold under scrutiny.
-              </h2>
-              <p className="body-large text-muted-foreground">{OCTUS_WHAT_WE_DO}</p>
-            </div>
-            <div className="grid grid-cols-3 gap-4 text-center">
-              <div>
-                <span className="font-heading text-3xl font-bold text-primary">15+</span>
-                <span className="mt-2 block font-sans text-sm text-muted-foreground">jurisdictions</span>
-              </div>
-              <div>
-                <span className="font-heading text-3xl font-bold text-primary">2019</span>
-                <span className="mt-2 block font-sans text-sm text-muted-foreground">operating since</span>
-              </div>
-              <div>
-                <span className="font-heading text-3xl font-bold text-primary">7</span>
-                <span className="mt-2 block font-sans text-sm text-muted-foreground">public areas</span>
-              </div>
-            </div>
+          <div className="max-w-3xl">
+            <p className="section-label mb-4 block">What Octus does</p>
+            <h2 className="heading-section mb-6">
+              Structure regulated operations so they can hold under scrutiny.
+            </h2>
+            <p className="body-large text-muted-foreground">{OCTUS_WHAT_WE_DO}</p>
+            <p className="mt-6 font-sans text-sm text-muted-foreground">
+              Operating since 2019 across regulated markets.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* 3. Seven public areas */}
+      {/* 3. Services */}
       <section className="surface-elevated py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12 max-w-2xl md:mb-16">
@@ -120,10 +107,10 @@ export default function HomePage() {
                 All services →
               </Link>
             </div>
-            <h2 className="heading-section mb-6">Seven public areas. One execution partner.</h2>
+            <h2 className="heading-section mb-6">Services for regulated operations</h2>
             <p className="body-large text-muted-foreground">
-              Banking readiness and tax coordination sit inside these areas — they are not eighth
-              public pillars.
+              From licensing and corporate structure to compliance, remediation and specialist
+              coordination, Octus brings the required workstreams into one coordinated mandate.
             </p>
           </div>
           <HomeModulesAccordion modules={areaRows} />
@@ -193,12 +180,14 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-10 md:grid-cols-[1.2fr_1fr] md:items-center md:gap-16">
             <div>
-              <p className="section-label mb-4 block">Trust evidence</p>
-              <h2 className="heading-section mb-4">Operators, not a brochure wall.</h2>
+              <p className="section-label mb-4 block">Why operators work with Octus</p>
+              <h2 className="heading-section mb-4">
+                Experience, accountability and clear commitments.
+              </h2>
               <p className="body-large mb-6 text-muted-foreground">
-                Built in iGaming and applied across fintech, digital assets and other regulated
-                sectors. Certified data protection capability (EXIN DPO). Proof is operational —
-                not a certificate gallery.
+                Octus works with operators in highly regulated markets — coordinating
+                multi-jurisdiction execution with direct access to the responsible team, clear
+                boundaries, and commitments that match what can actually be delivered.
               </p>
               <div className="flex flex-wrap gap-4">
                 <CtaLink href="/team">Meet the team →</CtaLink>
@@ -209,10 +198,10 @@ export default function HomePage() {
             </div>
             <ul className="space-y-3 font-sans text-sm text-muted-foreground">
               {[
-                "One accountable coordination layer",
-                "No guaranteed licensing or banking outcomes",
-                "No partner-logo endorsement galleries",
-                "Crisis entry via Remediation & Readiness / diagnostic",
+                "Experience across iGaming, fintech, digital assets and high-risk operations",
+                "Direct access to the team accountable for the mandate",
+                "Coordinated execution across jurisdictions and workstreams",
+                "Clear boundaries on what Octus controls and what remains with authorities or providers",
               ].map((item) => (
                 <li key={item} className="flex gap-3 border-b border-border/60 pb-3">
                   <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" aria-hidden />
@@ -234,7 +223,8 @@ export default function HomePage() {
             If the structure is stuck, blocked or exposed — talk to Octus.
           </h2>
           <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-white/75">
-            Discuss a live situation, or start with diagnostic intake when remediation is the door.
+            Discuss a live situation, or start with a diagnostic assessment when the operation is
+            already under pressure.
           </p>
           <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
             <CtaLink

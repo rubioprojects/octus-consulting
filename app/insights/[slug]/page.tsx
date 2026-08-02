@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { getAllPosts, getPost } from "../../../lib/posts";
 import {
-  factualReviewStatus,
   resolveIndustryLinks,
   resolveJurisdictionLinks,
   resolvePostAuthor,
@@ -62,7 +61,6 @@ export default function PostPage({ params }: { params: { slug: string } }) {
           </h1>
           <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ color: "var(--white-40)" }}>
             {date} · {resolvePostAuthor(post)}
-            {factualReviewStatus(post) === "needs_review" ? " · Factual review marker" : ""}
           </p>
         </div>
       </section>

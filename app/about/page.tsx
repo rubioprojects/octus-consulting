@@ -5,7 +5,7 @@ import PageHero from "../../components/system/PageHero";
 export const metadata = {
   title: "About",
   description:
-    "Octus is not a law firm. Not a consultancy. Not a vendor. It is the execution layer behind regulated operations — structuring, coordinating and operating what others only advise on.",
+    "Octus is the execution layer behind regulated operations — structuring, coordinating and operating what needs to work across regulatory, compliance, banking and corporate layers.",
 };
 
 export default function AboutPage() {
@@ -152,7 +152,6 @@ export default function AboutPage() {
             <div>
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1px", background: "var(--border-solid)", borderRadius: "12px", overflow: "hidden", marginBottom: "24px" }}>
                 {[
-                  { num: "15+", label: "Active jurisdictions" },
                   { num: "2019", label: "Operating since" },
                 ].map((s) => (
                   <div key={s.num} className="card" style={{ borderRadius: "0", border: "none" }}>
@@ -162,7 +161,7 @@ export default function AboutPage() {
                 ))}
               </div>
               <div className="juris-strip">
-                <p className="juris-strip-label">Active jurisdictions</p>
+                <p className="juris-strip-label">Markets and jurisdictions</p>
                 <div className="chip-row">
                   {["Brazil (SPA/MF)", "UK", "Malta (MGA)", "UAE", "Curaçao", "Cyprus", "BVI", "Cayman", "Portugal", "Italy"].map((j) => (
                     <span key={j} className="chip-juris">{j}</span>

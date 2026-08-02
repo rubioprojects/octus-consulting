@@ -9,14 +9,154 @@ import {
 import PageHero from "./PageHero";
 import { CtaLink } from "./CtaButton";
 
+/** Area-specific modules — approved catalog language only; no invented cases/metrics. */
+function AreaSpecificModule({ area }: { area: PublicArea }) {
+  if (area.id === "AREA-REG") {
+    return (
+      <section className="surface-elevated py-20 md:py-28">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <p className="section-label mb-4 block">How licensing programmes are built</p>
+          <h2 className="heading-section mb-4 max-w-2xl">
+            Pathway first. Filings second.
+          </h2>
+          <p className="body-large mb-10 max-w-2xl text-muted-foreground">
+            Regulatory Structuring sequences jurisdiction fit, licensing pathway design and
+            regulator-facing execution with the corporate and compliance layers that determine whether
+            a licence can actually operate.
+          </p>
+          <div className="grid gap-6 md:grid-cols-3">
+            {[
+              {
+                title: "Jurisdiction and pathway",
+                body: "Selection and risk mapping before commercial commitments harden.",
+              },
+              {
+                title: "Licensing programmes",
+                body: "iGaming, fintech/EMI and Brazil SPA/MF work treated as coordinated programmes.",
+              },
+              {
+                title: "Related depth",
+                body: "Existing licensing and market-entry pages remain available under Related depth.",
+              },
+            ].map((item) => (
+              <div key={item.title} className="rounded-sm border border-border bg-background p-6">
+                <h3 className="mb-2 font-sans text-base font-semibold text-foreground">{item.title}</h3>
+                <p className="font-sans text-sm leading-relaxed text-muted-foreground">{item.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  if (area.id === "AREA-PC") {
+    return (
+      <section className="surface-elevated py-20 md:py-28">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <p className="section-label mb-4 block">Who this is for</p>
+          <h2 className="heading-section mb-4 max-w-2xl">
+            The individuals behind regulated operations.
+          </h2>
+          <p className="body-large mb-10 max-w-2xl text-muted-foreground">
+            Private Clients covers founders, UBOs, executives and families whose personal holdings,
+            residency and banking readiness sit inside the same regulated structure as the operating
+            group — not as standalone private-wealth marketing.
+          </p>
+          <ul className="grid list-none gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              "Ownership and UBO architecture",
+              "Personal holding organisation",
+              "Residency and personal international structuring",
+              "Personal banking and individual KYC readiness",
+              "Personal tax coordination",
+            ].map((item) => (
+              <li
+                key={item}
+                className="rounded-sm border border-border bg-background px-4 py-3 font-sans text-sm text-foreground"
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    );
+  }
+
+  if (area.id === "AREA-REM") {
+    return (
+      <section className="surface-elevated py-20 md:py-28">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <p className="section-label mb-4 block">When the operation is already blocked</p>
+          <h2 className="heading-section mb-4 max-w-2xl">
+            Stabilise first. Rebuild the sequence.
+          </h2>
+          <p className="body-large mb-8 max-w-2xl text-muted-foreground">
+            Remediation &amp; Readiness addresses licensing delays, banking or compliance gaps, audit
+            readiness and financial-infrastructure failures that are already live — then sequences the
+            structural fix across the required workstreams.
+          </p>
+          {area.intakeHref && (
+            <div className="flex flex-col gap-4 rounded-sm border border-primary/30 bg-primary/[0.03] p-6 sm:flex-row sm:items-center sm:justify-between">
+              <p className="body-large max-w-xl">
+                Already facing a licensing, banking, compliance or operational blockage? Start with a
+                diagnostic assessment.
+              </p>
+              <CtaLink href={area.intakeHref} variant="primary">
+                {area.intakeLabel || "Start diagnostic"} →
+              </CtaLink>
+            </div>
+          )}
+        </div>
+      </section>
+    );
+  }
+
+  if (area.id === "AREA-HUB") {
+    return (
+      <section className="surface-elevated py-20 md:py-28">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <p className="section-label mb-4 block">Specialist network</p>
+          <h2 className="heading-section mb-4 max-w-2xl">
+            The right counterparties, in the right sequence.
+          </h2>
+          <p className="body-large mb-10 max-w-2xl text-muted-foreground">
+            Octus identifies and coordinates relevant providers according to the client’s structure,
+            jurisdiction and risk profile — banks and PSPs, payment providers, CSPs, local directors,
+            laboratories, certification providers, KYC/AML specialists, technology platforms, local
+            counsel, and tax and other specialists.
+          </p>
+          <ul className="grid list-none gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {(area.providerClasses || []).map((cls) => (
+              <li
+                key={cls}
+                className="rounded-sm border border-border bg-background px-4 py-3 font-sans text-sm text-foreground"
+              >
+                {cls}
+              </li>
+            ))}
+          </ul>
+          <p className="mt-8 max-w-3xl font-sans text-sm leading-relaxed text-muted-foreground">
+            Provider acceptance and availability remain subject to each provider’s own criteria.
+          </p>
+        </div>
+      </section>
+    );
+  }
+
+  return null;
+}
+
 export default function AreaHubPage({ area }: { area: PublicArea }) {
   const primaryHref = area.primaryCta === "assess" ? WHATSAPP_ASSESS_URL : WHATSAPP_DISCUSS_URL;
   const primaryLabel = area.primaryCta === "assess" ? CTA_ASSESS_LABEL : CTA_DISCUSS_LABEL;
+  const eyebrow = area.crisis ? "Crisis entry" : "Services";
 
   return (
     <main>
       <PageHero
-        eyebrow={area.crisis ? "Service area · Crisis entry" : `Service area ${area.num}`}
+        eyebrow={eyebrow}
         title={area.name}
         titleSecondLine={area.oneSentence}
         description={area.summary}
@@ -32,20 +172,10 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
         <section className="border-b border-border bg-secondary/40 py-10">
           <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
             <p className="font-sans text-sm leading-relaxed text-muted-foreground">
-              <span className="font-medium text-foreground">Boundary: </span>
-              Octus is not a law firm. This area covers legal and structural{" "}
-              <em>architecture</em> for regulated operations — coordination, frameworks and
-              structural requirements — working with independent counsel where appropriate.
-            </p>
-          </div>
-        </section>
-      )}
-
-      {area.historicalAlias && (
-        <section className="border-b border-border py-6">
-          <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-            <p className="font-sans text-xs text-muted-foreground">
-              Historical label (metadata / redirects only): {area.historicalAlias}
+              Legal work is delivered or coordinated through qualified counsel according to the
+              jurisdiction and scope of the matter. Octus coordinates legal and structural
+              architecture for regulated operations — frameworks, contractual design and counsel
+              coordination — within that model.
             </p>
           </div>
         </section>
@@ -82,43 +212,18 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
         </div>
       </section>
 
-      {area.providerClasses && area.providerClasses.length > 0 && (
-        <section className="surface-elevated py-20 md:py-28">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <p className="section-label mb-4 block">Specialist coordination classes</p>
-            <h2 className="heading-section mb-4 max-w-2xl">
-              Classes of counterparties — not a partner gallery.
-            </h2>
-            <p className="body-large mb-10 max-w-2xl text-muted-foreground">
-              Octus coordinates introductions and sequencing across specialist classes. Listing a
-              class does not imply endorsement, guaranteed availability, or guaranteed onboarding.
-            </p>
-            <ul className="grid list-none gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {area.providerClasses.map((cls) => (
-                <li
-                  key={cls}
-                  className="rounded-sm border border-border bg-background px-4 py-3 font-sans text-sm text-foreground"
-                >
-                  {cls}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-      )}
+      <AreaSpecificModule area={area} />
 
-      {area.intakeHref && (
+      {/* Remediation CTA handled inside AREA-REM specific module; keep generic CTA only if intake exists and no specific module used it */}
+      {area.intakeHref && area.id !== "AREA-REM" && (
         <section className="border-y border-border bg-primary/[0.03] py-14">
           <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
-            <div>
-              <p className="section-label mb-2 block">Intake path</p>
-              <p className="body-large max-w-xl">
-                Remediation &amp; Readiness is the service area. Diagnostic is the intake path —
-                they are connected, not the same thing.
-              </p>
-            </div>
+            <p className="body-large max-w-xl">
+              Already facing a licensing, banking, compliance or operational blockage? Start with a
+              diagnostic assessment.
+            </p>
             <CtaLink href={area.intakeHref} variant="primary">
-              {area.intakeLabel || "Open diagnostic"} →
+              {area.intakeLabel || "Start diagnostic"} →
             </CtaLink>
           </div>
         </section>
@@ -143,7 +248,7 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
               </ul>
             </div>
             <div>
-              <p className="section-label mb-4 block">Related depth</p>
+              <p className="section-label mb-4 block">Related pages</p>
               <ul className="flex list-none flex-col gap-2">
                 {area.relatedDeep.map((r) => (
                   <li key={r.href}>
@@ -158,11 +263,7 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
               </ul>
             </div>
           </div>
-          <p className="mt-12 max-w-3xl font-sans text-sm leading-relaxed text-muted-foreground">
-            We do not guarantee licensing approvals, banking outcomes, certification results or
-            regulator decisions. Octus coordinates structure and execution within what it controls.
-          </p>
-          <div className="mt-8">
+          <div className="mt-10">
             <CtaLink href="/solutions" variant="secondary">
               All services →
             </CtaLink>

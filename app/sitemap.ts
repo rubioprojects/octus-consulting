@@ -17,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/private-clients`, priority: 0.9, changeFrequency: "monthly" as const },
     { url: `${base}/international-hub`, priority: 0.9, changeFrequency: "monthly" as const },
     { url: `${base}/solutions/regulatory-strategy-licensing`, priority: 0.3, changeFrequency: "yearly" as const },
-    { url: `${base}/solutions/banking-payments-infrastructure`, priority: 0.3, changeFrequency: "yearly" as const },
+    { url: `${base}/solutions/banking-payments-infrastructure`, priority: 0.5, changeFrequency: "monthly" as const },
     { url: `${base}/solutions/compliance-risk-systems`, priority: 0.3, changeFrequency: "yearly" as const },
     { url: `${base}/solutions/corporate-cross-border`, priority: 0.3, changeFrequency: "yearly" as const },
     { url: `${base}/solutions/legal-contractual-architecture`, priority: 0.3, changeFrequency: "yearly" as const },

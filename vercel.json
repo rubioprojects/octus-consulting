@@ -26,11 +26,6 @@
       "permanent": true
     },
     {
-      "source": "/solutions/banking-payments-infrastructure",
-      "destination": "/international-hub",
-      "permanent": true
-    },
-    {
       "source": "/services",
       "destination": "/solutions",
       "permanent": true

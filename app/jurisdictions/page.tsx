@@ -5,7 +5,7 @@ import PageHero from "../../components/system/PageHero";
 export const metadata = {
   title: "Jurisdictions — Where We Structure Operations",
   description:
-    "Active across 15+ jurisdictions. Licensing, compliance and corporate structuring in Brazil, Curaçao, Malta, Isle of Man, UAE and more.",
+    "Jurisdiction selection and structuring for regulated operations across markets including Brazil, Curaçao, Malta, Isle of Man, UAE and more.",
 };
 
 export default function JurisdictionsPage() {
