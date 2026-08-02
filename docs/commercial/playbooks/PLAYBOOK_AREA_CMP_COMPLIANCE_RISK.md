@@ -1,13 +1,15 @@
-# PLAYBOOK — Compliance & Risk Systems
+# PLAYBOOK — Compliance & Risk
 
 | Field | Value |
 |-------|-------|
 | **playbook_id** | `PB-AREA-CMP` |
 | **public_area** | `AREA-CMP` |
+| **public_name** | Compliance & Risk |
 | **status** | `REQUIRES_RUBIO_REVIEW` |
-| **owner** | Milla (commercial) / Rubio (substance) |
-| **review_date** | 2026-11-01 |
-| **sources** | Catalog V1; SERVICE_CANONICAL_MASTER; Axle Catalog V2 (mapping only) |
+| **commercial_owner** | Milla |
+| **substantive_owners** | Rubio and designated compliance specialist |
+| **review_date** | 2026-08-02 |
+| **sources** | Catalog V1.1-SEVEN-AREAS; reconciliation V1 |
 
 ## simple_explanation
 
@@ -70,8 +72,9 @@ Operadores sob escrutínio de banco, regulador ou auditor; grupos sem CO/DPO efe
 ## dependencies
 
 - AREA-REG
-- AREA-BNK
+- AREA-CORP
 - AREA-LEG
+- AREA-HUB
 
 ## related_services
 
@@ -85,7 +88,8 @@ Operadores sob escrutínio de banco, regulador ou auditor; grupos sem CO/DPO efe
 ## cross_sell
 
 - Licensing
-- Banking readiness
+- Banking readiness (Corporate)
+- Hub lab/certification coordination
 - Contractual architecture
 - Retainer
 

@@ -4,126 +4,135 @@
 |-------|-------|
 | **Status** | `REQUIRES_RUBIO_REVIEW` |
 | **Date** | 2026-08-02 |
-| **Catalog** | `OCTUS_PUBLIC_SERVICE_CATALOG_V1` |
+| **Catalog** | `OCTUS_PUBLIC_SERVICE_CATALOG_V1` (V1.1-SEVEN-AREAS) |
+| **Control principle** | `PRESERVE_RUBIO_ORIGINAL_SEVEN_AREAS` |
 | **Issue** | [octus-consulting#13](https://github.com/rubioprojects/octus-consulting/issues/13) |
+| **Companion** | [OCTUS_ORIGINAL_SEVEN_AREAS_RECONCILIATION_V1.md](./OCTUS_ORIGINAL_SEVEN_AREAS_RECONCILIATION_V1.md) |
 
-Decisions below are **recommendations**. None are `HUMAN_APPROVED` until Rubio records approval.
+Decisions below are recommendations unless marked as Rubio-directed. None are `HUMAN_APPROVED` until Rubio records approval.
 
 ---
 
-## Open decisions (need Rubio)
+## Rubio-directed (this revision)
 
-### D-TAXONOMY-01 — Number and names of public areas
-
-| | |
-|--|--|
-| **Question** | Adopt six Final Lock areas as the public commercial spine, or replace with Issue #13 seven-area candidate? |
-| **Recommendation** | **Six areas** as spine (AREA-REG … AREA-REM). Do not force seven only because it was discussed. |
-| **Evidence** | Website Final Lock CONFIRMED; `lib/commercial.ts`; `CANONICAL_SERVICE_TAXONOMY.md`. Issue #13 lists seven as *candidate subject to catalog evidence*. |
-| **Impact if accepted** | Website IA and commercial catalog stay aligned. |
-| **Impact if rejected for seven** | Website IA migration required; AREA-TAX becomes peer pillar. |
-| **Status** | `REQUIRES_RUBIO_REVIEW` |
-
-### D-TAX-01 — Tax / accounting / audit public treatment
+### D-SEVEN-01 — Preserve original seven areas
 
 | | |
 |--|--|
-| **Question** | Is Tax, Accounting, Audit & Finance a seventh public area, a Corporate depth, a Markets add-on, or controlled commercial-only (Milla + proposals)? |
-| **Recommendation** | **Controlled commercial offer now**; optional seventh pillar only after Rubio confirms public capacity narrative without naming OC8. |
-| **Evidence** | Catalog V2 sells accounting/tax/audit via Octus; website pack marks OC8 pages `DO_NOT_PUBLISH`; Issue #13 AT#5 requires findability. |
-| **Allowed interim** | Milla may discuss Octus-branded finance offers; no OC8 name; no rate cards on site. |
-| **Status** | `REQUIRES_RUBIO_REVIEW` |
+| **Decision** | Public commercial structure = **seven original Octus areas**. |
+| **Source** | Rubio mandate 2026-08-02 + recovered `what-we-do` seven modules. |
+| **Supersedes** | Prior agent recommendation of six Final Lock areas as commercial spine (PR #15 V1.0 / PR #14). |
+| **Status** | Applied in catalog V1.1 as draft for review — still `REQUIRES_RUBIO_REVIEW` for lifecycle approval. |
 
-### D-SEGMENT-PC-01 — Private Clients
+### D-PC-01 — Private Clients is a public area
 
 | | |
 |--|--|
-| **Question** | Equal service pillar vs client segment? |
-| **Recommendation** | **Client segment** (Issue #13 + Final Lock R-03). Keep `/private-clients`; map services under AREA-CORP (UBO) and selected PF finance under AREA-TAX candidate. |
-| **Status** | `REQUIRES_RUBIO_REVIEW` |
+| **Decision** | Private Clients remains a **public peer area**, not only a segment. |
+| **Historical title** | Ownership & UBO (module 05). |
+| **Status** | `KEEP_WITH_MINOR_WORDING_EDIT` — confirm nav label Private Clients vs Ownership & UBO (`D-PC-NAME-01`). |
+
+### D-HUB-01 — International Hub is a public area
+
+| | |
+|--|--|
+| **Decision** | International Hub remains a **public peer area**. |
+| **Recovered name** | **International Hub** (git `what-we-do`; legacy `/international-hub`). |
+| **Not used** | Octus Hub, Networking (unless Rubio renames later). |
+| **Status** | `KEEP_ORIGINAL`. |
+
+### D-REM-01 — Remediation remains a public area
+
+| | |
+|--|--|
+| **Decision** | Remediation remains a public peer area for blocked/failing licensing, banking, compliance, corporate, finance or operations. |
+| **Not** | An engagement model only. |
+| **Historical title** | Audit & Readiness. |
+| **Working label** | Remediation & Readiness. |
+| **Status** | `REQUIRES_RUBIO_DECISION` on exact public name (`D-REM-NAME-01`). |
+
+### D-TAX-MAP-01 — Tax without an eighth area
+
+| | |
+|--|--|
+| **Decision** | Do **not** create an eighth Tax pillar. Map tax/accounting/audit/finance into Corporate, Private Clients and Remediation. |
+| **Rule** | Separate Octus-sold service from unnamed delivery partners. |
+| **Status** | Applied in V1.1 mapping. |
+
+### D-BNK-MAP-01 — Banking without a peer area outside the seven
+
+| | |
+|--|--|
+| **Decision** | Banking/payments is not a peer outside the original seven. Remap into Corporate (bankability), Hub (PSP/providers) and Remediation (failed infrastructure). |
+| **Status** | Applied in V1.1 mapping. |
+
+---
+
+## Open decisions (still need Rubio)
+
+### D-REM-NAME-01 — Area 06 public label
+
+| Options | A) Audit & Readiness (original) · B) Remediation & Readiness (working) · C) other |
+| Status | `REQUIRES_RUBIO_DECISION` |
+
+### D-PC-NAME-01 — Area 05 public label
+
+| Options | A) Private Clients · B) Ownership & UBO · C) Private Clients (nav) + Ownership & UBO (page title) |
+| Status | `REQUIRES_RUBIO_DECISION` |
+
+### D-HUB-NAME-01 — Confirm International Hub
+
+| Options | Confirm recovered name International Hub (recommended) |
+| Status | `REQUIRES_RUBIO_DECISION` (expected confirm) |
+
+### D-OWNER-01 — Substantive owner gaps
+
+| Question | Confirm Esther / Caroline / Claudia / Rodrigo / compliance specialist assignments per service |
+| Status | `REQUIRES_RUBIO_DECISION` where flagged |
 
 ### D-PARTNER-01 — Partner naming
 
-| | |
-|--|--|
-| **Question** | May public materials name OC8, Antera or Rubio Adv.? |
-| **Recommendation** | **No.** Octus commercial face only. Executors stay internal (existing Site Copy / master rule). |
-| **Status** | `REQUIRES_RUBIO_REVIEW` (reaffirmation) |
-
-### D-ID-01 — Public ID scheme
-
-| | |
-|--|--|
-| **Question** | Which IDs are public SoT? |
-| **Recommendation** | Public: `AREA-*` + `SVC-*`. Internal mapping only: Catalog V2 `OCTUS_*` / `OC8_*` / `ANTERA_*`, pilots `octus-pilot-*`, Commercial OS `octus-p*` / `octus-r*` / `octus-a*`. |
-| **Status** | `REQUIRES_RUBIO_REVIEW` |
+| Recommendation | **No** public OC8 / Antera / Rubio Adv. brand |
+| Status | `REQUIRES_RUBIO_REVIEW` (reaffirmation) |
 
 ### D-PRICE-01 — Public pricing
 
-| | |
-|--|--|
-| **Question** | Any prices on website or deck? |
-| **Recommendation** | **No** until commercial price truth resolves PRO/START/SHIELD/manutenção conflicts. Prices only in controlled proposals. |
-| **Status** | `REQUIRES_RUBIO_REVIEW` |
+| Recommendation | **No** public prices until price truth resolves |
+| Status | `REQUIRES_RUBIO_REVIEW` |
 
-### D-CAPACITY-01 — Weak-capacity lines
+### D-CAPACITY-01 — Inquiry-only lines
 
-| | |
-|--|--|
-| **Question** | Which services stay inquiry-only? |
-| **Recommendation** | Keep inquiry-only / soft wording for: Brazil SPA (`OCTUS_REG_BR_SPA` TBD), Malta/IoM long-cycle licences (partial playbooks), high-risk banking (playbook legal-basis warning), ISO-as-product, success-fee recovery guarantees. |
-| **Status** | `REQUIRES_RUBIO_REVIEW` |
-
-### D-LANG-01 — Language of public artifacts
-
-| | |
-|--|--|
-| **Question** | EN vs PT for catalog, deck, website? |
-| **Recommendation** | Working notes may be PT; **final website + core deck EN** (Issue #13 governance), unless Rubio directs otherwise. Playbooks for Milla may be bilingual or PT-first. |
-| **Status** | `REQUIRES_RUBIO_REVIEW` |
+| Recommendation | Soft wording for Brazil SPA tbd, thin PF residency/wealth playbooks, high-risk banking legal-basis warnings, ISO-as-product |
+| Status | `REQUIRES_RUBIO_REVIEW` |
 
 ---
 
-## Locked for this pack (agent-side, still human-reviewable)
+## Locked for this pack (agent-side)
 
-| ID | Decision | Rationale |
-|----|----------|-----------|
-| L-01 | This folder (`docs/commercial/public-catalog/`) is the public catalog SoT | Mandate ownership; website consumes, does not invent |
-| L-02 | No website code mutation in this mission | Mandate restriction |
-| L-03 | No PPTX/PDF until content + storyboard approved | Mandate restriction |
-| L-04 | Catalog status remains `REQUIRES_RUBIO_REVIEW` | No premature HUMAN_APPROVED |
-| L-05 | Delivery models ≠ service areas | Retainers/advisory stay engagement layer |
-| L-06 | Industries ≠ service areas | Markets layer preserved |
-
----
-
-## Conflicts recorded (not resolved here)
-
-| Conflict | Sources | Treatment |
-|----------|---------|-----------|
-| Retainer PRO €15k vs €8–12k | Catalog V2 vs Commercial OS static | D-PRICE-01 — do not publish |
-| START €3k vs €2.5k | Same | D-PRICE-01 |
-| V2 “118” vs seed 126 vs playbooks 93 | Axle catalog corpus | Counts are internal; public uses SVC list |
-| Website 6 Solutions vs Issue candidate 7 | Issue #13 vs Final Lock | D-TAXONOMY-01 |
-| OC8 visible in internal catalog vs invisible publicly | V2 vs website master | D-PARTNER-01 |
+| ID | Decision |
+|----|----------|
+| L-01 | `docs/commercial/public-catalog/` remains public catalog SoT |
+| L-02 | No website code mutation |
+| L-03 | No PPTX/PDF until content + storyboard approved |
+| L-04 | Catalog status remains `REQUIRES_RUBIO_REVIEW` |
+| L-05 | Delivery models ≠ areas |
+| L-06 | Industries ≠ areas |
+| L-07 | Six website Solutions are implementation reference only for this commercial pack |
 
 ---
 
-## Obsolete references flagged
+## Obsolete / superseded in this revision
 
-| Reference | Action |
-|-----------|--------|
-| Public “OC8” as seller | Remove from all public drafts |
-| Legacy seven modules `/what-we-do` | Already superseded; do not revive as catalog |
-| “Assessment before catalogue” / “one accountable layer” slogans | Forbidden tone (Issue #13) |
-| Shared/Cross-tenant “4 services” with no IDs | Ignore until enumerated |
+| Prior recommendation | Status |
+|----------------------|--------|
+| Six Final Lock areas as commercial spine | **SUPERSEDED** by D-SEVEN-01 |
+| Private Clients as segment-only | **SUPERSEDED** by D-PC-01 |
+| Hub not a peer area | **SUPERSEDED** by D-HUB-01 |
+| Tax as optional seventh/eighth pillar candidate | **SUPERSEDED** by D-TAX-MAP-01 (map into seven) |
+| Legacy seven modules “do not revive” | **SUPERSEDED** — revive as commercial SoT; website route migration remains separate WS |
 
 ---
 
-## Approval log
+## Terminal
 
-| Date | Reviewer | Decision IDs | Result |
-|------|----------|--------------|--------|
-| _pending_ | Rubio | D-TAXONOMY-01 … D-LANG-01 | |
-| _pending_ | Cris | commercial face | |
-| _pending_ | Milla | playbook usability | |
+`OCTUS_ORIGINAL_SEVEN_AREAS_READY_FOR_RUBIO_REVIEW`

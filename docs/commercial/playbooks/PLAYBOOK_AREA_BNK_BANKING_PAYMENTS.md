@@ -1,107 +1,36 @@
-# PLAYBOOK — Banking, Payments & Financial Infrastructure
+# PLAYBOOK — Banking / Payments (REMAPPED — not a peer area)
 
 | Field | Value |
 |-------|-------|
 | **playbook_id** | `PB-AREA-BNK` |
-| **public_area** | `AREA-BNK` |
-| **status** | `REQUIRES_RUBIO_REVIEW` |
-| **owner** | Milla (commercial) / Rubio (substance) |
-| **review_date** | 2026-11-01 |
-| **sources** | Catalog V1; SERVICE_CANONICAL_MASTER; Axle Catalog V2 (mapping only) |
+| **public_area** | ~~`AREA-BNK`~~ **removed as peer** |
+| **status** | `SUPERSEDED_AS_PEER` — content remapped |
+| **control_principle** | `PRESERVE_RUBIO_ORIGINAL_SEVEN_AREAS` |
+| **decision** | `D-BNK-MAP-01` |
+| **review_date** | 2026-08-02 |
 
-## simple_explanation
+## Why this file remains
 
-A Octus prepara a operação para ser bancável e desenha opções de pagamentos. Não promete abertura de conta nem endossa bancos.
+Historical sales playbook from PR #15 six-area spine. Banking is **not** one of Rubio’s original seven peer areas. Useful content is kept here as a remap note so nothing is discarded.
 
-## client_profile
+## Remap
 
-Operadores licenciados ou em licensing que precisam mover dinheiro; times com recusas bancárias.
+| Former BNK theme | Canonical primary area | Example services |
+|---|---|---|
+| Bankability / readiness pack | Corporate Structuring (`AREA-CORP`) | `SVC-CORP-05` |
+| Bank / PSP introductions | International Hub (`AREA-HUB`) | `SVC-HUB-02` |
+| Payment / PSP architecture | International Hub (`AREA-HUB`) | `SVC-HUB-03` |
+| Failed banking / PSP stack | Remediation & Readiness (`AREA-REM`) | `SVC-REM-03`, `SVC-REM-05` |
 
-## triggers
+## Do not
 
-- Conta rejeitada ou congelada
-- Licença ok, banking não
-- Precisa de PSP / PIX / cards / crypto rails
-- Stack de pagamentos incompatível com risco
+- Sell Banking as a seventh/eighth peer area
+- Promise account opening
+- Publish bank or PSP brand names without Rubio approval
 
-## scope
+## See instead
 
-- Bankability / readiness pack
-- Optioning de bancos (sem garantia)
-- Arquitetura PSP/pagamentos
-- Remediação de infraestrutura falha
-
-## deliverables
-
-- Readiness pack
-- Shortlist de opções
-- Mapa de gaps
-- Memo de arquitetura de pagamentos
-
-## exclusions
-
-- Promessa de conta aprovada
-- Nome de banco como parceria pública sem aprovação
-- Operar como money transmitter
-
-## discovery_questions
-
-1. Qual o fluxo de fundos (de onde para onde)?
-2. Quais volumes e moedas?
-3. Já houve recusa? De quem e por quê?
-4. Licença atual e jurisdição da entidade?
-5. UBOs e PEP exposure?
-6. PSPs já contratados ou vetados?
-
-## qualification_criteria
-
-- Entidade e licença (ou pathway) claros
-- Disposição a corrigir gaps de compliance/corp
-- Documentação mínima disponível
-
-## red_flags
-
-- Pressão por “conta em 48h”
-- Recusa em explicar source of funds
-- Estrutura societária inconsistente com narrativa
-
-## dependencies
-
-- AREA-REG
-- AREA-CMP
-- AREA-CORP
-
-## related_services
-
-- `SVC-BNK-01`
-- `SVC-BNK-02`
-- `SVC-BNK-03`
-
-## cross_sell
-
-- Licensing programme
-- AML/KYC
-- Remediation
-
-## proposal_model
-
-Projeto de readiness + optional payments architecture. Separate quote for introductions. No SLA de aprovação bancária.
-
-## allowed_claims
-
-- `CL-SVC-BNK-01`
-- `CL-INST-06`
-
-## sources
-
-- `docs/commercial/public-catalog/OCTUS_PUBLIC_SERVICE_CATALOG_V1.md`
-- `docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md`
-- Axle Catalog V2 / playbooks (internal mapping; strip prices and partner brands)
-
-## owner
-
-Milla (conversation) · Rubio (approval of substance) · Commercial front (catalog SoT)
-
-## review_date
-
-2026-11-01
+- [PLAYBOOK_AREA_CORP_CORPORATE_CROSS_BORDER.md](./PLAYBOOK_AREA_CORP_CORPORATE_CROSS_BORDER.md)
+- [PLAYBOOK_AREA_HUB_INTERNATIONAL_HUB.md](./PLAYBOOK_AREA_HUB_INTERNATIONAL_HUB.md)
+- [PLAYBOOK_AREA_REM_REMEDIATION_READINESS.md](./PLAYBOOK_AREA_REM_REMEDIATION_READINESS.md)
+- [OCTUS_ORIGINAL_SEVEN_AREAS_RECONCILIATION_V1.md](../public-catalog/OCTUS_ORIGINAL_SEVEN_AREAS_RECONCILIATION_V1.md)

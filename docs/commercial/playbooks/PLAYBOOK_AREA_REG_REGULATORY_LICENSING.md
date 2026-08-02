@@ -1,13 +1,15 @@
-# PLAYBOOK — Regulatory Strategy & Licensing
+# PLAYBOOK — Regulatory Structuring
 
 | Field | Value |
 |-------|-------|
 | **playbook_id** | `PB-AREA-REG` |
 | **public_area** | `AREA-REG` |
+| **public_name** | Regulatory Structuring |
 | **status** | `REQUIRES_RUBIO_REVIEW` |
-| **owner** | Milla (commercial) / Rubio (substance) |
-| **review_date** | 2026-11-01 |
-| **sources** | Catalog V1; SERVICE_CANONICAL_MASTER; Axle Catalog V2 (mapping only) |
+| **commercial_owner** | Milla |
+| **substantive_owners** | Esther (international); Caroline (Brazil); Rubio (executive) |
+| **review_date** | 2026-08-02 |
+| **sources** | Catalog V1.1-SEVEN-AREAS; reconciliation V1 |
 
 ## simple_explanation
 
@@ -72,7 +74,7 @@ Operadores de iGaming, fintech, crypto e grupos que vão entrar ou reposicionar 
 
 - AREA-CORP
 - AREA-CMP
-- AREA-BNK
+- AREA-HUB
 
 ## related_services
 
@@ -84,14 +86,15 @@ Operadores de iGaming, fintech, crypto e grupos que vão entrar ou reposicionar 
 
 ## cross_sell
 
-- Banking readiness
+- Banking readiness (Corporate)
+- Hub bank/PSP introductions
 - AML frameworks
 - Holding architecture
 - Continuous partnership
 
 ## proposal_model
 
-Módulo regulatório + dependências explícitas (corp/compliance/banking). Gov fees always separate. Timeline as range with assumptions, never guarantee.
+Regulatory module + explicit dependencies (corp/compliance/hub). Gov fees always separate. Timeline as range with assumptions, never guarantee.
 
 ## allowed_claims
 

@@ -1,17 +1,21 @@
-# PLAYBOOK — Operational Remediation & Readiness
+# PLAYBOOK — Remediation & Readiness
 
 | Field | Value |
 |-------|-------|
 | **playbook_id** | `PB-AREA-REM` |
 | **public_area** | `AREA-REM` |
+| **public_name** | Remediation & Readiness |
+| **historical_title** | Audit & Readiness |
+| **naming_status** | `REQUIRES_RUBIO_DECISION` (`D-REM-NAME-01`) |
 | **status** | `REQUIRES_RUBIO_REVIEW` |
-| **owner** | Milla (commercial) / Rubio (substance) |
-| **review_date** | 2026-11-01 |
-| **sources** | Catalog V1; SERVICE_CANONICAL_MASTER; Axle Catalog V2 (mapping only) |
+| **commercial_owner** | Milla |
+| **substantive_owner** | Rubio |
+| **review_date** | 2026-08-02 |
+| **sources** | Catalog V1.1-SEVEN-AREAS; reconciliation V1 |
 
 ## simple_explanation
 
-Porta de entrada quando algo travou: licença, banco, compliance ou auditoria. A Octus diagnostica e monta o plano — depois puxa as áreas certas.
+Public area for when licensing, banking, compliance, corporate, finance or operations already have a live problem. Octus diagnoses and sequences the fix — then pulls in the right specialist areas. Not only an engagement model.
 
 ## client_profile
 
@@ -66,21 +70,24 @@ Operações em crise, atraso ou falha; founders sob pressão de go-live ou fundi
 ## dependencies
 
 - AREA-REG
-- AREA-BNK
 - AREA-CMP
 - AREA-CORP
 - AREA-LEG
+- AREA-HUB
+- AREA-PC
 
 ## related_services
 
-- `SVC-REM-01`
-- `SVC-REM-02`
-- `SVC-REM-03`
-- `SVC-REM-04`
+- `SVC-REM-01` Crisis entry and structural assessment
+- `SVC-REM-02` Licensing delay remediation
+- `SVC-REM-03` Banking or compliance gap remediation
+- `SVC-REM-04` Audit and readiness remediation
+- `SVC-REM-05` Financial infrastructure remediation
+- `SVC-REM-06` Tax and finance problem remediation
 
 ## cross_sell
 
-- All spine areas
+- All seven original areas after action plan
 - Continuous partnership after stabilisation
 
 ## proposal_model

@@ -1,99 +1,37 @@
-# PLAYBOOK — Tax, Accounting, Audit & Finance (CANDIDATE)
+# PLAYBOOK — Tax / Accounting / Audit (REMAPPED — not an eighth area)
 
 | Field | Value |
 |-------|-------|
 | **playbook_id** | `PB-AREA-TAX` |
-| **public_area** | `AREA-TAX` (candidate — D-TAX-01) |
-| **status** | `REQUIRES_RUBIO_REVIEW` |
-| **owner** | Milla / Rubio |
-| **review_date** | 2026-11-01 |
+| **public_area** | ~~`AREA-TAX`~~ **not created** |
+| **status** | `SUPERSEDED_AS_PEER` — content remapped |
+| **control_principle** | `PRESERVE_RUBIO_ORIGINAL_SEVEN_AREAS` |
+| **decision** | `D-TAX-MAP-01` |
+| **review_date** | 2026-08-02 |
 
-## simple_explanation
+## Why this file remains
 
-A Octus pode oferecer programas de contabilidade, tributário, auditoria e finanças sob a marca Octus. A entrega pode usar parceiros internos — **nunca nomeados ao cliente**. Não publicar preços internos.
+PR #15 treated Tax as a candidate pillar. Rubio’s seven-area rule forbids an eighth public area. Tax, accounting, audit and finance remain sellable — mapped into the original seven. Delivery partners stay unnamed (no public OC8).
 
-## client_profile
+## Remap
 
-Empresas com operação Brasil ou holdings que precisam de books, tax planning, auditoria ou manutenção societária; em alguns casos PF ligada à operação (segmento Private Clients).
+| Former TAX theme | Canonical primary area | Example services |
+|---|---|---|
+| Corporate accounting / finance coordination | Corporate Structuring (`AREA-CORP`) | `SVC-CORP-06` |
+| Corporate tax planning | Corporate Structuring (`AREA-CORP`) | `SVC-CORP-07` |
+| Personal tax coordination | Private Clients (`AREA-PC`) | `SVC-PC-05` |
+| Tax / finance problems already live | Remediation & Readiness (`AREA-REM`) | `SVC-REM-06` |
+| Finding tax/accounting specialists | International Hub (`AREA-HUB`) | `SVC-HUB-06` |
 
-## triggers
+## Do not
 
-- Precisa de contabilidade mensal BR
-- Manutenção societária
-- Planejamento tributário / reforma
-- Preparação de DFs / auditoria
-- Recuperação ou renegociação tributária (cuidado com claims)
+- Create a public Tax pillar
+- Name OC8 or other delivery partners publicly
+- Publish internal prices
 
-## scope
+## See instead
 
-- SVC-TAX-01 … SVC-TAX-05 (catalog candidate list)
-
-## deliverables
-
-- Escopo escrito por módulo
-- Calendário de obrigações (quando aplicável)
-- Relatórios acordados no SOW
-
-## exclusions
-
-- Nomear OC8
-- Tabelas de custo OC8 / taxa preferencial
-- Garantia de recuperação de crédito tributário
-- Litígio tributário contencioso como vitrine Octus Solutions
-
-## discovery_questions
-
-1. Qual o regime e o porte no Brasil?
-2. Há operação internacional ligada?
-3. O pedido é books, planning, audit ou recovery?
-4. Há fiscalização ou dívida aberta?
-5. Quem assina e quem opera financeiramente hoje?
-
-## qualification_criteria
-
-- Entidade BR (ou path claro)
-- Documentação acessível
-- Expectativa realista sobre prazos de obrigação
-
-## red_flags
-
-- Pedido para “sumir” com passivo
-- Recusa em fornecer livros/docs
-- Expectativa de % garantido de recovery
-
-## dependencies
-
-- AREA-CORP (estrutura)
-- AREA-LEG (quando opinion/dispute)
-
-## related_services
-
-- `SVC-TAX-01` … `SVC-TAX-05`
-- `SVC-CORP-02`, `SVC-CORP-05`
-
-## cross_sell
-
-- Company formation BR
-- Manutenção + compliance
-- Holding architecture
-
-## proposal_model
-
-Módulo Octus-branded; delivery partner invisible; success-fee só com linguagem cautelosa aprovada.
-
-## allowed_claims
-
-- `CL-SVC-TAX-01`
-
-## sources
-
-- Catalog V2 §2J (internal)
-- Decision D-TAX-01 / D-PARTNER-01
-
-## owner
-
-Milla / Rubio
-
-## review_date
-
-2026-11-01
+- [PLAYBOOK_AREA_CORP_CORPORATE_CROSS_BORDER.md](./PLAYBOOK_AREA_CORP_CORPORATE_CROSS_BORDER.md)
+- [PLAYBOOK_AREA_PC_PRIVATE_CLIENTS.md](./PLAYBOOK_AREA_PC_PRIVATE_CLIENTS.md)
+- [PLAYBOOK_AREA_REM_REMEDIATION_READINESS.md](./PLAYBOOK_AREA_REM_REMEDIATION_READINESS.md)
+- [PLAYBOOK_AREA_HUB_INTERNATIONAL_HUB.md](./PLAYBOOK_AREA_HUB_INTERNATIONAL_HUB.md)

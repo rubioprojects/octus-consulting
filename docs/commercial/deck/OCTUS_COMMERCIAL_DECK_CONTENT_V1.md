@@ -2,6 +2,8 @@
 
 | Status | `REQUIRES_RUBIO_REVIEW` |
 | Date | 2026-08-02 |
+| Catalog | V1.1-SEVEN-AREAS |
+| Control principle | `PRESERVE_RUBIO_ORIGINAL_SEVEN_AREAS` |
 | Slides | 12 core (+ optional appendices) |
 | Language | EN for core deck |
 | Constraint | No PPTX/PDF until content + storyboard approved |
@@ -14,7 +16,7 @@
 
 ## Slide 2 — What Octus does (one sentence)
 
-**Body:** Octus helps regulated and high-scrutiny businesses design, license, bank, comply, structure and remediate operations across jurisdictions.
+**Body:** Octus helps regulated businesses with licensing, compliance, legal and corporate structure, private-client ownership issues, remediation when things are blocked, and the specialist network those programmes need.
 
 ## Slide 3 — Industries served
 
@@ -23,43 +25,48 @@
 - Digital assets  
 - Other high-scrutiny digital operations  
 
-**Note:** Industries are markets, not service pillars.
+**Note:** Industries are markets, not service areas.
 
 ## Slide 4 — Service catalog overview
 
-Show six areas as a compact map:
+Show **seven original areas** as a compact map:
 
-1. Regulatory Strategy & Licensing  
-2. Banking, Payments & Financial Infrastructure  
-3. Compliance & Risk Systems  
-4. Corporate & Cross-Border Structuring  
-5. Legal & Contractual Architecture  
-6. Operational Remediation & Readiness  
+1. Regulatory Structuring  
+2. Compliance & Risk  
+3. Legal & Structural Architecture  
+4. Corporate Structuring  
+5. Private Clients  
+6. Remediation & Readiness  
+7. International Hub  
 
-**Footer line:** Tax, accounting and audit programmes available commercially — public pillar pending decision.
+**Footer line:** Tax, accounting and audit programmes are sold and coordinated by Octus inside these areas — not as an eighth pillar. Partners stay unnamed.
+
+**Open naming (footer footnote if needed):** confirm Remediation vs Audit & Readiness; confirm Private Clients vs Ownership & UBO.
 
 ## Slides 5–8 — Grouped capabilities
 
 ### Slide 5 — Regulatory + Corporate
 - Licensing pathways and programmes  
-- Market entry sequencing  
-- Entities, holdings, UBO architecture  
-- Formation inside architecture  
+- Jurisdiction selection and market sequencing  
+- Entities, holdings, reorganisation  
+- Banking readiness (no promised accounts)  
+- Corporate accounting and tax coordination  
 
-### Slide 6 — Banking + Payments
-- Bankability readiness (no promised accounts)  
-- PSP / payment architecture  
-- Infrastructure remediation  
+### Slide 6 — Private Clients + International Hub
+- Ownership / UBO and personal holdings  
+- Residency and personal banking readiness  
+- Personal tax coordination  
+- Finding and coordinating banks, PSPs, CSPs, labs, counsel and specialists  
 
 ### Slide 7 — Compliance + Legal
 - AML/KYC/CDD frameworks  
 - DPO and compliance operations  
-- Contractual architecture  
+- Contractual and multi-jurisdiction legal frameworks  
 - Counsel coordination  
 
 ### Slide 8 — Remediation + how we engage
-- Crisis entry and blocked-ops remediation  
-- Audit/readiness under pressure  
+- Crisis entry when licensing, banking, compliance, corporate or finance is already blocked  
+- Audit and readiness under pressure  
 - Engagement: project, partnership retainer, advisory  
 
 ## Slide 9 — How Octus works internationally
@@ -99,7 +106,8 @@ No logos, metrics, or named clients until approved.
 A. iGaming  
 B. Fintech & Payments  
 C. Compliance  
-D. Corporate, Tax & Banking  
+D. Corporate & Private Clients  
 E. Brazil Market Entry  
+F. International Hub  
 
 Each appendix: 2–4 slides max; claims from register only.

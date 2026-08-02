@@ -1,17 +1,19 @@
-# PLAYBOOK — Corporate & Cross-Border Structuring
+# PLAYBOOK — Corporate Structuring
 
 | Field | Value |
 |-------|-------|
 | **playbook_id** | `PB-AREA-CORP` |
 | **public_area** | `AREA-CORP` |
+| **public_name** | Corporate Structuring |
 | **status** | `REQUIRES_RUBIO_REVIEW` |
-| **owner** | Milla (commercial) / Rubio (substance) |
-| **review_date** | 2026-11-01 |
-| **sources** | Catalog V1; SERVICE_CANONICAL_MASTER; Axle Catalog V2 (mapping only) |
+| **commercial_owner** | Milla |
+| **substantive_owners** | Claudia (financial/corporate); Rubio (executive) |
+| **review_date** | 2026-08-02 |
+| **sources** | Catalog V1.1-SEVEN-AREAS; reconciliation V1 |
 
 ## simple_explanation
 
-A Octus desenha entidades, holdings e ownership para operações reguladas. Formação de empresa entra dentro da arquitetura — não é loja de abertura.
+Octus designs companies, holdings and cross-border structures for regulated operations — including banking readiness and corporate accounting/tax coordination. Company formation sits inside that design; it is not a formation shop.
 
 ## client_profile
 
@@ -26,24 +28,29 @@ Grupos multi-país; founders que precisam separar risco; UBOs atrás de operaç�
 
 ## scope
 
-- Holding e entity architecture
+- Entity and holding architecture
 - Company formation in-architecture
 - Cross-border structuring
-- UBO / ownership
-- Reorganização
+- Corporate reorganisation
+- Banking readiness (remapped from former AREA-BNK)
+- Accounting and finance coordination (not an eighth Tax area)
+- Corporate tax planning (Octus-sold; partners unnamed)
 
 ## deliverables
 
-- Memo de estrutura
-- Plano de formação
-- Framework UBO
-- Plano de reorg
+- Structure memo
+- Formation plan
+- Reorg plan
+- Banking readiness pack
+- Accounting / tax coordination plan
 
 ## exclusions
 
-- Tom de “offshore barato”
-- Planejamento tributário agressivo sem AREA-TAX / counsel
-- Promessa de benefício fiscal
+- “Cheap offshore” tone
+- Aggressive tax planning without counsel
+- Promised tax benefits or bank accounts
+- Public OC8 / partner brand names
+- Personal UBO/private-client work as primary (see AREA-PC)
 
 ## discovery_questions
 
@@ -69,22 +76,26 @@ Grupos multi-país; founders que precisam separar risco; UBOs atrás de operaç�
 
 - AREA-REG
 - AREA-LEG
-- AREA-TAX candidate
+- AREA-HUB (bank/PSP introductions after readiness)
+- AREA-PC (personal side of ownership)
 
 ## related_services
 
-- `SVC-CORP-01`
-- `SVC-CORP-02`
-- `SVC-CORP-03`
-- `SVC-CORP-04`
-- `SVC-CORP-05`
+- `SVC-CORP-01` Entity and holding architecture
+- `SVC-CORP-02` Company formation
+- `SVC-CORP-03` Cross-border structuring
+- `SVC-CORP-04` Corporate reorganisation
+- `SVC-CORP-05` Banking readiness
+- `SVC-CORP-06` Accounting and finance coordination
+- `SVC-CORP-07` Corporate tax planning
 
 ## cross_sell
 
-- Licensing
-- Banking
-- Private Clients segment
+- Licensing (Regulatory)
+- International Hub introductions
+- Private Clients (personal holdings / tax)
 - Legal architecture
+- Remediation if structure already blocked
 
 ## proposal_model
 

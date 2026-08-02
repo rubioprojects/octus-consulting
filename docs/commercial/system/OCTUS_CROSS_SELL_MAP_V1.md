@@ -2,6 +2,8 @@
 
 | Status | `REQUIRES_RUBIO_REVIEW` |
 | Date | 2026-08-02 |
+| Catalog | V1.1-SEVEN-AREAS |
+| Control principle | `PRESERVE_RUBIO_ORIGINAL_SEVEN_AREAS` |
 
 ## Primary → natural next
 
@@ -9,29 +11,33 @@
 |------|------------|-----|
 | AREA-REG licensing | AREA-CORP formation/holding | Entity must fit licence |
 | AREA-REG licensing | AREA-CMP AML/DPO | Regulator/bank asks |
-| AREA-REG licensing | AREA-BNK readiness | Licence without rails fails |
-| AREA-BNK readiness | AREA-CMP policies | Bank asks for AML pack |
-| AREA-BNK readiness | AREA-REM | If already failed |
+| AREA-REG licensing | AREA-CORP banking readiness | Licence without rails fails |
+| AREA-CORP banking readiness | AREA-HUB bank/PSP intros | Ready file needs introductions |
+| AREA-CORP banking readiness | AREA-CMP policies | Bank asks for AML pack |
+| AREA-HUB introductions | AREA-REM | If already failed |
 | AREA-CMP setup | DM-RET partnership | Operate what was built |
-| AREA-CORP holding | AREA-REG / AREA-BNK | Structure serves ops |
-| AREA-CORP UBO | SEG-PRIVATE-CLIENTS | Individuals behind ops |
+| AREA-CORP holding | AREA-REG / AREA-HUB | Structure serves ops |
+| AREA-CORP holding | AREA-PC | Individuals behind ops |
+| AREA-PC ownership | AREA-CORP / AREA-LEG | Personal ↔ group boundary |
 | AREA-LEG contracts | AREA-CMP policies | Overlap T&Cs/AML |
-| AREA-REM diagnostic | Any spine area | After action plan |
-| AREA-TAX books | AREA-CORP manutenção | Ongoing BR ops |
-| Market entry (REG-04) | P1/P2-style programme | Multi-area package |
+| AREA-REM diagnostic | Any of the seven areas | After action plan |
+| AREA-CORP accounting/tax | AREA-HUB tax specialists | When delivery partner needed |
+| AREA-HUB market entry | REG + CORP + CMP package | Multi-area programme |
 
 ## Package patterns (proposal modules, not website pillars)
 
 | Pattern | Areas |
 |---------|-------|
-| International setup | REG + CORP (+ BNK) |
-| Licence programme | REG + CORP + CMP (+ BNK) |
-| Bankability rescue | REM + BNK + CMP + CORP |
+| International setup | REG + CORP + HUB |
+| Licence programme | REG + CORP + CMP + HUB |
+| Bankability rescue | REM + CORP + CMP + HUB |
 | Compliance operate | CMP + RET |
-| Brazil operate | CORP + TAX candidate + CMP |
+| Brazil operate | CORP + CMP (+ REG SPA) |
+| Private client with ops | PC + CORP + LEG |
 
 ## Anti-patterns
 
-- Vender formation shop sem REG/BNK context
-- Vender banking com garantia de conta
-- Empurrar TAX pillar no site antes de D-TAX-01
+- Selling formation shop without REG/HUB context
+- Selling banking with guaranteed account
+- Creating an eighth Tax pillar
+- Demoting Private Clients, Hub or Remediation to non-areas

@@ -2,6 +2,7 @@
 
 | Status | `REQUIRES_RUBIO_REVIEW` |
 | Date | 2026-08-02 |
+| Catalog | V1.1-SEVEN-AREAS |
 | Audience | Milla |
 
 ## Universal intake (always)
@@ -24,35 +25,35 @@
 - Já houve recusa ou condição?
 - Há CSP / diretor local disponível?
 
-### AREA-BNK
-- Fluxo de fundos e moedas?
-- Histórico de recusas?
-- Volumes mensais aproximados?
-
 ### AREA-CMP
 - Quem exige o framework agora?
 - Há DPO/CO hoje?
 - Incidente aberto?
-
-### AREA-CORP
-- UBOs e %?
-- Entities existentes?
-- Objetivo: licence, bank, holding, reorg?
 
 ### AREA-LEG
 - Contratos críticos vs disputa?
 - Counsel já engajado?
 - Jurisdição do contrato?
 
+### AREA-CORP
+- Entities existentes e objetivo (licence, bank, holding, reorg)?
+- Banking readiness: fluxo de fundos, moedas, histórico de recusas?
+- Accounting / corporate tax: books, planning ou recovery?
+
+### AREA-PC
+- Quem são os indivíduos por trás da operação?
+- O que é pessoal vs company?
+- Residency, personal banking ou personal tax em jogo?
+
 ### AREA-REM
 - O que está bloqueado literalmente?
 - Prazo externo (audit, funding, go-live)?
 - Documentos acessíveis esta semana?
 
-### AREA-TAX (candidate)
-- Regime BR e porte?
-- Books, planning, audit ou recovery?
-- Débito ou fiscalização aberta?
+### AREA-HUB
+- Quais tipos de provider faltam (banco, PSP, CSP, lab, counsel)?
+- Já houve introduções ou recusas?
+- Timing e quem aprova no cliente?
 
 ## Disqualification prompts
 

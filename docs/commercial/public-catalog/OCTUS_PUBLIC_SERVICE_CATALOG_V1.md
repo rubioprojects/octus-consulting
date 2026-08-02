@@ -1,491 +1,899 @@
-# OCTUS PUBLIC SERVICE CATALOG V1
+# OCTUS Public Service Catalog V1
 
 | Field | Value |
-|-------|-------|
-| **Status** | `REQUIRES_RUBIO_REVIEW` |
-| **Version** | V1 |
-| **Date** | 2026-08-02 |
-| **Owner** | Commercial / Services front (this pack) |
-| **Consumers** | Website front (after `HUMAN_APPROVED` or `CONSUMABLE_BY_WEBSITE` only) |
-| **Language** | Working PT notes; public names EN (website + deck default) |
-| **Control issue** | [octus-consulting#13](https://github.com/rubioprojects/octus-consulting/issues/13) |
-| **Machine index** | `OCTUS_PUBLIC_SERVICE_CATALOG_V1.json` |
-| **Decisions** | `OCTUS_PUBLIC_SERVICE_CATALOG_DECISION_REGISTER.md` |
-| **Claims** | `OCTUS_PUBLIC_CLAIM_AND_EVIDENCE_REGISTER.md` |
+|---|---|
+| Status | **REQUIRES_RUBIO_REVIEW** |
+| Version | V1.1-SEVEN-AREAS |
+| Control principle | `PRESERVE_RUBIO_ORIGINAL_SEVEN_AREAS` |
+| Public areas | **7** |
+| Public services | **39** |
+| Website consumable | **No** |
+| Issue | [#13](https://github.com/rubioprojects/octus-consulting/issues/13) |
+| Companion | [OCTUS_ORIGINAL_SEVEN_AREAS_RECONCILIATION_V1.md](./OCTUS_ORIGINAL_SEVEN_AREAS_RECONCILIATION_V1.md) |
 
-**Terminal for this pack (Phase 1):** `OCTUS_PUBLIC_SERVICE_CATALOG_READY_FOR_RUBIO_REVIEW`
+## What Octus does
 
-This document is the **official public commercial catalog source**. No other front should invent a competing taxonomy. Website implementation must wait for human approval of taxonomy and copy.
+Octus helps regulated businesses with licensing, compliance, legal and corporate structure, private-client ownership issues, remediation when things are blocked, and the specialist network those programmes need.
 
----
+Octus is not a law firm shopfront, not a bank, and not a certifying laboratory.
 
-## 1. What Octus does (one sentence)
+## Public areas (original seven)
 
-Octus helps regulated and high-scrutiny businesses design, license, bank, comply, structure and remediate operations across jurisdictions — coordinating specialists under one commercial relationship.
+| # | Area | One sentence | Treatment |
+|---|---|---|---|
+| 1 | **Regulatory Structuring** | Jurisdiction fit, licensing pathways and regulatory programmes for regulated operations. | KEEP_ORIGINAL |
+| 2 | **Compliance & Risk** | Compliance frameworks, AML/KYC, DPO and controls that can run under real scrutiny. | KEEP_ORIGINAL |
+| 3 | **Legal & Structural Architecture** | Legal and contractual frameworks for regulated operations, coordinated with counsel where needed. | KEEP_ORIGINAL |
+| 4 | **Corporate Structuring** | Companies, holdings and group design for onshore, offshore and cross-border regulated operations. | KEEP_ORIGINAL |
+| 5 | **Private Clients** | Personal and ownership structuring for founders, UBOs, executives and families tied to regulated operations. | KEEP_WITH_MINOR_WORDING_EDIT |
+| 6 | **Remediation & Readiness** | Diagnosis and fix when licensing, banking, compliance, corporate, finance or operations are already blocked or failing. | KEEP_WITH_MINOR_WORDING_EDIT · naming TBD |
+| 7 | **International Hub** | Finding, connecting and coordinating the banks, PSPs, CSPs, labs, counsel and other specialists a regulated operation needs. | KEEP_ORIGINAL |
 
----
+### Layer distinctions
 
-## 2. How to read this catalog
+- **Areas** = the seven public commercial pillars.
+- **Industries** = iGaming, Fintech, Digital Assets, High-Risk (where, not pillars).
+- **Delivery models** = discovery, advisory, retainer, project, crisis entry (how, not pillars).
+- **Internal SKUs / partners** = mapped underneath; partners not named publicly.
 
-| Layer | What it is | Public? |
-|-------|------------|---------|
-| **Public service area** | Grouping shown to clients (deck, site, proposals) | Yes, when status allows |
-| **Public service** | Named offer under an area | Yes, when status allows |
-| **Client segment** | Who buys (e.g. Private Clients) | Segment page / proposal filter — not a service area peer |
-| **Industry / market** | iGaming, Fintech, Digital Assets, High-Risk | Markets layer — not service areas |
-| **Delivery model** | Project, retainer, advisory, crisis entry | Engagement — not a service area |
-| **Internal SKU** | Axle/Catalog V2 / Commercial OS code | Never published as nav or price sheet |
+## Public services
 
-**Status values used in this pack**
+### 1. Regulatory Structuring
 
-| Status | Meaning |
-|--------|---------|
-| `DRAFT` | Written; not yet submitted for Rubio |
-| `REQUIRES_RUBIO_REVIEW` | Ready for Rubio review (current default) |
-| `HUMAN_APPROVED` | Rubio (and required reviewers) approved |
-| `CONSUMABLE_BY_WEBSITE` | Approved for website consumption |
-| `SUPERSEDED` | Replaced by a later version |
-| `INTERNAL_ONLY` | Exists commercially; not for public catalog |
-| `CAPACITY_UNCLEAR` | Mentioned in sources; proof of current capacity incomplete |
+#### SVC-REG-01 — Licensing strategy and pathway design
 
----
+| Field | Value |
+|---|---|
+| Primary area | Regulatory Structuring |
+| Secondary related area | — |
+| One-sentence explanation | We design the licensing pathway and sequence before filings start. |
+| Typical client need | Entering a regulated market or changing venue without a clear filing path. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Esther; Caroline (BR) |
+| Public status | REQUIRES_RUBIO_REVIEW |
 
-## 3. Recommended public taxonomy (not forced to seven)
+**Typical deliverables**
+- Pathway memo
+- Filing plan
+- Dependency map
 
-### 3.1 Recommendation
-
-**Six public service areas**, matching the website Final Lock and `lib/commercial.ts`, plus **one finance candidate** held for Rubio decision.
-
-Rationale (inventory-based, not slogan-based):
-
-1. Six areas already have confirmed public names, hubs and service-area inventory in `docs/website/service-architecture/`.
-2. Forcing seven areas only because Issue #13 listed a candidate would create a second taxonomy without new capacity proof.
-3. Tax / accounting / audit **is sold by Octus** in Catalog V2 (partner delivery). It must be **findable for Milla** and answerable for Issue #13 acceptance test #5 — but promoting it to a seventh public pillar needs Rubio choice (see Decision D-TAX-01).
-
-### 3.2 Public service areas (recommended spine)
-
-| # | Public area ID | Public name | One-sentence explanation | Website hub today | Catalog status |
-|---|----------------|-------------|--------------------------|-------------------|----------------|
-| 01 | `AREA-REG` | Regulatory Strategy & Licensing | Pathways and programmes to obtain and maintain regulated licences. | `/solutions/regulatory-strategy-licensing` | `REQUIRES_RUBIO_REVIEW` |
-| 02 | `AREA-BNK` | Banking, Payments & Financial Infrastructure | Readiness and architecture so licensed operations can move money. | `/solutions/banking-payments-infrastructure` | `REQUIRES_RUBIO_REVIEW` |
-| 03 | `AREA-CMP` | Compliance & Risk Systems | Operated compliance, AML/KYC, DPO and controls that hold under scrutiny. | `/solutions/compliance-risk-systems` | `REQUIRES_RUBIO_REVIEW` |
-| 04 | `AREA-CORP` | Corporate & Cross-Border Structuring | Entities, holdings and ownership architecture for multi-jurisdiction ops. | `/solutions/corporate-cross-border` | `REQUIRES_RUBIO_REVIEW` |
-| 05 | `AREA-LEG` | Legal & Contractual Architecture | Contract and legal frameworks for regulated operations (not a law-firm shopfront). | `/solutions/legal-contractual-architecture` | `REQUIRES_RUBIO_REVIEW` |
-| 06 | `AREA-REM` | Operational Remediation & Readiness | Entry point when licensing, banking, compliance or audit readiness is blocked. | `/solutions/operational-remediation-readiness` | `REQUIRES_RUBIO_REVIEW` |
-
-### 3.3 Finance candidate (not auto-promoted)
-
-| # | Public area ID | Public name | Recommendation | Status |
-|---|----------------|-------------|----------------|--------|
-| 07* | `AREA-TAX` | Tax, Accounting, Audit & Finance | Keep as **controlled commercial offer** under Octus brand until Rubio decides pillar vs segment vs Corporate depth. Answer for AT#5: “Offered commercially; public pillar pending decision D-TAX-01.” | `REQUIRES_RUBIO_REVIEW` / not a website Solution today |
-
-\* Not counted as approved seventh area.
-
-### 3.4 Not service areas
-
-| Concept | Treatment |
-|---------|-----------|
-| Private Clients / UBO individuals | **Client segment** → `/private-clients` and proposal filter |
-| iGaming / Fintech / Digital Assets / High-Risk | **Industries / markets** |
-| Parceria Contínua / Advisory / Board / Discovery | **Delivery models** (`/how-we-engage`) |
-| P1–P6 Commercial OS packages | **Proposal modules**, mapped to areas — not extra pillars |
-| OC8 / Antera / Rubio Adv. brands | **Internal delivery** — never public brand names |
-
----
-
-## 4. Public services by area
-
-Fields match Issue #13 WS1. Prices, markups, partner rates and capacity numbers are **excluded**.
-
-### AREA-REG — Regulatory Strategy & Licensing
-
-#### SVC-REG-01 — Licensing strategy & pathway design
-| Field | Content |
-|-------|---------|
-| one_sentence | We design the licensing pathway and sequence before filings start. |
-| common_client_need | Know which licence, where, in what order, and what blocks approval. |
-| scope_included | Jurisdiction fit, pathway memo, dependency map (corporate / banking / compliance), filing plan coordination. |
-| typical_deliverables | Pathway memo; filing plan; dependency map; risk register for the path. |
-| client_profile | Operators entering a new regulated market; groups restructuring licence stack. |
-| relevant_industries | iGaming; Fintech; Digital Assets; High-Risk |
-| relevant_jurisdictions | Multi (case-by-case) |
-| responsible_capability | Octus regulatory coordination |
-| mapped_internal_skus | Commercial OS P3; Catalog licensing advisory lines |
-| delivery_model | Project |
-| public_status | `REQUIRES_RUBIO_REVIEW` |
-| last_reviewed | 2026-08-02 |
-| sources | `SERVICE_CANONICAL_MASTER.md` SA-01-01; `lib/commercial.ts` |
+**Internal delivery mapping**
+- `OCTUS_ADV_INTL_*`
+- `P3 Licença & Regulatório`
 
 #### SVC-REG-02 — iGaming licensing programme
-| Field | Content |
-|-------|---------|
-| one_sentence | We run iGaming licensing as a full programme, not a single filing. |
-| common_client_need | Obtain or move a gaming licence with corporate, compliance and banking dependencies handled. |
-| scope_included | Venue pathway; dossier coordination; CSP/local requirement planning; maintenance planning. |
-| typical_deliverables | Programme plan; dossier checklist; status cadence; maintenance outline. |
-| client_profile | iGaming operators and groups. |
-| relevant_industries | iGaming |
-| relevant_jurisdictions | Anjouan; Curaçao; Kahnawake; Malta; Isle of Man; Brazil (inquiry) — listed as capability map, not guaranteed availability |
-| responsible_capability | Octus regulatory |
-| mapped_internal_skus | `OCTUS_REG_ANJOUAN_LIC`; `OCTUS_REG_CURACAO_LIC`; `OCTUS_REG_KAHNAWAKE_LIC`; `OCTUS_REG_MALTA_LIC`; `OCTUS_REG_IOM_LIC`; `OCTUS_REG_BR_SPA` (TBD); ops maintenance SKUs |
-| delivery_model | Project + optional retainer |
-| public_status | `REQUIRES_RUBIO_REVIEW` |
-| capacity_note | SPA Brazil marked TBD in Catalog V2; Malta/IoM playbooks partial — do not promise timelines. |
-| last_reviewed | 2026-08-02 |
-| sources | Catalog V2 §2C; Axle playbooks; website deep `/solutions/regulatory/igaming-licensing` |
+
+| Field | Value |
+|---|---|
+| Primary area | Regulatory Structuring |
+| Secondary related area | International Hub |
+| One-sentence explanation | We run iGaming licensing as a full programme, not a standalone filing. |
+| Typical client need | Operator needs a gaming licence path coordinated with corporate, compliance and banking. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Esther |
+| Public status | REQUIRES_RUBIO_REVIEW |
+
+**Typical deliverables**
+- Licence workstream plan
+- Dossier coordination
+- Local requirement checklist
+
+**Internal delivery mapping**
+- `OCTUS_REG_ANJOUAN_LIC`
+- `OCTUS_REG_CURACAO_LIC`
+- `OCTUS_REG_MALTA_LIC`
+- `OCTUS_REG_IOM_LIC`
 
 #### SVC-REG-03 — Fintech, EMI and crypto licensing
-| Field | Content |
-|-------|---------|
-| one_sentence | We structure fintech and crypto licences as an operable stack, not paperwork alone. |
-| common_client_need | EMI/PI/crypto authorisation with banking and compliance ready. |
-| scope_included | Licence programme design; corporate/compliance dependencies; regulator interaction planning. |
-| typical_deliverables | Programme plan; requirement matrix; workstream map. |
-| client_profile | EMI/PI applicants; crypto/exchange operators; Brazil Bacen IP paths. |
-| relevant_industries | Fintech; Digital Assets |
-| relevant_jurisdictions | Montenegro; Latvia; Lithuania; UK; Switzerland; EU MiCA; offshore crypto venues; Brazil — capability map |
-| mapped_internal_skus | `OCTUS_REG_MNE_EMI`; `OCTUS_REG_LVA_EMI`; `OCTUS_REG_LTU_EMI`; `OCTUS_REG_UK_EMI`; `OCTUS_REG_CH_FINMA`; `OCTUS_REG_OFFSHORE_CRYPTO`; `OCTUS_REG_EU_MICA`; `OCTUS_REG_INTL_EXCHANGE`; `OCTUS_REG_INTL_WEB3`; `OCTUS_REG_BR_BACEN` |
-| delivery_model | Project |
-| public_status | `REQUIRES_RUBIO_REVIEW` |
-| capacity_note | Long-cycle licences; gov fees and local directors always separate; no outcome guarantees. |
-| sources | Catalog V2 §2D; website `/solutions/regulatory/fintech-licensing` |
 
-#### SVC-REG-04 — Market entry coordination
-| Field | Content |
-|-------|---------|
-| one_sentence | We treat market entry as a structural project across jurisdiction, corporate, licence and banking. |
-| common_client_need | Expand into a market without improvising entity and licence order. |
-| scope_included | Entry plan; jurisdiction fit; cross-area workstream coordination. |
-| typical_deliverables | Entry plan; sequenced workstreams; RACI for client-side owners. |
-| client_profile | Groups expanding internationally. |
-| mapped_internal_skus | P1 Setup Internacional; P2 Estrutura Completa (partial) |
-| delivery_model | Project / programme |
-| public_status | `REQUIRES_RUBIO_REVIEW` |
-| sources | SA-01-04; `/solutions/regulatory/market-entry` |
+| Field | Value |
+|---|---|
+| Primary area | Regulatory Structuring |
+| Secondary related area | Corporate Structuring |
+| One-sentence explanation | We treat fintech and payments authorisation as an operable stack, not a paper exercise. |
+| Typical client need | EMI/PI or related authorisation without a workable operating setup. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Esther |
+| Public status | REQUIRES_RUBIO_REVIEW |
 
-#### SVC-REG-05 — Brazil SPA / MF regulatory support
-| Field | Content |
-|-------|---------|
-| one_sentence | We coordinate Brazil-facing authorisation workstreams with local counsel. |
-| common_client_need | Navigate Brazilian regulatory complexity for gaming/fintech-related ops. |
-| scope_included | Workstream coordination; requirement mapping; counsel interface. |
-| typical_deliverables | Workstream plan; issue log; counsel brief pack. |
-| public_status | `REQUIRES_RUBIO_REVIEW` |
-| capacity_note | `OCTUS_REG_BR_SPA` status TBD in Catalog V2 — inquiry-led only. |
-| mapped_internal_skus | `OCTUS_REG_BR_SPA` |
-| sources | SA-01-05; Catalog V2 |
+**Typical deliverables**
+- Authorisation pathway
+- Operable-stack readiness map
 
----
+**Internal delivery mapping**
+- `OCTUS_REG_MNE_EMI`
+- `OCTUS_REG_LVA_EMI`
+- `OCTUS_REG_UK_EMI`
+- `OCTUS_REG_BR_BACEN`
 
-### AREA-BNK — Banking, Payments & Financial Infrastructure
+#### SVC-REG-04 — Brazil SPA / MF regulatory support
 
-#### SVC-BNK-01 — Banking readiness / bankability
-| Field | Content |
-|-------|---------|
-| one_sentence | We prepare the structure and evidence banks expect — without promising account approval. |
-| common_client_need | Licensed or launching but rejected or stalled by banks. |
-| scope_included | Bankability structuring; documentation pack; bank optioning; risk narrative. |
-| typical_deliverables | Readiness pack; bank option shortlist; gap list. |
-| exclusions | No guaranteed account opening; no bank name as endorsement. |
-| mapped_internal_skus | `OCTUS_BNK_INTL_HIGHRISK`; pilot banking-support |
-| delivery_model | Project |
-| public_status | `REQUIRES_RUBIO_REVIEW` |
-| capacity_note | High-risk banking playbook flagged incomplete legal basis in Axle — claims must stay conservative. |
-| sources | SA-02-01; Catalog V2 §2F |
+| Field | Value |
+|---|---|
+| Primary area | Regulatory Structuring |
+| Secondary related area | Corporate Structuring |
+| One-sentence explanation | We coordinate Brazil-facing regulatory workstreams for betting and related frameworks. |
+| Typical client need | Entering or adapting to Brazil’s national betting framework. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Caroline; Esther |
+| Public status | REQUIRES_RUBIO_REVIEW |
 
-#### SVC-BNK-02 — Payment and PSP architecture
-| Field | Content |
-|-------|---------|
-| one_sentence | We design payment and PSP options that fit the risk and licence profile. |
-| common_client_need | Cards, PIX, crypto or wire rails that match the operation. |
-| scope_included | PSP optioning; architecture map; provider fit (no vendor gallery as product). |
-| typical_deliverables | Architecture options memo; provider map; implementation sequence. |
-| mapped_internal_skus | `OCTUS_BNK_INTL_PSP`; `OCTUS_OPS_IGAMING_PAY2`; `OCTUS_OPS_IGAMING_PAYILIM` |
-| delivery_model | Project |
-| public_status | `REQUIRES_RUBIO_REVIEW` |
-| sources | SA-02-02; Catalog V2 |
+**Typical deliverables**
+- Brazil workstream plan
+- Authority interaction planning
 
-#### SVC-BNK-03 — Financial infrastructure remediation
-| Field | Content |
-|-------|---------|
-| one_sentence | We rebuild banking or payment infrastructure after failure or freeze. |
-| common_client_need | Existing stack failed; operations blocked. |
-| scope_included | Diagnosis; remediation plan; often joint with AREA-REM. |
-| delivery_model | Project / crisis |
-| public_status | `REQUIRES_RUBIO_REVIEW` |
-| sources | SA-02-03 |
+**Internal delivery mapping**
+- `OCTUS_REG_BR_SPA (tbd)`
+- `OCTUS_OPS_IGAMING_REPLEGAL`
 
----
+**Capacity note:** SKU tbd — soft wording only
 
-### AREA-CMP — Compliance & Risk Systems
+#### SVC-REG-05 — Jurisdiction selection and risk mapping
+
+| Field | Value |
+|---|---|
+| Primary area | Regulatory Structuring |
+| Secondary related area | International Hub |
+| One-sentence explanation | We compare venue options for fit, timeline, banking access and operational risk. |
+| Typical client need | Choosing between candidate venues before committing to a filing path. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Esther |
+| Public status | REQUIRES_RUBIO_REVIEW |
+
+**Typical deliverables**
+- Jurisdiction options memo
+- Comparative fit map
+
+**Internal delivery mapping**
+- `OCTUS_CORP_INTL_STUDY`
+- `advisory`
+
+### 2. Compliance & Risk
 
 #### SVC-CMP-01 — AML / KYC / CDD frameworks
-| Field | Content |
-|-------|---------|
-| one_sentence | We build AML/KYC/CDD frameworks that can survive audit and banking questions. |
-| scope_included | Policy design; onboarding model; CDD packs; monitoring model outline. |
-| typical_deliverables | Policy suite; onboarding flow; CDD pack templates. |
-| mapped_internal_skus | `OCTUS_COMP_INTL_POLICIES`; `OCTUS_COMP_CRYPTO_AML`; related Antera delivery (internal) |
-| public_status | `REQUIRES_RUBIO_REVIEW` |
-| sources | SA-03-01; website AML deep |
+
+| Field | Value |
+|---|---|
+| Primary area | Compliance & Risk |
+| Secondary related area | — |
+| One-sentence explanation | We build identification, monitoring and due diligence frameworks that banks and regulators can test. |
+| Typical client need | Paper AML that fails under bank or regulator questions. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Rubio; Compliance specialist |
+| Public status | REQUIRES_RUBIO_REVIEW |
+
+**Typical deliverables**
+- AML/KYC framework pack
+- Onboarding model
+
+**Internal delivery mapping**
+- `OCTUS_COMP_INTL_DD`
+- `OCTUS_COMP_INTL_POLICIES`
+- `OCTUS_COMP_CRYPTO_AML`
 
 #### SVC-CMP-02 — Compliance-as-a-Service
-| Field | Content |
-|-------|---------|
-| one_sentence | We operate an ongoing compliance function under the Octus commercial face. |
-| scope_included | Ongoing CO coverage; monitoring cadence; escalation path. |
-| delivery_model | Retainer / recurring |
-| mapped_internal_skus | `OCTUS_COMP_INTL_CO`; Antera CO delivery (internal) |
-| public_status | `REQUIRES_RUBIO_REVIEW` |
-| note | Partner delivery may exist internally; public materials never name Antera. |
-| sources | SA-03-02 |
+
+| Field | Value |
+|---|---|
+| Primary area | Compliance & Risk |
+| Secondary related area | — |
+| One-sentence explanation | We operate the compliance function inside the business as an ongoing service. |
+| Typical client need | Need for embedded compliance ownership, not one-off policies. |
+| Delivery model | Retainer / Embedded |
+| Commercial owner | Milla |
+| Substantive owners | Rubio; Compliance specialist; Maria Cristina |
+| Public status | REQUIRES_RUBIO_REVIEW |
+
+**Typical deliverables**
+- Operated compliance model
+- Reporting cadence as scoped
+
+**Internal delivery mapping**
+- `OCTUS_COMP_INTL_CO`
+- `ANTERA_SHIELD_* (internal delivery)`
 
 #### SVC-CMP-03 — DPO-as-a-Service
-| Field | Content |
-|-------|---------|
-| one_sentence | We provide an operated DPO function for LGPD/GDPR obligations. |
-| scope_included | DPO role coverage; incident interface; regulator interaction support. |
-| delivery_model | Retainer / recurring |
-| mapped_internal_skus | `OCTUS_COMP_INTL_DPO`; Antera DPO (internal) |
-| public_status | `REQUIRES_RUBIO_REVIEW` |
-| sources | SA-03-03 |
+
+| Field | Value |
+|---|---|
+| Primary area | Compliance & Risk |
+| Secondary related area | — |
+| One-sentence explanation | We operate the DPO role for LGPD and GDPR contexts as a working function. |
+| Typical client need | Privacy role exists on paper but does not operate. |
+| Delivery model | Retainer / Embedded |
+| Commercial owner | Milla |
+| Substantive owners | Compliance specialist |
+| Public status | REQUIRES_RUBIO_REVIEW |
+
+**Typical deliverables**
+- Operated DPO model
+- Privacy working artefacts as scoped
+
+**Internal delivery mapping**
+- `OCTUS_COMP_INTL_DPO`
+- `octus-pilot-dpo-support`
 
 #### SVC-CMP-04 — Internal controls and governance
-| Field | Content |
-|-------|---------|
-| one_sentence | We design controls that run in day-to-day operations, not only on paper. |
-| public_status | `REQUIRES_RUBIO_REVIEW` |
-| sources | SA-03-04 |
 
-#### SVC-CMP-05 — Certification and lab readiness (incl. GLI)
-| Field | Content |
-|-------|---------|
-| one_sentence | We prepare evidence and readiness before external certification or lab review. |
-| capacity_note | ISO product gallery remains evidence-gated — do not sell ISO certificates as Octus products without approval (see claim register). |
-| mapped_internal_skus | Antera CERTIFY/GLI lines (internal mapping only) |
-| public_status | `REQUIRES_RUBIO_REVIEW` |
-| sources | SA-03-05 |
+| Field | Value |
+|---|---|
+| Primary area | Compliance & Risk |
+| Secondary related area | Corporate Structuring |
+| One-sentence explanation | We design controls and decision rights that run in day-to-day operations. |
+| Typical client need | Banks or auditors cannot test how decisions and evidence actually work. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Rubio; Maria Cristina |
+| Public status | REQUIRES_RUBIO_REVIEW |
+
+**Typical deliverables**
+- Control framework
+- Evidence trail model
+
+**Internal delivery mapping**
+- `OCTUS_COMP_INTL_POLICIES`
+
+#### SVC-CMP-05 — Certification and lab readiness
+
+| Field | Value |
+|---|---|
+| Primary area | Compliance & Risk |
+| Secondary related area | International Hub |
+| One-sentence explanation | We prepare evidence and readiness for laboratory and formal external review. |
+| Typical client need | GLI or similar review approaching without a working evidence pack. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Compliance specialist |
+| Public status | REQUIRES_RUBIO_REVIEW |
+
+**Typical deliverables**
+- Gap analysis
+- Evidence register
+- Readiness plan
+
+**Internal delivery mapping**
+- `ANTERA_CERTIFY_GLI (internal delivery)`
+
+**Claim fence:** Octus is not the laboratory; no certification promise
 
 #### SVC-CMP-06 — Policies and due diligence packs
-| Field | Content |
-|-------|---------|
-| one_sentence | We produce policy suites and due diligence packs for partners, vendors or UBOs. |
-| mapped_internal_skus | `OCTUS_COMP_INTL_DD`; `OCTUS_COMP_INTL_POLICIES` |
-| public_status | `REQUIRES_RUBIO_REVIEW` |
-| sources | SA-03-06 |
 
----
+| Field | Value |
+|---|---|
+| Primary area | Compliance & Risk |
+| Secondary related area | — |
+| One-sentence explanation | We produce policy suites and due diligence packs aligned to how the operation actually runs. |
+| Typical client need | Policies exist but do not match real flows. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Compliance specialist |
+| Public status | REQUIRES_RUBIO_REVIEW |
 
-### AREA-CORP — Corporate & Cross-Border Structuring
+**Typical deliverables**
+- Policy suite
+- Due diligence pack
 
-#### SVC-CORP-01 — Entity and holding architecture
-| Field | Content |
-|-------|---------|
-| one_sentence | We design holdings that separate risk and support regulated operations. |
-| mapped_internal_skus | `OCTUS_CORP_INTL_HOLDING` (pricing_review); `OCTUS_CORP_INTL_STUDY` |
-| public_status | `REQUIRES_RUBIO_REVIEW` |
-| sources | SA-04-01 |
+**Internal delivery mapping**
+- `OCTUS_COMP_INTL_POLICIES`
+- `OCTUS_COMP_INTL_DD`
 
-#### SVC-CORP-02 — Company formation (inside architecture)
-| Field | Content |
-|-------|---------|
-| one_sentence | We form companies as part of a regulated architecture — not as a formation shop. |
-| mapped_internal_skus | `OCTUS_CORP_US_DELAWARE`; `OCTUS_CORP_INTL_BVI`; `OCTUS_CORP_UK_LTD`; `OCTUS_CORP_BR_EMPRESA` |
-| public_status | `REQUIRES_RUBIO_REVIEW` |
-| sources | SA-04-02; website company-formation |
-
-#### SVC-CORP-03 — Cross-border structuring
-| Field | Content |
-|-------|---------|
-| one_sentence | We design multi-jurisdiction organisation for regulatory and banking scrutiny. |
-| note | Prefer “cross-border” over “offshore” in new materials (website R3 direction). |
-| public_status | `REQUIRES_RUBIO_REVIEW` |
-| sources | SA-04-03 |
-
-#### SVC-CORP-04 — Ownership and UBO architecture
-| Field | Content |
-|-------|---------|
-| one_sentence | We structure ownership and UBO disclosure for people behind regulated ops. |
-| client_segment | Private Clients (segment, not a seventh area) |
-| public_status | `REQUIRES_RUBIO_REVIEW` |
-| sources | SA-04-04; `/private-clients` |
-
-#### SVC-CORP-05 — Corporate reorganisation
-| Field | Content |
-|-------|---------|
-| one_sentence | We reorganise groups when the current structure blocks licence, bank or compliance. |
-| public_status | `REQUIRES_RUBIO_REVIEW` |
-| sources | SA-04-05 |
-
----
-
-### AREA-LEG — Legal & Contractual Architecture
+### 3. Legal & Structural Architecture
 
 #### SVC-LEG-01 — Contractual architecture
-| Field | Content |
-|-------|---------|
-| one_sentence | We design the contract stack across operators, vendors, players and partners. |
-| mapped_internal_skus | `OCTUS_LEG_INTL_CONTRATO`; `OCTUS_LEG_INTL_REVCONTRATO`; `OCTUS_LEG_INTL_NDA` |
-| public_status | `REQUIRES_RUBIO_REVIEW` |
-| sources | SA-05-01 |
+
+| Field | Value |
+|---|---|
+| Primary area | Legal & Structural Architecture |
+| Secondary related area | — |
+| One-sentence explanation | We design contract frameworks across group, operator and commercial layers. |
+| Typical client need | Contracts do not match how the business actually runs. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Rubio; Rodrigo |
+| Public status | REQUIRES_RUBIO_REVIEW |
+
+**Typical deliverables**
+- Contract framework map
+- Layered contract notes
+
+**Internal delivery mapping**
+- `OCTUS_LEG_INTL_CONTRATO`
+- `octus-pilot-contract-review`
 
 #### SVC-LEG-02 — Multi-jurisdiction legal frameworks
-| Field | Content |
-|-------|---------|
-| one_sentence | We map and coordinate legal frameworks across jurisdictions with counsel. |
-| boundary | Octus is not presented as a substitute law firm for local litigation. |
-| public_status | `REQUIRES_RUBIO_REVIEW` |
-| sources | SA-05-02 |
+
+| Field | Value |
+|---|---|
+| Primary area | Legal & Structural Architecture |
+| Secondary related area | Corporate Structuring |
+| One-sentence explanation | We coordinate legal coherence across jurisdictions with independent counsel where required. |
+| Typical client need | Multi-venue group needs one clear legal map. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Rubio; Rodrigo |
+| Public status | REQUIRES_RUBIO_REVIEW |
+
+**Typical deliverables**
+- Framework map
+- Counsel coordination plan
+
+**Internal delivery mapping**
+- `OCTUS_LEG_INTL_OPINION`
 
 #### SVC-LEG-03 — Counsel coordination
-| Field | Content |
-|-------|---------|
-| one_sentence | We coordinate specialist counsel so legal work stays aligned with the operating plan. |
-| public_status | `REQUIRES_RUBIO_REVIEW` |
-| sources | SA-05-03 |
+
+| Field | Value |
+|---|---|
+| Primary area | Legal & Structural Architecture |
+| Secondary related area | International Hub |
+| One-sentence explanation | We act as the execution counterpart that sequences legal work with licensing, corporate and compliance programmes. |
+| Typical client need | Operators and counsel need a single coordinating counterpart. |
+| Delivery model | Project / Lead Contractor |
+| Commercial owner | Milla |
+| Substantive owners | Rubio; Rodrigo |
+| Public status | REQUIRES_RUBIO_REVIEW |
+
+**Typical deliverables**
+- Coordination model
+- Workstream cadence
+
+**Internal delivery mapping**
+- `Lead Contractor engagement`
+- `OCTUS_LEG_*`
 
 #### SVC-LEG-04 — Legal opinions and certifications support
-| Field | Content |
-|-------|---------|
-| one_sentence | We coordinate legal opinions and formal certifications required by banks or regulators. |
-| mapped_internal_skus | `OCTUS_LEG_INTL_OPINION`; `OCTUS_LEG_PT_CERTIF`; `OCTUS_LEG_BR_MARCA` |
-| public_status | `REQUIRES_RUBIO_REVIEW` |
-| sources | Catalog V2 §2H |
 
----
+| Field | Value |
+|---|---|
+| Primary area | Legal & Structural Architecture |
+| Secondary related area | — |
+| One-sentence explanation | We support legal opinions and related certification paperwork as part of a regulated programme. |
+| Typical client need | Opinion or certification support required for licence or banking file. |
+| Delivery model | Project / Hourly as scoped |
+| Commercial owner | Milla |
+| Substantive owners | Rubio; Rodrigo |
+| Public status | REQUIRES_RUBIO_REVIEW |
 
-### AREA-REM — Operational Remediation & Readiness
+**Typical deliverables**
+- Opinion support pack
+- Certification checklist
 
-#### SVC-REM-01 — Crisis entry / structural assessment
-| Field | Content |
-|-------|---------|
-| one_sentence | Single door when something is blocked: we assess and set the next actions. |
-| mapped_internal_skus | `OCTUS_ADV_INTL_CRISIS`; diagnostic engagement |
-| public_status | `REQUIRES_RUBIO_REVIEW` |
-| sources | SA-06-01; `/diagnostic` |
+**Internal delivery mapping**
+- `OCTUS_LEG_INTL_OPINION`
+- `OCTUS_LEG_PT_CERTIF`
+
+### 4. Corporate Structuring
+
+#### SVC-CORP-01 — Entity and holding architecture
+
+| Field | Value |
+|---|---|
+| Primary area | Corporate Structuring |
+| Secondary related area | — |
+| One-sentence explanation | We design holdings and group structures that stay coherent under licence and bank scrutiny. |
+| Typical client need | Ownership chart will not survive licence or bank review. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Claudia; Rubio |
+| Public status | REQUIRES_RUBIO_REVIEW |
+
+**Typical deliverables**
+- Holding design memo
+- Ownership and control map
+
+**Internal delivery mapping**
+- `OCTUS_CORP_INTL_HOLDING`
+- `OCTUS_CORP_INTL_STUDY`
+
+#### SVC-CORP-02 — Company formation
+
+| Field | Value |
+|---|---|
+| Primary area | Corporate Structuring |
+| Secondary related area | International Hub |
+| One-sentence explanation | We open entities inside a designed architecture — not as a standalone incorporation shop. |
+| Typical client need | Entities needed for licence and banking fit. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Claudia |
+| Public status | REQUIRES_RUBIO_REVIEW |
+
+**Typical deliverables**
+- Formation plan
+- Entity opening workstream
+
+**Internal delivery mapping**
+- `OCTUS_CORP_US_DELAWARE`
+- `OCTUS_CORP_INTL_BVI`
+- `OCTUS_CORP_UK_LTD`
+- `OCTUS_CORP_BR_EMPRESA`
+
+#### SVC-CORP-03 — Cross-border structuring
+
+| Field | Value |
+|---|---|
+| Primary area | Corporate Structuring |
+| Secondary related area | International Hub |
+| One-sentence explanation | We design multi-venue organisation so the group holds together across jurisdictions. |
+| Typical client need | Expansion or multi-venue group without a coherent structure. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Claudia; Rubio |
+| Public status | REQUIRES_RUBIO_REVIEW |
+
+**Typical deliverables**
+- Cross-border structure memo
+
+**Internal delivery mapping**
+- `OCTUS_CORP_INTL_*`
+- `P1/P2`
+
+#### SVC-CORP-04 — Corporate reorganisation
+
+| Field | Value |
+|---|---|
+| Primary area | Corporate Structuring |
+| Secondary related area | Remediation & Readiness |
+| One-sentence explanation | We reorganise when the current structure blocks licensing, banking or expansion. |
+| Typical client need | Existing structure is the blocker. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Claudia; Rubio |
+| Public status | REQUIRES_RUBIO_REVIEW |
+
+**Typical deliverables**
+- Reorganisation plan
+- Sequenced workstreams
+
+**Internal delivery mapping**
+- `OCTUS_CORP_INTL_CLOSE`
+
+#### SVC-CORP-05 — Banking readiness
+
+| Field | Value |
+|---|---|
+| Primary area | Corporate Structuring |
+| Secondary related area | International Hub |
+| One-sentence explanation | We prepare ownership, documentation and compliance posture for real banking conversations. No promised accounts. |
+| Typical client need | Licensed or near-licensed operator stuck in bank or PSP rejection loops. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Claudia; Rubio |
+| Public status | REQUIRES_RUBIO_REVIEW |
+
+**Typical deliverables**
+- Bankability readiness pack
+- Documentation checklist
+
+**Internal delivery mapping**
+- `OCTUS_BNK_INTL_HIGHRISK`
+- `octus-pilot-banking-support`
+
+**Claim fence:** Never promise account opening
+
+#### SVC-CORP-06 — Accounting and finance coordination
+
+| Field | Value |
+|---|---|
+| Primary area | Corporate Structuring |
+| Secondary related area | — |
+| One-sentence explanation | We sell and coordinate accounting and finance programmes under the Octus relationship. |
+| Typical client need | Regulated group needs accounting and finance run without managing multiple vendor relationships. |
+| Delivery model | Retainer / Project |
+| Commercial owner | Milla |
+| Substantive owners | Claudia |
+| Public status | REQUIRES_RUBIO_REVIEW |
+
+**Typical deliverables**
+- Accounting programme scope
+- Monthly coordination model as scoped
+
+**Internal delivery mapping**
+- `OC8_FIN_BR_CONT_* (internal delivery)`
+- `OCTUS_RET_BR_MANUTENCAO`
+
+**Claim fence:** Partner brands not named publicly
+
+#### SVC-CORP-07 — Corporate tax planning
+
+| Field | Value |
+|---|---|
+| Primary area | Corporate Structuring |
+| Secondary related area | Private Clients |
+| One-sentence explanation | We coordinate corporate tax planning for regulated groups under the Octus relationship. |
+| Typical client need | Corporate tax planning required as part of structure or expansion. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Claudia |
+| Public status | REQUIRES_RUBIO_REVIEW |
+
+**Typical deliverables**
+- Tax planning memo as scoped
+
+**Internal delivery mapping**
+- `OC8_TAX_BR_PLANTRIB (internal delivery)`
+- `OCTUS_PF_INTL_PLANTRIB`
+
+**Claim fence:** Partner brands not named publicly; no outcome guarantees
+
+### 5. Private Clients
+
+#### SVC-PC-01 — Ownership and UBO architecture
+
+| Field | Value |
+|---|---|
+| Primary area | Private Clients |
+| Secondary related area | Corporate Structuring |
+| One-sentence explanation | We structure ownership and UBO layers for the individuals behind regulated operations. |
+| Typical client need | Beneficial owners need disclosure readiness and structural clarity. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Rubio; Claudia |
+| Public status | REQUIRES_RUBIO_REVIEW |
+
+**Typical deliverables**
+- UBO framework
+- Disclosure readiness pack
+
+**Internal delivery mapping**
+- `OCTUS_PF_* controlled`
+
+#### SVC-PC-02 — Personal holding and asset organisation
+
+| Field | Value |
+|---|---|
+| Primary area | Private Clients |
+| Secondary related area | Corporate Structuring |
+| One-sentence explanation | We organise personal holdings and separate personal assets from operational assets where needed. |
+| Typical client need | Founders mix personal and operational assets in ways that fail scrutiny. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Rubio; Claudia |
+| Public status | REQUIRES_RUBIO_REVIEW |
+
+**Typical deliverables**
+- Personal holding notes
+- Asset separation map
+
+**Internal delivery mapping**
+- `OCTUS_PF_INTL_WEALTH (thin playbook)`
+- `OCTUS_PF_INTL_INVEST`
+
+**Capacity note:** Playbook coverage thin — careful wording
+
+#### SVC-PC-03 — Residency and personal international structuring
+
+| Field | Value |
+|---|---|
+| Primary area | Private Clients |
+| Secondary related area | International Hub |
+| One-sentence explanation | We coordinate residency and personal international structuring tied to regulated operations. |
+| Typical client need | Founder or UBO needs residency or personal structure aligned to the business. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Rubio; Claudia |
+| Public status | REQUIRES_RUBIO_REVIEW |
+
+**Typical deliverables**
+- Residency/structure options memo
+
+**Internal delivery mapping**
+- `OCTUS_PF_INTL_RESID`
+
+**Capacity note:** Controlled commercial; not a citizenship shop
+
+#### SVC-PC-04 — Personal banking and individual KYC readiness
+
+| Field | Value |
+|---|---|
+| Primary area | Private Clients |
+| Secondary related area | International Hub |
+| One-sentence explanation | We prepare individuals for personal banking and KYC scrutiny linked to regulated operations. |
+| Typical client need | UBO or executive blocked in personal banking because the file is incomplete. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Claudia; Rubio |
+| Public status | REQUIRES_RUBIO_REVIEW |
+
+**Typical deliverables**
+- Individual KYC readiness pack
+
+**Internal delivery mapping**
+- `OCTUS_PF_INTL_CONTA`
+- `OCTUS_BNK_PF_CONTA`
+
+**Claim fence:** No promised accounts
+
+#### SVC-PC-05 — Personal tax coordination
+
+| Field | Value |
+|---|---|
+| Primary area | Private Clients |
+| Secondary related area | Corporate Structuring |
+| One-sentence explanation | We coordinate personal tax work for founders and UBOs under the Octus relationship. |
+| Typical client need | IRPF or personal tax planning connected to the operating structure. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Claudia |
+| Public status | REQUIRES_RUBIO_REVIEW |
+
+**Typical deliverables**
+- Personal tax coordination scope
+
+**Internal delivery mapping**
+- `OCTUS_PF_BR_IRPF`
+- `OCTUS_PF_BR_DIAGTRIB`
+
+**Claim fence:** Partner brands not named publicly
+
+### 6. Remediation & Readiness
+
+#### SVC-REM-01 — Crisis entry and structural assessment
+
+| Field | Value |
+|---|---|
+| Primary area | Remediation & Readiness |
+| Secondary related area | — |
+| One-sentence explanation | A single intake when the operation is blocked, delayed, rejected or failing. |
+| Typical client need | Live failure under regulatory or banking pressure. |
+| Delivery model | Crisis / Project |
+| Commercial owner | Milla |
+| Substantive owners | Rubio; Maria Cristina |
+| Public status | REQUIRES_RUBIO_REVIEW |
+
+**Typical deliverables**
+- Structural assessment
+- Sequenced action path
+
+**Internal delivery mapping**
+- `OCTUS_ADV_INTL_CRISIS`
 
 #### SVC-REM-02 — Licensing delay remediation
-| Field | Content |
-|-------|---------|
-| one_sentence | We unblock stalled or conditioned licensing programmes. |
-| public_status | `REQUIRES_RUBIO_REVIEW` |
-| sources | SA-06-02 |
+
+| Field | Value |
+|---|---|
+| Primary area | Remediation & Readiness |
+| Secondary related area | Regulatory Structuring |
+| One-sentence explanation | We unblock stalled or conditioned licensing by fixing the structural causes. |
+| Typical client need | Licence delayed or conditioned with repeated failed filings. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Esther; Rubio |
+| Public status | REQUIRES_RUBIO_REVIEW |
+
+**Typical deliverables**
+- Remediation workstream
+- Root-cause fix plan
+
+**Internal delivery mapping**
+- `OCTUS_REG_* remediation programmes`
 
 #### SVC-REM-03 — Banking or compliance gap remediation
-| Field | Content |
-|-------|---------|
-| one_sentence | We close banking or compliance gaps that stop operations. |
-| public_status | `REQUIRES_RUBIO_REVIEW` |
-| sources | SA-06-03 |
+
+| Field | Value |
+|---|---|
+| Primary area | Remediation & Readiness |
+| Secondary related area | Compliance & Risk |
+| One-sentence explanation | We remediate when banking rejection or compliance gaps are the live constraint. |
+| Typical client need | Active bank rejection or compliance scrutiny. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Claudia; Compliance specialist; Rubio |
+| Public status | REQUIRES_RUBIO_REVIEW |
+
+**Typical deliverables**
+- Gap remediation plan
+
+**Internal delivery mapping**
+- `banking + compliance SKUs under crisis programmes`
 
 #### SVC-REM-04 — Audit and readiness remediation
-| Field | Content |
-|-------|---------|
-| one_sentence | We prepare the operation for audit or certification under time pressure. |
-| public_status | `REQUIRES_RUBIO_REVIEW` |
-| sources | SA-06-04 |
 
----
+| Field | Value |
+|---|---|
+| Primary area | Remediation & Readiness |
+| Secondary related area | Compliance & Risk |
+| One-sentence explanation | We close evidence and readiness gaps when formal review is imminent or already failing. |
+| Typical client need | Audit or certification review under pressure. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Compliance specialist; Claudia; Rubio |
+| Public status | REQUIRES_RUBIO_REVIEW |
 
-### AREA-TAX candidate — Tax, Accounting, Audit & Finance
+**Typical deliverables**
+- Readiness gap closure plan
+- Evidence remediation sequence
 
-Public listing **pending D-TAX-01**. For Milla: these are real Octus commercial offers via partner delivery; do not name OC8 externally; do not quote internal rate cards.
+**Internal delivery mapping**
+- `GLI readiness pathway`
+- `OC8_AUD_* subset (internal delivery)`
 
-| Service ID | Public name (draft) | Mapped internal (examples) | public_status |
-|------------|---------------------|----------------------------|---------------|
-| SVC-TAX-01 | Brazil corporate accounting (via Octus) | `OC8_FIN_BR_CONT_*` cost layer; Octus resale | `REQUIRES_RUBIO_REVIEW` |
-| SVC-TAX-02 | Corporate tax planning (Brazil / cross-border) | OC8 tax planning lines; PF plan SKUs | `REQUIRES_RUBIO_REVIEW` |
-| SVC-TAX-03 | Audit and financial statement readiness | `OC8_AUD_BR_*` | `REQUIRES_RUBIO_REVIEW` |
-| SVC-TAX-04 | Tax recovery / debt renegotiation programmes | `OC8_SF_*` (success-fee — careful claims) | `REQUIRES_RUBIO_REVIEW` |
-| SVC-TAX-05 | Societária maintenance Brazil | `OCTUS_RET_BR_MANUTENCAO` | `REQUIRES_RUBIO_REVIEW` |
+#### SVC-REM-05 — Financial infrastructure remediation
 
-**Never public:** `OC8_OCTUS_PREFERENTIAL`, `OC8_SF_REFERRAL`, OC8 base price tables, markups.
+| Field | Value |
+|---|---|
+| Primary area | Remediation & Readiness |
+| Secondary related area | International Hub |
+| One-sentence explanation | When banking or payment infrastructure has already failed, we sequence recovery with the right layers. |
+| Typical client need | Banking or PSP stack already broken. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Claudia; Rubio |
+| Public status | REQUIRES_RUBIO_REVIEW |
 
----
+**Typical deliverables**
+- Infrastructure remediation plan
 
-## 5. Delivery models (engagement, not areas)
+**Internal delivery mapping**
+- `OCTUS_ADV_INTL_CRISIS`
+- `OCTUS_BNK_*`
 
-| Model ID | Name | Public treatment |
-|----------|------|------------------|
-| DM-DISC | Discovery | Free / qualification — Octus face |
-| DM-ADV | Advisory session / deep dive / board | Engagement offers |
-| DM-RET | Continuous partnership (START / GROWTH / PRO) | `/how-we-engage` — prices only in proposals |
-| DM-PROJ | Managed project / programme | Default for most SVC-* |
-| DM-CRISIS | Crisis / remediation entry | AREA-REM |
+#### SVC-REM-06 — Tax and finance problem remediation
 
-Internal retainer SKUs (`OCTUS_RET_*`, P6, A1) stay off the website nav.
+| Field | Value |
+|---|---|
+| Primary area | Remediation & Readiness |
+| Secondary related area | Corporate Structuring |
+| One-sentence explanation | We coordinate tax recovery and finance problem programmes when the live issue is already a blockage. |
+| Typical client need | Tax debt, recovery or finance blockage affecting operations. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Claudia |
+| Public status | REQUIRES_RUBIO_REVIEW |
 
----
+**Typical deliverables**
+- Problem diagnosis
+- Programme scope
 
-## 6. Industries and segments
+**Internal delivery mapping**
+- `OC8_SF_RECTRIB`
+- `OC8_SF_RENEGTRIB (internal delivery)`
 
-| Type | Values |
-|------|--------|
-| Industries | iGaming; Fintech; Digital Assets; High-Risk digital |
-| Segments | B2B operators; groups; Private Clients (UBO/ownership) |
-| Explicit non-pillar | Private Clients must not be listed as a seventh equal service pillar without Rubio decision |
+**Claim fence:** No guaranteed recovery outcomes; partner brands not named
 
----
+### 7. International Hub
 
-## 7. Internal-only / do-not-publish classes
+#### SVC-HUB-01 — Market entry coordination
 
-| Class | Rule |
-|-------|------|
-| OC8 brand, base costs, preferential rates | `INTERNAL_ONLY` |
-| Antera brand and SHIELD price modifiers | `INTERNAL_ONLY` (capability may appear as Octus compliance) |
-| Rubio Adv. litigation catalogue | `INTERNAL_ONLY` (not Legal Architecture pages) |
-| Full Catalog V2 SKU dump / Notion 53 as nav | `INTERNAL_ONLY` |
-| Unverified SLAs and outcome metrics | Forbidden until claim register + evidence |
-| ISO certificates as Octus products | Evidence gate |
-| Vendor galleries (PAM, odds, software SKUs) | Not public catalog |
+| Field | Value |
+|---|---|
+| Primary area | International Hub |
+| Secondary related area | Regulatory Structuring |
+| One-sentence explanation | We coordinate entry into a new regulated market as one sequenced programme. |
+| Typical client need | Expansion treated as a commercial decision without a working programme. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Rubio; Esther; Maria Cristina |
+| Public status | REQUIRES_RUBIO_REVIEW |
 
----
+**Typical deliverables**
+- Entry programme plan
+- Cross-workstream sequence
 
-## 8. Obsolete and conflict notes (summary)
+**Internal delivery mapping**
+- `P1 Setup Internacional`
 
-| Topic | Finding |
-|-------|---------|
-| OC8 as public brand | Obsolete for public materials; delivery partner only |
-| Seven legacy website modules (`/what-we-do`) | Superseded by six Solutions |
-| Issue #13 seven-area candidate | Evaluated; not auto-adopted (D-TAX-01 / D-TAXONOMY-01) |
-| Retainer PRO €15k vs €8–12k | Pricing conflict — never publish either until commercial truth |
-| Three ID systems (V2 / pilot / P1–P6) | Mapped in Decision Register; public uses SVC-* IDs |
+#### SVC-HUB-02 — Bank and PSP introductions
 
----
+| Field | Value |
+|---|---|
+| Primary area | International Hub |
+| Secondary related area | Corporate Structuring |
+| One-sentence explanation | We identify and coordinate relevant banks and PSPs for the operation’s risk profile. |
+| Typical client need | Operator cannot find workable banking or payment partners. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Rubio; Milla; Claudia |
+| Public status | REQUIRES_RUBIO_REVIEW |
 
-## 9. Counts (this V1)
+**Typical deliverables**
+- Provider shortlist
+- Introduction and coordination plan
 
-| Metric | Count |
-|--------|------:|
-| Recommended public areas | 6 |
-| Finance candidate areas | 1 |
-| Public services listed (spine) | 26 |
-| Tax candidate services | 5 |
-| Delivery models documented | 5 |
-| Industries | 4 |
+**Internal delivery mapping**
+- `OCTUS_BNK_INTL_PSP`
+- `OCTUS_OPS_IGAMING_PAY*`
 
----
+**Claim fence:** No promised onboarding; no SLA on introductions
 
-## 10. Acceptance test answers (Issue #13)
+#### SVC-HUB-03 — Payment and PSP architecture
 
-| # | Question | Answer from this catalog |
-|---|----------|--------------------------|
-| 1 | What does Octus do? | §1 one-sentence |
-| 2 | Where is licensing? | AREA-REG |
-| 3 | Where is company formation? | AREA-CORP / SVC-CORP-02 |
-| 4 | Where is banking and payments? | AREA-BNK |
-| 5 | Where is tax/accounting? | Commercially AREA-TAX candidate; public pillar pending D-TAX-01; Milla may sell under Octus brand with INTERNAL delivery mapping |
-| 6 | Who delivers the work? | Octus commercial relationship; specialists and partner delivery coordinated by Octus (partners unnamed publicly) |
-| 7 | How to contact? | Website Contact / commercial intake (Milla) — out of catalog scope for code |
+| Field | Value |
+|---|---|
+| Primary area | International Hub |
+| Secondary related area | Corporate Structuring |
+| One-sentence explanation | We design payment and PSP options matched to markets, settlement needs and risk. |
+| Typical client need | Payment stack incompatible with risk profile. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Claudia; Rubio |
+| Public status | REQUIRES_RUBIO_REVIEW |
 
----
+**Typical deliverables**
+- Payment architecture options
+- Provider map
 
-## 11. Next consumers
+**Internal delivery mapping**
+- `OCTUS_BNK_INTL_PSP`
 
-| Consumer | May use when |
-|----------|--------------|
-| Website front | Item status `HUMAN_APPROVED` or `CONSUMABLE_BY_WEBSITE` |
-| Milla playbooks | After area playbooks in `docs/commercial/playbooks/` reviewed |
-| Deck | After deck content approval (no PPTX until then) |
+#### SVC-HUB-04 — CSP, local director and formation partners
 
-**Pointer for website pack:** This catalog supersedes inventing new Solution names. Existing six Solution names remain the recommended public spine unless Rubio changes D-TAXONOMY-01.
+| Field | Value |
+|---|---|
+| Primary area | International Hub |
+| Secondary related area | Corporate Structuring |
+| One-sentence explanation | We connect and coordinate CSPs, local directors and formation partners required by the venue. |
+| Typical client need | Venue requires local presence or CSP support the client cannot source alone. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Rubio; Milla; Claudia |
+| Public status | REQUIRES_RUBIO_REVIEW |
+
+**Typical deliverables**
+- Partner coordination plan
+
+**Internal delivery mapping**
+- `CSP coordination via Hub`
+
+**Claim fence:** Partners unnamed publicly unless approved
+
+#### SVC-HUB-05 — Lab, certification and specialist network coordination
+
+| Field | Value |
+|---|---|
+| Primary area | International Hub |
+| Secondary related area | Compliance & Risk |
+| One-sentence explanation | We identify and coordinate laboratories, certification providers and other specialists the programme needs. |
+| Typical client need | Programme depends on labs, KYC/AML vendors, tech platforms or other specialists. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Rubio; Milla |
+| Public status | REQUIRES_RUBIO_REVIEW |
+
+**Typical deliverables**
+- Specialist map
+- Coordination plan
+
+**Internal delivery mapping**
+- `Hub network orchestration`
+
+**Claim fence:** No fixed public SLA; Octus is not the laboratory
+
+#### SVC-HUB-06 — Counsel and tax specialist coordination
+
+| Field | Value |
+|---|---|
+| Primary area | International Hub |
+| Secondary related area | Legal & Structural Architecture |
+| One-sentence explanation | We identify and coordinate legal counsel and tax specialists required for the matter. |
+| Typical client need | Matter needs local counsel or tax specialists under one Octus relationship. |
+| Delivery model | Project |
+| Commercial owner | Milla |
+| Substantive owners | Rubio; Rodrigo; Claudia |
+| Public status | REQUIRES_RUBIO_REVIEW |
+
+**Typical deliverables**
+- Counsel/specialist coordination plan
+
+**Internal delivery mapping**
+- `PARTNER_CLASSES counsel/tax`
+
+**Claim fence:** Partner brands not named publicly
+
+## Explicit non-claims
+
+- No invented services, cases or metrics.
+- No public partner brand names (including OC8 / Antera).
+- No public prices or margins.
+- No eighth public area for tax — tax/accounting/audit/finance are mapped into Corporate, Private Clients and Remediation.
+- Catalog is not HUMAN_APPROVED and not CONSUMABLE_BY_WEBSITE.
+
+## Terminal
+
+`OCTUS_ORIGINAL_SEVEN_AREAS_READY_FOR_RUBIO_REVIEW`

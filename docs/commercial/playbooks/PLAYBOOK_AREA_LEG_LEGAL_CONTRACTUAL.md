@@ -1,13 +1,15 @@
-# PLAYBOOK — Legal & Contractual Architecture
+# PLAYBOOK — Legal & Structural Architecture
 
 | Field | Value |
 |-------|-------|
 | **playbook_id** | `PB-AREA-LEG` |
 | **public_area** | `AREA-LEG` |
+| **public_name** | Legal & Structural Architecture |
 | **status** | `REQUIRES_RUBIO_REVIEW` |
-| **owner** | Milla (commercial) / Rubio (substance) |
-| **review_date** | 2026-11-01 |
-| **sources** | Catalog V1; SERVICE_CANONICAL_MASTER; Axle Catalog V2 (mapping only) |
+| **commercial_owner** | Milla |
+| **substantive_owners** | Rubio and Rodrigo |
+| **review_date** | 2026-08-02 |
+| **sources** | Catalog V1.1-SEVEN-AREAS; reconciliation V1 |
 
 ## simple_explanation
 
