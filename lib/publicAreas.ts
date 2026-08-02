@@ -334,7 +334,7 @@ export const PUBLIC_AREAS: PublicArea[] = [
         href: "/private-clients",
       },
       {
-        label: "Banking & Payments depth",
+        label: "Banking & Payments",
         href: "/solutions/regulatory/banking-payments",
       },
     ],
@@ -479,10 +479,6 @@ export const PUBLIC_AREAS: PublicArea[] = [
         label: "GLI & Certification Readiness",
         href: "/solutions/compliance/gli-readiness",
       },
-      {
-        label: "Audit (legacy alias)",
-        href: "/audit",
-      },
     ],
     markets: [
       {
@@ -562,7 +558,7 @@ export const PUBLIC_AREAS: PublicArea[] = [
         href: "/partners",
       },
       {
-        label: "Market Entry depth",
+        label: "Market Entry",
         href: "/solutions/regulatory/market-entry",
       },
       {
@@ -626,6 +622,6 @@ export const BANKING_SUPPORTING_ROUTE = {
     { label: "Corporate Structuring (banking readiness)", href: "/solutions/corporate-structuring" },
     { label: "International Hub (introductions / payment architecture)", href: "/international-hub" },
     { label: "Remediation & Readiness", href: "/solutions/remediation-readiness" },
-    { label: "Banking & Payments depth", href: "/solutions/regulatory/banking-payments" },
+    { label: "Banking & Payments", href: "/solutions/regulatory/banking-payments" },
   ],
 };

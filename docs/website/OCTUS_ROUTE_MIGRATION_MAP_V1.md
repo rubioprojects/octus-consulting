@@ -2,22 +2,22 @@
 
 | Field | Value |
 |-------|-------|
-| **Status** | Implementation branch artifact (hygiene patch) |
+| **Status** | Merge-candidate artifact (H-02 redirects validated) |
 | **Date** | 2026-08-02 |
-| **Hosting** | Vercel redirects in `vercel.json` + static client fallback pages for renamed hubs |
+| **Hosting** | Vercel redirects in `vercel.json` (observed permanent HTTP **308**) + static client fallback pages for renamed hubs |
 
 ## Migration table
 
 | Existing route | Final route | Action | Redirect | Canonical | Internal links affected | SEO risk |
 |----------------|-------------|--------|----------|-----------|-------------------------|----------|
 | `/solutions` | `/solutions` | REPOSITION — Services index (7 areas) | — | self | Nav, footer, homepage | Low |
-| `/services` | `/solutions` | ALIAS | 301 → `/solutions` | `/solutions` | New | Low |
-| `/solutions/regulatory-strategy-licensing` | `/solutions/regulatory-structuring` | RENAME | 301 | new | Nav/footer/home/sitemap | Medium |
-| `/solutions/compliance-risk-systems` | `/solutions/compliance-risk` | RENAME | 301 | new | Nav/footer/home/sitemap | Medium |
-| `/solutions/legal-contractual-architecture` | `/solutions/legal-structural-architecture` | RENAME | 301 | new | Nav/footer/home/sitemap | Medium |
-| `/solutions/corporate-cross-border` | `/solutions/corporate-structuring` | RENAME | 301 | new | Nav/footer/home/sitemap | Medium |
-| `/solutions/operational-remediation-readiness` | `/solutions/remediation-readiness` | RENAME | 301 | new | Nav/footer/home/sitemap | Medium |
-| `/solutions/banking-payments-infrastructure` | **same URL** | SUPPORTING routing page (not an eighth area) | — | self | Linked from depth / legacy | Medium |
+| `/services` | `/solutions` | ALIAS | permanent **308** → `/solutions` | `/solutions` | New | Low |
+| `/solutions/regulatory-strategy-licensing` | `/solutions/regulatory-structuring` | RENAME | permanent **308** | new | Nav/footer/home (not sitemap) | Medium |
+| `/solutions/compliance-risk-systems` | `/solutions/compliance-risk` | RENAME | permanent **308** | new | Nav/footer/home (not sitemap) | Medium |
+| `/solutions/legal-contractual-architecture` | `/solutions/legal-structural-architecture` | RENAME | permanent **308** | new | Nav/footer/home (not sitemap) | Medium |
+| `/solutions/corporate-cross-border` | `/solutions/corporate-structuring` | RENAME | permanent **308** | new | Nav/footer/home (not sitemap) | Medium |
+| `/solutions/operational-remediation-readiness` | `/solutions/remediation-readiness` | RENAME | permanent **308** | new | Nav/footer/home (not sitemap) | Medium |
+| `/solutions/banking-payments-infrastructure` | **same URL** | SUPPORTING routing page HTTP **200** (not an eighth area; not Hub redirect) | — | self | Linked from Related services | Medium |
 | `/private-clients` | `/private-clients` | KEEP canonical | — | self | Services menu | Low |
 | `/international-hub` | `/international-hub` | REBUILD content | — | self | Services menu | Medium |
 | `/diagnostic` | `/diagnostic` | KEEP assessment entry | — | self | Remediation CTA | Low |
@@ -40,7 +40,7 @@ It is a supporting routing page that explains Banking & Payments work through:
 2. **International Hub** — bank/PSP identification, payment-provider coordination, introductions, payment architecture  
 3. **Remediation & Readiness** — rejected applications, blocked accounts, failed payment infrastructure, remediation  
 
-It must **not** appear in primary nav, Services index, homepage area list, or sitemap area taxonomy as a peer area.
+It must **not** appear in primary nav, Services index, or homepage area list as a peer area. It **does** remain in the sitemap as a canonical HTTP 200 supporting page.
 
 ## Historical labels (metadata / redirects / docs only)
 

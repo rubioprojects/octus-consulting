@@ -35,8 +35,8 @@ function AreaSpecificModule({ area }: { area: PublicArea }) {
                 body: "iGaming, fintech/EMI and Brazil SPA/MF work treated as coordinated programmes.",
               },
               {
-                title: "Related depth",
-                body: "Existing licensing and market-entry pages remain available under Related depth.",
+                title: "Related services",
+                body: "Licensing pathway design, market-entry programmes and banking readiness sequenced with the licence.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-sm border border-border bg-background p-6">
@@ -59,9 +59,8 @@ function AreaSpecificModule({ area }: { area: PublicArea }) {
             The individuals behind regulated operations.
           </h2>
           <p className="body-large mb-10 max-w-2xl text-muted-foreground">
-            Private Clients covers founders, UBOs, executives and families whose personal holdings,
-            residency and banking readiness sit inside the same regulated structure as the operating
-            group — not as standalone private-wealth marketing.
+            Private Clients supports founders, UBOs, executives and families whose personal holdings,
+            residency, banking and tax position intersect with regulated operations.
           </p>
           <ul className="grid list-none gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {[
@@ -248,7 +247,7 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
               </ul>
             </div>
             <div>
-              <p className="section-label mb-4 block">Related pages</p>
+              <p className="section-label mb-4 block">Related services</p>
               <ul className="flex list-none flex-col gap-2">
                 {area.relatedDeep.map((r) => (
                   <li key={r.href}>

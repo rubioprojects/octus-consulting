@@ -112,7 +112,7 @@ export default function SolutionHubPage({ hub }: { hub: SolutionHub }) {
             )}
             {hub.relatedDeep.length > 0 && (
               <div>
-                <p className="section-label mb-4 block">Related depth</p>
+                <p className="section-label mb-4 block">Related services</p>
                 <ul className="flex list-none flex-col gap-2">
                   {hub.relatedDeep.map((d) => (
                     <li key={d.href}>
