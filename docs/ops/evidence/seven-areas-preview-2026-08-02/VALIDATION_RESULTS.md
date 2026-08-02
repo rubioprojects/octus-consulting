@@ -4,7 +4,8 @@
 |-------|-------|
 | Date | 2026-08-02 |
 | Branch | `feat/seven-areas-website-architecture` |
-| Final HEAD | `fbb8e0eeeac7d321e53b6a3360cb0bbcd8dc3198` |
+| Hygiene code SHA | `183564ac287dd34a26f3dbb1f1eb9beca4d202b8` |
+| Final HEAD | PR #17 branch tip (see PR description) |
 | Preview | https://octus-consulting-br12puta7-axle1.vercel.app |
 | Terminal | `OCTUS_WEBSITE_MERGE_CANDIDATE_READY_FOR_RUBIO_APPROVAL` |
 
@@ -19,7 +20,7 @@ Prior pre-production pack: [FINAL_PREPRODUCTION_VALIDATION.md](./FINAL_PREPRODUC
 | route + sitemap crawl | PASS (81/81 HTTP 200; no redirects in sitemap) |
 | redirect matrix (308 one-hop) | PASS |
 | residual public phrases | PASS |
-| mergeable | **true** / **clean** |
+| mergeable | **true** / **clean** (re-check after push if GitHub shows UNKNOWN briefly) |
 | merge / production deploy | **not performed** |
 
 `visual_evidence_status: PASS` (agent scorecard — awaiting Rubio approval)

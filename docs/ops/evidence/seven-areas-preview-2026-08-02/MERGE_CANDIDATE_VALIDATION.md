@@ -4,7 +4,8 @@
 |-------|-------|
 | Date | 2026-08-02 |
 | Branch | `feat/seven-areas-website-architecture` |
-| Final HEAD | `fbb8e0eeeac7d321e53b6a3360cb0bbcd8dc3198` |
+| Hygiene code SHA | `183564ac287dd34a26f3dbb1f1eb9beca4d202b8` |
+| Final HEAD | branch tip on PR #17 (see PR description) |
 | Preview | https://octus-consulting-br12puta7-axle1.vercel.app |
 | PR | https://github.com/rubioprojects/octus-consulting/pull/17 |
 | Terminal | `OCTUS_WEBSITE_MERGE_CANDIDATE_READY_FOR_RUBIO_APPROVAL` |
@@ -19,8 +20,7 @@
 | mergeable_state | **clean** |
 | rebaseable | true |
 | base SHA | `3d98346519bc4fc715c5eeb2374cc80fa49bf3f0` |
-| head SHA | `fbb8e0eeeac7d321e53b6a3360cb0bbcd8dc3198` |
-| Conflict resolution | **none** — no rebase/merge conflict; earlier `mergeable: false`/`UNKNOWN` was transient GitHub computation |
+| Conflict resolution | **none** — no rebase required; earlier `mergeable: false` / `UNKNOWN` was transient GitHub computation |
 | Website files changed for mergeability | **no** |
 
 ## Checks
@@ -69,5 +69,5 @@ Zero occurrences of: `legacy alias`, `Related depth`, `depth →`, `standalone p
 
 ## Visual evidence
 
-`visual_evidence_status: PASS` (agent scorecard — awaiting Rubio approval)
+`visual_evidence_status: PASS` (agent scorecard — awaiting Rubio approval)  
 `screenshots/merge-candidate/`
