@@ -1,32 +1,28 @@
-# Seven-areas website — validation results
+# Seven-areas website — validation results (hygiene patch)
 
 | Field | Value |
 |-------|-------|
 | Date | 2026-08-02 |
 | Branch | `feat/seven-areas-website-architecture` |
-| Preview | https://octus-consulting-2fzhr4te6-axle1.vercel.app |
-| Catalog baseline | `main@5857c0a` + planning merge `3d98346` |
+| Commit | `629def0` |
+| Preview | https://octus-consulting-2sgzwkggq-axle1.vercel.app |
+| Terminal | `OCTUS_SEVEN_AREAS_WEBSITE_HUMAN_RESCREEN_READY` |
 
 ## Checks
 
 | Check | Result | Notes |
 |-------|--------|-------|
-| build | PASS | `npm run build` — 96 static routes |
-| typecheck | PASS | `npx tsc --noEmit` exit 0 |
-| lint | PARTIAL | `next lint` not previously configured (no eslint in package.json); not introduced in this PR |
-| route crawl (preview HTTP) | PASS | `/`, `/solutions`, 7 area routes, `/markets`, `/insights`, `/about`, `/contact`, `/diagnostic`, `/team` → 200 |
-| redirect (banking demote) | PASS | `/solutions/banking-payments-infrastructure` → 308 `/international-hub` |
-| internal-link validation | PASS | Key nav/footer/home links point at approved area hrefs; legacy hubs redirect |
-| metadata / canonical | PASS | Area pages + services index set `alternates.canonical` |
-| accessibility | PARTIAL | Services menu: `aria-expanded`, `aria-controls`, `role="menu"`, Escape closes; full a11y audit not automated |
-| desktop visual review | PASS | Screenshots under `screenshots/desktop-*.png` |
-| mobile visual review | PASS | Screenshots under `screenshots/mobile-*.png` |
-| seven-area consistency | PASS | Approved names via `PUBLIC_AREAS`; no Banking/Tax eighth area in nav/index |
-| claim-register compliance | PASS | Hub fence copy present; no logo gallery / guaranteed onboarding |
-| blog-preservation | PASS | `lib/posts.ts` unchanged body count = **33** posts (mandate mentioned 38; repo SoT is 33); enrichment layer only |
+| build | PASS | `npm run build` |
+| typecheck | PASS | `npx tsc --noEmit` |
+| route crawl | PASS | Key routes 200 including Banking supporting page |
+| redirect validation | PASS | Renamed hubs 308; Banking **no** Hub redirect (200 self) |
+| canonical validation | PASS | Area pages + Banking self-canonical |
+| public-copy forbidden phrases | PASS | No hits for governance phrases on preview HTML |
+| claim-register metrics | PASS | `15+` removed; see `METRIC_AND_CLAIM_NOTES.md` |
+| Banking routing page | PASS | Three-path routing visible |
+| Insights count reconciliation | PASS | SoT 33; see `INSIGHTS_COUNT_RECONCILIATION.md` |
+| desktop/mobile screenshots | PASS | Updated under `screenshots/` |
 
 ## Visual evidence
 
-`visual_evidence_status: PASS` (agent scorecard — not Rubio human PASS)
-
-Artifacts: `docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/`
+`visual_evidence_status: PASS` (agent scorecard — awaiting Rubio human rescreen)
