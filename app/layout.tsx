@@ -123,16 +123,17 @@ export default function RootLayout({
 
               <div>
                 <p className="mb-5 font-sans text-xs font-medium uppercase tracking-[0.15em] text-white/75">
-                  Solutions
+                  Services
                 </p>
                 <ul className="flex list-none flex-col gap-2.5">
                   {[
-                    { label: "Regulatory Strategy & Licensing", href: "/solutions/regulatory-strategy-licensing" },
-                    { label: "Banking & Payments", href: "/solutions/banking-payments-infrastructure" },
-                    { label: "Compliance & Risk", href: "/solutions/compliance-risk-systems" },
-                    { label: "Corporate & Cross-Border", href: "/solutions/corporate-cross-border" },
-                    { label: "Legal & Contractual Architecture", href: "/solutions/legal-contractual-architecture" },
-                    { label: "Remediation & Readiness", href: "/solutions/operational-remediation-readiness" },
+                    { label: "Regulatory Structuring", href: "/solutions/regulatory-structuring" },
+                    { label: "Compliance & Risk", href: "/solutions/compliance-risk" },
+                    { label: "Legal & Structural Architecture", href: "/solutions/legal-structural-architecture" },
+                    { label: "Corporate Structuring", href: "/solutions/corporate-structuring" },
+                    { label: "Private Clients", href: "/private-clients" },
+                    { label: "Remediation & Readiness", href: "/solutions/remediation-readiness" },
+                    { label: "International Hub", href: "/international-hub" },
                   ].map((l) => (
                     <li key={l.href}>
                       <a
@@ -148,7 +149,7 @@ export default function RootLayout({
 
               <div>
                 <p className="mb-5 font-sans text-xs font-medium uppercase tracking-[0.15em] text-white/75">
-                  Markets
+                  Industries
                 </p>
                 <ul className="flex list-none flex-col gap-2.5">
                   {[

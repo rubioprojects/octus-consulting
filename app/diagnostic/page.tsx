@@ -8,9 +8,9 @@ import {
 } from "../../lib/cta";
 
 export const metadata = {
-  title: "Operational Remediation & Readiness — Assess",
+  title: "Diagnostic intake — Remediation & Readiness",
   description:
-    "Assess licensing delays, banking rejection, compliance gaps, audit readiness and blocked market entry. Octus engages through qualified conversations — no guaranteed resolution.",
+    "Diagnostic intake for licensing delays, banking rejection, compliance gaps, audit readiness and blocked market entry. Separate from the Remediation & Readiness service area. No guaranteed resolution.",
 };
 
 const situations = [
@@ -27,16 +27,17 @@ export default function DiagnosticPage() {
     <main>
       <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
         <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-          <span className="label">Operational Remediation &amp; Readiness</span>
+          <span className="label">Diagnostic intake</span>
           <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem]">
             Assess the failure mode.
             <br />
             <span className="text-white/70">Then sequence remediation.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/60">
-            This path is for operators under pressure — not a mass lead form. We start with a
-            structured conversation about exposure and readiness. We do not guarantee licensing,
-            banking outcomes or regulatory resolution.
+            Diagnostic is the intake path. Remediation &amp; Readiness is the service area — they
+            are connected, not the same thing. We start with a structured conversation about
+            exposure and readiness. We do not guarantee licensing, banking outcomes or regulatory
+            resolution.
           </p>
           <div className="mt-12 flex flex-wrap gap-4">
             <a
@@ -74,7 +75,7 @@ export default function DiagnosticPage() {
           <p className="body-large mb-6">
             Prefer the full remediation hub?{" "}
             <Link
-              href="/solutions/operational-remediation-readiness"
+              href="/solutions/remediation-readiness"
               className="text-primary underline-offset-4 hover:underline"
             >
               Operational Remediation &amp; Readiness

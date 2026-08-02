@@ -1,0 +1,39 @@
+{
+  "redirects": [
+    {
+      "source": "/solutions/regulatory-strategy-licensing",
+      "destination": "/solutions/regulatory-structuring",
+      "permanent": true
+    },
+    {
+      "source": "/solutions/compliance-risk-systems",
+      "destination": "/solutions/compliance-risk",
+      "permanent": true
+    },
+    {
+      "source": "/solutions/legal-contractual-architecture",
+      "destination": "/solutions/legal-structural-architecture",
+      "permanent": true
+    },
+    {
+      "source": "/solutions/corporate-cross-border",
+      "destination": "/solutions/corporate-structuring",
+      "permanent": true
+    },
+    {
+      "source": "/solutions/operational-remediation-readiness",
+      "destination": "/solutions/remediation-readiness",
+      "permanent": true
+    },
+    {
+      "source": "/solutions/banking-payments-infrastructure",
+      "destination": "/international-hub",
+      "permanent": true
+    },
+    {
+      "source": "/services",
+      "destination": "/solutions",
+      "permanent": true
+    }
+  ]
+}

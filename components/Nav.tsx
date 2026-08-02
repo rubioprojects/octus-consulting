@@ -1,14 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../lib/cta";
+import { PUBLIC_AREAS } from "../lib/publicAreas";
 
 const primaryLinks = [
-  { label: "Solutions", href: "/solutions" },
-  { label: "Markets", href: "/markets" },
-  { label: "How we engage", href: "/how-we-engage" },
-  { label: "Intelligence", href: "/intelligence" },
+  { label: "Industries", href: "/markets" },
+  { label: "Insights", href: "/insights" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
@@ -17,6 +16,7 @@ const supportingLinks = [
   { label: "Team", href: "/team" },
   { label: "Careers", href: "/careers" },
   { label: "Jurisdictions", href: "/jurisdictions" },
+  { label: "How we engage", href: "/how-we-engage" },
 ];
 
 const linkClass =
@@ -27,6 +27,9 @@ const ctaClass =
 
 export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const menuId = useId();
+  const servicesRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (mobileOpen) {
@@ -41,11 +44,25 @@ export default function Nav() {
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setMobileOpen(false);
+      if (e.key === "Escape") {
+        setMobileOpen(false);
+        setServicesOpen(false);
+      }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, []);
+
+  useEffect(() => {
+    if (!servicesOpen) return;
+    const onPointer = (e: MouseEvent) => {
+      if (servicesRef.current && !servicesRef.current.contains(e.target as Node)) {
+        setServicesOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", onPointer);
+    return () => document.removeEventListener("mousedown", onPointer);
+  }, [servicesOpen]);
 
   return (
     <>
@@ -71,6 +88,53 @@ export default function Nav() {
           </Link>
 
           <div className="hidden items-center gap-7 lg:gap-9 md:flex">
+            <div className="relative" ref={servicesRef}>
+              <button
+                type="button"
+                className={linkClass + " inline-flex items-center gap-1.5"}
+                aria-expanded={servicesOpen}
+                aria-controls={menuId}
+                aria-haspopup="true"
+                onClick={() => setServicesOpen((v) => !v)}
+              >
+                Services
+                <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden className="opacity-70">
+                  <path d="M3 4.5L6 7.5L9 4.5" fill="none" stroke="currentColor" strokeWidth="1.5" />
+                </svg>
+              </button>
+              {servicesOpen && (
+                <div
+                  id={menuId}
+                  role="menu"
+                  aria-label="Services areas"
+                  className="absolute left-0 top-full z-50 mt-3 w-[min(22rem,calc(100vw-2rem))] rounded-sm border border-border bg-background p-2 shadow-lg"
+                >
+                  <Link
+                    href="/solutions"
+                    role="menuitem"
+                    className="mb-1 block rounded-sm px-3 py-2 font-sans text-sm font-medium text-foreground no-underline hover:bg-secondary"
+                    onClick={() => setServicesOpen(false)}
+                  >
+                    All services
+                  </Link>
+                  <ul className="m-0 list-none p-0">
+                    {PUBLIC_AREAS.map((area) => (
+                      <li key={area.id}>
+                        <Link
+                          href={area.href}
+                          role="menuitem"
+                          className="block rounded-sm px-3 py-2 font-sans text-sm text-muted-foreground no-underline hover:bg-secondary hover:text-foreground"
+                          onClick={() => setServicesOpen(false)}
+                        >
+                          {area.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+
             {primaryLinks.map((l) => (
               <Link key={l.href} href={l.href} className={linkClass}>
                 {l.label}
@@ -110,41 +174,62 @@ export default function Nav() {
       {mobileOpen && (
         <div
           id="mobile-nav"
-          className="fixed inset-x-0 bottom-0 top-16 z-40 overflow-y-auto bg-background px-4 pb-12 pt-2 sm:px-6 md:hidden"
+          className="fixed inset-0 z-40 bg-background pt-20 md:hidden"
           role="dialog"
           aria-modal="true"
-          aria-label="Navigation menu"
+          aria-label="Mobile navigation"
         >
-          {primaryLinks.map((l) => (
+          <div className="flex h-full flex-col gap-1 overflow-y-auto px-4 pb-10">
+            <p className="mb-2 mt-2 font-sans text-xs font-medium uppercase tracking-[0.15em] text-muted-foreground">
+              Services
+            </p>
             <Link
-              key={l.href}
-              href={l.href}
-              className="block border-b border-border py-4 font-sans text-base text-foreground no-underline transition-colors hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-primary"
+              href="/solutions"
+              className="rounded-sm px-3 py-3 font-sans text-base text-foreground no-underline"
               onClick={() => setMobileOpen(false)}
             >
-              {l.label}
+              All services
             </Link>
-          ))}
-          <p className="pt-6 pb-2 font-sans text-xs font-medium uppercase tracking-[0.15em] text-muted-foreground">
-            More
-          </p>
-          {supportingLinks.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className="block border-b border-border py-3 font-sans text-sm text-muted-foreground no-underline transition-colors hover:text-primary"
-              onClick={() => setMobileOpen(false)}
-            >
-              {l.label}
-            </Link>
-          ))}
-
-          <div className="pt-6">
+            {PUBLIC_AREAS.map((area) => (
+              <Link
+                key={area.id}
+                href={area.href}
+                className="rounded-sm px-3 py-3 font-sans text-base text-muted-foreground no-underline"
+                onClick={() => setMobileOpen(false)}
+              >
+                {area.name}
+              </Link>
+            ))}
+            <div className="my-4 h-px bg-border" />
+            {primaryLinks.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="rounded-sm px-3 py-3 font-sans text-base text-foreground no-underline"
+                onClick={() => setMobileOpen(false)}
+              >
+                {l.label}
+              </Link>
+            ))}
+            <div className="my-4 h-px bg-border" />
+            <p className="mb-2 font-sans text-xs font-medium uppercase tracking-[0.15em] text-muted-foreground">
+              More
+            </p>
+            {supportingLinks.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="rounded-sm px-3 py-3 font-sans text-base text-muted-foreground no-underline"
+                onClick={() => setMobileOpen(false)}
+              >
+                {l.label}
+              </Link>
+            ))}
             <a
               href={WHATSAPP_DISCUSS_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className={`${ctaClass} w-full justify-center`}
+              className={ctaClass + " mt-6 justify-center"}
               onClick={() => setMobileOpen(false)}
             >
               {CTA_DISCUSS_LABEL}

@@ -1,4 +1,8 @@
-/** Wave 3 commercial face — Solutions taxonomy (Final Lock). Soft IA only; no redirects. */
+/**
+ * Legacy Wave 3 six-Solution hubs — retained for engagement models / partner classes /
+ * intelligence pillars and any remaining deep-page references.
+ * Public website IA is now `lib/publicAreas.ts` (approved seven areas).
+ */
 
 export type SolutionHub = {
   num: string;

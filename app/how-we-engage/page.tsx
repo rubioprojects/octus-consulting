@@ -67,7 +67,7 @@ export default function HowWeEngagePage() {
             Crisis or blocked operation? Start with Operational Remediation.
           </p>
           <div className="flex flex-wrap gap-3">
-            <CtaLink href="/solutions/operational-remediation-readiness" variant="secondary">
+            <CtaLink href="/solutions/remediation-readiness" variant="secondary">
               Remediation →
             </CtaLink>
             <Link

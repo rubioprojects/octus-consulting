@@ -1,13 +1,11 @@
-import { SOLUTION_HUBS } from "../../../lib/commercial";
-import SolutionHubPage from "../../../components/system/SolutionHubPage";
-
-const hub = SOLUTION_HUBS.find((h) => h.slug === "operational-remediation-readiness")!;
+import StaticRedirect from "../../../components/StaticRedirect";
 
 export const metadata = {
-  title: hub.title,
-  description: hub.summary,
+  title: "Redirecting…",
+  robots: { index: false, follow: true },
+  alternates: { canonical: "https://octusconsulting.com/solutions/remediation-readiness" },
 };
 
 export default function Page() {
-  return <SolutionHubPage hub={hub} />;
+  return <StaticRedirect to="/solutions/remediation-readiness" />;
 }

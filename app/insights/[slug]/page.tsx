@@ -1,5 +1,12 @@
 import Link from "next/link";
 import { getAllPosts, getPost } from "../../../lib/posts";
+import {
+  factualReviewStatus,
+  resolveIndustryLinks,
+  resolveJurisdictionLinks,
+  resolvePostAuthor,
+  resolveServiceAreaLinks,
+} from "../../../lib/insightEnrichment";
 import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
@@ -54,7 +61,8 @@ export default function PostPage({ params }: { params: { slug: string } }) {
             {post.title}
           </h1>
           <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ color: "var(--white-40)" }}>
-            {date}{post.author ? ` · ${post.author}` : ""}
+            {date} · {resolvePostAuthor(post)}
+            {factualReviewStatus(post) === "needs_review" ? " · Factual review marker" : ""}
           </p>
         </div>
       </section>
@@ -95,48 +103,64 @@ export default function PostPage({ params }: { params: { slug: string } }) {
           })}
         </div>
 
-        {(post.related || post.cta) && (
-          <div
-            className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8"
-            style={{
-              maxWidth: "800px",
-              marginTop: "64px",
-              paddingTop: "40px",
-              borderTop: "1px solid var(--border-solid)",
-            }}
-          >
-            {post.related && post.related.length > 0 && (
-              <div style={{ marginBottom: post.cta ? "32px" : "0" }}>
-                <p className="body-sm mb-3.5 text-muted-foreground">
-                  Related
-                </p>
-                <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
-                  {post.related.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className="chip-juris-link"
-                      style={{ textDecoration: "none" }}
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            )}
+        {(() => {
+          const serviceLinks = resolveServiceAreaLinks(post);
+          const industryLinks = resolveIndustryLinks(post);
+          const jurisdictionLinks = resolveJurisdictionLinks(post);
+          const related = post.related || [];
+          const show =
+            related.length > 0 ||
+            serviceLinks.length > 0 ||
+            industryLinks.length > 0 ||
+            jurisdictionLinks.length > 0 ||
+            post.cta;
+          if (!show) return null;
+          return (
+            <div
+              className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8"
+              style={{
+                maxWidth: "800px",
+                marginTop: "64px",
+                paddingTop: "40px",
+                borderTop: "1px solid var(--border-solid)",
+              }}
+            >
+              {[
+                { title: "Service areas", items: serviceLinks },
+                { title: "Industries", items: industryLinks },
+                { title: "Jurisdictions", items: jurisdictionLinks },
+                { title: "Related", items: related },
+              ]
+                .filter((g) => g.items.length > 0)
+                .map((group) => (
+                  <div key={group.title} style={{ marginBottom: "24px" }}>
+                    <p className="body-sm mb-3.5 text-muted-foreground">{group.title}</p>
+                    <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
+                      {group.items.map((item) => (
+                        <Link
+                          key={`${group.title}-${item.href}`}
+                          href={item.href}
+                          className="chip-juris-link"
+                          style={{ textDecoration: "none" }}
+                        >
+                          {item.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ))}
 
-            {post.cta && (
-              <>
-                <p className="body-sm mb-4 text-muted-foreground">
-                  {post.cta.label}
-                </p>
-                <Link href={post.cta.href} className="btn-primary">
-                  Request assessment →
-                </Link>
-              </>
-            )}
-          </div>
-        )}
+              {post.cta && (
+                <>
+                  <p className="body-sm mb-4 text-muted-foreground">{post.cta.label}</p>
+                  <Link href={post.cta.href} className="btn-primary">
+                    Request assessment →
+                  </Link>
+                </>
+              )}
+            </div>
+          );
+        })()}
       </section>
     </main>
   );
