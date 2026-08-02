@@ -1,0 +1,2193 @@
+{
+  "schema_version": "OCTUS_PUBLIC_SERVICE_CATALOG_V1",
+  "catalog_status": "REQUIRES_RUBIO_REVIEW",
+  "catalog_lifecycle_note": "Not HUMAN_APPROVED. Website must not treat as definitive until HUMAN_APPROVED or CONSUMABLE_BY_WEBSITE.",
+  "owner_front": "Octus commercial & services (Issue #13 WS1)",
+  "created_date": "2026-08-02",
+  "last_reviewed_date": "2026-08-02",
+  "language_working": "pt-BR for working notes; EN for public service names and descriptions (aligned to live site)",
+  "taxonomy": {
+    "recommended_public_area_count": 6,
+    "recommendation_basis": "Inventory of Final Lock / OFFER_ARCHITECTURE / live commercial.ts — not forced to seven areas.",
+    "issue_13_seven_area_candidate": "NOT_ADOPTED_IN_V1_DRAFT — Tax/Accounting/Audit proposed as 7th area conflicts with evidence that those capabilities are predominantly OC8-internal.",
+    "layers": {
+      "public_areas": "Six Solutions — public grouping",
+      "public_services": "Service areas under each Solution — sellable themes",
+      "industries": "WHERE (iGaming, Fintech, Digital Assets, High-Risk) — not service areas",
+      "client_segments": "e.g. Private Clients / beneficial owners — overlays, not equal pillars",
+      "engagement_models": "HOW we engage — Lead Contractor, Managed Project, Strategic Mandate, Embedded Capability",
+      "internal_skus": "Axle/Notion SKUs — mapped, not published as nav",
+      "delivery_partners": "OC8 / Antera / counsel — internal provenance only; invisible in public brand"
+    },
+    "public_areas": [
+      {
+        "id": "AREA-01",
+        "name": "Regulatory Strategy & Licensing",
+        "slug": "regulatory-strategy-licensing",
+        "one_sentence": "Licensing strategy, regulatory pathways, market entry sequencing and regulator-facing coordination for regulated operations.",
+        "service_count": 7,
+        "status": "REQUIRES_RUBIO_REVIEW"
+      },
+      {
+        "id": "AREA-02",
+        "name": "Banking, Payments & Financial Infrastructure",
+        "slug": "banking-payments-infrastructure",
+        "one_sentence": "Banking readiness, payment architecture, PSP strategy and financial infrastructure designed to survive real onboarding scrutiny.",
+        "service_count": 3,
+        "status": "REQUIRES_RUBIO_REVIEW"
+      },
+      {
+        "id": "AREA-03",
+        "name": "Compliance & Risk Systems",
+        "slug": "compliance-risk-systems",
+        "one_sentence": "Operational compliance frameworks, AML/KYC/CDD, DPO capability and risk systems designed to survive scrutiny.",
+        "service_count": 6,
+        "status": "REQUIRES_RUBIO_REVIEW"
+      },
+      {
+        "id": "AREA-04",
+        "name": "Corporate & Cross-Border Structuring",
+        "slug": "corporate-cross-border",
+        "one_sentence": "Corporate architecture, holding design, governance and cross-border organization aligned to license and banking reality.",
+        "service_count": 6,
+        "status": "REQUIRES_RUBIO_REVIEW"
+      },
+      {
+        "id": "AREA-05",
+        "name": "Legal & Contractual Architecture",
+        "slug": "legal-contractual-architecture",
+        "one_sentence": "Legal and contractual architecture for multi-jurisdiction regulated operations: coordination, frameworks and structural requirements.",
+        "service_count": 3,
+        "status": "REQUIRES_RUBIO_REVIEW"
+      },
+      {
+        "id": "AREA-06",
+        "name": "Operational Remediation & Readiness",
+        "slug": "operational-remediation-readiness",
+        "one_sentence": "Strategic crisis entry for licensing delays, banking failures, compliance gaps, audit readiness and operational instability.",
+        "service_count": 4,
+        "status": "REQUIRES_RUBIO_REVIEW"
+      }
+    ]
+  },
+  "non_public_classes": [
+    {
+      "id": "INT-OC8-TAX-ACCT-AUDIT",
+      "name": "Tax, accounting, BPO, perícia and related BR finance",
+      "public_rule": "INTERNAL_ONLY — not a public Solution area in V1",
+      "reason": "Delivered via OC8 reseller model; prior packs DO_NOT_PUBLISH; Issue #13 candidate area deferred pending Rubio decision",
+      "examples": [
+        "OC8_FIN_BR_CONT_*",
+        "OC8_TAX_*",
+        "OC8_AUD_BR_*",
+        "OCTUS_PF_BR_IRPF (OC8 delivery)"
+      ]
+    },
+    {
+      "id": "INT-LEG-LITIGATION-BR",
+      "name": "Brazil litigation catalogue (tributário contencioso, trabalhista, etc.)",
+      "public_rule": "INTERNAL_ONLY",
+      "reason": "Reserved practice / partner counsel path — not Octus Solutions face"
+    },
+    {
+      "id": "INT-ISO-PRODUCTS",
+      "name": "ISO certification products as catalogue SKUs",
+      "public_rule": "DO_NOT_PUBLISH until evidence gate",
+      "reason": "Readiness may be public; certification products need proof"
+    },
+    {
+      "id": "INT-PARTNER-BRANDS",
+      "name": "OC8, Antera, Rubio Adv., Irati as public brands",
+      "public_rule": "NEVER_PUBLIC_BRAND",
+      "reason": "Client pays Octus; partners are delivery provenance"
+    },
+    {
+      "id": "INT-ENGAGEMENT-P6",
+      "name": "Parceria Contínua / hour packages as a 7th Solution",
+      "public_rule": "ENGAGEMENT_MODEL_NOT_SOLUTION",
+      "reason": "P6 and hour blocks are how we engage, not a peer service area"
+    }
+  ],
+  "engagement_models": [
+    {
+      "name": "Lead Contractor Programme",
+      "role": "One point of accountability across layers"
+    },
+    {
+      "name": "Managed Project",
+      "role": "Defined scope programme"
+    },
+    {
+      "name": "Strategic Mandate",
+      "role": "High-stakes path design before scale"
+    },
+    {
+      "name": "Embedded Capability",
+      "role": "Operated capability inside the business"
+    }
+  ],
+  "industries": [
+    "iGaming",
+    "Fintech",
+    "Digital Assets",
+    "High-Risk Operations"
+  ],
+  "services": [
+    {
+      "id": "SA-01-01",
+      "public_area_id": "AREA-01",
+      "public_area": "Regulatory Strategy & Licensing",
+      "public_area_slug": "regulatory-strategy-licensing",
+      "service_name": "Licensing strategy & pathway design",
+      "one_sentence_description": "Pathway and sequencing design for the operation’s actual model — jurisdiction fit, ownership constraints and filing logic — before documentation is submitted.",
+      "common_client_need": "Entering a regulated market or changing venue",
+      "common_client_needs": [
+        "Entering a regulated market or changing venue",
+        "License stalled, deferred or conditioned",
+        "Structure incompatible with what the authority expects"
+      ],
+      "scope_included": [
+        "Jurisdiction-fit pathway design",
+        "Sequencing of filings vs operational readiness",
+        "Coordination plan for advisors and authorities"
+      ],
+      "scope_excluded": [
+        "Guaranteed licence approval",
+        "Acting as licensed counsel where reserved",
+        "Venue shopping without operational fit analysis"
+      ],
+      "typical_deliverables": [
+        "Licensing pathway memo",
+        "Filing sequence plan",
+        "Dependency map across corporate, compliance and banking"
+      ],
+      "client_profile": "Operators entering or changing a regulated venue who need a coherent licensing path before filing.",
+      "client_segment": null,
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets"
+      ],
+      "relevant_jurisdictions": [
+        "multi-jurisdiction by fit"
+      ],
+      "responsible_octus_capability": "Regulatory Strategy & Licensing (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "OCTUS_ADV_INTL_*",
+        "OCTUS_REG_* (programme coordination)",
+        "P3 Licença & Regulatório"
+      ],
+      "mapped_playbooks": [
+        "Axle playbooks for OCTUS_REG_* (partial)",
+        "Notion Regulatory hub"
+      ],
+      "delivery_model": "Typically a Managed Project or Lead Contractor programme when licensing sits inside a broader structural rebuild.",
+      "delivery_model_classes": [
+        "managed_project",
+        "lead_contractor",
+        "strategic_mandate"
+      ],
+      "public_status": "PUBLIC_CANDIDATE",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "HIGH",
+      "capacity_note": "Core Octus capability with live hub coverage; jurisdiction-specific filings vary by venue.",
+      "website_surface": "hub_section",
+      "website_route": null,
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    },
+    {
+      "id": "SA-01-02",
+      "public_area_id": "AREA-01",
+      "public_area": "Regulatory Strategy & Licensing",
+      "public_area_slug": "regulatory-strategy-licensing",
+      "service_name": "iGaming licensing programme",
+      "one_sentence_description": "Venue licensing as a structural programme: dossier coordination, local requirements and alignment with corporate, compliance and banking layers.",
+      "common_client_need": "Entering a regulated market or changing venue",
+      "common_client_needs": [
+        "Entering a regulated market or changing venue",
+        "License stalled, deferred or conditioned",
+        "Structure incompatible with what the authority expects"
+      ],
+      "scope_included": [
+        "Venue licensing programme coordination",
+        "Alignment with corporate, compliance and banking layers",
+        "Ongoing licence maintenance pathways when scoped"
+      ],
+      "scope_excluded": [
+        "Guaranteed licence issuance",
+        "Operating the gaming platform",
+        "Promising specific venue timelines as contractual SLAs"
+      ],
+      "typical_deliverables": [
+        "iGaming licensing workstream plan",
+        "Dossier coordination pack",
+        "Local/CSP requirement checklist"
+      ],
+      "client_profile": "iGaming operators seeking a regulated venue path without treating licensing as a broker product.",
+      "client_segment": null,
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets"
+      ],
+      "relevant_jurisdictions": [
+        "Anjouan",
+        "Curaçao",
+        "Kahnawake",
+        "Malta",
+        "Isle of Man",
+        "other venues by fit"
+      ],
+      "responsible_octus_capability": "Regulatory Strategy & Licensing (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "OCTUS_REG_ANJOUAN_LIC",
+        "OCTUS_REG_CURACAO_LIC",
+        "OCTUS_REG_KAHNAWAKE_LIC",
+        "OCTUS_REG_MALTA_LIC",
+        "OCTUS_REG_IOM_LIC",
+        "OCTUS_OPS_IGAMING_*"
+      ],
+      "mapped_playbooks": [
+        "AXLE_SERVICE_PLAYBOOKS: OCTUS_REG_ANJOUAN_LIC",
+        "OCTUS_REG_CURACAO_LIC",
+        "OCTUS_REG_MALTA_LIC (partial)"
+      ],
+      "delivery_model": "Typically a Managed Project or Lead Contractor programme when licensing sits inside a broader structural rebuild.",
+      "delivery_model_classes": [
+        "managed_project",
+        "lead_contractor",
+        "strategic_mandate"
+      ],
+      "public_status": "PUBLIC_CANDIDATE",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "HIGH",
+      "capacity_note": "Live deep page. Malta/complex EU venues marked partial in playbook coverage. Pilot SKUs for Anjouan/Curaçao gated (pricing/scope review).",
+      "website_surface": "dedicated_page",
+      "website_route": "/solutions/regulatory/igaming-licensing",
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    },
+    {
+      "id": "SA-01-03",
+      "public_area_id": "AREA-01",
+      "public_area": "Regulatory Strategy & Licensing",
+      "public_area_slug": "regulatory-strategy-licensing",
+      "service_name": "Fintech / EMI licensing",
+      "one_sentence_description": "Fintech and payments authorisation treated as an operable stack — not a standalone filing — so post-approval operation is structurally possible.",
+      "common_client_need": "Entering a regulated market or changing venue",
+      "common_client_needs": [
+        "Entering a regulated market or changing venue",
+        "License stalled, deferred or conditioned",
+        "Structure incompatible with what the authority expects"
+      ],
+      "scope_included": [
+        "EMI/PI-class and related fintech authorisation programme design",
+        "Sequencing with corporate and compliance layers"
+      ],
+      "scope_excluded": [
+        "Guaranteed authorisation",
+        "Bank account opening guarantees",
+        "Acting as the licensed e-money institution"
+      ],
+      "typical_deliverables": [
+        "Fintech/EMI licensing pathway",
+        "Operable-stack readiness map",
+        "Workstream plan with banking and compliance deps"
+      ],
+      "client_profile": "Fintech and payments operators needing authorisation treated as an operable stack.",
+      "client_segment": null,
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets"
+      ],
+      "relevant_jurisdictions": [
+        "multi-jurisdiction by fit"
+      ],
+      "responsible_octus_capability": "Regulatory Strategy & Licensing (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "OCTUS_REG_MNE_EMI",
+        "OCTUS_REG_LVA_EMI",
+        "OCTUS_REG_LTU_EMI",
+        "OCTUS_REG_UK_EMI",
+        "OCTUS_REG_CH_FINMA",
+        "OCTUS_REG_BR_BACEN",
+        "OCTUS_REG_OFFSHORE_CRYPTO",
+        "OCTUS_REG_EU_MICA"
+      ],
+      "mapped_playbooks": [
+        "AXLE: OCTUS_REG_MNE_EMI (partial — Rubio review noted)"
+      ],
+      "delivery_model": "Typically a Managed Project or Lead Contractor programme when licensing sits inside a broader structural rebuild.",
+      "delivery_model_classes": [
+        "managed_project",
+        "lead_contractor",
+        "strategic_mandate"
+      ],
+      "public_status": "PUBLIC_CANDIDATE",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "HIGH",
+      "capacity_note": "Live deep page. Several EMI playbooks partial pending legal review.",
+      "website_surface": "dedicated_page",
+      "website_route": "/solutions/regulatory/fintech-licensing",
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    },
+    {
+      "id": "SA-01-04",
+      "public_area_id": "AREA-01",
+      "public_area": "Regulatory Strategy & Licensing",
+      "public_area_slug": "regulatory-strategy-licensing",
+      "service_name": "Market entry coordination",
+      "one_sentence_description": "Entry into a new regulated market as a sequenced programme: regulatory, corporate, compliance and banking workstreams aligned before commercial commitments harden.",
+      "common_client_need": "Entering a regulated market or changing venue",
+      "common_client_needs": [
+        "Entering a regulated market or changing venue",
+        "License stalled, deferred or conditioned",
+        "Structure incompatible with what the authority expects"
+      ],
+      "scope_included": [
+        "Entry as sequenced programme across regulatory, corporate, compliance and banking",
+        "Coordination of workstreams before commercial commitments harden"
+      ],
+      "scope_excluded": [
+        "Guaranteed market access",
+        "Local entity formation without architecture",
+        "Treating International Hub as a standalone product"
+      ],
+      "typical_deliverables": [
+        "Market entry programme plan",
+        "Cross-workstream sequencing",
+        "Jurisdiction fit summary"
+      ],
+      "client_profile": "Groups expanding into a new regulated market who need structure before go-to-market.",
+      "client_segment": null,
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets"
+      ],
+      "relevant_jurisdictions": [
+        "multi-jurisdiction by fit"
+      ],
+      "responsible_octus_capability": "Regulatory Strategy & Licensing (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "P1 Setup Internacional",
+        "OCTUS_CORP_*",
+        "OCTUS_REG_*"
+      ],
+      "mapped_playbooks": [
+        "Partial — market entry deep page + commercial OS P1"
+      ],
+      "delivery_model": "Typically a Managed Project or Lead Contractor programme when licensing sits inside a broader structural rebuild.",
+      "delivery_model_classes": [
+        "managed_project",
+        "lead_contractor",
+        "strategic_mandate"
+      ],
+      "public_status": "PUBLIC_CANDIDATE",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "HIGH",
+      "capacity_note": "Live deep page. Legacy International Hub demoted to this programme lens.",
+      "website_surface": "dedicated_page",
+      "website_route": "/solutions/regulatory/market-entry",
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    },
+    {
+      "id": "SA-01-JUR",
+      "public_area_id": "AREA-01",
+      "public_area": "Regulatory Strategy & Licensing",
+      "public_area_slug": "regulatory-strategy-licensing",
+      "service_name": "Jurisdiction selection & risk mapping",
+      "one_sentence_description": "Comparative fit analysis across candidate venues — timeline, structural requirements, banking access and operational risk — selected for the operation, not for convenience.",
+      "common_client_need": "Entering a regulated market or changing venue",
+      "common_client_needs": [
+        "Entering a regulated market or changing venue",
+        "License stalled, deferred or conditioned",
+        "Structure incompatible with what the authority expects"
+      ],
+      "scope_included": [
+        "Comparative venue fit analysis",
+        "Timeline and structural requirement mapping",
+        "Banking-access risk notes at strategy level"
+      ],
+      "scope_excluded": [
+        "Selling jurisdictions as products",
+        "Guaranteed banking or licence outcomes by venue"
+      ],
+      "typical_deliverables": [
+        "Jurisdiction options memo",
+        "Comparative fit and risk map"
+      ],
+      "client_profile": "Operators choosing between candidate venues before committing to a filing path.",
+      "client_segment": null,
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets"
+      ],
+      "relevant_jurisdictions": [
+        "multi-jurisdiction by fit"
+      ],
+      "responsible_octus_capability": "Regulatory Strategy & Licensing (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "OCTUS_CORP_INTL_STUDY",
+        "advisory discovery / deep dive"
+      ],
+      "mapped_playbooks": [
+        "Website /jurisdictions education; strategy playbooks partial"
+      ],
+      "delivery_model": "Typically a Managed Project or Lead Contractor programme when licensing sits inside a broader structural rebuild.",
+      "delivery_model_classes": [
+        "managed_project",
+        "lead_contractor",
+        "strategic_mandate"
+      ],
+      "public_status": "PUBLIC_CANDIDATE",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "MEDIUM",
+      "capacity_note": "Education routes exist; not a dedicated Solutions deep page for every venue.",
+      "website_surface": "education_routes",
+      "website_route": "/jurisdictions",
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    },
+    {
+      "id": "SA-01-REG",
+      "public_area_id": "AREA-01",
+      "public_area": "Regulatory Strategy & Licensing",
+      "public_area_slug": "regulatory-strategy-licensing",
+      "service_name": "Regulator interaction planning",
+      "one_sentence_description": "Planning how the operation engages authorities and advisors — questions, clarifications and formal submissions — as a coordinated interface, without overclaiming representation.",
+      "common_client_need": "Entering a regulated market or changing venue",
+      "common_client_needs": [
+        "Entering a regulated market or changing venue",
+        "License stalled, deferred or conditioned",
+        "Structure incompatible with what the authority expects"
+      ],
+      "scope_included": [
+        "Planning how the operation engages authorities and advisors",
+        "Coordination of clarifications and formal submissions"
+      ],
+      "scope_excluded": [
+        "Overclaiming legal representation",
+        "Guaranteeing authority responses or outcomes"
+      ],
+      "typical_deliverables": [
+        "Authority engagement plan",
+        "Question/clarification tracker",
+        "Submission coordination checklist"
+      ],
+      "client_profile": "Teams whose filings stall because authority engagement is uncoordinated.",
+      "client_segment": null,
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets"
+      ],
+      "relevant_jurisdictions": [
+        "multi-jurisdiction by fit"
+      ],
+      "responsible_octus_capability": "Regulatory Strategy & Licensing (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "OCTUS_ADV_INTL_*",
+        "licensing programme SKUs"
+      ],
+      "mapped_playbooks": [
+        "Embedded in licensing playbooks"
+      ],
+      "delivery_model": "Typically a Managed Project or Lead Contractor programme when licensing sits inside a broader structural rebuild.",
+      "delivery_model_classes": [
+        "managed_project",
+        "lead_contractor",
+        "strategic_mandate"
+      ],
+      "public_status": "PUBLIC_CANDIDATE",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "MEDIUM",
+      "capacity_note": "Hub section only; no dedicated public deep page.",
+      "website_surface": "hub_section",
+      "website_route": null,
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    },
+    {
+      "id": "SA-01-05",
+      "public_area_id": "AREA-01",
+      "public_area": "Regulatory Strategy & Licensing",
+      "public_area_slug": "regulatory-strategy-licensing",
+      "service_name": "Brazil SPA/MF regulatory support",
+      "one_sentence_description": "Brazil-facing regulatory coordination for operators entering or adapting to the national betting framework — corporate sequencing, dossier workstreams and authority interaction planning.",
+      "common_client_need": "Entering a regulated market or changing venue",
+      "common_client_needs": [
+        "Entering a regulated market or changing venue",
+        "License stalled, deferred or conditioned",
+        "Structure incompatible with what the authority expects"
+      ],
+      "scope_included": [
+        "Brazil-facing regulatory coordination for betting/operator framework entry or adaptation",
+        "Dossier workstream coordination with counsel"
+      ],
+      "scope_excluded": [
+        "Guaranteed SPA/MF authorisation",
+        "Publishing OC8 or counsel brands as the Octus face"
+      ],
+      "typical_deliverables": [
+        "Brazil regulatory workstream plan",
+        "Corporate sequencing notes",
+        "Authority interaction planning"
+      ],
+      "client_profile": "Operators entering or adapting to Brazil's national betting framework.",
+      "client_segment": null,
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets"
+      ],
+      "relevant_jurisdictions": [
+        "Brazil"
+      ],
+      "responsible_octus_capability": "Regulatory Strategy & Licensing (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "OCTUS_REG_BR_SPA (tbd)",
+        "OCTUS_OPS_IGAMING_REPLEGAL",
+        "Brazil education content"
+      ],
+      "mapped_playbooks": [
+        "Catalog marks OCTUS_REG_BR_SPA as tbd / inquiry"
+      ],
+      "delivery_model": "Typically a Managed Project or Lead Contractor programme when licensing sits inside a broader structural rebuild.",
+      "delivery_model_classes": [
+        "managed_project",
+        "lead_contractor",
+        "strategic_mandate"
+      ],
+      "public_status": "PUBLIC_CANDIDATE_CONTROLLED",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "MEDIUM",
+      "capacity_note": "Public education via /brazil. SPA SKU status tbd pending regulatory clarity — do not overclaim.",
+      "website_surface": "specialist_page",
+      "website_route": "/brazil",
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    },
+    {
+      "id": "SA-02-01",
+      "public_area_id": "AREA-02",
+      "public_area": "Banking, Payments & Financial Infrastructure",
+      "public_area_slug": "banking-payments-infrastructure",
+      "service_name": "Banking readiness / bankability",
+      "one_sentence_description": "Structural readiness for banking conversations: documentation, ownership clarity and compliance posture aligned to how onboarding actually scrutinises high-risk operations. No promised accounts.",
+      "common_client_need": "Bank or PSP rejection loops",
+      "common_client_needs": [
+        "Bank or PSP rejection loops",
+        "Licensed but unable to move funds",
+        "Payment stack incompatible with risk profile"
+      ],
+      "scope_included": [
+        "Structural readiness for banking conversations",
+        "Alignment of ownership, compliance posture and documentation"
+      ],
+      "scope_excluded": [
+        "Promised bank accounts",
+        "Guaranteed onboarding outcomes",
+        "Acting as the bank"
+      ],
+      "typical_deliverables": [
+        "Bankability readiness pack",
+        "Documentation and ownership clarity checklist",
+        "Bank/PSP optioning notes (non-promise)"
+      ],
+      "client_profile": "Licensed or near-licensed operators stuck in bank or PSP rejection loops.",
+      "client_segment": null,
+      "relevant_industries": [
+        "High-Risk Operations",
+        "Fintech",
+        "iGaming"
+      ],
+      "relevant_jurisdictions": [
+        "multi-jurisdiction by fit"
+      ],
+      "responsible_octus_capability": "Banking, Payments & Financial Infrastructure (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "OCTUS_BNK_INTL_HIGHRISK",
+        "OCTUS_BNK_INTL_PSP",
+        "octus-pilot-banking-support",
+        "P4 Conta Bancária Operacional Internacional"
+      ],
+      "mapped_playbooks": [
+        "Axle banking playbooks (partial — high-risk marked incomplete legal basis)"
+      ],
+      "delivery_model": "Often paired with Remediation when banking has already failed, or with Lead Contractor when building the full stack.",
+      "delivery_model_classes": [
+        "managed_project",
+        "lead_contractor",
+        "strategic_mandate"
+      ],
+      "public_status": "PUBLIC_CANDIDATE",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "HIGH",
+      "capacity_note": "Live banking deep page. High-risk banking playbook flagged for legal review — claims must stay process-level.",
+      "website_surface": "dedicated_page",
+      "website_route": "/solutions/banking/banking-payments",
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    },
+    {
+      "id": "SA-02-02",
+      "public_area_id": "AREA-02",
+      "public_area": "Banking, Payments & Financial Infrastructure",
+      "public_area_slug": "banking-payments-infrastructure",
+      "service_name": "Payment & PSP architecture",
+      "one_sentence_description": "Payment and PSP architecture options matched to the operation’s risk profile, markets and settlement needs — designed before provider conversations harden into dead ends.",
+      "common_client_need": "Bank or PSP rejection loops",
+      "common_client_needs": [
+        "Bank or PSP rejection loops",
+        "Licensed but unable to move funds",
+        "Payment stack incompatible with risk profile"
+      ],
+      "scope_included": [
+        "Payment and PSP architecture optioning",
+        "Matching stack choices to markets and risk"
+      ],
+      "scope_excluded": [
+        "Guaranteed PSP onboarding",
+        "Operating payment rails",
+        "Vendor margin disclosure"
+      ],
+      "typical_deliverables": [
+        "Payment/PSP architecture options",
+        "Provider map matched to risk profile",
+        "Settlement and stack notes"
+      ],
+      "client_profile": "Operators whose payment stack is incompatible with their risk profile or settlement needs.",
+      "client_segment": null,
+      "relevant_industries": [
+        "High-Risk Operations",
+        "Fintech",
+        "iGaming"
+      ],
+      "relevant_jurisdictions": [
+        "multi-jurisdiction by fit"
+      ],
+      "responsible_octus_capability": "Banking, Payments & Financial Infrastructure (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "OCTUS_BNK_INTL_PSP",
+        "OCTUS_OPS_IGAMING_PAY2",
+        "OCTUS_OPS_IGAMING_PAYILIM"
+      ],
+      "mapped_playbooks": [
+        "Notion Hub Métodos de Pagamento (referenced in prior packs)"
+      ],
+      "delivery_model": "Often paired with Remediation when banking has already failed, or with Lead Contractor when building the full stack.",
+      "delivery_model_classes": [
+        "managed_project",
+        "lead_contractor",
+        "strategic_mandate"
+      ],
+      "public_status": "PUBLIC_CANDIDATE",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "HIGH",
+      "capacity_note": "Covered on banking deep page; not a separate SKU gallery.",
+      "website_surface": "dedicated_page",
+      "website_route": "/solutions/banking/banking-payments",
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    },
+    {
+      "id": "SA-02-03",
+      "public_area_id": "AREA-02",
+      "public_area": "Banking, Payments & Financial Infrastructure",
+      "public_area_slug": "banking-payments-infrastructure",
+      "service_name": "Financial infrastructure remediation",
+      "one_sentence_description": "When banking or payment infrastructure has already failed, remediation is sequenced with compliance and corporate layers — often entering through the crisis door.",
+      "common_client_need": "Bank or PSP rejection loops",
+      "common_client_needs": [
+        "Bank or PSP rejection loops",
+        "Licensed but unable to move funds",
+        "Payment stack incompatible with risk profile"
+      ],
+      "scope_included": [
+        "Remediation when banking/payment infrastructure already failed",
+        "Coordination with compliance and corporate layers"
+      ],
+      "scope_excluded": [
+        "Guaranteed restoration of banking",
+        "Crisis theatre without structural fixes"
+      ],
+      "typical_deliverables": [
+        "Financial infrastructure remediation plan",
+        "Sequenced recovery workstreams"
+      ],
+      "client_profile": "Operators already rejected or cut off by banks/PSPs.",
+      "client_segment": null,
+      "relevant_industries": [
+        "High-Risk Operations",
+        "Fintech",
+        "iGaming"
+      ],
+      "relevant_jurisdictions": [
+        "multi-jurisdiction by fit"
+      ],
+      "responsible_octus_capability": "Banking + Operational Remediation (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "OCTUS_ADV_INTL_CRISIS",
+        "banking SKUs under remediation programmes"
+      ],
+      "mapped_playbooks": [
+        "Often routes via Solution 06 crisis entry"
+      ],
+      "delivery_model": "Often paired with Remediation when banking has already failed, or with Lead Contractor when building the full stack.",
+      "delivery_model_classes": [
+        "managed_project",
+        "lead_contractor",
+        "strategic_mandate"
+      ],
+      "public_status": "PUBLIC_CANDIDATE",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "MEDIUM",
+      "capacity_note": "Cross-links to Remediation; capacity is programme-based, not a standalone product promise.",
+      "website_surface": "hub_section_crosslink",
+      "website_route": null,
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    },
+    {
+      "id": "SA-03-01",
+      "public_area_id": "AREA-03",
+      "public_area": "Compliance & Risk Systems",
+      "public_area_slug": "compliance-risk-systems",
+      "service_name": "AML / KYC / CDD frameworks",
+      "one_sentence_description": "Operational frameworks for identification, monitoring and due diligence — designed to hold under regulator, bank and PSP scrutiny.",
+      "common_client_need": "Audit or banking questions the team cannot answer",
+      "common_client_needs": [
+        "Audit or banking questions the team cannot answer",
+        "Policies exist but operations do not",
+        "Need for embedded compliance capability"
+      ],
+      "scope_included": [
+        "Operational frameworks for identification, monitoring and due diligence",
+        "Design for regulator, bank and PSP scrutiny"
+      ],
+      "scope_excluded": [
+        "Guaranteed audit pass",
+        "Outsourcing client decision rights on risk acceptance"
+      ],
+      "typical_deliverables": [
+        "AML/KYC/CDD framework pack",
+        "Onboarding model",
+        "Monitoring design notes"
+      ],
+      "client_profile": "Regulated operators whose paper AML does not survive bank or regulator questions.",
+      "client_segment": null,
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk Operations"
+      ],
+      "relevant_jurisdictions": [
+        "multi-jurisdiction by fit"
+      ],
+      "responsible_octus_capability": "Compliance & Risk Systems (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "OCTUS_COMP_INTL_DD",
+        "OCTUS_COMP_INTL_POLICIES",
+        "OCTUS_COMP_CRYPTO_AML",
+        "ANTERA_SCAN/BUILD (delivery metadata internal)"
+      ],
+      "mapped_playbooks": [
+        "Notion KYC + Axle compliance playbooks"
+      ],
+      "delivery_model": "Managed Project for build-out; Embedded Capability for ongoing operated compliance.",
+      "delivery_model_classes": [
+        "managed_project",
+        "lead_contractor",
+        "strategic_mandate"
+      ],
+      "public_status": "PUBLIC_CANDIDATE",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "HIGH",
+      "capacity_note": "Live deep page. Delivery partners may execute; public brand remains Octus.",
+      "website_surface": "dedicated_page",
+      "website_route": "/solutions/compliance/aml-kyc",
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    },
+    {
+      "id": "SA-03-02",
+      "public_area_id": "AREA-03",
+      "public_area": "Compliance & Risk Systems",
+      "public_area_slug": "compliance-risk-systems",
+      "service_name": "Compliance-as-a-Service",
+      "one_sentence_description": "Operated compliance capability inside the business — accountable ownership of the compliance function without transferring decisions Octus does not control.",
+      "common_client_need": "Audit or banking questions the team cannot answer",
+      "common_client_needs": [
+        "Audit or banking questions the team cannot answer",
+        "Policies exist but operations do not",
+        "Need for embedded compliance capability"
+      ],
+      "scope_included": [
+        "Operated compliance capability inside the business",
+        "Ongoing ownership of the compliance function as scoped"
+      ],
+      "scope_excluded": [
+        "Transferring decisions Octus does not control",
+        "Naming delivery partners as public brands",
+        "Guaranteed regulatory outcomes"
+      ],
+      "typical_deliverables": [
+        "Operated compliance function model",
+        "RACI for CO role",
+        "Recurring reporting cadence (as scoped)"
+      ],
+      "client_profile": "Operators needing embedded compliance capability rather than one-off policies.",
+      "client_segment": null,
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk Operations"
+      ],
+      "relevant_jurisdictions": [
+        "multi-jurisdiction by fit"
+      ],
+      "responsible_octus_capability": "Compliance & Risk Systems (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "OCTUS_COMP_INTL_CO",
+        "ANTERA_SHIELD_* / ANTERA_AVUL_CO (internal delivery)",
+        "P5 / P6 pathways"
+      ],
+      "mapped_playbooks": [
+        "Notion CO + Antera delivery hubs (internal)"
+      ],
+      "delivery_model": "Managed Project for build-out; Embedded Capability for ongoing operated compliance.",
+      "delivery_model_classes": [
+        "embedded_capability",
+        "retainer",
+        "managed_project"
+      ],
+      "public_status": "PUBLIC_CANDIDATE",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "HIGH",
+      "capacity_note": "Live deep page. Recurring delivery depends on partner capacity; do not publish partner names.",
+      "website_surface": "dedicated_page",
+      "website_route": "/solutions/compliance/compliance-as-a-service",
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    },
+    {
+      "id": "SA-03-03",
+      "public_area_id": "AREA-03",
+      "public_area": "Compliance & Risk Systems",
+      "public_area_slug": "compliance-risk-systems",
+      "service_name": "DPO-as-a-Service",
+      "one_sentence_description": "Operated DPO capability for LGPD and GDPR contexts — privacy accountability as a working role, not a nominal appointment.",
+      "common_client_need": "Audit or banking questions the team cannot answer",
+      "common_client_needs": [
+        "Audit or banking questions the team cannot answer",
+        "Policies exist but operations do not",
+        "Need for embedded compliance capability"
+      ],
+      "scope_included": [
+        "Operated DPO capability for LGPD and GDPR contexts"
+      ],
+      "scope_excluded": [
+        "Nominal DPO appointment without operation",
+        "Guaranteed data-authority outcomes",
+        "Publishing delivery-partner brands"
+      ],
+      "typical_deliverables": [
+        "Operated DPO function model",
+        "Privacy accountability cadence",
+        "LGPD/GDPR working artefacts as scoped"
+      ],
+      "client_profile": "Operators needing a working privacy function, not a name on a form.",
+      "client_segment": null,
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk Operations"
+      ],
+      "relevant_jurisdictions": [
+        "multi-jurisdiction by fit"
+      ],
+      "responsible_octus_capability": "Compliance & Risk Systems (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "OCTUS_COMP_INTL_DPO",
+        "OCTUS_COMP_BR_LGPD",
+        "octus-pilot-dpo-support",
+        "ANTERA_AVUL_DPO (internal)"
+      ],
+      "mapped_playbooks": [
+        "Notion DPO hub"
+      ],
+      "delivery_model": "Managed Project for build-out; Embedded Capability for ongoing operated compliance.",
+      "delivery_model_classes": [
+        "embedded_capability",
+        "retainer",
+        "managed_project"
+      ],
+      "public_status": "PUBLIC_CANDIDATE",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "HIGH",
+      "capacity_note": "Live deep page. Pilot DPO support active in Axle seed (retainer-oriented).",
+      "website_surface": "dedicated_page",
+      "website_route": "/solutions/compliance/dpo-as-a-service",
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    },
+    {
+      "id": "SA-03-04",
+      "public_area_id": "AREA-03",
+      "public_area": "Compliance & Risk Systems",
+      "public_area_slug": "compliance-risk-systems",
+      "service_name": "Internal controls & governance",
+      "one_sentence_description": "Controls and governance design that run in operations — decision rights, evidence trails and process ownership that auditors and banks can actually test.",
+      "common_client_need": "Audit or banking questions the team cannot answer",
+      "common_client_needs": [
+        "Audit or banking questions the team cannot answer",
+        "Policies exist but operations do not",
+        "Need for embedded compliance capability"
+      ],
+      "scope_included": [
+        "Controls and governance design that run in operations"
+      ],
+      "scope_excluded": [
+        "ISO certificates as Octus-issued products without evidence gate",
+        "Guaranteed auditor findings"
+      ],
+      "typical_deliverables": [
+        "Control framework design",
+        "Evidence trail model",
+        "Decision-rights map"
+      ],
+      "client_profile": "Operators whose banks or auditors cannot test how decisions and evidence actually work.",
+      "client_segment": null,
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk Operations"
+      ],
+      "relevant_jurisdictions": [
+        "multi-jurisdiction by fit"
+      ],
+      "responsible_octus_capability": "Compliance & Risk Systems (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "OCTUS_COMP_INTL_POLICIES",
+        "ANTERA_BUILD_* (internal delivery metadata)"
+      ],
+      "mapped_playbooks": [
+        "Notion Controles (partial depth on site)"
+      ],
+      "delivery_model": "Managed Project for build-out; Embedded Capability for ongoing operated compliance.",
+      "delivery_model_classes": [
+        "managed_project",
+        "lead_contractor",
+        "strategic_mandate"
+      ],
+      "public_status": "PUBLIC_CANDIDATE",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "MEDIUM",
+      "capacity_note": "Dedicated page exists but prior packs mark content as thin relative to other compliance pages.",
+      "website_surface": "dedicated_page",
+      "website_route": "/solutions/compliance/internal-controls",
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    },
+    {
+      "id": "SA-03-05",
+      "public_area_id": "AREA-03",
+      "public_area": "Compliance & Risk Systems",
+      "public_area_slug": "compliance-risk-systems",
+      "service_name": "GLI & certification readiness",
+      "one_sentence_description": "Evidence architecture and readiness coordination for laboratory and formal external review. Preparation and gap closure — not a promise of certification outcomes.",
+      "common_client_need": "Audit or banking questions the team cannot answer",
+      "common_client_needs": [
+        "Audit or banking questions the team cannot answer",
+        "Policies exist but operations do not",
+        "Need for embedded compliance capability"
+      ],
+      "scope_included": [
+        "Evidence architecture and readiness coordination for laboratory and formal external review"
+      ],
+      "scope_excluded": [
+        "Promising certification outcomes",
+        "Claiming Octus is the certifying laboratory",
+        "Publishing ISO product pages without evidence gate"
+      ],
+      "typical_deliverables": [
+        "Gap analysis",
+        "Evidence register",
+        "Readiness coordination plan"
+      ],
+      "client_profile": "Operators facing GLI or similar external review who need readiness, not theatre.",
+      "client_segment": null,
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk Operations"
+      ],
+      "relevant_jurisdictions": [
+        "multi-jurisdiction by fit"
+      ],
+      "responsible_octus_capability": "Compliance & Risk Systems (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "ANTERA_CERTIFY_GLI",
+        "ANTERA_CERTIFY_ISO* (INTERNAL until evidence)",
+        "related readiness SKUs"
+      ],
+      "mapped_playbooks": [
+        "Notion GLI + Hub Labs"
+      ],
+      "delivery_model": "Managed Project for build-out; Embedded Capability for ongoing operated compliance.",
+      "delivery_model_classes": [
+        "managed_project",
+        "lead_contractor",
+        "strategic_mandate"
+      ],
+      "public_status": "PUBLIC_CANDIDATE",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "HIGH",
+      "capacity_note": "Live deep page for readiness. ISO product pages remain DO_NOT_PUBLISH until evidence.",
+      "website_surface": "dedicated_page",
+      "website_route": "/solutions/compliance/gli-readiness",
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    },
+    {
+      "id": "SA-03-06",
+      "public_area_id": "AREA-03",
+      "public_area": "Compliance & Risk Systems",
+      "public_area_slug": "compliance-risk-systems",
+      "service_name": "Policies & due diligence",
+      "one_sentence_description": "Corporate policy suites and due diligence packs aligned to how the operation actually runs — AML, conduct, data and counterparty review as operating artefacts.",
+      "common_client_need": "Audit or banking questions the team cannot answer",
+      "common_client_needs": [
+        "Audit or banking questions the team cannot answer",
+        "Policies exist but operations do not",
+        "Need for embedded compliance capability"
+      ],
+      "scope_included": [
+        "Corporate policy suites and due diligence packs aligned to how the operation runs"
+      ],
+      "scope_excluded": [
+        "Shelf policies disconnected from operations",
+        "Guaranteed third-party acceptance"
+      ],
+      "typical_deliverables": [
+        "Policy suite",
+        "Due diligence pack templates",
+        "Operating-artefact alignment notes"
+      ],
+      "client_profile": "Operators needing policies and DD artefacts that match real flows.",
+      "client_segment": null,
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk Operations"
+      ],
+      "relevant_jurisdictions": [
+        "multi-jurisdiction by fit"
+      ],
+      "responsible_octus_capability": "Compliance & Risk Systems (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "OCTUS_COMP_INTL_POLICIES",
+        "OCTUS_COMP_INTL_DD"
+      ],
+      "mapped_playbooks": [
+        "Notion Políticas + DD"
+      ],
+      "delivery_model": "Managed Project for build-out; Embedded Capability for ongoing operated compliance.",
+      "delivery_model_classes": [
+        "managed_project",
+        "lead_contractor",
+        "strategic_mandate"
+      ],
+      "public_status": "PUBLIC_CANDIDATE",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "HIGH",
+      "capacity_note": "Hub section; no dedicated deep page yet.",
+      "website_surface": "hub_section",
+      "website_route": null,
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    },
+    {
+      "id": "SA-04-01",
+      "public_area_id": "AREA-04",
+      "public_area": "Corporate & Cross-Border Structuring",
+      "public_area_slug": "corporate-cross-border",
+      "service_name": "Entity & holding architecture",
+      "one_sentence_description": "Holdings and group design for regulated operations — so ownership, control and venue requirements remain coherent under scrutiny.",
+      "common_client_need": "Group structure blocks licensing or banking",
+      "common_client_needs": [
+        "Group structure blocks licensing or banking",
+        "Expansion requires coherent multi-venue organization",
+        "Ownership and governance need structural clarity"
+      ],
+      "scope_included": [
+        "Holdings and group design for regulated operations"
+      ],
+      "scope_excluded": [
+        "Offshore-as-SKU shopping",
+        "Tax/accounting retainer sold as this Solution face"
+      ],
+      "typical_deliverables": [
+        "Holding/group design memo",
+        "Ownership and control map",
+        "Venue-coherence notes"
+      ],
+      "client_profile": "Groups whose ownership chart will not survive licence or bank scrutiny.",
+      "client_segment": null,
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "High-Risk Operations"
+      ],
+      "relevant_jurisdictions": [
+        "multi-jurisdiction by fit"
+      ],
+      "responsible_octus_capability": "Corporate & Cross-Border Structuring (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "OCTUS_CORP_INTL_HOLDING (pricing_review)",
+        "OCTUS_CORP_INTL_STUDY",
+        "OCTUS_CORP_*"
+      ],
+      "mapped_playbooks": [
+        "Notion + Catalog HOLDING"
+      ],
+      "delivery_model": "Usually inside Lead Contractor or Managed Project with Regulatory and Banking hubs.",
+      "delivery_model_classes": [
+        "managed_project",
+        "lead_contractor",
+        "strategic_mandate"
+      ],
+      "public_status": "PUBLIC_CANDIDATE",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "HIGH",
+      "capacity_note": "Live deep page. Holding SKU pricing_review — no public prices.",
+      "website_surface": "dedicated_page",
+      "website_route": "/solutions/corporate/holding-design",
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    },
+    {
+      "id": "SA-04-02",
+      "public_area_id": "AREA-04",
+      "public_area": "Corporate & Cross-Border Structuring",
+      "public_area_slug": "corporate-cross-border",
+      "service_name": "Company formation (regulated ops)",
+      "one_sentence_description": "Formation inside a designed architecture — entities opened for license and banking fit, not as a standalone incorporation shop.",
+      "common_client_need": "Group structure blocks licensing or banking",
+      "common_client_needs": [
+        "Group structure blocks licensing or banking",
+        "Expansion requires coherent multi-venue organization",
+        "Ownership and governance need structural clarity"
+      ],
+      "scope_included": [
+        "Company formation as a step inside designed architecture"
+      ],
+      "scope_excluded": [
+        "Standalone incorporation shop",
+        "Guaranteed banking after formation"
+      ],
+      "typical_deliverables": [
+        "Formation plan inside architecture",
+        "Entity opening workstream",
+        "Registered agent / CSP coordination path"
+      ],
+      "client_profile": "Operators who need entities opened for licence and banking fit, not for brochure charts.",
+      "client_segment": null,
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "High-Risk Operations"
+      ],
+      "relevant_jurisdictions": [
+        "multi-jurisdiction by fit"
+      ],
+      "responsible_octus_capability": "Corporate & Cross-Border Structuring (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "OCTUS_CORP_US_DELAWARE",
+        "OCTUS_CORP_INTL_BVI",
+        "OCTUS_CORP_UK_LTD",
+        "OCTUS_CORP_BR_EMPRESA"
+      ],
+      "mapped_playbooks": [
+        "Notion Abertura"
+      ],
+      "delivery_model": "Usually inside Lead Contractor or Managed Project with Regulatory and Banking hubs.",
+      "delivery_model_classes": [
+        "managed_project",
+        "lead_contractor",
+        "strategic_mandate"
+      ],
+      "public_status": "PUBLIC_CANDIDATE",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "HIGH",
+      "capacity_note": "Live deep page. Formation is public; OC8 BR corporate ops remain internal delivery for some BR paths.",
+      "website_surface": "dedicated_page",
+      "website_route": "/solutions/corporate/company-formation",
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    },
+    {
+      "id": "SA-04-03",
+      "public_area_id": "AREA-04",
+      "public_area": "Corporate & Cross-Border Structuring",
+      "public_area_slug": "corporate-cross-border",
+      "service_name": "Cross-border structuring",
+      "one_sentence_description": "Multi-venue organisation design for groups that must hold together across jurisdictions. Language emphasises cross-border architecture over venue shopping.",
+      "common_client_need": "Group structure blocks licensing or banking",
+      "common_client_needs": [
+        "Group structure blocks licensing or banking",
+        "Expansion requires coherent multi-venue organization",
+        "Ownership and governance need structural clarity"
+      ],
+      "scope_included": [
+        "Multi-venue organisation design",
+        "Cross-border language preferred over offshore marketing"
+      ],
+      "scope_excluded": [
+        "Offshore formations as hero SKUs",
+        "Secrecy/evasion framing"
+      ],
+      "typical_deliverables": [
+        "Multi-venue organisation design",
+        "Cross-border structure memo"
+      ],
+      "client_profile": "Groups that must hold together across jurisdictions under regulated pressure.",
+      "client_segment": null,
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "High-Risk Operations"
+      ],
+      "relevant_jurisdictions": [
+        "multi-jurisdiction by fit"
+      ],
+      "responsible_octus_capability": "Corporate & Cross-Border Structuring (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "OCTUS_CORP_INTL_*",
+        "P1/P2 packages"
+      ],
+      "mapped_playbooks": [
+        "Notion Estrutura Offshore (rename language over time)"
+      ],
+      "delivery_model": "Usually inside Lead Contractor or Managed Project with Regulatory and Banking hubs.",
+      "delivery_model_classes": [
+        "managed_project",
+        "lead_contractor",
+        "strategic_mandate"
+      ],
+      "public_status": "PUBLIC_CANDIDATE",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "HIGH",
+      "capacity_note": "Live page still uses offshore slug historically; public language should say cross-border.",
+      "website_surface": "dedicated_page",
+      "website_route": "/solutions/corporate/offshore-structuring",
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    },
+    {
+      "id": "SA-04-GOV",
+      "public_area_id": "AREA-04",
+      "public_area": "Corporate & Cross-Border Structuring",
+      "public_area_slug": "corporate-cross-border",
+      "service_name": "Governance architecture",
+      "one_sentence_description": "Board, decision rights and group governance designed so regulated operations can answer ownership and control questions under pressure.",
+      "common_client_need": "Group structure blocks licensing or banking",
+      "common_client_needs": [
+        "Group structure blocks licensing or banking",
+        "Expansion requires coherent multi-venue organization",
+        "Ownership and governance need structural clarity"
+      ],
+      "scope_included": [
+        "Board, decision rights and group governance for regulated operations"
+      ],
+      "scope_excluded": [
+        "Serving as client board without engagement model",
+        "Litigation counsel catalogue"
+      ],
+      "typical_deliverables": [
+        "Governance architecture memo",
+        "Decision-rights map",
+        "Board/control answer pack"
+      ],
+      "client_profile": "Groups that cannot answer ownership and control questions under pressure.",
+      "client_segment": null,
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "High-Risk Operations"
+      ],
+      "relevant_jurisdictions": [
+        "multi-jurisdiction by fit"
+      ],
+      "responsible_octus_capability": "Corporate & Cross-Border Structuring (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "OCTUS_ADV_INTL_BOARD",
+        "corporate governance-related SKUs"
+      ],
+      "mapped_playbooks": [
+        "Partial — hub section"
+      ],
+      "delivery_model": "Usually inside Lead Contractor or Managed Project with Regulatory and Banking hubs.",
+      "delivery_model_classes": [
+        "managed_project",
+        "lead_contractor",
+        "strategic_mandate"
+      ],
+      "public_status": "PUBLIC_CANDIDATE",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "MEDIUM",
+      "capacity_note": "Hub section only in current public face.",
+      "website_surface": "hub_section",
+      "website_route": null,
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    },
+    {
+      "id": "SA-04-04",
+      "public_area_id": "AREA-04",
+      "public_area": "Corporate & Cross-Border Structuring",
+      "public_area_slug": "corporate-cross-border",
+      "service_name": "Ownership & UBO architecture",
+      "one_sentence_description": "Ownership and UBO layer for the individuals behind regulated operations — disclosure readiness and structural clarity without treating private clients as a separate brand.",
+      "common_client_need": "Group structure blocks licensing or banking",
+      "common_client_needs": [
+        "Group structure blocks licensing or banking",
+        "Expansion requires coherent multi-venue organization",
+        "Ownership and governance need structural clarity"
+      ],
+      "scope_included": [
+        "Ownership and UBO layer for individuals behind regulated operations",
+        "Disclosure readiness"
+      ],
+      "scope_excluded": [
+        "Private wealth brand positioning",
+        "Standalone residency/citizenship shop",
+        "PF tax retainers as public Solution"
+      ],
+      "typical_deliverables": [
+        "UBO/disclosure readiness framework",
+        "Personal vs operational asset separation notes",
+        "Individual KYC readiness pack"
+      ],
+      "client_profile": "Beneficial owners and controllers of regulated operations who need structural clarity under scrutiny.",
+      "client_segment": "Private clients / beneficial owners (segment overlay, not equal service pillar)",
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "High-Risk Operations"
+      ],
+      "relevant_jurisdictions": [
+        "multi-jurisdiction by fit"
+      ],
+      "responsible_octus_capability": "Corporate & Cross-Border Structuring (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "OCTUS_PF_* (controlled)",
+        "UBO-related corporate work"
+      ],
+      "mapped_playbooks": [
+        "Partial — /private-clients page is primary public surface"
+      ],
+      "delivery_model": "Usually inside Lead Contractor or Managed Project with Regulatory and Banking hubs.",
+      "delivery_model_classes": [
+        "managed_project",
+        "lead_contractor",
+        "strategic_mandate"
+      ],
+      "public_status": "PUBLIC_CANDIDATE",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "HIGH",
+      "capacity_note": "Specialist page /private-clients. Not a seventh Solution pillar. PF wealth/residency remain controlled/internal.",
+      "website_surface": "specialist_page",
+      "website_route": "/private-clients",
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    },
+    {
+      "id": "SA-04-05",
+      "public_area_id": "AREA-04",
+      "public_area": "Corporate & Cross-Border Structuring",
+      "public_area_slug": "corporate-cross-border",
+      "service_name": "Corporate reorganisation",
+      "one_sentence_description": "Reorganisation when the existing structure blocks licensing, banking or expansion — sequenced with regulatory and compliance workstreams.",
+      "common_client_need": "Group structure blocks licensing or banking",
+      "common_client_needs": [
+        "Group structure blocks licensing or banking",
+        "Expansion requires coherent multi-venue organization",
+        "Ownership and governance need structural clarity"
+      ],
+      "scope_included": [
+        "Reorganisation when existing structure blocks licensing, banking or expansion"
+      ],
+      "scope_excluded": [
+        "Pure M&A advisory as public hero",
+        "Tax optimisation as the public face"
+      ],
+      "typical_deliverables": [
+        "Reorganisation plan",
+        "Sequenced workstream with regulatory/compliance"
+      ],
+      "client_profile": "Groups whose current structure is the blocker.",
+      "client_segment": null,
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "High-Risk Operations"
+      ],
+      "relevant_jurisdictions": [
+        "multi-jurisdiction by fit"
+      ],
+      "responsible_octus_capability": "Corporate & Cross-Border Structuring (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "OCTUS_CORP_INTL_CLOSE",
+        "corporate reorg programmes"
+      ],
+      "mapped_playbooks": [
+        "Partial — legacy /corporate content"
+      ],
+      "delivery_model": "Usually inside Lead Contractor or Managed Project with Regulatory and Banking hubs.",
+      "delivery_model_classes": [
+        "managed_project",
+        "lead_contractor",
+        "strategic_mandate"
+      ],
+      "public_status": "PUBLIC_CANDIDATE",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "MEDIUM",
+      "capacity_note": "Hub section; depth often programme-based with Regulatory/Banking.",
+      "website_surface": "hub_section",
+      "website_route": null,
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    },
+    {
+      "id": "SA-05-01",
+      "public_area_id": "AREA-05",
+      "public_area": "Legal & Contractual Architecture",
+      "public_area_slug": "legal-contractual-architecture",
+      "service_name": "Contractual architecture",
+      "one_sentence_description": "Contract frameworks across group, operator and commercial layers — aligned to real flows so paper and practice do not diverge under audit.",
+      "common_client_need": "Contracts and structures do not match the operating model",
+      "common_client_needs": [
+        "Contracts and structures do not match the operating model",
+        "Multi-jurisdiction frameworks need a single coordinating layer",
+        "Counsel and operators need an execution counterpart"
+      ],
+      "scope_included": [
+        "Contract frameworks across group, operator and commercial layers"
+      ],
+      "scope_excluded": [
+        "Law-firm litigation shopfront",
+        "Reserved legal practice claims",
+        "Publishing Rubio Adv. catalogue as Octus Solutions"
+      ],
+      "typical_deliverables": [
+        "Contract framework map",
+        "Layered contract architecture notes"
+      ],
+      "client_profile": "Operators whose contracts do not match how the business actually runs.",
+      "client_segment": null,
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "High-Risk Operations"
+      ],
+      "relevant_jurisdictions": [
+        "multi-jurisdiction by fit"
+      ],
+      "responsible_octus_capability": "Legal & Contractual Architecture (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "OCTUS_LEG_INTL_CONTRATO",
+        "OCTUS_LEG_INTL_REVCONTRATO",
+        "OCTUS_LEG_INTL_NDA",
+        "octus-pilot-contract-review"
+      ],
+      "mapped_playbooks": [
+        "Notion Contratos + Catalog LEG"
+      ],
+      "delivery_model": "Typically coordinated under Lead Contractor with counsel retained as independent advisors.",
+      "delivery_model_classes": [
+        "managed_project",
+        "lead_contractor",
+        "strategic_mandate"
+      ],
+      "public_status": "PUBLIC_CANDIDATE",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "HIGH",
+      "capacity_note": "Hub-led. Pilot contract review active in Axle seed.",
+      "website_surface": "hub_section",
+      "website_route": null,
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    },
+    {
+      "id": "SA-05-02",
+      "public_area_id": "AREA-05",
+      "public_area": "Legal & Contractual Architecture",
+      "public_area_slug": "legal-contractual-architecture",
+      "service_name": "Structural legal frameworks",
+      "one_sentence_description": "Multi-jurisdiction legal coherence for regulated operations — coordinating frameworks with independent counsel where the venue requires it.",
+      "common_client_need": "Contracts and structures do not match the operating model",
+      "common_client_needs": [
+        "Contracts and structures do not match the operating model",
+        "Multi-jurisdiction frameworks need a single coordinating layer",
+        "Counsel and operators need an execution counterpart"
+      ],
+      "scope_included": [
+        "Coordinating legal frameworks with independent counsel where venue requires it"
+      ],
+      "scope_excluded": [
+        "Octus as the law firm of record",
+        "BR litigation catalogue as public Solution"
+      ],
+      "typical_deliverables": [
+        "Multi-jurisdiction framework map",
+        "Counsel coordination plan"
+      ],
+      "client_profile": "Multi-jurisdiction regulated groups needing legal coherence across venues.",
+      "client_segment": null,
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "High-Risk Operations"
+      ],
+      "relevant_jurisdictions": [
+        "multi-jurisdiction by fit"
+      ],
+      "responsible_octus_capability": "Legal & Contractual Architecture (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "OCTUS_LEG_INTL_OPINION",
+        "OCTUS_LEG_INTL_HORA"
+      ],
+      "mapped_playbooks": [
+        "Notion Legal hub (partial)"
+      ],
+      "delivery_model": "Typically coordinated under Lead Contractor with counsel retained as independent advisors.",
+      "delivery_model_classes": [
+        "managed_project",
+        "lead_contractor",
+        "strategic_mandate"
+      ],
+      "public_status": "PUBLIC_CANDIDATE",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "MEDIUM",
+      "capacity_note": "Boundary locked: architecture + coordination, not law firm.",
+      "website_surface": "hub_section",
+      "website_route": null,
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    },
+    {
+      "id": "SA-05-03",
+      "public_area_id": "AREA-05",
+      "public_area": "Legal & Contractual Architecture",
+      "public_area_slug": "legal-contractual-architecture",
+      "service_name": "Counsel coordination layer",
+      "one_sentence_description": "An execution counterpart for operators and counsel — sequencing structural legal work with licensing, corporate and compliance programmes.",
+      "common_client_need": "Contracts and structures do not match the operating model",
+      "common_client_needs": [
+        "Contracts and structures do not match the operating model",
+        "Multi-jurisdiction frameworks need a single coordinating layer",
+        "Counsel and operators need an execution counterpart"
+      ],
+      "scope_included": [
+        "Sequencing structural legal work with licensing, corporate and compliance programmes"
+      ],
+      "scope_excluded": [
+        "Replacing independent counsel",
+        "Publishing partner counsel brands as Octus"
+      ],
+      "typical_deliverables": [
+        "Counsel coordination model",
+        "Execution counterpart cadence"
+      ],
+      "client_profile": "Operators and counsel who need a single execution counterpart across workstreams.",
+      "client_segment": null,
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "High-Risk Operations"
+      ],
+      "relevant_jurisdictions": [
+        "multi-jurisdiction by fit"
+      ],
+      "responsible_octus_capability": "Legal & Contractual Architecture (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "Lead Contractor / engagement models",
+        "OCTUS_LEG_*"
+      ],
+      "mapped_playbooks": [
+        "Engagement model pages"
+      ],
+      "delivery_model": "Typically coordinated under Lead Contractor with counsel retained as independent advisors.",
+      "delivery_model_classes": [
+        "lead_contractor",
+        "managed_project"
+      ],
+      "public_status": "PUBLIC_CANDIDATE",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "HIGH",
+      "capacity_note": "Surfaced via /how-we-engage more than a service SKU page.",
+      "website_surface": "engagement_page",
+      "website_route": "/how-we-engage",
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    },
+    {
+      "id": "SA-06-01",
+      "public_area_id": "AREA-06",
+      "public_area": "Operational Remediation & Readiness",
+      "public_area_slug": "operational-remediation-readiness",
+      "service_name": "Crisis entry / structural assessment",
+      "one_sentence_description": "A single intake for blocked or failing operations — fast structural assessment and a sequenced action path.",
+      "common_client_need": "Licensing delayed or failing",
+      "common_client_needs": [
+        "Licensing delayed or failing",
+        "Banking rejection or instability",
+        "Compliance gaps under scrutiny",
+        "Audit readiness problems",
+        "Blocked market entry or regulatory exposure"
+      ],
+      "scope_included": [
+        "Single intake for blocked or failing operations",
+        "Fast structural assessment"
+      ],
+      "scope_excluded": [
+        "Guaranteed rescue outcomes",
+        "Catalogue shopping during crisis"
+      ],
+      "typical_deliverables": [
+        "Structural assessment",
+        "Sequenced action path",
+        "Failure-mode diagnosis"
+      ],
+      "client_profile": "Operators blocked, delayed, rejected or failing under regulatory pressure.",
+      "client_segment": null,
+      "relevant_industries": [
+        "High-Risk Operations",
+        "iGaming",
+        "Fintech"
+      ],
+      "relevant_jurisdictions": [
+        "multi-jurisdiction by fit"
+      ],
+      "responsible_octus_capability": "Operational Remediation & Readiness (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "OCTUS_ADV_INTL_CRISIS",
+        "A2 Gestão de Crise Premium",
+        "Discovery/Advisory funnel"
+      ],
+      "mapped_playbooks": [
+        "Commercial crisis entry + /diagnostic"
+      ],
+      "delivery_model": "Starts with Assess your situation; often converts to Lead Contractor or Managed Project once the failure mode is clear.",
+      "delivery_model_classes": [
+        "crisis_assessment",
+        "managed_project",
+        "lead_contractor"
+      ],
+      "public_status": "PUBLIC_CANDIDATE",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "HIGH",
+      "capacity_note": "Primary crisis door. Live diagnostic surface.",
+      "website_surface": "specialist_page",
+      "website_route": "/diagnostic",
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    },
+    {
+      "id": "SA-06-02",
+      "public_area_id": "AREA-06",
+      "public_area": "Operational Remediation & Readiness",
+      "public_area_slug": "operational-remediation-readiness",
+      "service_name": "Licensing delay remediation",
+      "one_sentence_description": "Unblocking stalled or conditioned licensing by fixing the structural causes — not by repeating the same filing with the same gaps.",
+      "common_client_need": "Licensing delayed or failing",
+      "common_client_needs": [
+        "Licensing delayed or failing",
+        "Banking rejection or instability",
+        "Compliance gaps under scrutiny",
+        "Audit readiness problems",
+        "Blocked market entry or regulatory exposure"
+      ],
+      "scope_included": [
+        "Unblocking stalled or conditioned licensing by fixing structural causes"
+      ],
+      "scope_excluded": [
+        "Repeating the same filing with the same gaps",
+        "Guaranteed approval"
+      ],
+      "typical_deliverables": [
+        "Licensing remediation workstream",
+        "Root-cause structural fix plan"
+      ],
+      "client_profile": "Operators with stalled or conditioned licences.",
+      "client_segment": null,
+      "relevant_industries": [
+        "High-Risk Operations",
+        "iGaming",
+        "Fintech"
+      ],
+      "relevant_jurisdictions": [
+        "multi-jurisdiction by fit"
+      ],
+      "responsible_octus_capability": "Operational Remediation + Regulatory (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "OCTUS_REG_* remediation programmes",
+        "OCTUS_ADV_INTL_CRISIS"
+      ],
+      "mapped_playbooks": [
+        "Partial — hub whenNeeded + Regulatory cross-link"
+      ],
+      "delivery_model": "Starts with Assess your situation; often converts to Lead Contractor or Managed Project once the failure mode is clear.",
+      "delivery_model_classes": [
+        "crisis_assessment",
+        "managed_project",
+        "lead_contractor"
+      ],
+      "public_status": "PUBLIC_CANDIDATE",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "MEDIUM",
+      "capacity_note": "Programme-based; ownership shared with Solution 01.",
+      "website_surface": "hub_section",
+      "website_route": null,
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    },
+    {
+      "id": "SA-06-03",
+      "public_area_id": "AREA-06",
+      "public_area": "Operational Remediation & Readiness",
+      "public_area_slug": "operational-remediation-readiness",
+      "service_name": "Banking & compliance gap remediation",
+      "one_sentence_description": "Remediation when banking rejection or compliance gaps are the live constraint — coordinated with the owning Solutions.",
+      "common_client_need": "Licensing delayed or failing",
+      "common_client_needs": [
+        "Licensing delayed or failing",
+        "Banking rejection or instability",
+        "Compliance gaps under scrutiny",
+        "Audit readiness problems",
+        "Blocked market entry or regulatory exposure"
+      ],
+      "scope_included": [
+        "Remediation when banking rejection or compliance gaps are the live constraint"
+      ],
+      "scope_excluded": [
+        "Promised accounts or audit passes"
+      ],
+      "typical_deliverables": [
+        "Banking/compliance gap remediation plan",
+        "Coordinated recovery workstreams"
+      ],
+      "client_profile": "Operators in active banking rejection or compliance scrutiny.",
+      "client_segment": null,
+      "relevant_industries": [
+        "High-Risk Operations",
+        "iGaming",
+        "Fintech"
+      ],
+      "relevant_jurisdictions": [
+        "multi-jurisdiction by fit"
+      ],
+      "responsible_octus_capability": "Operational Remediation + Banking/Compliance (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "banking + compliance SKUs under crisis programmes"
+      ],
+      "mapped_playbooks": [
+        "Partial — cross-hub"
+      ],
+      "delivery_model": "Starts with Assess your situation; often converts to Lead Contractor or Managed Project once the failure mode is clear.",
+      "delivery_model_classes": [
+        "crisis_assessment",
+        "managed_project",
+        "lead_contractor"
+      ],
+      "public_status": "PUBLIC_CANDIDATE",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "MEDIUM",
+      "capacity_note": "Coordinates with Solutions 02 and 03.",
+      "website_surface": "hub_section",
+      "website_route": null,
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    },
+    {
+      "id": "SA-06-04",
+      "public_area_id": "AREA-06",
+      "public_area": "Operational Remediation & Readiness",
+      "public_area_slug": "operational-remediation-readiness",
+      "service_name": "Audit & readiness remediation",
+      "one_sentence_description": "Evidence and readiness under pressure — gap closure and remediation sequencing when formal review is imminent or already failing.",
+      "common_client_need": "Licensing delayed or failing",
+      "common_client_needs": [
+        "Licensing delayed or failing",
+        "Banking rejection or instability",
+        "Compliance gaps under scrutiny",
+        "Audit readiness problems",
+        "Blocked market entry or regulatory exposure"
+      ],
+      "scope_included": [
+        "Evidence and readiness under pressure for formal review"
+      ],
+      "scope_excluded": [
+        "Guaranteed certification",
+        "Octus as the laboratory"
+      ],
+      "typical_deliverables": [
+        "Readiness gap closure plan",
+        "Evidence remediation sequence"
+      ],
+      "client_profile": "Operators facing imminent or failing formal review.",
+      "client_segment": null,
+      "relevant_industries": [
+        "High-Risk Operations",
+        "iGaming",
+        "Fintech"
+      ],
+      "relevant_jurisdictions": [
+        "multi-jurisdiction by fit"
+      ],
+      "responsible_octus_capability": "Operational Remediation + Compliance (Octus)",
+      "responsible_person": null,
+      "responsible_person_status": "HUMAN_ASSIGNMENT_REQUIRED",
+      "mapped_internal_skus": [
+        "ANTERA_CERTIFY_* readiness (internal)",
+        "GLI readiness pathway"
+      ],
+      "mapped_playbooks": [
+        "Notion Auditoria + GLI"
+      ],
+      "delivery_model": "Starts with Assess your situation; often converts to Lead Contractor or Managed Project once the failure mode is clear.",
+      "delivery_model_classes": [
+        "crisis_assessment",
+        "managed_project",
+        "lead_contractor"
+      ],
+      "public_status": "PUBLIC_CANDIDATE",
+      "catalog_lifecycle_status": "REQUIRES_RUBIO_REVIEW",
+      "confidence": "HIGH",
+      "capacity_note": "Cross-links to GLI readiness page; accounting audit/perícia OC8 stays INTERNAL.",
+      "website_surface": "crosslink_dedicated",
+      "website_route": "/solutions/compliance/gli-readiness",
+      "last_reviewed_date": "2026-08-02",
+      "evidence_source_paths": [
+        "octus-consulting/lib/commercial.ts",
+        "octus-consulting/docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+        "octus-consulting/docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+        "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+        "axle-dev-agent/docs/ops/evidence/OCTUS_COMMERCIAL/OPERATING_MODEL_2026-07-26/OFFER_ARCHITECTURE.md",
+        "GitHub Issue rubioprojects/octus-consulting#13"
+      ],
+      "invent_guard": "No invented services, cases, prices, or outcome guarantees."
+    }
+  ],
+  "counts": {
+    "public_areas": 6,
+    "public_services": 29,
+    "internal_only_classes": 5,
+    "services_high_confidence": 19,
+    "services_medium_confidence": 10,
+    "services_with_person_assigned": 0
+  },
+  "acceptance_tests_issue_13": {
+    "1_what_does_octus_do": "Octus designs and coordinates regulatory, licensing, banking, compliance, corporate and legal structures for highly regulated operations — and remediates them when they fail.",
+    "2_licensing_area": "Regulatory Strategy & Licensing",
+    "3_company_formation_area": "Corporate & Cross-Border Structuring",
+    "4_banking_payments_area": "Banking, Payments & Financial Infrastructure",
+    "5_tax_accounting_area": "NOT a public area in V1 draft — tax/accounting remain INTERNAL (OC8 delivery). Pending Rubio decision D-TAX-01.",
+    "6_who_delivers": "Octus owns the client relationship and coordinates delivery. Specialist partners may execute workstreams; partner brands are not public. Named person per service: HUMAN_ASSIGNMENT_REQUIRED.",
+    "7_contact": "Website Contact / discuss CTAs (website IA owned by WS2 — not mutated in this pack)."
+  },
+  "terminal_target": "OCTUS_PUBLIC_SERVICE_CATALOG_READY_FOR_RUBIO_REVIEW"
+}
