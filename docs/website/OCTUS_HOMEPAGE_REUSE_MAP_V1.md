@@ -4,6 +4,7 @@
 |-------|-------|
 | **Status** | `REQUIRES_RUBIO_REVIEW` |
 | **Date** | 2026-08-02 |
+| **Correction** | Capability section depends on approved seven — **not** six-plus-one |
 | **Rule** | Content map only — **do not** write an entirely new homepage yet |
 | **Source page** | `app/page.tsx` (+ brand/system components) |
 
@@ -11,7 +12,7 @@
 
 1. Who is Octus?
 2. What does Octus do?
-3. What are the seven areas?
+3. What are the seven areas? (`final_area_identity` for each from approved catalog only)
 4. Which industries does Octus serve?
 5. How does Octus work?
 6. Why trust Octus?
@@ -25,11 +26,11 @@
 
 | Field | Content |
 |-------|---------|
-| existing_component | Homepage hero / `PageHero` or equivalent atmosphere components from brand PRs |
-| existing_copy | “Premium Execution for Regulated Operations” and structural-failure framing |
-| needs_simplification | Yes — reduce abstract “structural” density; keep concrete |
+| existing_component | Homepage hero / atmosphere components from brand PRs |
+| existing_copy | “Premium Execution for Regulated Operations” and related framing |
+| needs_simplification | Yes — keep concrete; reduce abstract density |
 | catalog_dependency | Low for identity sentence; high if hero lists areas |
-| disposition | **Remain** — refine copy after claim register approval |
+| disposition | **Remain** — refine after claim register approval |
 
 ### S2 — What Octus does (one clear statement)
 
@@ -45,21 +46,22 @@
 
 | Field | Content |
 |-------|---------|
-| existing_component | Solutions / capability rail (currently **six**) |
-| existing_copy | Six hub titles from `lib/commercial.ts` |
-| needs_simplification | **Replace count and labels** — do not ship six as final |
-| catalog_dependency | **Hard dependency** on approved seven names |
-| disposition | **Remain as section**; **rebuild tiles** after approval |
+| existing_component | Capability / Solutions rail (currently shows **six temporary** hubs) |
+| existing_copy | Temporary hub titles from `lib/commercial.ts` — **not** approved seven |
+| needs_simplification | **Replace count and labels** with approved seven only |
+| catalog_dependency | **Hard dependency** — do not ship six, and do not assume six-plus-one |
+| disposition | **Remain as section**; **rebuild tiles** after `OCTUS_ORIGINAL_SEVEN_AREAS_RECONCILIATION_V1.md` is consumable |
+| forbidden_assumption | AREA-01…AREA-06 ≠ current six Solutions; AREA-07 ≠ “whatever is left” |
 
 ### S4 — Industries
 
 | Field | Content |
 |-------|---------|
-| existing_component | Markets links/cards pattern (`/markets`) |
+| existing_component | Markets links/cards (`/markets`) |
 | existing_copy | iGaming, Fintech, Digital Assets, High-Risk |
 | needs_simplification | Minor |
 | catalog_dependency | Low |
-| disposition | **Remain** |
+| disposition | **Remain** (industries layer, not service areas) |
 
 ### S5 — How Octus works
 
@@ -75,7 +77,7 @@
 
 | Field | Content |
 |-------|---------|
-| existing_component | People/trust bands (team PR lineage); failure-mode honesty; boundaries |
+| existing_component | People/trust bands; honesty/boundaries |
 | existing_copy | Team + “what we do not promise” |
 | needs_simplification | Avoid unverified metrics/cases |
 | catalog_dependency | Claim register |
@@ -87,8 +89,8 @@
 |-------|---------|
 | existing_component | CTA group (Discuss / Email / Contact) |
 | existing_copy | Conversation CTAs |
-| needs_simplification | Keep dual path: Contact vs Diagnostic for crisis |
-| catalog_dependency | None |
+| needs_simplification | Keep Contact; Diagnostic remains available as intake from remediation **content cluster** — hierarchy TBD |
+| catalog_dependency | None for contact mechanics |
 | disposition | **Remain** |
 
 ---
@@ -97,7 +99,7 @@
 
 | Current pattern | Disposition |
 |-----------------|-------------|
-| Long failure-mode stacks competing with areas | **Move** density to Remediation / Diagnostic |
+| Long failure-mode stacks competing with the capability map | **Move** density into remediation **content cluster** pages (`/diagnostic` and related) after role assignment — not pre-classified as an area |
 | Any “six solutions” explicit claim | **Remove/replace** after seven approved |
 | Conversion-only modules that obscure areas | **Human review** from PR #11 cherry-picks |
 
@@ -105,4 +107,5 @@
 
 - No new homepage implementation in this pack
 - No final seven labels on homepage
+- No six-plus-one tile plan
 - No production deploy

@@ -4,6 +4,7 @@
 |-------|-------|
 | **Status** | `REQUIRES_RUBIO_REVIEW` |
 | **Date** | 2026-08-02 |
+| **Correction** | Neutral toward original seven — **not** six-plus-one |
 | **Rule** | Do not finalize the new menu in this pack |
 | **Sources** | `components/Nav.tsx`, `components/SiteFooter.tsx`, route inventory |
 
@@ -11,8 +12,8 @@
 
 | Item | href | Assessment |
 |------|------|------------|
-| Solutions | /solutions | Useful entry — **label/count must change** after seven-area approval; currently encodes six |
-| Markets | /markets | Keep — industries layer |
+| Solutions | /solutions | Useful entry — **label/count must change** after seven-area approval; currently encodes six temporary Solutions |
+| Markets | /markets | Keep — industries layer (not a service-area substitute) |
 | How we engage | /how-we-engage | Keep — answers “how Octus works” |
 | Intelligence | /intelligence | Keep — knowledge system |
 | About | /about | Keep — overlaps What Octus Does (clarify later) |
@@ -33,70 +34,87 @@
 
 | Issue | Detail | Gap action (later) |
 |-------|--------|--------------------|
-| Solutions vs What Octus does | Both explain capability; Solutions is catalogue, What Octus does is identity | Keep both; stop treating Solutions “six” as final |
+| Solutions vs What Octus does | Both explain capability; Solutions is temporary catalogue face | Keep both; do not treat “six Solutions” as final seven |
 | About vs What Octus does | Overlapping positioning | Human clarify |
 | Intelligence vs Insights | Intentional split — keep | Ensure nav labels stay distinct |
 | “Solutions” word | May not match approved seven-area naming | Replace label only after catalog |
-| Banking deep under /solutions/banking vs hub | Duplicate mental model | Consolidation decision |
+| Banking deep vs banking hub | Duplicate mental model inside current face | Consolidation after catalog mapping |
 | Offshore Structuring | Unclear / sensitive label | Reposition after approval |
-| International Hub (legacy) | Redirected; name confuses with future Hub area | Do not revive as Hub |
+| Legacy “International Hub” URL | Redirected; name must not be confused with future Hub/Networking role | Do not revive as approved Hub |
 
-## 3. Routes that should become secondary
+## 3. Routes that should become secondary (interim observation)
 
-| Route | Why secondary |
-|-------|---------------|
-| Most solution deeps | Support area hubs; not top nav |
+| Route | Why secondary today |
+|-------|---------------------|
+| Most solution deeps | Depth pages — not top nav peers |
 | Jurisdiction children | Under Jurisdictions |
 | /brazil | Education satellite |
 | /resources/* | Resource library |
-| /diagnostic | Strong CTA from Remediation/footer — not top-nav peer to Markets |
+| /diagnostic | Strong intake CTA from current footer — hierarchy TBD by catalog |
 | Legal policies | Footer only |
 
-## 4. Support for original seven areas (placeholders)
+Secondary ≠ demoted forever. Final hierarchy awaits reconciliation.
 
-Until `OCTUS_ORIGINAL_SEVEN_AREAS_RECONCILIATION_V1.md` is approved, nav must **not** ship final names.
+## 4. Neutral seven-area nav slots
 
-| Placeholder | Existing nav/footer support today | Gap |
-|-------------|-----------------------------------|-----|
-| AREA-01 — NAME_FROM_APPROVED_CATALOG | Regulatory hub + licensing deeps in footer | Remap |
-| AREA-02 — NAME_FROM_APPROVED_CATALOG | Banking hub in footer | Remap |
-| AREA-03 — NAME_FROM_APPROVED_CATALOG | Compliance hub in footer | Remap |
-| AREA-04 — NAME_FROM_APPROVED_CATALOG | Corporate hub in footer | Remap |
-| AREA-05 — NAME_FROM_APPROVED_CATALOG | Legal hub in footer | Remap |
-| AREA-06 — NAME_FROM_APPROVED_CATALOG | Remediation hub in footer + diagnostic | **Keep visible** |
-| AREA-07 — NAME_FROM_APPROVED_CATALOG | Possibly Tax/Finance or Hub — **not clearly in primary nav** | **Major gap** |
+Until `OCTUS_ORIGINAL_SEVEN_AREAS_RECONCILIATION_V1.md` is approved, nav must **not** ship final names and must **not** bind slots to the current six Solutions.
 
-> Note: Issue #13 historically listed a seven-area *candidate* including Tax and Market Entry/Remediation. Rubio’s “original seven” may differ (e.g. include Hub). Website must wait for reconciliation artifact — placeholders only.
+| placeholder_area_id | final_area_identity | Current nav/footer | Gap |
+|---------------------|---------------------|--------------------|-----|
+| AREA-01 | `PENDING_APPROVED_CATALOG` | No approved binding | Slot reserved only |
+| AREA-02 | `PENDING_APPROVED_CATALOG` | No approved binding | Slot reserved only |
+| AREA-03 | `PENDING_APPROVED_CATALOG` | No approved binding | Slot reserved only |
+| AREA-04 | `PENDING_APPROVED_CATALOG` | No approved binding | Slot reserved only |
+| AREA-05 | `PENDING_APPROVED_CATALOG` | No approved binding | Slot reserved only |
+| AREA-06 | `PENDING_APPROVED_CATALOG` | No approved binding | Slot reserved only |
+| AREA-07 | `PENDING_APPROVED_CATALOG` | No approved binding | Slot reserved only |
 
-## 5. Areas currently absent or weak in nav
+**Current footer “Solutions” list** (six temporary hubs) is a **content-cluster index**, not a preview of AREA-01…AREA-06. Do not treat footer order as the approved seven.
 
-| Theme | Current treatment | Gap |
-|-------|-------------------|-----|
-| **Hub** (provider coordination) | Only `/partners` (collaboration classes); no Hub area | Need top-level or Services child after approval; no gallery |
-| **Private Clients** | Live `/private-clients` — **missing from primary nav and footer** | Elevate without making it a false 8th equal if catalog says segment — still must remain findable |
-| **Remediation** | In footer Solutions list + diagnostic link | Keep; do not demote |
-| **Tax / Accounting / Finance** | No dedicated public nav item | Depends on catalog AREA mapping |
-| **Market Entry** | Deep under regulatory; not top-level | Depends on whether it is its own area |
+## 5. Role-pending themes in navigation
 
-## 6. Remediation treatment (nav)
+Do not pre-classify hierarchy. Status for each:
 
-- Footer: Remediation & Readiness hub — **keep**.
-- Footer Engage: “Remediation assess” → `/diagnostic` — **keep**.
-- Do not fold exclusively into Contact.
+`ROLE_PENDING_ORIGINAL_SEVEN_AREAS_RECONCILIATION`
+
+| Theme | Current treatment (fact) | Website duty |
+|-------|--------------------------|--------------|
+| Hub / Networking | `/partners` only; no dedicated Hub nav item | Preserve seeds; prepare for any approved role; no gallery |
+| Private Clients | `/private-clients` live; **missing** from primary nav and footer | Preserve; remain findable; role TBD |
+| Remediation | In temporary Solutions footer + diagnostic link | Preserve content; do not demote/delete; role TBD |
+| Tax / Accounting / Audit | No dedicated public nav item | Do not invent nav item before catalog |
+| Market Entry | Deep page under current regulatory path; not top-level | Preserve deep; role TBD |
+
+## 6. Content clusters visible in today’s nav/footer
+
+For mapping later — **not** approved areas:
+
+- Regulatory cluster (footer hub + licensing deeps)
+- Banking cluster (footer hub + banking deep)
+- Compliance cluster (footer hub + compliance deeps)
+- Corporate cluster (footer hub + corporate deeps)
+- Legal cluster (footer hub)
+- Remediation cluster (footer hub + diagnostic)
+- Hub cluster (`/partners` and coordination language elsewhere)
+- Private Clients cluster (`/private-clients`, currently under-linked)
 
 ## 7. Recommended interim stance (no implementation)
 
 1. Leave production nav as-is until catalog consumable.
-2. Block any PR that hard-codes “six Solutions” as permanent IA.
-3. Prepare menu slots for seven areas + Markets + Insights + Company cluster.
-4. Plan Private Clients and Hub visibility explicitly in human review.
+2. Block any PR that hard-codes “six Solutions” as the permanent IA or as six-plus-one.
+3. Reserve seven neutral menu slots in planning only — labels from approved catalog only.
+4. Preserve Private Clients, Hub seeds, Remediation, Market Entry, and tax-related future needs without deciding hierarchy.
 
-## 8. Human decisions needed
+## 8. Human decisions needed (after catalog)
 
 | ID | Decision |
 |----|----------|
-| N-01 | Final top-nav label: “Services” vs “Solutions” vs approved wording |
-| N-02 | Whether Hub is a top-nav area or under Services |
-| N-03 | Private Clients: top-nav, Services child, or Company |
+| N-01 | Final top-nav label wording from approved catalog |
+| N-02 | How each of AREA-01…AREA-07 appears in nav (order, label, depth) |
+| N-03 | Nav treatment for each `ROLE_PENDING_*` theme once catalog assigns role |
 | N-04 | About vs What Octus Does retention in primary vs More |
-| N-05 | Exact seven names from approved catalog only |
+| N-05 | Exact seven names — catalog only |
+
+## Pause
+
+Nav work pauses at `OCTUS_WEBSITE_NEUTRAL_INTEGRATION_SHELL_READY` until the reconciliation artifact is consumable.
