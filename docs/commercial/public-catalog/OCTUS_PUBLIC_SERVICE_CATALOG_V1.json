@@ -1,0 +1,882 @@
+{
+  "schema_version": "1.0.0",
+  "catalog_id": "OCTUS_PUBLIC_SERVICE_CATALOG_V1",
+  "status": "REQUIRES_RUBIO_REVIEW",
+  "version": "V1",
+  "last_reviewed": "2026-08-02",
+  "owner": "octus-commercial-services-front",
+  "control_issue": "https://github.com/rubioprojects/octus-consulting/issues/13",
+  "language_default_public": "en",
+  "one_sentence_what_octus_does": "Octus helps regulated and high-scrutiny businesses design, license, bank, comply, structure and remediate operations across jurisdictions — coordinating specialists under one commercial relationship.",
+  "taxonomy": {
+    "recommended_public_area_count": 6,
+    "finance_candidate_area_count": 1,
+    "forced_seven": false,
+    "decision_refs": [
+      "D-TAXONOMY-01",
+      "D-TAX-01",
+      "D-SEGMENT-PC-01"
+    ]
+  },
+  "status_enum": [
+    "DRAFT",
+    "REQUIRES_RUBIO_REVIEW",
+    "HUMAN_APPROVED",
+    "CONSUMABLE_BY_WEBSITE",
+    "SUPERSEDED",
+    "INTERNAL_ONLY",
+    "CAPACITY_UNCLEAR"
+  ],
+  "industries": [
+    "iGaming",
+    "Fintech",
+    "Digital Assets",
+    "High-Risk"
+  ],
+  "client_segments": [
+    {
+      "id": "SEG-PRIVATE-CLIENTS",
+      "name": "Private Clients",
+      "treatment": "segment_not_service_area",
+      "public_route_today": "/private-clients",
+      "status": "REQUIRES_RUBIO_REVIEW"
+    }
+  ],
+  "delivery_models": [
+    {
+      "id": "DM-DISC",
+      "name": "Discovery"
+    },
+    {
+      "id": "DM-ADV",
+      "name": "Advisory"
+    },
+    {
+      "id": "DM-RET",
+      "name": "Continuous partnership retainer"
+    },
+    {
+      "id": "DM-PROJ",
+      "name": "Managed project"
+    },
+    {
+      "id": "DM-CRISIS",
+      "name": "Crisis / remediation entry"
+    }
+  ],
+  "public_areas": [
+    {
+      "id": "AREA-REG",
+      "name": "Regulatory Strategy & Licensing",
+      "one_sentence": "Pathways and programmes to obtain and maintain regulated licences.",
+      "website_hub": "/solutions/regulatory-strategy-licensing",
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "sort": 1
+    },
+    {
+      "id": "AREA-BNK",
+      "name": "Banking, Payments & Financial Infrastructure",
+      "one_sentence": "Readiness and architecture so licensed operations can move money.",
+      "website_hub": "/solutions/banking-payments-infrastructure",
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "sort": 2
+    },
+    {
+      "id": "AREA-CMP",
+      "name": "Compliance & Risk Systems",
+      "one_sentence": "Operated compliance, AML/KYC, DPO and controls that hold under scrutiny.",
+      "website_hub": "/solutions/compliance-risk-systems",
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "sort": 3
+    },
+    {
+      "id": "AREA-CORP",
+      "name": "Corporate & Cross-Border Structuring",
+      "one_sentence": "Entities, holdings and ownership architecture for multi-jurisdiction ops.",
+      "website_hub": "/solutions/corporate-cross-border",
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "sort": 4
+    },
+    {
+      "id": "AREA-LEG",
+      "name": "Legal & Contractual Architecture",
+      "one_sentence": "Contract and legal frameworks for regulated operations (not a law-firm shopfront).",
+      "website_hub": "/solutions/legal-contractual-architecture",
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "sort": 5
+    },
+    {
+      "id": "AREA-REM",
+      "name": "Operational Remediation & Readiness",
+      "one_sentence": "Entry point when licensing, banking, compliance or audit readiness is blocked.",
+      "website_hub": "/solutions/operational-remediation-readiness",
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "sort": 6
+    }
+  ],
+  "candidate_areas": [
+    {
+      "id": "AREA-TAX",
+      "name": "Tax, Accounting, Audit & Finance",
+      "one_sentence": "Accounting, tax, audit and finance programmes sold by Octus with partner delivery.",
+      "website_hub": null,
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "pillar_decision": "D-TAX-01",
+      "note": "Not auto-promoted to seventh public pillar. Findable for commercial use; partners unnamed publicly."
+    }
+  ],
+  "services": [
+    {
+      "id": "SVC-REG-01",
+      "public_area": "AREA-REG",
+      "name": "Licensing strategy & pathway design",
+      "one_sentence": "We design the licensing pathway and sequence before filings start.",
+      "typical_deliverables": [
+        "Pathway memo",
+        "filing plan",
+        "dependency map"
+      ],
+      "delivery_model": "Project",
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "mapped_service_areas": [
+        "SA-01-01"
+      ],
+      "mapped_internal_skus": [],
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": false
+    },
+    {
+      "id": "SVC-REG-02",
+      "public_area": "AREA-REG",
+      "name": "iGaming licensing programme",
+      "one_sentence": "We run iGaming licensing as a full programme, not a single filing.",
+      "typical_deliverables": [
+        "Programme plan",
+        "dossier checklist",
+        "maintenance outline"
+      ],
+      "delivery_model": "Project",
+      "relevant_industries": [
+        "iGaming"
+      ],
+      "mapped_service_areas": [
+        "SA-01-02"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_REG_ANJOUAN_LIC",
+        "OCTUS_REG_CURACAO_LIC",
+        "OCTUS_REG_KAHNAWAKE_LIC",
+        "OCTUS_REG_MALTA_LIC",
+        "OCTUS_REG_IOM_LIC",
+        "OCTUS_REG_BR_SPA"
+      ],
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": false
+    },
+    {
+      "id": "SVC-REG-03",
+      "public_area": "AREA-REG",
+      "name": "Fintech, EMI and crypto licensing",
+      "one_sentence": "We structure fintech and crypto licences as an operable stack, not paperwork alone.",
+      "typical_deliverables": [
+        "Programme plan",
+        "requirement matrix",
+        "workstream map"
+      ],
+      "delivery_model": "Project",
+      "relevant_industries": [
+        "Fintech",
+        "Digital Assets"
+      ],
+      "mapped_service_areas": [
+        "SA-01-03"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_REG_MNE_EMI",
+        "OCTUS_REG_LVA_EMI",
+        "OCTUS_REG_LTU_EMI",
+        "OCTUS_REG_UK_EMI",
+        "OCTUS_REG_CH_FINMA",
+        "OCTUS_REG_EU_MICA",
+        "OCTUS_REG_BR_BACEN"
+      ],
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": false
+    },
+    {
+      "id": "SVC-REG-04",
+      "public_area": "AREA-REG",
+      "name": "Market entry coordination",
+      "one_sentence": "We treat market entry as a structural project across jurisdiction, corporate, licence and banking.",
+      "typical_deliverables": [
+        "Entry plan",
+        "sequenced workstreams"
+      ],
+      "delivery_model": "Project",
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "mapped_service_areas": [
+        "SA-01-04"
+      ],
+      "mapped_internal_skus": [
+        "octus-p1",
+        "octus-p2"
+      ],
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": false
+    },
+    {
+      "id": "SVC-REG-05",
+      "public_area": "AREA-REG",
+      "name": "Brazil SPA / MF regulatory support",
+      "one_sentence": "We coordinate Brazil-facing authorisation workstreams with local counsel.",
+      "typical_deliverables": [
+        "Workstream plan",
+        "counsel brief pack"
+      ],
+      "delivery_model": "Project",
+      "relevant_industries": [
+        "iGaming",
+        "Fintech"
+      ],
+      "mapped_service_areas": [
+        "SA-01-05"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_REG_BR_SPA"
+      ],
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": false
+    },
+    {
+      "id": "SVC-BNK-01",
+      "public_area": "AREA-BNK",
+      "name": "Banking readiness / bankability",
+      "one_sentence": "We prepare the structure and evidence banks expect — without promising account approval.",
+      "typical_deliverables": [
+        "Readiness pack",
+        "bank option shortlist",
+        "gap list"
+      ],
+      "delivery_model": "Project",
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "mapped_service_areas": [
+        "SA-02-01"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_BNK_INTL_HIGHRISK"
+      ],
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": false
+    },
+    {
+      "id": "SVC-BNK-02",
+      "public_area": "AREA-BNK",
+      "name": "Payment and PSP architecture",
+      "one_sentence": "We design payment and PSP options that fit the risk and licence profile.",
+      "typical_deliverables": [
+        "Architecture options memo",
+        "provider map"
+      ],
+      "delivery_model": "Project",
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets"
+      ],
+      "mapped_service_areas": [
+        "SA-02-02"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_BNK_INTL_PSP",
+        "OCTUS_OPS_IGAMING_PAY2",
+        "OCTUS_OPS_IGAMING_PAYILIM"
+      ],
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": false
+    },
+    {
+      "id": "SVC-BNK-03",
+      "public_area": "AREA-BNK",
+      "name": "Financial infrastructure remediation",
+      "one_sentence": "We rebuild banking or payment infrastructure after failure or freeze.",
+      "typical_deliverables": [
+        "Remediation plan"
+      ],
+      "delivery_model": "Project",
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "mapped_service_areas": [
+        "SA-02-03"
+      ],
+      "mapped_internal_skus": [],
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": false
+    },
+    {
+      "id": "SVC-CMP-01",
+      "public_area": "AREA-CMP",
+      "name": "AML / KYC / CDD frameworks",
+      "one_sentence": "We build AML/KYC/CDD frameworks that can survive audit and banking questions.",
+      "typical_deliverables": [
+        "Policy suite",
+        "onboarding flow",
+        "CDD packs"
+      ],
+      "delivery_model": "Project",
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "mapped_service_areas": [
+        "SA-03-01"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_COMP_INTL_POLICIES",
+        "OCTUS_COMP_CRYPTO_AML"
+      ],
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": false
+    },
+    {
+      "id": "SVC-CMP-02",
+      "public_area": "AREA-CMP",
+      "name": "Compliance-as-a-Service",
+      "one_sentence": "We operate an ongoing compliance function under the Octus commercial face.",
+      "typical_deliverables": [
+        "Ongoing CO coverage model"
+      ],
+      "delivery_model": "Retainer",
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "mapped_service_areas": [
+        "SA-03-02"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_COMP_INTL_CO"
+      ],
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": false
+    },
+    {
+      "id": "SVC-CMP-03",
+      "public_area": "AREA-CMP",
+      "name": "DPO-as-a-Service",
+      "one_sentence": "We provide an operated DPO function for LGPD/GDPR obligations.",
+      "typical_deliverables": [
+        "DPO function coverage"
+      ],
+      "delivery_model": "Retainer",
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets"
+      ],
+      "mapped_service_areas": [
+        "SA-03-03"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_COMP_INTL_DPO"
+      ],
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": false
+    },
+    {
+      "id": "SVC-CMP-04",
+      "public_area": "AREA-CMP",
+      "name": "Internal controls and governance",
+      "one_sentence": "We design controls that run in day-to-day operations, not only on paper.",
+      "typical_deliverables": [
+        "Control framework",
+        "evidence outline"
+      ],
+      "delivery_model": "Project",
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "mapped_service_areas": [
+        "SA-03-04"
+      ],
+      "mapped_internal_skus": [],
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": false
+    },
+    {
+      "id": "SVC-CMP-05",
+      "public_area": "AREA-CMP",
+      "name": "Certification and lab readiness",
+      "one_sentence": "We prepare evidence and readiness before external certification or lab review.",
+      "typical_deliverables": [
+        "Gap analysis",
+        "evidence register"
+      ],
+      "delivery_model": "Project",
+      "relevant_industries": [
+        "iGaming",
+        "Fintech"
+      ],
+      "mapped_service_areas": [
+        "SA-03-05"
+      ],
+      "mapped_internal_skus": [],
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": false
+    },
+    {
+      "id": "SVC-CMP-06",
+      "public_area": "AREA-CMP",
+      "name": "Policies and due diligence packs",
+      "one_sentence": "We produce policy suites and due diligence packs for partners, vendors or UBOs.",
+      "typical_deliverables": [
+        "Policy suite",
+        "DD report"
+      ],
+      "delivery_model": "Project",
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "mapped_service_areas": [
+        "SA-03-06"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_COMP_INTL_DD"
+      ],
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": false
+    },
+    {
+      "id": "SVC-CORP-01",
+      "public_area": "AREA-CORP",
+      "name": "Entity and holding architecture",
+      "one_sentence": "We design holdings that separate risk and support regulated operations.",
+      "typical_deliverables": [
+        "Structure design memo"
+      ],
+      "delivery_model": "Project",
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "mapped_service_areas": [
+        "SA-04-01"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_CORP_INTL_HOLDING",
+        "OCTUS_CORP_INTL_STUDY"
+      ],
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": false
+    },
+    {
+      "id": "SVC-CORP-02",
+      "public_area": "AREA-CORP",
+      "name": "Company formation (inside architecture)",
+      "one_sentence": "We form companies as part of a regulated architecture — not as a formation shop.",
+      "typical_deliverables": [
+        "Formation plan",
+        "registered agent path"
+      ],
+      "delivery_model": "Project",
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "mapped_service_areas": [
+        "SA-04-02"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_CORP_US_DELAWARE",
+        "OCTUS_CORP_INTL_BVI",
+        "OCTUS_CORP_UK_LTD",
+        "OCTUS_CORP_BR_EMPRESA"
+      ],
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": false
+    },
+    {
+      "id": "SVC-CORP-03",
+      "public_area": "AREA-CORP",
+      "name": "Cross-border structuring",
+      "one_sentence": "We design multi-jurisdiction organisation for regulatory and banking scrutiny.",
+      "typical_deliverables": [
+        "Structure memo"
+      ],
+      "delivery_model": "Project",
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "mapped_service_areas": [
+        "SA-04-03"
+      ],
+      "mapped_internal_skus": [],
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": false
+    },
+    {
+      "id": "SVC-CORP-04",
+      "public_area": "AREA-CORP",
+      "name": "Ownership and UBO architecture",
+      "one_sentence": "We structure ownership and UBO disclosure for people behind regulated ops.",
+      "typical_deliverables": [
+        "UBO framework",
+        "disclosure readiness"
+      ],
+      "delivery_model": "Project",
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "mapped_service_areas": [
+        "SA-04-04"
+      ],
+      "mapped_internal_skus": [],
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": false
+    },
+    {
+      "id": "SVC-CORP-05",
+      "public_area": "AREA-CORP",
+      "name": "Corporate reorganisation",
+      "one_sentence": "We reorganise groups when the current structure blocks licence, bank or compliance.",
+      "typical_deliverables": [
+        "Reorg plan"
+      ],
+      "delivery_model": "Project",
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "mapped_service_areas": [
+        "SA-04-05"
+      ],
+      "mapped_internal_skus": [],
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": false
+    },
+    {
+      "id": "SVC-LEG-01",
+      "public_area": "AREA-LEG",
+      "name": "Contractual architecture",
+      "one_sentence": "We design the contract stack across operators, vendors, players and partners.",
+      "typical_deliverables": [
+        "Contract framework pack"
+      ],
+      "delivery_model": "Project",
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "mapped_service_areas": [
+        "SA-05-01"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_LEG_INTL_CONTRATO",
+        "OCTUS_LEG_INTL_REVCONTRATO",
+        "OCTUS_LEG_INTL_NDA"
+      ],
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": false
+    },
+    {
+      "id": "SVC-LEG-02",
+      "public_area": "AREA-LEG",
+      "name": "Multi-jurisdiction legal frameworks",
+      "one_sentence": "We map and coordinate legal frameworks across jurisdictions with counsel.",
+      "typical_deliverables": [
+        "Framework map"
+      ],
+      "delivery_model": "Project",
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "mapped_service_areas": [
+        "SA-05-02"
+      ],
+      "mapped_internal_skus": [],
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": false
+    },
+    {
+      "id": "SVC-LEG-03",
+      "public_area": "AREA-LEG",
+      "name": "Counsel coordination",
+      "one_sentence": "We coordinate specialist counsel so legal work stays aligned with the operating plan.",
+      "typical_deliverables": [
+        "Coordination model"
+      ],
+      "delivery_model": "Project",
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "mapped_service_areas": [
+        "SA-05-03"
+      ],
+      "mapped_internal_skus": [],
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": false
+    },
+    {
+      "id": "SVC-LEG-04",
+      "public_area": "AREA-LEG",
+      "name": "Legal opinions and certifications support",
+      "one_sentence": "We coordinate legal opinions and formal certifications required by banks or regulators.",
+      "typical_deliverables": [
+        "Opinion / certification coordination pack"
+      ],
+      "delivery_model": "Project",
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "mapped_service_areas": [],
+      "mapped_internal_skus": [
+        "OCTUS_LEG_INTL_OPINION",
+        "OCTUS_LEG_PT_CERTIF",
+        "OCTUS_LEG_BR_MARCA"
+      ],
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": false
+    },
+    {
+      "id": "SVC-REM-01",
+      "public_area": "AREA-REM",
+      "name": "Crisis entry / structural assessment",
+      "one_sentence": "Single door when something is blocked: we assess and set the next actions.",
+      "typical_deliverables": [
+        "Diagnostic + action plan"
+      ],
+      "delivery_model": "Crisis",
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "mapped_service_areas": [
+        "SA-06-01"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_ADV_INTL_CRISIS"
+      ],
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": false
+    },
+    {
+      "id": "SVC-REM-02",
+      "public_area": "AREA-REM",
+      "name": "Licensing delay remediation",
+      "one_sentence": "We unblock stalled or conditioned licensing programmes.",
+      "typical_deliverables": [
+        "Remediation workstream"
+      ],
+      "delivery_model": "Project",
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets"
+      ],
+      "mapped_service_areas": [
+        "SA-06-02"
+      ],
+      "mapped_internal_skus": [],
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": false
+    },
+    {
+      "id": "SVC-REM-03",
+      "public_area": "AREA-REM",
+      "name": "Banking or compliance gap remediation",
+      "one_sentence": "We close banking or compliance gaps that stop operations.",
+      "typical_deliverables": [
+        "Remediation workstream"
+      ],
+      "delivery_model": "Project",
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "mapped_service_areas": [
+        "SA-06-03"
+      ],
+      "mapped_internal_skus": [],
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": false
+    },
+    {
+      "id": "SVC-REM-04",
+      "public_area": "AREA-REM",
+      "name": "Audit and readiness remediation",
+      "one_sentence": "We prepare the operation for audit or certification under time pressure.",
+      "typical_deliverables": [
+        "Readiness + remediation plan"
+      ],
+      "delivery_model": "Project",
+      "relevant_industries": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "mapped_service_areas": [
+        "SA-06-04"
+      ],
+      "mapped_internal_skus": [],
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": false
+    }
+  ],
+  "do_not_publish": [
+    "OC8 brand name on public materials",
+    "Antera brand name on public materials",
+    "OC8 base costs and preferential rates",
+    "Antera SHIELD price modifiers",
+    "Markups and supplier margins",
+    "Full Catalog V2 SKU dump as navigation",
+    "Unverified SLA or outcome metrics",
+    "ISO certificates as Octus products without evidence approval",
+    "Rubio Adv. litigation catalogue as Solutions"
+  ],
+  "sources": [
+    "docs/website/service-architecture/SERVICE_CANONICAL_MASTER.md",
+    "docs/website/service-architecture/CANONICAL_SERVICE_TAXONOMY.md",
+    "lib/commercial.ts",
+    "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+    "axle-platform/docs/product/catalog/SERVICE_CATALOG_OPERATIONAL_MODEL_V3_2026-05-30.md",
+    "axle-platform/docs/product/playbooks/AXLE_SERVICE_PLAYBOOKS_COMPLETE_DRAFT_2026-05-30.md",
+    "axle-platform/docs/product/catalog/PILOT_SKU_ACTIVE_SET_2026-05-30.md",
+    "https://github.com/rubioprojects/octus-consulting/issues/13"
+  ],
+  "candidate_services": [
+    {
+      "id": "SVC-TAX-01",
+      "public_area": "AREA-TAX",
+      "name": "Brazil corporate accounting (via Octus)",
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "mapped_internal_skus": [
+        "OC8_FIN_BR_CONT_NAC",
+        "OC8_FIN_BR_CONT_INTL"
+      ],
+      "note": "Octus brand only; no OC8 public naming"
+    },
+    {
+      "id": "SVC-TAX-02",
+      "public_area": "AREA-TAX",
+      "name": "Corporate tax planning",
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "mapped_internal_skus": [
+        "OC8_TAX_BR_PLANTRIB",
+        "OCTUS_PF_INTL_PLANTRIB"
+      ]
+    },
+    {
+      "id": "SVC-TAX-03",
+      "public_area": "AREA-TAX",
+      "name": "Audit and financial statement readiness",
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "mapped_internal_skus": [
+        "OC8_AUD_BR_DFS",
+        "OC8_AUD_BR_CONT"
+      ]
+    },
+    {
+      "id": "SVC-TAX-04",
+      "public_area": "AREA-TAX",
+      "name": "Tax recovery / debt renegotiation programmes",
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "mapped_internal_skus": [
+        "OC8_SF_RECTRIB",
+        "OC8_SF_RENEGTRIB"
+      ],
+      "claim_caution": "success_fee_no_guaranteed_recovery"
+    },
+    {
+      "id": "SVC-TAX-05",
+      "public_area": "AREA-TAX",
+      "name": "Societária maintenance Brazil",
+      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "mapped_internal_skus": [
+        "OCTUS_RET_BR_MANUTENCAO"
+      ]
+    }
+  ]
+}
