@@ -4,7 +4,7 @@
 |-------|-------|
 | Date | 2026-08-02 |
 | Branch | `feat/seven-areas-website-architecture` |
-| Final HEAD | `183564ac287dd34a26f3dbb1f1eb9beca4d202b8` |
+| Final HEAD | `fbb8e0eeeac7d321e53b6a3360cb0bbcd8dc3198` |
 | Preview | https://octus-consulting-br12puta7-axle1.vercel.app |
 | PR | https://github.com/rubioprojects/octus-consulting/pull/17 |
 | Terminal | `OCTUS_WEBSITE_MERGE_CANDIDATE_READY_FOR_RUBIO_APPROVAL` |
@@ -19,7 +19,7 @@
 | mergeable_state | **clean** |
 | rebaseable | true |
 | base SHA | `3d98346519bc4fc715c5eeb2374cc80fa49bf3f0` |
-| head SHA | `183564ac287dd34a26f3dbb1f1eb9beca4d202b8` |
+| head SHA | `fbb8e0eeeac7d321e53b6a3360cb0bbcd8dc3198` |
 | Conflict resolution | **none** — no rebase/merge conflict; earlier `mergeable: false`/`UNKNOWN` was transient GitHub computation |
 | Website files changed for mergeability | **no** |
 
