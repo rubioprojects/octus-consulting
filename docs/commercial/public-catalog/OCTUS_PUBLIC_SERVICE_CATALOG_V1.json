@@ -1,0 +1,1811 @@
+{
+  "schema_version": "1.1.0",
+  "catalog_id": "OCTUS_PUBLIC_SERVICE_CATALOG_V1",
+  "status": "HUMAN_APPROVED",
+  "version": "V1.1-SEVEN-AREAS",
+  "last_reviewed": "2026-08-02",
+  "owner": "octus-commercial-services-front",
+  "control_issue": "https://github.com/rubioprojects/octus-consulting/issues/13",
+  "control_principle": "PRESERVE_RUBIO_ORIGINAL_SEVEN_AREAS",
+  "language_default_public": "en",
+  "one_sentence_what_octus_does": "Octus helps regulated businesses with licensing, compliance, legal and corporate structure, private-client ownership issues, remediation when things are blocked, and the specialist network those programmes need.",
+  "taxonomy": {
+    "recommended_public_area_count": 7,
+    "forced_seven": false,
+    "control_principle": "PRESERVE_RUBIO_ORIGINAL_SEVEN_AREAS",
+    "six_solutions_role": "Website implementation reference only — not controlling commercial taxonomy",
+    "decision_refs": [
+      "D-SEVEN-01",
+      "D-PC-NAME-01",
+      "D-REM-NAME-01",
+      "D-HUB-NAME-01",
+      "D-TAX-MAP-01",
+      "D-BNK-MAP-01"
+    ],
+    "recovered_from": [
+      "git:381b672 app/what-we-do/page.tsx",
+      "docs/website/CONTENT_ALIGNMENT_AUDIT.md",
+      "axle-dev-agent DES_MEM_02F seven areas crosswalk",
+      "axle-dev-agent DES_REF_01 icon areas",
+      "axle-dev-agent OCTUS_SEVEN_AREAS_TO_SIX_SOLUTIONS_CROSSWALK_M0.md"
+    ],
+    "human_approved": true,
+    "consumable_by_website": true,
+    "definitive_public_names": [
+      "Regulatory Structuring",
+      "Compliance & Risk",
+      "Legal & Structural Architecture",
+      "Corporate Structuring",
+      "Private Clients",
+      "Remediation & Readiness",
+      "International Hub"
+    ],
+    "historical_aliases": {
+      "Private Clients": "Ownership & UBO",
+      "Remediation & Readiness": "Audit & Readiness"
+    }
+  },
+  "status_enum": [
+    "DRAFT",
+    "REQUIRES_RUBIO_REVIEW",
+    "HUMAN_APPROVED",
+    "CONSUMABLE_BY_WEBSITE",
+    "SUPERSEDED",
+    "INTERNAL_ONLY",
+    "CAPACITY_UNCLEAR",
+    "REQUIRES_MILLA_REVIEW",
+    "HUMAN_EVIDENCE_REQUIRED"
+  ],
+  "industries": [
+    "iGaming",
+    "Fintech",
+    "Digital Assets",
+    "High-Risk"
+  ],
+  "delivery_models": [
+    {
+      "id": "DM-DISC",
+      "name": "Discovery"
+    },
+    {
+      "id": "DM-ADV",
+      "name": "Advisory"
+    },
+    {
+      "id": "DM-RET",
+      "name": "Continuous partnership retainer"
+    },
+    {
+      "id": "DM-PROJ",
+      "name": "Managed project"
+    },
+    {
+      "id": "DM-CRISIS",
+      "name": "Crisis / remediation entry"
+    }
+  ],
+  "public_areas": [
+    {
+      "id": "AREA-REG",
+      "name": "Regulatory Structuring",
+      "original_name": "Regulatory Structuring",
+      "one_sentence": "Jurisdiction fit, licensing pathways and regulatory programmes for regulated operations.",
+      "website_route_legacy": "/regulatory",
+      "website_hub_today": "/solutions/regulatory-strategy-licensing",
+      "treatment": "KEEP_ORIGINAL",
+      "naming_note": null,
+      "naming_status": "APPROVED",
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira (strategic oversight)",
+        "Esther Vendrami (international regulatory and licensing)",
+        "Caroline Giovanetti (Brazil regulatory)"
+      ],
+      "public_status": "HUMAN_APPROVED",
+      "sort": 1,
+      "executive_owner": "Rubio Teixeira",
+      "website_consumable": true
+    },
+    {
+      "id": "AREA-CMP",
+      "name": "Compliance & Risk",
+      "original_name": "Compliance & Risk",
+      "one_sentence": "Compliance frameworks, AML/KYC, DPO and controls that can run under real scrutiny.",
+      "website_route_legacy": "/compliance",
+      "website_hub_today": "/solutions/compliance-risk-systems",
+      "treatment": "KEEP_ORIGINAL",
+      "naming_note": null,
+      "naming_status": "APPROVED",
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira (governance)",
+        "Irati (compliance substance and delivery)",
+        "Maria Cristina (operational coordination where applicable)"
+      ],
+      "public_status": "HUMAN_APPROVED",
+      "sort": 2,
+      "executive_owner": "Rubio Teixeira",
+      "website_consumable": true
+    },
+    {
+      "id": "AREA-LEG",
+      "name": "Legal & Structural Architecture",
+      "original_name": "Legal & Structural Architecture",
+      "one_sentence": "Legal and contractual frameworks for regulated operations, coordinated with counsel where needed.",
+      "website_route_legacy": "/legal-architecture",
+      "website_hub_today": "/solutions/legal-contractual-architecture",
+      "treatment": "KEEP_ORIGINAL",
+      "naming_note": null,
+      "naming_status": "APPROVED",
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira",
+        "Rodrigo Coelho Lopes"
+      ],
+      "public_status": "HUMAN_APPROVED",
+      "sort": 3,
+      "executive_owner": "Rubio Teixeira",
+      "website_consumable": true
+    },
+    {
+      "id": "AREA-CORP",
+      "name": "Corporate Structuring",
+      "original_name": "Corporate Structuring",
+      "one_sentence": "Companies, holdings and group design for onshore, offshore and cross-border regulated operations.",
+      "website_route_legacy": "/corporate",
+      "website_hub_today": "/solutions/corporate-cross-border",
+      "treatment": "KEEP_ORIGINAL",
+      "naming_note": null,
+      "naming_status": "APPROVED",
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira (structural strategy)",
+        "Claudia Nery (corporate and financial architecture)",
+        "Esther Vendrami (international formation and operational coordination where applicable)",
+        "Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)"
+      ],
+      "public_status": "HUMAN_APPROVED",
+      "sort": 4,
+      "executive_owner": "Rubio Teixeira",
+      "website_consumable": true
+    },
+    {
+      "id": "AREA-PC",
+      "name": "Private Clients",
+      "original_name": "Ownership & UBO",
+      "one_sentence": "Personal and ownership structuring for founders, UBOs, executives and families tied to regulated operations.",
+      "website_route_legacy": "/private-clients",
+      "website_hub_today": "/private-clients",
+      "treatment": "KEEP_ORIGINAL",
+      "naming_note": "Historical alias only (not primary nav): Ownership & UBO",
+      "naming_status": "APPROVED",
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira",
+        "Claudia Nery",
+        "Rodrigo Coelho Lopes (where legal architecture is required)"
+      ],
+      "public_status": "HUMAN_APPROVED",
+      "sort": 5,
+      "executive_owner": "Rubio Teixeira",
+      "website_consumable": true,
+      "historical_alias": "Ownership & UBO"
+    },
+    {
+      "id": "AREA-REM",
+      "name": "Remediation & Readiness",
+      "original_name": "Audit & Readiness",
+      "one_sentence": "Diagnosis and fix when licensing, banking, compliance, corporate, finance or operations are already blocked or failing.",
+      "website_route_legacy": "/audit",
+      "website_hub_today": "/solutions/operational-remediation-readiness",
+      "treatment": "KEEP_ORIGINAL",
+      "naming_note": "Historical alias only (not primary nav): Audit & Readiness",
+      "naming_status": "APPROVED",
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira",
+        "Maria Cristina",
+        "Relevant area specialist according to root cause"
+      ],
+      "public_status": "HUMAN_APPROVED",
+      "sort": 6,
+      "executive_owner": "Rubio Teixeira",
+      "website_consumable": true,
+      "historical_alias": "Audit & Readiness"
+    },
+    {
+      "id": "AREA-HUB",
+      "name": "International Hub",
+      "original_name": "International Hub",
+      "one_sentence": "Finding, connecting and coordinating the banks, PSPs, CSPs, labs, counsel and other specialists a regulated operation needs.",
+      "website_route_legacy": "/international-hub",
+      "website_hub_today": "/solutions/regulatory/market-entry",
+      "treatment": "KEEP_ORIGINAL",
+      "naming_note": "Approved public name: International Hub",
+      "naming_status": "APPROVED",
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira",
+        "Milla Ludovico",
+        "Esther Vendrami (international providers and corporate dependencies)",
+        "Claudia Nery (banking and financial infrastructure)"
+      ],
+      "public_status": "HUMAN_APPROVED",
+      "sort": 7,
+      "executive_owner": "Rubio Teixeira",
+      "website_consumable": true
+    }
+  ],
+  "services": [
+    {
+      "id": "SVC-REG-01",
+      "name": "Licensing strategy and pathway design",
+      "primary_area": "AREA-REG",
+      "primary_area_name": "Regulatory Structuring",
+      "secondary_area": null,
+      "secondary_area_name": null,
+      "one_sentence": "We design the licensing pathway and sequence before filings start.",
+      "typical_client_need": "Entering a regulated market or changing venue without a clear filing path.",
+      "typical_deliverables": [
+        "Pathway memo",
+        "Filing plan",
+        "Dependency map"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [
+        "SA-01-01"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_ADV_INTL_*",
+        "P3 Licença & Regulatório"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira (strategic oversight)",
+        "Esther Vendrami (international regulatory and licensing)",
+        "Caroline Giovanetti (Brazil regulatory)"
+      ],
+      "capacity_note": null,
+      "claim_fence": null,
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-01-01",
+        "OCTUS_ADV_INTL_*",
+        "P3 Licença & Regulatório"
+      ]
+    },
+    {
+      "id": "SVC-REG-02",
+      "name": "iGaming licensing programme",
+      "primary_area": "AREA-REG",
+      "primary_area_name": "Regulatory Structuring",
+      "secondary_area": "AREA-HUB",
+      "secondary_area_name": "International Hub",
+      "one_sentence": "We run iGaming licensing as a full programme, not a standalone filing.",
+      "typical_client_need": "Operator needs a gaming licence path coordinated with corporate, compliance and banking.",
+      "typical_deliverables": [
+        "Licence workstream plan",
+        "Dossier coordination",
+        "Local requirement checklist"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [
+        "SA-01-02"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_REG_ANJOUAN_LIC",
+        "OCTUS_REG_CURACAO_LIC",
+        "OCTUS_REG_MALTA_LIC",
+        "OCTUS_REG_IOM_LIC"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira (strategic oversight)",
+        "Esther Vendrami (international regulatory and licensing)",
+        "Caroline Giovanetti (Brazil regulatory)"
+      ],
+      "capacity_note": null,
+      "claim_fence": null,
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-01-02",
+        "OCTUS_REG_ANJOUAN_LIC",
+        "OCTUS_REG_CURACAO_LIC",
+        "OCTUS_REG_MALTA_LIC",
+        "OCTUS_REG_IOM_LIC"
+      ]
+    },
+    {
+      "id": "SVC-REG-03",
+      "name": "Fintech, EMI and crypto licensing",
+      "primary_area": "AREA-REG",
+      "primary_area_name": "Regulatory Structuring",
+      "secondary_area": "AREA-CORP",
+      "secondary_area_name": "Corporate Structuring",
+      "one_sentence": "We treat fintech and payments authorisation as an operable stack, not a paper exercise.",
+      "typical_client_need": "EMI/PI or related authorisation without a workable operating setup.",
+      "typical_deliverables": [
+        "Authorisation pathway",
+        "Operable-stack readiness map"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [
+        "SA-01-03"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_REG_MNE_EMI",
+        "OCTUS_REG_LVA_EMI",
+        "OCTUS_REG_UK_EMI",
+        "OCTUS_REG_BR_BACEN"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira (strategic oversight)",
+        "Esther Vendrami (international regulatory and licensing)",
+        "Caroline Giovanetti (Brazil regulatory)"
+      ],
+      "capacity_note": null,
+      "claim_fence": null,
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-01-03",
+        "OCTUS_REG_MNE_EMI",
+        "OCTUS_REG_LVA_EMI",
+        "OCTUS_REG_UK_EMI",
+        "OCTUS_REG_BR_BACEN"
+      ]
+    },
+    {
+      "id": "SVC-REG-04",
+      "name": "Brazil SPA / MF regulatory support",
+      "primary_area": "AREA-REG",
+      "primary_area_name": "Regulatory Structuring",
+      "secondary_area": "AREA-CORP",
+      "secondary_area_name": "Corporate Structuring",
+      "one_sentence": "We coordinate Brazil-facing regulatory workstreams for betting and related frameworks.",
+      "typical_client_need": "Entering or adapting to Brazil’s national betting framework.",
+      "typical_deliverables": [
+        "Brazil workstream plan",
+        "Authority interaction planning"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [
+        "SA-01-05"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_REG_BR_SPA (tbd)",
+        "OCTUS_OPS_IGAMING_REPLEGAL"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira (strategic oversight)",
+        "Esther Vendrami (international regulatory and licensing)",
+        "Caroline Giovanetti (Brazil regulatory)"
+      ],
+      "capacity_note": "SKU tbd — soft wording only",
+      "claim_fence": null,
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-01-05",
+        "OCTUS_REG_BR_SPA (tbd)",
+        "OCTUS_OPS_IGAMING_REPLEGAL"
+      ]
+    },
+    {
+      "id": "SVC-REG-05",
+      "name": "Jurisdiction selection and risk mapping",
+      "primary_area": "AREA-REG",
+      "primary_area_name": "Regulatory Structuring",
+      "secondary_area": "AREA-HUB",
+      "secondary_area_name": "International Hub",
+      "one_sentence": "We compare venue options for fit, timeline, banking access and operational risk.",
+      "typical_client_need": "Choosing between candidate venues before committing to a filing path.",
+      "typical_deliverables": [
+        "Jurisdiction options memo",
+        "Comparative fit map"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [
+        "SA-01-JUR"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_CORP_INTL_STUDY",
+        "advisory"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira (strategic oversight)",
+        "Esther Vendrami (international regulatory and licensing)",
+        "Caroline Giovanetti (Brazil regulatory)"
+      ],
+      "capacity_note": null,
+      "claim_fence": null,
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-01-JUR",
+        "OCTUS_CORP_INTL_STUDY",
+        "advisory"
+      ]
+    },
+    {
+      "id": "SVC-CMP-01",
+      "name": "AML / KYC / CDD frameworks",
+      "primary_area": "AREA-CMP",
+      "primary_area_name": "Compliance & Risk",
+      "secondary_area": null,
+      "secondary_area_name": null,
+      "one_sentence": "We build identification, monitoring and due diligence frameworks that banks and regulators can test.",
+      "typical_client_need": "Paper AML that fails under bank or regulator questions.",
+      "typical_deliverables": [
+        "AML/KYC framework pack",
+        "Onboarding model"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [
+        "SA-03-01"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_COMP_INTL_DD",
+        "OCTUS_COMP_INTL_POLICIES",
+        "OCTUS_COMP_CRYPTO_AML"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira (governance)",
+        "Irati (compliance substance and delivery)",
+        "Maria Cristina (operational coordination where applicable)"
+      ],
+      "capacity_note": null,
+      "claim_fence": null,
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-03-01",
+        "OCTUS_COMP_INTL_DD",
+        "OCTUS_COMP_INTL_POLICIES",
+        "OCTUS_COMP_CRYPTO_AML"
+      ]
+    },
+    {
+      "id": "SVC-CMP-02",
+      "name": "Compliance-as-a-Service",
+      "primary_area": "AREA-CMP",
+      "primary_area_name": "Compliance & Risk",
+      "secondary_area": null,
+      "secondary_area_name": null,
+      "one_sentence": "We operate the compliance function inside the business as an ongoing service.",
+      "typical_client_need": "Need for embedded compliance ownership, not one-off policies.",
+      "typical_deliverables": [
+        "Operated compliance model",
+        "Reporting cadence as scoped"
+      ],
+      "delivery_model": "Retainer / Embedded",
+      "mapped_service_areas": [
+        "SA-03-02"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_COMP_INTL_CO",
+        "ANTERA_SHIELD_* (internal delivery)"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira (governance)",
+        "Irati (compliance substance and delivery)",
+        "Maria Cristina (operational coordination where applicable)"
+      ],
+      "capacity_note": null,
+      "claim_fence": null,
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-03-02",
+        "OCTUS_COMP_INTL_CO",
+        "ANTERA_SHIELD_* (internal delivery)"
+      ]
+    },
+    {
+      "id": "SVC-CMP-03",
+      "name": "DPO-as-a-Service",
+      "primary_area": "AREA-CMP",
+      "primary_area_name": "Compliance & Risk",
+      "secondary_area": null,
+      "secondary_area_name": null,
+      "one_sentence": "We operate the DPO role for LGPD and GDPR contexts as a working function.",
+      "typical_client_need": "Privacy role exists on paper but does not operate.",
+      "typical_deliverables": [
+        "Operated DPO model",
+        "Privacy working artefacts as scoped"
+      ],
+      "delivery_model": "Retainer / Embedded",
+      "mapped_service_areas": [
+        "SA-03-03"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_COMP_INTL_DPO",
+        "octus-pilot-dpo-support"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira (governance)",
+        "Irati (compliance substance and delivery)",
+        "Maria Cristina (operational coordination where applicable)"
+      ],
+      "capacity_note": null,
+      "claim_fence": null,
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-03-03",
+        "OCTUS_COMP_INTL_DPO",
+        "octus-pilot-dpo-support"
+      ]
+    },
+    {
+      "id": "SVC-CMP-04",
+      "name": "Internal controls and governance",
+      "primary_area": "AREA-CMP",
+      "primary_area_name": "Compliance & Risk",
+      "secondary_area": "AREA-CORP",
+      "secondary_area_name": "Corporate Structuring",
+      "one_sentence": "We design controls and decision rights that run in day-to-day operations.",
+      "typical_client_need": "Banks or auditors cannot test how decisions and evidence actually work.",
+      "typical_deliverables": [
+        "Control framework",
+        "Evidence trail model"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [
+        "SA-03-04"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_COMP_INTL_POLICIES"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira (governance)",
+        "Irati (compliance substance and delivery)",
+        "Maria Cristina (operational coordination where applicable)"
+      ],
+      "capacity_note": null,
+      "claim_fence": null,
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-03-04",
+        "OCTUS_COMP_INTL_POLICIES"
+      ]
+    },
+    {
+      "id": "SVC-CMP-05",
+      "name": "Certification and lab readiness",
+      "primary_area": "AREA-CMP",
+      "primary_area_name": "Compliance & Risk",
+      "secondary_area": "AREA-HUB",
+      "secondary_area_name": "International Hub",
+      "one_sentence": "We prepare evidence and readiness for laboratory and formal external review.",
+      "typical_client_need": "GLI or similar review approaching without a working evidence pack.",
+      "typical_deliverables": [
+        "Gap analysis",
+        "Evidence register",
+        "Readiness plan"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [
+        "SA-03-05"
+      ],
+      "mapped_internal_skus": [
+        "ANTERA_CERTIFY_GLI (internal delivery)"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira (governance)",
+        "Irati (compliance substance and delivery)",
+        "Maria Cristina (operational coordination where applicable)"
+      ],
+      "capacity_note": null,
+      "claim_fence": "Octus is not the laboratory; no certification promise",
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-03-05",
+        "ANTERA_CERTIFY_GLI (internal delivery)"
+      ]
+    },
+    {
+      "id": "SVC-CMP-06",
+      "name": "Policies and due diligence packs",
+      "primary_area": "AREA-CMP",
+      "primary_area_name": "Compliance & Risk",
+      "secondary_area": null,
+      "secondary_area_name": null,
+      "one_sentence": "We produce policy suites and due diligence packs aligned to how the operation actually runs.",
+      "typical_client_need": "Policies exist but do not match real flows.",
+      "typical_deliverables": [
+        "Policy suite",
+        "Due diligence pack"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [
+        "SA-03-06"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_COMP_INTL_POLICIES",
+        "OCTUS_COMP_INTL_DD"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira (governance)",
+        "Irati (compliance substance and delivery)",
+        "Maria Cristina (operational coordination where applicable)"
+      ],
+      "capacity_note": null,
+      "claim_fence": null,
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-03-06",
+        "OCTUS_COMP_INTL_POLICIES",
+        "OCTUS_COMP_INTL_DD"
+      ]
+    },
+    {
+      "id": "SVC-LEG-01",
+      "name": "Contractual architecture",
+      "primary_area": "AREA-LEG",
+      "primary_area_name": "Legal & Structural Architecture",
+      "secondary_area": null,
+      "secondary_area_name": null,
+      "one_sentence": "We design contract frameworks across group, operator and commercial layers.",
+      "typical_client_need": "Contracts do not match how the business actually runs.",
+      "typical_deliverables": [
+        "Contract framework map",
+        "Layered contract notes"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [
+        "SA-05-01"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_LEG_INTL_CONTRATO",
+        "octus-pilot-contract-review"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira",
+        "Rodrigo Coelho Lopes"
+      ],
+      "capacity_note": null,
+      "claim_fence": null,
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-05-01",
+        "OCTUS_LEG_INTL_CONTRATO",
+        "octus-pilot-contract-review"
+      ]
+    },
+    {
+      "id": "SVC-LEG-02",
+      "name": "Multi-jurisdiction legal frameworks",
+      "primary_area": "AREA-LEG",
+      "primary_area_name": "Legal & Structural Architecture",
+      "secondary_area": "AREA-CORP",
+      "secondary_area_name": "Corporate Structuring",
+      "one_sentence": "We coordinate legal coherence across jurisdictions with independent counsel where required.",
+      "typical_client_need": "Multi-venue group needs one clear legal map.",
+      "typical_deliverables": [
+        "Framework map",
+        "Counsel coordination plan"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [
+        "SA-05-02"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_LEG_INTL_OPINION"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira",
+        "Rodrigo Coelho Lopes"
+      ],
+      "capacity_note": null,
+      "claim_fence": null,
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-05-02",
+        "OCTUS_LEG_INTL_OPINION"
+      ]
+    },
+    {
+      "id": "SVC-LEG-03",
+      "name": "Counsel coordination",
+      "primary_area": "AREA-LEG",
+      "primary_area_name": "Legal & Structural Architecture",
+      "secondary_area": "AREA-HUB",
+      "secondary_area_name": "International Hub",
+      "one_sentence": "We act as the execution counterpart that sequences legal work with licensing, corporate and compliance programmes.",
+      "typical_client_need": "Operators and counsel need a single coordinating counterpart.",
+      "typical_deliverables": [
+        "Coordination model",
+        "Workstream cadence"
+      ],
+      "delivery_model": "Project / Lead Contractor",
+      "mapped_service_areas": [
+        "SA-05-03"
+      ],
+      "mapped_internal_skus": [
+        "Lead Contractor engagement",
+        "OCTUS_LEG_*"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira",
+        "Rodrigo Coelho Lopes"
+      ],
+      "capacity_note": null,
+      "claim_fence": null,
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-05-03",
+        "Lead Contractor engagement",
+        "OCTUS_LEG_*"
+      ]
+    },
+    {
+      "id": "SVC-LEG-04",
+      "name": "Legal opinions and certifications support",
+      "primary_area": "AREA-LEG",
+      "primary_area_name": "Legal & Structural Architecture",
+      "secondary_area": null,
+      "secondary_area_name": null,
+      "one_sentence": "We support legal opinions and related certification paperwork as part of a regulated programme.",
+      "typical_client_need": "Opinion or certification support required for licence or banking file.",
+      "typical_deliverables": [
+        "Opinion support pack",
+        "Certification checklist"
+      ],
+      "delivery_model": "Project / Hourly as scoped",
+      "mapped_service_areas": [
+        "SA-05-*"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_LEG_INTL_OPINION",
+        "OCTUS_LEG_PT_CERTIF"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira",
+        "Rodrigo Coelho Lopes"
+      ],
+      "capacity_note": null,
+      "claim_fence": null,
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-05-*",
+        "OCTUS_LEG_INTL_OPINION",
+        "OCTUS_LEG_PT_CERTIF"
+      ]
+    },
+    {
+      "id": "SVC-CORP-01",
+      "name": "Entity and holding architecture",
+      "primary_area": "AREA-CORP",
+      "primary_area_name": "Corporate Structuring",
+      "secondary_area": null,
+      "secondary_area_name": null,
+      "one_sentence": "We design holdings and group structures that stay coherent under licence and bank scrutiny.",
+      "typical_client_need": "Ownership chart will not survive licence or bank review.",
+      "typical_deliverables": [
+        "Holding design memo",
+        "Ownership and control map"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [
+        "SA-04-01"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_CORP_INTL_HOLDING",
+        "OCTUS_CORP_INTL_STUDY"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira (structural strategy)",
+        "Claudia Nery (corporate and financial architecture)",
+        "Esther Vendrami (international formation and operational coordination where applicable)",
+        "Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)"
+      ],
+      "capacity_note": null,
+      "claim_fence": null,
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-04-01",
+        "OCTUS_CORP_INTL_HOLDING",
+        "OCTUS_CORP_INTL_STUDY"
+      ]
+    },
+    {
+      "id": "SVC-CORP-02",
+      "name": "Company formation",
+      "primary_area": "AREA-CORP",
+      "primary_area_name": "Corporate Structuring",
+      "secondary_area": "AREA-HUB",
+      "secondary_area_name": "International Hub",
+      "one_sentence": "We open entities inside a designed architecture — not as a standalone incorporation shop.",
+      "typical_client_need": "Entities needed for licence and banking fit.",
+      "typical_deliverables": [
+        "Formation plan",
+        "Entity opening workstream"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [
+        "SA-04-02"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_CORP_US_DELAWARE",
+        "OCTUS_CORP_INTL_BVI",
+        "OCTUS_CORP_UK_LTD",
+        "OCTUS_CORP_BR_EMPRESA"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira (structural strategy)",
+        "Claudia Nery (corporate and financial architecture)",
+        "Esther Vendrami (international formation and operational coordination where applicable)",
+        "Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)"
+      ],
+      "capacity_note": null,
+      "claim_fence": null,
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-04-02",
+        "OCTUS_CORP_US_DELAWARE",
+        "OCTUS_CORP_INTL_BVI",
+        "OCTUS_CORP_UK_LTD",
+        "OCTUS_CORP_BR_EMPRESA"
+      ]
+    },
+    {
+      "id": "SVC-CORP-03",
+      "name": "Cross-border structuring",
+      "primary_area": "AREA-CORP",
+      "primary_area_name": "Corporate Structuring",
+      "secondary_area": "AREA-HUB",
+      "secondary_area_name": "International Hub",
+      "one_sentence": "We design multi-venue organisation so the group holds together across jurisdictions.",
+      "typical_client_need": "Expansion or multi-venue group without a coherent structure.",
+      "typical_deliverables": [
+        "Cross-border structure memo"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [
+        "SA-04-03"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_CORP_INTL_*",
+        "P1/P2"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira (structural strategy)",
+        "Claudia Nery (corporate and financial architecture)",
+        "Esther Vendrami (international formation and operational coordination where applicable)",
+        "Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)"
+      ],
+      "capacity_note": null,
+      "claim_fence": null,
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-04-03",
+        "OCTUS_CORP_INTL_*",
+        "P1/P2"
+      ]
+    },
+    {
+      "id": "SVC-CORP-04",
+      "name": "Corporate reorganisation",
+      "primary_area": "AREA-CORP",
+      "primary_area_name": "Corporate Structuring",
+      "secondary_area": "AREA-REM",
+      "secondary_area_name": "Remediation & Readiness",
+      "one_sentence": "We reorganise when the current structure blocks licensing, banking or expansion.",
+      "typical_client_need": "Existing structure is the blocker.",
+      "typical_deliverables": [
+        "Reorganisation plan",
+        "Sequenced workstreams"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [
+        "SA-04-05"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_CORP_INTL_CLOSE"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira (structural strategy)",
+        "Claudia Nery (corporate and financial architecture)",
+        "Esther Vendrami (international formation and operational coordination where applicable)",
+        "Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)"
+      ],
+      "capacity_note": null,
+      "claim_fence": null,
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-04-05",
+        "OCTUS_CORP_INTL_CLOSE"
+      ]
+    },
+    {
+      "id": "SVC-CORP-05",
+      "name": "Banking readiness",
+      "primary_area": "AREA-CORP",
+      "primary_area_name": "Corporate Structuring",
+      "secondary_area": "AREA-HUB",
+      "secondary_area_name": "International Hub",
+      "one_sentence": "We prepare ownership, documentation and compliance posture for real banking conversations. No promised accounts.",
+      "typical_client_need": "Licensed or near-licensed operator stuck in bank or PSP rejection loops.",
+      "typical_deliverables": [
+        "Bankability readiness pack",
+        "Documentation checklist"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [
+        "SA-02-01"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_BNK_INTL_HIGHRISK",
+        "octus-pilot-banking-support"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira (structural strategy)",
+        "Claudia Nery (corporate and financial architecture)",
+        "Esther Vendrami (international formation and operational coordination where applicable)",
+        "Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)"
+      ],
+      "capacity_note": null,
+      "claim_fence": "Never promise account opening",
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-02-01",
+        "OCTUS_BNK_INTL_HIGHRISK",
+        "octus-pilot-banking-support"
+      ]
+    },
+    {
+      "id": "SVC-CORP-06",
+      "name": "Accounting and finance coordination",
+      "primary_area": "AREA-CORP",
+      "primary_area_name": "Corporate Structuring",
+      "secondary_area": null,
+      "secondary_area_name": null,
+      "one_sentence": "We sell and coordinate accounting and finance programmes under the Octus relationship.",
+      "typical_client_need": "Regulated group needs accounting and finance run without managing multiple vendor relationships.",
+      "typical_deliverables": [
+        "Accounting programme scope",
+        "Monthly coordination model as scoped"
+      ],
+      "delivery_model": "Retainer / Project",
+      "mapped_service_areas": [],
+      "mapped_internal_skus": [
+        "OC8_FIN_BR_CONT_* (internal delivery)",
+        "OCTUS_RET_BR_MANUTENCAO"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira (structural strategy)",
+        "Claudia Nery (corporate and financial architecture)",
+        "Esther Vendrami (international formation and operational coordination where applicable)",
+        "Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)"
+      ],
+      "capacity_note": null,
+      "claim_fence": "Partner brands not named publicly",
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "OC8_FIN_BR_CONT_* (internal delivery)",
+        "OCTUS_RET_BR_MANUTENCAO"
+      ]
+    },
+    {
+      "id": "SVC-CORP-07",
+      "name": "Corporate tax planning",
+      "primary_area": "AREA-CORP",
+      "primary_area_name": "Corporate Structuring",
+      "secondary_area": "AREA-PC",
+      "secondary_area_name": "Private Clients",
+      "one_sentence": "We coordinate corporate tax planning for regulated groups under the Octus relationship.",
+      "typical_client_need": "Corporate tax planning required as part of structure or expansion.",
+      "typical_deliverables": [
+        "Tax planning memo as scoped"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [],
+      "mapped_internal_skus": [
+        "OC8_TAX_BR_PLANTRIB (internal delivery)",
+        "OCTUS_PF_INTL_PLANTRIB"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira (structural strategy)",
+        "Claudia Nery (corporate and financial architecture)",
+        "Esther Vendrami (international formation and operational coordination where applicable)",
+        "Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)"
+      ],
+      "capacity_note": null,
+      "claim_fence": "Partner brands not named publicly; no outcome guarantees",
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "OC8_TAX_BR_PLANTRIB (internal delivery)",
+        "OCTUS_PF_INTL_PLANTRIB"
+      ]
+    },
+    {
+      "id": "SVC-PC-01",
+      "name": "Ownership and UBO architecture",
+      "primary_area": "AREA-PC",
+      "primary_area_name": "Private Clients",
+      "secondary_area": "AREA-CORP",
+      "secondary_area_name": "Corporate Structuring",
+      "one_sentence": "We structure ownership and UBO layers for the individuals behind regulated operations.",
+      "typical_client_need": "Beneficial owners need disclosure readiness and structural clarity.",
+      "typical_deliverables": [
+        "UBO framework",
+        "Disclosure readiness pack"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [
+        "SA-04-04"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_PF_* controlled"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira",
+        "Claudia Nery",
+        "Rodrigo Coelho Lopes (where legal architecture is required)"
+      ],
+      "capacity_note": null,
+      "claim_fence": null,
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-04-04",
+        "OCTUS_PF_* controlled"
+      ]
+    },
+    {
+      "id": "SVC-PC-02",
+      "name": "Personal holding and asset organisation",
+      "primary_area": "AREA-PC",
+      "primary_area_name": "Private Clients",
+      "secondary_area": "AREA-CORP",
+      "secondary_area_name": "Corporate Structuring",
+      "one_sentence": "We organise personal holdings and separate personal assets from operational assets where needed.",
+      "typical_client_need": "Founders mix personal and operational assets in ways that fail scrutiny.",
+      "typical_deliverables": [
+        "Personal holding notes",
+        "Asset separation map"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [],
+      "mapped_internal_skus": [
+        "OCTUS_PF_INTL_WEALTH (thin playbook)",
+        "OCTUS_PF_INTL_INVEST"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira",
+        "Claudia Nery",
+        "Rodrigo Coelho Lopes (where legal architecture is required)"
+      ],
+      "capacity_note": "Playbook coverage thin — careful wording",
+      "claim_fence": null,
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "OCTUS_PF_INTL_WEALTH (thin playbook)",
+        "OCTUS_PF_INTL_INVEST"
+      ]
+    },
+    {
+      "id": "SVC-PC-03",
+      "name": "Residency and personal international structuring",
+      "primary_area": "AREA-PC",
+      "primary_area_name": "Private Clients",
+      "secondary_area": "AREA-HUB",
+      "secondary_area_name": "International Hub",
+      "one_sentence": "We coordinate residency and personal international structuring tied to regulated operations.",
+      "typical_client_need": "Founder or UBO needs residency or personal structure aligned to the business.",
+      "typical_deliverables": [
+        "Residency/structure options memo"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [],
+      "mapped_internal_skus": [
+        "OCTUS_PF_INTL_RESID"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira",
+        "Claudia Nery",
+        "Rodrigo Coelho Lopes (where legal architecture is required)"
+      ],
+      "capacity_note": "Controlled commercial; not a citizenship shop",
+      "claim_fence": null,
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "OCTUS_PF_INTL_RESID"
+      ]
+    },
+    {
+      "id": "SVC-PC-04",
+      "name": "Personal banking and individual KYC readiness",
+      "primary_area": "AREA-PC",
+      "primary_area_name": "Private Clients",
+      "secondary_area": "AREA-HUB",
+      "secondary_area_name": "International Hub",
+      "one_sentence": "We prepare individuals for personal banking and KYC scrutiny linked to regulated operations.",
+      "typical_client_need": "UBO or executive blocked in personal banking because the file is incomplete.",
+      "typical_deliverables": [
+        "Individual KYC readiness pack"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [],
+      "mapped_internal_skus": [
+        "OCTUS_PF_INTL_CONTA",
+        "OCTUS_BNK_PF_CONTA"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira",
+        "Claudia Nery",
+        "Rodrigo Coelho Lopes (where legal architecture is required)"
+      ],
+      "capacity_note": null,
+      "claim_fence": "No promised accounts",
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "OCTUS_PF_INTL_CONTA",
+        "OCTUS_BNK_PF_CONTA"
+      ]
+    },
+    {
+      "id": "SVC-PC-05",
+      "name": "Personal tax coordination",
+      "primary_area": "AREA-PC",
+      "primary_area_name": "Private Clients",
+      "secondary_area": "AREA-CORP",
+      "secondary_area_name": "Corporate Structuring",
+      "one_sentence": "We coordinate personal tax work for founders and UBOs under the Octus relationship.",
+      "typical_client_need": "IRPF or personal tax planning connected to the operating structure.",
+      "typical_deliverables": [
+        "Personal tax coordination scope"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [],
+      "mapped_internal_skus": [
+        "OCTUS_PF_BR_IRPF",
+        "OCTUS_PF_BR_DIAGTRIB"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira",
+        "Claudia Nery",
+        "Rodrigo Coelho Lopes (where legal architecture is required)"
+      ],
+      "capacity_note": null,
+      "claim_fence": "Partner brands not named publicly",
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "OCTUS_PF_BR_IRPF",
+        "OCTUS_PF_BR_DIAGTRIB"
+      ]
+    },
+    {
+      "id": "SVC-REM-01",
+      "name": "Crisis entry and structural assessment",
+      "primary_area": "AREA-REM",
+      "primary_area_name": "Remediation & Readiness",
+      "secondary_area": null,
+      "secondary_area_name": null,
+      "one_sentence": "A single intake when the operation is blocked, delayed, rejected or failing.",
+      "typical_client_need": "Live failure under regulatory or banking pressure.",
+      "typical_deliverables": [
+        "Structural assessment",
+        "Sequenced action path"
+      ],
+      "delivery_model": "Crisis / Project",
+      "mapped_service_areas": [
+        "SA-06-01"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_ADV_INTL_CRISIS"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira",
+        "Maria Cristina",
+        "Relevant area specialist according to root cause"
+      ],
+      "capacity_note": null,
+      "claim_fence": null,
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-06-01",
+        "OCTUS_ADV_INTL_CRISIS"
+      ]
+    },
+    {
+      "id": "SVC-REM-02",
+      "name": "Licensing delay remediation",
+      "primary_area": "AREA-REM",
+      "primary_area_name": "Remediation & Readiness",
+      "secondary_area": "AREA-REG",
+      "secondary_area_name": "Regulatory Structuring",
+      "one_sentence": "We unblock stalled or conditioned licensing by fixing the structural causes.",
+      "typical_client_need": "Licence delayed or conditioned with repeated failed filings.",
+      "typical_deliverables": [
+        "Remediation workstream",
+        "Root-cause fix plan"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [
+        "SA-06-02"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_REG_* remediation programmes"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira",
+        "Maria Cristina",
+        "Relevant area specialist according to root cause"
+      ],
+      "capacity_note": null,
+      "claim_fence": null,
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-06-02",
+        "OCTUS_REG_* remediation programmes"
+      ]
+    },
+    {
+      "id": "SVC-REM-03",
+      "name": "Banking or compliance gap remediation",
+      "primary_area": "AREA-REM",
+      "primary_area_name": "Remediation & Readiness",
+      "secondary_area": "AREA-CMP",
+      "secondary_area_name": "Compliance & Risk",
+      "one_sentence": "We remediate when banking rejection or compliance gaps are the live constraint.",
+      "typical_client_need": "Active bank rejection or compliance scrutiny.",
+      "typical_deliverables": [
+        "Gap remediation plan"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [
+        "SA-06-03"
+      ],
+      "mapped_internal_skus": [
+        "banking + compliance SKUs under crisis programmes"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira",
+        "Maria Cristina",
+        "Relevant area specialist according to root cause"
+      ],
+      "capacity_note": null,
+      "claim_fence": null,
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-06-03",
+        "banking + compliance SKUs under crisis programmes"
+      ]
+    },
+    {
+      "id": "SVC-REM-04",
+      "name": "Audit and readiness remediation",
+      "primary_area": "AREA-REM",
+      "primary_area_name": "Remediation & Readiness",
+      "secondary_area": "AREA-CMP",
+      "secondary_area_name": "Compliance & Risk",
+      "one_sentence": "We close evidence and readiness gaps when formal review is imminent or already failing.",
+      "typical_client_need": "Audit or certification review under pressure.",
+      "typical_deliverables": [
+        "Readiness gap closure plan",
+        "Evidence remediation sequence"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [
+        "SA-06-04"
+      ],
+      "mapped_internal_skus": [
+        "GLI readiness pathway",
+        "OC8_AUD_* subset (internal delivery)"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira",
+        "Maria Cristina",
+        "Relevant area specialist according to root cause"
+      ],
+      "capacity_note": null,
+      "claim_fence": null,
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-06-04",
+        "GLI readiness pathway",
+        "OC8_AUD_* subset (internal delivery)"
+      ]
+    },
+    {
+      "id": "SVC-REM-05",
+      "name": "Financial infrastructure remediation",
+      "primary_area": "AREA-REM",
+      "primary_area_name": "Remediation & Readiness",
+      "secondary_area": "AREA-HUB",
+      "secondary_area_name": "International Hub",
+      "one_sentence": "When banking or payment infrastructure has already failed, we sequence recovery with the right layers.",
+      "typical_client_need": "Banking or PSP stack already broken.",
+      "typical_deliverables": [
+        "Infrastructure remediation plan"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [
+        "SA-02-03"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_ADV_INTL_CRISIS",
+        "OCTUS_BNK_*"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira",
+        "Maria Cristina",
+        "Relevant area specialist according to root cause"
+      ],
+      "capacity_note": null,
+      "claim_fence": null,
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-02-03",
+        "OCTUS_ADV_INTL_CRISIS",
+        "OCTUS_BNK_*"
+      ]
+    },
+    {
+      "id": "SVC-REM-06",
+      "name": "Tax and finance problem remediation",
+      "primary_area": "AREA-REM",
+      "primary_area_name": "Remediation & Readiness",
+      "secondary_area": "AREA-CORP",
+      "secondary_area_name": "Corporate Structuring",
+      "one_sentence": "We coordinate tax recovery and finance problem programmes when the live issue is already a blockage.",
+      "typical_client_need": "Tax debt, recovery or finance blockage affecting operations.",
+      "typical_deliverables": [
+        "Problem diagnosis",
+        "Programme scope"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [],
+      "mapped_internal_skus": [
+        "OC8_SF_RECTRIB",
+        "OC8_SF_RENEGTRIB (internal delivery)"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira",
+        "Maria Cristina",
+        "Relevant area specialist according to root cause"
+      ],
+      "capacity_note": null,
+      "claim_fence": "No guaranteed recovery outcomes; partner brands not named",
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "OC8_SF_RECTRIB",
+        "OC8_SF_RENEGTRIB (internal delivery)"
+      ]
+    },
+    {
+      "id": "SVC-HUB-01",
+      "name": "Market entry coordination",
+      "primary_area": "AREA-HUB",
+      "primary_area_name": "International Hub",
+      "secondary_area": "AREA-REG",
+      "secondary_area_name": "Regulatory Structuring",
+      "one_sentence": "We coordinate entry into a new regulated market as one sequenced programme.",
+      "typical_client_need": "Expansion treated as a commercial decision without a working programme.",
+      "typical_deliverables": [
+        "Entry programme plan",
+        "Cross-workstream sequence"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [
+        "SA-01-04"
+      ],
+      "mapped_internal_skus": [
+        "P1 Setup Internacional"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira",
+        "Milla Ludovico",
+        "Esther Vendrami (international providers and corporate dependencies)",
+        "Claudia Nery (banking and financial infrastructure)"
+      ],
+      "capacity_note": null,
+      "claim_fence": null,
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-01-04",
+        "P1 Setup Internacional"
+      ]
+    },
+    {
+      "id": "SVC-HUB-02",
+      "name": "Bank and PSP introductions",
+      "primary_area": "AREA-HUB",
+      "primary_area_name": "International Hub",
+      "secondary_area": "AREA-CORP",
+      "secondary_area_name": "Corporate Structuring",
+      "one_sentence": "We identify and coordinate relevant banks and PSPs for the operation’s risk profile.",
+      "typical_client_need": "Operator cannot find workable banking or payment partners.",
+      "typical_deliverables": [
+        "Provider shortlist",
+        "Introduction and coordination plan"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [
+        "SA-02-02"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_BNK_INTL_PSP",
+        "OCTUS_OPS_IGAMING_PAY*"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira",
+        "Milla Ludovico",
+        "Esther Vendrami (international providers and corporate dependencies)",
+        "Claudia Nery (banking and financial infrastructure)"
+      ],
+      "capacity_note": null,
+      "claim_fence": "No promised onboarding; no SLA on introductions",
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-02-02",
+        "OCTUS_BNK_INTL_PSP",
+        "OCTUS_OPS_IGAMING_PAY*"
+      ]
+    },
+    {
+      "id": "SVC-HUB-03",
+      "name": "Payment and PSP architecture",
+      "primary_area": "AREA-HUB",
+      "primary_area_name": "International Hub",
+      "secondary_area": "AREA-CORP",
+      "secondary_area_name": "Corporate Structuring",
+      "one_sentence": "We design payment and PSP options matched to markets, settlement needs and risk.",
+      "typical_client_need": "Payment stack incompatible with risk profile.",
+      "typical_deliverables": [
+        "Payment architecture options",
+        "Provider map"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [
+        "SA-02-02"
+      ],
+      "mapped_internal_skus": [
+        "OCTUS_BNK_INTL_PSP"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira",
+        "Milla Ludovico",
+        "Esther Vendrami (international providers and corporate dependencies)",
+        "Claudia Nery (banking and financial infrastructure)"
+      ],
+      "capacity_note": null,
+      "claim_fence": null,
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-02-02",
+        "OCTUS_BNK_INTL_PSP"
+      ]
+    },
+    {
+      "id": "SVC-HUB-04",
+      "name": "CSP, local director and formation partners",
+      "primary_area": "AREA-HUB",
+      "primary_area_name": "International Hub",
+      "secondary_area": "AREA-CORP",
+      "secondary_area_name": "Corporate Structuring",
+      "one_sentence": "We connect and coordinate CSPs, local directors and formation partners required by the venue.",
+      "typical_client_need": "Venue requires local presence or CSP support the client cannot source alone.",
+      "typical_deliverables": [
+        "Partner coordination plan"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [],
+      "mapped_internal_skus": [
+        "CSP coordination via Hub"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira",
+        "Milla Ludovico",
+        "Esther Vendrami (international providers and corporate dependencies)",
+        "Claudia Nery (banking and financial infrastructure)"
+      ],
+      "capacity_note": null,
+      "claim_fence": "Partners unnamed publicly unless approved",
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "CSP coordination via Hub"
+      ]
+    },
+    {
+      "id": "SVC-HUB-05",
+      "name": "Lab, certification and specialist network coordination",
+      "primary_area": "AREA-HUB",
+      "primary_area_name": "International Hub",
+      "secondary_area": "AREA-CMP",
+      "secondary_area_name": "Compliance & Risk",
+      "one_sentence": "We identify and coordinate laboratories, certification providers and other specialists the programme needs.",
+      "typical_client_need": "Programme depends on labs, KYC/AML vendors, tech platforms or other specialists.",
+      "typical_deliverables": [
+        "Specialist map",
+        "Coordination plan"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [],
+      "mapped_internal_skus": [
+        "Hub network orchestration"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira",
+        "Milla Ludovico",
+        "Esther Vendrami (international providers and corporate dependencies)",
+        "Claudia Nery (banking and financial infrastructure)"
+      ],
+      "capacity_note": null,
+      "claim_fence": "No fixed public SLA; Octus is not the laboratory",
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "Hub network orchestration"
+      ]
+    },
+    {
+      "id": "SVC-HUB-06",
+      "name": "Counsel and tax specialist coordination",
+      "primary_area": "AREA-HUB",
+      "primary_area_name": "International Hub",
+      "secondary_area": "AREA-LEG",
+      "secondary_area_name": "Legal & Structural Architecture",
+      "one_sentence": "We identify and coordinate legal counsel and tax specialists required for the matter.",
+      "typical_client_need": "Matter needs local counsel or tax specialists under one Octus relationship.",
+      "typical_deliverables": [
+        "Counsel/specialist coordination plan"
+      ],
+      "delivery_model": "Project",
+      "mapped_service_areas": [
+        "SA-05-03"
+      ],
+      "mapped_internal_skus": [
+        "PARTNER_CLASSES counsel/tax"
+      ],
+      "commercial_owner": "Milla Ludovico",
+      "substantive_owners": [
+        "Rubio Teixeira",
+        "Milla Ludovico",
+        "Esther Vendrami (international providers and corporate dependencies)",
+        "Claudia Nery (banking and financial infrastructure)"
+      ],
+      "capacity_note": null,
+      "claim_fence": "Partner brands not named publicly",
+      "public_status": "HUMAN_APPROVED",
+      "last_reviewed": "2026-08-02",
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-05-03",
+        "PARTNER_CLASSES counsel/tax"
+      ]
+    }
+  ],
+  "remapped_from_pr15": {
+    "AREA_BNK_removed_as_peer": "Banking services remapped into Corporate Structuring, International Hub and Remediation",
+    "AREA_TAX_not_eighth_area": "Tax/accounting/audit/finance services remapped into Corporate, Private Clients and Remediation",
+    "Private_Clients_restored_as_peer": true,
+    "International_Hub_restored_as_peer": true,
+    "Remediation_kept_as_peer": true
+  },
+  "do_not_publish": [
+    "OC8 brand name on public materials",
+    "Antera brand name on public materials",
+    "OC8 base costs and preferential rates",
+    "Antera SHIELD price modifiers",
+    "Markups and supplier margins",
+    "Full Catalog V2 SKU dump as navigation",
+    "Unverified SLA or outcome metrics",
+    "ISO certificates as Octus products without evidence approval",
+    "Rubio Adv. litigation catalogue as Solutions pages",
+    "Promised bank accounts, licences or certification outcomes"
+  ],
+  "sources": [
+    "git 381b672:app/what-we-do/page.tsx",
+    "octus-consulting/docs/website/CONTENT_ALIGNMENT_AUDIT.md",
+    "octus-consulting/docs/website/service-architecture/*",
+    "axle-dev-agent/docs/ops/evidence/DES_MEM_02F_OCTUS_FIGMA_DEEP_SWEEP_2026-07-31/21_FIGMA_SEVEN_AREAS_TO_CURRENT_ARCHITECTURE_CROSSWALK.csv",
+    "axle-dev-agent/docs/ops/evidence/OCTUS_OFFER_KNOWLEDGE_SYSTEM/.../OCTUS_SEVEN_AREAS_TO_SIX_SOLUTIONS_CROSSWALK_M0.md",
+    "axle-platform/docs/product/catalog/AXLE_SERVICE_CATALOG_V2_DRAFT_2026-05-30.md",
+    "GitHub Issue rubioprojects/octus-consulting#13",
+    "Rubio mandate PRESERVE_RUBIO_ORIGINAL_SEVEN_AREAS (2026-08-02)"
+  ],
+  "counts": {
+    "public_areas": 7,
+    "public_services": 39
+  },
+  "terminal": "OCTUS_PUBLIC_CATALOG_HUMAN_APPROVED",
+  "lifecycle": {
+    "catalog_status": "HUMAN_APPROVED",
+    "website_consumption": "CONSUMABLE_BY_WEBSITE",
+    "approved_by": "Rubio Teixeira",
+    "approved_date": "2026-08-02",
+    "terminals": [
+      "OCTUS_PUBLIC_CATALOG_HUMAN_APPROVED",
+      "OCTUS_PUBLIC_CATALOG_CONSUMABLE_BY_WEBSITE"
+    ]
+  },
+  "website_consumable": true,
+  "artifact_lifecycle": {
+    "public_taxonomy_and_catalog": [
+      "HUMAN_APPROVED",
+      "CONSUMABLE_BY_WEBSITE"
+    ],
+    "service_names_and_descriptions": [
+      "CONSUMABLE_BY_WEBSITE"
+    ],
+    "playbooks": [
+      "REQUIRES_MILLA_REVIEW"
+    ],
+    "institutional_deck_content": [
+      "REQUIRES_RUBIO_REVIEW"
+    ],
+    "storyboard_and_visual_brief": [
+      "REQUIRES_RUBIO_REVIEW"
+    ],
+    "case_studies_metrics_logos": [
+      "HUMAN_EVIDENCE_REQUIRED"
+    ],
+    "pricing": [
+      "INTERNAL_ONLY"
+    ]
+  },
+  "approval": {
+    "taxonomy": "HUMAN_APPROVED",
+    "public_area_names": "HUMAN_APPROVED",
+    "service_allocation": "HUMAN_APPROVED",
+    "primary_secondary_relationships": "HUMAN_APPROVED",
+    "areas_vs_industries_vs_delivery_models": "HUMAN_APPROVED",
+    "tax_accounting_audit_banking_payments_treatment": "HUMAN_APPROVED",
+    "no_public_partner_names": "HUMAN_APPROVED",
+    "claim_fences_banking_licensing_certification_tax": "HUMAN_APPROVED",
+    "playbooks": "REQUIRES_MILLA_REVIEW",
+    "deck": "REQUIRES_RUBIO_REVIEW",
+    "cases_metrics_logos": "HUMAN_EVIDENCE_REQUIRED",
+    "pricing": "INTERNAL_ONLY"
+  },
+  "terminals": [
+    "OCTUS_PUBLIC_CATALOG_HUMAN_APPROVED",
+    "OCTUS_PUBLIC_CATALOG_CONSUMABLE_BY_WEBSITE"
+  ]
+}
