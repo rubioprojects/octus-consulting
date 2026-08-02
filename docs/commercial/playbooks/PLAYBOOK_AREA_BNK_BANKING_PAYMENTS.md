@@ -11,7 +11,7 @@
 
 ## Why this file remains
 
-Historical sales playbook from PR #15 six-area spine. Banking is **not** one of Rubio’s original seven peer areas. Useful content is kept here as a remap note so nothing is discarded.
+Historical remap note from an earlier draft spine. Banking is **not** one of Rubio’s approved seven peer areas. Useful content is kept here so nothing is discarded. Catalog taxonomy is `HUMAN_APPROVED`.
 
 ## Remap
 

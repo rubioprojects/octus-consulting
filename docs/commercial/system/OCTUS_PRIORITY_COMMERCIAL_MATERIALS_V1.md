@@ -1,37 +1,29 @@
 # OCTUS PRIORITY COMMERCIAL MATERIALS V1
 
-| Status | `REQUIRES_RUBIO_REVIEW` |
+| Status | Catalog approved; materials below separately gated |
 | Date | 2026-08-02 |
-| Catalog | V1.1-SEVEN-AREAS |
+| Catalog status | `HUMAN_APPROVED` · `CONSUMABLE_BY_WEBSITE` |
 
-## P0 — needed for Rubio / Milla review
+## Approved
 
-1. Public catalog V1.1 (md + json) — seven areas  
+1. Public catalog V1.1 (md + json) — seven areas, 39 services  
 2. Original seven areas reconciliation  
-3. Decision + claim registers  
-4. Area playbooks (seven + remapped BNK/TAX notes)  
-5. Question bank / cross-sell / red flags  
-6. Deck content + storyboard (taxonomy updated)  
-7. First one-pagers list  
+3. Decision + claim registers (website-consumable claims)  
 
-## P1 — after human approval of catalog
+## P0 — Milla review
 
-1. One-pager AREA-REG (iGaming licensing)  
-2. One-pager AREA-CORP (banking readiness)  
-3. One-pager AREA-CMP (AML + DPO)  
-4. One-pager AREA-CORP (formation + holding)  
-5. One-pager AREA-REM (crisis entry)  
-6. One-pager AREA-HUB (provider coordination)  
-7. One-pager AREA-PC (ownership / UBO)  
+1. Area playbooks (seven + remapped BNK/TAX notes) — `REQUIRES_MILLA_REVIEW`  
+2. Question bank / cross-sell / red flags  
 
-## P2 — later
+## P1 — Rubio review (deck)
 
-- Vertical appendices (iGaming, Fintech, Compliance, Brazil entry, Hub)  
-- Proposal library per package pattern  
-- EN/PT brief pairs for BR  
+1. Deck content — `REQUIRES_RUBIO_REVIEW`  
+2. Storyboard / visual brief — `REQUIRES_RUBIO_REVIEW`  
+3. First one-pagers list  
 
-## Explicitly not in this mission
+## Explicitly not approved
 
+- Case studies, metrics, logos — `HUMAN_EVIDENCE_REQUIRED`  
+- Pricing — `INTERNAL_ONLY`  
 - PPTX / PDF finals  
-- Website code  
-- Brochure production until approved  
+- Website code mutation in this pack  

@@ -2,8 +2,9 @@
 
 | Field | Value |
 |---|---|
-| Status | `REQUIRES_RUBIO_REVIEW` |
-| Catalog | V1.1-SEVEN-AREAS |
+| Status | `REQUIRES_MILLA_REVIEW` |
+| Catalog | V1.1-SEVEN-AREAS (HUMAN_APPROVED) |
+| Playbook lifecycle | `REQUIRES_MILLA_REVIEW` |
 | Control principle | `PRESERVE_RUBIO_ORIGINAL_SEVEN_AREAS` |
 | Date | 2026-08-02 |
 

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1.0",
   "catalog_id": "OCTUS_PUBLIC_SERVICE_CATALOG_V1",
-  "status": "REQUIRES_RUBIO_REVIEW",
+  "status": "HUMAN_APPROVED",
   "version": "V1.1-SEVEN-AREAS",
   "last_reviewed": "2026-08-02",
   "owner": "octus-commercial-services-front",
@@ -16,8 +16,8 @@
     "six_solutions_role": "Website implementation reference only — not controlling commercial taxonomy",
     "decision_refs": [
       "D-SEVEN-01",
-      "D-REM-NAME-01",
       "D-PC-NAME-01",
+      "D-REM-NAME-01",
       "D-HUB-NAME-01",
       "D-TAX-MAP-01",
       "D-BNK-MAP-01"
@@ -28,7 +28,22 @@
       "axle-dev-agent DES_MEM_02F seven areas crosswalk",
       "axle-dev-agent DES_REF_01 icon areas",
       "axle-dev-agent OCTUS_SEVEN_AREAS_TO_SIX_SOLUTIONS_CROSSWALK_M0.md"
-    ]
+    ],
+    "human_approved": true,
+    "consumable_by_website": true,
+    "definitive_public_names": [
+      "Regulatory Structuring",
+      "Compliance & Risk",
+      "Legal & Structural Architecture",
+      "Corporate Structuring",
+      "Private Clients",
+      "Remediation & Readiness",
+      "International Hub"
+    ],
+    "historical_aliases": {
+      "Private Clients": "Ownership & UBO",
+      "Remediation & Readiness": "Audit & Readiness"
+    }
   },
   "status_enum": [
     "DRAFT",
@@ -37,7 +52,9 @@
     "CONSUMABLE_BY_WEBSITE",
     "SUPERSEDED",
     "INTERNAL_ONLY",
-    "CAPACITY_UNCLEAR"
+    "CAPACITY_UNCLEAR",
+    "REQUIRES_MILLA_REVIEW",
+    "HUMAN_EVIDENCE_REQUIRED"
   ],
   "industries": [
     "iGaming",
@@ -77,15 +94,17 @@
       "website_hub_today": "/solutions/regulatory-strategy-licensing",
       "treatment": "KEEP_ORIGINAL",
       "naming_note": null,
-      "naming_status": "KEEP_ORIGINAL",
-      "commercial_owner": "Milla",
+      "naming_status": "APPROVED",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Esther (international)",
-        "Caroline (Brazil)",
-        "Rubio (executive)"
+        "Rubio Teixeira (strategic oversight)",
+        "Esther Vendrami (international regulatory and licensing)",
+        "Caroline Giovanetti (Brazil regulatory)"
       ],
-      "public_status": "REQUIRES_RUBIO_REVIEW",
-      "sort": 1
+      "public_status": "HUMAN_APPROVED",
+      "sort": 1,
+      "executive_owner": "Rubio Teixeira",
+      "website_consumable": true
     },
     {
       "id": "AREA-CMP",
@@ -96,15 +115,17 @@
       "website_hub_today": "/solutions/compliance-risk-systems",
       "treatment": "KEEP_ORIGINAL",
       "naming_note": null,
-      "naming_status": "KEEP_ORIGINAL",
-      "commercial_owner": "Milla",
+      "naming_status": "APPROVED",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Rubio",
-        "Designated compliance specialist",
-        "Maria Cristina (ops coordination)"
+        "Rubio Teixeira (governance)",
+        "Irati (compliance substance and delivery)",
+        "Maria Cristina (operational coordination where applicable)"
       ],
-      "public_status": "REQUIRES_RUBIO_REVIEW",
-      "sort": 2
+      "public_status": "HUMAN_APPROVED",
+      "sort": 2,
+      "executive_owner": "Rubio Teixeira",
+      "website_consumable": true
     },
     {
       "id": "AREA-LEG",
@@ -115,14 +136,16 @@
       "website_hub_today": "/solutions/legal-contractual-architecture",
       "treatment": "KEEP_ORIGINAL",
       "naming_note": null,
-      "naming_status": "KEEP_ORIGINAL",
-      "commercial_owner": "Milla",
+      "naming_status": "APPROVED",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Rubio",
-        "Rodrigo"
+        "Rubio Teixeira",
+        "Rodrigo Coelho Lopes"
       ],
-      "public_status": "REQUIRES_RUBIO_REVIEW",
-      "sort": 3
+      "public_status": "HUMAN_APPROVED",
+      "sort": 3,
+      "executive_owner": "Rubio Teixeira",
+      "website_consumable": true
     },
     {
       "id": "AREA-CORP",
@@ -133,14 +156,18 @@
       "website_hub_today": "/solutions/corporate-cross-border",
       "treatment": "KEEP_ORIGINAL",
       "naming_note": null,
-      "naming_status": "KEEP_ORIGINAL",
-      "commercial_owner": "Milla",
+      "naming_status": "APPROVED",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Claudia (financial and corporate)",
-        "Rubio (executive)"
+        "Rubio Teixeira (structural strategy)",
+        "Claudia Nery (corporate and financial architecture)",
+        "Esther Vendrami (international formation and operational coordination where applicable)",
+        "Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)"
       ],
-      "public_status": "REQUIRES_RUBIO_REVIEW",
-      "sort": 4
+      "public_status": "HUMAN_APPROVED",
+      "sort": 4,
+      "executive_owner": "Rubio Teixeira",
+      "website_consumable": true
     },
     {
       "id": "AREA-PC",
@@ -149,17 +176,20 @@
       "one_sentence": "Personal and ownership structuring for founders, UBOs, executives and families tied to regulated operations.",
       "website_route_legacy": "/private-clients",
       "website_hub_today": "/private-clients",
-      "treatment": "KEEP_WITH_MINOR_WORDING_EDIT",
-      "naming_note": "Original website module title was Ownership & UBO; page and design also use Private Clients. Rubio mandate keeps Private Clients as a public area.",
-      "naming_status": "KEEP_WITH_MINOR_WORDING_EDIT",
-      "commercial_owner": "Milla",
+      "treatment": "KEEP_ORIGINAL",
+      "naming_note": "Historical alias only (not primary nav): Ownership & UBO",
+      "naming_status": "APPROVED",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Rubio",
-        "Claudia",
-        "Rodrigo (legal as needed)"
+        "Rubio Teixeira",
+        "Claudia Nery",
+        "Rodrigo Coelho Lopes (where legal architecture is required)"
       ],
-      "public_status": "REQUIRES_RUBIO_REVIEW",
-      "sort": 5
+      "public_status": "HUMAN_APPROVED",
+      "sort": 5,
+      "executive_owner": "Rubio Teixeira",
+      "website_consumable": true,
+      "historical_alias": "Ownership & UBO"
     },
     {
       "id": "AREA-REM",
@@ -168,17 +198,20 @@
       "one_sentence": "Diagnosis and fix when licensing, banking, compliance, corporate, finance or operations are already blocked or failing.",
       "website_route_legacy": "/audit",
       "website_hub_today": "/solutions/operational-remediation-readiness",
-      "treatment": "KEEP_WITH_MINOR_WORDING_EDIT",
-      "naming_note": "Original public module title was Audit & Readiness. Rubio mandate preserves Remediation as the public area meaning. Exact label needs Rubio confirmation: Audit & Readiness vs Remediation & Readiness.",
-      "naming_status": "REQUIRES_RUBIO_DECISION",
-      "commercial_owner": "Milla",
+      "treatment": "KEEP_ORIGINAL",
+      "naming_note": "Historical alias only (not primary nav): Audit & Readiness",
+      "naming_status": "APPROVED",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Rubio",
-        "Maria Cristina (ops coordination)",
-        "area specialists as needed"
+        "Rubio Teixeira",
+        "Maria Cristina",
+        "Relevant area specialist according to root cause"
       ],
-      "public_status": "REQUIRES_RUBIO_REVIEW",
-      "sort": 6
+      "public_status": "HUMAN_APPROVED",
+      "sort": 6,
+      "executive_owner": "Rubio Teixeira",
+      "website_consumable": true,
+      "historical_alias": "Audit & Readiness"
     },
     {
       "id": "AREA-HUB",
@@ -188,15 +221,19 @@
       "website_route_legacy": "/international-hub",
       "website_hub_today": "/solutions/regulatory/market-entry",
       "treatment": "KEEP_ORIGINAL",
-      "naming_note": "Recovered original approved public name: International Hub (git what-we-do; legacy /international-hub). Not Octus Hub or Networking.",
-      "naming_status": "KEEP_ORIGINAL",
-      "commercial_owner": "Milla",
+      "naming_note": "Approved public name: International Hub",
+      "naming_status": "APPROVED",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Rubio",
-        "Milla"
+        "Rubio Teixeira",
+        "Milla Ludovico",
+        "Esther Vendrami (international providers and corporate dependencies)",
+        "Claudia Nery (banking and financial infrastructure)"
       ],
-      "public_status": "REQUIRES_RUBIO_REVIEW",
-      "sort": 7
+      "public_status": "HUMAN_APPROVED",
+      "sort": 7,
+      "executive_owner": "Rubio Teixeira",
+      "website_consumable": true
     }
   ],
   "services": [
@@ -222,16 +259,23 @@
         "OCTUS_ADV_INTL_*",
         "P3 Licença & Regulatório"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Esther",
-        "Caroline (BR)"
+        "Rubio Teixeira (strategic oversight)",
+        "Esther Vendrami (international regulatory and licensing)",
+        "Caroline Giovanetti (Brazil regulatory)"
       ],
       "capacity_note": null,
       "claim_fence": null,
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-01-01",
+        "OCTUS_ADV_INTL_*",
+        "P3 Licença & Regulatório"
+      ]
     },
     {
       "id": "SVC-REG-02",
@@ -257,15 +301,25 @@
         "OCTUS_REG_MALTA_LIC",
         "OCTUS_REG_IOM_LIC"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Esther"
+        "Rubio Teixeira (strategic oversight)",
+        "Esther Vendrami (international regulatory and licensing)",
+        "Caroline Giovanetti (Brazil regulatory)"
       ],
       "capacity_note": null,
       "claim_fence": null,
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-01-02",
+        "OCTUS_REG_ANJOUAN_LIC",
+        "OCTUS_REG_CURACAO_LIC",
+        "OCTUS_REG_MALTA_LIC",
+        "OCTUS_REG_IOM_LIC"
+      ]
     },
     {
       "id": "SVC-REG-03",
@@ -290,15 +344,25 @@
         "OCTUS_REG_UK_EMI",
         "OCTUS_REG_BR_BACEN"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Esther"
+        "Rubio Teixeira (strategic oversight)",
+        "Esther Vendrami (international regulatory and licensing)",
+        "Caroline Giovanetti (Brazil regulatory)"
       ],
       "capacity_note": null,
       "claim_fence": null,
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-01-03",
+        "OCTUS_REG_MNE_EMI",
+        "OCTUS_REG_LVA_EMI",
+        "OCTUS_REG_UK_EMI",
+        "OCTUS_REG_BR_BACEN"
+      ]
     },
     {
       "id": "SVC-REG-04",
@@ -321,16 +385,23 @@
         "OCTUS_REG_BR_SPA (tbd)",
         "OCTUS_OPS_IGAMING_REPLEGAL"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Caroline",
-        "Esther"
+        "Rubio Teixeira (strategic oversight)",
+        "Esther Vendrami (international regulatory and licensing)",
+        "Caroline Giovanetti (Brazil regulatory)"
       ],
       "capacity_note": "SKU tbd — soft wording only",
       "claim_fence": null,
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-01-05",
+        "OCTUS_REG_BR_SPA (tbd)",
+        "OCTUS_OPS_IGAMING_REPLEGAL"
+      ]
     },
     {
       "id": "SVC-REG-05",
@@ -353,15 +424,23 @@
         "OCTUS_CORP_INTL_STUDY",
         "advisory"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Esther"
+        "Rubio Teixeira (strategic oversight)",
+        "Esther Vendrami (international regulatory and licensing)",
+        "Caroline Giovanetti (Brazil regulatory)"
       ],
       "capacity_note": null,
       "claim_fence": null,
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-01-JUR",
+        "OCTUS_CORP_INTL_STUDY",
+        "advisory"
+      ]
     },
     {
       "id": "SVC-CMP-01",
@@ -385,16 +464,24 @@
         "OCTUS_COMP_INTL_POLICIES",
         "OCTUS_COMP_CRYPTO_AML"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Rubio",
-        "Compliance specialist"
+        "Rubio Teixeira (governance)",
+        "Irati (compliance substance and delivery)",
+        "Maria Cristina (operational coordination where applicable)"
       ],
       "capacity_note": null,
       "claim_fence": null,
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-03-01",
+        "OCTUS_COMP_INTL_DD",
+        "OCTUS_COMP_INTL_POLICIES",
+        "OCTUS_COMP_CRYPTO_AML"
+      ]
     },
     {
       "id": "SVC-CMP-02",
@@ -417,17 +504,23 @@
         "OCTUS_COMP_INTL_CO",
         "ANTERA_SHIELD_* (internal delivery)"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Rubio",
-        "Compliance specialist",
-        "Maria Cristina"
+        "Rubio Teixeira (governance)",
+        "Irati (compliance substance and delivery)",
+        "Maria Cristina (operational coordination where applicable)"
       ],
       "capacity_note": null,
       "claim_fence": null,
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-03-02",
+        "OCTUS_COMP_INTL_CO",
+        "ANTERA_SHIELD_* (internal delivery)"
+      ]
     },
     {
       "id": "SVC-CMP-03",
@@ -450,15 +543,23 @@
         "OCTUS_COMP_INTL_DPO",
         "octus-pilot-dpo-support"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Compliance specialist"
+        "Rubio Teixeira (governance)",
+        "Irati (compliance substance and delivery)",
+        "Maria Cristina (operational coordination where applicable)"
       ],
       "capacity_note": null,
       "claim_fence": null,
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-03-03",
+        "OCTUS_COMP_INTL_DPO",
+        "octus-pilot-dpo-support"
+      ]
     },
     {
       "id": "SVC-CMP-04",
@@ -480,16 +581,22 @@
       "mapped_internal_skus": [
         "OCTUS_COMP_INTL_POLICIES"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Rubio",
-        "Maria Cristina"
+        "Rubio Teixeira (governance)",
+        "Irati (compliance substance and delivery)",
+        "Maria Cristina (operational coordination where applicable)"
       ],
       "capacity_note": null,
       "claim_fence": null,
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-03-04",
+        "OCTUS_COMP_INTL_POLICIES"
+      ]
     },
     {
       "id": "SVC-CMP-05",
@@ -512,15 +619,22 @@
       "mapped_internal_skus": [
         "ANTERA_CERTIFY_GLI (internal delivery)"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Compliance specialist"
+        "Rubio Teixeira (governance)",
+        "Irati (compliance substance and delivery)",
+        "Maria Cristina (operational coordination where applicable)"
       ],
       "capacity_note": null,
       "claim_fence": "Octus is not the laboratory; no certification promise",
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-03-05",
+        "ANTERA_CERTIFY_GLI (internal delivery)"
+      ]
     },
     {
       "id": "SVC-CMP-06",
@@ -543,15 +657,23 @@
         "OCTUS_COMP_INTL_POLICIES",
         "OCTUS_COMP_INTL_DD"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Compliance specialist"
+        "Rubio Teixeira (governance)",
+        "Irati (compliance substance and delivery)",
+        "Maria Cristina (operational coordination where applicable)"
       ],
       "capacity_note": null,
       "claim_fence": null,
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-03-06",
+        "OCTUS_COMP_INTL_POLICIES",
+        "OCTUS_COMP_INTL_DD"
+      ]
     },
     {
       "id": "SVC-LEG-01",
@@ -574,16 +696,22 @@
         "OCTUS_LEG_INTL_CONTRATO",
         "octus-pilot-contract-review"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Rubio",
-        "Rodrigo"
+        "Rubio Teixeira",
+        "Rodrigo Coelho Lopes"
       ],
       "capacity_note": null,
       "claim_fence": null,
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-05-01",
+        "OCTUS_LEG_INTL_CONTRATO",
+        "octus-pilot-contract-review"
+      ]
     },
     {
       "id": "SVC-LEG-02",
@@ -605,16 +733,21 @@
       "mapped_internal_skus": [
         "OCTUS_LEG_INTL_OPINION"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Rubio",
-        "Rodrigo"
+        "Rubio Teixeira",
+        "Rodrigo Coelho Lopes"
       ],
       "capacity_note": null,
       "claim_fence": null,
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-05-02",
+        "OCTUS_LEG_INTL_OPINION"
+      ]
     },
     {
       "id": "SVC-LEG-03",
@@ -637,16 +770,22 @@
         "Lead Contractor engagement",
         "OCTUS_LEG_*"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Rubio",
-        "Rodrigo"
+        "Rubio Teixeira",
+        "Rodrigo Coelho Lopes"
       ],
       "capacity_note": null,
       "claim_fence": null,
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-05-03",
+        "Lead Contractor engagement",
+        "OCTUS_LEG_*"
+      ]
     },
     {
       "id": "SVC-LEG-04",
@@ -669,16 +808,22 @@
         "OCTUS_LEG_INTL_OPINION",
         "OCTUS_LEG_PT_CERTIF"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Rubio",
-        "Rodrigo"
+        "Rubio Teixeira",
+        "Rodrigo Coelho Lopes"
       ],
       "capacity_note": null,
       "claim_fence": null,
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-05-*",
+        "OCTUS_LEG_INTL_OPINION",
+        "OCTUS_LEG_PT_CERTIF"
+      ]
     },
     {
       "id": "SVC-CORP-01",
@@ -701,16 +846,24 @@
         "OCTUS_CORP_INTL_HOLDING",
         "OCTUS_CORP_INTL_STUDY"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Claudia",
-        "Rubio"
+        "Rubio Teixeira (structural strategy)",
+        "Claudia Nery (corporate and financial architecture)",
+        "Esther Vendrami (international formation and operational coordination where applicable)",
+        "Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)"
       ],
       "capacity_note": null,
       "claim_fence": null,
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-04-01",
+        "OCTUS_CORP_INTL_HOLDING",
+        "OCTUS_CORP_INTL_STUDY"
+      ]
     },
     {
       "id": "SVC-CORP-02",
@@ -735,15 +888,26 @@
         "OCTUS_CORP_UK_LTD",
         "OCTUS_CORP_BR_EMPRESA"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Claudia"
+        "Rubio Teixeira (structural strategy)",
+        "Claudia Nery (corporate and financial architecture)",
+        "Esther Vendrami (international formation and operational coordination where applicable)",
+        "Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)"
       ],
       "capacity_note": null,
       "claim_fence": null,
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-04-02",
+        "OCTUS_CORP_US_DELAWARE",
+        "OCTUS_CORP_INTL_BVI",
+        "OCTUS_CORP_UK_LTD",
+        "OCTUS_CORP_BR_EMPRESA"
+      ]
     },
     {
       "id": "SVC-CORP-03",
@@ -765,16 +929,24 @@
         "OCTUS_CORP_INTL_*",
         "P1/P2"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Claudia",
-        "Rubio"
+        "Rubio Teixeira (structural strategy)",
+        "Claudia Nery (corporate and financial architecture)",
+        "Esther Vendrami (international formation and operational coordination where applicable)",
+        "Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)"
       ],
       "capacity_note": null,
       "claim_fence": null,
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-04-03",
+        "OCTUS_CORP_INTL_*",
+        "P1/P2"
+      ]
     },
     {
       "id": "SVC-CORP-04",
@@ -796,16 +968,23 @@
       "mapped_internal_skus": [
         "OCTUS_CORP_INTL_CLOSE"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Claudia",
-        "Rubio"
+        "Rubio Teixeira (structural strategy)",
+        "Claudia Nery (corporate and financial architecture)",
+        "Esther Vendrami (international formation and operational coordination where applicable)",
+        "Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)"
       ],
       "capacity_note": null,
       "claim_fence": null,
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-04-05",
+        "OCTUS_CORP_INTL_CLOSE"
+      ]
     },
     {
       "id": "SVC-CORP-05",
@@ -828,16 +1007,24 @@
         "OCTUS_BNK_INTL_HIGHRISK",
         "octus-pilot-banking-support"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Claudia",
-        "Rubio"
+        "Rubio Teixeira (structural strategy)",
+        "Claudia Nery (corporate and financial architecture)",
+        "Esther Vendrami (international formation and operational coordination where applicable)",
+        "Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)"
       ],
       "capacity_note": null,
       "claim_fence": "Never promise account opening",
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-02-01",
+        "OCTUS_BNK_INTL_HIGHRISK",
+        "octus-pilot-banking-support"
+      ]
     },
     {
       "id": "SVC-CORP-06",
@@ -858,15 +1045,23 @@
         "OC8_FIN_BR_CONT_* (internal delivery)",
         "OCTUS_RET_BR_MANUTENCAO"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Claudia"
+        "Rubio Teixeira (structural strategy)",
+        "Claudia Nery (corporate and financial architecture)",
+        "Esther Vendrami (international formation and operational coordination where applicable)",
+        "Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)"
       ],
       "capacity_note": null,
       "claim_fence": "Partner brands not named publicly",
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "OC8_FIN_BR_CONT_* (internal delivery)",
+        "OCTUS_RET_BR_MANUTENCAO"
+      ]
     },
     {
       "id": "SVC-CORP-07",
@@ -886,15 +1081,23 @@
         "OC8_TAX_BR_PLANTRIB (internal delivery)",
         "OCTUS_PF_INTL_PLANTRIB"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Claudia"
+        "Rubio Teixeira (structural strategy)",
+        "Claudia Nery (corporate and financial architecture)",
+        "Esther Vendrami (international formation and operational coordination where applicable)",
+        "Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)"
       ],
       "capacity_note": null,
       "claim_fence": "Partner brands not named publicly; no outcome guarantees",
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "OC8_TAX_BR_PLANTRIB (internal delivery)",
+        "OCTUS_PF_INTL_PLANTRIB"
+      ]
     },
     {
       "id": "SVC-PC-01",
@@ -916,16 +1119,22 @@
       "mapped_internal_skus": [
         "OCTUS_PF_* controlled"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Rubio",
-        "Claudia"
+        "Rubio Teixeira",
+        "Claudia Nery",
+        "Rodrigo Coelho Lopes (where legal architecture is required)"
       ],
       "capacity_note": null,
       "claim_fence": null,
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-04-04",
+        "OCTUS_PF_* controlled"
+      ]
     },
     {
       "id": "SVC-PC-02",
@@ -946,16 +1155,22 @@
         "OCTUS_PF_INTL_WEALTH (thin playbook)",
         "OCTUS_PF_INTL_INVEST"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Rubio",
-        "Claudia"
+        "Rubio Teixeira",
+        "Claudia Nery",
+        "Rodrigo Coelho Lopes (where legal architecture is required)"
       ],
       "capacity_note": "Playbook coverage thin — careful wording",
       "claim_fence": null,
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "OCTUS_PF_INTL_WEALTH (thin playbook)",
+        "OCTUS_PF_INTL_INVEST"
+      ]
     },
     {
       "id": "SVC-PC-03",
@@ -974,16 +1189,21 @@
       "mapped_internal_skus": [
         "OCTUS_PF_INTL_RESID"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Rubio",
-        "Claudia"
+        "Rubio Teixeira",
+        "Claudia Nery",
+        "Rodrigo Coelho Lopes (where legal architecture is required)"
       ],
       "capacity_note": "Controlled commercial; not a citizenship shop",
       "claim_fence": null,
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "OCTUS_PF_INTL_RESID"
+      ]
     },
     {
       "id": "SVC-PC-04",
@@ -1003,16 +1223,22 @@
         "OCTUS_PF_INTL_CONTA",
         "OCTUS_BNK_PF_CONTA"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Claudia",
-        "Rubio"
+        "Rubio Teixeira",
+        "Claudia Nery",
+        "Rodrigo Coelho Lopes (where legal architecture is required)"
       ],
       "capacity_note": null,
       "claim_fence": "No promised accounts",
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "OCTUS_PF_INTL_CONTA",
+        "OCTUS_BNK_PF_CONTA"
+      ]
     },
     {
       "id": "SVC-PC-05",
@@ -1032,15 +1258,22 @@
         "OCTUS_PF_BR_IRPF",
         "OCTUS_PF_BR_DIAGTRIB"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Claudia"
+        "Rubio Teixeira",
+        "Claudia Nery",
+        "Rodrigo Coelho Lopes (where legal architecture is required)"
       ],
       "capacity_note": null,
       "claim_fence": "Partner brands not named publicly",
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "OCTUS_PF_BR_IRPF",
+        "OCTUS_PF_BR_DIAGTRIB"
+      ]
     },
     {
       "id": "SVC-REM-01",
@@ -1062,16 +1295,22 @@
       "mapped_internal_skus": [
         "OCTUS_ADV_INTL_CRISIS"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Rubio",
-        "Maria Cristina"
+        "Rubio Teixeira",
+        "Maria Cristina",
+        "Relevant area specialist according to root cause"
       ],
       "capacity_note": null,
       "claim_fence": null,
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-06-01",
+        "OCTUS_ADV_INTL_CRISIS"
+      ]
     },
     {
       "id": "SVC-REM-02",
@@ -1093,16 +1332,22 @@
       "mapped_internal_skus": [
         "OCTUS_REG_* remediation programmes"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Esther",
-        "Rubio"
+        "Rubio Teixeira",
+        "Maria Cristina",
+        "Relevant area specialist according to root cause"
       ],
       "capacity_note": null,
       "claim_fence": null,
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-06-02",
+        "OCTUS_REG_* remediation programmes"
+      ]
     },
     {
       "id": "SVC-REM-03",
@@ -1123,17 +1368,22 @@
       "mapped_internal_skus": [
         "banking + compliance SKUs under crisis programmes"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Claudia",
-        "Compliance specialist",
-        "Rubio"
+        "Rubio Teixeira",
+        "Maria Cristina",
+        "Relevant area specialist according to root cause"
       ],
       "capacity_note": null,
       "claim_fence": null,
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-06-03",
+        "banking + compliance SKUs under crisis programmes"
+      ]
     },
     {
       "id": "SVC-REM-04",
@@ -1156,17 +1406,23 @@
         "GLI readiness pathway",
         "OC8_AUD_* subset (internal delivery)"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Compliance specialist",
-        "Claudia",
-        "Rubio"
+        "Rubio Teixeira",
+        "Maria Cristina",
+        "Relevant area specialist according to root cause"
       ],
       "capacity_note": null,
       "claim_fence": null,
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-06-04",
+        "GLI readiness pathway",
+        "OC8_AUD_* subset (internal delivery)"
+      ]
     },
     {
       "id": "SVC-REM-05",
@@ -1188,16 +1444,23 @@
         "OCTUS_ADV_INTL_CRISIS",
         "OCTUS_BNK_*"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Claudia",
-        "Rubio"
+        "Rubio Teixeira",
+        "Maria Cristina",
+        "Relevant area specialist according to root cause"
       ],
       "capacity_note": null,
       "claim_fence": null,
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-02-03",
+        "OCTUS_ADV_INTL_CRISIS",
+        "OCTUS_BNK_*"
+      ]
     },
     {
       "id": "SVC-REM-06",
@@ -1218,15 +1481,22 @@
         "OC8_SF_RECTRIB",
         "OC8_SF_RENEGTRIB (internal delivery)"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Claudia"
+        "Rubio Teixeira",
+        "Maria Cristina",
+        "Relevant area specialist according to root cause"
       ],
       "capacity_note": null,
       "claim_fence": "No guaranteed recovery outcomes; partner brands not named",
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "OC8_SF_RECTRIB",
+        "OC8_SF_RENEGTRIB (internal delivery)"
+      ]
     },
     {
       "id": "SVC-HUB-01",
@@ -1248,17 +1518,23 @@
       "mapped_internal_skus": [
         "P1 Setup Internacional"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Rubio",
-        "Esther",
-        "Maria Cristina"
+        "Rubio Teixeira",
+        "Milla Ludovico",
+        "Esther Vendrami (international providers and corporate dependencies)",
+        "Claudia Nery (banking and financial infrastructure)"
       ],
       "capacity_note": null,
       "claim_fence": null,
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-01-04",
+        "P1 Setup Internacional"
+      ]
     },
     {
       "id": "SVC-HUB-02",
@@ -1281,17 +1557,24 @@
         "OCTUS_BNK_INTL_PSP",
         "OCTUS_OPS_IGAMING_PAY*"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Rubio",
-        "Milla",
-        "Claudia"
+        "Rubio Teixeira",
+        "Milla Ludovico",
+        "Esther Vendrami (international providers and corporate dependencies)",
+        "Claudia Nery (banking and financial infrastructure)"
       ],
       "capacity_note": null,
       "claim_fence": "No promised onboarding; no SLA on introductions",
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-02-02",
+        "OCTUS_BNK_INTL_PSP",
+        "OCTUS_OPS_IGAMING_PAY*"
+      ]
     },
     {
       "id": "SVC-HUB-03",
@@ -1313,16 +1596,23 @@
       "mapped_internal_skus": [
         "OCTUS_BNK_INTL_PSP"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Claudia",
-        "Rubio"
+        "Rubio Teixeira",
+        "Milla Ludovico",
+        "Esther Vendrami (international providers and corporate dependencies)",
+        "Claudia Nery (banking and financial infrastructure)"
       ],
       "capacity_note": null,
       "claim_fence": null,
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-02-02",
+        "OCTUS_BNK_INTL_PSP"
+      ]
     },
     {
       "id": "SVC-HUB-04",
@@ -1341,17 +1631,22 @@
       "mapped_internal_skus": [
         "CSP coordination via Hub"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Rubio",
-        "Milla",
-        "Claudia"
+        "Rubio Teixeira",
+        "Milla Ludovico",
+        "Esther Vendrami (international providers and corporate dependencies)",
+        "Claudia Nery (banking and financial infrastructure)"
       ],
       "capacity_note": null,
       "claim_fence": "Partners unnamed publicly unless approved",
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "CSP coordination via Hub"
+      ]
     },
     {
       "id": "SVC-HUB-05",
@@ -1371,16 +1666,22 @@
       "mapped_internal_skus": [
         "Hub network orchestration"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Rubio",
-        "Milla"
+        "Rubio Teixeira",
+        "Milla Ludovico",
+        "Esther Vendrami (international providers and corporate dependencies)",
+        "Claudia Nery (banking and financial infrastructure)"
       ],
       "capacity_note": null,
       "claim_fence": "No fixed public SLA; Octus is not the laboratory",
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "Hub network orchestration"
+      ]
     },
     {
       "id": "SVC-HUB-06",
@@ -1401,17 +1702,23 @@
       "mapped_internal_skus": [
         "PARTNER_CLASSES counsel/tax"
       ],
-      "commercial_owner": "Milla",
+      "commercial_owner": "Milla Ludovico",
       "substantive_owners": [
-        "Rubio",
-        "Rodrigo",
-        "Claudia"
+        "Rubio Teixeira",
+        "Milla Ludovico",
+        "Esther Vendrami (international providers and corporate dependencies)",
+        "Claudia Nery (banking and financial infrastructure)"
       ],
       "capacity_note": null,
       "claim_fence": "Partner brands not named publicly",
-      "public_status": "REQUIRES_RUBIO_REVIEW",
+      "public_status": "HUMAN_APPROVED",
       "last_reviewed": "2026-08-02",
-      "website_consumable": false
+      "website_consumable": true,
+      "executive_owner": "Rubio Teixeira",
+      "internal_delivery_mapping": [
+        "SA-05-03",
+        "PARTNER_CLASSES counsel/tax"
+      ]
     }
   ],
   "remapped_from_pr15": {
@@ -1447,5 +1754,58 @@
     "public_areas": 7,
     "public_services": 39
   },
-  "terminal": "OCTUS_ORIGINAL_SEVEN_AREAS_READY_FOR_RUBIO_REVIEW"
+  "terminal": "OCTUS_PUBLIC_CATALOG_HUMAN_APPROVED",
+  "lifecycle": {
+    "catalog_status": "HUMAN_APPROVED",
+    "website_consumption": "CONSUMABLE_BY_WEBSITE",
+    "approved_by": "Rubio Teixeira",
+    "approved_date": "2026-08-02",
+    "terminals": [
+      "OCTUS_PUBLIC_CATALOG_HUMAN_APPROVED",
+      "OCTUS_PUBLIC_CATALOG_CONSUMABLE_BY_WEBSITE"
+    ]
+  },
+  "website_consumable": true,
+  "artifact_lifecycle": {
+    "public_taxonomy_and_catalog": [
+      "HUMAN_APPROVED",
+      "CONSUMABLE_BY_WEBSITE"
+    ],
+    "service_names_and_descriptions": [
+      "CONSUMABLE_BY_WEBSITE"
+    ],
+    "playbooks": [
+      "REQUIRES_MILLA_REVIEW"
+    ],
+    "institutional_deck_content": [
+      "REQUIRES_RUBIO_REVIEW"
+    ],
+    "storyboard_and_visual_brief": [
+      "REQUIRES_RUBIO_REVIEW"
+    ],
+    "case_studies_metrics_logos": [
+      "HUMAN_EVIDENCE_REQUIRED"
+    ],
+    "pricing": [
+      "INTERNAL_ONLY"
+    ]
+  },
+  "approval": {
+    "taxonomy": "HUMAN_APPROVED",
+    "public_area_names": "HUMAN_APPROVED",
+    "service_allocation": "HUMAN_APPROVED",
+    "primary_secondary_relationships": "HUMAN_APPROVED",
+    "areas_vs_industries_vs_delivery_models": "HUMAN_APPROVED",
+    "tax_accounting_audit_banking_payments_treatment": "HUMAN_APPROVED",
+    "no_public_partner_names": "HUMAN_APPROVED",
+    "claim_fences_banking_licensing_certification_tax": "HUMAN_APPROVED",
+    "playbooks": "REQUIRES_MILLA_REVIEW",
+    "deck": "REQUIRES_RUBIO_REVIEW",
+    "cases_metrics_logos": "HUMAN_EVIDENCE_REQUIRED",
+    "pricing": "INTERNAL_ONLY"
+  },
+  "terminals": [
+    "OCTUS_PUBLIC_CATALOG_HUMAN_APPROVED",
+    "OCTUS_PUBLIC_CATALOG_CONSUMABLE_BY_WEBSITE"
+  ]
 }

@@ -2,7 +2,7 @@
 
 | Field | Value |
 |-------|-------|
-| **Status** | `REQUIRES_RUBIO_REVIEW` |
+| **Status** | `REQUIRES_MILLA_REVIEW` |
 | **Audience** | Milla + internal commercial |
 | **Not for** | Verbatim client PDF; not Axle ops playbook paste |
 
@@ -31,7 +31,7 @@
 ```
 playbook_id:
 public_area:
-status: REQUIRES_RUBIO_REVIEW
+status: REQUIRES_MILLA_REVIEW
 owner:
 review_date: 2026-11-01
 language: pt-BR working / EN public names

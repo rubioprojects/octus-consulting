@@ -6,10 +6,10 @@
 | **public_area** | `AREA-PC` |
 | **public_name** | Private Clients |
 | **historical_title** | Ownership & UBO |
-| **naming_status** | `REQUIRES_RUBIO_DECISION` (`D-PC-NAME-01`) |
-| **status** | `REQUIRES_RUBIO_REVIEW` |
-| **commercial_owner** | Milla |
-| **substantive_owners** | Rubio + legal / corporate / financial specialists |
+| **naming_status** | `APPROVED (`D-PC-NAME-01`)` |
+| **status** | `REQUIRES_MILLA_REVIEW` |
+| **commercial_owner** | Milla Ludovico |
+| **substantive_owners** | Rubio Teixeira; Claudia Nery; Rodrigo Coelho Lopes (where legal architecture required) |
 | **review_date** | 2026-08-02 |
 | **sources** | Catalog V1.1-SEVEN-AREAS; reconciliation V1 |
 

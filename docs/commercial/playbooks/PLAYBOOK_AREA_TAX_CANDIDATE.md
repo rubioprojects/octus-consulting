@@ -11,7 +11,7 @@
 
 ## Why this file remains
 
-PR #15 treated Tax as a candidate pillar. Rubio’s seven-area rule forbids an eighth public area. Tax, accounting, audit and finance remain sellable — mapped into the original seven. Delivery partners stay unnamed (no public OC8).
+Earlier draft treated Tax as a candidate pillar. Rubio’s approved seven-area model forbids an eighth public area. Tax, accounting, audit and finance remain sellable — mapped into the original seven. Delivery partners stay unnamed (no public OC8). Catalog taxonomy is `HUMAN_APPROVED`.
 
 ## Remap
 

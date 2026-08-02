@@ -1,6 +1,7 @@
 # OCTUS DECK VISUAL BRIEF V1
 
 | Status | `REQUIRES_RUBIO_REVIEW` |
+| Catalog status | `HUMAN_APPROVED` · `CONSUMABLE_BY_WEBSITE` (catalog only; this brief not auto-approved) |
 | Date | 2026-08-02 |
 
 ## Brand

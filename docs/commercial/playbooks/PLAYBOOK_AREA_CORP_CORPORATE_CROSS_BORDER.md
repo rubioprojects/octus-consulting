@@ -5,9 +5,9 @@
 | **playbook_id** | `PB-AREA-CORP` |
 | **public_area** | `AREA-CORP` |
 | **public_name** | Corporate Structuring |
-| **status** | `REQUIRES_RUBIO_REVIEW` |
-| **commercial_owner** | Milla |
-| **substantive_owners** | Claudia (financial/corporate); Rubio (executive) |
+| **status** | `REQUIRES_MILLA_REVIEW` |
+| **commercial_owner** | Milla Ludovico |
+| **substantive_owners** | Rubio Teixeira (structural strategy); Claudia Nery (corporate and financial architecture); Esther Vendrami (intl formation where applicable); Caroline Giovanetti (Brazil regulatory deps where applicable) |
 | **review_date** | 2026-08-02 |
 | **sources** | Catalog V1.1-SEVEN-AREAS; reconciliation V1 |
 

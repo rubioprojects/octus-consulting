@@ -1,6 +1,7 @@
 # OCTUS COMMERCIAL DECK CONTENT V1
 
 | Status | `REQUIRES_RUBIO_REVIEW` |
+| Catalog status | `HUMAN_APPROVED` · `CONSUMABLE_BY_WEBSITE` (catalog only; this artifact not auto-approved) |
 | Date | 2026-08-02 |
 | Catalog | V1.1-SEVEN-AREAS |
 | Control principle | `PRESERVE_RUBIO_ORIGINAL_SEVEN_AREAS` |
@@ -41,7 +42,7 @@ Show **seven original areas** as a compact map:
 
 **Footer line:** Tax, accounting and audit programmes are sold and coordinated by Octus inside these areas — not as an eighth pillar. Partners stay unnamed.
 
-**Open naming (footer footnote if needed):** confirm Remediation vs Audit & Readiness; confirm Private Clients vs Ownership & UBO.
+Naming approved: Private Clients; Remediation & Readiness; International Hub. Historical aliases are not primary nav.
 
 ## Slides 5–8 — Grouped capabilities
 

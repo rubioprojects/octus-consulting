@@ -5,9 +5,9 @@
 | **playbook_id** | `PB-AREA-CMP` |
 | **public_area** | `AREA-CMP` |
 | **public_name** | Compliance & Risk |
-| **status** | `REQUIRES_RUBIO_REVIEW` |
-| **commercial_owner** | Milla |
-| **substantive_owners** | Rubio and designated compliance specialist |
+| **status** | `REQUIRES_MILLA_REVIEW` |
+| **commercial_owner** | Milla Ludovico |
+| **substantive_owners** | Rubio Teixeira (governance); Irati (compliance substance and delivery); Maria Cristina (ops where applicable) |
 | **review_date** | 2026-08-02 |
 | **sources** | Catalog V1.1-SEVEN-AREAS; reconciliation V1 |
 

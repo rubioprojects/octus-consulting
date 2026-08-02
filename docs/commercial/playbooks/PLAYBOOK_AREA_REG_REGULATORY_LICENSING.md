@@ -5,9 +5,9 @@
 | **playbook_id** | `PB-AREA-REG` |
 | **public_area** | `AREA-REG` |
 | **public_name** | Regulatory Structuring |
-| **status** | `REQUIRES_RUBIO_REVIEW` |
-| **commercial_owner** | Milla |
-| **substantive_owners** | Esther (international); Caroline (Brazil); Rubio (executive) |
+| **status** | `REQUIRES_MILLA_REVIEW` |
+| **commercial_owner** | Milla Ludovico |
+| **substantive_owners** | Rubio Teixeira (strategic oversight); Esther Vendrami (international); Caroline Giovanetti (Brazil) |
 | **review_date** | 2026-08-02 |
 | **sources** | Catalog V1.1-SEVEN-AREAS; reconciliation V1 |
 

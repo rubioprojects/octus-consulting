@@ -5,9 +5,9 @@
 | **playbook_id** | `PB-AREA-LEG` |
 | **public_area** | `AREA-LEG` |
 | **public_name** | Legal & Structural Architecture |
-| **status** | `REQUIRES_RUBIO_REVIEW` |
-| **commercial_owner** | Milla |
-| **substantive_owners** | Rubio and Rodrigo |
+| **status** | `REQUIRES_MILLA_REVIEW` |
+| **commercial_owner** | Milla Ludovico |
+| **substantive_owners** | Rubio Teixeira; Rodrigo Coelho Lopes |
 | **review_date** | 2026-08-02 |
 | **sources** | Catalog V1.1-SEVEN-AREAS; reconciliation V1 |
 

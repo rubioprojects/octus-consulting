@@ -1,6 +1,7 @@
 # OCTUS CROSS-SELL MAP V1
 
 | Status | `REQUIRES_RUBIO_REVIEW` |
+| Catalog status | `HUMAN_APPROVED` · `CONSUMABLE_BY_WEBSITE` (catalog only; this artifact not auto-approved) |
 | Date | 2026-08-02 |
 | Catalog | V1.1-SEVEN-AREAS |
 | Control principle | `PRESERVE_RUBIO_ORIGINAL_SEVEN_AREAS` |

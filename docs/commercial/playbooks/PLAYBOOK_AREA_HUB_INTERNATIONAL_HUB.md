@@ -6,10 +6,10 @@
 | **public_area** | `AREA-HUB` |
 | **public_name** | International Hub |
 | **recovered_name** | International Hub |
-| **naming_status** | `KEEP_ORIGINAL` — confirm `D-HUB-NAME-01` |
-| **status** | `REQUIRES_RUBIO_REVIEW` |
-| **commercial_owner** | Milla |
-| **hub_network_owners** | Rubio and Milla |
+| **naming_status** | `APPROVED (`D-HUB-NAME-01`)` |
+| **status** | `REQUIRES_MILLA_REVIEW` |
+| **commercial_owner** | Milla Ludovico |
+| **hub_network_owners** | Rubio Teixeira and Milla Ludovico |
 | **operational_coordination** | Maria Cristina |
 | **review_date** | 2026-08-02 |
 | **sources** | Catalog V1.1-SEVEN-AREAS; git what-we-do International Hub |

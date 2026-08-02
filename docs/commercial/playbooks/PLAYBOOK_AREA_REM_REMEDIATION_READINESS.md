@@ -6,10 +6,10 @@
 | **public_area** | `AREA-REM` |
 | **public_name** | Remediation & Readiness |
 | **historical_title** | Audit & Readiness |
-| **naming_status** | `REQUIRES_RUBIO_DECISION` (`D-REM-NAME-01`) |
-| **status** | `REQUIRES_RUBIO_REVIEW` |
-| **commercial_owner** | Milla |
-| **substantive_owner** | Rubio |
+| **naming_status** | `APPROVED (`D-REM-NAME-01`)` |
+| **status** | `REQUIRES_MILLA_REVIEW` |
+| **commercial_owner** | Milla Ludovico |
+| **substantive_owners** | Rubio Teixeira; Maria Cristina; relevant area specialist by root cause |
 | **review_date** | 2026-08-02 |
 | **sources** | Catalog V1.1-SEVEN-AREAS; reconciliation V1 |
 
