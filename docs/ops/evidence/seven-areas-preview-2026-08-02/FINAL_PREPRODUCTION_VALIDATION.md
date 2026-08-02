@@ -4,11 +4,13 @@
 |-------|-------|
 | Date | 2026-08-02 |
 | Branch | `feat/seven-areas-website-architecture` |
-| Commit (code) | `9aaa9b86ad3a4de5431c2417221d7986d7fd1b4a` |
-| Commit (HEAD / evidence) | `b3d3b4d00a0977d6974142ac20ae324bf48f9058` |
-| Preview | https://octus-consulting-gzgfnaqg8-axle1.vercel.app |
+| Commit (preprod code) | `9aaa9b86ad3a4de5431c2417221d7986d7fd1b4a` |
+| Superseded by merge-candidate HEAD | `183564ac287dd34a26f3dbb1f1eb9beca4d202b8` — see `MERGE_CANDIDATE_VALIDATION.md` |
+| Preview (this pack) | https://octus-consulting-gzgfnaqg8-axle1.vercel.app |
+| Current preview | https://octus-consulting-br12puta7-axle1.vercel.app |
 | PR | https://github.com/rubioprojects/octus-consulting/pull/17 |
-| Terminal | `OCTUS_WEBSITE_FINAL_PREPRODUCTION_RESCREEN_READY` |
+| Terminal (this pack) | `OCTUS_WEBSITE_FINAL_PREPRODUCTION_RESCREEN_READY` |
+| Current terminal | `OCTUS_WEBSITE_MERGE_CANDIDATE_READY_FOR_RUBIO_APPROVAL` |
 | Merge | **not performed** |
 | Production deploy | **not performed** |
 
