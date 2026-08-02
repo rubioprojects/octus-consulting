@@ -4,7 +4,8 @@
 |-------|-------|
 | Date | 2026-08-02 |
 | Branch | `feat/seven-areas-website-architecture` |
-| Commit | `9aaa9b86ad3a4de5431c2417221d7986d7fd1b4a` |
+| Commit (code) | `9aaa9b86ad3a4de5431c2417221d7986d7fd1b4a` |
+| Commit (HEAD / evidence) | `b3d3b4d00a0977d6974142ac20ae324bf48f9058` |
 | Preview | https://octus-consulting-gzgfnaqg8-axle1.vercel.app |
 | PR | https://github.com/rubioprojects/octus-consulting/pull/17 |
 | Terminal | `OCTUS_WEBSITE_FINAL_PREPRODUCTION_RESCREEN_READY` |
