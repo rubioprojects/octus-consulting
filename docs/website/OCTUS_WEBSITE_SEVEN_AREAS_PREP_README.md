@@ -1,43 +1,48 @@
-# Octus website — neutral seven-area integration shell
+# Octus website — seven-area planning pack (implementation reference)
 
 | Field | Value |
 |-------|-------|
-| **Terminal (shell)** | `OCTUS_WEBSITE_NEUTRAL_INTEGRATION_SHELL_READY` |
-| **Front status** | `OCTUS_WEBSITE_FRONT_PAUSED_PENDING_CATALOG_RELEASE` |
-| **Means** | Website planning is prepared **without** assuming six-plus-one |
-| **Does not authorize** | Implementation, merges, redirects, production deploy, final names |
+| **Planning status** | `HUMAN_APPROVED_FOR_IMPLEMENTATION_REFERENCE` |
+| **Catalog on main** | `5857c0a7f5a758e44fe3e3c3df0d47ef87739e28` |
+| **Catalog gates** | `HUMAN_APPROVED` · `CONSUMABLE_BY_WEBSITE` · `website_consumable: true` |
+| **Scope** | 7 public areas · 39 public services |
+| **PR** | [#16](https://github.com/rubioprojects/octus-consulting/pull/16) — **documentation only** |
 | **Date** | 2026-08-02 |
-| **PR** | [#16](https://github.com/rubioprojects/octus-consulting/pull/16) — documentation only; open; unmerged; no website-code changes |
+| **Issue** | [#13](https://github.com/rubioprojects/octus-consulting/issues/13) |
 
-## Correction summary
+## Approved public areas (binding)
 
-Earlier draft language implicitly treated AREA-01…AREA-06 as the current six Solutions and AREA-07 as “unknown extra.” That assumption is **withdrawn**.
+| # | ID | Name | Canonical route (planned) | Preserve SEO from |
+|---|----|------|---------------------------|-------------------|
+| 1 | `AREA-REG` | Regulatory Structuring | `/solutions/regulatory-structuring` | `/solutions/regulatory-strategy-licensing` |
+| 2 | `AREA-CMP` | Compliance & Risk | `/solutions/compliance-risk` | `/solutions/compliance-risk-systems` |
+| 3 | `AREA-LEG` | Legal & Structural Architecture | `/solutions/legal-structural-architecture` | `/solutions/legal-contractual-architecture` |
+| 4 | `AREA-CORP` | Corporate Structuring | `/solutions/corporate-structuring` | `/solutions/corporate-cross-border` |
+| 5 | `AREA-PC` | Private Clients | `/private-clients` | `/private-clients` |
+| 6 | `AREA-REM` | Remediation & Readiness | `/solutions/remediation-readiness` | `/solutions/operational-remediation-readiness` |
+| 7 | `AREA-HUB` | International Hub | `/international-hub` | `/international-hub` |
 
-- `AREA-01`…`AREA-07` = neutral slots (`final_area_identity: PENDING_APPROVED_CATALOG`)
-- Existing routes = **content clusters**, not approved public areas
-- Private Clients, Hub/Networking, Remediation, Tax/Accounting/Audit, Market Entry = `ROLE_PENDING_ORIGINAL_SEVEN_AREAS_RECONCILIATION`
+**Do not** create an eighth Banking or Tax area. Banking readiness and corporate tax live under Corporate Structuring; Hub coordinates introductions; remediations live under Remediation & Readiness.
 
-## Artifacts in this pack
-
-| File | Purpose |
-|------|---------|
-| `OCTUS_EXISTING_CONTENT_REUSE_MATRIX_V1.md` | Route reuse via content clusters |
-| `OCTUS_BLOG_PRESERVATION_AND_LINKING_PLAN_V1.md` | Insights preservation (unchanged substance) |
-| `OCTUS_NAVIGATION_GAP_ANALYSIS_V1.md` | Nav gaps with neutral AREA slots |
-| `OCTUS_SEVEN_AREAS_WEBSITE_INTEGRATION_PLAN_V1.md` | Neutral AREA-01…07 shell |
-| `OCTUS_OPEN_PR_RECONCILIATION_V1.md` | Open PR classes — no merges |
-| `OCTUS_HOMEPAGE_REUSE_MAP_V1.md` | Homepage section map without six-plus-one |
-
-## Catalog dependency
+## Catalog dependency (satisfied)
 
 | Item | Status |
 |------|--------|
-| `docs/commercial/public-catalog/OCTUS_ORIGINAL_SEVEN_AREAS_RECONCILIATION_V1.md` | **Delivered** (commercial front / PR #15 lineage) |
-| Recovered taxonomy review state | `REQUIRES_RUBIO_REVIEW` |
-| Website may consume names / implement | **No** — blocked until catalog reaches **both** `HUMAN_APPROVED` **and** `CONSUMABLE_BY_WEBSITE` |
+| `OCTUS_ORIGINAL_SEVEN_AREAS_RECONCILIATION_V1.md` | Delivered |
+| Public catalog JSON/MD | `HUMAN_APPROVED` / consumable |
+| Neutral placeholders | **Retired** — replaced by approved names above |
 
-Superseded planning terminal (do not use): `OCTUS_WEBSITE_READY_TO_CONSUME_APPROVED_SEVEN_AREAS`
+## Artifacts
 
-## Pause
+| File | Role |
+|------|------|
+| `OCTUS_EXISTING_CONTENT_REUSE_MATRIX_V1.md` | Cluster → approved area mapping |
+| `OCTUS_NAVIGATION_GAP_ANALYSIS_V1.md` | Target nav: Services / Industries / Insights / About / Contact |
+| `OCTUS_SEVEN_AREAS_WEBSITE_INTEGRATION_PLAN_V1.md` | Area-by-area implementation plan |
+| `OCTUS_HOMEPAGE_REUSE_MAP_V1.md` | Homepage section map |
+| `OCTUS_BLOG_PRESERVATION_AND_LINKING_PLAN_V1.md` | Insights preservation (unchanged substance) |
+| `OCTUS_OPEN_PR_RECONCILIATION_V1.md` | Open PR classes — controlled reference only |
 
-The website front is paused pending catalog release. No final names, menu, service copy, routes, homepage changes, or implementation until the catalog gates above clear.
+## Implementation note
+
+Implementation must proceed on a **new branch from main after this PR merges** — not on this docs branch, not by wholesale-merging PR #10/#11.

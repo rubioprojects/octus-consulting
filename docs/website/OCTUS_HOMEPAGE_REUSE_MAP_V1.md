@@ -2,110 +2,39 @@
 
 | Field | Value |
 |-------|-------|
-| **Status** | `REQUIRES_RUBIO_REVIEW` |
+| **Status** | `HUMAN_APPROVED_FOR_IMPLEMENTATION_REFERENCE` |
 | **Date** | 2026-08-02 |
-| **Correction** | Capability section depends on approved seven — **not** six-plus-one |
-| **Rule** | Content map only — **do not** write an entirely new homepage yet |
-| **Source page** | `app/page.tsx` (+ brand/system components) |
+| **Catalog SHA** | `5857c0a7f5a758e44fe3e3c3df0d47ef87739e28` |
+| **Visual rule** | Reuse existing brand system; do not rebuild entire visual language |
 
-## Future homepage must answer
+## Required homepage composition
 
-1. Who is Octus?
-2. What does Octus do?
-3. What are the seven areas? (`final_area_identity` for each from approved catalog only)
-4. Which industries does Octus serve?
-5. How does Octus work?
-6. Why trust Octus?
-7. How to contact Octus?
+| # | Section | Reuse | Change |
+|---|---------|-------|--------|
+| 1 | Clear Octus identity | Existing hero / logo / brand tokens | Tighten to brand-first, plain language |
+| 2 | What Octus does | Catalog `one_sentence_what_octus_does` + existing role copy | Reduce abstract/repetitive copy |
+| 3 | Seven public areas | `HomeModulesAccordion` / solutions grid patterns | Bind approved seven names + area links — not six Solutions |
+| 4 | Industries served | Existing industries/markets section | Keep `/markets/*` links; label Industries |
+| 5 | How Octus works | Existing how-we-work / engage blocks | Prefer one clear how section |
+| 6 | Team or trust evidence | Team / authority strip / existing trust cues | Keep strongest current components |
+| 7 | Contact | Existing CTAs + `/contact` | Clear contact path |
 
----
+## Capability tiles (approved)
 
-## Section map
+- **Regulatory Structuring** → `/solutions/regulatory-structuring` — Jurisdiction fit, licensing pathways and regulatory programmes for regulated operations.
+- **Compliance & Risk** → `/solutions/compliance-risk` — Compliance frameworks, AML/KYC, DPO and controls that can run under real scrutiny.
+- **Legal & Structural Architecture** → `/solutions/legal-structural-architecture` — Legal and contractual frameworks for regulated operations, coordinated with counsel where needed.
+- **Corporate Structuring** → `/solutions/corporate-structuring` — Companies, holdings and group design for onshore, offshore and cross-border regulated operations.
+- **Private Clients** → `/private-clients` — Personal and ownership structuring for founders, UBOs, executives and families tied to regulated operations.
+- **Remediation & Readiness** → `/solutions/remediation-readiness` — Diagnosis and fix when licensing, banking, compliance, corporate, finance or operations are already blocked or failing.
+- **International Hub** → `/international-hub` — Finding, connecting and coordinating the banks, PSPs, CSPs, labs, counsel and other specialists a regulated operation needs.
 
-### S1 — Identity / hero (Who is Octus?)
+## Remove / demote from homepage capability model
 
-| Field | Content |
-|-------|---------|
-| existing_component | Homepage hero / atmosphere components from brand PRs |
-| existing_copy | “Premium Execution for Regulated Operations” and related framing |
-| needs_simplification | Yes — keep concrete; reduce abstract density |
-| catalog_dependency | Low for identity sentence; high if hero lists areas |
-| disposition | **Remain** — refine after claim register approval |
+- Banking, Payments & Financial Infrastructure as a peer “Solution”
+- Any six-plus-one or temporary six-capability framing
+- Abstract repetitive pressure-pattern stacks that dilute the seven-area story (trim, do not redesign system)
 
-### S2 — What Octus does (one clear statement)
+## Forbidden assumption (closed)
 
-| Field | Content |
-|-------|---------|
-| existing_component | Hero subcopy; may pull from `/what-octus-does` |
-| existing_copy | Execution / coordination for regulated ops |
-| needs_simplification | Align with approved one-sentence from catalog when consumable |
-| catalog_dependency | **Yes** — official sentence |
-| disposition | **Remain**; sync to catalog |
-
-### S3 — Seven areas (capability map)
-
-| Field | Content |
-|-------|---------|
-| existing_component | Capability / Solutions rail (currently shows **six temporary** hubs) |
-| existing_copy | Temporary hub titles from `lib/commercial.ts` — **not** approved seven |
-| needs_simplification | **Replace count and labels** with approved seven only |
-| catalog_dependency | **Hard dependency** — do not ship six, and do not assume six-plus-one |
-| disposition | **Remain as section**; **rebuild tiles** after `OCTUS_ORIGINAL_SEVEN_AREAS_RECONCILIATION_V1.md` is consumable |
-| forbidden_assumption | AREA-01…AREA-06 ≠ current six Solutions; AREA-07 ≠ “whatever is left” |
-
-### S4 — Industries
-
-| Field | Content |
-|-------|---------|
-| existing_component | Markets links/cards (`/markets`) |
-| existing_copy | iGaming, Fintech, Digital Assets, High-Risk |
-| needs_simplification | Minor |
-| catalog_dependency | Low |
-| disposition | **Remain** (industries layer, not service areas) |
-
-### S5 — How Octus works
-
-| Field | Content |
-|-------|---------|
-| existing_component | Engagement teaser → `/how-we-engage` |
-| existing_copy | Lead contractor / models |
-| needs_simplification | Keep short; link out |
-| catalog_dependency | Low |
-| disposition | **Remain** |
-
-### S6 — Why trust Octus
-
-| Field | Content |
-|-------|---------|
-| existing_component | People/trust bands; honesty/boundaries |
-| existing_copy | Team + “what we do not promise” |
-| needs_simplification | Avoid unverified metrics/cases |
-| catalog_dependency | Claim register |
-| disposition | **Remain**; use approved people assets |
-
-### S7 — Contact
-
-| Field | Content |
-|-------|---------|
-| existing_component | CTA group (Discuss / Email / Contact) |
-| existing_copy | Conversation CTAs |
-| needs_simplification | Keep Contact; Diagnostic remains available as intake from remediation **content cluster** — hierarchy TBD |
-| catalog_dependency | None for contact mechanics |
-| disposition | **Remain** |
-
----
-
-## Sections to move or remove (later)
-
-| Current pattern | Disposition |
-|-----------------|-------------|
-| Long failure-mode stacks competing with the capability map | **Move** density into remediation **content cluster** pages (`/diagnostic` and related) after role assignment — not pre-classified as an area |
-| Any “six solutions” explicit claim | **Remove/replace** after seven approved |
-| Conversion-only modules that obscure areas | **Human review** from PR #11 cherry-picks |
-
-## Explicit non-actions
-
-- No new homepage implementation in this pack
-- No final seven labels on homepage
-- No six-plus-one tile plan
-- No production deploy
+Neutral placeholders retired. Homepage capability section must use the seven approved names only.

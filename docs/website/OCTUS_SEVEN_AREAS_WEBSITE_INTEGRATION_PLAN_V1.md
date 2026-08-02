@@ -2,189 +2,200 @@
 
 | Field | Value |
 |-------|-------|
-| **Status** | `REQUIRES_RUBIO_REVIEW` |
+| **Status** | `HUMAN_APPROVED_FOR_IMPLEMENTATION_REFERENCE` |
 | **Date** | 2026-08-02 |
-| **Correction** | Neutral shell — **not** six-plus-one |
+| **Catalog SHA** | `5857c0a7f5a758e44fe3e3c3df0d47ef87739e28` |
+| **Catalog gates** | `HUMAN_APPROVED` · `CONSUMABLE_BY_WEBSITE` |
 | **Principle** | `PRESERVE_THE_ASSET_REORGANIZE_THE_NAVIGATION` |
-| **Taxonomy authority** | `docs/commercial/public-catalog/OCTUS_ORIGINAL_SEVEN_AREAS_RECONCILIATION_V1.md` |
-| **Consume when** | `HUMAN_APPROVED` or `CONSUMABLE_BY_WEBSITE` only |
-| **Terminal (after this correction)** | `OCTUS_WEBSITE_NEUTRAL_INTEGRATION_SHELL_READY` |
+| **Taxonomy authority** | `docs/commercial/public-catalog/OCTUS_PUBLIC_SERVICE_CATALOG_V1.json` |
+| **Pack type** | Documentation only (PR #16) |
 
-## Hard rule — no six-plus-one
+## Hard rules
 
-This pack **must not** assume that the approved seven areas equal:
+- Bind only the seven approved public area names below.
+- Do **not** invent an eighth Banking or Tax area.
+- Historical labels (`Ownership & UBO`, `Audit & Readiness`) may remain in redirects/metadata only.
+- Private Clients canonical: `/private-clients` unless SEO evidence forces otherwise.
+- Remediation & Readiness = service area; `/diagnostic` = intake path — connect, do not merge.
+- International Hub: no provider-logo galleries; no endorsement / guaranteed availability / guaranteed onboarding claims.
 
-`current six Solutions + one extra area`.
+## Target top navigation
 
-`AREA-01`…`AREA-07` are **neutral slots**. None is pre-bound to Regulatory, Banking, Compliance, Corporate, Legal, or Remediation as its final identity.
+`Services` · `Industries` · `Insights` · `About` · `Contact`
 
-Existing routes are documented only as **content clusters** that may later map into one or more approved areas — or into a non-area role — after catalog reconciliation.
+Expose the seven areas through an accessible Services menu (not seven long labels across the desktop bar).
 
-## Global rules
+## Approved areas
 
-- Do not invent AREA names.
-- Do not implement routes/copy as final.
-- Do not delete or redirect until approval.
-- Do not consume PR #15’s six-area recommendation as final.
-- Prefer reuse of existing assets after catalog mapping — not rebuild for its own sake.
-- Industries (`/markets`), jurisdictions, team, and blog remain reusable site layers; their relationship to the seven areas is catalog-dependent.
-
----
-
-## Neutral placeholder schema
-
-Every `AREA-0N` uses only these fields:
-
-| Field | Meaning |
-|-------|---------|
-| `placeholder_area_id` | Neutral slot id |
-| `candidate_existing_assets` | Routes/components that *might* feed this slot after mapping — **not** its identity |
-| `possible_service_relationships` | Open hypotheses only |
-| `final_area_identity` | Always `PENDING_APPROVED_CATALOG` |
-| `catalog_dependency` | Reconciliation artifact + consumable status |
-
-Shared values for all seven slots until catalog approval:
+### Regulatory Structuring (`AREA-REG`)
 
 | Field | Value |
 |-------|-------|
-| proposed_top_level_route | `PENDING_APPROVED_CATALOG` |
-| related_blog | Assign after mapping from content clusters |
-| related_industries | Assign after mapping |
-| related_jurisdictions | Assign after mapping |
-| cta_treatment | Assign after mapping |
-| missing_page_requirements | Assign after mapping |
-| human_approval_required | Yes |
+| final_area_identity | Regulatory Structuring |
+| one_sentence | Jurisdiction fit, licensing pathways and regulatory programmes for regulated operations. |
+| proposed_canonical_route | `/solutions/regulatory-structuring` |
+| preserve_from | `/solutions/regulatory-strategy-licensing` |
+| legacy_route | `/regulatory` |
+| website_hub_today (catalog) | `/solutions/regulatory-strategy-licensing` |
+| content_clusters | CLUSTER-REGULATORY, CLUSTER-MARKET-ENTRY (licensing/jurisdiction/Brazil/market-entry depth) |
+| treatment | Reuse licensing, jurisdiction-selection, Brazil regulatory and market-entry content. |
 
----
+Representative services (5):
 
-## AREA-01
+- Licensing strategy and pathway design — We design the licensing pathway and sequence before filings start.
+- iGaming licensing programme — We run iGaming licensing as a full programme, not a standalone filing.
+- Fintech, EMI and crypto licensing — We treat fintech and payments authorisation as an operable stack, not a paper exercise.
+- Brazil SPA / MF regulatory support — We coordinate Brazil-facing regulatory workstreams for betting and related frameworks.
+- Jurisdiction selection and risk mapping — We compare venue options for fit, timeline, banking access and operational risk.
 
-| Field | Content |
-|-------|---------|
-| placeholder_area_id | `AREA-01` |
-| candidate_existing_assets | TBD after catalog mapping — may draw from any content cluster below |
-| possible_service_relationships | Open; no pre-binding |
-| final_area_identity | `PENDING_APPROVED_CATALOG` |
-| catalog_dependency | `OCTUS_ORIGINAL_SEVEN_AREAS_RECONCILIATION_V1.md` → `HUMAN_APPROVED` or `CONSUMABLE_BY_WEBSITE` |
+### Compliance & Risk (`AREA-CMP`)
 
-## AREA-02
+| Field | Value |
+|-------|-------|
+| final_area_identity | Compliance & Risk |
+| one_sentence | Compliance frameworks, AML/KYC, DPO and controls that can run under real scrutiny. |
+| proposed_canonical_route | `/solutions/compliance-risk` |
+| preserve_from | `/solutions/compliance-risk-systems` |
+| legacy_route | `/compliance` |
+| website_hub_today (catalog) | `/solutions/compliance-risk-systems` |
+| content_clusters | CLUSTER-COMPLIANCE |
+| treatment | Reuse AML/KYC, DPO, Compliance-as-a-Service, governance, policies and certification-readiness content. |
 
-| Field | Content |
-|-------|---------|
-| placeholder_area_id | `AREA-02` |
-| candidate_existing_assets | TBD after catalog mapping — may draw from any content cluster below |
-| possible_service_relationships | Open; no pre-binding |
-| final_area_identity | `PENDING_APPROVED_CATALOG` |
-| catalog_dependency | Same as AREA-01 |
+Representative services (6):
 
-## AREA-03
+- AML / KYC / CDD frameworks — We build identification, monitoring and due diligence frameworks that banks and regulators can test.
+- Compliance-as-a-Service — We operate the compliance function inside the business as an ongoing service.
+- DPO-as-a-Service — We operate the DPO role for LGPD and GDPR contexts as a working function.
+- Internal controls and governance — We design controls and decision rights that run in day-to-day operations.
+- Certification and lab readiness — We prepare evidence and readiness for laboratory and formal external review.
+- Policies and due diligence packs — We produce policy suites and due diligence packs aligned to how the operation actually runs.
 
-| Field | Content |
-|-------|---------|
-| placeholder_area_id | `AREA-03` |
-| candidate_existing_assets | TBD after catalog mapping — may draw from any content cluster below |
-| possible_service_relationships | Open; no pre-binding |
-| final_area_identity | `PENDING_APPROVED_CATALOG` |
-| catalog_dependency | Same as AREA-01 |
+### Legal & Structural Architecture (`AREA-LEG`)
 
-## AREA-04
+| Field | Value |
+|-------|-------|
+| final_area_identity | Legal & Structural Architecture |
+| one_sentence | Legal and contractual frameworks for regulated operations, coordinated with counsel where needed. |
+| proposed_canonical_route | `/solutions/legal-structural-architecture` |
+| preserve_from | `/solutions/legal-contractual-architecture` |
+| legacy_route | `/legal-architecture` |
+| website_hub_today (catalog) | `/solutions/legal-contractual-architecture` |
+| content_clusters | CLUSTER-LEGAL |
+| treatment | Reuse contractual, legal-framework, opinions and counsel-coordination content. |
 
-| Field | Content |
-|-------|---------|
-| placeholder_area_id | `AREA-04` |
-| candidate_existing_assets | TBD after catalog mapping — may draw from any content cluster below |
-| possible_service_relationships | Open; no pre-binding |
-| final_area_identity | `PENDING_APPROVED_CATALOG` |
-| catalog_dependency | Same as AREA-01 |
+Representative services (4):
 
-## AREA-05
+- Contractual architecture — We design contract frameworks across group, operator and commercial layers.
+- Multi-jurisdiction legal frameworks — We coordinate legal coherence across jurisdictions with independent counsel where required.
+- Counsel coordination — We act as the execution counterpart that sequences legal work with licensing, corporate and compliance programmes.
+- Legal opinions and certifications support — We support legal opinions and related certification paperwork as part of a regulated programme.
 
-| Field | Content |
-|-------|---------|
-| placeholder_area_id | `AREA-05` |
-| candidate_existing_assets | TBD after catalog mapping — may draw from any content cluster below |
-| possible_service_relationships | Open; no pre-binding |
-| final_area_identity | `PENDING_APPROVED_CATALOG` |
-| catalog_dependency | Same as AREA-01 |
+### Corporate Structuring (`AREA-CORP`)
 
-## AREA-06
+| Field | Value |
+|-------|-------|
+| final_area_identity | Corporate Structuring |
+| one_sentence | Companies, holdings and group design for onshore, offshore and cross-border regulated operations. |
+| proposed_canonical_route | `/solutions/corporate-structuring` |
+| preserve_from | `/solutions/corporate-cross-border` |
+| legacy_route | `/corporate` |
+| website_hub_today (catalog) | `/solutions/corporate-cross-border` |
+| content_clusters | CLUSTER-CORPORATE (+ banking readiness / tax-accounting coordination as services, not areas) |
+| treatment | Reuse company formation, holdings, cross-border, reorganisations, banking readiness, corporate tax and accounting coordination. |
 
-| Field | Content |
-|-------|---------|
-| placeholder_area_id | `AREA-06` |
-| candidate_existing_assets | TBD after catalog mapping — may draw from any content cluster below |
-| possible_service_relationships | Open; no pre-binding |
-| final_area_identity | `PENDING_APPROVED_CATALOG` |
-| catalog_dependency | Same as AREA-01 |
+Representative services (7):
 
-## AREA-07
+- Entity and holding architecture — We design holdings and group structures that stay coherent under licence and bank scrutiny.
+- Company formation — We open entities inside a designed architecture — not as a standalone incorporation shop.
+- Cross-border structuring — We design multi-venue organisation so the group holds together across jurisdictions.
+- Corporate reorganisation — We reorganise when the current structure blocks licensing, banking or expansion.
+- Banking readiness — We prepare ownership, documentation and compliance posture for real banking conversations. No promised accounts.
+- Accounting and finance coordination — We sell and coordinate accounting and finance programmes under the Octus relationship.
+- Corporate tax planning — We coordinate corporate tax planning for regulated groups under the Octus relationship.
 
-| Field | Content |
-|-------|---------|
-| placeholder_area_id | `AREA-07` |
-| candidate_existing_assets | TBD after catalog mapping — may draw from any content cluster below |
-| possible_service_relationships | Open; no pre-binding |
-| final_area_identity | `PENDING_APPROVED_CATALOG` |
-| catalog_dependency | Same as AREA-01 |
+### Private Clients (`AREA-PC`)
 
----
+| Field | Value |
+|-------|-------|
+| final_area_identity | Private Clients |
+| one_sentence | Personal and ownership structuring for founders, UBOs, executives and families tied to regulated operations. |
+| proposed_canonical_route | `/private-clients` |
+| preserve_from | `/private-clients` |
+| legacy_route | `/private-clients` |
+| website_hub_today (catalog) | `/private-clients` |
+| content_clusters | CLUSTER-PRIVATE-CLIENTS |
+| treatment | Preserve /private-clients as preferred canonical. Cover founders, UBOs, personal holdings, residency, personal banking readiness, personal tax coordination. |
 
-## Content clusters (reusable — not approved public areas)
+Representative services (5):
 
-These clusters document **existing website assets**. They are **not** the seven public areas and must not be copied 1:1 into `AREA-01`…`AREA-07`.
+- Ownership and UBO architecture — We structure ownership and UBO layers for the individuals behind regulated operations.
+- Personal holding and asset organisation — We organise personal holdings and separate personal assets from operational assets where needed.
+- Residency and personal international structuring — We coordinate residency and personal international structuring tied to regulated operations.
+- Personal banking and individual KYC readiness — We prepare individuals for personal banking and KYC scrutiny linked to regulated operations.
+- Personal tax coordination — We coordinate personal tax work for founders and UBOs under the Octus relationship.
 
-| Cluster id | Existing assets (examples) | Notes |
-|------------|----------------------------|-------|
-| `CLUSTER-REGULATORY` | `/solutions/regulatory-strategy-licensing`; igaming/fintech licensing deeps; `/brazil`; legacy `/regulatory` redirect | Reusable regulatory content |
-| `CLUSTER-BANKING` | Banking hub + `/solutions/banking/banking-payments`; high-risk market overlaps | Reusable banking/payments content |
-| `CLUSTER-COMPLIANCE` | Compliance hub; AML/KYC; CaaS; DPO; internal controls; GLI readiness | Reusable compliance content |
-| `CLUSTER-CORPORATE` | Corporate hub; company-formation; holding-design; offshore-structuring | Reusable corporate/cross-border content |
-| `CLUSTER-LEGAL` | Legal hub (+ thin deep set) | Reusable legal/contractual content |
-| `CLUSTER-REMEDIATION` | Remediation hub; `/diagnostic`; `/audit` redirect; overlap with GLI readiness | Reusable crisis/remediation content — **preserve**; role TBD |
-| `CLUSTER-HUB` | `/partners`; provider-coordination language in banking/PSP/GLI/Insights; legacy `/international-hub` redirect (not a Hub page) | Reusable coordination content — **no provider gallery** |
-| `CLUSTER-PRIVATE-CLIENTS` | `/private-clients` (+ related corporate UBO language) | Reusable individuals/UBO content — **preserve URL** |
-| `CLUSTER-TAX-FINANCE` | Weak/absent as dedicated public pages today; may need new or recovered pages | Do not invent pages before catalog |
-| `CLUSTER-MARKET-ENTRY` | `/solutions/regulatory/market-entry`; parts of `/brazil` | Reusable entry sequencing content |
+### Remediation & Readiness (`AREA-REM`)
 
-Mapping from clusters → approved `AREA-0N` (or to a non-area role) is **exclusively** a catalog decision.
+| Field | Value |
+|-------|-------|
+| final_area_identity | Remediation & Readiness |
+| one_sentence | Diagnosis and fix when licensing, banking, compliance, corporate, finance or operations are already blocked or failing. |
+| proposed_canonical_route | `/solutions/remediation-readiness` |
+| preserve_from | `/solutions/operational-remediation-readiness` |
+| legacy_route | `/audit` |
+| website_hub_today (catalog) | `/solutions/operational-remediation-readiness` |
+| content_clusters | CLUSTER-REMEDIATION |
+| treatment | Keep as public area. Connect to /diagnostic as intake path only — do not merge concepts. Historical alias Audit & Readiness may remain in redirects/metadata only. |
 
----
+Representative services (6):
 
-## Role-pending themes (not pre-classified)
+- Crisis entry and structural assessment — A single intake when the operation is blocked, delayed, rejected or failing.
+- Licensing delay remediation — We unblock stalled or conditioned licensing by fixing the structural causes.
+- Banking or compliance gap remediation — We remediate when banking rejection or compliance gaps are the live constraint.
+- Audit and readiness remediation — We close evidence and readiness gaps when formal review is imminent or already failing.
+- Financial infrastructure remediation — When banking or payment infrastructure has already failed, we sequence recovery with the right layers.
+- Tax and finance problem remediation — We coordinate tax recovery and finance problem programmes when the live issue is already a blockage.
 
-Do **not** pre-classify any of the following as area, segment, adjacent surface, or secondary layer until the approved catalog decides:
+### International Hub (`AREA-HUB`)
 
-| Theme | Status | Website duty now |
-|-------|--------|------------------|
-| Private Clients | `ROLE_PENDING_ORIGINAL_SEVEN_AREAS_RECONCILIATION` | Preserve `/private-clients` and related content; prepare for any approved role |
-| Hub / Networking | `ROLE_PENDING_ORIGINAL_SEVEN_AREAS_RECONCILIATION` | Preserve partners/coordination seeds; no gallery; no endorsement promises |
-| Remediation | `ROLE_PENDING_ORIGINAL_SEVEN_AREAS_RECONCILIATION` | Preserve remediation + diagnostic content; do not demote or delete |
-| Tax / Accounting / Audit | `ROLE_PENDING_ORIGINAL_SEVEN_AREAS_RECONCILIATION` | Do not invent public pages; note possible new/recovered pages later |
-| Market Entry | `ROLE_PENDING_ORIGINAL_SEVEN_AREAS_RECONCILIATION` | Preserve market-entry deep; do not decide if standalone area |
+| Field | Value |
+|-------|-------|
+| final_area_identity | International Hub |
+| one_sentence | Finding, connecting and coordinating the banks, PSPs, CSPs, labs, counsel and other specialists a regulated operation needs. |
+| proposed_canonical_route | `/international-hub` |
+| preserve_from | `/international-hub` |
+| legacy_route | `/international-hub` |
+| website_hub_today (catalog) | `/solutions/regulatory/market-entry` |
+| content_clusters | CLUSTER-HUB (+ selected market-entry / partners seeds) |
+| treatment | Rebuild Hub page: banks/PSPs, payment providers, CSPs, local directors, labs, certification, KYC/AML providers, tech platforms, local counsel, tax/other specialists. No logo galleries. No endorsement/availability/onboarding guarantees. |
 
----
+Representative services (6):
 
-## Hub content prep (cluster only)
+- Market entry coordination — We coordinate entry into a new regulated market as one sequenced programme.
+- Bank and PSP introductions — We identify and coordinate relevant banks and PSPs for the operation’s risk profile.
+- Payment and PSP architecture — We design payment and PSP options matched to markets, settlement needs and risk.
+- CSP, local director and formation partners — We connect and coordinate CSPs, local directors and formation partners required by the venue.
+- Lab, certification and specialist network coordination — We identify and coordinate laboratories, certification providers and other specialists the programme needs.
+- Counsel and tax specialist coordination — We identify and coordinate legal counsel and tax specialists required for the matter.
 
-| Field | Plan |
-|-------|------|
-| Goal when later authorized | Explain Octus’ ability to identify and coordinate providers |
-| Forbidden | Provider gallery; endorsement; promised acceptance/availability |
-| Existing seeds | `CLUSTER-HUB` assets above |
-| Hierarchy | `ROLE_PENDING_ORIGINAL_SEVEN_AREAS_RECONCILIATION` |
+## Banking / Tax treatment (not areas)
 
-## Implementation phases (post-approval only)
+| Theme | Placement |
+|-------|-----------|
+| Banking readiness (corporate) | Corporate Structuring service |
+| Bank/PSP introductions & payment architecture | International Hub services |
+| Banking/compliance gap remediation | Remediation & Readiness |
+| Corporate tax planning / accounting coordination | Corporate Structuring services |
+| Personal tax coordination | Private Clients |
+| Tax/finance problem remediation | Remediation & Readiness |
 
-1. Read approved seven names/slugs from reconciliation artifact  
-2. Map content clusters → areas **or** non-area roles per catalog  
-3. Remap nav + footer without assuming six-plus-one  
-4. Adjust homepage capability section to approved seven  
-5. Batch-update Insights `related[]` only after mapping  
-6. Add missing pages only where catalog requires  
-7. Redirects only with explicit approval  
+## Implementation sequence (post-merge)
 
-**Not authorized by this document.**
-
-## Pause condition
-
-Website front **pauses** after terminal `OCTUS_WEBSITE_NEUTRAL_INTEGRATION_SHELL_READY` until the reconciliation artifact is consumable.
+1. Clean branch from main (after PR #16 merge)
+2. Public catalog → website data module (read-only consume; do not edit catalog)
+3. Nav + Services index
+4. Area pages + Hub rebuild
+5. Homepage
+6. Insights linking hygiene
+7. Route migration map + redirects
+8. Validate + Vercel preview
