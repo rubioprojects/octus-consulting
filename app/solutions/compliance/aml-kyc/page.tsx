@@ -124,7 +124,7 @@ export default function SolutionsAMLKYCPage() {
             {[
               {
                 title: "iGaming operator: compliance remediation",
-                body: "Flagged by regulator for compliance gaps. Full AML/KYC rebuild: policies, procedures, monitoring rules, evidence register. Cleared within 8 weeks.",
+                body: "Flagged by regulator for compliance gaps. Full AML/KYC rebuild covering policies, procedures, monitoring rules and the evidence register so the programme could return to regulatory review.",
               },
               {
                 title: "Fintech: banking due diligence recovery",
@@ -136,7 +136,7 @@ export default function SolutionsAMLKYCPage() {
               },
               {
                 title: "GLI audit preparation",
-                body: "Full evidence register, compliance documentation and readiness pack delivered in 6 weeks. Client entered audit with complete documentation and zero critical findings.",
+                body: "Full evidence register, compliance documentation and readiness pack prepared for audit entry with a complete documentation set.",
               },
             ].map((m, i) => (
               <div

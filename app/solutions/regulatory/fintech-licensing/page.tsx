@@ -149,7 +149,7 @@ export default function FintechLicensingPage() {
           <div className="grid gap-6 md:grid-cols-1">
             {[
               ["Case 1 · Fintech · EU", "EMI application rejected. Structure rebuilt.", "Initial application failed due to insufficient substance and safeguarding gaps. Octus redesigned corporate structure, rebuilt compliance documentation and coordinated resubmission. Authorisation granted on second application."],
-              ["Case 2 · Payments · Cross-border", "Licensed but unable to bank.", "PI licence active but no banking partner would onboard. AML documentation did not meet banking standards. Octus restructured compliance and coordinated with specialist institutions. Account operational within 10 weeks."],
+              ["Case 2 · Payments · Cross-border", "Licensed but unable to bank.", "PI licence active but no banking partner would onboard. AML documentation did not meet banking standards. Octus restructured compliance and coordinated specialist banking readiness workstreams so the operation could reopen an account path."],
               ["Case 3 · Fintech · Passporting", "Authorised but blocked in target markets.", "EMI licence granted but passporting notifications rejected due to substance concerns. Octus restructured local presence, governance and operational controls. Passporting restored across 4 EU markets."],
             ].map(([tag, title, body]) => (
               <div

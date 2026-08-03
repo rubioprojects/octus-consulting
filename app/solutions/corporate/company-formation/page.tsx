@@ -127,7 +127,7 @@ export default function SolutionsCompanyFormationPage() {
             {[
               {
                 title: "iGaming group: multi-entity restructuring",
-                body: "3 operating entities across Curaçao and Malta with holding in BVI. Restructured ownership chain, governance framework and banking documentation. All entities operational within 90 days.",
+                body: "3 operating entities across Curaçao and Malta with holding in BVI. Restructured ownership chain, governance framework and banking documentation so the group could operate under a coherent corporate and banking readiness design.",
               },
               {
                 title: "Fintech. Brazil + offshore dual structure",

@@ -217,7 +217,6 @@ export default function ComplianceAsAServicePage() {
             jurisdictions and operational complexity. This is not a one-time
             delivery. It is a continuous function embedded in the business.
           </p>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">Continue this discussion →</a>
         </div>
       </section>
 

@@ -188,17 +188,17 @@ export default function SolutionsIGamingLicensingPage() {
               {
                 tag: "Curaçao · iGaming",
                 title: "Licence active. No banking.",
-                body: "Compliance documentation did not meet banking standards. Octus restructured AML policies and coordinated with multiple institutions. Operational account secured within 11 weeks.",
+                body: "Compliance documentation did not meet banking standards. Octus restructured AML policies and coordinated banking readiness workstreams so the operation could reopen a sustainable account path.",
               },
               {
                 tag: "Brazil · Betting",
                 title: "Cross-border operator entering a regulated market.",
-                body: "Corporate structure redesigned for SPA compliance. Regulatory dossier prepared and submission coordinated. Authorization process managed end-to-end.",
+                body: "Corporate structure redesigned for SPA compliance. Regulatory dossier prepared and submission coordinated across the licensing pathway.",
               },
               {
                 tag: "iGaming · Certification",
                 title: "GLI audit scheduled. No evidence readiness.",
-                body: "Full compliance gap analysis and evidence framework delivered. Client entered audit with complete documentation and zero critical findings.",
+                body: "Full compliance gap analysis and evidence framework delivered so the client could enter audit with a complete documentation set.",
               },
             ].map((m, i) => (
               <div
@@ -222,16 +222,13 @@ export default function SolutionsIGamingLicensingPage() {
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "24px", marginBottom: "28px" }}>
             <p className="body-text">
-              <strong className="font-semibold text-foreground">Full execution</strong>
-              {" "}. End-to-end licensing and structuring. From jurisdiction selection to operational readiness.
+              <strong className="font-semibold text-foreground">Full execution</strong>. End-to-end licensing and structuring. From jurisdiction selection to operational readiness.
             </p>
             <p className="body-text">
-              <strong className="font-semibold text-foreground">Strategic intervention</strong>
-              {" "}. Correction of existing structures, licensing processes or regulatory misalignment.
+              <strong className="font-semibold text-foreground">Strategic intervention</strong>. Correction of existing structures, licensing processes or regulatory misalignment.
             </p>
             <p className="body-text">
-              <strong className="font-semibold text-foreground">Advisory and mapping</strong>
-              {" "}. Strategic assessment and regulatory pathway definition before execution.
+              <strong className="font-semibold text-foreground">Advisory and mapping</strong>. Strategic assessment and regulatory pathway definition before execution.
             </p>
           </div>
           <p className="body-sm mb-6 text-muted-foreground">
@@ -244,7 +241,6 @@ export default function SolutionsIGamingLicensingPage() {
             approaches without structural backing. If your objective is speed
             over sustainability, we are not the right partner.
           </p>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">Continue this discussion →</a>
         </div>
       </section>
 
