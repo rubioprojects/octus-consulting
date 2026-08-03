@@ -17,7 +17,7 @@ export default function InternalControlsPage() {
         <DarkHeroAtmosphere />
         <div className="relative z-10 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Services · Compliance · Internal Controls & Governance</span>
-          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
+          <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline">
             Controls that exist on paper
             <br />
             <span style={{ color: "var(--white-40)" }}>do not exist at all.</span>

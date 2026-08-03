@@ -56,7 +56,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
             <span className="label">{post.category}</span>
           </div>
           <h1
-            className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline"
+            className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline"
             style={{ fontSize: "clamp(24px, 3.5vw, 44px)", lineHeight: 1.2 }}
           >
             {post.title}
