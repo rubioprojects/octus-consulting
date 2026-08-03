@@ -642,88 +642,109 @@ async function interactAccordions(page) {
     tabReachableInteractive: null,
   };
 
-  const triggers = page.locator("[aria-expanded]");
+  // Prefer in-main accordion/disclosure triggers; skip hidden mobile-nav chrome.
+  const triggers = page.locator(
+    "main button[aria-expanded], main [role='button'][aria-expanded], main summary[aria-expanded], main [aria-expanded][aria-controls]"
+  );
   const count = await triggers.count();
-  const sample = Math.min(count, 3);
-  for (let i = 0; i < sample; i++) {
+  const visibleIdx = [];
+  for (let i = 0; i < count; i++) {
+    if (await triggers.nth(i).isVisible().catch(() => false)) visibleIdx.push(i);
+  }
+  const sampleIdx = visibleIdx.slice(0, 3);
+
+  for (const i of sampleIdx) {
     const t = triggers.nth(i);
-    const before = await t.getAttribute("aria-expanded");
-    const controls = await t.getAttribute("aria-controls");
-    let panelVisibleBefore = null;
-    if (controls) {
-      panelVisibleBefore = await page.locator(`[id="${controls}"]`).isVisible().catch(() => null);
-    }
-    await t.click({ force: false });
-    await page.waitForTimeout(150);
-    const afterClick = await t.getAttribute("aria-expanded");
-    let panelVisibleAfter = null;
-    if (controls) {
-      panelVisibleAfter = await page.locator(`[id="${controls}"]`).isVisible().catch(() => null);
-    }
-    results.mouse.push({
-      index: i,
-      before,
-      after: afterClick,
-      changed: before !== afterClick,
-      panelVisibleBefore,
-      panelVisibleAfter,
-      panelChanged: panelVisibleBefore !== panelVisibleAfter,
-    });
-    // restore
-    if (before !== afterClick) {
-      await t.click({ force: false });
-      await page.waitForTimeout(100);
+    try {
+      const before = await t.getAttribute("aria-expanded");
+      const controls = await t.getAttribute("aria-controls");
+      let panelVisibleBefore = null;
+      if (controls) {
+        panelVisibleBefore = await page.locator(`[id="${controls}"]`).isVisible().catch(() => null);
+      }
+      await t.click({ force: false, timeout: 5000 });
+      await page.waitForTimeout(150);
+      const afterClick = await t.getAttribute("aria-expanded");
+      let panelVisibleAfter = null;
+      if (controls) {
+        panelVisibleAfter = await page.locator(`[id="${controls}"]`).isVisible().catch(() => null);
+      }
+      results.mouse.push({
+        index: i,
+        before,
+        after: afterClick,
+        changed: before !== afterClick,
+        panelVisibleBefore,
+        panelVisibleAfter,
+        panelChanged: panelVisibleBefore !== panelVisibleAfter,
+      });
+      if (before !== afterClick) {
+        await t.click({ force: false, timeout: 5000 });
+        await page.waitForTimeout(100);
+      }
+    } catch (e) {
+      results.mouse.push({ index: i, error: String(e.message || e), changed: false });
     }
   }
 
-  for (let i = 0; i < sample; i++) {
+  for (const i of sampleIdx) {
     const t = triggers.nth(i);
-    await t.focus();
-    const before = await t.getAttribute("aria-expanded");
-    await page.keyboard.press("Enter");
-    await page.waitForTimeout(150);
-    const after = await t.getAttribute("aria-expanded");
-    results.enter.push({ index: i, before, after, changed: before !== after });
-    if (before !== after) {
+    try {
+      await t.focus({ timeout: 3000 });
+      const before = await t.getAttribute("aria-expanded");
       await page.keyboard.press("Enter");
-      await page.waitForTimeout(100);
+      await page.waitForTimeout(150);
+      const after = await t.getAttribute("aria-expanded");
+      results.enter.push({ index: i, before, after, changed: before !== after });
+      if (before !== after) {
+        await page.keyboard.press("Enter");
+        await page.waitForTimeout(100);
+      }
+    } catch (e) {
+      results.enter.push({ index: i, error: String(e.message || e), changed: false });
     }
   }
 
-  for (let i = 0; i < Math.min(sample, 2); i++) {
+  for (const i of sampleIdx.slice(0, 2)) {
     const t = triggers.nth(i);
-    await t.focus();
-    const before = await t.getAttribute("aria-expanded");
-    await page.keyboard.press(" ");
-    await page.waitForTimeout(150);
-    const after = await t.getAttribute("aria-expanded");
-    results.space.push({ index: i, before, after, changed: before !== after });
-    if (before !== after) {
+    try {
+      await t.focus({ timeout: 3000 });
+      const before = await t.getAttribute("aria-expanded");
       await page.keyboard.press(" ");
-      await page.waitForTimeout(100);
+      await page.waitForTimeout(150);
+      const after = await t.getAttribute("aria-expanded");
+      results.space.push({ index: i, before, after, changed: before !== after });
+      if (before !== after) {
+        await page.keyboard.press(" ");
+        await page.waitForTimeout(100);
+      }
+    } catch (e) {
+      results.space.push({ index: i, error: String(e.message || e), changed: false });
     }
   }
 
-  // Focus visibility on a representative control
-  const focusTarget = page.locator("main a[href], main button, [aria-expanded]").first();
+  const focusTarget = page.locator("main a[href], main button").first();
   if ((await focusTarget.count()) > 0) {
-    await focusTarget.focus();
-    const focusInfo = await focusTarget.evaluate((el) => {
-      const cs = getComputedStyle(el);
-      return {
-        outlineStyle: cs.outlineStyle,
-        outlineWidth: cs.outlineWidth,
-        boxShadow: cs.boxShadow,
-        tag: el.tagName.toLowerCase(),
-      };
-    });
-    const visible =
-      (focusInfo.outlineStyle && focusInfo.outlineStyle !== "none" && focusInfo.outlineWidth !== "0px") ||
-      (focusInfo.boxShadow && focusInfo.boxShadow !== "none");
-    results.focusVisibleSample.push({ ...focusInfo, visibleFocus: !!visible });
+    try {
+      await focusTarget.focus({ timeout: 3000 });
+      const focusInfo = await focusTarget.evaluate((el) => {
+        const cs = getComputedStyle(el);
+        return {
+          outlineStyle: cs.outlineStyle,
+          outlineWidth: cs.outlineWidth,
+          boxShadow: cs.boxShadow,
+          tag: el.tagName.toLowerCase(),
+        };
+      });
+      const visible =
+        (focusInfo.outlineStyle && focusInfo.outlineStyle !== "none" && focusInfo.outlineWidth !== "0px") ||
+        (focusInfo.boxShadow && focusInfo.boxShadow !== "none");
+      results.focusVisibleSample.push({ ...focusInfo, visibleFocus: !!visible });
+    } catch (e) {
+      results.focusVisibleSample.push({ error: String(e.message || e), visibleFocus: false });
+    }
   }
 
-  // Tab order reaches interactive controls (sample first 12 tabs)
   let reached = 0;
   await page.locator("body").click({ position: { x: 5, y: 5 } }).catch(() => {});
   for (let i = 0; i < 12; i++) {
@@ -732,6 +753,7 @@ async function interactAccordions(page) {
     if (["A", "BUTTON", "INPUT", "SUMMARY", "TEXTAREA", "SELECT"].includes(tag)) reached += 1;
   }
   results.tabReachableInteractive = { tabs: 12, interactiveFocusEvents: reached };
+  results.visibleAccordionTriggersSampled = sampleIdx.length;
 
   return results;
 }
@@ -796,9 +818,10 @@ async function fullA11yForRoute(browser, origin, route, viewportName = "desktop"
 
   const seriousManual = manual.issues.filter((i) => i.impact === "serious" || i.impact === "critical");
   const axeBlocking = axe.unavailable || axe.execution_error || (axe.serious?.length || 0) + (axe.critical?.length || 0) > 0;
-  // Accordion interaction: only fail if triggers exist and none of mouse/enter change state
+  // Accordion interaction: fail only when visible in-main triggers exist and none toggle
   let accordionFail = false;
-  if ((manual.notes.accordionTriggerCount || 0) > 0) {
+  const sampled = interactions.visibleAccordionTriggersSampled || 0;
+  if (sampled > 0) {
     const anyToggle =
       interactions.mouse.some((x) => x.changed) ||
       interactions.enter.some((x) => x.changed) ||
