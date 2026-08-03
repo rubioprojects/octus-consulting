@@ -4,7 +4,8 @@
 **Branch:** `feat/seven-areas-website-architecture`  
 **Starting HEAD:** `443f1bc087626c49fd84d3c41d54543521107943`  
 **Family-integrity commit:** `5ece72e`  
-**Implementation commit:** `bbd3f1d`  
+**Implementation commit:** `bbd3f1d`
+**Final HEAD:** `ee127e1e71f101e11c17f49501aa564b3dc623f6`  
 **PR:** https://github.com/rubioprojects/octus-consulting/pull/17  
 
 ## Family integrity
