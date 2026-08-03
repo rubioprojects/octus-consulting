@@ -1,0 +1,510 @@
+{
+  "generated_at": "2026-08-03T19:46:40.470Z",
+  "starting_head": "4a4687134156dce4e5892552a049ff00747d1172",
+  "phase3_impl_commit": "47db576145b80f7c232b0d31c3372247a6f538fc",
+  "immutable_preview_url": "https://octus-consulting-l79bo9vrg-axle1.vercel.app",
+  "deployment_id": "dpl_FCywMhkUrBatkqCH4t3s7izYvUYE",
+  "checks": {
+    "homepage_http": "PASS",
+    "hero_height_880": "PASS",
+    "h1_full_width": "PASS",
+    "authority_height": "PASS",
+    "leadership_titles": "PASS",
+    "seven_areas_heading": "PASS",
+    "no_banking_in_rail": "PASS",
+    "prohibited_copy": "PASS",
+    "duplicate_arrows": "PASS",
+    "internal_links": "PASS",
+    "desktop_overflow": "PASS",
+    "mobile_overflow": "PASS",
+    "a11y_h1": "PASS",
+    "portrait_hashes": "PASS",
+    "team_roster_desktop": "PASS",
+    "team_roster_mobile": "PASS",
+    "team_overflow_desktop": "PASS",
+    "team_overflow_mobile": "PASS",
+    "header_regression": "PASS",
+    "logo_regression": "PASS",
+    "footer_logo_regression": "PASS",
+    "whatsapp_24": "PASS",
+    "noindex": "PASS",
+    "crawl_regression": "PASS",
+    "frozen_files": "PASS"
+  },
+  "failed_checks": [],
+  "overall": "PASS",
+  "results": {
+    "homeAudit": {
+      "heroH": 880,
+      "h1W": 896,
+      "authH": 323,
+      "leads": [
+        "Rubio Teixeira",
+        "Maria Cristina"
+      ],
+      "roles": [
+        "Founder & CEO",
+        "Operations Coordination"
+      ],
+      "uniqueAreas": [
+        "Regulatory Structuring",
+        "Compliance & Risk",
+        "Legal & Structural Architecture",
+        "Corporate Structuring",
+        "Private Clients",
+        "Remediation & Readiness",
+        "International Hub"
+      ],
+      "areaCount": 7,
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Explore services →",
+          "href": "/solutions"
+        },
+        {
+          "text": "See how we work →",
+          "href": "/how-we-engage"
+        },
+        {
+          "text": "Assess your situation →",
+          "href": "/diagnostic"
+        },
+        {
+          "text": "Rubio TeixeiraFounder & CEO",
+          "href": "/team"
+        },
+        {
+          "text": "Maria CristinaOperations Coordination",
+          "href": "/team"
+        },
+        {
+          "text": "Meet the team →",
+          "href": "/team"
+        },
+        {
+          "text": "Regulatory Structuring →",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Corporate Structuring →",
+          "href": "/solutions/corporate-structuring"
+        },
+        {
+          "text": "Private Clients →",
+          "href": "/private-clients"
+        },
+        {
+          "text": "Compliance & Risk →",
+          "href": "/solutions/compliance-risk"
+        },
+        {
+          "text": "Legal & Structural Architecture →",
+          "href": "/solutions/legal-structural-architecture"
+        },
+        {
+          "text": "Banking & Payments →",
+          "href": "/solutions/banking-payments-infrastructure"
+        },
+        {
+          "text": "Remediation & Readiness →",
+          "href": "/solutions/remediation-readiness"
+        },
+        {
+          "text": "International Hub →",
+          "href": "/international-hub"
+        },
+        {
+          "text": "iGaming & BettingLicensing, compliance, banking, post-license operationsExplore ",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Fintech & PaymentsEMI licensing, payment infrastructure, cross-border compliance",
+          "href": "/markets/fintech"
+        },
+        {
+          "text": "Crypto & Digital AssetsCASP/VASP licensing, MiCA compliance, banking accessExplo",
+          "href": "/markets/crypto"
+        },
+        {
+          "text": "High-Risk OperationsBanking resilience, enhanced compliance, institutional acces",
+          "href": "/markets/high-risk"
+        },
+        {
+          "text": "Assess your situation →",
+          "href": "/diagnostic"
+        },
+        {
+          "text": "All services →",
+          "href": "/solutions"
+        },
+        {
+          "text": "Markets →",
+          "href": "/markets"
+        },
+        {
+          "text": "How we engage →",
+          "href": "/how-we-engage"
+        },
+        {
+          "text": "Licensing strategy and pathway design",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "iGaming licensing programme",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Fintech, EMI and crypto licensing",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Open Regulatory Structuring →",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Assess your situation →",
+          "href": "/diagnostic"
+        },
+        {
+          "text": "Open remediation hub →",
+          "href": "/solutions/remediation-readiness"
+        },
+        {
+          "text": "How we engage →",
+          "href": "/how-we-engage"
+        },
+        {
+          "text": "Markets →",
+          "href": "/markets"
+        },
+        {
+          "text": "Jurisdictions →",
+          "href": "/jurisdictions"
+        },
+        {
+          "text": "Brazil →",
+          "href": "/brazil"
+        },
+        {
+          "text": "Explore engagement models →",
+          "href": "/how-we-engage"
+        },
+        {
+          "text": "Open Intelligence",
+          "href": "/intelligence"
+        },
+        {
+          "text": "Read Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        }
+      ],
+      "arrowLabels": [],
+      "dupLabels": [
+        "Assess your situation →×3"
+      ],
+      "prohibited": [],
+      "h1Count": 1,
+      "lang": "en",
+      "overflow": false,
+      "waBottom": "24px",
+      "headerH": 84,
+      "sevenHeading": true,
+      "bankingPeerCard": false,
+      "hasBankingInRail": false
+    },
+    "broken": [],
+    "crawl": {
+      "/": {
+        "status": 200,
+        "xRobots": "noindex"
+      },
+      "/team": {
+        "status": 200,
+        "xRobots": "noindex"
+      },
+      "/solutions": {
+        "status": 200,
+        "xRobots": "noindex"
+      },
+      "/about": {
+        "status": 200,
+        "xRobots": "noindex"
+      },
+      "/contact": {
+        "status": 200,
+        "xRobots": "noindex"
+      }
+    },
+    "aboutChrome": {
+      "headerH": 84,
+      "logoH": 36,
+      "footerLogoH": 48,
+      "waBottom": "24px"
+    },
+    "teamDesk": {
+      "names": [
+        "Rubio Teixeira",
+        "Maria Cristina",
+        "Rodrigo Coelho Lopes",
+        "Claudia Nery",
+        "Esther Vendrami",
+        "Caroline Giovanetti",
+        "Larissa Carvalho",
+        "Milla Ludovico",
+        "Bianca Carolina Oliveira Andrade",
+        "Luciana Santos Veloso"
+      ],
+      "exact": true,
+      "bands": [
+        "Leadership",
+        "Core Specialists"
+      ],
+      "overflow": false
+    },
+    "teamMob": {
+      "names": [
+        "Rubio Teixeira",
+        "Maria Cristina",
+        "Rodrigo Coelho Lopes",
+        "Claudia Nery",
+        "Esther Vendrami",
+        "Caroline Giovanetti",
+        "Larissa Carvalho",
+        "Milla Ludovico",
+        "Bianca Carolina Oliveira Andrade",
+        "Luciana Santos Veloso"
+      ],
+      "exact": true,
+      "bands": [
+        "Leadership",
+        "Core Specialists"
+      ],
+      "overflow": false
+    },
+    "portraits": {
+      "bianca.jpg": {
+        "expected": "f923fd3591aaa68157d28591b88346ace4a515e6a11a6b516aa3c7888d5e9b64",
+        "actual": "f923fd3591aaa68157d28591b88346ace4a515e6a11a6b516aa3c7888d5e9b64",
+        "status": "PASS"
+      },
+      "caroline-giovanetti.jpg": {
+        "expected": "7e8f71eb5cc1b90eec048d4184b9b1a08f0d4900da84f1022d0394e855899eb9",
+        "actual": "7e8f71eb5cc1b90eec048d4184b9b1a08f0d4900da84f1022d0394e855899eb9",
+        "status": "PASS"
+      },
+      "claudia-nery.jpg": {
+        "expected": "344ea1734f68788244c6f71d5fd69972789b202c5f4e02b02af6941c7a1eeaa0",
+        "actual": "344ea1734f68788244c6f71d5fd69972789b202c5f4e02b02af6941c7a1eeaa0",
+        "status": "PASS"
+      },
+      "esther-vendrami.jpg": {
+        "expected": "10906673c848baed9e2f12c066c53691d2765ff207595cddbdb50c06d0970650",
+        "actual": "10906673c848baed9e2f12c066c53691d2765ff207595cddbdb50c06d0970650",
+        "status": "PASS"
+      },
+      "larissa-carvalho.jpg": {
+        "expected": "3dadbb3cebebd945700a737ed4eeff244cb102e9aed68564f2c12cfb39131fb7",
+        "actual": "3dadbb3cebebd945700a737ed4eeff244cb102e9aed68564f2c12cfb39131fb7",
+        "status": "PASS"
+      },
+      "luciana-santos-veloso.jpg": {
+        "expected": "bb6fcc97ea426bebc0856d1e4df49c8aea6d5db36ce35eb7cfab1f6ce3b0749d",
+        "actual": "bb6fcc97ea426bebc0856d1e4df49c8aea6d5db36ce35eb7cfab1f6ce3b0749d",
+        "status": "PASS"
+      },
+      "maria-cristina.jpg": {
+        "expected": "4fe097595ed6753e8df9cc3208fd78993a69a7b645d332af25b449116ebbfe26",
+        "actual": "4fe097595ed6753e8df9cc3208fd78993a69a7b645d332af25b449116ebbfe26",
+        "status": "PASS"
+      },
+      "milla-ludovico.jpg": {
+        "expected": "0d46dff8ede1d046cb053d6be038deba141ef78788c064863794f58002025c4a",
+        "actual": "0d46dff8ede1d046cb053d6be038deba141ef78788c064863794f58002025c4a",
+        "status": "PASS"
+      },
+      "rodrigo-lopes.jpg": {
+        "expected": "82833b9103a0053dceae774a82da20a6e4c9692ff4bd7fbe9eabf0d3cf8ceaaf",
+        "actual": "82833b9103a0053dceae774a82da20a6e4c9692ff4bd7fbe9eabf0d3cf8ceaaf",
+        "status": "PASS"
+      },
+      "rubio-teixeira.jpg": {
+        "expected": "28d61e59f013debc140e6684b3783c4a8bb426a24ddbdf3dbdb45922b9fee200",
+        "actual": "28d61e59f013debc140e6684b3783c4a8bb426a24ddbdf3dbdb45922b9fee200",
+        "status": "PASS"
+      }
+    },
+    "diffNames": [
+      "app/globals.css",
+      "app/page.tsx",
+      "docs/ops/evidence/remediation/DECISION_REGISTER.md",
+      "docs/ops/evidence/remediation/REMEDIATION_CONTROL_PLAN.md",
+      "docs/ops/evidence/remediation/homepage/PHASE3_HOME_IMPACT_MATRIX.md",
+      "docs/ops/evidence/remediation/homepage/audit/HOME_COMPUTED_COMPARE.json",
+      "docs/ops/evidence/remediation/homepage/audit/HOME_HERO_LEADERSHIP_DEEP.json",
+      "docs/ops/evidence/remediation/homepage/baseline/hero-desktop.png",
+      "docs/ops/evidence/remediation/homepage/baseline/leadership-desktop.png",
+      "docs/ops/evidence/remediation/homepage/before/hero-desktop.png",
+      "docs/ops/evidence/remediation/homepage/before/leadership-desktop.png"
+    ],
+    "prohibitedHits": [],
+    "unexpectedApp": [],
+    "ctaRegister": [
+      {
+        "text": "Discuss your operation →",
+        "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+      },
+      {
+        "text": "Explore services →",
+        "href": "/solutions"
+      },
+      {
+        "text": "See how we work →",
+        "href": "/how-we-engage"
+      },
+      {
+        "text": "Assess your situation →",
+        "href": "/diagnostic"
+      },
+      {
+        "text": "Rubio TeixeiraFounder & CEO",
+        "href": "/team"
+      },
+      {
+        "text": "Maria CristinaOperations Coordination",
+        "href": "/team"
+      },
+      {
+        "text": "Meet the team →",
+        "href": "/team"
+      },
+      {
+        "text": "Regulatory Structuring →",
+        "href": "/solutions/regulatory-structuring"
+      },
+      {
+        "text": "Corporate Structuring →",
+        "href": "/solutions/corporate-structuring"
+      },
+      {
+        "text": "Private Clients →",
+        "href": "/private-clients"
+      },
+      {
+        "text": "Compliance & Risk →",
+        "href": "/solutions/compliance-risk"
+      },
+      {
+        "text": "Legal & Structural Architecture →",
+        "href": "/solutions/legal-structural-architecture"
+      },
+      {
+        "text": "Banking & Payments →",
+        "href": "/solutions/banking-payments-infrastructure"
+      },
+      {
+        "text": "Remediation & Readiness →",
+        "href": "/solutions/remediation-readiness"
+      },
+      {
+        "text": "International Hub →",
+        "href": "/international-hub"
+      },
+      {
+        "text": "iGaming & BettingLicensing, compliance, banking, post-license operationsExplore ",
+        "href": "/markets/igaming"
+      },
+      {
+        "text": "Fintech & PaymentsEMI licensing, payment infrastructure, cross-border compliance",
+        "href": "/markets/fintech"
+      },
+      {
+        "text": "Crypto & Digital AssetsCASP/VASP licensing, MiCA compliance, banking accessExplo",
+        "href": "/markets/crypto"
+      },
+      {
+        "text": "High-Risk OperationsBanking resilience, enhanced compliance, institutional acces",
+        "href": "/markets/high-risk"
+      },
+      {
+        "text": "Assess your situation →",
+        "href": "/diagnostic"
+      },
+      {
+        "text": "All services →",
+        "href": "/solutions"
+      },
+      {
+        "text": "Markets →",
+        "href": "/markets"
+      },
+      {
+        "text": "How we engage →",
+        "href": "/how-we-engage"
+      },
+      {
+        "text": "Licensing strategy and pathway design",
+        "href": "/solutions/regulatory-structuring"
+      },
+      {
+        "text": "iGaming licensing programme",
+        "href": "/solutions/regulatory-structuring"
+      },
+      {
+        "text": "Fintech, EMI and crypto licensing",
+        "href": "/solutions/regulatory-structuring"
+      },
+      {
+        "text": "Open Regulatory Structuring →",
+        "href": "/solutions/regulatory-structuring"
+      },
+      {
+        "text": "Assess your situation →",
+        "href": "/diagnostic"
+      },
+      {
+        "text": "Open remediation hub →",
+        "href": "/solutions/remediation-readiness"
+      },
+      {
+        "text": "How we engage →",
+        "href": "/how-we-engage"
+      },
+      {
+        "text": "Markets →",
+        "href": "/markets"
+      },
+      {
+        "text": "Jurisdictions →",
+        "href": "/jurisdictions"
+      },
+      {
+        "text": "Brazil →",
+        "href": "/brazil"
+      },
+      {
+        "text": "Explore engagement models →",
+        "href": "/how-we-engage"
+      },
+      {
+        "text": "Open Intelligence",
+        "href": "/intelligence"
+      },
+      {
+        "text": "Read Insights",
+        "href": "/insights"
+      },
+      {
+        "text": "Discuss your operation →",
+        "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "phase": 3,
+  "accepted_phase2_head": "4a4687134156dce4e5892552a049ff00747d1172",
+  "phase3_control_commit": "98125861a4c2ea5ff659d7da0c513490a2329d32",
+  "phase3_implementation_commit": "47db576145b80f7c232b0d31c3372247a6f538fc",
+  "immutable_preview_url": "https://octus-consulting-l79bo9vrg-axle1.vercel.app",
+  "deployment_id": "dpl_FCywMhkUrBatkqCH4t3s7izYvUYE",
+  "baseline_url": "https://octus-consulting-9q798dbg2-axle1.vercel.app",
+  "baseline_deployment_id": "dpl_437tawkoMDv7sqxW6NzPzTegj1Lq",
+  "terminal": "OCTUS_HOME_GATE_READY_FOR_SOL_AUDIT",
+  "note": "Reconciled screenshots captured from immutable preview whose GitHub SHA equals phase3_implementation_commit."
+}
