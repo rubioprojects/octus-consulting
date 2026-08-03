@@ -11,7 +11,7 @@ import { pageSocialMeta } from "../../lib/pageMeta";
 export const metadata = pageSocialMeta({
   title: "Team",
   description:
-    "Octus leadership and practice leads across regulatory, compliance, legal, corporate and international workstreams.",
+    "Octus leadership and core specialists across regulatory, compliance, legal, corporate and international workstreams.",
   path: "/team",
 });
 
@@ -22,13 +22,13 @@ type Member = {
   focus: string;
   linkedin: string | null;
   capability?: string;
-  featured?: boolean;
   photoKey?: string;
 };
 
 /**
- * Verified public roster inside closed-model composition.
- * Larissa / Bianca / Luciana held at NEEDS RUBIO — see evidence decision register.
+ * Approved public roster — exactly 10.
+ * Bands: Leadership + Core Specialists only (baseline composition).
+ * Titles: verified current (Founder & CEO / Operations Coordination locked).
  */
 const leadership: Member[] = [
   {
@@ -51,7 +51,8 @@ const leadership: Member[] = [
   },
 ];
 
-const leadershipSupport: Member[] = [
+/** Baseline Core Specialists order (9q798dbg2). */
+const coreSpecialists: Member[] = [
   {
     name: "Rodrigo Coelho Lopes",
     title: "Legal Architecture Lead",
@@ -62,9 +63,6 @@ const leadershipSupport: Member[] = [
       "Legal architecture for regulatory and corporate mandates, including cross-border structure.",
     linkedin: null,
   },
-];
-
-const operationalLeadership: Member[] = [
   {
     name: "Claudia Nery",
     title: "Chief Financial Officer",
@@ -74,11 +72,7 @@ const operationalLeadership: Member[] = [
     focus:
       "Corporate and financial architecture, financial governance and group reporting.",
     linkedin: "https://www.linkedin.com/in/claudia-nery/",
-    featured: true,
   },
-];
-
-const specialists: Member[] = [
   {
     name: "Esther Vendrami",
     title: "International Regulatory & Compliance Lead",
@@ -88,7 +82,6 @@ const specialists: Member[] = [
     focus:
       "International regulatory and licensing coordination, with compliance operations for cross-border programmes.",
     linkedin: "https://www.linkedin.com/in/esthervendrami/",
-    featured: true,
   },
   {
     name: "Caroline Giovanetti",
@@ -99,7 +92,16 @@ const specialists: Member[] = [
     focus:
       "Brazil regulatory processes and SPA/MF licensing support for Brazil-facing mandates.",
     linkedin: "https://www.linkedin.com/in/caroline-cubas-giovanetti-400820144/",
-    featured: true,
+  },
+  {
+    name: "Larissa Carvalho",
+    title: "Regulatory & Compliance Specialist",
+    photo: "/team/larissa-carvalho.jpg",
+    photoKey: "larissa",
+    capability: "Regulatory & compliance",
+    focus:
+      "Operational support across regulatory and compliance engagements, including documentation and client-facing deliverables.",
+    linkedin: "https://www.linkedin.com/in/larissaocarvalho/",
   },
   {
     name: "Milla Ludovico",
@@ -110,7 +112,26 @@ const specialists: Member[] = [
     focus:
       "New business development, client intake and commercial coordination on new mandates.",
     linkedin: "https://www.linkedin.com/in/milla-ludovico-6a9945a2/",
-    featured: true,
+  },
+  {
+    name: "Bianca Carolina Oliveira Andrade",
+    title: "People & Operations",
+    photo: "/team/bianca.jpg",
+    photoKey: "bianca",
+    capability: "People & delivery",
+    focus:
+      "People operations, talent coordination and internal processes supporting delivery capacity.",
+    linkedin: "https://www.linkedin.com/in/rh2463365recursoshumanos/",
+  },
+  {
+    name: "Luciana Santos Veloso",
+    title: "Operations Coordinator",
+    photo: "/team/luciana-santos-veloso.jpg",
+    photoKey: "luciana",
+    capability: "Operations",
+    focus:
+      "Operational delivery support — workflows, client documentation and cross-functional coordination.",
+    linkedin: null,
   },
 ];
 
@@ -119,11 +140,7 @@ function MemberCard({
   tier,
 }: {
   member: Member;
-  tier:
-    | "leadership"
-    | "leadership-support"
-    | "operational-leadership"
-    | "specialist";
+  tier: "leadership" | "specialist";
 }) {
   const photoClass =
     member.photoKey === "rubio"
@@ -190,22 +207,9 @@ export default function TeamPage() {
             ))}
           </div>
 
-          <div className="team-grid team-grid--leadership-support">
-            {leadershipSupport.map((m) => (
-              <MemberCard key={m.name} member={m} tier="leadership-support" />
-            ))}
-          </div>
-
-          <p className="team-band-label">Operational Leadership</p>
-          <div className="team-grid team-grid--operational-leadership mb-16">
-            {operationalLeadership.map((m) => (
-              <MemberCard key={m.name} member={m} tier="operational-leadership" />
-            ))}
-          </div>
-
           <p className="team-band-label">Core Specialists</p>
           <div className="team-grid team-grid--core mb-16">
-            {specialists.map((m) => (
+            {coreSpecialists.map((m) => (
               <MemberCard key={m.name} member={m} tier="specialist" />
             ))}
           </div>
