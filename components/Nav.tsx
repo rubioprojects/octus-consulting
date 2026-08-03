@@ -104,7 +104,7 @@ export default function Nav() {
           >
             <BrandLockup
               variant={overDarkHero ? "on-dark" : "on-light"}
-              className="site-header__logo h-10 w-auto md:h-11"
+              className="site-header__logo h-8 w-auto md:h-9"
               priority
             />
           </Link>

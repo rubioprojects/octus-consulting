@@ -2,7 +2,7 @@ import Link from "next/link";
 
 /**
  * Homepage leadership accountability. Rubio + Maria Cristina (Cris).
- * Compact editorial cards restored from the approved Octus visual system.
+ * Photo treatment matches commit 8b12fcc / reference deployment exactly.
  */
 export default function HomeLeadershipTrust() {
   const leaders = [
@@ -18,7 +18,7 @@ export default function HomeLeadershipTrust() {
       photo: "/team/maria-cristina.jpg",
       photoClass: "team-photo--maria",
     },
-  ];
+  ] as const;
 
   return (
     <section
@@ -44,15 +44,23 @@ export default function HomeLeadershipTrust() {
               key={l.name}
               href="/team"
               className="home-leadership-trust__card no-underline"
+              aria-label={`${l.name}, ${l.title}`}
             >
               <div className={`home-leadership-trust__photo-wrap ${l.photoClass}`}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={l.photo} alt={l.name} className="home-leadership-trust__photo" />
+                <img
+                  src={l.photo}
+                  alt=""
+                  className="home-leadership-trust__photo"
+                  aria-hidden="true"
+                />
               </div>
-              <div className="home-leadership-trust__copy">
-                <p className="home-leadership-trust__name">{l.name}</p>
-                <p className="home-leadership-trust__role">{l.title}</p>
-              </div>
+              <p className="home-leadership-trust__name" aria-hidden="true">
+                {l.name}
+              </p>
+              <p className="home-leadership-trust__role" aria-hidden="true">
+                {l.title}
+              </p>
             </Link>
           ))}
         </div>

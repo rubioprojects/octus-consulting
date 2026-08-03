@@ -83,12 +83,17 @@ export default function RootLayout({
           <div className="site-footer__mark" aria-hidden="true" />
           <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="site-footer__brand-close">
-              <a href="/" className="inline-flex items-center no-underline" aria-label="Octus Consulting">
-                <BrandLockup variant="on-dark" className="h-10 w-auto md:h-11" />
+              <a
+                href="/"
+                className="site-footer__lockup-link inline-flex max-w-full items-center no-underline"
+                aria-label="Octus Consulting"
+              >
+                <BrandLockup
+                  variant="on-dark"
+                  surface="footer"
+                  className="site-footer__lockup h-9 w-auto max-w-[min(100%,17rem)] object-contain object-left md:h-12 md:max-w-none"
+                />
               </a>
-              <p className="site-footer__brand-close__wordmark" aria-hidden="true">
-                OCTUS CONSULTING
-              </p>
               <p className="site-footer__brand-close__line">
                 Premium international execution partner for highly regulated operations.
               </p>
@@ -134,7 +139,82 @@ export default function RootLayout({
               </div>
             </div>
 
-            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:gap-8 lg:grid-cols-3 xl:grid-cols-5">
+            <div className="site-footer__acc-stack mt-8 space-y-0 md:hidden">
+              {(
+                [
+                  {
+                    label: "Services",
+                    links: [
+                      { label: "Regulatory Structuring", href: "/solutions/regulatory-structuring" },
+                      { label: "Compliance & Risk", href: "/solutions/compliance-risk" },
+                      { label: "Legal & Structural Architecture", href: "/solutions/legal-structural-architecture" },
+                      { label: "Corporate Structuring", href: "/solutions/corporate-structuring" },
+                      { label: "Private Clients", href: "/private-clients" },
+                      { label: "Remediation & Readiness", href: "/solutions/remediation-readiness" },
+                      { label: "International Hub", href: "/international-hub" },
+                    ],
+                  },
+                  {
+                    label: "Industries",
+                    links: [
+                      { label: "iGaming", href: "/markets/igaming" },
+                      { label: "Fintech", href: "/markets/fintech" },
+                      { label: "Digital Assets", href: "/markets/crypto" },
+                      { label: "High-Risk Operations", href: "/markets/high-risk" },
+                    ],
+                  },
+                  {
+                    label: "Engage",
+                    links: [
+                      { label: "How we engage", href: "/how-we-engage" },
+                      { label: "Intelligence", href: "/intelligence" },
+                      { label: "Insights", href: "/insights" },
+                      { label: "Partners", href: "/partners" },
+                      { label: "Diagnostic assessment", href: "/diagnostic" },
+                    ],
+                  },
+                  {
+                    label: "Company",
+                    links: [
+                      { label: "About", href: "/about" },
+                      { label: "Team", href: "/team" },
+                      { label: "Careers", href: "/careers" },
+                      { label: "Jurisdictions", href: "/jurisdictions" },
+                      { label: "Contact", href: "/contact" },
+                    ],
+                  },
+                  {
+                    label: "Legal",
+                    links: [
+                      { label: "Privacy Policy", href: "/privacy" },
+                      { label: "Terms of Use", href: "/terms" },
+                      { label: "Cookie Policy", href: "/cookies" },
+                      { label: "Compliance Channel", href: "/compliance-channel" },
+                    ],
+                  },
+                ] as const
+              ).map((group) => (
+                <details key={group.label} className="site-footer__acc">
+                  <summary className="site-footer__acc-summary">{group.label}</summary>
+                  <div className="pb-3 pl-1 pt-1">
+                    <ul className="flex list-none flex-col gap-2.5">
+                      {group.links.map((l) => (
+                        <li key={l.href}>
+                          <a
+                            href={l.href}
+                            className="site-footer__nav-link font-sans no-underline transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                          >
+                            {l.label}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </details>
+              ))}
+            </div>
+
+            <div className="mt-12 hidden grid-cols-2 gap-8 md:grid lg:grid-cols-3 xl:grid-cols-5">
               <div>
                 <p className="site-footer__nav-label">Services</p>
                 <ul className="flex list-none flex-col gap-2.5">
@@ -160,9 +240,7 @@ export default function RootLayout({
               </div>
 
               <div>
-                <p className="site-footer__nav-label">
-                  Industries
-                </p>
+                <p className="site-footer__nav-label">Industries</p>
                 <ul className="flex list-none flex-col gap-2.5">
                   {[
                     { label: "iGaming", href: "/markets/igaming" },
@@ -183,9 +261,7 @@ export default function RootLayout({
               </div>
 
               <div>
-                <p className="site-footer__nav-label">
-                  Engage
-                </p>
+                <p className="site-footer__nav-label">Engage</p>
                 <ul className="flex list-none flex-col gap-2.5">
                   {[
                     { label: "How we engage", href: "/how-we-engage" },
@@ -207,9 +283,7 @@ export default function RootLayout({
               </div>
 
               <div>
-                <p className="site-footer__nav-label">
-                  Company
-                </p>
+                <p className="site-footer__nav-label">Company</p>
                 <ul className="flex list-none flex-col gap-2.5">
                   {[
                     { label: "About", href: "/about" },

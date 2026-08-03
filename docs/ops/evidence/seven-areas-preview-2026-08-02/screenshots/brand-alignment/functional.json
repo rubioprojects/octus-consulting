@@ -1,0 +1,15 @@
+{
+  "header_lockup": 1,
+  "footer_lockup": 1,
+  "html_wordmark": 0,
+  "footer_wordmark": 0,
+  "mobile_acc": 5,
+  "static_grid_visible": true,
+  "roles_md": 0,
+  "ceo": 1,
+  "ops": 1,
+  "desktop_track_visible": true,
+  "desktop_grid_hidden": true,
+  "desktop_cols": 1,
+  "mobile_acc_hidden_desktop": true
+}
