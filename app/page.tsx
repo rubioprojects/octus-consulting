@@ -44,7 +44,7 @@ export const metadata = pageSocialMeta({
 export default function HomePage() {
   return (
     <main>
-      {/* 1. Branded hero — geometry from 9q798dbg2; evidence-safe copy retained */}
+      {/* 1. Branded hero - geometry from 9q798dbg2; evidence-safe copy retained */}
       <section className="home-hero relative flex overflow-hidden surface-dark px-4 sm:px-6 lg:px-8">
         <div className="home-hero__atmosphere" aria-hidden="true" />
         <div className="home-hero__mesh" aria-hidden="true" />
@@ -102,7 +102,7 @@ export default function HomePage() {
       {/* 2. Capability rail */}
       <CapabilityRail items={CAPABILITY_RAIL} ariaLabel="Seven service areas" />
 
-      {/* 3. Authority signal — baseline 3-col geometry; seven-area facts (07, not 06) */}
+      {/* 3. Authority signal - baseline 3-col geometry; seven-area facts (07, not 06) */}
       <section className="home-authority border-b border-border bg-background py-14 md:py-16">
         <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-8 flex justify-center">
@@ -135,7 +135,7 @@ export default function HomePage() {
 
       <OctusChapterTransition />
 
-      {/* 5–6. What we fix + Outcomes (closed-model density) */}
+      {/* 5-6. What we fix + Outcomes (closed-model density) */}
       <section className="surface-elevated py-24 md:py-32">
         <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12 max-w-2xl md:mb-16">
