@@ -77,28 +77,28 @@ export default function ServicesIndexPage() {
     <main>
       <PageHero
         eyebrow="Services"
-        title="Services for regulated operations."
-        titleSecondLine="Seven areas. One coordinated mandate."
-        description="Octus coordinates regulatory, compliance, legal, corporate, private client, remediation and specialist network workstreams so the operation can hold under scrutiny."
+        title="You don't need a catalogue of services."
+        titleSecondLine="You need seven areas under one mandate."
+        description="Octus coordinates regulatory, compliance, legal, corporate, private client, remediation and specialist network workstreams as one structure, with a clear door when the operation is already failing."
         primaryCta={{ href: WHATSAPP_DISCUSS_URL, label: CTA_DISCUSS_LABEL, external: true }}
         secondaryCta={{ href: "/how-we-engage", label: "How we engage", quiet: true }}
       />
 
-      <section className="octus-section-relative bg-background py-24 md:py-32">
+      <section className="octus-section-relative bg-background py-20 md:py-28">
         <BrandSectionMotif />
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="section-label mb-4 block">Seven areas</p>
             <h2 className="heading-section heading-section--brand mb-4 max-w-2xl">
-              What Octus coordinates.
+              Seven areas. One accountable layer.
             </h2>
             <p className="body-large mb-6 max-w-2xl text-muted-foreground">
-              Each area is a public entry into the same operating system, coordinated under one
-              accountable model.
+              Not a service catalogue. Coordinated execution across seven peer areas so each
+              workstream supports the next under one operating model.
             </p>
             <OctusEditorialDivider className="mb-12 ml-0 mr-auto" />
           </Reveal>
-          <div className="grid gap-6 md:grid-cols-2 lg:gap-8">
+          <div className="grid gap-5 md:grid-cols-2 lg:gap-6">
             {areas.map((area, i) => {
               const themes =
                 REPRESENTATIVE_THEMES[area.id] ??
@@ -129,18 +129,21 @@ export default function ServicesIndexPage() {
                     <p className="relative z-10 mb-4 flex-1 font-sans text-sm leading-relaxed text-muted-foreground">
                       {area.oneSentence}
                     </p>
-                    <ul className="relative z-10 mb-6 list-none space-y-1">
+                    <p className="relative z-10 mb-2 font-sans text-[11px] font-medium uppercase tracking-[0.12em] text-primary/80">
+                      Focus
+                    </p>
+                    <ul className="relative z-10 mb-6 list-none space-y-1.5">
                       {themes.slice(0, 4).map((theme) => (
-                        <li key={theme} className="font-sans text-xs text-muted-foreground">
-                          · {theme}
+                        <li key={theme} className="font-sans text-xs leading-snug text-muted-foreground">
+                          {theme}
                         </li>
                       ))}
                     </ul>
                     <Link
                       href={area.href}
-                      className="relative z-10 font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
+                      className="relative z-10 mt-auto font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
                     >
-                      Open area →
+                      Open {area.name} →
                     </Link>
                   </article>
                 </Reveal>
@@ -204,33 +207,43 @@ export default function ServicesIndexPage() {
 
       <section className="bg-background py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <p className="section-label mb-3 block">Cross-cutting capabilities</p>
-          <h2 className="heading-section mb-10 max-w-2xl">
-            Capabilities that support the seven areas.
+          <p className="section-label mb-3 block">Supporting infrastructure</p>
+          <h2 className="heading-section mb-4 max-w-2xl">
+            Cross-cutting support. Not an eighth area.
           </h2>
-          <div className="grid gap-8 md:grid-cols-2">
-            <div className="rounded-lg border border-transparent bg-secondary/20 p-6 transition-all hover:border-border md:p-8">
+          <p className="body-large mb-10 max-w-2xl text-muted-foreground">
+            Banking and tax coordination support the seven peer areas. They are not additional
+            pillars in the public area system.
+          </p>
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="solution-card flex h-full flex-col rounded-sm border border-border bg-background p-6 md:p-8">
+              <p className="mb-2 font-sans text-[11px] font-medium uppercase tracking-[0.12em] text-primary/80">
+                Supporting
+              </p>
               <h3 className="mb-3 font-heading text-xl font-semibold text-foreground">
-                Banking and payments
+                Banking &amp; Payments
               </h3>
-              <p className="mb-5 font-sans text-sm leading-relaxed text-muted-foreground">
-                Banking and payments support the regulatory, corporate and compliance structures that
-                need them.
+              <p className="mb-5 flex-1 font-sans text-sm leading-relaxed text-muted-foreground">
+                Prepare the structure, identify providers and resolve existing banking or payment
+                constraints through Corporate, International Hub and Remediation routes.
               </p>
               <Link
                 href="/solutions/banking-payments-infrastructure"
                 className="font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
               >
-                Banking &amp; Payments →
+                Open Banking &amp; Payments guidance →
               </Link>
             </div>
-            <div className="rounded-lg border border-transparent bg-secondary/20 p-6 transition-all hover:border-border md:p-8">
+            <div className="solution-card flex h-full flex-col rounded-sm border border-border bg-background p-6 md:p-8">
+              <p className="mb-2 font-sans text-[11px] font-medium uppercase tracking-[0.12em] text-primary/80">
+                Integrated
+              </p>
               <h3 className="mb-3 font-heading text-xl font-semibold text-foreground">
                 Tax coordination
               </h3>
               <p className="font-sans text-sm leading-relaxed text-muted-foreground">
                 Tax coordination is integrated where corporate, private-client and remediation
-                structures require it.
+                structures require it. It is not a standalone peer area.
               </p>
             </div>
           </div>

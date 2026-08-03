@@ -2545,3 +2545,41 @@ body.cookie-banner-visible .wa-float {
   display: inline-flex;
   align-items: center;
 }
+
+/* -------------------------------------------------------------------------
+   Phase 4 — Services overview cards only (`.solution-card*`)
+   Scoped selectors for /solutions editorial density. Do not use on hubs.
+--------------------------------------------------------------------------- */
+.solution-card {
+  position: relative;
+  overflow: hidden;
+  background: var(--background, #fff);
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+.solution-card:hover {
+  border-color: color-mix(in srgb, var(--primary, #2563eb) 45%, transparent);
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
+}
+.solution-card--crisis {
+  background: linear-gradient(180deg, rgba(220, 38, 38, 0.03), transparent 42%);
+}
+.solution-card--motif-regulatory::before,
+.solution-card--motif-compliance::before,
+.solution-card--motif-legal::before,
+.solution-card--motif-corporate::before,
+.solution-card--motif-banking::before,
+.solution-card--motif-remediation::before {
+  content: "";
+  position: absolute;
+  inset: auto -20% -40% auto;
+  width: 220px;
+  height: 220px;
+  border-radius: 999px;
+  opacity: 0.05;
+  pointer-events: none;
+  background: radial-gradient(circle, var(--primary, #2563eb) 0%, transparent 70%);
+}
+.solution-card--motif-remediation::before {
+  background: radial-gradient(circle, #dc2626 0%, transparent 70%);
+  opacity: 0.07;
+}

@@ -16,7 +16,7 @@
 | `lib/publicAreas.ts` | Area/service copy registry | IN SCOPE if needed — no 8th peer |
 | `lib/areaHubContent.ts` | Hub enrichment | IN SCOPE if needed |
 | `lib/serviceArchitecture.ts` + JSON docs | Family architecture | IN SCOPE if needed |
-| Service-scoped CSS selectors in `app/globals.css` | Only with documented isolation | DECLARE BEFORE EDIT |
+| Service-scoped CSS selectors in `app/globals.css` | `.solution-card*` only (overview) | DECLARED — overview commit |
 | New `components/system/ServicesPageHero.tsx` or wrapper | Prefer if PageHero institutional consumers must stay frozen | PREFERRED over global PageHero edit |
 
 ## Prohibited paths (hard freeze)
