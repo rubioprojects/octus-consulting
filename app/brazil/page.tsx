@@ -93,7 +93,7 @@ export default function BrazilPage() {
         <DarkHeroAtmosphere />
         <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <span className="label">Brazil</span>
-          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
+          <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline">
             Brazil&apos;s regulated market
             <br />
             <span className="text-white/40">requires a different architecture.</span>

@@ -27,7 +27,7 @@ export default function ContactPage() {
         <DarkHeroAtmosphere />
         <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <span className="label">Contact</span>
-          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem]">
+          <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12]">
             Discuss your operation.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/70">
