@@ -10,8 +10,9 @@
 | Item | Value |
 |------|--------|
 | Starting PR #17 HEAD | `a304ef94fd22e6a470ff8e789de047cadb02c8e9` |
-| Final PR #17 HEAD | `5b49e07de78174f51f7fc32e051cacae9a976bcb` |
-| Updated preview (tip) | `https://octus-consulting-745p3mtcg-axle1.vercel.app` |
+| Final PR #17 HEAD | `471e2709b54a24c694c87878c2dfa262f42b8e52` |
+| Visual implementation SHA | `5b49e07de78174f51f7fc32e051cacae9a976bcb` |
+| Updated preview (tip) | `https://octus-consulting-giovkltyv-axle1.vercel.app` |
 | Branch preview alias | `https://octus-consulting-git-feat-seven-areas-website-arch-0785d8-axle1.vercel.app` |
 | Safety tag | `safety/pr17-pre-visual-rebase-a304ef9` |
 | Safety branch | `safety/pr17-pre-visual-rebase` |
