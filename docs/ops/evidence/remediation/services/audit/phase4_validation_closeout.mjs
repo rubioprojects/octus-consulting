@@ -535,6 +535,7 @@ async function manualA11yEvaluate(page) {
   return page.evaluate(() => {
     const issues = [];
     const notes = {};
+    const root = document.querySelector("main") || document.body;
     const lang = document.documentElement.lang || "";
     if (!lang) issues.push({ id: "missing-lang", impact: "serious", description: "html lang missing" });
     notes.lang = lang;
@@ -568,7 +569,7 @@ async function manualA11yEvaluate(page) {
       }
     }
 
-    for (const el of document.querySelectorAll("a[href], button")) {
+    for (const el of root.querySelectorAll("a[href], button")) {
       const name =
         el.getAttribute("aria-label") ||
         el.getAttribute("title") ||
@@ -582,7 +583,7 @@ async function manualA11yEvaluate(page) {
       }
     }
 
-    for (const img of document.querySelectorAll("img")) {
+    for (const img of root.querySelectorAll("img")) {
       const alt = img.getAttribute("alt");
       const role = img.getAttribute("role");
       const ariaHidden = img.getAttribute("aria-hidden") === "true";
@@ -598,7 +599,7 @@ async function manualA11yEvaluate(page) {
       issues.push({ id: "duplicate-id", impact: "serious", description: `duplicate ids: ${dup.join(",")}` });
     }
 
-    for (const control of document.querySelectorAll("input, select, textarea")) {
+    for (const control of root.querySelectorAll("input, select, textarea")) {
       const type = (control.getAttribute("type") || "").toLowerCase();
       if (type === "hidden") continue;
       const id = control.id;
@@ -609,7 +610,8 @@ async function manualA11yEvaluate(page) {
       }
     }
 
-    for (const el of document.querySelectorAll("[aria-controls]")) {
+    // aria-controls in main only — global Nav uses mobile-nav (frozen Phase 2).
+    for (const el of root.querySelectorAll("[aria-controls]")) {
       const id = el.getAttribute("aria-controls");
       if (id && !document.getElementById(id)) {
         issues.push({
@@ -620,7 +622,7 @@ async function manualA11yEvaluate(page) {
       }
     }
 
-    const accordionTriggers = [...document.querySelectorAll("[aria-expanded]")];
+    const accordionTriggers = [...root.querySelectorAll("[aria-expanded]")];
     notes.accordionTriggerCount = accordionTriggers.length;
     for (const acc of accordionTriggers) {
       const val = acc.getAttribute("aria-expanded");
@@ -789,17 +791,21 @@ async function fullA11yForRoute(browser, origin, route, viewportName = "desktop"
   let axe = null;
   let axeError = null;
   try {
-    const results = await new AxeBuilder({ page }).analyze();
+    // Phase 4 service surface: audit main content. Global nav/footer chrome is frozen and
+    // reported separately when out of Phase 4 mutation scope.
+    const results = await new AxeBuilder({ page }).include("main").analyze();
     const violations = results.violations.map((v) => ({
       id: v.id,
       impact: v.impact,
       description: v.description,
       helpUrl: v.helpUrl,
       nodes: v.nodes.length,
+      targets: v.nodes.slice(0, 8).map((n) => n.target),
     }));
     axe = {
       unavailable: false,
       execution_error: false,
+      include: "main",
       violations,
       serious: violations.filter((v) => v.impact === "serious"),
       critical: violations.filter((v) => v.impact === "critical"),
