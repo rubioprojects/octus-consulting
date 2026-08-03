@@ -11,8 +11,10 @@
 |------|--------|
 | Starting PR #17 HEAD | `aa836ce760123a3f203d60e05bb73156e5677a2e` |
 | Evidence body HEAD | `ca1bdce9e93b3b226994f741af335269e54d078e` |
-| Audit tip HEAD | `99cd1fc` *(full SHA at closeout)* |
-| Implementation HEAD | `62e7853ac19d819ca55ae4898b6af4728edfa32a` *(filled at implementation closeout)* |
+| Prior audit tip HEAD | `99cd1fc547143da2d076db1b9ea4651ff11a5c73` |
+| Corrected-audit commit | `0e80e88cc71427bc379a96eaf85669e64f3ac9ac` |
+| Implementation HEAD | `62e7853ac19d819ca55ae4898b6af4728edfa32a` |
+| Final tip HEAD | `53bed22bf10da0085bdf991cbd3df35c14adf434` |
 | Old closed-model commit | `8b12fcc88922e6ed07b98dd40da0a27bde71bbf9` |
 | Old branch | `feat/authority-conversion-p0` |
 | Old deployment | https://octus-consulting-6dieznt51-axle1.vercel.app |
@@ -332,7 +334,7 @@ Capture log: `capture-log.json`.
 | Old commit inspectable | YES (`8b12fcc`) |
 | Starting PR #17 HEAD | `aa836ce…` |
 | Evidence body HEAD | `ca1bdce…` |
-| Audit tip HEAD | `99cd1fc` |
+| Final tip HEAD | `53bed22bf10da0085bdf991cbd3df35c14adf434` |
 | Implementation HEAD | `62e7853ac19d819ca55ae4898b6af4728edfa32a` |
 | Rendered website code changed | **NO** (evidence only) |
 | Routes classified | **81 / 81** |
