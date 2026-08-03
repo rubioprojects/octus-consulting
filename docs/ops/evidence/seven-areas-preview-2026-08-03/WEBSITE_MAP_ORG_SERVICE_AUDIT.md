@@ -4,8 +4,8 @@
 **Date:** 2026-08-03  
 **PR:** https://github.com/rubioprojects/octus-consulting/pull/17  
 **starting_HEAD / evidence_only_HEAD base:** `f30f1c4b075e3f15d6e41a78f29b0d7c7b070621`  
-**implementation_sha / evidence_generated_from_sha:** 
-**validation_sha:**   
+**implementation_sha / evidence_generated_from_sha:** `3ca349deb75ed91d4621034f1e73719478ecb96b`  
+**validation_sha:** `3ca349deb75ed91d4621034f1e73719478ecb96b`  
 **Code mutation:** none (`app/`, `components/`, `lib/`, `public/` untouched)  
 **Merge:** no · **Production deploy:** no  
 
