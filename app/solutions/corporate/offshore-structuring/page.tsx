@@ -19,7 +19,7 @@ export default function OffshoreStructuringPage() {
             <span style={{ color: "var(--white-40)" }}>It is an architectural decision.</span>
           </h1>
           <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "660px" }}>
-            A structure built for one purpose — tax, speed, privacy — fails when
+            A structure built for one purpose: tax, speed, privacy: fails when
             tested by regulators, banks and institutional counterparties.
             Offshore structuring for regulated operations requires design that
             satisfies all three simultaneously.
@@ -83,7 +83,7 @@ export default function OffshoreStructuringPage() {
               "Banking refused because the jurisdiction or structure creates unacceptable risk.",
               "Licensing delayed or rejected due to insufficient substance.",
               "Regulatory action when supervisors question who controls the operation.",
-              "Forced restructuring under pressure — always more expensive than doing it right.",
+              "Forced restructuring under pressure: always more expensive than doing it right.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
@@ -117,7 +117,7 @@ export default function OffshoreStructuringPage() {
               "No intention to satisfy regulatory or banking standards.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                <span className="mt-0.5 shrink-0 text-muted-foreground">: </span>
                 <p className="body-text text-muted-foreground">{item}</p>
               </div>
             ))}

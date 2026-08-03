@@ -34,7 +34,7 @@ export default function SolutionHubPage({ hub }: { hub: SolutionHub }) {
             <p className="font-sans text-sm leading-relaxed text-muted-foreground">
               Legal work is delivered or coordinated through qualified counsel according to the
               jurisdiction and scope of the matter. This page covers legal and contractual
-              architecture for regulated operations — coordination, frameworks and structural
+              architecture for regulated operations: coordination, frameworks and structural
               requirements.
             </p>
           </div>

@@ -121,15 +121,15 @@ export default function SolutionsCompanyFormationPage() {
           <div className="grid gap-6 md:grid-cols-1">
             {[
               {
-                title: "iGaming group — multi-entity restructuring",
+                title: "iGaming group: multi-entity restructuring",
                 body: "3 operating entities across Curaçao and Malta with holding in BVI. Restructured ownership chain, governance framework and banking documentation. All entities operational within 90 days.",
               },
               {
-                title: "Fintech — Brazil + offshore dual structure",
+                title: "Fintech. Brazil + offshore dual structure",
                 body: "Brazilian operational entity (LTDA) connected to offshore holding. Structured for BACEN requirements and international banking simultaneously.",
               },
               {
-                title: "Crypto exchange — entity migration",
+                title: "Crypto exchange: entity migration",
                 body: "Migrated corporate structure from incompatible jurisdiction to one aligned with VASP registration requirements. Banking restored after restructuring.",
               },
             ].map((m, i) => (

@@ -1,4 +1,4 @@
-/** Website-facing public areas — consumed from approved catalog. Do not edit catalog files here. */
+/** Website-facing public areas, consumed from approved catalog. Do not edit catalog files here. */
 
 export type PublicServiceRef = {
   id: string;
@@ -40,12 +40,12 @@ export const PUBLIC_AREAS: PublicArea[] = [
     href: "/solutions/regulatory-structuring",
     name: "Regulatory Structuring",
     oneSentence: "Jurisdiction fit, licensing pathways and regulatory programmes for regulated operations.",
-    summary: "Licensing pathways, jurisdiction fit and regulator-facing programmes for regulated operations \u2014 sequenced with corporate, compliance and banking readiness.",
+    summary: "Licensing pathways, jurisdiction fit and programmes that work with regulators for regulated operations, sequenced with corporate, compliance and banking readiness.",
     whenNeeded: [
       "Entering a regulated market or changing venue",
       "License stalled, deferred or conditioned",
       "Structure incompatible with what the authority expects",
-      "Brazil SPA / MF or multi-jurisdiction regulatory pressure",
+      "Brazil SPA / MF or regulatory pressure across jurisdictions",
     ],
     services: [
       {
@@ -121,8 +121,8 @@ export const PUBLIC_AREAS: PublicArea[] = [
     slug: "compliance-risk",
     href: "/solutions/compliance-risk",
     name: "Compliance & Risk",
-    oneSentence: "Compliance frameworks, AML/KYC, DPO and controls that can run under real scrutiny.",
-    summary: "AML/KYC/CDD, DPO capability, Compliance-as-a-Service, policies and certification readiness designed to survive banking and regulatory scrutiny.",
+    oneSentence: "AML, KYC, DPO and controls that hold under real scrutiny.",
+    summary: "AML/KYC/CDD, DPO capability, Compliance-as-a-Service, policies and certification readiness designed to survive banking and regulatory review.",
     whenNeeded: [
       "Audit or banking questions the team cannot answer",
       "Policies exist but operations do not",
@@ -212,8 +212,8 @@ export const PUBLIC_AREAS: PublicArea[] = [
     slug: "legal-structural-architecture",
     href: "/solutions/legal-structural-architecture",
     name: "Legal & Structural Architecture",
-    oneSentence: "Legal and contractual frameworks for regulated operations, coordinated with counsel where needed.",
-    summary: "Contractual architecture, multi-jurisdiction legal frameworks, opinions support and counsel coordination for regulated operations.",
+    oneSentence: "Contractual and legal frameworks, coordinated with counsel.",
+    summary: "Contractual architecture, legal frameworks across jurisdictions, opinions support and counsel coordination for regulated groups.",
     whenNeeded: [
       "Contracts and structures do not match the operating model",
       "Multi-jurisdiction frameworks need a coordinating layer",
@@ -288,7 +288,7 @@ export const PUBLIC_AREAS: PublicArea[] = [
       {
         id: "SVC-CORP-02",
         name: "Company formation",
-        oneSentence: "We open entities inside a designed architecture \u2014 not as a standalone incorporation shop.",
+        oneSentence: "We open entities inside a designed architecture, not as a standalone incorporation shop.",
       },
       {
         id: "SVC-CORP-03",
@@ -368,7 +368,7 @@ export const PUBLIC_AREAS: PublicArea[] = [
     href: "/private-clients",
     name: "Private Clients",
     oneSentence: "Personal and ownership structuring for founders, UBOs, executives and families tied to regulated operations.",
-    summary: "Personal and ownership structuring for founders, UBOs, executives and families tied to regulated operations \u2014 including residency, personal holdings and personal banking readiness.",
+    summary: "Personal and ownership structuring for founders, UBOs, executives and families tied to regulated operations, including residency, personal holdings and personal banking readiness.",
     whenNeeded: [
       "Ownership and UBO layers block licensing or banking",
       "Personal holdings need alignment with the operating group",
@@ -429,8 +429,8 @@ export const PUBLIC_AREAS: PublicArea[] = [
     slug: "remediation-readiness",
     href: "/solutions/remediation-readiness",
     name: "Remediation & Readiness",
-    oneSentence: "Diagnosis and fix when licensing, banking, compliance, corporate, finance or operations are already blocked or failing.",
-    summary: "Diagnosis and remediation when licensing, banking, compliance, corporate, finance or operations are already blocked or failing.",
+    oneSentence: "Diagnosis and repair when licensing, banking or compliance is already blocked.",
+    summary: "Focused remediation when licensing, banking, compliance or day-to-day operations cannot move forward.",
     whenNeeded: [
       "Licensing delayed or failing",
       "Banking rejection or instability",
@@ -513,8 +513,8 @@ export const PUBLIC_AREAS: PublicArea[] = [
     slug: "international-hub",
     href: "/international-hub",
     name: "International Hub",
-    oneSentence: "Finding, connecting and coordinating the banks, PSPs, CSPs, labs, counsel and other specialists a regulated operation needs.",
-    summary: "Finding, connecting and coordinating banks, PSPs, CSPs, labs, counsel and other specialists a regulated operation needs.",
+    oneSentence: "Banks, PSPs, CSPs, labs, counsel and specialists, coordinated as one network.",
+    summary: "Finding, connecting and coordinating banks, PSPs, CSPs, labs, counsel and other specialists a regulated programme requires.",
     whenNeeded: [
       "Market entry requires coordinated specialist introductions",
       "Banking or PSP conversations need structural readiness first",
@@ -612,7 +612,7 @@ export function getPublicAreaByHref(href: string): PublicArea | undefined {
 }
 
 /**
- * Former six-Solution banking hub — supporting routing page only (not a public area).
+ * Former six-Solution banking hub, supporting routing page only (not a public area).
  * Route retained for SEO; content routes visitors to Corp / Hub / Remediation.
  */
 export const BANKING_SUPPORTING_ROUTE = {

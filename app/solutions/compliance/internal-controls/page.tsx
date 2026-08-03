@@ -113,7 +113,7 @@ export default function InternalControlsPage() {
               "Looking for template policies without implementation.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                <span className="mt-0.5 shrink-0 text-muted-foreground">: </span>
                 <p className="body-text text-muted-foreground">{item}</p>
               </div>
             ))}

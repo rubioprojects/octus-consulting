@@ -1,6 +1,6 @@
 import type { Post } from "./posts";
 
-/** Controlled linking helpers for Insights — no mass body rewrites. */
+/** Controlled linking helpers for Insights: no mass body rewrites. */
 
 const CATEGORY_AREA_LINKS: Record<string, Array<{ label: string; href: string }>> = {
   "Brazil Regulatory": [
@@ -63,7 +63,7 @@ export function resolveJurisdictionLinks(post: Post): Array<{ label: string; hre
   return links;
 }
 
-/** Marker for articles that may need human factual refresh — do not auto-rewrite. */
+/** Marker for articles that may need human factual refresh: do not auto-rewrite. */
 export function factualReviewStatus(post: Post): "reviewed" | "needs_review" {
   // Conservative: older than 2025-06 without author → needs_review marker only
   if (!post.author && post.date < "2025-06-01") return "needs_review";

@@ -6,7 +6,7 @@ import { CtaLink } from "../../components/system/CtaButton";
 import { pageSocialMeta } from "../../lib/pageMeta";
 
 export const metadata = pageSocialMeta({
-  title: "Services — Execution for regulated operations",
+  title: "Services. Execution for regulated operations",
   description:
     "Services for regulated operations: Regulatory Structuring, Compliance & Risk, Legal & Structural Architecture, Corporate Structuring, Private Clients, Remediation & Readiness, and International Hub.",
   path: "/solutions",
@@ -30,7 +30,7 @@ export default function ServicesIndexPage() {
           <h2 className="heading-section mb-4 max-w-2xl">What Octus coordinates.</h2>
           <p className="body-large mb-12 max-w-2xl text-muted-foreground">
             From licensing and corporate structure to compliance, remediation and specialist
-            coordination — each area links to the representative services and next steps.
+            coordination: each area links to the representative services and next steps.
           </p>
 
           <div className="grid gap-6 md:grid-cols-2 lg:gap-8">

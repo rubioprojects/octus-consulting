@@ -12,7 +12,7 @@ import Link from "next/link";
 export const metadata = {
   title: "How We Engage",
   description:
-    "Lead Contractor programme and engagement models for regulated operations — accountability, coordination and execution.",
+    "Lead Contractor programme and engagement models for regulated operations: accountability, coordination and execution.",
 };
 
 export default function HowWeEngagePage() {
@@ -22,7 +22,7 @@ export default function HowWeEngagePage() {
         eyebrow="How we engage"
         title="Lead contractor."
         titleSecondLine="Not one more provider."
-        description="Octus assumes coordination across regulatory, compliance, banking and corporate layers — so you are not managing a fragmented stack of advisors."
+        description="Octus assumes coordination across regulatory, compliance, banking and corporate layers: so you are not managing a fragmented stack of advisors."
         primaryCta={{ href: WHATSAPP_DISCUSS_URL, label: CTA_DISCUSS_LABEL, external: true }}
         secondaryCta={{ href: WHATSAPP_ASSESS_URL, label: CTA_ASSESS_LABEL, external: true }}
       />
@@ -36,7 +36,7 @@ export default function HowWeEngagePage() {
             separate workstreams with no single owner of the whole.
           </p>
           <p className="body-text mb-4">
-            As lead contractor, Octus coordinates the structure that needs to hold — and stays
+            As lead contractor, Octus coordinates the structure that needs to hold: and stays
             accountable for the execution mandate you agree. We do not promise regulator approvals,
             bank decisions or outcomes outside that mandate.
           </p>

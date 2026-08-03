@@ -26,19 +26,19 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Octus Consulting — Regulatory & Operational Structuring",
-    template: "%s — Octus Consulting",
+    default: "Octus Consulting | Regulatory & Operational Structuring",
+    template: "%s | Octus Consulting",
   },
   description:
-    "Regulated operations don't fail randomly. They fail structurally. Octus identifies what is broken — and fixes it.",
+    "Regulated operations don't fail randomly. They fail structurally. Octus identifies what is broken, and fixes it.",
   metadataBase: new URL("https://octusconsulting.com"),
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "Octus Consulting — Regulatory & Operational Structuring",
-    description: "Regulated operations don't fail randomly. They fail structurally. Octus identifies what is broken — and fixes it.",
+    title: "Octus Consulting | Regulatory & Operational Structuring",
+    description: "Regulated operations don't fail randomly. They fail structurally. Octus identifies what is broken, and fixes it.",
     url: "https://octusconsulting.com",
     siteName: "Octus Consulting",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Octus Consulting" }],

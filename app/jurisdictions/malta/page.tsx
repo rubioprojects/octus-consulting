@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
 
 export const metadata = {
-  title: "Malta Gaming & Fintech License — EU Regulatory Framework | Octus",
+  title: "Malta Gaming & Fintech License. EU Regulatory Framework | Octus",
   description:
     "MGA and MFSA licensing for iGaming, fintech and crypto operators. Corporate substance, compliance infrastructure and EU banking coordination.",
 };
@@ -99,7 +99,7 @@ export default function JurisdictionsMaltaPage() {
                   "The focus is short-term deployment or arbitrage",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                    <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                    <span className="mt-0.5 shrink-0 text-muted-foreground">: </span>
                     <p className="body-sm text-muted-foreground">{item}</p>
                   </div>
                 ))}
@@ -224,7 +224,7 @@ export default function JurisdictionsMaltaPage() {
               { label: "Financial regulator", value: "Malta Financial Services Authority (MFSA)" },
               { label: "License types", value: "B2C (Class 1-2), B2B (Class 3-4), VFA, EMI" },
               { label: "Substance", value: "Local key personnel, office, operational infrastructure" },
-              { label: "Banking", value: "Strong EU banking infrastructure — tier-1 access" },
+              { label: "Banking", value: "Strong EU banking infrastructure: tier-1 access" },
               { label: "Timeline", value: "6\u201312 months (MGA), 9\u201318 months (MFSA)" },
             ].map((item) => (
               <div key={item.label} className="card" style={{ padding: "24px" }}>
@@ -239,22 +239,22 @@ export default function JurisdictionsMaltaPage() {
       {/* ─── SELECTED MANDATES ─── */}
       <section className="surface-elevated py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
-          <p className="label">Selected mandates — Malta</p>
+          <p className="label">Selected mandates. Malta</p>
           <h2 className="heading-section" style={{ marginBottom: "32px" }}>
             Real operations. Real outcomes.
           </h2>
           <div className="grid gap-6 md:grid-cols-1">
             {[
               {
-                title: "B2C operator — full MGA licensing",
+                title: "B2C operator: full MGA licensing",
                 body: "Complete licensing process from jurisdiction assessment to operational license. Corporate substance, compliance framework and EU banking coordination.",
               },
               {
-                title: "Multi-brand group — B2B platform licensing",
+                title: "Multi-brand group. B2B platform licensing",
                 body: "Class 4 B2B license for platform provider serving multiple brands. Technical compliance, systems documentation and MGA coordination.",
               },
               {
-                title: "Cross-jurisdiction — Malta + Curaçao dual structure",
+                title: "Cross-jurisdiction. Malta + Curaçao dual structure",
                 body: "Malta for EU markets, Curaçao for non-EU. Unified compliance framework with jurisdiction-specific adaptations and centralized banking.",
               },
             ].map((m, i) => (

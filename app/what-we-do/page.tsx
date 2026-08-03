@@ -9,8 +9,8 @@ export const metadata = {
 const services = [
   { num: "01", title: "Regulatory Structuring", desc: "Jurisdiction selection, licensing strategy and regulatory pathway design for regulated operations.", href: "/regulatory" },
   { num: "02", title: "Compliance & Risk", desc: "Compliance framework design, operational rollout and ongoing compliance management.", href: "/compliance" },
-  { num: "03", title: "Legal & Structural Architecture", desc: "Legal architecture coordinated across jurisdictions — ownership, governance and contractual frameworks.", href: "/legal-architecture" },
-  { num: "04", title: "Corporate Structuring", desc: "Corporate architecture for regulated operations — onshore, offshore and cross-border.", href: "/corporate" },
+  { num: "03", title: "Legal & Structural Architecture", desc: "Legal architecture coordinated across jurisdictions: ownership, governance and contractual frameworks.", href: "/legal-architecture" },
+  { num: "04", title: "Corporate Structuring", desc: "Corporate architecture for regulated operations: onshore, offshore and cross-border.", href: "/corporate" },
   { num: "05", title: "Ownership & UBO", desc: "Ownership architecture and UBO structuring for individuals behind regulated operations.", href: "/private-clients" },
   { num: "06", title: "Audit & Readiness", desc: "Preparation for regulatory audit, certification and external review. Readiness before scrutiny starts.", href: "/audit" },
   { num: "07", title: "International Hub", desc: "Market entry coordination and cross-border expansion for regulated businesses.", href: "/international-hub" },
@@ -28,7 +28,7 @@ export default function WhatWeDoPage() {
           </h1>
           <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "560px" }}>
             Octus structures and coordinates regulated operations across seven
-            interconnected layers — each one designed to hold under real
+            interconnected layers: each one designed to hold under real
             regulatory and operational pressure.
           </p>
         </div>

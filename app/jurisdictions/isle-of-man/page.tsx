@@ -26,7 +26,7 @@ export default function JurisdictionsIsleOfManPage() {
             A GSC licence is recognised globally as Tier-1. Banks trust it.
             Payment processors accept it. Regulators in other jurisdictions
             respect it. But the standard required to obtain and maintain it is
-            high — and the margin for structural error is narrow.
+            high: and the margin for structural error is narrow.
           </p>
           <div style={{ marginTop: "32px", display: "flex", gap: "16px", flexWrap: "wrap" }}>
             <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
@@ -63,7 +63,7 @@ export default function JurisdictionsIsleOfManPage() {
             Operators who reach this jurisdiction with the wrong corporate
             structure, incomplete compliance architecture or misaligned banking
             arrangements do not get approved. The GSC&apos;s fit-and-proper
-            assessment is continuous, not just at application — and with the
+            assessment is continuous, not just at application: and with the
             MONEYVAL on-site review expected in late 2026, enforcement expectations
             are increasing, particularly around AML controls, beneficial ownership
             transparency and source of funds.
@@ -76,7 +76,7 @@ export default function JurisdictionsIsleOfManPage() {
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <p className="label" style={{ marginBottom: "12px" }}>Qualification</p>
           <h2 className="heading-section" style={{ marginBottom: "32px", maxWidth: "760px" }}>
-            Isle of Man is the right jurisdiction — but not for every operation.
+            Isle of Man is the right jurisdiction: but not for every operation.
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "40px", maxWidth: "900px" }}>
             <div>
@@ -108,7 +108,7 @@ export default function JurisdictionsIsleOfManPage() {
                   "You expect to launch and leave. The GSC\u2019s supervision is continuous, risk-based and increasingly enforcement-oriented.",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                    <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                    <span className="mt-0.5 shrink-0 text-muted-foreground">: </span>
                     <p className="body-sm text-muted-foreground">{item}</p>
                   </div>
                 ))}
@@ -258,9 +258,9 @@ export default function JurisdictionsIsleOfManPage() {
           </div>
           <div className="grid-3">
             {[
-              { label: "Gambling duty", value: "1.5% on the first £20m GGY. 0.5% on £20m–£40m. 0.1% above £40m." },
+              { label: "Gambling duty", value: "1.5% on the first £20m GGY. 0.5% on £20m: £40m. 0.1% above £40m." },
               { label: "Corporate tax", value: "0% on gaming profits." },
-              { label: "Processing time", value: "10–12 weeks from file-complete acceptance by the inspectorate." },
+              { label: "Processing time", value: "10: 12 weeks from file-complete acceptance by the inspectorate." },
             ].map((item) => (
               <div key={item.label} className="card" style={{ padding: "24px" }}>
                 <p className="label" style={{ marginBottom: "8px", fontSize: "10px" }}>{item.label}</p>

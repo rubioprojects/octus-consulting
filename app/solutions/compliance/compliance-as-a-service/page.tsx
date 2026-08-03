@@ -67,7 +67,7 @@ export default function ComplianceAsAServicePage() {
           </p>
           <p className="body-text">
             Once implemented, compliance becomes part of how the business operates
-            — not something that can be turned off.
+            :  not something that can be turned off.
           </p>
         </div>
       </section>
@@ -105,7 +105,7 @@ export default function ComplianceAsAServicePage() {
                   "There is no internal ownership or accountability for compliance.",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                    <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                    <span className="mt-0.5 shrink-0 text-muted-foreground">: </span>
                     <p className="body-sm text-muted-foreground">{item}</p>
                   </div>
                 ))}
@@ -128,11 +128,11 @@ export default function ComplianceAsAServicePage() {
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {[
-              "AML/KYC — onboarding flows, transaction monitoring, SAR processes.",
-              "Policies and controls — aligned with regulatory and banking expectations.",
-              "Ongoing monitoring — risk indicators, alerts, reporting cycles.",
-              "Regulatory interaction — responses, audits, documentation requests.",
-              "Internal governance — roles, responsibilities, escalation frameworks.",
+              "AML/KYC: onboarding flows, transaction monitoring, SAR processes.",
+              "Policies and controls: aligned with regulatory and banking expectations.",
+              "Ongoing monitoring: risk indicators, alerts, reporting cycles.",
+              "Regulatory interaction: responses, audits, documentation requests.",
+              "Internal governance: roles, responsibilities, escalation frameworks.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>

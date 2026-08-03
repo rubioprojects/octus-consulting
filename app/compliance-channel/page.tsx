@@ -26,7 +26,7 @@ export default function ComplianceChannelPage() {
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
             All internal team members and external stakeholders may use this
-            channel to report — anonymously if preferred — any violation or
+            channel to report: anonymously if preferred: any violation or
             suspected violation of applicable law, international regulation, or
             Octus internal policies, including our Code of Ethics and Conduct.
           </p>

@@ -49,7 +49,7 @@ export default function MarketsIGamingPage() {
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
             Operators spend months chasing licenses in the wrong jurisdiction.
-            They get licensed — then can&apos;t open a bank account. They build
+            They get licensed: then can&apos;t open a bank account. They build
             compliance frameworks that collapse under the first real audit.
           </p>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
@@ -87,19 +87,19 @@ export default function MarketsIGamingPage() {
               },
               {
                 title: "Compliance that holds",
-                desc: "KYC, AML, responsible gaming, DPO — built to survive real scrutiny. Not a policies folder. A working compliance structure.",
+                desc: "KYC, AML, responsible gaming, DPO: built to survive real scrutiny. Not a policies folder. A working compliance structure.",
               },
               {
                 title: "Corporate & entity design",
-                desc: "Onshore, offshore, holding structures — designed for the operation, not for the accountant. Defensible under regulatory and banking review.",
+                desc: "Onshore, offshore, holding structures: designed for the operation, not for the accountant. Defensible under regulatory and banking review.",
               },
               {
                 title: "Lab certification readiness",
-                desc: "GLI, BMM, iTech Labs — we prepare the operation for technical certification. Gap analysis, evidence register, audit coordination.",
+                desc: "GLI, BMM, iTech Labs: we prepare the operation for technical certification. Gap analysis, evidence register, audit coordination.",
               },
               {
                 title: "Post-license stabilization",
-                desc: "License approved is not the end. We stabilize the operation — compliance cycles, banking maintenance, regulatory reporting.",
+                desc: "License approved is not the end. We stabilize the operation: compliance cycles, banking maintenance, regulatory reporting.",
               },
             ].map((item) => (
               <div key={item.title} className="card" style={{ padding: "28px" }}>
@@ -121,11 +121,11 @@ export default function MarketsIGamingPage() {
           <div className="grid gap-6 md:grid-cols-2">
             {[
               {
-                title: "iGaming operator — Curaçao",
+                title: "iGaming operator. Curaçao",
                 body: "Full licensing + corporate structuring + banking setup. Operational bank account open in 11 weeks after 6 months of failed attempts with previous advisors.",
               },
               {
-                title: "Multi-brand sportsbook — 3 jurisdictions",
+                title: "Multi-brand sportsbook: 3 jurisdictions",
                 body: "Cross-border restructuring across Brazil, Curaçao and Malta. Entity realignment, compliance harmonization and unified banking strategy.",
               },
               {
@@ -133,7 +133,7 @@ export default function MarketsIGamingPage() {
                 body: "Compliance remediation after regulatory inquiry. AML framework rebuild, evidence register reconstruction and payment processor recovery.",
               },
               {
-                title: "Sports betting operator — Brazil (SPA/MF)",
+                title: "Sports betting operator. Brazil (SPA/MF)",
                 body: "Full regulatory dossier, corporate structuring and direct coordination with SPA/MF authorities for the Brazilian sports betting authorization process.",
               },
             ].map((m, i) => (
@@ -188,7 +188,7 @@ export default function MarketsIGamingPage() {
               {
                 tag: "Licensing",
                 title: "License stuck for months",
-                body: "Application filed, no movement. Usually a structural gap in the dossier or entity setup — not regulatory hostility.",
+                body: "Application filed, no movement. Usually a structural gap in the dossier or entity setup: not regulatory hostility.",
               },
               {
                 tag: "Banking",
@@ -246,7 +246,7 @@ export default function MarketsIGamingPage() {
           </h2>
           <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
-            Diagnostic call — not a sales pitch. We start by identifying where your structure breaks.
+            Diagnostic call: not a sales pitch. We start by identifying where your structure breaks.
           </p>
         </div>
       </section>

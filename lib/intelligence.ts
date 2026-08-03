@@ -1,5 +1,5 @@
 /**
- * Intelligence Hub helpers — maps legacy post categories to Wave 4 taxonomy
+ * Intelligence Hub helpers: maps legacy post categories to Wave 4 taxonomy
  * without rewriting article bodies.
  */
 

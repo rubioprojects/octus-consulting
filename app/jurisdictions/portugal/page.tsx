@@ -87,10 +87,10 @@ export default function JurisdictionsPortugalPage() {
               "Licensing is slow and documentation-heavy.",
               "Compliance is ongoing, not a one-off.",
               "Banking access depends on structure, not licence alone.",
-              "SRIJ licences cover Portugal only — no EU-wide passporting.",
+              "SRIJ licences cover Portugal only: no EU-wide passporting.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                <span className="mt-0.5 shrink-0 text-muted-foreground">: </span>
                 <p className="body-text text-muted-foreground">{item}</p>
               </div>
             ))}
@@ -142,7 +142,7 @@ export default function JurisdictionsPortugalPage() {
               ["Entity and group architecture", "Portuguese company or EU/EEA branch. Governance aligned with SRIJ expectations. Structures that support EU operations."],
               ["Operational model", "Clear definition of regulated vs non-regulated activities. Flow of funds, responsibilities and risk allocation."],
               ["Compliance infrastructure", "AML/KYC, responsible gambling, advertising compliance, self-exclusion integration. Aligned with SRIJ and EU standards. Ongoing, not static."],
-              ["Banking and payments", "Local banking arrangements. Payment methods aligned to Portuguese market (Multibanco, MB Way, cards). Fiat only — no crypto."],
+              ["Banking and payments", "Local banking arrangements. Payment methods aligned to Portuguese market (Multibanco, MB Way, cards). Fiat only: no crypto."],
               ["Technical certification", "Coordination with independent testing laboratories recognised by SRIJ. Platform certification, RNG validation."],
             ].map(([title, body]) => (
               <div key={title}>
@@ -188,7 +188,7 @@ export default function JurisdictionsPortugalPage() {
                   "You expect approval to solve operational gaps.",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                    <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                    <span className="mt-0.5 shrink-0 text-muted-foreground">: </span>
                     <p className="body-sm text-muted-foreground">{item}</p>
                   </div>
                 ))}

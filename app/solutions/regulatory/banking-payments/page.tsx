@@ -77,7 +77,7 @@ export default function BankingPaymentsPage() {
           <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
             {[
               ["Banking readiness assessment", "Gap analysis between current structure and what banking partners require."],
-              ["Compliance documentation", "AML/KYC, transaction monitoring, SAR procedures rebuilt to banking standards. Not regulatory standards — banking standards."],
+              ["Compliance documentation", "AML/KYC, transaction monitoring, SAR procedures rebuilt to banking standards. Not regulatory standards: banking standards."],
               ["Corporate restructuring", "Entity design, jurisdiction, governance and UBO alignment optimised for banking risk assessment."],
               ["Multi-bank strategy", "Parallel coordination with multiple banking partners. No single point of failure. If one exits, operations continue."],
               ["PSP and acquirer alignment", "Payment processor onboarding coordinated with compliance and licensing status."],
@@ -104,7 +104,7 @@ export default function BankingPaymentsPage() {
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {[
               "Accounts declined or terminated without explanation.",
-              "PSP churn — every new provider applies the same assessment to the same structure.",
+              "PSP churn: every new provider applies the same assessment to the same structure.",
               "Operations halted with no contingency.",
               "Licensing investment wasted because the operation cannot process payments.",
               "Months of searching for banking that the structure will never unlock.",
@@ -166,7 +166,7 @@ export default function BankingPaymentsPage() {
               "Banking difficulty caused by activity that is not licensable.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                <span className="mt-0.5 shrink-0 text-muted-foreground">: </span>
                 <p className="body-text text-muted-foreground">{item}</p>
               </div>
             ))}

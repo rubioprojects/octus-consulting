@@ -34,7 +34,7 @@ export default function PageHero({
     >
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <Eyebrow tone="dark">{eyebrow}</Eyebrow>
-        <h1 className="font-heading max-w-4xl text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem]">
+        <h1 className="page-hero-title font-heading max-w-4xl text-4xl font-bold leading-[1.08] tracking-tight text-white text-balance md:text-5xl lg:text-[3.5rem]">
           {title}
           {titleSecondLine != null && (
             <>
@@ -44,7 +44,7 @@ export default function PageHero({
           )}
         </h1>
         {description != null && (
-          <div className="mt-6 max-w-2xl text-base leading-[1.7] text-white/75 sm:text-lg">
+          <div className="mt-6 max-w-2xl text-pretty text-base leading-[1.7] text-white/75 sm:text-lg">
             {description}
           </div>
         )}

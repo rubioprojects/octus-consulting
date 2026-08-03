@@ -61,7 +61,7 @@ export default function BankingPaymentsRoutingPage() {
           <p className="section-label mb-4 block">How we can help</p>
           <h2 className="heading-section mb-4 max-w-2xl">Choose the support you need</h2>
           <p className="body-large mb-12 max-w-2xl text-muted-foreground">
-            Select the path that matches your situation — readiness, provider coordination, or
+            Select the path that matches your situation: readiness, provider coordination, or
             remediation when banking or payments are already blocked.
           </p>
           <div className="grid gap-6 lg:grid-cols-3">

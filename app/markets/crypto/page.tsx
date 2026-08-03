@@ -100,10 +100,10 @@ export default function MarketsCryptoPage() {
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {[
               "Corporate and operational architecture aligned with regulatory exposure across jurisdictions.",
-              "Regulatory positioning — what requires licensing, what requires registration, what requires neither. Per jurisdiction.",
-              "Banking and payment continuity — not just onboarding, but resilience. Multiple rails, multiple institutions, structured redundancy.",
+              "Regulatory positioning: what requires licensing, what requires registration, what requires neither. Per jurisdiction.",
+              "Banking and payment continuity: not just onboarding, but resilience. Multiple rails, multiple institutions, structured redundancy.",
               "Compliance systems adapted to transaction-heavy, cross-border environments.",
-              "Separation between revenue, custody and risk exposure — the structural logic that banks and regulators evaluate.",
+              "Separation between revenue, custody and risk exposure: the structural logic that banks and regulators evaluate.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
@@ -122,11 +122,11 @@ export default function MarketsCryptoPage() {
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
             {[
-              "EU (MiCA) — CASP authorisation mandatory. Grandfathering ends July 2026. Passporting across 27 member states. Capital requirements €50k–€150k.",
-              "UK — FCA crypto framework in development. New rules expected 2026.",
-              "UAE — VASP registration required. Evolving corporate structuring requirements.",
-              "Brazil — BACEN oversight. Integration with broader fintech regulation.",
-              "Offshore — Accessible but under increasing AML scrutiny. Not sustainable as sole regulatory base.",
+              "EU (MiCA). CASP authorisation mandatory. Grandfathering ends July 2026. Passporting across 27 member states. Capital requirements €50k: €150k.",
+              "UK. FCA crypto framework in development. New rules expected 2026.",
+              "UAE. VASP registration required. Evolving corporate structuring requirements.",
+              "Brazil. BACEN oversight. Integration with broader fintech regulation.",
+              "Offshore. Accessible but under increasing AML scrutiny. Not sustainable as sole regulatory base.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>

@@ -1,5 +1,5 @@
 /**
- * Legacy Wave 3 six-Solution hubs — retained for engagement models / partner classes /
+ * Legacy Wave 3 six-Solution hubs: retained for engagement models / partner classes /
  * intelligence pillars and any remaining deep-page references.
  * Public website IA is now `lib/publicAreas.ts` (approved seven areas).
  */
@@ -68,7 +68,7 @@ export const SOLUTION_HUBS: SolutionHub[] = [
     shortTitle: "Banking & Payments",
     problem:
       "Operations stall when banking and payments reject a structure that looked fine on paper.",
-    role: "Octus structures for bankability and payment resilience — without promising account openings or outcomes outside Octus control.",
+    role: "Octus structures for bankability and payment resilience: without promising account openings or outcomes outside Octus control.",
     summary:
       "Banking readiness, payment architecture, PSP strategy and financial infrastructure designed to survive real onboarding scrutiny.",
     whenNeeded: [
@@ -102,7 +102,7 @@ export const SOLUTION_HUBS: SolutionHub[] = [
     shortTitle: "Compliance & Risk",
     problem:
       "Paper compliance collapses under audit, banking and regulatory pressure.",
-    role: "Octus builds and operates compliance as a working system — AML, KYC, CDD, DPO and ongoing controls.",
+    role: "Octus builds and operates compliance as a working system. AML, KYC, CDD, DPO and ongoing controls.",
     summary:
       "Operational compliance frameworks, AML/KYC/CDD, DPO capability and risk systems designed to survive scrutiny.",
     whenNeeded: [
@@ -140,7 +140,7 @@ export const SOLUTION_HUBS: SolutionHub[] = [
     shortTitle: "Corporate & Cross-Border",
     problem:
       "Entity charts designed as administration fail when license, bank and expansion pressure arrive.",
-    role: "Octus designs entities, governance and holdings for regulated operations across venues — not as a formation shop.",
+    role: "Octus designs entities, governance and holdings for regulated operations across venues: not as a formation shop.",
     summary:
       "Corporate architecture, holding design, governance and cross-border organization aligned to license and banking reality.",
     whenNeeded: [
@@ -177,7 +177,7 @@ export const SOLUTION_HUBS: SolutionHub[] = [
     shortTitle: "Legal & Contractual Architecture",
     problem:
       "Regulated operations fail when contracts and legal frameworks are treated as paperwork after the fact.",
-    role: "Octus coordinates the legal structures required for regulated operations — architecture and contracts, delivered or coordinated through qualified counsel.",
+    role: "Octus coordinates the legal structures required for regulated operations: architecture and contracts, delivered or coordinated through qualified counsel.",
     summary:
       "Legal and contractual architecture for multi-jurisdiction regulated operations: coordination, frameworks and structural requirements.",
     whenNeeded: [
@@ -209,7 +209,7 @@ export const SOLUTION_HUBS: SolutionHub[] = [
     title: "Operational Remediation & Readiness",
     shortTitle: "Remediation & Readiness",
     problem:
-      "Operations that are blocked, exposed, delayed, rejected or failing under regulatory pressure need a single crisis door — not a catalogue.",
+      "Operations that are blocked, exposed, delayed, rejected or failing under regulatory pressure need a single crisis door: not a catalogue.",
     role: "Octus enters live failures, assesses structural gaps and sequences remediation across regulatory, banking, compliance and corporate layers.",
     summary:
       "Strategic crisis entry for licensing delays, banking failures, compliance gaps, audit readiness and operational instability.",
@@ -251,7 +251,7 @@ export const ENGAGEMENT_MODELS = [
   {
     num: "02",
     title: "Managed Project",
-    body: "Defined scope for licensing, market entry, remediation or structural rebuild — with clear workstreams and ownership.",
+    body: "Defined scope for licensing, market entry, remediation or structural rebuild: with clear workstreams and ownership.",
   },
   {
     num: "03",
@@ -261,7 +261,7 @@ export const ENGAGEMENT_MODELS = [
   {
     num: "04",
     title: "Embedded Capability",
-    body: "Operated capability inside the business — for example ongoing compliance or DPO — without transferring accountability for outcomes Octus does not control.",
+    body: "Operated capability inside the business: for example ongoing compliance or DPO: without transferring accountability for outcomes Octus does not control.",
   },
 ];
 
@@ -277,7 +277,7 @@ export const PARTNER_CLASSES = [
 export const INTELLIGENCE_PILLARS = [
   {
     title: "Regulatory Intelligence",
-    body: "How rules, authorities and structural requirements shift — framed for operators who must act, not scroll.",
+    body: "How rules, authorities and structural requirements shift: framed for operators who must act, not scroll.",
   },
   {
     title: "Market Signals",

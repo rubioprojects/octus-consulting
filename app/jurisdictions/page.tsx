@@ -3,7 +3,7 @@ import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 import PageHero from "../../components/system/PageHero";
 
 export const metadata = {
-  title: "Jurisdictions — Where We Structure Operations",
+  title: "Jurisdictions. Where We Structure Operations",
   description:
     "Jurisdiction selection and structuring for regulated operations across markets including Brazil, Curaçao, Malta, Isle of Man, UAE and more.",
 };
@@ -174,7 +174,7 @@ export default function JurisdictionsPage() {
         </div>
       </section>
 
-      {/* ─── ALTERNATIVE FRAMEWORKS (Anjouan — separate tier) ─── */}
+      {/* ─── ALTERNATIVE FRAMEWORKS (Anjouan: separate tier) ─── */}
       <section className="surface-elevated py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Alternative frameworks</p>

@@ -10,7 +10,7 @@ const sections = [
   },
   {
     title: "What data we collect",
-    body: `We collect personal data you provide directly when interacting with our website or contacting us:\n\n• Identification and contact information — name, company name, job title, email address, phone number.\n• Operational context — jurisdiction of operation, type of regulated business, and any information you choose to share in a diagnostic request or enquiry form.\n• Website usage data — pages visited, browser type, device information, referral source and session behaviour, collected via analytics.\n• Communications — the content of emails, messages or form submissions you send to us.\n\nWe do not collect sensitive personal data (such as health information, racial or ethnic origin, or biometric data) in the ordinary course of our business.`,
+    body: `We collect personal data you provide directly when interacting with our website or contacting us:\n\n• Identification and contact information: name, company name, job title, email address, phone number.\n• Operational context: jurisdiction of operation, type of regulated business, and any information you choose to share in a diagnostic request or enquiry form.\n• Website usage data: pages visited, browser type, device information, referral source and session behaviour, collected via analytics.\n• Communications: the content of emails, messages or form submissions you send to us.\n\nWe do not collect sensitive personal data (such as health information, racial or ethnic origin, or biometric data) in the ordinary course of our business.`,
   },
   {
     title: "How we use your data",
@@ -18,11 +18,11 @@ const sections = [
   },
   {
     title: "Legal bases for processing",
-    body: `We process personal data on the following legal grounds:\n\n• Contractual necessity — where processing is required to fulfil or prepare for a contract with you.\n• Legitimate interests — where processing is necessary for our legitimate business purposes, provided these are not overridden by your rights.\n• Legal obligation — where processing is required to comply with applicable law.\n• Consent — where you have given explicit consent, which you may withdraw at any time.`,
+    body: `We process personal data on the following legal grounds:\n\n• Contractual necessity: where processing is required to fulfil or prepare for a contract with you.\n• Legitimate interests: where processing is necessary for our legitimate business purposes, provided these are not overridden by your rights.\n• Legal obligation: where processing is required to comply with applicable law.\n• Consent: where you have given explicit consent, which you may withdraw at any time.`,
   },
   {
     title: "Data sharing and disclosure",
-    body: `We do not sell, rent or trade personal data. We may share data in the following limited circumstances:\n\n• Service providers — third parties who assist us in operating our business (such as hosting providers, analytics tools or communication platforms), bound by confidentiality obligations.\n• Legal requirements — where disclosure is required by applicable law, regulation, court order or regulatory authority.\n• Business transfers — in connection with a merger, acquisition or transfer of assets, subject to standard confidentiality protections.\n\nWhere we engage jurisdiction-specific partners in the execution of client mandates, data sharing is governed by appropriate agreements and applicable data protection law.`,
+    body: `We do not sell, rent or trade personal data. We may share data in the following limited circumstances:\n\n• Service providers: third parties who assist us in operating our business (such as hosting providers, analytics tools or communication platforms), bound by confidentiality obligations.\n• Legal requirements: where disclosure is required by applicable law, regulation, court order or regulatory authority.\n• Business transfers: in connection with a merger, acquisition or transfer of assets, subject to standard confidentiality protections.\n\nWhere we engage jurisdiction-specific partners in the execution of client mandates, data sharing is governed by appropriate agreements and applicable data protection law.`,
   },
   {
     title: "International data transfers",
@@ -34,7 +34,7 @@ const sections = [
   },
   {
     title: "Your rights",
-    body: `Depending on your jurisdiction, you may have the following rights regarding your personal data:\n\n• Right of access — to obtain confirmation of whether we hold your data and receive a copy.\n• Right to rectification — to have inaccurate or incomplete data corrected.\n• Right to erasure — to request deletion of your data where no legal basis for retention applies.\n• Right to restriction — to request that we limit processing in certain circumstances.\n• Right to portability — to receive your data in a structured, machine-readable format.\n• Right to object — to object to processing based on legitimate interests.\n• Right to withdraw consent — where processing is based on consent, to withdraw it at any time.\n\nTo exercise any of these rights, contact us at the details below.`,
+    body: `Depending on your jurisdiction, you may have the following rights regarding your personal data:\n\n• Right of access: to obtain confirmation of whether we hold your data and receive a copy.\n• Right to rectification: to have inaccurate or incomplete data corrected.\n• Right to erasure: to request deletion of your data where no legal basis for retention applies.\n• Right to restriction: to request that we limit processing in certain circumstances.\n• Right to portability: to receive your data in a structured, machine-readable format.\n• Right to object: to object to processing based on legitimate interests.\n• Right to withdraw consent: where processing is based on consent, to withdraw it at any time.\n\nTo exercise any of these rights, contact us at the details below.`,
   },
   {
     title: "Cookies",

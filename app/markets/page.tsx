@@ -4,7 +4,7 @@ import PageHero from "../../components/system/PageHero";
 import { pageSocialMeta } from "../../lib/pageMeta";
 
 export const metadata = pageSocialMeta({
-  title: "Industries — Regulated sectors we structure",
+  title: "Industries: regulated sectors we structure",
   description:
     "We structure operations in iGaming, fintech, crypto and high-risk digital sectors. Licensing, compliance and corporate architecture for regulated markets.",
   path: "/markets",
@@ -15,13 +15,13 @@ export default function MarketsPage() {
     <main>
       <PageHero
         eyebrow="Markets"
-        title="Different industries."
-        titleSecondLine="Same structural problem."
+        title="Regulated sectors."
+        titleSecondLine="One structural discipline."
         description={
           <>
-            Whether it&apos;s iGaming, fintech or crypto, regulated operations fail for the same
-            reason: the structure doesn&apos;t hold. We don&apos;t specialize in industries. We
-            specialize in fixing regulated operations.
+            iGaming, fintech and crypto look different on the surface. Underneath, the same
+            layers decide whether an operation can be licensed, banked and run. Octus works
+            those layers as one programme.
           </>
         }
       />
@@ -80,7 +80,7 @@ export default function MarketsPage() {
               },
               {
                 title: "High-Risk Digital Businesses",
-                desc: "Structural and compliance solutions for businesses that banks and regulators classify as high-risk. We make the structure work — not the label go away.",
+                desc: "Structural and compliance solutions for businesses that banks and regulators classify as high-risk. We make the structure work: not the label go away.",
                 tags: ["Banking", "Risk", "Structure", "Compliance"],
                 href: "/markets/high-risk",
               },

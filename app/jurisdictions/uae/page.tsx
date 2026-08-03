@@ -81,7 +81,7 @@ export default function JurisdictionsUaePage() {
               "Free zone vs mainland creates operational scope limitations most operators discover too late",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                <span className="mt-0.5 shrink-0 text-muted-foreground">: </span>
                 <p className="body-text text-muted-foreground">{item}</p>
               </div>
             ))}
@@ -175,7 +175,7 @@ export default function JurisdictionsUaePage() {
                   "Expect the licence to solve structural problems.",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                    <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                    <span className="mt-0.5 shrink-0 text-muted-foreground">: </span>
                     <p className="body-sm text-muted-foreground">{item}</p>
                   </div>
                 ))}

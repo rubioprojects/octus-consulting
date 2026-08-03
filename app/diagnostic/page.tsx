@@ -39,7 +39,7 @@ export default function DiagnosticPage() {
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/60">
             Already facing a licensing, banking, compliance or operational blockage? Start with a
             diagnostic assessment. We begin with a structured conversation about exposure and
-            readiness — then sequence remediation through{" "}
+            readiness: then sequence remediation through{" "}
             <Link href="/solutions/remediation-readiness" className="text-white underline underline-offset-4">
               Remediation &amp; Readiness
             </Link>
@@ -96,7 +96,7 @@ export default function DiagnosticPage() {
             .
           </p>
           <p className="body-text text-muted-foreground">
-            Octus engages through qualified conversations — not mass lead-capture forms.
+            Octus engages through qualified conversations: not mass lead-capture forms.
           </p>
         </div>
       </section>

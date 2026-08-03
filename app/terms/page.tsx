@@ -18,7 +18,7 @@ const sections = [
   },
   {
     title: "Intellectual property",
-    body: `All content on this website — including text, copy, structure, design, logos, graphics and brand assets — is the property of Octus Technology LLC and is protected by applicable intellectual property law.\n\nNo content may be copied, reproduced, republished, uploaded, posted, transmitted or distributed in any form without our prior written permission. The Octus name, logo and symbol are trademarks of Octus Technology LLC.`,
+    body: `All content on this website: including text, copy, structure, design, logos, graphics and brand assets: is the property of Octus Technology LLC and is protected by applicable intellectual property law.\n\nNo content may be copied, reproduced, republished, uploaded, posted, transmitted or distributed in any form without our prior written permission. The Octus name, logo and symbol are trademarks of Octus Technology LLC.`,
   },
   {
     title: "No professional advice",

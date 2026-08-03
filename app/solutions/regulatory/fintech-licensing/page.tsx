@@ -102,9 +102,9 @@ export default function FintechLicensingPage() {
             PI or EMI. The licence type determines everything.
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "18px" }}>
-            <p className="body-text"><strong className="text-primary">Payment Institution (PI)</strong> — Payment processing, transfers, account services. No e-money issuance. Capital: EUR20k-EUR125k depending on scope.</p>
-            <p className="body-text"><strong className="text-primary">Electronic Money Institution (EMI)</strong> — All PI services plus e-money issuance, IBANs, wallets, prepaid. Client fund safeguarding mandatory. Capital: minimum EUR350k.</p>
-            <p className="body-text"><strong className="text-primary">Jurisdictions</strong> — Lithuania leads volume. Ireland and Malta established. Each regulator interprets PSD2/EMD2 differently.</p>
+            <p className="body-text"><strong className="text-primary">Payment Institution (PI)</strong>. Payment processing, transfers, account services. No e-money issuance. Capital: EUR20k-EUR125k depending on scope.</p>
+            <p className="body-text"><strong className="text-primary">Electronic Money Institution (EMI)</strong>. All PI services plus e-money issuance, IBANs, wallets, prepaid. Client fund safeguarding mandatory. Capital: minimum EUR350k.</p>
+            <p className="body-text"><strong className="text-primary">Jurisdictions</strong>. Lithuania leads volume. Ireland and Malta established. Each regulator interprets PSD2/EMD2 differently.</p>
           </div>
           <p className="body-text" style={{ marginTop: "24px" }}>
             Octus does not recommend a jurisdiction based on speed or cost. The choice is driven by where the operation can sustain substance, compliance and banking long-term.
@@ -173,7 +173,7 @@ export default function FintechLicensingPage() {
             We do not submit applications built on assumptions. We design regulatory-ready operations and take them through authorisation.
           </p>
           <p className="body-text" style={{ marginBottom: "24px" }}>
-            If your objective is "get a licence fast", "test and see if it passes", or "use a template and adapt later" — this is not for you.
+            If your objective is "get a licence fast", "test and see if it passes", or "use a template and adapt later": this is not for you.
           </p>
           <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>Who this is for</h3>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>

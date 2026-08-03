@@ -20,7 +20,7 @@ export default function CareersPage() {
           <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "580px" }}>
             Octus operates at the intersection of regulatory structuring,
             compliance, legal architecture and corporate design. We look for
-            people with operational depth — not just credentials.
+            people with operational depth: not just credentials.
           </p>
         </div>
       </section>
@@ -127,7 +127,7 @@ export default function CareersPage() {
           <div style={{ display: "flex", flexDirection: "column" }}>
             {[
               { step: "01", title: "Initial interview", body: "First conversation to understand your background, what you have built and how you work." },
-              { step: "02", title: "Assignment", body: "A practical exercise relevant to the role. Not theoretical — an actual situation from our work." },
+              { step: "02", title: "Assignment", body: "A practical exercise relevant to the role. Not theoretical: an actual situation from our work." },
               { step: "03", title: "Second interview", body: "Deeper conversation about approach, judgment and how you handle complexity." },
               { step: "04", title: "Behavioural assessment", body: "Short structured assessment to understand how you operate in teams and under pressure." },
               { step: "05", title: "Offer", body: "Direct conversation about expectations, scope and what working together will look like." },

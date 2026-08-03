@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
 
 export const metadata = {
-  title: "Fintech & Payments — Regulatory Structuring | Octus",
+  title: "Fintech & Payments. Regulatory Structuring | Octus",
   description:
     "Licensing, compliance and banking coordination for fintech operators, payment institutions and EMIs across jurisdictions.",
 };
@@ -118,15 +118,15 @@ export default function MarketsFintechPage() {
           <div className="grid gap-6 md:grid-cols-1">
             {[
               {
-                title: "Remittance platform — multi-jurisdiction",
+                title: "Remittance platform: multi-jurisdiction",
                 body: "Regulatory structuring across 3 jurisdictions. EMI licensing, compliance framework and banking coordination delivered as a single project.",
               },
               {
-                title: "Payment institution — Brazil (BACEN)",
+                title: "Payment institution. Brazil (BACEN)",
                 body: "Full regulatory dossier and corporate structuring for BACEN authorization. Direct coordination with local legal partners.",
               },
               {
-                title: "Crypto-to-fiat bridge — banking recovery",
+                title: "Crypto-to-fiat bridge: banking recovery",
                 body: "Operator rejected by 4 banks. We restructured AML framework, realigned corporate layer and coordinated banking onboarding. Operational accounts restored.",
               },
             ].map((m, i) => (

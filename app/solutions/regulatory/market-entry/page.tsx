@@ -64,7 +64,7 @@ export default function MarketEntryPage() {
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
             {[
-              ["Jurisdiction assessment", "Regulatory fit, banking access, cost structure, substance requirements. Not preference — operational logic."],
+              ["Jurisdiction assessment", "Regulatory fit, banking access, cost structure, substance requirements. Not preference: operational logic."],
               ["Corporate design", "Entity formation aligned to licensing and banking requirements. Governance, directors, substance."],
               ["Licensing coordination", "Application strategy, regulatory pathway, documentation, regulator interaction."],
               ["Compliance build", "AML/CFT, KYC, internal controls designed for the target jurisdiction from day one. Not retrofitted."],
@@ -134,7 +134,7 @@ export default function MarketEntryPage() {
               "Expecting to launch without building compliance.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                <span className="mt-0.5 shrink-0 text-muted-foreground">: </span>
                 <p className="body-text text-muted-foreground">{item}</p>
               </div>
             ))}

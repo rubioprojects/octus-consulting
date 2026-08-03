@@ -9,7 +9,7 @@ import {
 import PageHero from "./PageHero";
 import { CtaLink } from "./CtaButton";
 
-/** Area-specific modules — approved catalog language only; no invented cases/metrics. */
+/** Area-specific modules. approved catalog language only; no invented cases/metrics. */
 function AreaSpecificModule({ area }: { area: PublicArea }) {
   if (area.id === "AREA-REG") {
     return (
@@ -19,9 +19,9 @@ function AreaSpecificModule({ area }: { area: PublicArea }) {
           <h2 className="heading-section mb-4 max-w-2xl">
             Pathway first. Filings second.
           </h2>
-          <p className="body-large mb-10 max-w-2xl text-muted-foreground">
-            Regulatory Structuring sequences jurisdiction fit, licensing pathway design and
-            regulator-facing execution with the corporate and compliance layers that determine whether
+          <p className="body-large mb-10 max-w-2xl text-pretty text-muted-foreground">
+            Regulatory Structuring sequences jurisdiction fit, licensing pathway design and work
+            with regulators, together with the corporate and compliance layers that decide whether
             a licence can actually operate.
           </p>
           <div className="grid gap-6 md:grid-cols-3">
@@ -93,7 +93,7 @@ function AreaSpecificModule({ area }: { area: PublicArea }) {
           </h2>
           <p className="body-large mb-8 max-w-2xl text-muted-foreground">
             Remediation &amp; Readiness addresses licensing delays, banking or compliance gaps, audit
-            readiness and financial-infrastructure failures that are already live — then sequences the
+            readiness and financial-infrastructure failures that are already live. Then it sequences the
             structural fix across the required workstreams.
           </p>
           {area.intakeHref && (
@@ -122,7 +122,7 @@ function AreaSpecificModule({ area }: { area: PublicArea }) {
           </h2>
           <p className="body-large mb-10 max-w-2xl text-muted-foreground">
             Octus identifies and coordinates relevant providers according to the client’s structure,
-            jurisdiction and risk profile — banks and PSPs, payment providers, CSPs, local directors,
+            jurisdiction and risk profile: banks and PSPs, payment providers, CSPs, local directors,
             laboratories, certification providers, KYC/AML specialists, technology platforms, local
             counsel, and tax and other specialists.
           </p>
@@ -173,8 +173,8 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
             <p className="font-sans text-sm leading-relaxed text-muted-foreground">
               Legal work is delivered or coordinated through qualified counsel according to the
               jurisdiction and scope of the matter. Octus coordinates legal and structural
-              architecture for regulated operations — frameworks, contractual design and counsel
-              coordination — within that model.
+              architecture for regulated operations: frameworks, contractual design and counsel
+              coordination within that model.
             </p>
           </div>
         </section>
@@ -228,9 +228,9 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
         </section>
       )}
 
-      <section className="bg-background py-20 md:py-28">
+      <section className="area-closing-section border-t border-border bg-background">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-2">
+          <div className="area-closing-section__row">
             <div>
               <p className="section-label mb-4 block">Industries</p>
               <ul className="flex list-none flex-wrap gap-2">
@@ -248,7 +248,7 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
             </div>
             <div>
               <p className="section-label mb-4 block">Related services</p>
-              <ul className="flex list-none flex-col gap-2">
+              <ul className="mb-4 flex list-none flex-col gap-2">
                 {area.relatedDeep.map((r) => (
                   <li key={r.href}>
                     <Link
@@ -259,13 +259,16 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
                     </Link>
                   </li>
                 ))}
+                <li className="area-closing-section__all pt-1">
+                  <Link
+                    href="/solutions"
+                    className="font-sans text-sm font-medium text-foreground no-underline hover:text-primary"
+                  >
+                    All services →
+                  </Link>
+                </li>
               </ul>
             </div>
-          </div>
-          <div className="mt-10">
-            <CtaLink href="/solutions" variant="secondary">
-              All services →
-            </CtaLink>
           </div>
         </div>
       </section>

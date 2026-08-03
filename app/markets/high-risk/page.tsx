@@ -117,7 +117,7 @@ export default function MarketsHighRiskPage() {
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {[
               "Jurisdictional design aligned with risk classification and banking access.",
-              "Multi-layer banking and payment resilience — not one provider, not one jurisdiction, not one point of failure.",
+              "Multi-layer banking and payment resilience: not one provider, not one jurisdiction, not one point of failure.",
               "Regulatory positioning across fragmented frameworks.",
               "Operational compliance that withstands scrutiny, not just satisfies onboarding.",
               "Risk containment across entities and flows.",
@@ -184,7 +184,7 @@ export default function MarketsHighRiskPage() {
               "The operation has no substance, no product and no real users.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                <span className="mt-0.5 shrink-0 text-muted-foreground">: </span>
                 <p className="body-sm text-muted-foreground">{item}</p>
               </div>
             ))}

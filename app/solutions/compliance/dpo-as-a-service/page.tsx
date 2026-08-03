@@ -112,7 +112,7 @@ export default function DpoAsAServicePage() {
                   "The company is not prepared to implement internal processes aligned with the DPO function.",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                    <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                    <span className="mt-0.5 shrink-0 text-muted-foreground">: </span>
                     <p className="body-sm text-muted-foreground">{item}</p>
                   </div>
                 ))}
@@ -134,12 +134,12 @@ export default function DpoAsAServicePage() {
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {[
-              "Data subject requests — intake, assessment, response and documentation.",
-              "Regulatory interaction — communication with authorities when required.",
-              "Incident response — coordination of data breaches and reporting obligations.",
-              "Internal alignment — guidance to teams handling personal data.",
-              "Policy enforcement — ensuring procedures are followed in practice.",
-              "Record keeping — documentation required under GDPR/LGPD accountability principles.",
+              "Data subject requests: intake, assessment, response and documentation.",
+              "Regulatory interaction: communication with authorities when required.",
+              "Incident response: coordination of data breaches and reporting obligations.",
+              "Internal alignment: guidance to teams handling personal data.",
+              "Policy enforcement: ensuring procedures are followed in practice.",
+              "Record keeping: documentation required under GDPR/LGPD accountability principles.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
@@ -221,15 +221,15 @@ export default function DpoAsAServicePage() {
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p className="body-text">
               <strong className="text-primary">Nominal DPO</strong>
-              {" "}— name assigned, limited involvement, no operational function.
+              {" "}: name assigned, limited involvement, no operational function.
             </p>
             <p className="body-text">
               <strong className="text-primary">Internal DPO</strong>
-              {" "}— constrained by internal structure and conflicting roles.
+              {" "}: constrained by internal structure and conflicting roles.
             </p>
             <p className="body-text">
               <strong className="text-primary">Octus DPO</strong>
-              {" "}— independent function with execution capability and regulatory alignment.
+              {" "}: independent function with execution capability and regulatory alignment.
             </p>
           </div>
         </div>

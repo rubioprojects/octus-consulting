@@ -6,7 +6,7 @@ import { pageSocialMeta } from "../../lib/pageMeta";
 export const metadata = pageSocialMeta({
   title: "About",
   description:
-    "Octus is the execution layer behind regulated operations — structuring, coordinating and operating what needs to work across regulatory, compliance, banking and corporate layers.",
+    "Octus structures, coordinates and operates the work behind regulated businesses across regulatory, compliance, banking and corporate layers.",
   path: "/about",
 });
 
@@ -15,12 +15,12 @@ export default function AboutPage() {
     <main>
       <PageHero
         eyebrow="About Octus"
-        title="Octus is not an advisory firm."
-        titleSecondLine="It is the execution layer behind regulated operations."
+        title="Octus structures, coordinates and operates"
+        titleSecondLine="the work behind regulated businesses."
         description={
           <>
             We don&apos;t produce reports. We structure, coordinate and operate what needs to
-            work — across regulatory, compliance, banking and corporate layers simultaneously.
+            work across regulatory, compliance, banking and corporate layers simultaneously.
           </>
         }
         primaryCta={{
@@ -40,7 +40,7 @@ export default function AboutPage() {
           <p className="body-lg" style={{ marginBottom: "20px" }}>
             Octus does not sit as a traditional advisor, law firm or vendor. It
             operates as the central execution layer behind regulated businesses
-            — entering the structure, coordinating across layers and taking
+           : entering the structure, coordinating across layers and taking
             responsibility for what needs to work.
           </p>
           <p className="body-text" style={{ marginBottom: "20px" }}>
@@ -49,7 +49,7 @@ export default function AboutPage() {
             ground up. We step in, diagnose the structural failure and fix it.
           </p>
           <p className="body-text">
-            Octus structures what needs to hold — and coordinates until it
+            Octus structures what needs to hold, and coordinates until it
             actually does.
           </p>
         </div>
@@ -73,9 +73,9 @@ export default function AboutPage() {
             the whole.
           </p>
           <p className="body-text" style={{ marginBottom: "20px" }}>
-            Octus coordinates the entire structure — from jurisdiction selection
+            Octus coordinates the entire structure: from jurisdiction selection
             and licensing strategy to compliance operations and corporate
-            architecture — as a single execution layer.
+            architecture, as a single execution layer.
           </p>
           <p className="body-text">
             You don&apos;t manage multiple advisors. You have one point of contact
@@ -88,8 +88,8 @@ export default function AboutPage() {
       <section className="bg-background py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">When clients come to us</span>
-          <h2 className="heading-lg" style={{ marginBottom: "56px", maxWidth: "700px" }}>
-            Usually when the structure is already broken.
+          <h2 className="heading-lg text-balance" style={{ marginBottom: "56px", maxWidth: "700px" }}>
+            Often when the structure can no longer hold under pressure.
           </h2>
           <div className="grid-3">
             {[
@@ -103,7 +103,7 @@ export default function AboutPage() {
               },
               {
                 title: "The expansion is structurally unprepared",
-                body: "New regulated market, complex multi-jurisdiction setup, or transition from offshore to regulated. Entry structured before the consequences of a wrong decision become irreversible.",
+                body: "New regulated market, complex setup across jurisdictions, or transition from offshore to regulated. Entry structured before the consequences of a wrong decision become irreversible.",
               },
             ].map((item) => (
               <div key={item.title} className="bg-background rounded-lg p-6 md:p-8 border border-transparent transition-all duration-300 hover:border-border">
@@ -126,14 +126,14 @@ export default function AboutPage() {
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
             Octus was built operating inside high-risk regulated environments
-            since 2019 — including iGaming, one of the most structurally
+            since 2019, including iGaming, one of the most structurally
             demanding regulated sectors in the world. We have been inside
             regulatory transitions, laboratory certifications, banking
             structures and cross-border operations, not observing them.
           </p>
           <p className="body-text" style={{ marginBottom: "20px" }}>
-            That experience — how operations actually break, and what is
-            required to fix them — is what we apply across every regulated
+            That experience (how operations actually break, and what is
+            required to fix them) is what we apply across every regulated
             industry today: fintech, payments, crypto, VASP, forex, corporate
             structuring and international market entry.
           </p>
@@ -152,15 +152,37 @@ export default function AboutPage() {
           </h2>
           <div className="grid-2">
             <div>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1px", background: "var(--border-solid)", borderRadius: "12px", overflow: "hidden", marginBottom: "24px" }}>
-                {[
-                  { num: "2019", label: "Operating since" },
-                ].map((s) => (
-                  <div key={s.num} className="card" style={{ borderRadius: "0", border: "none" }}>
-                    <p className="stat-num">{s.num}</p>
-                    <p className="stat-label">{s.label}</p>
-                  </div>
-                ))}
+              <div
+                className="about-authority-panel"
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "minmax(0, 0.9fr) minmax(0, 1.1fr)",
+                  gap: "1px",
+                  background: "var(--border-solid)",
+                  borderRadius: "12px",
+                  overflow: "hidden",
+                  marginBottom: "24px",
+                }}
+              >
+                <div className="card" style={{ borderRadius: "0", border: "none" }}>
+                  <p className="stat-num">2019</p>
+                  <p className="stat-label">Operating since</p>
+                </div>
+                <div style={{ position: "relative", minHeight: "140px", background: "#0B1220" }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/team-group.jpg"
+                    alt="Octus team at work"
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                      objectPosition: "center 30%",
+                      filter: "grayscale(1) contrast(1.05)",
+                      display: "block",
+                    }}
+                  />
+                </div>
               </div>
               <div className="juris-strip">
                 <p className="juris-strip-label">Markets and jurisdictions</p>
@@ -179,7 +201,7 @@ export default function AboutPage() {
                   "Offshore and onshore licensing across multiple jurisdictions",
                   "Corporate structures for international groups entering regulated markets",
                   "Compliance and AML operations for high-risk businesses",
-                  "Direct interaction with regulatory authorities — SPA/MF, MGA, GLI and others",
+                  "Direct interaction with regulatory authorities, including SPA/MF, MGA, GLI and others",
                   "Banking and payment infrastructure for operations with restricted access",
                   "Cross-border structures for expansion into emerging regulated markets",
                   "Laboratory certifications and technical compliance readiness",
@@ -207,7 +229,7 @@ export default function AboutPage() {
             {[
               {
                 name: "Companies entering regulated markets",
-                desc: "Operators structuring market entry across new jurisdictions — licensing, corporate structure, compliance and banking, built together from the start.",
+                desc: "Operators structuring market entry across new jurisdictions: licensing, corporate structure, compliance and banking, built together from the start.",
               },
               {
                 name: "Operations under regulatory or banking pressure",
@@ -219,7 +241,7 @@ export default function AboutPage() {
               },
               {
                 name: "Businesses expanding across jurisdictions",
-                desc: "Operations moving into new markets — LATAM, Africa, Europe — where regulatory, compliance and corporate layers need to be coordinated simultaneously.",
+                desc: "Operations moving into new markets (LATAM, Africa, Europe) where regulatory, compliance and corporate layers need to be coordinated simultaneously.",
               },
             ].map((item) => (
               <div key={item.name} className="card">
@@ -246,7 +268,7 @@ export default function AboutPage() {
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
             Regulated operations that span multiple jurisdictions require
-            local expertise — in legal systems, banking environments,
+            local : in legal systems, banking environments,
             regulatory bodies and corporate frameworks. Octus coordinates
             that layer as part of a single integrated structure.
           </p>
@@ -254,7 +276,7 @@ export default function AboutPage() {
             Clients do not manage multiple providers across multiple markets.
             Where local execution is required, Octus structures and
             coordinates jurisdiction-specific expertise as part of one
-            operational architecture — with a single point of responsibility
+            operational , with a single point of responsibility
             throughout.
           </p>
         </div>
@@ -270,7 +292,7 @@ export default function AboutPage() {
           </h2>
           <p className="body-lg" style={{ marginBottom: "48px", maxWidth: "640px", color: "var(--white-60)" }}>
             Octus operates across environments that require structured compliance,
-            technical readiness and regulatory alignment — beyond documentation.
+            technical readiness and regulatory , beyond documentation alone.
           </p>
           <div className="grid-auto-lg">
             {[
@@ -295,7 +317,7 @@ export default function AboutPage() {
         <div className="cta-block__inner">
           <p className="body-text" style={{ color: "var(--white-40)", marginBottom: "12px" }}>
             If your operation depends on regulatory approval, compliance
-            integrity and structural stability —
+            integrity and structural stability,
           </p>
           <h2 className="heading-lg cta-block__title">
             You don&apos;t need more advisors.

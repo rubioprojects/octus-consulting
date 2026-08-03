@@ -1,14 +1,14 @@
 import Link from "next/link";
 import { Fragment } from "react";
 import HomeModulesAccordion from "../components/HomeModulesAccordion";
+import HomeLeadershipTrust from "../components/system/HomeLeadershipTrust";
 import { CtaLink } from "../components/system/CtaButton";
 import Eyebrow from "../components/system/Eyebrow";
 import OctusIcon from "../components/icons/OctusIcon";
 import OctusStripSeparatorIcon from "../components/OctusStripSeparatorIcon";
 import { ENGAGEMENT_MODELS } from "../lib/commercial";
-import { OCTUS_WHAT_WE_DO, PUBLIC_AREAS } from "../lib/publicAreas";
+import { PUBLIC_AREAS } from "../lib/publicAreas";
 import {
-  CTA_ASSESS_LABEL,
   CTA_DISCUSS_LABEL,
   WHATSAPP_ASSESS_URL,
   WHATSAPP_DISCUSS_URL,
@@ -26,7 +26,8 @@ const areaRows = PUBLIC_AREAS.map((area) => ({
 
 export const metadata = pageSocialMeta({
   title: "Premium Execution for Regulated Operations",
-  description: OCTUS_WHAT_WE_DO,
+  description:
+    "Octus structures, coordinates and operates the work behind regulated businesses across licensing, compliance, corporate structure, remediation and specialist networks.",
   path: "/",
 });
 
@@ -39,13 +40,15 @@ export default function HomePage() {
           <Eyebrow tone="dark" className="mb-8 md:mb-10">
             Octus Consulting
           </Eyebrow>
-          <h1 className="font-heading text-[2.35rem] font-bold leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-[4rem]">
+          <h1 className="font-heading text-[2.35rem] font-bold leading-[1.05] tracking-tight text-white text-balance sm:text-5xl md:text-6xl lg:text-[4rem]">
             Regulated operations don&apos;t fail randomly.
             <br />
             <span className="text-white/85">They fail structurally.</span>
           </h1>
-          <p className="mt-8 mb-12 max-w-2xl text-base leading-[1.7] text-white/75 sm:text-lg md:mt-10 md:mb-14">
-            {OCTUS_WHAT_WE_DO}
+          <p className="mt-8 mb-12 max-w-2xl text-pretty text-base leading-[1.7] text-white/75 sm:text-lg md:mt-10 md:mb-14">
+            When licensing, banking, compliance or corporate structure breaks under scrutiny, the
+            cost is real. Octus is brought in to diagnose the failure and rebuild the sequence that
+            makes the operation workable again.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
             <CtaLink
@@ -82,15 +85,24 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 2. What Octus does */}
-      <section className="border-b border-border bg-background py-20 md:py-28">
+      {/* Leadership: Rubio + Cris. first two scrolls */}
+      <HomeLeadershipTrust />
+
+      {/* 2. What Octus does (distinct from hero) */}
+      <section className="border-b border-border bg-background py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <p className="section-label mb-4 block">What Octus does</p>
-            <h2 className="heading-section mb-6">
-              Structure regulated operations so they can hold under scrutiny.
+            <h2 className="heading-section mb-6 max-w-xl text-balance">
+              Octus structures, coordinates and operates
+              <br className="hidden sm:block" /> the work regulated businesses depend on.
             </h2>
-            <p className="body-large text-muted-foreground">{OCTUS_WHAT_WE_DO}</p>
+            <p className="body-large text-pretty text-muted-foreground">
+              Licensing pathways, compliance systems, legal and corporate architecture, private-client
+              ownership issues, remediation when something is already blocked, and the specialist
+              network those programmes need: Octus brings the required workstreams into one
+              coordinated mandate.
+            </p>
             <p className="mt-6 font-sans text-sm text-muted-foreground">
               Operating since 2019 across regulated markets.
             </p>
@@ -99,46 +111,67 @@ export default function HomePage() {
       </section>
 
       {/* 3. Services */}
-      <section className="surface-elevated py-24 md:py-32">
+      <section className="surface-elevated py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-12 max-w-2xl md:mb-16">
+          <div className="mb-10 max-w-2xl md:mb-14">
             <p className="section-label mb-4 block">Services</p>
-            <div className="mb-4 flex flex-wrap gap-x-4 gap-y-2">
-              <Link href="/solutions" className="font-sans text-sm text-primary no-underline hover:text-primary/80">
-                All services →
-              </Link>
-            </div>
-            <h2 className="heading-section mb-6">Services for regulated operations</h2>
-            <p className="body-large text-muted-foreground">
+            <h2 className="heading-section mb-6 text-balance">
+              Services for regulated operations
+            </h2>
+            <p className="body-large text-pretty text-muted-foreground">
               From licensing and corporate structure to compliance, remediation and specialist
-              coordination, Octus brings the required workstreams into one coordinated mandate.
+              coordination, each area is a client-facing entry into the same execution model.
             </p>
+            <Link
+              href="/solutions"
+              className="mt-4 inline-block font-sans text-sm text-primary no-underline hover:text-primary/80"
+            >
+              All services →
+            </Link>
           </div>
           <HomeModulesAccordion modules={areaRows} />
         </div>
       </section>
 
       {/* 4. Industries */}
-      <section className="bg-background py-24 md:py-32">
+      <section className="bg-background py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-12 max-w-2xl md:mb-16">
+          <div className="mb-10 max-w-2xl md:mb-14">
             <p className="section-label mb-4 block">Industries</p>
-            <h2 className="heading-section mb-6">Where we operate.</h2>
+            <h2 className="heading-section mb-6 text-balance">Where we operate</h2>
           </div>
           <div className="grid gap-6 md:grid-cols-2 md:gap-8">
             {[
-              ["iGaming & Betting", "Licensing, compliance, banking readiness, post-license operations", "/markets/igaming"],
-              ["Fintech & Payments", "EMI pathways, payment infrastructure, cross-border compliance", "/markets/fintech"],
-              ["Crypto & Digital Assets", "CASP/VASP pathways, MiCA readiness, banking access", "/markets/crypto"],
-              ["High-Risk Operations", "Banking resilience, enhanced compliance, institutional access", "/markets/high-risk"],
+              [
+                "iGaming & Betting",
+                "Licensing, compliance, banking readiness and operations after licensing",
+                "/markets/igaming",
+              ],
+              [
+                "Fintech & Payments",
+                "EMI pathways, payment infrastructure and compliance across borders",
+                "/markets/fintech",
+              ],
+              [
+                "Crypto & Digital Assets",
+                "CASP/VASP pathways, MiCA readiness and banking access",
+                "/markets/crypto",
+              ],
+              [
+                "High-Risk Operations",
+                "Banking resilience, enhanced compliance and institutional access",
+                "/markets/high-risk",
+              ],
             ].map(([title, desc, href]) => (
               <Link
                 key={title}
                 href={href}
                 className="group relative block rounded-lg border border-transparent bg-secondary/30 p-6 transition-all duration-300 hover:border-border md:p-8"
               >
-                <h3 className="mb-2 pr-10 font-sans text-lg font-semibold text-primary">{title}</h3>
-                <p className="body-text mb-3">{desc}</p>
+                <h3 className="mb-2 pr-10 font-sans text-lg font-semibold text-primary text-balance">
+                  {title}
+                </h3>
+                <p className="body-text mb-3 text-pretty">{desc}</p>
                 <span className="font-sans text-sm text-primary">Explore →</span>
               </Link>
             ))}
@@ -147,12 +180,14 @@ export default function HomePage() {
       </section>
 
       {/* 5. How Octus works */}
-      <section className="surface-elevated py-24 md:py-32">
+      <section className="surface-elevated py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-12 flex flex-wrap items-end justify-between gap-4 md:mb-16">
+          <div className="mb-10 flex flex-wrap items-end justify-between gap-4 md:mb-14">
             <div className="max-w-2xl">
               <p className="section-label mb-4 block">How Octus works</p>
-              <h2 className="heading-section">Accountability scales with the mandate.</h2>
+              <h2 className="heading-section text-balance">
+                Accountability scales with the mandate
+              </h2>
             </div>
             <Link
               href="/how-we-engage"
@@ -168,27 +203,29 @@ export default function HomePage() {
                 <span className="mb-3 block font-sans text-xs font-medium text-muted-foreground">
                   {model.num}
                 </span>
-                <h3 className="mb-3 font-sans text-base font-semibold text-primary">{model.title}</h3>
-                <p className="body-text text-sm">{model.body}</p>
+                <h3 className="mb-3 font-sans text-base font-semibold text-primary text-balance">
+                  {model.title}
+                </h3>
+                <p className="body-text text-pretty text-sm">{model.body}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* 6. Trust / team */}
-      <section className="border-y border-border bg-background py-20 md:py-24">
+      {/* 6. Why operators work with Octus */}
+      <section className="border-y border-border bg-background py-16 md:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-10 md:grid-cols-[1.2fr_1fr] md:items-center md:gap-16">
             <div>
               <p className="section-label mb-4 block">Why operators work with Octus</p>
-              <h2 className="heading-section mb-4">
-                Experience, accountability and clear commitments.
+              <h2 className="heading-section mb-4 text-balance">
+                Experience, accountability and clear commitments
               </h2>
-              <p className="body-large mb-6 text-muted-foreground">
-                Octus works with operators in highly regulated markets — coordinating
-                multi-jurisdiction execution with direct access to the responsible team, clear
-                boundaries, and commitments that match what can actually be delivered.
+              <p className="body-large mb-6 text-pretty text-muted-foreground">
+                Octus works with operators in highly regulated markets, coordinating execution
+                across jurisdictions with direct access to the responsible team, clear boundaries,
+                and commitments that match what can actually be delivered.
               </p>
               <div className="flex flex-wrap gap-4">
                 <CtaLink href="/team">Meet the team →</CtaLink>
@@ -204,7 +241,7 @@ export default function HomePage() {
                 "Coordinated execution across jurisdictions and workstreams",
                 "Clear boundaries on what Octus controls and what remains with authorities or providers",
               ].map((item) => (
-                <li key={item} className="flex gap-3 border-b border-border/60 pb-3">
+                <li key={item} className="flex gap-3 border-b border-border/60 pb-3 text-pretty">
                   <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" aria-hidden />
                   {item}
                 </li>
@@ -214,16 +251,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 7. Contact */}
-      <section className="surface-dark py-24 md:py-32">
+      {/* 7. Contact. two CTAs + text link */}
+      <section className="surface-dark py-20 md:py-28">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
           <p className="mb-4 font-sans text-xs font-medium uppercase tracking-[0.15em] text-white/55">
             Contact
           </p>
-          <h2 className="mb-6 font-heading text-3xl font-semibold leading-[1.12] tracking-tight text-white md:text-4xl">
-            If the structure is stuck, blocked or exposed — talk to Octus.
+          <h2 className="mb-6 font-heading text-3xl font-semibold leading-[1.12] tracking-tight text-white text-balance md:text-4xl">
+            If the structure is stuck, blocked or exposed, talk to Octus.
           </h2>
-          <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-white/75">
+          <p className="mx-auto mb-10 max-w-2xl text-pretty text-lg leading-relaxed text-white/75">
             Discuss a live situation, or start with a diagnostic assessment when the operation is
             already under pressure.
           </p>
@@ -242,12 +279,17 @@ export default function HomePage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {CTA_ASSESS_LABEL}
-            </CtaLink>
-            <CtaLink href="/contact" variant="on-dark-secondary">
-              Contact page →
+              Start a diagnostic assessment
             </CtaLink>
           </div>
+          <p className="mt-6">
+            <Link
+              href="/contact"
+              className="font-sans text-sm text-white/70 no-underline underline-offset-4 hover:text-white hover:underline"
+            >
+              Or use the contact page
+            </Link>
+          </p>
         </div>
       </section>
     </main>

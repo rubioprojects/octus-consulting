@@ -10,7 +10,7 @@ import { pageSocialMeta } from "../../lib/pageMeta";
 export const metadata = pageSocialMeta({
   title: "Insights",
   description:
-    "Regulatory analysis, legal developments and operational intelligence from the Octus team — covering Brazil, iGaming, compliance and international structured markets.",
+    "Regulatory analysis, legal developments and operational intelligence from the Octus team: covering Brazil, iGaming, compliance and international structured markets.",
   path: "/insights",
 });
 
@@ -23,7 +23,7 @@ export default function InsightsPage() {
         eyebrow="Insights"
         title="Regulatory intelligence."
         titleSecondLine="From the field."
-        description="Analysis, legal developments and operational intelligence from the Octus team — covering Brazil, iGaming, compliance and international regulated markets. Visual shell for the Octus Intelligence Hub."
+        description="Analysis, legal developments and operational intelligence from the Octus team: covering Brazil, iGaming, compliance and international regulated markets. Visual shell for the Octus Intelligence Hub."
       />
 
       <Section>

@@ -4,7 +4,7 @@ import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
 export const metadata = {
   title: "Anjouan",
   description:
-    "Anjouan is fast and affordable. That is also the risk. Octus structures offshore operations that work beyond the licence — banking, payments and transition to stronger jurisdictions.",
+    "Anjouan is fast and affordable. That is also the risk. Octus structures offshore operations that work beyond the licence: banking, payments and transition to stronger jurisdictions.",
 };
 
 export default function JurisdictionsAnjouanPage() {
@@ -57,8 +57,8 @@ export default function JurisdictionsAnjouanPage() {
           <p className="body-text">
             Speed and cost are real advantages. But they do not eliminate the
             structural work. They reduce the regulatory barrier to entry. The
-            operational barriers — banking, payments, compliance quality,
-            institutional credibility — remain exactly the same.
+            operational barriers: banking, payments, compliance quality,
+            institutional credibility: remain exactly the same.
           </p>
         </div>
       </section>
@@ -91,7 +91,7 @@ export default function JurisdictionsAnjouanPage() {
               "Long-term scalability depends entirely on how the structure evolves.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                <span className="mt-0.5 shrink-0 text-muted-foreground">: </span>
                 <p className="body-text text-muted-foreground">{item}</p>
               </div>
             ))}
@@ -187,7 +187,7 @@ export default function JurisdictionsAnjouanPage() {
                   "You are targeting EU, UK or other restricted markets.",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                    <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                    <span className="mt-0.5 shrink-0 text-muted-foreground">: </span>
                     <p className="body-sm text-muted-foreground">{item}</p>
                   </div>
                 ))}

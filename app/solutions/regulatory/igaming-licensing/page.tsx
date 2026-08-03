@@ -4,7 +4,7 @@ import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
 export const metadata = {
   title: "iGaming Licensing",
   description:
-    "iGaming licensing strategy across jurisdictions. Octus structures the regulatory, corporate and compliance architecture that determines whether a licence gets approved — not just submitted.",
+    "iGaming licensing strategy across jurisdictions. Octus structures the regulatory, corporate and compliance architecture that determines whether a licence gets approved: not just submitted.",
 };
 
 export default function SolutionsIGamingLicensingPage() {
@@ -52,7 +52,7 @@ export default function SolutionsIGamingLicensingPage() {
           </p>
           <p className="body-lg">
             Choosing where to apply is easy. Designing how the operation will
-            function after approval — licensing, banking, compliance and scale —
+            function after approval: licensing, banking, compliance and scale : 
             is where most fail.
           </p>
         </div>
@@ -110,16 +110,16 @@ export default function SolutionsIGamingLicensingPage() {
           </h2>
           <p className="body-lg" style={{ marginBottom: "28px" }}>
             Jurisdiction is a strategic decision, not a checklist item. Every
-            licensing strategy starts here — as a decision that determines
+            licensing strategy starts here: as a decision that determines
             approval probability, banking access, payment processing, market
             reach and long-term viability.
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: "14px", marginBottom: "28px" }}>
             {[
-              "Isle of Man — Tier-1 regulatory credential for institutional operators and B2B providers",
-              "Malta — EU-regulated framework for scalable operations targeting regulated markets",
-              "Curaçao — Structured offshore framework for growth-stage operators",
-              "Brazil — Local regulatory pathway requiring direct alignment with SPA expectations",
+              "Isle of Man. Tier-1 regulatory credential for institutional operators and B2B providers",
+              "Malta. EU-regulated framework for scalable operations targeting regulated markets",
+              "Curaçao. Structured offshore framework for growth-stage operators",
+              "Brazil. Local regulatory pathway requiring direct alignment with SPA expectations",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
@@ -133,7 +133,7 @@ export default function SolutionsIGamingLicensingPage() {
           </p>
           <p className="body-sm italic text-muted-foreground">
             Octus does not recommend jurisdictions based on speed or cost. The
-            choice is driven by what allows the operation to function — not
+            choice is driven by what allows the operation to function: not
             just to launch.
           </p>
         </div>
@@ -152,11 +152,11 @@ export default function SolutionsIGamingLicensingPage() {
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginBottom: "24px" }}>
             {[
-              "Jurisdiction strategy — regulatory path, risk matrix, cost and timeline modelling.",
-              "Corporate and operational architecture — entities, governance, UBO alignment, jurisdictional requirements.",
-              "Compliance systems — AML/CFT, KYC, responsible gambling, internal controls. Built for ongoing supervision.",
-              "Regulatory coordination — application, documentation, regulator interaction.",
-              "Banking and payment readiness — from day one, not after approval.",
+              "Jurisdiction strategy: regulatory path, risk matrix, cost and timeline modelling.",
+              "Corporate and operational architecture: entities, governance, UBO alignment, jurisdictional requirements.",
+              "Compliance systems. AML/CFT, KYC, responsible gambling, internal controls. Built for ongoing supervision.",
+              "Regulatory coordination: application, documentation, regulator interaction.",
+              "Banking and payment readiness: from day one, not after approval.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
@@ -218,15 +218,15 @@ export default function SolutionsIGamingLicensingPage() {
           <div style={{ display: "flex", flexDirection: "column", gap: "24px", marginBottom: "28px" }}>
             <p className="body-text">
               <strong className="font-semibold text-foreground">Full execution</strong>
-              {" "}— End-to-end licensing and structuring. From jurisdiction selection to operational readiness.
+              {" "}. End-to-end licensing and structuring. From jurisdiction selection to operational readiness.
             </p>
             <p className="body-text">
               <strong className="font-semibold text-foreground">Strategic intervention</strong>
-              {" "}— Correction of existing structures, licensing processes or regulatory misalignment.
+              {" "}. Correction of existing structures, licensing processes or regulatory misalignment.
             </p>
             <p className="body-text">
               <strong className="font-semibold text-foreground">Advisory and mapping</strong>
-              {" "}— Strategic assessment and regulatory pathway definition before execution.
+              {" "}. Strategic assessment and regulatory pathway definition before execution.
             </p>
           </div>
           <p className="body-sm mb-6 text-muted-foreground">

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
 
 export const metadata = {
-  title: "Curaçao Gaming License — Structured Entry Framework | Octus",
+  title: "Curaçao Gaming License. Structured Entry Framework | Octus",
   description:
     "Licensing, corporate structuring and banking coordination for iGaming operators in Curaçao. Structured framework under the evolving regulatory landscape.",
 };
@@ -98,7 +98,7 @@ export default function JurisdictionsCuracaoPage() {
                   "The strategy requires maximum credibility and regulatory depth",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                    <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                    <span className="mt-0.5 shrink-0 text-muted-foreground">: </span>
                     <p className="body-sm text-muted-foreground">{item}</p>
                   </div>
                 ))}
@@ -185,7 +185,7 @@ export default function JurisdictionsCuracaoPage() {
               { label: "License types", value: "iGaming, sports betting, lottery, games of chance" },
               { label: "Entity required", value: "Curaçao-registered N.V. or B.V." },
               { label: "Compliance", value: "Full AML/KYC, responsible gaming, DPO mandatory" },
-              { label: "Banking", value: "Operational accounts available — requires aligned structure" },
+              { label: "Banking", value: "Operational accounts available: requires aligned structure" },
               { label: "Timeline", value: "3\u20136 months (application to license, structure-dependent)" },
             ].map((item) => (
               <div key={item.label} className="card" style={{ padding: "24px" }}>
@@ -200,7 +200,7 @@ export default function JurisdictionsCuracaoPage() {
       {/* ─── SELECTED MANDATES ─── */}
       <section className="bg-background py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
-          <p className="label">Selected mandates — Curaçao</p>
+          <p className="label">Selected mandates. Curaçao</p>
           <h2 className="heading-section" style={{ marginBottom: "32px" }}>
             Real operations. Real outcomes.
           </h2>
@@ -211,7 +211,7 @@ export default function JurisdictionsCuracaoPage() {
                 body: "Active Curaçao license, rejected by three banks. We restructured the corporate layer, rebuilt AML policies, aligned UBO disclosure and coordinated with three banks simultaneously. Operational account open in 11 weeks.",
               },
               {
-                title: "New operator — full setup from zero",
+                title: "New operator: full setup from zero",
                 body: "Entity formation, licensing dossier, compliance framework and banking, delivered as a single coordinated project. License granted, bank account operational before launch.",
               },
               {

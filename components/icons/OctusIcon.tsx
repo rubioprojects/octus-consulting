@@ -21,7 +21,7 @@ const stroke = {
   strokeLinejoin: "round" as const,
 };
 
-/** Single-family stroke icons. Repo logos used for marks; Canva brand kit not accessible in this session — do not invent new icon families. */
+/** Single-family stroke icons. Repo logos used for marks; Canva brand kit not accessible in this session: do not invent new icon families. */
 export default function OctusIcon({
   name,
   size = 20,

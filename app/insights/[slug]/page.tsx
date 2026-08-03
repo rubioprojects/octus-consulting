@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   const post = getPost(params.slug);
   if (!post) return {};
   return {
-    title: `${post.title} — Octus Consulting`,
+    title: `${post.title} | Octus Consulting`,
     description: post.excerpt,
   };
 }

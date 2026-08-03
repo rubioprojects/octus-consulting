@@ -12,7 +12,7 @@ import Link from "next/link";
 export const metadata = {
   title: "International Partners",
   description:
-    "Collaborate with Octus as lead contractor for regulated operations — CSPs, counsel, advisors and specialists.",
+    "Collaborate with Octus as lead contractor for regulated operations. CSPs, counsel, advisors and specialists.",
 };
 
 export default function PartnersPage() {
@@ -22,7 +22,7 @@ export default function PartnersPage() {
         eyebrow="Partners"
         title="Collaboration infrastructure."
         titleSecondLine="Not competition. Not a staff directory."
-        description="Octus works with counsel, CSPs, advisors and specialists as an execution partner for highly regulated operations — with clear accountability when we lead."
+        description="Octus works with counsel, CSPs, advisors and specialists as an execution partner for highly regulated operations: with clear accountability when we lead."
         primaryCta={{
           href: WHATSAPP_PARTNERSHIP_URL,
           label: CTA_PARTNERSHIP_LABEL,

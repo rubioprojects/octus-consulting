@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
 
 export const metadata = {
-  title: "AML & KYC Framework — Compliance That Holds | Octus",
+  title: "AML & KYC Framework. Compliance That Holds | Octus",
   description:
     "AML/KYC compliance frameworks for regulated operations. Built to survive real audit, not to sit in a folder. Transaction monitoring, risk assessment and regulatory reporting.",
 };
@@ -118,15 +118,15 @@ export default function SolutionsAMLKYCPage() {
           <div className="grid gap-6 md:grid-cols-1">
             {[
               {
-                title: "iGaming operator — compliance remediation",
+                title: "iGaming operator: compliance remediation",
                 body: "Flagged by regulator for compliance gaps. Full AML/KYC rebuild: policies, procedures, monitoring rules, evidence register. Cleared within 8 weeks.",
               },
               {
-                title: "Fintech — banking due diligence recovery",
+                title: "Fintech: banking due diligence recovery",
                 body: "Rejected by 3 banks for inadequate AML framework. We rebuilt the program, aligned it with banking risk requirements and coordinated re-application. Accounts opened.",
               },
               {
-                title: "Multi-jurisdiction operator — unified framework",
+                title: "Multi-jurisdiction operator: unified framework",
                 body: "Compliance framework harmonized across 3 jurisdictions with local adaptations. Single policy architecture, jurisdiction-specific procedures.",
               },
               {
