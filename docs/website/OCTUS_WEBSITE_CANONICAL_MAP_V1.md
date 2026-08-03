@@ -1,19 +1,18 @@
 # OCTUS Website Canonical Map V1
 
-**Status:** EVIDENCE / DECISION — no route mutations in this pass  
+**Status:** LOCKED — canonical route decisions  
 **Date:** 2026-08-03  
-**PR:** #17 @ `f30f1c4`  
+**PR:** #17  
 **Companion JSON:** `OCTUS_WEBSITE_CANONICAL_MAP_V1.json`  
-**Sitemap routes mapped:** 81  
-**Authority:** current sitemap + approved public catalog for content; closed deploy for visual only
+**Sitemap routes mapped:** 81
 
 ## Decision counts (sitemap)
 
 | Decision | Count |
 |----------|------:|
-| retain | 79 |
-| consolidate | 2 |
-| redirect | 0 |
+| retain | 80 |
+| consolidate | 0 |
+| redirect | 1 |
 | remove | 0 |
 
 ## Page families
@@ -45,7 +44,7 @@
 | `/solutions/corporate/company-formation` | `/solutions/corporate-structuring` | Discuss your operation | Corporate Structuring | **retain** |
 | `/solutions/corporate/holding-design` | `/solutions/corporate-structuring` | Discuss your operation | Corporate Structuring | **retain** |
 | `/solutions/corporate/offshore-structuring` | `/solutions/corporate-structuring` | Discuss your operation | Corporate Structuring | **retain** |
-| `/solutions/regulatory/banking-payments` | `/solutions/banking-payments-infrastructure` | Discuss your operation | Cross-cutting · Banking & Payments | **consolidate** |
+| `/solutions/regulatory/banking-payments` | `/solutions/banking-payments-infrastructure` | Discuss your operation | Cross-cutting · Banking & Payments | **redirect** |
 | `/solutions/regulatory/fintech-licensing` | `/solutions/regulatory-structuring` | Discuss your operation | Regulatory Structuring | **retain** |
 | `/solutions/regulatory/igaming-licensing` | `/solutions/regulatory-structuring` | Discuss your operation | Regulatory Structuring | **retain** |
 | `/solutions/regulatory/market-entry` | `/solutions/regulatory-structuring` | Discuss your operation | Regulatory Structuring | **retain** |
@@ -118,7 +117,7 @@
 
 | Path | Parent | Primary CTA | Service area | Decision |
 |------|--------|-------------|--------------|----------|
-| `/brazil` | `/jurisdictions` | Discuss your operation | — | **consolidate** |
+| `/brazil` | `/jurisdictions` | Discuss your operation | — | **retain** (flagship Brazil landing) |
 | `/jurisdictions` | `/` | Discuss your operation | — | **retain** |
 | `/jurisdictions/anjouan` | `/jurisdictions` | Discuss your operation | — | **retain** |
 | `/jurisdictions/curacao` | `/jurisdictions` | Discuss your operation | — | **retain** |
@@ -172,7 +171,7 @@
 
 ## Rules
 
-- Not every existing route deserves to remain canonical long-term (`/brazil`, `/solutions/regulatory/banking-payments` marked **consolidate**).
+- `/brazil` retained as flagship Brazil landing for international clients.
+- `/solutions/regulatory/banking-payments` redirects (301) to `/solutions/banking-payments-infrastructure`.
 - Banking & Payments is cross-cutting infrastructure, not an eighth peer area.
 - Insights posts retain as Intelligence library children of `/insights`.
-- No routes changed in this audit pass.

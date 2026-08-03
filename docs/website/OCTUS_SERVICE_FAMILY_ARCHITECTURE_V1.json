@@ -1,0 +1,1959 @@
+{
+  "version": "V1",
+  "date": "2026-08-03",
+  "family_count": 55,
+  "service_count": 39,
+  "areas": [
+    {
+      "id": "AREA-REG",
+      "name": "Regulatory Structuring",
+      "hub": "/solutions/regulatory-structuring",
+      "families": [
+        {
+          "id": "REG-F1",
+          "name": "Jurisdiction and pathway strategy",
+          "description": "Venue fit, pathway design and jurisdiction risk mapping before filings.",
+          "area_id": "AREA-REG",
+          "area_name": "Regulatory Structuring",
+          "area_hub": "/solutions/regulatory-structuring",
+          "service_ids": [
+            "SVC-REG-01",
+            "SVC-REG-05"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "REG-F2",
+          "name": "iGaming licensing programmes",
+          "description": "Full-programme gaming licensing coordinated with corporate, compliance and banking.",
+          "area_id": "AREA-REG",
+          "area_name": "Regulatory Structuring",
+          "area_hub": "/solutions/regulatory-structuring",
+          "service_ids": [
+            "SVC-REG-02"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "REG-F3",
+          "name": "Fintech, payments and digital-assets authorisations",
+          "description": "EMI/PI and related authorisations treated as operable stacks.",
+          "area_id": "AREA-REG",
+          "area_name": "Regulatory Structuring",
+          "area_hub": "/solutions/regulatory-structuring",
+          "service_ids": [
+            "SVC-REG-03"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "REG-F4",
+          "name": "Brazil regulatory and SPA/MF",
+          "description": "Brazil-facing regulatory workstreams for betting and related national frameworks.",
+          "area_id": "AREA-REG",
+          "area_name": "Regulatory Structuring",
+          "area_hub": "/solutions/regulatory-structuring",
+          "service_ids": [
+            "SVC-REG-04"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "REG-F5",
+          "name": "B2B, supplier and laboratory registration",
+          "description": "Supplier, B2B and registration dependencies sequenced with licensing programmes.",
+          "area_id": "AREA-REG",
+          "area_name": "Regulatory Structuring",
+          "area_hub": "/solutions/regulatory-structuring",
+          "service_ids": [],
+          "display_depth": "family module"
+        },
+        {
+          "id": "REG-F6",
+          "name": "Technical and certification readiness",
+          "description": "Technical readiness handoffs into compliance certification and laboratory paths.",
+          "area_id": "AREA-REG",
+          "area_name": "Regulatory Structuring",
+          "area_hub": "/solutions/regulatory-structuring",
+          "service_ids": [],
+          "display_depth": "family module"
+        },
+        {
+          "id": "REG-F7",
+          "name": "Post-licensing governance and regulatory change",
+          "description": "Ongoing governance after approval when rules, conditions or venues change.",
+          "area_id": "AREA-REG",
+          "area_name": "Regulatory Structuring",
+          "area_hub": "/solutions/regulatory-structuring",
+          "service_ids": [],
+          "display_depth": "family module"
+        }
+      ]
+    },
+    {
+      "id": "AREA-CMP",
+      "name": "Compliance & Risk",
+      "hub": "/solutions/compliance-risk",
+      "families": [
+        {
+          "id": "CMP-F1",
+          "name": "AML, KYC, CDD and onboarding",
+          "description": "Onboarding and monitoring frameworks that survive banking and regulator scrutiny.",
+          "area_id": "AREA-CMP",
+          "area_name": "Compliance & Risk",
+          "area_hub": "/solutions/compliance-risk",
+          "service_ids": [
+            "SVC-CMP-01"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "CMP-F2",
+          "name": "Policies and governance frameworks",
+          "description": "Policy packs and diligence materials aligned to how the operation actually runs.",
+          "area_id": "AREA-CMP",
+          "area_name": "Compliance & Risk",
+          "area_hub": "/solutions/compliance-risk",
+          "service_ids": [
+            "SVC-CMP-06"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "CMP-F3",
+          "name": "Internal controls and monitoring",
+          "description": "Controls, escalation and monitoring that hold under audit.",
+          "area_id": "AREA-CMP",
+          "area_name": "Compliance & Risk",
+          "area_hub": "/solutions/compliance-risk",
+          "service_ids": [
+            "SVC-CMP-04"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "CMP-F4",
+          "name": "Compliance operations and Compliance-as-a-Service",
+          "description": "Owned compliance function rather than paper compliance.",
+          "area_id": "AREA-CMP",
+          "area_name": "Compliance & Risk",
+          "area_hub": "/solutions/compliance-risk",
+          "service_ids": [
+            "SVC-CMP-02"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "CMP-F5",
+          "name": "Privacy, data protection and DPO",
+          "description": "DPO and privacy execution that remains independent and operable.",
+          "area_id": "AREA-CMP",
+          "area_name": "Compliance & Risk",
+          "area_hub": "/solutions/compliance-risk",
+          "service_ids": [
+            "SVC-CMP-03"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "CMP-F6",
+          "name": "Due diligence and risk assessment",
+          "description": "Risk assessment packages for counterparties, investors and institutions.",
+          "area_id": "AREA-CMP",
+          "area_name": "Compliance & Risk",
+          "area_hub": "/solutions/compliance-risk",
+          "service_ids": [],
+          "display_depth": "family module"
+        },
+        {
+          "id": "CMP-F7",
+          "name": "Certification, audit and laboratory readiness",
+          "description": "Certification and lab readiness sequenced with licensing and banking.",
+          "area_id": "AREA-CMP",
+          "area_name": "Compliance & Risk",
+          "area_hub": "/solutions/compliance-risk",
+          "service_ids": [
+            "SVC-CMP-05"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "CMP-F8",
+          "name": "Training, remediation and ongoing assurance",
+          "description": "Assurance loops and training when controls must stick after remediation.",
+          "area_id": "AREA-CMP",
+          "area_name": "Compliance & Risk",
+          "area_hub": "/solutions/compliance-risk",
+          "service_ids": [],
+          "display_depth": "family module"
+        }
+      ]
+    },
+    {
+      "id": "AREA-LEG",
+      "name": "Legal & Structural Architecture",
+      "hub": "/solutions/legal-structural-architecture",
+      "families": [
+        {
+          "id": "LEG-F1",
+          "name": "Contractual architecture",
+          "description": "Contracts that match the regulated operating model.",
+          "area_id": "AREA-LEG",
+          "area_name": "Legal & Structural Architecture",
+          "area_hub": "/solutions/legal-structural-architecture",
+          "service_ids": [
+            "SVC-LEG-01"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "LEG-F2",
+          "name": "Regulatory opinions and legal analysis",
+          "description": "Opinions and analysis coordinated where local counsel authority is required.",
+          "area_id": "AREA-LEG",
+          "area_name": "Legal & Structural Architecture",
+          "area_hub": "/solutions/legal-structural-architecture",
+          "service_ids": [
+            "SVC-LEG-04"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "LEG-F3",
+          "name": "Corporate legal architecture",
+          "description": "Legal design of entities, governance instruments and group relationships.",
+          "area_id": "AREA-LEG",
+          "area_name": "Legal & Structural Architecture",
+          "area_hub": "/solutions/legal-structural-architecture",
+          "service_ids": [],
+          "display_depth": "family module"
+        },
+        {
+          "id": "LEG-F4",
+          "name": "Tax legal structuring and transaction design",
+          "description": "Tax-sensitive legal structuring coordinated with finance owners.",
+          "area_id": "AREA-LEG",
+          "area_name": "Legal & Structural Architecture",
+          "area_hub": "/solutions/legal-structural-architecture",
+          "service_ids": [],
+          "display_depth": "family module"
+        },
+        {
+          "id": "LEG-F5",
+          "name": "Intellectual property and technology matters",
+          "description": "IP and technology legal coordination relevant to regulated platforms.",
+          "area_id": "AREA-LEG",
+          "area_name": "Legal & Structural Architecture",
+          "area_hub": "/solutions/legal-structural-architecture",
+          "service_ids": [],
+          "display_depth": "family module"
+        },
+        {
+          "id": "LEG-F6",
+          "name": "Notifications and extrajudicial matters",
+          "description": "Structured notifications and extrajudicial coordination.",
+          "area_id": "AREA-LEG",
+          "area_name": "Legal & Structural Architecture",
+          "area_hub": "/solutions/legal-structural-architecture",
+          "service_ids": [],
+          "display_depth": "family module"
+        },
+        {
+          "id": "LEG-F7",
+          "name": "Dispute and contentious-work coordination",
+          "description": "Coordination of contentious work with local counsel. Octus does not claim to litigate in every jurisdiction.",
+          "area_id": "AREA-LEG",
+          "area_name": "Legal & Structural Architecture",
+          "area_hub": "/solutions/legal-structural-architecture",
+          "service_ids": [],
+          "display_depth": "family module"
+        },
+        {
+          "id": "LEG-F8",
+          "name": "Local-counsel and multi-jurisdiction legal coordination",
+          "description": "Multi-jurisdiction frameworks and counsel coordination across legal systems.",
+          "area_id": "AREA-LEG",
+          "area_name": "Legal & Structural Architecture",
+          "area_hub": "/solutions/legal-structural-architecture",
+          "service_ids": [
+            "SVC-LEG-02",
+            "SVC-LEG-03"
+          ],
+          "display_depth": "family module"
+        }
+      ]
+    },
+    {
+      "id": "AREA-CORP",
+      "name": "Corporate Structuring",
+      "hub": "/solutions/corporate-structuring",
+      "families": [
+        {
+          "id": "CORP-F1",
+          "name": "Entity formation and market-entry vehicles",
+          "description": "Formation of the vehicles needed to enter and operate.",
+          "area_id": "AREA-CORP",
+          "area_name": "Corporate Structuring",
+          "area_hub": "/solutions/corporate-structuring",
+          "service_ids": [
+            "SVC-CORP-02"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "CORP-F2",
+          "name": "Holding and ownership design",
+          "description": "Holdings and ownership architecture for regulated groups.",
+          "area_id": "AREA-CORP",
+          "area_name": "Corporate Structuring",
+          "area_hub": "/solutions/corporate-structuring",
+          "service_ids": [
+            "SVC-CORP-01"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "CORP-F3",
+          "name": "Cross-border corporate architecture",
+          "description": "Cross-border entity topology that remains explainable.",
+          "area_id": "AREA-CORP",
+          "area_name": "Corporate Structuring",
+          "area_hub": "/solutions/corporate-structuring",
+          "service_ids": [
+            "SVC-CORP-03"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "CORP-F4",
+          "name": "Shareholder, director and governance structures",
+          "description": "Governance and reorganisation when ownership or control must change.",
+          "area_id": "AREA-CORP",
+          "area_name": "Corporate Structuring",
+          "area_hub": "/solutions/corporate-structuring",
+          "service_ids": [
+            "SVC-CORP-04"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "CORP-F5",
+          "name": "Corporate maintenance and secretarial coordination",
+          "description": "Ongoing maintenance and secretarial coordination across entities.",
+          "area_id": "AREA-CORP",
+          "area_name": "Corporate Structuring",
+          "area_hub": "/solutions/corporate-structuring",
+          "service_ids": [],
+          "display_depth": "family module"
+        },
+        {
+          "id": "CORP-F6",
+          "name": "Accounting, reporting and finance coordination",
+          "description": "Accounting and finance coordination with institutional expectations.",
+          "area_id": "AREA-CORP",
+          "area_name": "Corporate Structuring",
+          "area_hub": "/solutions/corporate-structuring",
+          "service_ids": [
+            "SVC-CORP-06"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "CORP-F7",
+          "name": "Corporate tax planning",
+          "description": "Corporate tax planning as a named module, not a hidden peer area.",
+          "area_id": "AREA-CORP",
+          "area_name": "Corporate Structuring",
+          "area_hub": "/solutions/corporate-structuring",
+          "service_ids": [
+            "SVC-CORP-07"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "CORP-F8",
+          "name": "Banking and institutional onboarding readiness",
+          "description": "Corporate readiness for banking and institutional onboarding.",
+          "area_id": "AREA-CORP",
+          "area_name": "Corporate Structuring",
+          "area_hub": "/solutions/corporate-structuring",
+          "service_ids": [
+            "SVC-CORP-05"
+          ],
+          "display_depth": "family module"
+        }
+      ]
+    },
+    {
+      "id": "AREA-PC",
+      "name": "Private Clients",
+      "hub": "/private-clients",
+      "families": [
+        {
+          "id": "PC-F1",
+          "name": "UBO and ownership architecture",
+          "description": "Ownership and UBO structures that can be explained under scrutiny.",
+          "area_id": "AREA-PC",
+          "area_name": "Private Clients",
+          "area_hub": "/private-clients",
+          "service_ids": [
+            "SVC-PC-01"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "PC-F2",
+          "name": "Personal and family holdings",
+          "description": "Personal and family holding organisation tied to regulated operations.",
+          "area_id": "AREA-PC",
+          "area_name": "Private Clients",
+          "area_hub": "/private-clients",
+          "service_ids": [
+            "SVC-PC-02"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "PC-F3",
+          "name": "Asset organisation and succession",
+          "description": "Asset organisation and succession planning for private clients.",
+          "area_id": "AREA-PC",
+          "area_name": "Private Clients",
+          "area_hub": "/private-clients",
+          "service_ids": [],
+          "display_depth": "family module"
+        },
+        {
+          "id": "PC-F4",
+          "name": "Residence and personal international structuring",
+          "description": "Residence and personal international structuring.",
+          "area_id": "AREA-PC",
+          "area_name": "Private Clients",
+          "area_hub": "/private-clients",
+          "service_ids": [
+            "SVC-PC-03"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "PC-F5",
+          "name": "Personal tax coordination",
+          "description": "Personal tax coordination with corporate and ownership design.",
+          "area_id": "AREA-PC",
+          "area_name": "Private Clients",
+          "area_hub": "/private-clients",
+          "service_ids": [
+            "SVC-PC-05"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "PC-F6",
+          "name": "Personal banking and KYC readiness",
+          "description": "Personal banking and individual KYC readiness.",
+          "area_id": "AREA-PC",
+          "area_name": "Private Clients",
+          "area_hub": "/private-clients",
+          "service_ids": [
+            "SVC-PC-04"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "PC-F7",
+          "name": "Family governance and private-client coordination",
+          "description": "Family governance coordination across advisors and jurisdictions.",
+          "area_id": "AREA-PC",
+          "area_name": "Private Clients",
+          "area_hub": "/private-clients",
+          "service_ids": [],
+          "display_depth": "family module"
+        }
+      ]
+    },
+    {
+      "id": "AREA-REM",
+      "name": "Remediation & Readiness",
+      "hub": "/solutions/remediation-readiness",
+      "families": [
+        {
+          "id": "REM-F1",
+          "name": "Diagnostic and root-cause assessment",
+          "description": "Crisis entry and structural assessment when the operation is already blocked.",
+          "area_id": "AREA-REM",
+          "area_name": "Remediation & Readiness",
+          "area_hub": "/solutions/remediation-readiness",
+          "service_ids": [
+            "SVC-REM-01"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "REM-F2",
+          "name": "Regulatory remediation",
+          "description": "Licensing delay and regulatory remediation sequencing.",
+          "area_id": "AREA-REM",
+          "area_name": "Remediation & Readiness",
+          "area_hub": "/solutions/remediation-readiness",
+          "service_ids": [
+            "SVC-REM-02"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "REM-F3",
+          "name": "Compliance and controls remediation",
+          "description": "Remediation of failed controls and compliance gaps.",
+          "area_id": "AREA-REM",
+          "area_name": "Remediation & Readiness",
+          "area_hub": "/solutions/remediation-readiness",
+          "service_ids": [],
+          "display_depth": "family module"
+        },
+        {
+          "id": "REM-F4",
+          "name": "Banking and payments remediation",
+          "description": "Banking, payments and financial-infrastructure remediation.",
+          "area_id": "AREA-REM",
+          "area_name": "Remediation & Readiness",
+          "area_hub": "/solutions/remediation-readiness",
+          "service_ids": [
+            "SVC-REM-03",
+            "SVC-REM-05"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "REM-F5",
+          "name": "Corporate and ownership cleanup",
+          "description": "Cleanup of corporate and ownership structures that block progress.",
+          "area_id": "AREA-REM",
+          "area_name": "Remediation & Readiness",
+          "area_hub": "/solutions/remediation-readiness",
+          "service_ids": [],
+          "display_depth": "family module"
+        },
+        {
+          "id": "REM-F6",
+          "name": "Tax and finance remediation",
+          "description": "Tax and finance problem remediation.",
+          "area_id": "AREA-REM",
+          "area_name": "Remediation & Readiness",
+          "area_hub": "/solutions/remediation-readiness",
+          "service_ids": [
+            "SVC-REM-06"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "REM-F7",
+          "name": "Audit, certification and inspection readiness",
+          "description": "Audit and readiness remediation ahead of scrutiny.",
+          "area_id": "AREA-REM",
+          "area_name": "Remediation & Readiness",
+          "area_hub": "/solutions/remediation-readiness",
+          "service_ids": [
+            "SVC-REM-04"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "REM-F8",
+          "name": "Documentation, evidence and data-room readiness",
+          "description": "Evidence packs and data-room readiness for institutions and authorities.",
+          "area_id": "AREA-REM",
+          "area_name": "Remediation & Readiness",
+          "area_hub": "/solutions/remediation-readiness",
+          "service_ids": [],
+          "display_depth": "family module"
+        },
+        {
+          "id": "REM-F9",
+          "name": "Operational continuity and recovery planning",
+          "description": "Continuity and recovery planning while structural fixes are sequenced.",
+          "area_id": "AREA-REM",
+          "area_name": "Remediation & Readiness",
+          "area_hub": "/solutions/remediation-readiness",
+          "service_ids": [],
+          "display_depth": "family module"
+        }
+      ]
+    },
+    {
+      "id": "AREA-HUB",
+      "name": "International Hub",
+      "hub": "/international-hub",
+      "families": [
+        {
+          "id": "HUB-F1",
+          "name": "Jurisdiction comparison and selection",
+          "description": "Comparing venues for fit before market-entry execution.",
+          "area_id": "AREA-HUB",
+          "area_name": "International Hub",
+          "area_hub": "/international-hub",
+          "service_ids": [],
+          "display_depth": "family module"
+        },
+        {
+          "id": "HUB-F2",
+          "name": "Multi-country market-entry coordination",
+          "description": "Coordinating multi-country entry programmes.",
+          "area_id": "AREA-HUB",
+          "area_name": "International Hub",
+          "area_hub": "/international-hub",
+          "service_ids": [
+            "SVC-HUB-01"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "HUB-F3",
+          "name": "CSP, entity and local-director network",
+          "description": "CSP, formation and local-director network coordination.",
+          "area_id": "AREA-HUB",
+          "area_name": "International Hub",
+          "area_hub": "/international-hub",
+          "service_ids": [
+            "SVC-HUB-04"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "HUB-F4",
+          "name": "Banking, PSP and payment-provider coordination",
+          "description": "Bank, PSP and payment-provider coordination for regulated operations.",
+          "area_id": "AREA-HUB",
+          "area_name": "International Hub",
+          "area_hub": "/international-hub",
+          "service_ids": [
+            "SVC-HUB-02",
+            "SVC-HUB-03"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "HUB-F5",
+          "name": "Laboratories, certification and technical vendors",
+          "description": "Labs, certification and technical vendor coordination.",
+          "area_id": "AREA-HUB",
+          "area_name": "International Hub",
+          "area_hub": "/international-hub",
+          "service_ids": [
+            "SVC-HUB-05"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "HUB-F6",
+          "name": "Counsel and tax-specialist coordination",
+          "description": "Counsel and tax-specialist network coordination.",
+          "area_id": "AREA-HUB",
+          "area_name": "International Hub",
+          "area_hub": "/international-hub",
+          "service_ids": [
+            "SVC-HUB-06"
+          ],
+          "display_depth": "family module"
+        },
+        {
+          "id": "HUB-F7",
+          "name": "Programme management across providers",
+          "description": "Programme management across providers without dissolving accountability.",
+          "area_id": "AREA-HUB",
+          "area_name": "International Hub",
+          "area_hub": "/international-hub",
+          "service_ids": [],
+          "display_depth": "family module"
+        },
+        {
+          "id": "HUB-F8",
+          "name": "International maintenance and expansion support",
+          "description": "Ongoing international maintenance and expansion support.",
+          "area_id": "AREA-HUB",
+          "area_name": "International Hub",
+          "area_hub": "/international-hub",
+          "service_ids": [],
+          "display_depth": "family module"
+        }
+      ]
+    }
+  ],
+  "families": [
+    {
+      "id": "REG-F1",
+      "name": "Jurisdiction and pathway strategy",
+      "description": "Venue fit, pathway design and jurisdiction risk mapping before filings.",
+      "area_id": "AREA-REG",
+      "area_name": "Regulatory Structuring",
+      "area_hub": "/solutions/regulatory-structuring",
+      "service_ids": [
+        "SVC-REG-01",
+        "SVC-REG-05"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "REG-F2",
+      "name": "iGaming licensing programmes",
+      "description": "Full-programme gaming licensing coordinated with corporate, compliance and banking.",
+      "area_id": "AREA-REG",
+      "area_name": "Regulatory Structuring",
+      "area_hub": "/solutions/regulatory-structuring",
+      "service_ids": [
+        "SVC-REG-02"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "REG-F3",
+      "name": "Fintech, payments and digital-assets authorisations",
+      "description": "EMI/PI and related authorisations treated as operable stacks.",
+      "area_id": "AREA-REG",
+      "area_name": "Regulatory Structuring",
+      "area_hub": "/solutions/regulatory-structuring",
+      "service_ids": [
+        "SVC-REG-03"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "REG-F4",
+      "name": "Brazil regulatory and SPA/MF",
+      "description": "Brazil-facing regulatory workstreams for betting and related national frameworks.",
+      "area_id": "AREA-REG",
+      "area_name": "Regulatory Structuring",
+      "area_hub": "/solutions/regulatory-structuring",
+      "service_ids": [
+        "SVC-REG-04"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "REG-F5",
+      "name": "B2B, supplier and laboratory registration",
+      "description": "Supplier, B2B and registration dependencies sequenced with licensing programmes.",
+      "area_id": "AREA-REG",
+      "area_name": "Regulatory Structuring",
+      "area_hub": "/solutions/regulatory-structuring",
+      "service_ids": [],
+      "display_depth": "family module"
+    },
+    {
+      "id": "REG-F6",
+      "name": "Technical and certification readiness",
+      "description": "Technical readiness handoffs into compliance certification and laboratory paths.",
+      "area_id": "AREA-REG",
+      "area_name": "Regulatory Structuring",
+      "area_hub": "/solutions/regulatory-structuring",
+      "service_ids": [],
+      "display_depth": "family module"
+    },
+    {
+      "id": "REG-F7",
+      "name": "Post-licensing governance and regulatory change",
+      "description": "Ongoing governance after approval when rules, conditions or venues change.",
+      "area_id": "AREA-REG",
+      "area_name": "Regulatory Structuring",
+      "area_hub": "/solutions/regulatory-structuring",
+      "service_ids": [],
+      "display_depth": "family module"
+    },
+    {
+      "id": "CMP-F1",
+      "name": "AML, KYC, CDD and onboarding",
+      "description": "Onboarding and monitoring frameworks that survive banking and regulator scrutiny.",
+      "area_id": "AREA-CMP",
+      "area_name": "Compliance & Risk",
+      "area_hub": "/solutions/compliance-risk",
+      "service_ids": [
+        "SVC-CMP-01"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "CMP-F2",
+      "name": "Policies and governance frameworks",
+      "description": "Policy packs and diligence materials aligned to how the operation actually runs.",
+      "area_id": "AREA-CMP",
+      "area_name": "Compliance & Risk",
+      "area_hub": "/solutions/compliance-risk",
+      "service_ids": [
+        "SVC-CMP-06"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "CMP-F3",
+      "name": "Internal controls and monitoring",
+      "description": "Controls, escalation and monitoring that hold under audit.",
+      "area_id": "AREA-CMP",
+      "area_name": "Compliance & Risk",
+      "area_hub": "/solutions/compliance-risk",
+      "service_ids": [
+        "SVC-CMP-04"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "CMP-F4",
+      "name": "Compliance operations and Compliance-as-a-Service",
+      "description": "Owned compliance function rather than paper compliance.",
+      "area_id": "AREA-CMP",
+      "area_name": "Compliance & Risk",
+      "area_hub": "/solutions/compliance-risk",
+      "service_ids": [
+        "SVC-CMP-02"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "CMP-F5",
+      "name": "Privacy, data protection and DPO",
+      "description": "DPO and privacy execution that remains independent and operable.",
+      "area_id": "AREA-CMP",
+      "area_name": "Compliance & Risk",
+      "area_hub": "/solutions/compliance-risk",
+      "service_ids": [
+        "SVC-CMP-03"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "CMP-F6",
+      "name": "Due diligence and risk assessment",
+      "description": "Risk assessment packages for counterparties, investors and institutions.",
+      "area_id": "AREA-CMP",
+      "area_name": "Compliance & Risk",
+      "area_hub": "/solutions/compliance-risk",
+      "service_ids": [],
+      "display_depth": "family module"
+    },
+    {
+      "id": "CMP-F7",
+      "name": "Certification, audit and laboratory readiness",
+      "description": "Certification and lab readiness sequenced with licensing and banking.",
+      "area_id": "AREA-CMP",
+      "area_name": "Compliance & Risk",
+      "area_hub": "/solutions/compliance-risk",
+      "service_ids": [
+        "SVC-CMP-05"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "CMP-F8",
+      "name": "Training, remediation and ongoing assurance",
+      "description": "Assurance loops and training when controls must stick after remediation.",
+      "area_id": "AREA-CMP",
+      "area_name": "Compliance & Risk",
+      "area_hub": "/solutions/compliance-risk",
+      "service_ids": [],
+      "display_depth": "family module"
+    },
+    {
+      "id": "LEG-F1",
+      "name": "Contractual architecture",
+      "description": "Contracts that match the regulated operating model.",
+      "area_id": "AREA-LEG",
+      "area_name": "Legal & Structural Architecture",
+      "area_hub": "/solutions/legal-structural-architecture",
+      "service_ids": [
+        "SVC-LEG-01"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "LEG-F2",
+      "name": "Regulatory opinions and legal analysis",
+      "description": "Opinions and analysis coordinated where local counsel authority is required.",
+      "area_id": "AREA-LEG",
+      "area_name": "Legal & Structural Architecture",
+      "area_hub": "/solutions/legal-structural-architecture",
+      "service_ids": [
+        "SVC-LEG-04"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "LEG-F3",
+      "name": "Corporate legal architecture",
+      "description": "Legal design of entities, governance instruments and group relationships.",
+      "area_id": "AREA-LEG",
+      "area_name": "Legal & Structural Architecture",
+      "area_hub": "/solutions/legal-structural-architecture",
+      "service_ids": [],
+      "display_depth": "family module"
+    },
+    {
+      "id": "LEG-F4",
+      "name": "Tax legal structuring and transaction design",
+      "description": "Tax-sensitive legal structuring coordinated with finance owners.",
+      "area_id": "AREA-LEG",
+      "area_name": "Legal & Structural Architecture",
+      "area_hub": "/solutions/legal-structural-architecture",
+      "service_ids": [],
+      "display_depth": "family module"
+    },
+    {
+      "id": "LEG-F5",
+      "name": "Intellectual property and technology matters",
+      "description": "IP and technology legal coordination relevant to regulated platforms.",
+      "area_id": "AREA-LEG",
+      "area_name": "Legal & Structural Architecture",
+      "area_hub": "/solutions/legal-structural-architecture",
+      "service_ids": [],
+      "display_depth": "family module"
+    },
+    {
+      "id": "LEG-F6",
+      "name": "Notifications and extrajudicial matters",
+      "description": "Structured notifications and extrajudicial coordination.",
+      "area_id": "AREA-LEG",
+      "area_name": "Legal & Structural Architecture",
+      "area_hub": "/solutions/legal-structural-architecture",
+      "service_ids": [],
+      "display_depth": "family module"
+    },
+    {
+      "id": "LEG-F7",
+      "name": "Dispute and contentious-work coordination",
+      "description": "Coordination of contentious work with local counsel. Octus does not claim to litigate in every jurisdiction.",
+      "area_id": "AREA-LEG",
+      "area_name": "Legal & Structural Architecture",
+      "area_hub": "/solutions/legal-structural-architecture",
+      "service_ids": [],
+      "display_depth": "family module"
+    },
+    {
+      "id": "LEG-F8",
+      "name": "Local-counsel and multi-jurisdiction legal coordination",
+      "description": "Multi-jurisdiction frameworks and counsel coordination across legal systems.",
+      "area_id": "AREA-LEG",
+      "area_name": "Legal & Structural Architecture",
+      "area_hub": "/solutions/legal-structural-architecture",
+      "service_ids": [
+        "SVC-LEG-02",
+        "SVC-LEG-03"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "CORP-F1",
+      "name": "Entity formation and market-entry vehicles",
+      "description": "Formation of the vehicles needed to enter and operate.",
+      "area_id": "AREA-CORP",
+      "area_name": "Corporate Structuring",
+      "area_hub": "/solutions/corporate-structuring",
+      "service_ids": [
+        "SVC-CORP-02"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "CORP-F2",
+      "name": "Holding and ownership design",
+      "description": "Holdings and ownership architecture for regulated groups.",
+      "area_id": "AREA-CORP",
+      "area_name": "Corporate Structuring",
+      "area_hub": "/solutions/corporate-structuring",
+      "service_ids": [
+        "SVC-CORP-01"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "CORP-F3",
+      "name": "Cross-border corporate architecture",
+      "description": "Cross-border entity topology that remains explainable.",
+      "area_id": "AREA-CORP",
+      "area_name": "Corporate Structuring",
+      "area_hub": "/solutions/corporate-structuring",
+      "service_ids": [
+        "SVC-CORP-03"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "CORP-F4",
+      "name": "Shareholder, director and governance structures",
+      "description": "Governance and reorganisation when ownership or control must change.",
+      "area_id": "AREA-CORP",
+      "area_name": "Corporate Structuring",
+      "area_hub": "/solutions/corporate-structuring",
+      "service_ids": [
+        "SVC-CORP-04"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "CORP-F5",
+      "name": "Corporate maintenance and secretarial coordination",
+      "description": "Ongoing maintenance and secretarial coordination across entities.",
+      "area_id": "AREA-CORP",
+      "area_name": "Corporate Structuring",
+      "area_hub": "/solutions/corporate-structuring",
+      "service_ids": [],
+      "display_depth": "family module"
+    },
+    {
+      "id": "CORP-F6",
+      "name": "Accounting, reporting and finance coordination",
+      "description": "Accounting and finance coordination with institutional expectations.",
+      "area_id": "AREA-CORP",
+      "area_name": "Corporate Structuring",
+      "area_hub": "/solutions/corporate-structuring",
+      "service_ids": [
+        "SVC-CORP-06"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "CORP-F7",
+      "name": "Corporate tax planning",
+      "description": "Corporate tax planning as a named module, not a hidden peer area.",
+      "area_id": "AREA-CORP",
+      "area_name": "Corporate Structuring",
+      "area_hub": "/solutions/corporate-structuring",
+      "service_ids": [
+        "SVC-CORP-07"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "CORP-F8",
+      "name": "Banking and institutional onboarding readiness",
+      "description": "Corporate readiness for banking and institutional onboarding.",
+      "area_id": "AREA-CORP",
+      "area_name": "Corporate Structuring",
+      "area_hub": "/solutions/corporate-structuring",
+      "service_ids": [
+        "SVC-CORP-05"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "PC-F1",
+      "name": "UBO and ownership architecture",
+      "description": "Ownership and UBO structures that can be explained under scrutiny.",
+      "area_id": "AREA-PC",
+      "area_name": "Private Clients",
+      "area_hub": "/private-clients",
+      "service_ids": [
+        "SVC-PC-01"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "PC-F2",
+      "name": "Personal and family holdings",
+      "description": "Personal and family holding organisation tied to regulated operations.",
+      "area_id": "AREA-PC",
+      "area_name": "Private Clients",
+      "area_hub": "/private-clients",
+      "service_ids": [
+        "SVC-PC-02"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "PC-F3",
+      "name": "Asset organisation and succession",
+      "description": "Asset organisation and succession planning for private clients.",
+      "area_id": "AREA-PC",
+      "area_name": "Private Clients",
+      "area_hub": "/private-clients",
+      "service_ids": [],
+      "display_depth": "family module"
+    },
+    {
+      "id": "PC-F4",
+      "name": "Residence and personal international structuring",
+      "description": "Residence and personal international structuring.",
+      "area_id": "AREA-PC",
+      "area_name": "Private Clients",
+      "area_hub": "/private-clients",
+      "service_ids": [
+        "SVC-PC-03"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "PC-F5",
+      "name": "Personal tax coordination",
+      "description": "Personal tax coordination with corporate and ownership design.",
+      "area_id": "AREA-PC",
+      "area_name": "Private Clients",
+      "area_hub": "/private-clients",
+      "service_ids": [
+        "SVC-PC-05"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "PC-F6",
+      "name": "Personal banking and KYC readiness",
+      "description": "Personal banking and individual KYC readiness.",
+      "area_id": "AREA-PC",
+      "area_name": "Private Clients",
+      "area_hub": "/private-clients",
+      "service_ids": [
+        "SVC-PC-04"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "PC-F7",
+      "name": "Family governance and private-client coordination",
+      "description": "Family governance coordination across advisors and jurisdictions.",
+      "area_id": "AREA-PC",
+      "area_name": "Private Clients",
+      "area_hub": "/private-clients",
+      "service_ids": [],
+      "display_depth": "family module"
+    },
+    {
+      "id": "REM-F1",
+      "name": "Diagnostic and root-cause assessment",
+      "description": "Crisis entry and structural assessment when the operation is already blocked.",
+      "area_id": "AREA-REM",
+      "area_name": "Remediation & Readiness",
+      "area_hub": "/solutions/remediation-readiness",
+      "service_ids": [
+        "SVC-REM-01"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "REM-F2",
+      "name": "Regulatory remediation",
+      "description": "Licensing delay and regulatory remediation sequencing.",
+      "area_id": "AREA-REM",
+      "area_name": "Remediation & Readiness",
+      "area_hub": "/solutions/remediation-readiness",
+      "service_ids": [
+        "SVC-REM-02"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "REM-F3",
+      "name": "Compliance and controls remediation",
+      "description": "Remediation of failed controls and compliance gaps.",
+      "area_id": "AREA-REM",
+      "area_name": "Remediation & Readiness",
+      "area_hub": "/solutions/remediation-readiness",
+      "service_ids": [],
+      "display_depth": "family module"
+    },
+    {
+      "id": "REM-F4",
+      "name": "Banking and payments remediation",
+      "description": "Banking, payments and financial-infrastructure remediation.",
+      "area_id": "AREA-REM",
+      "area_name": "Remediation & Readiness",
+      "area_hub": "/solutions/remediation-readiness",
+      "service_ids": [
+        "SVC-REM-03",
+        "SVC-REM-05"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "REM-F5",
+      "name": "Corporate and ownership cleanup",
+      "description": "Cleanup of corporate and ownership structures that block progress.",
+      "area_id": "AREA-REM",
+      "area_name": "Remediation & Readiness",
+      "area_hub": "/solutions/remediation-readiness",
+      "service_ids": [],
+      "display_depth": "family module"
+    },
+    {
+      "id": "REM-F6",
+      "name": "Tax and finance remediation",
+      "description": "Tax and finance problem remediation.",
+      "area_id": "AREA-REM",
+      "area_name": "Remediation & Readiness",
+      "area_hub": "/solutions/remediation-readiness",
+      "service_ids": [
+        "SVC-REM-06"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "REM-F7",
+      "name": "Audit, certification and inspection readiness",
+      "description": "Audit and readiness remediation ahead of scrutiny.",
+      "area_id": "AREA-REM",
+      "area_name": "Remediation & Readiness",
+      "area_hub": "/solutions/remediation-readiness",
+      "service_ids": [
+        "SVC-REM-04"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "REM-F8",
+      "name": "Documentation, evidence and data-room readiness",
+      "description": "Evidence packs and data-room readiness for institutions and authorities.",
+      "area_id": "AREA-REM",
+      "area_name": "Remediation & Readiness",
+      "area_hub": "/solutions/remediation-readiness",
+      "service_ids": [],
+      "display_depth": "family module"
+    },
+    {
+      "id": "REM-F9",
+      "name": "Operational continuity and recovery planning",
+      "description": "Continuity and recovery planning while structural fixes are sequenced.",
+      "area_id": "AREA-REM",
+      "area_name": "Remediation & Readiness",
+      "area_hub": "/solutions/remediation-readiness",
+      "service_ids": [],
+      "display_depth": "family module"
+    },
+    {
+      "id": "HUB-F1",
+      "name": "Jurisdiction comparison and selection",
+      "description": "Comparing venues for fit before market-entry execution.",
+      "area_id": "AREA-HUB",
+      "area_name": "International Hub",
+      "area_hub": "/international-hub",
+      "service_ids": [],
+      "display_depth": "family module"
+    },
+    {
+      "id": "HUB-F2",
+      "name": "Multi-country market-entry coordination",
+      "description": "Coordinating multi-country entry programmes.",
+      "area_id": "AREA-HUB",
+      "area_name": "International Hub",
+      "area_hub": "/international-hub",
+      "service_ids": [
+        "SVC-HUB-01"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "HUB-F3",
+      "name": "CSP, entity and local-director network",
+      "description": "CSP, formation and local-director network coordination.",
+      "area_id": "AREA-HUB",
+      "area_name": "International Hub",
+      "area_hub": "/international-hub",
+      "service_ids": [
+        "SVC-HUB-04"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "HUB-F4",
+      "name": "Banking, PSP and payment-provider coordination",
+      "description": "Bank, PSP and payment-provider coordination for regulated operations.",
+      "area_id": "AREA-HUB",
+      "area_name": "International Hub",
+      "area_hub": "/international-hub",
+      "service_ids": [
+        "SVC-HUB-02",
+        "SVC-HUB-03"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "HUB-F5",
+      "name": "Laboratories, certification and technical vendors",
+      "description": "Labs, certification and technical vendor coordination.",
+      "area_id": "AREA-HUB",
+      "area_name": "International Hub",
+      "area_hub": "/international-hub",
+      "service_ids": [
+        "SVC-HUB-05"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "HUB-F6",
+      "name": "Counsel and tax-specialist coordination",
+      "description": "Counsel and tax-specialist network coordination.",
+      "area_id": "AREA-HUB",
+      "area_name": "International Hub",
+      "area_hub": "/international-hub",
+      "service_ids": [
+        "SVC-HUB-06"
+      ],
+      "display_depth": "family module"
+    },
+    {
+      "id": "HUB-F7",
+      "name": "Programme management across providers",
+      "description": "Programme management across providers without dissolving accountability.",
+      "area_id": "AREA-HUB",
+      "area_name": "International Hub",
+      "area_hub": "/international-hub",
+      "service_ids": [],
+      "display_depth": "family module"
+    },
+    {
+      "id": "HUB-F8",
+      "name": "International maintenance and expansion support",
+      "description": "Ongoing international maintenance and expansion support.",
+      "area_id": "AREA-HUB",
+      "area_name": "International Hub",
+      "area_hub": "/international-hub",
+      "service_ids": [],
+      "display_depth": "family module"
+    }
+  ],
+  "services": [
+    {
+      "id": "SVC-REG-01",
+      "exact_public_name": "Licensing strategy and pathway design",
+      "primary_area": "Regulatory Structuring",
+      "primary_area_id": "AREA-REG",
+      "service_family_id": "REG-F1",
+      "service_family_name": "Jurisdiction and pathway strategy",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (strategic oversight); Esther Vendrami (international regulatory and licensing); Caroline Giovanetti (Brazil regulatory)",
+      "current_route": "/solutions/regulatory/market-entry",
+      "recommended_route": "/solutions/regulatory/market-entry",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-REG-05",
+      "exact_public_name": "Jurisdiction selection and risk mapping",
+      "primary_area": "Regulatory Structuring",
+      "primary_area_id": "AREA-REG",
+      "service_family_id": "REG-F1",
+      "service_family_name": "Jurisdiction and pathway strategy",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (strategic oversight); Esther Vendrami (international regulatory and licensing); Caroline Giovanetti (Brazil regulatory)",
+      "current_route": "/solutions/regulatory/market-entry",
+      "recommended_route": "/solutions/regulatory/market-entry",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-REG-02",
+      "exact_public_name": "iGaming licensing programme",
+      "primary_area": "Regulatory Structuring",
+      "primary_area_id": "AREA-REG",
+      "service_family_id": "REG-F2",
+      "service_family_name": "iGaming licensing programmes",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (strategic oversight); Esther Vendrami (international regulatory and licensing); Caroline Giovanetti (Brazil regulatory)",
+      "current_route": "/solutions/regulatory/igaming-licensing",
+      "recommended_route": "/solutions/regulatory/igaming-licensing",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-REG-03",
+      "exact_public_name": "Fintech, EMI and crypto licensing",
+      "primary_area": "Regulatory Structuring",
+      "primary_area_id": "AREA-REG",
+      "service_family_id": "REG-F3",
+      "service_family_name": "Fintech, payments and digital-assets authorisations",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (strategic oversight); Esther Vendrami (international regulatory and licensing); Caroline Giovanetti (Brazil regulatory)",
+      "current_route": "/solutions/regulatory/fintech-licensing",
+      "recommended_route": "/solutions/regulatory/fintech-licensing",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-REG-04",
+      "exact_public_name": "Brazil SPA / MF regulatory support",
+      "primary_area": "Regulatory Structuring",
+      "primary_area_id": "AREA-REG",
+      "service_family_id": "REG-F4",
+      "service_family_name": "Brazil regulatory and SPA/MF",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (strategic oversight); Esther Vendrami (international regulatory and licensing); Caroline Giovanetti (Brazil regulatory)",
+      "current_route": "/brazil",
+      "recommended_route": "/brazil",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-CMP-01",
+      "exact_public_name": "AML / KYC / CDD frameworks",
+      "primary_area": "Compliance & Risk",
+      "primary_area_id": "AREA-CMP",
+      "service_family_id": "CMP-F1",
+      "service_family_name": "AML, KYC, CDD and onboarding",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (governance); Irati (compliance substance and delivery); Maria Cristina (operational coordination where applicable)",
+      "current_route": "/solutions/compliance/aml-kyc",
+      "recommended_route": "/solutions/compliance/aml-kyc",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-CMP-06",
+      "exact_public_name": "Policies and due diligence packs",
+      "primary_area": "Compliance & Risk",
+      "primary_area_id": "AREA-CMP",
+      "service_family_id": "CMP-F2",
+      "service_family_name": "Policies and governance frameworks",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (governance); Irati (compliance substance and delivery); Maria Cristina (operational coordination where applicable)",
+      "current_route": null,
+      "recommended_route": "/solutions/compliance-risk",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-CMP-04",
+      "exact_public_name": "Internal controls and governance",
+      "primary_area": "Compliance & Risk",
+      "primary_area_id": "AREA-CMP",
+      "service_family_id": "CMP-F3",
+      "service_family_name": "Internal controls and monitoring",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (governance); Irati (compliance substance and delivery); Maria Cristina (operational coordination where applicable)",
+      "current_route": "/solutions/compliance/internal-controls",
+      "recommended_route": "/solutions/compliance/internal-controls",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-CMP-02",
+      "exact_public_name": "Compliance-as-a-Service",
+      "primary_area": "Compliance & Risk",
+      "primary_area_id": "AREA-CMP",
+      "service_family_id": "CMP-F4",
+      "service_family_name": "Compliance operations and Compliance-as-a-Service",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (governance); Irati (compliance substance and delivery); Maria Cristina (operational coordination where applicable)",
+      "current_route": "/solutions/compliance/compliance-as-a-service",
+      "recommended_route": "/solutions/compliance/compliance-as-a-service",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-CMP-03",
+      "exact_public_name": "DPO-as-a-Service",
+      "primary_area": "Compliance & Risk",
+      "primary_area_id": "AREA-CMP",
+      "service_family_id": "CMP-F5",
+      "service_family_name": "Privacy, data protection and DPO",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (governance); Irati (compliance substance and delivery); Maria Cristina (operational coordination where applicable)",
+      "current_route": "/solutions/compliance/dpo-as-a-service",
+      "recommended_route": "/solutions/compliance/dpo-as-a-service",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-CMP-05",
+      "exact_public_name": "Certification and lab readiness",
+      "primary_area": "Compliance & Risk",
+      "primary_area_id": "AREA-CMP",
+      "service_family_id": "CMP-F7",
+      "service_family_name": "Certification, audit and laboratory readiness",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (governance); Irati (compliance substance and delivery); Maria Cristina (operational coordination where applicable)",
+      "current_route": "/solutions/compliance/gli-readiness",
+      "recommended_route": "/solutions/compliance/gli-readiness",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-LEG-01",
+      "exact_public_name": "Contractual architecture",
+      "primary_area": "Legal & Structural Architecture",
+      "primary_area_id": "AREA-LEG",
+      "service_family_id": "LEG-F1",
+      "service_family_name": "Contractual architecture",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira; Rodrigo Coelho Lopes",
+      "current_route": null,
+      "recommended_route": "/solutions/legal-structural-architecture",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-LEG-04",
+      "exact_public_name": "Legal opinions and certifications support",
+      "primary_area": "Legal & Structural Architecture",
+      "primary_area_id": "AREA-LEG",
+      "service_family_id": "LEG-F2",
+      "service_family_name": "Regulatory opinions and legal analysis",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira; Rodrigo Coelho Lopes",
+      "current_route": null,
+      "recommended_route": "/solutions/legal-structural-architecture",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-LEG-02",
+      "exact_public_name": "Multi-jurisdiction legal frameworks",
+      "primary_area": "Legal & Structural Architecture",
+      "primary_area_id": "AREA-LEG",
+      "service_family_id": "LEG-F8",
+      "service_family_name": "Local-counsel and multi-jurisdiction legal coordination",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira; Rodrigo Coelho Lopes",
+      "current_route": null,
+      "recommended_route": "/solutions/legal-structural-architecture",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-LEG-03",
+      "exact_public_name": "Counsel coordination",
+      "primary_area": "Legal & Structural Architecture",
+      "primary_area_id": "AREA-LEG",
+      "service_family_id": "LEG-F8",
+      "service_family_name": "Local-counsel and multi-jurisdiction legal coordination",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira; Rodrigo Coelho Lopes",
+      "current_route": null,
+      "recommended_route": "/solutions/legal-structural-architecture",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-CORP-02",
+      "exact_public_name": "Company formation",
+      "primary_area": "Corporate Structuring",
+      "primary_area_id": "AREA-CORP",
+      "service_family_id": "CORP-F1",
+      "service_family_name": "Entity formation and market-entry vehicles",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (structural strategy); Claudia Nery (corporate and financial architecture); Esther Vendrami (international formation and operational coordination where applicable); Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)",
+      "current_route": "/solutions/corporate/company-formation",
+      "recommended_route": "/solutions/corporate/company-formation",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-CORP-01",
+      "exact_public_name": "Entity and holding architecture",
+      "primary_area": "Corporate Structuring",
+      "primary_area_id": "AREA-CORP",
+      "service_family_id": "CORP-F2",
+      "service_family_name": "Holding and ownership design",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (structural strategy); Claudia Nery (corporate and financial architecture); Esther Vendrami (international formation and operational coordination where applicable); Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)",
+      "current_route": "/solutions/corporate/holding-design",
+      "recommended_route": "/solutions/corporate/holding-design",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-CORP-03",
+      "exact_public_name": "Cross-border structuring",
+      "primary_area": "Corporate Structuring",
+      "primary_area_id": "AREA-CORP",
+      "service_family_id": "CORP-F3",
+      "service_family_name": "Cross-border corporate architecture",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (structural strategy); Claudia Nery (corporate and financial architecture); Esther Vendrami (international formation and operational coordination where applicable); Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)",
+      "current_route": "/solutions/corporate/offshore-structuring",
+      "recommended_route": "/solutions/corporate/offshore-structuring",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-CORP-04",
+      "exact_public_name": "Corporate reorganisation",
+      "primary_area": "Corporate Structuring",
+      "primary_area_id": "AREA-CORP",
+      "service_family_id": "CORP-F4",
+      "service_family_name": "Shareholder, director and governance structures",
+      "supporting_areas": [
+        "Remediation & Readiness"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (structural strategy); Claudia Nery (corporate and financial architecture); Esther Vendrami (international formation and operational coordination where applicable); Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)",
+      "current_route": null,
+      "recommended_route": "/solutions/corporate-structuring",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-CORP-06",
+      "exact_public_name": "Accounting and finance coordination",
+      "primary_area": "Corporate Structuring",
+      "primary_area_id": "AREA-CORP",
+      "service_family_id": "CORP-F6",
+      "service_family_name": "Accounting, reporting and finance coordination",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (structural strategy); Claudia Nery (corporate and financial architecture); Esther Vendrami (international formation and operational coordination where applicable); Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)",
+      "current_route": null,
+      "recommended_route": "/solutions/corporate-structuring",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-CORP-07",
+      "exact_public_name": "Corporate tax planning",
+      "primary_area": "Corporate Structuring",
+      "primary_area_id": "AREA-CORP",
+      "service_family_id": "CORP-F7",
+      "service_family_name": "Corporate tax planning",
+      "supporting_areas": [
+        "Private Clients"
+      ],
+      "cross_cutting_capability": "Tax coordination",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (structural strategy); Claudia Nery (corporate and financial architecture); Esther Vendrami (international formation and operational coordination where applicable); Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)",
+      "current_route": null,
+      "recommended_route": "/solutions/corporate-structuring",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-CORP-05",
+      "exact_public_name": "Banking readiness",
+      "primary_area": "Corporate Structuring",
+      "primary_area_id": "AREA-CORP",
+      "service_family_id": "CORP-F8",
+      "service_family_name": "Banking and institutional onboarding readiness",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": "Banking & Payments",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (structural strategy); Claudia Nery (corporate and financial architecture); Esther Vendrami (international formation and operational coordination where applicable); Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)",
+      "current_route": "/solutions/banking-payments-infrastructure",
+      "recommended_route": "/solutions/banking-payments-infrastructure",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-PC-01",
+      "exact_public_name": "Ownership and UBO architecture",
+      "primary_area": "Private Clients",
+      "primary_area_id": "AREA-PC",
+      "service_family_id": "PC-F1",
+      "service_family_name": "UBO and ownership architecture",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira; Claudia Nery; Rodrigo Coelho Lopes (where legal architecture is required)",
+      "current_route": null,
+      "recommended_route": "/private-clients",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-PC-02",
+      "exact_public_name": "Personal holding and asset organisation",
+      "primary_area": "Private Clients",
+      "primary_area_id": "AREA-PC",
+      "service_family_id": "PC-F2",
+      "service_family_name": "Personal and family holdings",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira; Claudia Nery; Rodrigo Coelho Lopes (where legal architecture is required)",
+      "current_route": null,
+      "recommended_route": "/private-clients",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-PC-03",
+      "exact_public_name": "Residency and personal international structuring",
+      "primary_area": "Private Clients",
+      "primary_area_id": "AREA-PC",
+      "service_family_id": "PC-F4",
+      "service_family_name": "Residence and personal international structuring",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira; Claudia Nery; Rodrigo Coelho Lopes (where legal architecture is required)",
+      "current_route": null,
+      "recommended_route": "/private-clients",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-PC-05",
+      "exact_public_name": "Personal tax coordination",
+      "primary_area": "Private Clients",
+      "primary_area_id": "AREA-PC",
+      "service_family_id": "PC-F5",
+      "service_family_name": "Personal tax coordination",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": "Tax coordination",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira; Claudia Nery; Rodrigo Coelho Lopes (where legal architecture is required)",
+      "current_route": null,
+      "recommended_route": "/private-clients",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-PC-04",
+      "exact_public_name": "Personal banking and individual KYC readiness",
+      "primary_area": "Private Clients",
+      "primary_area_id": "AREA-PC",
+      "service_family_id": "PC-F6",
+      "service_family_name": "Personal banking and KYC readiness",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": "Banking & Payments",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira; Claudia Nery; Rodrigo Coelho Lopes (where legal architecture is required)",
+      "current_route": null,
+      "recommended_route": "/private-clients",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-REM-01",
+      "exact_public_name": "Crisis entry and structural assessment",
+      "primary_area": "Remediation & Readiness",
+      "primary_area_id": "AREA-REM",
+      "service_family_id": "REM-F1",
+      "service_family_name": "Diagnostic and root-cause assessment",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira; Maria Cristina; Relevant area specialist according to root cause",
+      "current_route": "/diagnostic",
+      "recommended_route": "/diagnostic",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-REM-02",
+      "exact_public_name": "Licensing delay remediation",
+      "primary_area": "Remediation & Readiness",
+      "primary_area_id": "AREA-REM",
+      "service_family_id": "REM-F2",
+      "service_family_name": "Regulatory remediation",
+      "supporting_areas": [
+        "Regulatory Structuring"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira; Maria Cristina; Relevant area specialist according to root cause",
+      "current_route": null,
+      "recommended_route": "/solutions/remediation-readiness",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-REM-03",
+      "exact_public_name": "Banking or compliance gap remediation",
+      "primary_area": "Remediation & Readiness",
+      "primary_area_id": "AREA-REM",
+      "service_family_id": "REM-F4",
+      "service_family_name": "Banking and payments remediation",
+      "supporting_areas": [
+        "Compliance & Risk"
+      ],
+      "cross_cutting_capability": "Banking & Payments",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira; Maria Cristina; Relevant area specialist according to root cause",
+      "current_route": "/solutions/banking-payments-infrastructure",
+      "recommended_route": "/solutions/banking-payments-infrastructure",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-REM-05",
+      "exact_public_name": "Financial infrastructure remediation",
+      "primary_area": "Remediation & Readiness",
+      "primary_area_id": "AREA-REM",
+      "service_family_id": "REM-F4",
+      "service_family_name": "Banking and payments remediation",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": "Banking & Payments",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira; Maria Cristina; Relevant area specialist according to root cause",
+      "current_route": null,
+      "recommended_route": "/solutions/remediation-readiness",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-REM-06",
+      "exact_public_name": "Tax and finance problem remediation",
+      "primary_area": "Remediation & Readiness",
+      "primary_area_id": "AREA-REM",
+      "service_family_id": "REM-F6",
+      "service_family_name": "Tax and finance remediation",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": "Tax coordination",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira; Maria Cristina; Relevant area specialist according to root cause",
+      "current_route": null,
+      "recommended_route": "/solutions/remediation-readiness",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-REM-04",
+      "exact_public_name": "Audit and readiness remediation",
+      "primary_area": "Remediation & Readiness",
+      "primary_area_id": "AREA-REM",
+      "service_family_id": "REM-F7",
+      "service_family_name": "Audit, certification and inspection readiness",
+      "supporting_areas": [
+        "Compliance & Risk"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira; Maria Cristina; Relevant area specialist according to root cause",
+      "current_route": null,
+      "recommended_route": "/solutions/remediation-readiness",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-HUB-01",
+      "exact_public_name": "Market entry coordination",
+      "primary_area": "International Hub",
+      "primary_area_id": "AREA-HUB",
+      "service_family_id": "HUB-F2",
+      "service_family_name": "Multi-country market-entry coordination",
+      "supporting_areas": [
+        "Regulatory Structuring"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira; Milla Ludovico; Esther Vendrami (international providers and corporate dependencies); Claudia Nery (banking and financial infrastructure)",
+      "current_route": null,
+      "recommended_route": "/international-hub",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-HUB-04",
+      "exact_public_name": "CSP, local director and formation partners",
+      "primary_area": "International Hub",
+      "primary_area_id": "AREA-HUB",
+      "service_family_id": "HUB-F3",
+      "service_family_name": "CSP, entity and local-director network",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira; Milla Ludovico; Esther Vendrami (international providers and corporate dependencies); Claudia Nery (banking and financial infrastructure)",
+      "current_route": null,
+      "recommended_route": "/international-hub",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-HUB-02",
+      "exact_public_name": "Bank and PSP introductions",
+      "primary_area": "International Hub",
+      "primary_area_id": "AREA-HUB",
+      "service_family_id": "HUB-F4",
+      "service_family_name": "Banking, PSP and payment-provider coordination",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": "Banking & Payments",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira; Milla Ludovico; Esther Vendrami (international providers and corporate dependencies); Claudia Nery (banking and financial infrastructure)",
+      "current_route": "/solutions/banking-payments-infrastructure",
+      "recommended_route": "/solutions/banking-payments-infrastructure",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-HUB-03",
+      "exact_public_name": "Payment and PSP architecture",
+      "primary_area": "International Hub",
+      "primary_area_id": "AREA-HUB",
+      "service_family_id": "HUB-F4",
+      "service_family_name": "Banking, PSP and payment-provider coordination",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": "Banking & Payments",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira; Milla Ludovico; Esther Vendrami (international providers and corporate dependencies); Claudia Nery (banking and financial infrastructure)",
+      "current_route": "/solutions/banking-payments-infrastructure",
+      "recommended_route": "/solutions/banking-payments-infrastructure",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-HUB-05",
+      "exact_public_name": "Lab, certification and specialist network coordination",
+      "primary_area": "International Hub",
+      "primary_area_id": "AREA-HUB",
+      "service_family_id": "HUB-F5",
+      "service_family_name": "Laboratories, certification and technical vendors",
+      "supporting_areas": [
+        "Compliance & Risk"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira; Milla Ludovico; Esther Vendrami (international providers and corporate dependencies); Claudia Nery (banking and financial infrastructure)",
+      "current_route": null,
+      "recommended_route": "/international-hub",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-HUB-06",
+      "exact_public_name": "Counsel and tax specialist coordination",
+      "primary_area": "International Hub",
+      "primary_area_id": "AREA-HUB",
+      "service_family_id": "HUB-F6",
+      "service_family_name": "Counsel and tax-specialist coordination",
+      "supporting_areas": [
+        "Legal & Structural Architecture"
+      ],
+      "cross_cutting_capability": "Tax coordination",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira; Milla Ludovico; Esther Vendrami (international providers and corporate dependencies); Claudia Nery (banking and financial infrastructure)",
+      "current_route": null,
+      "recommended_route": "/international-hub",
+      "display_depth": "family module"
+    }
+  ],
+  "rules": {
+    "single_primary_area": true,
+    "no_eighth_area": true,
+    "banking_cross_cutting": true,
+    "tax_explicit": true,
+    "no_new_deep_routes_for_matrix_fill": true
+  }
+}

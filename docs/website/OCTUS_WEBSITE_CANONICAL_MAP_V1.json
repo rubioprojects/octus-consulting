@@ -746,7 +746,7 @@
       "parent_page": "/solutions/banking-payments-infrastructure",
       "children": [],
       "primary_audience": "regulated operators / boards",
-      "page_objective": "Deep banking/payments page; consolidate under banking infrastructure supporting narrative",
+      "page_objective": "Legacy deep banking page \u2014 consolidate into /solutions/banking-payments-infrastructure",
       "primary_cta": "Discuss your operation",
       "secondary_cta": "Email",
       "service_area": "Cross-cutting \u00b7 Banking & Payments",
@@ -755,7 +755,7 @@
       "industry_relevance": "supporting",
       "responsible_internal_area": "Cross-cutting \u00b7 Banking & Payments",
       "current_status": "live_sitemap",
-      "decision": "consolidate"
+      "decision": "redirect"
     },
     {
       "canonical_url": "https://octusconsulting.com/diagnostic",
@@ -888,16 +888,16 @@
       "parent_page": "/jurisdictions",
       "children": [],
       "primary_audience": "regulated operators / boards",
-      "page_objective": "Brazil market entry narrative \u2014 consolidate toward jurisdictions + REG Brazil service",
+      "page_objective": "Flagship Brazil landing for international clients: regulatory entry, SPA/MF, local corporate, compliance, banking/payments, tax/finance, Brazil-facing dependencies",
       "primary_cta": "Discuss your operation",
       "secondary_cta": "Email",
-      "service_area": "\u2014",
+      "service_area": "Regulatory Structuring + cross-area Brazil coordination",
       "service_family": "Jurisdictions",
       "jurisdiction_relevance": "yes",
       "industry_relevance": "supporting",
       "responsible_internal_area": "Brand / Growth",
       "current_status": "live_sitemap",
-      "decision": "consolidate"
+      "decision": "retain"
     },
     {
       "canonical_url": "https://octusconsulting.com/privacy",
@@ -1567,9 +1567,9 @@
     }
   ],
   "decision_counts": {
-    "retain": 79,
-    "consolidate": 2,
-    "redirect": 0,
+    "retain": 80,
+    "consolidate": 0,
+    "redirect": 1,
     "remove": 0
   },
   "legacy_redirect_routes_not_in_sitemap": [
@@ -1628,5 +1628,9 @@
       "decision": "redirect",
       "target": "/solutions"
     }
-  ]
+  ],
+  "notes": {
+    "brazil": "canonical flagship jurisdiction/market-entry page \u2014 not consolidated into /jurisdictions",
+    "banking_payments_legacy": "/solutions/regulatory/banking-payments redirects to /solutions/banking-payments-infrastructure"
+  }
 }
