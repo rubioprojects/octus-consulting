@@ -22,10 +22,10 @@ PR #17 — seven-area architecture, current routes, evidence-safe editorial rule
 | Phase | Name | Status | Terminal |
 |---|---|---|---|
 | 0 | Control and inventory | COMMITTED `b90a694` | (prerequisite) |
-| 1 | Team hard gate | **ACCEPTED by Sol** | `OCTUS_TEAM_HARD_GATE` + provenance PASS |
-| 2 | Global visual system | **READY_FOR_SOL_AUDIT** (impl + immutable evidence) | `OCTUS_GLOBAL_SYSTEM_GATE_READY_FOR_SOL_AUDIT` |
-| 3 | Homepage | BLOCKED until Sol accepts Phase 2 | — |
-| 4 | Services and service families | BLOCKED | — |
+| 1 | Team hard gate | **ACCEPTED by Sol** | Team hard gate + provenance PASS |
+| 2 | Global visual system | **ACCEPTED by Sol** | Global system gate PASS |
+| 3 | Homepage | **AUTHORIZED / IN PROGRESS** | `OCTUS_HOME_GATE_READY_FOR_SOL_AUDIT` |
+| 4 | Services and service families | BLOCKED until Sol accepts Phase 3 | — |
 | 5 | Institutional and content families | BLOCKED | — |
 | 6 | Full regression | BLOCKED | Final: `OCTUS_FULL_SITE_CANDIDATE_READY_FOR_SOL_FINAL_AUDIT` |
 
@@ -38,6 +38,17 @@ PR #17 — seven-area architecture, current routes, evidence-safe editorial rule
 | TEAM_EVIDENCE_PROVENANCE | PASS |
 | PHASE_1_HARD_GATE | ACCEPTED |
 | Team lock | Do not reopen roster, titles, order, portraits, or `app/team/page.tsx` |
+
+### Phase 2 acceptance stamp
+
+| Field | Value |
+|---|---|
+| accepted_phase2_head | `4a4687134156dce4e5892552a049ff00747d1172` |
+| phase2_implementation_commit | `ef0d9465f07993c811144291d0da0371d12e7229` |
+| immutable_preview | https://octus-consulting-kovk3ad1l-axle1.vercel.app |
+| deployment_id | `dpl_4pDMJNttdiwdLJmkyBbSffxBqDWK` |
+| PHASE_2_GLOBAL_SYSTEM_HARD_GATE | ACCEPTED |
+| Global lock | Do not reopen Nav/header/footer/WhatsApp/cookies/global tokens |
 
 ## Approved public Team roster (exactly 10) — LOCKED
 
@@ -55,26 +66,13 @@ PR #17 — seven-area architecture, current routes, evidence-safe editorial rule
 9. Bianca Carolina Oliveira Andrade — People & Operations  
 10. Luciana Santos Veloso — Operations Coordinator  
 
-## Phase 2 scope
+## Phase 3 scope
 
-Shared visual system only: Nav, BrandLockup, footer shell, globals tokens, DarkHeroAtmosphere, WhatsApp, cookies, favicons, brand assets.
+Homepage composition only: `app/page.tsx`, home-only components, `.home-*` / homepage-scoped CSS.
 
-**Not in Phase 2:** homepage composition, services content, institutional pages, Team page.
+Impact matrix: `docs/ops/evidence/remediation/homepage/PHASE3_HOME_IMPACT_MATRIX.md`
 
-Impact matrix: `docs/ops/evidence/remediation/global-system/PHASE2_IMPACT_MATRIX.md`
-
-### Phase 2 stamp (awaiting Sol)
-
-| Field | Value |
-|---|---|
-| phase2_control_commit | `4ba8ef5b4c131fe80ddef9a2c7a70911f21f6a4d` |
-| phase2_implementation_commit | `ef0d9465f07993c811144291d0da0371d12e7229` |
-| phase2_evidence_commit | `b2979c4cc6a5c2610769c77717c2c6a394dcff68` |
-| immutable_preview | https://octus-consulting-kovk3ad1l-axle1.vercel.app |
-| deployment_id | `dpl_4pDMJNttdiwdLJmkyBbSffxBqDWK` |
-| validation | `global-system/audit/PHASE2_VALIDATION.json` overall PASS |
-| report | `global-system/PHASE2_GLOBAL_SYSTEM_GATE_REPORT.md` |
-| Phase 3 | BLOCKED until Sol accepts Phase 2 |
+**Not in Phase 3:** Team, global system, Nav/footer, services/institutional pages.
 
 ## Intentional differences (binding)
 
@@ -83,18 +81,20 @@ Impact matrix: `docs/ops/evidence/remediation/global-system/PHASE2_IMPACT_MATRIX
 | Services / Industries labels (baseline Solutions / Markets) | Seven-area factual IA — PR #17 SoT |
 | Single primary Discuss CTA in header (baseline Discuss + Email) | Commercial simplification retained |
 | Rubio / Maria / specialist verified titles | Phase 1 lock |
-| Contact/Brazil dark-hero chrome vs baseline light on some routes | Page-hero ownership → Phase 5; do not empty-dark via globals |
+| Homepage Seven areas (not Six solutions / 06) | Catalog SoT |
+| Homepage evidence-safe hero/final/remediation wording | Editorial integrity |
+| Contact/Brazil dark-hero chrome vs baseline light on some routes | Page-hero ownership → Phase 5 |
 
 ## Rollback
 
 | Field | Value |
 |---|---|
-| accepted_phase1_head (Phase 2 start) | `0654dc1247967bcc36d760f47ae0654ff3814aa3` |
-| Method | `git revert` Phase 2 commits; do not rebase |
+| accepted_phase2_head (Phase 3 start) | `4a4687134156dce4e5892552a049ff00747d1172` |
+| Method | `git revert` Phase 3 commits; do not rebase |
 
 ## Forbidden claims
 
 - No merge · no production · no rebase · no new PR  
 - No preview return to Rubio  
 - No `READY_FOR_RUBIO_RESCREEN`  
-- No Phase 3 until Sol accepts Phase 2  
+- No Phase 4 until Sol accepts Phase 3  

@@ -73,7 +73,7 @@
 | Field | Value |
 |---|---|
 | accepted_phase1_head | `0654dc1247967bcc36d760f47ae0654ff3814aa3` |
-| Phase 2 | READY_FOR_SOL_AUDIT (see D-009) |
+| Phase 2 | ACCEPTED by Sol |
 | Terminology | `final_phase1_head` → `evidence_content_head` for `d9c58c5…`; authoritative tip = `accepted_phase1_head` |
 | Status | BINDING |
 
@@ -81,22 +81,30 @@
 
 | ID | Item | Phase |
 |---|---|---|
-| P2 | Global visual system / shell fidelity | 2 — returned for Sol audit |
-| P3 | Homepage remediation | 3 |
+| P2 | Global visual system / shell fidelity | 2 — ACCEPTED |
+| P3 | Homepage remediation | 3 — AUTHORIZED / IN PROGRESS |
 | P4 | Services families | 4 |
 | P5 | Institutional / content pages | 5 |
 | P6 | Full regression | 6 |
 
-## D-009 — Phase 2 global system returned for Sol audit
+## D-009 — Phase 2 global system accepted
 
 | Field | Value |
 |---|---|
-| Phase 2 | READY_FOR_SOL_AUDIT |
-| control | `4ba8ef5b4c131fe80ddef9a2c7a70911f21f6a4d` |
+| Phase 2 | ACCEPTED by Sol |
+| accepted_phase2_head | `4a4687134156dce4e5892552a049ff00747d1172` |
 | implementation | `ef0d9465f07993c811144291d0da0371d12e7229` |
-| evidence | `b2979c4cc6a5c2610769c77717c2c6a394dcff68` |
 | immutable_preview | https://octus-consulting-kovk3ad1l-axle1.vercel.app |
 | deployment_id | `dpl_4pDMJNttdiwdLJmkyBbSffxBqDWK` |
-| Phase 3–6 | remain BLOCKED |
+| Global system lock | Nav/header/footer/WhatsApp/cookies/tokens frozen |
+
+## D-010 — Phase 3 Homepage authorized
+
+| Field | Value |
+|---|---|
+| Phase 3 | AUTHORIZED / IN PROGRESS |
+| Scope | Homepage composition only |
+| Impact matrix | `homepage/PHASE3_HOME_IMPACT_MATRIX.md` |
+| Phases 4–6 | BLOCKED |
 | Merge / production / Rubio preview | forbidden |
 
