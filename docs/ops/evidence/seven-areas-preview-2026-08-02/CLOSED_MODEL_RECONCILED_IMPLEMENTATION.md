@@ -11,7 +11,7 @@
 | Starting HEAD | `99cd1fc547143da2d076db1b9ea4651ff11a5c73` |
 | Corrected-audit commit | `0e80e88cc71427bc379a96eaf85669e64f3ac9ac` |
 | Implementation commit | `62e7853ac19d819ca55ae4898b6af4728edfa32a` |
-| Final tip (evidence pin) | `PENDING_TIP` |
+| Final tip (evidence pin) | `dcdcb17cfe501408d2a92f911039613be5f376ae` |
 
 ## Provenance rule applied
 
