@@ -10,6 +10,8 @@
 | Item | Value |
 |------|--------|
 | Starting HEAD | `ece2c1c401498e930dcbf175f859b09d8e26a371` |
+| Final HEAD | `573864b511adff474cd89aca63f0f180ebe41328` |
+| Preview | `https://octus-consulting-j0pr9jgsz-axle1.vercel.app` |
 | Visual reference | commit `8b12fcc` / https://octus-consulting-6dieznt51-axle1.vercel.app/ |
 | Header lockup | `/brand/lockup/octus-lockup-nav-on-light.svg` (dark header: `/brand/lockup/octus-lockup-nav-on-dark.svg`) |
 | Footer lockup | `/brand/lockup/octus-lockup-horizontal-primary-on-dark.svg` |
