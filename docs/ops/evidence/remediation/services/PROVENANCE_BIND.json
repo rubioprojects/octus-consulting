@@ -28,6 +28,10 @@
     "reconciled": 0
   },
   "validation_overall": "PASS",
-  "residual_open": ["HOME_PUNCTUATION_RESIDUAL_001"],
-  "note": "Final visual compare uses immutable closeout preview eyjy9sxq7 — not Phase 3 7yzcy4yif. final_evidence_head filled after evidence commit."
+  "residual_open": [
+    "HOME_PUNCTUATION_RESIDUAL_001"
+  ],
+  "note": "Final visual compare uses immutable closeout preview eyjy9sxq7 — not Phase 3 7yzcy4yif.",
+  "evidence_commit": "3215152b63d73d7e618d2ad83865d83e30b7c0fc",
+  "final_evidence_head": "3215152b63d73d7e618d2ad83865d83e30b7c0fc"
 }

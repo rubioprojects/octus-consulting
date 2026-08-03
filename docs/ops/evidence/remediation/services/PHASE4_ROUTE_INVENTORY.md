@@ -131,4 +131,45 @@ Commercial hierarchy binding for Phase 4:
 - [x] Aliases recorded
 - [x] Template classes assigned
 - [x] Baseline mapping or closest-template note
-- [ ] Per-route reconciled status (after evidence commits)
+- [x] Per-route reconciled status (after evidence commits)
+
+## Per-route reconciled status (closeout)
+
+**Closeout validation overall:** PASS  
+**Immutable closeout preview:** https://octus-consulting-eyjy9sxq7-axle1.vercel.app  
+**Deployment:** `dpl_4mRS5vF2QSS34aJkip3Zn56cUUa5`  
+**Closeout tip SHA (deploy):** `ee8f1d0f7d442482eee99cef927a3389892617b4`  
+**Application closeout commit:** `e72d3902670de83573bc32674c3cd02e036b787e`  
+**Implementation snapshot (Phase 4 before):** `8228e342cfc9d3830b4f4a414f2a93ae208e5be1`  
+**Before preview:** https://octus-consulting-6dof5kn4k-axle1.vercel.app (`dpl_Ewm6SFyGB5wkkDefAAMnBs27bMfZ`)  
+**Baseline:** https://octus-consulting-9q798dbg2-axle1.vercel.app (`dpl_437tawkoMDv7sqxW6NzPzTegj1Lq`)
+
+Screenshot chapters per route (desktop + mobile): `full`, `hero`, `content`, `cta`.  
+Paths under `docs/ops/evidence/remediation/services/{baseline,before,reconciled}/` using slug `__viewport__chapter.png`. Full manifest: `SCREENSHOT_MANIFEST.json`.
+
+| Route | Template | Final status | Crawl | CTA | Punct | A11y | Reconciled desktop full path |
+|---|---|---|---|---|---|---|---|
+| `/solutions` | T1 | RECONCILED_PASS | 200 | PASS | PASS | PASS | `reconciled/solutions__desktop__full.png` |
+| `/solutions/regulatory-structuring` | T2 | RECONCILED_PASS | 200 | PASS | PASS | PASS | `reconciled/solutions-regulatory-structuring__desktop__full.png` |
+| `/solutions/compliance-risk` | T2 | RECONCILED_PASS | 200 | PASS | PASS | PASS | `reconciled/solutions-compliance-risk__desktop__full.png` |
+| `/solutions/legal-structural-architecture` | T2 | RECONCILED_PASS | 200 | PASS | PASS | PASS | `reconciled/solutions-legal-structural-architecture__desktop__full.png` |
+| `/solutions/corporate-structuring` | T2 | RECONCILED_PASS | 200 | PASS | PASS | PASS | `reconciled/solutions-corporate-structuring__desktop__full.png` |
+| `/private-clients` | T3 | RECONCILED_PASS | 200 | PASS | PASS | PASS | `reconciled/private-clients__desktop__full.png` |
+| `/solutions/remediation-readiness` | T5 | RECONCILED_PASS | 200 | PASS | PASS | PASS | `reconciled/solutions-remediation-readiness__desktop__full.png` |
+| `/international-hub` | T4 | RECONCILED_PASS | 200 | PASS | PASS | PASS | `reconciled/international-hub__desktop__full.png` |
+| `/solutions/banking-payments-infrastructure` | T6 | RECONCILED_PASS | 200 | PASS | PASS | PASS | `reconciled/solutions-banking-payments-infrastructure__desktop__full.png` |
+| `/solutions/regulatory/igaming-licensing` | T7 | RECONCILED_PASS | 200 | PASS | PASS | PASS | `reconciled/solutions-regulatory-igaming-licensing__desktop__full.png` |
+| `/solutions/regulatory/fintech-licensing` | T7 | RECONCILED_PASS | 200 | PASS | PASS | PASS | `reconciled/solutions-regulatory-fintech-licensing__desktop__full.png` |
+| `/solutions/regulatory/market-entry` | T7 | RECONCILED_PASS | 200 | PASS | PASS | PASS | `reconciled/solutions-regulatory-market-entry__desktop__full.png` |
+| `/solutions/compliance/aml-kyc` | T7 | RECONCILED_PASS | 200 | PASS | PASS | PASS | `reconciled/solutions-compliance-aml-kyc__desktop__full.png` |
+| `/solutions/compliance/compliance-as-a-service` | T7 | RECONCILED_PASS | 200 | PASS | PASS | PASS | `reconciled/solutions-compliance-compliance-as-a-service__desktop__full.png` |
+| `/solutions/compliance/dpo-as-a-service` | T7 | RECONCILED_PASS | 200 | PASS | PASS | PASS | `reconciled/solutions-compliance-dpo-as-a-service__desktop__full.png` |
+| `/solutions/compliance/gli-readiness` | T7 | RECONCILED_PASS | 200 | PASS | PASS | PASS | `reconciled/solutions-compliance-gli-readiness__desktop__full.png` |
+| `/solutions/compliance/internal-controls` | T7 | RECONCILED_PASS | 200 | PASS | PASS | PASS | `reconciled/solutions-compliance-internal-controls__desktop__full.png` |
+| `/solutions/corporate/company-formation` | T7 | RECONCILED_PASS | 200 | PASS | PASS | PASS | `reconciled/solutions-corporate-company-formation__desktop__full.png` |
+| `/solutions/corporate/holding-design` | T7 | RECONCILED_PASS | 200 | PASS | PASS | PASS | `reconciled/solutions-corporate-holding-design__desktop__full.png` |
+| `/solutions/corporate/offshore-structuring` | T7 | RECONCILED_PASS | 200 | PASS | PASS | PASS | `reconciled/solutions-corporate-offshore-structuring__desktop__full.png` |
+
+**T8:** Alias stubs only — not a distinct content template; covered by alias audit (`PHASE4_ALIAS_AUDIT.json`, 12 aliases).
+
+**NO_DIRECT_BASELINE_ROUTE** for area hubs mapped to closest baseline template `/solutions` during matched capture where noted in the manifest `baseline_mapping` field.

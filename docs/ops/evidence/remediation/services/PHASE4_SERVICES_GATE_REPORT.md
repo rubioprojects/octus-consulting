@@ -1,6 +1,9 @@
 # Phase 4 — Services gate report
 
-**Terminal:** `OCTUS_SERVICES_GATE_READY_FOR_SOL_AUDIT`  
+**Superseded for Sol closeout by:** `PHASE4_SERVICES_CLOSEOUT_REPORT.md`  
+**Closeout terminal:** `OCTUS_SERVICES_CLOSEOUT_READY_FOR_SOL_AUDIT`  
+
+**Prior terminal (first Sol gate):** `OCTUS_SERVICES_GATE_READY_FOR_SOL_AUDIT`  
 **Date:** 2026-08-03  
 **PR:** https://github.com/rubioprojects/octus-consulting/pull/17  
 **Return:** Sol only · Phase 5 not started · No merge · No production · No rebase · Not `READY_FOR_RUBIO_RESCREEN`
@@ -16,10 +19,12 @@
 | hub commit | `65a9546` |
 | Banking commit | `ad4d810` |
 | deep-service commit | `8228e34` |
-| Phase 4 implementation tip | `8228e342cfc9d3830b4f4a414f2a93ae208e5be1` |
-| immutable preview | https://octus-consulting-6dof5kn4k-axle1.vercel.app |
-| deployment ID | `dpl_Ewm6SFyGB5wkkDefAAMnBs27bMfZ` |
-| validation | `services/audit/PHASE4_VALIDATION.json` overall **PASS** |
+| Phase 4 implementation tip (first gate) | `8228e342cfc9d3830b4f4a414f2a93ae208e5be1` |
+| first-gate immutable preview | https://octus-consulting-6dof5kn4k-axle1.vercel.app |
+| first-gate deployment ID | `dpl_Ewm6SFyGB5wkkDefAAMnBs27bMfZ` |
+| closeout immutable preview | https://octus-consulting-eyjy9sxq7-axle1.vercel.app |
+| closeout deployment ID | `dpl_4mRS5vF2QSS34aJkip3Zn56cUUa5` |
+| closeout validation | `services/audit/PHASE4_VALIDATION.json` overall **PASS** |
 
 ## Catalogue
 
