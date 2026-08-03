@@ -3,7 +3,11 @@
 **PR:** https://github.com/rubioprojects/octus-consulting/pull/17  
 **Branch:** `feat/seven-areas-website-architecture`  
 **Baseline HEAD (pre-repair):** `783e4f51c2734140e72a0047e76a798194549f7e`  
+**Final HEAD:** `f67b284d305a3d8f6d17004ab34d56c38e57e793`  
+**Preview (deployment):** https://octus-consulting-cbogxxh7a-axle1.vercel.app  
+**Preview (branch alias):** https://octus-consulting-git-feat-seven-areas-website-arch-0785d8-axle1.vercel.app  
 **Terminal:** `OCTUS_WEBSITE_EDITORIAL_REGRESSION_CLEAN_READY`  
+**Mergeable:** true / clean (no merge performed)  
 **Merge:** not performed  
 **Production deploy:** not performed  
 **Method constraint:** no global punctuation regex; semantic sentence rewrites only
