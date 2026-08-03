@@ -24,10 +24,10 @@ PR #17 — seven-area architecture, current routes, evidence-safe editorial rule
 | 0 | Control and inventory | COMMITTED `b90a694` | (prerequisite) |
 | 1 | Team hard gate | **ACCEPTED by Sol** | Team hard gate + provenance PASS |
 | 2 | Global visual system | **ACCEPTED by Sol** | Global system gate PASS |
-| 3 | Homepage | **READY_FOR_SOL_AUDIT** (impl + immutable evidence) | `OCTUS_HOME_GATE_READY_FOR_SOL_AUDIT` |
-| 4 | Services and service families | BLOCKED until Sol accepts Phase 3 | — |
-| 5 | Institutional and content families | BLOCKED | — |
-| 6 | Full regression | BLOCKED | Final: `OCTUS_FULL_SITE_CANDIDATE_READY_FOR_SOL_FINAL_AUDIT` |
+| 3 | Homepage | **ACCEPTED_WITH_RESIDUAL** | Closeout accepted · residual `HOME_PUNCTUATION_RESIDUAL_001` → Phase 6 |
+| 4 | Services and service families | **AUTHORIZED / IN PROGRESS** | `OCTUS_SERVICES_GATE_READY_FOR_SOL_AUDIT` |
+| 5 | Institutional and content families | BLOCKED until Sol accepts Phase 4 | — |
+| 6 | Full regression | BLOCKED | Includes residual punctuation closure + final: `OCTUS_FULL_SITE_CANDIDATE_READY_FOR_SOL_FINAL_AUDIT` |
 
 ### Phase 1 acceptance stamp
 
@@ -72,23 +72,36 @@ Homepage composition only: `app/page.tsx`, home-only components, `.home-*` / hom
 
 Impact matrix: `docs/ops/evidence/remediation/homepage/PHASE3_HOME_IMPACT_MATRIX.md`
 
-### Phase 3 stamp (composition accepted; closeout awaiting Sol)
+### Phase 3 stamp (ACCEPTED_WITH_RESIDUAL)
 
 | Field | Value |
 |---|---|
-| phase3_control_commit | `98125861a4c2ea5ff659d7da0c513490a2329d32` |
-| phase3_implementation_commit | `47db576145b80f7c232b0d31c3372247a6f538fc` |
-| phase3_evidence_commit (composition tip) | `9435d9bec86fde156d52bb13bfd57e06c210d9e3` / `f16add8…` |
-| closeout_starting_head | `f16add851770a583e210212afbd69cf98dafe104` |
-| closeout_application_commit | `11c0f9da74408f270a22c23b5b2903ce45f5e33c` |
-| immutable_preview (closeout) | https://octus-consulting-7yzcy4yif-axle1.vercel.app |
+| accepted_phase3_head | `620b725d613fba4ff4a062477c1110e453a4eb63` |
+| accepted Homepage application commit | `11c0f9da74408f270a22c23b5b2903ce45f5e33c` |
+| immutable_preview (Homepage closeout) | https://octus-consulting-7yzcy4yif-axle1.vercel.app |
 | deployment_id (closeout) | `dpl_ALymSbjVv45GWXdeFuYrPBXMN88w` |
-| validation | `homepage/audit/PHASE3_VALIDATION.json` overall PASS |
-| closeout report | `homepage/PHASE3_HOME_CLOSEOUT_REPORT.md` |
-| terminal | `OCTUS_HOME_CLOSEOUT_READY_FOR_SOL_AUDIT` |
-| Phase 4 | BLOCKED until Sol accepts Phase 3 closeout |
+| PHASE_3_HOMEPAGE_HARD_GATE | ACCEPTED_WITH_RESIDUAL |
+| residual | `HOME_PUNCTUATION_RESIDUAL_001` → Phase 6 |
+| Homepage lock | Do not modify `app/page.tsx` / `HomeLeadershipTrust` / Homepage CSS |
 
-**Not in Phase 3:** Team, global system, Nav/footer, services/institutional pages.
+## Phase 4 scope
+
+Services overview · seven area hubs · Banking supporting page · all deep-service routes · service-family navigation/CTAs · desktop+mobile unique templates.
+
+Inventory: `services/PHASE4_ROUTE_INVENTORY.md`  
+Impact matrix: `services/PHASE4_SERVICES_IMPACT_MATRIX.md`
+
+### Phase 4 stamp (in progress)
+
+| Field | Value |
+|---|---|
+| phase4_starting_head | `620b725d613fba4ff4a062477c1110e453a4eb63` |
+| status | AUTHORIZED / IN PROGRESS |
+| terminal_target | `OCTUS_SERVICES_GATE_READY_FOR_SOL_AUDIT` |
+| Phase 5–6 | BLOCKED |
+| Rubio rescreen | BLOCKED |
+
+**Not in Phase 4:** Homepage residual fix · Team · global shell · institutional/content families · merge/production/rebase.
 
 ## Intentional differences (binding)
 
@@ -113,4 +126,5 @@ Impact matrix: `docs/ops/evidence/remediation/homepage/PHASE3_HOME_IMPACT_MATRIX
 - No merge · no production · no rebase · no new PR  
 - No preview return to Rubio  
 - No `READY_FOR_RUBIO_RESCREEN`  
-- No Phase 4 until Sol accepts Phase 3  
+- No Phase 5 until Sol accepts Phase 4  
+- Do not resolve `HOME_PUNCTUATION_RESIDUAL_001` in Phase 4  

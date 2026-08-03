@@ -82,10 +82,10 @@
 | ID | Item | Phase |
 |---|---|---|
 | P2 | Global visual system / shell fidelity | 2 — ACCEPTED |
-| P3 | Homepage remediation | 3 — READY_FOR_SOL_AUDIT |
-| P4 | Services families | 4 |
-| P5 | Institutional / content pages | 5 |
-| P6 | Full regression | 6 |
+| P3 | Homepage remediation | 3 — ACCEPTED_WITH_RESIDUAL |
+| P4 | Services families | 4 — AUTHORIZED / IN PROGRESS |
+| P5 | Institutional / content pages | 5 — BLOCKED |
+| P6 | Full regression (incl. residual punctuation) | 6 — BLOCKED |
 
 ## D-009 — Phase 2 global system accepted
 
@@ -134,4 +134,37 @@
 | closeout_preview | https://octus-consulting-7yzcy4yif-axle1.vercel.app · `dpl_ALymSbjVv45GWXdeFuYrPBXMN88w` |
 | closeout_validation | duplicate_commercial_labels PASS · prohibited_punctuation PASS · overall PASS |
 | terminal | `OCTUS_HOME_CLOSEOUT_READY_FOR_SOL_AUDIT` |
+
+## D-013 — Phase 3 Homepage accepted with residual; Phase 4 authorized
+
+| Field | Value |
+|---|---|
+| PHASE_3_HOMEPAGE_HARD_GATE | ACCEPTED_WITH_RESIDUAL |
+| accepted_phase3_head | `620b725d613fba4ff4a062477c1110e453a4eb63` |
+| accepted Homepage application commit | `11c0f9da74408f270a22c23b5b2903ce45f5e33c` |
+| Phase 4 | AUTHORIZED / IN PROGRESS |
+| Phase 5–6 | BLOCKED |
+| Rubio rescreen | BLOCKED |
+| Merge / production / rebase | forbidden |
+
+## D-014 — HOME_PUNCTUATION_RESIDUAL_001 (unresolved)
+
+| Field | Value |
+|---|---|
+| RESIDUAL_ID | `HOME_PUNCTUATION_RESIDUAL_001` |
+| CURRENT_TEXT | Trust starts with clear accountability — not a directory of faces. |
+| REQUIRED_FINAL_TEXT | Trust starts with clear accountability, not a directory of faces. |
+| OWNER | Phase 6 full regression |
+| Location | `components/system/HomeLeadershipTrust.tsx` (frozen) |
+| Phase 4 action | Do not fix · do not mark resolved · do not remove ALLOWED_DASH_SNIPPETS |
+| Validator note | Temporary exemption only; not proof of zero Homepage em dashes site-wide |
+
+## D-015 — Phase 4 Services file and architecture isolation
+
+| Field | Value |
+|---|---|
+| Decision | Reconcile Services architecture vs baseline while preserving seven-area IA and 39 public services |
+| Banking | Cross-cutting supporting only — never 8th peer area |
+| Shared PageHero | Prefer services-specific variant/wrapper if institutional consumers would change |
+| Status | BINDING |
 
