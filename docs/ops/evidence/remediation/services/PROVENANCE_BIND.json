@@ -1,0 +1,17 @@
+{
+  "phase": 4,
+  "phase4_starting_head": "620b725d613fba4ff4a062477c1110e453a4eb63",
+  "phase4_control_commit": "ecca9b4102ffb64242a546344a272dff26512583",
+  "phase4_implementation_commit": "8228e342cfc9d3830b4f4a414f2a93ae208e5be1",
+  "immutable_preview_url": "https://octus-consulting-6dof5kn4k-axle1.vercel.app",
+  "deployment_id": "dpl_Ewm6SFyGB5wkkDefAAMnBs27bMfZ",
+  "baseline_url": "https://octus-consulting-9q798dbg2-axle1.vercel.app",
+  "baseline_deployment_id": "dpl_437tawkoMDv7sqxW6NzPzTegj1Lq",
+  "accepted_phase3_head": "620b725d613fba4ff4a062477c1110e453a4eb63",
+  "accepted_homepage_application_commit": "11c0f9da74408f270a22c23b5b2903ce45f5e33c",
+  "terminal": "OCTUS_SERVICES_GATE_READY_FOR_SOL_AUDIT",
+  "screenshot_count": 162,
+  "validation_overall": "PASS",
+  "residual_open": ["HOME_PUNCTUATION_RESIDUAL_001"],
+  "note": "Reconciled captures from immutable preview whose GitHub SHA equals phase4_implementation_commit."
+}

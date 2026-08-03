@@ -83,7 +83,7 @@
 |---|---|---|
 | P2 | Global visual system / shell fidelity | 2 — ACCEPTED |
 | P3 | Homepage remediation | 3 — ACCEPTED_WITH_RESIDUAL |
-| P4 | Services families | 4 — AUTHORIZED / IN PROGRESS |
+| P4 | Services families | 4 — READY_FOR_SOL_AUDIT |
 | P5 | Institutional / content pages | 5 — BLOCKED |
 | P6 | Full regression (incl. residual punctuation) | 6 — BLOCKED |
 
@@ -142,7 +142,7 @@
 | PHASE_3_HOMEPAGE_HARD_GATE | ACCEPTED_WITH_RESIDUAL |
 | accepted_phase3_head | `620b725d613fba4ff4a062477c1110e453a4eb63` |
 | accepted Homepage application commit | `11c0f9da74408f270a22c23b5b2903ce45f5e33c` |
-| Phase 4 | AUTHORIZED / IN PROGRESS |
+| Phase 4 | AUTHORIZED → completed implementation; see D-016 |
 | Phase 5–6 | BLOCKED |
 | Rubio rescreen | BLOCKED |
 | Merge / production / rebase | forbidden |

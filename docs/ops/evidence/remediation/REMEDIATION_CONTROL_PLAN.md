@@ -25,7 +25,7 @@ PR #17 — seven-area architecture, current routes, evidence-safe editorial rule
 | 1 | Team hard gate | **ACCEPTED by Sol** | Team hard gate + provenance PASS |
 | 2 | Global visual system | **ACCEPTED by Sol** | Global system gate PASS |
 | 3 | Homepage | **ACCEPTED_WITH_RESIDUAL** | Closeout accepted · residual `HOME_PUNCTUATION_RESIDUAL_001` → Phase 6 |
-| 4 | Services and service families | **AUTHORIZED / IN PROGRESS** | `OCTUS_SERVICES_GATE_READY_FOR_SOL_AUDIT` |
+| 4 | Services and service families | **READY_FOR_SOL_AUDIT** | `OCTUS_SERVICES_GATE_READY_FOR_SOL_AUDIT` |
 | 5 | Institutional and content families | BLOCKED until Sol accepts Phase 4 | — |
 | 6 | Full regression | BLOCKED | Includes residual punctuation closure + final: `OCTUS_FULL_SITE_CANDIDATE_READY_FOR_SOL_FINAL_AUDIT` |
 
@@ -91,14 +91,20 @@ Services overview · seven area hubs · Banking supporting page · all deep-serv
 Inventory: `services/PHASE4_ROUTE_INVENTORY.md`  
 Impact matrix: `services/PHASE4_SERVICES_IMPACT_MATRIX.md`
 
-### Phase 4 stamp (in progress)
+### Phase 4 stamp (ready for Sol audit)
 
 | Field | Value |
 |---|---|
 | phase4_starting_head | `620b725d613fba4ff4a062477c1110e453a4eb63` |
-| status | AUTHORIZED / IN PROGRESS |
-| terminal_target | `OCTUS_SERVICES_GATE_READY_FOR_SOL_AUDIT` |
-| Phase 5–6 | BLOCKED |
+| phase4_control_commit | `ecca9b4102ffb64242a546344a272dff26512583` |
+| phase4_implementation_commit | `8228e342cfc9d3830b4f4a414f2a93ae208e5be1` |
+| immutable_preview | https://octus-consulting-6dof5kn4k-axle1.vercel.app |
+| deployment_id | `dpl_Ewm6SFyGB5wkkDefAAMnBs27bMfZ` |
+| validation | `services/audit/PHASE4_VALIDATION.json` overall PASS |
+| report | `services/PHASE4_SERVICES_GATE_REPORT.md` |
+| terminal | `OCTUS_SERVICES_GATE_READY_FOR_SOL_AUDIT` |
+| residual | `HOME_PUNCTUATION_RESIDUAL_001` remains OPEN → Phase 6 |
+| Phase 5–6 | BLOCKED until Sol accepts Phase 4 |
 | Rubio rescreen | BLOCKED |
 
 **Not in Phase 4:** Homepage residual fix · Team · global shell · institutional/content families · merge/production/rebase.
