@@ -1,10 +1,11 @@
 import Link from "next/link";
 import {
   CTA_DISCUSS_LABEL,
+  CTA_EMAIL_LABEL,
+  MAILTO_DISCUSS,
   WHATSAPP_DISCUSS_URL,
 } from "../../lib/cta";
 import DarkHeroAtmosphere from "../../components/system/DarkHeroAtmosphere";
-import { CtaLink } from "../../components/system/CtaButton";
 import { pageSocialMeta } from "../../lib/pageMeta";
 
 export const metadata = pageSocialMeta({
@@ -20,15 +21,21 @@ type Member = {
   photo: string;
   focus: string;
   linkedin: string | null;
-  photoClass: string;
+  capability?: string;
+  featured?: boolean;
+  photoKey?: string;
 };
 
+/**
+ * Verified public roster inside closed-model composition.
+ * Larissa / Bianca / Luciana held at NEEDS RUBIO — see evidence decision register.
+ */
 const leadership: Member[] = [
   {
     name: "Rubio Teixeira",
     title: "Founder & CEO",
     photo: "/team/rubio-teixeira.jpg",
-    photoClass: "team-photo--rubio-team",
+    photoKey: "rubio",
     focus:
       "Executive and strategic oversight of Octus regulatory, licensing and market-entry mandates.",
     linkedin: "https://www.linkedin.com/in/rubioteixeiraoctus/",
@@ -37,78 +44,104 @@ const leadership: Member[] = [
     name: "Maria Cristina",
     title: "Operations Coordination",
     photo: "/team/maria-cristina.jpg",
-    photoClass: "team-photo--maria",
+    photoKey: "maria",
     focus:
       "Operational coordination and client engagement across regulatory, compliance and remediation mandates.",
     linkedin: "https://www.linkedin.com/in/maria-cristina-060241b6/",
   },
 ];
 
-const practiceLeads: Member[] = [
+const leadershipSupport: Member[] = [
+  {
+    name: "Rodrigo Coelho Lopes",
+    title: "Legal Architecture Lead",
+    photo: "/team/rodrigo-lopes.jpg",
+    photoKey: "rodrigo",
+    capability: "Strategic legal architecture",
+    focus:
+      "Legal architecture for regulatory and corporate mandates, including cross-border structure.",
+    linkedin: null,
+  },
+];
+
+const operationalLeadership: Member[] = [
+  {
+    name: "Claudia Nery",
+    title: "Chief Financial Officer",
+    photo: "/team/claudia-nery.jpg",
+    photoKey: "claudia",
+    capability: "Financial continuity",
+    focus:
+      "Corporate and financial architecture, financial governance and group reporting.",
+    linkedin: "https://www.linkedin.com/in/claudia-nery/",
+    featured: true,
+  },
+];
+
+const specialists: Member[] = [
   {
     name: "Esther Vendrami",
     title: "International Regulatory & Compliance Lead",
     photo: "/team/esther-vendrami.jpg",
-    photoClass: "team-photo--esther",
+    photoKey: "esther",
+    capability: "International regulatory",
     focus:
       "International regulatory and licensing coordination, with compliance operations for cross-border programmes.",
     linkedin: "https://www.linkedin.com/in/esthervendrami/",
+    featured: true,
   },
   {
     name: "Caroline Giovanetti",
     title: "Brazil Regulatory Lead",
     photo: "/team/caroline-giovanetti.jpg",
-    photoClass: "team-photo--caroline",
+    photoKey: "caroline",
+    capability: "Brazil regulatory",
     focus:
       "Brazil regulatory processes and SPA/MF licensing support for Brazil-facing mandates.",
     linkedin: "https://www.linkedin.com/in/caroline-cubas-giovanetti-400820144/",
+    featured: true,
   },
   {
-    name: "Rodrigo Coelho Lopes",
-    title: "Legal Architecture Lead",
-    photo: "/team/rodrigo-lopes.jpg",
-    photoClass: "team-photo--rodrigo",
+    name: "Milla Ludovico",
+    title: "Business Development Lead",
+    photo: "/team/milla-ludovico.jpg",
+    photoKey: "milla",
+    capability: "Commercial intake",
     focus:
-      "Legal architecture for regulatory and corporate mandates, including cross-border structure.",
-    linkedin: null,
-  },
-  {
-    name: "Claudia Nery",
-    title: "Chief Financial Officer",
-    photo: "/team/claudia-nery.jpg",
-    photoClass: "team-photo--claudia",
-    focus:
-      "Corporate and financial architecture, financial governance and group reporting.",
-    linkedin: "https://www.linkedin.com/in/claudia-nery/",
+      "New business development, client intake and commercial coordination on new mandates.",
+    linkedin: "https://www.linkedin.com/in/milla-ludovico-6a9945a2/",
+    featured: true,
   },
 ];
-
-const commercial: Member = {
-  name: "Milla Ludovico",
-  title: "Business Development Lead",
-  photo: "/team/milla-ludovico.jpg",
-  photoClass: "team-photo--milla",
-  focus:
-    "New business development, client intake and commercial coordination on new mandates.",
-  linkedin: "https://www.linkedin.com/in/milla-ludovico-6a9945a2/",
-};
 
 function MemberCard({
   member,
   tier,
 }: {
   member: Member;
-  tier: "leadership" | "practice" | "commercial";
+  tier:
+    | "leadership"
+    | "leadership-support"
+    | "operational-leadership"
+    | "specialist";
 }) {
+  const photoClass =
+    member.photoKey === "rubio"
+      ? "team-photo--rubio team-photo--rubio-team"
+      : member.photoKey
+        ? `team-photo--${member.photoKey}`
+        : "";
+
   const inner = (
-    <article className={`team-card team-card--${tier === "leadership" ? "leadership" : "specialist"}${tier === "commercial" ? " team-card--commercial" : ""}`}>
-      <div className={`team-card-photo-wrap ${member.photoClass}`}>
+    <article className={`team-card team-card--${tier}`}>
+      <div className={`team-card-photo-wrap ${photoClass}`}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={member.photo} alt="" className="team-card-photo" aria-hidden="true" />
       </div>
-      <h2 className="heading-sm" style={{ marginBottom: "6px" }}>
+      {member.capability && <p className="team-capability">{member.capability}</p>}
+      <h3 className="heading-sm" style={{ marginBottom: "6px" }}>
         {member.name}
-      </h2>
+      </h3>
       <p className="team-card-role">{member.title}</p>
       <p className="body-sm">{member.focus}</p>
     </article>
@@ -141,8 +174,8 @@ export default function TeamPage() {
             People who understand how regulated operations hold together.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">
-            Leadership and practice leads accountable for regulatory, compliance, legal, corporate
-            and international execution.
+            Accountability starts with clear leadership. Octus is built around people who work
+            inside complex regulated environments — not a generic advisory directory.
           </p>
         </div>
         <div className="octus-dark-hero__seam" aria-hidden="true" />
@@ -157,41 +190,65 @@ export default function TeamPage() {
             ))}
           </div>
 
-          <p className="team-band-label">Practice Leads</p>
-          <div className="team-grid team-grid--core">
-            {practiceLeads.map((m) => (
-              <MemberCard key={m.name} member={m} tier="practice" />
+          <div className="team-grid team-grid--leadership-support">
+            {leadershipSupport.map((m) => (
+              <MemberCard key={m.name} member={m} tier="leadership-support" />
             ))}
           </div>
 
-          <p className="team-band-label">Commercial &amp; Client Relations</p>
-          <div className="team-grid team-grid--commercial max-w-md">
-            <MemberCard member={commercial} tier="commercial" />
+          <p className="team-band-label">Operational Leadership</p>
+          <div className="team-grid team-grid--operational-leadership mb-16">
+            {operationalLeadership.map((m) => (
+              <MemberCard key={m.name} member={m} tier="operational-leadership" />
+            ))}
           </div>
+
+          <p className="team-band-label">Core Specialists</p>
+          <div className="team-grid team-grid--core mb-16">
+            {specialists.map((m) => (
+              <MemberCard key={m.name} member={m} tier="specialist" />
+            ))}
+          </div>
+
+          <p className="team-roster-gate body-sm text-muted-foreground" data-roster-gate="unresolved">
+            Public roster gate unresolved for Larissa Carvalho, Bianca Carolina Oliveira Andrade and
+            Luciana Santos Veloso — held pending Rubio decision. See evidence decision register.
+          </p>
         </div>
       </section>
 
-      <section className="surface-dark py-20 md:py-24">
-        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-          <h2 className="mb-8 font-heading text-2xl font-semibold text-white md:text-3xl">
+      <section className="cta-block surface-dark">
+        <div className="cta-block__bg" />
+        <div className="cta-block__inner">
+          <h2 className="heading-lg cta-block__title" style={{ marginBottom: "20px", color: "#fff" }}>
             Work with a team built for regulatory execution.
           </h2>
-          <CtaLink
-            href={WHATSAPP_DISCUSS_URL}
-            variant="on-dark"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {CTA_DISCUSS_LABEL}
-          </CtaLink>
-          <p className="mt-6">
+          <p className="body-large" style={{ marginBottom: "32px", color: "rgba(255,255,255,0.78)" }}>
+            We work with operators who need regulatory clarity, operational discipline and
+            structures that survive scrutiny.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a
+              href={WHATSAPP_DISCUSS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90"
+            >
+              {CTA_DISCUSS_LABEL}
+            </a>
+            <a
+              href={MAILTO_DISCUSS}
+              className="inline-flex h-12 items-center justify-center rounded-sm border border-white/25 px-10 text-base font-medium text-white/85 transition-colors hover:border-white/50 hover:text-white"
+            >
+              {CTA_EMAIL_LABEL}
+            </a>
             <Link
               href="/careers"
-              className="font-sans text-sm text-white/55 no-underline hover:text-white/80"
+              className="inline-flex h-12 items-center justify-center rounded-sm border border-white/25 px-10 text-base font-medium text-white/85 transition-colors hover:border-white/50 hover:text-white"
             >
               See careers →
             </Link>
-          </p>
+          </div>
         </div>
       </section>
     </main>
