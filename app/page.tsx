@@ -46,7 +46,7 @@ export default function HomePage() {
   return (
     <main>
       {/* 1. Branded hero — composition from 9q798dbg2; evidence-safe copy retained */}
-      <section className="home-hero relative flex min-h-[88vh] items-center overflow-hidden pt-28 surface-dark px-4 sm:px-6 lg:px-8 md:pt-32">
+      <section className="home-hero relative flex min-h-[100svh] items-start overflow-hidden surface-dark px-4 pt-[5.75rem] pb-12 sm:px-6 lg:px-8 md:pt-32">
         <div className="home-hero__atmosphere" aria-hidden="true" />
         <div className="home-hero__mesh" aria-hidden="true" />
         <div
