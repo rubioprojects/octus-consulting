@@ -1,0 +1,242 @@
+[
+  {
+    "label": "reconciled",
+    "stem": "homepage-full-desktop",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/reconciled/homepage-full-desktop.png"
+  },
+  {
+    "label": "reconciled",
+    "stem": "team-full-desktop",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/reconciled/team-full-desktop.png"
+  },
+  {
+    "label": "reconciled",
+    "stem": "team-full-mobile",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/reconciled/team-full-mobile.png"
+  },
+  {
+    "label": "reconciled",
+    "stem": "about-full-desktop",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/reconciled/about-full-desktop.png"
+  },
+  {
+    "label": "reconciled",
+    "stem": "about-full-mobile",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/reconciled/about-full-mobile.png"
+  },
+  {
+    "label": "reconciled",
+    "stem": "intelligence",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/reconciled/intelligence.png"
+  },
+  {
+    "label": "reconciled",
+    "stem": "contact",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/reconciled/contact.png"
+  },
+  {
+    "label": "reconciled",
+    "stem": "diagnostic",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/reconciled/diagnostic.png"
+  },
+  {
+    "label": "reconciled",
+    "stem": "area-regulatory",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/reconciled/area-regulatory.png"
+  },
+  {
+    "label": "reconciled",
+    "stem": "area-compliance",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/reconciled/area-compliance.png"
+  },
+  {
+    "label": "reconciled",
+    "stem": "area-legal",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/reconciled/area-legal.png"
+  },
+  {
+    "label": "reconciled",
+    "stem": "area-corporate",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/reconciled/area-corporate.png"
+  },
+  {
+    "label": "reconciled",
+    "stem": "area-private-clients",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/reconciled/area-private-clients.png"
+  },
+  {
+    "label": "reconciled",
+    "stem": "area-remediation",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/reconciled/area-remediation.png"
+  },
+  {
+    "label": "reconciled",
+    "stem": "area-international-hub",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/reconciled/area-international-hub.png"
+  },
+  {
+    "label": "reconciled",
+    "stem": "service-detail-aml",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/reconciled/service-detail-aml.png"
+  },
+  {
+    "label": "reconciled",
+    "stem": "header-desktop",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/reconciled/header-desktop.png"
+  },
+  {
+    "label": "reconciled",
+    "stem": "footer-desktop",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/reconciled/footer-desktop.png"
+  },
+  {
+    "label": "reconciled",
+    "stem": "menu-mobile",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/reconciled/menu-mobile.png"
+  },
+  {
+    "label": "reconciled",
+    "stem": "cta-final-home",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/reconciled/cta-final-home.png"
+  },
+  {
+    "label": "old",
+    "stem": "homepage-full-desktop",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/old/homepage-full-desktop.png"
+  },
+  {
+    "label": "old",
+    "stem": "team-full-desktop",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/old/team-full-desktop.png"
+  },
+  {
+    "label": "old",
+    "stem": "team-full-mobile",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/old/team-full-mobile.png"
+  },
+  {
+    "label": "old",
+    "stem": "about-full-desktop",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/old/about-full-desktop.png"
+  },
+  {
+    "label": "old",
+    "stem": "about-full-mobile",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/old/about-full-mobile.png"
+  },
+  {
+    "label": "old",
+    "stem": "intelligence",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/old/intelligence.png"
+  },
+  {
+    "label": "old",
+    "stem": "contact",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/old/contact.png"
+  },
+  {
+    "label": "old",
+    "stem": "diagnostic",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/old/diagnostic.png"
+  },
+  {
+    "label": "old",
+    "stem": "area-regulatory",
+    "status": 404,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/old/area-regulatory.png"
+  },
+  {
+    "label": "old",
+    "stem": "area-compliance",
+    "status": 404,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/old/area-compliance.png"
+  },
+  {
+    "label": "old",
+    "stem": "area-legal",
+    "status": 404,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/old/area-legal.png"
+  },
+  {
+    "label": "old",
+    "stem": "area-corporate",
+    "status": 404,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/old/area-corporate.png"
+  },
+  {
+    "label": "old",
+    "stem": "area-private-clients",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/old/area-private-clients.png"
+  },
+  {
+    "label": "old",
+    "stem": "area-remediation",
+    "status": 404,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/old/area-remediation.png"
+  },
+  {
+    "label": "old",
+    "stem": "area-international-hub",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/old/area-international-hub.png"
+  },
+  {
+    "label": "old",
+    "stem": "service-detail-aml",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/old/service-detail-aml.png"
+  },
+  {
+    "label": "old",
+    "stem": "header-desktop",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/old/header-desktop.png"
+  },
+  {
+    "label": "old",
+    "stem": "footer-desktop",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/old/footer-desktop.png"
+  },
+  {
+    "label": "old",
+    "stem": "menu-mobile",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/old/menu-mobile.png"
+  },
+  {
+    "label": "old",
+    "stem": "cta-final-home",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-reconciled/old/cta-final-home.png"
+  }
+]

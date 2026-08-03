@@ -12,7 +12,7 @@
 | Starting PR #17 HEAD | `aa836ce760123a3f203d60e05bb73156e5677a2e` |
 | Evidence body HEAD | `ca1bdce9e93b3b226994f741af335269e54d078e` |
 | Audit tip HEAD | `99cd1fc` *(full SHA at closeout)* |
-| Implementation HEAD | `TBA_IMPLEMENTATION` *(filled at implementation closeout)* |
+| Implementation HEAD | `62e7853ac19d819ca55ae4898b6af4728edfa32a` *(filled at implementation closeout)* |
 | Old closed-model commit | `8b12fcc88922e6ed07b98dd40da0a27bde71bbf9` |
 | Old branch | `feat/authority-conversion-p0` |
 | Old deployment | https://octus-consulting-6dieznt51-axle1.vercel.app |
@@ -333,7 +333,7 @@ Capture log: `capture-log.json`.
 | Starting PR #17 HEAD | `aa836ce…` |
 | Evidence body HEAD | `ca1bdce…` |
 | Audit tip HEAD | `99cd1fc` |
-| Implementation HEAD | `TBA_IMPLEMENTATION` |
+| Implementation HEAD | `62e7853ac19d819ca55ae4898b6af4728edfa32a` |
 | Rendered website code changed | **NO** (evidence only) |
 | Routes classified | **81 / 81** |
 | Comparison matrix rows | **26** (one primary recommendation each) |
