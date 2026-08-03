@@ -82,7 +82,7 @@
 | ID | Item | Phase |
 |---|---|---|
 | P2 | Global visual system / shell fidelity | 2 — ACCEPTED |
-| P3 | Homepage remediation | 3 — AUTHORIZED / IN PROGRESS |
+| P3 | Homepage remediation | 3 — READY_FOR_SOL_AUDIT |
 | P4 | Services families | 4 |
 | P5 | Institutional / content pages | 5 |
 | P6 | Full regression | 6 |
@@ -106,5 +106,18 @@
 | Scope | Homepage composition only |
 | Impact matrix | `homepage/PHASE3_HOME_IMPACT_MATRIX.md` |
 | Phases 4–6 | BLOCKED |
+| Merge / production / Rubio preview | forbidden |
+
+## D-011 — Phase 3 Homepage returned for Sol audit
+
+| Field | Value |
+|---|---|
+| Phase 3 | READY_FOR_SOL_AUDIT |
+| control | `98125861a4c2ea5ff659d7da0c513490a2329d32` |
+| implementation | `47db576145b80f7c232b0d31c3372247a6f538fc` |
+| evidence | `9435d9bec86fde156d52bb13bfd57e06c210d9e3` |
+| immutable_preview | https://octus-consulting-l79bo9vrg-axle1.vercel.app |
+| deployment_id | `dpl_FCywMhkUrBatkqCH4t3s7izYvUYE` |
+| Phase 4–6 | remain BLOCKED |
 | Merge / production / Rubio preview | forbidden |
 

@@ -8,5 +8,6 @@
   "baseline_url": "https://octus-consulting-9q798dbg2-axle1.vercel.app",
   "baseline_deployment_id": "dpl_437tawkoMDv7sqxW6NzPzTegj1Lq",
   "terminal": "OCTUS_HOME_GATE_READY_FOR_SOL_AUDIT",
-  "note": "Reconciled screenshots captured from immutable preview whose GitHub SHA equals phase3_implementation_commit."
+  "note": "Reconciled screenshots captured from immutable preview whose GitHub SHA equals phase3_implementation_commit.",
+  "phase3_evidence_commit": "9435d9bec86fde156d52bb13bfd57e06c210d9e3"
 }

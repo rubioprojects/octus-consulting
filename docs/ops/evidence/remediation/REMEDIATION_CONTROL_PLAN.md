@@ -24,7 +24,7 @@ PR #17 — seven-area architecture, current routes, evidence-safe editorial rule
 | 0 | Control and inventory | COMMITTED `b90a694` | (prerequisite) |
 | 1 | Team hard gate | **ACCEPTED by Sol** | Team hard gate + provenance PASS |
 | 2 | Global visual system | **ACCEPTED by Sol** | Global system gate PASS |
-| 3 | Homepage | **AUTHORIZED / IN PROGRESS** | `OCTUS_HOME_GATE_READY_FOR_SOL_AUDIT` |
+| 3 | Homepage | **READY_FOR_SOL_AUDIT** (impl + immutable evidence) | `OCTUS_HOME_GATE_READY_FOR_SOL_AUDIT` |
 | 4 | Services and service families | BLOCKED until Sol accepts Phase 3 | — |
 | 5 | Institutional and content families | BLOCKED | — |
 | 6 | Full regression | BLOCKED | Final: `OCTUS_FULL_SITE_CANDIDATE_READY_FOR_SOL_FINAL_AUDIT` |
@@ -71,6 +71,19 @@ PR #17 — seven-area architecture, current routes, evidence-safe editorial rule
 Homepage composition only: `app/page.tsx`, home-only components, `.home-*` / homepage-scoped CSS.
 
 Impact matrix: `docs/ops/evidence/remediation/homepage/PHASE3_HOME_IMPACT_MATRIX.md`
+
+### Phase 3 stamp (awaiting Sol)
+
+| Field | Value |
+|---|---|
+| phase3_control_commit | `98125861a4c2ea5ff659d7da0c513490a2329d32` |
+| phase3_implementation_commit | `47db576145b80f7c232b0d31c3372247a6f538fc` |
+| phase3_evidence_commit | `9435d9bec86fde156d52bb13bfd57e06c210d9e3` |
+| immutable_preview | https://octus-consulting-l79bo9vrg-axle1.vercel.app |
+| deployment_id | `dpl_FCywMhkUrBatkqCH4t3s7izYvUYE` |
+| validation | `homepage/audit/PHASE3_VALIDATION.json` overall PASS |
+| report | `homepage/PHASE3_HOME_GATE_REPORT.md` |
+| Phase 4 | BLOCKED until Sol accepts Phase 3 |
 
 **Not in Phase 3:** Team, global system, Nav/footer, services/institutional pages.
 
