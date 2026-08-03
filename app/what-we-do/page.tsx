@@ -5,17 +5,17 @@ import { pageSocialMeta } from "../../lib/pageMeta";
 export const metadata = pageSocialMeta({
   title: "What We Do",
   description:
-    "Seven operational modules. One working structure. Regulatory structuring, compliance, legal architecture, corporate design, ownership, audit and international hub.",
+    "Seven service areas. One working structure. Regulatory structuring, compliance, legal architecture, corporate design, ownership, audit and international hub.",
   path: "/what-we-do",
 });
 
 const services = [
-  { num: "01", title: "Regulatory Structuring", desc: "Jurisdiction selection, licensing strategy and regulatory pathway design for regulated operations.", href: "/regulatory" },
-  { num: "02", title: "Compliance & Risk", desc: "Compliance framework design, operational rollout and ongoing compliance management.", href: "/compliance" },
-  { num: "03", title: "Legal & Structural Architecture", desc: "Legal architecture coordinated across jurisdictions, covering ownership, governance and contractual frameworks.", href: "/legal-architecture" },
-  { num: "04", title: "Corporate Structuring", desc: "Corporate architecture for regulated operations across onshore, offshore and cross-border structures.", href: "/corporate" },
+  { num: "01", title: "Regulatory Structuring", desc: "Jurisdiction selection, licensing strategy and regulatory pathway design for regulated operations.", href: "/solutions/regulatory-structuring" },
+  { num: "02", title: "Compliance & Risk", desc: "Compliance framework design, operational rollout and ongoing compliance management.", href: "/solutions/compliance-risk" },
+  { num: "03", title: "Legal & Structural Architecture", desc: "Legal architecture coordinated across jurisdictions, covering ownership, governance and contractual frameworks.", href: "/solutions/legal-structural-architecture" },
+  { num: "04", title: "Corporate Structuring", desc: "Corporate architecture for regulated operations across onshore, offshore and cross-border structures.", href: "/solutions/corporate-structuring" },
   { num: "05", title: "Ownership & UBO", desc: "Ownership architecture and UBO structuring for individuals behind regulated operations.", href: "/private-clients" },
-  { num: "06", title: "Audit & Readiness", desc: "Preparation for regulatory audit, certification and external review. Readiness before scrutiny starts.", href: "/audit" },
+  { num: "06", title: "Audit & Readiness", desc: "Preparation for regulatory audit, certification and external review. Readiness before scrutiny starts.", href: "/solutions/remediation-readiness" },
   { num: "07", title: "International Hub", desc: "Market entry coordination and cross-border expansion for regulated businesses.", href: "/international-hub" },
 ];
 
@@ -26,7 +26,7 @@ export default function WhatWeDoPage() {
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">What we do</span>
           <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
-            Seven operational modules.<br />
+            Seven service areas.<br />
             <span style={{ color: "var(--white-40)" }}>One working structure.</span>
           </h1>
           <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "560px" }}>

@@ -140,7 +140,7 @@ export default function HoldingDesignPage() {
               { title: "Offshore Structuring", desc: "Offshore Structuring", href: "/solutions/corporate/offshore-structuring" },
               { title: "Company Formation", desc: "Company Formation", href: "/solutions/corporate/company-formation" },
               { title: "Ownership & UBO Architecture", desc: "Ownership & UBO Architecture", href: "/private-clients" },
-              { title: "Banking & Payments", desc: "Banking & Payments", href: "/solutions/regulatory/banking-payments" },
+              { title: "Banking & Payments", desc: "Banking & Payments", href: "/solutions/banking-payments-infrastructure" },
             ].map((item) => (
               <Link key={item.href} href={item.href} className="card-grid" style={{ padding: "28px" }}>
                 <h2 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{item.title}</h2>

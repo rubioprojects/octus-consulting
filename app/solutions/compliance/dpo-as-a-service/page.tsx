@@ -6,7 +6,7 @@ import { pageSocialMeta } from "../../../../lib/pageMeta";
 export const metadata = pageSocialMeta({
   title: "DPO-as-a-Service",
   description:
-    "A DPO is not a contact point. Octus operates the Data Protection Officer function as a continuous regulatory role: incident response, regulatory interaction and operational data protection.",
+    "Outsourced DPO support and privacy programme coordination for LGPD and GDPR contexts: incident response, regulatory interaction and operational data protection — designation and scope subject to engagement.",
   path: "/solutions/compliance/dpo-as-a-service",
 });
 
@@ -69,17 +69,18 @@ export default function DpoAsAServicePage() {
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">The model</p>
           <h2 className="heading-section" style={{ marginBottom: "16px" }}>
-            We do not provide a name. We operate the function.
+            We provide DPO support. We coordinate the programme.
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
-            DPO-as-a-Service is the ongoing execution of the Data Protection Officer
-            role. It ensures that data protection obligations are not only defined,
-            but continuously managed across operations, systems and external
-            interactions.
+            DPO-as-a-Service is outsourced DPO support and privacy programme
+            coordination. Specific designation, jurisdictional scope and
+            independence remain subject to the engagement. The work keeps data
+            protection obligations defined, documented and managed across
+            operations, systems and external interactions.
           </p>
           <p className="body-lg">
-            Acting as the interface between your operation, regulators and internal
-            teams.
+            Coordinating the interface between your operation, regulators and
+            internal teams where mandated.
           </p>
         </div>
       </section>

@@ -209,7 +209,7 @@ export default function FintechLicensingPage() {
           <div className="grid-auto-lg">
             {[
               { title: "iGaming Licensing", desc: "Same structural logic, different regulatory framework", href: "/solutions/regulatory/igaming-licensing" },
-              { title: "Banking & Payments", desc: "The layer that fails most often post-authorisation", href: "/solutions/regulatory/banking-payments" },
+              { title: "Banking & Payments", desc: "The layer that fails most often post-authorisation", href: "/solutions/banking-payments-infrastructure" },
               { title: "Market Entry", desc: "Jurisdiction selection as structural project", href: "/solutions/regulatory/market-entry" },
               { title: "Compliance-as-a-Service", desc: "What keeps the licence operational", href: "/solutions/compliance/compliance-as-a-service" },
               { title: "AML/KYC", desc: "Compliance architecture for licensing and banking", href: "/solutions/compliance/aml-kyc" },

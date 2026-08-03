@@ -154,7 +154,7 @@ export default function MarketEntryPage() {
             {[
               { title: "Fintech Licensing", desc: "EMI/PI authorisation", href: "/solutions/regulatory/fintech-licensing" },
               { title: "iGaming Licensing", desc: "Gaming market entry", href: "/solutions/regulatory/igaming-licensing" },
-              { title: "Banking & Payments", desc: "Access as entry constraint", href: "/solutions/regulatory/banking-payments" },
+              { title: "Banking & Payments", desc: "Access as entry constraint", href: "/solutions/banking-payments-infrastructure" },
               { title: "Company Formation", desc: "Jurisdiction-aligned entities", href: "/solutions/corporate/company-formation" },
               { title: "Jurisdictions", desc: "Where we structure operations", href: "/jurisdictions" },
             ].map((item) => (

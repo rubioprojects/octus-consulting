@@ -43,7 +43,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/solutions/regulatory/igaming-licensing`, priority: 0.8, changeFrequency: "monthly" as const },
     { url: `${base}/solutions/regulatory/fintech-licensing`, priority: 0.8, changeFrequency: "monthly" as const },
     { url: `${base}/solutions/regulatory/market-entry`, priority: 0.8, changeFrequency: "monthly" as const },
-    { url: `${base}/solutions/regulatory/banking-payments`, priority: 0.8, changeFrequency: "monthly" as const },
     { url: `${base}/diagnostic`, priority: 0.7, changeFrequency: "monthly" as const },
     { url: `${base}/contact`, priority: 0.8, changeFrequency: "monthly" as const },
     { url: `${base}/team`, priority: 0.7, changeFrequency: "monthly" as const },

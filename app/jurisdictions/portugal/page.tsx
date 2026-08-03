@@ -234,7 +234,7 @@ export default function JurisdictionsPortugalPage() {
           <div className="grid-auto-lg">
             {[
               { title: "Fintech Licensing", desc: "How EU licensing paths are structured", href: "/solutions/regulatory/fintech-licensing" },
-              { title: "Banking & Payments", desc: "Why banking defines operational viability", href: "/solutions/regulatory/banking-payments" },
+              { title: "Banking & Payments", desc: "Why banking defines operational viability", href: "/solutions/banking-payments-infrastructure" },
               { title: "Holding Design", desc: "How EU operations fit into group structure", href: "/solutions/corporate/holding-design" },
               { title: "iGaming", desc: "Sector overview", href: "/markets/igaming" },
             ].map((item) => (

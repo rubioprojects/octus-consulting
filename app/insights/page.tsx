@@ -23,7 +23,7 @@ export default function InsightsPage() {
         eyebrow="Insights"
         title="Regulatory intelligence."
         titleSecondLine="From the field."
-        description="Analysis, legal developments and operational intelligence from the Octus team: covering Brazil, iGaming, compliance and international regulated markets. Visual shell for the Octus Intelligence Hub."
+        description="Analysis, legal developments and operational intelligence from the Octus team, covering Brazil, iGaming, compliance and international regulated markets."
       />
 
       <Section>

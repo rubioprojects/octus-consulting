@@ -1,13 +1,7 @@
 import Link from "next/link";
-import {
-  CTA_DISCUSS_LABEL,
-  CTA_EMAIL_LABEL,
-  MAILTO_DISCUSS,
-  WHATSAPP_DISCUSS_URL,
-} from "../../lib/cta";
+import { WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 import { INTELLIGENCE_PILLARS } from "../../lib/commercial";
 import PageHero from "../../components/system/PageHero";
-import { CtaLink } from "../../components/system/CtaButton";
 import OctusIcon, { type OctusIconName } from "../../components/icons/OctusIcon";
 import BrandSectionMotif from "../../components/system/BrandSectionMotif";
 import Reveal from "../../components/system/Reveal";
@@ -29,7 +23,7 @@ const PILLAR_ICONS: OctusIconName[] = [
   "corporate",
 ];
 
-/** Client-facing resource paths that remain live on the current site. */
+/** Resource paths available on the current site. */
 const LAUNCH_TYPES = [
   {
     num: "01",
@@ -61,7 +55,7 @@ export default function IntelligencePage() {
         eyebrow="Intelligence"
         title="Intelligence for regulated operations."
         titleSecondLine="Signals that inform execution."
-        description="Octus Intelligence is the client-facing knowledge layer for regulated decisions: how we frame regulatory, tax, legal, compliance and operational signals, and how that framing connects to published Insights and executable structure."
+        description="Octus Intelligence frames regulatory, tax, legal, compliance and operational signals so published Insights connect to decisions and structure that must hold under scrutiny."
         primaryCta={{ href: "/insights", label: "Explore Insights →" }}
         secondaryCta={{ href: WHATSAPP_DISCUSS_URL, label: "Discuss a specific issue", quiet: true, external: true }}
       />
@@ -118,7 +112,7 @@ export default function IntelligencePage() {
                 {
                   n: "03",
                   t: "Execute with accountability",
-                  b: "Connect published analysis and internal structuring to a mandate with clear owners, paths and review points.",
+                  b: "Connect published analysis to a mandate with clear owners, paths and review points.",
                 },
               ].map((s) => (
                 <li key={s.n} className="grid grid-cols-[48px_1fr] gap-6 border-b border-border pb-6 last:border-0">
@@ -187,19 +181,24 @@ export default function IntelligencePage() {
             <div className="mb-6 h-px w-16 accent-cream-bar" aria-hidden="true" />
             <p className="section-label mb-4 block">From knowledge to execution</p>
             <p className="body-large mb-6">
-              Read the material, prepare your internal questions, then talk to Octus on WhatsApp or
-              email.
+              Read the material, prepare your questions, then continue with Octus when a live
+              operational constraint needs structured attention.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <CtaLink href="/insights" variant="primary">
+            <div className="flex flex-col items-start gap-3">
+              <Link
+                href="/insights"
+                className="font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
+              >
                 Explore Insights →
-              </CtaLink>
-              <CtaLink href={WHATSAPP_DISCUSS_URL} variant="secondary" target="_blank" rel="noopener noreferrer">
-                {CTA_DISCUSS_LABEL}
-              </CtaLink>
-              <CtaLink href={MAILTO_DISCUSS} variant="secondary">
-                {CTA_EMAIL_LABEL}
-              </CtaLink>
+              </Link>
+              <Link
+                href={WHATSAPP_DISCUSS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-sans text-sm text-muted-foreground no-underline hover:text-primary"
+              >
+                Discuss a specific issue →
+              </Link>
             </div>
           </Reveal>
         </div>

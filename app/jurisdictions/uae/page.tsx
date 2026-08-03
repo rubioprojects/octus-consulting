@@ -221,7 +221,7 @@ export default function JurisdictionsUaePage() {
           <div className="grid-auto-lg">
             {[
               { title: "Fintech Licensing", desc: "How the licensing process is structured", href: "/solutions/regulatory/fintech-licensing" },
-              { title: "Banking & Payments", desc: "Why banking defines viability", href: "/solutions/regulatory/banking-payments" },
+              { title: "Banking & Payments", desc: "Why banking defines viability", href: "/solutions/banking-payments-infrastructure" },
               { title: "Offshore Structuring", desc: "How the UAE fits within a broader group", href: "/solutions/corporate/offshore-structuring" },
               { title: "Crypto", desc: "VASP regulation and structural consequences", href: "/markets/crypto" },
             ].map((item) => (

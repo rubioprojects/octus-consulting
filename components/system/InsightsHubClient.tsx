@@ -41,8 +41,7 @@ export default function InsightsHubClient({ posts }: { posts: Post[] }) {
       <InsightCategoryRail active={hub === "all" ? "all" : hub} />
       {activeLabel && (
         <p className="mb-8 text-sm text-muted-foreground">
-          Showing <span className="text-foreground">{activeLabel}</span>: mapped from
-          existing article categories (full Hub taxonomy ships in Wave 4).
+          Showing <span className="text-foreground">{activeLabel}</span> articles.
         </p>
       )}
 

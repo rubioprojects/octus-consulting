@@ -991,7 +991,7 @@ Banking access for high-risk operations is a design problem. The corporate struc
 
 When the structure is right, banking follows. When it is not, no introduction or relationship fixes the problem.`,
     related: [
-      { label: "Banking & Payments", href: "/solutions/regulatory/banking-payments" },
+      { label: "Banking & Payments", href: "/solutions/banking-payments-infrastructure" },
       { label: "High-Risk Operations", href: "/markets/high-risk" },
     ],
     cta: {

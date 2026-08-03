@@ -116,7 +116,7 @@
         {
           "id": "REG-F1",
           "name": "Jurisdiction and pathway strategy",
-          "description": "Venue fit, pathway design and jurisdiction risk mapping before filings harden.",
+          "description": "Venue fit, pathway design and jurisdiction risk mapping before filings begin.",
           "area_id": "AREA-REG",
           "area_name": "Regulatory Structuring",
           "area_hub": "/solutions/regulatory-structuring",
@@ -238,7 +238,7 @@
         {
           "id": "CMP-F5",
           "name": "Privacy, data protection and DPO",
-          "description": "DPO and privacy execution that remains independent and operable.",
+          "description": "DPO support and privacy operations designed to remain practical, documented and responsive.",
           "area_id": "AREA-CMP",
           "area_name": "Compliance & Risk",
           "area_hub": "/solutions/compliance-risk",
@@ -639,7 +639,7 @@
     {
       "id": "REG-F1",
       "name": "Jurisdiction and pathway strategy",
-      "description": "Venue fit, pathway design and jurisdiction risk mapping before filings harden.",
+      "description": "Venue fit, pathway design and jurisdiction risk mapping before filings begin.",
       "area_id": "AREA-REG",
       "area_name": "Regulatory Structuring",
       "area_hub": "/solutions/regulatory-structuring",
@@ -754,7 +754,7 @@
     {
       "id": "CMP-F5",
       "name": "Privacy, data protection and DPO",
-      "description": "DPO and privacy execution that remains independent and operable.",
+      "description": "DPO support and privacy operations designed to remain practical, documented and responsive.",
       "area_id": "AREA-CMP",
       "area_name": "Compliance & Risk",
       "area_hub": "/solutions/compliance-risk",
@@ -1183,7 +1183,7 @@
     },
     {
       "id": "SVC-REG-04",
-      "exact_public_name": "Brazil SPA / MF regulatory support",
+      "exact_public_name": "Brazil SPA/MF regulatory support",
       "primary_area": "Regulatory Structuring",
       "primary_area_id": "AREA-REG",
       "service_family_id": "REG-F4",

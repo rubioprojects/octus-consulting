@@ -143,7 +143,7 @@ export default function OffshoreStructuringPage() {
             {[
               { title: "Company Formation", desc: "Company Formation", href: "/solutions/corporate/company-formation" },
               { title: "Holding Design", desc: "Holding Design", href: "/solutions/corporate/holding-design" },
-              { title: "Banking & Payments", desc: "Banking & Payments", href: "/solutions/regulatory/banking-payments" },
+              { title: "Banking & Payments", desc: "Banking & Payments", href: "/solutions/banking-payments-infrastructure" },
               { title: "Market Entry", desc: "Market Entry", href: "/solutions/regulatory/market-entry" },
               { title: "High-Risk Operations", desc: "High-Risk Operations", href: "/markets/high-risk" },
             ].map((item) => (

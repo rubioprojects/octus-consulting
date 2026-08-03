@@ -39,13 +39,13 @@ export const PUBLIC_AREAS: PublicArea[] = [
     slug: "regulatory-structuring",
     href: "/solutions/regulatory-structuring",
     name: "Regulatory Structuring",
-    oneSentence: "Jurisdiction fit, licensing pathways and regulatory programmes for regulated operations.",
-    summary: "Licensing pathways, jurisdiction fit and programmes that work with regulators for regulated operations, sequenced with corporate, compliance and banking readiness.",
+    oneSentence: "Jurisdiction fit and licensing pathways for regulated operations.",
+    summary: "Licensing pathways and jurisdiction fit, sequenced with corporate, compliance and banking readiness.",
     whenNeeded: [
       "Entering a regulated market or changing venue",
       "License stalled, deferred or conditioned",
       "Structure incompatible with what the authority expects",
-      "Brazil SPA / MF or regulatory pressure across jurisdictions",
+      "Brazil SPA/MF or regulatory pressure across jurisdictions",
     ],
     services: [
       {
@@ -65,7 +65,7 @@ export const PUBLIC_AREAS: PublicArea[] = [
       },
       {
         id: "SVC-REG-04",
-        name: "Brazil SPA / MF regulatory support",
+        name: "Brazil SPA/MF regulatory support",
         oneSentence: "We coordinate Brazil-facing regulatory workstreams for betting and related frameworks.",
       },
       {
@@ -143,7 +143,7 @@ export const PUBLIC_AREAS: PublicArea[] = [
       {
         id: "SVC-CMP-03",
         name: "DPO-as-a-Service",
-        oneSentence: "We operate the DPO role for LGPD and GDPR contexts as a working function.",
+        oneSentence: "We provide outsourced DPO support and privacy programme coordination for LGPD and GDPR contexts.",
       },
       {
         id: "SVC-CMP-04",

@@ -10,7 +10,7 @@ Families: 34 · Services: 39 · Supersedes V2
 | SVC-REG-05 | Jurisdiction selection and risk mapping | Regulatory Structuring | Jurisdiction and pathway strategy | — | /solutions/regulatory/market-entry | deep-service page |
 | SVC-REG-02 | iGaming licensing programme | Regulatory Structuring | iGaming licensing programmes | — | /solutions/regulatory/igaming-licensing | deep-service page |
 | SVC-REG-03 | Fintech, EMI and crypto licensing | Regulatory Structuring | Fintech, payments and digital-assets authorisations | — | /solutions/regulatory/fintech-licensing | deep-service page |
-| SVC-REG-04 | Brazil SPA / MF regulatory support | Regulatory Structuring | Brazil regulatory and SPA/MF | — | /brazil | deep-service page |
+| SVC-REG-04 | Brazil SPA/MF regulatory support | Regulatory Structuring | Brazil regulatory and SPA/MF | — | /brazil | deep-service page |
 | SVC-CMP-01 | AML / KYC / CDD frameworks | Compliance & Risk | AML, KYC, CDD and onboarding | — | /solutions/compliance/aml-kyc | deep-service page |
 | SVC-CMP-06 | Policies and due diligence packs | Compliance & Risk | Policies, governance and due diligence | — | /solutions/compliance-risk | family module |
 | SVC-CMP-04 | Internal controls and governance | Compliance & Risk | Internal controls and monitoring | — | /solutions/compliance/internal-controls | deep-service page |

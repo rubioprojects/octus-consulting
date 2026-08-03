@@ -91,10 +91,7 @@ export default function BankingPaymentsRoutingPage() {
               </article>
             ))}
           </div>
-          <div className="mt-12 flex flex-wrap gap-4">
-            <CtaLink href="/solutions/regulatory/banking-payments" variant="secondary">
-              Banking &amp; Payments →
-            </CtaLink>
+          <div className="mt-12">
             <CtaLink href="/solutions" variant="secondary">
               Explore related services →
             </CtaLink>

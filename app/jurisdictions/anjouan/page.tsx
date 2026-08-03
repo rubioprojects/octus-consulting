@@ -233,7 +233,7 @@ export default function JurisdictionsAnjouanPage() {
           <div className="grid-auto-lg">
             {[
               { title: "Offshore Structuring", desc: "How offshore fits into the group", href: "/solutions/corporate/offshore-structuring" },
-              { title: "Banking & Payments", desc: "The real constraint of offshore operations", href: "/solutions/regulatory/banking-payments" },
+              { title: "Banking & Payments", desc: "The real constraint of offshore operations", href: "/solutions/banking-payments-infrastructure" },
               { title: "iGaming Licensing", desc: "How licensing strategy evolves", href: "/solutions/regulatory/igaming-licensing" },
               { title: "Isle of Man", desc: "The Tier-1 upgrade path", href: "/jurisdictions/isle-of-man" },
               { title: "Curaçao", desc: "Established offshore with higher acceptance", href: "/jurisdictions/curacao" },

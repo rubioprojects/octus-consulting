@@ -35,7 +35,7 @@ export default function SolutionsCompanyFormationPage() {
           <div style={{ marginTop: "32px", display: "flex", gap: "16px", flexWrap: "wrap" }}>
             <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
             <Link
-              href="/corporate"
+              href="/solutions/corporate-structuring"
               className="inline-flex h-12 items-center justify-center rounded-sm border border-white/20 bg-transparent px-10 text-base font-medium text-white/80 transition-colors hover:border-white/40 hover:text-white"
             >
               Full corporate services →
@@ -171,7 +171,7 @@ export default function SolutionsCompanyFormationPage() {
           <p className="label">Related</p>
           <div className="grid-3">
             {[
-              { title: "Corporate Structuring", desc: "Full corporate services overview.", href: "/corporate" },
+              { title: "Corporate Structuring", desc: "Full corporate services overview.", href: "/solutions/corporate-structuring" },
               { title: "Curaçao Licensing", desc: "Entity design for Curaçao operations.", href: "/jurisdictions/curacao" },
               { title: "Malta Licensing", desc: "Corporate substance for MGA requirements.", href: "/jurisdictions/malta" },
             ].map((r) => (

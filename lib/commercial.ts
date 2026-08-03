@@ -27,7 +27,7 @@ export const SOLUTION_HUBS: SolutionHub[] = [
   {
     num: "01",
     slug: "regulatory-strategy-licensing",
-    href: "/solutions/regulatory-strategy-licensing",
+    href: "/solutions/regulatory-structuring",
     title: "Regulatory Strategy & Licensing",
     shortTitle: "Regulatory Strategy & Licensing",
     problem:
@@ -90,14 +90,14 @@ export const SOLUTION_HUBS: SolutionHub[] = [
       { label: "iGaming", href: "/markets/igaming" },
     ],
     relatedDeep: [
-      { label: "Banking & Payments", href: "/solutions/regulatory/banking-payments" },
+      { label: "Banking & Payments", href: "/solutions/banking-payments-infrastructure" },
     ],
     primaryCta: "discuss",
   },
   {
     num: "03",
     slug: "compliance-risk-systems",
-    href: "/solutions/compliance-risk-systems",
+    href: "/solutions/compliance-risk",
     title: "Compliance & Risk Systems",
     shortTitle: "Compliance & Risk",
     problem:
@@ -135,7 +135,7 @@ export const SOLUTION_HUBS: SolutionHub[] = [
   {
     num: "04",
     slug: "corporate-cross-border",
-    href: "/solutions/corporate-cross-border",
+    href: "/solutions/corporate-structuring",
     title: "Corporate & Cross-Border Structuring",
     shortTitle: "Corporate & Cross-Border",
     problem:
@@ -172,7 +172,7 @@ export const SOLUTION_HUBS: SolutionHub[] = [
   {
     num: "05",
     slug: "legal-contractual-architecture",
-    href: "/solutions/legal-contractual-architecture",
+    href: "/solutions/legal-structural-architecture",
     title: "Legal & Contractual Architecture",
     shortTitle: "Legal & Contractual Architecture",
     problem:
@@ -205,7 +205,7 @@ export const SOLUTION_HUBS: SolutionHub[] = [
   {
     num: "06",
     slug: "operational-remediation-readiness",
-    href: "/solutions/operational-remediation-readiness",
+    href: "/solutions/remediation-readiness",
     title: "Operational Remediation & Readiness",
     shortTitle: "Remediation & Readiness",
     problem:
