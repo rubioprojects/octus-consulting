@@ -1977,18 +1977,28 @@ body.cookie-banner-visible .wa-float {
 .octus-dark-hero__mark {
   display: none;
 }
+/* Phase 3: match baseline 9q798dbg2 hero geometry (computed ≈880px, centered). */
 .home-hero__h1 {
-  max-width: 18ch;
+  max-width: none;
 }
 .home-hero {
-  min-height: 100svh;
+  min-height: 880px;
   padding-top: 5.75rem;
-  padding-bottom: 3rem;
-  align-items: flex-start;
+  padding-bottom: 0;
+  align-items: center;
 }
 @media (min-width: 768px) {
   .home-hero {
+    min-height: 880px;
     padding-top: 8rem;
+  }
+}
+@media (max-width: 767px) {
+  .home-hero {
+    min-height: min(880px, 100svh);
+    padding-top: 5.75rem;
+    padding-bottom: 2rem;
+    align-items: center;
   }
 }
 .site-header--on-dark .site-header__brand-rule {

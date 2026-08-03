@@ -45,8 +45,8 @@ export const metadata = pageSocialMeta({
 export default function HomePage() {
   return (
     <main>
-      {/* 1. Branded hero — composition from 9q798dbg2; evidence-safe copy retained */}
-      <section className="home-hero relative flex min-h-[100svh] items-start overflow-hidden surface-dark px-4 pt-[5.75rem] pb-12 sm:px-6 lg:px-8 md:pt-32">
+      {/* 1. Branded hero — geometry from 9q798dbg2; evidence-safe copy retained */}
+      <section className="home-hero relative flex overflow-hidden surface-dark px-4 sm:px-6 lg:px-8">
         <div className="home-hero__atmosphere" aria-hidden="true" />
         <div className="home-hero__mesh" aria-hidden="true" />
         <div
@@ -59,8 +59,7 @@ export default function HomePage() {
             Octus Consulting
           </Eyebrow>
           <h1 className="home-hero__h1 font-heading text-[1.85rem] font-semibold leading-[1.22] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-[2.4rem] md:text-5xl lg:text-[3.35rem] lg:leading-[1.16]">
-            Regulated operations don&apos;t fail randomly.
-            <br className="hidden sm:block" />{" "}
+            Regulated operations don&apos;t fail randomly.{" "}
             <span className="text-[color:var(--text-secondary-on-dark)]">
               They fail structurally.
             </span>
@@ -70,7 +69,7 @@ export default function HomePage() {
             cost is real. Octus diagnoses the failure and rebuilds the sequence that makes the
             operation workable again.
           </p>
-          <div className="mt-8 mb-8 flex flex-col gap-3 sm:mb-12 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4 md:mb-14">
+          <div className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
             <CtaLink
               href={WHATSAPP_DISCUSS_URL}
               variant="on-dark"
@@ -80,7 +79,7 @@ export default function HomePage() {
               {CTA_DISCUSS_LABEL}
             </CtaLink>
             <CtaLink href="/solutions" variant="on-dark-secondary">
-              Explore services
+              Explore services →
             </CtaLink>
             <span className="hidden sm:inline-flex">
               <CtaLink href="/how-we-engage" variant="on-dark-secondary">
@@ -104,24 +103,30 @@ export default function HomePage() {
       {/* 2. Capability rail */}
       <CapabilityRail items={CAPABILITY_RAIL} ariaLabel="Seven service areas" />
 
-      {/* 3. Authority signal */}
-      <section className="border-b border-border bg-background py-14 md:py-16">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-8 px-4 sm:px-6 lg:px-8 md:gap-14">
-          <OctusSymbolMarker size={20} />
-          <div>
-            <p className="editorial-numeral editorial-numeral--sm">2019</p>
-            <p className="mt-1 font-sans text-sm text-muted-foreground">Operating since</p>
+      {/* 3. Authority signal — baseline 3-col geometry; seven-area facts (07, not 06) */}
+      <section className="home-authority border-b border-border bg-background py-14 md:py-16">
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-8 flex justify-center">
+            <OctusSymbolMarker size={20} />
           </div>
-          <div>
-            <p className="editorial-numeral editorial-numeral--sm">07</p>
-            <p className="mt-1 font-sans text-sm text-muted-foreground">Service areas</p>
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 md:gap-0">
+            <div className="flex flex-col items-center text-center sm:border-r sm:border-border">
+              <span className="editorial-numeral editorial-numeral--sm">Multi</span>
+              <span className="mt-2 font-sans text-sm text-muted-foreground">jurisdiction work</span>
+            </div>
+            <div className="flex flex-col items-center text-center sm:border-r sm:border-border">
+              <span className="editorial-numeral editorial-numeral--sm">2019</span>
+              <span className="mt-2 font-sans text-sm text-muted-foreground">Operating since</span>
+            </div>
+            <div className="flex flex-col items-center text-center">
+              <span className="editorial-numeral editorial-numeral--sm">07</span>
+              <span className="mt-2 font-sans text-sm text-muted-foreground">service areas</span>
+            </div>
           </div>
-          <div className="max-w-sm">
-            <p className="font-sans text-sm leading-relaxed text-muted-foreground">
-              Coordinated work across regulatory, compliance, legal, corporate, private client,
-              remediation and international programmes.
-            </p>
-          </div>
+          <p className="mx-auto mt-10 max-w-xl text-center font-sans text-sm leading-relaxed text-muted-foreground">
+            Coordinated work across regulatory, compliance, legal, corporate, private client,
+            remediation and international programmes — operational proof, not a certificate wall.
+          </p>
         </div>
       </section>
 
@@ -549,7 +554,7 @@ export default function HomePage() {
             </p>
           </div>
           <CtaLink href="/how-we-engage" variant="primary">
-            How we engage →
+            Explore engagement models →
           </CtaLink>
         </div>
       </section>
