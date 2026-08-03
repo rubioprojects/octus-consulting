@@ -12,7 +12,6 @@ import { PUBLIC_AREAS } from "../lib/publicAreas";
 import { BRAND } from "../lib/brand";
 import {
   ASSESS_PATH,
-  CTA_ASSESS_LABEL,
   CTA_DISCUSS_LABEL,
   WHATSAPP_DISCUSS_URL,
 } from "../lib/cta";
@@ -93,7 +92,7 @@ export default function HomePage() {
               href={ASSESS_PATH}
               className="text-[color:var(--text-secondary-on-dark)] underline-offset-4 transition-colors hover:text-white hover:underline"
             >
-              {CTA_ASSESS_LABEL}
+              Request a diagnostic →
             </Link>
           </p>
         </div>
@@ -125,7 +124,8 @@ export default function HomePage() {
           </div>
           <p className="mx-auto mt-10 max-w-xl text-center font-sans text-sm leading-relaxed text-muted-foreground">
             Coordinated work across regulatory, compliance, legal, corporate, private client,
-            remediation and international programmes — operational proof, not a certificate wall.
+            remediation and international programmes. This is operational proof, not a
+            certificate wall.
           </p>
         </div>
       </section>
@@ -424,7 +424,7 @@ export default function HomePage() {
             pressure.
           </p>
           <CtaLink href={ASSESS_PATH} variant="on-dark">
-            {CTA_ASSESS_LABEL}
+            Assess your situation →
           </CtaLink>
         </div>
       </section>
@@ -473,7 +473,7 @@ export default function HomePage() {
                 market entry is blocked, start here with a focused operational assessment.
               </p>
               <div className="flex flex-wrap gap-4">
-                <CtaLink href={ASSESS_PATH}>{CTA_ASSESS_LABEL}</CtaLink>
+                <CtaLink href={ASSESS_PATH}>Start remediation assessment →</CtaLink>
                 <Link
                   href="/solutions/remediation-readiness"
                   className="inline-flex items-center font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"

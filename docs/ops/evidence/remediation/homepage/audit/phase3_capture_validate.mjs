@@ -12,11 +12,23 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 const REPO = path.resolve(ROOT, "../../../../../");
-const COMMIT = "47db576145b80f7c232b0d31c3372247a6f538fc";
-const DEPLOYMENT_ID = "dpl_FCywMhkUrBatkqCH4t3s7izYvUYE";
-const RECONCILED = "https://octus-consulting-l79bo9vrg-axle1.vercel.app";
+const COMMIT = process.env.PHASE3_COMMIT || "47db576145b80f7c232b0d31c3372247a6f538fc";
+const DEPLOYMENT_ID = process.env.PHASE3_DEPLOYMENT || "dpl_FCywMhkUrBatkqCH4t3s7izYvUYE";
+const RECONCILED = process.env.PHASE3_PREVIEW || "https://octus-consulting-l79bo9vrg-axle1.vercel.app";
 const BASELINE = "https://octus-consulting-9q798dbg2-axle1.vercel.app";
 const BEFORE = "https://octus-consulting-kovk3ad1l-axle1.vercel.app";
+const CLOSEOUT = process.env.PHASE3_CLOSEOUT === "1";
+const DIFF_BASE = process.env.PHASE3_DIFF_BASE || "4a4687134156dce4e5892552a049ff00747d1172";
+const ALLOWED_APP = CLOSEOUT
+  ? ["app/page.tsx"]
+  : ["app/page.tsx", "app/globals.css"];
+const CLOSEOUT_CHAPTERS = [
+  { id: "full", selector: null, fullPage: true },
+  { id: "hero", selector: ".home-hero", fullPage: false, height: 900 },
+  { id: "authority", selector: ".home-authority", fullPage: false, height: 400 },
+  { id: "crisis-cta", selector: "h2", text: "If your operation is stuck", height: 520 },
+  { id: "remediation", selector: "h2", text: "Remediation & Readiness", height: 500 },
+];
 
 const EXPECTED_NAMES = [
   "Rubio Teixeira",
@@ -146,6 +158,10 @@ async function captureOrigin(browser, label, meta, chapters, vps = ["desktop", "
     await page.waitForTimeout(400);
     for (const ch of chapters) {
       // skip some chapters on mobile subset
+      if (vpName === "mobile" && CLOSEOUT) {
+        // closeout mobile uses dedicated extras list below
+        break;
+      }
       if (vpName === "mobile" && ["rubio-portrait", "maria-portrait", "footer-transition", "hero-to-rail"].includes(ch.id)) {
         continue;
       }
@@ -171,12 +187,29 @@ async function captureOrigin(browser, label, meta, chapters, vps = ["desktop", "
     }
     // required mobile extras
     if (vpName === "mobile") {
-      for (const extra of [
-        { id: "mobile-first-fold", fullPage: false, height: 844, selector: "body" },
-        { id: "mobile-leadership", selector: ".home-leadership-trust", height: 900 },
-        { id: "mobile-seven-area", selector: "h2", text: "Seven areas.", height: 900 },
-        { id: "mobile-final-cta", selector: "h2", text: "Mandates Octus accepts.", height: 500 },
-      ]) {
+      const extras = CLOSEOUT
+        ? [
+            { id: "mobile-full", fullPage: true },
+            { id: "mobile-first-fold", fullPage: false, height: 844, selector: "body" },
+            { id: "mobile-authority", selector: ".home-authority", height: 400 },
+            { id: "mobile-crisis-cta", selector: "h2", text: "If your operation is stuck", height: 520 },
+            { id: "mobile-remediation", selector: "h2", text: "Remediation & Readiness", height: 500 },
+          ]
+        : [
+            { id: "mobile-first-fold", fullPage: false, height: 844, selector: "body" },
+            { id: "mobile-leadership", selector: ".home-leadership-trust", height: 900 },
+            { id: "mobile-seven-area", selector: "h2", text: "Seven areas.", height: 900 },
+            { id: "mobile-final-cta", selector: "h2", text: "Mandates Octus accepts.", height: 500 },
+          ];
+      for (const extra of extras) {
+        if (extra.fullPage) {
+          const fileRel = `${label}/${extra.id}.png`;
+          const abs = path.join(ROOT, fileRel);
+          await page.screenshot({ path: abs, fullPage: true, animations: "disabled" });
+          const hm = { bytes: fs.statSync(abs).size, sha256: sha256File(abs) };
+          items.push(entry(meta, fileRel, label, "/", extra.id, `${vp.width}x${vp.height}`, "fullPage", status, hm, "PASS"));
+          continue;
+        }
         if (extra.selector === "body") {
           await page.evaluate(() => window.scrollTo(0, 0));
           await page.waitForTimeout(150);
@@ -208,11 +241,35 @@ async function main() {
   const allItems = [];
 
   console.log("Capturing reconciled...");
-  allItems.push(...(await captureOrigin(browser, "reconciled", metaRec, HOME_CHAPTERS)));
-  console.log("Capturing baseline chapters...");
-  allItems.push(...(await captureOrigin(browser, "baseline", metaBase, HOME_CHAPTERS.filter((c) => ["full", "hero", "authority", "leadership", "seven-area", "final-cta"].includes(c.id)))));
-  console.log("Capturing before chapters...");
-  allItems.push(...(await captureOrigin(browser, "before", metaBefore, HOME_CHAPTERS.filter((c) => ["full", "hero", "authority", "leadership", "seven-area", "final-cta"].includes(c.id)))));
+  const chapters = CLOSEOUT ? CLOSEOUT_CHAPTERS : HOME_CHAPTERS;
+  allItems.push(...(await captureOrigin(browser, "reconciled", metaRec, chapters)));
+  if (!CLOSEOUT) {
+    console.log("Capturing baseline chapters...");
+    allItems.push(
+      ...(await captureOrigin(
+        browser,
+        "baseline",
+        metaBase,
+        HOME_CHAPTERS.filter((c) =>
+          ["full", "hero", "authority", "leadership", "seven-area", "final-cta"].includes(c.id)
+        )
+      ))
+    );
+    console.log("Capturing before chapters...");
+    allItems.push(
+      ...(await captureOrigin(
+        browser,
+        "before",
+        metaBefore,
+        HOME_CHAPTERS.filter((c) =>
+          ["full", "hero", "authority", "leadership", "seven-area", "final-cta"].includes(c.id)
+        )
+      ))
+    );
+  } else {
+    // closeout mobile extras required
+    console.log("Capturing closeout mobile extras already included via captureOrigin mobile path");
+  }
 
   // shared: leadership portraits only if needed
   ensureDir(path.join(ROOT, "shared"));
@@ -229,29 +286,89 @@ async function main() {
     const hero = document.querySelector(".home-hero");
     const h1 = document.querySelector("h1");
     const auth = document.querySelector(".home-authority");
-    const leads = [...document.querySelectorAll(".home-leadership-trust__name")].map((n) => n.textContent.trim());
-    const roles = [...document.querySelectorAll(".home-leadership-trust__role")].map((n) => n.textContent.trim());
-    const areas = [...document.querySelectorAll(".capability-rail__item, .capability-rail__grid-item")].map((el) => el.textContent.trim()).filter(Boolean);
+    const finalCta = [...document.querySelectorAll("section")].find((s) =>
+      /Mandates Octus accepts/.test(s.innerText || "")
+    );
+    const leads = [...document.querySelectorAll(".home-leadership-trust__name")].map((n) =>
+      n.textContent.trim()
+    );
+    const roles = [...document.querySelectorAll(".home-leadership-trust__role")].map((n) =>
+      n.textContent.trim()
+    );
+    const areas = [...document.querySelectorAll(".capability-rail__item, .capability-rail__grid-item")]
+      .map((el) => el.textContent.trim())
+      .filter(Boolean);
     const uniqueAreas = [...new Set(areas.map((a) => a.replace(/\s+/g, " ")))];
-    const links = [...document.querySelectorAll("main a[href]")].map((a) => ({
-      text: a.textContent.trim().replace(/\s+/g, " ").slice(0, 80),
-      href: a.getAttribute("href"),
-    }));
+    const links = [...document.querySelectorAll("main a[href]")].map((a) => {
+      const section =
+        a.closest(".home-hero")
+          ? "hero"
+          : a.closest(".home-authority")
+            ? "authority"
+            : /Mandates Octus accepts/.test(a.closest("section")?.innerText || "")
+              ? "final_cta"
+              : a.closest("section")?.querySelector("h2")?.textContent?.trim()?.slice(0, 60) || "other";
+      return {
+        text: a.textContent.trim().replace(/\s+/g, " ").slice(0, 80),
+        href: a.getAttribute("href"),
+        section,
+      };
+    });
     const arrowLabels = links.filter((l) => (l.text.match(/→/g) || []).length > 1);
     const labelCounts = {};
     for (const l of links) {
       if (!l.text) continue;
       labelCounts[l.text] = (labelCounts[l.text] || 0) + 1;
     }
-    const dupLabels = Object.entries(labelCounts).filter(([, n]) => n > 2).map(([k, n]) => `${k}×${n}`);
-    const prohibited = [
-      "not a law firm",
-      "06 solutions",
-      "six solutions",
-      "guaranteed",
-      "license shop",
-    ].filter((p) => text.toLowerCase().includes(p));
-    const hs = [...document.querySelectorAll("h1,h2,h3")].map((h) => h.tagName);
+    const dupLabels = Object.entries(labelCounts)
+      .filter(([, n]) => n > 1)
+      .map(([k, n]) => `${k}×${n}`);
+
+    const diagnosticLinks = links.filter(
+      (l) => l.href === "/diagnostic" || (l.href || "").startsWith("/diagnostic")
+    );
+    const diagnosticLabels = diagnosticLinks.map((l) => l.text);
+    const diagnosticLabelCounts = {};
+    for (const t of diagnosticLabels) {
+      diagnosticLabelCounts[t] = (diagnosticLabelCounts[t] || 0) + 1;
+    }
+    const duplicateDiagnosticLabels = Object.entries(diagnosticLabelCounts).filter(([, n]) => n > 1);
+
+    const WA_LABEL = "Discuss your operation →";
+    const waLinks = links.filter((l) => l.text === WA_LABEL);
+    const waOutsideAllowlist = waLinks.filter((l) => l.section !== "hero" && l.section !== "final_cta");
+
+    // Commercial CTA labels: buttons / primary commercial CTAs in main
+    // Allowlist: Discuss may appear twice (hero + final only)
+    const ALLOWED_REPEATS = {
+      [WA_LABEL]: { max: 2, sections: ["hero", "final_cta"] },
+    };
+    const commercialCandidates = links.filter((l) => {
+      if (!l.text) return false;
+      if (l.href === "/diagnostic" || (l.href || "").startsWith("/diagnostic")) return true;
+      if (l.text === WA_LABEL) return true;
+      if (/wa\.me|whatsapp/i.test(l.href || "")) return true;
+      return false;
+    });
+    const commercialCounts = {};
+    for (const l of commercialCandidates) {
+      commercialCounts[l.text] = (commercialCounts[l.text] || 0) + 1;
+    }
+    const unauthorizedCommercialDupes = [];
+    for (const [label, count] of Object.entries(commercialCounts)) {
+      const allow = ALLOWED_REPEATS[label];
+      if (allow) {
+        if (count > allow.max) unauthorizedCommercialDupes.push(`${label}×${count}>${allow.max}`);
+      } else if (count > 1) {
+        unauthorizedCommercialDupes.push(`${label}×${count}`);
+      }
+    }
+
+    const phrases = ["not a law firm", "06 solutions", "six solutions", "guaranteed", "license shop"];
+    const prohibitedPhrases = phrases.filter((p) => text.toLowerCase().includes(p));
+    const emDashCount = (text.match(/\u2014/g) || []).length;
+    const enDashCount = (text.match(/\u2013/g) || []).length;
+
     const overflow = document.documentElement.scrollWidth > document.documentElement.clientWidth + 1;
     const wa = document.querySelector(".wa-float");
     const header = document.querySelector(".site-header, header");
@@ -266,17 +383,37 @@ async function main() {
       links,
       arrowLabels,
       dupLabels,
-      prohibited,
+      diagnosticLabels,
+      diagnosticLabelCounts,
+      duplicateDiagnosticLabels: duplicateDiagnosticLabels.map(([k, n]) => `${k}×${n}`),
+      waLinks: waLinks.map((l) => l.section),
+      waCount: waLinks.length,
+      waOutsideAllowlist: waOutsideAllowlist.map((l) => l.section),
+      unauthorizedCommercialDupes,
+      prohibitedPhrases,
+      emDashCount,
+      enDashCount,
       h1Count: document.querySelectorAll("h1").length,
       lang: document.documentElement.lang,
       overflow,
       waBottom: wa ? getComputedStyle(wa).bottom : null,
       headerH: header ? Math.round(header.getBoundingClientRect().height) : null,
       sevenHeading: /Seven areas\. One execution partner\./.test(text),
-      bankingPeerCard: /Banking & Payments/.test(document.querySelector(".capability-rail")?.innerText || "") && false,
       hasBankingInRail: /Banking/.test(document.querySelector(".capability-rail")?.innerText || ""),
+      finalCtaFound: !!finalCta,
     };
   });
+
+  const duplicateCommercialLabelsFail =
+    homeAudit.duplicateDiagnosticLabels.length > 0 ||
+    homeAudit.unauthorizedCommercialDupes.length > 0 ||
+    homeAudit.waOutsideAllowlist.length > 0 ||
+    homeAudit.waCount > 2;
+
+  const prohibitedPunctuationFail =
+    homeAudit.emDashCount > 0 ||
+    homeAudit.enDashCount > 0 ||
+    homeAudit.prohibitedPhrases.length > 0;
 
   // CTA target audit — relative links
   const broken = [];
@@ -355,8 +492,8 @@ async function main() {
     portraits[file] = { expected, actual, status: ok ? "PASS" : "FAIL" };
   }
 
-  // frozen file scan vs accepted phase2 head
-  const diffNames = execSync("git diff --name-only 4a4687134156dce4e5892552a049ff00747d1172..47db576145b80f7c232b0d31c3372247a6f538fc", {
+  // frozen file scan
+  const diffNames = execSync(`git diff --name-only ${DIFF_BASE}..${COMMIT}`, {
     cwd: REPO,
     encoding: "utf8",
   })
@@ -373,9 +510,16 @@ async function main() {
     "components/system/DarkHeroAtmosphere.tsx",
     "public/team/",
   ];
+  if (CLOSEOUT) {
+    PROHIBITED.push("app/globals.css");
+  }
   const prohibitedHits = diffNames.filter((f) => PROHIBITED.some((p) => f === p || f.startsWith(p)));
-  const allowedApp = ["app/page.tsx", "app/globals.css"];
-  const unexpectedApp = diffNames.filter((f) => (f.startsWith("app/") || f.startsWith("components/")) && !allowedApp.includes(f) && !f.startsWith("docs/"));
+  const unexpectedApp = diffNames.filter(
+    (f) =>
+      (f.startsWith("app/") || f.startsWith("components/")) &&
+      !ALLOWED_APP.includes(f) &&
+      !f.startsWith("docs/")
+  );
 
   const checks = {
     homepage_http: homeHeaders.status === 200 ? "PASS" : "FAIL",
@@ -383,10 +527,14 @@ async function main() {
     h1_full_width: homeAudit.h1W >= 800 ? "PASS" : "FAIL",
     authority_height: homeAudit.authH === 323 ? "PASS" : "FAIL",
     leadership_titles:
-      homeAudit.roles?.[0] === "Founder & CEO" && homeAudit.roles?.[1] === "Operations Coordination" ? "PASS" : "FAIL",
+      homeAudit.roles?.[0] === "Founder & CEO" && homeAudit.roles?.[1] === "Operations Coordination"
+        ? "PASS"
+        : "FAIL",
     seven_areas_heading: homeAudit.sevenHeading ? "PASS" : "FAIL",
     no_banking_in_rail: !homeAudit.hasBankingInRail ? "PASS" : "FAIL",
-    prohibited_copy: homeAudit.prohibited.length === 0 ? "PASS" : "FAIL",
+    duplicate_commercial_labels: duplicateCommercialLabelsFail ? "FAIL" : "PASS",
+    prohibited_punctuation: prohibitedPunctuationFail ? "FAIL" : "PASS",
+    prohibited_copy: homeAudit.prohibitedPhrases.length === 0 ? "PASS" : "FAIL",
     duplicate_arrows: homeAudit.arrowLabels.length === 0 ? "PASS" : "FAIL",
     internal_links: broken.length === 0 ? "PASS" : "FAIL",
     desktop_overflow: !overflowDesk ? "PASS" : "FAIL",

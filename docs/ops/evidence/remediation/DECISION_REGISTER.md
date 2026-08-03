@@ -121,3 +121,13 @@
 | Phase 4–6 | remain BLOCKED |
 | Merge / production / Rubio preview | forbidden |
 
+## D-012 — Phase 3 Homepage closeout repair authorized
+
+| Field | Value |
+|---|---|
+| Sol | HOME composition/file/deployment/Team/global PASS; CTA + prohibited copy + PR governance FAIL |
+| Allowed app file | `app/page.tsx` only |
+| Fix | Unique /diagnostic labels; remove em dash; gate validator on duplicates + punctuation |
+| WhatsApp allowlist | `Discuss your operation →` may appear twice only (hero + final CTA bookend) |
+| Phase 4 | NOT AUTHORIZED |
+
