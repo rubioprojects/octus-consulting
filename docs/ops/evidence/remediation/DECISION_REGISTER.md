@@ -63,11 +63,19 @@
 
 | Field | Value |
 |---|---|
-| Decision | Sol blocked Phase 1 on unauditable SHA `4c9a6cf…` in reconciled manifests |
-| Repair | Recapture reconciled shots from immutable preview `bvvs2ue51` @ `f5be0d8` / `dpl_7TfPfQnGjCHYsGGkExngEMwUJ8CH` |
+| Decision | Sol blocked Phase 1 on unauditable SHA in reconciled manifests |
+| Repair | Recapture reconciled shots from immutable preview `bvvs2ue51` @ `f5be0d8` |
 | Preserve | `team_implementation_commit=3fb56fc…` separate from `capture_code_head=f5be0d8…` |
-| Forbidden | Application / portrait / CSS changes during repair |
-| Status | EXECUTED — terminal `OCTUS_TEAM_EVIDENCE_PROVENANCE_READY_FOR_SOL_AUDIT` |
+| Status | ACCEPTED by Sol |
+
+## D-008 — Phase 1 accepted; Phase 2 authorized
+
+| Field | Value |
+|---|---|
+| accepted_phase1_head | `0654dc1247967bcc36d760f47ae0654ff3814aa3` |
+| Phase 2 | AUTHORIZED / IN PROGRESS |
+| Terminology | `final_phase1_head` → `evidence_content_head` for `d9c58c5…`; authoritative tip = `accepted_phase1_head` |
+| Status | BINDING |
 
 ## Open / deferred to later phases
 

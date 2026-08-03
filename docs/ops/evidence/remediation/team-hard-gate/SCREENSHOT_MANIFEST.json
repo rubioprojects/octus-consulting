@@ -675,11 +675,12 @@
   "reconciled_count": 15,
   "reconciled_missing_metadata_count": 0,
   "reconciled_missing_metadata": [],
-  "final_phase1_head": "d9c58c56fa6a18d05907972916db54adb2cc6965",
   "immutable_preview_url": "https://octus-consulting-bvvs2ue51-axle1.vercel.app",
   "deployment_id": "dpl_7TfPfQnGjCHYsGGkExngEMwUJ8CH",
   "invalid_sha_removed_count": 17,
-  "note": "evidence_repair_commit=content tip with screenshots; final_phase1_head=previous tip before this scrub commit",
+  "note": "evidence_repair_commit=content tip with screenshots; evidence_content_head=previous tip before this scrub commit",
   "evidence_repair_commit": "3c462b9ef3b367520b0f3ea8f8fefc7bbc3aa44e",
-  "invalid_sha_note": "scrubbed orphaned amend tip previously embedded as capture commit"
+  "invalid_sha_note": "scrubbed orphaned amend tip previously embedded as capture commit",
+  "evidence_content_head": "d9c58c56fa6a18d05907972916db54adb2cc6965",
+  "accepted_phase1_head": "0654dc1247967bcc36d760f47ae0654ff3814aa3"
 }

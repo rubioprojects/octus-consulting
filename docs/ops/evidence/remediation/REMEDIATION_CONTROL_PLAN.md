@@ -17,7 +17,29 @@
 
 PR #17 — seven-area architecture, current routes, evidence-safe editorial rules.
 
-## Approved public Team roster (exactly 10)
+## Phase gating
+
+| Phase | Name | Status | Terminal |
+|---|---|---|---|
+| 0 | Control and inventory | COMMITTED `b90a694` | (prerequisite) |
+| 1 | Team hard gate | **ACCEPTED by Sol** | `OCTUS_TEAM_HARD_GATE` + provenance PASS |
+| 2 | Global visual system | **AUTHORIZED / IN PROGRESS** | `OCTUS_GLOBAL_SYSTEM_GATE_READY_FOR_SOL_AUDIT` |
+| 3 | Homepage | BLOCKED until Sol accepts Phase 2 | — |
+| 4 | Services and service families | BLOCKED | — |
+| 5 | Institutional and content families | BLOCKED | — |
+| 6 | Full regression | BLOCKED | Final: `OCTUS_FULL_SITE_CANDIDATE_READY_FOR_SOL_FINAL_AUDIT` |
+
+### Phase 1 acceptance stamp
+
+| Field | Value |
+|---|---|
+| accepted_phase1_head | `0654dc1247967bcc36d760f47ae0654ff3814aa3` |
+| TEAM_IMPLEMENTATION | PASS |
+| TEAM_EVIDENCE_PROVENANCE | PASS |
+| PHASE_1_HARD_GATE | ACCEPTED |
+| Team lock | Do not reopen roster, titles, order, portraits, or `app/team/page.tsx` |
+
+## Approved public Team roster (exactly 10) — LOCKED
 
 ### Leadership
 1. Rubio Teixeira — Founder & CEO  
@@ -33,78 +55,33 @@ PR #17 — seven-area architecture, current routes, evidence-safe editorial rule
 9. Bianca Carolina Oliveira Andrade — People & Operations  
 10. Luciana Santos Veloso — Operations Coordinator  
 
-**Forbidden public bands:** Leadership Support · Operational Leadership · Practice Leads · invented subdivisions.
+## Phase 2 scope
 
-## Phase gating
+Shared visual system only: Nav, BrandLockup, footer shell, globals tokens, DarkHeroAtmosphere, WhatsApp, cookies, favicons, brand assets.
 
-| Phase | Name | Status | Terminal |
-|---|---|---|---|
-| 0 | Control and inventory | COMMITTED `b90a694` | (prerequisite) |
-| 1 | Team hard gate | IMPLEMENTATION ACCEPTED; evidence provenance repair → Sol audit | `OCTUS_TEAM_EVIDENCE_PROVENANCE_READY_FOR_SOL_AUDIT` |
-| 2 | Global visual system | BLOCKED until Sol accepts Phase 1 | — |
-| 3 | Homepage | BLOCKED | — |
-| 4 | Services and service families | BLOCKED | — |
-| 5 | Institutional and content families | BLOCKED | — |
-| 6 | Full regression | BLOCKED | Final: `OCTUS_FULL_SITE_CANDIDATE_READY_FOR_SOL_FINAL_AUDIT` |
+**Not in Phase 2:** homepage composition, services content, institutional pages, Team page.
 
-## Permitted / prohibited files — Phase 1
+Impact matrix: `docs/ops/evidence/remediation/global-system/PHASE2_IMPACT_MATRIX.md`
 
-### Permitted
-- `app/team/page.tsx`
-- Team-specific metadata in that file
-- `public/team/*`
-- CSS selectors scoped exclusively to `team-*` classes (only if required; prefer no globals change)
-
-### Prohibited in Phase 1
-- `app/page.tsx`
-- `components/Nav.tsx`
-- `app/layout.tsx`
-- shared footer code
-- `PageHero` / AreaHub / service pages
-- shared color or spacing tokens
-- unrelated routes
-- `components/system/DarkHeroAtmosphere.tsx` (consume only — do not edit)
-- `components/system/HomeLeadershipTrust.tsx`
-
-If a global component appears to require alteration → **STOP** and record for Phase 2.
-
-## Acceptance criteria — Phase 1
-
-- Exact DOM roster count = 10  
-- Only Leadership + Core Specialists bands  
-- Baseline grid composition / ordering / card rhythm matched within intentional differences  
-- Rubio / Maria titles locked to verified current titles  
-- Other titles = verified current titles (no inflation)  
-- All portraits present under `public/team/`  
-- Screenshots committed (baseline / before / reconciled) desktop 1440×1000 + mobile 390×844  
-- Preview SHA matches declared commit  
-- Build + typecheck + Phase 1 scans pass  
-
-## Intentional differences (global / Team)
+## Intentional differences (binding)
 
 | Difference | Rationale |
 |---|---|
-| Rubio title Founder & CEO (baseline “Founder”) | Current verified editorial lock |
-| Maria title Operations Coordination (baseline “Managing Director”) | Current verified editorial lock; Managing Director forbidden |
-| Specialist titles use verified PR titles where they differ from baseline labels | Do not invent or inflate |
-| Evidence-safe bios (no jurisdiction laundry lists / group-wide overclaims) | Integrity register |
-| Seven-area IA elsewhere unchanged | Factual SoT = PR #17 |
-
-## Dependencies
-
-- Luciana portrait restored from historical commit `dc5862d` → `public/team/luciana-santos-veloso.jpg`  
-- Baseline deployment reachable for comparison captures  
+| Services / Industries labels (baseline Solutions / Markets) | Seven-area factual IA — PR #17 SoT |
+| Single primary Discuss CTA in header (baseline Discuss + Email) | Commercial simplification retained |
+| Rubio / Maria / specialist verified titles | Phase 1 lock |
+| Contact/Brazil dark-hero chrome vs baseline light on some routes | Page-hero ownership → Phase 5; do not empty-dark via globals |
 
 ## Rollback
 
 | Field | Value |
 |---|---|
-| Recovery / rollback commit | `bc40c2ae376867af1ba68ae3a8124d23c70f33c3` |
-| Method | `git revert` Phase commits; do not rebase |
+| accepted_phase1_head (Phase 2 start) | `0654dc1247967bcc36d760f47ae0654ff3814aa3` |
+| Method | `git revert` Phase 2 commits; do not rebase |
 
 ## Forbidden claims
 
-- No merge · no production deploy · no rebase · no new PR  
+- No merge · no production · no rebase · no new PR  
 - No preview return to Rubio  
-- No `READY_FOR_RUBIO_RESCREEN` without explicit Sol instruction  
-- No Phase 2+ until Sol accepts Phase 1  
+- No `READY_FOR_RUBIO_RESCREEN`  
+- No Phase 3 until Sol accepts Phase 2  

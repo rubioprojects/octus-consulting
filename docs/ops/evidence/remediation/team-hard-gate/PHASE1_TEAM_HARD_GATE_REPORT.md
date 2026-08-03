@@ -13,7 +13,8 @@
 | team_implementation_commit | `3fb56fcb3cff41d43d3d40b09757a9771e59844b` |
 | capture_code_head | `f5be0d87aeaa09a17864da9d7563e435b3746fe9` |
 | evidence_repair_commit | `3c462b9ef3b367520b0f3ea8f8fefc7bbc3aa44e` |
-| final_phase1_head | `d9c58c56fa6a18d05907972916db54adb2cc6965` |
+| evidence_content_head | `d9c58c56fa6a18d05907972916db54adb2cc6965`
+| accepted_phase1_head | `0654dc1247967bcc36d760f47ae0654ff3814aa3` |
 
 **Removed invalid SHA:** `orphaned-amend-tip-not-on-github` (orphaned amend tip — not on GitHub). Count removed from evidence tree: **17**.
 
