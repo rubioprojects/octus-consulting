@@ -10,7 +10,7 @@
 | Item | Value |
 |------|--------|
 | Starting PR #17 HEAD | `aa836ce760123a3f203d60e05bb73156e5677a2e` |
-| Code HEAD after evidence-only commit | *(filled at closeout)* |
+| Evidence-only HEAD (audit tip) | `ca1bdce9e93b3b226994f741af335269e54d078e` |
 | Old closed-model commit | `8b12fcc88922e6ed07b98dd40da0a27bde71bbf9` |
 | Old branch | `feat/authority-conversion-p0` |
 | Old deployment | https://octus-consulting-6dieznt51-axle1.vercel.app |
