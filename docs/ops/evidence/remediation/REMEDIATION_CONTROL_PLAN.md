@@ -40,7 +40,7 @@ PR #17 — seven-area architecture, current routes, evidence-safe editorial rule
 | Phase | Name | Status | Terminal |
 |---|---|---|---|
 | 0 | Control and inventory | COMMITTED `b90a694` | (prerequisite) |
-| 1 | Team hard gate | READY FOR SOL AUDIT (do not start Phase 2) | `OCTUS_TEAM_HARD_GATE_READY_FOR_SOL_AUDIT` |
+| 1 | Team hard gate | IMPLEMENTATION ACCEPTED; evidence provenance repair → Sol audit | `OCTUS_TEAM_EVIDENCE_PROVENANCE_READY_FOR_SOL_AUDIT` |
 | 2 | Global visual system | BLOCKED until Sol accepts Phase 1 | — |
 | 3 | Homepage | BLOCKED | — |
 | 4 | Services and service families | BLOCKED | — |

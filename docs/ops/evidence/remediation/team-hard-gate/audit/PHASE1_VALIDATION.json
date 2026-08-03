@@ -1,22 +1,31 @@
 {
-  "commit": "4c9a6cfe69326d3db84fa2d047a6d12e3eeb791f",
-  "origin": "http://127.0.0.1:3017",
-  "captured_at": "2026-08-03T18:34:14.179Z",
+  "commit": "f5be0d87aeaa09a17864da9d7563e435b3746fe9",
+  "capture_code_head": "f5be0d87aeaa09a17864da9d7563e435b3746fe9",
+  "team_implementation_commit": "3fb56fcb3cff41d43d3d40b09757a9771e59844b",
+  "deployment_id": "dpl_7TfPfQnGjCHYsGGkExngEMwUJ8CH",
+  "source_url": "https://octus-consulting-bvvs2ue51-axle1.vercel.app/team",
+  "origin": "https://octus-consulting-bvvs2ue51-axle1.vercel.app",
+  "capture_origin": "immutable_vercel_preview",
+  "captured_at": "2026-08-03T18:53:04.134Z",
   "checks": {
     "roster_count": "PASS",
+    "band_count": "PASS",
     "duplicate_name_scan": "PASS",
     "missing_image_scan": "PASS",
     "linkedin_link_scan": "PASS",
-    "bands": "PASS",
     "desktop_overflow": "PASS",
     "mobile_overflow": "PASS",
     "accessibility_desktop": "PASS",
     "accessibility_mobile": "PASS",
-    "prohibited_copy_scan": "PASS"
+    "prohibited_copy_scan": "PASS",
+    "x_robots_tag_noindex": "PASS"
   },
   "results": {
     "desktop": {
       "viewport": "1440x1000",
+      "http_status": 200,
+      "x_robots_tag": "noindex",
+      "noindex": true,
       "roster_count": 10,
       "roster_names": [
         "Rubio Teixeira",
@@ -38,6 +47,7 @@
         "Leadership",
         "Core Specialists"
       ],
+      "band_count": 2,
       "bands_ok": true,
       "missing_images": [],
       "linkedin_links": [
@@ -86,6 +96,9 @@
     },
     "mobile": {
       "viewport": "390x844",
+      "http_status": 200,
+      "x_robots_tag": "noindex",
+      "noindex": true,
       "roster_count": 10,
       "roster_names": [
         "Rubio Teixeira",
@@ -107,6 +120,7 @@
         "Leadership",
         "Core Specialists"
       ],
+      "band_count": 2,
       "bands_ok": true,
       "missing_images": [],
       "linkedin_links": [
@@ -210,5 +224,10 @@
     "daniel": "50% 38%"
   },
   "overall": "PASS",
-  "team_implementation_commit": "3fb56fcb3cff41d43d3d40b09757a9771e59844b"
+  "evidence_repair_commit": "a21b844432457ae2d32a2e999ed7861f9bbaa335",
+  "final_phase1_head": "a21b844432457ae2d32a2e999ed7861f9bbaa335",
+  "immutable_preview_url": "https://octus-consulting-bvvs2ue51-axle1.vercel.app",
+  "invalid_sha_removed": "4c9a6cfe69326d3db84fa2d047a6d12e3eeb791f",
+  "invalid_sha_removed_count": 17,
+  "note": "evidence_repair_commit and final_phase1_head both equal the evidence content tip a21b844; no orphan amend SHAs"
 }

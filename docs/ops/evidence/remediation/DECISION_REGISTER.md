@@ -59,6 +59,16 @@
 | Decision | Stop after Phase 1 for Sol audit; do not start Phase 2 |
 | Status | BINDING |
 
+## D-007 — Evidence provenance repair (2026-08-03)
+
+| Field | Value |
+|---|---|
+| Decision | Sol blocked Phase 1 on unauditable SHA `4c9a6cf…` in reconciled manifests |
+| Repair | Recapture reconciled shots from immutable preview `bvvs2ue51` @ `f5be0d8` / `dpl_7TfPfQnGjCHYsGGkExngEMwUJ8CH` |
+| Preserve | `team_implementation_commit=3fb56fc…` separate from `capture_code_head=f5be0d8…` |
+| Forbidden | Application / portrait / CSS changes during repair |
+| Status | EXECUTED — terminal `OCTUS_TEAM_EVIDENCE_PROVENANCE_READY_FOR_SOL_AUDIT` |
+
 ## Open / deferred to later phases
 
 | ID | Item | Phase |

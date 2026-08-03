@@ -1,9 +1,21 @@
 # Phase 1 — Team hard gate evidence
 
-**Terminal target:** `OCTUS_TEAM_HARD_GATE_READY_FOR_SOL_AUDIT`  
+**Terminal (implementation):** `OCTUS_TEAM_HARD_GATE_READY_FOR_SOL_AUDIT` (implementation accepted by Sol)  
+**Terminal (this repair):** `OCTUS_TEAM_EVIDENCE_PROVENANCE_READY_FOR_SOL_AUDIT`  
 **Date:** 2026-08-03  
-**Starting recovery HEAD:** `bc40c2ae376867af1ba68ae3a8124d23c70f33c3`  
-**Phase 0 commit:** `b90a6944d2b104010e17763b1ee026790d8bfc79`  
+
+## Provenance (binding)
+
+| Field | Value |
+|---|---|
+| Starting recovery HEAD | `bc40c2ae376867af1ba68ae3a8124d23c70f33c3` |
+| Phase 0 commit | `b90a6944d2b104010e17763b1ee026790d8bfc79` |
+| team_implementation_commit | `3fb56fcb3cff41d43d3d40b09757a9771e59844b` |
+| capture_code_head | `f5be0d87aeaa09a17864da9d7563e435b3746fe9` |
+| evidence_repair_commit | `a21b844432457ae2d32a2e999ed7861f9bbaa335` |
+| final_phase1_head | `a21b844432457ae2d32a2e999ed7861f9bbaa335` |
+
+**Removed invalid SHA:** `4c9a6cfe69326d3db84fa2d047a6d12e3eeb791f` (orphaned amend tip — not on GitHub). Count removed from evidence tree: **17**.
 
 ## Visual baseline
 
@@ -21,11 +33,14 @@
 | Roster | 7 (missing Larissa, Bianca, Luciana) |
 | Bands | Leadership + Leadership Support + Operational Leadership + Core Specialists |
 
-## Reconciled (local validation origin)
+## Reconciled (immutable Vercel preview — auditable)
 
 | Field | Value |
 |---|---|
-| Capture origin | `http://127.0.0.1:3017` (static `out/` after `npm run build`) |
+| source_url | https://octus-consulting-bvvs2ue51-axle1.vercel.app/team |
+| commit_sha / capture_code_head | `f5be0d87aeaa09a17864da9d7563e435b3746fe9` |
+| deployment_id | `dpl_7TfPfQnGjCHYsGGkExngEMwUJ8CH` |
+| capture_origin | immutable Vercel preview, not localhost |
 | Roster | **10** |
 | Bands | Leadership + Core Specialists only |
 
@@ -44,67 +59,48 @@
 | 9 | Bianca Carolina Oliveira Andrade | People & Operations | Core Specialists |
 | 10 | Luciana Santos Veloso | Operations Coordinator | Core Specialists |
 
-## Changed files (Phase 1)
+## Implementation files (Phase 1 — not modified by this repair)
 
 - `app/team/page.tsx`
-- `public/team/luciana-santos-veloso.jpg` (restored from `dc5862d`)
+- `public/team/luciana-santos-veloso.jpg`
+
+## This repair — allowed files only
+
 - `docs/ops/evidence/remediation/team-hard-gate/**`
-- `scripts/team-hard-gate-capture.cjs`
-- control plan gate status update in `docs/ops/evidence/remediation/REMEDIATION_CONTROL_PLAN.md`
+- `docs/ops/evidence/remediation/REMEDIATION_CONTROL_PLAN.md`
+- `docs/ops/evidence/remediation/DECISION_REGISTER.md`
+
+Application / portraits / CSS / tokens: **0 changes**.
 
 ## Prohibited files confirmation
 
-Untouched in Phase 1:
+Untouched:
 
-- `app/page.tsx`
-- `components/Nav.tsx`
-- `app/layout.tsx`
-- shared footer components
-- `PageHero` / AreaHub / service pages
-- shared color/spacing tokens (no edits to non–team-* token definitions)
-- `components/system/DarkHeroAtmosphere.tsx` (consumed, not edited)
-- `components/system/HomeLeadershipTrust.tsx`
+- `app/**` (including team page during repair)
+- `components/**`
+- `lib/**`
+- `public/**`
+- shared CSS / tokens
+- service routes
 
-## Screenshot paths
+## Screenshot paths (reconciled only replaced)
 
-### Desktop 1440×1000
-
-| Shot | Baseline | Before | Reconciled |
-|---|---|---|---|
-| Hero | `baseline/hero-desktop.png` | `before/hero-desktop.png` | `reconciled/hero-desktop.png` |
-| Full | `baseline/full-desktop.png` | `before/full-desktop.png` | `reconciled/full-desktop.png` |
-| Leadership | `baseline/leadership-grid-desktop.png` | `before/leadership-grid-desktop.png` | `reconciled/leadership-grid-desktop.png` |
-| Rubio crop | `baseline/rubio-crop-desktop.png` | `before/rubio-crop-desktop.png` | `reconciled/rubio-crop-desktop.png` |
-| Maria crop | `baseline/maria-crop-desktop.png` | `before/maria-crop-desktop.png` | `reconciled/maria-crop-desktop.png` |
-| Core grid | `baseline/core-grid-desktop.png` | `before/core-grid-desktop.png` | `reconciled/core-grid-desktop.png` |
-| CTA | `baseline/cta-desktop.png` | `before/cta-desktop.png` | `reconciled/cta-desktop.png` |
-
-### Mobile 390×844
-
-| Shot | Baseline | Before | Reconciled |
-|---|---|---|---|
-| Hero | `baseline/hero-mobile.png` | `before/hero-mobile.png` | `reconciled/hero-mobile.png` |
-| Full | `baseline/full-mobile.png` | `before/full-mobile.png` | `reconciled/full-mobile.png` |
-| Leadership | `baseline/leadership-grid-mobile.png` | `before/leadership-grid-mobile.png` | `reconciled/leadership-grid-mobile.png` |
-| Rubio crop | `baseline/rubio-crop-mobile.png` | `before/rubio-crop-mobile.png` | `reconciled/rubio-crop-mobile.png` |
-| Maria crop | `baseline/maria-crop-mobile.png` | `before/maria-crop-mobile.png` | `reconciled/maria-crop-mobile.png` |
-| Core grid | `baseline/core-grid-mobile.png` | `before/core-grid-mobile.png` | `reconciled/core-grid-mobile.png` |
-| CTA | `baseline/cta-mobile.png` | `before/cta-mobile.png` | `reconciled/cta-mobile.png` |
-| Card stack | `baseline/mobile-card-stack.png` | `before/mobile-card-stack.png` | `reconciled/mobile-card-stack.png` |
+Desktop 1440×1000 + mobile 390×844 under `reconciled/`:
+hero, full, leadership-grid, rubio-crop, maria-crop, core-grid, cta, mobile-card-stack.
 
 Manifest: `SCREENSHOT_MANIFEST.json`  
-Validation: `audit/PHASE1_VALIDATION.json`
+Validation: `audit/PHASE1_VALIDATION.json` (includes `x-robots-tag` noindex)
 
-## Intentional differences vs baseline (unresolved only as documented)
+## Intentional differences vs baseline (unchanged)
 
-1. Rubio title **Founder & CEO** (baseline: Founder) — verified lock  
-2. Maria title **Operations Coordination** (baseline: Managing Director) — verified lock; Managing Director forbidden  
-3. Specialist titles use current verified titles where they differ from baseline labels (e.g. Claudia CFO vs Financial Operations; Rodrigo Legal Architecture Lead vs Strategic Legal Architecture)  
-4. Bios are evidence-safe / narrowed — no restored jurisdiction laundry lists  
-5. Nav/shell visual parity deferred to Phase 2 (global visual system) — not mutated here  
+1. Rubio title Founder & CEO (baseline: Founder)  
+2. Maria title Operations Coordination (baseline: Managing Director)  
+3. Specialist titles use verified current titles  
+4. Evidence-safe bios  
+5. Global shell deferred to Phase 2  
 
-## Hard stops honoured
+## Hard stops
 
-- No merge · no production · no rebase · no new PR  
-- No Phase 2  
+- No merge · no production · no rebase · no Phase 2  
+- No Team page / portrait / CSS edits in this repair  
 - No Rubio rescreen claim  
