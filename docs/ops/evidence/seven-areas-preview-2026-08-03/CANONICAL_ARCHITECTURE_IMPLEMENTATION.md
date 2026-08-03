@@ -81,6 +81,8 @@ Thin wrappers unchanged under `app/solutions/*`, `/private-clients`, `/internati
 - Header: single Discuss; WhatsApp float unchanged
 - Team closing: primary Discuss + text link See careers
 - `pageSocialMeta`: absolute OG/Twitter image on production domain
+- `app/layout.tsx`: absolute `https://octusconsulting.com/og-image.png` for default OG/Twitter
+- Static HTML verified: no `axle1.vercel.app` in social image tags
 
 ## Build validation
 
@@ -91,7 +93,22 @@ npx tsc --noEmit — exit 0
 
 ## Screenshots
 
-Static export (`output: export`) — preview via `npx serve out`. Playwright CLI available but browser binaries not installed in this environment; screenshots not captured locally. Vercel preview deploy validates visual output post-push.
+Directory: `docs/ops/evidence/seven-areas-preview-2026-08-03/screenshots/`
+
+| Artifact | Purpose |
+|----------|---------|
+| `rubio-asset-old-reference.jpg` | Exact asset from commit `8b12fcc` |
+| `rubio-asset-restored.jpg` | Current restored `public/team/rubio-teixeira.jpg` (sha256 match) |
+| `rubio-homepage-crop.png` | Homepage crop render |
+| `rubio-team-crop.png` | Team crop render |
+| `team-desktop.png` / `team-mobile.png` | Team page structure |
+| `solutions-desktop.png` / `solutions-mobile.png` | Services overview |
+| `regulatory-hub-desktop.png` / `regulatory-hub-mobile.png` | Sample 12-module hub |
+| `brazil-desktop.png` / `brazil-mobile.png` | Flagship Brazil page |
+| `home-leadership-desktop.png` / `home-leadership-mobile.png` | Homepage leadership trust |
+
+Captured locally via Chrome (Playwright channel) against static `out/` export on 2026-08-03.
+
 
 ## Remaining visual defects
 
@@ -104,3 +121,17 @@ Static export (`output: export`) — preview via `npx serve out`. Playwright CLI
 - No merge to main  
 - No production deploy  
 - No rebase against main
+
+
+## Commit lineage (post-implementation)
+
+| Marker | SHA |
+|--------|-----|
+| Starting HEAD | `d99d53aea4122cb9653cf7171e1e4b3bd2b1a447` |
+| Architecture commit | `0a76332` |
+| Implementation commit | `2089c53` |
+| Follow-up (meta + evidence screenshots) | _(this commit)_ |
+
+**Terminal:** `OCTUS_WEBSITE_CANONICAL_ARCHITECTURE_IMPLEMENTED_READY`
+
+**No merge. No production deploy. No rebase.**

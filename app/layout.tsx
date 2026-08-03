@@ -42,14 +42,21 @@ export const metadata: Metadata = {
     description: "Regulated operations don't fail randomly. They fail structurally. Octus identifies what is broken, and fixes it.",
     url: "https://octusconsulting.com",
     siteName: "Octus Consulting",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Octus Consulting" }],
+    images: [
+      {
+        url: "https://octusconsulting.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Octus Consulting",
+      },
+    ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Octus Consulting",
     description: "Regulated operations don't fail randomly. They fail structurally.",
-    images: ["/og-image.png"],
+    images: ["https://octusconsulting.com/og-image.png"],
   },
 };
 
