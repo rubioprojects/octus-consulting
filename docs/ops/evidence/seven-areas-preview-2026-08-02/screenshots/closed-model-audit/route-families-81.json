@@ -1,0 +1,342 @@
+{
+  "total": 81,
+  "families": {
+    "home": 1,
+    "company": 5,
+    "solutions_index_or_other": 1,
+    "area_hub": 7,
+    "banking_support": 2,
+    "engagement": 3,
+    "markets": 5,
+    "jurisdictions": 8,
+    "service_detail": 11,
+    "insights": 34,
+    "legal": 4
+  },
+  "routes": [
+    {
+      "path": "/",
+      "family": "home"
+    },
+    {
+      "path": "/about",
+      "family": "company"
+    },
+    {
+      "path": "/brazil",
+      "family": "jurisdictions"
+    },
+    {
+      "path": "/careers",
+      "family": "company"
+    },
+    {
+      "path": "/compliance-channel",
+      "family": "legal"
+    },
+    {
+      "path": "/contact",
+      "family": "company"
+    },
+    {
+      "path": "/cookies",
+      "family": "legal"
+    },
+    {
+      "path": "/diagnostic",
+      "family": "engagement"
+    },
+    {
+      "path": "/how-we-engage",
+      "family": "engagement"
+    },
+    {
+      "path": "/insights",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/annual-recertification-betting-platforms-spa-mf-new-guidelines",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/banking-for-high-risk-operations",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/bet-br-domain-extension-to-states-brazil",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/betting-taxation-risks-senate-legal-certainty-regulated-market",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/brazil-b2b-registration-requirement-betting-igaming",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/centralised-self-exclusion-platform-key-changes-operators-bettors",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/coaf-crisis-aml-obligations-online-gaming-operators",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/compliance-as-a-service-vs-internal-teams",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/curacao-reform-what-changes",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/customised-studies-international-expansion-brazil",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/games-not-classified-as-fixed-odds-betting-brazil",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/intellectual-property-igaming-trademark-registration-brazil",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/iof-update-financial-market-brazil-2025",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/mica-what-operators-need-to-do",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/national-betting-system-sinapo-brazil",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/new-regulation-betting-online-game-systems-portaria-722-2024",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/new-rules-sports-betting-online-games-brazil-portaria-827-2024",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/new-spa-mf-normative-instruction-fixed-odds-betting",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/quinel-credentialed-certifying-entity-brazil-ministry-finance",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/regulation-and-technology-legal-follows-igaming-evolution",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/regulatory-agenda-2025-2026-secretariat-prizes-betting",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/rio-de-janeiro-regulates-vlts-lottery-equipment-decree",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/risk-management-software-igaming-regulatory-compliance",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/senate-approves-plp-128-2025-tightens-fiscal-policy-bets-fintechs",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/senate-commission-approves-casino-bingo-gaming-bill-brazil",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/spa-mf-position-brazilian-partner-20-percent-share-capital",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/spa-ordinance-banks-refuse-illegal-betting-operators",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/stf-suspends-blocking-of-bolsa-familia-bpc-betting-accounts",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/stf-suspends-municipal-lottery-operations-nationwide",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/trump-tax-reform-betting-operators-lessons-for-brazil",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/why-licensing-fails-post-approval",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/why-your-international-licence-may-not-protect-you-in-brazil",
+      "family": "insights"
+    },
+    {
+      "path": "/insights/youtube-tightens-rules-illegal-betting-sites-impact-influencers",
+      "family": "insights"
+    },
+    {
+      "path": "/intelligence",
+      "family": "engagement"
+    },
+    {
+      "path": "/international-hub",
+      "family": "area_hub"
+    },
+    {
+      "path": "/jurisdictions",
+      "family": "jurisdictions"
+    },
+    {
+      "path": "/jurisdictions/anjouan",
+      "family": "jurisdictions"
+    },
+    {
+      "path": "/jurisdictions/curacao",
+      "family": "jurisdictions"
+    },
+    {
+      "path": "/jurisdictions/isle-of-man",
+      "family": "jurisdictions"
+    },
+    {
+      "path": "/jurisdictions/malta",
+      "family": "jurisdictions"
+    },
+    {
+      "path": "/jurisdictions/portugal",
+      "family": "jurisdictions"
+    },
+    {
+      "path": "/jurisdictions/uae",
+      "family": "jurisdictions"
+    },
+    {
+      "path": "/markets",
+      "family": "markets"
+    },
+    {
+      "path": "/markets/crypto",
+      "family": "markets"
+    },
+    {
+      "path": "/markets/fintech",
+      "family": "markets"
+    },
+    {
+      "path": "/markets/high-risk",
+      "family": "markets"
+    },
+    {
+      "path": "/markets/igaming",
+      "family": "markets"
+    },
+    {
+      "path": "/partners",
+      "family": "company"
+    },
+    {
+      "path": "/privacy",
+      "family": "legal"
+    },
+    {
+      "path": "/private-clients",
+      "family": "area_hub"
+    },
+    {
+      "path": "/solutions",
+      "family": "solutions_index_or_other"
+    },
+    {
+      "path": "/solutions/banking-payments-infrastructure",
+      "family": "banking_support"
+    },
+    {
+      "path": "/solutions/compliance-risk",
+      "family": "area_hub"
+    },
+    {
+      "path": "/solutions/compliance/aml-kyc",
+      "family": "service_detail"
+    },
+    {
+      "path": "/solutions/compliance/compliance-as-a-service",
+      "family": "service_detail"
+    },
+    {
+      "path": "/solutions/compliance/dpo-as-a-service",
+      "family": "service_detail"
+    },
+    {
+      "path": "/solutions/compliance/gli-readiness",
+      "family": "service_detail"
+    },
+    {
+      "path": "/solutions/compliance/internal-controls",
+      "family": "service_detail"
+    },
+    {
+      "path": "/solutions/corporate-structuring",
+      "family": "area_hub"
+    },
+    {
+      "path": "/solutions/corporate/company-formation",
+      "family": "service_detail"
+    },
+    {
+      "path": "/solutions/corporate/holding-design",
+      "family": "service_detail"
+    },
+    {
+      "path": "/solutions/corporate/offshore-structuring",
+      "family": "service_detail"
+    },
+    {
+      "path": "/solutions/legal-structural-architecture",
+      "family": "area_hub"
+    },
+    {
+      "path": "/solutions/regulatory-structuring",
+      "family": "area_hub"
+    },
+    {
+      "path": "/solutions/regulatory/banking-payments",
+      "family": "banking_support"
+    },
+    {
+      "path": "/solutions/regulatory/fintech-licensing",
+      "family": "service_detail"
+    },
+    {
+      "path": "/solutions/regulatory/igaming-licensing",
+      "family": "service_detail"
+    },
+    {
+      "path": "/solutions/regulatory/market-entry",
+      "family": "service_detail"
+    },
+    {
+      "path": "/solutions/remediation-readiness",
+      "family": "area_hub"
+    },
+    {
+      "path": "/team",
+      "family": "company"
+    },
+    {
+      "path": "/terms",
+      "family": "legal"
+    }
+  ]
+}

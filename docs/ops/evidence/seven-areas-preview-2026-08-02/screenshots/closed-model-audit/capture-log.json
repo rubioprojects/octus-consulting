@@ -1,0 +1,492 @@
+[
+  {
+    "stem": "homepage-full-desktop",
+    "label": "old",
+    "route": "/",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/homepage-full-desktop.png"
+  },
+  {
+    "stem": "homepage-full-desktop",
+    "label": "current",
+    "route": "/",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/homepage-full-desktop.png"
+  },
+  {
+    "stem": "homepage-full-mobile",
+    "label": "old",
+    "route": "/",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/homepage-full-mobile.png"
+  },
+  {
+    "stem": "homepage-full-mobile",
+    "label": "current",
+    "route": "/",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/homepage-full-mobile.png"
+  },
+  {
+    "stem": "homepage-hero",
+    "label": "old",
+    "route": "/",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/homepage-hero.png"
+  },
+  {
+    "stem": "homepage-hero",
+    "label": "current",
+    "route": "/",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/homepage-hero.png"
+  },
+  {
+    "stem": "homepage-leadership",
+    "label": "old",
+    "route": "/",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/homepage-leadership.png"
+  },
+  {
+    "stem": "homepage-leadership",
+    "label": "current",
+    "route": "/",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/homepage-leadership.png"
+  },
+  {
+    "stem": "homepage-services",
+    "label": "old",
+    "route": "/",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/homepage-services.png"
+  },
+  {
+    "stem": "homepage-services",
+    "label": "current",
+    "route": "/",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/homepage-services.png"
+  },
+  {
+    "stem": "services-index",
+    "label": "old",
+    "route": "/solutions",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/services-index.png"
+  },
+  {
+    "stem": "services-index",
+    "label": "current",
+    "route": "/solutions",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/services-index.png"
+  },
+  {
+    "stem": "service-detail-banking",
+    "label": "old",
+    "route": "/solutions/banking-payments-infrastructure",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/service-detail-banking.png"
+  },
+  {
+    "stem": "service-detail-banking",
+    "label": "current",
+    "route": "/solutions/banking-payments-infrastructure",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/service-detail-banking.png"
+  },
+  {
+    "stem": "area-regulatory",
+    "label": "old",
+    "route": "/solutions/regulatory-strategy-licensing",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/area-regulatory.png"
+  },
+  {
+    "stem": "area-regulatory",
+    "label": "current",
+    "route": "/solutions/regulatory-structuring",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/area-regulatory.png"
+  },
+  {
+    "stem": "area-compliance",
+    "label": "old",
+    "route": "/solutions/compliance-risk-systems",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/area-compliance.png"
+  },
+  {
+    "stem": "area-compliance",
+    "label": "current",
+    "route": "/solutions/compliance-risk",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/area-compliance.png"
+  },
+  {
+    "stem": "area-legal",
+    "label": "old",
+    "route": "/solutions/legal-contractual-architecture",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/area-legal.png"
+  },
+  {
+    "stem": "area-legal",
+    "label": "current",
+    "route": "/solutions/legal-structural-architecture",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/area-legal.png"
+  },
+  {
+    "stem": "area-corporate",
+    "label": "old",
+    "route": "/solutions/corporate-cross-border",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/area-corporate.png"
+  },
+  {
+    "stem": "area-corporate",
+    "label": "current",
+    "route": "/solutions/corporate-structuring",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/area-corporate.png"
+  },
+  {
+    "stem": "area-private-clients",
+    "label": "old",
+    "route": "/private-clients",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/area-private-clients.png"
+  },
+  {
+    "stem": "area-private-clients",
+    "label": "current",
+    "route": "/private-clients",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/area-private-clients.png"
+  },
+  {
+    "stem": "area-remediation",
+    "label": "old",
+    "route": "/solutions/operational-remediation-readiness",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/area-remediation.png"
+  },
+  {
+    "stem": "area-remediation",
+    "label": "current",
+    "route": "/solutions/remediation-readiness",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/area-remediation.png"
+  },
+  {
+    "stem": "area-international-hub",
+    "label": "old",
+    "route": "/international-hub",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/area-international-hub.png"
+  },
+  {
+    "stem": "area-international-hub",
+    "label": "current",
+    "route": "/international-hub",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/area-international-hub.png"
+  },
+  {
+    "stem": "markets-index",
+    "label": "old",
+    "route": "/markets",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/markets-index.png"
+  },
+  {
+    "stem": "markets-index",
+    "label": "current",
+    "route": "/markets",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/markets-index.png"
+  },
+  {
+    "stem": "market-igaming",
+    "label": "old",
+    "route": "/markets/igaming",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/market-igaming.png"
+  },
+  {
+    "stem": "market-igaming",
+    "label": "current",
+    "route": "/markets/igaming",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/market-igaming.png"
+  },
+  {
+    "stem": "about-full-desktop",
+    "label": "old",
+    "route": "/about",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/about-full-desktop.png"
+  },
+  {
+    "stem": "about-full-desktop",
+    "label": "current",
+    "route": "/about",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/about-full-desktop.png"
+  },
+  {
+    "stem": "about-full-mobile",
+    "label": "old",
+    "route": "/about",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/about-full-mobile.png"
+  },
+  {
+    "stem": "about-full-mobile",
+    "label": "current",
+    "route": "/about",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/about-full-mobile.png"
+  },
+  {
+    "stem": "team-full-desktop",
+    "label": "old",
+    "route": "/team",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/team-full-desktop.png"
+  },
+  {
+    "stem": "team-full-desktop",
+    "label": "current",
+    "route": "/team",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/team-full-desktop.png"
+  },
+  {
+    "stem": "team-full-mobile",
+    "label": "old",
+    "route": "/team",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/team-full-mobile.png"
+  },
+  {
+    "stem": "team-full-mobile",
+    "label": "current",
+    "route": "/team",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/team-full-mobile.png"
+  },
+  {
+    "stem": "team-leadership",
+    "label": "old",
+    "route": "/team",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/team-leadership.png"
+  },
+  {
+    "stem": "team-leadership",
+    "label": "current",
+    "route": "/team",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/team-leadership.png"
+  },
+  {
+    "stem": "team-specialists",
+    "label": "old",
+    "route": "/team",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/team-specialists.png"
+  },
+  {
+    "stem": "team-specialists",
+    "label": "current",
+    "route": "/team",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/team-specialists.png"
+  },
+  {
+    "stem": "how-we-engage",
+    "label": "old",
+    "route": "/how-we-engage",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/how-we-engage.png"
+  },
+  {
+    "stem": "how-we-engage",
+    "label": "current",
+    "route": "/how-we-engage",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/how-we-engage.png"
+  },
+  {
+    "stem": "intelligence",
+    "label": "old",
+    "route": "/intelligence",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/intelligence.png"
+  },
+  {
+    "stem": "intelligence",
+    "label": "current",
+    "route": "/intelligence",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/intelligence.png"
+  },
+  {
+    "stem": "insights-index",
+    "label": "old",
+    "route": "/insights",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/insights-index.png"
+  },
+  {
+    "stem": "insights-index",
+    "label": "current",
+    "route": "/insights",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/insights-index.png"
+  },
+  {
+    "stem": "careers",
+    "label": "old",
+    "route": "/careers",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/careers.png"
+  },
+  {
+    "stem": "careers",
+    "label": "current",
+    "route": "/careers",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/careers.png"
+  },
+  {
+    "stem": "contact",
+    "label": "old",
+    "route": "/contact",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/contact.png"
+  },
+  {
+    "stem": "contact",
+    "label": "current",
+    "route": "/contact",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/contact.png"
+  },
+  {
+    "stem": "partners",
+    "label": "old",
+    "route": "/partners",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/partners.png"
+  },
+  {
+    "stem": "partners",
+    "label": "current",
+    "route": "/partners",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/partners.png"
+  },
+  {
+    "stem": "jurisdictions",
+    "label": "old",
+    "route": "/jurisdictions",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/jurisdictions.png"
+  },
+  {
+    "stem": "jurisdictions",
+    "label": "current",
+    "route": "/jurisdictions",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/jurisdictions.png"
+  },
+  {
+    "stem": "diagnostic",
+    "label": "old",
+    "route": "/diagnostic",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/diagnostic.png"
+  },
+  {
+    "stem": "diagnostic",
+    "label": "current",
+    "route": "/diagnostic",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/diagnostic.png"
+  },
+  {
+    "stem": "header-desktop",
+    "label": "old",
+    "route": "/",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/header-desktop.png"
+  },
+  {
+    "stem": "header-desktop",
+    "label": "current",
+    "route": "/",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/header-desktop.png"
+  },
+  {
+    "stem": "menu-mobile",
+    "label": "old",
+    "route": "/",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/menu-mobile.png"
+  },
+  {
+    "stem": "menu-mobile",
+    "label": "current",
+    "route": "/",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/menu-mobile.png"
+  },
+  {
+    "stem": "footer-desktop",
+    "label": "old",
+    "route": "/",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/footer-desktop.png"
+  },
+  {
+    "stem": "footer-desktop",
+    "label": "current",
+    "route": "/",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/footer-desktop.png"
+  },
+  {
+    "stem": "footer-mobile",
+    "label": "old",
+    "route": "/",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/footer-mobile.png"
+  },
+  {
+    "stem": "footer-mobile",
+    "label": "current",
+    "route": "/",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/footer-mobile.png"
+  },
+  {
+    "stem": "cta-final-home",
+    "label": "old",
+    "route": "/",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/old/cta-final-home.png"
+  },
+  {
+    "stem": "cta-final-home",
+    "label": "current",
+    "route": "/",
+    "status": 200,
+    "out": "docs/ops/evidence/seven-areas-preview-2026-08-02/screenshots/closed-model-audit/current/cta-final-home.png"
+  }
+]
