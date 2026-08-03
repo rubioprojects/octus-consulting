@@ -168,12 +168,12 @@ export default function TeamPage() {
     <main>
       <section className="octus-dark-hero surface-dark relative flex min-h-[70vh] flex-col justify-center overflow-hidden pt-28 pb-16 md:min-h-[80vh] md:pt-32 md:pb-24">
         <DarkHeroAtmosphere />
-        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="octus-hero-copy relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <span className="label">Our Team</span>
-          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
+          <h1 className="font-heading text-[1.85rem] font-bold leading-[1.18] tracking-tight text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.5rem] lg:leading-[1.08] sp-headline">
             People who understand how regulated operations hold together.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-[color:var(--text-secondary-on-dark)] sm:text-lg">
             Accountability starts with clear leadership. Octus is built around people who take
             ownership inside complex regulated environments and execute with operational clarity.
           </p>

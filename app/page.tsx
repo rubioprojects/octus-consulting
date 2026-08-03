@@ -45,35 +45,32 @@ export const metadata = pageSocialMeta({
 export default function HomePage() {
   return (
     <main>
-      {/* 1. Branded hero */}
+      {/* 1. Branded hero — composition from 9q798dbg2; evidence-safe copy retained */}
       <section className="home-hero relative flex min-h-[88vh] items-center overflow-hidden pt-28 surface-dark px-4 sm:px-6 lg:px-8 md:pt-32">
         <div className="home-hero__atmosphere" aria-hidden="true" />
         <div className="home-hero__mesh" aria-hidden="true" />
         <div
-          className="octus-dark-hero__arcs"
+          className="octus-dark-hero__structure"
           aria-hidden="true"
-          style={{ backgroundImage: `url('${BRAND.motifs.arcSecondary}')` }}
+          style={{ backgroundImage: `url('${BRAND.patterns.structure}')` }}
         />
-        <div
-          className="octus-dark-hero__mark"
-          aria-hidden="true"
-          style={{ backgroundImage: `url('${BRAND.symbol.blue}')` }}
-        />
-        <div className="octus-hero-copy relative z-10 mx-auto w-full max-w-3xl">
+        <div className="octus-hero-copy relative z-10 mx-auto w-full max-w-[56rem]">
           <Eyebrow tone="dark" className="mb-8 md:mb-10">
             Octus Consulting
           </Eyebrow>
-          <h1 className="font-heading text-[2.2rem] font-bold leading-[1.08] tracking-tight text-white text-balance sm:text-[2.75rem] md:text-[3.25rem] lg:text-[3.5rem]">
+          <h1 className="home-hero__h1 font-heading text-[1.85rem] font-semibold leading-[1.22] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-[2.4rem] md:text-5xl lg:text-[3.35rem] lg:leading-[1.16]">
             Regulated operations don&apos;t fail randomly.
-            <br />
-            <span className="text-white/85">They fail structurally.</span>
+            <br className="hidden sm:block" />{" "}
+            <span className="text-[color:var(--text-secondary-on-dark)]">
+              They fail structurally.
+            </span>
           </h1>
-          <p className="mt-7 mb-10 max-w-xl text-pretty text-base leading-[1.7] text-white/72 sm:text-lg md:mt-8 md:mb-12">
+          <p className="mt-6 max-w-[40rem] text-pretty text-base leading-[1.7] text-[color:var(--text-secondary-on-dark)] sm:mt-8 sm:text-lg md:mt-10">
             When licensing, banking, compliance or corporate structure breaks under pressure, the
             cost is real. Octus diagnoses the failure and rebuilds the sequence that makes the
             operation workable again.
           </p>
-          <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
+          <div className="mt-8 mb-8 flex flex-col gap-3 sm:mb-12 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4 md:mb-14">
             <CtaLink
               href={WHATSAPP_DISCUSS_URL}
               variant="on-dark"
@@ -85,13 +82,19 @@ export default function HomePage() {
             <CtaLink href="/solutions" variant="on-dark-secondary">
               Explore services
             </CtaLink>
+            <span className="hidden sm:inline-flex">
+              <CtaLink href="/how-we-engage" variant="on-dark-secondary">
+                See how we work →
+              </CtaLink>
+            </span>
           </div>
-          <p className="mt-6">
+          <p className="mt-5 hidden font-sans text-sm text-[color:var(--text-muted-on-dark)] sm:block">
+            Prefer a structured assessment?{" "}
             <Link
-              href="/how-we-engage"
-              className="font-sans text-sm text-white/55 no-underline underline-offset-4 transition-colors hover:text-white/85 hover:underline"
+              href={ASSESS_PATH}
+              className="text-[color:var(--text-secondary-on-dark)] underline-offset-4 transition-colors hover:text-white hover:underline"
             >
-              See how we work
+              {CTA_ASSESS_LABEL} →
             </Link>
           </p>
         </div>

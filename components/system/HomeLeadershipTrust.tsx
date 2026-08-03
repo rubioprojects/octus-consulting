@@ -2,7 +2,7 @@ import Link from "next/link";
 
 /**
  * Homepage leadership accountability. Rubio + Maria Cristina (Cris).
- * Photo treatment matches commit 8b12fcc / reference deployment exactly.
+ * Composition matched to definitive deployment 9q798dbg2; titles are current facts.
  */
 export default function HomeLeadershipTrust() {
   const leaders = [
@@ -22,20 +22,19 @@ export default function HomeLeadershipTrust() {
 
   return (
     <section
-      className="home-leadership-trust border-b border-border bg-background py-14 md:py-20"
+      className="home-leadership-trust bg-background py-20 md:py-24"
       aria-labelledby="home-leadership-heading"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mb-10 max-w-xl md:mb-12">
-          <p className="section-label mb-3 block">Leadership</p>
-          <h2
-            id="home-leadership-heading"
-            className="heading-section mb-4 text-balance"
-          >
-            Direct ownership of the mandate.
-          </h2>
-          <p className="body-large text-pretty text-muted-foreground">
-            Rubio and Cris lead the work that has to hold under regulatory and operational pressure.
+        <div className="mb-12 grid gap-10 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.4fr)] md:items-end md:gap-16">
+          <div>
+            <p className="section-label mb-4 block">Accountability</p>
+            <h2 id="home-leadership-heading" className="heading-section max-w-md">
+              Leadership who own the structure.
+            </h2>
+          </div>
+          <p className="body-large max-w-xl">
+            Trust starts with clear accountability — not a directory of faces.
           </p>
         </div>
         <div className="home-leadership-trust__grid">
@@ -63,6 +62,14 @@ export default function HomeLeadershipTrust() {
               </p>
             </Link>
           ))}
+        </div>
+        <div className="mt-10">
+          <Link
+            href="/team"
+            className="font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
+          >
+            Meet the team →
+          </Link>
         </div>
       </div>
     </section>
