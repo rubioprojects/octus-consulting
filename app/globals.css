@@ -1119,13 +1119,12 @@ body {
 }
 @media (max-width: 768px) {
   .wa-float {
-    bottom: 88px; /* clear essential-cookie bar when visible */
+    bottom: 24px;
     right: 16px;
     padding: 14px;
   }
   .wa-float__label { display: none; }
 }
-/* When cookie banner dismissed, mobile float can sit lower via body attribute if needed later */
 
 /* ─── CONTACT GRID ─── */
 .contact-grid {
@@ -1863,26 +1862,28 @@ p.text-pretty {
   margin-top: 0.25rem;
 }
 
+/* Phase 2: match baseline 9q798dbg2 WhatsApp geometry (24×24 resting; no cookie lift). */
 .wa-float {
   z-index: 110 !important;
-  bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px)) !important;
-  right: calc(1.25rem + env(safe-area-inset-right, 0px)) !important;
+  bottom: calc(24px + env(safe-area-inset-bottom, 0px)) !important;
+  right: calc(24px + env(safe-area-inset-right, 0px)) !important;
   min-height: 48px;
   min-width: 48px;
   box-shadow: 0 8px 28px rgba(11, 18, 32, 0.28);
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 body.cookie-banner-visible .wa-float {
-  bottom: calc(5.75rem + env(safe-area-inset-bottom, 0px)) !important;
+  /* Baseline does not lift the float while the essential cookie bar is visible. */
+  bottom: calc(24px + env(safe-area-inset-bottom, 0px)) !important;
 }
 @media (max-width: 768px) {
   .wa-float {
-    bottom: calc(1rem + env(safe-area-inset-bottom, 0px)) !important;
-    right: calc(1rem + env(safe-area-inset-right, 0px)) !important;
+    bottom: calc(24px + env(safe-area-inset-bottom, 0px)) !important;
+    right: calc(16px + env(safe-area-inset-right, 0px)) !important;
     padding: 14px !important;
   }
   body.cookie-banner-visible .wa-float {
-    bottom: calc(6.5rem + env(safe-area-inset-bottom, 0px)) !important;
+    bottom: calc(24px + env(safe-area-inset-bottom, 0px)) !important;
   }
   .wa-float__label { display: none; }
 }
