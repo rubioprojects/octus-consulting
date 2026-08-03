@@ -6,7 +6,7 @@
   "starting_head": "8a9622b7f0d5054b89c3551dc03ea1722089b3eb",
   "reconciled_code_snapshot": "840e9ee935c4775477cce0eea08871ffdc5dd41d",
   "hygiene_fix_commit": "ffa5c8899b00278b952d329d9d6d129385dc2dc2",
-  "evidence_final_head": "daa4d0b3f377c0cc6b1fde78745d77026c968a79",
+  "evidence_final_head": "ddbc8e1028d569fbaab71454295327e77cba1a06",
   "preview_deployment_sha": "PENDING_VERCEL_AFTER_PUSH",
   "count": 305,
   "counts_by_classification": {
@@ -4309,5 +4309,5 @@
       "notes": "WhatsApp float over light surface"
     }
   ],
-  "evidence_normalization_commit": "daa4d0b3f377c0cc6b1fde78745d77026c968a79"
+  "evidence_normalization_commit": "35107ece46ea5cba5a2307d2d68af2f5340eb5b8"
 }

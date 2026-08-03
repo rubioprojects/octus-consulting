@@ -18,8 +18,8 @@ PR #17 (seven areas, evidence-safe editorial content)
 | Starting HEAD | `8a9622b7f0d5054b89c3551dc03ea1722089b3eb` |
 | Reconciled code snapshot | `840e9ee935c4775477cce0eea08871ffdc5dd41d` |
 | Hygiene / audit-closeout commit | `ffa5c8899b00278b952d329d9d6d129385dc2dc2` |
-| Evidence-normalization commit | `daa4d0b3f377c0cc6b1fde78745d77026c968a79` |
-| Final evidence HEAD | `daa4d0b3f377c0cc6b1fde78745d77026c968a79` |
+| Evidence-normalization commit | `35107ece46ea5cba5a2307d2d68af2f5340eb5b8` |
+| Final evidence HEAD | `ddbc8e1028d569fbaab71454295327e77cba1a06` |
 | Preview deployment SHA | *(Vercel deployment for final evidence HEAD)* |
 
 ### Capture rule
