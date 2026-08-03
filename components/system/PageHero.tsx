@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import Eyebrow from "./Eyebrow";
 import { CtaLink } from "./CtaButton";
+import DarkHeroAtmosphere from "./DarkHeroAtmosphere";
 
 type Cta = {
   href: string;
@@ -28,13 +29,15 @@ export default function PageHero({
 }) {
   return (
     <section
-      className={`surface-dark relative flex flex-col justify-center pt-24 pb-16 ${
-        compact ? "min-h-[52vh] md:min-h-[58vh]" : "min-h-[70vh] md:min-h-[80vh] md:pt-28 md:pb-24"
+      className={`octus-dark-hero surface-dark relative flex flex-col justify-center overflow-hidden pt-28 pb-16 ${
+        compact ? "min-h-[52vh] md:min-h-[58vh]" : "min-h-[70vh] md:min-h-[80vh] md:pt-32 md:pb-24"
       }`}
     >
-      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <DarkHeroAtmosphere />
+      <div className="octus-dark-hero__seam" aria-hidden="true" />
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <Eyebrow tone="dark">{eyebrow}</Eyebrow>
-        <h1 className="page-hero-title font-heading max-w-4xl text-4xl font-bold leading-[1.08] tracking-tight text-white text-balance md:text-5xl lg:text-[3.5rem]">
+        <h1 className="page-hero-title font-heading max-w-4xl text-[2.2rem] font-bold leading-[1.08] tracking-tight text-white text-balance sm:text-4xl md:text-5xl lg:text-[3.35rem]">
           {title}
           {titleSecondLine != null && (
             <>
@@ -44,7 +47,7 @@ export default function PageHero({
           )}
         </h1>
         {description != null && (
-          <div className="mt-6 max-w-2xl text-pretty text-base leading-[1.7] text-white/75 sm:text-lg">
+          <div className="mt-6 max-w-2xl text-pretty text-base leading-[1.7] text-white/72 sm:text-lg">
             {description}
           </div>
         )}

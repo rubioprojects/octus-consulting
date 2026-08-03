@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import Nav from "../components/Nav";
 import CookieBanner from "../components/CookieBanner";
+import BrandLockup from "../components/BrandLockup";
 import { CTA_DISCUSS_LABEL, MAILTO_INFO, WHATSAPP_DISCUSS_URL } from "../lib/cta";
 import "./globals.css";
 
@@ -78,24 +79,35 @@ export default function RootLayout({
         </a>
 
         <CookieBanner />
-        <footer className="surface-dark py-16 md:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:gap-8 lg:grid-cols-3 xl:grid-cols-6">
-              <div className="flex flex-col gap-3 xl:col-span-1">
-                <a href="/" className="inline-flex items-center no-underline" aria-label="Octus Consulting">
-                  <img
-                    src="/logo-nav.png"
-                    alt="Octus Consulting"
-                    width={200}
-                    height={40}
-                    decoding="async"
-                    className="h-8 w-auto"
-                  />
+        <footer className="site-footer surface-dark py-16 md:py-20">
+          <div className="site-footer__mark" aria-hidden="true" />
+          <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="site-footer__brand-close">
+              <a href="/" className="inline-flex items-center no-underline" aria-label="Octus Consulting">
+                <BrandLockup variant="on-dark" className="h-10 w-auto md:h-11" />
+              </a>
+              <p className="site-footer__brand-close__wordmark" aria-hidden="true">
+                OCTUS CONSULTING
+              </p>
+              <p className="site-footer__brand-close__line">
+                Premium international execution partner for highly regulated operations.
+              </p>
+              <div className="mt-6 flex flex-wrap items-center gap-4">
+                <a
+                  href={WHATSAPP_DISCUSS_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex h-10 items-center rounded-sm bg-primary px-5 font-sans text-[13px] font-medium text-primary-foreground no-underline transition-colors hover:bg-primary/90"
+                >
+                  {CTA_DISCUSS_LABEL}
                 </a>
-                <p className="max-w-xs text-sm font-normal leading-relaxed text-white/70">
-                  Premium international execution partner for highly regulated operations.
-                </p>
-                <div className="mt-2 flex gap-3">
+                <a
+                  href={MAILTO_INFO}
+                  className="inline-flex h-10 items-center rounded-sm border border-white/20 px-5 font-sans text-[13px] font-medium text-white/80 no-underline transition-colors hover:border-white/40 hover:text-white"
+                >
+                  Email Octus
+                </a>
+                <div className="flex gap-3">
                   <a
                     href="https://www.linkedin.com/company/octusconsulting/"
                     target="_blank"
@@ -120,11 +132,11 @@ export default function RootLayout({
                   </a>
                 </div>
               </div>
+            </div>
 
+            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:gap-8 lg:grid-cols-3 xl:grid-cols-5">
               <div>
-                <p className="mb-5 font-sans text-xs font-medium uppercase tracking-[0.15em] text-white/75">
-                  Services
-                </p>
+                <p className="site-footer__nav-label">Services</p>
                 <ul className="flex list-none flex-col gap-2.5">
                   {[
                     { label: "Regulatory Structuring", href: "/solutions/regulatory-structuring" },
@@ -138,7 +150,7 @@ export default function RootLayout({
                     <li key={l.href}>
                       <a
                         href={l.href}
-                        className="font-sans text-sm text-white/65 no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                        className="site-footer__nav-link font-sans no-underline transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                       >
                         {l.label}
                       </a>
@@ -148,7 +160,7 @@ export default function RootLayout({
               </div>
 
               <div>
-                <p className="mb-5 font-sans text-xs font-medium uppercase tracking-[0.15em] text-white/75">
+                <p className="site-footer__nav-label">
                   Industries
                 </p>
                 <ul className="flex list-none flex-col gap-2.5">
@@ -161,7 +173,7 @@ export default function RootLayout({
                     <li key={l.href}>
                       <a
                         href={l.href}
-                        className="font-sans text-sm text-white/65 no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                        className="site-footer__nav-link font-sans no-underline transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                       >
                         {l.label}
                       </a>
@@ -171,7 +183,7 @@ export default function RootLayout({
               </div>
 
               <div>
-                <p className="mb-5 font-sans text-xs font-medium uppercase tracking-[0.15em] text-white/75">
+                <p className="site-footer__nav-label">
                   Engage
                 </p>
                 <ul className="flex list-none flex-col gap-2.5">
@@ -185,7 +197,7 @@ export default function RootLayout({
                     <li key={l.href}>
                       <a
                         href={l.href}
-                        className="font-sans text-sm text-white/65 no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                        className="site-footer__nav-link font-sans no-underline transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                       >
                         {l.label}
                       </a>
@@ -195,7 +207,7 @@ export default function RootLayout({
               </div>
 
               <div>
-                <p className="mb-5 font-sans text-xs font-medium uppercase tracking-[0.15em] text-white/75">
+                <p className="site-footer__nav-label">
                   Company
                 </p>
                 <ul className="flex list-none flex-col gap-2.5">
@@ -209,7 +221,7 @@ export default function RootLayout({
                     <li key={l.href}>
                       <a
                         href={l.href}
-                        className="font-sans text-sm text-white/65 no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                        className="site-footer__nav-link font-sans no-underline transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                       >
                         {l.label}
                       </a>
@@ -219,7 +231,7 @@ export default function RootLayout({
               </div>
 
               <div>
-                <p className="mb-5 font-sans text-xs font-medium uppercase tracking-[0.15em] text-white/75">Legal</p>
+                <p className="site-footer__nav-label">Legal</p>
                 <ul className="flex list-none flex-col gap-2.5">
                   {[
                     { label: "Privacy Policy", href: "/privacy" },
@@ -230,7 +242,7 @@ export default function RootLayout({
                     <li key={l.href}>
                       <a
                         href={l.href}
-                        className="font-sans text-sm text-white/65 no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                        className="site-footer__nav-link font-sans no-underline transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                       >
                         {l.label}
                       </a>
@@ -240,7 +252,7 @@ export default function RootLayout({
               </div>
             </div>
 
-            <div className="mt-16 border-t border-white/10 pt-8">
+            <div className="site-footer__bar mt-16 border-t border-white/10 pt-8">
               <div className="font-sans">
                 <p className="text-xs text-white/55">© 2026 Octus Consulting. All rights reserved.</p>
                 <p className="mt-1 text-xs text-white/55">

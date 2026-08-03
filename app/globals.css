@@ -1651,71 +1651,10 @@ footer .heading-lg,
   }
 }
 
-/* ── Rubio video refinement: leadership, typography, cookie/WA ── */
+/* ── Rubio video refinement: typography, cookie/WA (leadership cards finalised below) ── */
 
-.home-leadership-trust__grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2.5rem;
-}
-@media (min-width: 768px) {
-  .home-leadership-trust__grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 3rem 4rem;
-  }
-}
-.home-leadership-trust__card {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1.25rem 1.5rem;
-  align-items: start;
-  color: inherit;
-  text-align: left;
-}
-@media (max-width: 479px) {
-  .home-leadership-trust__card {
-    grid-template-columns: 1fr;
-  }
-}
-.home-leadership-trust__photo-wrap {
-  width: 140px;
-  height: 176px;
-  border-radius: 2px;
-  overflow: hidden;
-  flex-shrink: 0;
-  background: hsl(220 18% 93%);
-  box-shadow: 0 0 0 1px hsl(var(--border));
-}
-@media (min-width: 768px) {
-  .home-leadership-trust__photo-wrap {
-    width: 180px;
-    height: 228px;
-  }
-}
-.home-leadership-trust__photo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 40%;
-  filter: grayscale(1) contrast(1.08) brightness(0.98);
-}
 .team-photo--rubio .home-leadership-trust__photo { object-position: 49% 18%; }
 .team-photo--maria .home-leadership-trust__photo { object-position: 50% 40%; }
-.home-leadership-trust__name {
-  font-family: var(--font-unigeo), "Unigeo64", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: hsl(var(--foreground));
-  text-wrap: balance;
-}
-.home-leadership-trust__role {
-  margin-top: 0.35rem;
-  font-size: 0.6875rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: hsl(var(--brand-blue, 221 100% 50%));
-}
 .home-leadership-trust__line {
   margin-top: 0.75rem;
   font-size: 0.9375rem;
@@ -1796,4 +1735,594 @@ body.cookie-banner-visible .wa-float {
   min-height: 40px;
   min-width: 6.5rem;
   flex-shrink: 0;
+}
+
+/* === OCTUS VISUAL REBASE SUPPLEMENT (8b12fcc, brace-safe) === */
+
+.editorial-numeral {
+  font-family: var(--font-unigeo), "Unigeo64", sans-serif;
+  font-weight: 700;
+  font-size: clamp(2.75rem, 5vw, 4rem);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: hsl(var(--brand-navy));
+}
+.editorial-numeral--sm {
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+}
+.editorial-numeral--on-dark {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+
+/* from 8b12fcc 1514-1673 */
+.home-hero,
+.octus-dark-hero {
+  background-color: #070b14;
+}
+.home-hero__atmosphere,
+.octus-dark-hero__atmosphere {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  /* Hero B — architectural depth, fewer competing radials */
+  background:
+    radial-gradient(ellipse 58% 52% at 78% 28%, rgba(0, 101, 255, 0.2) 0%, transparent 58%),
+    radial-gradient(ellipse 42% 40% at 12% 88%, rgba(0, 82, 196, 0.22) 0%, transparent 52%),
+    linear-gradient(172deg, #05080f 0%, #0b1220 42%, #0e1624 100%);
+}
+.home-hero__mesh,
+.octus-dark-hero__mesh {
+  position: absolute;
+  inset: -8%;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.72;
+  background-image:
+    repeating-linear-gradient(
+      -32deg,
+      transparent 0,
+      transparent 14px,
+      rgba(66, 161, 255, 0.038) 14px,
+      rgba(66, 161, 255, 0.038) 15px
+    ),
+    repeating-linear-gradient(
+      58deg,
+      transparent 0,
+      transparent 28px,
+      rgba(11, 18, 32, 0.15) 28px,
+      rgba(11, 18, 32, 0.15) 29px
+    );
+  mask-image: radial-gradient(ellipse 82% 72% at 55% 38%, #000 12%, transparent 78%);
+  animation: octus-mesh-drift 56s linear infinite;
+}
+.octus-dark-hero__arcs {
+  position: absolute;
+  right: -6%;
+  top: -8%;
+  width: min(64vw, 640px);
+  height: min(64vw, 640px);
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.42;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  mask-image: linear-gradient(125deg, transparent 8%, #000 48%, transparent 88%);
+  animation: octus-arc-breathe 28s ease-in-out infinite;
+  transform-origin: 62% 48%;
+}
+.octus-dark-hero__mark {
+  position: absolute;
+  right: 7%;
+  bottom: 14%;
+  width: min(14vw, 112px);
+  height: min(14vw, 112px);
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.055;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  animation: octus-mark-fade 22s ease-in-out infinite;
+}
+.site-header--on-dark .site-header__brand-rule {
+  background: linear-gradient(90deg, transparent 0%, rgba(0, 101, 255, 0.55) 18%, rgba(0, 101, 255, 0.55) 82%, transparent 100%);
+}
+
+/* Light-section restrained arcs (Solutions / Markets / Jurisdictions / Intelligence) */
+.octus-section-motif {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.octus-section-motif__arcs {
+  position: absolute;
+  right: -12%;
+  top: 8%;
+  width: min(55vw, 520px);
+  height: min(55vw, 520px);
+  opacity: 0.42;
+  background-image: url("/brand/motifs/octus-arc-primary.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  mask-image: linear-gradient(135deg, transparent 15%, #000 50%, transparent 88%);
+  animation: octus-arc-breathe 28s ease-in-out infinite;
+  transform-origin: center;
+}
+.octus-section-motif__mark {
+  position: absolute;
+  left: 4%;
+  bottom: 10%;
+  width: min(12vw, 88px);
+  height: min(12vw, 88px);
+  opacity: 0.04;
+  background-image: url("/brand/symbol/octus-symbol-blue.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.octus-section-motif--start .octus-section-motif__arcs {
+  right: auto;
+  left: -14%;
+  top: auto;
+  bottom: -8%;
+}
+.octus-section-motif--center .octus-section-motif__arcs {
+  right: 18%;
+  top: 20%;
+  opacity: 0.28;
+}
+.octus-section-motif--navy .octus-section-motif__arcs {
+  background-image: url("/brand/motifs/octus-arc-secondary.svg");
+  opacity: 0.5;
+}
+.octus-section-motif--navy .octus-section-motif__mark {
+  background-image: url("/brand/symbol/octus-symbol-white.svg");
+  opacity: 0.06;
+}
+.octus-section-relative {
+  position: relative;
+  isolation: isolate;
+}
+.octus-section-relative > *:not(.octus-section-motif) {
+  position: relative;
+  z-index: 1;
+}
+.octus-dark-hero__seam {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 48px;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, rgba(248, 250, 252, 0.06));
+}
+
+/* Institutional motion keyframes */
+@keyframes octus-mesh-drift {
+  0% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(-1.2%, 1%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes octus-arc-breathe {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.035) rotate(1.2deg); }
+}
+@keyframes octus-mark-fade {
+  0%, 100% { opacity: 0.055; }
+  50% { opacity: 0.09; }
+}
+
+/* from 8b12fcc 1674-1695 */
+@keyframes octus-hero-enter {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.octus-hero-copy {
+  animation: octus-hero-enter 0.95s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.octus-reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.octus-reveal--in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Six-solution identity mark */
+
+/* from 8b12fcc 1863-1948 */
+.site-footer {
+  position: relative;
+  overflow: hidden;
+}
+.site-footer__brand-close {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 3.25rem;
+  margin-bottom: 2.75rem;
+}
+.site-footer__brand-close__wordmark {
+  font-family: var(--font-unigeo), "Unigeo64", sans-serif;
+  font-size: clamp(1.5rem, 2.6vw, 1.875rem);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #fff;
+  margin-top: 1.35rem;
+  line-height: 1.1;
+}
+.site-footer__brand-close__line {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.86);
+  max-width: 30rem;
+  margin-top: 0.85rem;
+}
+.site-footer__nav-label {
+  font-family: var(--font-inter), Inter, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.72);
+  margin-bottom: 1.25rem;
+}
+.site-footer__nav-link {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+.site-footer__nav-link:hover {
+  color: #fff !important;
+}
+.site-footer__mark {
+  position: absolute;
+  right: -4%;
+  bottom: 6%;
+  width: min(28vw, 220px);
+  height: min(28vw, 220px);
+  opacity: 0.055;
+  background-image: url("/brand/symbol/octus-symbol-white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+.site-footer__legal {
+  opacity: 0.62;
+}
+.site-footer__legal .site-footer__nav-label {
+  color: rgba(255, 255, 255, 0.36);
+  font-weight: 500;
+}
+.site-footer__legal a {
+  color: rgba(255, 255, 255, 0.32) !important;
+  font-size: 0.75rem !important;
+}
+.site-footer__legal a:hover {
+  color: rgba(255, 255, 255, 0.58) !important;
+}
+.site-footer__bar {
+  opacity: 0.85;
+}
+.site-footer__bar p,
+.site-footer__bar a {
+  color: rgba(255, 255, 255, 0.34) !important;
+  font-size: 0.6875rem !important;
+}
+
+.team-band-label {
+  font-family: var(--font-inter), Inter, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: hsl(var(--brand-red));
+  margin-bottom: 1.5rem;
+}
+
+/* from 8b12fcc 2112-2186 */
+.octus-symbol-marker {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+.octus-symbol-marker img {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+.octus-editorial-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 28rem;
+  margin: 0 auto 2rem;
+}
+.octus-editorial-divider__line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 101, 255, 0.45) 40%,
+    rgba(0, 101, 255, 0.45) 60%,
+    transparent 100%
+  );
+}
+.octus-editorial-divider--dark .octus-editorial-divider__line {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.28) 40%,
+    rgba(255, 255, 255, 0.28) 60%,
+    transparent 100%
+  );
+}
+.octus-editorial-divider__mark {
+  flex-shrink: 0;
+  opacity: 0.85;
+}
+
+.octus-chapter-transition {
+  position: relative;
+  height: 3.5rem;
+  overflow: hidden;
+  pointer-events: none;
+}
+.octus-chapter-transition__mark {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 48px;
+  height: 36px;
+  transform: translate(-50%, -50%);
+  opacity: 0.07;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.octus-chapter-transition__rule {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 50%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 101, 255, 0.22) 30%,
+    rgba(0, 101, 255, 0.22) 70%,
+    transparent
+  );
+}
+
+/* Leadership cards: editorial portrait crop (not circular avatars, not generic horizontal profiles). */
+.home-leadership-trust__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.5rem 3.5rem;
+  max-width: 42rem;
+}
+@media (max-width: 640px) {
+  .home-leadership-trust__grid {
+    grid-template-columns: 1fr;
+    max-width: 16rem;
+  }
+}
+.home-leadership-trust__card {
+  display: block;
+  color: inherit;
+  text-align: left;
+}
+.home-leadership-trust__photo-wrap {
+  width: 168px;
+  height: 212px;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 1.1rem;
+  background: hsl(220 18% 93%);
+  box-shadow: 0 0 0 1px hsl(var(--border));
+}
+@media (min-width: 768px) {
+  .home-leadership-trust__photo-wrap {
+    width: 196px;
+    height: 248px;
+  }
+}
+.home-leadership-trust__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+  filter: grayscale(1) contrast(1.08) brightness(0.98);
+}
+.home-leadership-trust__name {
+  font-family: var(--font-unigeo), "Unigeo64", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: hsl(var(--brand-navy));
+}
+.home-leadership-trust__role {
+  margin-top: 0.3rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: hsl(var(--brand-blue));
+}
+
+/* Markets — symbol separator strip (editorial, light) */
+.markets-symbol-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.75rem 1.25rem;
+  margin-bottom: 2rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: hsl(var(--brand-navy));
+}
+
+/* from 8b12fcc 2416-2530 */
+.site-header__brand-rule {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, rgba(0, 101, 255, 0.5) 18%, rgba(0, 101, 255, 0.5) 82%, transparent 100%);
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+.site-header__logo {
+  max-height: 2.75rem; /* ~44px optical balance — not endless growth */
+  width: auto;
+}
+.site-header__brand {
+  margin-right: 0.25rem;
+}
+@media (min-width: 768px) {
+  .site-header__logo {
+    max-height: 2.75rem;
+  }
+}
+
+/* Capability rail — Octus identity signature (navy stays) */
+.capability-rail {
+  position: relative;
+  overflow: hidden;
+  height: 3.75rem;
+}
+@media (min-width: 768px) {
+  .capability-rail {
+    height: 4.25rem;
+  }
+}
+.capability-rail__viewport {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.capability-rail__track,
+.capability-rail__static {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  height: 100%;
+  width: max-content;
+  padding-inline: 1.75rem;
+  font-family: var(--font-inter), Inter, system-ui, sans-serif;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.78);
+}
+@media (min-width: 640px) {
+  .capability-rail__track,
+  .capability-rail__static {
+    gap: 2rem;
+    padding-inline: 2.75rem;
+    font-size: 12.5px;
+  }
+}
+.capability-rail__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  white-space: nowrap;
+  user-select: none;
+  pointer-events: none;
+}
+.capability-rail__track {
+  animation: octus-capability-marquee 56s linear infinite;
+}
+.capability-rail__static {
+  display: none;
+  position: absolute;
+  inset: 0;
+  margin-inline: auto;
+  width: max-content;
+  max-width: 100%;
+  justify-content: center;
+}
+.capability-rail__fade {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3.5rem;
+  z-index: 2;
+  pointer-events: none;
+}
+.capability-rail__fade--left {
+  left: 0;
+  background: linear-gradient(90deg, #0b1220 0%, transparent 100%);
+}
+.capability-rail__fade--right {
+  right: 0;
+  background: linear-gradient(270deg, #0b1220 0%, transparent 100%);
+}
+@keyframes octus-capability-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .capability-rail__track {
+    display: none;
+  }
+  .capability-rail__static {
+    display: flex;
+  }
+  .capability-rail__fade {
+    display: none;
+  }
+}
+
+
+/* from 8b12fcc 2771-2802 */
+.brand-lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  height: 100%;
+  max-height: inherit;
+}
+.brand-lockup__symbol {
+  display: block;
+  height: 100%;
+  width: auto;
+  max-height: 2.75rem;
+}
+.brand-lockup__wordmark {
+  font-family: var(--font-unigeo), "Unigeo64", sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.brand-lockup__wordmark--on-light {
+  color: #0b1220;
+}
+.brand-lockup__wordmark--on-dark {
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .brand-lockup__wordmark {
+    font-size: 1.15rem;
+  }
 }

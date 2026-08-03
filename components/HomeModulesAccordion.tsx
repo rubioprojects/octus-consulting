@@ -18,15 +18,20 @@ export default function HomeModulesAccordion({ modules }: { modules: HomeModuleR
       {modules.map((module, index) => {
         const open = index === openIndex;
         return (
-          <div key={module.num} className="border-t border-border last:border-b">
+          <div
+            key={module.num}
+            className={`border-t border-border last:border-b ${open ? "bg-secondary/20" : ""}`}
+          >
             <button
               type="button"
-              className="group flex w-full items-center gap-6 py-6 text-left transition-all duration-300 hover:pl-2"
+              className="group flex w-full items-center gap-5 py-7 text-left transition-all duration-300 hover:pl-1 md:gap-8"
               onClick={() => setOpenIndex(index)}
               aria-expanded={open}
             >
-              <span className="font-sans text-sm font-medium text-accent">{module.num}</span>
-              <span className="flex-1 font-sans text-lg font-semibold text-primary transition-colors group-hover:text-primary/80">
+              <span className="editorial-numeral editorial-numeral--sm w-10 shrink-0 text-accent">
+                {module.num}
+              </span>
+              <span className="flex-1 font-heading text-xl font-semibold tracking-tight text-primary transition-colors group-hover:text-primary/85 md:text-2xl">
                 {module.title}
               </span>
               <svg
@@ -42,14 +47,14 @@ export default function HomeModulesAccordion({ modules }: { modules: HomeModuleR
               </svg>
             </button>
             {open && (
-              <div className="pb-6 pl-12 md:pl-16">
+              <div className="pb-8 pl-[3.75rem] pr-2 md:pl-[4.5rem]">
                 {module.featured.length > 0 && (
-                  <div className="mb-4 flex flex-wrap gap-2">
+                  <div className="mb-5 flex flex-wrap gap-2">
                     {module.featured.map((f) => (
                       <Link
-                        key={f.href}
+                        key={`${f.href}-${f.label}`}
                         href={f.href}
-                        className="rounded-full border border-border px-3 py-1 font-sans text-xs text-muted-foreground no-underline transition-colors hover:border-primary hover:text-primary"
+                        className="rounded-sm border border-border bg-background px-3 py-1.5 font-sans text-xs text-muted-foreground no-underline transition-colors hover:border-primary hover:text-primary"
                       >
                         {f.label}
                       </Link>
@@ -60,7 +65,7 @@ export default function HomeModulesAccordion({ modules }: { modules: HomeModuleR
                   href={module.href}
                   className="font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
                 >
-                  {module.title} →
+                  Open {module.title} →
                 </Link>
               </div>
             )}

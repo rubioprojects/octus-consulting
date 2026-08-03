@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useId, useRef, useState } from "react";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../lib/cta";
 import { PUBLIC_AREAS } from "../lib/publicAreas";
+import BrandLockup from "./BrandLockup";
 
 const primaryLinks = [
   { label: "Industries", href: "/markets" },
@@ -19,24 +20,15 @@ const supportingLinks = [
   { label: "How we engage", href: "/how-we-engage" },
 ];
 
-const linkClass =
-  "font-sans text-[13px] tracking-wide text-muted-foreground no-underline transition-colors hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary md:text-sm";
-
-const ctaClass =
-  "inline-flex items-center rounded-sm bg-primary px-5 py-2.5 font-sans text-[13px] font-medium tracking-[0.04em] text-primary-foreground no-underline transition-colors hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary md:px-6 md:text-sm";
-
 export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [overDarkHero, setOverDarkHero] = useState(false);
   const menuId = useId();
   const servicesRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (mobileOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
+    document.body.style.overflow = mobileOpen ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
     };
@@ -64,30 +56,60 @@ export default function Nav() {
     return () => document.removeEventListener("mousedown", onPointer);
   }, [servicesOpen]);
 
+  useEffect(() => {
+    const update = () => {
+      const hero = document.querySelector<HTMLElement>(".home-hero, .octus-dark-hero");
+      if (!hero) {
+        setOverDarkHero(false);
+        return;
+      }
+      const headerH = 84;
+      setOverDarkHero(hero.getBoundingClientRect().bottom > headerH);
+    };
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    return () => {
+      window.removeEventListener("scroll", update);
+      window.removeEventListener("resize", update);
+    };
+  }, []);
+
+  const linkClass = overDarkHero
+    ? "font-sans text-[12px] tracking-[0.02em] text-white/70 no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white md:text-[12.5px]"
+    : "font-sans text-[12px] tracking-[0.02em] text-foreground/65 no-underline transition-colors hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary md:text-[12.5px]";
+
+  const ctaClass =
+    "inline-flex items-center rounded-sm bg-primary px-4 py-2 font-sans text-[12px] font-medium tracking-[0.03em] text-primary-foreground no-underline transition-colors hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary md:px-5 md:text-[12.5px]";
+
   return (
     <>
       <nav
-        className="fixed left-0 right-0 top-0 z-50 flex h-16 items-center border-b border-border/60 bg-background/95 backdrop-blur-md md:h-[4.5rem]"
+        className={
+          overDarkHero
+            ? "site-header site-header--on-dark fixed left-0 right-0 top-0 z-50 flex h-[4.75rem] items-center border-b border-white/10 bg-[#0B1220] md:h-[5.25rem]"
+            : "site-header fixed left-0 right-0 top-0 z-50 flex h-[4.75rem] items-center border-b border-border/50 bg-background md:h-[5.25rem]"
+        }
         aria-label="Main"
+        data-over-dark-hero={overDarkHero ? "true" : "false"}
       >
-        <div className="mx-auto flex h-full w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        <div className="site-header__brand-rule" aria-hidden="true" />
+        <div className="relative z-10 mx-auto flex h-full w-full max-w-7xl items-center justify-between gap-8 px-4 sm:px-6 lg:px-8">
           <Link
             href="/"
-            className="flex shrink-0 items-center no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+            className={`site-header__brand flex shrink-0 items-center no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 ${
+              overDarkHero ? "focus-visible:outline-white" : "focus-visible:outline-primary"
+            }`}
             aria-label="Octus Consulting home"
           >
-            <img
-              src="/logo-nav-light.png"
-              alt=""
-              width={180}
-              height={44}
-              decoding="async"
-              className="h-7 w-auto translate-y-px md:h-8"
-              style={{ imageRendering: "auto" }}
+            <BrandLockup
+              variant={overDarkHero ? "on-dark" : "on-light"}
+              className="site-header__logo h-10 w-auto md:h-11"
+              priority
             />
           </Link>
 
-          <div className="hidden items-center gap-7 lg:gap-9 md:flex">
+          <div className="hidden items-center gap-5 lg:gap-6 md:flex">
             <div className="relative" ref={servicesRef}>
               <button
                 type="button"
@@ -144,7 +166,7 @@ export default function Nav() {
               href={WHATSAPP_DISCUSS_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className={ctaClass}
+              className={`${ctaClass} min-h-11`}
             >
               {CTA_DISCUSS_LABEL}
             </a>
@@ -152,7 +174,11 @@ export default function Nav() {
 
           <button
             type="button"
-            className="flex rounded-md border-0 bg-transparent p-2 text-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary md:hidden"
+            className={`flex rounded-md border-0 bg-transparent p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 md:hidden ${
+              overDarkHero
+                ? "text-white focus-visible:outline-white"
+                : "text-foreground focus-visible:outline-primary"
+            }`}
             onClick={() => setMobileOpen((p) => !p)}
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileOpen}
@@ -174,7 +200,7 @@ export default function Nav() {
       {mobileOpen && (
         <div
           id="mobile-nav"
-          className="fixed inset-0 z-40 bg-background pt-20 md:hidden"
+          className="fixed inset-0 z-40 bg-background pt-24 md:hidden"
           role="dialog"
           aria-modal="true"
           aria-label="Mobile navigation"
