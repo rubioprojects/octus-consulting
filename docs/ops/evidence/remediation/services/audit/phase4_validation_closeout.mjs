@@ -928,7 +928,9 @@ async function enumerateTabOrder(page) {
       if (!el) return false;
       if (typeof el.checkVisibility === "function") {
         try {
-          return el.checkVisibility({ checkOpacity: true, checkVisibilityCSS: true });
+          // Do not use checkOpacity: below-fold cards can fail opacity/content-visibility
+          // probes while remaining keyboard-focusable.
+          return el.checkVisibility({ checkOpacity: false, checkVisibilityCSS: true });
         } catch {
           /* fall through */
         }
