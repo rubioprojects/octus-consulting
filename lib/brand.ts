@@ -27,6 +27,9 @@ export const BRAND = {
     arcPrimary: "/brand/motifs/octus-arc-primary.svg",
     arcSecondary: "/brand/motifs/octus-arc-secondary.svg",
   },
+  patterns: {
+    structure: "/brand/patterns/octus-pattern-structure.svg",
+  },
   social: {
     og: "/brand/social/octus-og-default.png",
   },

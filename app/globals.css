@@ -1958,35 +1958,37 @@ body.cookie-banner-visible .wa-float {
   mask-image: radial-gradient(ellipse 82% 72% at 55% 38%, #000 12%, transparent 78%);
   animation: octus-mesh-drift 56s linear infinite;
 }
-.octus-dark-hero__arcs {
+/* Definitive 9q798dbg2 dark-hero motif: faint structural pattern, not large arcs/symbol */
+.octus-dark-hero__structure {
   position: absolute;
-  right: -6%;
-  top: -8%;
-  width: min(64vw, 640px);
-  height: min(64vw, 640px);
+  right: -4%;
+  top: -6%;
+  width: min(48vw, 420px);
+  height: min(48vw, 320px);
   z-index: 1;
   pointer-events: none;
-  opacity: 0.42;
+  opacity: 0.022;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
-  mask-image: linear-gradient(125deg, transparent 8%, #000 48%, transparent 88%);
-  animation: octus-arc-breathe 28s ease-in-out infinite;
-  transform-origin: 62% 48%;
+  background-position: 50%;
 }
+.octus-dark-hero__arcs,
 .octus-dark-hero__mark {
-  position: absolute;
-  right: 7%;
-  bottom: 14%;
-  width: min(14vw, 112px);
-  height: min(14vw, 112px);
-  z-index: 1;
-  pointer-events: none;
-  opacity: 0.055;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  animation: octus-mark-fade 22s ease-in-out infinite;
+  display: none;
+}
+.home-hero__h1 {
+  max-width: 18ch;
+}
+.home-hero {
+  min-height: 100svh;
+  padding-top: 5.75rem;
+  padding-bottom: 3rem;
+  align-items: flex-start;
+}
+@media (min-width: 768px) {
+  .home-hero {
+    padding-top: 8rem;
+  }
 }
 .site-header--on-dark .site-header__brand-rule {
   background: linear-gradient(90deg, transparent 0%, rgba(0, 101, 255, 0.55) 18%, rgba(0, 101, 255, 0.55) 82%, transparent 100%);
@@ -2147,12 +2149,12 @@ body.cookie-banner-visible .wa-float {
 }
 .site-footer__mark {
   position: absolute;
-  right: -4%;
-  bottom: 6%;
-  width: min(28vw, 220px);
-  height: min(28vw, 220px);
-  opacity: 0.055;
-  background-image: url("/brand/symbol/octus-symbol-white.svg");
+  right: -2%;
+  bottom: 8%;
+  width: min(18vw, 120px);
+  height: min(18vw, 90px);
+  opacity: 0.018;
+  background-image: url("/brand/patterns/octus-pattern-structure.svg");
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;

@@ -1,23 +1,19 @@
 import { BRAND } from "../../lib/brand";
 
-/** Shared navy atmosphere + mesh + official arc/symbol motifs for dark heroes. */
+/**
+ * Shared navy atmosphere for dark heroes — definitive 9q798dbg2 treatment:
+ * atmosphere + mesh + faint structural pattern. Arcs/large mark are suppressed.
+ */
 export default function DarkHeroAtmosphere() {
   return (
     <>
       <div className="octus-dark-hero__atmosphere" aria-hidden="true" />
       <div className="octus-dark-hero__mesh" aria-hidden="true" />
       <div
-        className="octus-dark-hero__arcs"
+        className="octus-dark-hero__structure"
         aria-hidden="true"
         style={{
-          backgroundImage: `url('${BRAND.motifs.arcSecondary}')`,
-        }}
-      />
-      <div
-        className="octus-dark-hero__mark"
-        aria-hidden="true"
-        style={{
-          backgroundImage: `url('${BRAND.symbol.blue}')`,
+          backgroundImage: `url('${BRAND.patterns.structure}')`,
         }}
       />
     </>

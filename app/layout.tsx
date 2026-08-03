@@ -95,7 +95,7 @@ export default function RootLayout({
         </a>
 
         <CookieBanner />
-        <footer className="site-footer surface-dark py-16 md:py-20">
+        <footer className="site-footer surface-dark py-10 md:py-20">
           <div className="site-footer__mark" aria-hidden="true" />
           <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="site-footer__brand-close">
@@ -104,16 +104,12 @@ export default function RootLayout({
                 className="site-footer__lockup-link inline-flex max-w-full items-center no-underline"
                 aria-label="Octus Consulting"
               >
-                <BrandLockup
-                  variant="on-dark"
-                  surface="footer"
-                  className="h-8 w-auto md:h-9"
-                />
+                <BrandLockup variant="on-dark" surface="footer" />
               </a>
               <p className="site-footer__brand-close__line">
                 Premium international execution partner for highly regulated operations.
               </p>
-              <div className="mt-6 flex flex-wrap items-center gap-4">
+              <div className="site-footer__cta-row mt-5 flex flex-wrap items-center gap-3 md:mt-8">
                 <a
                   href={WHATSAPP_DISCUSS_URL}
                   target="_blank"

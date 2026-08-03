@@ -6,11 +6,12 @@ type Surface = "nav" | "footer";
 /**
  * Official Octus SVG lockup from definitive deployment 9q798dbg2 / dpl_437tawko…
  * Nav and footer use official SVG masters — not a reconstructed HTML wordmark.
+ * Footer uses dedicated site-footer__lockup sizing (not header logo classes).
  */
 export default function BrandLockup({
   variant = "on-light",
   surface = "nav",
-  className = "h-8 w-auto md:h-9",
+  className,
   priority = false,
 }: {
   variant?: Variant;
@@ -27,8 +28,14 @@ export default function BrandLockup({
 
   const dims =
     surface === "footer"
-      ? { width: 220, height: 48 }
+      ? { width: 240, height: 63 }
       : { width: 200, height: 42 };
+
+  const resolvedClass =
+    className ??
+    (surface === "footer"
+      ? "site-footer__lockup h-9 w-auto max-w-[min(100%,17rem)] object-contain object-left md:h-12 md:max-w-none"
+      : "site-header__logo h-8 w-auto md:h-9");
 
   return (
     // eslint-disable-next-line @next/next/no-img-element
@@ -39,7 +46,7 @@ export default function BrandLockup({
       height={dims.height}
       decoding="async"
       {...(priority ? { fetchPriority: "high" as const } : {})}
-      className={`site-header__logo ${className}`}
+      className={resolvedClass}
       style={{ imageRendering: "auto" }}
     />
   );
