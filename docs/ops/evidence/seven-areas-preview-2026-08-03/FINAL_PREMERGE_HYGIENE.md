@@ -132,3 +132,60 @@ Service `DPO-as-a-Service` retained as approved.
 - No merge
 - No production deployment
 - No rebase
+
+---
+
+## Append — DPO positioning consistency (2026-08-03)
+
+**Starting HEAD:** `ce278f9da1372f5701b7500f297be6d3b3384527`  
+**DPO consistency commit:** recorded in PR body and terminal output (not self-referenced here)  
+**File:** `app/solutions/compliance/dpo-as-a-service/page.tsx`
+
+### Wording before → after
+
+| Area | Before | After |
+|------|--------|--------|
+| Personal accountability | `The DPO carries real accountability.` | `The DPO function carries real regulatory and operational accountability.` |
+| Personal accountability | `In many jurisdictions, the DPO role carries personal accountability… personal one.` | `DPO duties and accountability vary by jurisdiction. Weak execution can nevertheless create material legal, regulatory and operational exposure.` |
+| Qualification | `This is not a formal appointment service…` | `Formal designation, where included, depends on the jurisdiction and agreed scope…` |
+| Process step 3 | `Continuous execution of the DPO function…` | `Ongoing privacy programme support… within the agreed scope.` |
+| Process close | `The DPO becomes part of the operational layer.` | `Privacy governance becomes part of the operational layer.` |
+| Engagement | `This is not a one-time designation. It is a continuous regulatory function.` | `This is structured as ongoing privacy and data-protection support, rather than a one-off documentation exercise.` |
+| Difference | `Octus DPO.` / `Independent function with execution capability…` | `Outsourced DPO support.` / designation and independence confirmed per engagement |
+| CTA SLA | `We respond within 24 hours.` | Removed (no replacement SLA) |
+
+### Prohibited-phrase scan (source + rendered HTML)
+
+| Phrase | Before | After |
+|--------|--------|--------|
+| `Octus DPO` | 1 | 0 |
+| `independent function` | 1 | 0 |
+| `continuous execution of the DPO function` | 1 | 0 |
+| `The DPO becomes part` | 1 | 0 |
+| `not a formal appointment service` | 1 | 0 |
+| `personal accountability` | 1 | 0 |
+| `respond within 24 hours` | 1 | 0 |
+
+**Result:** `0 contradictory or unsupported occurrences`
+
+### Validation (this append)
+
+| Check | Result |
+|-------|--------|
+| build | PASS |
+| typecheck | PASS |
+| DPO page render | PASS (static export) |
+| production canonical / OG | PASS — `octusconsulting.com` paths; no preview host in OG |
+| preview noindex | Checked on Git branch-alias deployment |
+| Git deployment SHA | Confirmed equal to pushed tip via Vercel branch alias (not CLI deploy) |
+
+### Remaining human-only visual checks
+
+- Spot-check DPO page reading order (problem → model → qualification → process → difference) on live preview
+- Carry-forward: Rubio crop; mobile accordion length
+
+### Confirmations (unchanged)
+
+- No merge
+- No production deployment
+- No rebase

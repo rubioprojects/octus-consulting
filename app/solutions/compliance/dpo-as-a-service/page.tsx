@@ -45,13 +45,15 @@ export default function DpoAsAServicePage() {
             Most DPO structures fail when tested.
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
-            The DPO carries real accountability. Decisions impact regulatory
-            exposure. Poor execution creates legal and operational risk. Most
-            companies assign the role without building the function.
+            The DPO function carries real regulatory and operational
+            accountability. Decisions impact regulatory exposure. Poor execution
+            creates legal and operational risk. Most companies assign the role
+            without building the function.
           </p>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
-            In many jurisdictions, the DPO role carries personal accountability.
-            Poor execution is not just a business risk. It is a personal one.
+            DPO duties and accountability vary by jurisdiction. Weak execution
+            can nevertheless create material legal, regulatory and operational
+            exposure.
           </p>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
             A name is assigned, but no process exists. Policies are drafted, but
@@ -127,7 +129,7 @@ export default function DpoAsAServicePage() {
           </div>
           <p className="body-sm mt-7 max-w-[760px] italic text-muted-foreground">
             <strong className="text-primary">Hard filter:</strong>
-            {" "}This is not a formal appointment service. This is for companies that need real regulatory accountability.
+            {" "}Formal designation, where included, depends on the jurisdiction and agreed scope. The engagement focuses on practical privacy governance, documented responsibilities and operational support.
           </p>
         </div>
       </section>
@@ -165,7 +167,7 @@ export default function DpoAsAServicePage() {
           {[
             { step: "1", title: "Assessment", body: "Review of data flows, risk exposure and current compliance gaps." },
             { step: "2", title: "Structuring", body: "Definition of processes, responsibilities and documentation aligned with regulatory requirements." },
-            { step: "3", title: "Ongoing operation", body: "Continuous execution of the DPO function, including monitoring, response and regulatory interaction." },
+            { step: "3", title: "Ongoing operation", body: "Ongoing privacy programme support, including monitoring, incident coordination and regulatory interaction within the agreed scope." },
           ].map((s) => (
             <div key={s.step} style={{ marginBottom: "24px" }}>
               <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>
@@ -175,7 +177,7 @@ export default function DpoAsAServicePage() {
             </div>
           ))}
           <p className="body-sm text-muted-foreground">
-            The DPO becomes part of the operational layer.
+            Privacy governance becomes part of the operational layer.
           </p>
         </div>
       </section>
@@ -211,8 +213,9 @@ export default function DpoAsAServicePage() {
           </h2>
           <p className="body-text" style={{ marginBottom: "28px" }}>
             Scope depends on data volume, jurisdictions, regulatory exposure and
-            operational complexity. This is not a one-time designation. It is a
-            continuous regulatory function.
+            operational complexity. This is structured as ongoing privacy and
+            data-protection support, rather than a one-off documentation
+            exercise.
           </p>
           <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
         </div>
@@ -234,8 +237,8 @@ export default function DpoAsAServicePage() {
               {" "}Constrained by internal structure and conflicting roles.
             </p>
             <p className="body-text">
-              <strong className="text-primary">Octus DPO.</strong>
-              {" "}Independent function with execution capability and regulatory alignment.
+              <strong className="text-primary">Outsourced DPO support.</strong>
+              {" "}Defined scope, documented responsibilities, operational coordination and regulatory alignment, with formal designation and independence confirmed for each engagement.
             </p>
           </div>
         </div>
@@ -272,9 +275,6 @@ export default function DpoAsAServicePage() {
             Make it operational before it is tested.
           </h2>
           <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
-          <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
-            We respond within 24 hours.
-          </p>
         </div>
       </section>
 
