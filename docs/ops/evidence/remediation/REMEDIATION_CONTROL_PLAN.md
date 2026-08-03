@@ -72,18 +72,21 @@ Homepage composition only: `app/page.tsx`, home-only components, `.home-*` / hom
 
 Impact matrix: `docs/ops/evidence/remediation/homepage/PHASE3_HOME_IMPACT_MATRIX.md`
 
-### Phase 3 stamp (awaiting Sol)
+### Phase 3 stamp (composition accepted; closeout awaiting Sol)
 
 | Field | Value |
 |---|---|
 | phase3_control_commit | `98125861a4c2ea5ff659d7da0c513490a2329d32` |
 | phase3_implementation_commit | `47db576145b80f7c232b0d31c3372247a6f538fc` |
-| phase3_evidence_commit | `9435d9bec86fde156d52bb13bfd57e06c210d9e3` |
-| immutable_preview | https://octus-consulting-l79bo9vrg-axle1.vercel.app |
-| deployment_id | `dpl_FCywMhkUrBatkqCH4t3s7izYvUYE` |
+| phase3_evidence_commit (composition tip) | `9435d9bec86fde156d52bb13bfd57e06c210d9e3` / `f16add8…` |
+| closeout_starting_head | `f16add851770a583e210212afbd69cf98dafe104` |
+| closeout_application_commit | `11c0f9da74408f270a22c23b5b2903ce45f5e33c` |
+| immutable_preview (closeout) | https://octus-consulting-7yzcy4yif-axle1.vercel.app |
+| deployment_id (closeout) | `dpl_ALymSbjVv45GWXdeFuYrPBXMN88w` |
 | validation | `homepage/audit/PHASE3_VALIDATION.json` overall PASS |
-| report | `homepage/PHASE3_HOME_GATE_REPORT.md` |
-| Phase 4 | BLOCKED until Sol accepts Phase 3 |
+| closeout report | `homepage/PHASE3_HOME_CLOSEOUT_REPORT.md` |
+| terminal | `OCTUS_HOME_CLOSEOUT_READY_FOR_SOL_AUDIT` |
+| Phase 4 | BLOCKED until Sol accepts Phase 3 closeout |
 
 **Not in Phase 3:** Team, global system, Nav/footer, services/institutional pages.
 

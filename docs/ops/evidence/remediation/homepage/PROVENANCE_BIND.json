@@ -1,13 +1,16 @@
 {
   "phase": 3,
+  "mode": "closeout",
+  "closeout_starting_head": "f16add851770a583e210212afbd69cf98dafe104",
+  "closeout_application_commit": "11c0f9da74408f270a22c23b5b2903ce45f5e33c",
   "accepted_phase2_head": "4a4687134156dce4e5892552a049ff00747d1172",
-  "phase3_control_commit": "98125861a4c2ea5ff659d7da0c513490a2329d32",
-  "phase3_implementation_commit": "47db576145b80f7c232b0d31c3372247a6f538fc",
-  "immutable_preview_url": "https://octus-consulting-l79bo9vrg-axle1.vercel.app",
-  "deployment_id": "dpl_FCywMhkUrBatkqCH4t3s7izYvUYE",
+  "phase3_composition_implementation_commit": "47db576145b80f7c232b0d31c3372247a6f538fc",
+  "immutable_preview_url": "https://octus-consulting-7yzcy4yif-axle1.vercel.app",
+  "deployment_id": "dpl_ALymSbjVv45GWXdeFuYrPBXMN88w",
   "baseline_url": "https://octus-consulting-9q798dbg2-axle1.vercel.app",
   "baseline_deployment_id": "dpl_437tawkoMDv7sqxW6NzPzTegj1Lq",
-  "terminal": "OCTUS_HOME_GATE_READY_FOR_SOL_AUDIT",
-  "note": "Reconciled screenshots captured from immutable preview whose GitHub SHA equals phase3_implementation_commit.",
-  "phase3_evidence_commit": "9435d9bec86fde156d52bb13bfd57e06c210d9e3"
+  "terminal": "OCTUS_HOME_CLOSEOUT_READY_FOR_SOL_AUDIT",
+  "note": "Closeout reconciled screenshots captured from immutable preview whose GitHub SHA equals closeout_application_commit. Team evidence not recaptured.",
+  "screenshot_count": 10,
+  "validation_overall": "PASS"
 }

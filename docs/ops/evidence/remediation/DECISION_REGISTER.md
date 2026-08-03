@@ -130,4 +130,8 @@
 | Fix | Unique /diagnostic labels; remove em dash; gate validator on duplicates + punctuation |
 | WhatsApp allowlist | `Discuss your operation →` may appear twice only (hero + final CTA bookend) |
 | Phase 4 | NOT AUTHORIZED |
+| closeout_application_commit | `11c0f9da74408f270a22c23b5b2903ce45f5e33c` |
+| closeout_preview | https://octus-consulting-7yzcy4yif-axle1.vercel.app · `dpl_ALymSbjVv45GWXdeFuYrPBXMN88w` |
+| closeout_validation | duplicate_commercial_labels PASS · prohibited_punctuation PASS · overall PASS |
+| terminal | `OCTUS_HOME_CLOSEOUT_READY_FOR_SOL_AUDIT` |
 
