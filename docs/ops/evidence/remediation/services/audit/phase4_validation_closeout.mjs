@@ -912,7 +912,27 @@ async function interactAllDisclosures(page) {
 
 async function enumerateTabOrder(page) {
   const expected = await page.evaluate(() => {
+    function domPath(el) {
+      const parts = [];
+      let n = el;
+      while (n && n.nodeType === 1 && parts.length < 16) {
+        const parent = n.parentElement;
+        const index = parent ? Array.prototype.indexOf.call(parent.children, n) : 0;
+        parts.unshift(`${n.tagName}:${index}`);
+        n = parent;
+      }
+      return parts.join("/");
+    }
+
     function isVisible(el) {
+      if (!el) return false;
+      if (typeof el.checkVisibility === "function") {
+        try {
+          return el.checkVisibility({ checkOpacity: true, checkVisibilityCSS: true });
+        } catch {
+          /* fall through */
+        }
+      }
       const style = window.getComputedStyle(el);
       if (style.display === "none" || style.visibility === "hidden") return false;
       const rect = el.getBoundingClientRect();
@@ -922,7 +942,13 @@ async function enumerateTabOrder(page) {
     function isFocusable(el) {
       if (!isVisible(el)) return false;
       if (el.hasAttribute("disabled") || el.getAttribute("aria-disabled") === "true") return false;
-      if (el.closest("[inert], [hidden]")) return false;
+      if (el.closest("[inert]")) return false;
+      if (el.closest("[hidden]")) return false;
+      if (el.closest('[aria-hidden="true"]')) return false;
+      const details = el.closest("details");
+      if (details && !details.open && el.tagName !== "SUMMARY") return false;
+      const tabindexAttr = el.getAttribute("tabindex");
+      if (tabindexAttr === "-1") return false;
       const tag = el.tagName;
       if (tag === "A" && el.hasAttribute("href")) return true;
       if (tag === "BUTTON" || tag === "SELECT" || tag === "TEXTAREA" || tag === "SUMMARY") return true;
@@ -930,8 +956,7 @@ async function enumerateTabOrder(page) {
         const type = (el.getAttribute("type") || "text").toLowerCase();
         return type !== "hidden";
       }
-      const tabindex = el.getAttribute("tabindex");
-      if (tabindex !== null && tabindex !== "-1") return true;
+      if (tabindexAttr !== null && tabindexAttr !== "-1") return true;
       if (el.getAttribute("contenteditable") === "true") return true;
       return false;
     }
@@ -939,6 +964,7 @@ async function enumerateTabOrder(page) {
     const all = [...document.querySelectorAll("*")].filter(isFocusable);
     return all.map((el, index) => {
       const rect = el.getBoundingClientRect();
+      const path = domPath(el);
       return {
         index,
         tag: el.tagName.toLowerCase(),
@@ -949,22 +975,43 @@ async function enumerateTabOrder(page) {
           (el.textContent || "").trim().replace(/\s+/g, " ").slice(0, 60),
         href: el.getAttribute("href") || null,
         role: el.getAttribute("role") || null,
+        path,
         selectorHint: el.id ? `#${el.id}` : `${el.tagName.toLowerCase()}:${index}`,
         rect: { x: rect.x, y: rect.y, w: rect.width, h: rect.height },
       };
     });
   });
 
+  await page.evaluate(() => {
+    if (document.activeElement && document.activeElement !== document.body) {
+      document.activeElement.blur();
+    }
+  });
   await page.locator("body").click({ position: { x: 2, y: 2 }, timeout: 3000 }).catch(() => {});
-  await page.keyboard.press("Tab").catch(() => {});
 
   const reached = [];
   const reachedKeys = new Set();
-  const maxTabs = Math.max(expected.length * 2, 60);
+  const maxTabs = Math.max(expected.length * 3, 120);
   let cycled = false;
+  let emptyStreak = 0;
 
   for (let i = 0; i < maxTabs; i++) {
+    await page.keyboard.press("Tab").catch(() => {});
+    await page.waitForTimeout(30);
+
     const info = await page.evaluate(() => {
+      function domPath(el) {
+        const parts = [];
+        let n = el;
+        while (n && n.nodeType === 1 && parts.length < 16) {
+          const parent = n.parentElement;
+          const index = parent ? Array.prototype.indexOf.call(parent.children, n) : 0;
+          parts.unshift(`${n.tagName}:${index}`);
+          n = parent;
+        }
+        return parts.join("/");
+      }
+
       const el = document.activeElement;
       if (!el || el === document.body || el === document.documentElement) {
         return { empty: true };
@@ -972,8 +1019,8 @@ async function enumerateTabOrder(page) {
       const style = window.getComputedStyle(el);
       const outlineVisible =
         (style.outlineStyle && style.outlineStyle !== "none" && style.outlineWidth !== "0px") ||
-        (style.boxShadow && style.boxShadow !== "none");
-      const rect = el.getBoundingClientRect();
+        (style.boxShadow && style.boxShadow !== "none") ||
+        (style.outlineOffset && style.outlineStyle !== "none");
       return {
         empty: false,
         tag: el.tagName.toLowerCase(),
@@ -987,14 +1034,17 @@ async function enumerateTabOrder(page) {
         outlineWidth: style.outlineWidth,
         boxShadow: style.boxShadow,
         visibleFocus: outlineVisible,
-        key: `${el.tagName}|${el.id}|${el.getAttribute("href")}|${(el.textContent || "").trim().slice(0, 40)}`,
+        path: domPath(el),
+        key: domPath(el),
       };
     });
 
     if (info.empty) {
-      await page.keyboard.press("Tab").catch(() => {});
+      emptyStreak += 1;
+      if (emptyStreak >= 3) break;
       continue;
     }
+    emptyStreak = 0;
 
     if (reachedKeys.has(info.key)) {
       cycled = true;
@@ -1002,26 +1052,13 @@ async function enumerateTabOrder(page) {
     }
     reachedKeys.add(info.key);
     reached.push(info);
-
-    await page.keyboard.press("Tab").catch(() => {});
-    await page.waitForTimeout(30);
   }
 
-  const expectedKeys = new Set(
-    expected.map((e) => `${e.tag.toUpperCase()}|${e.id || ""}|${e.href || ""}|${(e.name || "").slice(0, 40)}`)
-  );
-  const reachedMatchKeys = new Set(
-    reached.map((r) => `${r.tag.toUpperCase()}|${r.id || ""}|${r.href || ""}|${(r.name || "").slice(0, 40)}`)
-  );
+  const expectedKeys = new Set(expected.map((e) => e.path));
+  const reachedMatchKeys = new Set(reached.map((r) => r.path || r.key));
 
-  const skipped = expected.filter((e) => {
-    const key = `${e.tag.toUpperCase()}|${e.id || ""}|${e.href || ""}|${(e.name || "").slice(0, 40)}`;
-    return !reachedMatchKeys.has(key);
-  });
-  const unexpected = reached.filter((r) => {
-    const key = `${r.tag.toUpperCase()}|${r.id || ""}|${r.href || ""}|${(r.name || "").slice(0, 40)}`;
-    return !expectedKeys.has(key);
-  });
+  const skipped = expected.filter((e) => !reachedMatchKeys.has(e.path));
+  const unexpected = reached.filter((r) => !expectedKeys.has(r.path || r.key));
   const focusIndicatorFails = reached.filter((r) => !r.visibleFocus);
 
   const status =
@@ -1072,6 +1109,13 @@ async function fullA11yForRoute(browser, origin, route, viewportName = "desktop"
 
   const axe = await runAxeScan(page);
   const interactions = await interactAllDisclosures(page);
+  // Reload so disclosure toggles and cookies do not pollute independent tab-order enumeration.
+  try {
+    await page.goto(url, { waitUntil: "networkidle", timeout: 120000 });
+    await page.waitForTimeout(300);
+  } catch {
+    /* keep prior document if reload fails */
+  }
   const tabOrder = await enumerateTabOrder(page);
   await ctx.close();
 
