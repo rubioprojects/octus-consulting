@@ -23,7 +23,7 @@ PR #17 — seven-area architecture, current routes, evidence-safe editorial rule
 |---|---|---|---|
 | 0 | Control and inventory | COMMITTED `b90a694` | (prerequisite) |
 | 1 | Team hard gate | **ACCEPTED by Sol** | `OCTUS_TEAM_HARD_GATE` + provenance PASS |
-| 2 | Global visual system | **AUTHORIZED / IN PROGRESS** | `OCTUS_GLOBAL_SYSTEM_GATE_READY_FOR_SOL_AUDIT` |
+| 2 | Global visual system | **READY_FOR_SOL_AUDIT** (impl + immutable evidence) | `OCTUS_GLOBAL_SYSTEM_GATE_READY_FOR_SOL_AUDIT` |
 | 3 | Homepage | BLOCKED until Sol accepts Phase 2 | — |
 | 4 | Services and service families | BLOCKED | — |
 | 5 | Institutional and content families | BLOCKED | — |
@@ -62,6 +62,19 @@ Shared visual system only: Nav, BrandLockup, footer shell, globals tokens, DarkH
 **Not in Phase 2:** homepage composition, services content, institutional pages, Team page.
 
 Impact matrix: `docs/ops/evidence/remediation/global-system/PHASE2_IMPACT_MATRIX.md`
+
+### Phase 2 stamp (awaiting Sol)
+
+| Field | Value |
+|---|---|
+| phase2_control_commit | `4ba8ef5b4c131fe80ddef9a2c7a70911f21f6a4d` |
+| phase2_implementation_commit | `ef0d9465f07993c811144291d0da0371d12e7229` |
+| phase2_evidence_commit | `b2979c4cc6a5c2610769c77717c2c6a394dcff68` |
+| immutable_preview | https://octus-consulting-kovk3ad1l-axle1.vercel.app |
+| deployment_id | `dpl_4pDMJNttdiwdLJmkyBbSffxBqDWK` |
+| validation | `global-system/audit/PHASE2_VALIDATION.json` overall PASS |
+| report | `global-system/PHASE2_GLOBAL_SYSTEM_GATE_REPORT.md` |
+| Phase 3 | BLOCKED until Sol accepts Phase 2 |
 
 ## Intentional differences (binding)
 

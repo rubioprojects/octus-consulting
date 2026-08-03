@@ -12,6 +12,7 @@
 | starting HEAD / accepted_phase1_head | `0654dc1247967bcc36d760f47ae0654ff3814aa3` |
 | Phase 2 control commit | `4ba8ef5b4c131fe80ddef9a2c7a70911f21f6a4d` |
 | global-system implementation commit | `ef0d9465f07993c811144291d0da0371d12e7229` |
+| evidence commit | `b2979c4cc6a5c2610769c77717c2c6a394dcff68` |
 | immutable preview | https://octus-consulting-kovk3ad1l-axle1.vercel.app |
 | deployment ID | `dpl_4pDMJNttdiwdLJmkyBbSffxBqDWK` |
 | baseline SoT | https://octus-consulting-9q798dbg2-axle1.vercel.app (`dpl_437tawkoMDv7sqxW6NzPzTegj1Lq`) |

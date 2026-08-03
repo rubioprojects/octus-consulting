@@ -3,10 +3,11 @@
   "accepted_phase1_head": "0654dc1247967bcc36d760f47ae0654ff3814aa3",
   "phase2_control_commit": "4ba8ef5b4c131fe80ddef9a2c7a70911f21f6a4d",
   "phase2_implementation_commit": "ef0d9465f07993c811144291d0da0371d12e7229",
+  "phase2_evidence_commit": "b2979c4cc6a5c2610769c77717c2c6a394dcff68",
   "immutable_preview_url": "https://octus-consulting-kovk3ad1l-axle1.vercel.app",
   "deployment_id": "dpl_4pDMJNttdiwdLJmkyBbSffxBqDWK",
   "baseline_url": "https://octus-consulting-9q798dbg2-axle1.vercel.app",
   "baseline_deployment_id": "dpl_437tawkoMDv7sqxW6NzPzTegj1Lq",
   "terminal": "OCTUS_GLOBAL_SYSTEM_GATE_READY_FOR_SOL_AUDIT",
-  "note": "Reconciled screenshots captured from immutable preview whose GitHub SHA equals phase2_implementation_commit."
+  "note": "Reconciled screenshots captured from immutable preview whose GitHub SHA equals phase2_implementation_commit. Documentation stamp tip is branch HEAD at Sol handoff."
 }

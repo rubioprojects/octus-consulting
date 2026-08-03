@@ -30,7 +30,7 @@ Rollback for all rows: `git revert` Phase 2 implementation commit(s); restore `a
 | cards | shared `.card` | Match | `globals.css` | Preserve shared only | many | — | No |
 | dark hero atmosphere | shared component + CSS | Present | `DarkHeroAtmosphere.tsx`, `.octus-dark-hero*` | Preserve; do not edit `.home-hero*` page rules | dark pages | / /team /solutions | No |
 | footer | padT 80px; lockup 48px | Match | `layout.tsx`, `.site-footer*` | Preserve shell | all | footer d/m | No |
-| WhatsApp | bottom/right **24px**; no cookie-lift class | bottom **20px**; cookie-lift **92px** | `globals.css` `.wa-float` (!important block), `CookieBanner.tsx` | Align resting geometry to **24×24**; remove baseline-absent cookie lift | all | WA light/dark | No — **material fix** |
+| WhatsApp | bottom/right **24px**; no cookie-lift class | before: bottom **20px** + cookie-lift **92px**; reconciled: **24×24** (cookie open & accepted) | `globals.css` `.wa-float` (!important block), `CookieBanner.tsx` | Align resting geometry to **24×24**; remove baseline-absent cookie lift | all | WA light/dark | No — **material fix applied** |
 | cookies | essential Continue bar | Match behavior | `CookieBanner.tsx`, `.cookie-banner` | Preserve essential-only Continue | all | cookie initial/accepted | No |
 | focus treatment | outline 2px offset | Present | Nav link/cta classes, WA focus-visible | Preserve / harden if regression | all | focus samples | No |
 | favicon | `/brand/favicons/octus-favicon-blue.svg` + png suite | Present | `layout.tsx`, `public/**` | Preserve | all | favicon tab sim | No |
