@@ -129,7 +129,7 @@ export default function ServicesIndexPage() {
                     <p className="relative z-10 mb-4 flex-1 font-sans text-sm leading-relaxed text-muted-foreground">
                       {area.oneSentence}
                     </p>
-                    <p className="relative z-10 mb-2 font-sans text-[11px] font-medium uppercase tracking-[0.12em] text-primary/80">
+                    <p className="relative z-10 mb-2 font-sans text-[11px] font-medium uppercase tracking-[0.12em] text-primary">
                       Focus
                     </p>
                     <ul className="relative z-10 mb-6 list-none space-y-1.5">
@@ -217,7 +217,7 @@ export default function ServicesIndexPage() {
           </p>
           <div className="grid gap-6 md:grid-cols-2">
             <div className="solution-card flex h-full flex-col rounded-sm border border-border bg-background p-6 md:p-8">
-              <p className="mb-2 font-sans text-[11px] font-medium uppercase tracking-[0.12em] text-primary/80">
+              <p className="mb-2 font-sans text-[11px] font-medium uppercase tracking-[0.12em] text-primary">
                 Supporting
               </p>
               <h3 className="mb-3 font-heading text-xl font-semibold text-foreground">
@@ -235,7 +235,7 @@ export default function ServicesIndexPage() {
               </Link>
             </div>
             <div className="solution-card flex h-full flex-col rounded-sm border border-border bg-background p-6 md:p-8">
-              <p className="mb-2 font-sans text-[11px] font-medium uppercase tracking-[0.12em] text-primary/80">
+              <p className="mb-2 font-sans text-[11px] font-medium uppercase tracking-[0.12em] text-primary">
                 Integrated
               </p>
               <h3 className="mb-3 font-heading text-xl font-semibold text-foreground">

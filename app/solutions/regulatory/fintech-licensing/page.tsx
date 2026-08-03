@@ -202,9 +202,9 @@ export default function FintechLicensingPage() {
           <p className="label">Related</p>
           <p className="body-sm text-muted-foreground mb-5">
             Where this is typically structured:{" "}
-            <Link href="/jurisdictions/uae" style={{ color: "var(--blue-light)" }}>UAE</Link>
+            <Link href="/jurisdictions/uae" className="underline underline-offset-2" style={{ color: "var(--blue-light)" }}>UAE</Link>
             {" · "}
-            <Link href="/jurisdictions/portugal" style={{ color: "var(--blue-light)" }}>Portugal</Link>
+            <Link href="/jurisdictions/portugal" className="underline underline-offset-2" style={{ color: "var(--blue-light)" }}>Portugal</Link>
           </p>
           <div className="grid-auto-lg">
             {[

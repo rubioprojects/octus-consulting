@@ -135,9 +135,9 @@ export default function OffshoreStructuringPage() {
           <p className="label">Related</p>
           <p className="body-sm text-muted-foreground mb-5">
             Where offshore structures are anchored:{" "}
-            <Link href="/jurisdictions/anjouan" style={{ color: "var(--blue-light)" }}>Anjouan</Link>
+            <Link href="/jurisdictions/anjouan" className="underline underline-offset-2" style={{ color: "var(--blue-light)" }}>Anjouan</Link>
             {" · "}
-            <Link href="/jurisdictions/uae" style={{ color: "var(--blue-light)" }}>UAE</Link>
+            <Link href="/jurisdictions/uae" className="underline underline-offset-2" style={{ color: "var(--blue-light)" }}>UAE</Link>
           </p>
           <div className="grid-auto-lg">
             {[
