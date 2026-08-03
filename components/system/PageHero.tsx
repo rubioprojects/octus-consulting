@@ -38,17 +38,17 @@ export default function PageHero({
       <DarkHeroAtmosphere />
       <div className="octus-hero-copy relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <Eyebrow tone="dark">{eyebrow}</Eyebrow>
-        <h1 className="font-heading max-w-[56rem] text-4xl font-bold leading-[1.1] tracking-[-0.02em] text-white text-balance md:text-5xl lg:text-[3.5rem] lg:leading-[1.08]">
+        <h1 className="font-heading max-w-[56rem] text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] text-balance sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12]">
           {title}
           {titleSecondLine != null && (
             <>
               <br />
-              <span className="text-white/85">{titleSecondLine}</span>
+              <span className="text-[color:var(--text-secondary-on-dark)]">{titleSecondLine}</span>
             </>
           )}
         </h1>
         {description != null && (
-          <div className="mt-6 max-w-[38rem] text-pretty text-base leading-[1.7] text-white/80 sm:text-lg">
+          <div className="mt-6 max-w-[40rem] text-pretty text-base leading-[1.7] text-[color:var(--text-secondary-on-dark)] sm:text-lg">
             {description}
           </div>
         )}
