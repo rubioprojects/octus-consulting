@@ -675,11 +675,11 @@
   "reconciled_count": 15,
   "reconciled_missing_metadata_count": 0,
   "reconciled_missing_metadata": [],
-  "evidence_repair_commit": "a21b844432457ae2d32a2e999ed7861f9bbaa335",
-  "final_phase1_head": "a21b844432457ae2d32a2e999ed7861f9bbaa335",
+  "final_phase1_head": "3d7bff5406f4b65b837df8c9ff999c93bc0fd067",
   "immutable_preview_url": "https://octus-consulting-bvvs2ue51-axle1.vercel.app",
   "deployment_id": "dpl_7TfPfQnGjCHYsGGkExngEMwUJ8CH",
   "invalid_sha_removed": "4c9a6cfe69326d3db84fa2d047a6d12e3eeb791f",
   "invalid_sha_removed_count": 17,
-  "note": "evidence_repair_commit and final_phase1_head both equal the evidence content tip a21b844; no orphan amend SHAs"
+  "note": "evidence_repair_commit=content tip with screenshots; final_phase1_head=bind tip (this commit before amend)",
+  "evidence_repair_commit": "3c462b9ef3b367520b0f3ea8f8fefc7bbc3aa44e"
 }
