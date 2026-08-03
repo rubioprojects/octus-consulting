@@ -98,8 +98,8 @@ export default function MarketsIGamingPage() {
                 desc: "GLI, BMM, iTech Labs: we prepare the operation for technical certification. Gap analysis, evidence register, audit coordination.",
               },
               {
-                title: "Post-license stabilization",
-                desc: "License approved is not the end. We stabilize the operation: compliance cycles, banking maintenance, regulatory reporting.",
+                title: "Stabilization after licensing",
+                desc: "License approved is not the end. We stabilize the operation across compliance cycles, banking maintenance and regulatory reporting.",
               },
             ].map((item) => (
               <div key={item.title} className="card" style={{ padding: "28px" }}>
@@ -188,7 +188,7 @@ export default function MarketsIGamingPage() {
               {
                 tag: "Licensing",
                 title: "License stuck for months",
-                body: "Application filed, no movement. Usually a structural gap in the dossier or entity setup: not regulatory hostility.",
+                body: "Application filed, no movement. Usually a structural gap in the dossier or entity setup, rather than regulatory hostility.",
               },
               {
                 tag: "Banking",
@@ -246,7 +246,7 @@ export default function MarketsIGamingPage() {
           </h2>
           <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
-            Diagnostic call: not a sales pitch. We start by identifying where your structure breaks.
+            Diagnostic call, not a sales pitch. We start by identifying where your structure breaks.
           </p>
         </div>
       </section>

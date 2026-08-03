@@ -118,7 +118,7 @@ export default function MarketsFintechPage() {
           <div className="grid gap-6 md:grid-cols-1">
             {[
               {
-                title: "Remittance platform: multi-jurisdiction",
+                title: "Remittance platform across jurisdictions",
                 body: "Regulatory structuring across 3 jurisdictions. EMI licensing, compliance framework and banking coordination delivered as a single project.",
               },
               {

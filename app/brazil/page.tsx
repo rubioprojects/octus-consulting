@@ -22,7 +22,7 @@ export default function BrazilPage() {
           </h1>
           <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "600px" }}>
             Brazil is one of the most complex regulated environments in the
-            world: with its own licensing framework (SPA/MF), data protection
+            world, with its own licensing framework (SPA/MF), data protection
             regime (LGPD), banking infrastructure and corporate requirements.
             Octus has been operating inside Brazilian regulatory processes since
             2019.

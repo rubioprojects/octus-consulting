@@ -101,7 +101,7 @@ export default function MarketsCryptoPage() {
             {[
               "Corporate and operational architecture aligned with regulatory exposure across jurisdictions.",
               "Regulatory positioning: what requires licensing, what requires registration, what requires neither. Per jurisdiction.",
-              "Banking and payment continuity: not just onboarding, but resilience. Multiple rails, multiple institutions, structured redundancy.",
+              "Banking and payment continuity beyond onboarding, focused on resilience. Multiple rails, multiple institutions, structured redundancy.",
               "Compliance systems adapted to transaction-heavy, cross-border environments.",
               "Separation between revenue, custody and risk exposure: the structural logic that banks and regulators evaluate.",
             ].map((item) => (
@@ -150,7 +150,7 @@ export default function MarketsCryptoPage() {
               "Token issuers navigating white paper requirements and issuer obligations.",
               "Payment infrastructure companies bridging crypto and fiat.",
               "Crypto-native businesses entering regulated markets for the first time.",
-              "Established operators restructuring for MiCA compliance or multi-jurisdiction alignment.",
+              "Established operators restructuring for MiCA compliance or alignment across jurisdictions.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
@@ -160,7 +160,7 @@ export default function MarketsCryptoPage() {
           </div>
           <p className="body-sm italic text-muted-foreground">
             <strong className="text-primary">Negative qualification:</strong>
-            {" "}This is not for early-stage experiments or token launches without operational depth. If you do not need banking stability, regulatory clarity or multi-jurisdiction structure, you do not need this.
+            {" "}This is not for early-stage experiments or token launches without operational depth. If you do not need banking stability, regulatory clarity or structure across jurisdictions, you do not need this.
           </p>
         </div>
       </section>

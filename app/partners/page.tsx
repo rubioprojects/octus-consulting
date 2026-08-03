@@ -22,7 +22,7 @@ export default function PartnersPage() {
         eyebrow="Partners"
         title="Collaboration infrastructure."
         titleSecondLine="Not competition. Not a staff directory."
-        description="Octus works with counsel, CSPs, advisors and specialists as an execution partner for highly regulated operations: with clear accountability when we lead."
+        description="Octus works with counsel, CSPs, advisors and specialists as an execution partner for highly regulated operations, with clear accountability when we lead."
         primaryCta={{
           href: WHATSAPP_PARTNERSHIP_URL,
           label: CTA_PARTNERSHIP_LABEL,

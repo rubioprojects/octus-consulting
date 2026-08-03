@@ -81,7 +81,7 @@ export default function JurisdictionsPortugalPage() {
               </div>
             ))}
           </div>
-          <p className="body-text mb-4 font-semibold text-primary">But:</p>
+          <p className="body-text mb-4 font-semibold text-primary">Constraints</p>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {[
               "Licensing is slow and documentation-heavy.",
@@ -90,7 +90,7 @@ export default function JurisdictionsPortugalPage() {
               "SRIJ licences cover Portugal only: no EU-wide passporting.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                <span className="mt-0.5 shrink-0 text-muted-foreground">: </span>
+                <span className="mt-0.5 shrink-0 text-muted-foreground" aria-hidden="true">•</span>
                 <p className="body-text text-muted-foreground">{item}</p>
               </div>
             ))}
@@ -188,7 +188,7 @@ export default function JurisdictionsPortugalPage() {
                   "You expect approval to solve operational gaps.",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                    <span className="mt-0.5 shrink-0 text-muted-foreground">: </span>
+                    <span className="mt-0.5 shrink-0 text-muted-foreground" aria-hidden="true">•</span>
                     <p className="body-sm text-muted-foreground">{item}</p>
                   </div>
                 ))}

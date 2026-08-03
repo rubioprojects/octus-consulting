@@ -82,7 +82,7 @@ export default function JurisdictionsAnjouanPage() {
               </div>
             ))}
           </div>
-          <p className="body-text mb-4 font-semibold text-primary">But:</p>
+          <p className="body-text mb-4 font-semibold text-primary">Constraints</p>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {[
               "Recognition is limited compared to Tier-1 jurisdictions.",
@@ -91,7 +91,7 @@ export default function JurisdictionsAnjouanPage() {
               "Long-term scalability depends entirely on how the structure evolves.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                <span className="mt-0.5 shrink-0 text-muted-foreground">: </span>
+                <span className="mt-0.5 shrink-0 text-muted-foreground" aria-hidden="true">•</span>
                 <p className="body-text text-muted-foreground">{item}</p>
               </div>
             ))}
@@ -187,7 +187,7 @@ export default function JurisdictionsAnjouanPage() {
                   "You are targeting EU, UK or other restricted markets.",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                    <span className="mt-0.5 shrink-0 text-muted-foreground">: </span>
+                    <span className="mt-0.5 shrink-0 text-muted-foreground" aria-hidden="true">•</span>
                     <p className="body-sm text-muted-foreground">{item}</p>
                   </div>
                 ))}

@@ -98,9 +98,9 @@ export default function HomePage() {
               <br className="hidden sm:block" /> the work regulated businesses depend on.
             </h2>
             <p className="body-large text-pretty text-muted-foreground">
-              Licensing pathways, compliance systems, legal and corporate architecture, private-client
+              Licensing pathways, compliance systems, legal and corporate architecture, private client
               ownership issues, remediation when something is already blocked, and the specialist
-              network those programmes need: Octus brings the required workstreams into one
+              network those programmes need. Octus brings the required workstreams into one
               coordinated mandate.
             </p>
             <p className="mt-6 font-sans text-sm text-muted-foreground">
@@ -120,7 +120,7 @@ export default function HomePage() {
             </h2>
             <p className="body-large text-pretty text-muted-foreground">
               From licensing and corporate structure to compliance, remediation and specialist
-              coordination, each area is a client-facing entry into the same execution model.
+              coordination, each area is a clear public entry into the same execution model.
             </p>
             <Link
               href="/solutions"

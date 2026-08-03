@@ -62,7 +62,7 @@ export default function GliReadinessPage() {
               ["Evidence framework", "Structured register, version control, document mapping aligned to audit criteria."],
               ["Remediation", "Closing gaps with operational changes, not documentation updates."],
               ["Mock audit", "Internal stress test simulating the formal review. Weaknesses found before they become findings."],
-              ["Coordination", "Direct coordination with GLI, certification bodies and regulatory authorities."],
+              ["Coordination", "Direct coordination with laboratories and certification providers such as GLI, sequenced with the relevant regulatory authorities."],
               ["Team preparation", "Key personnel understand the process, respond to questions, demonstrate competence."],
             ].map(([title, body]) => (
               <div key={title}>
@@ -121,7 +121,7 @@ export default function GliReadinessPage() {
               "Compliance maturity is already confirmed and tested.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                <span className="mt-0.5 shrink-0 text-muted-foreground">: </span>
+                <span className="mt-0.5 shrink-0 text-muted-foreground" aria-hidden="true">•</span>
                 <p className="body-text text-muted-foreground">{item}</p>
               </div>
             ))}

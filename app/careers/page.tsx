@@ -20,7 +20,7 @@ export default function CareersPage() {
           <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "580px" }}>
             Octus operates at the intersection of regulatory structuring,
             compliance, legal architecture and corporate design. We look for
-            people with operational depth: not just credentials.
+                people with operational depth, not just credentials.
           </p>
         </div>
       </section>
@@ -94,7 +94,7 @@ export default function CareersPage() {
             {[
               {
                 area: "Regulatory & Licensing",
-                desc: "Experience with regulated market entry, licensing processes and jurisdictional structuring. Ability to manage complex multi-jurisdiction regulatory processes end-to-end.",
+                desc: "Experience with regulated market entry, licensing processes and jurisdictional structuring. Ability to manage complex regulatory processes across jurisdictions end-to-end.",
               },
               {
                 area: "Compliance & Risk",

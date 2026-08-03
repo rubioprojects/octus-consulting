@@ -30,7 +30,7 @@ export type PublicArea = {
   providerClasses?: string[];
 };
 
-export const OCTUS_WHAT_WE_DO = "Octus helps regulated businesses with licensing, compliance, legal and corporate structure, private-client ownership issues, remediation when things are blocked, and the specialist network those programmes need.";
+export const OCTUS_WHAT_WE_DO = "Octus helps regulated businesses with licensing, compliance, legal and corporate structure, private client ownership issues, remediation when things are blocked, and the specialist network those programmes need.";
 
 export const PUBLIC_AREAS: PublicArea[] = [
   {

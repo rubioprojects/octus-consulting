@@ -6,7 +6,7 @@ export const metadata = {
 const sections = [
   {
     title: "Who we are",
-    body: `This Privacy Policy applies to Octus Technology LLC, operating as Octus Consulting ("Octus", "we", "us"), a company incorporated in the State of Delaware, United States, with registered address at 900 Foulk Rd Suite 201, Wilmington, DE 19803.\n\nOctus Consulting provides regulatory structuring, compliance coordination, corporate architecture and related advisory services to businesses operating in regulated markets. This policy governs how we collect, use and protect personal data in connection with our website (octusconsulting.com) and client-facing services.`,
+    body: `This Privacy Policy applies to Octus Technology LLC, operating as Octus Consulting ("Octus", "we", "us"), a company incorporated in the State of Delaware, United States, with registered address at 900 Foulk Rd Suite 201, Wilmington, DE 19803.\n\nOctus Consulting provides regulatory structuring, compliance coordination, corporate architecture and related advisory services to businesses operating in regulated markets. This policy governs how we collect, use and protect personal data in connection with our website (octusconsulting.com) and services delivered to clients.`,
   },
   {
     title: "What data we collect",

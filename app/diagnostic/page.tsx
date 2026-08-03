@@ -96,7 +96,7 @@ export default function DiagnosticPage() {
             .
           </p>
           <p className="body-text text-muted-foreground">
-            Octus engages through qualified conversations: not mass lead-capture forms.
+            Octus engages through qualified conversations, not mass lead-capture forms.
           </p>
         </div>
       </section>

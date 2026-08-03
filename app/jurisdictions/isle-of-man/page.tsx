@@ -108,7 +108,7 @@ export default function JurisdictionsIsleOfManPage() {
                   "You expect to launch and leave. The GSC\u2019s supervision is continuous, risk-based and increasingly enforcement-oriented.",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                    <span className="mt-0.5 shrink-0 text-muted-foreground">: </span>
+                    <span className="mt-0.5 shrink-0 text-muted-foreground" aria-hidden="true">•</span>
                     <p className="body-sm text-muted-foreground">{item}</p>
                   </div>
                 ))}

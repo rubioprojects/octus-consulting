@@ -9,7 +9,7 @@ export const metadata = {
 const team = [
   {
     name: "Rubio Teixeira",
-    title: "Founder",
+    title: "Founder & CEO",
     photo: "/team/rubio-teixeira.jpg",
     focus:
       "Regulatory structuring, international licensing and market entry strategy. Operational presence across Brazil, Portugal, EU and offshore jurisdictions since 2019.",
@@ -17,10 +17,10 @@ const team = [
   },
   {
     name: "Maria Cristina",
-    title: "Managing Director",
+    title: "Operations Coordination",
     photo: "/team/maria-cristina.jpg",
     focus:
-      "Operational leadership and client engagement across Octus' regulatory and compliance mandates. Senior depth across regulated markets in Brazil and internationally.",
+      "Operational coordination and client engagement across Octus' regulatory and compliance mandates. Senior depth across regulated markets in Brazil and internationally.",
     linkedin: "https://www.linkedin.com/in/maria-cristina-060241b6/",
   },
   {
@@ -76,7 +76,7 @@ const team = [
     title: "Regulatory & Compliance Specialist",
     photo: "/team/larissa-carvalho.jpg",
     focus:
-      "Operational support across regulatory and compliance engagements. Coordination of documentation, processes and client-facing deliverables.",
+      "Operational support across regulatory and compliance engagements. Coordination of documentation, processes and deliverables shared with clients.",
     linkedin: "https://www.linkedin.com/in/larissaocarvalho/",
   },
   {

@@ -66,8 +66,8 @@ export default function ComplianceAsAServicePage() {
             Embedded into your operation, not external to it.
           </p>
           <p className="body-text">
-            Once implemented, compliance becomes part of how the business operates
-            :  not something that can be turned off.
+            Once implemented, compliance becomes part of how the business operates,
+            not something that can be turned off.
           </p>
         </div>
       </section>
@@ -105,7 +105,7 @@ export default function ComplianceAsAServicePage() {
                   "There is no internal ownership or accountability for compliance.",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                    <span className="mt-0.5 shrink-0 text-muted-foreground">: </span>
+                    <span className="mt-0.5 shrink-0 text-muted-foreground" aria-hidden="true">•</span>
                     <p className="body-sm text-muted-foreground">{item}</p>
                   </div>
                 ))}

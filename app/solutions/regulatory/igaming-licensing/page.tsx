@@ -4,7 +4,7 @@ import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
 export const metadata = {
   title: "iGaming Licensing",
   description:
-    "iGaming licensing strategy across jurisdictions. Octus structures the regulatory, corporate and compliance architecture that determines whether a licence gets approved: not just submitted.",
+    "iGaming licensing strategy across jurisdictions. Octus structures the regulatory, corporate and compliance architecture that determines whether a licence gets approved, not merely submitted.",
 };
 
 export default function SolutionsIGamingLicensingPage() {
@@ -52,7 +52,7 @@ export default function SolutionsIGamingLicensingPage() {
           </p>
           <p className="body-lg">
             Choosing where to apply is easy. Designing how the operation will
-            function after approval: licensing, banking, compliance and scale : 
+            function after approval across licensing, banking, compliance and scale
             is where most fail.
           </p>
         </div>
@@ -133,8 +133,8 @@ export default function SolutionsIGamingLicensingPage() {
           </p>
           <p className="body-sm italic text-muted-foreground">
             Octus does not recommend jurisdictions based on speed or cost. The
-            choice is driven by what allows the operation to function: not
-            just to launch.
+            choice is driven by what allows the operation to function, not
+            merely to launch.
           </p>
         </div>
       </section>

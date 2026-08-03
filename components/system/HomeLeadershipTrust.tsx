@@ -9,17 +9,17 @@ export default function HomeLeadershipTrust() {
   const leaders = [
     {
       name: "Rubio Teixeira",
-      title: "Founder",
+      title: "Founder & CEO",
       photo: "/team/rubio-teixeira.jpg",
       photoClass: "team-photo--rubio",
       line: "Strategic ownership of structure, sequencing and delivery across regulated mandates.",
     },
     {
       name: "Maria Cristina",
-      title: "Managing Director",
+      title: "Operations Coordination",
       photo: "/team/maria-cristina.jpg",
       photoClass: "team-photo--maria",
-      line: "Operational leadership and client engagement across regulatory and compliance work.",
+      line: "Operational coordination and client engagement across regulatory and compliance work.",
     },
   ] as const;
 

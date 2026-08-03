@@ -38,7 +38,7 @@ export default function HoldingDesignPage() {
               "Operating entities, licensing entities and holding entities are conflated. A regulatory issue in one contaminates the group.",
               "Inter-company agreements are missing or generic. Decision authority is unclear.",
               "Payments between entities have no contractual basis. An audit exposes structural weakness.",
-              "What works at one-entity scale breaks at multi-jurisdiction group level.",
+              "What works at one-entity scale breaks at group level across jurisdictions.",
             ].map((item) => (
               <div key={item} className="card" style={{ padding: "20px 24px" }}>
                 <p className="body-text">{item}</p>
@@ -113,7 +113,7 @@ export default function HoldingDesignPage() {
               "Looking for incorporation without structural depth.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                <span className="mt-0.5 shrink-0 text-muted-foreground">: </span>
+                <span className="mt-0.5 shrink-0 text-muted-foreground" aria-hidden="true">•</span>
                 <p className="body-text text-muted-foreground">{item}</p>
               </div>
             ))}

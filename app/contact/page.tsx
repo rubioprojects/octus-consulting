@@ -25,7 +25,7 @@ export default function ContactPage() {
             Discuss your operation.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/60">
-            Octus is a high-ticket consultancy. We prioritize qualified conversations: not mass lead
+            Octus is a high-ticket consultancy. We prioritize qualified conversations, not mass lead
             capture. Reach us on WhatsApp or email.
           </p>
           <div className="mt-12 flex flex-wrap gap-4">
@@ -66,7 +66,7 @@ export default function ContactPage() {
               {
                 n: "03",
                 t: "Scope with clarity",
-                b: "If there is a path forward, we define scope, model and timeline: without ambiguity.",
+                b: "If there is a path forward, we define scope, model and timeline without ambiguity.",
               },
             ].map((s) => (
               <li key={s.n} className="grid grid-cols-[48px_1fr] gap-6 border-b border-border pb-8 last:border-0">

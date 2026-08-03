@@ -80,7 +80,7 @@ export default function MarketsPage() {
               },
               {
                 title: "High-Risk Digital Businesses",
-                desc: "Structural and compliance solutions for businesses that banks and regulators classify as high-risk. We make the structure work: not the label go away.",
+                desc: "Structural and compliance solutions for businesses that banks and regulators classify as high-risk. We make the structure work; the label itself is not the problem we solve.",
                 tags: ["Banking", "Risk", "Structure", "Compliance"],
                 href: "/markets/high-risk",
               },

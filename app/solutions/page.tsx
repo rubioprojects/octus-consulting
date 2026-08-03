@@ -19,7 +19,7 @@ export default function ServicesIndexPage() {
         eyebrow="Services"
         title="Services for regulated operations."
         titleSecondLine="One coordinated mandate."
-        description="Octus coordinates regulatory, compliance, legal, corporate, private-client, remediation and specialist-network workstreams so the operation can hold under scrutiny."
+        description="Octus coordinates regulatory, compliance, legal, corporate, private client, remediation and specialist network workstreams so the operation can hold under scrutiny."
         primaryCta={{ href: WHATSAPP_DISCUSS_URL, label: CTA_DISCUSS_LABEL, external: true }}
         secondaryCta={{ href: "/contact", label: "Contact Octus →" }}
       />
