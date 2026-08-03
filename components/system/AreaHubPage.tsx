@@ -9,7 +9,6 @@ import PageHero from "./PageHero";
 import OctusEditorialDivider from "./OctusEditorialDivider";
 import OctusSymbolMarker from "./OctusSymbolMarker";
 import ServiceFamilyAccordion from "./ServiceFamilyAccordion";
-import { CtaLink } from "./CtaButton";
 
 /** Seven visible chapters covering the 12-module content checklist. */
 export default function AreaHubPage({ area }: { area: PublicArea }) {
@@ -214,7 +213,7 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
         </div>
       </section>
 
-      {/* Chapter 7 · Dark close (closed-model SolutionHub rhythm) */}
+      {/* Chapter 7 · Dark close (closed-model rhythm; one compact contextual link only) */}
       <section className="surface-dark py-20 md:py-24">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
           <h2 className="mb-4 font-heading text-2xl font-semibold text-white md:text-3xl">
@@ -225,19 +224,14 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
               ? "Start with a focused assessment of what is blocking the operation."
               : "Discuss how this workstream fits the rest of the mandate."}
           </p>
-          <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
-            <CtaLink
-              href={primaryHref}
-              variant="on-dark"
-              target="_blank"
-              rel="noopener noreferrer"
+          <p className="font-sans text-sm">
+            <Link
+              href="/solutions"
+              className="text-white/75 underline-offset-4 transition-colors hover:text-white hover:underline"
             >
-              {primaryLabel}
-            </CtaLink>
-            <CtaLink href="/solutions" variant="on-dark-secondary">
-              All services →
-            </CtaLink>
-          </div>
+              View all services
+            </Link>
+          </p>
         </div>
       </section>
     </main>

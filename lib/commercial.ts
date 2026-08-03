@@ -209,7 +209,7 @@ export const SOLUTION_HUBS: SolutionHub[] = [
     title: "Operational Remediation & Readiness",
     shortTitle: "Remediation & Readiness",
     problem:
-      "Operations that are blocked, exposed, delayed, rejected or failing under regulatory pressure need a single crisis door, not a catalogue.",
+      "Operations that are blocked, exposed, delayed, rejected or failing under regulatory pressure need a single crisis door into coordinated remediation.",
     role: "Octus enters live failures, assesses structural gaps and sequences remediation across regulatory, banking, compliance and corporate layers.",
     summary:
       "Strategic crisis entry for licensing delays, banking failures, compliance gaps, audit readiness and operational instability.",

@@ -214,9 +214,8 @@ export default function HomePage() {
               A structural approach to regulated operations.
             </h2>
             <p className="body-large">
-              Seven service areas under one accountable layer — not a catalogue of disconnected
-              services. Banking &amp; Payments runs across programmes as infrastructure, not as a
-              peer area.
+              Seven service areas operate through one accountable model. Banking and payments
+              support the regulatory, corporate and compliance structures that require them.
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-3">
@@ -259,7 +258,7 @@ export default function HomePage() {
               },
               {
                 title: "Control",
-                body: "When the operation is already failing — assessment before catalogue.",
+                body: "When the operation is already failing, start with assessment and coordinated remediation.",
                 links: [
                   {
                     label: "Remediation & Readiness",
@@ -368,7 +367,7 @@ export default function HomePage() {
             <p className="section-label mb-4 block">Pressure patterns</p>
             <h2 className="heading-section mb-6">Where regulated operations stall.</h2>
             <p className="body-large">
-              Illustrative situations — not case studies, guarantees or claimed outcomes.
+              Common situations that may require coordinated structural intervention.
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-3 md:gap-8">
@@ -381,12 +380,12 @@ export default function HomePage() {
               {
                 tag: "Market entry · New venue",
                 title: "Expansion planned.\nPathway unclear.",
-                body: "Entering a regulated market requires sequencing of licensing, corporate architecture and banking readiness — not parallel vendors without a single accountable layer.",
+                body: "Entering a regulated market requires sequencing of licensing, corporate architecture and banking readiness under one accountable layer.",
               },
               {
                 tag: "Remediation · Under pressure",
                 title: "Audit or rejection.\nEvidence not operable.",
-                body: "Policies exist on paper while operational evidence, controls and ownership presentation cannot survive scrutiny. Remediation starts with assessment, not a catalogue.",
+                body: "Policies exist on paper while operational evidence, controls and ownership presentation cannot survive scrutiny. Remediation starts with a focused assessment.",
               },
             ].map((c) => (
               <div
@@ -413,8 +412,8 @@ export default function HomePage() {
             If your operation is stuck, blocked or exposed, we can fix it.
           </h2>
           <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-white/80">
-            We don&apos;t consult on theory. We step into live operations and restructure what
-            isn&apos;t working.
+            Octus steps into live operations and restructures what is failing under regulatory
+            pressure.
           </p>
           <CtaLink href={ASSESS_PATH} variant="on-dark">
             {CTA_ASSESS_LABEL}
@@ -463,7 +462,7 @@ export default function HomePage() {
               <h2 className="heading-section mb-4">Remediation &amp; Readiness</h2>
               <p className="body-large mb-6 text-muted-foreground">
                 When licensing is delayed, banking rejects the structure, compliance gaps surface, or
-                market entry is blocked — start here. Assessment before catalogue.
+                market entry is blocked, start here with a focused operational assessment.
               </p>
               <div className="flex flex-wrap gap-4">
                 <CtaLink href={ASSESS_PATH}>{CTA_ASSESS_LABEL}</CtaLink>
@@ -501,7 +500,7 @@ export default function HomePage() {
               <p className="label">How we operate</p>
               <h2 className="heading-md operate-title">Accountable execution.</h2>
               <p className="body-lg operate-body">
-                Octus is the coordination and execution layer behind regulated operations —
+                Octus is the coordination and execution layer behind regulated operations:
                 licensing, compliance, banking and structure under one point of accountability.
               </p>
               <Link
@@ -515,8 +514,8 @@ export default function HomePage() {
               <div className="juris-strip operate-juris">
                 <p className="juris-strip-label">Operating environments</p>
                 <p className="body-sm mb-4 text-muted-foreground">
-                  Structural fit across active markets and selected jurisdictions — not a licence
-                  catalogue.
+                  Structural fit across active markets and selected jurisdictions where Octus can
+                  take operational accountability.
                 </p>
                 <div className="chip-row">
                   <Link href="/markets" className="chip-juris chip-juris-link">
@@ -542,7 +541,7 @@ export default function HomePage() {
             <p className="section-label mb-3 block">How we engage</p>
             <h2 className="heading-section mb-3">Accountability scales with the mandate.</h2>
             <p className="body-large text-muted-foreground">
-              From focused projects to Lead Contractor programmes — engagement models built for
+              From focused projects to Lead Contractor programmes, engagement models are built for
               operators who need a single accountable layer.
             </p>
           </div>
@@ -561,7 +560,7 @@ export default function HomePage() {
               <h2 className="heading-section">Authority for operators who need structure.</h2>
               <p className="body-large mt-4">
                 Regulatory intelligence, market signals, operational insights and executive
-                perspectives — connected to our intelligence resources and Insights.
+                perspectives connected to our intelligence resources and Insights.
               </p>
             </div>
             <div className="flex flex-wrap gap-4">
@@ -589,13 +588,15 @@ export default function HomePage() {
       {/* 16. Final qualification CTA */}
       <section className="bg-background py-20 md:py-24">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-          <h2 className="heading-section mb-4">This is not for everyone.</h2>
+          <h2 className="heading-section mb-4">Mandates Octus accepts.</h2>
           <p className="body-large mx-auto mb-4 max-w-2xl">
-            We don&apos;t work on short-term strategies, regulatory arbitrage or experimental
-            setups.
+            Octus takes mandates where a regulated operation needs structural accountability:
+            licensing pathways, compliance systems, banking readiness, corporate design and
+            remediation under pressure.
           </p>
           <p className="mx-auto mb-10 max-w-2xl font-sans text-lg font-medium text-foreground">
-            If you are building a real operation under regulatory constraint, we should talk.
+            If you are building or defending a real operation under regulatory constraint, we should
+            talk.
           </p>
           <a
             href={WHATSAPP_DISCUSS_URL}

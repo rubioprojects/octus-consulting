@@ -174,8 +174,8 @@ export default function TeamPage() {
             People who understand how regulated operations hold together.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">
-            Accountability starts with clear leadership. Octus is built around people who work
-            inside complex regulated environments — not a generic advisory directory.
+            Accountability starts with clear leadership. Octus is built around people who take
+            ownership inside complex regulated environments and execute with operational clarity.
           </p>
         </div>
         <div className="octus-dark-hero__seam" aria-hidden="true" />
@@ -209,11 +209,6 @@ export default function TeamPage() {
               <MemberCard key={m.name} member={m} tier="specialist" />
             ))}
           </div>
-
-          <p className="team-roster-gate body-sm text-muted-foreground" data-roster-gate="unresolved">
-            Public roster gate unresolved for Larissa Carvalho, Bianca Carolina Oliveira Andrade and
-            Luciana Santos Veloso — held pending Rubio decision. See evidence decision register.
-          </p>
         </div>
       </section>
 

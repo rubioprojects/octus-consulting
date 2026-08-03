@@ -93,8 +93,8 @@ export default function ServicesIndexPage() {
               What Octus coordinates.
             </h2>
             <p className="body-large mb-6 max-w-2xl text-muted-foreground">
-              Each area is a public entry into the same operating system — not a disconnected service
-              catalogue.
+              Each area is a public entry into the same operating system, coordinated under one
+              accountable model.
             </p>
             <OctusEditorialDivider className="mb-12 ml-0 mr-auto" />
           </Reveal>
