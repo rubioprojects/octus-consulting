@@ -197,3 +197,19 @@
 | Rubio rescreen | BLOCKED |
 | terminal | `OCTUS_SERVICES_CLOSEOUT_READY_FOR_SOL_AUDIT` |
 
+## D-018 — Phase 4 Services validation closeout returned for Sol audit
+
+| Field | Value |
+|---|---|
+| Prior closeout | NOT ACCEPTED (accessibility gate / catalogue proof / documentary) |
+| Validation closeout | READY FOR SOL AUDIT |
+| accessibility tooling | `@axe-core/playwright` + `axe-core` 4.12.1 mandatory |
+| catalogue | derived PASS · 39/34/7/11 · orphans 0 |
+| a11y residual | `PHASE4_A11Y_CONTRAST_LINK_RESIDUAL_001` — serious color-contrast / link-in-text-block under visual freeze |
+| claim register | rewritten count corrected to 7 |
+| immutable_preview | https://octus-consulting-eyjy9sxq7-axle1.vercel.app |
+| deployed_sha | `ee8f1d0f7d442482eee99cef927a3389892617b4` |
+| Phase 5 | BLOCKED |
+| Rubio rescreen | BLOCKED |
+| terminal | `OCTUS_SERVICES_VALIDATION_CLOSEOUT_READY_FOR_SOL_AUDIT` |
+

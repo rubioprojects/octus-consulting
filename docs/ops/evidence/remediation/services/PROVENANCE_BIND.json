@@ -34,5 +34,18 @@
   "note": "Final visual compare uses immutable closeout preview eyjy9sxq7 — not Phase 3 7yzcy4yif.",
   "evidence_commit": "3215152b63d73d7e618d2ad83865d83e30b7c0fc",
   "final_evidence_head": "3215152b63d73d7e618d2ad83865d83e30b7c0fc",
-  "final_head": "40f0a21faa4a61f624bf0c75fac924722db2703e"
+  "final_head": "40f0a21faa4a61f624bf0c75fac924722db2703e",
+  "validation_closeout": {
+    "terminal": "OCTUS_SERVICES_VALIDATION_CLOSEOUT_READY_FOR_SOL_AUDIT",
+    "immutable_preview_tested": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+    "deployed_application_sha": "ee8f1d0f7d442482eee99cef927a3389892617b4",
+    "application_code_sha": "e72d3902670de83573bc32674c3cd02e036b787e",
+    "axe_core_version": "4.12.1",
+    "screenshot_count_unchanged": 272,
+    "screenshot_manifest_metadata_missing": 0,
+    "historical_baseline_canonical_gaps": 5,
+    "reconciled_metadata_gaps": 0,
+    "a11y_residual": "PHASE4_A11Y_CONTRAST_LINK_RESIDUAL_001",
+    "catalogue_status": "PASS"
+  }
 }

@@ -1,0 +1,512 @@
+{
+  "generated_at": "2026-08-03T23:01:12.477Z",
+  "expected": {
+    "areas": 7,
+    "services": 39,
+    "families": 34,
+    "deep": 11,
+    "orphans": 0,
+    "unintentional_duplicates": 0
+  },
+  "computed": {
+    "areas": 7,
+    "services_publicAreas": 39,
+    "services_catalog": 39,
+    "services_register": 39,
+    "services_architecture": 39,
+    "families": 34,
+    "deep_routes_inventory": 11,
+    "orphans": 0,
+    "unintentional_duplicates": 0
+  },
+  "discrepancies": [],
+  "mappings": [
+    {
+      "service_id": "SVC-REG-02",
+      "note": "has_secondary_area",
+      "secondary": "AREA-HUB"
+    },
+    {
+      "service_id": "SVC-REG-03",
+      "note": "has_secondary_area",
+      "secondary": "AREA-CORP"
+    },
+    {
+      "service_id": "SVC-REG-04",
+      "note": "has_secondary_area",
+      "secondary": "AREA-CORP"
+    },
+    {
+      "service_id": "SVC-REG-05",
+      "note": "has_secondary_area",
+      "secondary": "AREA-HUB"
+    },
+    {
+      "service_id": "SVC-CMP-04",
+      "note": "has_secondary_area",
+      "secondary": "AREA-CORP"
+    },
+    {
+      "service_id": "SVC-CMP-05",
+      "note": "has_secondary_area",
+      "secondary": "AREA-HUB"
+    },
+    {
+      "service_id": "SVC-LEG-02",
+      "note": "has_secondary_area",
+      "secondary": "AREA-CORP"
+    },
+    {
+      "service_id": "SVC-LEG-03",
+      "note": "has_secondary_area",
+      "secondary": "AREA-HUB"
+    },
+    {
+      "service_id": "SVC-CORP-02",
+      "note": "has_secondary_area",
+      "secondary": "AREA-HUB"
+    },
+    {
+      "service_id": "SVC-CORP-03",
+      "note": "has_secondary_area",
+      "secondary": "AREA-HUB"
+    },
+    {
+      "service_id": "SVC-CORP-04",
+      "note": "has_secondary_area",
+      "secondary": "AREA-REM"
+    },
+    {
+      "service_id": "SVC-CORP-05",
+      "note": "has_secondary_area",
+      "secondary": "AREA-HUB"
+    },
+    {
+      "service_id": "SVC-CORP-07",
+      "note": "has_secondary_area",
+      "secondary": "AREA-PC"
+    },
+    {
+      "service_id": "SVC-PC-01",
+      "note": "has_secondary_area",
+      "secondary": "AREA-CORP"
+    },
+    {
+      "service_id": "SVC-PC-02",
+      "note": "has_secondary_area",
+      "secondary": "AREA-CORP"
+    },
+    {
+      "service_id": "SVC-PC-03",
+      "note": "has_secondary_area",
+      "secondary": "AREA-HUB"
+    },
+    {
+      "service_id": "SVC-PC-04",
+      "note": "has_secondary_area",
+      "secondary": "AREA-HUB"
+    },
+    {
+      "service_id": "SVC-PC-05",
+      "note": "has_secondary_area",
+      "secondary": "AREA-CORP"
+    },
+    {
+      "service_id": "SVC-REM-02",
+      "note": "has_secondary_area",
+      "secondary": "AREA-REG"
+    },
+    {
+      "service_id": "SVC-REM-03",
+      "note": "has_secondary_area",
+      "secondary": "AREA-CMP"
+    },
+    {
+      "service_id": "SVC-REM-04",
+      "note": "has_secondary_area",
+      "secondary": "AREA-CMP"
+    },
+    {
+      "service_id": "SVC-REM-05",
+      "note": "has_secondary_area",
+      "secondary": "AREA-HUB"
+    },
+    {
+      "service_id": "SVC-REM-06",
+      "note": "has_secondary_area",
+      "secondary": "AREA-CORP"
+    },
+    {
+      "service_id": "SVC-HUB-01",
+      "note": "has_secondary_area",
+      "secondary": "AREA-REG"
+    },
+    {
+      "service_id": "SVC-HUB-02",
+      "note": "has_secondary_area",
+      "secondary": "AREA-CORP"
+    },
+    {
+      "service_id": "SVC-HUB-03",
+      "note": "has_secondary_area",
+      "secondary": "AREA-CORP"
+    },
+    {
+      "service_id": "SVC-HUB-04",
+      "note": "has_secondary_area",
+      "secondary": "AREA-CORP"
+    },
+    {
+      "service_id": "SVC-HUB-05",
+      "note": "has_secondary_area",
+      "secondary": "AREA-CMP"
+    },
+    {
+      "service_id": "SVC-HUB-06",
+      "note": "has_secondary_area",
+      "secondary": "AREA-LEG"
+    },
+    {
+      "service_id": "SVC-REG-01",
+      "area": "AREA-REG",
+      "family": "REG-F1",
+      "destination": "/solutions/regulatory/market-entry",
+      "display_depth": "deep-service page",
+      "in_mandatory_deep": true
+    },
+    {
+      "service_id": "SVC-REG-05",
+      "area": "AREA-REG",
+      "family": "REG-F1",
+      "destination": "/solutions/regulatory/market-entry",
+      "display_depth": "deep-service page",
+      "in_mandatory_deep": true
+    },
+    {
+      "service_id": "SVC-REG-02",
+      "area": "AREA-REG",
+      "family": "REG-F2",
+      "destination": "/solutions/regulatory/igaming-licensing",
+      "display_depth": "deep-service page",
+      "in_mandatory_deep": true
+    },
+    {
+      "service_id": "SVC-REG-03",
+      "area": "AREA-REG",
+      "family": "REG-F3",
+      "destination": "/solutions/regulatory/fintech-licensing",
+      "display_depth": "deep-service page",
+      "in_mandatory_deep": true
+    },
+    {
+      "service_id": "SVC-REG-04",
+      "area": "AREA-REG",
+      "family": "REG-F4",
+      "destination": "/brazil",
+      "display_depth": "deep-service page",
+      "in_mandatory_deep": false
+    },
+    {
+      "service_id": "SVC-CMP-01",
+      "area": "AREA-CMP",
+      "family": "CMP-F1",
+      "destination": "/solutions/compliance/aml-kyc",
+      "display_depth": "deep-service page",
+      "in_mandatory_deep": true
+    },
+    {
+      "service_id": "SVC-CMP-06",
+      "area": "AREA-CMP",
+      "family": "CMP-F2",
+      "destination": "/solutions/compliance-risk",
+      "display_depth": "family module",
+      "in_mandatory_deep": false
+    },
+    {
+      "service_id": "SVC-CMP-04",
+      "area": "AREA-CMP",
+      "family": "CMP-F3",
+      "destination": "/solutions/compliance/internal-controls",
+      "display_depth": "deep-service page",
+      "in_mandatory_deep": true
+    },
+    {
+      "service_id": "SVC-CMP-02",
+      "area": "AREA-CMP",
+      "family": "CMP-F4",
+      "destination": "/solutions/compliance/compliance-as-a-service",
+      "display_depth": "deep-service page",
+      "in_mandatory_deep": true
+    },
+    {
+      "service_id": "SVC-CMP-03",
+      "area": "AREA-CMP",
+      "family": "CMP-F5",
+      "destination": "/solutions/compliance/dpo-as-a-service",
+      "display_depth": "deep-service page",
+      "in_mandatory_deep": true
+    },
+    {
+      "service_id": "SVC-CMP-05",
+      "area": "AREA-CMP",
+      "family": "CMP-F6",
+      "destination": "/solutions/compliance/gli-readiness",
+      "display_depth": "deep-service page",
+      "in_mandatory_deep": true
+    },
+    {
+      "service_id": "SVC-LEG-01",
+      "area": "AREA-LEG",
+      "family": "LEG-F1",
+      "destination": "/solutions/legal-structural-architecture",
+      "display_depth": "family module",
+      "in_mandatory_deep": false
+    },
+    {
+      "service_id": "SVC-LEG-04",
+      "area": "AREA-LEG",
+      "family": "LEG-F2",
+      "destination": "/solutions/legal-structural-architecture",
+      "display_depth": "family module",
+      "in_mandatory_deep": false
+    },
+    {
+      "service_id": "SVC-LEG-02",
+      "area": "AREA-LEG",
+      "family": "LEG-F3",
+      "destination": "/solutions/legal-structural-architecture",
+      "display_depth": "family module",
+      "in_mandatory_deep": false
+    },
+    {
+      "service_id": "SVC-LEG-03",
+      "area": "AREA-LEG",
+      "family": "LEG-F3",
+      "destination": "/solutions/legal-structural-architecture",
+      "display_depth": "family module",
+      "in_mandatory_deep": false
+    },
+    {
+      "service_id": "SVC-CORP-01",
+      "area": "AREA-CORP",
+      "family": "CORP-F1",
+      "destination": "/solutions/corporate/holding-design",
+      "display_depth": "deep-service page",
+      "in_mandatory_deep": true
+    },
+    {
+      "service_id": "SVC-CORP-02",
+      "area": "AREA-CORP",
+      "family": "CORP-F2",
+      "destination": "/solutions/corporate/company-formation",
+      "display_depth": "deep-service page",
+      "in_mandatory_deep": true
+    },
+    {
+      "service_id": "SVC-CORP-03",
+      "area": "AREA-CORP",
+      "family": "CORP-F3",
+      "destination": "/solutions/corporate/offshore-structuring",
+      "display_depth": "deep-service page",
+      "in_mandatory_deep": true
+    },
+    {
+      "service_id": "SVC-CORP-04",
+      "area": "AREA-CORP",
+      "family": "CORP-F3",
+      "destination": "/solutions/corporate-structuring",
+      "display_depth": "family module",
+      "in_mandatory_deep": false
+    },
+    {
+      "service_id": "SVC-CORP-05",
+      "area": "AREA-CORP",
+      "family": "CORP-F4",
+      "destination": "/solutions/banking-payments-infrastructure",
+      "display_depth": "deep-service page",
+      "in_mandatory_deep": false
+    },
+    {
+      "service_id": "SVC-CORP-06",
+      "area": "AREA-CORP",
+      "family": "CORP-F5",
+      "destination": "/solutions/corporate-structuring",
+      "display_depth": "family module",
+      "in_mandatory_deep": false
+    },
+    {
+      "service_id": "SVC-CORP-07",
+      "area": "AREA-CORP",
+      "family": "CORP-F6",
+      "destination": "/solutions/corporate-structuring",
+      "display_depth": "family module",
+      "in_mandatory_deep": false
+    },
+    {
+      "service_id": "SVC-PC-01",
+      "area": "AREA-PC",
+      "family": "PC-F1",
+      "destination": "/private-clients",
+      "display_depth": "family module",
+      "in_mandatory_deep": false
+    },
+    {
+      "service_id": "SVC-PC-02",
+      "area": "AREA-PC",
+      "family": "PC-F2",
+      "destination": "/private-clients",
+      "display_depth": "family module",
+      "in_mandatory_deep": false
+    },
+    {
+      "service_id": "SVC-PC-03",
+      "area": "AREA-PC",
+      "family": "PC-F3",
+      "destination": "/private-clients",
+      "display_depth": "family module",
+      "in_mandatory_deep": false
+    },
+    {
+      "service_id": "SVC-PC-04",
+      "area": "AREA-PC",
+      "family": "PC-F4",
+      "destination": "/private-clients",
+      "display_depth": "family module",
+      "in_mandatory_deep": false
+    },
+    {
+      "service_id": "SVC-PC-05",
+      "area": "AREA-PC",
+      "family": "PC-F5",
+      "destination": "/private-clients",
+      "display_depth": "family module",
+      "in_mandatory_deep": false
+    },
+    {
+      "service_id": "SVC-REM-01",
+      "area": "AREA-REM",
+      "family": "REM-F1",
+      "destination": "/diagnostic",
+      "display_depth": "deep-service page",
+      "in_mandatory_deep": false
+    },
+    {
+      "service_id": "SVC-REM-02",
+      "area": "AREA-REM",
+      "family": "REM-F2",
+      "destination": "/solutions/remediation-readiness",
+      "display_depth": "family module",
+      "in_mandatory_deep": false
+    },
+    {
+      "service_id": "SVC-REM-03",
+      "area": "AREA-REM",
+      "family": "REM-F3",
+      "destination": "/solutions/banking-payments-infrastructure",
+      "display_depth": "deep-service page",
+      "in_mandatory_deep": false
+    },
+    {
+      "service_id": "SVC-REM-05",
+      "area": "AREA-REM",
+      "family": "REM-F3",
+      "destination": "/solutions/remediation-readiness",
+      "display_depth": "family module",
+      "in_mandatory_deep": false
+    },
+    {
+      "service_id": "SVC-REM-04",
+      "area": "AREA-REM",
+      "family": "REM-F4",
+      "destination": "/solutions/remediation-readiness",
+      "display_depth": "family module",
+      "in_mandatory_deep": false
+    },
+    {
+      "service_id": "SVC-REM-06",
+      "area": "AREA-REM",
+      "family": "REM-F5",
+      "destination": "/solutions/remediation-readiness",
+      "display_depth": "family module",
+      "in_mandatory_deep": false
+    },
+    {
+      "service_id": "SVC-HUB-01",
+      "area": "AREA-HUB",
+      "family": "HUB-F1",
+      "destination": "/international-hub",
+      "display_depth": "family module",
+      "in_mandatory_deep": false
+    },
+    {
+      "service_id": "SVC-HUB-02",
+      "area": "AREA-HUB",
+      "family": "HUB-F2",
+      "destination": "/solutions/banking-payments-infrastructure",
+      "display_depth": "deep-service page",
+      "in_mandatory_deep": false
+    },
+    {
+      "service_id": "SVC-HUB-03",
+      "area": "AREA-HUB",
+      "family": "HUB-F2",
+      "destination": "/solutions/banking-payments-infrastructure",
+      "display_depth": "deep-service page",
+      "in_mandatory_deep": false
+    },
+    {
+      "service_id": "SVC-HUB-04",
+      "area": "AREA-HUB",
+      "family": "HUB-F3",
+      "destination": "/international-hub",
+      "display_depth": "family module",
+      "in_mandatory_deep": false
+    },
+    {
+      "service_id": "SVC-HUB-05",
+      "area": "AREA-HUB",
+      "family": "HUB-F4",
+      "destination": "/international-hub",
+      "display_depth": "family module",
+      "in_mandatory_deep": false
+    },
+    {
+      "service_id": "SVC-HUB-06",
+      "area": "AREA-HUB",
+      "family": "HUB-F5",
+      "destination": "/international-hub",
+      "display_depth": "family module",
+      "in_mandatory_deep": false
+    },
+    {
+      "note": "shared_deep_url_same_area",
+      "url": "/solutions/regulatory/market-entry",
+      "services": [
+        "SVC-REG-01",
+        "SVC-REG-05"
+      ],
+      "classification": "pathway_siblings"
+    }
+  ],
+  "deep_routes": [
+    "/solutions/regulatory/igaming-licensing",
+    "/solutions/regulatory/fintech-licensing",
+    "/solutions/regulatory/market-entry",
+    "/solutions/compliance/aml-kyc",
+    "/solutions/compliance/compliance-as-a-service",
+    "/solutions/compliance/dpo-as-a-service",
+    "/solutions/compliance/gli-readiness",
+    "/solutions/compliance/internal-controls",
+    "/solutions/corporate/company-formation",
+    "/solutions/corporate/holding-design",
+    "/solutions/corporate/offshore-structuring"
+  ],
+  "sources": {
+    "publicAreas": "/Users/devrubio/Developer/Octus/octus-consulting/lib/publicAreas.ts",
+    "catalog": "/Users/devrubio/Developer/Octus/octus-consulting/docs/commercial/public-catalog/OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+    "families": "/Users/devrubio/Developer/Octus/octus-consulting/docs/website/OCTUS_SERVICE_FAMILY_ARCHITECTURE_V1.json",
+    "register": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/services/PHASE4_PUBLIC_SERVICE_REGISTER.md",
+    "inventory": "phase4_validation_closeout.mjs#MANDATORY_ROUTES"
+  },
+  "status": "PASS"
+}

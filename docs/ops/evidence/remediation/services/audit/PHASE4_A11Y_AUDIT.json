@@ -1,300 +1,2239 @@
 {
-  "generated_at": "2026-08-03T22:15:31.893Z",
+  "generated_at": "2026-08-03T23:01:12.477Z",
+  "engine": "@axe-core/playwright",
+  "axe_core_version": "4.12.1",
   "routes": [
     {
-      "route": "/solutions/regulatory-structuring",
-      "classification": "reconciled",
-      "engine": "basic",
-      "basic": {
+      "route": "/solutions",
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions",
+      "viewport": "1440x1000",
+      "timestamp": "2026-08-03T22:59:38.972Z",
+      "http_status": 200,
+      "engine": {
+        "name": "@axe-core/playwright",
+        "axe_core_version": "4.12.1"
+      },
+      "manual": {
         "issues": [],
-        "lang": "en",
-        "h1Count": 1
+        "notes": {
+          "lang": "en",
+          "landmarks": {
+            "main": true,
+            "nav": true,
+            "footer": true
+          },
+          "h1Count": 1,
+          "headingLevels": [
+            1,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            3,
+            3,
+            2,
+            2,
+            2
+          ],
+          "duplicateIds": [],
+          "accordionTriggerCount": 0
+        }
       },
       "axe": {
-        "unavailable": true
+        "unavailable": false,
+        "execution_error": false,
+        "include": "main",
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+            "nodes": 2,
+            "targets": [
+              [
+                ".gap-6.grid.md\\:grid-cols-2 > .solution-card.p-6.md\\:p-8:nth-child(1) > .tracking-\\[0\\.12em\\].text-primary\\/80.mb-2"
+              ],
+              [
+                ".solution-card.p-6.md\\:p-8:nth-child(2) > .tracking-\\[0\\.12em\\].text-primary\\/80.mb-2"
+              ]
+            ]
+          }
+        ],
+        "serious": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+            "nodes": 2,
+            "targets": [
+              [
+                ".gap-6.grid.md\\:grid-cols-2 > .solution-card.p-6.md\\:p-8:nth-child(1) > .tracking-\\[0\\.12em\\].text-primary\\/80.mb-2"
+              ],
+              [
+                ".solution-card.p-6.md\\:p-8:nth-child(2) > .tracking-\\[0\\.12em\\].text-primary\\/80.mb-2"
+              ]
+            ]
+          }
+        ],
+        "critical": [],
+        "moderate": [],
+        "minor": [],
+        "incomplete": 1,
+        "passes": 11
       },
+      "interactions": {
+        "mouse": [],
+        "enter": [],
+        "space": [],
+        "focusVisibleSample": [
+          {
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "boxShadow": "none",
+            "tag": "a",
+            "visibleFocus": true
+          }
+        ],
+        "tabReachableInteractive": {
+          "tabs": 12,
+          "interactiveFocusEvents": 12
+        },
+        "visibleAccordionTriggersSampled": 0
+      },
+      "accordion_interaction_fail": false,
+      "status": "FAIL"
+    },
+    {
+      "route": "/solutions/regulatory-structuring",
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/regulatory-structuring",
+      "viewport": "1440x1000",
+      "timestamp": "2026-08-03T22:59:40.882Z",
+      "http_status": 200,
+      "engine": {
+        "name": "@axe-core/playwright",
+        "axe_core_version": "4.12.1"
+      },
+      "manual": {
+        "issues": [],
+        "notes": {
+          "lang": "en",
+          "landmarks": {
+            "main": true,
+            "nav": true,
+            "footer": true
+          },
+          "h1Count": 1,
+          "headingLevels": [
+            1,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2
+          ],
+          "duplicateIds": [],
+          "accordionTriggerCount": 4
+        }
+      },
+      "axe": {
+        "unavailable": false,
+        "execution_error": false,
+        "include": "main",
+        "violations": [],
+        "serious": [],
+        "critical": [],
+        "moderate": [],
+        "minor": [],
+        "incomplete": 1,
+        "passes": 18
+      },
+      "interactions": {
+        "mouse": [
+          {
+            "index": 0,
+            "before": "true",
+            "after": "false",
+            "changed": true,
+            "panelVisibleBefore": null,
+            "panelVisibleAfter": null,
+            "panelChanged": false
+          },
+          {
+            "index": 1,
+            "before": "false",
+            "after": "true",
+            "changed": true,
+            "panelVisibleBefore": null,
+            "panelVisibleAfter": null,
+            "panelChanged": false
+          },
+          {
+            "index": 2,
+            "before": "false",
+            "after": "true",
+            "changed": true,
+            "panelVisibleBefore": null,
+            "panelVisibleAfter": null,
+            "panelChanged": false
+          }
+        ],
+        "enter": [
+          {
+            "index": 0,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          },
+          {
+            "index": 1,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          },
+          {
+            "index": 2,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          }
+        ],
+        "space": [
+          {
+            "index": 0,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          },
+          {
+            "index": 1,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          }
+        ],
+        "focusVisibleSample": [
+          {
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "boxShadow": "none",
+            "tag": "a",
+            "visibleFocus": true
+          }
+        ],
+        "tabReachableInteractive": {
+          "tabs": 12,
+          "interactiveFocusEvents": 12
+        },
+        "visibleAccordionTriggersSampled": 3
+      },
+      "accordion_interaction_fail": false,
       "status": "PASS"
     },
     {
       "route": "/solutions/compliance-risk",
-      "classification": "reconciled",
-      "engine": "basic",
-      "basic": {
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/compliance-risk",
+      "viewport": "1440x1000",
+      "timestamp": "2026-08-03T22:59:47.441Z",
+      "http_status": 200,
+      "engine": {
+        "name": "@axe-core/playwright",
+        "axe_core_version": "4.12.1"
+      },
+      "manual": {
         "issues": [],
-        "lang": "en",
-        "h1Count": 1
+        "notes": {
+          "lang": "en",
+          "landmarks": {
+            "main": true,
+            "nav": true,
+            "footer": true
+          },
+          "h1Count": 1,
+          "headingLevels": [
+            1,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2
+          ],
+          "duplicateIds": [],
+          "accordionTriggerCount": 6
+        }
       },
       "axe": {
-        "unavailable": true
+        "unavailable": false,
+        "execution_error": false,
+        "include": "main",
+        "violations": [],
+        "serious": [],
+        "critical": [],
+        "moderate": [],
+        "minor": [],
+        "incomplete": 1,
+        "passes": 18
       },
-      "status": "PASS"
-    },
-    {
-      "route": "/solutions",
-      "classification": "reconciled",
-      "engine": "basic",
-      "basic": {
-        "issues": [],
-        "lang": "en",
-        "h1Count": 1
+      "interactions": {
+        "mouse": [
+          {
+            "index": 0,
+            "before": "true",
+            "after": "false",
+            "changed": true,
+            "panelVisibleBefore": null,
+            "panelVisibleAfter": null,
+            "panelChanged": false
+          },
+          {
+            "index": 1,
+            "before": "false",
+            "after": "true",
+            "changed": true,
+            "panelVisibleBefore": null,
+            "panelVisibleAfter": null,
+            "panelChanged": false
+          },
+          {
+            "index": 2,
+            "before": "false",
+            "after": "true",
+            "changed": true,
+            "panelVisibleBefore": null,
+            "panelVisibleAfter": null,
+            "panelChanged": false
+          }
+        ],
+        "enter": [
+          {
+            "index": 0,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          },
+          {
+            "index": 1,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          },
+          {
+            "index": 2,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          }
+        ],
+        "space": [
+          {
+            "index": 0,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          },
+          {
+            "index": 1,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          }
+        ],
+        "focusVisibleSample": [
+          {
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "boxShadow": "none",
+            "tag": "a",
+            "visibleFocus": true
+          }
+        ],
+        "tabReachableInteractive": {
+          "tabs": 12,
+          "interactiveFocusEvents": 12
+        },
+        "visibleAccordionTriggersSampled": 3
       },
-      "axe": {
-        "unavailable": true
-      },
+      "accordion_interaction_fail": false,
       "status": "PASS"
     },
     {
       "route": "/solutions/legal-structural-architecture",
-      "classification": "reconciled",
-      "engine": "basic",
-      "basic": {
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/legal-structural-architecture",
+      "viewport": "1440x1000",
+      "timestamp": "2026-08-03T22:59:54.150Z",
+      "http_status": 200,
+      "engine": {
+        "name": "@axe-core/playwright",
+        "axe_core_version": "4.12.1"
+      },
+      "manual": {
         "issues": [],
-        "lang": "en",
-        "h1Count": 1
+        "notes": {
+          "lang": "en",
+          "landmarks": {
+            "main": true,
+            "nav": true,
+            "footer": true
+          },
+          "h1Count": 1,
+          "headingLevels": [
+            1,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2
+          ],
+          "duplicateIds": [],
+          "accordionTriggerCount": 3
+        }
       },
       "axe": {
-        "unavailable": true
+        "unavailable": false,
+        "execution_error": false,
+        "include": "main",
+        "violations": [],
+        "serious": [],
+        "critical": [],
+        "moderate": [],
+        "minor": [],
+        "incomplete": 1,
+        "passes": 18
       },
+      "interactions": {
+        "mouse": [
+          {
+            "index": 0,
+            "before": "true",
+            "after": "false",
+            "changed": true,
+            "panelVisibleBefore": null,
+            "panelVisibleAfter": null,
+            "panelChanged": false
+          },
+          {
+            "index": 1,
+            "before": "false",
+            "after": "true",
+            "changed": true,
+            "panelVisibleBefore": null,
+            "panelVisibleAfter": null,
+            "panelChanged": false
+          },
+          {
+            "index": 2,
+            "before": "false",
+            "after": "true",
+            "changed": true,
+            "panelVisibleBefore": null,
+            "panelVisibleAfter": null,
+            "panelChanged": false
+          }
+        ],
+        "enter": [
+          {
+            "index": 0,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          },
+          {
+            "index": 1,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          },
+          {
+            "index": 2,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          }
+        ],
+        "space": [
+          {
+            "index": 0,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          },
+          {
+            "index": 1,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          }
+        ],
+        "focusVisibleSample": [
+          {
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "boxShadow": "none",
+            "tag": "a",
+            "visibleFocus": true
+          }
+        ],
+        "tabReachableInteractive": {
+          "tabs": 12,
+          "interactiveFocusEvents": 12
+        },
+        "visibleAccordionTriggersSampled": 3
+      },
+      "accordion_interaction_fail": false,
       "status": "PASS"
     },
     {
       "route": "/solutions/corporate-structuring",
-      "classification": "reconciled",
-      "engine": "basic",
-      "basic": {
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/corporate-structuring",
+      "viewport": "1440x1000",
+      "timestamp": "2026-08-03T23:00:01.135Z",
+      "http_status": 200,
+      "engine": {
+        "name": "@axe-core/playwright",
+        "axe_core_version": "4.12.1"
+      },
+      "manual": {
         "issues": [],
-        "lang": "en",
-        "h1Count": 1
+        "notes": {
+          "lang": "en",
+          "landmarks": {
+            "main": true,
+            "nav": true,
+            "footer": true
+          },
+          "h1Count": 1,
+          "headingLevels": [
+            1,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2
+          ],
+          "duplicateIds": [],
+          "accordionTriggerCount": 6
+        }
       },
       "axe": {
-        "unavailable": true
+        "unavailable": false,
+        "execution_error": false,
+        "include": "main",
+        "violations": [],
+        "serious": [],
+        "critical": [],
+        "moderate": [],
+        "minor": [],
+        "incomplete": 1,
+        "passes": 18
       },
+      "interactions": {
+        "mouse": [
+          {
+            "index": 0,
+            "before": "true",
+            "after": "false",
+            "changed": true,
+            "panelVisibleBefore": null,
+            "panelVisibleAfter": null,
+            "panelChanged": false
+          },
+          {
+            "index": 1,
+            "before": "false",
+            "after": "true",
+            "changed": true,
+            "panelVisibleBefore": null,
+            "panelVisibleAfter": null,
+            "panelChanged": false
+          },
+          {
+            "index": 2,
+            "before": "false",
+            "after": "true",
+            "changed": true,
+            "panelVisibleBefore": null,
+            "panelVisibleAfter": null,
+            "panelChanged": false
+          }
+        ],
+        "enter": [
+          {
+            "index": 0,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          },
+          {
+            "index": 1,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          },
+          {
+            "index": 2,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          }
+        ],
+        "space": [
+          {
+            "index": 0,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          },
+          {
+            "index": 1,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          }
+        ],
+        "focusVisibleSample": [
+          {
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "boxShadow": "none",
+            "tag": "a",
+            "visibleFocus": true
+          }
+        ],
+        "tabReachableInteractive": {
+          "tabs": 12,
+          "interactiveFocusEvents": 12
+        },
+        "visibleAccordionTriggersSampled": 3
+      },
+      "accordion_interaction_fail": false,
       "status": "PASS"
     },
     {
       "route": "/private-clients",
-      "classification": "reconciled",
-      "engine": "basic",
-      "basic": {
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/private-clients",
+      "viewport": "1440x1000",
+      "timestamp": "2026-08-03T23:00:07.616Z",
+      "http_status": 200,
+      "engine": {
+        "name": "@axe-core/playwright",
+        "axe_core_version": "4.12.1"
+      },
+      "manual": {
         "issues": [],
-        "lang": "en",
-        "h1Count": 1
+        "notes": {
+          "lang": "en",
+          "landmarks": {
+            "main": true,
+            "nav": true,
+            "footer": true
+          },
+          "h1Count": 1,
+          "headingLevels": [
+            1,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2
+          ],
+          "duplicateIds": [],
+          "accordionTriggerCount": 5
+        }
       },
       "axe": {
-        "unavailable": true
+        "unavailable": false,
+        "execution_error": false,
+        "include": "main",
+        "violations": [],
+        "serious": [],
+        "critical": [],
+        "moderate": [],
+        "minor": [],
+        "incomplete": 1,
+        "passes": 18
       },
+      "interactions": {
+        "mouse": [
+          {
+            "index": 0,
+            "before": "true",
+            "after": "false",
+            "changed": true,
+            "panelVisibleBefore": null,
+            "panelVisibleAfter": null,
+            "panelChanged": false
+          },
+          {
+            "index": 1,
+            "before": "false",
+            "after": "true",
+            "changed": true,
+            "panelVisibleBefore": null,
+            "panelVisibleAfter": null,
+            "panelChanged": false
+          },
+          {
+            "index": 2,
+            "before": "false",
+            "after": "true",
+            "changed": true,
+            "panelVisibleBefore": null,
+            "panelVisibleAfter": null,
+            "panelChanged": false
+          }
+        ],
+        "enter": [
+          {
+            "index": 0,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          },
+          {
+            "index": 1,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          },
+          {
+            "index": 2,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          }
+        ],
+        "space": [
+          {
+            "index": 0,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          },
+          {
+            "index": 1,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          }
+        ],
+        "focusVisibleSample": [
+          {
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "boxShadow": "none",
+            "tag": "a",
+            "visibleFocus": true
+          }
+        ],
+        "tabReachableInteractive": {
+          "tabs": 12,
+          "interactiveFocusEvents": 12
+        },
+        "visibleAccordionTriggersSampled": 3
+      },
+      "accordion_interaction_fail": false,
       "status": "PASS"
     },
     {
       "route": "/solutions/remediation-readiness",
-      "classification": "reconciled",
-      "engine": "basic",
-      "basic": {
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/remediation-readiness",
+      "viewport": "1440x1000",
+      "timestamp": "2026-08-03T23:00:14.135Z",
+      "http_status": 200,
+      "engine": {
+        "name": "@axe-core/playwright",
+        "axe_core_version": "4.12.1"
+      },
+      "manual": {
         "issues": [],
-        "lang": "en",
-        "h1Count": 1
+        "notes": {
+          "lang": "en",
+          "landmarks": {
+            "main": true,
+            "nav": true,
+            "footer": true
+          },
+          "h1Count": 1,
+          "headingLevels": [
+            1,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2
+          ],
+          "duplicateIds": [],
+          "accordionTriggerCount": 5
+        }
       },
       "axe": {
-        "unavailable": true
+        "unavailable": false,
+        "execution_error": false,
+        "include": "main",
+        "violations": [],
+        "serious": [],
+        "critical": [],
+        "moderate": [],
+        "minor": [],
+        "incomplete": 1,
+        "passes": 18
       },
-      "status": "PASS"
-    },
-    {
-      "route": "/solutions/banking-payments-infrastructure",
-      "classification": "reconciled",
-      "engine": "basic",
-      "basic": {
-        "issues": [],
-        "lang": "en",
-        "h1Count": 1
+      "interactions": {
+        "mouse": [
+          {
+            "index": 0,
+            "before": "true",
+            "after": "false",
+            "changed": true,
+            "panelVisibleBefore": null,
+            "panelVisibleAfter": null,
+            "panelChanged": false
+          },
+          {
+            "index": 1,
+            "before": "false",
+            "after": "true",
+            "changed": true,
+            "panelVisibleBefore": null,
+            "panelVisibleAfter": null,
+            "panelChanged": false
+          },
+          {
+            "index": 2,
+            "before": "false",
+            "after": "true",
+            "changed": true,
+            "panelVisibleBefore": null,
+            "panelVisibleAfter": null,
+            "panelChanged": false
+          }
+        ],
+        "enter": [
+          {
+            "index": 0,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          },
+          {
+            "index": 1,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          },
+          {
+            "index": 2,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          }
+        ],
+        "space": [
+          {
+            "index": 0,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          },
+          {
+            "index": 1,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          }
+        ],
+        "focusVisibleSample": [
+          {
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "boxShadow": "none",
+            "tag": "a",
+            "visibleFocus": true
+          }
+        ],
+        "tabReachableInteractive": {
+          "tabs": 12,
+          "interactiveFocusEvents": 12
+        },
+        "visibleAccordionTriggersSampled": 3
       },
-      "axe": {
-        "unavailable": true
-      },
+      "accordion_interaction_fail": false,
       "status": "PASS"
     },
     {
       "route": "/international-hub",
-      "classification": "reconciled",
-      "engine": "basic",
-      "basic": {
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/international-hub",
+      "viewport": "1440x1000",
+      "timestamp": "2026-08-03T23:00:20.685Z",
+      "http_status": 200,
+      "engine": {
+        "name": "@axe-core/playwright",
+        "axe_core_version": "4.12.1"
+      },
+      "manual": {
         "issues": [],
-        "lang": "en",
-        "h1Count": 1
+        "notes": {
+          "lang": "en",
+          "landmarks": {
+            "main": true,
+            "nav": true,
+            "footer": true
+          },
+          "h1Count": 1,
+          "headingLevels": [
+            1,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2
+          ],
+          "duplicateIds": [],
+          "accordionTriggerCount": 5
+        }
       },
       "axe": {
-        "unavailable": true
+        "unavailable": false,
+        "execution_error": false,
+        "include": "main",
+        "violations": [],
+        "serious": [],
+        "critical": [],
+        "moderate": [],
+        "minor": [],
+        "incomplete": 1,
+        "passes": 18
       },
+      "interactions": {
+        "mouse": [
+          {
+            "index": 0,
+            "before": "true",
+            "after": "false",
+            "changed": true,
+            "panelVisibleBefore": null,
+            "panelVisibleAfter": null,
+            "panelChanged": false
+          },
+          {
+            "index": 1,
+            "before": "false",
+            "after": "true",
+            "changed": true,
+            "panelVisibleBefore": null,
+            "panelVisibleAfter": null,
+            "panelChanged": false
+          },
+          {
+            "index": 2,
+            "before": "false",
+            "after": "true",
+            "changed": true,
+            "panelVisibleBefore": null,
+            "panelVisibleAfter": null,
+            "panelChanged": false
+          }
+        ],
+        "enter": [
+          {
+            "index": 0,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          },
+          {
+            "index": 1,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          },
+          {
+            "index": 2,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          }
+        ],
+        "space": [
+          {
+            "index": 0,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          },
+          {
+            "index": 1,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          }
+        ],
+        "focusVisibleSample": [
+          {
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "boxShadow": "none",
+            "tag": "a",
+            "visibleFocus": true
+          }
+        ],
+        "tabReachableInteractive": {
+          "tabs": 12,
+          "interactiveFocusEvents": 12
+        },
+        "visibleAccordionTriggersSampled": 3
+      },
+      "accordion_interaction_fail": false,
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/banking-payments-infrastructure",
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/banking-payments-infrastructure",
+      "viewport": "1440x1000",
+      "timestamp": "2026-08-03T23:00:27.163Z",
+      "http_status": 200,
+      "engine": {
+        "name": "@axe-core/playwright",
+        "axe_core_version": "4.12.1"
+      },
+      "manual": {
+        "issues": [],
+        "notes": {
+          "lang": "en",
+          "landmarks": {
+            "main": true,
+            "nav": true,
+            "footer": true
+          },
+          "h1Count": 1,
+          "headingLevels": [
+            1,
+            2,
+            3,
+            3,
+            3
+          ],
+          "duplicateIds": [],
+          "accordionTriggerCount": 0
+        }
+      },
+      "axe": {
+        "unavailable": false,
+        "execution_error": false,
+        "include": "main",
+        "violations": [],
+        "serious": [],
+        "critical": [],
+        "moderate": [],
+        "minor": [],
+        "incomplete": 1,
+        "passes": 10
+      },
+      "interactions": {
+        "mouse": [],
+        "enter": [],
+        "space": [],
+        "focusVisibleSample": [
+          {
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "boxShadow": "none",
+            "tag": "a",
+            "visibleFocus": true
+          }
+        ],
+        "tabReachableInteractive": {
+          "tabs": 12,
+          "interactiveFocusEvents": 12
+        },
+        "visibleAccordionTriggersSampled": 0
+      },
+      "accordion_interaction_fail": false,
       "status": "PASS"
     },
     {
       "route": "/solutions/regulatory/igaming-licensing",
-      "classification": "reconciled",
-      "engine": "basic",
-      "basic": {
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/regulatory/igaming-licensing",
+      "viewport": "1440x1000",
+      "timestamp": "2026-08-03T23:00:28.962Z",
+      "http_status": 200,
+      "engine": {
+        "name": "@axe-core/playwright",
+        "axe_core_version": "4.12.1"
+      },
+      "manual": {
         "issues": [],
-        "lang": "en",
-        "h1Count": 1
+        "notes": {
+          "lang": "en",
+          "landmarks": {
+            "main": true,
+            "nav": true,
+            "footer": true
+          },
+          "h1Count": 1,
+          "headingLevels": [
+            1,
+            2,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2
+          ],
+          "duplicateIds": [],
+          "accordionTriggerCount": 0
+        }
       },
       "axe": {
-        "unavailable": true
+        "unavailable": false,
+        "execution_error": false,
+        "include": "main",
+        "violations": [],
+        "serious": [],
+        "critical": [],
+        "moderate": [],
+        "minor": [],
+        "incomplete": 1,
+        "passes": 9
       },
-      "status": "PASS"
-    },
-    {
-      "route": "/solutions/regulatory/market-entry",
-      "classification": "reconciled",
-      "engine": "basic",
-      "basic": {
-        "issues": [],
-        "lang": "en",
-        "h1Count": 1
+      "interactions": {
+        "mouse": [],
+        "enter": [],
+        "space": [],
+        "focusVisibleSample": [
+          {
+            "outlineStyle": "auto",
+            "outlineWidth": "1px",
+            "boxShadow": "none",
+            "tag": "a",
+            "visibleFocus": true
+          }
+        ],
+        "tabReachableInteractive": {
+          "tabs": 12,
+          "interactiveFocusEvents": 12
+        },
+        "visibleAccordionTriggersSampled": 0
       },
-      "axe": {
-        "unavailable": true
-      },
+      "accordion_interaction_fail": false,
       "status": "PASS"
     },
     {
       "route": "/solutions/regulatory/fintech-licensing",
-      "classification": "reconciled",
-      "engine": "basic",
-      "basic": {
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/regulatory/fintech-licensing",
+      "viewport": "1440x1000",
+      "timestamp": "2026-08-03T23:00:30.729Z",
+      "http_status": 200,
+      "engine": {
+        "name": "@axe-core/playwright",
+        "axe_core_version": "4.12.1"
+      },
+      "manual": {
         "issues": [],
-        "lang": "en",
-        "h1Count": 1
+        "notes": {
+          "lang": "en",
+          "landmarks": {
+            "main": true,
+            "nav": true,
+            "footer": true
+          },
+          "h1Count": 1,
+          "headingLevels": [
+            1,
+            2,
+            3,
+            3,
+            3,
+            3,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            3,
+            3,
+            3,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2
+          ],
+          "duplicateIds": [],
+          "accordionTriggerCount": 0
+        }
       },
       "axe": {
-        "unavailable": true
+        "unavailable": false,
+        "execution_error": false,
+        "include": "main",
+        "violations": [
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/link-in-text-block?application=playwright",
+            "nodes": 2,
+            "targets": [
+              [
+                "a[href$=\"uae\"]"
+              ],
+              [
+                "a[href$=\"portugal\"]"
+              ]
+            ]
+          }
+        ],
+        "serious": [
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/link-in-text-block?application=playwright",
+            "nodes": 2,
+            "targets": [
+              [
+                "a[href$=\"uae\"]"
+              ],
+              [
+                "a[href$=\"portugal\"]"
+              ]
+            ]
+          }
+        ],
+        "critical": [],
+        "moderate": [],
+        "minor": [],
+        "incomplete": 1,
+        "passes": 9
       },
+      "interactions": {
+        "mouse": [],
+        "enter": [],
+        "space": [],
+        "focusVisibleSample": [
+          {
+            "outlineStyle": "auto",
+            "outlineWidth": "1px",
+            "boxShadow": "none",
+            "tag": "a",
+            "visibleFocus": true
+          }
+        ],
+        "tabReachableInteractive": {
+          "tabs": 12,
+          "interactiveFocusEvents": 12
+        },
+        "visibleAccordionTriggersSampled": 0
+      },
+      "accordion_interaction_fail": false,
+      "status": "FAIL"
+    },
+    {
+      "route": "/solutions/regulatory/market-entry",
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/regulatory/market-entry",
+      "viewport": "1440x1000",
+      "timestamp": "2026-08-03T23:00:32.499Z",
+      "http_status": 200,
+      "engine": {
+        "name": "@axe-core/playwright",
+        "axe_core_version": "4.12.1"
+      },
+      "manual": {
+        "issues": [],
+        "notes": {
+          "lang": "en",
+          "landmarks": {
+            "main": true,
+            "nav": true,
+            "footer": true
+          },
+          "h1Count": 1,
+          "headingLevels": [
+            1,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2
+          ],
+          "duplicateIds": [],
+          "accordionTriggerCount": 0
+        }
+      },
+      "axe": {
+        "unavailable": false,
+        "execution_error": false,
+        "include": "main",
+        "violations": [],
+        "serious": [],
+        "critical": [],
+        "moderate": [],
+        "minor": [],
+        "incomplete": 1,
+        "passes": 9
+      },
+      "interactions": {
+        "mouse": [],
+        "enter": [],
+        "space": [],
+        "focusVisibleSample": [
+          {
+            "outlineStyle": "auto",
+            "outlineWidth": "1px",
+            "boxShadow": "none",
+            "tag": "a",
+            "visibleFocus": true
+          }
+        ],
+        "tabReachableInteractive": {
+          "tabs": 12,
+          "interactiveFocusEvents": 12
+        },
+        "visibleAccordionTriggersSampled": 0
+      },
+      "accordion_interaction_fail": false,
       "status": "PASS"
     },
     {
       "route": "/solutions/compliance/aml-kyc",
-      "classification": "reconciled",
-      "engine": "basic",
-      "basic": {
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/compliance/aml-kyc",
+      "viewport": "1440x1000",
+      "timestamp": "2026-08-03T23:00:34.242Z",
+      "http_status": 200,
+      "engine": {
+        "name": "@axe-core/playwright",
+        "axe_core_version": "4.12.1"
+      },
+      "manual": {
         "issues": [],
-        "lang": "en",
-        "h1Count": 1
+        "notes": {
+          "lang": "en",
+          "landmarks": {
+            "main": true,
+            "nav": true,
+            "footer": true
+          },
+          "h1Count": 1,
+          "headingLevels": [
+            1,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2,
+            3,
+            3,
+            3,
+            3,
+            2,
+            3,
+            3,
+            3,
+            2
+          ],
+          "duplicateIds": [],
+          "accordionTriggerCount": 0
+        }
       },
       "axe": {
-        "unavailable": true
+        "unavailable": false,
+        "execution_error": false,
+        "include": "main",
+        "violations": [],
+        "serious": [],
+        "critical": [],
+        "moderate": [],
+        "minor": [],
+        "incomplete": 1,
+        "passes": 9
       },
-      "status": "PASS"
-    },
-    {
-      "route": "/solutions/compliance/dpo-as-a-service",
-      "classification": "reconciled",
-      "engine": "basic",
-      "basic": {
-        "issues": [],
-        "lang": "en",
-        "h1Count": 1
+      "interactions": {
+        "mouse": [],
+        "enter": [],
+        "space": [],
+        "focusVisibleSample": [
+          {
+            "outlineStyle": "auto",
+            "outlineWidth": "1px",
+            "boxShadow": "none",
+            "tag": "a",
+            "visibleFocus": true
+          }
+        ],
+        "tabReachableInteractive": {
+          "tabs": 12,
+          "interactiveFocusEvents": 12
+        },
+        "visibleAccordionTriggersSampled": 0
       },
-      "axe": {
-        "unavailable": true
-      },
+      "accordion_interaction_fail": false,
       "status": "PASS"
     },
     {
       "route": "/solutions/compliance/compliance-as-a-service",
-      "classification": "reconciled",
-      "engine": "basic",
-      "basic": {
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/compliance/compliance-as-a-service",
+      "viewport": "1440x1000",
+      "timestamp": "2026-08-03T23:00:36.059Z",
+      "http_status": 200,
+      "engine": {
+        "name": "@axe-core/playwright",
+        "axe_core_version": "4.12.1"
+      },
+      "manual": {
         "issues": [],
-        "lang": "en",
-        "h1Count": 1
+        "notes": {
+          "lang": "en",
+          "landmarks": {
+            "main": true,
+            "nav": true,
+            "footer": true
+          },
+          "h1Count": 1,
+          "headingLevels": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2
+          ],
+          "duplicateIds": [],
+          "accordionTriggerCount": 0
+        }
       },
       "axe": {
-        "unavailable": true
+        "unavailable": false,
+        "execution_error": false,
+        "include": "main",
+        "violations": [],
+        "serious": [],
+        "critical": [],
+        "moderate": [],
+        "minor": [],
+        "incomplete": 1,
+        "passes": 9
       },
+      "interactions": {
+        "mouse": [],
+        "enter": [],
+        "space": [],
+        "focusVisibleSample": [
+          {
+            "outlineStyle": "auto",
+            "outlineWidth": "1px",
+            "boxShadow": "none",
+            "tag": "a",
+            "visibleFocus": true
+          }
+        ],
+        "tabReachableInteractive": {
+          "tabs": 12,
+          "interactiveFocusEvents": 12
+        },
+        "visibleAccordionTriggersSampled": 0
+      },
+      "accordion_interaction_fail": false,
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/compliance/dpo-as-a-service",
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/compliance/dpo-as-a-service",
+      "viewport": "1440x1000",
+      "timestamp": "2026-08-03T23:00:37.968Z",
+      "http_status": 200,
+      "engine": {
+        "name": "@axe-core/playwright",
+        "axe_core_version": "4.12.1"
+      },
+      "manual": {
+        "issues": [],
+        "notes": {
+          "lang": "en",
+          "landmarks": {
+            "main": true,
+            "nav": true,
+            "footer": true
+          },
+          "h1Count": 1,
+          "headingLevels": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2
+          ],
+          "duplicateIds": [],
+          "accordionTriggerCount": 0
+        }
+      },
+      "axe": {
+        "unavailable": false,
+        "execution_error": false,
+        "include": "main",
+        "violations": [],
+        "serious": [],
+        "critical": [],
+        "moderate": [],
+        "minor": [],
+        "incomplete": 1,
+        "passes": 9
+      },
+      "interactions": {
+        "mouse": [],
+        "enter": [],
+        "space": [],
+        "focusVisibleSample": [
+          {
+            "outlineStyle": "auto",
+            "outlineWidth": "1px",
+            "boxShadow": "none",
+            "tag": "a",
+            "visibleFocus": true
+          }
+        ],
+        "tabReachableInteractive": {
+          "tabs": 12,
+          "interactiveFocusEvents": 12
+        },
+        "visibleAccordionTriggersSampled": 0
+      },
+      "accordion_interaction_fail": false,
       "status": "PASS"
     },
     {
       "route": "/solutions/compliance/gli-readiness",
-      "classification": "reconciled",
-      "engine": "basic",
-      "basic": {
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/compliance/gli-readiness",
+      "viewport": "1440x1000",
+      "timestamp": "2026-08-03T23:00:39.853Z",
+      "http_status": 200,
+      "engine": {
+        "name": "@axe-core/playwright",
+        "axe_core_version": "4.12.1"
+      },
+      "manual": {
         "issues": [],
-        "lang": "en",
-        "h1Count": 1
+        "notes": {
+          "lang": "en",
+          "landmarks": {
+            "main": true,
+            "nav": true,
+            "footer": true
+          },
+          "h1Count": 1,
+          "headingLevels": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "duplicateIds": [],
+          "accordionTriggerCount": 0
+        }
       },
       "axe": {
-        "unavailable": true
+        "unavailable": false,
+        "execution_error": false,
+        "include": "main",
+        "violations": [],
+        "serious": [],
+        "critical": [],
+        "moderate": [],
+        "minor": [],
+        "incomplete": 1,
+        "passes": 9
       },
+      "interactions": {
+        "mouse": [],
+        "enter": [],
+        "space": [],
+        "focusVisibleSample": [
+          {
+            "outlineStyle": "auto",
+            "outlineWidth": "1px",
+            "boxShadow": "none",
+            "tag": "a",
+            "visibleFocus": true
+          }
+        ],
+        "tabReachableInteractive": {
+          "tabs": 12,
+          "interactiveFocusEvents": 12
+        },
+        "visibleAccordionTriggersSampled": 0
+      },
+      "accordion_interaction_fail": false,
       "status": "PASS"
     },
     {
       "route": "/solutions/compliance/internal-controls",
-      "classification": "reconciled",
-      "engine": "basic",
-      "basic": {
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/compliance/internal-controls",
+      "viewport": "1440x1000",
+      "timestamp": "2026-08-03T23:00:41.560Z",
+      "http_status": 200,
+      "engine": {
+        "name": "@axe-core/playwright",
+        "axe_core_version": "4.12.1"
+      },
+      "manual": {
         "issues": [],
-        "lang": "en",
-        "h1Count": 1
+        "notes": {
+          "lang": "en",
+          "landmarks": {
+            "main": true,
+            "nav": true,
+            "footer": true
+          },
+          "h1Count": 1,
+          "headingLevels": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "duplicateIds": [],
+          "accordionTriggerCount": 0
+        }
       },
       "axe": {
-        "unavailable": true
+        "unavailable": false,
+        "execution_error": false,
+        "include": "main",
+        "violations": [],
+        "serious": [],
+        "critical": [],
+        "moderate": [],
+        "minor": [],
+        "incomplete": 1,
+        "passes": 9
       },
+      "interactions": {
+        "mouse": [],
+        "enter": [],
+        "space": [],
+        "focusVisibleSample": [
+          {
+            "outlineStyle": "auto",
+            "outlineWidth": "1px",
+            "boxShadow": "none",
+            "tag": "a",
+            "visibleFocus": true
+          }
+        ],
+        "tabReachableInteractive": {
+          "tabs": 12,
+          "interactiveFocusEvents": 12
+        },
+        "visibleAccordionTriggersSampled": 0
+      },
+      "accordion_interaction_fail": false,
       "status": "PASS"
     },
     {
       "route": "/solutions/corporate/company-formation",
-      "classification": "reconciled",
-      "engine": "basic",
-      "basic": {
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/corporate/company-formation",
+      "viewport": "1440x1000",
+      "timestamp": "2026-08-03T23:00:43.270Z",
+      "http_status": 200,
+      "engine": {
+        "name": "@axe-core/playwright",
+        "axe_core_version": "4.12.1"
+      },
+      "manual": {
         "issues": [],
-        "lang": "en",
-        "h1Count": 1
+        "notes": {
+          "lang": "en",
+          "landmarks": {
+            "main": true,
+            "nav": true,
+            "footer": true
+          },
+          "h1Count": 1,
+          "headingLevels": [
+            1,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2,
+            3,
+            3,
+            3,
+            2,
+            3,
+            3,
+            3,
+            2
+          ],
+          "duplicateIds": [],
+          "accordionTriggerCount": 0
+        }
       },
       "axe": {
-        "unavailable": true
+        "unavailable": false,
+        "execution_error": false,
+        "include": "main",
+        "violations": [],
+        "serious": [],
+        "critical": [],
+        "moderate": [],
+        "minor": [],
+        "incomplete": 1,
+        "passes": 9
       },
+      "interactions": {
+        "mouse": [],
+        "enter": [],
+        "space": [],
+        "focusVisibleSample": [
+          {
+            "outlineStyle": "auto",
+            "outlineWidth": "1px",
+            "boxShadow": "none",
+            "tag": "a",
+            "visibleFocus": true
+          }
+        ],
+        "tabReachableInteractive": {
+          "tabs": 12,
+          "interactiveFocusEvents": 12
+        },
+        "visibleAccordionTriggersSampled": 0
+      },
+      "accordion_interaction_fail": false,
       "status": "PASS"
     },
     {
       "route": "/solutions/corporate/holding-design",
-      "classification": "reconciled",
-      "engine": "basic",
-      "basic": {
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/corporate/holding-design",
+      "viewport": "1440x1000",
+      "timestamp": "2026-08-03T23:00:45.097Z",
+      "http_status": 200,
+      "engine": {
+        "name": "@axe-core/playwright",
+        "axe_core_version": "4.12.1"
+      },
+      "manual": {
         "issues": [],
-        "lang": "en",
-        "h1Count": 1
+        "notes": {
+          "lang": "en",
+          "landmarks": {
+            "main": true,
+            "nav": true,
+            "footer": true
+          },
+          "h1Count": 1,
+          "headingLevels": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "duplicateIds": [],
+          "accordionTriggerCount": 0
+        }
       },
       "axe": {
-        "unavailable": true
+        "unavailable": false,
+        "execution_error": false,
+        "include": "main",
+        "violations": [
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/link-in-text-block?application=playwright",
+            "nodes": 2,
+            "targets": [
+              [
+                "a[href$=\"portugal\"]"
+              ],
+              [
+                "a[href$=\"uae\"]"
+              ]
+            ]
+          }
+        ],
+        "serious": [
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/link-in-text-block?application=playwright",
+            "nodes": 2,
+            "targets": [
+              [
+                "a[href$=\"portugal\"]"
+              ],
+              [
+                "a[href$=\"uae\"]"
+              ]
+            ]
+          }
+        ],
+        "critical": [],
+        "moderate": [],
+        "minor": [],
+        "incomplete": 1,
+        "passes": 9
       },
-      "status": "PASS"
+      "interactions": {
+        "mouse": [],
+        "enter": [],
+        "space": [],
+        "focusVisibleSample": [
+          {
+            "outlineStyle": "auto",
+            "outlineWidth": "1px",
+            "boxShadow": "none",
+            "tag": "a",
+            "visibleFocus": true
+          }
+        ],
+        "tabReachableInteractive": {
+          "tabs": 12,
+          "interactiveFocusEvents": 12
+        },
+        "visibleAccordionTriggersSampled": 0
+      },
+      "accordion_interaction_fail": false,
+      "status": "FAIL"
     },
     {
       "route": "/solutions/corporate/offshore-structuring",
-      "classification": "reconciled",
-      "engine": "basic",
-      "basic": {
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/corporate/offshore-structuring",
+      "viewport": "1440x1000",
+      "timestamp": "2026-08-03T23:00:46.791Z",
+      "http_status": 200,
+      "engine": {
+        "name": "@axe-core/playwright",
+        "axe_core_version": "4.12.1"
+      },
+      "manual": {
         "issues": [],
-        "lang": "en",
-        "h1Count": 1
+        "notes": {
+          "lang": "en",
+          "landmarks": {
+            "main": true,
+            "nav": true,
+            "footer": true
+          },
+          "h1Count": 1,
+          "headingLevels": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "duplicateIds": [],
+          "accordionTriggerCount": 0
+        }
       },
       "axe": {
-        "unavailable": true
+        "unavailable": false,
+        "execution_error": false,
+        "include": "main",
+        "violations": [
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/link-in-text-block?application=playwright",
+            "nodes": 2,
+            "targets": [
+              [
+                "a[href$=\"anjouan\"]"
+              ],
+              [
+                "a[href$=\"uae\"]"
+              ]
+            ]
+          }
+        ],
+        "serious": [
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/link-in-text-block?application=playwright",
+            "nodes": 2,
+            "targets": [
+              [
+                "a[href$=\"anjouan\"]"
+              ],
+              [
+                "a[href$=\"uae\"]"
+              ]
+            ]
+          }
+        ],
+        "critical": [],
+        "moderate": [],
+        "minor": [],
+        "incomplete": 1,
+        "passes": 9
       },
-      "status": "PASS"
+      "interactions": {
+        "mouse": [],
+        "enter": [],
+        "space": [],
+        "focusVisibleSample": [
+          {
+            "outlineStyle": "auto",
+            "outlineWidth": "1px",
+            "boxShadow": "none",
+            "tag": "a",
+            "visibleFocus": true
+          }
+        ],
+        "tabReachableInteractive": {
+          "tabs": 12,
+          "interactiveFocusEvents": 12
+        },
+        "visibleAccordionTriggersSampled": 0
+      },
+      "accordion_interaction_fail": false,
+      "status": "FAIL"
     },
     {
       "route": "/",
-      "classification": "reconciled",
-      "engine": "basic",
-      "basic": {
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/",
+      "viewport": "1440x1000",
+      "timestamp": "2026-08-03T23:00:48.595Z",
+      "http_status": 200,
+      "engine": {
+        "name": "@axe-core/playwright",
+        "axe_core_version": "4.12.1"
+      },
+      "manual": {
         "issues": [],
-        "lang": "en",
-        "h1Count": 1
+        "notes": {
+          "lang": "en",
+          "landmarks": {
+            "main": true,
+            "nav": true,
+            "footer": true
+          },
+          "h1Count": 1,
+          "headingLevels": [
+            1,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2,
+            3,
+            3,
+            3,
+            2,
+            3,
+            3,
+            3,
+            3,
+            2,
+            3,
+            3,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "duplicateIds": [],
+          "accordionTriggerCount": 7
+        }
       },
       "axe": {
-        "unavailable": true
+        "unavailable": false,
+        "execution_error": false,
+        "include": "main",
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+            "nodes": 3,
+            "targets": [
+              [
+                ".md\\:border-r.md\\:px-2.md\\:last\\:border-r-0:nth-child(1) > .text-4xl.font-light.text-primary\\/20"
+              ],
+              [
+                ".md\\:border-r.md\\:px-2.md\\:last\\:border-r-0:nth-child(2) > .text-4xl.font-light.text-primary\\/20"
+              ],
+              [
+                ".md\\:border-r.md\\:px-2.md\\:last\\:border-r-0:nth-child(3) > .text-4xl.font-light.text-primary\\/20"
+              ]
+            ]
+          }
+        ],
+        "serious": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+            "nodes": 3,
+            "targets": [
+              [
+                ".md\\:border-r.md\\:px-2.md\\:last\\:border-r-0:nth-child(1) > .text-4xl.font-light.text-primary\\/20"
+              ],
+              [
+                ".md\\:border-r.md\\:px-2.md\\:last\\:border-r-0:nth-child(2) > .text-4xl.font-light.text-primary\\/20"
+              ],
+              [
+                ".md\\:border-r.md\\:px-2.md\\:last\\:border-r-0:nth-child(3) > .text-4xl.font-light.text-primary\\/20"
+              ]
+            ]
+          }
+        ],
+        "critical": [],
+        "moderate": [],
+        "minor": [],
+        "incomplete": 2,
+        "passes": 20
       },
-      "status": "PASS"
+      "interactions": {
+        "mouse": [
+          {
+            "index": 0,
+            "before": "true",
+            "after": "true",
+            "changed": false,
+            "panelVisibleBefore": null,
+            "panelVisibleAfter": null,
+            "panelChanged": false
+          },
+          {
+            "index": 1,
+            "before": "false",
+            "after": "true",
+            "changed": true,
+            "panelVisibleBefore": null,
+            "panelVisibleAfter": null,
+            "panelChanged": false
+          },
+          {
+            "index": 2,
+            "before": "false",
+            "after": "true",
+            "changed": true,
+            "panelVisibleBefore": null,
+            "panelVisibleAfter": null,
+            "panelChanged": false
+          }
+        ],
+        "enter": [
+          {
+            "index": 0,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          },
+          {
+            "index": 1,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          },
+          {
+            "index": 2,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          }
+        ],
+        "space": [
+          {
+            "index": 0,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          },
+          {
+            "index": 1,
+            "before": "false",
+            "after": "true",
+            "changed": true
+          }
+        ],
+        "focusVisibleSample": [
+          {
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "boxShadow": "none",
+            "tag": "a",
+            "visibleFocus": true
+          }
+        ],
+        "tabReachableInteractive": {
+          "tabs": 12,
+          "interactiveFocusEvents": 12
+        },
+        "visibleAccordionTriggersSampled": 3
+      },
+      "accordion_interaction_fail": false,
+      "status": "FAIL"
     }
   ],
-  "overall": "PASS"
+  "overall": "FAIL"
 }
