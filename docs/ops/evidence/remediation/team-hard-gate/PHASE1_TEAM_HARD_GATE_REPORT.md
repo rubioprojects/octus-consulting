@@ -13,9 +13,9 @@
 | team_implementation_commit | `3fb56fcb3cff41d43d3d40b09757a9771e59844b` |
 | capture_code_head | `f5be0d87aeaa09a17864da9d7563e435b3746fe9` |
 | evidence_repair_commit | `3c462b9ef3b367520b0f3ea8f8fefc7bbc3aa44e` |
-| final_phase1_head | `3d7bff5406f4b65b837df8c9ff999c93bc0fd067` |
+| final_phase1_head | `d9c58c56fa6a18d05907972916db54adb2cc6965` |
 
-**Removed invalid SHA:** `4c9a6cfe69326d3db84fa2d047a6d12e3eeb791f` (orphaned amend tip — not on GitHub). Count removed from evidence tree: **17**.
+**Removed invalid SHA:** `orphaned-amend-tip-not-on-github` (orphaned amend tip — not on GitHub). Count removed from evidence tree: **17**.
 
 ## Visual baseline
 
