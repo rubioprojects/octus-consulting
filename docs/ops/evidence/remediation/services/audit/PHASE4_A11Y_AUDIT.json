@@ -1,0 +1,300 @@
+{
+  "generated_at": "2026-08-03T22:15:31.893Z",
+  "routes": [
+    {
+      "route": "/solutions/regulatory-structuring",
+      "classification": "reconciled",
+      "engine": "basic",
+      "basic": {
+        "issues": [],
+        "lang": "en",
+        "h1Count": 1
+      },
+      "axe": {
+        "unavailable": true
+      },
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/compliance-risk",
+      "classification": "reconciled",
+      "engine": "basic",
+      "basic": {
+        "issues": [],
+        "lang": "en",
+        "h1Count": 1
+      },
+      "axe": {
+        "unavailable": true
+      },
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions",
+      "classification": "reconciled",
+      "engine": "basic",
+      "basic": {
+        "issues": [],
+        "lang": "en",
+        "h1Count": 1
+      },
+      "axe": {
+        "unavailable": true
+      },
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/legal-structural-architecture",
+      "classification": "reconciled",
+      "engine": "basic",
+      "basic": {
+        "issues": [],
+        "lang": "en",
+        "h1Count": 1
+      },
+      "axe": {
+        "unavailable": true
+      },
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/corporate-structuring",
+      "classification": "reconciled",
+      "engine": "basic",
+      "basic": {
+        "issues": [],
+        "lang": "en",
+        "h1Count": 1
+      },
+      "axe": {
+        "unavailable": true
+      },
+      "status": "PASS"
+    },
+    {
+      "route": "/private-clients",
+      "classification": "reconciled",
+      "engine": "basic",
+      "basic": {
+        "issues": [],
+        "lang": "en",
+        "h1Count": 1
+      },
+      "axe": {
+        "unavailable": true
+      },
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/remediation-readiness",
+      "classification": "reconciled",
+      "engine": "basic",
+      "basic": {
+        "issues": [],
+        "lang": "en",
+        "h1Count": 1
+      },
+      "axe": {
+        "unavailable": true
+      },
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/banking-payments-infrastructure",
+      "classification": "reconciled",
+      "engine": "basic",
+      "basic": {
+        "issues": [],
+        "lang": "en",
+        "h1Count": 1
+      },
+      "axe": {
+        "unavailable": true
+      },
+      "status": "PASS"
+    },
+    {
+      "route": "/international-hub",
+      "classification": "reconciled",
+      "engine": "basic",
+      "basic": {
+        "issues": [],
+        "lang": "en",
+        "h1Count": 1
+      },
+      "axe": {
+        "unavailable": true
+      },
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/regulatory/igaming-licensing",
+      "classification": "reconciled",
+      "engine": "basic",
+      "basic": {
+        "issues": [],
+        "lang": "en",
+        "h1Count": 1
+      },
+      "axe": {
+        "unavailable": true
+      },
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/regulatory/market-entry",
+      "classification": "reconciled",
+      "engine": "basic",
+      "basic": {
+        "issues": [],
+        "lang": "en",
+        "h1Count": 1
+      },
+      "axe": {
+        "unavailable": true
+      },
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/regulatory/fintech-licensing",
+      "classification": "reconciled",
+      "engine": "basic",
+      "basic": {
+        "issues": [],
+        "lang": "en",
+        "h1Count": 1
+      },
+      "axe": {
+        "unavailable": true
+      },
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/compliance/aml-kyc",
+      "classification": "reconciled",
+      "engine": "basic",
+      "basic": {
+        "issues": [],
+        "lang": "en",
+        "h1Count": 1
+      },
+      "axe": {
+        "unavailable": true
+      },
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/compliance/dpo-as-a-service",
+      "classification": "reconciled",
+      "engine": "basic",
+      "basic": {
+        "issues": [],
+        "lang": "en",
+        "h1Count": 1
+      },
+      "axe": {
+        "unavailable": true
+      },
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/compliance/compliance-as-a-service",
+      "classification": "reconciled",
+      "engine": "basic",
+      "basic": {
+        "issues": [],
+        "lang": "en",
+        "h1Count": 1
+      },
+      "axe": {
+        "unavailable": true
+      },
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/compliance/gli-readiness",
+      "classification": "reconciled",
+      "engine": "basic",
+      "basic": {
+        "issues": [],
+        "lang": "en",
+        "h1Count": 1
+      },
+      "axe": {
+        "unavailable": true
+      },
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/compliance/internal-controls",
+      "classification": "reconciled",
+      "engine": "basic",
+      "basic": {
+        "issues": [],
+        "lang": "en",
+        "h1Count": 1
+      },
+      "axe": {
+        "unavailable": true
+      },
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/corporate/company-formation",
+      "classification": "reconciled",
+      "engine": "basic",
+      "basic": {
+        "issues": [],
+        "lang": "en",
+        "h1Count": 1
+      },
+      "axe": {
+        "unavailable": true
+      },
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/corporate/holding-design",
+      "classification": "reconciled",
+      "engine": "basic",
+      "basic": {
+        "issues": [],
+        "lang": "en",
+        "h1Count": 1
+      },
+      "axe": {
+        "unavailable": true
+      },
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/corporate/offshore-structuring",
+      "classification": "reconciled",
+      "engine": "basic",
+      "basic": {
+        "issues": [],
+        "lang": "en",
+        "h1Count": 1
+      },
+      "axe": {
+        "unavailable": true
+      },
+      "status": "PASS"
+    },
+    {
+      "route": "/",
+      "classification": "reconciled",
+      "engine": "basic",
+      "basic": {
+        "issues": [],
+        "lang": "en",
+        "h1Count": 1
+      },
+      "axe": {
+        "unavailable": true
+      },
+      "status": "PASS"
+    }
+  ],
+  "overall": "PASS"
+}

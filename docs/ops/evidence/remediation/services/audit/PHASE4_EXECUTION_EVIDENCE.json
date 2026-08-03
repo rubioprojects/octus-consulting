@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-08-03T22:10:51.108Z",
+  "repo": "/Users/devrubio/Developer/Octus/octus-consulting",
+  "impl_snapshot": "8228e342cfc9d3830b4f4a414f2a93ae208e5be1",
+  "commands": [
+    {
+      "command": "npm run build",
+      "started_at": "2026-08-03T22:10:40.183Z",
+      "finished_at": "2026-08-03T22:10:49.805Z",
+      "exit_code": 0,
+      "status": "PASS",
+      "stdout_tail": "      267 B          94.1 kB\n├ ○ /solutions/compliance/compliance-as-a-service  267 B          94.1 kB\n├ ○ /solutions/compliance/dpo-as-a-service         267 B          94.1 kB\n├ ○ /solutions/compliance/gli-readiness            267 B          94.1 kB\n├ ○ /solutions/compliance/internal-controls        267 B          94.1 kB\n├ ○ /solutions/corporate-cross-border              463 B          87.6 kB\n├ ○ /solutions/corporate-structuring               1.53 kB        95.4 kB\n├ ○ /solutions/corporate/company-formation         267 B          94.1 kB\n├ ○ /solutions/corporate/holding-design            267 B          94.1 kB\n├ ○ /solutions/corporate/offshore-structuring      267 B          94.1 kB\n├ ○ /solutions/legal-contractual-architecture      463 B          87.6 kB\n├ ○ /solutions/legal-structural-architecture       1.53 kB        95.4 kB\n├ ○ /solutions/operational-remediation-readiness   463 B          87.6 kB\n├ ○ /solutions/regulatory-strategy-licensing       463 B          87.6 kB\n├ ○ /solutions/regulatory-structuring              1.53 kB        95.4 kB\n├ ○ /solutions/regulatory/banking-payments         164 B          87.3 kB\n├ ○ /solutions/regulatory/fintech-licensing        267 B          94.1 kB\n├ ○ /solutions/regulatory/igaming-licensing        269 B          94.2 kB\n├ ○ /solutions/regulatory/market-entry             267 B          94.1 kB\n├ ○ /solutions/remediation-readiness               1.53 kB        95.4 kB\n├ ○ /team                                          267 B          94.1 kB\n├ ○ /terms                                         164 B          87.3 kB\n└ ○ /what-we-do                                    269 B          94.2 kB\n+ First Load JS shared by all                      87.1 kB\n  ├ chunks/7023-aecd8cbddd9bcfb4.js                31.6 kB\n  ├ chunks/fd9d1056-7f8fa82e9b809390.js            53.6 kB\n  └ other shared chunks (total)                    1.9 kB\n\n\n○  (Static)  prerendered as static content\n●  (SSG)     prerendered as static HTML (uses getStaticProps)\n\n",
+      "stderr_tail": ""
+    },
+    {
+      "command": "npx tsc --noEmit",
+      "started_at": "2026-08-03T22:10:49.805Z",
+      "finished_at": "2026-08-03T22:10:51.108Z",
+      "exit_code": 0,
+      "status": "PASS",
+      "stdout_tail": "",
+      "stderr_tail": ""
+    }
+  ],
+  "overall": "PASS",
+  "reused": true,
+  "reused_at": "2026-08-03T22:15:31.854Z"
+}

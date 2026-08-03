@@ -1,17 +1,33 @@
 {
   "phase": 4,
-  "phase4_starting_head": "620b725d613fba4ff4a062477c1110e453a4eb63",
-  "phase4_control_commit": "ecca9b4102ffb64242a546344a272dff26512583",
-  "phase4_implementation_commit": "8228e342cfc9d3830b4f4a414f2a93ae208e5be1",
-  "immutable_preview_url": "https://octus-consulting-6dof5kn4k-axle1.vercel.app",
-  "deployment_id": "dpl_Ewm6SFyGB5wkkDefAAMnBs27bMfZ",
+  "closeout": true,
+  "closeout_starting_head": "d618067150d2720e7c85ce387c1a02ba3168ae21",
+  "phase4_impl_snapshot": "8228e342cfc9d3830b4f4a414f2a93ae208e5be1",
+  "closeout_application_commit": "e72d3902670de83573bc32674c3cd02e036b787e",
+  "closeout_deploy_commit": "ee8f1d0f7d442482eee99cef927a3389892617b4",
   "baseline_url": "https://octus-consulting-9q798dbg2-axle1.vercel.app",
   "baseline_deployment_id": "dpl_437tawkoMDv7sqxW6NzPzTegj1Lq",
+  "phase4_before_url": "https://octus-consulting-6dof5kn4k-axle1.vercel.app",
+  "phase4_before_commit": "8228e342cfc9d3830b4f4a414f2a93ae208e5be1",
+  "phase4_before_deployment_id": "dpl_Ewm6SFyGB5wkkDefAAMnBs27bMfZ",
+  "phase4_closeout_url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+  "phase4_closeout_deployment_id": "dpl_4mRS5vF2QSS34aJkip3Zn56cUUa5",
   "accepted_phase3_head": "620b725d613fba4ff4a062477c1110e453a4eb63",
   "accepted_homepage_application_commit": "11c0f9da74408f270a22c23b5b2903ce45f5e33c",
-  "terminal": "OCTUS_SERVICES_GATE_READY_FOR_SOL_AUDIT",
-  "screenshot_count": 162,
+  "terminal": "OCTUS_SERVICES_CLOSEOUT_READY_FOR_SOL_AUDIT",
+  "screenshot_count": 272,
+  "screenshot_counts": {
+    "baseline": 56,
+    "before": 56,
+    "reconciled": 160
+  },
+  "metadata_missing_count_all_classifications": 5,
+  "metadata_missing_by_classification": {
+    "baseline": 5,
+    "before": 0,
+    "reconciled": 0
+  },
   "validation_overall": "PASS",
   "residual_open": ["HOME_PUNCTUATION_RESIDUAL_001"],
-  "note": "Reconciled captures from immutable preview whose GitHub SHA equals phase4_implementation_commit."
+  "note": "Final visual compare uses immutable closeout preview eyjy9sxq7 — not Phase 3 7yzcy4yif. final_evidence_head filled after evidence commit."
 }
