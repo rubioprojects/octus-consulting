@@ -12,6 +12,7 @@
 | closeout starting HEAD | `f16add851770a583e210212afbd69cf98dafe104` |
 | closeout application commit | `11c0f9da74408f270a22c23b5b2903ce45f5e33c` |
 | closeout application commits | `d095e1f` (CTA + punctuation + validator), `11c0f9d` (comment dash scrub) |
+| closeout evidence commit / final HEAD | `8877b55309e39dbd2ba33fb28ff156642c109fcd` |
 | immutable preview | https://octus-consulting-7yzcy4yif-axle1.vercel.app |
 | deployment ID | `dpl_ALymSbjVv45GWXdeFuYrPBXMN88w` |
 | evidence validation | `homepage/audit/PHASE3_VALIDATION.json` overall **PASS** |
