@@ -10,12 +10,17 @@
 | Item | Value |
 |------|--------|
 | Starting PR #17 HEAD | `a304ef94fd22e6a470ff8e789de047cadb02c8e9` |
+| Final PR #17 HEAD | `5b49e07de78174f51f7fc32e051cacae9a976bcb` |
+| Updated preview (tip) | `https://octus-consulting-745p3mtcg-axle1.vercel.app` |
+| Branch preview alias | `https://octus-consulting-git-feat-seven-areas-website-arch-0785d8-axle1.vercel.app` |
 | Safety tag | `safety/pr17-pre-visual-rebase-a304ef9` |
 | Safety branch | `safety/pr17-pre-visual-rebase` |
 | Visual reference commit | `8b12fcc88922e6ed07b98dd40da0a27bde71bbf9` |
 | Visual reference branch | `feat/authority-conversion-p0` |
 | Visual reference deployment | `https://octus-consulting-6dieznt51-axle1.vercel.app/` (`dpl_2YpPkt1Y63KStBooH7pNEyue8qxJ`) |
 | Method | Component-by-component restore/adapt — **not** wholesale merge or cherry-pick of old branch |
+| Merge | not performed |
+| Production deploy | not performed |
 
 ## Visual component inventory
 
