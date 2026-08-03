@@ -181,3 +181,19 @@
 | Phase 5–6 | BLOCKED |
 | terminal | `OCTUS_SERVICES_GATE_READY_FOR_SOL_AUDIT` |
 
+## D-017 — Phase 4 Services closeout returned for Sol audit
+
+| Field | Value |
+|---|---|
+| Prior gate | NOT ACCEPTED (visual compare stale / CTA / editorial / validator / catalogue) |
+| Closeout | CLOSEOUT READY FOR SOL AUDIT |
+| application_commit | `e72d3902670de83573bc32674c3cd02e036b787e` |
+| evidence_commit | `3215152b63d73d7e618d2ad83865d83e30b7c0fc` |
+| immutable_preview | https://octus-consulting-eyjy9sxq7-axle1.vercel.app |
+| deployment_id | `dpl_4mRS5vF2QSS34aJkip3Zn56cUUa5` |
+| validation | overall PASS · 272 screenshots · missing metadata 5 baseline-only |
+| residual | HOME_PUNCTUATION_RESIDUAL_001 still OPEN · exactly one |
+| Phase 5 | BLOCKED |
+| Rubio rescreen | BLOCKED |
+| terminal | `OCTUS_SERVICES_CLOSEOUT_READY_FOR_SOL_AUDIT` |
+
