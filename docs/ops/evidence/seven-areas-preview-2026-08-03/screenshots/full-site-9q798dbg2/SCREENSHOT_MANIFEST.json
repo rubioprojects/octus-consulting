@@ -1,0 +1,1350 @@
+{
+  "generated": "2026-08-03",
+  "count": 192,
+  "items": [
+    {
+      "file": "baseline/404-desktop.png",
+      "sha256": "26161c2a93402e05d0af3b0b006a3fbfa013c45a8f9a082de82d98c325856a10",
+      "bytes": 136941,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/404-mobile.png",
+      "sha256": "5d3b0604e5c998efb843de49bc8fdf0c987096185ef5ff67404d5f9e3d2de669",
+      "bytes": 66334,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/about-desktop.png",
+      "sha256": "e990bc840b42665a6a180c78bc22fbfb49c6d2ac92a44d9d2aaa200303694557",
+      "bytes": 1434726,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/about-mobile.png",
+      "sha256": "32dc01d9f7db173b18d7d096d0f791a54a12a99789bbe0a6a4e69760ce56506d",
+      "bytes": 984954,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/brazil-desktop.png",
+      "sha256": "d891794116c327cb1fd49c884803a774cb8e38db98698de1677349ea166a8bf8",
+      "bytes": 380146,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/brazil-mobile.png",
+      "sha256": "02deaf0e2ce17f6066d503283d3fb0919fce81294280ade020d677337007efa1",
+      "bytes": 280378,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/careers-desktop.png",
+      "sha256": "bda17c7a36807a7e3c88c109e435bab4cf8ab2b07163a1c8cfb2d6fa99b6973b",
+      "bytes": 728761,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/careers-mobile.png",
+      "sha256": "408aeda6627e12071bb210502d82e5d7cb7936d47eb0cbf1726ab2f21cdccdf7",
+      "bytes": 493214,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/contact-desktop.png",
+      "sha256": "0a1c86d190532b65354b8164f21d477490796a9dc3bda3bf034c493a98b4af65",
+      "bytes": 292558,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/contact-mobile.png",
+      "sha256": "e743547cf936db7cebe55b2a47f7ad78ee2be78bdc09b67807d0fcd748bfe842",
+      "bytes": 207722,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/cookies-desktop.png",
+      "sha256": "f1fba781b65ae123d3c24894393a2a2bf4e5dccc60d07a4a99a4f316cc57ff42",
+      "bytes": 276319,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/cookies-mobile.png",
+      "sha256": "86e45481894ea5b1aa87e84e394014e9f73651be2f099aca319bc003b4656862",
+      "bytes": 169998,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/diagnostic-desktop.png",
+      "sha256": "6d5529d661aaf25cf24a1b91b47251648c55ce3a0138844c0c21e7437384dee1",
+      "bytes": 350136,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/diagnostic-mobile.png",
+      "sha256": "6041261489b09fb78ca2086f537d06ba5cd5cffc682e03c4e3e19929752efd64",
+      "bytes": 251085,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/home-desktop.png",
+      "sha256": "e488ddc95559742aaf9d3b9a685818d3661beb4ed893362f823742e022c55f7d",
+      "bytes": 1462981,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/home-mobile.png",
+      "sha256": "4449a51e6bd2a0aa36c9ff4c63aedb89f0386cebdee391d44f49b00c0748eea8",
+      "bytes": 1021712,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/how-we-engage-desktop.png",
+      "sha256": "d578193fdf156aad7e71f29a74a41c8ee2c925cbd6b3dd61121c9f6f58694156",
+      "bytes": 682825,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/how-we-engage-mobile.png",
+      "sha256": "1b0ec64651324884770fabb113ef2cc8db511a823818d9b8a1fcaa956cec13b6",
+      "bytes": 311778,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/insights-desktop.png",
+      "sha256": "2603c42b2f64d3cbf391a5da17760f023c0f92ba6e140d642c2b46fb22497e5e",
+      "bytes": 2042154,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/insights-mobile.png",
+      "sha256": "b9e86c1266fe58a999fe69a3920fc59b3cd132c04ef45c6068385784335037bb",
+      "bytes": 1644386,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/insights__spa-mf-position-brazilian-partner-20-percent-share-capital-desktop.png",
+      "sha256": "b0c66d06ade20d3c98cf67214727075ac7ecc1a9f74f4c9475cfbc00645728a8",
+      "bytes": 346682,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/insights__spa-mf-position-brazilian-partner-20-percent-share-capital-mobile.png",
+      "sha256": "1fc8d7e2b2412c0ad3a0d37b7b3acc2dfad9c71b4c471d1e71484aa2b8685d87",
+      "bytes": 270591,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/insights__why-licensing-fails-post-approval-desktop.png",
+      "sha256": "c8384ada00f14b00a05cdcfb8df54c83e67ee338fae8cff4bc42b520dd7c65c3",
+      "bytes": 463995,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/insights__why-licensing-fails-post-approval-mobile.png",
+      "sha256": "6749c3b3e3242c81bf8f09a1e8fb3c4103eced6bd6ac7dbb42f89d3a07cbee17",
+      "bytes": 415769,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/intelligence-desktop.png",
+      "sha256": "deab4024966fe0d11ea0236e1a3cdb326a31265f19e6326e1f546e89f4ba1bf7",
+      "bytes": 1017651,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/intelligence-mobile.png",
+      "sha256": "23c9366c65cd44c0a8ba10f4f1734f594b7dbe8d4d6d53f2ccfecb62ebceb240",
+      "bytes": 552683,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/international-hub-desktop.png",
+      "sha256": "25fb3f836fb6ea51ee6a0997ef70d1656a2414fff7f11247094490c3fa134e53",
+      "bytes": 661660,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/international-hub-mobile.png",
+      "sha256": "a252b9dc7b57a8c4d2dc1d9f8b86ae7b1107a41139211e8a867c0a6e8f813120",
+      "bytes": 495308,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/jurisdictions-desktop.png",
+      "sha256": "d10e40dd514279f5eeb4dd8bdcff9134c1c352893e619e260dcf125d7713f601",
+      "bytes": 1132894,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/jurisdictions-mobile.png",
+      "sha256": "17a0d389213ed72891794ee61a785d2a459865ec6a576a407daec7adf769f5f5",
+      "bytes": 704423,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/jurisdictions__isle-of-man-desktop.png",
+      "sha256": "c964857856561066e143e7d270c3e6e413c01e52c3654944fdd1708d4972ebcb",
+      "bytes": 1516688,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/jurisdictions__isle-of-man-mobile.png",
+      "sha256": "ec146d0e4c14131c571bc48ea49af92d2e10267f7a6fa5b186c94caa170277bc",
+      "bytes": 1111132,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/jurisdictions__malta-desktop.png",
+      "sha256": "3cc3a312acc66ee2e7576ecce4f7f6429f4fcdfe8ca76e501711342694351df7",
+      "bytes": 1223066,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/jurisdictions__malta-mobile.png",
+      "sha256": "5177b582362826e38fe28d8dc4ca982394cc6501965bd6648f8b6d59893d8564",
+      "bytes": 813006,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/markets-desktop.png",
+      "sha256": "371304c64738ac587dc8eb00b6626ab6cd3e8755838875323197cac770bdd51f",
+      "bytes": 872790,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/markets-mobile.png",
+      "sha256": "271c65cd2dfce29326ba092aa61f58c88060a4ae2eb68e5ca469f3b460231e13",
+      "bytes": 490121,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/markets__crypto-desktop.png",
+      "sha256": "6511b9524b1091a40c56692f79766f8573932aad24b3435c71fc628621f836fe",
+      "bytes": 769756,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/markets__crypto-mobile.png",
+      "sha256": "3560a2e41ed9b6d8e30fee1011e576e9699dfe04f021460d5c5150739e150be3",
+      "bytes": 593897,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/markets__fintech-desktop.png",
+      "sha256": "0abad1ed6f81f201e48dcb25975fd2df72c5ab451b05af624b81058fd564624c",
+      "bytes": 591618,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/markets__fintech-mobile.png",
+      "sha256": "aa4fd72532839056e9dcac1ae301a4c86a7b4637a3c0edba0cb03d3cee127de9",
+      "bytes": 466851,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/markets__high-risk-desktop.png",
+      "sha256": "48bf8eb07b6197fcd11377ce47fa59b46df93874ec31b4836883641f38c9a266",
+      "bytes": 827937,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/markets__high-risk-mobile.png",
+      "sha256": "1a8ab8ffc1408908892f20c86594c24a2d6a6897b4e3fc83341510d023b4dad5",
+      "bytes": 683428,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/markets__igaming-desktop.png",
+      "sha256": "ef83749b3cf31ff1d600350f5d8d9ab9f22c939faef2f6dae8fc10405e18bcb5",
+      "bytes": 744283,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/markets__igaming-mobile.png",
+      "sha256": "4731491c2beaeb4ebd1a92e56023c0d96aeaa5708fb2d4652dfa2ff8a2a1a028",
+      "bytes": 612288,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/partners-desktop.png",
+      "sha256": "d903795a8aa112ea94eefcc379cc9e68c67dae9b2b65c6a4e4d7fa08c211c3f0",
+      "bytes": 615260,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/partners-mobile.png",
+      "sha256": "c5d6990434c96d5c33f1fd62b50500915325c8f6c25455d2a75853677fe76aa9",
+      "bytes": 258901,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/privacy-desktop.png",
+      "sha256": "40229fac7c268079e7a89e41fdda1267dd461c73f05bc3984829a172aaf862b0",
+      "bytes": 757968,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/privacy-mobile.png",
+      "sha256": "d448762eb6076dba7c35915f22171d3c67f78994cbf8fb414f4790118ee8a241",
+      "bytes": 610486,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/private-clients-desktop.png",
+      "sha256": "56e140ed426b2e3b0c70991d5552c8f110c497b22688467fb53f87c7f4fa46f1",
+      "bytes": 928146,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/private-clients-mobile.png",
+      "sha256": "6c289dadd82c1b6785c74f8e9980ece258210703808bd1792c9a210da8e4fcd4",
+      "bytes": 771334,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions-desktop.png",
+      "sha256": "799053cbbe8b94ce8c0d7b0088730fb8e0e7404ccbf788817d7f81ad63c39247",
+      "bytes": 844428,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions-mobile.png",
+      "sha256": "62e6c3b9e6976369dafb00b9860f93a35becd19ac3ab89e5711ef43f8bd86e3f",
+      "bytes": 464225,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__banking-payments-infrastructure-desktop.png",
+      "sha256": "16b2f9f4a8fe3970c0d688fb447513956c0275ef96a56e5f1e752d6dec0dc3ee",
+      "bytes": 808179,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__banking-payments-infrastructure-mobile.png",
+      "sha256": "4d2e7f2935956692268e1f46948fc4c5c7b222617c7ed86bb9128538f712db28",
+      "bytes": 442516,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__compliance-risk-desktop.png",
+      "sha256": "26161c2a93402e05d0af3b0b006a3fbfa013c45a8f9a082de82d98c325856a10",
+      "bytes": 136941,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__compliance-risk-mobile.png",
+      "sha256": "5d3b0604e5c998efb843de49bc8fdf0c987096185ef5ff67404d5f9e3d2de669",
+      "bytes": 66334,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__compliance__aml-kyc-desktop.png",
+      "sha256": "c105f6e30dd793a4a99695acb21ba54d0ac01ca31ade4acf6a112f36e7ee5acc",
+      "bytes": 659984,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__compliance__aml-kyc-mobile.png",
+      "sha256": "eae7534e7a38c1eabb8977840f3aefa278497383a9bf455ab25c8bd2f59ee505",
+      "bytes": 524520,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__compliance__compliance-as-a-service-desktop.png",
+      "sha256": "590a553d4945844a802ebaf242118eb310c4eab1b4606342e7371851dff100db",
+      "bytes": 840778,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__compliance__compliance-as-a-service-mobile.png",
+      "sha256": "ac01e6daf25e81d0ce21a8f94beb8a478bacd7a2a120bab3fde4c4411f57a985",
+      "bytes": 673536,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__compliance__dpo-as-a-service-desktop.png",
+      "sha256": "5603c192f05a22f954f387cdedd3abb973f901d80603ce325b6318d6b7a67e93",
+      "bytes": 830145,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__compliance__dpo-as-a-service-mobile.png",
+      "sha256": "2a597c0aabb1dffdbd62a6f0e3feee6a4a7bc4a4da4ebc2a137282beb639602f",
+      "bytes": 684896,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__compliance__gli-readiness-desktop.png",
+      "sha256": "c269b2185b9f60146e569e985dfe1f0eb81c599d40685bb1a56f2206aee1b901",
+      "bytes": 545562,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__compliance__gli-readiness-mobile.png",
+      "sha256": "778afa4742f92a5d828771815a3cd903642163380eecd7425ad677866992a925",
+      "bytes": 415922,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__compliance__internal-controls-desktop.png",
+      "sha256": "6b754bfd880c7033cbf2560555272ffc391721bcd938171202a137b2062f3adf",
+      "bytes": 545700,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__compliance__internal-controls-mobile.png",
+      "sha256": "242a30eff80aa00a6d251982444d91c0c870abdf37e78492d4015d6c9f9dd687",
+      "bytes": 396753,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__corporate-structuring-desktop.png",
+      "sha256": "26161c2a93402e05d0af3b0b006a3fbfa013c45a8f9a082de82d98c325856a10",
+      "bytes": 136941,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__corporate-structuring-mobile.png",
+      "sha256": "5d3b0604e5c998efb843de49bc8fdf0c987096185ef5ff67404d5f9e3d2de669",
+      "bytes": 66334,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__corporate__company-formation-desktop.png",
+      "sha256": "8d51f11b5c435b30b011b29ca904d792fc1b1302cf87ea2c3342872ef3824a53",
+      "bytes": 622702,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__corporate__company-formation-mobile.png",
+      "sha256": "d4fe0899c4c453b5c48aa00a5ab1b791ff586cbf2abb3adc921885910c14d9a2",
+      "bytes": 496169,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__corporate__holding-design-desktop.png",
+      "sha256": "a90070f18fd79a99ff9274a01782d6f40a04d38c7f1e93bcdb3f06cb48c89313",
+      "bytes": 531614,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__corporate__holding-design-mobile.png",
+      "sha256": "3c1b879d567fa7e080a92394760a72a340ee7b7e4ad23a52fad4e1dedd30bbf2",
+      "bytes": 387798,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__corporate__offshore-structuring-desktop.png",
+      "sha256": "754817c1facdc54c46a6b8f248922157770d108e0b2953005eed1b2123fee479",
+      "bytes": 566621,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__corporate__offshore-structuring-mobile.png",
+      "sha256": "b651f5e35e623a649ebc0e209f69760982b11fb0390b7fe4567916218b52b08d",
+      "bytes": 437253,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__legal-structural-architecture-desktop.png",
+      "sha256": "26161c2a93402e05d0af3b0b006a3fbfa013c45a8f9a082de82d98c325856a10",
+      "bytes": 136941,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__legal-structural-architecture-mobile.png",
+      "sha256": "5d3b0604e5c998efb843de49bc8fdf0c987096185ef5ff67404d5f9e3d2de669",
+      "bytes": 66334,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__regulatory-structuring-desktop.png",
+      "sha256": "26161c2a93402e05d0af3b0b006a3fbfa013c45a8f9a082de82d98c325856a10",
+      "bytes": 136941,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__regulatory-structuring-mobile.png",
+      "sha256": "5d3b0604e5c998efb843de49bc8fdf0c987096185ef5ff67404d5f9e3d2de669",
+      "bytes": 66334,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__regulatory__fintech-licensing-desktop.png",
+      "sha256": "6b82ddd849aca3ccfd4918a36c249e65d08788cb0b036f1bd49985a0ac2eabd5",
+      "bytes": 934445,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__regulatory__fintech-licensing-mobile.png",
+      "sha256": "10e2fe8fc9f80577ad1a29f5b1b3ccff528759b4d736caac347533326adc2bc0",
+      "bytes": 744932,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__regulatory__igaming-licensing-desktop.png",
+      "sha256": "c70e69ee2a96b21108b976adf9f785f35fcd143f0676c30c8cd527f4f07d7b6b",
+      "bytes": 1050721,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__regulatory__igaming-licensing-mobile.png",
+      "sha256": "8038b6499ff6c8595e6bfcb2e4341e1377fb01858ca23597b38d9a3d82171313",
+      "bytes": 889451,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__regulatory__market-entry-desktop.png",
+      "sha256": "25fb3f836fb6ea51ee6a0997ef70d1656a2414fff7f11247094490c3fa134e53",
+      "bytes": 661660,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__regulatory__market-entry-mobile.png",
+      "sha256": "a252b9dc7b57a8c4d2dc1d9f8b86ae7b1107a41139211e8a867c0a6e8f813120",
+      "bytes": 495308,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__remediation-readiness-desktop.png",
+      "sha256": "26161c2a93402e05d0af3b0b006a3fbfa013c45a8f9a082de82d98c325856a10",
+      "bytes": 136941,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/solutions__remediation-readiness-mobile.png",
+      "sha256": "5d3b0604e5c998efb843de49bc8fdf0c987096185ef5ff67404d5f9e3d2de669",
+      "bytes": 66334,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/team-desktop.png",
+      "sha256": "2b54943794717541f3b66a925c2bab039f62b31a5335e6458f1cb4fe70b3664b",
+      "bytes": 1089652,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/team-mobile.png",
+      "sha256": "348f69c4fbbd128c6567f4592d8d7dcb1e491b7db853d5dcd71c42f7bd09e4bd",
+      "bytes": 660320,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/terms-desktop.png",
+      "sha256": "1bc1969fe08d9585b0d59a6f7b881416b5dbd70e774ca79ee7bfd4b263d18bea",
+      "bytes": 619383,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "baseline/terms-mobile.png",
+      "sha256": "fc832881862655cbb4282132737c5f506762cbf1f40dc2b23637c126668c65e1",
+      "bytes": 476263,
+      "classification": "baseline",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/404-desktop.png",
+      "sha256": "b88e27ee6058423a1363e1834273950e8a3e2aab12b37d9cf01c38a6a4acd3bd",
+      "bytes": 23322,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/404-mobile.png",
+      "sha256": "2c640dea163ea620457d011d94a664b20980f1764b99f3ffe5146dc2aba218db",
+      "bytes": 19436,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/about-desktop.png",
+      "sha256": "ad5e87a025dc60a69522bd3e42339a5d6536a5a7152858c6855fc9eb3a78108a",
+      "bytes": 1452874,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/about-mobile.png",
+      "sha256": "7ecea875e24ab280610fafa2fbcb1d7e037e9a65e49abdeb20e908e939c8021b",
+      "bytes": 1006403,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/brazil-desktop.png",
+      "sha256": "941e2be0911d6dd9dde67496ae739462b8250a0f8d29262d071cabe383385d68",
+      "bytes": 873400,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/brazil-mobile.png",
+      "sha256": "97261354fd50da1a78bbd8d79bcb13bfabf3847369f842a114dade7583427323",
+      "bytes": 536560,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/careers-desktop.png",
+      "sha256": "7e876c8c2e29bce7f831b7373dce0c2c167eed39ecb105b124211fdc70caf7cf",
+      "bytes": 1134444,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/careers-mobile.png",
+      "sha256": "072d2bbca3d41d362a5f4dfe14f3ec7206d530b314baf4bc7b0095e3198f34d3",
+      "bytes": 437322,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/contact-desktop.png",
+      "sha256": "db3f0e396d3d3ba62511adcc804a3d6f11b4ee31966756ae31e0577128f47ce3",
+      "bytes": 662088,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/contact-mobile.png",
+      "sha256": "e349cb50283bdc4df141d809286946066e9167ef839c869f3374890e91461261",
+      "bytes": 324572,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/cookies-desktop.png",
+      "sha256": "29971e85f14c2d0ee16d8e2ad51f78d38ae7a715ac0341e3b580d6aa66beba9a",
+      "bytes": 242338,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/cookies-mobile.png",
+      "sha256": "32bd3b707e6a566e3b7393dc7ec555caffcedeb5cf8cb47c4ee9586f1cf675ee",
+      "bytes": 161906,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/diagnostic-desktop.png",
+      "sha256": "b967ed311f0ba880256abdeecb33da04bc4170a2778293b549520f7ca92a7575",
+      "bytes": 624316,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/diagnostic-mobile.png",
+      "sha256": "8267bd9687f3ec5d15a4f83ae4c1476f26a9cdcfdd28d37521450578845d3e36",
+      "bytes": 285702,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/home-desktop.png",
+      "sha256": "d1c879f0df2f5d6628dbd255e2ce058f46a04a99dc839717b3c926d386f8b8c3",
+      "bytes": 1459136,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/home-mobile.png",
+      "sha256": "436099a81212ca8c60380015f4523b5e6c205c4b5f38cb0410b0aa5c9863ab5d",
+      "bytes": 1059376,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/how-we-engage-desktop.png",
+      "sha256": "589e1d531706a1159793c1f2666ce423fbf4395111f0334e8a2a6af8a32f48c6",
+      "bytes": 671476,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/how-we-engage-mobile.png",
+      "sha256": "47caad049cbc31ad4b2ebab5f9a62858a36f3c17a0f4074bfdb0539cddf3924c",
+      "bytes": 319388,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/insights-desktop.png",
+      "sha256": "d175752fcbf8bd97d3a9100f05cae85d5112b85ee85c6e7871fbeba76c3daa79",
+      "bytes": 1752730,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/insights-mobile.png",
+      "sha256": "476bd8aa947252ee6284206bfb35bf6e6eee92d53309d778bf9dee6097e08f4c",
+      "bytes": 1508171,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/insights__spa-mf-position-brazilian-partner-20-percent-share-capital-desktop.png",
+      "sha256": "21670e936d181d2b90a467fdfb07f3341dc09c305d354c8e5b1b76565564383c",
+      "bytes": 317703,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/insights__spa-mf-position-brazilian-partner-20-percent-share-capital-mobile.png",
+      "sha256": "ec55caf332c503d4fa308e772236e1b92cd07ef7749b7f0004a9a3664aac1d8f",
+      "bytes": 263063,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/insights__why-licensing-fails-post-approval-desktop.png",
+      "sha256": "5014998c924595071deb5bc62d0b4e68d2e7e0c3ea17da7d65059476e015353b",
+      "bytes": 434216,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/insights__why-licensing-fails-post-approval-mobile.png",
+      "sha256": "6a6303a54c24a8b76eb43ba7a4fca199798721690daac41b0db897c97c171283",
+      "bytes": 407399,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/intelligence-desktop.png",
+      "sha256": "92ef095bd6bfa667df6e561fdf01ef90097551e52f3a534019aecce33424022c",
+      "bytes": 573867,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/intelligence-mobile.png",
+      "sha256": "33ea15d639d7871987e739176ef6f3c2dd03f09be64200f9a3c7a0150e9ee7ba",
+      "bytes": 210125,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/international-hub-desktop.png",
+      "sha256": "a2390fd7c41de96b82cfc65a2f1dfdfdace6f3a2db6671b88282572ebabf855e",
+      "bytes": 799065,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/international-hub-mobile.png",
+      "sha256": "1e9036d1146a04a268b63a8af814dfa3572a6589042c91f321d93ede1146f9b5",
+      "bytes": 494877,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/jurisdictions-desktop.png",
+      "sha256": "4d10817c7fa5c5a2270f8c5e55db5b21fb9f7a41c77e0c8559f0b7ce22932d83",
+      "bytes": 1066884,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/jurisdictions-mobile.png",
+      "sha256": "f52ae69e549fd47d1587eaed74fd8d4b543a23e7c89cfdd1bead6cf5bbfeef82",
+      "bytes": 667216,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/jurisdictions__isle-of-man-desktop.png",
+      "sha256": "0c2b2eef425aa80fdfd14afb3f3201e6e9e53277dabad698b2d537def36781f0",
+      "bytes": 1085013,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/jurisdictions__isle-of-man-mobile.png",
+      "sha256": "b3e250b345c786572a4540d405c6ae1b6e538b48b0ca140309660615e9de56ab",
+      "bytes": 967013,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/jurisdictions__malta-desktop.png",
+      "sha256": "de5ed81facdf67fb2c8d9e3fbf3918281050b3a7dbb3731cf274af9b7c64bfa5",
+      "bytes": 765340,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/jurisdictions__malta-mobile.png",
+      "sha256": "653628880b45913c8ce3c3114a0c834005d487bfecee99e14cea2221a92bc9be",
+      "bytes": 660401,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/markets-desktop.png",
+      "sha256": "077866934486fe6531de110d54c9e11d8b78bbe55119b0a47586b9a2b96a5321",
+      "bytes": 792518,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/markets-mobile.png",
+      "sha256": "f9b5b32bfe618c048151979eec190728818eaf19403006c1bf0ffa5ce45aeea9",
+      "bytes": 413214,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/markets__crypto-desktop.png",
+      "sha256": "1ff56a15224fd1dbe4bae62a8fa8a060e6168a72a790f1ecc5e10387f4cb0534",
+      "bytes": 701543,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/markets__crypto-mobile.png",
+      "sha256": "6fe1c55ec942f4bbe1e8b292d48e05ea61f52b6e1ca42e20e452a6912621ac85",
+      "bytes": 576030,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/markets__fintech-desktop.png",
+      "sha256": "127ffb1a6f0c1a67e4e42ae469474954c37f5e81be03f72c14bf27d5fb3c3ac0",
+      "bytes": 535110,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/markets__fintech-mobile.png",
+      "sha256": "d26966ff976d30cc8c73f995651625255bcb87ecbe2679bc25db850b2569bc69",
+      "bytes": 434830,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/markets__high-risk-desktop.png",
+      "sha256": "307e8e80787dd830e09d0542584f77a084b654078a9c12e6798057220425a86c",
+      "bytes": 768434,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/markets__high-risk-mobile.png",
+      "sha256": "a7058a32cc22f90f4ca9f91139d1eb6fa74b8421a340f2d8002ac7dcae97dd4a",
+      "bytes": 658388,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/markets__igaming-desktop.png",
+      "sha256": "ce6acc02b3c6715bdd98b3872d1a4d6821634b9582921ae4c0e5aa92ea038982",
+      "bytes": 660698,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/markets__igaming-mobile.png",
+      "sha256": "886b3e4dda32a63f852c9460e2ed1c9eeee3b74061a7b815e7a2679bfd48f86b",
+      "bytes": 565290,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/partners-desktop.png",
+      "sha256": "6fb5511a7182f65a6fffd3a8ac090019ba7d454e98093dedc46bc3ba286736c8",
+      "bytes": 616804,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/partners-mobile.png",
+      "sha256": "ba369f8311ecc560c36d6e39ed9ad0959c4679a225623a24bf5a4777746aecee",
+      "bytes": 255210,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/privacy-desktop.png",
+      "sha256": "ce367bbf95189cd9eb9f954a8f215a05dad9d8159945045d8308654321b85c18",
+      "bytes": 722363,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/privacy-mobile.png",
+      "sha256": "70e5c833744058d5c9ceb7c8d6c3fa20f968be102498a8a7e9c940fdf7980f98",
+      "bytes": 577763,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/private-clients-desktop.png",
+      "sha256": "829c24be1b178dd6a320c441674bd99fa0e1674112d63bfc525189f0c6f4f010",
+      "bytes": 859920,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/private-clients-mobile.png",
+      "sha256": "cad5bd3998c9f94b6f262df315bf4e6709a7706b3f23996efc7993ba70b22a14",
+      "bytes": 514791,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions-desktop.png",
+      "sha256": "2991585b66452d2cded77aef57df49b75aa62ecbf110f545e449ef99da4c9738",
+      "bytes": 771818,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions-mobile.png",
+      "sha256": "f1aa2163f573871edfa99e6bbf59a507be3fe047c4f62ebb5d0b3991d5b5c698",
+      "bytes": 419455,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__banking-payments-infrastructure-desktop.png",
+      "sha256": "e967f7f9d2cc018b0722485cf9ec3a379454317802d5495ddd6e6b8056ce1350",
+      "bytes": 658537,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__banking-payments-infrastructure-mobile.png",
+      "sha256": "efc6c40d55b14fbab022b0085e35170f4254af777ff89686511ed42939d525f0",
+      "bytes": 314269,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__compliance-risk-desktop.png",
+      "sha256": "91b1b208b0c3ff5b341929d2eb7997a44b0f6bb92aba8b4785db5f367923aa40",
+      "bytes": 871523,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__compliance-risk-mobile.png",
+      "sha256": "012b4def63da7f37e789dabd163336fc6f60bf175f4e33ed50f0f614102549fc",
+      "bytes": 492030,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__compliance__aml-kyc-desktop.png",
+      "sha256": "cef5e1d66cbb6b315542d96808496a0c46ccd835965d494afe22dbdf55f1cefe",
+      "bytes": 992936,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__compliance__aml-kyc-mobile.png",
+      "sha256": "4d189cb519bc1ec7ac77544a1c5d981f9df125ab23c4623cefebc9c3ea3c43c0",
+      "bytes": 609179,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__compliance__compliance-as-a-service-desktop.png",
+      "sha256": "2ff64165f233999b6782fd42457718c69e3ce71d3147b80a8efa5fa4c940c0d9",
+      "bytes": 1167296,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__compliance__compliance-as-a-service-mobile.png",
+      "sha256": "c00b75c5d1e44ed015e6a1b792378ba26c85ee1591f7b973a219d8d4badeb635",
+      "bytes": 760037,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__compliance__dpo-as-a-service-desktop.png",
+      "sha256": "28e62caa25035b54cf9944dab87d497a488d57552ae0edbc3a508f42547f0f2a",
+      "bytes": 1199652,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__compliance__dpo-as-a-service-mobile.png",
+      "sha256": "3fd551733964a6e869e5ed9dffe541f56133359954dd419839c97f2570dc476c",
+      "bytes": 807223,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__compliance__gli-readiness-desktop.png",
+      "sha256": "4493de181d596c3f9961f692e8beb42a4cb9e633709c336858f98f27f6413267",
+      "bytes": 894003,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__compliance__gli-readiness-mobile.png",
+      "sha256": "ba80d7308f16106fbd60836dc5df8524e965cdf4fc0732ee70661e09c271fe79",
+      "bytes": 511598,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__compliance__internal-controls-desktop.png",
+      "sha256": "5eba200a3f3aeda40785cbdaa7e8cbee47f95716b6830021880f4a6fbd539a1c",
+      "bytes": 863312,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__compliance__internal-controls-mobile.png",
+      "sha256": "1a0d2fa12878e30a60a776467d6558daceb76bd0b2be4bb5a09ea05c16c0c92a",
+      "bytes": 460977,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__corporate-structuring-desktop.png",
+      "sha256": "28d94a5f10e32a86ec9fba6b65378bfa4f0868cc61609f8fcfafa2fae5c09989",
+      "bytes": 887007,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__corporate-structuring-mobile.png",
+      "sha256": "f942febe05de259ed51e369119a4ba10e318b407a4c56f468c09fc328c262f24",
+      "bytes": 505480,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__corporate__company-formation-desktop.png",
+      "sha256": "6663b7554e1e7a7d644ce68b6851c18691543f1c88e1a71287ca7714f6196f8d",
+      "bytes": 948813,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__corporate__company-formation-mobile.png",
+      "sha256": "d2b624c43a990f63312471eead62b09cd5ff82534bb3666dea6e260842b53980",
+      "bytes": 580868,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__corporate__holding-design-desktop.png",
+      "sha256": "74fba18ef87705c505b143352c599f7135044c776f463715bf23d0f259d34952",
+      "bytes": 864292,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__corporate__holding-design-mobile.png",
+      "sha256": "30d3d127105e87eec465c8e2f4a256704f91a0ce631166d52973f9faa413364e",
+      "bytes": 450709,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__corporate__offshore-structuring-desktop.png",
+      "sha256": "25597f9259aa650a03b76c574c0d8e43c8e28cee165dba9a39d8c81b74f38b64",
+      "bytes": 899905,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__corporate__offshore-structuring-mobile.png",
+      "sha256": "b1dfe9f60a7e7c3fddc2bde7d207f75e6af079fd797ded2a84ca7a66014ba4fe",
+      "bytes": 511235,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__legal-structural-architecture-desktop.png",
+      "sha256": "94d633861d5d95d6f1a396d2399bf0c32a9de4b9009ad7414c16d8b233004af7",
+      "bytes": 850085,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__legal-structural-architecture-mobile.png",
+      "sha256": "3fbef1bd029d96304caa682a05cf6a40af2261ab3066135913a26a558db3d64a",
+      "bytes": 481135,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__regulatory-structuring-desktop.png",
+      "sha256": "5a4e598b899684c0883f8aef4140d97bedc079a5879c6374c59b57e7daf6f8d2",
+      "bytes": 852901,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__regulatory-structuring-mobile.png",
+      "sha256": "dd16894bacdd65f1f44a4c836476fa0fc4cdba27e5522fbf78c536211a5de73b",
+      "bytes": 473865,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__regulatory__fintech-licensing-desktop.png",
+      "sha256": "9e931856fcbc2e0ff91edd9f3cd1a682eb9b0ca2d90d2da733d802cf03caa55f",
+      "bytes": 1238835,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__regulatory__fintech-licensing-mobile.png",
+      "sha256": "7b3ee7383bac3a4fc9ecbd5cb35367b0e85dae0de432b646da12755542cc28d8",
+      "bytes": 802500,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__regulatory__igaming-licensing-desktop.png",
+      "sha256": "95ec48cbe880e768ba8a674409c5c9e82d2b5f6525ed10a04584f5febb7265dd",
+      "bytes": 1373710,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__regulatory__igaming-licensing-mobile.png",
+      "sha256": "6d863f8afddc6f77f03d2b3b1e8f1de263e944704b16689ba7eb4c87f58c0cf4",
+      "bytes": 972788,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__regulatory__market-entry-desktop.png",
+      "sha256": "a227e4a7d81ae2131ca78ff4f6884382d4e7aee0fd1fcca5ca636f8e894db225",
+      "bytes": 990970,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__regulatory__market-entry-mobile.png",
+      "sha256": "a817238edbbf4c62019a66d66f10265cb337b46acd8980b63e149c79b1e2584e",
+      "bytes": 569795,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__remediation-readiness-desktop.png",
+      "sha256": "c0d666210b663a3f8ceace18a98bd09d30dbb7318b24020223cf9f977ec064b7",
+      "bytes": 855632,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/solutions__remediation-readiness-mobile.png",
+      "sha256": "1d20914cba89b5d0e4f2d08fa2d006b2561c454478fc8daf55925dddfa39a045",
+      "bytes": 490954,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/team-desktop.png",
+      "sha256": "f0bb4f2ace181baa287d502ab0084853c9965685a3d94d5d62951f045275ba19",
+      "bytes": 931826,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/team-mobile.png",
+      "sha256": "f4186274b7771c43d9a8c2ed9a06361937e5ee8a8ab19f76bc2805a5d3e20db8",
+      "bytes": 502444,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/terms-desktop.png",
+      "sha256": "46347cf99b8e9e94535abf74efd539e5a0fa2c5d0fa9f474fb010dfb9c6e79bf",
+      "bytes": 585505,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "before/terms-mobile.png",
+      "sha256": "682587b939fed60dbd44c36bc55f2e845dfc3f45d7fcba3255b1daab347cd918",
+      "bytes": 455672,
+      "classification": "before",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "shared/baseline-home-desktop.png",
+      "sha256": "fab53faa241185ee648f18634021edb32c13fcb2b7f68f7c6dd78129ff44ffb1",
+      "bytes": 564573,
+      "classification": "shared",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "shared/baseline-home-top.png",
+      "sha256": "6481732b2a8e4d3543538abc79b8158ac8142961af70621345f064e8587eb2b2",
+      "bytes": 560082,
+      "classification": "shared",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "shared/baseline-logo.png",
+      "sha256": "f77be7ac499859ca60b4e57e2d9379fa30f44fe31a38795cc9c3820d1bdcf8ba",
+      "bytes": 2098,
+      "classification": "shared",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "shared/baseline-rubio-home-clean.png",
+      "sha256": "ec8c03fd047b35cdf07ddc1c3fba679ae4c1a29ae78e45711d76399f2574b244",
+      "bytes": 24702,
+      "classification": "shared",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "shared/baseline-rubio-team-clean.png",
+      "sha256": "62f095e78c9055e9c378dd6b5ca54b817ed616f64174dc1bf4ade63531ebb2d0",
+      "bytes": 31622,
+      "classification": "shared",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "shared/baseline-rubio-team.png",
+      "sha256": "9f65916951d8b0993063110183b91296366b63fb148af9b2beb77d07fc038bf7",
+      "bytes": 31695,
+      "classification": "shared",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "shared/reconciled-home-desktop.png",
+      "sha256": "f1cdcb7a15358b37b8d82fe986187e705638fa2eb50485f0b2bd99fd74b6c724",
+      "bytes": 550921,
+      "classification": "shared",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "shared/reconciled-logo.png",
+      "sha256": "f77be7ac499859ca60b4e57e2d9379fa30f44fe31a38795cc9c3820d1bdcf8ba",
+      "bytes": 2098,
+      "classification": "shared",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "shared/reconciled-maria-team.png",
+      "sha256": "1d6cc3f986d6f2af3fed28e8328a8572339f3a13f950e384d306fcb29425da72",
+      "bytes": 20954,
+      "classification": "shared",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "shared/reconciled-rubio-home-clean.png",
+      "sha256": "ec8c03fd047b35cdf07ddc1c3fba679ae4c1a29ae78e45711d76399f2574b244",
+      "bytes": 24702,
+      "classification": "shared",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "shared/reconciled-rubio-home.png",
+      "sha256": "ec8c03fd047b35cdf07ddc1c3fba679ae4c1a29ae78e45711d76399f2574b244",
+      "bytes": 24702,
+      "classification": "shared",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "shared/reconciled-rubio-team.png",
+      "sha256": "027c872aa7c38402f490c30689657333047c095582f8891c0954b77400f95de2",
+      "bytes": 23630,
+      "classification": "shared",
+      "capture_date": "2026-08-03"
+    }
+  ]
+}
