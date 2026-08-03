@@ -35,6 +35,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://octusconsulting.com"),
   icons: {
     icon: [
+      { url: "/brand/favicons/octus-favicon-blue.svg", type: "image/svg+xml" },
       { url: "/favicon.ico", sizes: "any" },
       { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
       { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
@@ -106,12 +107,9 @@ export default function RootLayout({
                 <BrandLockup
                   variant="on-dark"
                   surface="footer"
-                  className="h-10 w-auto md:h-11"
+                  className="h-8 w-auto md:h-9"
                 />
               </a>
-              <p className="site-footer__brand-close__wordmark" aria-hidden="true">
-                OCTUS
-              </p>
               <p className="site-footer__brand-close__line">
                 Premium international execution partner for highly regulated operations.
               </p>

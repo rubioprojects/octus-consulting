@@ -4,13 +4,13 @@ type Variant = "on-light" | "on-dark";
 type Surface = "nav" | "footer";
 
 /**
- * Official Octus lockup — closed-model symbol + Unigeo wordmark shell.
- * Full PNG lockups remain available as brand assets; nav/footer use this shell.
+ * Official Octus SVG lockup from definitive deployment 9q798dbg2 / dpl_437tawko…
+ * Nav and footer use official SVG masters — not a reconstructed HTML wordmark.
  */
 export default function BrandLockup({
   variant = "on-light",
   surface = "nav",
-  className = "h-10 w-auto md:h-11",
+  className = "h-8 w-auto md:h-9",
   priority = false,
 }: {
   variant?: Variant;
@@ -18,28 +18,29 @@ export default function BrandLockup({
   className?: string;
   priority?: boolean;
 }) {
-  const symbolSrc = BRAND.symbol.blue;
-  const wordTone =
-    variant === "on-dark" || surface === "footer"
-      ? "brand-lockup__wordmark--on-dark"
-      : "brand-lockup__wordmark--on-light";
+  const src =
+    surface === "footer"
+      ? BRAND.lockup.horizontalPrimaryOnDark
+      : variant === "on-dark"
+        ? BRAND.lockup.navOnDark
+        : BRAND.lockup.navOnLight;
+
+  const dims =
+    surface === "footer"
+      ? { width: 220, height: 48 }
+      : { width: 200, height: 42 };
 
   return (
-    <span className={`brand-lockup ${className}`} role="img" aria-label="Octus Consulting">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={symbolSrc}
-        alt=""
-        width={36}
-        height={36}
-        decoding="async"
-        aria-hidden="true"
-        {...(priority ? { fetchPriority: "high" as const } : {})}
-        className="brand-lockup__symbol"
-      />
-      <span className={`brand-lockup__wordmark ${wordTone}`} aria-hidden="true">
-        OCTUS
-      </span>
-    </span>
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src={src}
+      alt="Octus Consulting"
+      width={dims.width}
+      height={dims.height}
+      decoding="async"
+      {...(priority ? { fetchPriority: "high" as const } : {})}
+      className={`site-header__logo ${className}`}
+      style={{ imageRendering: "auto" }}
+    />
   );
 }

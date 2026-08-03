@@ -81,11 +81,11 @@ export default function Nav() {
   }, []);
 
   const linkClass = overDarkHero
-    ? "font-sans text-[12px] tracking-[0.02em] text-white/70 no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white md:text-[12.5px]"
-    : "font-sans text-[12px] tracking-[0.02em] text-foreground/65 no-underline transition-colors hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary md:text-[12.5px]";
+    ? "font-sans text-[12px] tracking-[0.02em] text-[color:var(--text-secondary-on-dark)] no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white md:text-[12.5px]"
+    : "font-sans text-[12px] tracking-[0.02em] text-[color:var(--text-secondary)] no-underline transition-colors hover:text-[color:var(--text-link)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary md:text-[12.5px]";
 
   const ctaClass =
-    "inline-flex items-center rounded-sm bg-primary px-4 py-2 font-sans text-[12px] font-medium tracking-[0.03em] text-primary-foreground no-underline transition-colors hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary md:px-5 md:text-[12.5px]";
+    "inline-flex items-center rounded-sm bg-primary px-4 py-2 font-sans text-[12px] font-medium tracking-[0.03em] text-primary-foreground no-underline transition-colors hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary md:px-5 md:text-[12.5px] min-h-11";
 
   return (
     <>
@@ -109,7 +109,7 @@ export default function Nav() {
           >
             <BrandLockup
               variant={overDarkHero ? "on-dark" : "on-light"}
-              className="site-header__logo h-10 w-auto md:h-11"
+              className="site-header__logo h-8 w-auto md:h-9"
               priority
             />
           </Link>

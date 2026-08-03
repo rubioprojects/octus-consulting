@@ -59,13 +59,13 @@
 
     --muted: 220 16% 94%;
     /* Institutional deepening — charcoal body authority */
-    --muted-foreground: 220 16% 22%;
+    --muted-foreground: 220 10% 40%;
     --body-secondary: 220 12% 32%;
 
-    --accent: 0 93% 34%;
+    --accent: 0 99% 37%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 93% 34%;
+    --destructive: 0 99% 37%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 220 14% 88%;
@@ -82,9 +82,9 @@
     --brand-blue-light: 210 100% 63%; /* #42A1FF */
     --brand-blue-mid: 212 100% 49%; /* #0074F8 */
     --brand-blue-deep: 214 100% 44%; /* #0062DE royal */
-    --brand-red: 0 93% 34%; /* #A80606 */
+    --brand-red: 0 99% 37%; /* definitive baseline computed */
     --brand-cream: 48 69% 90%; /* #F7F0D4 — strategic highlight only */
-    --brand-dark: 0 0% 17%; /* #2B2B2B charcoal */
+    --brand-dark: 0 0% 21%; /* definitive baseline charcoal */
     --brand-off-white: 0 0% 98%; /* #FAFAFA */
     --brand-navy: 220 48% 8%; /* #0B1220 primary environment */
 
@@ -95,14 +95,26 @@
     --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.06), 0 1px 2px -1px rgb(0 0 0 / 0.06);
     --shadow-card-hover: 0 4px 12px -2px rgb(0 0 0 / 0.08), 0 2px 6px -2px rgb(0 0 0 / 0.04);
 
+    /* Text tokens from definitive deployment 9q798dbg2 */
+    --text-primary: #0b1220;
+    --text-secondary: #3d4654;
+    --text-muted: #5c6573;
+    --text-label: #be0100;
+    --text-link: #0052c4;
+    --text-accent: #0052c4;
+    --text-inverse: #fafafa;
+    --text-primary-on-dark: #f7f8fa;
+    --text-secondary-on-dark: rgba(247, 248, 250, 0.84);
+    --text-muted-on-dark: rgba(247, 248, 250, 0.66);
+    --text-label-on-dark: rgba(247, 248, 250, 0.55);
+    --text-link-on-dark: #9ec5ff;
+
     /* Existing site aliases (components, inline styles) */
     --bg-base: hsl(var(--background));
     --surface-1: hsl(var(--surface-elevated));
     --surface-2: #ecefea;
     --surface-card: #ffffff;
-    --text-primary: hsl(var(--foreground));
-    --text-muted: hsl(var(--muted-foreground));
-    --text-soft: rgba(26, 29, 33, 0.55);
+    --text-soft: var(--text-muted);
     --primary-blue: hsl(var(--primary));
     --primary-blue-hover: #214c82;
     --accent-red: hsl(var(--accent));
@@ -110,14 +122,14 @@
     --off-black: hsl(var(--surface-elevated));
     --card-hover: #f5f6f3;
     --card-bg: #ffffff;
-    --border-light: rgba(26, 29, 33, 0.06);
+    --border-light: rgba(11, 18, 32, 0.08);
     --blue: hsl(var(--primary));
     --blue-light: hsl(var(--primary));
     --blue-dim: hsl(var(--primary) / 0.07);
     --blue-border: hsl(var(--primary) / 0.14);
-    --white: hsl(var(--foreground));
-    --white-60: hsl(var(--muted-foreground));
-    --white-40: rgba(26, 29, 33, 0.55);
+    --white: var(--text-primary);
+    --white-60: var(--text-secondary);
+    --white-40: var(--text-muted);
     --white-25: rgba(26, 29, 33, 0.42);
     --white-10: rgba(26, 29, 33, 0.12);
     --white-05: rgba(26, 29, 33, 0.05);
@@ -1648,20 +1660,25 @@ footer .heading-lg,
 }
 .team-photo--rubio .home-leadership-trust__photo,
 .team-photo--rubio-home .home-leadership-trust__photo {
-  object-position: 49% 18%;
+  object-fit: cover;
+  object-position: 50% 38%;
+  transform: none;
 }
 .team-photo--rubio .team-card-photo,
 .team-photo--rubio-team .team-card-photo {
-  object-position: 49% 18%;
+  object-fit: cover;
+  object-position: 50% 38%;
+  transform: none;
 }
 @media (max-width: 639px) {
   .team-photo--rubio .team-card-photo,
   .team-photo--rubio-team .team-card-photo {
-    object-position: 49% 18%;
+    object-position: 50% 38%;
+    transform: none;
   }
 }
 .team-photo--maria .team-card-photo,
-.team-photo--maria .home-leadership-trust__photo { object-position: 50% 40%; }
+.team-photo--maria .home-leadership-trust__photo { object-position: 56% 30%; }
 .team-photo--rodrigo .team-card-photo { object-position: 50% 40%; }
 .team-photo--esther .team-card-photo { object-position: 50% 42%; }
 .team-photo--caroline .team-card-photo { object-position: 50% 40%; }
@@ -1797,8 +1814,8 @@ footer .heading-lg,
 /* ── Rubio video refinement: typography, cookie/WA (leadership cards finalised below) ── */
 
 .team-photo--rubio .home-leadership-trust__photo,
-.team-photo--rubio-home .home-leadership-trust__photo { object-position: 49% 18%; }
-.team-photo--maria .home-leadership-trust__photo { object-position: 50% 40%; }
+.team-photo--rubio-home .home-leadership-trust__photo { object-position: 50% 38%; transform: none; }
+.team-photo--maria .home-leadership-trust__photo { object-position: 56% 30%; }
 .home-leadership-trust__line {
   margin-top: 0.75rem;
   font-size: 0.9375rem;
