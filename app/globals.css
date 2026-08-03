@@ -1540,40 +1540,107 @@ footer .heading-lg,
   gap: 40px 32px;
 }
 
+/* Approved closed-model Team composition (Leadership + Core Specialists).
+   Extra band classes from 8b12fcc source (leadership-support / operational /
+   operations) remain available but are not used in the approved deploy composition. */
+.team-grid--leadership {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 52rem;
+  margin-inline: auto;
+  gap: 48px 40px;
+  margin-bottom: 3.5rem;
+}
+@media (max-width: 640px) {
+  .team-grid--leadership {
+    grid-template-columns: 1fr;
+    max-width: 20rem;
+  }
+}
+.team-grid--core {
+  margin-bottom: 1rem;
+}
+.team-card--leadership .team-card-photo-wrap {
+  width: 196px;
+  height: 196px;
+}
+.team-card--specialist .team-card-photo-wrap {
+  width: 140px;
+  height: 140px;
+}
 .team-card-link {
   text-decoration: none;
   color: inherit;
 }
-
 .team-card {
   text-align: center;
-  padding: 24px 12px;
+  padding: 20px 12px;
   height: 100%;
 }
-
 .team-card-photo-wrap {
   width: 140px;
   height: 140px;
-  margin: 0 auto 24px;
-  border-radius: 50%;
+  border-radius: 9999px;
   overflow: hidden;
-  background: var(--surface-2);
+  background: hsl(220 18% 93%);
+  margin-inline: auto;
+  margin-bottom: 1.25rem;
+  box-shadow:
+    0 0 0 2px hsl(var(--background)),
+    0 0 0 3px rgba(0, 101, 255, 0.35);
 }
-
+.team-card--leadership .team-card-photo-wrap {
+  box-shadow:
+    0 0 0 3px hsl(var(--background)),
+    0 0 0 4.5px rgba(0, 101, 255, 0.42);
+}
 .team-card-photo {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
-  filter: saturate(0.75);
+  object-position: center 40%;
+  filter: grayscale(1) contrast(1.1) brightness(0.97);
 }
-
-.team-card-role {
-  font-size: 13px;
-  color: var(--primary-blue);
+.team-photo--rubio .team-card-photo,
+.team-photo--rubio .home-leadership-trust__photo { object-position: 49% 18%; }
+.team-photo--maria .team-card-photo,
+.team-photo--maria .home-leadership-trust__photo { object-position: 50% 40%; }
+.team-photo--rodrigo .team-card-photo { object-position: 50% 40%; }
+.team-photo--esther .team-card-photo { object-position: 50% 42%; }
+.team-photo--caroline .team-card-photo { object-position: 50% 40%; }
+.team-photo--larissa .team-card-photo { object-position: 50% 36%; }
+.team-photo--milla .team-card-photo { object-position: 50% 40%; }
+.team-photo--bianca .team-card-photo { object-position: 50% 40%; }
+.team-photo--claudia .team-card-photo { object-position: 49% 40%; }
+.team-photo--luciana .team-card-photo { object-position: 50% 38%; }
+.team-photo--daniel .team-card-photo { object-position: 50% 38%; }
+.team-capability {
+  font-size: 11px;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  margin-bottom: 14px;
+  color: hsl(var(--brand-blue));
+  margin-bottom: 8px;
+}
+.team-card--leadership .heading-sm {
+  font-size: 1.3rem;
+}
+.team-card-role {
+  color: hsl(220 14% 26%);
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  font-size: 0.8125rem;
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+@media (max-width: 768px) {
+  .team-card--leadership .team-card-photo-wrap {
+    width: 168px;
+    height: 168px;
+  }
+  .team-grid {
+    grid-template-columns: 1fr;
+    max-width: 22rem;
+    margin-inline: auto;
+  }
 }
 
 .careers-culture-visual {

@@ -381,6 +381,8 @@ export default function HomePage() {
         </div>
       </section>
 
+      <OctusChapterTransition />
+
       {/* 12. Final qualification and CTA */}
       <section className="surface-dark py-20 md:py-28">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">

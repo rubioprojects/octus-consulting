@@ -6,7 +6,7 @@ import {
   WHATSAPP_ASSESS_URL,
   WHATSAPP_DISCUSS_URL,
 } from "../../lib/cta";
-
+import PageHero from "../../components/system/PageHero";
 import { pageSocialMeta } from "../../lib/pageMeta";
 
 export const metadata = pageSocialMeta({
@@ -28,43 +28,27 @@ const situations = [
 export default function DiagnosticPage() {
   return (
     <main>
-      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
-        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-          <span className="label">Diagnostic assessment</span>
-          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem]">
-            Assess the failure mode.
-            <br />
-            <span className="text-white/70">Then sequence remediation.</span>
-          </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/60">
+      <PageHero
+        eyebrow="Diagnostic assessment"
+        title="Assess the failure mode."
+        titleSecondLine="Then sequence remediation."
+        description={
+          <>
             Already facing a licensing, banking, compliance or operational blockage? Start with a
             diagnostic assessment. We begin with a structured conversation about exposure and
-            readiness: then sequence remediation through{" "}
-            <Link href="/solutions/remediation-readiness" className="text-white underline underline-offset-4">
+            readiness, then sequence remediation through{" "}
+            <Link
+              href="/solutions/remediation-readiness"
+              className="text-white underline underline-offset-4"
+            >
               Remediation &amp; Readiness
             </Link>
             .
-          </p>
-          <div className="mt-12 flex flex-wrap gap-4">
-            <a
-              href={WHATSAPP_ASSESS_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex h-12 items-center justify-center rounded-sm bg-white px-10 text-base font-medium tracking-wide text-primary transition-colors hover:bg-white/90"
-            >
-              {CTA_ASSESS_LABEL}
-            </a>
-            <a
-              href={WHATSAPP_DISCUSS_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex h-12 items-center justify-center rounded-sm border border-white/20 px-10 text-base font-medium text-white/80 transition-colors hover:border-white/40 hover:text-white"
-            >
-              {CTA_DISCUSS_LABEL}
-            </a>
-          </div>
-        </div>
-      </section>
+          </>
+        }
+        primaryCta={{ href: WHATSAPP_ASSESS_URL, label: CTA_ASSESS_LABEL, external: true }}
+        secondaryCta={{ href: WHATSAPP_DISCUSS_URL, label: CTA_DISCUSS_LABEL, external: true }}
+      />
 
       <section className="bg-background py-24 md:py-32">
         <div className="mx-auto w-full max-w-3xl px-4 sm:px-6 lg:px-8">
@@ -72,7 +56,10 @@ export default function DiagnosticPage() {
           <h2 className="heading-section mb-8">Situations we help operators recognize</h2>
           <ul className="mb-12 space-y-4">
             {situations.map((item) => (
-              <li key={item} className="flex gap-3 border-b border-border pb-4 font-sans text-base text-foreground">
+              <li
+                key={item}
+                className="flex gap-3 border-b border-border pb-4 font-sans text-base text-foreground"
+              >
                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" aria-hidden />
                 {item}
               </li>

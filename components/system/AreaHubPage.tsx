@@ -10,6 +10,8 @@ import PageHero from "./PageHero";
 import { CtaLink } from "./CtaButton";
 import OctusEditorialDivider from "./OctusEditorialDivider";
 import OctusSymbolMarker from "./OctusSymbolMarker";
+import OctusChapterTransition from "./OctusChapterTransition";
+import BrandSectionMotif from "./BrandSectionMotif";
 
 /** Area-specific modules. Approved catalog language only; no invented cases/metrics. */
 function AreaSpecificModule({ area }: { area: PublicArea }) {
@@ -330,14 +332,18 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
         </section>
       )}
 
+      <OctusChapterTransition />
+
       {specificBeforeProblem ? (
         <>
           <AreaSpecificModule area={area} />
+          <OctusChapterTransition />
           <ProblemModule area={area} />
         </>
       ) : (
         <>
           <ProblemModule area={area} />
+          <OctusChapterTransition />
           <AreaSpecificModule area={area} />
         </>
       )}
@@ -356,9 +362,17 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
         </section>
       )}
 
-      <section className="area-closing-section border-t border-border bg-background">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="area-closing-section relative border-t border-border bg-background overflow-hidden">
+        <BrandSectionMotif
+          tone="light"
+          position={area.id === "AREA-PC" || area.id === "AREA-HUB" ? "start" : "end"}
+        />
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <OctusEditorialDivider className="mb-10" />
+          <div className="mb-6 flex items-center gap-3">
+            <OctusSymbolMarker size={18} />
+            <p className="section-label mb-0 block">Area {area.num}</p>
+          </div>
           <div className="area-closing-section__row">
             <div>
               <p className="section-label mb-4 block">Industries</p>
@@ -398,6 +412,27 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="surface-dark py-20 md:py-24">
+        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
+          <h2 className="mb-8 font-heading text-2xl font-semibold text-white md:text-3xl">
+            Next action
+          </h2>
+          <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
+            <CtaLink
+              href={primaryHref}
+              variant="on-dark"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {primaryLabel}
+            </CtaLink>
+            <CtaLink href="/solutions" variant="on-dark-secondary">
+              All services →
+            </CtaLink>
           </div>
         </div>
       </section>

@@ -1,6 +1,13 @@
 import Link from "next/link";
-import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
+import {
+  CTA_DISCUSS_LABEL,
+  CTA_EMAIL_LABEL,
+  MAILTO_DISCUSS,
+  WHATSAPP_DISCUSS_URL,
+} from "../../lib/cta";
 import PageHero from "../../components/system/PageHero";
+import OctusEditorialDivider from "../../components/system/OctusEditorialDivider";
+import OctusChapterTransition from "../../components/system/OctusChapterTransition";
 import { pageSocialMeta } from "../../lib/pageMeta";
 
 export const metadata = pageSocialMeta({
@@ -54,9 +61,12 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <OctusChapterTransition />
+
       {/* ─── HOW WE WORK ──────────────────────────────────────────── */}
       <section className="surface-elevated py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
+          <OctusEditorialDivider className="mb-10 ml-0 mr-auto" />
           <span className="label">How we work</span>
           <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             We act as lead contractor.
@@ -115,6 +125,8 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <OctusChapterTransition />
 
       {/* ─── WHERE WE COME FROM ───────────────────────────────────── */}
       <section className="surface-elevated py-24 md:py-32">
@@ -318,6 +330,8 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <OctusChapterTransition />
+
       {/* ─── CTA FINAL ────────────────────────────────────────────── */}
       <section className="cta-block">
         <div className="cta-block__bg" />
@@ -329,7 +343,28 @@ export default function AboutPage() {
           <h2 className="heading-lg cta-block__title">
             Build a structure that works under scrutiny.
           </h2>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+          <div className="flex flex-wrap justify-center gap-4" style={{ marginBottom: "16px" }}>
+            <a
+              href={WHATSAPP_DISCUSS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90"
+            >
+              {CTA_DISCUSS_LABEL}
+            </a>
+            <a
+              href={MAILTO_DISCUSS}
+              className="inline-flex h-12 items-center justify-center rounded-sm border border-white/25 px-10 text-base font-medium text-white/85 transition-colors hover:border-white/50 hover:text-white"
+            >
+              {CTA_EMAIL_LABEL}
+            </a>
+            <Link
+              href="/how-we-engage"
+              className="inline-flex h-12 items-center justify-center rounded-sm border border-white/25 px-10 text-base font-medium text-white/85 transition-colors hover:border-white/50 hover:text-white"
+            >
+              How we engage →
+            </Link>
+          </div>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
             Initial diagnostic call. We start by identifying where the
             structure breaks.

@@ -13,10 +13,17 @@ export const WHATSAPP_DISCUSS_URL = `https://wa.me/${OCTUS_WHATSAPP_E164}?text=$
 
 export const WHATSAPP_ASSESS_URL = `https://wa.me/${OCTUS_WHATSAPP_E164}?text=${encodeURIComponent(WA_ASSESS_SITUATION_TEXT)}`;
 
-export const MAILTO_INFO = "mailto:info@octusconsulting.com";
+export const OCTUS_EMAIL = "info@octusconsulting.com";
+export const MAILTO_INFO = `mailto:${OCTUS_EMAIL}`;
+/** Institutional discuss path — same mailbox as MAILTO_INFO. */
+export const MAILTO_DISCUSS = MAILTO_INFO;
 
 export const CTA_DISCUSS_LABEL = "Discuss your operation →";
+export const CTA_EMAIL_LABEL = "Email Octus →";
 export const CTA_ASSESS_LABEL = "Assess your situation →";
+export const CTA_WHATSAPP_ASSESS_LABEL = "WhatsApp assessment →";
+/** Canonical diagnostic intake route (current IA). */
+export const ASSESS_PATH = "/diagnostic";
 
 /** Partnership intake: human-approved for Wave 3 public copy. */
 export const WA_PARTNERSHIP_TEXT =
