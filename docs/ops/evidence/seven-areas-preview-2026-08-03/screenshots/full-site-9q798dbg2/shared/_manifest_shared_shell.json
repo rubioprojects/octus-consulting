@@ -1,0 +1,53 @@
+{
+  "shots": [
+    {
+      "file": "shared/header-over-dark-desktop.png",
+      "sha256": "08eee123d98e6c4043bfca559916aabfed5c6924e6f888f260161bc09352790e",
+      "bytes": 571452,
+      "commit_sha": "840e9ee935c4775477cce0eea08871ffdc5dd41d",
+      "classification": "shared",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "shared/services-dropdown-desktop.png",
+      "sha256": "d1c508fef927d8d25bea68702e001ed020eb668191cdf99ca69ab64428131a04",
+      "bytes": 532550,
+      "commit_sha": "840e9ee935c4775477cce0eea08871ffdc5dd41d",
+      "classification": "shared",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "shared/footer-desktop.png",
+      "sha256": "5005a80cf5dcf59b6fb28ae1ea7bbe42e17f0c399e0a166bf5532bc5f2887094",
+      "bytes": 6612,
+      "commit_sha": "840e9ee935c4775477cce0eea08871ffdc5dd41d",
+      "classification": "shared",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "shared/header-over-light-desktop.png",
+      "sha256": "d880ed6f1b9ec51f28f402146d4b3c678554aaf624c28f210d80350c72c3b219",
+      "bytes": 115169,
+      "commit_sha": "840e9ee935c4775477cce0eea08871ffdc5dd41d",
+      "classification": "shared",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "shared/mobile-menu.png",
+      "sha256": "bef4ab22327504ca395ebea9b68d19584fbdb9f7045b185bee5c71a58b915693",
+      "bytes": 43282,
+      "commit_sha": "840e9ee935c4775477cce0eea08871ffdc5dd41d",
+      "classification": "shared",
+      "capture_date": "2026-08-03"
+    },
+    {
+      "file": "shared/footer-mobile.png",
+      "sha256": "fc8a044c6d3ca93831aea18a4f3f0747d8a1d2c037db1a1725b9cca80078d1b7",
+      "bytes": 2843,
+      "commit_sha": "840e9ee935c4775477cce0eea08871ffdc5dd41d",
+      "classification": "shared",
+      "capture_date": "2026-08-03"
+    }
+  ],
+  "commit": "840e9ee935c4775477cce0eea08871ffdc5dd41d"
+}

@@ -1,5 +1,6 @@
 {
-  "crawl_ok": "92/92",
-  "routes_total": 92,
-  "fails": []
+  "date": "2026-08-03",
+  "html_routes": 93,
+  "home_internal_hrefs": 51,
+  "missing_from_home": []
 }
