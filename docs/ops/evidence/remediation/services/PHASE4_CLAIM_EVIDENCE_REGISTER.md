@@ -9,7 +9,7 @@
 | Disposition | Count |
 |---|---:|
 | kept | 0 specific timed results |
-| qualified / rewritten | 6 |
+| qualified / rewritten | 7 |
 | removed | 0 (rewritten in place) |
 
 ## Claims reviewed
