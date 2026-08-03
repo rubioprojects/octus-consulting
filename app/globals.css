@@ -2185,11 +2185,12 @@ body.cookie-banner-visible .wa-float {
   color: rgba(255, 255, 255, 0.58) !important;
 }
 .site-footer__bar {
-  opacity: 0.85;
+  opacity: 1;
 }
 .site-footer__bar p,
 .site-footer__bar a {
-  color: rgba(255, 255, 255, 0.34) !important;
+  /* WCAG AA on surface-dark (#0b111e): ≥4.5:1 for 11px meta / contact links */
+  color: rgba(255, 255, 255, 0.72) !important;
   font-size: 0.6875rem !important;
 }
 

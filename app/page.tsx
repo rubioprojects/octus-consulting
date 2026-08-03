@@ -284,11 +284,10 @@ export default function HomePage() {
                 className="flex flex-col border-border md:border-r md:px-2 md:last:border-r-0"
               >
                 <div
-                  className="font-heading text-4xl font-light text-primary/20"
+                  className="font-heading text-4xl font-light text-primary/20 before:content-[attr(data-step)]"
+                  data-step={String(stepIndex + 1).padStart(2, "0")}
                   aria-hidden="true"
-                >
-                  {String(stepIndex + 1).padStart(2, "0")}
-                </div>
+                />
                 <h3 className="mb-3 mt-4 font-sans text-lg font-semibold text-primary">
                   {item.title}
                 </h3>
