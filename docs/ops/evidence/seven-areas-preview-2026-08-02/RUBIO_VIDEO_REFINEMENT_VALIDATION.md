@@ -131,3 +131,10 @@ Manual Legal hero second line shortened to: “Contractual and legal frameworks,
 - No generated portraits.
 - PR #17 not merged.
 - Production not deployed.
+
+
+## Delivery pin
+
+- **final HEAD:** `4b7e14d31bfac4fdb710504562a64ce533db4053`
+- **preview:** https://octus-consulting-fcmjycdkr-axle1.vercel.app
+- **branch preview:** https://octus-consulting-git-feat-seven-areas-website-arch-0785d8-axle1.vercel.app
