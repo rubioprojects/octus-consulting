@@ -7,6 +7,7 @@ import BrandSectionMotif from "../../components/system/BrandSectionMotif";
 import Reveal from "../../components/system/Reveal";
 import OctusSymbolMarker from "../../components/system/OctusSymbolMarker";
 import OctusEditorialDivider from "../../components/system/OctusEditorialDivider";
+import { CtaLink } from "../../components/system/CtaButton";
 import { pageSocialMeta } from "../../lib/pageMeta";
 
 export const metadata = pageSocialMeta({
@@ -92,7 +93,7 @@ export default function IntelligencePage() {
         </div>
       </section>
 
-      <section className="bg-background py-12 md:py-16">
+      <section className="bg-background py-24 md:py-32">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="section-label mb-4 block">From signal to structure</p>
@@ -184,21 +185,18 @@ export default function IntelligencePage() {
               Read the material, prepare your questions, then continue with Octus when a live
               operational constraint needs structured attention.
             </p>
-            <div className="flex flex-col items-start gap-3">
-              <Link
-                href="/insights"
-                className="font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
-              >
+            <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-4">
+              <CtaLink href="/insights" variant="primary">
                 Explore Insights →
-              </Link>
-              <Link
+              </CtaLink>
+              <CtaLink
                 href={WHATSAPP_DISCUSS_URL}
+                variant="secondary"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-sans text-sm text-muted-foreground no-underline hover:text-primary"
               >
                 Discuss a specific issue →
-              </Link>
+              </CtaLink>
             </div>
           </Reveal>
         </div>

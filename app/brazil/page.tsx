@@ -112,7 +112,7 @@ export default function BrazilPage() {
         <div className="octus-dark-hero__seam" aria-hidden="true" />
       </section>
 
-      <section className="bg-background py-16 md:py-24">
+      <section className="bg-background py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="section-label mb-3 block">Who this page is for</p>
           <h2 className="heading-section mb-4 max-w-2xl">International clients entering or operating in Brazil.</h2>
@@ -123,13 +123,13 @@ export default function BrazilPage() {
         </div>
       </section>
 
-      <section className="surface-elevated py-16 md:py-24">
+      <section className="surface-elevated py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="section-label mb-3 block">Regulatory pathways</p>
           <h2 className="heading-section mb-10 max-w-2xl">How Brazil-facing programmes are structured.</h2>
           <div className="grid gap-4 md:grid-cols-2">
             {pathwayCards.map((card) => (
-              <article key={card.title} className="rounded-sm border border-border bg-background p-6 md:p-7">
+              <article key={card.title} className="rounded-lg border border-transparent bg-background p-6 transition-all hover:border-border md:p-7">
                 <h3 className="mb-3 font-heading text-lg font-semibold text-foreground">{card.title}</h3>
                 <p className="font-sans text-sm leading-relaxed text-muted-foreground">{card.body}</p>
               </article>
@@ -144,7 +144,7 @@ export default function BrazilPage() {
         </div>
       </section>
 
-      <section className="bg-background py-16 md:py-24">
+      <section className="bg-background py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="section-label mb-3 block">Operating dependencies</p>
           <h2 className="heading-section mb-4 max-w-2xl">An integrated Brazil operating system.</h2>
@@ -167,7 +167,7 @@ export default function BrazilPage() {
         </div>
       </section>
 
-      <section className="surface-elevated py-16 md:py-24">
+      <section className="surface-elevated py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="section-label mb-3 block">International and Brazilian structures</p>
           <h2 className="heading-section mb-4 max-w-2xl">
@@ -181,7 +181,7 @@ export default function BrazilPage() {
         </div>
       </section>
 
-      <section className="bg-background py-16 md:py-24">
+      <section className="bg-background py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="section-label mb-3 block">Brazil Insights</p>
           <h2 className="heading-section mb-8 max-w-2xl">Selected analysis on Brazil regulation.</h2>

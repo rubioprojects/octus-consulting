@@ -9,6 +9,7 @@ import PageHero from "./PageHero";
 import OctusEditorialDivider from "./OctusEditorialDivider";
 import OctusSymbolMarker from "./OctusSymbolMarker";
 import ServiceFamilyAccordion from "./ServiceFamilyAccordion";
+import { CtaLink } from "./CtaButton";
 
 /** Seven visible chapters covering the 12-module content checklist. */
 export default function AreaHubPage({ area }: { area: PublicArea }) {
@@ -45,7 +46,7 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
       )}
 
       {/* Chapter 2 · Client triggers */}
-      <section className="bg-background py-16 md:py-24">
+      <section className="bg-background py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-8 flex items-end gap-6">
             <span className="editorial-numeral" aria-hidden="true">
@@ -60,7 +61,7 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
             {area.whenNeeded.map((item) => (
               <li
                 key={item}
-                className="border-l-2 border-primary/35 bg-secondary/20 py-4 pl-5 pr-4 font-sans text-sm leading-relaxed text-foreground"
+                className="border-l-2 border-primary/30 py-1 pl-4 font-sans text-base leading-relaxed text-foreground"
               >
                 {item}
               </li>
@@ -70,7 +71,7 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
       </section>
 
       {/* Chapter 3 · Capabilities and services (single family system) */}
-      <section className="surface-elevated py-16 md:py-24">
+      <section className="surface-elevated py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="section-label mb-3 block">Capabilities</p>
           <h2 className="heading-section mb-4 max-w-2xl">
@@ -88,8 +89,8 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
       <section
         className={
           surfaceVariant === "dark-accent"
-            ? "surface-dark relative overflow-hidden py-16 md:py-24"
-            : "border-y border-border bg-secondary/25 py-16 md:py-24"
+            ? "surface-dark relative overflow-hidden py-20 md:py-28"
+            : "border-y border-border bg-secondary/25 py-20 md:py-28"
         }
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -140,7 +141,7 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
       </section>
 
       {/* Chapter 5 · Markets */}
-      <section className="bg-background py-16 md:py-20">
+      <section className="bg-background py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-8 flex items-center gap-3">
             <OctusSymbolMarker />
@@ -184,7 +185,7 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
       </section>
 
       {/* Chapter 6 · Delivery and accountability */}
-      <section className="border-y border-border bg-primary/[0.03] py-16 md:py-24">
+      <section className="border-y border-border bg-primary/[0.03] py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <OctusEditorialDivider className="mb-10" />
           <p className="section-label mb-3 block">Delivery and accountability</p>
@@ -213,25 +214,30 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
         </div>
       </section>
 
-      {/* Chapter 7 · Compact close */}
-      <section className="bg-background py-14 md:py-16">
+      {/* Chapter 7 · Dark close (closed-model SolutionHub rhythm) */}
+      <section className="surface-dark py-20 md:py-24">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-          <h2 className="mb-3 font-heading text-xl font-semibold text-foreground md:text-2xl">
+          <h2 className="mb-4 font-heading text-2xl font-semibold text-white md:text-3xl">
             {isRemediation ? "When progress has stopped." : `Continue with ${area.name}.`}
           </h2>
-          <p className="mb-5 font-sans text-sm text-muted-foreground">
+          <p className="mb-8 font-sans text-sm leading-relaxed text-white/70">
             {isRemediation
               ? "Start with a focused assessment of what is blocking the operation."
               : "Discuss how this workstream fits the rest of the mandate."}
           </p>
-          <Link
-            href={primaryHref}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
-          >
-            {primaryLabel}
-          </Link>
+          <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
+            <CtaLink
+              href={primaryHref}
+              variant="on-dark"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {primaryLabel}
+            </CtaLink>
+            <CtaLink href="/solutions" variant="on-dark-secondary">
+              All services →
+            </CtaLink>
+          </div>
         </div>
       </section>
     </main>
