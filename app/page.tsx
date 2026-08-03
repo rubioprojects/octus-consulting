@@ -94,7 +94,7 @@ export default function HomePage() {
               href={ASSESS_PATH}
               className="text-[color:var(--text-secondary-on-dark)] underline-offset-4 transition-colors hover:text-white hover:underline"
             >
-              {CTA_ASSESS_LABEL} →
+              {CTA_ASSESS_LABEL}
             </Link>
           </p>
         </div>

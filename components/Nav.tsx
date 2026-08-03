@@ -171,7 +171,7 @@ export default function Nav() {
               href={WHATSAPP_DISCUSS_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className={`${ctaClass} min-h-11`}
+              className={ctaClass}
             >
               {CTA_DISCUSS_LABEL}
             </a>
