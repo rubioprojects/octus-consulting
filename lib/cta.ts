@@ -19,6 +19,7 @@ export const MAILTO_INFO = `mailto:${OCTUS_EMAIL}`;
 export const MAILTO_DISCUSS = MAILTO_INFO;
 
 export const CTA_DISCUSS_LABEL = "Discuss your operation →";
+export const CTA_WORKSTREAM_LABEL = "Discuss this workstream →";
 export const CTA_EMAIL_LABEL = "Email Octus →";
 export const CTA_ASSESS_LABEL = "Assess your situation →";
 export const CTA_WHATSAPP_ASSESS_LABEL = "WhatsApp assessment →";

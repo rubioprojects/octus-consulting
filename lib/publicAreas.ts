@@ -335,7 +335,7 @@ export const PUBLIC_AREAS: PublicArea[] = [
       },
       {
         label: "Banking & Payments",
-        href: "/solutions/regulatory/banking-payments",
+        href: "/solutions/banking-payments-infrastructure",
       },
     ],
     markets: [
@@ -622,6 +622,6 @@ export const BANKING_SUPPORTING_ROUTE = {
     { label: "Corporate Structuring (banking readiness)", href: "/solutions/corporate-structuring" },
     { label: "International Hub (introductions / payment architecture)", href: "/international-hub" },
     { label: "Remediation & Readiness", href: "/solutions/remediation-readiness" },
-    { label: "Banking & Payments", href: "/solutions/regulatory/banking-payments" },
+    { label: "Banking & Payments", href: "/solutions/banking-payments-infrastructure" },
   ],
 };

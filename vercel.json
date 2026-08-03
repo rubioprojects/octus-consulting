@@ -54,6 +54,11 @@
       "source": "/services",
       "destination": "/solutions",
       "permanent": true
+    },
+    {
+      "source": "/solutions/regulatory/banking-payments",
+      "destination": "/solutions/banking-payments-infrastructure",
+      "permanent": true
     }
   ]
 }

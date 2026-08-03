@@ -1,17 +1,16 @@
 import Link from "next/link";
 import {
   CTA_DISCUSS_LABEL,
-  CTA_EMAIL_LABEL,
-  MAILTO_DISCUSS,
   WHATSAPP_DISCUSS_URL,
 } from "../../lib/cta";
 import DarkHeroAtmosphere from "../../components/system/DarkHeroAtmosphere";
+import { CtaLink } from "../../components/system/CtaButton";
 import { pageSocialMeta } from "../../lib/pageMeta";
 
 export const metadata = pageSocialMeta({
   title: "Team",
   description:
-    "Octus leadership and specialists across regulatory, compliance, legal, corporate and international workstreams.",
+    "Octus leadership and practice leads across regulatory, compliance, legal, corporate and international workstreams.",
   path: "/team",
 });
 
@@ -21,40 +20,54 @@ type Member = {
   photo: string;
   focus: string;
   linkedin: string | null;
-  capability?: string;
-  photoKey?: string;
+  photoClass: string;
 };
 
-/** VERIFIED_CURRENT_PUBLIC leadership pair. Titles locked by editorial governance. */
 const leadership: Member[] = [
   {
     name: "Rubio Teixeira",
     title: "Founder & CEO",
     photo: "/team/rubio-teixeira.jpg",
-    photoKey: "rubio",
+    photoClass: "team-photo--rubio-team",
     focus:
-      "Regulatory structuring, international licensing and market-entry strategy for regulated operators.",
+      "Executive ownership of regulatory structuring, international licensing and market-entry strategy for regulated operators.",
     linkedin: "https://www.linkedin.com/in/rubioteixeiraoctus/",
   },
   {
     name: "Maria Cristina",
     title: "Operations Coordination",
     photo: "/team/maria-cristina.jpg",
-    photoKey: "maria",
+    photoClass: "team-photo--maria",
     focus:
-      "Operational coordination and client engagement on Octus regulatory and compliance mandates.",
+      "Operational coordination and client engagement across Octus regulatory, compliance and remediation mandates.",
     linkedin: "https://www.linkedin.com/in/maria-cristina-060241b6/",
   },
 ];
 
-/** VERIFIED_CURRENT_PUBLIC Core Specialists. Bios narrowed to substantiated ownership claims. */
-const specialists: Member[] = [
+const practiceLeads: Member[] = [
+  {
+    name: "Esther Vendrami",
+    title: "International Regulatory & Compliance Lead",
+    photo: "/team/esther-vendrami.jpg",
+    photoClass: "team-photo--esther",
+    focus:
+      "International licensing, compliance operations, company formation and banking-access coordination for regulated environments.",
+    linkedin: "https://www.linkedin.com/in/esthervendrami/",
+  },
+  {
+    name: "Caroline Giovanetti",
+    title: "Brazil Regulatory Lead",
+    photo: "/team/caroline-giovanetti.jpg",
+    photoClass: "team-photo--caroline",
+    focus:
+      "Brazil regulatory processes, SPA/MF licensing support and administrative coordination for Brazil-facing mandates.",
+    linkedin: "https://www.linkedin.com/in/caroline-cubas-giovanetti-400820144/",
+  },
   {
     name: "Rodrigo Coelho Lopes",
     title: "Legal Architecture Lead",
     photo: "/team/rodrigo-lopes.jpg",
-    photoKey: "rodrigo",
-    capability: "Legal architecture",
+    photoClass: "team-photo--rodrigo",
     focus:
       "Legal architecture for regulatory and corporate mandates, including cross-border structure and jurisdictional risk.",
     linkedin: null,
@@ -63,100 +76,36 @@ const specialists: Member[] = [
     name: "Claudia Nery",
     title: "Chief Financial Officer",
     photo: "/team/claudia-nery.jpg",
-    photoKey: "claudia",
-    capability: "Financial governance",
+    photoClass: "team-photo--claudia",
     focus:
       "Corporate and financial architecture, financial governance and group reporting for Octus mandates.",
     linkedin: "https://www.linkedin.com/in/claudia-nery/",
   },
-  {
-    name: "Esther Vendrami",
-    title: "International Regulatory & Compliance Lead",
-    photo: "/team/esther-vendrami.jpg",
-    photoKey: "esther",
-    capability: "International regulatory",
-    focus:
-      "International licensing, compliance operations support, company formation and banking-access coordination for regulated environments.",
-    linkedin: "https://www.linkedin.com/in/esthervendrami/",
-  },
-  {
-    name: "Caroline Giovanetti",
-    title: "Brazil Regulatory Lead",
-    photo: "/team/caroline-giovanetti.jpg",
-    photoKey: "caroline",
-    capability: "Brazil regulatory",
-    focus:
-      "Brazil regulatory processes, licensing support and administrative coordination for Brazil-facing mandates.",
-    linkedin: "https://www.linkedin.com/in/caroline-cubas-giovanetti-400820144/",
-  },
-  {
-    name: "Milla Ludovico",
-    title: "Business Development Lead",
-    photo: "/team/milla-ludovico.jpg",
-    photoKey: "milla",
-    capability: "Commercial intake",
-    focus:
-      "New business development, client intake and commercial coordination with the founding team on new mandates.",
-    linkedin: "https://www.linkedin.com/in/milla-ludovico-6a9945a2/",
-  },
-  {
-    name: "Bianca Carolina Oliveira Andrade",
-    title: "People & Operations",
-    photo: "/team/bianca.jpg",
-    photoKey: "bianca",
-    capability: "People & delivery",
-    focus:
-      "People operations, talent coordination and internal process support for team delivery.",
-    linkedin: "https://www.linkedin.com/in/rh2463365recursoshumanos/",
-  },
-  {
-    name: "Larissa Carvalho",
-    title: "Regulatory & Compliance Specialist",
-    photo: "/team/larissa-carvalho.jpg",
-    photoKey: "larissa",
-    capability: "Regulatory & compliance",
-    focus:
-      "Operational support on regulatory and compliance engagements, including documentation and shared client deliverables.",
-    linkedin: "https://www.linkedin.com/in/larissaocarvalho/",
-  },
-  {
-    name: "Daniel Cruz Fonseca",
-    title: "Regulatory & Compliance Specialist",
-    photo: "/team-daniel.jpg",
-    photoKey: "daniel",
-    capability: "Regulatory & compliance",
-    focus:
-      "Regulatory and compliance support for iGaming, fintech and betting mandates.",
-    linkedin: null,
-  },
-  {
-    name: "Luciana Santos Veloso",
-    title: "Operations Coordinator",
-    photo: "/team-luciana.jpg",
-    photoKey: "luciana",
-    capability: "Operations",
-    focus:
-      "Operational workflows, client documentation and cross-functional coordination on active mandates.",
-    linkedin: null,
-  },
 ];
+
+const commercial: Member = {
+  name: "Milla Ludovico",
+  title: "Business Development Lead",
+  photo: "/team/milla-ludovico.jpg",
+  photoClass: "team-photo--milla",
+  focus:
+    "New business development, client intake and commercial coordination with the founding team on new mandates.",
+  linkedin: "https://www.linkedin.com/in/milla-ludovico-6a9945a2/",
+};
 
 function MemberCard({
   member,
   tier,
 }: {
   member: Member;
-  tier: "leadership" | "specialist";
+  tier: "leadership" | "practice" | "commercial";
 }) {
   const inner = (
-    <article className={`team-card team-card--${tier}`}>
-      <div
-        className={`team-card-photo-wrap${member.photoKey ? ` team-photo--${member.photoKey}` : ""}`}
-      >
+    <article className={`team-card team-card--${tier === "leadership" ? "leadership" : "specialist"}${tier === "commercial" ? " team-card--commercial" : ""}`}>
+      <div className={`team-card-photo-wrap ${member.photoClass}`}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={member.photo} alt="" className="team-card-photo" aria-hidden="true" />
       </div>
-      {member.capability ? <p className="team-capability">{member.capability}</p> : null}
       <h2 className="heading-sm" style={{ marginBottom: "6px" }}>
         {member.name}
       </h2>
@@ -192,8 +141,8 @@ export default function TeamPage() {
             People who understand how regulated operations hold together.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">
-            Octus brings together leadership and specialist execution across regulatory, compliance,
-            legal, corporate and international workstreams.
+            Leadership and practice leads accountable for regulatory, compliance, legal, corporate
+            and international execution.
           </p>
         </div>
         <div className="octus-dark-hero__seam" aria-hidden="true" />
@@ -208,47 +157,41 @@ export default function TeamPage() {
             ))}
           </div>
 
-          <p className="team-band-label">Core Specialists</p>
+          <p className="team-band-label">Practice Leads</p>
           <div className="team-grid team-grid--core">
-            {specialists.map((m) => (
-              <MemberCard key={m.name} member={m} tier="specialist" />
+            {practiceLeads.map((m) => (
+              <MemberCard key={m.name} member={m} tier="practice" />
             ))}
+          </div>
+
+          <p className="team-band-label">Commercial &amp; Client Relations</p>
+          <div className="team-grid team-grid--commercial max-w-md">
+            <MemberCard member={commercial} tier="commercial" />
           </div>
         </div>
       </section>
 
-      <section className="cta-block">
-        <div className="cta-block__bg" />
-        <div className="cta-block__inner">
-          <h2 className="heading-lg cta-block__title" style={{ marginBottom: "20px" }}>
+      <section className="surface-dark py-20 md:py-24">
+        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
+          <h2 className="mb-8 font-heading text-2xl font-semibold text-white md:text-3xl">
             Work with a team built for regulatory execution.
           </h2>
-          <p className="body-large" style={{ marginBottom: "32px", color: "rgba(255,255,255,0.78)" }}>
-            We work with operators who need regulatory clarity, operational discipline and
-            structures that survive scrutiny.
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <a
-              href={WHATSAPP_DISCUSS_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90"
-            >
-              {CTA_DISCUSS_LABEL}
-            </a>
-            <a
-              href={MAILTO_DISCUSS}
-              className="inline-flex h-12 items-center justify-center rounded-sm border border-white/25 px-10 text-base font-medium text-white/85 transition-colors hover:border-white/50 hover:text-white"
-            >
-              {CTA_EMAIL_LABEL}
-            </a>
+          <CtaLink
+            href={WHATSAPP_DISCUSS_URL}
+            variant="on-dark"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {CTA_DISCUSS_LABEL}
+          </CtaLink>
+          <p className="mt-6">
             <Link
               href="/careers"
-              className="inline-flex h-12 items-center justify-center rounded-sm border border-white/25 px-10 text-base font-medium text-white/85 transition-colors hover:border-white/50 hover:text-white"
+              className="font-sans text-sm text-white/55 no-underline hover:text-white/80"
             >
               See careers →
             </Link>
-          </div>
+          </p>
         </div>
       </section>
     </main>

@@ -2,7 +2,13 @@ import type { Metadata } from "next";
 
 const SITE = "https://octusconsulting.com";
 const SITE_NAME = "Octus Consulting";
-const DEFAULT_OG_IMAGE = "/og-image.png";
+const DEFAULT_OG_IMAGE = "https://octusconsulting.com/og-image.png";
+
+function absoluteImageUrl(image: string): string {
+  if (image.startsWith("http://") || image.startsWith("https://")) return image;
+  const path = image.startsWith("/") ? image : `/${image}`;
+  return `${SITE}${path}`;
+}
 
 /** Page-specific title/description/canonical + Open Graph + Twitter for production URLs. */
 export function pageSocialMeta(opts: {
@@ -16,7 +22,7 @@ export function pageSocialMeta(opts: {
   const path = opts.path.startsWith("/") ? opts.path : `/${opts.path}`;
   // Homepage canonical matches sitemap (no trailing slash).
   const canonical = path === "/" ? SITE : `${SITE}${path}`;
-  const image = opts.image ?? DEFAULT_OG_IMAGE;
+  const imageUrl = absoluteImageUrl(opts.image ?? DEFAULT_OG_IMAGE);
 
   return {
     title: opts.title,
@@ -29,13 +35,13 @@ export function pageSocialMeta(opts: {
       url: canonical,
       siteName: SITE_NAME,
       type: "website",
-      images: [{ url: image, width: 1200, height: 630, alt: SITE_NAME }],
+      images: [{ url: imageUrl, width: 1200, height: 630, alt: SITE_NAME }],
     },
     twitter: {
       card: "summary_large_image",
       title: opts.title,
       description: opts.description,
-      images: [image],
+      images: [imageUrl],
     },
   };
 }
