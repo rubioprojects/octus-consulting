@@ -139,7 +139,7 @@ export default function HoldingDesignPage() {
             {[
               { title: "Offshore Structuring", desc: "Offshore Structuring", href: "/solutions/corporate/offshore-structuring" },
               { title: "Company Formation", desc: "Company Formation", href: "/solutions/corporate/company-formation" },
-              { title: "Ownership & UBO Architecture", desc: "Ownership & UBO Architecture", href: "/private-clients" },
+              { title: "Private Clients", desc: "Ownership and UBO architecture for founders and operators.", href: "/private-clients" },
               { title: "Banking & Payments", desc: "Banking & Payments", href: "/solutions/banking-payments-infrastructure" },
             ].map((item) => (
               <Link key={item.href} href={item.href} className="card-grid" style={{ padding: "28px" }}>
@@ -158,7 +158,7 @@ export default function HoldingDesignPage() {
           <h2 className="heading-lg cta-block__title">
             Design the group for regulation. Not for convenience.
           </h2>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">Continue this discussion →</a>
         </div>
       </section>
     </main>

@@ -195,7 +195,7 @@ export default function SolutionsCompanyFormationPage() {
           <h2 className="heading-lg cta-block__title">
             Build the structure. Not just the entity.
           </h2>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">Continue this discussion →</a>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
             We respond within 24 hours.
           </p>

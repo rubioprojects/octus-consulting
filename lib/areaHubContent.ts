@@ -1,5 +1,5 @@
 /**
- * Enriched seven-area hub content — families from architecture JSON + editorial modules.
+ * Enriched seven-area hub content: families from architecture JSON + editorial modules.
  */
 
 import type { PublicArea } from "./publicAreas";

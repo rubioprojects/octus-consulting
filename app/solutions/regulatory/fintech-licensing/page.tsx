@@ -234,7 +234,7 @@ export default function FintechLicensingPage() {
           <h2 className="heading-lg cta-block__title">
             The regulator does not stop watching after authorisation.
           </h2>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">Continue this discussion →</a>
           <p className="body-sm" style={{ color: "var(--white-25)", marginTop: "16px" }}>
             We review your current setup, identify structural gaps and define what needs to be built before any application is submitted. If there is no viable path, we will tell you upfront.
           </p>

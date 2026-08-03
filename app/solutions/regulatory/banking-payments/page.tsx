@@ -8,7 +8,7 @@ export const metadata = pageSocialMeta({
   path: "/solutions/banking-payments-infrastructure",
 });
 
-/** Legacy route — consolidated into cross-cutting Banking & Payments infrastructure. */
+/** Legacy route: consolidated into cross-cutting Banking & Payments infrastructure. */
 export default function BankingPaymentsLegacyRedirect() {
   redirect("/solutions/banking-payments-infrastructure");
 }

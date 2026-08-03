@@ -244,7 +244,7 @@ export default function SolutionsIGamingLicensingPage() {
             approaches without structural backing. If your objective is speed
             over sustainability, we are not the right partner.
           </p>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">Continue this discussion →</a>
         </div>
       </section>
 
@@ -321,7 +321,7 @@ export default function SolutionsIGamingLicensingPage() {
             Get the structure right{" "}
             <span style={{ color: "var(--blue-light)" }}>before the regulator sees it.</span>
           </h2>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">Continue this discussion →</a>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
             Diagnostic call. We assess model, jurisdiction fit and structural readiness before recommending a path.
           </p>

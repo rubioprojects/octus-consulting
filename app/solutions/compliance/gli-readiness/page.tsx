@@ -142,7 +142,7 @@ export default function GliReadinessPage() {
               { title: "Compliance-as-a-Service", desc: "Prevents audit gaps", href: "/solutions/compliance/compliance-as-a-service" },
               { title: "Internal Controls", desc: "Governance that supports readiness", href: "/solutions/compliance/internal-controls" },
               { title: "AML/KYC", desc: "What auditors evaluate first", href: "/solutions/compliance/aml-kyc" },
-              { title: "Audit & Readiness", desc: "Full pillar", href: "/solutions/remediation-readiness" },
+              { title: "Remediation & Readiness", desc: "Full pillar", href: "/solutions/remediation-readiness" },
             ].map((item) => (
               <Link key={item.href} href={item.href} className="card-grid" style={{ padding: "28px" }}>
                 <h2 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{item.title}</h2>
@@ -163,7 +163,7 @@ export default function GliReadinessPage() {
           <h2 className="heading-lg cta-block__title">
             Prepare before scrutiny arrives.
           </h2>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">Continue this discussion →</a>
         </div>
       </section>
     </main>
