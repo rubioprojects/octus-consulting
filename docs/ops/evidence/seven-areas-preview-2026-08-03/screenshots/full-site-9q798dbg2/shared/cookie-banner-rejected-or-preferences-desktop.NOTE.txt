@@ -1,0 +1,1 @@
+NOT_APPLICABLE: CookieBanner implements essential notice + Continue only. No reject or preferences UI in source (components/CookieBanner.tsx).
