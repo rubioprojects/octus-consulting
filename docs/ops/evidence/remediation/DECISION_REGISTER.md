@@ -168,3 +168,16 @@
 | Shared PageHero | Prefer services-specific variant/wrapper if institutional consumers would change |
 | Status | BINDING |
 
+## D-016 — Phase 4 Services returned for Sol audit
+
+| Field | Value |
+|---|---|
+| Phase 4 | READY_FOR_SOL_AUDIT |
+| implementation | `8228e342cfc9d3830b4f4a414f2a93ae208e5be1` |
+| immutable_preview | https://octus-consulting-6dof5kn4k-axle1.vercel.app |
+| deployment_id | `dpl_Ewm6SFyGB5wkkDefAAMnBs27bMfZ` |
+| validation | overall PASS · 162 screenshots |
+| residual | HOME_PUNCTUATION_RESIDUAL_001 still OPEN |
+| Phase 5–6 | BLOCKED |
+| terminal | `OCTUS_SERVICES_GATE_READY_FOR_SOL_AUDIT` |
+
