@@ -101,7 +101,7 @@ export const SOLUTION_HUBS: SolutionHub[] = [
     title: "Compliance & Risk Systems",
     shortTitle: "Compliance & Risk",
     problem:
-      "Paper compliance collapses under audit, banking and regulatory pressure.",
+      "Compliance frameworks fail when they cannot withstand audit, banking and regulatory pressure.",
     role: "Octus builds and operates compliance as a working system. AML, KYC, CDD, DPO and ongoing controls.",
     summary:
       "Operational compliance frameworks, AML/KYC/CDD, DPO capability and risk systems designed to survive scrutiny.",
