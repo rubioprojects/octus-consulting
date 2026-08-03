@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
 import DarkHeroAtmosphere from "../../../../components/system/DarkHeroAtmosphere";
+import { pageSocialMeta } from "../../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "AML & KYC Framework. Compliance That Holds | Octus",
   description:
     "AML/KYC compliance frameworks for regulated operations. Built to survive real audit, not to sit in a folder. Transaction monitoring, risk assessment and regulatory reporting.",
-};
+  path: "/solutions/compliance/aml-kyc",
+});
 
 export default function SolutionsAMLKYCPage() {
   return (

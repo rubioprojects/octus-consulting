@@ -16,7 +16,7 @@ import { pageSocialMeta } from "../../lib/pageMeta";
 export const metadata = pageSocialMeta({
   title: "Contact",
   description:
-    "Discuss your regulated operation with Octus. High-ticket consultancy intake via WhatsApp or email: no mass forms.",
+    "Start a conversation with Octus about licensing, compliance, banking, legal and corporate workstreams via WhatsApp or email.",
   path: "/contact",
 });
 
@@ -31,9 +31,9 @@ export default function ContactPage() {
             Discuss your operation.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/70">
-            Octus is a high-ticket consultancy. We prioritize qualified conversations, not mass lead
-            capture. WhatsApp is the primary commercial path; email remains available for
-            institutional contact.
+            Octus works with regulated businesses that need direct coordination across licensing,
+            compliance, banking, legal and corporate workstreams. Start the conversation through
+            WhatsApp or email.
           </p>
           <div className="mt-12 flex flex-wrap gap-4">
             <a
@@ -76,7 +76,8 @@ export default function ContactPage() {
               </h3>
               <p className="body-text mb-4">
                 For commercial conversations about market entry, licensing, banking, compliance or
-                structure. WhatsApp is the primary path; email works for institutional trails.
+                structure. WhatsApp is the primary path. Email remains available when that fits the
+                conversation better.
               </p>
               <div className="flex flex-col gap-3">
                 <a
@@ -101,8 +102,8 @@ export default function ContactPage() {
                 Start a diagnostic
               </h3>
               <p className="body-text mb-4">
-                When licensing, banking, compliance or operational blockage is already live. Same
-                accountability; diagnostic framing for remediation readiness.
+                When licensing, banking, compliance or operational blockage is already live, start
+                with a diagnostic so the workstream can be scoped with clarity.
               </p>
               <div className="flex flex-col gap-3">
                 <Link
@@ -150,8 +151,8 @@ export default function ContactPage() {
             </div>
           </article>
 
-          <ol className="mt-16 flex list-none flex-col gap-8">
-            <p className="section-label mb-0 block">What happens next</p>
+          <p className="section-label mt-16 mb-8 block">What happens next</p>
+          <ol className="flex list-none flex-col gap-8">
             {[
               {
                 n: "01",

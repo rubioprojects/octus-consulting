@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
 import DarkHeroAtmosphere from "../../../../components/system/DarkHeroAtmosphere";
+import { pageSocialMeta } from "../../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Banking & Payments",
   description:
     "Banks do not reject your business. They reject your structure. Octus designs banking strategy, compliance documentation and payment infrastructure for regulated and high-risk operations.",
-};
+  path: "/solutions/regulatory/banking-payments",
+});
 
 export default function BankingPaymentsPage() {
   return (
@@ -126,9 +128,9 @@ export default function BankingPaymentsPage() {
           <p className="label">Selected mandates</p>
           <div className="grid gap-6 md:grid-cols-1">
             {[
-              ["Case 1 · iGaming · Curaçao", "Licence active 6 months. No operational account.", "AML documentation did not meet banking standards. Octus restructured compliance and coordinated with three institutions. Account operational in 11 weeks."],
-              ["Case 2 · Payments · Cross-border", "PSP terminated. Operations halted.", "Single provider dependency, no contingency. Octus restructured payment infrastructure across multiple providers and jurisdictions. Processing restored within 4 weeks."],
-              ["Case 3 · Fintech · EU", "Licensed EMI. Banks refused onboarding.", "Safeguarding and AML documentation insufficient for banking due diligence. Octus rebuilt compliance layer and coordinated with specialist partners. Accounts operational."],
+              ["iGaming · Banking", "Licence active. No operational account.", "AML and corporate documentation did not meet banking standards. Work focused on compliance rebuild and coordinated outreach to institutions."],
+              ["Payments · Cross-border", "PSP terminated. Operations at risk.", "Single-provider dependency with no contingency. Work focused on restructuring payment access across providers and jurisdictions."],
+              ["Fintech · Banking", "Licensed EMI. Banks refused onboarding.", "Safeguarding and AML documentation insufficient for due diligence. Work focused on rebuilding the compliance layer with specialist partners."],
             ].map(([tag, title, body]) => (
               <div
                 key={title}

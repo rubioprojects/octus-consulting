@@ -8,12 +8,14 @@ import { PARTNER_CLASSES } from "../../lib/commercial";
 import PageHero from "../../components/system/PageHero";
 import { CtaLink } from "../../components/system/CtaButton";
 import Link from "next/link";
+import { pageSocialMeta } from "../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "International Partners",
   description:
     "Collaborate with Octus as lead contractor for regulated operations. CSPs, counsel, advisors and specialists.",
-};
+  path: "/partners",
+});
 
 export default function PartnersPage() {
   return (

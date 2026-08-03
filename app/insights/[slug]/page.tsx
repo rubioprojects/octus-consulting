@@ -7,6 +7,7 @@ import {
   resolveServiceAreaLinks,
 } from "../../../lib/insightEnrichment";
 import { notFound } from "next/navigation";
+import { pageSocialMeta } from "../../../lib/pageMeta";
 
 export async function generateStaticParams() {
   return getAllPosts().map((p) => ({ slug: p.slug }));
@@ -15,10 +16,11 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   const post = getPost(params.slug);
   if (!post) return {};
-  return {
+  return pageSocialMeta({
     title: `${post.title} | Octus Consulting`,
     description: post.excerpt,
-  };
+    path: `/insights/${params.slug}`,
+  });
 }
 
 export default function PostPage({ params }: { params: { slug: string } }) {

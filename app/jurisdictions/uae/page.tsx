@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
+import { pageSocialMeta } from "../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "UAE / Dubai",
   description:
     "Most companies fail in the UAE before they even choose the right authority. Octus structures operations aligned with the correct regulator, entity type and activity from day one.",
-};
+  path: "/jurisdictions/uae",
+});
 
 export default function JurisdictionsUaePage() {
   return (

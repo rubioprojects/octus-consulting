@@ -1,0 +1,838 @@
+{
+  "summary": {
+    "sitemap_count": 81,
+    "canonical_pass": "81/81",
+    "og_pass": "81/81",
+    "twitter_pass": "81/81",
+    "canonical_unique": true,
+    "preview_host_leaks": [],
+    "semantic_issue_route_count": 0,
+    "semantic_issues": [],
+    "canonical_fail": [],
+    "og_fail": [],
+    "twitter_fail": [],
+    "team": {
+      "path": "/team",
+      "canonical": "https://octusconsulting.com/team",
+      "og:url": "https://octusconsulting.com/team",
+      "title": "Team | Octus Consulting",
+      "description": "Octus leadership and specialists across regulatory, compliance, legal, corporate and international workstreams.",
+      "semantic_issues": [],
+      "og:title": "Team",
+      "twitter:title": "Team"
+    },
+    "contact_p_in_ol": false
+  },
+  "routes": [
+    {
+      "path": "/",
+      "canonical": "https://octusconsulting.com",
+      "og:url": "https://octusconsulting.com",
+      "title": "Premium Execution for Regulated Operations",
+      "description": "Octus structures, coordinates and operates the work behind regulated businesses across licensing, compliance, corporate structure, remediation and specialist networks.",
+      "semantic_issues": [],
+      "og:title": "Premium Execution for Regulated Operations",
+      "twitter:title": "Premium Execution for Regulated Operations"
+    },
+    {
+      "path": "/about",
+      "canonical": "https://octusconsulting.com/about",
+      "og:url": "https://octusconsulting.com/about",
+      "title": "About | Octus Consulting",
+      "description": "Octus structures, coordinates and operates the work behind regulated businesses across regulatory, compliance, banking and corporate layers.",
+      "semantic_issues": [],
+      "og:title": "About",
+      "twitter:title": "About"
+    },
+    {
+      "path": "/solutions",
+      "canonical": "https://octusconsulting.com/solutions",
+      "og:url": "https://octusconsulting.com/solutions",
+      "title": "Services. Execution for regulated operations | Octus Consulting",
+      "description": "Services for regulated operations: Regulatory Structuring, Compliance &amp; Risk, Legal &amp; Structural Architecture, Corporate Structuring, Private Clients, Remediation &amp; Readiness, and International Hub.",
+      "semantic_issues": [],
+      "og:title": "Services. Execution for regulated operations",
+      "twitter:title": "Services. Execution for regulated operations"
+    },
+    {
+      "path": "/solutions/regulatory-structuring",
+      "canonical": "https://octusconsulting.com/solutions/regulatory-structuring",
+      "og:url": "https://octusconsulting.com/solutions/regulatory-structuring",
+      "title": "Regulatory Structuring | Octus Consulting",
+      "description": "Jurisdiction fit, licensing pathways and regulatory programmes for regulated operations.",
+      "semantic_issues": [],
+      "og:title": "Regulatory Structuring",
+      "twitter:title": "Regulatory Structuring"
+    },
+    {
+      "path": "/solutions/compliance-risk",
+      "canonical": "https://octusconsulting.com/solutions/compliance-risk",
+      "og:url": "https://octusconsulting.com/solutions/compliance-risk",
+      "title": "Compliance &amp; Risk | Octus Consulting",
+      "description": "AML, KYC, DPO and controls that hold under real scrutiny.",
+      "semantic_issues": [],
+      "og:title": "Compliance &amp; Risk",
+      "twitter:title": "Compliance &amp; Risk"
+    },
+    {
+      "path": "/solutions/legal-structural-architecture",
+      "canonical": "https://octusconsulting.com/solutions/legal-structural-architecture",
+      "og:url": "https://octusconsulting.com/solutions/legal-structural-architecture",
+      "title": "Legal &amp; Structural Architecture | Octus Consulting",
+      "description": "Contractual and legal frameworks, coordinated with counsel.",
+      "semantic_issues": [],
+      "og:title": "Legal &amp; Structural Architecture",
+      "twitter:title": "Legal &amp; Structural Architecture"
+    },
+    {
+      "path": "/solutions/corporate-structuring",
+      "canonical": "https://octusconsulting.com/solutions/corporate-structuring",
+      "og:url": "https://octusconsulting.com/solutions/corporate-structuring",
+      "title": "Corporate Structuring | Octus Consulting",
+      "description": "Companies, holdings and group design for onshore, offshore and cross-border regulated operations.",
+      "semantic_issues": [],
+      "og:title": "Corporate Structuring",
+      "twitter:title": "Corporate Structuring"
+    },
+    {
+      "path": "/solutions/remediation-readiness",
+      "canonical": "https://octusconsulting.com/solutions/remediation-readiness",
+      "og:url": "https://octusconsulting.com/solutions/remediation-readiness",
+      "title": "Remediation &amp; Readiness | Octus Consulting",
+      "description": "Diagnosis and repair when licensing, banking or compliance is already blocked.",
+      "semantic_issues": [],
+      "og:title": "Remediation &amp; Readiness",
+      "twitter:title": "Remediation &amp; Readiness"
+    },
+    {
+      "path": "/private-clients",
+      "canonical": "https://octusconsulting.com/private-clients",
+      "og:url": "https://octusconsulting.com/private-clients",
+      "title": "Private Clients | Octus Consulting",
+      "description": "Personal and ownership structuring for founders, UBOs, executives and families tied to regulated operations.",
+      "semantic_issues": [],
+      "og:title": "Private Clients",
+      "twitter:title": "Private Clients"
+    },
+    {
+      "path": "/international-hub",
+      "canonical": "https://octusconsulting.com/international-hub",
+      "og:url": "https://octusconsulting.com/international-hub",
+      "title": "International Hub | Octus Consulting",
+      "description": "Banks, PSPs, CSPs, labs, counsel and specialists, coordinated as one network.",
+      "semantic_issues": [],
+      "og:title": "International Hub",
+      "twitter:title": "International Hub"
+    },
+    {
+      "path": "/solutions/banking-payments-infrastructure",
+      "canonical": "https://octusconsulting.com/solutions/banking-payments-infrastructure",
+      "og:url": "https://octusconsulting.com/solutions/banking-payments-infrastructure",
+      "title": "Banking &amp; Payments | Octus Consulting",
+      "description": "Octus coordinates the corporate, compliance, provider and remediation workstreams required for banking and payment operations in regulated markets.",
+      "semantic_issues": [],
+      "og:title": "Banking &amp; Payments",
+      "twitter:title": "Banking &amp; Payments"
+    },
+    {
+      "path": "/how-we-engage",
+      "canonical": "https://octusconsulting.com/how-we-engage",
+      "og:url": "https://octusconsulting.com/how-we-engage",
+      "title": "How We Engage | Octus Consulting",
+      "description": "Lead Contractor programme and engagement models for regulated operations: accountability, coordination and execution.",
+      "semantic_issues": [],
+      "og:title": "How We Engage",
+      "twitter:title": "How We Engage"
+    },
+    {
+      "path": "/partners",
+      "canonical": "https://octusconsulting.com/partners",
+      "og:url": "https://octusconsulting.com/partners",
+      "title": "International Partners | Octus Consulting",
+      "description": "Collaborate with Octus as lead contractor for regulated operations. CSPs, counsel, advisors and specialists.",
+      "semantic_issues": [],
+      "og:title": "International Partners",
+      "twitter:title": "International Partners"
+    },
+    {
+      "path": "/intelligence",
+      "canonical": "https://octusconsulting.com/intelligence",
+      "og:url": "https://octusconsulting.com/intelligence",
+      "title": "Intelligence | Octus Consulting",
+      "description": "Public analysis covering regulatory developments, market signals, operational risk and executive decision-making in highly regulated markets.",
+      "semantic_issues": [],
+      "og:title": "Intelligence",
+      "twitter:title": "Intelligence"
+    },
+    {
+      "path": "/markets",
+      "canonical": "https://octusconsulting.com/markets",
+      "og:url": "https://octusconsulting.com/markets",
+      "title": "Industries: regulated sectors we structure | Octus Consulting",
+      "description": "We structure operations in iGaming, fintech, crypto and high-risk digital sectors. Licensing, compliance and corporate architecture for regulated markets.",
+      "semantic_issues": [],
+      "og:title": "Industries: regulated sectors we structure",
+      "twitter:title": "Industries: regulated sectors we structure"
+    },
+    {
+      "path": "/markets/fintech",
+      "canonical": "https://octusconsulting.com/markets/fintech",
+      "og:url": "https://octusconsulting.com/markets/fintech",
+      "title": "Fintech &amp; Payments. Regulatory Structuring | Octus | Octus Consulting",
+      "description": "Licensing, compliance and banking coordination for fintech operators, payment institutions and EMIs across jurisdictions.",
+      "semantic_issues": [],
+      "og:title": "Fintech &amp; Payments. Regulatory Structuring | Octus",
+      "twitter:title": "Fintech &amp; Payments. Regulatory Structuring | Octus"
+    },
+    {
+      "path": "/markets/igaming",
+      "canonical": "https://octusconsulting.com/markets/igaming",
+      "og:url": "https://octusconsulting.com/markets/igaming",
+      "title": "iGaming Licensing &amp; Regulatory Structuring | Octus | Octus Consulting",
+      "description": "End-to-end regulatory structuring, licensing execution and banking coordination for iGaming and betting operators across jurisdictions.",
+      "semantic_issues": [],
+      "og:title": "iGaming Licensing &amp; Regulatory Structuring | Octus",
+      "twitter:title": "iGaming Licensing &amp; Regulatory Structuring | Octus"
+    },
+    {
+      "path": "/markets/crypto",
+      "canonical": "https://octusconsulting.com/markets/crypto",
+      "og:url": "https://octusconsulting.com/markets/crypto",
+      "title": "Crypto &amp; Digital Assets | Octus Consulting",
+      "description": "Crypto operators build technology. Regulators see financial institutions. Octus structures the corporate, compliance and licensing architecture that bridges that gap.",
+      "semantic_issues": [],
+      "og:title": "Crypto &amp; Digital Assets",
+      "twitter:title": "Crypto &amp; Digital Assets"
+    },
+    {
+      "path": "/markets/high-risk",
+      "canonical": "https://octusconsulting.com/markets/high-risk",
+      "og:url": "https://octusconsulting.com/markets/high-risk",
+      "title": "High-Risk Operations | Octus Consulting",
+      "description": "High-risk is not a business problem. It is a classification that creates structural consequences for licensing, banking, compliance and partnerships. Octus structures operations to function within that classification.",
+      "semantic_issues": [],
+      "og:title": "High-Risk Operations",
+      "twitter:title": "High-Risk Operations"
+    },
+    {
+      "path": "/jurisdictions",
+      "canonical": "https://octusconsulting.com/jurisdictions",
+      "og:url": "https://octusconsulting.com/jurisdictions",
+      "title": "Jurisdictions. Where We Structure Operations | Octus Consulting",
+      "description": "Jurisdiction selection and structuring for regulated operations across markets including Brazil, Cura\u00e7ao, Malta, Isle of Man, UAE and more.",
+      "semantic_issues": [],
+      "og:title": "Jurisdictions. Where We Structure Operations",
+      "twitter:title": "Jurisdictions. Where We Structure Operations"
+    },
+    {
+      "path": "/jurisdictions/malta",
+      "canonical": "https://octusconsulting.com/jurisdictions/malta",
+      "og:url": "https://octusconsulting.com/jurisdictions/malta",
+      "title": "Malta Gaming &amp; Fintech License. EU Regulatory Framework | Octus | Octus Consulting",
+      "description": "MGA and MFSA licensing for iGaming, fintech and crypto operators. Corporate substance, compliance infrastructure and EU banking coordination.",
+      "semantic_issues": [],
+      "og:title": "Malta Gaming &amp; Fintech License. EU Regulatory Framework | Octus",
+      "twitter:title": "Malta Gaming &amp; Fintech License. EU Regulatory Framework | Octus"
+    },
+    {
+      "path": "/jurisdictions/isle-of-man",
+      "canonical": "https://octusconsulting.com/jurisdictions/isle-of-man",
+      "og:url": "https://octusconsulting.com/jurisdictions/isle-of-man",
+      "title": "Isle of Man | Octus Consulting",
+      "description": "Isle of Man licensing through the GSC is a Tier-1 credential. Octus structures the corporate, compliance and banking architecture required to reach approval and sustain operations.",
+      "semantic_issues": [],
+      "og:title": "Isle of Man",
+      "twitter:title": "Isle of Man"
+    },
+    {
+      "path": "/jurisdictions/curacao",
+      "canonical": "https://octusconsulting.com/jurisdictions/curacao",
+      "og:url": "https://octusconsulting.com/jurisdictions/curacao",
+      "title": "Cura\u00e7ao Gaming License. Structured Entry Framework | Octus | Octus Consulting",
+      "description": "Licensing, corporate structuring and banking coordination for iGaming operators in Cura\u00e7ao. Structured framework under the evolving regulatory landscape.",
+      "semantic_issues": [],
+      "og:title": "Cura\u00e7ao Gaming License. Structured Entry Framework | Octus",
+      "twitter:title": "Cura\u00e7ao Gaming License. Structured Entry Framework | Octus"
+    },
+    {
+      "path": "/jurisdictions/anjouan",
+      "canonical": "https://octusconsulting.com/jurisdictions/anjouan",
+      "og:url": "https://octusconsulting.com/jurisdictions/anjouan",
+      "title": "Anjouan | Octus Consulting",
+      "description": "Anjouan is fast and affordable. That is also the risk. Octus structures offshore operations that work beyond the licence: banking, payments and transition to stronger jurisdictions.",
+      "semantic_issues": [],
+      "og:title": "Anjouan",
+      "twitter:title": "Anjouan"
+    },
+    {
+      "path": "/jurisdictions/portugal",
+      "canonical": "https://octusconsulting.com/jurisdictions/portugal",
+      "og:url": "https://octusconsulting.com/jurisdictions/portugal",
+      "title": "Portugal | Octus Consulting",
+      "description": "Portugal is not fast. It is defensible. Octus structures EU-ready operations that survive the SRIJ licensing process and sustain operations under European regulatory oversight.",
+      "semantic_issues": [],
+      "og:title": "Portugal",
+      "twitter:title": "Portugal"
+    },
+    {
+      "path": "/jurisdictions/uae",
+      "canonical": "https://octusconsulting.com/jurisdictions/uae",
+      "og:url": "https://octusconsulting.com/jurisdictions/uae",
+      "title": "UAE / Dubai | Octus Consulting",
+      "description": "Most companies fail in the UAE before they even choose the right authority. Octus structures operations aligned with the correct regulator, entity type and activity from day one.",
+      "semantic_issues": [],
+      "og:title": "UAE / Dubai",
+      "twitter:title": "UAE / Dubai"
+    },
+    {
+      "path": "/solutions/compliance/aml-kyc",
+      "canonical": "https://octusconsulting.com/solutions/compliance/aml-kyc",
+      "og:url": "https://octusconsulting.com/solutions/compliance/aml-kyc",
+      "title": "AML &amp; KYC Framework. Compliance That Holds | Octus | Octus Consulting",
+      "description": "AML/KYC compliance frameworks for regulated operations. Built to survive real audit, not to sit in a folder. Transaction monitoring, risk assessment and regulatory reporting.",
+      "semantic_issues": [],
+      "og:title": "AML &amp; KYC Framework. Compliance That Holds | Octus",
+      "twitter:title": "AML &amp; KYC Framework. Compliance That Holds | Octus"
+    },
+    {
+      "path": "/solutions/compliance/compliance-as-a-service",
+      "canonical": "https://octusconsulting.com/solutions/compliance/compliance-as-a-service",
+      "og:url": "https://octusconsulting.com/solutions/compliance/compliance-as-a-service",
+      "title": "Compliance-as-a-Service | Octus Consulting",
+      "description": "Compliance is not a document. Octus builds and operates compliance as a continuous function: AML/KYC, controls, monitoring and regulatory alignment embedded in the business.",
+      "semantic_issues": [],
+      "og:title": "Compliance-as-a-Service",
+      "twitter:title": "Compliance-as-a-Service"
+    },
+    {
+      "path": "/solutions/compliance/dpo-as-a-service",
+      "canonical": "https://octusconsulting.com/solutions/compliance/dpo-as-a-service",
+      "og:url": "https://octusconsulting.com/solutions/compliance/dpo-as-a-service",
+      "title": "DPO-as-a-Service | Octus Consulting",
+      "description": "A DPO is not a contact point. Octus operates the Data Protection Officer function as a continuous regulatory role: incident response, regulatory interaction and operational data protection.",
+      "semantic_issues": [],
+      "og:title": "DPO-as-a-Service",
+      "twitter:title": "DPO-as-a-Service"
+    },
+    {
+      "path": "/solutions/compliance/gli-readiness",
+      "canonical": "https://octusconsulting.com/solutions/compliance/gli-readiness",
+      "og:url": "https://octusconsulting.com/solutions/compliance/gli-readiness",
+      "title": "GLI &amp; Certification Readiness | Octus Consulting",
+      "description": "The audit does not find problems. It confirms they were always there. Octus prepares operations for certification and regulatory review before the auditor arrives.",
+      "semantic_issues": [],
+      "og:title": "GLI &amp; Certification Readiness",
+      "twitter:title": "GLI &amp; Certification Readiness"
+    },
+    {
+      "path": "/solutions/compliance/internal-controls",
+      "canonical": "https://octusconsulting.com/solutions/compliance/internal-controls",
+      "og:url": "https://octusconsulting.com/solutions/compliance/internal-controls",
+      "title": "Internal Controls &amp; Governance | Octus Consulting",
+      "description": "Controls that exist on paper do not exist at all. Octus designs governance frameworks and control systems that function under real operational pressure.",
+      "semantic_issues": [],
+      "og:title": "Internal Controls &amp; Governance",
+      "twitter:title": "Internal Controls &amp; Governance"
+    },
+    {
+      "path": "/solutions/corporate/company-formation",
+      "canonical": "https://octusconsulting.com/solutions/corporate/company-formation",
+      "og:url": "https://octusconsulting.com/solutions/corporate/company-formation",
+      "title": "Company Formation &amp; Corporate Structuring | Octus | Octus Consulting",
+      "description": "Company incorporation, offshore structuring and corporate design for regulated operations. Entity setup that satisfies regulators, banks and payment processors.",
+      "semantic_issues": [],
+      "og:title": "Company Formation &amp; Corporate Structuring | Octus",
+      "twitter:title": "Company Formation &amp; Corporate Structuring | Octus"
+    },
+    {
+      "path": "/solutions/corporate/offshore-structuring",
+      "canonical": "https://octusconsulting.com/solutions/corporate/offshore-structuring",
+      "og:url": "https://octusconsulting.com/solutions/corporate/offshore-structuring",
+      "title": "Offshore Structuring | Octus Consulting",
+      "description": "Offshore structuring for regulated operations is not about tax. It is about corporate architecture that passes regulatory, banking and institutional scrutiny.",
+      "semantic_issues": [],
+      "og:title": "Offshore Structuring",
+      "twitter:title": "Offshore Structuring"
+    },
+    {
+      "path": "/solutions/corporate/holding-design",
+      "canonical": "https://octusconsulting.com/solutions/corporate/holding-design",
+      "og:url": "https://octusconsulting.com/solutions/corporate/holding-design",
+      "title": "Holding Design | Octus Consulting",
+      "description": "Holding structures for regulated operations require architecture that separates risk, aligns governance and satisfies institutional scrutiny across jurisdictions.",
+      "semantic_issues": [],
+      "og:title": "Holding Design",
+      "twitter:title": "Holding Design"
+    },
+    {
+      "path": "/solutions/regulatory/igaming-licensing",
+      "canonical": "https://octusconsulting.com/solutions/regulatory/igaming-licensing",
+      "og:url": "https://octusconsulting.com/solutions/regulatory/igaming-licensing",
+      "title": "iGaming Licensing | Octus Consulting",
+      "description": "iGaming licensing strategy across jurisdictions. Octus structures the regulatory, corporate and compliance architecture that determines whether a licence gets approved, not merely submitted.",
+      "semantic_issues": [],
+      "og:title": "iGaming Licensing",
+      "twitter:title": "iGaming Licensing"
+    },
+    {
+      "path": "/solutions/regulatory/fintech-licensing",
+      "canonical": "https://octusconsulting.com/solutions/regulatory/fintech-licensing",
+      "og:url": "https://octusconsulting.com/solutions/regulatory/fintech-licensing",
+      "title": "Fintech Licensing | Octus Consulting",
+      "description": "EMI and Payment Institution licensing is not a filing exercise. Octus structures fintech operations so they can be authorised, operated and sustained under regulatory scrutiny.",
+      "semantic_issues": [],
+      "og:title": "Fintech Licensing",
+      "twitter:title": "Fintech Licensing"
+    },
+    {
+      "path": "/solutions/regulatory/market-entry",
+      "canonical": "https://octusconsulting.com/solutions/regulatory/market-entry",
+      "og:url": "https://octusconsulting.com/solutions/regulatory/market-entry",
+      "title": "Market Entry | Octus Consulting",
+      "description": "Market entry is not a business decision. It is a structural project. Octus coordinates jurisdiction, corporate, licensing and banking for regulated market entry.",
+      "semantic_issues": [],
+      "og:title": "Market Entry",
+      "twitter:title": "Market Entry"
+    },
+    {
+      "path": "/solutions/regulatory/banking-payments",
+      "canonical": "https://octusconsulting.com/solutions/regulatory/banking-payments",
+      "og:url": "https://octusconsulting.com/solutions/regulatory/banking-payments",
+      "title": "Banking &amp; Payments | Octus Consulting",
+      "description": "Banks do not reject your business. They reject your structure. Octus designs banking strategy, compliance documentation and payment infrastructure for regulated and high-risk operations.",
+      "semantic_issues": [],
+      "og:title": "Banking &amp; Payments",
+      "twitter:title": "Banking &amp; Payments"
+    },
+    {
+      "path": "/diagnostic",
+      "canonical": "https://octusconsulting.com/diagnostic",
+      "og:url": "https://octusconsulting.com/diagnostic",
+      "title": "Diagnostic assessment | Octus Consulting",
+      "description": "Start with a diagnostic assessment for licensing delays, banking rejection, compliance gaps, audit readiness and blocked market entry.",
+      "semantic_issues": [],
+      "og:title": "Diagnostic assessment",
+      "twitter:title": "Diagnostic assessment"
+    },
+    {
+      "path": "/contact",
+      "canonical": "https://octusconsulting.com/contact",
+      "og:url": "https://octusconsulting.com/contact",
+      "title": "Contact | Octus Consulting",
+      "description": "Start a conversation with Octus about licensing, compliance, banking, legal and corporate workstreams via WhatsApp or email.",
+      "semantic_issues": [],
+      "og:title": "Contact",
+      "twitter:title": "Contact"
+    },
+    {
+      "path": "/team",
+      "canonical": "https://octusconsulting.com/team",
+      "og:url": "https://octusconsulting.com/team",
+      "title": "Team | Octus Consulting",
+      "description": "Octus leadership and specialists across regulatory, compliance, legal, corporate and international workstreams.",
+      "semantic_issues": [],
+      "og:title": "Team",
+      "twitter:title": "Team"
+    },
+    {
+      "path": "/careers",
+      "canonical": "https://octusconsulting.com/careers",
+      "og:url": "https://octusconsulting.com/careers",
+      "title": "Careers | Octus Consulting",
+      "description": "Join Octus. We work at the intersection of regulatory structuring, compliance operations, legal architecture and corporate design. Built for people with operational depth.",
+      "semantic_issues": [],
+      "og:title": "Careers",
+      "twitter:title": "Careers"
+    },
+    {
+      "path": "/insights",
+      "canonical": "https://octusconsulting.com/insights",
+      "og:url": "https://octusconsulting.com/insights",
+      "title": "Insights | Octus Consulting",
+      "description": "Regulatory analysis, legal developments and operational intelligence from the Octus team: covering Brazil, iGaming, compliance and international structured markets.",
+      "semantic_issues": [],
+      "og:title": "Insights",
+      "twitter:title": "Insights"
+    },
+    {
+      "path": "/brazil",
+      "canonical": "https://octusconsulting.com/brazil",
+      "og:url": "https://octusconsulting.com/brazil",
+      "title": "Brazil | Octus Consulting",
+      "description": "Regulatory structuring, compliance and corporate architecture for regulated operations entering or operating in Brazil.",
+      "semantic_issues": [],
+      "og:title": "Brazil",
+      "twitter:title": "Brazil"
+    },
+    {
+      "path": "/privacy",
+      "canonical": "https://octusconsulting.com/privacy",
+      "og:url": "https://octusconsulting.com/privacy",
+      "title": "Privacy Policy | Octus Consulting",
+      "description": "Privacy Policy for Octus Technology LLC, operating as Octus Consulting.",
+      "semantic_issues": [],
+      "og:title": "Privacy Policy",
+      "twitter:title": "Privacy Policy"
+    },
+    {
+      "path": "/terms",
+      "canonical": "https://octusconsulting.com/terms",
+      "og:url": "https://octusconsulting.com/terms",
+      "title": "Terms &amp; Conditions | Octus Consulting",
+      "description": "Terms and Conditions for Octus Technology LLC, operating as Octus Consulting.",
+      "semantic_issues": [],
+      "og:title": "Terms &amp; Conditions",
+      "twitter:title": "Terms &amp; Conditions"
+    },
+    {
+      "path": "/cookies",
+      "canonical": "https://octusconsulting.com/cookies",
+      "og:url": "https://octusconsulting.com/cookies",
+      "title": "Cookie Policy | Octus Consulting",
+      "description": "Cookie and browser storage practices for the Octus Consulting public website.",
+      "semantic_issues": [],
+      "og:title": "Cookie Policy",
+      "twitter:title": "Cookie Policy"
+    },
+    {
+      "path": "/compliance-channel",
+      "canonical": "https://octusconsulting.com/compliance-channel",
+      "og:url": "https://octusconsulting.com/compliance-channel",
+      "title": "Compliance Channel | Octus Consulting",
+      "description": "Octus Consulting compliance and ethics reporting channel. Confidential reporting for internal and external stakeholders.",
+      "semantic_issues": [],
+      "og:title": "Compliance Channel",
+      "twitter:title": "Compliance Channel"
+    },
+    {
+      "path": "/insights/stf-suspends-blocking-of-bolsa-familia-bpc-betting-accounts",
+      "canonical": "https://octusconsulting.com/insights/stf-suspends-blocking-of-bolsa-familia-bpc-betting-accounts",
+      "og:url": "https://octusconsulting.com/insights/stf-suspends-blocking-of-bolsa-familia-bpc-betting-accounts",
+      "title": "STF Suspends Compulsory Blocking of Bolsa Fam\u00edlia and BPC Beneficiaries&#x27; Betting Accounts | Octus Consulting | Octus Consulting",
+      "description": "Justice Luiz Fux temporarily suspended the compulsory closure of existing betting accounts held by Bolsa Fam\u00edlia and BPC beneficiaries, pending a conciliation hearing scheduled for February 2026.",
+      "semantic_issues": [],
+      "og:title": "STF Suspends Compulsory Blocking of Bolsa Fam\u00edlia and BPC Beneficiaries&#x27; Betting Accounts | Octus Consulting",
+      "twitter:title": "STF Suspends Compulsory Blocking of Bolsa Fam\u00edlia and BPC Beneficiaries&#x27; Betting Accounts | Octus Consulting"
+    },
+    {
+      "path": "/insights/senate-approves-plp-128-2025-tightens-fiscal-policy-bets-fintechs",
+      "canonical": "https://octusconsulting.com/insights/senate-approves-plp-128-2025-tightens-fiscal-policy-bets-fintechs",
+      "og:url": "https://octusconsulting.com/insights/senate-approves-plp-128-2025-tightens-fiscal-policy-bets-fintechs",
+      "title": "Senate Approves PLP 128/2025: Fiscal Tightening, Higher Taxation on Bets, Fintechs and JCP | Octus Consulting | Octus Consulting",
+      "description": "The Brazilian Senate approved Complementary Bill 128/2025 by 62 to 6 votes, introducing a gradual increase in the betting sector tax rate from 12% to 15% by 2028, alongside higher CSLL rates for fintechs and joint liability for payment processors facilitating illegal operators.",
+      "semantic_issues": [],
+      "og:title": "Senate Approves PLP 128/2025: Fiscal Tightening, Higher Taxation on Bets, Fintechs and JCP | Octus Consulting",
+      "twitter:title": "Senate Approves PLP 128/2025: Fiscal Tightening, Higher Taxation on Bets, Fintechs and JCP | Octus Consulting"
+    },
+    {
+      "path": "/insights/betting-taxation-risks-senate-legal-certainty-regulated-market",
+      "canonical": "https://octusconsulting.com/insights/betting-taxation-risks-senate-legal-certainty-regulated-market",
+      "og:url": "https://octusconsulting.com/insights/betting-taxation-risks-senate-legal-certainty-regulated-market",
+      "title": "Betting Sector Taxation: The Risks of Increased Tax Burden for Legal Certainty and the Regulated Market | Octus Consulting | Octus Consulting",
+      "description": "A technical analysis of the risks posed by a sharp increase in the betting sector&#x27;s tax burden: why higher taxation does not automatically translate to higher revenue, and what the international experience teaches about building a sustainable regulated market.",
+      "semantic_issues": [],
+      "og:title": "Betting Sector Taxation: The Risks of Increased Tax Burden for Legal Certainty and the Regulated Market | Octus Consulting",
+      "twitter:title": "Betting Sector Taxation: The Risks of Increased Tax Burden for Legal Certainty and the Regulated Market | Octus Consulting"
+    },
+    {
+      "path": "/insights/new-spa-mf-normative-instruction-fixed-odds-betting",
+      "canonical": "https://octusconsulting.com/insights/new-spa-mf-normative-instruction-fixed-odds-betting",
+      "og:url": "https://octusconsulting.com/insights/new-spa-mf-normative-instruction-fixed-odds-betting",
+      "title": "New SPA/MF Normative Instruction on Fixed-Odds Betting: Post-Licensing Obligations | Octus Consulting | Octus Consulting",
+      "description": "The Secretariat of Prizes and Betting published a new Normative Instruction establishing the procedures for authorised fixed-odds betting operators to communicate changes to their licence conditions and notify the commencement of operational activities.",
+      "semantic_issues": [],
+      "og:title": "New SPA/MF Normative Instruction on Fixed-Odds Betting: Post-Licensing Obligations | Octus Consulting",
+      "twitter:title": "New SPA/MF Normative Instruction on Fixed-Odds Betting: Post-Licensing Obligations | Octus Consulting"
+    },
+    {
+      "path": "/insights/centralised-self-exclusion-platform-key-changes-operators-bettors",
+      "canonical": "https://octusconsulting.com/insights/centralised-self-exclusion-platform-key-changes-operators-bettors",
+      "og:url": "https://octusconsulting.com/insights/centralised-self-exclusion-platform-key-changes-operators-bettors",
+      "title": "Centralised Self-Exclusion Platform: Key Changes for Operators and Bettors | Octus Consulting | Octus Consulting",
+      "description": "From 10 December 2025, the Centralised Self-Exclusion Platform entered into operation, enabling any person to block access to all authorised betting sites in Brazil through a single procedure at gov.br/autoexclusaoapostas.",
+      "semantic_issues": [],
+      "og:title": "Centralised Self-Exclusion Platform: Key Changes for Operators and Bettors | Octus Consulting",
+      "twitter:title": "Centralised Self-Exclusion Platform: Key Changes for Operators and Bettors | Octus Consulting"
+    },
+    {
+      "path": "/insights/stf-suspends-municipal-lottery-operations-nationwide",
+      "canonical": "https://octusconsulting.com/insights/stf-suspends-municipal-lottery-operations-nationwide",
+      "og:url": "https://octusconsulting.com/insights/stf-suspends-municipal-lottery-operations-nationwide",
+      "title": "STF Suspends Municipal Lottery Operations Nationwide, Orders Immediate Cessation | Octus Consulting | Octus Consulting",
+      "description": "Justice Kassio Nunes Marques suspended all municipal regulations authorising lottery and sports betting operations across Brazil, ordering immediate cessation and imposing daily fines of BRL 500,000 for non-compliant municipalities and companies.",
+      "semantic_issues": [],
+      "og:title": "STF Suspends Municipal Lottery Operations Nationwide, Orders Immediate Cessation | Octus Consulting",
+      "twitter:title": "STF Suspends Municipal Lottery Operations Nationwide, Orders Immediate Cessation | Octus Consulting"
+    },
+    {
+      "path": "/insights/coaf-crisis-aml-obligations-online-gaming-operators",
+      "canonical": "https://octusconsulting.com/insights/coaf-crisis-aml-obligations-online-gaming-operators",
+      "og:url": "https://octusconsulting.com/insights/coaf-crisis-aml-obligations-online-gaming-operators",
+      "title": "The COAF Institutional Challenges and AML Obligations for Online Gaming Operators | Octus Consulting | Octus Consulting",
+      "description": "An analysis of Brazil&#x27;s financial intelligence unit (COAF) institutional limitations and the practical steps gaming operators must take to maintain robust anti-money laundering compliance regardless of external pressures on the regulatory system.",
+      "semantic_issues": [],
+      "og:title": "The COAF Institutional Challenges and AML Obligations for Online Gaming Operators | Octus Consulting",
+      "twitter:title": "The COAF Institutional Challenges and AML Obligations for Online Gaming Operators | Octus Consulting"
+    },
+    {
+      "path": "/insights/annual-recertification-betting-platforms-spa-mf-new-guidelines",
+      "canonical": "https://octusconsulting.com/insights/annual-recertification-betting-platforms-spa-mf-new-guidelines",
+      "og:url": "https://octusconsulting.com/insights/annual-recertification-betting-platforms-spa-mf-new-guidelines",
+      "title": "Annual Recertification of Betting Platforms: What Changes Under SPA/MF New Guidelines | Octus Consulting | Octus Consulting",
+      "description": "SPA/MF has issued complementary guidance on the mandatory annual technical recertification of fixed-odds betting platforms, establishing binding rules for operators, suppliers and certifying entities.",
+      "semantic_issues": [],
+      "og:title": "Annual Recertification of Betting Platforms: What Changes Under SPA/MF New Guidelines | Octus Consulting",
+      "twitter:title": "Annual Recertification of Betting Platforms: What Changes Under SPA/MF New Guidelines | Octus Consulting"
+    },
+    {
+      "path": "/insights/risk-management-software-igaming-regulatory-compliance",
+      "canonical": "https://octusconsulting.com/insights/risk-management-software-igaming-regulatory-compliance",
+      "og:url": "https://octusconsulting.com/insights/risk-management-software-igaming-regulatory-compliance",
+      "title": "Risk Management Software in iGaming: Technology as a Regulatory Pillar | Octus Consulting | Octus Consulting",
+      "description": "Risk management software has evolved from a best practice into an inescapable regulatory requirement for iGaming operators in Brazil. Understanding what the technology must do: and how it must be integrated with human expertise: is now central to compliance.",
+      "semantic_issues": [],
+      "og:title": "Risk Management Software in iGaming: Technology as a Regulatory Pillar | Octus Consulting",
+      "twitter:title": "Risk Management Software in iGaming: Technology as a Regulatory Pillar | Octus Consulting"
+    },
+    {
+      "path": "/insights/customised-studies-international-expansion-brazil",
+      "canonical": "https://octusconsulting.com/insights/customised-studies-international-expansion-brazil",
+      "og:url": "https://octusconsulting.com/insights/customised-studies-international-expansion-brazil",
+      "title": "Customised Structural Studies for International Expansion into Brazil | Octus Consulting | Octus Consulting",
+      "description": "International expansion into Brazil requires more than incorporating a local entity. Octus structures customised studies that analyse cross-border corporate architecture and present tailored strategic scenarios for Brazil entry.",
+      "semantic_issues": [],
+      "og:title": "Customised Structural Studies for International Expansion into Brazil | Octus Consulting",
+      "twitter:title": "Customised Structural Studies for International Expansion into Brazil | Octus Consulting"
+    },
+    {
+      "path": "/insights/rio-de-janeiro-regulates-vlts-lottery-equipment-decree",
+      "canonical": "https://octusconsulting.com/insights/rio-de-janeiro-regulates-vlts-lottery-equipment-decree",
+      "og:url": "https://octusconsulting.com/insights/rio-de-janeiro-regulates-vlts-lottery-equipment-decree",
+      "title": "Rio de Janeiro Regulates VLTs and Lottery Terminals with New State Decree | Octus Consulting | Octus Consulting",
+      "description": "Governor Cl\u00e1udio Castro&#x27;s Decree No. 49,804/2025 establishes requirements for Video Lottery Terminals and other lottery equipment in Rio de Janeiro, all under LOTERJ supervision, with potential for 65,000 direct and indirect jobs.",
+      "semantic_issues": [],
+      "og:title": "Rio de Janeiro Regulates VLTs and Lottery Terminals with New State Decree | Octus Consulting",
+      "twitter:title": "Rio de Janeiro Regulates VLTs and Lottery Terminals with New State Decree | Octus Consulting"
+    },
+    {
+      "path": "/insights/games-not-classified-as-fixed-odds-betting-brazil",
+      "canonical": "https://octusconsulting.com/insights/games-not-classified-as-fixed-odds-betting-brazil",
+      "og:url": "https://octusconsulting.com/insights/games-not-classified-as-fixed-odds-betting-brazil",
+      "title": "Games Not Classified as Fixed-Odds Betting in Brazil: Understanding the Legal Distinctions | Octus Consulting | Octus Consulting",
+      "description": "Ordinance SPA/MF No. 1,207/2024 establishes that certain online game modalities (skill games, fantasy sports, multiplayer games and P2P betting) fall outside the fixed-odds betting regime and therefore do not require a federal betting licence.",
+      "semantic_issues": [],
+      "og:title": "Games Not Classified as Fixed-Odds Betting in Brazil: Understanding the Legal Distinctions | Octus Consulting",
+      "twitter:title": "Games Not Classified as Fixed-Odds Betting in Brazil: Understanding the Legal Distinctions | Octus Consulting"
+    },
+    {
+      "path": "/insights/bet-br-domain-extension-to-states-brazil",
+      "canonical": "https://octusconsulting.com/insights/bet-br-domain-extension-to-states-brazil",
+      "og:url": "https://octusconsulting.com/insights/bet-br-domain-extension-to-states-brazil",
+      "title": "Extension of the .bet.br Domain to Brazilian States: Regulatory Trust Seal Expands | Octus Consulting | Octus Consulting",
+      "description": "The SPA&#x27;s proposed extension of the .bet.br domain to Brazilian states participating in the National Betting System (SINAPO) creates a digital trust seal differentiating authorised from illegal operators across the federal structure.",
+      "semantic_issues": [],
+      "og:title": "Extension of the .bet.br Domain to Brazilian States: Regulatory Trust Seal Expands | Octus Consulting",
+      "twitter:title": "Extension of the .bet.br Domain to Brazilian States: Regulatory Trust Seal Expands | Octus Consulting"
+    },
+    {
+      "path": "/insights/intellectual-property-igaming-trademark-registration-brazil",
+      "canonical": "https://octusconsulting.com/insights/intellectual-property-igaming-trademark-registration-brazil",
+      "og:url": "https://octusconsulting.com/insights/intellectual-property-igaming-trademark-registration-brazil",
+      "title": "Intellectual Property in iGaming: Avoiding Critical Errors in Trademark Registration | Octus Consulting | Octus Consulting",
+      "description": "Trademark registration in the betting sector is a specialised field. The INPI systematically rejects registrations linked to &#x27;bet&#x27;, &#x27;casino&#x27; or &#x27;aposta&#x27;, and a poorly constructed defence in an appeal can mean the permanent loss of a valuable brand.",
+      "semantic_issues": [],
+      "og:title": "Intellectual Property in iGaming: Avoiding Critical Errors in Trademark Registration | Octus Consulting",
+      "twitter:title": "Intellectual Property in iGaming: Avoiding Critical Errors in Trademark Registration | Octus Consulting"
+    },
+    {
+      "path": "/insights/national-betting-system-sinapo-brazil",
+      "canonical": "https://octusconsulting.com/insights/national-betting-system-sinapo-brazil",
+      "og:url": "https://octusconsulting.com/insights/national-betting-system-sinapo-brazil",
+      "title": "The National Betting System (SINAPO): What It Is and Why It Could Change Brazilian Betting Regulation | Octus Consulting | Octus Consulting",
+      "description": "The SPA/MF has initiated the creation of SINAPO, the National Betting System, a cooperative federal initiative to harmonise betting regulation across Brazil&#x27;s 26 states and the Federal District through minimum national standards.",
+      "semantic_issues": [],
+      "og:title": "The National Betting System (SINAPO): What It Is and Why It Could Change Brazilian Betting Regulation | Octus Consulting",
+      "twitter:title": "The National Betting System (SINAPO): What It Is and Why It Could Change Brazilian Betting Regulation | Octus Consulting"
+    },
+    {
+      "path": "/insights/why-your-international-licence-may-not-protect-you-in-brazil",
+      "canonical": "https://octusconsulting.com/insights/why-your-international-licence-may-not-protect-you-in-brazil",
+      "og:url": "https://octusconsulting.com/insights/why-your-international-licence-may-not-protect-you-in-brazil",
+      "title": "Why Your International Licence May Not Protect You in Brazil | Octus Consulting | Octus Consulting",
+      "description": "Holding a licence from Malta, Cura\u00e7ao or the Isle of Man is no longer sufficient for operators seeking to operate in Brazil. With Law 14,790/2023 fully in force, only operators with a federal SPA/MF authorisation may legally accept Brazilian players.",
+      "semantic_issues": [],
+      "og:title": "Why Your International Licence May Not Protect You in Brazil | Octus Consulting",
+      "twitter:title": "Why Your International Licence May Not Protect You in Brazil | Octus Consulting"
+    },
+    {
+      "path": "/insights/regulation-and-technology-legal-follows-igaming-evolution",
+      "canonical": "https://octusconsulting.com/insights/regulation-and-technology-legal-follows-igaming-evolution",
+      "og:url": "https://octusconsulting.com/insights/regulation-and-technology-legal-follows-igaming-evolution",
+      "title": "Regulation and Technology: How Legal Keeps Pace with iGaming Innovation | Octus Consulting | Octus Consulting",
+      "description": "The iGaming sector is undergoing accelerated transformation driven by technological innovation, new business models and AI integration. The role of legal counsel has evolved from compliance guardian to strategic partner in this rapidly shifting landscape.",
+      "semantic_issues": [],
+      "og:title": "Regulation and Technology: How Legal Keeps Pace with iGaming Innovation | Octus Consulting",
+      "twitter:title": "Regulation and Technology: How Legal Keeps Pace with iGaming Innovation | Octus Consulting"
+    },
+    {
+      "path": "/insights/iof-update-financial-market-brazil-2025",
+      "canonical": "https://octusconsulting.com/insights/iof-update-financial-market-brazil-2025",
+      "og:url": "https://octusconsulting.com/insights/iof-update-financial-market-brazil-2025",
+      "title": "IOF Update: Key Implications for the Financial Market and Regulated Industries | Octus Consulting | Octus Consulting",
+      "description": "The Brazilian Federal Revenue Service issued clarifications on the IOF following the suspension of temporary regulations, indicating that financial institutions are not required to collect retroactively: but a future direct charge on taxpayers remains possible.",
+      "semantic_issues": [],
+      "og:title": "IOF Update: Key Implications for the Financial Market and Regulated Industries | Octus Consulting",
+      "twitter:title": "IOF Update: Key Implications for the Financial Market and Regulated Industries | Octus Consulting"
+    },
+    {
+      "path": "/insights/trump-tax-reform-betting-operators-lessons-for-brazil",
+      "canonical": "https://octusconsulting.com/insights/trump-tax-reform-betting-operators-lessons-for-brazil",
+      "og:url": "https://octusconsulting.com/insights/trump-tax-reform-betting-operators-lessons-for-brazil",
+      "title": "Trump Signs Tax Reform Imposing New Betting Taxation in the US: Lessons for Brazil | Octus Consulting | Octus Consulting",
+      "description": "The One Big Beautiful Bill Act limits the deduction of gambling losses to 90%, meaning US bettors may owe federal taxes even on net-loss years. The measure raises BRL 1.14 billion in revenue projections but risks driving players to offshore platforms: a lesson Brazil is simultaneously learning.",
+      "semantic_issues": [],
+      "og:title": "Trump Signs Tax Reform Imposing New Betting Taxation in the US: Lessons for Brazil | Octus Consulting",
+      "twitter:title": "Trump Signs Tax Reform Imposing New Betting Taxation in the US: Lessons for Brazil | Octus Consulting"
+    },
+    {
+      "path": "/insights/regulatory-agenda-2025-2026-secretariat-prizes-betting",
+      "canonical": "https://octusconsulting.com/insights/regulatory-agenda-2025-2026-secretariat-prizes-betting",
+      "og:url": "https://octusconsulting.com/insights/regulatory-agenda-2025-2026-secretariat-prizes-betting",
+      "title": "Regulatory Agenda 2025/2026: SPA/MF Sets the Course for Brazil&#x27;s Betting Market | Octus Consulting | Octus Consulting",
+      "description": "Ordinance SPA/MF No. 817/2025 establishes the regulatory agenda for Brazil&#x27;s sports betting and online gaming market for the 2025-2026 biennium, including B2B regulation, a national trust seal, the SINAPO cooperative system and a revised authorisation procedure.",
+      "semantic_issues": [],
+      "og:title": "Regulatory Agenda 2025/2026: SPA/MF Sets the Course for Brazil&#x27;s Betting Market | Octus Consulting",
+      "twitter:title": "Regulatory Agenda 2025/2026: SPA/MF Sets the Course for Brazil&#x27;s Betting Market | Octus Consulting"
+    },
+    {
+      "path": "/insights/spa-ordinance-banks-refuse-illegal-betting-operators",
+      "canonical": "https://octusconsulting.com/insights/spa-ordinance-banks-refuse-illegal-betting-operators",
+      "og:url": "https://octusconsulting.com/insights/spa-ordinance-banks-refuse-illegal-betting-operators",
+      "title": "SPA Ordinance Requires Banks and Payment Institutions to Refuse Accounts for Illegal Betting Operators | Octus Consulting | Octus Consulting",
+      "description": "The SPA/MF published an ordinance requiring financial institutions, payment institutions and payment scheme managers to refuse or terminate relationships with companies operating fixed-odds betting illegally, with a 24-hour notification obligation.",
+      "semantic_issues": [],
+      "og:title": "SPA Ordinance Requires Banks and Payment Institutions to Refuse Accounts for Illegal Betting Operators | Octus Consulting",
+      "twitter:title": "SPA Ordinance Requires Banks and Payment Institutions to Refuse Accounts for Illegal Betting Operators | Octus Consulting"
+    },
+    {
+      "path": "/insights/youtube-tightens-rules-illegal-betting-sites-impact-influencers",
+      "canonical": "https://octusconsulting.com/insights/youtube-tightens-rules-illegal-betting-sites-impact-influencers",
+      "og:url": "https://octusconsulting.com/insights/youtube-tightens-rules-illegal-betting-sites-impact-influencers",
+      "title": "YouTube Tightens Rules Against Illegal Betting Sites: Impact on Influencers and Content Creators | Octus Consulting | Octus Consulting",
+      "description": "YouTube implemented new mechanisms to block content related to illegal online gambling sites from 19 March 2025, following denunciations of influencers promoting betting platforms with misleading profit guarantees.",
+      "semantic_issues": [],
+      "og:title": "YouTube Tightens Rules Against Illegal Betting Sites: Impact on Influencers and Content Creators | Octus Consulting",
+      "twitter:title": "YouTube Tightens Rules Against Illegal Betting Sites: Impact on Influencers and Content Creators | Octus Consulting"
+    },
+    {
+      "path": "/insights/brazil-b2b-registration-requirement-betting-igaming",
+      "canonical": "https://octusconsulting.com/insights/brazil-b2b-registration-requirement-betting-igaming",
+      "og:url": "https://octusconsulting.com/insights/brazil-b2b-registration-requirement-betting-igaming",
+      "title": "Brazil to Implement Registration Requirement for B2B Providers in the Betting and iGaming Market | Octus Consulting | Octus Consulting",
+      "description": "Brazil&#x27;s SPA Secretary announced at ICE Barcelona that a mandatory registration mechanism for B2B providers in the regulated market is being implemented: covering game providers, platforms, KYC tools and other essential services.",
+      "semantic_issues": [],
+      "og:title": "Brazil to Implement Registration Requirement for B2B Providers in the Betting and iGaming Market | Octus Consulting",
+      "twitter:title": "Brazil to Implement Registration Requirement for B2B Providers in the Betting and iGaming Market | Octus Consulting"
+    },
+    {
+      "path": "/insights/quinel-credentialed-certifying-entity-brazil-ministry-finance",
+      "canonical": "https://octusconsulting.com/insights/quinel-credentialed-certifying-entity-brazil-ministry-finance",
+      "og:url": "https://octusconsulting.com/insights/quinel-credentialed-certifying-entity-brazil-ministry-finance",
+      "title": "Quinel Credentialed as Certifying Entity by Brazil&#x27;s Ministry of Finance, with Octus Legal Support | Octus Consulting | Octus Consulting",
+      "description": "With Octus&#x27;s legal advisory, Quinel Limited has been credentialed by Brazil&#x27;s Ministry of Finance as a certifying entity for betting systems, becoming one of five recognised laboratories authorised to certify platforms in Brazil under Ordinance SPA/MF No. 300/2024.",
+      "semantic_issues": [],
+      "og:title": "Quinel Credentialed as Certifying Entity by Brazil&#x27;s Ministry of Finance, with Octus Legal Support | Octus Consulting",
+      "twitter:title": "Quinel Credentialed as Certifying Entity by Brazil&#x27;s Ministry of Finance, with Octus Legal Support | Octus Consulting"
+    },
+    {
+      "path": "/insights/senate-commission-approves-casino-bingo-gaming-bill-brazil",
+      "canonical": "https://octusconsulting.com/insights/senate-commission-approves-casino-bingo-gaming-bill-brazil",
+      "og:url": "https://octusconsulting.com/insights/senate-commission-approves-casino-bingo-gaming-bill-brazil",
+      "title": "Senate Commission Approves Bill to Legalise Casinos, Bingos, Jogo do Bicho and Online Games in Brazil | Octus Consulting | Octus Consulting",
+      "description": "The Senate&#x27;s Constitution and Justice Committee approved the rapporteur&#x27;s report on PL 2234/22 by 14 votes to 12, advancing legislation to legalise casinos, bingos, jogo do bicho and online gaming in Brazil: the bill now proceeds to the full Senate.",
+      "semantic_issues": [],
+      "og:title": "Senate Commission Approves Bill to Legalise Casinos, Bingos, Jogo do Bicho and Online Games in Brazil | Octus Consulting",
+      "twitter:title": "Senate Commission Approves Bill to Legalise Casinos, Bingos, Jogo do Bicho and Online Games in Brazil | Octus Consulting"
+    },
+    {
+      "path": "/insights/spa-mf-position-brazilian-partner-20-percent-share-capital",
+      "canonical": "https://octusconsulting.com/insights/spa-mf-position-brazilian-partner-20-percent-share-capital",
+      "og:url": "https://octusconsulting.com/insights/spa-mf-position-brazilian-partner-20-percent-share-capital",
+      "title": "SPA/MF Clarification: Brazilian Partner Requirement: 20% Share Capital Threshold | Octus Consulting | Octus Consulting",
+      "description": "The SPA/MF confirmed via its FAQ that the requirement for a Brazilian partner holding at least 20% of the applicant company&#x27;s share capital may be met by either Brazilian natural persons or Brazilian legal entities incorporated under Brazilian law.",
+      "semantic_issues": [],
+      "og:title": "SPA/MF Clarification: Brazilian Partner Requirement: 20% Share Capital Threshold | Octus Consulting",
+      "twitter:title": "SPA/MF Clarification: Brazilian Partner Requirement: 20% Share Capital Threshold | Octus Consulting"
+    },
+    {
+      "path": "/insights/new-rules-sports-betting-online-games-brazil-portaria-827-2024",
+      "canonical": "https://octusconsulting.com/insights/new-rules-sports-betting-online-games-brazil-portaria-827-2024",
+      "og:url": "https://octusconsulting.com/insights/new-rules-sports-betting-online-games-brazil-portaria-827-2024",
+      "title": "New Rules for Sports Betting and Online Games in Brazil: Portaria SPA/MF 827/2024 | Octus Consulting | Octus Consulting",
+      "description": "The SPA/MF published Ordinance No. 827/2024 defining the rules and conditions for obtaining authorisation to operate sports betting and online games in Brazil: covering a five-year licence, BRL 30 million capital requirement and comprehensive qualification criteria.",
+      "semantic_issues": [],
+      "og:title": "New Rules for Sports Betting and Online Games in Brazil: Portaria SPA/MF 827/2024 | Octus Consulting",
+      "twitter:title": "New Rules for Sports Betting and Online Games in Brazil: Portaria SPA/MF 827/2024 | Octus Consulting"
+    },
+    {
+      "path": "/insights/new-regulation-betting-online-game-systems-portaria-722-2024",
+      "canonical": "https://octusconsulting.com/insights/new-regulation-betting-online-game-systems-portaria-722-2024",
+      "og:url": "https://octusconsulting.com/insights/new-regulation-betting-online-game-systems-portaria-722-2024",
+      "title": "New Regulation Establishes Technical Requirements for Betting and Online Game Systems | Octus Consulting | Octus Consulting",
+      "description": "Ordinance SPA/MF No. 722/2024 defines new technical and security requirements for betting and gaming systems used by fixed-odds betting operators in Brazil, including annual certification, data localisation rules and supervision procedures.",
+      "semantic_issues": [],
+      "og:title": "New Regulation Establishes Technical Requirements for Betting and Online Game Systems | Octus Consulting",
+      "twitter:title": "New Regulation Establishes Technical Requirements for Betting and Online Game Systems | Octus Consulting"
+    },
+    {
+      "path": "/insights/why-licensing-fails-post-approval",
+      "canonical": "https://octusconsulting.com/insights/why-licensing-fails-post-approval",
+      "og:url": "https://octusconsulting.com/insights/why-licensing-fails-post-approval",
+      "title": "Why Licensing Fails Post-Approval | Octus Consulting | Octus Consulting | Octus Consulting",
+      "description": "Most licensing failures are not rejections. They are approvals that cannot sustain operations. Banking, compliance and structural gaps surface after the licence is granted.",
+      "semantic_issues": [],
+      "og:title": "Why Licensing Fails Post-Approval | Octus Consulting | Octus Consulting",
+      "twitter:title": "Why Licensing Fails Post-Approval | Octus Consulting | Octus Consulting"
+    },
+    {
+      "path": "/insights/banking-for-high-risk-operations",
+      "canonical": "https://octusconsulting.com/insights/banking-for-high-risk-operations",
+      "og:url": "https://octusconsulting.com/insights/banking-for-high-risk-operations",
+      "title": "Banking for High-Risk Operations: Why Structure Matters More Than Relationships. Octus Consulting | Octus Consulting | Octus Consulting",
+      "description": "High-risk banking failures are structural, not relational. The corporate design, compliance quality and jurisdiction determine banking access, not the introduction.",
+      "semantic_issues": [],
+      "og:title": "Banking for High-Risk Operations: Why Structure Matters More Than Relationships. Octus Consulting | Octus Consulting",
+      "twitter:title": "Banking for High-Risk Operations: Why Structure Matters More Than Relationships. Octus Consulting | Octus Consulting"
+    },
+    {
+      "path": "/insights/mica-what-operators-need-to-do",
+      "canonical": "https://octusconsulting.com/insights/mica-what-operators-need-to-do",
+      "og:url": "https://octusconsulting.com/insights/mica-what-operators-need-to-do",
+      "title": "MiCA: What Crypto Operators Actually Need to Do | Octus Consulting | Octus Consulting | Octus Consulting",
+      "description": "MiCA is fully applicable. The grandfathering period ends July 2026. This is what CASP authorisation requires in practice, not merely in theory.",
+      "semantic_issues": [],
+      "og:title": "MiCA: What Crypto Operators Actually Need to Do | Octus Consulting | Octus Consulting",
+      "twitter:title": "MiCA: What Crypto Operators Actually Need to Do | Octus Consulting | Octus Consulting"
+    },
+    {
+      "path": "/insights/curacao-reform-what-changes",
+      "canonical": "https://octusconsulting.com/insights/curacao-reform-what-changes",
+      "og:url": "https://octusconsulting.com/insights/curacao-reform-what-changes",
+      "title": "Cura\u00e7ao Reform: What Actually Changes for Operators | Octus Consulting | Octus Consulting | Octus Consulting",
+      "description": "Cura\u00e7ao&#x27;s gambling regulation is reforming. The transition from master-sublicence to individual licensing changes everything about how operators structure, comply and bank.",
+      "semantic_issues": [],
+      "og:title": "Cura\u00e7ao Reform: What Actually Changes for Operators | Octus Consulting | Octus Consulting",
+      "twitter:title": "Cura\u00e7ao Reform: What Actually Changes for Operators | Octus Consulting | Octus Consulting"
+    },
+    {
+      "path": "/insights/compliance-as-a-service-vs-internal-teams",
+      "canonical": "https://octusconsulting.com/insights/compliance-as-a-service-vs-internal-teams",
+      "og:url": "https://octusconsulting.com/insights/compliance-as-a-service-vs-internal-teams",
+      "title": "Compliance-as-a-Service vs Internal Teams: When Outsourcing Makes Sense. Octus Consulting | Octus Consulting | Octus Consulting",
+      "description": "Building an internal compliance team is not always the right answer. For regulated operations scaling across jurisdictions, an operational compliance layer may deliver more consistency at lower risk.",
+      "semantic_issues": [],
+      "og:title": "Compliance-as-a-Service vs Internal Teams: When Outsourcing Makes Sense. Octus Consulting | Octus Consulting",
+      "twitter:title": "Compliance-as-a-Service vs Internal Teams: When Outsourcing Makes Sense. Octus Consulting | Octus Consulting"
+    }
+  ]
+}

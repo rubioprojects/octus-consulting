@@ -1,10 +1,12 @@
 import Link from "next/link";
+import { pageSocialMeta } from "../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Careers",
   description:
     "Join Octus. We work at the intersection of regulatory structuring, compliance operations, legal architecture and corporate design. Built for people with operational depth.",
-};
+  path: "/careers",
+});
 
 export default function CareersPage() {
   return (

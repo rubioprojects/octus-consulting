@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
+import { pageSocialMeta } from "../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Anjouan",
   description:
     "Anjouan is fast and affordable. That is also the risk. Octus structures offshore operations that work beyond the licence: banking, payments and transition to stronger jurisdictions.",
-};
+  path: "/jurisdictions/anjouan",
+});
 
 export default function JurisdictionsAnjouanPage() {
   return (

@@ -1,4 +1,10 @@
-export const metadata = { title: "Cookie Policy" };
+import { pageSocialMeta } from "../../lib/pageMeta";
+export const metadata = pageSocialMeta({
+  title: "Cookie Policy",
+  description:
+    "Cookie and browser storage practices for the Octus Consulting public website.",
+  path: "/cookies",
+});
 export default function CookiesPage() {
   return (
     <main>

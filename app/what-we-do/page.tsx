@@ -1,10 +1,13 @@
 import Link from "next/link";
 import { CTA_ASSESS_LABEL, WHATSAPP_ASSESS_URL } from "../../lib/cta";
+import { pageSocialMeta } from "../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "What We Do",
-  description: "Seven operational modules. One working structure. Regulatory structuring, compliance, legal architecture, corporate design, ownership, audit and international hub.",
-};
+  description:
+    "Seven operational modules. One working structure. Regulatory structuring, compliance, legal architecture, corporate design, ownership, audit and international hub.",
+  path: "/what-we-do",
+});
 
 const services = [
   { num: "01", title: "Regulatory Structuring", desc: "Jurisdiction selection, licensing strategy and regulatory pathway design for regulated operations.", href: "/regulatory" },

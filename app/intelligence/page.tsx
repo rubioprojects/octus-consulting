@@ -13,12 +13,14 @@ import BrandSectionMotif from "../../components/system/BrandSectionMotif";
 import Reveal from "../../components/system/Reveal";
 import OctusSymbolMarker from "../../components/system/OctusSymbolMarker";
 import OctusEditorialDivider from "../../components/system/OctusEditorialDivider";
+import { pageSocialMeta } from "../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Intelligence",
   description:
     "Public analysis covering regulatory developments, market signals, operational risk and executive decision-making in highly regulated markets.",
-};
+  path: "/intelligence",
+});
 
 const PILLAR_ICONS: OctusIconName[] = [
   "regulatory",
@@ -81,8 +83,8 @@ export default function IntelligencePage() {
               <article className="rounded-sm border border-border p-5">
                 <h3 className="font-sans text-base font-semibold text-primary">Insights</h3>
                 <p className="body-sm mt-2">
-                  Published articles and analysis from the field. The reading library inside the
-                  Intelligence layer, not a substitute for mandate work.
+                  Published articles and analysis from the field. The reading library that supports
+                  the Intelligence layer alongside mandate work.
                 </p>
                 <Link
                   href="/insights"
@@ -141,8 +143,8 @@ export default function IntelligencePage() {
             <p className="section-label mb-4 block">Resources</p>
             <h2 className="heading-section mb-4 max-w-2xl">What you can use today</h2>
             <p className="body-large mb-8 max-w-2xl">
-              Practical material for operators under scrutiny, not a product dashboard or content
-              marketplace.
+              Practical material for operators under scrutiny: published Insights, engagement
+              guidance and institutional context for structured decisions.
             </p>
             <div className="intelligence-editorial-band mb-12">
               {LAUNCH_TYPES.map((t) => (

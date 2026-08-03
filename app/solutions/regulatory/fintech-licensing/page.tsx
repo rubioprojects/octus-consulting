@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
 import DarkHeroAtmosphere from "../../../../components/system/DarkHeroAtmosphere";
+import { pageSocialMeta } from "../../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Fintech Licensing",
   description:
     "EMI and Payment Institution licensing is not a filing exercise. Octus structures fintech operations so they can be authorised, operated and sustained under regulatory scrutiny.",
-};
+  path: "/solutions/regulatory/fintech-licensing",
+});
 
 export default function FintechLicensingPage() {
   return (

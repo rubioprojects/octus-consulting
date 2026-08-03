@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
+import { pageSocialMeta } from "../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "iGaming Licensing & Regulatory Structuring | Octus",
   description:
     "End-to-end regulatory structuring, licensing execution and banking coordination for iGaming and betting operators across jurisdictions.",
-};
+  path: "/markets/igaming",
+});
 
 export default function MarketsIGamingPage() {
   return (

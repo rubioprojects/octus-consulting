@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
 import DarkHeroAtmosphere from "../../../../components/system/DarkHeroAtmosphere";
+import { pageSocialMeta } from "../../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Compliance-as-a-Service",
   description:
     "Compliance is not a document. Octus builds and operates compliance as a continuous function: AML/KYC, controls, monitoring and regulatory alignment embedded in the business.",
-};
+  path: "/solutions/compliance/compliance-as-a-service",
+});
 
 export default function ComplianceAsAServicePage() {
   return (

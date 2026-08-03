@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
 import DarkHeroAtmosphere from "../../../../components/system/DarkHeroAtmosphere";
+import { pageSocialMeta } from "../../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "DPO-as-a-Service",
   description:
     "A DPO is not a contact point. Octus operates the Data Protection Officer function as a continuous regulatory role: incident response, regulatory interaction and operational data protection.",
-};
+  path: "/solutions/compliance/dpo-as-a-service",
+});
 
 export default function DpoAsAServicePage() {
   return (

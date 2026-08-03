@@ -1,7 +1,10 @@
-export const metadata = {
+import { pageSocialMeta } from "../../lib/pageMeta";
+export const metadata = pageSocialMeta({
   title: "Compliance Channel",
-  description: "Octus Consulting compliance and ethics reporting channel. Confidential reporting for internal and external stakeholders.",
-};
+  description:
+    "Octus Consulting compliance and ethics reporting channel. Confidential reporting for internal and external stakeholders.",
+  path: "/compliance-channel",
+});
 
 export default function ComplianceChannelPage() {
   return (

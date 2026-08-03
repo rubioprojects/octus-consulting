@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
+import { pageSocialMeta } from "../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Fintech & Payments. Regulatory Structuring | Octus",
   description:
     "Licensing, compliance and banking coordination for fintech operators, payment institutions and EMIs across jurisdictions.",
-};
+  path: "/markets/fintech",
+});
 
 export default function MarketsFintechPage() {
   return (

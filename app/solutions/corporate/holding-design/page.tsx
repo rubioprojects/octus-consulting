@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
 import DarkHeroAtmosphere from "../../../../components/system/DarkHeroAtmosphere";
+import { pageSocialMeta } from "../../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Holding Design",
   description:
     "Holding structures for regulated operations require architecture that separates risk, aligns governance and satisfies institutional scrutiny across jurisdictions.",
-};
+  path: "/solutions/corporate/holding-design",
+});
 
 export default function HoldingDesignPage() {
   return (
@@ -63,7 +65,7 @@ export default function HoldingDesignPage() {
               ["Flow of funds", "Treasury management, transfer pricing and payment flows designed for compliance and audit readiness."],
             ].map(([title, body]) => (
               <div key={title}>
-                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{title}</h3>
+                <h2 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{title}</h2>
                 <p className="body-text">{body}</p>
               </div>
             ))}
@@ -109,7 +111,7 @@ export default function HoldingDesignPage() {
               </div>
             ))}
           </div>
-          <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>Not relevant if</h3>
+          <h2 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>Not relevant if</h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {[
               "Single entity, single jurisdiction, no group complexity.",
@@ -141,7 +143,7 @@ export default function HoldingDesignPage() {
               { title: "Banking & Payments", desc: "Banking & Payments", href: "/solutions/regulatory/banking-payments" },
             ].map((item) => (
               <Link key={item.href} href={item.href} className="card-grid" style={{ padding: "28px" }}>
-                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{item.title}</h3>
+                <h2 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{item.title}</h2>
                 <p className="body-sm" style={{ marginBottom: "12px" }}>{item.desc}</p>
                 <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Learn more →</span>
               </Link>

@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
 import DarkHeroAtmosphere from "../../../../components/system/DarkHeroAtmosphere";
+import { pageSocialMeta } from "../../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Offshore Structuring",
   description:
     "Offshore structuring for regulated operations is not about tax. It is about corporate architecture that passes regulatory, banking and institutional scrutiny.",
-};
+  path: "/solutions/corporate/offshore-structuring",
+});
 
 export default function OffshoreStructuringPage() {
   return (
@@ -21,7 +23,7 @@ export default function OffshoreStructuringPage() {
             <span style={{ color: "var(--white-40)" }}>It is an architectural decision.</span>
           </h1>
           <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "660px" }}>
-            A structure built for one purpose: tax, speed, privacy: fails when
+            A structure built for one purpose alone (tax, speed or privacy) fails when
             tested by regulators, banks and institutional counterparties.
             Offshore structuring for regulated operations requires design that
             satisfies all three simultaneously.
@@ -67,7 +69,7 @@ export default function OffshoreStructuringPage() {
               ["Cross-border coordination", "Inter-company agreements, transfer pricing, flow of funds designed for compliance across jurisdictions."],
             ].map(([title, body]) => (
               <div key={title}>
-                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{title}</h3>
+                <h2 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{title}</h2>
                 <p className="body-text">{body}</p>
               </div>
             ))}
@@ -112,7 +114,7 @@ export default function OffshoreStructuringPage() {
               </div>
             ))}
           </div>
-          <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>Not for you if</h3>
+          <h2 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>Not for you if</h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {[
               "Purpose is tax avoidance without operational substance.",
@@ -146,7 +148,7 @@ export default function OffshoreStructuringPage() {
               { title: "High-Risk Operations", desc: "High-Risk Operations", href: "/markets/high-risk" },
             ].map((item) => (
               <Link key={item.href} href={item.href} className="card-grid" style={{ padding: "28px" }}>
-                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{item.title}</h3>
+                <h2 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{item.title}</h2>
                 <p className="body-sm" style={{ marginBottom: "12px" }}>{item.desc}</p>
                 <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Learn more →</span>
               </Link>

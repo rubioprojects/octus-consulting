@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
+import { pageSocialMeta } from "../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Malta Gaming & Fintech License. EU Regulatory Framework | Octus",
   description:
     "MGA and MFSA licensing for iGaming, fintech and crypto operators. Corporate substance, compliance infrastructure and EU banking coordination.",
-};
+  path: "/jurisdictions/malta",
+});
 
 export default function JurisdictionsMaltaPage() {
   return (

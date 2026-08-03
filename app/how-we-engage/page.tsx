@@ -8,12 +8,14 @@ import { ENGAGEMENT_MODELS } from "../../lib/commercial";
 import PageHero from "../../components/system/PageHero";
 import { CtaLink } from "../../components/system/CtaButton";
 import Link from "next/link";
+import { pageSocialMeta } from "../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "How We Engage",
   description:
     "Lead Contractor programme and engagement models for regulated operations: accountability, coordination and execution.",
-};
+  path: "/how-we-engage",
+});
 
 export default function HowWeEngagePage() {
   return (

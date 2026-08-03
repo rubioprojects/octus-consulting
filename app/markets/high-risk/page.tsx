@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
+import { pageSocialMeta } from "../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "High-Risk Operations",
   description:
     "High-risk is not a business problem. It is a classification that creates structural consequences for licensing, banking, compliance and partnerships. Octus structures operations to function within that classification.",
-};
+  path: "/markets/high-risk",
+});
 
 export default function MarketsHighRiskPage() {
   return (

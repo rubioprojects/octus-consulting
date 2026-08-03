@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
 import DarkHeroAtmosphere from "../../../../components/system/DarkHeroAtmosphere";
+import { pageSocialMeta } from "../../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Market Entry",
   description:
     "Market entry is not a business decision. It is a structural project. Octus coordinates jurisdiction, corporate, licensing and banking for regulated market entry.",
-};
+  path: "/solutions/regulatory/market-entry",
+});
 
 export default function MarketEntryPage() {
   return (

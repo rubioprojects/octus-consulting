@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
+import { pageSocialMeta } from "../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Isle of Man",
   description:
     "Isle of Man licensing through the GSC is a Tier-1 credential. Octus structures the corporate, compliance and banking architecture required to reach approval and sustain operations.",
-};
+  path: "/jurisdictions/isle-of-man",
+});
 
 export default function JurisdictionsIsleOfManPage() {
   return (

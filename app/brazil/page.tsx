@@ -4,11 +4,14 @@ import {
   WHATSAPP_ASSESS_URL,
   WHATSAPP_DISCUSS_URL,
 } from "../../lib/cta";
+import { pageSocialMeta } from "../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Brazil",
-  description: "Regulatory structuring, compliance and corporate architecture for regulated operations entering or operating in Brazil.",
-};
+  description:
+    "Regulatory structuring, compliance and corporate architecture for regulated operations entering or operating in Brazil.",
+  path: "/brazil",
+});
 
 export default function BrazilPage() {
   return (
@@ -45,7 +48,7 @@ export default function BrazilPage() {
               { title: "Cross-border Coordination", body: "Alignment between Brazilian operations and international corporate structures: ensuring coherence across jurisdictions." },
             ].map((item) => (
               <div key={item.title} className="bg-background rounded-lg p-6 md:p-8 border border-transparent transition-all duration-300 hover:border-border">
-                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>{item.title}</h3>
+                <h2 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>{item.title}</h2>
                 <p className="body-text">{item.body}</p>
               </div>
             ))}

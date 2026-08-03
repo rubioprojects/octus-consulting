@@ -6,12 +6,14 @@ import {
   WHATSAPP_DISCUSS_URL,
 } from "../../lib/cta";
 import DarkHeroAtmosphere from "../../components/system/DarkHeroAtmosphere";
+import { pageSocialMeta } from "../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Team",
   description:
-    "The people behind Octus. A team with operational depth across regulatory structuring, compliance, legal architecture, corporate design and international market entry.",
-};
+    "Octus leadership and specialists across regulatory, compliance, legal, corporate and international workstreams.",
+  path: "/team",
+});
 
 type Member = {
   name: string;
@@ -23,7 +25,7 @@ type Member = {
   photoKey?: string;
 };
 
-/** Approved leadership pair - current PR titles only. */
+/** VERIFIED_CURRENT_PUBLIC leadership pair. Titles locked by editorial governance. */
 const leadership: Member[] = [
   {
     name: "Rubio Teixeira",
@@ -31,7 +33,7 @@ const leadership: Member[] = [
     photo: "/team/rubio-teixeira.jpg",
     photoKey: "rubio",
     focus:
-      "Regulatory structuring, international licensing and market entry strategy. Operational presence across Brazil, Portugal, EU and offshore jurisdictions since 2019.",
+      "Regulatory structuring, international licensing and market-entry strategy for regulated operators.",
     linkedin: "https://www.linkedin.com/in/rubioteixeiraoctus/",
   },
   {
@@ -40,12 +42,12 @@ const leadership: Member[] = [
     photo: "/team/maria-cristina.jpg",
     photoKey: "maria",
     focus:
-      "Operational coordination and client engagement across Octus' regulatory and compliance mandates. Senior depth across regulated markets in Brazil and internationally.",
+      "Operational coordination and client engagement on Octus regulatory and compliance mandates.",
     linkedin: "https://www.linkedin.com/in/maria-cristina-060241b6/",
   },
 ];
 
-/** Current PR roster excluding leadership - Core Specialists band. */
+/** VERIFIED_CURRENT_PUBLIC Core Specialists. Bios narrowed to substantiated ownership claims. */
 const specialists: Member[] = [
   {
     name: "Rodrigo Coelho Lopes",
@@ -54,7 +56,7 @@ const specialists: Member[] = [
     photoKey: "rodrigo",
     capability: "Legal architecture",
     focus:
-      "Legal strategy and coordination across the group's regulatory and corporate mandates. Oversight of legal architecture, cross-border structure and jurisdictional risk.",
+      "Legal architecture for regulatory and corporate mandates, including cross-border structure and jurisdictional risk.",
     linkedin: null,
   },
   {
@@ -64,7 +66,7 @@ const specialists: Member[] = [
     photoKey: "claudia",
     capability: "Financial governance",
     focus:
-      "Corporate and financial architecture. Financial governance, group structuring and reporting across jurisdictions.",
+      "Corporate and financial architecture, financial governance and group reporting for Octus mandates.",
     linkedin: "https://www.linkedin.com/in/claudia-nery/",
   },
   {
@@ -74,7 +76,7 @@ const specialists: Member[] = [
     photoKey: "esther",
     capability: "International regulatory",
     focus:
-      "International licensing, outsourced compliance operations (CO as a service), company formations and banking access across offshore and regulated environments.",
+      "International licensing, compliance operations support, company formation and banking-access coordination for regulated environments.",
     linkedin: "https://www.linkedin.com/in/esthervendrami/",
   },
   {
@@ -84,7 +86,7 @@ const specialists: Member[] = [
     photoKey: "caroline",
     capability: "Brazil regulatory",
     focus:
-      "Regulatory processes, licensing and administrative operations for Brazil. Coordination of all Brazil-facing regulatory and compliance activities.",
+      "Brazil regulatory processes, licensing support and administrative coordination for Brazil-facing mandates.",
     linkedin: "https://www.linkedin.com/in/caroline-cubas-giovanetti-400820144/",
   },
   {
@@ -94,7 +96,7 @@ const specialists: Member[] = [
     photoKey: "milla",
     capability: "Commercial intake",
     focus:
-      "New business development, client intake and commercial strategy. Works directly with the founding team across new mandates and market opportunities.",
+      "New business development, client intake and commercial coordination with the founding team on new mandates.",
     linkedin: "https://www.linkedin.com/in/milla-ludovico-6a9945a2/",
   },
   {
@@ -104,7 +106,7 @@ const specialists: Member[] = [
     photoKey: "bianca",
     capability: "People & delivery",
     focus:
-      "People operations, talent coordination and internal processes. Supports team structure, recruitment and operational management across the Octus group.",
+      "People operations, talent coordination and internal process support for team delivery.",
     linkedin: "https://www.linkedin.com/in/rh2463365recursoshumanos/",
   },
   {
@@ -114,7 +116,7 @@ const specialists: Member[] = [
     photoKey: "larissa",
     capability: "Regulatory & compliance",
     focus:
-      "Operational support across regulatory and compliance engagements. Coordination of documentation, processes and deliverables shared with clients.",
+      "Operational support on regulatory and compliance engagements, including documentation and shared client deliverables.",
     linkedin: "https://www.linkedin.com/in/larissaocarvalho/",
   },
   {
@@ -124,7 +126,7 @@ const specialists: Member[] = [
     photoKey: "daniel",
     capability: "Regulatory & compliance",
     focus:
-      "Regulatory and compliance structuring across iGaming, fintech and betting. Multi-jurisdictional experience: Curaçao, Malta, Isle of Man, Dubai, Anjouan.",
+      "Regulatory and compliance support for iGaming, fintech and betting mandates.",
     linkedin: null,
   },
   {
@@ -134,7 +136,7 @@ const specialists: Member[] = [
     photoKey: "luciana",
     capability: "Operations",
     focus:
-      "Operational workflows, client documentation and cross-functional coordination across multiple jurisdictions.",
+      "Operational workflows, client documentation and cross-functional coordination on active mandates.",
     linkedin: null,
   },
 ];
@@ -155,9 +157,9 @@ function MemberCard({
         <img src={member.photo} alt="" className="team-card-photo" aria-hidden="true" />
       </div>
       {member.capability ? <p className="team-capability">{member.capability}</p> : null}
-      <h3 className="heading-sm" style={{ marginBottom: "6px" }}>
+      <h2 className="heading-sm" style={{ marginBottom: "6px" }}>
         {member.name}
-      </h3>
+      </h2>
       <p className="team-card-role">{member.title}</p>
       <p className="body-sm">{member.focus}</p>
     </article>
@@ -190,8 +192,8 @@ export default function TeamPage() {
             People who understand how regulated operations hold together.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">
-            Accountability starts with clear leadership. Octus is built around people who work
-            inside complex regulated environments, not a generic advisory directory.
+            Octus brings together leadership and specialist execution across regulatory, compliance,
+            legal, corporate and international workstreams.
           </p>
         </div>
         <div className="octus-dark-hero__seam" aria-hidden="true" />

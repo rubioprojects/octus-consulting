@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
+import { pageSocialMeta } from "../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Portugal",
   description:
     "Portugal is not fast. It is defensible. Octus structures EU-ready operations that survive the SRIJ licensing process and sustain operations under European regulatory oversight.",
-};
+  path: "/jurisdictions/portugal",
+});
 
 export default function JurisdictionsPortugalPage() {
   return (

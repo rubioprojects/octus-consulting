@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
 import DarkHeroAtmosphere from "../../../../components/system/DarkHeroAtmosphere";
+import { pageSocialMeta } from "../../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "iGaming Licensing",
   description:
     "iGaming licensing strategy across jurisdictions. Octus structures the regulatory, corporate and compliance architecture that determines whether a licence gets approved, not merely submitted.",
-};
+  path: "/solutions/regulatory/igaming-licensing",
+});
 
 export default function SolutionsIGamingLicensingPage() {
   return (

@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
+import { pageSocialMeta } from "../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Crypto & Digital Assets",
   description:
     "Crypto operators build technology. Regulators see financial institutions. Octus structures the corporate, compliance and licensing architecture that bridges that gap.",
-};
+  path: "/markets/crypto",
+});
 
 export default function MarketsCryptoPage() {
   return (

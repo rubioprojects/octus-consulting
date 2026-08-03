@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 import PageHero from "../../components/system/PageHero";
+import { pageSocialMeta } from "../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Jurisdictions. Where We Structure Operations",
   description:
     "Jurisdiction selection and structuring for regulated operations across markets including Brazil, Curaçao, Malta, Isle of Man, UAE and more.",
-};
+  path: "/jurisdictions",
+});
 
 export default function JurisdictionsPage() {
   return (

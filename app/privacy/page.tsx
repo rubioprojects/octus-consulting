@@ -1,7 +1,10 @@
-export const metadata = {
+import { pageSocialMeta } from "../../lib/pageMeta";
+export const metadata = pageSocialMeta({
   title: "Privacy Policy",
-  description: "Privacy Policy for Octus Technology LLC, operating as Octus Consulting.",
-};
+  description:
+    "Privacy Policy for Octus Technology LLC, operating as Octus Consulting.",
+  path: "/privacy",
+});
 
 const sections = [
   {

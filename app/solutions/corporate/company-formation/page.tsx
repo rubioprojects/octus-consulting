@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
 import DarkHeroAtmosphere from "../../../../components/system/DarkHeroAtmosphere";
+import { pageSocialMeta } from "../../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Company Formation & Corporate Structuring | Octus",
   description:
     "Company incorporation, offshore structuring and corporate design for regulated operations. Entity setup that satisfies regulators, banks and payment processors.",
-};
+  path: "/solutions/corporate/company-formation",
+});
 
 export default function SolutionsCompanyFormationPage() {
   return (

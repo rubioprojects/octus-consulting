@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
+import { pageSocialMeta } from "../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Curaçao Gaming License. Structured Entry Framework | Octus",
   description:
     "Licensing, corporate structuring and banking coordination for iGaming operators in Curaçao. Structured framework under the evolving regulatory landscape.",
-};
+  path: "/jurisdictions/curacao",
+});
 
 export default function JurisdictionsCuracaoPage() {
   return (

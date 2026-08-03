@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
 import DarkHeroAtmosphere from "../../../../components/system/DarkHeroAtmosphere";
+import { pageSocialMeta } from "../../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Internal Controls & Governance",
   description:
     "Controls that exist on paper do not exist at all. Octus designs governance frameworks and control systems that function under real operational pressure.",
-};
+  path: "/solutions/compliance/internal-controls",
+});
 
 export default function InternalControlsPage() {
   return (
@@ -66,7 +68,7 @@ export default function InternalControlsPage() {
               ["Review cycle", "Controls are not static. Scheduled review ensures the framework evolves with the operation."],
             ].map(([title, body]) => (
               <div key={title}>
-                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{title}</h3>
+                <h2 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{title}</h2>
                 <p className="body-text">{body}</p>
               </div>
             ))}
@@ -109,7 +111,7 @@ export default function InternalControlsPage() {
               </div>
             ))}
           </div>
-          <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>Not for you if</h3>
+          <h2 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>Not for you if</h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {[
               "Pre-launch with no existing framework.",
@@ -135,7 +137,7 @@ export default function InternalControlsPage() {
               { title: "Compliance & Risk", desc: "Full pillar", href: "/compliance" },
             ].map((item) => (
               <Link key={item.href} href={item.href} className="card-grid" style={{ padding: "28px" }}>
-                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{item.title}</h3>
+                <h2 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{item.title}</h2>
                 <p className="body-sm" style={{ marginBottom: "12px" }}>{item.desc}</p>
                 <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Learn more →</span>
               </Link>
