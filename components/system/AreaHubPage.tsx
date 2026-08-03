@@ -17,7 +17,22 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
   const primaryHref = isRemediation ? WHATSAPP_ASSESS_URL : WHATSAPP_DISCUSS_URL;
   const primaryLabel = enriched.primaryCtaLabel;
   const surfaceVariant = area.id === "AREA-LEG" || area.id === "AREA-REM" ? "dark-accent" : "default";
-  const compactHero = area.id === "AREA-PC" || area.id === "AREA-HUB";
+  // Full PageHero height for all hubs (baseline premium ~800px). Compact was
+  // undersized vs Private Clients / International Hub baseline heroes.
+  const triggerHeading =
+    area.id === "AREA-REM"
+      ? "When the operation is already under pressure."
+      : area.id === "AREA-PC"
+        ? "When personal ownership sits inside the regulated structure."
+        : area.id === "AREA-HUB"
+          ? "When the programme needs the specialist network."
+          : "Situations that bring clients here.";
+  const capabilitiesHeading =
+    area.id === "AREA-REM"
+      ? "How remediation is organised."
+      : area.id === "AREA-HUB"
+        ? "How the network is organised."
+        : `How ${area.name} is organised.`;
 
   return (
     <main>
@@ -29,7 +44,6 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
         description={area.summary}
         primaryCta={{ href: primaryHref, label: primaryLabel, external: true }}
         secondaryCta={{ href: "/solutions", label: "All services", quiet: true }}
-        compact={compactHero}
       />
 
       {area.legalBoundary && (
@@ -53,7 +67,7 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
             </span>
             <div>
               <p className="section-label mb-3 block">When this workstream applies</p>
-              <h2 className="heading-section max-w-2xl">Situations that bring clients here.</h2>
+              <h2 className="heading-section max-w-2xl">{triggerHeading}</h2>
             </div>
           </div>
           <ul className="grid list-none gap-3 md:grid-cols-2 lg:max-w-4xl">
@@ -73,9 +87,7 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
       <section className="surface-elevated py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="section-label mb-3 block">Capabilities</p>
-          <h2 className="heading-section mb-4 max-w-2xl">
-            How {area.name} is organised.
-          </h2>
+          <h2 className="heading-section mb-4 max-w-2xl">{capabilitiesHeading}</h2>
           <p className="body-large mb-10 max-w-2xl text-muted-foreground">
             Related services grouped by client purpose. Open a family for the detail that belongs
             there.
