@@ -34,8 +34,16 @@ export const metadata: Metadata = {
     "Regulated operations don't fail randomly. They fail structurally. Octus identifies what is broken, and fixes it.",
   metadataBase: new URL("https://octusconsulting.com"),
   icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-48.png", sizes: "48x48", type: "image/png" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: "/favicon-32.png",
   },
   openGraph: {
     title: "Octus Consulting | Regulatory & Operational Structuring",
@@ -98,9 +106,12 @@ export default function RootLayout({
                 <BrandLockup
                   variant="on-dark"
                   surface="footer"
-                  className="site-footer__lockup h-9 w-auto max-w-[min(100%,17rem)] object-contain object-left md:h-12 md:max-w-none"
+                  className="h-10 w-auto md:h-11"
                 />
               </a>
+              <p className="site-footer__brand-close__wordmark" aria-hidden="true">
+                OCTUS
+              </p>
               <p className="site-footer__brand-close__line">
                 Premium international execution partner for highly regulated operations.
               </p>

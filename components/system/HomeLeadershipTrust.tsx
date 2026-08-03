@@ -10,7 +10,7 @@ export default function HomeLeadershipTrust() {
       name: "Rubio Teixeira",
       title: "Founder & CEO",
       photo: "/team/rubio-teixeira.jpg",
-      photoClass: "team-photo--rubio-home",
+      photoClass: "team-photo--rubio team-photo--rubio-home",
     },
     {
       name: "Maria Cristina",

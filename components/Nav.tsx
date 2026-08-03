@@ -6,18 +6,23 @@ import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../lib/cta";
 import { PUBLIC_AREAS } from "../lib/publicAreas";
 import BrandLockup from "./BrandLockup";
 
+/** Desktop priorities: Services → Industries → How we engage → Intelligence → About → Contact → Discuss */
 const primaryLinks = [
   { label: "Industries", href: "/markets" },
-  { label: "Insights", href: "/insights" },
+  { label: "How we engage", href: "/how-we-engage" },
+  { label: "Intelligence", href: "/intelligence" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
 
-const supportingLinks = [
-  { label: "Team", href: "/team" },
-  { label: "Careers", href: "/careers" },
-  { label: "Jurisdictions", href: "/jurisdictions" },
+const mobileInstitutionalLinks = [
   { label: "How we engage", href: "/how-we-engage" },
+  { label: "Intelligence", href: "/intelligence" },
+  { label: "Insights", href: "/insights" },
+  { label: "Team", href: "/team" },
+  { label: "Jurisdictions", href: "/jurisdictions" },
+  { label: "Careers", href: "/careers" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Nav() {
@@ -104,7 +109,7 @@ export default function Nav() {
           >
             <BrandLockup
               variant={overDarkHero ? "on-dark" : "on-light"}
-              className="site-header__logo h-8 w-auto md:h-9"
+              className="site-header__logo h-10 w-auto md:h-11"
               priority
             />
           </Link>
@@ -200,7 +205,7 @@ export default function Nav() {
       {mobileOpen && (
         <div
           id="mobile-nav"
-          className="fixed inset-0 z-40 bg-background pt-24 md:hidden"
+          className="fixed inset-0 z-40 bg-background pt-[4.75rem] md:hidden"
           role="dialog"
           aria-modal="true"
           aria-label="Mobile navigation"
@@ -227,25 +232,22 @@ export default function Nav() {
               </Link>
             ))}
             <div className="my-4 h-px bg-border" />
-            {primaryLinks.map((l) => (
+            <p className="mb-2 font-sans text-xs font-medium uppercase tracking-[0.15em] text-muted-foreground">
+              Industries
+            </p>
+            <Link
+              href="/markets"
+              className="rounded-sm px-3 py-3 font-sans text-base text-foreground no-underline"
+              onClick={() => setMobileOpen(false)}
+            >
+              Markets
+            </Link>
+            <div className="my-4 h-px bg-border" />
+            {mobileInstitutionalLinks.map((l) => (
               <Link
                 key={l.href}
                 href={l.href}
                 className="rounded-sm px-3 py-3 font-sans text-base text-foreground no-underline"
-                onClick={() => setMobileOpen(false)}
-              >
-                {l.label}
-              </Link>
-            ))}
-            <div className="my-4 h-px bg-border" />
-            <p className="mb-2 font-sans text-xs font-medium uppercase tracking-[0.15em] text-muted-foreground">
-              More
-            </p>
-            {supportingLinks.map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                className="rounded-sm px-3 py-3 font-sans text-base text-muted-foreground no-underline"
                 onClick={() => setMobileOpen(false)}
               >
                 {l.label}
