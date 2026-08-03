@@ -1,128 +1,83 @@
-# OCTUS Service Family Architecture V1
+# Octus Service Family Architecture V1
 
-**Status:** LOCKED — canonical family taxonomy  
-**Date:** 2026-08-03  
-**Families:** 55  
-**Services mapped:** 39  
-**Companion JSON:** `OCTUS_SERVICE_FAMILY_ARCHITECTURE_V1.json`  
-**Placement matrix:** `OCTUS_SEVEN_AREAS_SERVICE_PLACEMENT_MATRIX_V3.md`
+**Revision:** client-facing integrity 2026-08-03
 
-## Summary
+**Public families (internal count):** 34
 
-Octus organises 39 substantiated services across **seven public areas** using **55 genuine service families**. Families group related capabilities for hub presentation; they are not peer areas. Banking & Payments and Tax remain cross-cutting capabilities — never an eighth area.
+**Approved services mapped:** 39 / 39
 
-## Seven areas
+Recalculated from the approved public catalog. Every rendered family contains at least one approved service. Themes without a standalone service are capability notes, delivery stages or dependencies — not empty public families.
 
-| # | Area | Hub | Families |
-|---|------|-----|----------|
-| 01 | Regulatory Structuring | `/solutions/regulatory-structuring` | 7 |
-| 02 | Compliance & Risk | `/solutions/compliance-risk` | 8 |
-| 03 | Legal & Structural Architecture | `/solutions/legal-structural-architecture` | 8 |
-| 04 | Corporate Structuring | `/solutions/corporate-structuring` | 8 |
-| 05 | Private Clients | `/private-clients` | 7 |
-| 06 | Remediation & Readiness | `/solutions/remediation-readiness` | 9 |
-| 07 | International Hub | `/international-hub` | 8 |
+Do not advertise the family count on the public website.
 
-## Families by area
+## Regulatory Structuring
 
-### Regulatory Structuring
+- **Jurisdiction and pathway strategy** (`REG-F1`): SVC-REG-01, SVC-REG-05
+  - _Note:_ Post-licensing governance and regulatory change tracked as a programme stage after approval.
+- **iGaming licensing programmes** (`REG-F2`): SVC-REG-02
+  - _Note:_ B2B, supplier and laboratory dependencies sequenced inside licensing programmes where relevant.
+- **Fintech, payments and digital-assets authorisations** (`REG-F3`): SVC-REG-03
+  - _Note:_ Technical readiness handoffs into certification paths when the programme requires them.
+- **Brazil regulatory and SPA/MF** (`REG-F4`): SVC-REG-04
+  - _Note:_ Supplier recognition and B2B pathways covered on the Brazil flagship page where the agenda is relevant.
 
-**Hub:** `/solutions/regulatory-structuring` · **Families:** 7
+## Compliance & Risk
 
-- **Jurisdiction and pathway strategy** (`REG-F1`) — Venue fit, pathway design and jurisdiction risk mapping before filings. · Services: Licensing strategy and pathway design; Jurisdiction selection and risk mapping
-- **iGaming licensing programmes** (`REG-F2`) — Full-programme gaming licensing coordinated with corporate, compliance and banking. · Services: iGaming licensing programme
-- **Fintech, payments and digital-assets authorisations** (`REG-F3`) — EMI/PI and related authorisations treated as operable stacks. · Services: Fintech, EMI and crypto licensing
-- **Brazil regulatory and SPA/MF** (`REG-F4`) — Brazil-facing regulatory workstreams for betting and related national frameworks. · Services: Brazil SPA / MF regulatory support
-- **B2B, supplier and laboratory registration** (`REG-F5`) — Supplier, B2B and registration dependencies sequenced with licensing programmes.
-- **Technical and certification readiness** (`REG-F6`) — Technical readiness handoffs into compliance certification and laboratory paths.
-- **Post-licensing governance and regulatory change** (`REG-F7`) — Ongoing governance after approval when rules, conditions or venues change.
+- **AML, KYC, CDD and onboarding** (`CMP-F1`): SVC-CMP-01
+- **Policies, governance and due diligence** (`CMP-F2`): SVC-CMP-06
+- **Internal controls and monitoring** (`CMP-F3`): SVC-CMP-04
+  - _Note:_ Training and ongoing assurance delivered as part of remediation and Compliance-as-a-Service where needed.
+- **Compliance operations and Compliance-as-a-Service** (`CMP-F4`): SVC-CMP-02
+- **Privacy, data protection and DPO** (`CMP-F5`): SVC-CMP-03
+- **Certification, audit and laboratory readiness** (`CMP-F6`): SVC-CMP-05
 
-### Compliance & Risk
+## Legal & Structural Architecture
 
-**Hub:** `/solutions/compliance-risk` · **Families:** 8
+- **Contractual architecture** (`LEG-F1`): SVC-LEG-01
+  - _Note:_ IP and technology matters handled as transaction dependencies where relevant.
+- **Regulatory opinions and legal analysis** (`LEG-F2`): SVC-LEG-04
+  - _Note:_ Notifications and extrajudicial coordination sit inside engagement scoping when needed.
+- **Local-counsel and multi-jurisdiction coordination** (`LEG-F3`): SVC-LEG-02, SVC-LEG-03
+  - _Note:_ Contentious-work coordination with local counsel where disputes arise; Octus coordinates rather than litigating in every venue.
+  - _Note:_ Corporate legal instruments and tax-sensitive transaction design coordinated with Corporate and Tax owners.
 
-- **AML, KYC, CDD and onboarding** (`CMP-F1`) — Onboarding and monitoring frameworks that survive banking and regulator scrutiny. · Services: AML / KYC / CDD frameworks
-- **Policies and governance frameworks** (`CMP-F2`) — Policy packs and diligence materials aligned to how the operation actually runs. · Services: Policies and due diligence packs
-- **Internal controls and monitoring** (`CMP-F3`) — Controls, escalation and monitoring that hold under audit. · Services: Internal controls and governance
-- **Compliance operations and Compliance-as-a-Service** (`CMP-F4`) — Owned compliance function rather than paper compliance. · Services: Compliance-as-a-Service
-- **Privacy, data protection and DPO** (`CMP-F5`) — DPO and privacy execution that remains independent and operable. · Services: DPO-as-a-Service
-- **Due diligence and risk assessment** (`CMP-F6`) — Risk assessment packages for counterparties, investors and institutions.
-- **Certification, audit and laboratory readiness** (`CMP-F7`) — Certification and lab readiness sequenced with licensing and banking. · Services: Certification and lab readiness
-- **Training, remediation and ongoing assurance** (`CMP-F8`) — Assurance loops and training when controls must stick after remediation.
+## Corporate Structuring
 
-### Legal & Structural Architecture
+- **Holding and ownership design** (`CORP-F1`): SVC-CORP-01
+  - _Note:_ Ongoing corporate maintenance and secretarial coordination as continuing work after formation.
+- **Entity formation and market-entry vehicles** (`CORP-F2`): SVC-CORP-02
+- **Cross-border architecture and reorganisation** (`CORP-F3`): SVC-CORP-03, SVC-CORP-04
+- **Banking and institutional onboarding readiness** (`CORP-F4`): SVC-CORP-05
+- **Accounting, reporting and finance coordination** (`CORP-F5`): SVC-CORP-06
+- **Corporate tax planning** (`CORP-F6`): SVC-CORP-07
 
-**Hub:** `/solutions/legal-structural-architecture` · **Families:** 8
+## Private Clients
 
-- **Contractual architecture** (`LEG-F1`) — Contracts that match the regulated operating model. · Services: Contractual architecture
-- **Regulatory opinions and legal analysis** (`LEG-F2`) — Opinions and analysis coordinated where local counsel authority is required. · Services: Legal opinions and certifications support
-- **Corporate legal architecture** (`LEG-F3`) — Legal design of entities, governance instruments and group relationships.
-- **Tax legal structuring and transaction design** (`LEG-F4`) — Tax-sensitive legal structuring coordinated with finance owners.
-- **Intellectual property and technology matters** (`LEG-F5`) — IP and technology legal coordination relevant to regulated platforms.
-- **Notifications and extrajudicial matters** (`LEG-F6`) — Structured notifications and extrajudicial coordination.
-- **Dispute and contentious-work coordination** (`LEG-F7`) — Coordination of contentious work with local counsel. Octus does not claim to litigate in every jurisdiction.
-- **Local-counsel and multi-jurisdiction legal coordination** (`LEG-F8`) — Multi-jurisdiction frameworks and counsel coordination across legal systems. · Services: Multi-jurisdiction legal frameworks; Counsel coordination
+- **UBO and ownership architecture** (`PC-F1`): SVC-PC-01
+- **Personal and family holdings** (`PC-F2`): SVC-PC-02
+  - _Note:_ Asset organisation, succession and family governance coordinated inside private-client programmes.
+- **Residence and personal international structuring** (`PC-F3`): SVC-PC-03
+- **Personal banking and KYC readiness** (`PC-F4`): SVC-PC-04
+- **Personal tax coordination** (`PC-F5`): SVC-PC-05
 
-### Corporate Structuring
+## Remediation & Readiness
 
-**Hub:** `/solutions/corporate-structuring` · **Families:** 8
+- **Diagnostic and root-cause assessment** (`REM-F1`): SVC-REM-01
+  - _Note:_ Operational continuity and recovery planning sequenced with the diagnostic.
+- **Regulatory remediation** (`REM-F2`): SVC-REM-02
+- **Banking, payments and compliance remediation** (`REM-F3`): SVC-REM-03, SVC-REM-05
+  - _Note:_ Controls remediation and corporate ownership cleanup handled as linked workstreams.
+- **Audit, certification and inspection readiness** (`REM-F4`): SVC-REM-04
+  - _Note:_ Documentation, evidence and data-room readiness prepared as inspection deliverables.
+- **Tax and finance remediation** (`REM-F5`): SVC-REM-06
 
-- **Entity formation and market-entry vehicles** (`CORP-F1`) — Formation of the vehicles needed to enter and operate. · Services: Company formation
-- **Holding and ownership design** (`CORP-F2`) — Holdings and ownership architecture for regulated groups. · Services: Entity and holding architecture
-- **Cross-border corporate architecture** (`CORP-F3`) — Cross-border entity topology that remains explainable. · Services: Cross-border structuring
-- **Shareholder, director and governance structures** (`CORP-F4`) — Governance and reorganisation when ownership or control must change. · Services: Corporate reorganisation
-- **Corporate maintenance and secretarial coordination** (`CORP-F5`) — Ongoing maintenance and secretarial coordination across entities.
-- **Accounting, reporting and finance coordination** (`CORP-F6`) — Accounting and finance coordination with institutional expectations. · Services: Accounting and finance coordination
-- **Corporate tax planning** (`CORP-F7`) — Corporate tax planning as a named module, not a hidden peer area. · Services: Corporate tax planning
-- **Banking and institutional onboarding readiness** (`CORP-F8`) — Corporate readiness for banking and institutional onboarding. · Services: Banking readiness
+## International Hub
 
-### Private Clients
+- **Multi-country market-entry coordination** (`HUB-F1`): SVC-HUB-01
+  - _Note:_ Jurisdiction comparison sits inside market-entry design before commitments harden.
+  - _Note:_ Programme management across providers and ongoing international maintenance as continuing hub work.
+- **Banking, PSP and payment-provider coordination** (`HUB-F2`): SVC-HUB-02, SVC-HUB-03
+- **CSP, entity and local-director network** (`HUB-F3`): SVC-HUB-04
+- **Laboratories, certification and technical vendors** (`HUB-F4`): SVC-HUB-05
+- **Counsel and tax-specialist coordination** (`HUB-F5`): SVC-HUB-06
 
-**Hub:** `/private-clients` · **Families:** 7
-
-- **UBO and ownership architecture** (`PC-F1`) — Ownership and UBO structures that can be explained under scrutiny. · Services: Ownership and UBO architecture
-- **Personal and family holdings** (`PC-F2`) — Personal and family holding organisation tied to regulated operations. · Services: Personal holding and asset organisation
-- **Asset organisation and succession** (`PC-F3`) — Asset organisation and succession planning for private clients.
-- **Residence and personal international structuring** (`PC-F4`) — Residence and personal international structuring. · Services: Residency and personal international structuring
-- **Personal tax coordination** (`PC-F5`) — Personal tax coordination with corporate and ownership design. · Services: Personal tax coordination
-- **Personal banking and KYC readiness** (`PC-F6`) — Personal banking and individual KYC readiness. · Services: Personal banking and individual KYC readiness
-- **Family governance and private-client coordination** (`PC-F7`) — Family governance coordination across advisors and jurisdictions.
-
-### Remediation & Readiness
-
-**Hub:** `/solutions/remediation-readiness` · **Families:** 9
-
-- **Diagnostic and root-cause assessment** (`REM-F1`) — Crisis entry and structural assessment when the operation is already blocked. · Services: Crisis entry and structural assessment
-- **Regulatory remediation** (`REM-F2`) — Licensing delay and regulatory remediation sequencing. · Services: Licensing delay remediation
-- **Compliance and controls remediation** (`REM-F3`) — Remediation of failed controls and compliance gaps.
-- **Banking and payments remediation** (`REM-F4`) — Banking, payments and financial-infrastructure remediation. · Services: Banking or compliance gap remediation; Financial infrastructure remediation
-- **Corporate and ownership cleanup** (`REM-F5`) — Cleanup of corporate and ownership structures that block progress.
-- **Tax and finance remediation** (`REM-F6`) — Tax and finance problem remediation. · Services: Tax and finance problem remediation
-- **Audit, certification and inspection readiness** (`REM-F7`) — Audit and readiness remediation ahead of scrutiny. · Services: Audit and readiness remediation
-- **Documentation, evidence and data-room readiness** (`REM-F8`) — Evidence packs and data-room readiness for institutions and authorities.
-- **Operational continuity and recovery planning** (`REM-F9`) — Continuity and recovery planning while structural fixes are sequenced.
-
-### International Hub
-
-**Hub:** `/international-hub` · **Families:** 8
-
-- **Jurisdiction comparison and selection** (`HUB-F1`) — Comparing venues for fit before market-entry execution.
-- **Multi-country market-entry coordination** (`HUB-F2`) — Coordinating multi-country entry programmes. · Services: Market entry coordination
-- **CSP, entity and local-director network** (`HUB-F3`) — CSP, formation and local-director network coordination. · Services: CSP, local director and formation partners
-- **Banking, PSP and payment-provider coordination** (`HUB-F4`) — Bank, PSP and payment-provider coordination for regulated operations. · Services: Bank and PSP introductions; Payment and PSP architecture
-- **Laboratories, certification and technical vendors** (`HUB-F5`) — Labs, certification and technical vendor coordination. · Services: Lab, certification and specialist network coordination
-- **Counsel and tax-specialist coordination** (`HUB-F6`) — Counsel and tax-specialist network coordination. · Services: Counsel and tax specialist coordination
-- **Programme management across providers** (`HUB-F7`) — Programme management across providers without dissolving accountability.
-- **International maintenance and expansion support** (`HUB-F8`) — Ongoing international maintenance and expansion support.
-
-## Cross-cutting rules
-
-- **Banking & Payments** — infrastructure capability; routes through Corporate, Hub, Remediation; canonical page `/solutions/banking-payments-infrastructure`.
-- **Tax** — explicit on corporate tax, personal tax, tax remediation, and Hub specialist coordination; never a peer area.
-- Every service maps to exactly one primary family; supporting areas and cross-cuts documented in placement matrix V3.
-- Families with no mapped service IDs are structural placeholders for hub modules (B2B registration, post-licensing governance, etc.).
-
-## Governance
-
-- Do not invent deep-service routes not in the approved catalog.
-- Family count (55) and service count (39) are locked for PR #17 seven-areas architecture.
