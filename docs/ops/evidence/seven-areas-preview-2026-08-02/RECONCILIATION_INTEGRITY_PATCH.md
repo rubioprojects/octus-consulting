@@ -11,7 +11,7 @@ This document does **not** predict a future tip SHA.
 
 | Field | Meaning | Value |
 |-------|---------|-------|
-| `implementation_sha` | Commit containing the integrity code changes this report validates | *(bound in follow-up evidence SHA commit)* |
+| `implementation_sha` | Commit containing the integrity code changes this report validates | 66e699ab3de5c1e0fd41e674133d46d632211fc6 |
 | `validation_sha` | Tree against which build/typecheck/crawl/metadata/semantic audits were executed | same as `implementation_sha` |
 | `evidence_generated_from_sha` | Commit whose working tree produced the validated `out/` artifacts and audit JSON | same as `implementation_sha` |
 | `current_pr_head_at_report_time` | Recorded only in PR body / operator terminal response | not stored in this file |

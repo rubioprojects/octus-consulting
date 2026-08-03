@@ -2,7 +2,7 @@
 
 **Date:** 2026-08-02  
 **Route:** `/team`  
-**evidence_generated_from_sha:** *(set at evidence packaging; see integrity report)*  
+**evidence_generated_from_sha:** 
 **Authority hierarchy (fail-closed):**
 1. Rubio-approved closed-model reconciliation decision: restore Team composition; bind **current roster exactly** (`CLOSED_MODEL_BASELINE_RECONCILIATION_AUDIT.md`)
 2. Editorial title locks (`EDITORIAL_REGRESSION_REPAIR.md`): Founder & CEO / Operations Coordination; no Managing Director
