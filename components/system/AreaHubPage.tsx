@@ -1,40 +1,34 @@
 import Link from "next/link";
 import type { PublicArea } from "../../lib/publicAreas";
 import { enrichPublicArea } from "../../lib/areaHubContent";
-import { getDeepServicesForArea } from "../../lib/serviceArchitecture";
 import {
-  CTA_ASSESS_LABEL,
-  CTA_DISCUSS_LABEL,
   WHATSAPP_ASSESS_URL,
   WHATSAPP_DISCUSS_URL,
 } from "../../lib/cta";
 import PageHero from "./PageHero";
-import { CtaLink } from "./CtaButton";
 import OctusEditorialDivider from "./OctusEditorialDivider";
 import OctusSymbolMarker from "./OctusSymbolMarker";
-import OctusChapterTransition from "./OctusChapterTransition";
 import ServiceFamilyAccordion from "./ServiceFamilyAccordion";
 
-/** Twelve-module area hub standard — shared system, controlled variation per area. */
+/** Seven visible chapters covering the 12-module content checklist. */
 export default function AreaHubPage({ area }: { area: PublicArea }) {
   const enriched = enrichPublicArea(area);
   const isRemediation = area.primaryCta === "assess";
   const primaryHref = isRemediation ? WHATSAPP_ASSESS_URL : WHATSAPP_DISCUSS_URL;
   const primaryLabel = enriched.primaryCtaLabel;
-  const deepServices = getDeepServicesForArea(area.id);
   const surfaceVariant = area.id === "AREA-LEG" || area.id === "AREA-REM" ? "dark-accent" : "default";
   const compactHero = area.id === "AREA-PC" || area.id === "AREA-HUB";
 
   return (
     <main>
-      {/* 1 · Area thesis */}
+      {/* Chapter 1 · Hero */}
       <PageHero
         eyebrow={area.crisis ? "Crisis entry" : `Services · ${area.num}`}
         title={area.name}
         titleSecondLine={area.oneSentence}
         description={area.summary}
         primaryCta={{ href: primaryHref, label: primaryLabel, external: true }}
-        secondaryCta={{ href: "/solutions", label: "All services →" }}
+        secondaryCta={{ href: "/solutions", label: "All services", quiet: true }}
         compact={compactHero}
       />
 
@@ -50,18 +44,16 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
         </section>
       )}
 
-      <OctusChapterTransition />
-
-      {/* 2 · Problems / triggers */}
-      <section className="bg-background py-20 md:py-28">
+      {/* Chapter 2 · Client triggers */}
+      <section className="bg-background py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-10 flex items-end gap-6">
+          <div className="mb-8 flex items-end gap-6">
             <span className="editorial-numeral" aria-hidden="true">
               {area.num}
             </span>
             <div>
-              <p className="section-label mb-3 block">When clients need this</p>
-              <h2 className="heading-section max-w-2xl">Problems and triggers.</h2>
+              <p className="section-label mb-3 block">When this workstream applies</p>
+              <h2 className="heading-section max-w-2xl">Situations that bring clients here.</h2>
             </div>
           </div>
           <ul className="grid list-none gap-3 md:grid-cols-2 lg:max-w-4xl">
@@ -77,95 +69,34 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
         </div>
       </section>
 
-      <OctusChapterTransition />
-
-      {/* 3 · Service-family overview */}
-      <section className="surface-elevated py-20 md:py-28">
+      {/* Chapter 3 · Capabilities and services (single family system) */}
+      <section className="surface-elevated py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <p className="section-label mb-3 block">Service families</p>
+          <p className="section-label mb-3 block">Capabilities</p>
           <h2 className="heading-section mb-4 max-w-2xl">
-            {enriched.families.length} families in {area.name}.
+            How {area.name} is organised.
           </h2>
           <p className="body-large mb-10 max-w-2xl text-muted-foreground">
-            Capabilities grouped for how Octus delivers — not a flat service list.
+            Related services grouped by client purpose. Open a family for the detail that belongs
+            there.
           </p>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {enriched.families.map((family) => (
-              <div
-                key={family.id}
-                className="rounded-sm border border-border bg-background p-5 md:p-6"
-              >
-                <h3 className="mb-2 font-sans text-base font-semibold text-foreground">
-                  {family.name}
-                </h3>
-                <p className="font-sans text-sm leading-relaxed text-muted-foreground">
-                  {family.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <OctusChapterTransition />
-
-      {/* 4 · Subservices by family */}
-      <section className="bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <p className="section-label mb-3 block">By family</p>
-          <h2 className="heading-section mb-10 max-w-2xl">Subservices grouped by family.</h2>
           <ServiceFamilyAccordion families={enriched.families} />
         </div>
       </section>
 
-      <OctusChapterTransition />
-
-      {/* 5 · Selected deep-service pages */}
-      {(deepServices.length > 0 || area.relatedDeep.length > 0) && (
-        <>
-          <section className="surface-elevated py-20 md:py-28">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-              <p className="section-label mb-3 block">Deep-service pages</p>
-              <h2 className="heading-section mb-8 max-w-2xl">Selected paths with dedicated pages.</h2>
-              <ul className="grid list-none gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {(deepServices.length > 0
-                  ? deepServices.map((s) => ({
-                      label: s.exact_public_name,
-                      href: s.recommended_route!,
-                    }))
-                  : area.relatedDeep
-                ).map((item) => (
-                  <li key={item.href}>
-                    <Link
-                      href={item.href}
-                      className="flex h-full flex-col rounded-sm border border-border bg-background p-5 no-underline transition-colors hover:border-primary"
-                    >
-                      <span className="font-sans text-base font-medium text-primary">
-                        {item.label} →
-                      </span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </section>
-          <OctusChapterTransition />
-        </>
-      )}
-
-      {/* 6 · Multi-jurisdiction implications */}
+      {/* Chapter 4 · Cross-border coordination */}
       <section
         className={
           surfaceVariant === "dark-accent"
-            ? "surface-dark relative overflow-hidden py-20 md:py-28"
-            : "border-y border-border bg-secondary/25 py-20 md:py-28"
+            ? "surface-dark relative overflow-hidden py-16 md:py-24"
+            : "border-y border-border bg-secondary/25 py-16 md:py-24"
         }
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p
             className={`section-label mb-3 block ${surfaceVariant === "dark-accent" ? "text-white/55" : ""}`}
           >
-            Multi-jurisdiction
+            Cross-border coordination
           </p>
           <h2
             className={`heading-section mb-6 max-w-2xl ${surfaceVariant === "dark-accent" ? "text-white" : ""}`}
@@ -173,111 +104,99 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
             {enriched.multiJurisdiction.title}
           </h2>
           <p
-            className={`body-large max-w-2xl ${surfaceVariant === "dark-accent" ? "text-white/70" : "text-muted-foreground"}`}
+            className={`body-large mb-10 max-w-2xl ${surfaceVariant === "dark-accent" ? "text-white/70" : "text-muted-foreground"}`}
           >
             {enriched.multiJurisdiction.body}
           </p>
-        </div>
-      </section>
-
-      <OctusChapterTransition />
-
-      {/* 7 · Connections to other areas */}
-      <section className="bg-background py-20 md:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-8 flex items-center gap-3">
-            <OctusSymbolMarker />
-            <p className="section-label mb-0 block">Connected areas</p>
-          </div>
           <div className="grid gap-4 md:grid-cols-2">
             {enriched.connections.map((conn) => (
               <Link
                 key={conn.href}
                 href={conn.href}
-                className="rounded-sm border border-border p-5 no-underline transition-colors hover:border-primary md:p-6"
+                className={`rounded-sm border p-5 no-underline transition-colors md:p-6 ${
+                  surfaceVariant === "dark-accent"
+                    ? "border-white/15 hover:border-white/40"
+                    : "border-border hover:border-primary"
+                }`}
               >
-                <h3 className="mb-2 font-sans text-base font-semibold text-primary">
+                <h3
+                  className={`mb-2 font-sans text-base font-semibold ${
+                    surfaceVariant === "dark-accent" ? "text-white" : "text-primary"
+                  }`}
+                >
                   {conn.areaName} →
                 </h3>
-                <p className="font-sans text-sm text-muted-foreground">{conn.reason}</p>
+                <p
+                  className={`font-sans text-sm ${
+                    surfaceVariant === "dark-accent" ? "text-white/65" : "text-muted-foreground"
+                  }`}
+                >
+                  {conn.reason}
+                </p>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      <OctusChapterTransition />
-
-      {/* 8 · Industries */}
-      <section className="surface-elevated py-16 md:py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <p className="section-label mb-4 block">Industries</p>
-          <ul className="flex list-none flex-wrap gap-2">
-            {enriched.industries.map((m) => (
-              <li key={m.href}>
-                <Link
-                  href={m.href}
-                  className="inline-flex rounded-sm border border-border px-3 py-1.5 font-sans text-sm text-foreground no-underline hover:border-primary hover:text-primary"
-                >
-                  {m.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      {/* 9 · Jurisdictions */}
+      {/* Chapter 5 · Markets */}
       <section className="bg-background py-16 md:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <p className="section-label mb-4 block">Jurisdictions</p>
-          <ul className="flex list-none flex-wrap gap-2">
-            {enriched.jurisdictions.map((j) => (
-              <li key={j.href}>
-                <Link
-                  href={j.href}
-                  className="inline-flex rounded-sm border border-border bg-secondary/20 px-3 py-1.5 font-sans text-sm text-foreground no-underline hover:border-primary hover:text-primary"
-                >
-                  {j.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <div className="mb-8 flex items-center gap-3">
+            <OctusSymbolMarker />
+            <p className="section-label mb-0 block">Markets</p>
+          </div>
+          <div className="grid gap-10 md:grid-cols-2">
+            <div>
+              <h3 className="mb-4 font-heading text-lg font-semibold text-foreground">Industries</h3>
+              <ul className="flex list-none flex-wrap gap-2">
+                {enriched.industries.map((m) => (
+                  <li key={m.href}>
+                    <Link
+                      href={m.href}
+                      className="inline-flex min-h-11 items-center rounded-sm border border-border px-3 py-2 font-sans text-sm text-foreground no-underline hover:border-primary hover:text-primary"
+                    >
+                      {m.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="mb-4 font-heading text-lg font-semibold text-foreground">
+                Jurisdictions
+              </h3>
+              <ul className="flex list-none flex-wrap gap-2">
+                {enriched.jurisdictions.map((j) => (
+                  <li key={j.href}>
+                    <Link
+                      href={j.href}
+                      className="inline-flex min-h-11 items-center rounded-sm border border-border bg-secondary/20 px-3 py-2 font-sans text-sm text-foreground no-underline hover:border-primary hover:text-primary"
+                    >
+                      {j.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
-      <OctusChapterTransition />
-
-      {/* 10 · Delivery / engagement */}
-      <section className="border-y border-border bg-primary/[0.03] py-16 md:py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <p className="section-label mb-3 block">How Octus engages</p>
-          <p className="body-large mb-6 max-w-2xl">{enriched.deliveryModel}</p>
-          <CtaLink href="/how-we-engage" variant="secondary">
-            How we engage →
-          </CtaLink>
-        </div>
-      </section>
-
-      {/* 11 · Responsible leadership */}
-      <section className="bg-background py-20 md:py-28">
+      {/* Chapter 6 · Delivery and accountability */}
+      <section className="border-y border-border bg-primary/[0.03] py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <OctusEditorialDivider className="mb-10" />
-          <p className="section-label mb-3 block">Responsible leadership</p>
-          <h2 className="heading-section mb-8 max-w-xl">Accountability for this workstream.</h2>
+          <p className="section-label mb-3 block">Delivery and accountability</p>
+          <h2 className="heading-section mb-6 max-w-xl">How this workstream is owned.</h2>
+          <p className="body-large mb-10 max-w-2xl text-muted-foreground">{enriched.deliveryModel}</p>
           <div className="grid gap-6 md:grid-cols-2 lg:max-w-3xl">
-            <div className="rounded-sm border border-primary/30 bg-secondary/20 p-6">
-              <p className="mb-1 font-sans text-xs font-medium uppercase tracking-wider text-primary">
-                Practice lead
-              </p>
-              <p className="font-heading text-lg font-semibold text-foreground">
-                {enriched.practiceLead.name}
-              </p>
-              <p className="font-sans text-sm text-muted-foreground">{enriched.practiceLead.title}</p>
-            </div>
             {enriched.leadership.map((leader) => (
-              <div key={leader.name} className="rounded-sm border border-border p-6">
-                <p className="font-heading text-base font-semibold text-foreground">{leader.name}</p>
+              <div key={leader.name + leader.title} className="rounded-sm border border-border bg-background p-6">
+                <p className="mb-1 font-sans text-xs font-medium uppercase tracking-wider text-primary">
+                  {leader.scopeLabel || "Accountability"}
+                </p>
+                <p className="font-heading text-lg font-semibold text-foreground">{leader.name}</p>
                 <p className="font-sans text-sm text-muted-foreground">{leader.title}</p>
               </div>
             ))}
@@ -286,39 +205,33 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
             <Link href="/team" className="text-primary no-underline hover:text-primary/80">
               Meet the team →
             </Link>
+            {" · "}
+            <Link href="/how-we-engage" className="text-primary no-underline hover:text-primary/80">
+              How we engage →
+            </Link>
           </p>
         </div>
       </section>
 
-      {/* 12 · Contextual final CTA */}
-      <section className="surface-dark py-20 md:py-24">
+      {/* Chapter 7 · Compact close */}
+      <section className="bg-background py-14 md:py-16">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-          <h2 className="mb-4 font-heading text-2xl font-semibold text-white md:text-3xl">
-            {isRemediation ? "Start with an assessment." : "Discuss this workstream."}
+          <h2 className="mb-3 font-heading text-xl font-semibold text-foreground md:text-2xl">
+            {isRemediation ? "When progress has stopped." : `Continue with ${area.name}.`}
           </h2>
-          <p className="body-large mb-8 text-white/65">
+          <p className="mb-5 font-sans text-sm text-muted-foreground">
             {isRemediation
-              ? "When licensing, banking or compliance is already blocked, a focused diagnostic comes first."
-              : `Coordinate ${area.name.toLowerCase()} with the rest of your regulated operation.`}
+              ? "Start with a focused assessment of what is blocking the operation."
+              : "Discuss how this workstream fits the rest of the mandate."}
           </p>
-          <CtaLink
+          <Link
             href={primaryHref}
-            variant="on-dark"
             target="_blank"
             rel="noopener noreferrer"
+            className="font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
           >
             {primaryLabel}
-          </CtaLink>
-          {!isRemediation && area.intakeHref && (
-            <p className="mt-6">
-              <Link
-                href={area.intakeHref}
-                className="font-sans text-sm text-white/55 no-underline hover:text-white/80"
-              >
-                Or start a diagnostic assessment →
-              </Link>
-            </p>
-          )}
+          </Link>
         </div>
       </section>
     </main>

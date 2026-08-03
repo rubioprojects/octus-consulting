@@ -8,6 +8,8 @@ type Cta = {
   label: string;
   external?: boolean;
   variant?: "on-dark" | "on-dark-secondary";
+  /** Quiet text link instead of a second equal button. */
+  quiet?: boolean;
 };
 
 export default function PageHero({
@@ -64,17 +66,28 @@ export default function PageHero({
                 {primaryCta.label}
               </CtaLink>
             )}
-            {secondaryCta && (
-              <CtaLink
-                href={secondaryCta.href}
-                variant={secondaryCta.variant || "on-dark-secondary"}
-                {...(secondaryCta.external
-                  ? { target: "_blank", rel: "noopener noreferrer" }
-                  : {})}
-              >
-                {secondaryCta.label}
-              </CtaLink>
-            )}
+            {secondaryCta &&
+              (secondaryCta.quiet ? (
+                <a
+                  href={secondaryCta.href}
+                  className="inline-flex min-h-11 items-center font-sans text-sm text-white/65 no-underline transition-colors hover:text-white"
+                  {...(secondaryCta.external
+                    ? { target: "_blank", rel: "noopener noreferrer" }
+                    : {})}
+                >
+                  {secondaryCta.label} →
+                </a>
+              ) : (
+                <CtaLink
+                  href={secondaryCta.href}
+                  variant={secondaryCta.variant || "on-dark-secondary"}
+                  {...(secondaryCta.external
+                    ? { target: "_blank", rel: "noopener noreferrer" }
+                    : {})}
+                >
+                  {secondaryCta.label}
+                </CtaLink>
+              ))}
           </div>
         )}
       </div>

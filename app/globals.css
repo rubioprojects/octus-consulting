@@ -1601,11 +1601,18 @@ footer .heading-lg,
   filter: grayscale(1) contrast(1.1) brightness(0.97);
 }
 .team-photo--rubio-home .home-leadership-trust__photo {
-  object-position: 50% 12%;
-  transform: scale(1.08);
+  object-position: 50% 18%;
+  transform: scale(1.14);
 }
 .team-photo--rubio-team .team-card-photo {
-  object-position: 48% 16%;
+  object-position: 50% 20%;
+  transform: scale(1.06);
+}
+@media (max-width: 639px) {
+  .team-photo--rubio-team .team-card-photo {
+    object-position: 50% 22%;
+    transform: scale(1.1);
+  }
 }
 .team-photo--maria .team-card-photo,
 .team-photo--maria .home-leadership-trust__photo { object-position: 50% 40%; }
@@ -1732,7 +1739,7 @@ footer .heading-lg,
 
 /* ── Rubio video refinement: typography, cookie/WA (leadership cards finalised below) ── */
 
-.team-photo--rubio-home .home-leadership-trust__photo { object-position: 50% 12%; }
+.team-photo--rubio-home .home-leadership-trust__photo { object-position: 50% 18%; transform: scale(1.14); }
 .team-photo--maria .home-leadership-trust__photo { object-position: 50% 40%; }
 .home-leadership-trust__line {
   margin-top: 0.75rem;

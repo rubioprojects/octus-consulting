@@ -25,11 +25,17 @@ export type AreaConnection = {
   reason: string;
 };
 
+export type AreaAccountability = {
+  name: string;
+  title: string;
+  scopeLabel?: string;
+};
+
 export type EnrichedPublicArea = PublicArea & {
   families: AreaFamilyView[];
   multiJurisdiction: { title: string; body: string };
   practiceLead: { name: string; title: string };
-  leadership: { name: string; title: string }[];
+  leadership: AreaAccountability[];
   connections: AreaConnection[];
   jurisdictions: { label: string; href: string }[];
   industries: { label: string; href: string }[];
@@ -44,7 +50,7 @@ const ONE_SENTENCE: Record<string, string> = Object.fromEntries(
 type AreaEnrichment = {
   multiJurisdiction: { title: string; body: string };
   practiceLead: { name: string; title: string };
-  leadership: { name: string; title: string }[];
+  leadership: AreaAccountability[];
   connections: AreaConnection[];
   jurisdictions: { label: string; href: string }[];
   deliveryModel: string;
@@ -53,13 +59,14 @@ type AreaEnrichment = {
 const ENRICHMENT: Record<string, AreaEnrichment> = {
   "AREA-REG": {
     multiJurisdiction: {
-      title: "Licensing pathways differ by venue — sequencing matters",
-      body: "A Malta or Curaçao licence does not substitute for Brazil SPA/MF requirements. Octus maps venue fit, pathway timelines and cross-border dependencies before filings begin, so international authorisations and Brazil-facing workstreams stay coherent.",
+      title: "Licensing pathways differ by venue",
+      body: "Venue fit, pathway timelines and filing dependencies change across Malta, Curaçao, Isle of Man and Brazil SPA/MF. Octus sequences international authorisations with Brazil-facing requirements so each licence can operate in its intended market.",
     },
     practiceLead: { name: "Esther Vendrami", title: "International Regulatory & Compliance Lead" },
     leadership: [
-      { name: "Rubio Teixeira", title: "Founder & CEO — strategic oversight" },
-      { name: "Caroline Giovanetti", title: "Brazil Regulatory Lead" },
+      { name: "Rubio Teixeira", title: "Founder & CEO", scopeLabel: "Executive and strategic oversight" },
+      { name: "Esther Vendrami", title: "International Regulatory & Compliance Lead", scopeLabel: "International regulatory and licensing" },
+      { name: "Caroline Giovanetti", title: "Brazil Regulatory Lead", scopeLabel: "Brazil regulatory" },
     ],
     connections: [
       { areaName: "Corporate Structuring", href: "/solutions/corporate-structuring", reason: "Entity design must match what regulators expect before approval." },
@@ -73,19 +80,19 @@ const ENRICHMENT: Record<string, AreaEnrichment> = {
       { label: "Curaçao", href: "/jurisdictions/curacao" },
       { label: "Isle of Man", href: "/jurisdictions/isle-of-man" },
       { label: "Portugal", href: "/jurisdictions/portugal" },
-      { label: "All jurisdictions", href: "/jurisdictions" },
     ],
-    deliveryModel: "Programme-led: pathway design first, then coordinated filings across corporate, compliance and banking readiness — not standalone licence shop work.",
+    deliveryModel: "Programme-led pathway design first, then coordinated filings across corporate, compliance and banking readiness.",
   },
   "AREA-CMP": {
     multiJurisdiction: {
-      title: "Supervision standards vary — controls must hold in each venue",
-      body: "EU AML directives, Brazil COAF expectations and gaming-lab certification requirements impose different evidence thresholds. Octus builds controls that survive the strictest reviewer in the stack, whether that is a bank, a regulator or a certification body.",
+      title: "Controls must hold for each supervisor in the stack",
+      body: "Banks, regulators and certification bodies apply different evidence thresholds. Octus builds AML, privacy and governance frameworks that remain operable under the reviewers that matter for the licences and payment rails in scope.",
     },
     practiceLead: { name: "Esther Vendrami", title: "International Regulatory & Compliance Lead" },
     leadership: [
-      { name: "Rubio Teixeira", title: "Founder & CEO — strategic oversight" },
-      { name: "Maria Cristina", title: "Operations Coordination" },
+      { name: "Rubio Teixeira", title: "Founder & CEO", scopeLabel: "Executive and strategic oversight" },
+      { name: "Esther Vendrami", title: "International Regulatory & Compliance Lead", scopeLabel: "International compliance operations" },
+      { name: "Maria Cristina", title: "Operations Coordination", scopeLabel: "Client and delivery coordination" },
     ],
     connections: [
       { areaName: "Regulatory Structuring", href: "/solutions/regulatory-structuring", reason: "Compliance evidence is part of the licensing pathway." },
@@ -97,19 +104,18 @@ const ENRICHMENT: Record<string, AreaEnrichment> = {
       { label: "Brazil", href: "/brazil" },
       { label: "Malta", href: "/jurisdictions/malta" },
       { label: "Portugal", href: "/jurisdictions/portugal" },
-      { label: "All jurisdictions", href: "/jurisdictions" },
     ],
-    deliveryModel: "Embedded compliance function or targeted framework builds — owned operations, not paper packs that fail under audit.",
+    deliveryModel: "Embedded compliance function or targeted framework builds that remain operable under audit.",
   },
   "AREA-LEG": {
     multiJurisdiction: {
-      title: "Legal coherence across borders requires counsel in each venue",
-      body: "Contractual architecture must align with local licensing conditions, corporate law and banking expectations in every jurisdiction where the group operates. Octus coordinates frameworks and counsel sequencing; legal advice is delivered through qualified counsel in the relevant jurisdiction.",
+      title: "Contracts and opinions must travel with the licences",
+      body: "Contractual architecture, opinions and counsel sequencing need to align with licensing conditions, corporate law and banking expectations in each venue. Octus coordinates frameworks; advice in each jurisdiction is delivered through qualified local counsel.",
     },
     practiceLead: { name: "Rodrigo Coelho Lopes", title: "Legal Architecture Lead" },
     leadership: [
-      { name: "Rubio Teixeira", title: "Founder & CEO — strategic oversight" },
-      { name: "Rodrigo Coelho Lopes", title: "Legal Architecture Lead" },
+      { name: "Rubio Teixeira", title: "Founder & CEO", scopeLabel: "Executive and strategic oversight" },
+      { name: "Rodrigo Coelho Lopes", title: "Legal Architecture Lead", scopeLabel: "Legal architecture coordination" },
     ],
     connections: [
       { areaName: "Corporate Structuring", href: "/solutions/corporate-structuring", reason: "Holdings and governance must match contractual layers." },
@@ -121,19 +127,18 @@ const ENRICHMENT: Record<string, AreaEnrichment> = {
       { label: "Brazil", href: "/brazil" },
       { label: "UAE", href: "/jurisdictions/uae" },
       { label: "Portugal", href: "/jurisdictions/portugal" },
-      { label: "All jurisdictions", href: "/jurisdictions" },
     ],
-    deliveryModel: "Architecture-first legal coordination — frameworks, contracts and counsel sequenced with licensing and corporate programmes.",
+    deliveryModel: "Architecture-first legal coordination of frameworks, contracts and counsel sequenced with licensing and corporate programmes.",
   },
   "AREA-CORP": {
     multiJurisdiction: {
-      title: "Group structure must survive scrutiny in every venue",
-      body: "Offshore holdings, Brazil local entities and EU operating companies face different ownership disclosure, substance and banking standards. Octus designs structures that remain explainable to regulators and banks across the full group map.",
+      title: "Group structure must stay explainable in every venue",
+      body: "Offshore holdings, Brazil local entities and European operating companies face different ownership disclosure, substance and banking standards. Octus designs structures that remain coherent across the full group map.",
     },
     practiceLead: { name: "Claudia Nery", title: "Chief Financial Officer" },
     leadership: [
-      { name: "Rubio Teixeira", title: "Founder & CEO — strategic oversight" },
-      { name: "Claudia Nery", title: "Chief Financial Officer" },
+      { name: "Rubio Teixeira", title: "Founder & CEO", scopeLabel: "Executive and strategic oversight" },
+      { name: "Claudia Nery", title: "Chief Financial Officer", scopeLabel: "Corporate and financial architecture" },
     ],
     connections: [
       { areaName: "Regulatory Structuring", href: "/solutions/regulatory-structuring", reason: "Entity design gates licensing approval." },
@@ -145,19 +150,19 @@ const ENRICHMENT: Record<string, AreaEnrichment> = {
       { label: "Brazil", href: "/brazil" },
       { label: "Malta", href: "/jurisdictions/malta" },
       { label: "Anjouan", href: "/jurisdictions/anjouan" },
-      { label: "All jurisdictions", href: "/jurisdictions" },
     ],
-    deliveryModel: "Architecture-led formation and reorganisation — entities opened inside a designed programme, not as standalone incorporations.",
+    deliveryModel: "Architecture-led formation and reorganisation inside a designed programme.",
   },
   "AREA-PC": {
     multiJurisdiction: {
-      title: "Personal structure follows the regulated operation across borders",
-      body: "Founders and UBOs face personal banking, residency and tax questions that change with each jurisdiction where the group holds a licence. Octus coordinates personal holdings and individual readiness so personal layers do not block corporate licensing or banking.",
+      title: "Personal structure travels with the regulated operation",
+      body: "Founders and UBOs face banking, residency and tax questions that change with each jurisdiction where the group holds a licence. Octus coordinates personal holdings and individual readiness so personal layers support corporate licensing and banking.",
     },
     practiceLead: { name: "Rodrigo Coelho Lopes", title: "Legal Architecture Lead" },
     leadership: [
-      { name: "Rubio Teixeira", title: "Founder & CEO — strategic oversight" },
-      { name: "Claudia Nery", title: "Chief Financial Officer" },
+      { name: "Rubio Teixeira", title: "Founder & CEO", scopeLabel: "Executive and strategic oversight" },
+      { name: "Rodrigo Coelho Lopes", title: "Legal Architecture Lead", scopeLabel: "Private-client legal coordination" },
+      { name: "Claudia Nery", title: "Chief Financial Officer", scopeLabel: "Personal tax and finance coordination" },
     ],
     connections: [
       { areaName: "Corporate Structuring", href: "/solutions/corporate-structuring", reason: "Personal and group ownership must align." },
@@ -169,17 +174,17 @@ const ENRICHMENT: Record<string, AreaEnrichment> = {
       { label: "Portugal", href: "/jurisdictions/portugal" },
       { label: "UAE", href: "/jurisdictions/uae" },
     ],
-    deliveryModel: "Discrete personal mandates coordinated with the regulated group — ownership, residency and personal banking readiness under one relationship.",
+    deliveryModel: "Discrete personal mandates coordinated with the regulated group under one relationship.",
   },
   "AREA-REM": {
     multiJurisdiction: {
-      title: "Blockages often span jurisdictions — diagnosis must map the full stack",
-      body: "A banking rejection in one venue may trace to corporate structure in another, or to Brazil SPA conditions that were never sequenced with the international licence. Remediation starts with a structural assessment across all live jurisdictions before rebuilding.",
+      title: "Blockages often span countries",
+      body: "A banking rejection in one venue may trace to corporate structure in another, or to Brazil SPA conditions that were never sequenced with an international licence. Remediation starts with a structural assessment across live jurisdictions before rebuilding.",
     },
     practiceLead: { name: "Maria Cristina", title: "Operations Coordination" },
     leadership: [
-      { name: "Rubio Teixeira", title: "Founder & CEO — strategic oversight" },
-      { name: "Maria Cristina", title: "Operations Coordination" },
+      { name: "Rubio Teixeira", title: "Founder & CEO", scopeLabel: "Executive and strategic oversight" },
+      { name: "Maria Cristina", title: "Operations Coordination", scopeLabel: "Remediation delivery coordination" },
     ],
     connections: [
       { areaName: "Regulatory Structuring", href: "/solutions/regulatory-structuring", reason: "Licensing delay remediation." },
@@ -190,19 +195,19 @@ const ENRICHMENT: Record<string, AreaEnrichment> = {
     jurisdictions: [
       { label: "Brazil", href: "/brazil" },
       { label: "High-risk operations", href: "/markets/high-risk" },
-      { label: "All jurisdictions", href: "/jurisdictions" },
     ],
     deliveryModel: "Crisis entry and diagnostic assessment first, then sequenced repair across the workstreams that caused the blockage.",
   },
   "AREA-HUB": {
     multiJurisdiction: {
-      title: "Specialist networks are jurisdiction-specific — introductions need structure first",
-      body: "Banks, PSPs, CSPs, laboratories and local counsel evaluate the operation's structure before accepting an introduction. Octus coordinates provider identification and sequencing so counterparties see a programme, not a cold referral.",
+      title: "Providers evaluate structure before accepting an introduction",
+      body: "Banks, PSPs, CSPs, laboratories and local counsel review how the operation is built. Octus coordinates provider identification and sequencing so counterparties see a coherent programme.",
     },
     practiceLead: { name: "Esther Vendrami", title: "International Regulatory & Compliance Lead" },
     leadership: [
-      { name: "Rubio Teixeira", title: "Founder & CEO — strategic oversight" },
-      { name: "Milla Ludovico", title: "Business Development Lead — commercial coordination" },
+      { name: "Rubio Teixeira", title: "Founder & CEO", scopeLabel: "Executive and strategic oversight" },
+      { name: "Esther Vendrami", title: "International Regulatory & Compliance Lead", scopeLabel: "International network coordination" },
+      { name: "Milla Ludovico", title: "Business Development Lead", scopeLabel: "Commercial coordination" },
     ],
     connections: [
       { areaName: "Regulatory Structuring", href: "/solutions/regulatory-structuring", reason: "Market entry programmes require provider sequencing." },
@@ -215,19 +220,28 @@ const ENRICHMENT: Record<string, AreaEnrichment> = {
       { label: "Curaçao", href: "/jurisdictions/curacao" },
       { label: "UAE", href: "/jurisdictions/uae" },
       { label: "Brazil", href: "/brazil" },
-      { label: "All jurisdictions", href: "/jurisdictions" },
     ],
-    deliveryModel: "Coordinator role — identify, introduce and sequence specialists; provider acceptance remains subject to each provider's criteria.",
+    deliveryModel: "Coordinator role to identify, introduce and sequence specialists. Provider acceptance remains subject to each provider's criteria.",
   },
 };
 
 function buildFamilyView(family: ServiceFamily): AreaFamilyView {
   const placed = getServicesForFamily(family.id);
-  const deepLinks: { label: string; href: string }[] = [];
+  const deepByHref = new Map<string, { label: string; href: string }>();
 
   for (const svc of placed) {
     if (svc.recommended_route && svc.display_depth === "deep-service page") {
-      deepLinks.push({ label: svc.exact_public_name, href: svc.recommended_route });
+      const existing = deepByHref.get(svc.recommended_route);
+      if (existing) {
+        if (!existing.label.includes(svc.exact_public_name)) {
+          existing.label = `${existing.label} · ${svc.exact_public_name}`;
+        }
+      } else {
+        deepByHref.set(svc.recommended_route, {
+          label: svc.exact_public_name,
+          href: svc.recommended_route,
+        });
+      }
     }
   }
 
@@ -245,14 +259,16 @@ function buildFamilyView(family: ServiceFamily): AreaFamilyView {
         href: placedSvc?.recommended_route ?? null,
       };
     }),
-    deepLinks,
+    deepLinks: Array.from(deepByHref.values()),
   };
 }
 
 export function enrichPublicArea(area: PublicArea): EnrichedPublicArea {
   const arch = getArchitectureArea(area.id);
   const extra = ENRICHMENT[area.id];
-  const families = (arch?.families ?? []).map(buildFamilyView);
+  const families = (arch?.families ?? [])
+    .filter((f) => (f.service_ids?.length ?? 0) > 0)
+    .map(buildFamilyView);
 
   return {
     ...area,

@@ -63,7 +63,7 @@ export default function IntelligencePage() {
         titleSecondLine="Signals that inform execution."
         description="Octus Intelligence is the client-facing knowledge layer for regulated decisions: how we frame regulatory, tax, legal, compliance and operational signals, and how that framing connects to published Insights and executable structure."
         primaryCta={{ href: "/insights", label: "Explore Insights →" }}
-        secondaryCta={{ href: WHATSAPP_DISCUSS_URL, label: CTA_DISCUSS_LABEL, external: true }}
+        secondaryCta={{ href: WHATSAPP_DISCUSS_URL, label: "Discuss a specific issue", quiet: true, external: true }}
       />
 
       <section className="bg-background py-16 md:py-20">

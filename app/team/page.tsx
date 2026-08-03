@@ -30,7 +30,7 @@ const leadership: Member[] = [
     photo: "/team/rubio-teixeira.jpg",
     photoClass: "team-photo--rubio-team",
     focus:
-      "Executive ownership of regulatory structuring, international licensing and market-entry strategy for regulated operators.",
+      "Executive and strategic oversight of Octus regulatory, licensing and market-entry mandates.",
     linkedin: "https://www.linkedin.com/in/rubioteixeiraoctus/",
   },
   {
@@ -39,7 +39,7 @@ const leadership: Member[] = [
     photo: "/team/maria-cristina.jpg",
     photoClass: "team-photo--maria",
     focus:
-      "Operational coordination and client engagement across Octus regulatory, compliance and remediation mandates.",
+      "Operational coordination and client engagement across regulatory, compliance and remediation mandates.",
     linkedin: "https://www.linkedin.com/in/maria-cristina-060241b6/",
   },
 ];
@@ -51,7 +51,7 @@ const practiceLeads: Member[] = [
     photo: "/team/esther-vendrami.jpg",
     photoClass: "team-photo--esther",
     focus:
-      "International licensing, compliance operations, company formation and banking-access coordination for regulated environments.",
+      "International regulatory and licensing coordination, with compliance operations for cross-border programmes.",
     linkedin: "https://www.linkedin.com/in/esthervendrami/",
   },
   {
@@ -60,7 +60,7 @@ const practiceLeads: Member[] = [
     photo: "/team/caroline-giovanetti.jpg",
     photoClass: "team-photo--caroline",
     focus:
-      "Brazil regulatory processes, SPA/MF licensing support and administrative coordination for Brazil-facing mandates.",
+      "Brazil regulatory processes and SPA/MF licensing support for Brazil-facing mandates.",
     linkedin: "https://www.linkedin.com/in/caroline-cubas-giovanetti-400820144/",
   },
   {
@@ -69,7 +69,7 @@ const practiceLeads: Member[] = [
     photo: "/team/rodrigo-lopes.jpg",
     photoClass: "team-photo--rodrigo",
     focus:
-      "Legal architecture for regulatory and corporate mandates, including cross-border structure and jurisdictional risk.",
+      "Legal architecture for regulatory and corporate mandates, including cross-border structure.",
     linkedin: null,
   },
   {
@@ -78,7 +78,7 @@ const practiceLeads: Member[] = [
     photo: "/team/claudia-nery.jpg",
     photoClass: "team-photo--claudia",
     focus:
-      "Corporate and financial architecture, financial governance and group reporting for Octus mandates.",
+      "Corporate and financial architecture, financial governance and group reporting.",
     linkedin: "https://www.linkedin.com/in/claudia-nery/",
   },
 ];
@@ -89,7 +89,7 @@ const commercial: Member = {
   photo: "/team/milla-ludovico.jpg",
   photoClass: "team-photo--milla",
   focus:
-    "New business development, client intake and commercial coordination with the founding team on new mandates.",
+    "New business development, client intake and commercial coordination on new mandates.",
   linkedin: "https://www.linkedin.com/in/milla-ludovico-6a9945a2/",
 };
 

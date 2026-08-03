@@ -15,6 +15,7 @@ export type ServiceFamily = {
   area_hub: string;
   service_ids: string[];
   display_depth: string;
+  capability_notes?: string[];
 };
 
 export type ArchitectureArea = {
@@ -49,11 +50,11 @@ export type ServiceArchitecture = {
 };
 
 export const SERVICE_ARCHITECTURE = architectureJson as ServiceArchitecture;
-export const SERVICE_PLACEMENT = placementJson as {
+export const SERVICE_PLACEMENT = placementJson as unknown as {
   version: string;
   date: string;
   supersedes: string;
-  public_areas: { id: string; name: string; hub: string }[];
+  public_areas?: { id: string; name: string; hub: string }[];
   family_count: number;
   service_count: number;
   services: PlacedService[];
@@ -77,7 +78,21 @@ export function getServicesForFamily(familyId: string): PlacedService[] {
 }
 
 export function getDeepServicesForArea(areaId: string): PlacedService[] {
-  return SERVICE_PLACEMENT.services.filter(
+  const rows = SERVICE_PLACEMENT.services.filter(
     (s) => s.primary_area_id === areaId && s.display_depth === "deep-service page" && s.recommended_route
   );
+  const byRoute = new Map<string, PlacedService>();
+  for (const row of rows) {
+    const route = row.recommended_route!;
+    const existing = byRoute.get(route);
+    if (!existing) {
+      byRoute.set(route, row);
+    } else if (!existing.exact_public_name.includes(row.exact_public_name)) {
+      byRoute.set(route, {
+        ...existing,
+        exact_public_name: `${existing.exact_public_name} · ${row.exact_public_name}`,
+      });
+    }
+  }
+  return Array.from(byRoute.values());
 }

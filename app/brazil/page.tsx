@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 import { CtaLink } from "../../components/system/CtaButton";
-import OctusEditorialDivider from "../../components/system/OctusEditorialDivider";
+import DarkHeroAtmosphere from "../../components/system/DarkHeroAtmosphere";
 import { pageSocialMeta } from "../../lib/pageMeta";
 
 export const metadata = pageSocialMeta({
@@ -11,20 +11,87 @@ export const metadata = pageSocialMeta({
   path: "/brazil",
 });
 
-const areaLinks = [
-  { label: "Regulatory Structuring", href: "/solutions/regulatory-structuring" },
-  { label: "Compliance & Risk", href: "/solutions/compliance-risk" },
-  { label: "Corporate Structuring", href: "/solutions/corporate-structuring" },
-  { label: "Banking & Payments", href: "/solutions/banking-payments-infrastructure" },
-  { label: "Remediation & Readiness", href: "/solutions/remediation-readiness" },
+const brazilInsights = [
+  {
+    title: "New SPA/MF Normative Instruction on Fixed-Odds Betting: Post-Licensing Obligations",
+    date: "17 Dec 2025",
+    href: "/insights/new-spa-mf-normative-instruction-fixed-odds-betting",
+  },
+  {
+    title: "Senate Approves PLP 128/2025: Fiscal Tightening, Higher Taxation on Bets, Fintechs and JCP",
+    date: "19 Dec 2025",
+    href: "/insights/senate-approves-plp-128-2025-tightens-fiscal-policy-bets-fintechs",
+  },
+  {
+    title: "Centralised Self-Exclusion Platform: Key Changes for Operators and Bettors",
+    date: "15 Dec 2025",
+    href: "/insights/centralised-self-exclusion-platform-key-changes-operators-bettors",
+  },
+  {
+    title: "Annual Recertification of Betting Platforms: What Changes Under SPA/MF New Guidelines",
+    date: "26 Sep 2025",
+    href: "/insights/annual-recertification-betting-platforms-spa-mf-new-guidelines",
+  },
+  {
+    title: "STF Suspends Compulsory Blocking of Bolsa Família and BPC Beneficiaries' Betting Accounts",
+    date: "19 Dec 2025",
+    href: "/insights/stf-suspends-blocking-of-bolsa-familia-bpc-betting-accounts",
+  },
+];
+
+const pathwayCards = [
+  {
+    title: "Operator authorisation",
+    body: "SPA/MF licensing and pathway design for operators entering Brazil under Laws 13,756/2018 and 14,790/2023 and related ordinances.",
+  },
+  {
+    title: "B2B and supplier framework",
+    body: "Platform providers, laboratories and B2B suppliers prepare for recognition and registration pathways under the evolving SPA/MF agenda, sequenced with operator programmes.",
+  },
+  {
+    title: "Technical and certification dependencies",
+    body: "Technical certification and laboratory readiness coordinated with licensing timelines and annual recertification obligations where they apply.",
+  },
+  {
+    title: "Corporate and local presence",
+    body: "CNPJ registration, local corporate structure and alignment with international group architecture designed for regulatory and banking scrutiny.",
+  },
+];
+
+const operatingDeps = [
+  {
+    title: "Regulatory",
+    body: "Pathway design, SPA/MF coordination and Brazil-facing filings.",
+    href: "/solutions/regulatory-structuring",
+  },
+  {
+    title: "Corporate",
+    body: "Local entities, holdings and group coherence.",
+    href: "/solutions/corporate-structuring",
+  },
+  {
+    title: "Compliance and AML",
+    body: "LGPD, AML/KYC and operable compliance controls.",
+    href: "/solutions/compliance-risk",
+  },
+  {
+    title: "Banking and Payments",
+    body: "Payment infrastructure and institutional onboarding readiness.",
+    href: "/solutions/banking-payments-infrastructure",
+  },
+  {
+    title: "Tax and Finance",
+    body: "Corporate tax and finance coordination integrated with structuring.",
+    href: "/solutions/corporate-structuring",
+  },
 ];
 
 export default function BrazilPage() {
   return (
     <main>
-      {/* Who this is for */}
-      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
-        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="octus-dark-hero surface-dark relative flex min-h-[70vh] flex-col justify-center overflow-hidden pt-28 pb-16 md:min-h-[80vh] md:pt-32 md:pb-24">
+        <DarkHeroAtmosphere />
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <span className="label">Brazil</span>
           <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
             Brazil&apos;s regulated market
@@ -33,7 +100,7 @@ export default function BrazilPage() {
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/60">
             For international operators, Brazil-facing suppliers and groups building local presence
-            under SPA/MF — Octus coordinates regulatory, corporate, compliance and banking
+            under SPA/MF. Octus coordinates regulatory, corporate, compliance and banking
             workstreams inside Brazilian processes since 2019.
           </p>
           <div className="mt-12">
@@ -42,130 +109,113 @@ export default function BrazilPage() {
             </CtaLink>
           </div>
         </div>
+        <div className="octus-dark-hero__seam" aria-hidden="true" />
       </section>
 
-      <section className="bg-background py-24 md:py-32">
+      <section className="bg-background py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          {/* Regulatory entry */}
-          <div className="mb-16">
-            <span className="label">Regulatory entry</span>
-            <h2 className="heading-section mt-4 max-w-2xl">Entering Brazil as a regulated operator.</h2>
-            <p className="body-large mt-4 max-w-2xl text-muted-foreground">
-              International licence alone does not satisfy SPA/MF requirements. Pathway design,
-              corporate prerequisites and compliance readiness must be sequenced before filings.
-            </p>
-          </div>
+          <p className="section-label mb-3 block">Who this page is for</p>
+          <h2 className="heading-section mb-4 max-w-2xl">International clients entering or operating in Brazil.</h2>
+          <p className="body-large max-w-2xl text-muted-foreground">
+            Operators, suppliers and groups that need Brazil regulatory entry sequenced with local
+            corporate presence, compliance, banking readiness and tax/finance coordination.
+          </p>
+        </div>
+      </section>
 
-          {/* SPA/MF */}
-          <div className="mb-16 border-t border-border pt-16">
-            <span className="label">SPA / MF</span>
-            <h2 className="heading-section mt-4 max-w-2xl">Sports betting and gaming under SPA/MF.</h2>
-            <p className="body-large mt-4 max-w-2xl text-muted-foreground">
-              Licensing, recertification, B2B registration and regulatory coordination under the
-              Secretaria de Prêmios e Apostas and Ministério da Fazenda framework — coordinated
-              with corporate and compliance layers.
-            </p>
+      <section className="surface-elevated py-16 md:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <p className="section-label mb-3 block">Regulatory pathways</p>
+          <h2 className="heading-section mb-10 max-w-2xl">How Brazil-facing programmes are structured.</h2>
+          <div className="grid gap-4 md:grid-cols-2">
+            {pathwayCards.map((card) => (
+              <article key={card.title} className="rounded-sm border border-border bg-background p-6 md:p-7">
+                <h3 className="mb-3 font-heading text-lg font-semibold text-foreground">{card.title}</h3>
+                <p className="font-sans text-sm leading-relaxed text-muted-foreground">{card.body}</p>
+              </article>
+            ))}
           </div>
+          <p className="mt-8 max-w-3xl font-sans text-sm leading-relaxed text-muted-foreground">
+            Where supplier recognition or registration frameworks remain under regulatory
+            development, Octus prepares programmes against anticipated requirements and the ongoing
+            SPA/MF agenda. Mandatory final registration language is used only where a currently
+            effective norm supports it.
+          </p>
+        </div>
+      </section>
 
-          {/* B2B / supplier */}
-          <div className="mb-16 border-t border-border pt-16">
-            <span className="label">B2B &amp; supplier</span>
-            <h2 className="heading-section mt-4 max-w-2xl">Supplier and B2B registration paths.</h2>
-            <p className="body-large mt-4 max-w-2xl text-muted-foreground">
-              Platform providers, laboratories and B2B suppliers face registration dependencies
-              sequenced with operator licensing programmes.
-            </p>
-          </div>
-
-          {/* Corporate / local presence */}
-          <div className="mb-16 border-t border-border pt-16">
-            <span className="label">Corporate &amp; local presence</span>
-            <h2 className="heading-section mt-4 max-w-2xl">Local entities and group coherence.</h2>
-            <p className="body-large mt-4 max-w-2xl text-muted-foreground">
-              CNPJ registration, local corporate structure and alignment with international group
-              architecture — designed for regulatory and banking scrutiny.
-            </p>
-          </div>
-
-          {/* Compliance / AML */}
-          <div className="mb-16 border-t border-border pt-16">
-            <span className="label">Compliance &amp; AML</span>
-            <h2 className="heading-section mt-4 max-w-2xl">LGPD, AML and operational compliance.</h2>
-            <p className="body-large mt-4 max-w-2xl text-muted-foreground">
-              Data protection, AML/KYC frameworks and compliance operations aligned to how the
-              Brazil operation actually runs — not paper compliance for the application pack alone.
-            </p>
-          </div>
-
-          {/* Banking / payments */}
-          <div className="mb-16 border-t border-border pt-16">
-            <span className="label">Banking &amp; payments</span>
-            <h2 className="heading-section mt-4 max-w-2xl">Payment infrastructure in Brazil.</h2>
-            <p className="body-large mt-4 max-w-2xl text-muted-foreground">
-              Payment institution structuring, Bacen coordination and banking readiness sequenced
-              with licensing and compliance — routed through{" "}
-              <Link href="/solutions/banking-payments-infrastructure" className="text-primary no-underline">
-                Banking &amp; Payments infrastructure
+      <section className="bg-background py-16 md:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <p className="section-label mb-3 block">Operating dependencies</p>
+          <h2 className="heading-section mb-4 max-w-2xl">An integrated Brazil operating system.</h2>
+          <p className="body-large mb-10 max-w-2xl text-muted-foreground">
+            Brazil workstreams connect Regulatory, Corporate, Compliance, Banking and Payments, and
+            Tax and Finance so filings, entities and payment rails stay coherent.
+          </p>
+          <div className="grid gap-0 border border-border md:grid-cols-5 md:divide-x md:divide-border">
+            {operatingDeps.map((dep) => (
+              <Link
+                key={dep.title}
+                href={dep.href}
+                className="border-b border-border p-5 no-underline last:border-b-0 hover:bg-secondary/20 md:border-b-0"
+              >
+                <h3 className="mb-2 font-sans text-sm font-semibold text-primary">{dep.title}</h3>
+                <p className="font-sans text-xs leading-relaxed text-muted-foreground">{dep.body}</p>
               </Link>
-              .
-            </p>
-          </div>
-
-          {/* Tax / finance */}
-          <div className="mb-16 border-t border-border pt-16">
-            <span className="label">Tax &amp; finance</span>
-            <h2 className="heading-section mt-4 max-w-2xl">Corporate and operational finance coordination.</h2>
-            <p className="body-large mt-4 max-w-2xl text-muted-foreground">
-              Corporate tax planning and finance coordination for Brazil-facing groups — integrated
-              with corporate structuring, not standalone tax advice.
-            </p>
-          </div>
-
-          {/* Links to service areas */}
-          <div className="mb-16 border-t border-border pt-16">
-            <span className="label">Service areas</span>
-            <h2 className="heading-section mt-4 max-w-2xl">Where Brazil workstreams live.</h2>
-            <ul className="mt-6 flex list-none flex-wrap gap-2">
-              {areaLinks.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="inline-flex rounded-sm border border-border px-3 py-1.5 font-sans text-sm no-underline hover:border-primary"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Brazil Insights */}
-          <div className="border-t border-border pt-16">
-            <span className="label">Brazil Insights</span>
-            <h2 className="heading-section mt-4 max-w-2xl">Intelligence on Brazil regulation.</h2>
-            <p className="body-large mt-4 max-w-2xl text-muted-foreground">
-              Analysis and updates on SPA/MF, betting regulation and Brazil market entry — from the
-              Octus Intelligence library.
-            </p>
-            <Link
-              href="/insights"
-              className="mt-6 inline-block font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
-            >
-              Explore Insights →
-            </Link>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="surface-dark py-20 md:py-24">
+      <section className="surface-elevated py-16 md:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <p className="section-label mb-3 block">International and Brazilian structures</p>
+          <h2 className="heading-section mb-4 max-w-2xl">
+            How group architecture connects to Brazil.
+          </h2>
+          <p className="body-large max-w-2xl text-muted-foreground">
+            An international licence does not substitute for SPA/MF requirements. Octus aligns
+            overseas holdings, local Brazilian entities, compliance evidence and banking readiness
+            so Brazil entry remains explainable to regulators and institutions.
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-background py-16 md:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <p className="section-label mb-3 block">Brazil Insights</p>
+          <h2 className="heading-section mb-8 max-w-2xl">Selected analysis on Brazil regulation.</h2>
+          <ul className="list-none divide-y divide-border border-y border-border">
+            {brazilInsights.map((item) => (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  className="flex flex-col gap-1 py-5 no-underline transition-colors hover:text-primary md:flex-row md:items-baseline md:justify-between md:gap-8"
+                >
+                  <span className="font-sans text-base font-medium text-foreground">{item.title}</span>
+                  <span className="shrink-0 font-sans text-xs uppercase tracking-wider text-muted-foreground">
+                    {item.date}
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className="bg-background py-14 md:py-16">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-          <OctusEditorialDivider className="mb-10 opacity-30" />
-          <h2 className="mb-8 font-heading text-2xl font-semibold text-white md:text-3xl">
+          <h2 className="mb-3 font-heading text-xl font-semibold text-foreground md:text-2xl">
             Discuss your Brazil operation.
           </h2>
-          <CtaLink href={WHATSAPP_DISCUSS_URL} variant="on-dark" target="_blank" rel="noopener noreferrer">
+          <Link
+            href={WHATSAPP_DISCUSS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
+          >
             {CTA_DISCUSS_LABEL}
-          </CtaLink>
+          </Link>
         </div>
       </section>
     </main>

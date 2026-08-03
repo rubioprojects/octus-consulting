@@ -56,12 +56,12 @@ export const PUBLIC_AREAS: PublicArea[] = [
       {
         id: "SVC-REG-02",
         name: "iGaming licensing programme",
-        oneSentence: "We run iGaming licensing as a full programme, not a standalone filing.",
+        oneSentence: "We run iGaming licensing as a full programme coordinated with corporate and compliance readiness.",
       },
       {
         id: "SVC-REG-03",
         name: "Fintech, EMI and crypto licensing",
-        oneSentence: "We treat fintech and payments authorisation as an operable stack, not a paper exercise.",
+        oneSentence: "We treat fintech and payments authorisation as an operable stack ready for institutional scrutiny.",
       },
       {
         id: "SVC-REG-04",
@@ -288,7 +288,7 @@ export const PUBLIC_AREAS: PublicArea[] = [
       {
         id: "SVC-CORP-02",
         name: "Company formation",
-        oneSentence: "We open entities inside a designed architecture, not as a standalone incorporation shop.",
+        oneSentence: "We open entities inside a designed architecture sequenced with licensing and banking readiness.",
       },
       {
         id: "SVC-CORP-03",
