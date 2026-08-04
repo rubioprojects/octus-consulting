@@ -26,7 +26,7 @@
 | Partners / Careers | `eb03fec` (+ Careers contrast `951513c`) |
 | claim-register closeout | `8f435be` |
 | evidence + validation (this packet) | `58fa28fbe93bca909e28fa47e6d24564bab127bc` |
-| documentary stamp | _aeb629663fe18cb82d598c10ae8c59c3a5cb68c6_ |
+| documentary stamp | `aeb629663fe18cb82d598c10ae8c59c3a5cb68c6` |
 
 ## Routes
 
