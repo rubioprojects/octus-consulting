@@ -27,7 +27,7 @@ PR #17 — seven-area architecture, current routes, evidence-safe editorial rule
 | 3 | Homepage | **ACCEPTED_WITH_RESIDUAL** | Closeout accepted · residual `HOME_PUNCTUATION_RESIDUAL_001` → Phase 6 |
 | 4 | Services and service families | **ACCEPTED_WITH_BOUND_RESIDUALS** | Phase 4 a11y accepted · residuals bound |
 | 5A | Institutional and engagement | **ACCEPTED_WITH_BOUND_RESIDUALS** | Phase 5A accepted by Sol |
-| 5B | Markets / jurisdictions / Brazil | **IN_PROGRESS** | `OCTUS_MARKETS_JURISDICTIONS_GATE_*` |
+| 5B | Markets / jurisdictions / Brazil | **READY_FOR_SOL_AUDIT** | `OCTUS_MARKETS_JURISDICTIONS_GATE_READY_FOR_SOL_AUDIT` |
 | 5C | Intelligence / legal content | **BLOCKED** | — |
 | 6 | Full regression | BLOCKED | Residuals + final candidate audit |
 
@@ -117,17 +117,16 @@ Impact matrix: `services/PHASE4_SERVICES_IMPACT_MATRIX.md`
 | Bound residuals | `HOME_PUNCTUATION_RESIDUAL_001` · `GLOBAL_A11Y_REGION_RESIDUAL_001` · `AXE_INCOMPLETE_REVIEW_001` → Phase 6 |
 | Phase 5A lock | Do not modify Phase 5A application files in Phase 5B |
 
-### Phase 5B stamp (IN_PROGRESS)
+### Phase 5B stamp (READY FOR SOL AUDIT)
 
 | Field | Value |
 |---|---|
-| Status | **IN_PROGRESS** — AUTHORIZED by Sol |
+| Status | `OCTUS_MARKETS_JURISDICTIONS_GATE_READY_FOR_SOL_AUDIT` |
 | starting_HEAD | `9b5ce63501e48e4da0440ae5f3f59f776d2bf955` |
-| Inventory | `markets-jurisdictions/PHASE5B_ROUTE_INVENTORY.md` |
-| Impact matrix | `markets-jurisdictions/PHASE5B_IMPACT_MATRIX.md` |
-| Fact/source register | `markets-jurisdictions/PHASE5B_FACT_AND_SOURCE_REGISTER.md` |
-| Claim register | `markets-jurisdictions/PHASE5B_CLAIM_REGISTER.md` |
-| Mandatory routes | 13 (5 markets + 7 jurisdictions + Brazil) |
+| application_code_sha | `eb37d6f96db6bda418e4f8132cbcda6b6731deaf` |
+| immutable_preview | https://octus-consulting-jhedve7t0-axle1.vercel.app |
+| deployment_id | `dpl_HpNbyjdhxuLLrrcpitB4DA1EJ2TX` |
+| screenshots | 312 · validation PASS |
 | Phase 5C / 6 | BLOCKED |
 | Rubio rescreen | BLOCKED |
 | Merge / production / rebase | forbidden |

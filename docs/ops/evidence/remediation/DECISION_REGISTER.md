@@ -292,3 +292,19 @@
 | Stop | Undocumented shared-component mutation → BLOCKED |
 | Status | BINDING |
 
+## D-025 — Phase 5B Markets/Jurisdictions/Brazil gate ready for Sol audit
+
+| Field | Value |
+|---|---|
+| application_code_sha | `eb37d6f96db6bda418e4f8132cbcda6b6731deaf` |
+| evidence_commit | `97e5e048fe50f4e30ef3236e022bf51b29cb7549` |
+| immutable_preview | https://octus-consulting-jhedve7t0-axle1.vercel.app |
+| deployment_id | `dpl_HpNbyjdhxuLLrrcpitB4DA1EJ2TX` |
+| validation | PASS (`PHASE5B_VALIDATION.json`) |
+| screenshots | 312 |
+| Axe critical/serious | 0 / 0 |
+| Bound residuals | preserved |
+| terminal | `OCTUS_MARKETS_JURISDICTIONS_GATE_READY_FOR_SOL_AUDIT` |
+| PHASE_5C / 6 / Rubio | BLOCKED |
+| Merge / production / rebase | forbidden |
+
