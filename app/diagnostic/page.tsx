@@ -82,9 +82,15 @@ export default function DiagnosticPage() {
             </a>
             .
           </p>
-          <p className="body-text text-muted-foreground">
-            Octus engages through qualified conversations, not mass lead-capture forms.
-          </p>
+          <div className="rounded-sm border border-border bg-secondary/20 p-5">
+            <p className="section-label mb-2 block">Privacy and sensitive information</p>
+            <p className="body-text text-muted-foreground">
+              Diagnostic intake starts as a structured conversation by WhatsApp or email. Do not send
+              passwords, full identity documents, full account credentials or other highly sensitive
+              material in the first message. Share only what is needed to describe the blockage and
+              operating context. Octus does not run a mass lead-capture form on this page.
+            </p>
+          </div>
         </div>
       </section>
     </main>

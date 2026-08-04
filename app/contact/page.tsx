@@ -86,13 +86,13 @@ export default function ContactPage() {
                   rel="noopener noreferrer"
                   className="font-sans text-sm font-medium text-primary no-underline hover:underline"
                 >
-                  {CTA_DISCUSS_LABEL}
+                  Continue on WhatsApp →
                 </a>
                 <a
                   href={MAILTO_DISCUSS}
                   className="font-sans text-sm font-medium text-primary no-underline hover:underline"
                 >
-                  {CTA_EMAIL_LABEL}
+                  Write to {OCTUS_EMAIL}
                 </a>
               </div>
             </article>
