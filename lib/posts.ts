@@ -741,15 +741,15 @@ The extension of responsibility to advertising agents and influencers: already s
     title: "Brazil to Implement Registration Requirement for B2B Providers in the Betting and iGaming Market",
     date: "2025-01-29",
     category: "Brazil Regulatory",
-    excerpt: "Brazil's SPA Secretary signalled at ICE Barcelona in January 2025 that a mandatory registration mechanism for B2B providers was intended. The measure has since moved through the regulatory agenda to a public consultation on a draft ordinance that closed on 23 March 2026. As at the 4 August 2026 review of this article, publication of a final ordinance is not confirmed here.",
+    excerpt: "Brazil's SPA Secretary signalled at ICE Barcelona in January 2025 that a mandatory registration mechanism for B2B providers was intended. The measure has since moved through the regulatory agenda to a public consultation on a draft ordinance, opened under Aviso de Consulta Pública SPA/MF nº 1/2026 and completed over the period 4 February to 23 March 2026. As at the 4 August 2026 review of this article, a final binding ordinance is not confirmed as published.",
     content: `**Status note, reviewed 4 August 2026.** This article was first published on 29 January 2025 to report a statement of intent, not a rule. Because the distinction matters for planning, the status is set out in stages:
 
 - **Announcement (January 2025):** the Secretary of Prizes and Betting signalled at ICE Barcelona that a B2B registration mechanism was intended. A statement at an industry event creates no obligation.
 - **Regulatory agenda:** B2B regulation was included in the SPA/MF regulatory agenda for the 2025/2026 biennium, which set it as a work item with no binding effect on providers.
-- **Public consultation (reported February to March 2026):** the SPA opened a public consultation on a draft ordinance covering B2B suppliers. The consultation was reported to have closed on 23 March 2026. A draft under consultation is a proposal and may change materially or be withdrawn.
-- **Final rule:** as at the date of this review, publication of a final ordinance and any commencement or transition dates are **not confirmed in this article**. Octus has not verified a publication date and does not assert one.
+- **Public consultation (completed):** the SPA opened a public consultation on a draft ordinance covering B2B suppliers under **Aviso de Consulta Pública SPA/MF nº 1/2026**. The consultation ran from **4 February 2026 to 23 March 2026** and is **completed**. The consultation record is hosted on the Brasil Participativo platform under the /processes/B2B process page. A draft under consultation is a proposal and may change materially or be withdrawn.
+- **Final rule:** as at the 4 August 2026 review of this article, a **final binding ordinance is not confirmed as published**, and no commencement or transition dates are confirmed here. Octus has not verified a publication date and does not assert one.
 
-Providers should verify the current position directly against primary sources: the Secretariat of Prizes and Betting pages on gov.br, the Diário Oficial da União for any published ordinance, and the Brasil Participativo platform for the consultation record and contributions received.
+Providers should verify the current position directly against primary sources: the Secretariat of Prizes and Betting pages on gov.br, the Diário Oficial da União for any published ordinance, and the Brasil Participativo /processes/B2B page for the consultation record and contributions received.
 
 The remainder of this article is the original January 2025 report, retained for context.
 
@@ -934,7 +934,7 @@ This regulation represents a significant advance in the structuring and security
   },
   {
     slug: "why-licensing-fails-post-approval",
-    title: "Why Licensing Fails Post-Approval | Octus Consulting",
+    title: "Why Licensing Fails Post-Approval",
     date: "2026-03-31",
     category: "Regulatory",
     excerpt:
@@ -982,8 +982,7 @@ The licence gets you through the door. The structure determines whether you stay
   },
   {
     slug: "banking-for-high-risk-operations",
-    title:
-      "Banking for High-Risk Operations: Why Structure Matters More Than Relationships. Octus Consulting",
+    title: "Banking for High-Risk Operations: Why Structure Matters More Than Relationships",
     date: "2026-03-31",
     category: "Banking",
     excerpt:
@@ -1032,7 +1031,7 @@ When the structure is sound, banking becomes a realistic conversation. When it i
   },
   {
     slug: "mica-what-operators-need-to-do",
-    title: "MiCA: What Crypto Operators Actually Need to Do | Octus Consulting",
+    title: "MiCA: What Crypto Operators Actually Need to Do",
     date: "2026-03-31",
     category: "Crypto",
     excerpt:
@@ -1059,19 +1058,21 @@ The application is not a registration form. It is a regulatory submission that i
 
 Minimum own funds are set by class in Annex IV of the Regulation rather than as one figure for all applicants. Annex IV sets Class 1 at EUR 50,000 for services such as reception and transmission of orders, execution of orders, placing, transfer services, advice and portfolio management; Class 2 at EUR 125,000 for custody and administration on behalf of clients and for exchange of crypto-assets for funds or for other crypto-assets; and Class 3 at EUR 150,000 for operating a trading platform. Article 67 then requires prudential safeguards of at least the higher of the applicable Annex IV amount or one quarter of the preceding year's fixed overheads, so the Annex figure is a floor rather than the full calculation. Confirm the applicable class against the current Annex IV text on EUR-Lex before budgeting.
 
-The corporate entity must be established in an EU Member State with effective management and decision-making on-site. Governance structures must be defined, with clear reporting lines and accountability. The compliance function must be operational rather than merely documented: supervisors examine whether AML and KYC controls, transaction monitoring and suspicious activity reporting function in practice.
+Establishment is governed by Article 59 of the Regulation, which sets three conditions on the applicant entity: a registered office in a Member State in which it carries out at least part of its crypto-asset services; a place of effective management in the Union; and at least one director resident in the Union. Those are the conditions in the text on EUR-Lex and they should be read there rather than in summaries. There is no MiCA-wide requirement that all decision-making be conducted on-site in the home Member State. Individual competent authorities may apply their own local substance expectations to an application, but that is national add-on commentary rather than a condition of the Regulation, and it has to be confirmed against the position of the specific authority. Governance structures must be defined, with clear reporting lines and accountability. The compliance function must be operational rather than merely documented: supervisors examine whether AML and KYC controls, transaction monitoring and suspicious activity reporting function in practice.
 
 **The fragmentation problem.**
 
 Despite MiCA's harmonisation objective, implementation varies across Member States. Transitional measures differed. Regulatory interpretation differs. Application processing speed differs. An applicant that satisfies one national authority may face different expectations from another. The choice of home Member State is strategic rather than administrative.
 
-Passporting, the ability to operate across the EU from a single authorisation, is the principal advantage. But passporting depends on the home state authorisation being robust. Thin applications in more permissive jurisdictions tend to create problems once the firm operates into stricter markets.
+Passporting, the ability to operate across the EU from a single authorisation, is the principal advantage, and it runs from the authorisation granted by the home competent authority.
+
+**Octus operational commentary, not empirical evidence.** In the files we have worked on, an application that is thinly evidenced in a more permissive jurisdiction has tended to generate further questions when the firm subsequently operates into stricter markets. That is a description of our own casework and not a measured effect. We are not aware of published data establishing that jurisdiction choice produces defined supervisory outcomes, and we do not assert one.
 
 **What most operators get wrong.**
 
 They treat CASP authorisation as an extension of VASP registration. VASP registration under the national regimes was largely an AML process. MiCA authorisation is a financial services licensing regime with prudential requirements, consumer protection obligations and ongoing supervisory expectations.
 
-Firms that approached MiCA with retrofitted AML, minimal governance and template policies have generally either failed the application or drawn supervisory attention in the first cycle.
+**Octus operational commentary, not empirical evidence.** Where we have seen MiCA approached with retrofitted AML, minimal governance and template policies, those submissions are the ones that have absorbed the most remediation work before they could be filed with any confidence. That is our own experience of preparing applications. Octus holds no dataset on application outcomes across Member States and makes no general claim about whether such firms fail applications or draw supervisory attention.
 
 **Where this leaves firms now.**
 
@@ -1088,11 +1089,11 @@ The transitional route has closed at its outer limit. The remaining questions ar
   },
   {
     slug: "curacao-reform-what-changes",
-    title: "Curaçao Reform: What Actually Changes for Operators | Octus Consulting",
+    title: "Curaçao Reform: What Actually Changes for Operators",
     date: "2026-03-31",
     category: "Jurisdictions",
     excerpt:
-      "Curaçao's move from the master and sublicence model to direct licensing under the LOK and the Curaçao Gaming Authority is now the operating framework. Transitional arrangements were reported to have ended in October 2025. This is what direct licensing means for structure, compliance and banking.",
+      "Curaçao's move from the master and sublicence model to direct licensing under the LOK and the Curaçao Gaming Authority is now the operating framework. The CGA announcement of 25 September 2025, End of Orange Digital Seal Usage, set the end of orange digital seal usage as effective 15 October 2025. This is what direct licensing means for structure, compliance and banking.",
     content: `### Curaçao Reform: What Actually Changes for Operators
 
 Direct licensing is the framework operators are working within. The master and sublicence model is history, and structures built for it do not carry over.
@@ -1101,7 +1102,7 @@ Curaçao operated under a master and sublicence system for roughly two decades. 
 
 This was not a cosmetic update. It changed how Curaçao-licensed operations are structured, governed and supervised.
 
-**Note on transitional arrangements.** Transitional and interim arrangements for legacy sublicensees, commonly referred to in the market as the orange seal arrangements, were reported in CGA transition communications and market coverage to have ended on 15 October 2025. Octus reproduces that as reported and attributed, not as a verified regulatory finding. Operators should confirm the current position, and their own status, on the CGA portal and in direct correspondence with the regulator. Specific article numbers of the LOK are not cited here, and any provision relied on should be read in the official text rather than in secondary summaries.
+**Note on transitional arrangements.** The end date for the orange digital seal is stated by the regulator itself. The Curaçao Gaming Authority published an announcement dated 25 September 2025, End of Orange Digital Seal Usage, which set the end of orange digital seal usage as effective 15 October 2025. That announcement is published by the CGA on its licensee portal at portal.gamingcontrolcuracao.org, and the date is attributed to that publication rather than to industry reporting. Operators should confirm the current position, and their own status, on the CGA portal and in direct correspondence with the regulator. Specific article numbers of the LOK are not cited here, and any provision relied on should be read in the official text rather than in secondary summaries.
 
 **What the framework requires.**
 
@@ -1142,8 +1143,7 @@ Both are legitimate paths. Neither works without structural preparation. Upgradi
   },
   {
     slug: "compliance-as-a-service-vs-internal-teams",
-    title:
-      "Compliance-as-a-Service vs Internal Teams: When Outsourcing Makes Sense. Octus Consulting",
+    title: "Compliance-as-a-Service vs Internal Teams: When Outsourcing Makes Sense",
     date: "2026-03-31",
     category: "Compliance",
     excerpt:
