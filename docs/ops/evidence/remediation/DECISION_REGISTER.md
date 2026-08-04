@@ -85,8 +85,8 @@
 | P3 | Homepage remediation | 3 — ACCEPTED_WITH_RESIDUAL |
 | P4 | Services families | 4 — ACCEPTED_WITH_BOUND_RESIDUALS |
 | P5A | Institutional / engagement | 5A — ACCEPTED_WITH_BOUND_RESIDUALS |
-| P5B | Markets / jurisdictions / Brazil | 5B — IN_PROGRESS |
-| P5C | Intelligence / legal | 5C — BLOCKED |
+| P5B | Markets / jurisdictions / Brazil | 5B — ACCEPTED_WITH_BOUND_RESIDUALS |
+| P5C | Intelligence / Insights / Legal | 5C — IN_PROGRESS |
 | P6 | Full regression (bound residuals) | 6 — BLOCKED |
 
 ## D-009 — Phase 2 global system accepted
@@ -305,6 +305,32 @@
 | Axe critical/serious | 0 / 0 |
 | Bound residuals | preserved |
 | terminal | `OCTUS_MARKETS_JURISDICTIONS_GATE_READY_FOR_SOL_AUDIT` |
-| PHASE_5C / 6 / Rubio | BLOCKED |
+| PHASE_5C / 6 / Rubio | BLOCKED (at 5B closeout) |
 | Merge / production / rebase | forbidden |
+
+## D-026 — Phase 5B accepted with bound residuals; Phase 5C authorized
+
+| Field | Value |
+|---|---|
+| PHASE_5B | ACCEPTED_WITH_BOUND_RESIDUALS |
+| accepted_phase5b_evidence_head | `cee3e907069542b14c85bec56769dc9549b4674c` |
+| accepted_phase5b_application_sha | `eb37d6f96db6bda418e4f8132cbcda6b6731deaf` |
+| immutable_preview | https://octus-consulting-jhedve7t0-axle1.vercel.app |
+| deployment_id | `dpl_HpNbyjdhxuLLrrcpitB4DA1EJ2TX` |
+| Bound residuals | `HOME_PUNCTUATION_RESIDUAL_001` · `GLOBAL_A11Y_REGION_RESIDUAL_001` · `AXE_INCOMPLETE_REVIEW_001` |
+| PHASE_5C | AUTHORIZED · IN_PROGRESS |
+| PHASE_6 | BLOCKED |
+| Rubio rescreen | BLOCKED |
+| Merge / production / rebase | forbidden |
+| Inventory | `intelligence-legal/PHASE5C_ROUTE_INVENTORY.md` |
+| Impact matrix | `intelligence-legal/PHASE5C_IMPACT_MATRIX.md` |
+
+## D-027 — Phase 5C shared-component freeze
+
+| Field | Value |
+|---|---|
+| Decision | Do not edit PageHero, Nav, layout, CookieBanner, WhatsApp, global tokens, Homepage, Team, Services, Phase 5A, or Phase 5B pages |
+| Allowed | `app/intelligence/**`, `app/insights/**`, legal utility pages, `app/not-found.tsx`, Insights SoT `lib/posts.ts` (+ Insights-only enrichment libs), Phase 5C evidence |
+| Stop | Undocumented shared-component mutation → BLOCKED |
+| Status | BINDING |
 

@@ -27,8 +27,8 @@ PR #17 — seven-area architecture, current routes, evidence-safe editorial rule
 | 3 | Homepage | **ACCEPTED_WITH_RESIDUAL** | Closeout accepted · residual `HOME_PUNCTUATION_RESIDUAL_001` → Phase 6 |
 | 4 | Services and service families | **ACCEPTED_WITH_BOUND_RESIDUALS** | Phase 4 a11y accepted · residuals bound |
 | 5A | Institutional and engagement | **ACCEPTED_WITH_BOUND_RESIDUALS** | Phase 5A accepted by Sol |
-| 5B | Markets / jurisdictions / Brazil | **READY_FOR_SOL_AUDIT** | `OCTUS_MARKETS_JURISDICTIONS_GATE_READY_FOR_SOL_AUDIT` |
-| 5C | Intelligence / legal content | **BLOCKED** | — |
+| 5B | Markets / jurisdictions / Brazil | **ACCEPTED_WITH_BOUND_RESIDUALS** | Accepted by Sol |
+| 5C | Intelligence / Insights / Legal utility | **IN_PROGRESS** | `OCTUS_INTELLIGENCE_LEGAL_GATE_READY_FOR_SOL_AUDIT` (target) |
 | 6 | Full regression | BLOCKED | Residuals + final candidate audit |
 
 ### Phase 1 acceptance stamp
@@ -117,17 +117,30 @@ Impact matrix: `services/PHASE4_SERVICES_IMPACT_MATRIX.md`
 | Bound residuals | `HOME_PUNCTUATION_RESIDUAL_001` · `GLOBAL_A11Y_REGION_RESIDUAL_001` · `AXE_INCOMPLETE_REVIEW_001` → Phase 6 |
 | Phase 5A lock | Do not modify Phase 5A application files in Phase 5B |
 
-### Phase 5B stamp (READY FOR SOL AUDIT)
+### Phase 5B stamp (ACCEPTED_WITH_BOUND_RESIDUALS)
 
 | Field | Value |
 |---|---|
-| Status | `OCTUS_MARKETS_JURISDICTIONS_GATE_READY_FOR_SOL_AUDIT` |
-| starting_HEAD | `9b5ce63501e48e4da0440ae5f3f59f776d2bf955` |
-| application_code_sha | `eb37d6f96db6bda418e4f8132cbcda6b6731deaf` |
+| Status | **ACCEPTED_WITH_BOUND_RESIDUALS** by Sol |
+| accepted Phase 5B evidence HEAD | `cee3e907069542b14c85bec56769dc9549b4674c` |
+| accepted Phase 5B application SHA | `eb37d6f96db6bda418e4f8132cbcda6b6731deaf` |
 | immutable_preview | https://octus-consulting-jhedve7t0-axle1.vercel.app |
 | deployment_id | `dpl_HpNbyjdhxuLLrrcpitB4DA1EJ2TX` |
 | screenshots | 312 · validation PASS |
-| Phase 5C / 6 | BLOCKED |
+| Bound residuals | `HOME_PUNCTUATION_RESIDUAL_001` · `GLOBAL_A11Y_REGION_RESIDUAL_001` · `AXE_INCOMPLETE_REVIEW_001` → Phase 6 |
+| Phase 5B lock | Do not modify markets/jurisdictions/brazil application files in Phase 5C |
+
+### Phase 5C stamp (IN_PROGRESS)
+
+| Field | Value |
+|---|---|
+| Status | **IN_PROGRESS** — authorized by Sol |
+| starting_HEAD | `cee3e907069542b14c85bec56769dc9549b4674c` |
+| Inventory | `intelligence-legal/PHASE5C_ROUTE_INVENTORY.md` |
+| Impact matrix | `intelligence-legal/PHASE5C_IMPACT_MATRIX.md` |
+| Fact/claim register | `intelligence-legal/PHASE5C_FACT_AND_CLAIM_REGISTER.md` |
+| Content register | `intelligence-legal/PHASE5C_CONTENT_REGISTER.md` |
+| Phase 6 | BLOCKED |
 | Rubio rescreen | BLOCKED |
 | Merge / production / rebase | forbidden |
 
@@ -154,6 +167,8 @@ Impact matrix: `services/PHASE4_SERVICES_IMPACT_MATRIX.md`
 - No merge · no production · no rebase · no new PR  
 - No preview return to Rubio  
 - No `READY_FOR_RUBIO_RESCREEN`  
-- No Phase 5C / 6 until Sol accepts Phase 5B  
-- Do not resolve bound residuals in Phase 5B  
+- No Phase 6 until Sol accepts Phase 5C  
+- Do not resolve bound residuals in Phase 5C  
 - Do not claim `READY_FOR_RUBIO_RESCREEN`  
+- Do not send preview to Rubio  
+
