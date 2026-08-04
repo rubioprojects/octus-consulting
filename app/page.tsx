@@ -35,7 +35,7 @@ const areaRows = PUBLIC_AREAS.map((area) => ({
 }));
 
 export const metadata = pageSocialMeta({
-  title: "Premium Execution for Regulated Operations",
+  title: "Octus Consulting | Regulatory, Compliance and International Structuring",
   description:
     "Octus structures, coordinates and operates the work behind regulated businesses across licensing, compliance, corporate structure, remediation and specialist networks.",
   path: "/",
@@ -68,33 +68,17 @@ export default function HomePage() {
             cost is real. Octus diagnoses the failure and rebuilds the sequence that makes the
             operation workable again.
           </p>
-          <div className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
-            <CtaLink
-              href={WHATSAPP_DISCUSS_URL}
-              variant="on-dark"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {CTA_DISCUSS_LABEL}
+          <div className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:flex-wrap sm:items-center sm:gap-6">
+            <CtaLink href="/solutions" variant="on-dark">
+              Explore services
             </CtaLink>
-            <CtaLink href="/solutions" variant="on-dark-secondary">
-              Explore services →
-            </CtaLink>
-            <span className="hidden sm:inline-flex">
-              <CtaLink href="/how-we-engage" variant="on-dark-secondary">
-                See how we work →
-              </CtaLink>
-            </span>
-          </div>
-          <p className="mt-5 hidden font-sans text-sm text-[color:var(--text-muted-on-dark)] sm:block">
-            Prefer a structured assessment?{" "}
             <Link
-              href={ASSESS_PATH}
-              className="text-[color:var(--text-secondary-on-dark)] underline-offset-4 transition-colors hover:text-white hover:underline"
+              href="/how-we-engage"
+              className="font-sans text-sm font-medium text-[color:var(--text-secondary-on-dark)] no-underline underline-offset-4 transition-colors hover:text-white hover:underline"
             >
-              Request a diagnostic →
+              How we engage
             </Link>
-          </p>
+          </div>
         </div>
         <div className="octus-dark-hero__seam" aria-hidden="true" />
       </section>
@@ -114,7 +98,7 @@ export default function HomePage() {
               <span className="mt-2 font-sans text-sm text-muted-foreground">jurisdiction work</span>
             </div>
             <div className="flex flex-col items-center text-center sm:border-r sm:border-border">
-              <span className="editorial-numeral editorial-numeral--sm">2019</span>
+              <span className="editorial-numeral editorial-numeral--sm editorial-numeral--year">2019</span>
               <span className="mt-2 font-sans text-sm text-muted-foreground">Operating since</span>
             </div>
             <div className="flex flex-col items-center text-center">
@@ -124,8 +108,21 @@ export default function HomePage() {
           </div>
           <p className="mx-auto mt-10 max-w-xl text-center font-sans text-sm leading-relaxed text-muted-foreground">
             Coordinated work across regulatory, compliance, legal, corporate, private client,
-            remediation and international programmes. This is operational proof, not a
-            certificate wall.
+            remediation and international programmes.
+          </p>
+        </div>
+      </section>
+
+      {/* Confidentiality — single restrained institutional statement */}
+      <section className="border-b border-border bg-background py-14 md:py-16">
+        <div className="mx-auto w-full max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+          <p className="section-label mb-4 block">Confidential by design</p>
+          <h2 className="heading-section mb-4">Confidentiality is part of the mandate.</h2>
+          <p className="body-large text-muted-foreground">
+            Octus supports operators, suppliers and infrastructure providers across regulated and
+            high-risk markets. Many engagements involve licensing, banking, compliance or
+            restructuring matters that cannot be publicly disclosed. We publish names, logos and
+            outcomes only with express consent.
           </p>
         </div>
       </section>
@@ -189,15 +186,15 @@ export default function HomePage() {
           <div className="mt-14 border-t border-border pt-10 md:mt-16 md:pt-12">
             <p className="section-label mb-3 block">What structure allows</p>
             <h3 className="mb-6 font-heading text-xl font-semibold text-primary md:text-2xl">
-              Outcomes of accountable execution.
+              Outcomes of structured execution.
             </h3>
             <ul className="grid gap-3 sm:grid-cols-2 sm:gap-x-10 sm:gap-y-3">
               {[
-                "Better sequencing across regulatory, compliance, banking and corporate workstreams",
+                "Clearer sequencing across regulatory, compliance, banking and corporate workstreams",
                 "Clearer positioning when interacting with authorities and institutional counterparts",
                 "Improved readiness for institutional onboarding conversations",
                 "Reduced dependency on a single provider or single point of failure",
-                "Stronger evidence trails and accountability inside the mandate",
+                "Stronger evidence trails inside the mandate",
                 "Structures designed to operate across jurisdictions, not only to launch once",
               ].map((item) => (
                 <li
@@ -222,7 +219,7 @@ export default function HomePage() {
               A structural approach to regulated operations.
             </h2>
             <p className="body-large">
-              Seven service areas operate through one accountable model. Banking and payments
+              Seven service areas operate through one coordinated model. Banking and payments
               support the regulatory, corporate and compliance structures that require them.
             </p>
           </div>
@@ -316,26 +313,36 @@ export default function HomePage() {
             <p className="section-label mb-4 block">Industries</p>
             <h2 className="heading-section mb-6">Where we operate.</h2>
           </div>
-          <div className="grid gap-6 md:grid-cols-2 md:gap-8">
+          <div className="grid gap-6 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
             {[
               [
                 "iGaming & Betting",
-                "Licensing, compliance, banking, post-license operations",
+                "Licensing, compliance, banking and post-license operations",
                 "/markets/igaming",
               ],
               [
                 "Fintech & Payments",
-                "EMI licensing, payment infrastructure, cross-border compliance",
+                "Licensing pathways, payment infrastructure and cross-border compliance",
                 "/markets/fintech",
               ],
               [
-                "Crypto & Digital Assets",
-                "CASP/VASP licensing, MiCA compliance, banking access",
+                "Digital Assets & Crypto",
+                "CASP/VASP positioning, AML controls and banking access",
                 "/markets/crypto",
               ],
               [
-                "High-Risk Operations",
-                "Banking resilience, enhanced compliance, institutional access",
+                "Technology & B2B Infrastructure",
+                "Ownership, contracting and compliance for suppliers to regulated operators",
+                "/markets/technology",
+              ],
+              [
+                "Forex & Regulated Financial Services",
+                "Licensing pathways, conduct pressure and cross-border structure",
+                "/markets/forex",
+              ],
+              [
+                "High-Risk & Cross-Border Operations",
+                "Banking resilience, enhanced compliance and institutional access",
                 "/markets/high-risk",
               ],
             ].map(([title, desc, href]) => (
@@ -390,7 +397,7 @@ export default function HomePage() {
               {
                 tag: "Market entry · New venue",
                 title: "Expansion planned.\nPathway unclear.",
-                body: "Entering a regulated market requires sequencing of licensing, corporate architecture and banking readiness under one accountable layer.",
+                body: "Entering a regulated market requires sequencing of licensing, corporate architecture and banking readiness under one coordinated programme.",
               },
               {
                 tag: "Remediation · Under pressure",
@@ -415,19 +422,22 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 10. Crisis / intervention CTA */}
-      <section className="surface-dark py-24 md:py-32">
+      {/* 10. Crisis / intervention — quiet navigational entry, not a second commercial CTA band */}
+      <section className="surface-dark py-20 md:py-24">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
           <h2 className="mb-6 font-heading text-3xl font-semibold leading-[1.12] tracking-tight text-white md:text-4xl">
-            If your operation is stuck, blocked or exposed, we can fix it.
+            If your operation is stuck, blocked or exposed, start with remediation.
           </h2>
-          <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-white/80">
+          <p className="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-white/80">
             Octus steps into live operations and restructures what is failing under regulatory
             pressure.
           </p>
-          <CtaLink href={ASSESS_PATH} variant="on-dark">
-            Assess your situation →
-          </CtaLink>
+          <Link
+            href="/solutions/remediation-readiness"
+            className="font-sans text-sm font-medium text-white no-underline underline-offset-4 hover:underline"
+          >
+            Open Remediation &amp; Readiness
+          </Link>
         </div>
       </section>
 
@@ -437,21 +447,12 @@ export default function HomePage() {
           <div className="mb-12 max-w-2xl md:mb-16">
             <OctusSymbolMarker size={18} />
             <p className="section-label mb-4 block">Services</p>
-            <div className="mb-4 flex flex-wrap gap-x-4 gap-y-2">
-              {[
-                { label: "All services", href: "/solutions" },
-                { label: "Markets", href: "/markets" },
-                { label: "How we engage", href: "/how-we-engage" },
-              ].map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="font-sans text-sm text-primary no-underline transition-colors hover:text-primary/80"
-                >
-                  {item.label} →
-                </Link>
-              ))}
-            </div>
+            <Link
+              href="/solutions"
+              className="mb-4 inline-block font-sans text-sm text-primary no-underline transition-colors hover:text-primary/80"
+            >
+              All services →
+            </Link>
             <h2 className="heading-section mb-6">Seven areas. One execution partner.</h2>
             <p className="body-large text-muted-foreground">
               Complex regulated problem → Octus assumes coordination → regulatory and operational
@@ -475,12 +476,17 @@ export default function HomePage() {
                 market entry is blocked, start here with a focused operational assessment.
               </p>
               <div className="flex flex-wrap gap-4">
-                <CtaLink href={ASSESS_PATH}>Start remediation assessment →</CtaLink>
                 <Link
                   href="/solutions/remediation-readiness"
                   className="inline-flex items-center font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
                 >
                   Open remediation hub →
+                </Link>
+                <Link
+                  href={ASSESS_PATH}
+                  className="inline-flex items-center font-sans text-sm font-medium text-muted-foreground no-underline hover:text-primary"
+                >
+                  Start remediation assessment →
                 </Link>
               </div>
             </div>
@@ -508,10 +514,10 @@ export default function HomePage() {
           <div className="operate-grid">
             <div>
               <p className="label">How we operate</p>
-              <h2 className="heading-md operate-title">Accountable execution.</h2>
+              <h2 className="heading-md operate-title">Coordinated execution.</h2>
               <p className="body-lg operate-body">
                 Octus is the coordination and execution layer behind regulated operations:
-                licensing, compliance, banking and structure under one point of accountability.
+                licensing, compliance, banking and structure under one operating point.
               </p>
               <Link
                 href="/how-we-engage"
@@ -525,7 +531,7 @@ export default function HomePage() {
                 <p className="juris-strip-label">Operating environments</p>
                 <p className="body-sm mb-4 text-muted-foreground">
                   Structural fit across active markets and selected jurisdictions where Octus can
-                  take operational accountability.
+                  coordinate operating workstreams.
                 </p>
                 <div className="chip-row">
                   <Link href="/markets" className="chip-juris chip-juris-link">
@@ -544,63 +550,35 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 14. How Octus engages */}
-      <section className="border-y border-border bg-background py-16 md:py-20">
-        <div className="mx-auto flex max-w-7xl flex-col gap-6 px-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
-          <div className="max-w-2xl">
-            <p className="section-label mb-3 block">How we engage</p>
-            <h2 className="heading-section mb-3">Accountability scales with the mandate.</h2>
-            <p className="body-large text-muted-foreground">
-              From focused projects to Lead Contractor programmes, engagement models are built for
-              operators who need a single accountable layer.
-            </p>
-          </div>
-          <CtaLink href="/how-we-engage" variant="primary">
-            Explore engagement models →
-          </CtaLink>
-        </div>
-      </section>
-
-      {/* 15. Intelligence and Insights */}
+      {/* 14. Insights (single editorial destination) */}
       <section className="bg-background py-20 md:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
-            <div className="max-w-2xl">
-              <p className="section-label mb-4 block">Intelligence</p>
-              <h2 className="heading-section">Authority for operators who need structure.</h2>
-              <p className="body-large mt-4">
-                Regulatory intelligence, market signals, operational insights and executive
-                perspectives connected to our intelligence resources and Insights.
-              </p>
-            </div>
-            <div className="flex flex-wrap gap-4">
-              <Link
-                href="/intelligence"
-                className="inline-flex items-center gap-2 font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
-              >
-                Open Intelligence
-                <OctusIcon name="arrow" size={16} />
-              </Link>
-              <Link
-                href="/insights"
-                className="inline-flex items-center gap-2 font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
-              >
-                Read Insights
-                <OctusIcon name="arrow" size={16} />
-              </Link>
-            </div>
+          <div className="mb-4 max-w-2xl">
+            <p className="section-label mb-4 block">Insights</p>
+            <h2 className="heading-section">Analysis for regulated and high-risk markets.</h2>
+            <p className="body-large mt-4">
+              Published analysis, regulatory developments and operational perspectives from the
+              environments Octus works within.
+            </p>
+            <Link
+              href="/insights"
+              className="mt-6 inline-flex items-center gap-2 font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
+            >
+              Explore Insights
+              <OctusIcon name="arrow" size={16} />
+            </Link>
           </div>
         </div>
       </section>
 
       <OctusChapterTransition />
 
-      {/* 16. Final qualification CTA */}
+      {/* 15. Final qualification CTA */}
       <section className="bg-background py-20 md:py-24">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-          <h2 className="heading-section mb-4">Mandates Octus accepts.</h2>
+          <h2 className="heading-section mb-4">Ready to discuss your operation?</h2>
           <p className="body-large mx-auto mb-4 max-w-2xl">
-            Octus takes mandates where a regulated operation needs structural accountability:
+            Octus takes mandates where a regulated operation needs structural coordination:
             licensing pathways, compliance systems, banking readiness, corporate design and
             remediation under pressure.
           </p>

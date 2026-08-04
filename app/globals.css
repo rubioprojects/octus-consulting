@@ -1901,16 +1901,23 @@ body.cookie-banner-visible .wa-float {
 
 /* === OCTUS VISUAL REBASE SUPPLEMENT (8b12fcc, brace-safe) === */
 
+/* Editorial numerals: optical spacing for years/service indices (avoids collapsed 1/9). */
 .editorial-numeral {
-  font-family: var(--font-unigeo), "Unigeo64", sans-serif;
+  font-family: var(--font-inter), Inter, system-ui, sans-serif;
   font-weight: 700;
   font-size: clamp(2.75rem, 5vw, 4rem);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1, "kern" 1;
   line-height: 1;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.04em;
   color: hsl(var(--brand-navy));
 }
 .editorial-numeral--sm {
   font-size: clamp(1.75rem, 3vw, 2.25rem);
+  letter-spacing: 0.06em;
+}
+.editorial-numeral--year {
+  letter-spacing: 0.08em;
 }
 .editorial-numeral--on-dark {
   color: rgba(255, 255, 255, 0.92);
@@ -2583,4 +2590,138 @@ body.cookie-banner-visible .wa-float {
 .solution-card--motif-remediation::before {
   background: radial-gradient(circle, #dc2626 0%, transparent 70%);
   opacity: 0.07;
+}
+
+/* ---------------------------------------------------------------------------
+   HUMAN RESCREEN POLISH
+   Portrait system, About editorial photograph, seven-area grid placement.
+--------------------------------------------------------------------------- */
+
+/* Portrait system. Shared between /team cards and the homepage leadership
+   band so both surfaces speak the same portrait language.
+
+   Frames stay 1:1 so the per-person `object-position` tuning already approved
+   for each source keeps its face height and head/shoulder scale intact. What
+   changes is the shape: one restrained Octus curve on the lower-left corner
+   instead of a generic circular avatar. Sources are untouched: no cutouts, no
+   background removal, no change to facial characteristics. */
+.team-card-photo-wrap.team-portrait,
+.home-leadership-trust__photo-wrap.team-portrait {
+  border-radius: 3px 3px 3px 28px;
+  background: linear-gradient(165deg, rgba(0, 101, 255, 0.09), rgba(11, 18, 32, 0.05));
+}
+
+/* Leadership: larger presence, Octus-branded backdrop plate, subtle halo. */
+.team-card-photo-wrap.team-portrait--leadership,
+.home-leadership-trust__photo-wrap.team-portrait--leadership {
+  width: 176px;
+  height: 176px;
+  border-radius: 3px 3px 3px 36px;
+  box-shadow:
+    -14px 14px 0 0 rgba(0, 101, 255, 0.07),
+    0 0 0 1px rgba(0, 101, 255, 0.22),
+    0 20px 44px -22px rgba(11, 18, 32, 0.38);
+}
+@media (min-width: 768px) {
+  .team-card-photo-wrap.team-portrait--leadership,
+  .home-leadership-trust__photo-wrap.team-portrait--leadership {
+    width: 228px;
+    height: 228px;
+    border-radius: 4px 4px 4px 44px;
+  }
+}
+
+/* Core specialists: consistent portrait height, restrained branded shape. */
+.team-card-photo-wrap.team-portrait--specialist {
+  width: 152px;
+  height: 152px;
+  box-shadow:
+    0 0 0 1px rgba(11, 18, 32, 0.1),
+    0 12px 26px -16px rgba(11, 18, 32, 0.28);
+}
+@media (min-width: 768px) {
+  .team-card-photo-wrap.team-portrait--specialist {
+    width: 164px;
+    height: 164px;
+  }
+}
+
+/* About: editorial team photograph.
+
+   ASSET CONSTRAINT: /team-group.jpg (1024x555) has a solid black field baked
+   around a dome that was flattened into the source. Every rectangular crop that
+   excludes that black also cuts a face, so the black is removed with a single
+   clip-path ellipse fitted just inside the baked edge. The frame keeps the
+   native ratio, so nothing is scaled, stretched or re-cropped: no face is
+   touched, and the curve becomes the one controlled Octus shape on the page.
+   A rectangular original would allow a true rectangular editorial crop. */
+.about-team-editorial {
+  margin-bottom: 32px;
+}
+.about-team-editorial__figure {
+  position: relative;
+  margin: 0 0 4px;
+  aspect-ratio: 1024 / 555;
+  /* The baked edge is a circle of radius ~520 centred at (511.5, 510) in source
+     pixels. Clipping at radius 512 lands just inside it, so no black survives
+     and no face is reached. Radii are expressed against the box, which carries
+     the native ratio, so the circle stays a circle at every width. */
+  clip-path: ellipse(50% 92.25% at 50% 91.9%);
+}
+.about-team-editorial__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  filter: grayscale(1) contrast(1.04);
+}
+/* Subtle navy fade grounding the lower edge. */
+.about-team-editorial__fade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to top,
+    rgba(11, 18, 32, 0.3) 0%,
+    rgba(11, 18, 32, 0.11) 26%,
+    rgba(11, 18, 32, 0) 52%
+  );
+}
+.about-team-editorial__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 14px;
+}
+.about-team-editorial__meta .stat-label {
+  padding-bottom: 2px;
+}
+.about-juris-strip__all {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  margin-top: 12px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: hsl(var(--primary));
+  text-decoration: none;
+}
+.about-juris-strip__all:hover {
+  text-decoration: underline;
+}
+
+/* Seven areas: centre the odd last card (07) on desktop rather than leaving it
+   stranded in the first column. Mobile keeps the natural single-column order. */
+@media (min-width: 768px) {
+  .solutions-area-grid > :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    margin-inline: auto;
+    width: min(100%, calc(50% - 0.625rem));
+  }
+}
+@media (min-width: 1024px) {
+  .solutions-area-grid > :last-child:nth-child(odd) {
+    width: min(100%, calc(50% - 0.75rem));
+  }
 }
