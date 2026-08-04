@@ -83,9 +83,11 @@
 |---|---|---|
 | P2 | Global visual system / shell fidelity | 2 — ACCEPTED |
 | P3 | Homepage remediation | 3 — ACCEPTED_WITH_RESIDUAL |
-| P4 | Services families | 4 — READY_FOR_SOL_AUDIT |
-| P5 | Institutional / content pages | 5 — BLOCKED |
-| P6 | Full regression (incl. residual punctuation) | 6 — BLOCKED |
+| P4 | Services families | 4 — ACCEPTED_WITH_BOUND_RESIDUALS |
+| P5A | Institutional / engagement | 5A — IN PROGRESS |
+| P5B | Markets / jurisdictions | 5B — BLOCKED |
+| P5C | Intelligence / legal | 5C — BLOCKED |
+| P6 | Full regression (bound residuals) | 6 — BLOCKED |
 
 ## D-009 — Phase 2 global system accepted
 
@@ -213,3 +215,26 @@
 | Rubio rescreen | BLOCKED |
 | terminal | `OCTUS_SERVICES_VALIDATION_CLOSEOUT_READY_FOR_SOL_AUDIT` |
 
+
+## D-019 — Phase 4 Services accepted with bound residuals; Phase 5A authorized
+
+| Field | Value |
+|---|---|
+| PHASE_4_SERVICES | ACCEPTED_WITH_BOUND_RESIDUALS |
+| accepted_phase4_evidence_head | `15df1e82c5ccd3dfb47d83dda30805fbd55b5497` |
+| accepted_phase4_application_sha | `eac4e514ea751314774f3e69f71ebd52245d2534` |
+| immutable_preview | https://octus-consulting-beqxfdqrk-axle1.vercel.app |
+| Bound residuals | `HOME_PUNCTUATION_RESIDUAL_001` · `GLOBAL_A11Y_REGION_RESIDUAL_001` · `AXE_INCOMPLETE_REVIEW_001` |
+| PHASE_5A | AUTHORIZED / IN PROGRESS |
+| PHASE_5B / 5C / 6 | BLOCKED |
+| Rubio rescreen | BLOCKED |
+| Merge / production / rebase | forbidden |
+
+## D-020 — Phase 5A shared-component freeze
+
+| Field | Value |
+|---|---|
+| Decision | Do not edit PageHero, DarkHeroAtmosphere, CtaLink, Nav, layout, or global tokens for Phase 5A |
+| Allowed | Page-scoped copy/metadata under the six institutional/engagement routes |
+| Stop | Undocumented shared-component mutation → BLOCKED |
+| Status | BINDING |
