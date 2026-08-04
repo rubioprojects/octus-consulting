@@ -43,19 +43,13 @@ export default function PostPage({ params }: { params: { slug: string } }) {
           <div style={{ display: "flex", gap: "16px", alignItems: "center", marginBottom: "32px", flexWrap: "wrap" }}>
             <Link
               href="/insights"
-              style={{
-                fontFamily: "var(--font-unigeo), 'Unigeo64', sans-serif",
-                fontSize: "10px",
-                fontWeight: 700,
-                letterSpacing: "0.12em",
-                textTransform: "uppercase",
-                color: "var(--white-40)",
-                textDecoration: "none",
-              }}
+              className="font-sans text-[10px] font-bold uppercase tracking-[0.12em] text-white/70 no-underline hover:text-white"
             >
               ← Insights
             </Link>
-            <span className="label text-white/65">{post.category}</span>
+            <span className="mb-0 block text-xs font-medium uppercase tracking-[0.12em] text-white/65">
+              {post.category}
+            </span>
           </div>
           <h1
             className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline"

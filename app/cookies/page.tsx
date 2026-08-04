@@ -10,7 +10,7 @@ export default function CookiesPage() {
     <main>
       <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
-          <span className="label text-white/65">Legal</span>
+          <span className="mb-5 block text-xs font-medium uppercase tracking-[0.12em] text-white/65">Legal</span>
           <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline">Cookie Policy</h1>
           <p className="text-lg leading-relaxed text-white/75 max-w-2xl">Last updated: August 2026</p>
         </div>

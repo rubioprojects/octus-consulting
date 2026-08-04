@@ -149,7 +149,7 @@ export default function IntelligencePage() {
                   <p className="intelligence-editorial-band__hint">{t.body}</p>
                   <Link
                     href={t.href}
-                    className="mt-3 inline-block font-sans text-xs font-medium text-white/80 no-underline hover:text-white"
+                    className="mt-3 inline-block font-sans text-xs font-medium text-white no-underline hover:underline"
                   >
                     {t.cta}
                   </Link>
