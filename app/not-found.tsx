@@ -17,8 +17,7 @@ export default function NotFound() {
             Page not found.
           </h1>
           <p className="mt-4 max-w-xl text-lg leading-relaxed text-white/60">
-            The address you requested is not available. Continue from Insights, Intelligence
-            or the homepage.
+            The address you requested is not available. Continue from Insights or the homepage.
           </p>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
             <Link href="/" className="btn-primary">
@@ -29,12 +28,6 @@ export default function NotFound() {
               className="font-sans text-sm font-medium text-white no-underline hover:underline"
             >
               Open Insights →
-            </Link>
-            <Link
-              href="/intelligence"
-              className="font-sans text-sm font-medium text-white no-underline hover:underline"
-            >
-              Intelligence →
             </Link>
           </div>
         </div>

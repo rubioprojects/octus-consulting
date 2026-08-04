@@ -109,7 +109,7 @@ export default function RootLayout({
                 <BrandLockup variant="on-dark" surface="footer" />
               </a>
               <p className="site-footer__brand-close__line">
-                Premium international execution partner for highly regulated operations.
+                International structuring and execution for regulated and high-risk operations.
               </p>
               <div className="site-footer__cta-row mt-5 flex flex-wrap items-center gap-3 md:mt-8">
                 <a
@@ -122,7 +122,7 @@ export default function RootLayout({
                 </a>
                 <a
                   href={MAILTO_INFO}
-                  className="inline-flex h-10 items-center rounded-sm border border-white/20 px-5 font-sans text-[13px] font-medium text-white/80 no-underline transition-colors hover:border-white/40 hover:text-white"
+                  className="font-sans text-[13px] font-medium text-white/70 no-underline underline-offset-4 transition-colors hover:text-white hover:underline"
                 >
                   Email Octus
                 </a>
@@ -174,6 +174,8 @@ export default function RootLayout({
                       { label: "iGaming", href: "/markets/igaming" },
                       { label: "Fintech", href: "/markets/fintech" },
                       { label: "Digital Assets", href: "/markets/crypto" },
+                      { label: "Technology", href: "/markets/technology" },
+                      { label: "Forex", href: "/markets/forex" },
                       { label: "High-Risk Operations", href: "/markets/high-risk" },
                     ],
                   },
@@ -181,7 +183,6 @@ export default function RootLayout({
                     label: "Engage",
                     links: [
                       { label: "How we engage", href: "/how-we-engage" },
-                      { label: "Intelligence", href: "/intelligence" },
                       { label: "Insights", href: "/insights" },
                       { label: "Partners", href: "/partners" },
                       { label: "Diagnostic assessment", href: "/diagnostic" },
@@ -260,6 +261,8 @@ export default function RootLayout({
                     { label: "iGaming", href: "/markets/igaming" },
                     { label: "Fintech", href: "/markets/fintech" },
                     { label: "Digital Assets", href: "/markets/crypto" },
+                    { label: "Technology", href: "/markets/technology" },
+                    { label: "Forex", href: "/markets/forex" },
                     { label: "High-Risk Operations", href: "/markets/high-risk" },
                   ].map((l) => (
                     <li key={l.href}>
@@ -279,7 +282,6 @@ export default function RootLayout({
                 <ul className="flex list-none flex-col gap-2.5">
                   {[
                     { label: "How we engage", href: "/how-we-engage" },
-                    { label: "Intelligence", href: "/intelligence" },
                     { label: "Insights", href: "/insights" },
                     { label: "Partners", href: "/partners" },
                     { label: "Diagnostic assessment", href: "/diagnostic" },

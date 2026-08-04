@@ -6,23 +6,20 @@ import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../lib/cta";
 import { PUBLIC_AREAS } from "../lib/publicAreas";
 import BrandLockup from "./BrandLockup";
 
-/** Desktop priorities: Services → Industries → How we engage → Intelligence → About → Contact → Discuss */
+/** Desktop priorities: Services → Industries → How we engage → Insights → About → Discuss */
 const primaryLinks = [
   { label: "Industries", href: "/markets" },
   { label: "How we engage", href: "/how-we-engage" },
-  { label: "Intelligence", href: "/intelligence" },
+  { label: "Insights", href: "/insights" },
   { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
 ];
 
-const mobileInstitutionalLinks = [
+/** Mobile primary order mirrors desktop; Contact remains via footer / direct URL only. */
+const mobilePrimaryLinks = [
+  { label: "Industries", href: "/markets" },
   { label: "How we engage", href: "/how-we-engage" },
-  { label: "Intelligence", href: "/intelligence" },
   { label: "Insights", href: "/insights" },
-  { label: "Team", href: "/team" },
-  { label: "Jurisdictions", href: "/jurisdictions" },
-  { label: "Careers", href: "/careers" },
-  { label: "Contact", href: "/contact" },
+  { label: "About", href: "/about" },
 ];
 
 export default function Nav() {
@@ -232,18 +229,7 @@ export default function Nav() {
               </Link>
             ))}
             <div className="my-4 h-px bg-border" />
-            <p className="mb-2 font-sans text-xs font-medium uppercase tracking-[0.15em] text-muted-foreground">
-              Industries
-            </p>
-            <Link
-              href="/markets"
-              className="rounded-sm px-3 py-3 font-sans text-base text-foreground no-underline"
-              onClick={() => setMobileOpen(false)}
-            >
-              Markets
-            </Link>
-            <div className="my-4 h-px bg-border" />
-            {mobileInstitutionalLinks.map((l) => (
+            {mobilePrimaryLinks.map((l) => (
               <Link
                 key={l.href}
                 href={l.href}
