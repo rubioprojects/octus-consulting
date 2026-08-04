@@ -87,7 +87,7 @@
 | P5A | Institutional / engagement | 5A — ACCEPTED_WITH_BOUND_RESIDUALS |
 | P5B | Markets / jurisdictions / Brazil | 5B — ACCEPTED_WITH_BOUND_RESIDUALS |
 | P5C | Intelligence / Insights / Legal | 5C — ACCEPTED_WITH_BOUND_RESIDUALS |
-| P6 | Full regression (bound residuals) | 6 — IN_PROGRESS |
+| P6 | Full regression (bound residuals) | 6 — READY_FOR_SOL_AUDIT |
 
 ## D-009 — Phase 2 global system accepted
 
@@ -363,6 +363,21 @@
 | HOME_PUNCTUATION_RESIDUAL_001 | Authorized: D-014 final text only |
 | GLOBAL_A11Y_REGION_RESIDUAL_001 | Authorized: landmark wrapper; preserve WA geometry |
 | AXE_INCOMPLETE_REVIEW_001 | Authorized: disposition register; remediate only if required |
-| Redesign / architecture reopen | FORBIDDEN → BLOCKED |
 | Status | BINDING |
+
+## D-031 — Phase 6 final site candidate ready for Sol audit
+
+| Field | Value |
+|---|---|
+| application_code_sha | `84ecb6aff383060088a6185384ff5b9f5ba307e9` |
+| immutable_preview | https://octus-consulting-3lhtpxjer-axle1.vercel.app |
+| deployment_id | `dpl_GothRo9ojcDZZH9SiU46xSFVRaS7` |
+| validation | PASS |
+| screenshots | 552 |
+| HOME_PUNCTUATION_RESIDUAL_001 | CLOSED |
+| GLOBAL_A11Y_REGION_RESIDUAL_001 | CLOSED |
+| AXE_INCOMPLETE_REVIEW_001 | CLOSED (138 dispositions) |
+| terminal | `OCTUS_FINAL_SITE_CANDIDATE_READY_FOR_SOL_AUDIT` |
+| Rubio rescreen | BLOCKED until Sol accepts |
+| Merge / production / rebase | forbidden |
 

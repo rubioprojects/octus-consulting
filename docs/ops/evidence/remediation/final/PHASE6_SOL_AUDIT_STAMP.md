@@ -10,6 +10,7 @@
 | control_commit | `3c0a8eb1440786df9a8f912eea239e9c6991e0b9` |
 | residual_remediation_commit | `84ecb6aff383060088a6185384ff5b9f5ba307e9` |
 | validator_commit | `1d7dd4e7a5e899486a4804e41247c05ae13c692f` |
+| evidence_commit | `cafa26a4b30aa67a729cfcf4d55e1accde91c41b` |
 | application_code_sha | `84ecb6aff383060088a6185384ff5b9f5ba307e9` |
 | immutable_preview | https://octus-consulting-3lhtpxjer-axle1.vercel.app |
 | deployment_id | `dpl_GothRo9ojcDZZH9SiU46xSFVRaS7` |

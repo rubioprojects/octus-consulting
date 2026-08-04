@@ -29,7 +29,7 @@ PR #17 — seven-area architecture, current routes, evidence-safe editorial rule
 | 5A | Institutional and engagement | **ACCEPTED_WITH_BOUND_RESIDUALS** | Phase 5A accepted by Sol |
 | 5B | Markets / jurisdictions / Brazil | **ACCEPTED_WITH_BOUND_RESIDUALS** | Accepted by Sol |
 | 5C | Intelligence / Insights / Legal utility | **ACCEPTED_WITH_BOUND_RESIDUALS** | Accepted by Sol |
-| 6 | Full regression | **IN_PROGRESS** | `OCTUS_FINAL_SITE_CANDIDATE_READY_FOR_SOL_AUDIT` (target) |
+| 6 | Full regression | **READY_FOR_SOL_AUDIT** | `OCTUS_FINAL_SITE_CANDIDATE_READY_FOR_SOL_AUDIT` |
 
 ### Phase 1 acceptance stamp
 
@@ -142,16 +142,18 @@ Impact matrix: `services/PHASE4_SERVICES_IMPACT_MATRIX.md`
 | Bound residuals | → Phase 6 closure |
 | Phase 5C lock | Do not reopen Intelligence/Insights/Legal redesign in Phase 6 |
 
-### Phase 6 stamp (IN_PROGRESS)
+### Phase 6 stamp (READY FOR SOL AUDIT)
 
 | Field | Value |
 |---|---|
-| Status | **IN_PROGRESS** — authorized by Sol |
+| Status | `OCTUS_FINAL_SITE_CANDIDATE_READY_FOR_SOL_AUDIT` |
 | starting_HEAD | `b617338510c030dccc6eac0f03d01e4042ca5532` |
-| Inventory | `final/PHASE6_CONTROL_INVENTORY.md` |
-| Residual plan | `final/PHASE6_RESIDUAL_CLOSURE_PLAN.md` |
-| Axe incomplete register | `final/AXE_INCOMPLETE_DISPOSITION_REGISTER.md` |
-| Rubio rescreen | BLOCKED until final Sol audit |
+| application_code_sha | `84ecb6aff383060088a6185384ff5b9f5ba307e9` |
+| immutable_preview | https://octus-consulting-3lhtpxjer-axle1.vercel.app |
+| deployment_id | `dpl_GothRo9ojcDZZH9SiU46xSFVRaS7` |
+| screenshots | 552 · validation PASS |
+| Residuals | all three CLOSED |
+| Rubio rescreen | BLOCKED until Sol accepts Phase 6 |
 | Merge / production / rebase | forbidden |
 
 ## Intentional differences (binding)
