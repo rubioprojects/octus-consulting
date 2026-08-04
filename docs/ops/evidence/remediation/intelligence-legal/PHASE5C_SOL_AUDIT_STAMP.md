@@ -14,6 +14,7 @@
 | claim_register_commit | `0f19b6917c1a8037572d4bcae3b8638285a3a45a` |
 | a11y_contrast_commit | `cd42e580bd5416831d519f536c20bc2b2847010d` |
 | application_code_sha | `c467ccf0bfa3a8a2df1ac7a58c7b29c8c169d62b` |
+| evidence_commit | `1f0f20d1adfade8c96ab1d139c8573fc45221ac4` |
 | immutable_preview | https://octus-consulting-84n1zaqys-axle1.vercel.app |
 | deployment_id | `dpl_8q5VbqyqV5vZxazerUKHco7VFCiW` |
 | deployment_sha | `c467ccf0bfa3a8a2df1ac7a58c7b29c8c169d62b` |
