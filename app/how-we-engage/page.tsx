@@ -48,7 +48,11 @@ export default function HowWeEngagePage() {
       <section className="surface-elevated py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="section-label mb-4 block">Engagement models</p>
-          <h2 className="heading-section mb-12 max-w-2xl">How engagement scales</h2>
+          <h2 className="heading-section mb-4 max-w-2xl">How engagement scales</h2>
+          <p className="body-text mb-12 max-w-2xl text-muted-foreground">
+            These are operating models for coordination and accountability. They are not packaged
+            products and do not guarantee regulatory, banking or audit outcomes.
+          </p>
           <div className="grid gap-6 md:grid-cols-2">
             {ENGAGEMENT_MODELS.map((m) => (
               <article key={m.num} className="rounded-sm border border-border bg-background p-6 md:p-8">

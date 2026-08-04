@@ -196,12 +196,11 @@ export default function AboutPage() {
                 </div>
               </div>
               <div className="juris-strip">
-                <p className="juris-strip-label">Markets and jurisdictions</p>
+                <p className="juris-strip-label">Markets and jurisdictions where Octus has coordinated work</p>
                 <div className="chip-row">
                   {["Brazil (SPA/MF)", "UK", "Malta (MGA)", "UAE", "Curaçao", "Cyprus", "BVI", "Cayman", "Portugal", "Italy"].map((j) => (
                     <span key={j} className="chip-juris">{j}</span>
                   ))}
-                  <span className="chip-juris-more">+more</span>
                 </div>
               </div>
             </div>
@@ -209,13 +208,13 @@ export default function AboutPage() {
               <p className="label" style={{ marginBottom: "32px" }}>What we have structured</p>
               <ul className="check-list">
                 {[
-                  "Offshore and onshore licensing across multiple jurisdictions",
+                  "Offshore and onshore licensing workstreams across multiple jurisdictions",
                   "Corporate structures for international groups entering regulated markets",
                   "Compliance and AML operations for high-risk businesses",
-                  "Coordination with regulatory authorities such as SPA/MF and MGA, together with laboratories and certification providers such as GLI",
+                  "Workstreams involving regulators such as SPA/MF and MGA, and laboratory or certification providers such as GLI, without implying preferred-provider status",
                   "Banking and payment infrastructure for operations with restricted access",
                   "Cross-border structures for expansion into emerging regulated markets",
-                  "Laboratory certifications and technical compliance readiness",
+                  "Laboratory certification readiness and technical compliance coordination",
                 ].map((item) => (
                   <li key={item}>{item}</li>
                 ))}
