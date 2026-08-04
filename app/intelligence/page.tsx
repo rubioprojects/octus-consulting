@@ -9,6 +9,7 @@ import OctusSymbolMarker from "../../components/system/OctusSymbolMarker";
 import OctusEditorialDivider from "../../components/system/OctusEditorialDivider";
 import { CtaLink } from "../../components/system/CtaButton";
 import { pageSocialMeta } from "../../lib/pageMeta";
+import "./intelligence.css";
 
 export const metadata = pageSocialMeta({
   title: "Intelligence",
@@ -149,7 +150,7 @@ export default function IntelligencePage() {
                   <p className="intelligence-editorial-band__hint">{t.body}</p>
                   <Link
                     href={t.href}
-                    className="mt-3 inline-block font-sans text-xs font-medium text-white no-underline hover:underline"
+                    className="mt-3 inline-block font-sans text-xs font-medium"
                   >
                     {t.cta}
                   </Link>

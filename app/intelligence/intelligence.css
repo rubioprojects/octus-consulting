@@ -1,0 +1,97 @@
+/* Phase 5C — Intelligence page-scoped visual system (does not edit global tokens). */
+
+.intelligence-authority {
+  background: linear-gradient(165deg, #0b1220 0%, #10182a 55%, #0b1220 100%);
+  color: #fff;
+}
+
+.intelligence-authority .heading-section,
+.intelligence-authority .section-label {
+  color: #fff;
+}
+
+.intelligence-authority .body-text,
+.intelligence-authority .body-large {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.intelligence-editorial-band {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 1024px) {
+  .intelligence-editorial-band {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .intelligence-editorial-band {
+    grid-template-columns: 1fr;
+  }
+}
+
+.intelligence-editorial-band__item {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.intelligence-editorial-band__item .editorial-numeral {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.intelligence-editorial-band__label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.intelligence-editorial-band__hint {
+  margin-top: 0.35rem;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.intelligence-editorial-band__item a {
+  color: #fff !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.intelligence-pillar {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.intelligence-pillar:hover {
+  border-color: rgba(66, 161, 255, 0.35) !important;
+  box-shadow: 0 12px 32px -22px rgba(0, 101, 255, 0.55);
+  transform: translateY(-2px);
+}
+
+.intelligence-pillar__mark {
+  color: #42a1ff;
+  border-color: rgba(66, 161, 255, 0.25) !important;
+  background: rgba(0, 101, 255, 0.1) !important;
+}
+
+.intelligence-pillar h3 {
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intelligence-pillar:hover {
+    transform: none;
+  }
+}

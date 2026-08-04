@@ -57,10 +57,16 @@ export default function PostPage({ params }: { params: { slug: string } }) {
           >
             {post.title}
           </h1>
-          <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ color: "var(--white-40)" }}>
+          <p
+            className="mt-6 max-w-2xl text-base leading-relaxed"
+            style={{ color: "rgba(255, 255, 255, 0.78)" }}
+          >
             Published {date} · {resolvePostAuthor(post)}
           </p>
-          <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/55">
+          <p
+            className="mt-4 max-w-2xl text-sm leading-relaxed"
+            style={{ color: "rgba(255, 255, 255, 0.72)" }}
+          >
             Editorial note: unless a primary statute or ordinance is cited, treat analysis as
             commentary. Historical articles may not reflect current law. Verify before relying
             on regulatory statements.
