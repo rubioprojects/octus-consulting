@@ -1,7 +1,11 @@
 import Link from "next/link";
-import { getAllPosts, getPost } from "../../../lib/posts";
+import { getPost } from "../../../lib/posts";
 import {
-  factualReviewStatus,
+  enrichPostForPublic,
+  getPublicPosts,
+  isPublicInsight,
+} from "../../../lib/insightsPublication";
+import {
   resolveIndustryLinks,
   resolveJurisdictionLinks,
   resolvePostAuthor,
@@ -10,11 +14,20 @@ import {
 import { notFound } from "next/navigation";
 import { pageSocialMeta } from "../../../lib/pageMeta";
 
+function fmtDate(d: string) {
+  return new Date(d).toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+}
+
 export async function generateStaticParams() {
-  return getAllPosts().map((p) => ({ slug: p.slug }));
+  return getPublicPosts().map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
+  if (!isPublicInsight(params.slug)) return {};
   const post = getPost(params.slug);
   if (!post) return {};
   return pageSocialMeta({
@@ -25,16 +38,17 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 }
 
 export default function PostPage({ params }: { params: { slug: string } }) {
-  const post = getPost(params.slug);
-  if (!post) notFound();
+  if (!isPublicInsight(params.slug)) notFound();
+  const raw = getPost(params.slug);
+  if (!raw) notFound();
 
-  const date = new Date(post.date).toLocaleDateString("en-GB", {
-    day: "numeric", month: "long", year: "numeric",
-  });
+  const post = enrichPostForPublic(raw);
+  const published = fmtDate(post.date);
+  const lastReviewed = fmtDate(post.lastReviewed);
+  const isHistorical = post.publicationStatus === "PUBLISH_HISTORICAL_WITH_UPDATE";
   const contentBlocks = post.content
     .replace(/^###\s+.+\n\n/, "")
     .split("\n\n");
-  const review = factualReviewStatus(post);
 
   return (
     <main>
@@ -50,6 +64,11 @@ export default function PostPage({ params }: { params: { slug: string } }) {
             <span className="mb-0 block text-xs font-medium uppercase tracking-[0.12em] text-white/65">
               {post.category}
             </span>
+            {isHistorical && (
+              <span className="mb-0 block text-xs font-medium uppercase tracking-[0.12em] text-white/80">
+                Historical analysis
+              </span>
+            )}
           </div>
           <h1
             className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline"
@@ -61,28 +80,33 @@ export default function PostPage({ params }: { params: { slug: string } }) {
             className="mt-6 max-w-2xl text-base leading-relaxed"
             style={{ color: "rgba(255, 255, 255, 0.78)" }}
           >
-            Published {date} · {resolvePostAuthor(post)}
+            Published {published} · Last reviewed {lastReviewed} · {resolvePostAuthor(post)}
           </p>
-          <p
-            className="mt-4 max-w-2xl text-sm leading-relaxed"
-            style={{ color: "rgba(255, 255, 255, 0.72)" }}
-          >
-            Editorial note: unless a primary statute or ordinance is cited, treat analysis as
-            commentary. Historical articles may not reflect current law. Verify before relying
-            on regulatory statements.
-          </p>
+          {isHistorical && (
+            <p
+              className="mt-4 max-w-2xl text-sm leading-relaxed"
+              style={{ color: "rgba(255, 255, 255, 0.72)" }}
+            >
+              Historical analysis. This article records the regulatory position as of its original
+              publication date. It was last reviewed on {lastReviewed}. Current requirements may
+              have changed; consult the cited primary sources and obtain advice for the specific
+              operation.
+            </p>
+          )}
+          {!isHistorical && (
+            <p
+              className="mt-4 max-w-2xl text-sm leading-relaxed"
+              style={{ color: "rgba(255, 255, 255, 0.72)" }}
+            >
+              Editorial note: unless a primary statute or ordinance is cited, treat analysis as
+              commentary. Verify current primary sources before relying on regulatory statements.
+            </p>
+          )}
         </div>
       </section>
 
       <section className="bg-background py-24 md:py-32">
         <div className="container post-body" style={{ maxWidth: "800px" }}>
-          {review === "needs_review" && (
-            <p className="body-sm mb-8 rounded-sm border border-border bg-[color:var(--card-bg)] p-4 text-muted-foreground">
-              Editorial marker: this older article has no named author in the catalogue. Dates and
-              authors are not invented; treat regulatory detail as historical context pending
-              human refresh.
-            </p>
-          )}
           {contentBlocks.map((para, i) => {
             if (para.startsWith("**") && para.endsWith("**") && !para.slice(2, -2).includes("\n")) {
               return (
@@ -115,6 +139,30 @@ export default function PostPage({ params }: { params: { slug: string } }) {
               />
             );
           })}
+
+          {post.primarySources.length > 0 && (
+            <div
+              style={{
+                marginTop: "48px",
+                paddingTop: "32px",
+                borderTop: "1px solid var(--border-solid)",
+              }}
+            >
+              <h2 className="heading-sm" style={{ marginBottom: "16px" }}>
+                Sources
+              </h2>
+              <ul style={{ paddingLeft: "24px" }}>
+                {post.primarySources.map((src) => (
+                  <li key={src.href} className="body-text" style={{ marginBottom: "8px" }}>
+                    <a href={src.href} target="_blank" rel="noopener noreferrer">
+                      {src.label}
+                    </a>
+                    {src.date ? ` (${src.date})` : ""}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
 
         {(() => {

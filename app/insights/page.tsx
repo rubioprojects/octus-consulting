@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
-import { getAllPosts } from "../../lib/posts";
+import { getPublicPosts } from "../../lib/insightsPublication";
 import PageHero from "../../components/system/PageHero";
 import Section from "../../components/system/Section";
 import InsightsHubClient from "../../components/system/InsightsHubClient";
@@ -58,7 +58,7 @@ const FROM_ANALYSIS_TO_STRUCTURE = [
 ];
 
 export default function InsightsPage() {
-  const posts = getAllPosts();
+  const posts = getPublicPosts();
 
   return (
     <main>

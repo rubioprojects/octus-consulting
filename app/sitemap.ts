@@ -1,9 +1,10 @@
 import { MetadataRoute } from "next";
-import { posts } from "../lib/posts";
+import { getPublicPosts } from "../lib/insightsPublication";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://octusconsulting.com";
   const now = new Date().toISOString();
+  const publicInsights = getPublicPosts();
 
   const staticPages = [
     { url: `${base}`, priority: 1.0, changeFrequency: "weekly" as const },
@@ -56,7 +57,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/compliance-channel`, priority: 0.3, changeFrequency: "yearly" as const },
   ];
 
-  const insightPages = posts.map((p) => ({
+  const insightPages = publicInsights.map((p) => ({
     url: `${base}/insights/${p.slug}`,
     priority: 0.6,
     changeFrequency: "monthly" as const,
