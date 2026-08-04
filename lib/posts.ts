@@ -87,7 +87,7 @@ The debate on taxation is legitimate and necessary. However, when dealing with a
 
 **Higher taxation does not automatically mean higher revenue**
 
-One of the principal challenges facing the Brazilian betting market is the significant presence of illegal platforms. It is estimated that approximately 60% of players still use unauthorised operators that operate outside the regulatory framework, pay no taxes, adopt no responsible gambling policies and offer no consumer protection: according to data from Instituto Locomotiva and Instituto Brasileiro de Jogo Responsável (IBJR).
+One of the principal challenges facing the Brazilian betting market is the significant presence of illegal platforms. Third-party estimates cited by Instituto Locomotiva and Instituto Brasileiro de Jogo Responsável (IBJR) have suggested that a large share of players (reported in coverage around approximately 60%) still use unauthorised operators outside the regulatory framework. These figures are not Octus primary research; they are attributed industry estimates and should be treated as opinion-supporting context rather than independently verified Octus statistics.
 
 In this context, raising the tax burden on operators who have already regularised their position may produce the opposite of the intended effect. Rather than expanding the contributor base, an abrupt tax increase tends to reduce the competitiveness of the legal market, discourage new investments and strengthen the illegal ecosystem: which operates with no regulatory costs, no oversight and no institutional accountability.
 
@@ -103,13 +103,13 @@ When this environment undergoes abrupt changes: particularly in the tax field, w
 
 The gaming and betting industry in Brazil is no longer a marginal phenomenon. Today it sustains a broad and cross-sectoral economic chain involving technology, payment systems, marketing, advertising, sport, consumer services and specialised legal and regulatory services.
 
-According to the study *Panorama do Mercado de Apostas de Quota Fixa* by LCA Consultores Econômica and Cruz Consulting: commissioned by IBJR and ANJL: direct employment in legalised betting generates approximately BRL 460 million per year in wages, plus BRL 87 million in social security contributions.
+According to the study *Panorama do Mercado de Apostas de Quota Fixa* by LCA Consultores Econômica and Cruz Consulting (commissioned by IBJR and ANJL), direct employment in legalised betting was reported as generating approximately BRL 460 million per year in wages, plus BRL 87 million in social security contributions. Octus cites these study figures as third-party economic estimates; they are not Octus-produced statistics.
 
 **The path to strengthening the legal market**
 
 Strengthening the regulated market does not mean penalising those who chose legality. On the contrary: it requires a balanced tax environment capable of stimulating regularisation, expanding the contributor base and structurally reducing the attractiveness of the illegal market.
 
-An intelligent regulation combines revenue collection, legal certainty, consumer protection and incentives for responsible investment. International models demonstrate that moderate rates, combined with rigorous oversight, effective sanctions and technological monitoring, are far more efficient at guaranteeing sustained revenue collection, combating illegality and protecting consumers.
+A balanced regulation combines revenue collection, legal certainty, consumer protection and incentives for responsible investment. International models commonly show that moderate rates, combined with rigorous oversight, effective sanctions and technological monitoring, are more effective at sustaining revenue collection, reducing illegality and protecting consumers than maximum rates alone. This paragraph is commentary, not a prediction of Brazilian fiscal outcomes.
 
 **Octus position**
 
@@ -228,7 +228,7 @@ Several operational constraints have been identified:
 
 **1. Staffing levels**: The operation relies on a notably reduced team of civil servants relative to the high volume of suspicious transaction reports being received. In the gaming and betting sector, the number of communications to COAF is substantial, while the group of analysts responsible for reviewing them remains limited. A reduced team compromises the effectiveness of referrals and makes it difficult to take appropriate action in all suspicious transaction cases.
 
-**2. Technology**: The systems used for initial triage of suspicious transaction reports lack effective artificial intelligence and automation tools for faster processing. The unit requires modernisation of its screening and analysis systems to improve the effectiveness of referrals to competent authorities.
+**2. Technology**: Public reporting has described triage systems that lack modern automation for faster processing. Commentary on institutional capacity (including whether machine-learning triage would help) is not an Octus product claim and should be read as opinion on public-sector tooling.
 
 **3. Volume growth**: An expressive increase in suspicious transaction communications has created overload, set against a reduced team of analysts.
 
@@ -248,7 +248,7 @@ Three key areas of operator obligation stand out:
 
 **Conclusion**
 
-For an effective system, COAF requires strengthening: including increased analyst headcount, better AI infrastructure for triage automation, public-private collaboration and clearer regulatory standards. But operators cannot wait for institutional improvement. The strength of their own compliance structures is what determines their regulatory posture in an environment where the external oversight system operates under pressure. Our team is available to support operators with compliance training, technical reviews and implementation of best practices.`,
+For an effective system, COAF requires institutional strengthening: including adequate analyst capacity, modern triage tooling, public-private collaboration and clearer regulatory standards. Operators cannot wait for institutional improvement alone. The strength of their own compliance structures remains what determines their regulatory posture when external oversight operates under pressure. Our team is available to support operators with compliance training, technical reviews and implementation of documented controls.`,
   },
   {
     slug: "annual-recertification-betting-platforms-spa-mf-new-guidelines",
@@ -548,12 +548,12 @@ Brazil's new iGaming phase brings real opportunities but also demands responsibi
     title: "Regulation and Technology: How Legal Keeps Pace with iGaming Innovation",
     date: "2025-07-22",
     category: "Regulatory Analysis",
-    excerpt: "The iGaming sector is undergoing accelerated transformation driven by technological innovation, new business models and AI integration. The role of legal counsel has evolved from compliance guardian to strategic partner in this rapidly shifting landscape.",
-    content: `The iGaming sector is undergoing accelerated transformation, driven by technological innovation, new business models and a significant increase in interest from both investors and consumers. In this dynamic landscape, the role of legal counsel goes well beyond compliance: it becomes strategic, adaptable and closely integrated with the evolution of the sector itself.
+    excerpt: "The iGaming sector continues to change through new technology, business models and tools such as machine learning in product and risk workflows. Legal counsel must stay close to those operational shifts: this article is sector commentary, not an Octus product claim.",
+    content: `The iGaming sector continues to change through technological innovation, new business models and increased interest from investors and consumers. In that landscape, legal counsel must stay close to operations: this article is sector commentary and opinion, not a claim about Octus proprietary technology products.
 
 **A sector in constant motion**
 
-The digitisation of games, integration with fintechs, the use of artificial intelligence for personalised user experiences, and new crypto-asset payment modalities are among the vectors shaping the future of iGaming globally. These developments bring new legal challenges: from data protection to anti-money laundering, through the need to regulate previously entirely informal environments.
+Digitisation of games, fintech integrations, machine-learning tools used by some operators for personalisation or risk workflows, and crypto-asset payment experiments are among the vectors shaping iGaming globally. These developments bring legal challenges: from data protection to anti-money laundering, through the need to regulate previously informal environments.
 
 The global market demonstrates different approaches: countries like the United Kingdom and Malta maintain more stable and mature regulations, having been in force longer; while regions like Latin America, with Brazil as a standout example, are in full normative structuring and regulatory consolidation.
 
@@ -574,7 +574,7 @@ In this challenging environment, legal counsel must be more than a regulatory gu
 
 **Regulation as competitive advantage**
 
-Companies that integrate legal counsel strategically into their innovation processes tend to gain a differentiating advantage. Regulation, far from being viewed as a constraint, can become a competitive edge: conveying confidence to the market, investors and users. In iGaming, where trust is essential, operating within clear, ethical and transparent rules is a fundamental part of the user experience.`,
+Companies that integrate legal counsel into product and compliance design often reduce remediations later. Regulation is not only a constraint; it can support clearer operating standards for counterparties and users. In iGaming, operating within clear, ethical and transparent rules is part of a durable user and banking posture. This is commentary, not a guarantee of commercial outcomes.`,
   },
   {
     slug: "iof-update-financial-market-brazil-2025",
@@ -750,28 +750,28 @@ For international B2B providers already serving or planning to serve the Brazili
     title: "Quinel Credentialed as Certifying Entity by Brazil's Ministry of Finance, with Octus Legal Support",
     date: "2024-07-23",
     category: "Market & Industry",
-    excerpt: "With Octus's legal advisory, Quinel Limited has been credentialed by Brazil's Ministry of Finance as a certifying entity for betting systems, becoming one of five recognised laboratories authorised to certify platforms in Brazil under Ordinance SPA/MF No. 300/2024.",
-    content: `With the legal advisory of Octus, Quinel Limited has been credentialed by Brazil's Ministry of Finance as a certifying entity for betting systems, including live gaming studios and online games, under the strategic support of Octus. With this step, Quinel becomes one of five laboratories recognised to certify in Brazil, as established by Ordinance SPA/MF No. 300/2024.
+    excerpt: "Historical note (2024): with Octus legal support, Quinel Limited was credentialed by Brazil's Ministry of Finance as a certifying entity for betting systems under Ordinance SPA/MF No. 300/2024. Credential counts change over time; verify current SPA/MF listings.",
+    content: `Historical context (published 2024): with Octus legal support, Quinel Limited was credentialed by Brazil's Ministry of Finance as a certifying entity for betting systems, including live gaming studios and online games, under Ordinance SPA/MF No. 300/2024. Coverage at the time described Quinel among laboratories then recognised to certify in Brazil. Credential lists change; operators should verify the current SPA/MF register rather than treat this article as a live roster.
 
-**The significance**
+**What this meant operationally**
 
-The credentialing of Quinel marks a significant advance in the regulation of sports betting and online games in Brazil. By combining Octus's legal expertise with Quinel's international certification experience, the collaboration facilitates legal and operational compliance for gaming platforms and strengthens the sector's integrity and security.
+Credentialing expanded available laboratory options for operators seeking technical certification under Brazilian fixed-odds rules. Octus supported Quinel on the legal and institutional pathway required for that credentialing process. This article records a partnership milestone; it does not claim an Octus regulator relationship, ranking, award or ongoing exclusive status.
 
-"We are excited to contribute to a more transparent and robust market, which will benefit both operators and players," noted Rubio Teixeira, Founder of Octus.
+"We are glad to support clearer certification pathways for operators who must meet Brazilian technical requirements," noted Rubio Teixeira, Founder of Octus.
 
-"Our accreditation in Brazil represents a significant milestone, reflecting our commitment to establishing new standards of excellence in gaming certification," stated Pietro Fiorito, Quinel's GMO.
+"Our accreditation in Brazil is an important step in serving operators that need certification aligned to local rules," stated Pietro Fiorito, Quinel's GMO.
 
 **Context**
 
-Quinel is positioned to offer certifications meeting the standards established by Brazilian legislation, ensuring that sports betting and online gaming operators have systems in full compliance with current regulation. The accreditation process demanded a joint effort to meet all requirements of the Ministry of Finance, navigating a rigorous technical, legal and institutional review.
+Quinel offers testing and certification services intended to align gaming systems with applicable Brazilian technical requirements. The credentialing process required meeting Ministry of Finance requirements through a technical, legal and institutional review. Certification outcomes remain the responsibility of the laboratory and the operator's compliance programme.
 
 **About Quinel**
 
-Quinel Limited is a globally recognised and accredited gaming certification laboratory. With over a decade of experience, Quinel provides comprehensive testing, certification and inspection services, ensuring gaming systems meet rigorous international standards.
+Quinel Limited is a gaming certification laboratory that provides testing, certification and inspection services for gaming systems against applicable standards. Descriptions of international recognition are Quinel's commercial positioning and are not Octus rankings or awards.
 
 **About Octus**
 
-Octus was founded in 2019 in Portugal by Rubio Teixeira and operates across regulated markets internationally, with offices in the United States, Portugal, the United Kingdom and Brazil. The firm supports clients in navigating complex regulatory environments with a specialised and proactive approach.`,
+Octus Technology LLC (operating as Octus Consulting) supports clients navigating regulated markets through regulatory structuring, compliance coordination and related advisory work. Company identification for website legal purposes is set out in the Privacy Policy and Terms.`,
   },
   {
     slug: "senate-commission-approves-casino-bingo-gaming-bill-brazil",

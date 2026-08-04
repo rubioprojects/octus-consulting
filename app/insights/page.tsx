@@ -10,7 +10,7 @@ import { pageSocialMeta } from "../../lib/pageMeta";
 export const metadata = pageSocialMeta({
   title: "Insights",
   description:
-    "Regulatory analysis, legal developments and operational intelligence from the Octus team: covering Brazil, iGaming, compliance and international structured markets.",
+    "Published regulatory analysis, legal developments and operational insight from Octus: Brazil, iGaming, compliance and international regulated markets. Articles are commentary unless they cite a primary instrument.",
   path: "/insights",
 });
 
@@ -21,15 +21,15 @@ export default function InsightsPage() {
     <main>
       <PageHero
         eyebrow="Insights"
-        title="Regulatory intelligence."
-        titleSecondLine="From the field."
-        description="Analysis, legal developments and operational intelligence from the Octus team, covering Brazil, iGaming, compliance and international regulated markets."
+        title="Field analysis for regulated operations."
+        titleSecondLine="Published Insights."
+        description="Articles and analysis from the Octus team covering Brazil, iGaming, compliance and international regulated markets. Read as practical insight: verify primary sources for current regulatory claims."
       />
 
       <Section>
         <Suspense
           fallback={
-            <p className="text-sm text-muted-foreground">Loading intelligence index…</p>
+            <p className="text-sm text-muted-foreground">Loading Insights index…</p>
           }
         >
           <InsightsHubClient posts={posts} />
@@ -40,8 +40,8 @@ export default function InsightsPage() {
         <div className="text-center">
           <h2 className="heading-section mb-4">Discuss a structural question.</h2>
           <p className="body-large mx-auto mb-8 max-w-xl">
-            Intelligence without execution is commentary. If an article maps to a live
-            operational constraint, start a conversation.
+            Insight without execution is commentary. If an article maps to a live operational
+            constraint, start a conversation. Response times are not promised on this page.
           </p>
           <CtaLink
             href={WHATSAPP_DISCUSS_URL}

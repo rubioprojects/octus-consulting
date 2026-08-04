@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getAllPosts, getPost } from "../../../lib/posts";
 import {
+  factualReviewStatus,
   resolveIndustryLinks,
   resolveJurisdictionLinks,
   resolvePostAuthor,
@@ -33,6 +34,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
   const contentBlocks = post.content
     .replace(/^###\s+.+\n\n/, "")
     .split("\n\n");
+  const review = factualReviewStatus(post);
 
   return (
     <main>
@@ -53,7 +55,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
             >
               ← Insights
             </Link>
-            <span className="label">{post.category}</span>
+            <span className="label text-white/65">{post.category}</span>
           </div>
           <h1
             className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline"
@@ -62,13 +64,25 @@ export default function PostPage({ params }: { params: { slug: string } }) {
             {post.title}
           </h1>
           <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ color: "var(--white-40)" }}>
-            {date} · {resolvePostAuthor(post)}
+            Published {date} · {resolvePostAuthor(post)}
+          </p>
+          <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/55">
+            Editorial note: unless a primary statute or ordinance is cited, treat analysis as
+            commentary. Historical articles may not reflect current law. Verify before relying
+            on regulatory statements.
           </p>
         </div>
       </section>
 
       <section className="bg-background py-24 md:py-32">
         <div className="container post-body" style={{ maxWidth: "800px" }}>
+          {review === "needs_review" && (
+            <p className="body-sm mb-8 rounded-sm border border-border bg-[color:var(--card-bg)] p-4 text-muted-foreground">
+              Editorial marker: this older article has no named author in the catalogue. Dates and
+              authors are not invented; treat regulatory detail as historical context pending
+              human refresh.
+            </p>
+          )}
           {contentBlocks.map((para, i) => {
             if (para.startsWith("**") && para.endsWith("**") && !para.slice(2, -2).includes("\n")) {
               return (
