@@ -1,0 +1,817 @@
+{
+  "phase": "human-rescreen-polish",
+  "preview": "https://octus-consulting-qzpw83axo-axle1.vercel.app",
+  "application_sha": "d78272e4d9e2b6fbd2dab8836f323888ca39e6c2",
+  "deployment_id": "dpl_A6hCiAjUqmARxLfeChMXWCpg4Q2m",
+  "axe_core": "4.12.1",
+  "captured_at": "2026-08-04T17:38:18.416Z",
+  "screenshots": [
+    {
+      "route": "/",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/desktop/home__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/home__desktop__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/markets",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/desktop/industries__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/markets",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/industries__desktop__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/markets/igaming",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/desktop/industry-igaming__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/markets/igaming",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/industry-igaming__desktop__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/markets/fintech",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/desktop/industry-fintech__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/markets/fintech",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/industry-fintech__desktop__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/markets/crypto",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/desktop/industry-crypto__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/markets/crypto",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/industry-crypto__desktop__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/markets/technology",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/desktop/industry-technology__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/markets/technology",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/industry-technology__desktop__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/markets/forex",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/desktop/industry-forex__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/markets/forex",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/industry-forex__desktop__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/markets/high-risk",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/desktop/industry-high-risk__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/markets/high-risk",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/industry-high-risk__desktop__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/how-we-engage",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/desktop/how-we-engage__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/how-we-engage",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/how-we-engage__desktop__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/insights",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/desktop/insights__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/insights",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/insights__desktop__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/about",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/desktop/about__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/about",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/about__desktop__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/team",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/desktop/team__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/team",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/team__desktop__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/contact",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/desktop/contact__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/contact",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/contact__desktop__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/solutions",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/desktop/services__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/solutions",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/services__desktop__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/solutions/regulatory-structuring",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/desktop/service-regulatory__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/solutions/regulatory-structuring",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/service-regulatory__desktop__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/solutions/remediation-readiness",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/desktop/service-remediation__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/solutions/remediation-readiness",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/service-remediation__desktop__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/international-hub",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/desktop/service-hub__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/international-hub",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/service-hub__desktop__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/desktop/footer__desktop.png",
+      "kind": "footer"
+    },
+    {
+      "route": "/",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/mobile/home__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/home__mobile__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/markets",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/mobile/industries__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/markets",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/industries__mobile__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/markets/igaming",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/mobile/industry-igaming__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/markets/igaming",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/industry-igaming__mobile__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/markets/fintech",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/mobile/industry-fintech__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/markets/fintech",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/industry-fintech__mobile__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/markets/crypto",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/mobile/industry-crypto__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/markets/crypto",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/industry-crypto__mobile__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/markets/technology",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/mobile/industry-technology__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/markets/technology",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/industry-technology__mobile__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/markets/forex",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/mobile/industry-forex__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/markets/forex",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/industry-forex__mobile__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/markets/high-risk",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/mobile/industry-high-risk__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/markets/high-risk",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/industry-high-risk__mobile__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/how-we-engage",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/mobile/how-we-engage__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/how-we-engage",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/how-we-engage__mobile__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/insights",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/mobile/insights__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/insights",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/insights__mobile__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/about",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/mobile/about__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/about",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/about__mobile__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/team",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/mobile/team__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/team",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/team__mobile__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/contact",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/mobile/contact__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/contact",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/contact__mobile__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/solutions",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/mobile/services__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/solutions",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/services__mobile__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/solutions/regulatory-structuring",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/mobile/service-regulatory__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/solutions/regulatory-structuring",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/service-regulatory__mobile__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/solutions/remediation-readiness",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/mobile/service-remediation__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/solutions/remediation-readiness",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/service-remediation__mobile__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/international-hub",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/mobile/service-hub__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/international-hub",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/after/service-hub__mobile__hero.png",
+      "kind": "hero"
+    },
+    {
+      "route": "/",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/mobile/nav-open__mobile.png",
+      "kind": "nav"
+    },
+    {
+      "route": "/",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/human-rescreen-polish/mobile/footer__mobile.png",
+      "kind": "footer"
+    }
+  ],
+  "axe": {
+    "critical": 0,
+    "serious": 0,
+    "byRoute": [
+      {
+        "route": "/",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 2
+      },
+      {
+        "route": "/markets",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 2
+      },
+      {
+        "route": "/markets/igaming",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 2
+      },
+      {
+        "route": "/markets/fintech",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 2
+      },
+      {
+        "route": "/markets/crypto",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 2
+      },
+      {
+        "route": "/markets/technology",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 2
+      },
+      {
+        "route": "/markets/forex",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 2
+      },
+      {
+        "route": "/markets/high-risk",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 2
+      },
+      {
+        "route": "/how-we-engage",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 2
+      },
+      {
+        "route": "/insights",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 2
+      },
+      {
+        "route": "/about",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 2
+      },
+      {
+        "route": "/team",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 2
+      },
+      {
+        "route": "/contact",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 2
+      },
+      {
+        "route": "/solutions",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 2
+      },
+      {
+        "route": "/solutions/regulatory-structuring",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 2
+      },
+      {
+        "route": "/solutions/remediation-readiness",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 2
+      },
+      {
+        "route": "/international-hub",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 2
+      }
+    ]
+  },
+  "overflow": [],
+  "dash": {
+    "em": 0,
+    "en": 0,
+    "byRoute": [
+      {
+        "route": "/",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/markets",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/markets/igaming",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/markets/fintech",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/markets/crypto",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/markets/technology",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/markets/forex",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/markets/high-risk",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/how-we-engage",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/insights",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/about",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/team",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/contact",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/solutions",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/solutions/regulatory-structuring",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/solutions/remediation-readiness",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/international-hub",
+        "em": 0,
+        "en": 0
+      }
+    ]
+  },
+  "prohibited": [],
+  "nav": {
+    "desktop_labels": [
+      "Services",
+      "Industries",
+      "How we engage",
+      "Insights",
+      "About",
+      "Discuss your operation →"
+    ],
+    "mobile_labels": [
+      "All services",
+      "Regulatory Structuring",
+      "Compliance & Risk",
+      "Legal & Structural Architecture",
+      "Corporate Structuring",
+      "Private Clients",
+      "Remediation & Readiness",
+      "International Hub",
+      "Industries",
+      "How we engage",
+      "Insights",
+      "About",
+      "Discuss your operation →"
+    ]
+  },
+  "metadata": [
+    {
+      "route": "/",
+      "title": "Octus Consulting | Regulatory, Compliance and International Structuring",
+      "description": "Octus structures, coordinates and operates the work behind regulated businesses across licensing, compliance, corporate structure, remediation and specialist networks.",
+      "ogTitle": "Octus Consulting | Regulatory, Compliance and International Structuring",
+      "twitterTitle": "Octus Consulting | Regulatory, Compliance and International Structuring",
+      "canonical": "https://octusconsulting.com/",
+      "robots": ""
+    },
+    {
+      "route": "/markets",
+      "title": "Industries: regulated sectors we structure | Octus Consulting",
+      "description": "Six industries, one structural discipline: iGaming, fintech and payments, digital assets, technology and B2B infrastructure, forex and regulated financial services, and high-risk cross-border operations.",
+      "ogTitle": "Industries: regulated sectors we structure",
+      "twitterTitle": "Industries: regulated sectors we structure",
+      "canonical": "https://octusconsulting.com/markets",
+      "robots": ""
+    },
+    {
+      "route": "/markets/igaming",
+      "title": "iGaming Licensing & Regulatory Structuring | Octus | Octus Consulting",
+      "description": "End-to-end regulatory structuring, licensing execution and banking coordination for iGaming and betting operators across jurisdictions.",
+      "ogTitle": "iGaming Licensing & Regulatory Structuring | Octus",
+      "twitterTitle": "iGaming Licensing & Regulatory Structuring | Octus",
+      "canonical": "https://octusconsulting.com/markets/igaming",
+      "robots": ""
+    },
+    {
+      "route": "/markets/fintech",
+      "title": "Fintech & Payments. Regulatory Structuring | Octus | Octus Consulting",
+      "description": "Licensing, compliance and banking coordination for fintech operators, payment institutions and EMIs across jurisdictions.",
+      "ogTitle": "Fintech & Payments. Regulatory Structuring | Octus",
+      "twitterTitle": "Fintech & Payments. Regulatory Structuring | Octus",
+      "canonical": "https://octusconsulting.com/markets/fintech",
+      "robots": ""
+    },
+    {
+      "route": "/markets/crypto",
+      "title": "Crypto & Digital Assets | Octus Consulting",
+      "description": "Crypto operators build technology. Regulators see financial institutions. Octus structures the corporate, compliance and licensing architecture that bridges that gap.",
+      "ogTitle": "Crypto & Digital Assets",
+      "twitterTitle": "Crypto & Digital Assets",
+      "canonical": "https://octusconsulting.com/markets/crypto",
+      "robots": ""
+    },
+    {
+      "route": "/markets/technology",
+      "title": "Technology & B2B Infrastructure | Octus Consulting",
+      "description": "Platforms, software suppliers and infrastructure providers serving regulated operators carry regulatory exposure through their clients. Octus structures ownership, contracting, compliance and cross-border operations.",
+      "ogTitle": "Technology & B2B Infrastructure",
+      "twitterTitle": "Technology & B2B Infrastructure",
+      "canonical": "https://octusconsulting.com/markets/technology",
+      "robots": ""
+    },
+    {
+      "route": "/markets/forex",
+      "title": "Forex & Regulated Financial Services | Octus Consulting",
+      "description": "Brokerage, dealing and investment service models operate under supervision. Octus structures licensing pathways, conduct frameworks, banking readiness and cross-border operations for regulated financial services.",
+      "ogTitle": "Forex & Regulated Financial Services",
+      "twitterTitle": "Forex & Regulated Financial Services",
+      "canonical": "https://octusconsulting.com/markets/forex",
+      "robots": ""
+    },
+    {
+      "route": "/markets/high-risk",
+      "title": "High-Risk Operations | Octus Consulting",
+      "description": "High-risk is not a business problem. It is a classification that creates structural consequences for licensing, banking, compliance and partnerships. Octus structures operations to function within that classification.",
+      "ogTitle": "High-Risk Operations",
+      "twitterTitle": "High-Risk Operations",
+      "canonical": "https://octusconsulting.com/markets/high-risk",
+      "robots": ""
+    },
+    {
+      "route": "/how-we-engage",
+      "title": "How We Engage | Octus Consulting",
+      "description": "Lead Contractor programme and engagement models for regulated operations: coordination and execution across jurisdictions.",
+      "ogTitle": "How We Engage",
+      "twitterTitle": "How We Engage",
+      "canonical": "https://octusconsulting.com/how-we-engage",
+      "robots": ""
+    },
+    {
+      "route": "/insights",
+      "title": "Insights | Octus Consulting",
+      "description": "One destination for Octus analysis: regulatory developments, market movement and operational perspectives for regulated operations, with webinars and invited expert contributions published here as they are scheduled.",
+      "ogTitle": "Insights",
+      "twitterTitle": "Insights",
+      "canonical": "https://octusconsulting.com/insights",
+      "robots": ""
+    },
+    {
+      "route": "/about",
+      "title": "About | Octus Consulting",
+      "description": "Octus structures, coordinates and operates the work behind regulated businesses across regulatory, compliance, banking and corporate layers.",
+      "ogTitle": "About",
+      "twitterTitle": "About",
+      "canonical": "https://octusconsulting.com/about",
+      "robots": ""
+    },
+    {
+      "route": "/team",
+      "title": "Team | Octus Consulting",
+      "description": "Octus leadership and core specialists across regulatory, compliance, legal, corporate and international workstreams.",
+      "ogTitle": "Team",
+      "twitterTitle": "Team",
+      "canonical": "https://octusconsulting.com/team",
+      "robots": ""
+    },
+    {
+      "route": "/contact",
+      "title": "Contact | Octus Consulting",
+      "description": "Start a conversation with Octus about licensing, compliance, banking, legal and corporate workstreams via WhatsApp or email.",
+      "ogTitle": "Contact",
+      "twitterTitle": "Contact",
+      "canonical": "https://octusconsulting.com/contact",
+      "robots": ""
+    },
+    {
+      "route": "/solutions",
+      "title": "Services. Execution for regulated operations | Octus Consulting",
+      "description": "Seven coordinated service areas for regulated operations: Regulatory Structuring, Compliance & Risk, Legal & Structural Architecture, Corporate Structuring, Private Clients, Remediation & Readiness, and International Hub.",
+      "ogTitle": "Services. Execution for regulated operations",
+      "twitterTitle": "Services. Execution for regulated operations",
+      "canonical": "https://octusconsulting.com/solutions",
+      "robots": ""
+    },
+    {
+      "route": "/solutions/regulatory-structuring",
+      "title": "Regulatory Structuring | Octus Consulting",
+      "description": "Jurisdiction fit and licensing pathways for regulated operations.",
+      "ogTitle": "Regulatory Structuring",
+      "twitterTitle": "Regulatory Structuring",
+      "canonical": "https://octusconsulting.com/solutions/regulatory-structuring",
+      "robots": ""
+    },
+    {
+      "route": "/solutions/remediation-readiness",
+      "title": "Remediation & Readiness | Octus Consulting",
+      "description": "Diagnosis and repair when licensing, banking or compliance is already blocked.",
+      "ogTitle": "Remediation & Readiness",
+      "twitterTitle": "Remediation & Readiness",
+      "canonical": "https://octusconsulting.com/solutions/remediation-readiness",
+      "robots": ""
+    },
+    {
+      "route": "/international-hub",
+      "title": "International Hub | Octus Consulting",
+      "description": "Banks, PSPs, CSPs, labs, counsel and specialists, coordinated as one network.",
+      "ogTitle": "International Hub",
+      "twitterTitle": "International Hub",
+      "canonical": "https://octusconsulting.com/international-hub",
+      "robots": ""
+    }
+  ]
+}
