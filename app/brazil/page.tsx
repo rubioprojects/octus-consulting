@@ -42,26 +42,26 @@ const brazilInsights = [
 const pathwayCards = [
   {
     title: "Operator authorisation",
-    body: "SPA/MF licensing and pathway design for operators entering Brazil under Laws 13,756/2018 and 14,790/2023 and related ordinances.",
+    body: "Pathway design for operators seeking Ministry of Finance / SPA authorisation under Laws 13,756/2018 and 14,790/2023 and Portaria SPA/MF nº 827/2024 and related norms. Authorisation is granted solely by the competent authority — Octus does not issue licences and does not guarantee market access.",
   },
   {
     title: "B2B and supplier framework",
-    body: "Platform providers, laboratories and B2B suppliers prepare for recognition and registration pathways under the evolving SPA/MF agenda, sequenced with operator programmes.",
+    body: "Platform providers, laboratories and B2B suppliers prepare for recognition and registration pathways as published by SPA/MF, sequenced with operator programmes. Where frameworks remain under development, programmes are prepared against published drafts and effective norms only — not anticipated future law.",
   },
   {
     title: "Technical and certification dependencies",
-    body: "Technical certification and laboratory readiness coordinated with licensing timelines and annual recertification obligations where they apply.",
+    body: "Technical certification and laboratory readiness coordinated with licensing timelines and annual recertification obligations where currently effective SPA/MF rules require them.",
   },
   {
     title: "Corporate and local presence",
-    body: "CNPJ registration, local corporate structure and alignment with international group architecture designed for regulatory and banking scrutiny.",
+    body: "Brazilian legal-entity presence (including CNPJ) and group architecture designed for regulatory and banking scrutiny, consistent with statutory requirements for Brazilian seat and administration under Law 14,790/2023.",
   },
 ];
 
 const operatingDeps = [
   {
     title: "Regulatory",
-    body: "Pathway design, SPA/MF coordination and Brazil-facing filings.",
+    body: "Pathway design, Brazil-facing filings and counsel coordination for SPA/MF processes.",
     href: "/solutions/regulatory-structuring",
   },
   {
@@ -76,7 +76,7 @@ const operatingDeps = [
   },
   {
     title: "Banking and Payments",
-    body: "Payment infrastructure and institutional onboarding readiness.",
+    body: "Payment infrastructure and institutional onboarding readiness (supporting workstream, not a peer service area).",
     href: "/solutions/banking-payments-infrastructure",
   },
   {
@@ -100,8 +100,8 @@ export default function BrazilPage() {
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/60">
             For international operators, Brazil-facing suppliers and groups building local presence
-            under SPA/MF. Octus coordinates regulatory, corporate, compliance and banking
-            workstreams inside Brazilian processes since 2019.
+            under SPA/MF. Octus structures regulatory, corporate, compliance and banking
+            workstreams for Brazil-facing programmes. Regulatory content below is stated as of 2026-08-03.
           </p>
           <div className="mt-12">
             <CtaLink href={WHATSAPP_DISCUSS_URL} variant="on-dark" target="_blank" rel="noopener noreferrer">
@@ -126,7 +126,13 @@ export default function BrazilPage() {
       <section className="surface-elevated py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="section-label mb-3 block">Regulatory pathways</p>
-          <h2 className="heading-section mb-10 max-w-2xl">How Brazil-facing programmes are structured.</h2>
+          <h2 className="heading-section mb-4 max-w-2xl">How Brazil-facing programmes are structured.</h2>
+          <p className="body-large mb-10 max-w-3xl text-muted-foreground">
+            As of 2026-08-03. Fixed-odds betting (apostas de quota fixa) is explored under Laws
+            13,756/2018 and 14,790/2023 with prior authorisation by the Ministry of Finance through
+            SPA/MF, including Portaria SPA/MF nº 827/2024. Proposals, consultations and draft norms
+            are not treated as current law on this page.
+          </p>
           <div className="grid gap-4 md:grid-cols-2">
             {pathwayCards.map((card) => (
               <article key={card.title} className="rounded-lg border border-transparent bg-background p-6 transition-all hover:border-border md:p-7">
@@ -137,9 +143,8 @@ export default function BrazilPage() {
           </div>
           <p className="mt-8 max-w-3xl font-sans text-sm leading-relaxed text-muted-foreground">
             Where supplier recognition or registration frameworks remain under regulatory
-            development, Octus prepares programmes against anticipated requirements and the ongoing
-            SPA/MF agenda. Mandatory final registration language is used only where a currently
-            effective norm supports it.
+            development, Octus prepares programmes only against currently effective norms and
+            published official guidance. Octus is not affiliated with SPA/MF or any Brazilian regulator.
           </p>
         </div>
       </section>
@@ -216,6 +221,13 @@ export default function BrazilPage() {
           >
             {CTA_DISCUSS_LABEL}
           </Link>
+          <p className="mt-3 font-sans text-xs text-muted-foreground">
+            WhatsApp is the primary strategic intake. Alternative:{" "}
+            <Link href="/contact" className="underline underline-offset-2">
+              Contact
+            </Link>
+            .
+          </p>
         </div>
       </section>
     </main>
