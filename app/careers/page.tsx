@@ -181,7 +181,7 @@ export default function CareersPage() {
             No open positions listed? Send your profile anyway.
           </p>
           <h2 className="heading-lg cta-block__title">
-            If you are the right person, we will find the right role.
+            Share your profile for future opportunities.
           </h2>
           <a
             href="mailto:talentos@octusconsulting.com?subject=Octus Careers"
