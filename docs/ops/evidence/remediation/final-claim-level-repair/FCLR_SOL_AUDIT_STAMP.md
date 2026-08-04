@@ -10,7 +10,7 @@
 | editorial_language_commit | `998c219c1888b76d7151a624478386941ca75017` |
 | B2B_claim_mapping_commit | `53ba8f2a673ee880079b4ff75b98458d1c6998dc` |
 | validation_commit | `9bbc91a7eb08c32029e7dba3bf371d7369ba7570` |
-| evidence_commit |  |
+| evidence_commit | `159d2857b0126467c5479d90e0b87e8eddd7646b` |
 | application_sha | `9bbc91a7eb08c32029e7dba3bf371d7369ba7570` |
 | immutable_preview | https://octus-consulting-2l0bc9bx6-axle1.vercel.app |
 | deployment_id | `dpl_5Svcu7KPUxoPtmaJNtwQqVpkMK19` |
