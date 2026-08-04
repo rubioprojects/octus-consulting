@@ -6,11 +6,12 @@ import {
   WHATSAPP_DISCUSS_URL,
 } from "../../lib/cta";
 import PageHero from "./PageHero";
+import { CtaLink } from "./CtaButton";
 import OctusEditorialDivider from "./OctusEditorialDivider";
 import OctusSymbolMarker from "./OctusSymbolMarker";
 import ServiceFamilyAccordion from "./ServiceFamilyAccordion";
 
-/** Seven visible chapters covering the 12-module content checklist. */
+/** Eight visible chapters covering the 12-module content checklist. */
 export default function AreaHubPage({ area }: { area: PublicArea }) {
   const enriched = enrichPublicArea(area);
   const isRemediation = area.primaryCta === "assess";
@@ -27,6 +28,10 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
         : area.id === "AREA-HUB"
           ? "When the programme needs the specialist network."
           : "Situations that bring clients here.";
+  // Related services are derived from the area's own connection and market data,
+  // so each hub shows its own set rather than one generic block on every route.
+  const relatedAreas = enriched.connections.slice(0, 3);
+  const relatedIndustry = enriched.industries[0];
   const capabilitiesHeading =
     area.id === "AREA-REM"
       ? "How remediation is organised."
@@ -116,38 +121,10 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
             {enriched.multiJurisdiction.title}
           </h2>
           <p
-            className={`body-large mb-10 max-w-2xl ${surfaceVariant === "dark-accent" ? "text-white/70" : "text-muted-foreground"}`}
+            className={`body-large max-w-2xl ${surfaceVariant === "dark-accent" ? "text-white/70" : "text-muted-foreground"}`}
           >
             {enriched.multiJurisdiction.body}
           </p>
-          <div className="grid gap-4 md:grid-cols-2">
-            {enriched.connections.map((conn) => (
-              <Link
-                key={conn.href}
-                href={conn.href}
-                className={`rounded-sm border p-5 no-underline transition-colors md:p-6 ${
-                  surfaceVariant === "dark-accent"
-                    ? "border-white/15 hover:border-white/40"
-                    : "border-border hover:border-primary"
-                }`}
-              >
-                <h3
-                  className={`mb-2 font-sans text-base font-semibold ${
-                    surfaceVariant === "dark-accent" ? "text-white" : "text-primary"
-                  }`}
-                >
-                  {conn.areaName} →
-                </h3>
-                <p
-                  className={`font-sans text-sm ${
-                    surfaceVariant === "dark-accent" ? "text-white/65" : "text-muted-foreground"
-                  }`}
-                >
-                  {conn.reason}
-                </p>
-              </Link>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -195,12 +172,12 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
         </div>
       </section>
 
-      {/* Chapter 6 · Delivery and accountability */}
+      {/* Chapter 6 · People responsible for this area */}
       <section className="border-y border-border bg-primary/[0.03] py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <OctusEditorialDivider className="mb-10" />
-          <p className="section-label mb-3 block">Delivery and accountability</p>
-          <h2 className="heading-section mb-6 max-w-xl">How this workstream is owned.</h2>
+          <p className="section-label mb-3 block">People</p>
+          <h2 className="heading-section mb-6 max-w-xl">People responsible for this area.</h2>
           <p className="body-large mb-10 max-w-2xl text-muted-foreground">{enriched.deliveryModel}</p>
           <div className="grid gap-6 md:grid-cols-2 lg:max-w-3xl">
             {enriched.leadership.map((leader) => (
@@ -213,19 +190,56 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
               </div>
             ))}
           </div>
-          <p className="mt-8 font-sans text-sm text-muted-foreground">
+          <p className="mt-8 font-sans text-sm">
             <Link href="/team" className="text-primary no-underline hover:text-primary/80">
-              Meet the team →
-            </Link>
-            {" · "}
-            <Link href="/how-we-engage" className="text-primary no-underline hover:text-primary/80">
-              How we engage →
+              Meet the team responsible for this area →
             </Link>
           </p>
         </div>
       </section>
 
-      {/* Chapter 7 · Dark close (closed-model rhythm; one compact contextual link only) */}
+      {/* Chapter 7 · Related services (area-specific, derived from the area's own
+          connections and markets so no two hubs show the same generic set) */}
+      <section className="bg-background py-20 md:py-28">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <p className="section-label mb-3 block">Related services</p>
+          <h2 className="heading-section mb-6 max-w-2xl">
+            Where {area.name} usually connects.
+          </h2>
+          <div className="grid gap-4 md:grid-cols-3">
+            {relatedAreas.map((conn) => (
+              <Link
+                key={conn.href}
+                href={conn.href}
+                className="rounded-sm border border-border p-5 no-underline transition-colors hover:border-primary md:p-6"
+              >
+                <h3 className="mb-2 font-sans text-base font-semibold text-primary">
+                  {conn.areaName} →
+                </h3>
+                <p className="font-sans text-sm text-muted-foreground">{conn.reason}</p>
+              </Link>
+            ))}
+          </div>
+          <p className="mt-8 font-sans text-sm text-muted-foreground">
+            {relatedIndustry && (
+              <>
+                <Link
+                  href={relatedIndustry.href}
+                  className="text-primary no-underline hover:text-primary/80"
+                >
+                  {relatedIndustry.label} →
+                </Link>
+                {" · "}
+              </>
+            )}
+            <Link href="/solutions" className="text-primary no-underline hover:text-primary/80">
+              All seven areas →
+            </Link>
+          </p>
+        </div>
+      </section>
+
+      {/* Chapter 8 · Dark close: one primary conversion, no competing links */}
       <section className="surface-dark py-20 md:py-24">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
           <h2 className="mb-4 font-heading text-2xl font-semibold text-white md:text-3xl">
@@ -236,14 +250,14 @@ export default function AreaHubPage({ area }: { area: PublicArea }) {
               ? "Start with a focused assessment of what is blocking the operation."
               : "Discuss how this workstream fits the rest of the mandate."}
           </p>
-          <p className="font-sans text-sm">
-            <Link
-              href="/solutions"
-              className="text-white/75 underline-offset-4 transition-colors hover:text-white hover:underline"
-            >
-              View all services
-            </Link>
-          </p>
+          <CtaLink
+            href={primaryHref}
+            variant="on-dark"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {primaryLabel}
+          </CtaLink>
         </div>
       </section>
     </main>

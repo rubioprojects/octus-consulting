@@ -1,13 +1,8 @@
 import Link from "next/link";
 import {
-  ASSESS_PATH,
-  CTA_ASSESS_LABEL,
   CTA_DISCUSS_LABEL,
-  CTA_EMAIL_LABEL,
-  CTA_WHATSAPP_ASSESS_LABEL,
   MAILTO_DISCUSS,
   OCTUS_EMAIL,
-  WHATSAPP_ASSESS_URL,
   WHATSAPP_DISCUSS_URL,
 } from "../../lib/cta";
 import DarkHeroAtmosphere from "../../components/system/DarkHeroAtmosphere";
@@ -32,10 +27,10 @@ export default function ContactPage() {
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/70">
             Octus works with regulated businesses that need direct coordination across licensing,
-            compliance, banking, legal and corporate workstreams. Start the conversation through
-            WhatsApp or email.
+            compliance, banking, legal and corporate workstreams. WhatsApp is the strategic intake
+            channel and reaches the people who scope new mandates.
           </p>
-          <div className="mt-12 flex flex-wrap gap-4">
+          <div className="mt-12">
             <a
               href={WHATSAPP_DISCUSS_URL}
               target="_blank"
@@ -44,19 +39,10 @@ export default function ContactPage() {
             >
               {CTA_DISCUSS_LABEL}
             </a>
-            <a
-              href={MAILTO_DISCUSS}
-              className="inline-flex h-12 items-center justify-center rounded-sm border border-white/20 bg-transparent px-10 text-base font-medium text-white/80 transition-colors hover:border-white/40 hover:text-white"
-            >
-              {CTA_EMAIL_LABEL}
-            </a>
           </div>
           <p className="mt-6 font-sans text-sm text-white/50">
-            Professional email:{" "}
-            <a
-              href={MAILTO_DISCUSS}
-              className="text-white/75 underline-offset-2 hover:underline"
-            >
+            Prefer email?{" "}
+            <a href={MAILTO_DISCUSS} className="text-white/75 underline-offset-2 hover:underline">
               {OCTUS_EMAIL}
             </a>
           </p>
@@ -66,92 +52,25 @@ export default function ContactPage() {
 
       <section className="bg-background py-24 md:py-32">
         <div className="mx-auto w-full max-w-3xl px-4 sm:px-6 lg:px-8">
-          <p className="section-label mb-4 block">How to reach us</p>
-          <h2 className="heading-section mb-8">Clear paths. Same standard.</h2>
-          <div className="grid gap-8 md:grid-cols-2">
-            <article className="rounded-sm border border-border p-6">
-              <p className="section-label mb-2 block">Primary</p>
-              <h3 className="mb-3 font-sans text-lg font-semibold text-primary">
-                Discuss your operation
-              </h3>
-              <p className="body-text mb-4">
-                For commercial conversations about market entry, licensing, banking, compliance or
-                structure. WhatsApp is the primary path. Email remains available when that fits the
-                conversation better.
-              </p>
-              <div className="flex flex-col gap-3">
-                <a
-                  href={WHATSAPP_DISCUSS_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-sans text-sm font-medium text-primary no-underline hover:underline"
-                >
-                  Continue on WhatsApp →
-                </a>
-                <a
-                  href={MAILTO_DISCUSS}
-                  className="font-sans text-sm font-medium text-primary no-underline hover:underline"
-                >
-                  Write to {OCTUS_EMAIL}
-                </a>
-              </div>
-            </article>
-            <article className="rounded-sm border border-border p-6">
-              <p className="section-label mb-2 block">Blocked operation</p>
-              <h3 className="mb-3 font-sans text-lg font-semibold text-primary">
-                Start a diagnostic
-              </h3>
-              <p className="body-text mb-4">
-                When licensing, banking, compliance or operational blockage is already live, start
-                with a diagnostic so the workstream can be scoped with clarity.
-              </p>
-              <div className="flex flex-col gap-3">
-                <Link
-                  href={ASSESS_PATH}
-                  className="font-sans text-sm font-medium text-primary no-underline hover:underline"
-                >
-                  {CTA_ASSESS_LABEL}
-                </Link>
-                <a
-                  href={WHATSAPP_ASSESS_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-sans text-sm font-medium text-primary no-underline hover:underline"
-                >
-                  {CTA_WHATSAPP_ASSESS_LABEL}
-                </a>
-              </div>
-            </article>
-          </div>
+          <p className="section-label mb-4 block">What to include</p>
+          <h2 className="heading-section mb-6">Give us enough to answer properly.</h2>
+          <p className="body-text mb-8">
+            A first message does not need documents. It needs enough context for us to tell you
+            whether the situation is structural and where it would start.
+          </p>
+          <ul className="check-list mb-16">
+            {[
+              "The operation: what the business does and which markets it serves.",
+              "The jurisdictions already in play, or the ones under consideration.",
+              "What is blocked or pending: licensing, banking, compliance, corporate structure.",
+              "What has already been attempted, and by whom.",
+              "The timeline or deadline you are working against.",
+            ].map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
 
-          <article className="mt-8 rounded-sm border border-border p-6">
-            <p className="section-label mb-2 block">Existing clients</p>
-            <h3 className="mb-3 font-sans text-lg font-semibold text-primary">
-              Continue an active mandate
-            </h3>
-            <p className="body-text mb-4">
-              If you already work with Octus, use the same WhatsApp or email channels and identify
-              your mandate so the right owners can respond.
-            </p>
-            <div className="flex flex-col gap-3 sm:flex-row sm:gap-6">
-              <a
-                href={WHATSAPP_DISCUSS_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-sans text-sm font-medium text-primary no-underline hover:underline"
-              >
-                WhatsApp →
-              </a>
-              <a
-                href={MAILTO_DISCUSS}
-                className="font-sans text-sm font-medium text-primary no-underline hover:underline"
-              >
-                Write by email →
-              </a>
-            </div>
-          </article>
-
-          <p className="section-label mt-16 mb-8 block">What happens next</p>
+          <p className="section-label mb-8 block">What happens next</p>
           <ol className="flex list-none flex-col gap-8">
             {[
               {
@@ -185,26 +104,12 @@ export default function ContactPage() {
             ))}
           </ol>
 
-          <div className="mt-12 flex flex-wrap gap-4 border-t border-border pt-10">
-            <Link
-              href="/about"
-              className="font-sans text-sm font-medium text-primary no-underline hover:underline"
-            >
-              About Octus →
+          <p className="mt-12 border-t border-border pt-10 font-sans text-sm text-muted-foreground">
+            Looking to join Octus rather than engage us?{" "}
+            <Link href="/careers" className="text-primary no-underline hover:underline">
+              Explore careers →
             </Link>
-            <Link
-              href="/how-we-engage"
-              className="font-sans text-sm font-medium text-primary no-underline hover:underline"
-            >
-              How we engage →
-            </Link>
-            <Link
-              href="/diagnostic"
-              className="font-sans text-sm font-medium text-primary no-underline hover:underline"
-            >
-              Diagnostic assessment →
-            </Link>
-          </div>
+          </p>
         </div>
       </section>
     </main>

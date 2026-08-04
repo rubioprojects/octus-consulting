@@ -81,7 +81,6 @@ export default function ServicesIndexPage() {
         titleSecondLine="You need seven areas under one mandate."
         description="Octus coordinates regulatory, compliance, legal, corporate, private client, remediation and specialist network workstreams as one structure, with a clear door when the operation is already failing."
         primaryCta={{ href: WHATSAPP_DISCUSS_URL, label: CTA_DISCUSS_LABEL, external: true }}
-        secondaryCta={{ href: "/how-we-engage", label: "How we engage", quiet: true }}
       />
 
       <section className="octus-section-relative bg-background py-20 md:py-28">
@@ -98,7 +97,9 @@ export default function ServicesIndexPage() {
             </p>
             <OctusEditorialDivider className="mb-12 ml-0 mr-auto" />
           </Reveal>
-          <div className="grid gap-5 md:grid-cols-2 lg:gap-6">
+          {/* Seven areas: the odd last card (07, International Hub) is centred on
+              desktop instead of being left-stranded. Mobile keeps natural order. */}
+          <div className="solutions-area-grid grid gap-5 md:grid-cols-2 lg:gap-6">
             {areas.map((area, i) => {
               const themes =
                 REPRESENTATIVE_THEMES[area.id] ??
@@ -304,27 +305,15 @@ export default function ServicesIndexPage() {
         </div>
       </section>
 
-      <section className="surface-elevated py-16 md:py-20">
-        <div className="mx-auto flex max-w-7xl flex-col gap-6 px-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
-          <div>
-            <p className="section-label mb-2 block">Engagement</p>
-            <h2 className="heading-section mb-4 max-w-xl">How Octus engages.</h2>
-            <p className="body-large max-w-xl text-muted-foreground">
-              Lead Contractor Programme and engagement models built for accountability.
-            </p>
-          </div>
-          <CtaLink href="/how-we-engage" variant="primary">
-            How we engage →
-          </CtaLink>
-        </div>
-      </section>
-
       <section className="surface-dark py-20 md:py-24">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-          <h2 className="mb-8 font-heading text-2xl font-semibold text-white md:text-3xl">
+          <h2 className="mb-4 font-heading text-2xl font-semibold text-white md:text-3xl">
             Ready to discuss your operation?
           </h2>
-          <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
+          <p className="mb-8 font-sans text-sm leading-relaxed text-white/70">
+            One conversation to establish which of the seven areas your operation needs first.
+          </p>
+          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <CtaLink
               href={WHATSAPP_DISCUSS_URL}
               variant="on-dark"
@@ -333,9 +322,12 @@ export default function ServicesIndexPage() {
             >
               {CTA_DISCUSS_LABEL}
             </CtaLink>
-            <CtaLink href="/contact" variant="on-dark-secondary">
-              Contact Octus
-            </CtaLink>
+            <Link
+              href="/how-we-engage"
+              className="inline-flex min-h-11 items-center font-sans text-sm text-white/65 no-underline transition-colors hover:text-white"
+            >
+              How we engage →
+            </Link>
           </div>
         </div>
       </section>
