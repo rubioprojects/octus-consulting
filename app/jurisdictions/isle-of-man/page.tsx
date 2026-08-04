@@ -16,7 +16,7 @@ export default function JurisdictionsIsleOfManPage() {
       {/* ─── HERO ─── */}
       <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <span className="label">Jurisdictions · Isle of Man</span>
+          <span className="mb-5 block text-xs font-medium uppercase tracking-[0.12em] text-white/65">Jurisdictions · Isle of Man</span>
           <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline">
             Isle of Man is not a shortcut.
             <br />
@@ -291,11 +291,16 @@ export default function JurisdictionsIsleOfManPage() {
             roadmap.
           </p>
           <p className="body-text" style={{ marginBottom: "32px" }}>
-            If Isle of Man is not the right fit, the diagnostic will make that
+            If Isle of Man is not the right fit, the assessment will make that
             clear. Octus does not recommend jurisdictions that do not align with
             the operation.
           </p>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+          <Link
+            href="/diagnostic"
+            className="inline-flex h-12 items-center justify-center rounded-sm border border-border bg-transparent px-10 text-base font-medium text-primary transition-colors hover:bg-secondary"
+          >
+            Assess your situation →
+          </Link>
         </div>
       </section>
 
@@ -306,7 +311,7 @@ export default function JurisdictionsIsleOfManPage() {
           <div className="grid-auto-lg">
             {[
               { title: "Malta (MGA)", desc: "EU-regulated alternative with high compliance requirements", href: "/jurisdictions/malta" },
-              { title: "Curaçao", desc: "Established offshore framework, often a stepping stone to Tier-1", href: "/jurisdictions/curacao" },
+              { title: "Curaçao", desc: "Offshore licensing pathway often used before higher-scrutiny jurisdictions", href: "/jurisdictions/curacao" },
               { title: "iGaming Licensing", desc: "Full licensing strategy across jurisdictions", href: "/solutions/regulatory/igaming-licensing" },
               { title: "AML/KYC", desc: "Compliance architecture for regulated operations", href: "/solutions/compliance/aml-kyc" },
             ].map((r) => (
@@ -332,7 +337,7 @@ export default function JurisdictionsIsleOfManPage() {
             Structure it for the jurisdiction.{" "}
             <span style={{ color: "var(--blue-light)" }}>Not around it.</span>
           </h2>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{"Continue on WhatsApp →"}</a>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
             WhatsApp is the primary strategic intake. Prefer another channel? <Link href="/contact" className="underline underline-offset-4">Contact us here.</Link>
           </p>

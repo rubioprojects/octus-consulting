@@ -14,7 +14,7 @@ export default function JurisdictionsPortugalPage() {
     <main>
       <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <span className="label">Jurisdictions · Portugal</span>
+          <span className="mb-5 block text-xs font-medium uppercase tracking-[0.12em] text-white/65">Jurisdictions · Portugal</span>
           <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline">
             Portugal is not fast.
             <br />
@@ -255,7 +255,7 @@ export default function JurisdictionsPortugalPage() {
           <h2 className="heading-lg cta-block__title">
             Build for the regulator&apos;s standard. Not for your timeline.
           </h2>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{"Continue on WhatsApp →"}</a>
           <p className="body-sm" style={{ color: "var(--white-25)", marginTop: "16px" }}>
             WhatsApp is the primary strategic intake. Prefer another channel?{" "}
             <Link href="/contact" className="underline underline-offset-4">Contact us here.</Link>

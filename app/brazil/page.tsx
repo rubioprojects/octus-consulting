@@ -92,7 +92,7 @@ export default function BrazilPage() {
       <section className="octus-dark-hero surface-dark relative flex min-h-[70vh] flex-col justify-center overflow-hidden pt-28 pb-16 md:min-h-[80vh] md:pt-32 md:pb-24">
         <DarkHeroAtmosphere />
         <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-          <span className="label">Brazil</span>
+          <span className="mb-5 block text-xs font-medium uppercase tracking-[0.12em] text-white/65">Brazil</span>
           <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline">
             Brazil&apos;s regulated market
             <br />
@@ -219,7 +219,7 @@ export default function BrazilPage() {
             rel="noopener noreferrer"
             className="font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
           >
-            {CTA_DISCUSS_LABEL}
+            {"Continue on WhatsApp →"}
           </Link>
           <p className="mt-3 font-sans text-xs text-muted-foreground">
             WhatsApp is the primary strategic intake. Alternative:{" "}
