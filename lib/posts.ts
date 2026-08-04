@@ -629,30 +629,26 @@ Octus maintains a team of specialists positioned to support companies with regul
     title: "Trump Signs Tax Reform Imposing New Betting Taxation in the US: Lessons for Brazil",
     date: "2025-07-08",
     category: "International Regulatory",
-    excerpt: "The One Big Beautiful Bill Act limits the deduction of gambling losses to 90%, meaning US bettors may owe federal taxes even on net-loss years. The measure raises BRL 1.14 billion in revenue projections but risks driving players to offshore platforms: a lesson Brazil is simultaneously learning.",
-    content: `President Donald Trump recently signed the controversial "One Big Beautiful Bill Act", bringing significant changes to US tax policy, with particular attention to a new fiscal approach to the betting sector.
+    excerpt: "The One Big Beautiful Bill Act limits the deduction of gambling losses to 90%, meaning US bettors may owe federal taxes even on net-loss years. The comparative lesson for Brazil is about balancing revenue design with illegal-market risk. This article is editorial commentary, not primary-source tax advice.",
+    content: `President Donald Trump signed the "One Big Beautiful Bill Act", bringing significant changes to US tax policy, with particular attention to a new fiscal approach to the betting sector. The comparative reflections below are Octus editorial commentary. Exact statutory text and revenue estimates should be verified against primary US legislative and Treasury materials before any planning decision.
 
-**The change**
+**The change described in secondary coverage**
 
-Previously, American bettors could fully deduct losses against winnings, protecting themselves against taxation when there was no net profit. Under the new rule, from 2026, only deductions of **up to 90% of losses** will be permitted. This means that even bettors who end the year at a loss may owe tax.
+Previously, American bettors could fully deduct losses against winnings, protecting themselves against taxation when there was no net profit. Under the new rule, from 2026, only deductions of **up to 90% of losses** have been reported as permitted. This means that even bettors who end the year at a loss may owe tax.
 
-Example: A bettor who wins and loses USD 100,000 in a year with zero net profit will still be taxed on USD 10,000: resulting in approximately USD 2,400 in federal taxes.
+Illustrative example only: a bettor who wins and loses USD 100,000 in a year with zero net profit would still be taxed on USD 10,000 if the 90% limitation applies as described. Confirm the actual statutory computation against the enacted text.
 
 **A fiscal boost with collateral risk**
 
-The US government estimates the change will generate an additional USD 1.14 billion in revenue between 2026 and 2034. However, the measure has been sharply criticised by industry representatives who warn of a key collateral effect: the migration of bettors to offshore or illegal platforms, undermining the advances achieved through the legalisation and regulation of online betting.
-
-The legal US betting market moved approximately USD 115 billion in 2024, according to industry data.
+Public commentary has cited additional federal revenue projections for the measure. Octus does not independently verify those projections here. Industry representatives have also warned of a collateral effect: migration of bettors to offshore or illegal platforms. That risk argument is reported commentary, not an Octus empirical finding.
 
 **Reflections and lessons for Brazil**
 
-In Brazil, the Ministry of Finance was pursuing an increase in betting sector taxation, with the IOF alternative raising the rate from 12% to 18% from October. However, the Chamber of Deputies signalled limited appetite to approve this measure following the government's prior defeat in attempting to increase IOF by decree.
+In Brazil, the Ministry of Finance has at times pursued higher betting-sector taxation, including IOF-related proposals. Chamber of Deputies appetite for such measures has varied. Exact rates and legislative status must be verified against current DOU and congressional records rather than against this commentary.
 
-Brazil's scenario reinforces the need to balance revenue collection with sector viability. The risk of aggressive taxation producing the opposite of its intended effect: driving players to illegal platforms and reducing overall revenue: is the central lesson the US experience offers.
+Brazil's scenario reinforces the need to balance revenue collection with sector viability. The risk that aggressive or unpredictable taxation can weaken the incentive to remain in the legal channel is a comparative planning consideration, not a measured proof that any specific Brazilian rate produces a defined illegal-market outcome.
 
-International experience consistently demonstrates: when the cost of operating within the law is disproportionate and unpredictable, the incentive to regularise weakens and the illegal market gains structural space. Taxation, oversight and predictability must work in concert.
-
-For operators planning their regulatory and fiscal positioning in Brazil, this is a moment to observe international precedents, anticipate risks and structure operations that can withstand regulatory volatility.`,
+For operators planning regulatory and fiscal positioning in Brazil, this is a moment to observe international precedents, anticipate risks and structure operations that can withstand regulatory volatility. Verify primary instruments before relying on any rate, deadline or deduction rule.`,
   },
   {
     slug: "regulatory-agenda-2025-2026-secretariat-prizes-betting",
@@ -737,44 +733,36 @@ This development has significant implications for how licensed operators structu
 The extension of responsibility to advertising agents and influencers: already signalled in PLP 128/2025's joint liability provisions: makes this a strategic compliance area, not merely an advertising management question.`,
   },
   {
+  {
     slug: "brazil-b2b-registration-requirement-betting-igaming",
-    title: "Brazil to Implement Registration Requirement for B2B Providers in the Betting and iGaming Market",
+    title: "Brazil B2B Provider Registration: Consultation Status and What Remains Unconfirmed",
     date: "2025-01-29",
     category: "Brazil Regulatory",
-    excerpt: "Brazil's SPA Secretary signalled at ICE Barcelona in January 2025 that a mandatory registration mechanism for B2B providers was intended. The measure has since moved through the regulatory agenda to a public consultation on a draft ordinance, opened under Aviso de Consulta Pública SPA/MF nº 1/2026 and completed over the period 4 February to 23 March 2026. As at the 4 August 2026 review of this article, a final binding ordinance is not confirmed as published.",
-    content: `**Status note, reviewed 4 August 2026.** This article was first published on 29 January 2025 to report a statement of intent, not a rule. Because the distinction matters for planning, the status is set out in stages:
+    excerpt:
+      "Public consultation under Aviso de Consulta Pública SPA/MF nº 1/2026 on a draft B2B supplier ordinance ran from 4 February to 23 March 2026 and is completed. As at the 4 August 2026 review, a final binding ordinance is not confirmed as published.",
+    content: `**Status note, reviewed 4 August 2026.** This article records the confirmed consultation posture for a proposed B2B supplier recognition mechanism. It does not assert that a final rule is in force.
 
-- **Announcement (January 2025):** the Secretary of Prizes and Betting signalled at ICE Barcelona that a B2B registration mechanism was intended. A statement at an industry event creates no obligation.
-- **Regulatory agenda:** B2B regulation was included in the SPA/MF regulatory agenda for the 2025/2026 biennium, which set it as a work item with no binding effect on providers.
-- **Public consultation (completed):** the SPA opened a public consultation on a draft ordinance covering B2B suppliers under **Aviso de Consulta Pública SPA/MF nº 1/2026** (published in the Diário Oficial da União). The consultation ran from **4 February 2026 to 23 March 2026** and is **completed**. A draft under consultation is a proposal and may change materially or be withdrawn.
-- **Final rule:** as at the 4 August 2026 review of this article, a **final binding ordinance is not confirmed as published**, and no commencement or transition dates are confirmed here. Octus has not verified a publication date and does not assert one.
+**What the DOU Aviso supports**
+
+Under **Aviso de Consulta Pública SPA/MF nº 1/2026**, published in the Diário Oficial da União, the Secretariat of Prizes and Betting opened a public consultation on a draft ordinance covering B2B suppliers. The consultation window ran from **4 February 2026 to 23 March 2026** and is **completed**. A draft under consultation is a proposal and may change materially or be withdrawn.
+
+**What remains unconfirmed**
+
+As at the 4 August 2026 review of this article, a **final binding ordinance is not confirmed as published**, and no commencement or transition dates are confirmed here. Octus has not verified a publication date and does not assert one.
+
+**Sources and verification**
 
 Providers should verify the current position directly against primary sources: Aviso SPA/MF nº 1/2026 in the Diário Oficial da União for the consultation opening and window, and subsequent DOU publications for any final ordinance. Generic SPA landing pages are not a substitute for the exact instrument.
 
-The remainder of this article is the original January 2025 report, retained for context.
+**Planning implications (commentary, not a rule)**
 
-During the ICE Barcelona roundtable, a leading iGaming industry event, Regis Dudena, Secretary of Prizes and Betting at the Ministry of Finance, signalled the intention to implement a **mandatory registration mechanism for B2B providers** in Brazil's regulated market.
+For international B2B providers already serving or planning to serve the Brazilian market:
 
-**What was expected to be covered**
+- Companies providing technology, games, platforms, KYC systems or compliance tools to Brazilian licensed operators are the population a supplier-recognition draft is typically aimed at, and would be the ones required to register if a final ordinance is published in a form similar to the consulted draft;
+- Operators may usefully map their B2B supply chain to identify which partners would be affected if a final rule is published;
+- Because a closed public consultation has not been followed by a confirmed final rule as at this review, the practical posture is to track SPA/MF publication channels rather than to assume either that the requirement is already in force or that it has been abandoned.
 
-The registration was expected to encompass game providers, betting platforms, KYC (Know Your Customer) tools and other essential services for the functioning of the betting and iGaming market.
-
-While full licensing for providers is not planned in the near term, Dudena emphasised the importance of introducing specific certification for online gaming systems. "Increasingly, this type of registration is necessary," the Secretary stated, highlighting that the process will be essential for increasing transparency and ensuring regulatory compliance.
-
-**Market context**
-
-Brazil's regulated iGaming market is still in its initial phase but already faces significant challenges. Licensed operators have been pressing the government to adopt measures to combat offshore operators who continue to operate outside the country's regulatory framework.
-
-The introduction of a B2B provider registry represents an important step in this context, providing an additional layer of control and reliability to the market as it prepares to consolidate its position as one of the most promising in the global betting and online gaming landscape.
-
-**Strategic implications for B2B providers**
-
-For international B2B providers already serving or planning to serve the Brazilian market, this development is significant:
-
-- Companies providing technology, games, platforms, KYC systems or compliance tools to Brazilian licensed operators are the population the proposed mechanism is aimed at, and would be the ones required to register if a final ordinance is published in the form consulted on;
-- A registration regime would create a market differentiation opportunity, since registered providers signal legitimacy and regulatory acceptance;
-- Operators should map their B2B supply chain now to identify which partners would be affected, since that work is useful irrespective of the final drafting;
-- Because the measure has progressed from announcement to a closed public consultation without a confirmed final rule as at this review, the practical posture is to track the SPA/MF publication channels rather than to assume either that the requirement is already in force or that it has been abandoned.`,
+Earlier industry-event attribution for January 2025 oral remarks is not retained here. The 2026 consultation notice is not evidence for a 2025 oral statement, speaker quote or event-specific claim.`,
   },
   {
     slug: "quinel-credentialed-certifying-entity-brazil-ministry-finance",
@@ -938,36 +926,34 @@ This regulation represents a significant advance in the structuring and security
     date: "2026-03-31",
     category: "Regulatory",
     excerpt:
-      "Most licensing failures are not rejections. They are approvals that cannot sustain operations. Banking, compliance and structural gaps surface after the licence is granted.",
+      "In Octus engagements, material licensing problems often emerge after approval rather than as rejections. Banking, compliance and structural gaps can surface once the licence is granted.",
     content: `### Why Licensing Fails Post-Approval
 
-Most licensing failures do not happen at approval. They happen in the first six months of operation.
+In Octus engagements, material licensing problems often emerge during the early operational period rather than during the approval process. That observation is drawn from our casework. It is not a measured industry rate, and Octus does not publish a methodology claiming universal frequency or timing.
 
-The assumption is that once a licence is approved, the operation is ready. It is not.
+The assumption that once a licence is approved the operation is ready is often wrong. Licensing authorities evaluate whether the applicant meets the requirements for authorisation. They do not evaluate whether the operation will function in practice. In our experience, that distinction is where many of the hardest post-approval issues arise.
 
-Licensing authorities evaluate whether the applicant meets the requirements for authorisation. They do not evaluate whether the operation will function in practice. That distinction is where most failures occur.
+**The licence is granted. Then operational scrutiny arrives.**
 
-**The licence is granted. Then reality arrives.**
-
-Banking partners conduct their own assessment. They evaluate the compliance documentation, the corporate structure, the jurisdiction and the UBO chain independently. A licence from Curaçao, Malta or Isle of Man does not guarantee banking access. If the AML framework was built to satisfy the regulator but not the bank, the account does not open.
+Banking partners conduct their own assessment. They evaluate the compliance documentation, the corporate structure, the jurisdiction and the UBO chain independently. A licence from Curaçao, Malta or Isle of Man does not guarantee banking access. If the AML framework was built to satisfy the regulator but not the bank, the account may not open.
 
 Payment processors apply the same logic. PSPs and acquirers evaluate compliance quality, transaction patterns and risk exposure. An operation that passes regulatory review can still fail payment onboarding because the compliance layer was designed for the application, not for operations.
 
-Compliance frameworks that satisfied the licensing checklist fail under real transaction volumes. Transaction monitoring that worked in theory generates false positives or misses actual risk indicators when live traffic begins. Responsible gambling tools exist in policy but are not implemented in the platform. Internal controls are documented but nobody follows the escalation path.
+Compliance frameworks that satisfied the licensing checklist can fail under real transaction volumes. Transaction monitoring that worked in theory may generate false positives or miss actual risk indicators when live traffic begins. Responsible gambling tools may exist in policy but not be implemented in the platform. Internal controls may be documented while escalation paths remain unused.
 
-**The pattern is a common one.**
+**A recurring pattern in Octus work.**
 
-The operation invested months and significant capital into the licensing process. The licence was granted. But the structure behind it was built for approval, not for operation. The compliance framework was designed for submission, not for supervision. The corporate design was optimised for the application, not for what banks and payment partners require.
+In files we have worked on, the operation often invested months and significant capital into the licensing process. The licence was granted. But the structure behind it was built for approval, not for operation. The compliance framework was designed for submission, not for supervision. The corporate design was optimised for the application, not for what banks and payment partners require.
 
 **What this means in practice:**
 
-Operations that fail post-approval face a specific set of consequences. Banking is blocked or terminated. Payment processing is restricted or unavailable. The first supervisory review by the regulator reveals gaps that did not exist in the application. The operation is licensed but not operational.
+Where post-approval problems do arise in our engagements, the consequences tend to be concrete. Banking may be blocked or terminated. Payment processing may be restricted or unavailable. The first supervisory review by the regulator may reveal gaps that did not surface in the application. The operation can be licensed but not operational.
 
-**What most people get wrong:** They treat the licence as the finish line. In practice, the licence is where operational exposure begins. Banking, compliance supervision and payment onboarding typically happen after approval, and they tend to depend on structural decisions made before submission.
+**A common planning error:** treating the licence as the finish line. In practice, the licence is where operational exposure begins. Banking, compliance supervision and payment onboarding typically happen after approval, and they tend to depend on structural decisions made before submission.
 
-**The structural lesson is straightforward.**
+**The structural lesson.**
 
-Licensing is an outcome, not a destination. The structure behind the licence: corporate design, compliance architecture, banking strategy, operational readiness: determines whether the operation survives its first year. Building that structure for the application instead of for the operation is among the most expensive mistakes we see in regulated markets.
+Licensing is an outcome, not a destination. The structure behind the licence: corporate design, compliance architecture, banking strategy, operational readiness: determines whether the operation can sustain itself after authorisation. Building that structure for the application instead of for the operation is among the most expensive mistakes we see in Octus engagements in regulated markets.
 
 The licence gets you through the door. The structure determines whether you stay.`,
     related: [
@@ -986,30 +972,30 @@ The licence gets you through the door. The structure determines whether you stay
     date: "2026-03-31",
     category: "Banking",
     excerpt:
-      "High-risk banking failures are structural, not relational. The corporate design, compliance quality and jurisdiction determine banking access, not the introduction.",
+      "High-risk banking refusals are often structural rather than relational. In Octus engagements, corporate design, compliance quality and jurisdiction tend to matter more than introductions.",
     content: `### Banking for High-Risk Operations: Why Structure Matters More Than Relationships
 
-The bank is often not the problem. Your structure is. Declined accounts, terminated PSP relationships and failed onboardings frequently trace back to the same cause.
+In Octus engagements, declined accounts, terminated PSP relationships and failed onboardings frequently trace back to structure rather than to the absence of an introduction. That is operational observation from our casework, not a measured industry rate.
 
-The most common response to a banking refusal in high-risk sectors is to look for another bank. The second bank often declines for the same reasons. Then the third.
+A common first response to a banking refusal in high-risk sectors is to look for another bank. The second bank may decline for similar reasons. Then the third.
 
-In these cases the problem is rarely the bank. It is the structure the bank is evaluating.
+In these cases the problem is often not "the bank" in isolation. It is the structure the bank is evaluating.
 
-**Banks assess structure, not business quality.**
+**Banks assess structure, not business quality alone.**
 
 A profitable, well-managed iGaming operator with an active licence can be declined by one banking partner after another. Not because the business is bad. Because the corporate structure, AML documentation and compliance framework do not meet the bank's internal risk threshold.
 
 Banking compliance teams evaluate independently from regulators. A licence satisfies regulatory requirements. Banking requires a separate standard: clean UBO chains, AML policies that match operational reality, transaction monitoring that actually functions, and a corporate structure that does not trigger enhanced due diligence at every touchpoint.
 
-**The high-risk classification compounds everything.**
+**The high-risk classification compounds scrutiny.**
 
 When a business operates in a sector classified as high-risk: iGaming, crypto, payments, forex, adult content: structural weaknesses are amplified. Offshore incorporation triggers questions. Nominee directors create flags. Complex UBO chains demand explanation. AML policies that read like templates tend to be identified quickly.
 
 Standard banks commonly decline outright. Specialist banks require a level of compliance documentation that many operations cannot produce. The gap between what the operation has and what the bank requires is the gap that keeps the account closed.
 
-**Single-provider dependency is the hidden risk.**
+**Single-provider dependency is a material continuity risk.**
 
-Operations that do secure banking often depend on a single institution. One bank, one PSP, one acquirer. When that provider exits, and in high-risk sectors provider exits are common, the operation can stop. There is no contingency, no redundancy, no continuity plan.
+Operations that do secure banking often depend on a single institution. One bank, one PSP, one acquirer. When that provider exits, the operation can stop. In Octus work we treat single-provider dependency as a structural risk in high-risk sectors; we do not claim a measured exit rate across the market. Continuity planning still matters.
 
 Building banking resilience means structuring for multiple providers across multiple jurisdictions from the start. Not as a backup plan. As the primary architecture.
 
@@ -1017,7 +1003,7 @@ Building banking resilience means structuring for multiple providers across mult
 
 Banking access for high-risk operations is a design problem. The corporate structure, jurisdiction, compliance framework and licensing status must be designed with banking scrutiny in mind from day one. Not optimised for the regulator and then adapted for the bank. Designed for both simultaneously.
 
-**What most people get wrong:** They treat banking as a relationship problem. They look for introductions, referrals, "friendly banks." But each new bank tends to run a similar assessment on the same structure. Without changing the structure, the result is unlikely to change.
+**A common planning error:** treating banking as a relationship problem and looking only for introductions, referrals or "friendly banks." Each new bank tends to run a similar assessment on the same structure. Without changing the structure, the result is unlikely to change.
 
 When the structure is sound, banking becomes a realistic conversation. When it is not, an introduction or a relationship rarely fixes the underlying problem.`,
     related: [
@@ -1147,14 +1133,14 @@ Both are legitimate paths. Neither works without structural preparation. Upgradi
     date: "2026-03-31",
     category: "Compliance",
     excerpt:
-      "Building an internal compliance team is not always the right answer. For regulated operations scaling across jurisdictions, an operational compliance layer may deliver more consistency at lower risk.",
+      "Building an internal compliance team is not always the right answer. For regulated operations scaling across jurisdictions, an operational compliance layer may deliver more consistency. This is Octus operational commentary, not a measured industry survey.",
     content: `### Compliance-as-a-Service vs Internal Teams: When Outsourcing Makes Sense
 
-Most companies have compliance on paper. Few have compliance that actually functions under pressure.
+In Octus engagements, many companies have compliance documented on paper while fewer have compliance that functions under pressure. That is an observation from our work, not a measured industry share, and Octus does not claim a published methodology for those proportions.
 
-The default assumption in regulated businesses is that compliance belongs in-house. Hire a compliance officer, build a team, develop policies, manage reporting internally. For large, stable operations in a single jurisdiction, this works. For most others, it does not.
+The default assumption in regulated businesses is that compliance belongs in-house. Hire a compliance officer, build a team, develop policies, manage reporting internally. For large, stable operations in a single jurisdiction, this can work. For many others we advise, it does not hold under multi-jurisdiction pressure.
 
-**Where internal compliance breaks.**
+**Where internal compliance breaks in practice.**
 
 Internal compliance teams typically face three structural constraints. First, depth: a compliance officer hired for one jurisdiction rarely has expertise across multiple regulatory frameworks. When the operation expands, the internal team's knowledge does not usually expand with it at the same pace. Second, consistency: compliance is not a project. It is a continuous function. Internal teams face competing priorities, resource constraints and turnover. When the compliance officer leaves, institutional knowledge often leaves with them. Third, objectivity: internal compliance is subject to internal pressure. The team responsible for compliance reports to the same leadership that drives commercial targets.
 
@@ -1166,7 +1152,7 @@ Building an internal team that can handle this means hiring multiple specialists
 
 **What Compliance-as-a-Service actually replaces.**
 
-CAS does not replace the compliance officer role. It replaces the fragmented, under-resourced, inconsistent compliance function that most regulated operations actually have.
+CAS does not replace the compliance officer role. It replaces the fragmented, under-resourced, inconsistent compliance function that many regulated operations we review actually have.
 
 An operational CAS model provides: AML/KYC that functions under real transaction volumes, not just in policy documents. Transaction monitoring calibrated to the operation's actual risk profile. Regulatory interaction managed by specialists who understand what supervisors expect. Internal controls that are monitored, not just documented. Reporting cycles that happen on schedule, not when someone remembers.
 
@@ -1178,7 +1164,7 @@ The decision is not ideological. It is practical. CAS typically makes sense when
 
 Large operations with established, well-funded compliance departments in a stable regulatory environment may not need external operational support. The decision depends on whether the internal function actually operates consistently, not whether it exists on paper.
 
-**What most companies get wrong:** They equate having a compliance officer with having a compliance function. These are not the same thing. A person can be designated. A function must be built, resourced, monitored and held accountable. When the regulator asks how compliance operates, rather than who is responsible for it, most internal teams cannot answer.
+**A common planning error:** equating having a compliance officer with having a compliance function. These are not the same thing. A person can be designated. A function must be built, resourced, monitored and held accountable. When the regulator asks how compliance operates, rather than who is responsible for it, many internal teams we review cannot answer that question with operational evidence.
 
 The question is not whether compliance should be internal or external. It is whether the compliance function actually works. If it does not, the label does not matter.`,
     related: [
