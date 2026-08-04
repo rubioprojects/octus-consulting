@@ -1,105 +1,72 @@
 {
-  "generated_at": "2026-08-04T01:05:13.942Z",
+  "generated_at": "2026-08-04T01:35:30.096Z",
   "overall": "PASS",
   "probes": [
     {
       "probe": "/about-us",
       "status": 404,
       "location": "",
-      "x_robots_tag": "noindex",
-      "redirects_to_phase5a_route": false,
-      "result": "NO_ALIAS_AS_EXPECTED",
-      "expect": "no_alias_or_404_or_non_redirect_to_about"
+      "result": "NO_ALIAS_AS_EXPECTED"
     },
     {
       "probe": "/about-octus",
       "status": 404,
       "location": "",
-      "x_robots_tag": "noindex",
-      "redirects_to_phase5a_route": false,
-      "result": "NO_ALIAS_AS_EXPECTED",
-      "expect": "no_alias"
+      "result": "NO_ALIAS_AS_EXPECTED"
     },
     {
       "probe": "/engagement",
       "status": 404,
       "location": "",
-      "x_robots_tag": "noindex",
-      "redirects_to_phase5a_route": false,
-      "result": "NO_ALIAS_AS_EXPECTED",
-      "expect": "no_alias"
+      "result": "NO_ALIAS_AS_EXPECTED"
     },
     {
       "probe": "/how-we-work",
       "status": 404,
       "location": "",
-      "x_robots_tag": "noindex",
-      "redirects_to_phase5a_route": false,
-      "result": "NO_ALIAS_AS_EXPECTED",
-      "expect": "no_alias_to_how_we_engage"
+      "result": "NO_ALIAS_AS_EXPECTED"
     },
     {
       "probe": "/contact-us",
       "status": 404,
       "location": "",
-      "x_robots_tag": "noindex",
-      "redirects_to_phase5a_route": false,
-      "result": "NO_ALIAS_AS_EXPECTED",
-      "expect": "no_alias"
+      "result": "NO_ALIAS_AS_EXPECTED"
     },
     {
       "probe": "/get-in-touch",
       "status": 404,
       "location": "",
-      "x_robots_tag": "noindex",
-      "redirects_to_phase5a_route": false,
-      "result": "NO_ALIAS_AS_EXPECTED",
-      "expect": "no_alias"
+      "result": "NO_ALIAS_AS_EXPECTED"
     },
     {
       "probe": "/diagnostics",
       "status": 404,
       "location": "",
-      "x_robots_tag": "noindex",
-      "redirects_to_phase5a_route": false,
-      "result": "NO_ALIAS_AS_EXPECTED",
-      "expect": "no_alias"
+      "result": "NO_ALIAS_AS_EXPECTED"
     },
     {
       "probe": "/assessment",
       "status": 404,
       "location": "",
-      "x_robots_tag": "noindex",
-      "redirects_to_phase5a_route": false,
-      "result": "NO_ALIAS_AS_EXPECTED",
-      "expect": "no_alias"
+      "result": "NO_ALIAS_AS_EXPECTED"
     },
     {
       "probe": "/partners-network",
       "status": 404,
       "location": "",
-      "x_robots_tag": "noindex",
-      "redirects_to_phase5a_route": false,
-      "result": "NO_ALIAS_AS_EXPECTED",
-      "expect": "no_alias"
+      "result": "NO_ALIAS_AS_EXPECTED"
     },
     {
       "probe": "/jobs",
       "status": 404,
       "location": "",
-      "x_robots_tag": "noindex",
-      "redirects_to_phase5a_route": false,
-      "result": "NO_ALIAS_AS_EXPECTED",
-      "expect": "no_alias"
+      "result": "NO_ALIAS_AS_EXPECTED"
     },
     {
       "probe": "/careers-octus",
       "status": 404,
       "location": "",
-      "x_robots_tag": "noindex",
-      "redirects_to_phase5a_route": false,
-      "result": "NO_ALIAS_AS_EXPECTED",
-      "expect": "no_alias"
+      "result": "NO_ALIAS_AS_EXPECTED"
     }
   ]
 }

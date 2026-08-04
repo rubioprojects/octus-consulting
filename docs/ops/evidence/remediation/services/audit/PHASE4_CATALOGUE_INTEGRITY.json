@@ -1,136 +1,54 @@
 {
-  "generated_at": "2026-08-04T01:04:20.083Z",
-  "bound_preview": "https://octus-consulting-2dflp4hpy-axle1.vercel.app",
-  "bound_application_sha": "87c62c2e99187a209e519c37f993493ef267f3b7",
-  "bound_deployment_id": "dpl_6zhpEKuw1j94dVaeRSQ9pZuxU8Wu",
-  "catalogue": {
-    "expected": {
-      "areas": 7,
-      "services": 39,
-      "families": 34,
-      "deep": 11,
-      "orphans": 0,
-      "unintentional_duplicates": 0
+  "generated_at": "2026-08-04T01:34:02.081Z",
+  "expected": {
+    "areas": 7,
+    "services": 39,
+    "families": 34,
+    "deep": 11,
+    "orphans": 0,
+    "unintentional_duplicates": 0
+  },
+  "computed": {
+    "areas": 7,
+    "services_publicAreas": 39,
+    "services_catalog": 39,
+    "services_register": 39,
+    "services_architecture": 39,
+    "families": 34,
+    "deep_routes_architecture": 11,
+    "deep_routes_register": 11,
+    "deep_routes_inventory": 11,
+    "orphans": 0,
+    "unintentional_duplicates": 0
+  },
+  "per_source": {
+    "publicAreas": {
+      "raw_service_ids": 39,
+      "unique_service_ids": 39,
+      "duplicate_service_ids": [],
+      "raw_area_ids": 7,
+      "unique_area_ids": 7,
+      "duplicate_area_ids": []
     },
-    "computed": {
-      "areas": 7,
-      "services_publicAreas": 39,
-      "services_catalog": 39,
-      "services_register": 39,
-      "services_architecture": 39,
-      "families": 34,
-      "deep_routes_architecture": 11,
-      "deep_routes_register": 11,
-      "deep_routes_inventory": 11,
-      "orphans": 0,
-      "unintentional_duplicates": 0
+    "catalog": {
+      "raw_service_ids": 39,
+      "unique_service_ids": 39,
+      "duplicate_service_ids": [],
+      "raw_area_ids": 7,
+      "unique_area_ids": 7,
+      "duplicate_area_ids": [],
+      "raw_family_ids": 0,
+      "unique_family_ids": 0,
+      "duplicate_family_ids": []
     },
-    "per_source": {
-      "publicAreas": {
-        "raw_service_ids": 39,
-        "unique_service_ids": 39,
-        "duplicate_service_ids": [],
-        "raw_area_ids": 7,
-        "unique_area_ids": 7,
-        "duplicate_area_ids": []
-      },
-      "catalog": {
-        "raw_service_ids": 39,
-        "unique_service_ids": 39,
-        "duplicate_service_ids": [],
-        "raw_area_ids": 7,
-        "unique_area_ids": 7,
-        "duplicate_area_ids": [],
-        "raw_family_ids": 0,
-        "unique_family_ids": 0,
-        "duplicate_family_ids": []
-      },
-      "architecture": {
-        "raw_service_ids": 39,
-        "unique_service_ids": 39,
-        "duplicate_service_ids": [],
-        "raw_family_ids": 34,
-        "unique_family_ids": 34,
-        "duplicate_family_ids": [],
-        "dedicated_routes": [
-          "/solutions/compliance/aml-kyc",
-          "/solutions/compliance/compliance-as-a-service",
-          "/solutions/compliance/dpo-as-a-service",
-          "/solutions/compliance/gli-readiness",
-          "/solutions/compliance/internal-controls",
-          "/solutions/corporate/company-formation",
-          "/solutions/corporate/holding-design",
-          "/solutions/corporate/offshore-structuring",
-          "/solutions/regulatory/fintech-licensing",
-          "/solutions/regulatory/igaming-licensing",
-          "/solutions/regulatory/market-entry"
-        ]
-      },
-      "register": {
-        "raw_service_ids": 39,
-        "unique_service_ids": 39,
-        "duplicate_service_ids": [],
-        "dedicated_deep_routes": [
-          "/solutions/compliance/aml-kyc",
-          "/solutions/compliance/compliance-as-a-service",
-          "/solutions/compliance/dpo-as-a-service",
-          "/solutions/compliance/gli-readiness",
-          "/solutions/compliance/internal-controls",
-          "/solutions/corporate/company-formation",
-          "/solutions/corporate/holding-design",
-          "/solutions/corporate/offshore-structuring",
-          "/solutions/regulatory/fintech-licensing",
-          "/solutions/regulatory/igaming-licensing",
-          "/solutions/regulatory/market-entry"
-        ]
-      },
-      "inventory": {
-        "raw_deep_routes": 11,
-        "unique_deep_routes": 11,
-        "duplicate_deep_routes": [],
-        "deep_routes": [
-          "/solutions/compliance/aml-kyc",
-          "/solutions/compliance/compliance-as-a-service",
-          "/solutions/compliance/dpo-as-a-service",
-          "/solutions/compliance/gli-readiness",
-          "/solutions/compliance/internal-controls",
-          "/solutions/corporate/company-formation",
-          "/solutions/corporate/holding-design",
-          "/solutions/corporate/offshore-structuring",
-          "/solutions/regulatory/fintech-licensing",
-          "/solutions/regulatory/igaming-licensing",
-          "/solutions/regulatory/market-entry"
-        ]
-      }
-    },
-    "deep_routes_reconciliation": {
-      "architecture": [
-        "/solutions/compliance/aml-kyc",
-        "/solutions/compliance/compliance-as-a-service",
-        "/solutions/compliance/dpo-as-a-service",
-        "/solutions/compliance/gli-readiness",
-        "/solutions/compliance/internal-controls",
-        "/solutions/corporate/company-formation",
-        "/solutions/corporate/holding-design",
-        "/solutions/corporate/offshore-structuring",
-        "/solutions/regulatory/fintech-licensing",
-        "/solutions/regulatory/igaming-licensing",
-        "/solutions/regulatory/market-entry"
-      ],
-      "register": [
-        "/solutions/compliance/aml-kyc",
-        "/solutions/compliance/compliance-as-a-service",
-        "/solutions/compliance/dpo-as-a-service",
-        "/solutions/compliance/gli-readiness",
-        "/solutions/compliance/internal-controls",
-        "/solutions/corporate/company-formation",
-        "/solutions/corporate/holding-design",
-        "/solutions/corporate/offshore-structuring",
-        "/solutions/regulatory/fintech-licensing",
-        "/solutions/regulatory/igaming-licensing",
-        "/solutions/regulatory/market-entry"
-      ],
-      "inventory": [
+    "architecture": {
+      "raw_service_ids": 39,
+      "unique_service_ids": 39,
+      "duplicate_service_ids": [],
+      "raw_family_ids": 34,
+      "unique_family_ids": 34,
+      "duplicate_family_ids": [],
+      "dedicated_routes": [
         "/solutions/compliance/aml-kyc",
         "/solutions/compliance/compliance-as-a-service",
         "/solutions/compliance/dpo-as-a-service",
@@ -144,296 +62,373 @@
         "/solutions/regulatory/market-entry"
       ]
     },
-    "discrepancies": [],
-    "mappings": [
-      {
-        "service_id": "SVC-REG-01",
-        "destination": "/solutions/regulatory/market-entry",
-        "display_depth": "deep-service page",
-        "in_architecture_dedicated": true
-      },
-      {
-        "service_id": "SVC-REG-05",
-        "destination": "/solutions/regulatory/market-entry",
-        "display_depth": "deep-service page",
-        "in_architecture_dedicated": true
-      },
-      {
-        "service_id": "SVC-REG-02",
-        "destination": "/solutions/regulatory/igaming-licensing",
-        "display_depth": "deep-service page",
-        "in_architecture_dedicated": true
-      },
-      {
-        "service_id": "SVC-REG-03",
-        "destination": "/solutions/regulatory/fintech-licensing",
-        "display_depth": "deep-service page",
-        "in_architecture_dedicated": true
-      },
-      {
-        "service_id": "SVC-REG-04",
-        "destination": "/brazil",
-        "display_depth": "deep-service page",
-        "in_architecture_dedicated": false
-      },
-      {
-        "service_id": "SVC-CMP-01",
-        "destination": "/solutions/compliance/aml-kyc",
-        "display_depth": "deep-service page",
-        "in_architecture_dedicated": true
-      },
-      {
-        "service_id": "SVC-CMP-06",
-        "destination": "/solutions/compliance-risk",
-        "display_depth": "family module",
-        "in_architecture_dedicated": false
-      },
-      {
-        "service_id": "SVC-CMP-04",
-        "destination": "/solutions/compliance/internal-controls",
-        "display_depth": "deep-service page",
-        "in_architecture_dedicated": true
-      },
-      {
-        "service_id": "SVC-CMP-02",
-        "destination": "/solutions/compliance/compliance-as-a-service",
-        "display_depth": "deep-service page",
-        "in_architecture_dedicated": true
-      },
-      {
-        "service_id": "SVC-CMP-03",
-        "destination": "/solutions/compliance/dpo-as-a-service",
-        "display_depth": "deep-service page",
-        "in_architecture_dedicated": true
-      },
-      {
-        "service_id": "SVC-CMP-05",
-        "destination": "/solutions/compliance/gli-readiness",
-        "display_depth": "deep-service page",
-        "in_architecture_dedicated": true
-      },
-      {
-        "service_id": "SVC-LEG-01",
-        "destination": "/solutions/legal-structural-architecture",
-        "display_depth": "family module",
-        "in_architecture_dedicated": false
-      },
-      {
-        "service_id": "SVC-LEG-04",
-        "destination": "/solutions/legal-structural-architecture",
-        "display_depth": "family module",
-        "in_architecture_dedicated": false
-      },
-      {
-        "service_id": "SVC-LEG-02",
-        "destination": "/solutions/legal-structural-architecture",
-        "display_depth": "family module",
-        "in_architecture_dedicated": false
-      },
-      {
-        "service_id": "SVC-LEG-03",
-        "destination": "/solutions/legal-structural-architecture",
-        "display_depth": "family module",
-        "in_architecture_dedicated": false
-      },
-      {
-        "service_id": "SVC-CORP-01",
-        "destination": "/solutions/corporate/holding-design",
-        "display_depth": "deep-service page",
-        "in_architecture_dedicated": true
-      },
-      {
-        "service_id": "SVC-CORP-02",
-        "destination": "/solutions/corporate/company-formation",
-        "display_depth": "deep-service page",
-        "in_architecture_dedicated": true
-      },
-      {
-        "service_id": "SVC-CORP-03",
-        "destination": "/solutions/corporate/offshore-structuring",
-        "display_depth": "deep-service page",
-        "in_architecture_dedicated": true
-      },
-      {
-        "service_id": "SVC-CORP-04",
-        "destination": "/solutions/corporate-structuring",
-        "display_depth": "family module",
-        "in_architecture_dedicated": false
-      },
-      {
-        "service_id": "SVC-CORP-05",
-        "destination": "/solutions/banking-payments-infrastructure",
-        "display_depth": "deep-service page",
-        "in_architecture_dedicated": false
-      },
-      {
-        "service_id": "SVC-CORP-06",
-        "destination": "/solutions/corporate-structuring",
-        "display_depth": "family module",
-        "in_architecture_dedicated": false
-      },
-      {
-        "service_id": "SVC-CORP-07",
-        "destination": "/solutions/corporate-structuring",
-        "display_depth": "family module",
-        "in_architecture_dedicated": false
-      },
-      {
-        "service_id": "SVC-PC-01",
-        "destination": "/private-clients",
-        "display_depth": "family module",
-        "in_architecture_dedicated": false
-      },
-      {
-        "service_id": "SVC-PC-02",
-        "destination": "/private-clients",
-        "display_depth": "family module",
-        "in_architecture_dedicated": false
-      },
-      {
-        "service_id": "SVC-PC-03",
-        "destination": "/private-clients",
-        "display_depth": "family module",
-        "in_architecture_dedicated": false
-      },
-      {
-        "service_id": "SVC-PC-04",
-        "destination": "/private-clients",
-        "display_depth": "family module",
-        "in_architecture_dedicated": false
-      },
-      {
-        "service_id": "SVC-PC-05",
-        "destination": "/private-clients",
-        "display_depth": "family module",
-        "in_architecture_dedicated": false
-      },
-      {
-        "service_id": "SVC-REM-01",
-        "destination": "/diagnostic",
-        "display_depth": "deep-service page",
-        "in_architecture_dedicated": false
-      },
-      {
-        "service_id": "SVC-REM-02",
-        "destination": "/solutions/remediation-readiness",
-        "display_depth": "family module",
-        "in_architecture_dedicated": false
-      },
-      {
-        "service_id": "SVC-REM-03",
-        "destination": "/solutions/banking-payments-infrastructure",
-        "display_depth": "deep-service page",
-        "in_architecture_dedicated": false
-      },
-      {
-        "service_id": "SVC-REM-05",
-        "destination": "/solutions/remediation-readiness",
-        "display_depth": "family module",
-        "in_architecture_dedicated": false
-      },
-      {
-        "service_id": "SVC-REM-04",
-        "destination": "/solutions/remediation-readiness",
-        "display_depth": "family module",
-        "in_architecture_dedicated": false
-      },
-      {
-        "service_id": "SVC-REM-06",
-        "destination": "/solutions/remediation-readiness",
-        "display_depth": "family module",
-        "in_architecture_dedicated": false
-      },
-      {
-        "service_id": "SVC-HUB-01",
-        "destination": "/international-hub",
-        "display_depth": "family module",
-        "in_architecture_dedicated": false
-      },
-      {
-        "service_id": "SVC-HUB-02",
-        "destination": "/solutions/banking-payments-infrastructure",
-        "display_depth": "deep-service page",
-        "in_architecture_dedicated": false
-      },
-      {
-        "service_id": "SVC-HUB-03",
-        "destination": "/solutions/banking-payments-infrastructure",
-        "display_depth": "deep-service page",
-        "in_architecture_dedicated": false
-      },
-      {
-        "service_id": "SVC-HUB-04",
-        "destination": "/international-hub",
-        "display_depth": "family module",
-        "in_architecture_dedicated": false
-      },
-      {
-        "service_id": "SVC-HUB-05",
-        "destination": "/international-hub",
-        "display_depth": "family module",
-        "in_architecture_dedicated": false
-      },
-      {
-        "service_id": "SVC-HUB-06",
-        "destination": "/international-hub",
-        "display_depth": "family module",
-        "in_architecture_dedicated": false
-      },
-      {
-        "note": "shared_public_url_classified",
-        "url": "/solutions/regulatory/market-entry",
-        "services": [
-          "SVC-REG-01",
-          "SVC-REG-05"
-        ],
-        "classifications": [
-          "shared_deep_pathway_siblings",
-          "shared_deep_pathway_siblings"
-        ]
-      },
-      {
-        "note": "shared_public_url_classified",
-        "url": "/private-clients",
-        "services": [
-          "SVC-PC-01",
-          "SVC-PC-02",
-          "SVC-PC-03",
-          "SVC-PC-04",
-          "SVC-PC-05"
-        ],
-        "classifications": [
-          "area_hub_surface_shared_intentional",
-          "area_hub_surface_shared_intentional",
-          "area_hub_surface_shared_intentional",
-          "area_hub_surface_shared_intentional",
-          "area_hub_surface_shared_intentional"
-        ]
-      },
-      {
-        "note": "shared_public_url_classified",
-        "url": "/international-hub",
-        "services": [
-          "SVC-HUB-01",
-          "SVC-HUB-04",
-          "SVC-HUB-05",
-          "SVC-HUB-06"
-        ],
-        "classifications": [
-          "area_hub_surface_shared_intentional",
-          "area_hub_surface_shared_intentional",
-          "area_hub_surface_shared_intentional",
-          "area_hub_surface_shared_intentional"
-        ]
-      }
-    ],
-    "sources": {
-      "publicAreas": "/Users/devrubio/Developer/Octus/octus-consulting/lib/publicAreas.ts",
-      "catalog": "/Users/devrubio/Developer/Octus/octus-consulting/docs/commercial/public-catalog/OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
-      "families": "/Users/devrubio/Developer/Octus/octus-consulting/docs/website/OCTUS_SERVICE_FAMILY_ARCHITECTURE_V1.json",
-      "register": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/services/PHASE4_PUBLIC_SERVICE_REGISTER.md",
-      "inventory": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/services/PHASE4_ROUTE_INVENTORY.md"
+    "register": {
+      "raw_service_ids": 39,
+      "unique_service_ids": 39,
+      "duplicate_service_ids": [],
+      "dedicated_deep_routes": [
+        "/solutions/compliance/aml-kyc",
+        "/solutions/compliance/compliance-as-a-service",
+        "/solutions/compliance/dpo-as-a-service",
+        "/solutions/compliance/gli-readiness",
+        "/solutions/compliance/internal-controls",
+        "/solutions/corporate/company-formation",
+        "/solutions/corporate/holding-design",
+        "/solutions/corporate/offshore-structuring",
+        "/solutions/regulatory/fintech-licensing",
+        "/solutions/regulatory/igaming-licensing",
+        "/solutions/regulatory/market-entry"
+      ]
     },
-    "status": "PASS"
-  }
+    "inventory": {
+      "raw_deep_routes": 11,
+      "unique_deep_routes": 11,
+      "duplicate_deep_routes": [],
+      "deep_routes": [
+        "/solutions/compliance/aml-kyc",
+        "/solutions/compliance/compliance-as-a-service",
+        "/solutions/compliance/dpo-as-a-service",
+        "/solutions/compliance/gli-readiness",
+        "/solutions/compliance/internal-controls",
+        "/solutions/corporate/company-formation",
+        "/solutions/corporate/holding-design",
+        "/solutions/corporate/offshore-structuring",
+        "/solutions/regulatory/fintech-licensing",
+        "/solutions/regulatory/igaming-licensing",
+        "/solutions/regulatory/market-entry"
+      ]
+    }
+  },
+  "deep_routes_reconciliation": {
+    "architecture": [
+      "/solutions/compliance/aml-kyc",
+      "/solutions/compliance/compliance-as-a-service",
+      "/solutions/compliance/dpo-as-a-service",
+      "/solutions/compliance/gli-readiness",
+      "/solutions/compliance/internal-controls",
+      "/solutions/corporate/company-formation",
+      "/solutions/corporate/holding-design",
+      "/solutions/corporate/offshore-structuring",
+      "/solutions/regulatory/fintech-licensing",
+      "/solutions/regulatory/igaming-licensing",
+      "/solutions/regulatory/market-entry"
+    ],
+    "register": [
+      "/solutions/compliance/aml-kyc",
+      "/solutions/compliance/compliance-as-a-service",
+      "/solutions/compliance/dpo-as-a-service",
+      "/solutions/compliance/gli-readiness",
+      "/solutions/compliance/internal-controls",
+      "/solutions/corporate/company-formation",
+      "/solutions/corporate/holding-design",
+      "/solutions/corporate/offshore-structuring",
+      "/solutions/regulatory/fintech-licensing",
+      "/solutions/regulatory/igaming-licensing",
+      "/solutions/regulatory/market-entry"
+    ],
+    "inventory": [
+      "/solutions/compliance/aml-kyc",
+      "/solutions/compliance/compliance-as-a-service",
+      "/solutions/compliance/dpo-as-a-service",
+      "/solutions/compliance/gli-readiness",
+      "/solutions/compliance/internal-controls",
+      "/solutions/corporate/company-formation",
+      "/solutions/corporate/holding-design",
+      "/solutions/corporate/offshore-structuring",
+      "/solutions/regulatory/fintech-licensing",
+      "/solutions/regulatory/igaming-licensing",
+      "/solutions/regulatory/market-entry"
+    ]
+  },
+  "discrepancies": [],
+  "mappings": [
+    {
+      "service_id": "SVC-REG-01",
+      "destination": "/solutions/regulatory/market-entry",
+      "display_depth": "deep-service page",
+      "in_architecture_dedicated": true
+    },
+    {
+      "service_id": "SVC-REG-05",
+      "destination": "/solutions/regulatory/market-entry",
+      "display_depth": "deep-service page",
+      "in_architecture_dedicated": true
+    },
+    {
+      "service_id": "SVC-REG-02",
+      "destination": "/solutions/regulatory/igaming-licensing",
+      "display_depth": "deep-service page",
+      "in_architecture_dedicated": true
+    },
+    {
+      "service_id": "SVC-REG-03",
+      "destination": "/solutions/regulatory/fintech-licensing",
+      "display_depth": "deep-service page",
+      "in_architecture_dedicated": true
+    },
+    {
+      "service_id": "SVC-REG-04",
+      "destination": "/brazil",
+      "display_depth": "deep-service page",
+      "in_architecture_dedicated": false
+    },
+    {
+      "service_id": "SVC-CMP-01",
+      "destination": "/solutions/compliance/aml-kyc",
+      "display_depth": "deep-service page",
+      "in_architecture_dedicated": true
+    },
+    {
+      "service_id": "SVC-CMP-06",
+      "destination": "/solutions/compliance-risk",
+      "display_depth": "family module",
+      "in_architecture_dedicated": false
+    },
+    {
+      "service_id": "SVC-CMP-04",
+      "destination": "/solutions/compliance/internal-controls",
+      "display_depth": "deep-service page",
+      "in_architecture_dedicated": true
+    },
+    {
+      "service_id": "SVC-CMP-02",
+      "destination": "/solutions/compliance/compliance-as-a-service",
+      "display_depth": "deep-service page",
+      "in_architecture_dedicated": true
+    },
+    {
+      "service_id": "SVC-CMP-03",
+      "destination": "/solutions/compliance/dpo-as-a-service",
+      "display_depth": "deep-service page",
+      "in_architecture_dedicated": true
+    },
+    {
+      "service_id": "SVC-CMP-05",
+      "destination": "/solutions/compliance/gli-readiness",
+      "display_depth": "deep-service page",
+      "in_architecture_dedicated": true
+    },
+    {
+      "service_id": "SVC-LEG-01",
+      "destination": "/solutions/legal-structural-architecture",
+      "display_depth": "family module",
+      "in_architecture_dedicated": false
+    },
+    {
+      "service_id": "SVC-LEG-04",
+      "destination": "/solutions/legal-structural-architecture",
+      "display_depth": "family module",
+      "in_architecture_dedicated": false
+    },
+    {
+      "service_id": "SVC-LEG-02",
+      "destination": "/solutions/legal-structural-architecture",
+      "display_depth": "family module",
+      "in_architecture_dedicated": false
+    },
+    {
+      "service_id": "SVC-LEG-03",
+      "destination": "/solutions/legal-structural-architecture",
+      "display_depth": "family module",
+      "in_architecture_dedicated": false
+    },
+    {
+      "service_id": "SVC-CORP-01",
+      "destination": "/solutions/corporate/holding-design",
+      "display_depth": "deep-service page",
+      "in_architecture_dedicated": true
+    },
+    {
+      "service_id": "SVC-CORP-02",
+      "destination": "/solutions/corporate/company-formation",
+      "display_depth": "deep-service page",
+      "in_architecture_dedicated": true
+    },
+    {
+      "service_id": "SVC-CORP-03",
+      "destination": "/solutions/corporate/offshore-structuring",
+      "display_depth": "deep-service page",
+      "in_architecture_dedicated": true
+    },
+    {
+      "service_id": "SVC-CORP-04",
+      "destination": "/solutions/corporate-structuring",
+      "display_depth": "family module",
+      "in_architecture_dedicated": false
+    },
+    {
+      "service_id": "SVC-CORP-05",
+      "destination": "/solutions/banking-payments-infrastructure",
+      "display_depth": "deep-service page",
+      "in_architecture_dedicated": false
+    },
+    {
+      "service_id": "SVC-CORP-06",
+      "destination": "/solutions/corporate-structuring",
+      "display_depth": "family module",
+      "in_architecture_dedicated": false
+    },
+    {
+      "service_id": "SVC-CORP-07",
+      "destination": "/solutions/corporate-structuring",
+      "display_depth": "family module",
+      "in_architecture_dedicated": false
+    },
+    {
+      "service_id": "SVC-PC-01",
+      "destination": "/private-clients",
+      "display_depth": "family module",
+      "in_architecture_dedicated": false
+    },
+    {
+      "service_id": "SVC-PC-02",
+      "destination": "/private-clients",
+      "display_depth": "family module",
+      "in_architecture_dedicated": false
+    },
+    {
+      "service_id": "SVC-PC-03",
+      "destination": "/private-clients",
+      "display_depth": "family module",
+      "in_architecture_dedicated": false
+    },
+    {
+      "service_id": "SVC-PC-04",
+      "destination": "/private-clients",
+      "display_depth": "family module",
+      "in_architecture_dedicated": false
+    },
+    {
+      "service_id": "SVC-PC-05",
+      "destination": "/private-clients",
+      "display_depth": "family module",
+      "in_architecture_dedicated": false
+    },
+    {
+      "service_id": "SVC-REM-01",
+      "destination": "/diagnostic",
+      "display_depth": "deep-service page",
+      "in_architecture_dedicated": false
+    },
+    {
+      "service_id": "SVC-REM-02",
+      "destination": "/solutions/remediation-readiness",
+      "display_depth": "family module",
+      "in_architecture_dedicated": false
+    },
+    {
+      "service_id": "SVC-REM-03",
+      "destination": "/solutions/banking-payments-infrastructure",
+      "display_depth": "deep-service page",
+      "in_architecture_dedicated": false
+    },
+    {
+      "service_id": "SVC-REM-05",
+      "destination": "/solutions/remediation-readiness",
+      "display_depth": "family module",
+      "in_architecture_dedicated": false
+    },
+    {
+      "service_id": "SVC-REM-04",
+      "destination": "/solutions/remediation-readiness",
+      "display_depth": "family module",
+      "in_architecture_dedicated": false
+    },
+    {
+      "service_id": "SVC-REM-06",
+      "destination": "/solutions/remediation-readiness",
+      "display_depth": "family module",
+      "in_architecture_dedicated": false
+    },
+    {
+      "service_id": "SVC-HUB-01",
+      "destination": "/international-hub",
+      "display_depth": "family module",
+      "in_architecture_dedicated": false
+    },
+    {
+      "service_id": "SVC-HUB-02",
+      "destination": "/solutions/banking-payments-infrastructure",
+      "display_depth": "deep-service page",
+      "in_architecture_dedicated": false
+    },
+    {
+      "service_id": "SVC-HUB-03",
+      "destination": "/solutions/banking-payments-infrastructure",
+      "display_depth": "deep-service page",
+      "in_architecture_dedicated": false
+    },
+    {
+      "service_id": "SVC-HUB-04",
+      "destination": "/international-hub",
+      "display_depth": "family module",
+      "in_architecture_dedicated": false
+    },
+    {
+      "service_id": "SVC-HUB-05",
+      "destination": "/international-hub",
+      "display_depth": "family module",
+      "in_architecture_dedicated": false
+    },
+    {
+      "service_id": "SVC-HUB-06",
+      "destination": "/international-hub",
+      "display_depth": "family module",
+      "in_architecture_dedicated": false
+    },
+    {
+      "note": "shared_public_url_classified",
+      "url": "/solutions/regulatory/market-entry",
+      "services": [
+        "SVC-REG-01",
+        "SVC-REG-05"
+      ],
+      "classifications": [
+        "shared_deep_pathway_siblings",
+        "shared_deep_pathway_siblings"
+      ]
+    },
+    {
+      "note": "shared_public_url_classified",
+      "url": "/private-clients",
+      "services": [
+        "SVC-PC-01",
+        "SVC-PC-02",
+        "SVC-PC-03",
+        "SVC-PC-04",
+        "SVC-PC-05"
+      ],
+      "classifications": [
+        "area_hub_surface_shared_intentional",
+        "area_hub_surface_shared_intentional",
+        "area_hub_surface_shared_intentional",
+        "area_hub_surface_shared_intentional",
+        "area_hub_surface_shared_intentional"
+      ]
+    },
+    {
+      "note": "shared_public_url_classified",
+      "url": "/international-hub",
+      "services": [
+        "SVC-HUB-01",
+        "SVC-HUB-04",
+        "SVC-HUB-05",
+        "SVC-HUB-06"
+      ],
+      "classifications": [
+        "area_hub_surface_shared_intentional",
+        "area_hub_surface_shared_intentional",
+        "area_hub_surface_shared_intentional",
+        "area_hub_surface_shared_intentional"
+      ]
+    }
+  ],
+  "sources": {
+    "publicAreas": "/Users/devrubio/Developer/Octus/octus-consulting/lib/publicAreas.ts",
+    "catalog": "/Users/devrubio/Developer/Octus/octus-consulting/docs/commercial/public-catalog/OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+    "families": "/Users/devrubio/Developer/Octus/octus-consulting/docs/website/OCTUS_SERVICE_FAMILY_ARCHITECTURE_V1.json",
+    "register": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/services/PHASE4_PUBLIC_SERVICE_REGISTER.md",
+    "inventory": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/services/PHASE4_ROUTE_INVENTORY.md"
+  },
+  "status": "PASS"
 }

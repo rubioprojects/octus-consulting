@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-04T00:03:52.850Z",
-  "origin": "https://octus-consulting-beqxfdqrk-axle1.vercel.app",
+  "generated_at": "2026-08-04T01:34:02.080Z",
+  "origin": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
   "rule": "require_301_308_location_follow_canonical_tag",
   "aliases": [
     {
       "alias": "/solutions/regulatory-strategy-licensing",
       "canonical": "/solutions/regulatory-structuring",
-      "origin": "https://octus-consulting-beqxfdqrk-axle1.vercel.app",
+      "origin": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
       "manualStatus": 308,
       "location": "/solutions/regulatory-structuring",
       "locationResolvedPath": "/solutions/regulatory-structuring",
@@ -27,7 +27,7 @@
     {
       "alias": "/solutions/compliance-risk-systems",
       "canonical": "/solutions/compliance-risk",
-      "origin": "https://octus-consulting-beqxfdqrk-axle1.vercel.app",
+      "origin": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
       "manualStatus": 308,
       "location": "/solutions/compliance-risk",
       "locationResolvedPath": "/solutions/compliance-risk",
@@ -48,7 +48,7 @@
     {
       "alias": "/solutions/legal-contractual-architecture",
       "canonical": "/solutions/legal-structural-architecture",
-      "origin": "https://octus-consulting-beqxfdqrk-axle1.vercel.app",
+      "origin": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
       "manualStatus": 308,
       "location": "/solutions/legal-structural-architecture",
       "locationResolvedPath": "/solutions/legal-structural-architecture",
@@ -69,7 +69,7 @@
     {
       "alias": "/solutions/corporate-cross-border",
       "canonical": "/solutions/corporate-structuring",
-      "origin": "https://octus-consulting-beqxfdqrk-axle1.vercel.app",
+      "origin": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
       "manualStatus": 308,
       "location": "/solutions/corporate-structuring",
       "locationResolvedPath": "/solutions/corporate-structuring",
@@ -90,7 +90,7 @@
     {
       "alias": "/solutions/operational-remediation-readiness",
       "canonical": "/solutions/remediation-readiness",
-      "origin": "https://octus-consulting-beqxfdqrk-axle1.vercel.app",
+      "origin": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
       "manualStatus": 308,
       "location": "/solutions/remediation-readiness",
       "locationResolvedPath": "/solutions/remediation-readiness",
@@ -111,7 +111,7 @@
     {
       "alias": "/solutions/regulatory/banking-payments",
       "canonical": "/solutions/banking-payments-infrastructure",
-      "origin": "https://octus-consulting-beqxfdqrk-axle1.vercel.app",
+      "origin": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
       "manualStatus": 308,
       "location": "/solutions/banking-payments-infrastructure",
       "locationResolvedPath": "/solutions/banking-payments-infrastructure",
@@ -132,7 +132,7 @@
     {
       "alias": "/services",
       "canonical": "/solutions",
-      "origin": "https://octus-consulting-beqxfdqrk-axle1.vercel.app",
+      "origin": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
       "manualStatus": 308,
       "location": "/solutions",
       "locationResolvedPath": "/solutions",
@@ -153,7 +153,7 @@
     {
       "alias": "/regulatory",
       "canonical": "/solutions/regulatory-structuring",
-      "origin": "https://octus-consulting-beqxfdqrk-axle1.vercel.app",
+      "origin": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
       "manualStatus": 308,
       "location": "/solutions/regulatory-structuring",
       "locationResolvedPath": "/solutions/regulatory-structuring",
@@ -174,7 +174,7 @@
     {
       "alias": "/compliance",
       "canonical": "/solutions/compliance-risk",
-      "origin": "https://octus-consulting-beqxfdqrk-axle1.vercel.app",
+      "origin": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
       "manualStatus": 308,
       "location": "/solutions/compliance-risk",
       "locationResolvedPath": "/solutions/compliance-risk",
@@ -195,7 +195,7 @@
     {
       "alias": "/corporate",
       "canonical": "/solutions/corporate-structuring",
-      "origin": "https://octus-consulting-beqxfdqrk-axle1.vercel.app",
+      "origin": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
       "manualStatus": 308,
       "location": "/solutions/corporate-structuring",
       "locationResolvedPath": "/solutions/corporate-structuring",
@@ -216,7 +216,7 @@
     {
       "alias": "/audit",
       "canonical": "/solutions/remediation-readiness",
-      "origin": "https://octus-consulting-beqxfdqrk-axle1.vercel.app",
+      "origin": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
       "manualStatus": 308,
       "location": "/solutions/remediation-readiness",
       "locationResolvedPath": "/solutions/remediation-readiness",
@@ -237,7 +237,7 @@
     {
       "alias": "/legal-architecture",
       "canonical": "/solutions/legal-structural-architecture",
-      "origin": "https://octus-consulting-beqxfdqrk-axle1.vercel.app",
+      "origin": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
       "manualStatus": 308,
       "location": "/solutions/legal-structural-architecture",
       "locationResolvedPath": "/solutions/legal-structural-architecture",

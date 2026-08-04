@@ -1,5 +1,127 @@
 {
-  "homepage": {
+  "generated_at": "2026-08-04T01:35:30.096Z",
+  "phase": "5A_FINAL_CLOSEOUT",
+  "terminal_target": "OCTUS_PHASE5A_FINAL_CLOSEOUT_READY_FOR_SOL_AUDIT",
+  "immutable_preview_url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
+  "deployment_id": "dpl_C8Zt5mFCF6BaK165cKMt6ELBknKj",
+  "application_code_sha": "9e97c13e90ecc4165e969ee04181e8d2a3a9110c",
+  "deployed_git_sha": "9e97c13e90ecc4165e969ee04181e8d2a3a9110c",
+  "axe_core_version": "4.12.1",
+  "checks": {
+    "canonical_meta_robots_clean": "PASS",
+    "preview_x_robots_noindex": "PASS",
+    "preview_noindex_header": "PASS",
+    "internal_link_crawl": "PASS",
+    "external_rel_audit": "PASS",
+    "heading_hierarchy": "PASS",
+    "accessible_names": "PASS",
+    "alias_probes": "PASS",
+    "homepage_full_regression": "PASS",
+    "team_full_regression": "PASS",
+    "services_full_regression": "PASS",
+    "global_system_regression": "PASS",
+    "cookie_banner_persistence": "PASS",
+    "mobile_nav_close_gate": "PASS",
+    "axe_critical_serious": "PASS",
+    "frozen_files": "PASS",
+    "build": "PASS",
+    "typecheck": "PASS",
+    "screenshot_manifest_provenance": "PASS"
+  },
+  "failed_checks": [],
+  "overall": "PASS",
+  "preview_x_robots_routes": [
+    {
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/about",
+      "status": 200,
+      "x_robots_tag": "noindex",
+      "location": "",
+      "preview_x_robots_noindex": "PASS"
+    },
+    {
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/how-we-engage",
+      "status": 200,
+      "x_robots_tag": "noindex",
+      "location": "",
+      "preview_x_robots_noindex": "PASS"
+    },
+    {
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/contact",
+      "status": 200,
+      "x_robots_tag": "noindex",
+      "location": "",
+      "preview_x_robots_noindex": "PASS"
+    },
+    {
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/diagnostic",
+      "status": 200,
+      "x_robots_tag": "noindex",
+      "location": "",
+      "preview_x_robots_noindex": "PASS"
+    },
+    {
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/partners",
+      "status": 200,
+      "x_robots_tag": "noindex",
+      "location": "",
+      "preview_x_robots_noindex": "PASS"
+    },
+    {
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/careers",
+      "status": 200,
+      "x_robots_tag": "noindex",
+      "location": "",
+      "preview_x_robots_noindex": "PASS"
+    }
+  ],
+  "meta_robots_routes": [
+    {
+      "route": "/about",
+      "status": 200,
+      "meta_robots": "",
+      "result": "PASS"
+    },
+    {
+      "route": "/how-we-engage",
+      "status": 200,
+      "meta_robots": "",
+      "result": "PASS"
+    },
+    {
+      "route": "/contact",
+      "status": 200,
+      "meta_robots": "",
+      "result": "PASS"
+    },
+    {
+      "route": "/diagnostic",
+      "status": 200,
+      "meta_robots": "",
+      "result": "PASS"
+    },
+    {
+      "route": "/partners",
+      "status": 200,
+      "meta_robots": "",
+      "result": "PASS"
+    },
+    {
+      "route": "/careers",
+      "status": 200,
+      "meta_robots": "",
+      "result": "PASS"
+    }
+  ],
+  "violation_totals": {
+    "critical": 0,
+    "serious": 0,
+    "moderate": 12,
+    "incomplete": 18
+  },
+  "external_https_links_tested": 13,
+  "whatsapp_links_tested": 13,
+  "external_rel_failures": [],
+  "homepage_regression": {
     "seven_peer_areas": "PASS",
     "peer_modules": [
       "01Regulatory Structuring",
@@ -23,7 +145,7 @@
     "homepage_unchanged": "PASS",
     "status": "PASS"
   },
-  "team": {
+  "team_regression": {
     "actual_card_count": 10,
     "exact_ordered_roster": "PASS",
     "ordered_cards": [
@@ -159,13 +281,49 @@
     "team_files_unchanged": "PASS",
     "status": "PASS"
   },
-  "services": {
+  "services_regression": {
     "phase4_spawn_exit": 0,
     "phase4_overall": "PASS",
     "catalogue_status": "PASS",
-    "computed": null,
-    "axe_desktop": null,
-    "axe_mobile": null,
+    "computed": {
+      "areas": 7,
+      "services_publicAreas": 39,
+      "services_catalog": 39,
+      "services_register": 39,
+      "services_architecture": 39,
+      "families": 34,
+      "deep_routes_architecture": 11,
+      "deep_routes_register": 11,
+      "deep_routes_inventory": 11,
+      "orphans": 0,
+      "unintentional_duplicates": 0
+    },
+    "axe_desktop": {
+      "viewport": "desktop",
+      "routes_tested": 21,
+      "serious": 0,
+      "critical": 0,
+      "moderate": 21,
+      "minor": 0,
+      "incomplete": 43,
+      "axe_execution_errors": false,
+      "interaction_fails": false,
+      "tab_order_fails": false,
+      "status": "PASS"
+    },
+    "axe_mobile": {
+      "viewport": "mobile",
+      "routes_tested": 21,
+      "serious": 0,
+      "critical": 0,
+      "moderate": 21,
+      "minor": 0,
+      "incomplete": 21,
+      "axe_execution_errors": false,
+      "interaction_fails": false,
+      "tab_order_fails": false,
+      "status": "PASS"
+    },
     "checks": {
       "axe_desktop": "PASS",
       "axe_mobile": "PASS",
@@ -186,9 +344,17 @@
     },
     "status": "PASS",
     "axe_critical": 0,
-    "axe_serious": 0
+    "axe_serious": 0,
+    "expected": {
+      "areas": 7,
+      "services": 39,
+      "families": 34,
+      "deep": 11,
+      "orphans": 0,
+      "unintentional_duplicates": 0
+    }
   },
-  "global": {
+  "global_regression": {
     "official_header_lockup": "PASS",
     "accepted_header_geometry": "PASS",
     "header_height": 84,
@@ -299,6 +465,53 @@
         "result": "PASS"
       }
     ],
+    "status": "PASS"
+  },
+  "frozen_hits": [],
+  "screenshot_manifest_validation": {
+    "generated_at": "2026-08-04T01:35:45.091Z",
+    "top_level_binding": {
+      "generated_at": "2026-08-04T01:20:40.929Z",
+      "current_application_commit": "9e97c13e90ecc4165e969ee04181e8d2a3a9110c",
+      "current_deployment_id": "dpl_C8Zt5mFCF6BaK165cKMt6ELBknKj",
+      "current_preview_url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
+      "screenshot_count": 144
+    },
+    "counts": {
+      "baseline": 48,
+      "before": 48,
+      "reconciled": 48
+    },
+    "careers_screenshots_recaptured": 8,
+    "reconciled_screenshots_recaptured": 48,
+    "hashes_changed": 6,
+    "hashes_unchanged": 42,
+    "top_level_checks": [
+      {
+        "k": "current_application_commit",
+        "ok": true
+      },
+      {
+        "k": "current_deployment_id",
+        "ok": true
+      },
+      {
+        "k": "current_preview_url",
+        "ok": true
+      },
+      {
+        "k": "screenshot_count",
+        "ok": true
+      },
+      {
+        "k": "counts",
+        "ok": true
+      }
+    ],
+    "provenance_conflicts": 0,
+    "conflicts": [],
+    "missing_metadata": 0,
+    "missing": [],
     "status": "PASS"
   }
 }

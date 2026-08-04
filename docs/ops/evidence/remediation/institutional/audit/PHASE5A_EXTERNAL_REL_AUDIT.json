@@ -1,5 +1,137 @@
 {
-  "generated_at": "2026-08-04T01:05:13.942Z",
+  "generated_at": "2026-08-04T01:35:30.096Z",
   "overall": "PASS",
-  "links": []
+  "links": [
+    {
+      "route": "/about",
+      "label": "Discuss your operation →",
+      "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "external_origin": "https://wa.me",
+      "is_whatsapp": true,
+      "result": "PASS"
+    },
+    {
+      "route": "/about",
+      "label": "Continue on WhatsApp →",
+      "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "external_origin": "https://wa.me",
+      "is_whatsapp": true,
+      "result": "PASS"
+    },
+    {
+      "route": "/how-we-engage",
+      "label": "Discuss your operation →",
+      "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "external_origin": "https://wa.me",
+      "is_whatsapp": true,
+      "result": "PASS"
+    },
+    {
+      "route": "/how-we-engage",
+      "label": "Assess your situation →",
+      "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20assess%20my%20regulated%20operation%20and%20understand%20how%20you%20can%20help.",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "external_origin": "https://wa.me",
+      "is_whatsapp": true,
+      "result": "PASS"
+    },
+    {
+      "route": "/contact",
+      "label": "Discuss your operation →",
+      "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "external_origin": "https://wa.me",
+      "is_whatsapp": true,
+      "result": "PASS"
+    },
+    {
+      "route": "/contact",
+      "label": "Continue on WhatsApp →",
+      "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "external_origin": "https://wa.me",
+      "is_whatsapp": true,
+      "result": "PASS"
+    },
+    {
+      "route": "/contact",
+      "label": "WhatsApp assessment →",
+      "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20assess%20my%20regulated%20operation%20and%20understand%20how%20you%20can%20help.",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "external_origin": "https://wa.me",
+      "is_whatsapp": true,
+      "result": "PASS"
+    },
+    {
+      "route": "/contact",
+      "label": "WhatsApp →",
+      "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "external_origin": "https://wa.me",
+      "is_whatsapp": true,
+      "result": "PASS"
+    },
+    {
+      "route": "/diagnostic",
+      "label": "Assess your situation →",
+      "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20assess%20my%20regulated%20operation%20and%20understand%20how%20you%20can%20help.",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "external_origin": "https://wa.me",
+      "is_whatsapp": true,
+      "result": "PASS"
+    },
+    {
+      "route": "/diagnostic",
+      "label": "Discuss your operation →",
+      "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "external_origin": "https://wa.me",
+      "is_whatsapp": true,
+      "result": "PASS"
+    },
+    {
+      "route": "/partners",
+      "label": "Discuss partnership →",
+      "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team.%20I%20would%20like%20to%20discuss%20a%20potential%20partnership%20or%20collaboration%20on%20regulated%20operations.",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "external_origin": "https://wa.me",
+      "is_whatsapp": true,
+      "result": "PASS"
+    },
+    {
+      "route": "/partners",
+      "label": "Discuss your operation →",
+      "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "external_origin": "https://wa.me",
+      "is_whatsapp": true,
+      "result": "PASS"
+    },
+    {
+      "route": "/partners",
+      "label": "Continue partnership discussion →",
+      "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team.%20I%20would%20like%20to%20discuss%20a%20potential%20partnership%20or%20collaboration%20on%20regulated%20operations.",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "external_origin": "https://wa.me",
+      "is_whatsapp": true,
+      "result": "PASS"
+    }
+  ],
+  "whatsapp_count": 13
 }

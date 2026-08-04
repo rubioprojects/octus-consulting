@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T01:05:13.942Z",
+  "generated_at": "2026-08-04T01:35:30.096Z",
   "overall": "PASS",
   "routes": [
     {
@@ -91,8 +91,6 @@
           "text": "Build a structure that works under scrutiny."
         }
       ],
-      "exactly_one_h1": true,
-      "no_skipped_levels": true,
       "status": "PASS"
     },
     {
@@ -128,8 +126,6 @@
           "text": "Embedded Capability"
         }
       ],
-      "exactly_one_h1": true,
-      "no_skipped_levels": true,
       "status": "PASS"
     },
     {
@@ -169,8 +165,6 @@
           "text": "Scope with clarity"
         }
       ],
-      "exactly_one_h1": true,
-      "no_skipped_levels": true,
       "status": "PASS"
     },
     {
@@ -186,8 +180,6 @@
           "text": "Situations we help operators recognize"
         }
       ],
-      "exactly_one_h1": true,
-      "no_skipped_levels": true,
       "status": "PASS"
     },
     {
@@ -207,8 +199,6 @@
           "text": "Who this is for"
         }
       ],
-      "exactly_one_h1": true,
-      "no_skipped_levels": true,
       "status": "PASS"
     },
     {
@@ -265,11 +255,9 @@
         },
         {
           "level": 2,
-          "text": "If you are the right person, we will find the right role."
+          "text": "Share your profile for future opportunities."
         }
       ],
-      "exactly_one_h1": true,
-      "no_skipped_levels": true,
       "status": "PASS"
     }
   ],

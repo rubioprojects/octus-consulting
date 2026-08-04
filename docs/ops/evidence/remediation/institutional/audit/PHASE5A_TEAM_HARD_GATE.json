@@ -1,0 +1,136 @@
+{
+  "actual_card_count": 10,
+  "exact_ordered_roster": "PASS",
+  "ordered_cards": [
+    {
+      "name": "Rubio Teixeira",
+      "title": "Founder & CEO",
+      "src": "/team/rubio-teixeira.jpg"
+    },
+    {
+      "name": "Maria Cristina",
+      "title": "Operations Coordination",
+      "src": "/team/maria-cristina.jpg"
+    },
+    {
+      "name": "Rodrigo Coelho Lopes",
+      "title": "Legal Architecture Lead",
+      "src": "/team/rodrigo-lopes.jpg"
+    },
+    {
+      "name": "Claudia Nery",
+      "title": "Chief Financial Officer",
+      "src": "/team/claudia-nery.jpg"
+    },
+    {
+      "name": "Esther Vendrami",
+      "title": "International Regulatory & Compliance Lead",
+      "src": "/team/esther-vendrami.jpg"
+    },
+    {
+      "name": "Caroline Giovanetti",
+      "title": "Brazil Regulatory Lead",
+      "src": "/team/caroline-giovanetti.jpg"
+    },
+    {
+      "name": "Larissa Carvalho",
+      "title": "Regulatory & Compliance Specialist",
+      "src": "/team/larissa-carvalho.jpg"
+    },
+    {
+      "name": "Milla Ludovico",
+      "title": "Business Development Lead",
+      "src": "/team/milla-ludovico.jpg"
+    },
+    {
+      "name": "Bianca Carolina Oliveira Andrade",
+      "title": "People & Operations",
+      "src": "/team/bianca.jpg"
+    },
+    {
+      "name": "Luciana Santos Veloso",
+      "title": "Operations Coordinator",
+      "src": "/team/luciana-santos-veloso.jpg"
+    }
+  ],
+  "bands": [
+    "Leadership",
+    "Core Specialists"
+  ],
+  "exact_two_bands": "PASS",
+  "portraits": {
+    "rubio-teixeira.jpg": {
+      "src": "/team/rubio-teixeira.jpg",
+      "sha256": "28d61e59f013debc140e6684b3783c4a8bb426a24ddbdf3dbdb45922b9fee200",
+      "expected": "28d61e59f013debc140e6684b3783c4a8bb426a24ddbdf3dbdb45922b9fee200",
+      "hash_match": true,
+      "src_match": true
+    },
+    "maria-cristina.jpg": {
+      "src": "/team/maria-cristina.jpg",
+      "sha256": "4fe097595ed6753e8df9cc3208fd78993a69a7b645d332af25b449116ebbfe26",
+      "expected": "4fe097595ed6753e8df9cc3208fd78993a69a7b645d332af25b449116ebbfe26",
+      "hash_match": true,
+      "src_match": true
+    },
+    "rodrigo-lopes.jpg": {
+      "src": "/team/rodrigo-lopes.jpg",
+      "sha256": "82833b9103a0053dceae774a82da20a6e4c9692ff4bd7fbe9eabf0d3cf8ceaaf",
+      "expected": "82833b9103a0053dceae774a82da20a6e4c9692ff4bd7fbe9eabf0d3cf8ceaaf",
+      "hash_match": true,
+      "src_match": true
+    },
+    "claudia-nery.jpg": {
+      "src": "/team/claudia-nery.jpg",
+      "sha256": "344ea1734f68788244c6f71d5fd69972789b202c5f4e02b02af6941c7a1eeaa0",
+      "expected": "344ea1734f68788244c6f71d5fd69972789b202c5f4e02b02af6941c7a1eeaa0",
+      "hash_match": true,
+      "src_match": true
+    },
+    "esther-vendrami.jpg": {
+      "src": "/team/esther-vendrami.jpg",
+      "sha256": "10906673c848baed9e2f12c066c53691d2765ff207595cddbdb50c06d0970650",
+      "expected": "10906673c848baed9e2f12c066c53691d2765ff207595cddbdb50c06d0970650",
+      "hash_match": true,
+      "src_match": true
+    },
+    "caroline-giovanetti.jpg": {
+      "src": "/team/caroline-giovanetti.jpg",
+      "sha256": "7e8f71eb5cc1b90eec048d4184b9b1a08f0d4900da84f1022d0394e855899eb9",
+      "expected": "7e8f71eb5cc1b90eec048d4184b9b1a08f0d4900da84f1022d0394e855899eb9",
+      "hash_match": true,
+      "src_match": true
+    },
+    "larissa-carvalho.jpg": {
+      "src": "/team/larissa-carvalho.jpg",
+      "sha256": "3dadbb3cebebd945700a737ed4eeff244cb102e9aed68564f2c12cfb39131fb7",
+      "expected": "3dadbb3cebebd945700a737ed4eeff244cb102e9aed68564f2c12cfb39131fb7",
+      "hash_match": true,
+      "src_match": true
+    },
+    "milla-ludovico.jpg": {
+      "src": "/team/milla-ludovico.jpg",
+      "sha256": "0d46dff8ede1d046cb053d6be038deba141ef78788c064863794f58002025c4a",
+      "expected": "0d46dff8ede1d046cb053d6be038deba141ef78788c064863794f58002025c4a",
+      "hash_match": true,
+      "src_match": true
+    },
+    "bianca.jpg": {
+      "src": "/team/bianca.jpg",
+      "sha256": "f923fd3591aaa68157d28591b88346ace4a515e6a11a6b516aa3c7888d5e9b64",
+      "expected": "f923fd3591aaa68157d28591b88346ace4a515e6a11a6b516aa3c7888d5e9b64",
+      "hash_match": true,
+      "src_match": true
+    },
+    "luciana-santos-veloso.jpg": {
+      "src": "/team/luciana-santos-veloso.jpg",
+      "sha256": "bb6fcc97ea426bebc0856d1e4df49c8aea6d5db36ce35eb7cfab1f6ce3b0749d",
+      "expected": "bb6fcc97ea426bebc0856d1e4df49c8aea6d5db36ce35eb7cfab1f6ce3b0749d",
+      "hash_match": true,
+      "src_match": true
+    }
+  },
+  "portrait_hashes": "PASS",
+  "team_files_unchanged": "PASS",
+  "status": "PASS"
+}

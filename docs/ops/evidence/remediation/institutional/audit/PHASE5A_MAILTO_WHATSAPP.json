@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T01:05:13.942Z",
+  "generated_at": "2026-08-04T01:35:30.096Z",
   "destinations": [
     {
       "route": "/about",
@@ -121,6 +121,5 @@
       "href": "mailto:talentos@octusconsulting.com?subject=Octus Careers",
       "label": "Send your profile →"
     }
-  ],
-  "note": "Recorded without opening client applications"
+  ]
 }

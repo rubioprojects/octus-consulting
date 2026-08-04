@@ -1,6 +1,6 @@
 # Phase 5A — Fact and Claim Register
 
-**Status:** CLOSED FOR SOL AUDIT (application tip bound at evidence stamp)  
+**Status:** FINAL CLOSEOUT READY FOR SOL AUDIT (application tip `9e97c13`)  
 **Rule:** Unsupported claims → qualify or remove. Do not invent partnerships, vacancies, SLAs, offices, or guarantees.
 
 ## Bound residuals (carry-forward — not resolved in Phase 5A)
@@ -31,6 +31,7 @@
 - WhatsApp + mailto as Contact and Diagnostic intake (no HTML form POST)
 - Generic Partner classes / network categories without named preferred providers
 - Careers general expression of interest via `talentos@`
+- Careers EOI headline (tip `9e97c13`): “Share your profile for future opportunities.” (no position promise)
 
 ## Factual claims qualified
 

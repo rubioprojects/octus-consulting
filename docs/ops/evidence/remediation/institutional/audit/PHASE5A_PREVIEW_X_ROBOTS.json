@@ -1,45 +1,44 @@
 {
-  "generated_at": "2026-08-04T01:05:13.942Z",
-  "check": "preview_x_robots_noindex",
+  "generated_at": "2026-08-04T01:35:30.096Z",
   "overall": "PASS",
   "routes": [
     {
-      "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/about",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/about",
       "status": 200,
       "x_robots_tag": "noindex",
       "location": "",
       "preview_x_robots_noindex": "PASS"
     },
     {
-      "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/how-we-engage",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/how-we-engage",
       "status": 200,
       "x_robots_tag": "noindex",
       "location": "",
       "preview_x_robots_noindex": "PASS"
     },
     {
-      "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/contact",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/contact",
       "status": 200,
       "x_robots_tag": "noindex",
       "location": "",
       "preview_x_robots_noindex": "PASS"
     },
     {
-      "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/diagnostic",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/diagnostic",
       "status": 200,
       "x_robots_tag": "noindex",
       "location": "",
       "preview_x_robots_noindex": "PASS"
     },
     {
-      "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/partners",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/partners",
       "status": 200,
       "x_robots_tag": "noindex",
       "location": "",
       "preview_x_robots_noindex": "PASS"
     },
     {
-      "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/careers",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/careers",
       "status": 200,
       "x_robots_tag": "noindex",
       "location": "",

@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-04T00:03:52.841Z",
+  "generated_at": "2026-08-04T01:34:02.072Z",
   "engine": "@axe-core/playwright",
   "axe_core_version": "4.12.1",
   "include": "document",
   "routes": [
     {
       "route": "/solutions",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions",
       "viewport": "desktop",
       "viewport_size": "1440x1000",
-      "timestamp": "2026-08-03T23:55:15.222Z",
+      "timestamp": "2026-08-04T01:25:19.846Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -2253,10 +2253,10 @@
     },
     {
       "route": "/solutions",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions",
       "viewport": "mobile",
       "viewport_size": "390x844",
-      "timestamp": "2026-08-03T23:55:22.212Z",
+      "timestamp": "2026-08-04T01:25:26.528Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -2909,9 +2909,9 @@
             "selectorHint": "a:2",
             "rect": {
               "x": 16,
-              "y": 492.640625,
+              "y": 492.6415710449219,
               "w": 358,
-              "h": 44
+              "h": 43.999969482421875
             }
           },
           {
@@ -2925,7 +2925,7 @@
             "selectorHint": "a:3",
             "rect": {
               "x": 16,
-              "y": 548.640625,
+              "y": 548.6415405273438,
               "w": 358,
               "h": 44
             }
@@ -4185,10 +4185,10 @@
     },
     {
       "route": "/solutions/regulatory-structuring",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/regulatory-structuring",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/regulatory-structuring",
       "viewport": "desktop",
       "viewport_size": "1440x1000",
-      "timestamp": "2026-08-03T23:55:34.007Z",
+      "timestamp": "2026-08-04T01:25:38.252Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -6643,10 +6643,10 @@
     },
     {
       "route": "/solutions/regulatory-structuring",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/regulatory-structuring",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/regulatory-structuring",
       "viewport": "mobile",
       "viewport_size": "390x844",
-      "timestamp": "2026-08-03T23:55:45.523Z",
+      "timestamp": "2026-08-04T01:25:49.619Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -7655,7 +7655,7 @@
             "selectorHint": "a:2",
             "rect": {
               "x": 16,
-              "y": 438.265625,
+              "y": 438.2668762207031,
               "w": 358,
               "h": 44
             }
@@ -7671,9 +7671,9 @@
             "selectorHint": "a:3",
             "rect": {
               "x": 16,
-              "y": 494.265625,
+              "y": 494.2668762207031,
               "w": 358,
-              "h": 44
+              "h": 43.999969482421875
             }
           },
           {
@@ -8757,10 +8757,10 @@
     },
     {
       "route": "/solutions/compliance-risk",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/compliance-risk",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/compliance-risk",
       "viewport": "desktop",
       "viewport_size": "1440x1000",
-      "timestamp": "2026-08-03T23:56:05.111Z",
+      "timestamp": "2026-08-04T01:26:08.982Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -9604,7 +9604,7 @@
             "selectorHint": "a:8",
             "rect": {
               "x": 112,
-              "y": 562.0158081054688,
+              "y": 562.015625,
               "w": 268.6875,
               "h": 48
             }
@@ -9620,7 +9620,7 @@
             "selectorHint": "a:9",
             "rect": {
               "x": 396.6875,
-              "y": 562.0158081054688,
+              "y": 562.015625,
               "w": 95.15625,
               "h": 48
             }
@@ -11393,10 +11393,10 @@
     },
     {
       "route": "/solutions/compliance-risk",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/compliance-risk",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/compliance-risk",
       "viewport": "mobile",
       "viewport_size": "390x844",
-      "timestamp": "2026-08-03T23:56:22.429Z",
+      "timestamp": "2026-08-04T01:26:25.925Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -12583,7 +12583,7 @@
             "selectorHint": "a:2",
             "rect": {
               "x": 16,
-              "y": 465.454345703125,
+              "y": 465.4532470703125,
               "w": 358,
               "h": 44
             }
@@ -12599,7 +12599,7 @@
             "selectorHint": "a:3",
             "rect": {
               "x": 16,
-              "y": 521.454345703125,
+              "y": 521.4532470703125,
               "w": 358,
               "h": 44
             }
@@ -13685,10 +13685,10 @@
     },
     {
       "route": "/solutions/legal-structural-architecture",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/legal-structural-architecture",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/legal-structural-architecture",
       "viewport": "desktop",
       "viewport_size": "1440x1000",
-      "timestamp": "2026-08-03T23:56:44.116Z",
+      "timestamp": "2026-08-04T01:26:48.023Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -15967,10 +15967,10 @@
     },
     {
       "route": "/solutions/legal-structural-architecture",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/legal-structural-architecture",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/legal-structural-architecture",
       "viewport": "mobile",
       "viewport_size": "390x844",
-      "timestamp": "2026-08-03T23:56:54.472Z",
+      "timestamp": "2026-08-04T01:26:58.060Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -16890,9 +16890,9 @@
             "selectorHint": "a:2",
             "rect": {
               "x": 16,
-              "y": 473.1727600097656,
+              "y": 473.1726989746094,
               "w": 358,
-              "h": 43.999969482421875
+              "h": 44.000030517578125
             }
           },
           {
@@ -17905,10 +17905,10 @@
     },
     {
       "route": "/solutions/corporate-structuring",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/corporate-structuring",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/corporate-structuring",
       "viewport": "desktop",
       "viewport_size": "1440x1000",
-      "timestamp": "2026-08-03T23:57:09.501Z",
+      "timestamp": "2026-08-04T01:27:13.249Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -18752,7 +18752,7 @@
             "selectorHint": "a:8",
             "rect": {
               "x": 112,
-              "y": 592.03125,
+              "y": 592.0313720703125,
               "w": 268.6875,
               "h": 48
             }
@@ -18768,7 +18768,7 @@
             "selectorHint": "a:9",
             "rect": {
               "x": 396.6875,
-              "y": 592.03125,
+              "y": 592.0313720703125,
               "w": 95.15625,
               "h": 48
             }
@@ -20541,10 +20541,10 @@
     },
     {
       "route": "/solutions/corporate-structuring",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/corporate-structuring",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/corporate-structuring",
       "viewport": "mobile",
       "viewport_size": "390x844",
-      "timestamp": "2026-08-03T23:57:26.230Z",
+      "timestamp": "2026-08-04T01:27:29.960Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -21731,7 +21731,7 @@
             "selectorHint": "a:2",
             "rect": {
               "x": 16,
-              "y": 500.3603515625,
+              "y": 500.3597412109375,
               "w": 358,
               "h": 44
             }
@@ -21747,7 +21747,7 @@
             "selectorHint": "a:3",
             "rect": {
               "x": 16,
-              "y": 556.3603515625,
+              "y": 556.3597412109375,
               "w": 358,
               "h": 44
             }
@@ -22833,10 +22833,10 @@
     },
     {
       "route": "/private-clients",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/private-clients",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/private-clients",
       "viewport": "desktop",
       "viewport_size": "1440x1000",
-      "timestamp": "2026-08-03T23:57:48.103Z",
+      "timestamp": "2026-08-04T01:27:52.109Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -23591,7 +23591,7 @@
             "selectorHint": "a:8",
             "rect": {
               "x": 112,
-              "y": 606.03125,
+              "y": 606.0313110351562,
               "w": 268.6875,
               "h": 48
             }
@@ -23607,7 +23607,7 @@
             "selectorHint": "a:9",
             "rect": {
               "x": 396.6875,
-              "y": 606.03125,
+              "y": 606.0313110351562,
               "w": 95.15625,
               "h": 48
             }
@@ -25293,10 +25293,10 @@
     },
     {
       "route": "/private-clients",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/private-clients",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/private-clients",
       "viewport": "mobile",
       "viewport_size": "390x844",
-      "timestamp": "2026-08-03T23:58:00.573Z",
+      "timestamp": "2026-08-04T01:28:04.771Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -26394,7 +26394,7 @@
             "selectorHint": "a:2",
             "rect": {
               "x": 16,
-              "y": 562.4551391601562,
+              "y": 562.454345703125,
               "w": 358,
               "h": 44
             }
@@ -26410,7 +26410,7 @@
             "selectorHint": "a:3",
             "rect": {
               "x": 16,
-              "y": 618.4551391601562,
+              "y": 618.454345703125,
               "w": 358,
               "h": 44
             }
@@ -27409,10 +27409,10 @@
     },
     {
       "route": "/solutions/remediation-readiness",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/remediation-readiness",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/remediation-readiness",
       "viewport": "desktop",
       "viewport_size": "1440x1000",
-      "timestamp": "2026-08-03T23:58:21.275Z",
+      "timestamp": "2026-08-04T01:28:25.321Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -29898,10 +29898,10 @@
     },
     {
       "route": "/solutions/remediation-readiness",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/remediation-readiness",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/remediation-readiness",
       "viewport": "mobile",
       "viewport_size": "390x844",
-      "timestamp": "2026-08-03T23:58:33.818Z",
+      "timestamp": "2026-08-04T01:28:37.728Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -30999,9 +30999,9 @@
             "selectorHint": "a:2",
             "rect": {
               "x": 16,
-              "y": 473.1734924316406,
+              "y": 473.17388916015625,
               "w": 358,
-              "h": 43.999969482421875
+              "h": 44
             }
           },
           {
@@ -31015,7 +31015,7 @@
             "selectorHint": "a:3",
             "rect": {
               "x": 16,
-              "y": 529.1734619140625,
+              "y": 529.1738891601562,
               "w": 358,
               "h": 44
             }
@@ -32043,10 +32043,10 @@
     },
     {
       "route": "/international-hub",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/international-hub",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/international-hub",
       "viewport": "desktop",
       "viewport_size": "1440x1000",
-      "timestamp": "2026-08-03T23:58:54.401Z",
+      "timestamp": "2026-08-04T01:28:58.273Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -32801,7 +32801,7 @@
             "selectorHint": "a:8",
             "rect": {
               "x": 112,
-              "y": 592.03125,
+              "y": 592.0316772460938,
               "w": 268.6875,
               "h": 48
             }
@@ -32817,7 +32817,7 @@
             "selectorHint": "a:9",
             "rect": {
               "x": 396.6875,
-              "y": 592.03125,
+              "y": 592.0316772460938,
               "w": 95.15625,
               "h": 48
             }
@@ -34619,10 +34619,10 @@
     },
     {
       "route": "/international-hub",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/international-hub",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/international-hub",
       "viewport": "mobile",
       "viewport_size": "390x844",
-      "timestamp": "2026-08-03T23:59:06.989Z",
+      "timestamp": "2026-08-04T01:29:11.000Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -35720,9 +35720,9 @@
             "selectorHint": "a:2",
             "rect": {
               "x": 16,
-              "y": 473.173583984375,
+              "y": 473.1721496582031,
               "w": 358,
-              "h": 44
+              "h": 43.999969482421875
             }
           },
           {
@@ -35736,7 +35736,7 @@
             "selectorHint": "a:3",
             "rect": {
               "x": 16,
-              "y": 529.173583984375,
+              "y": 529.172119140625,
               "w": 358,
               "h": 44
             }
@@ -36851,10 +36851,10 @@
     },
     {
       "route": "/solutions/banking-payments-infrastructure",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/banking-payments-infrastructure",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/banking-payments-infrastructure",
       "viewport": "desktop",
       "viewport_size": "1440x1000",
-      "timestamp": "2026-08-03T23:59:27.667Z",
+      "timestamp": "2026-08-04T01:29:31.853Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -38576,10 +38576,10 @@
     },
     {
       "route": "/solutions/banking-payments-infrastructure",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/banking-payments-infrastructure",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/banking-payments-infrastructure",
       "viewport": "mobile",
       "viewport_size": "390x844",
-      "timestamp": "2026-08-03T23:59:33.656Z",
+      "timestamp": "2026-08-04T01:29:37.921Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -39232,7 +39232,7 @@
             "selectorHint": "a:2",
             "rect": {
               "x": 16,
-              "y": 531.03173828125,
+              "y": 531.0316162109375,
               "w": 358,
               "h": 44
             }
@@ -39248,7 +39248,7 @@
             "selectorHint": "a:3",
             "rect": {
               "x": 16,
-              "y": 587.03173828125,
+              "y": 587.0316162109375,
               "w": 358,
               "h": 44
             }
@@ -39986,10 +39986,10 @@
     },
     {
       "route": "/solutions/regulatory/igaming-licensing",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/regulatory/igaming-licensing",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/regulatory/igaming-licensing",
       "viewport": "desktop",
       "viewport_size": "1440x1000",
-      "timestamp": "2026-08-03T23:59:44.597Z",
+      "timestamp": "2026-08-04T01:29:49.072Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -41711,10 +41711,10 @@
     },
     {
       "route": "/solutions/regulatory/igaming-licensing",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/regulatory/igaming-licensing",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/regulatory/igaming-licensing",
       "viewport": "mobile",
       "viewport_size": "390x844",
-      "timestamp": "2026-08-03T23:59:50.804Z",
+      "timestamp": "2026-08-04T01:29:55.584Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -43121,10 +43121,10 @@
     },
     {
       "route": "/solutions/regulatory/fintech-licensing",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/regulatory/fintech-licensing",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/regulatory/fintech-licensing",
       "viewport": "desktop",
       "viewport_size": "1440x1000",
-      "timestamp": "2026-08-04T00:00:02.048Z",
+      "timestamp": "2026-08-04T01:30:06.947Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -44875,10 +44875,10 @@
     },
     {
       "route": "/solutions/regulatory/fintech-licensing",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/regulatory/fintech-licensing",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/regulatory/fintech-licensing",
       "viewport": "mobile",
       "viewport_size": "390x844",
-      "timestamp": "2026-08-04T00:00:08.130Z",
+      "timestamp": "2026-08-04T01:30:13.346Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -46314,10 +46314,10 @@
     },
     {
       "route": "/solutions/regulatory/market-entry",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/regulatory/market-entry",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/regulatory/market-entry",
       "viewport": "desktop",
       "viewport_size": "1440x1000",
-      "timestamp": "2026-08-04T00:00:19.395Z",
+      "timestamp": "2026-08-04T01:30:24.746Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -47981,10 +47981,10 @@
     },
     {
       "route": "/solutions/regulatory/market-entry",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/regulatory/market-entry",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/regulatory/market-entry",
       "viewport": "mobile",
       "viewport_size": "390x844",
-      "timestamp": "2026-08-04T00:00:25.474Z",
+      "timestamp": "2026-08-04T01:30:31.005Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -49333,10 +49333,10 @@
     },
     {
       "route": "/solutions/compliance/aml-kyc",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/compliance/aml-kyc",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/compliance/aml-kyc",
       "viewport": "desktop",
       "viewport_size": "1440x1000",
-      "timestamp": "2026-08-04T00:00:36.503Z",
+      "timestamp": "2026-08-04T01:30:42.264Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -50971,10 +50971,10 @@
     },
     {
       "route": "/solutions/compliance/aml-kyc",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/compliance/aml-kyc",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/compliance/aml-kyc",
       "viewport": "mobile",
       "viewport_size": "390x844",
-      "timestamp": "2026-08-04T00:00:42.497Z",
+      "timestamp": "2026-08-04T01:30:48.706Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -52294,10 +52294,10 @@
     },
     {
       "route": "/solutions/compliance/compliance-as-a-service",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/compliance/compliance-as-a-service",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/compliance/compliance-as-a-service",
       "viewport": "desktop",
       "viewport_size": "1440x1000",
-      "timestamp": "2026-08-04T00:00:53.456Z",
+      "timestamp": "2026-08-04T01:30:59.870Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -53990,10 +53990,10 @@
     },
     {
       "route": "/solutions/compliance/compliance-as-a-service",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/compliance/compliance-as-a-service",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/compliance/compliance-as-a-service",
       "viewport": "mobile",
       "viewport_size": "390x844",
-      "timestamp": "2026-08-04T00:00:59.514Z",
+      "timestamp": "2026-08-04T01:31:06.380Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -55371,10 +55371,10 @@
     },
     {
       "route": "/solutions/compliance/dpo-as-a-service",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/compliance/dpo-as-a-service",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/compliance/dpo-as-a-service",
       "viewport": "desktop",
       "viewport_size": "1440x1000",
-      "timestamp": "2026-08-04T00:01:10.674Z",
+      "timestamp": "2026-08-04T01:31:17.603Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -57067,10 +57067,10 @@
     },
     {
       "route": "/solutions/compliance/dpo-as-a-service",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/compliance/dpo-as-a-service",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/compliance/dpo-as-a-service",
       "viewport": "mobile",
       "viewport_size": "390x844",
-      "timestamp": "2026-08-04T00:01:16.733Z",
+      "timestamp": "2026-08-04T01:31:23.890Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -58448,10 +58448,10 @@
     },
     {
       "route": "/solutions/compliance/gli-readiness",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/compliance/gli-readiness",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/compliance/gli-readiness",
       "viewport": "desktop",
       "viewport_size": "1440x1000",
-      "timestamp": "2026-08-04T00:01:27.974Z",
+      "timestamp": "2026-08-04T01:31:35.193Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -60086,10 +60086,10 @@
     },
     {
       "route": "/solutions/compliance/gli-readiness",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/compliance/gli-readiness",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/compliance/gli-readiness",
       "viewport": "mobile",
       "viewport_size": "390x844",
-      "timestamp": "2026-08-04T00:01:33.884Z",
+      "timestamp": "2026-08-04T01:31:41.365Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -61409,10 +61409,10 @@
     },
     {
       "route": "/solutions/compliance/internal-controls",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/compliance/internal-controls",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/compliance/internal-controls",
       "viewport": "desktop",
       "viewport_size": "1440x1000",
-      "timestamp": "2026-08-04T00:01:45.031Z",
+      "timestamp": "2026-08-04T01:31:52.631Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -63047,10 +63047,10 @@
     },
     {
       "route": "/solutions/compliance/internal-controls",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/compliance/internal-controls",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/compliance/internal-controls",
       "viewport": "mobile",
       "viewport_size": "390x844",
-      "timestamp": "2026-08-04T00:01:51.007Z",
+      "timestamp": "2026-08-04T01:31:59.027Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -64370,10 +64370,10 @@
     },
     {
       "route": "/solutions/corporate/company-formation",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/corporate/company-formation",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/corporate/company-formation",
       "viewport": "desktop",
       "viewport_size": "1440x1000",
-      "timestamp": "2026-08-04T00:02:02.142Z",
+      "timestamp": "2026-08-04T01:32:10.136Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -66008,10 +66008,10 @@
     },
     {
       "route": "/solutions/corporate/company-formation",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/corporate/company-formation",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/corporate/company-formation",
       "viewport": "mobile",
       "viewport_size": "390x844",
-      "timestamp": "2026-08-04T00:02:08.078Z",
+      "timestamp": "2026-08-04T01:32:16.434Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -67331,10 +67331,10 @@
     },
     {
       "route": "/solutions/corporate/holding-design",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/corporate/holding-design",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/corporate/holding-design",
       "viewport": "desktop",
       "viewport_size": "1440x1000",
-      "timestamp": "2026-08-04T00:02:19.285Z",
+      "timestamp": "2026-08-04T01:32:27.706Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -69027,10 +69027,10 @@
     },
     {
       "route": "/solutions/corporate/holding-design",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/corporate/holding-design",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/corporate/holding-design",
       "viewport": "mobile",
       "viewport_size": "390x844",
-      "timestamp": "2026-08-04T00:02:25.306Z",
+      "timestamp": "2026-08-04T01:32:34.008Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -70408,10 +70408,10 @@
     },
     {
       "route": "/solutions/corporate/offshore-structuring",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/corporate/offshore-structuring",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/corporate/offshore-structuring",
       "viewport": "desktop",
       "viewport_size": "1440x1000",
-      "timestamp": "2026-08-04T00:02:36.442Z",
+      "timestamp": "2026-08-04T01:32:45.236Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -72133,10 +72133,10 @@
     },
     {
       "route": "/solutions/corporate/offshore-structuring",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/solutions/corporate/offshore-structuring",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/solutions/corporate/offshore-structuring",
       "viewport": "mobile",
       "viewport_size": "390x844",
-      "timestamp": "2026-08-04T00:02:42.460Z",
+      "timestamp": "2026-08-04T01:32:51.583Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -73543,10 +73543,10 @@
     },
     {
       "route": "/",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/",
       "viewport": "desktop",
       "viewport_size": "1440x1000",
-      "timestamp": "2026-08-04T00:02:53.581Z",
+      "timestamp": "2026-08-04T01:33:02.901Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -74485,7 +74485,7 @@
             "selectorHint": "a:8",
             "rect": {
               "x": 272,
-              "y": 636.1563720703125,
+              "y": 636.15625,
               "w": 258.265625,
               "h": 48
             }
@@ -74501,7 +74501,7 @@
             "selectorHint": "a:9",
             "rect": {
               "x": 546.265625,
-              "y": 636.1563720703125,
+              "y": 636.15625,
               "w": 213.59375,
               "h": 48
             }
@@ -74517,7 +74517,7 @@
             "selectorHint": "a:10",
             "rect": {
               "x": 775.859375,
-              "y": 636.1563720703125,
+              "y": 636.15625,
               "w": 220.0625,
               "h": 48
             }
@@ -74533,7 +74533,7 @@
             "selectorHint": "a:11",
             "rect": {
               "x": 490.125,
-              "y": 705.1563720703125,
+              "y": 705.15625,
               "w": 157.046875,
               "h": 17
             }
@@ -76088,7 +76088,7 @@
             "name": "Crypto & Digital AssetsCASP/VASP licensing, MiCA compliance,",
             "href": "/markets/crypto",
             "outlineStyle": "auto",
-            "outlineWidth": "2px",
+            "outlineWidth": "3px",
             "boxShadow": "none",
             "visibleFocus": true,
             "path": "HTML:0/BODY:1/MAIN:1/SECTION:7/DIV:0/DIV:1/A:2",
@@ -76244,7 +76244,7 @@
             "name": "03Legal & Structural Architecture",
             "href": null,
             "outlineStyle": "auto",
-            "outlineWidth": "2px",
+            "outlineWidth": "3px",
             "boxShadow": "none",
             "visibleFocus": true,
             "path": "HTML:0/BODY:1/MAIN:1/SECTION:10/DIV:0/DIV:1/DIV:2/BUTTON:0",
@@ -76257,7 +76257,7 @@
             "name": "04Corporate Structuring",
             "href": null,
             "outlineStyle": "auto",
-            "outlineWidth": "3px",
+            "outlineWidth": "2px",
             "boxShadow": "none",
             "visibleFocus": true,
             "path": "HTML:0/BODY:1/MAIN:1/SECTION:10/DIV:0/DIV:1/DIV:3/BUTTON:0",
@@ -76912,10 +76912,10 @@
     },
     {
       "route": "/",
-      "url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app/",
+      "url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app/",
       "viewport": "mobile",
       "viewport_size": "390x844",
-      "timestamp": "2026-08-04T00:03:12.605Z",
+      "timestamp": "2026-08-04T01:33:21.918Z",
       "http_status": 200,
       "engine": {
         "name": "@axe-core/playwright",
@@ -78191,7 +78191,7 @@
             "selectorHint": "a:2",
             "rect": {
               "x": 16,
-              "y": 580.6414794921875,
+              "y": 580.6419067382812,
               "w": 358,
               "h": 44
             }
@@ -78207,7 +78207,7 @@
             "selectorHint": "a:3",
             "rect": {
               "x": 16,
-              "y": 636.6414794921875,
+              "y": 636.6419067382812,
               "w": 358,
               "h": 44
             }
@@ -79507,7 +79507,7 @@
             "name": "04Corporate Structuring",
             "href": null,
             "outlineStyle": "auto",
-            "outlineWidth": "3px",
+            "outlineWidth": "2px",
             "boxShadow": "none",
             "visibleFocus": true,
             "path": "HTML:0/BODY:1/MAIN:1/SECTION:10/DIV:0/DIV:1/DIV:3/BUTTON:0",

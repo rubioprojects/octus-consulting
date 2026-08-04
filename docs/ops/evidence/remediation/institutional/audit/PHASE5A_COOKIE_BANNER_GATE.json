@@ -1,0 +1,9 @@
+{
+  "initial_visible": true,
+  "dismiss_clicked": true,
+  "banner_hidden_after_click": true,
+  "localStorage_true": true,
+  "remains_hidden_after_reload": true,
+  "body_class_cookie_banner_visible_absent": true,
+  "status": "PASS"
+}
