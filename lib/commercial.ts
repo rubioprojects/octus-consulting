@@ -277,11 +277,11 @@ export const PARTNER_CLASSES = [
 export const INTELLIGENCE_PILLARS = [
   {
     title: "Regulatory Intelligence",
-    body: "How rules, authorities and structural requirements shift, framed for operators who must act, not scroll.",
+    body: "How rules, authorities and structural requirements shift, framed for operators who must act on filings, licensing and control design.",
   },
   {
     title: "Market Signals",
-    body: "Sector dynamics across iGaming, fintech, digital assets and other highly regulated environments.",
+    body: "Sector dynamics across iGaming, fintech, digital assets and other highly regulated environments, without unsupported rankings or awards.",
   },
   {
     title: "Operational Insights",

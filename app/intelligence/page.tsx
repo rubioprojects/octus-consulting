@@ -13,7 +13,7 @@ import { pageSocialMeta } from "../../lib/pageMeta";
 export const metadata = pageSocialMeta({
   title: "Intelligence",
   description:
-    "Public analysis covering regulatory developments, market signals, operational risk and executive decision-making in highly regulated markets.",
+    "Practical regulatory, compliance and operational insight for operators in highly regulated markets: how Octus connects published analysis to executable structure.",
   path: "/intelligence",
 });
 
@@ -54,9 +54,9 @@ export default function IntelligencePage() {
     <main>
       <PageHero
         eyebrow="Intelligence"
-        title="Intelligence for regulated operations."
-        titleSecondLine="Signals that inform execution."
-        description="Octus Intelligence frames regulatory, tax, legal, compliance and operational signals so published Insights connect to decisions and structure that must hold under scrutiny."
+        title="Practical intelligence for regulated operations."
+        titleSecondLine="Insight that informs execution."
+        description="Octus Intelligence is practical regulatory, compliance and operational insight: framing published Insights so they connect to structures, controls and decisions that must hold under scrutiny. It is not a generic content hub, academic journal or awards wall."
         primaryCta={{ href: "/insights", label: "Explore Insights →" }}
         secondaryCta={{ href: WHATSAPP_DISCUSS_URL, label: "Discuss a specific issue", quiet: true, external: true }}
       />
@@ -72,14 +72,14 @@ export default function IntelligencePage() {
                 <h3 className="font-sans text-base font-semibold text-primary">Intelligence</h3>
                 <p className="body-sm mt-2">
                   How Octus develops and applies regulatory, tax, legal, compliance and operational
-                  intelligence when designing structures that must survive scrutiny.
+                  insight when designing structures that must survive scrutiny.
                 </p>
               </article>
               <article className="rounded-sm border border-border p-5">
                 <h3 className="font-sans text-base font-semibold text-primary">Insights</h3>
                 <p className="body-sm mt-2">
-                  Published articles and analysis from the field. The reading library that supports
-                  the Intelligence layer alongside mandate work.
+                  Published articles and field analysis. The reading library that supports the
+                  Intelligence layer alongside mandate work.
                 </p>
                 <Link
                   href="/insights"
@@ -187,7 +187,7 @@ export default function IntelligencePage() {
             </p>
             <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-4">
               <CtaLink href="/insights" variant="primary">
-                Explore Insights →
+                Open the Insights library →
               </CtaLink>
               <CtaLink
                 href={WHATSAPP_DISCUSS_URL}
@@ -195,7 +195,7 @@ export default function IntelligencePage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Discuss a specific issue →
+                Continue on WhatsApp →
               </CtaLink>
             </div>
           </Reveal>
