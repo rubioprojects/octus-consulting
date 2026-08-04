@@ -746,10 +746,10 @@ The extension of responsibility to advertising agents and influencers: already s
 
 - **Announcement (January 2025):** the Secretary of Prizes and Betting signalled at ICE Barcelona that a B2B registration mechanism was intended. A statement at an industry event creates no obligation.
 - **Regulatory agenda:** B2B regulation was included in the SPA/MF regulatory agenda for the 2025/2026 biennium, which set it as a work item with no binding effect on providers.
-- **Public consultation (completed):** the SPA opened a public consultation on a draft ordinance covering B2B suppliers under **Aviso de Consulta Pública SPA/MF nº 1/2026**. The consultation ran from **4 February 2026 to 23 March 2026** and is **completed**. The consultation record is hosted on the Brasil Participativo platform under the /processes/B2B process page. A draft under consultation is a proposal and may change materially or be withdrawn.
+- **Public consultation (completed):** the SPA opened a public consultation on a draft ordinance covering B2B suppliers under **Aviso de Consulta Pública SPA/MF nº 1/2026** (published in the Diário Oficial da União). The consultation ran from **4 February 2026 to 23 March 2026** and is **completed**. A draft under consultation is a proposal and may change materially or be withdrawn.
 - **Final rule:** as at the 4 August 2026 review of this article, a **final binding ordinance is not confirmed as published**, and no commencement or transition dates are confirmed here. Octus has not verified a publication date and does not assert one.
 
-Providers should verify the current position directly against primary sources: the Secretariat of Prizes and Betting pages on gov.br, the Diário Oficial da União for any published ordinance, and the Brasil Participativo /processes/B2B page for the consultation record and contributions received.
+Providers should verify the current position directly against primary sources: Aviso SPA/MF nº 1/2026 in the Diário Oficial da União for the consultation opening and window, and subsequent DOU publications for any final ordinance. Generic SPA landing pages are not a substitute for the exact instrument.
 
 The remainder of this article is the original January 2025 report, retained for context.
 

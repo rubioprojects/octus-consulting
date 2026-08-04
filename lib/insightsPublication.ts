@@ -208,22 +208,15 @@ const RAW_PUBLICATION: Record<string, InsightsPublicationEntry> = {
         authority: "SPA/MF via Imprensa Nacional (DOU)",
         instrumentTitle: "Aviso de Consulta Pública SPA/MF nº 1/2026",
         instrumentNumber: "Aviso SPA/MF 1/2026",
-        claimsSupported: "Consultation window 4 Feb,23 Mar 2026 for B2B supplier recognition ordinance",
-      }),
-      src({
-        label: "Brasil Participativo , B2B consultation process page",
-        href: "https://brasilparticipativo.presidencia.gov.br/processes/B2B",
-        date: "2026-03-23",
-        authority: "SPA/MF via Brasil Participativo",
-        instrumentTitle: "Consulta Pública: Capacidade Técnica Operacional de Fornecedor (B2B)",
-        claimsSupported: "Consultation record and closed window",
+        claimsSupported:
+          "Official opening of B2B supplier-recognition public consultation; window 4 Feb to 23 Mar 2026",
       }),
     ],
     lastReviewed: INSIGHTS_REVIEW_DATE,
     temporalStatus: "Consultation completed; final ordinance not confirmed as of review",
     currentStatusNote:
-      "Public consultation under Aviso SPA/MF nº 1/2026 ran 4 February to 23 March 2026 and is completed. A final binding SPA/MF ordinance recognising B2B suppliers is not confirmed as published as of 2026-08-04.",
-    requiredCorrection: "Exact consultation sources; no generic SPA homepage",
+      "Public consultation under Aviso SPA/MF nº 1/2026 ran 4 February to 23 March 2026 and is completed. The Brasil Participativo process page was not retained as a linked primary source because the host was unreachable at review-time link checks. A final binding SPA/MF ordinance recognising B2B suppliers is not confirmed as published as of 2026-08-04.",
+    requiredCorrection: "Exact DOU Aviso for consultation; no generic SPA or Brasil Participativo homepage",
     finalDisposition: "PUBLISH_CURRENT",
   },
   "curacao-reform-what-changes": {
