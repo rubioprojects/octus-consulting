@@ -37,13 +37,13 @@ export default function MarketsPage() {
             {[
               {
                 title: "iGaming & Betting",
-                desc: "Licensing, compliance and banking for online gambling and sports betting operators. From Curaçao to Brazil, Malta to Isle of Man.",
-                tags: ["Licensing", "Banking", "GLI", "Compliance"],
+                desc: "Licensing preparation, compliance and banking readiness for online gambling and sports betting operators across selected jurisdictions.",
+                tags: ["Licensing", "Banking", "Certification", "Compliance"],
                 href: "/markets/igaming",
               },
               {
                 title: "Fintech & Payments",
-                desc: "Regulatory structuring for payment institutions, EMIs and fintech operators. Banking access, compliance frameworks and cross-border licensing.",
+                desc: "Regulatory structuring for payment institutions, EMIs and fintech operators. Banking readiness, compliance frameworks and cross-border licensing pathways.",
                 tags: ["EMI", "Payments", "Banking", "Cross-border"],
                 href: "/markets/fintech",
               },
@@ -127,9 +127,9 @@ export default function MarketsPage() {
           <p className="label">Go deeper</p>
           <div className="grid-3">
             {[
-              { title: "Jurisdictions", desc: "Where we operate and how.", href: "/jurisdictions" },
-              { title: "Solutions", desc: "Full service architecture.", href: "/solutions" },
-              { title: "Start a Diagnostic", desc: "Identify what's broken.", href: "/contact" },
+              { title: "Jurisdictions", desc: "Regulatory locations we work across.", href: "/jurisdictions" },
+              { title: "Solutions", desc: "Seven peer service areas.", href: "/solutions" },
+              { title: "Contact", desc: "Non-WhatsApp intake alternative.", href: "/contact" },
             ].map((r) => (
               <Link key={r.title} href={r.href} className="card-grid" style={{ padding: "28px" }}>
                 <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{r.title}</h3>
@@ -153,7 +153,8 @@ export default function MarketsPage() {
           </h2>
           <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
-            We respond within 24 hours.
+            WhatsApp is the primary strategic intake. Prefer a structured assessment? Use{" "}
+            <Link href="/diagnostic" className="underline underline-offset-2" style={{ color: "var(--white-60)" }}>Diagnostic</Link>.
           </p>
         </div>
       </section>

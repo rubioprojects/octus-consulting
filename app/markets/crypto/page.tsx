@@ -122,13 +122,16 @@ export default function MarketsCryptoPage() {
           <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             Fragmented regulation. Structural consequences.
           </h2>
+          <p className="body-sm" style={{ marginBottom: "12px", color: "var(--muted-foreground)" }}>
+            Landscape notes as of 2026-08-03. Status changes by Member State and competent authority — verify before relying on any date.
+          </p>
           <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
             {[
-              "EU (MiCA). CASP authorisation mandatory. Grandfathering ends July 2026. Passporting across 27 member states. Capital requirements €50k: €150k.",
-              "UK. FCA crypto framework in development. New rules expected 2026.",
-              "UAE. VASP registration required. Evolving corporate structuring requirements.",
-              "Brazil. BACEN oversight. Integration with broader fintech regulation.",
-              "Offshore. Accessible but under increasing AML scrutiny. Not sustainable as sole regulatory base.",
+              "EU (MiCA). As of 1 July 2026, the MiCA transitional period ended EU-wide (ESMA statement, April 2026). Providing crypto-asset services to EU clients without MiCA authorisation is treated as a breach of EU law. Authorised CASPs may passport services under MiCA; capital and organisational requirements depend on the service class under Regulation (EU) 2023/1114.",
+              "UK. FCA continues to develop the cryptoasset regulatory framework. Treat UK rules as jurisdiction-specific and confirm current FCA publications before planning.",
+              "UAE. VASP and free-zone frameworks continue to evolve. Substance, licensing class and emirate or free-zone authority must be mapped carefully.",
+              "Brazil. Crypto activity sits under evolving BACEN and capital-markets oversight and often intersects with broader fintech regulation.",
+              "Offshore-only bases. Increasingly scrutinised under AML expectations and rarely sufficient as a sole regulatory posture for institutional banking.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
@@ -201,7 +204,8 @@ export default function MarketsCryptoPage() {
           </h2>
           <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
-            We respond within 24 hours.
+            Strategic intake via WhatsApp. Alternative:{" "}
+            <Link href="/contact" className="underline underline-offset-2" style={{ color: "var(--white-60)" }}>Contact</Link>.
           </p>
         </div>
       </section>

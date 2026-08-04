@@ -144,10 +144,7 @@ export default function MarketsHighRiskPage() {
             sensitivity, transaction complexity and institutional caution:
           </p>
           <p className="body-text" style={{ marginBottom: "24px" }}>
-            iGaming and betting. Crypto and digital assets. Fintech and payments.
-            Forex and CFDs. Adult content and entertainment. Nutraceuticals and
-            supplements. Travel and timeshare. Debt collection and financial
-            intermediation.
+            Institutions commonly apply enhanced scrutiny to sectors such as iGaming and betting, crypto and digital assets, and certain fintech or payment models. Other verticals may also trigger high-risk treatment depending on the institution&apos;s policy — classification is institution-specific, not a guarantee of coverage by Octus.
           </p>
           <p className="body-sm italic text-muted-foreground">
             The sector varies. The structural problem is the same: institutional
@@ -237,7 +234,8 @@ export default function MarketsHighRiskPage() {
           </h2>
           <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
-            We respond within 24 hours.
+            Strategic intake via WhatsApp. Alternative:{" "}
+            <Link href="/contact" className="underline underline-offset-2" style={{ color: "var(--white-60)" }}>Contact</Link>.
           </p>
         </div>
       </section>

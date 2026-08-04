@@ -78,11 +78,11 @@ export default function MarketsFintechPage() {
             {[
               {
                 title: "EMI & payment institution licensing",
-                desc: "We design the regulatory strategy, prepare the full dossier and coordinate with the regulator, onshore and offshore.",
+                desc: "We design the regulatory strategy and prepare the dossier so operators can pursue authorisation with local counsel where required — onshore and offshore.",
               },
               {
-                title: "Banking & PSP access",
-                desc: "We align corporate structure, compliance documentation and AML framework with banking requirements. Licensed and bankable.",
+                title: "Banking & PSP readiness",
+                desc: "We align corporate structure, compliance documentation and AML framework with banking requirements. Licensed and bankable is the objective; bank acceptance is never promised.",
               },
               {
                 title: "Compliance architecture",
@@ -97,8 +97,8 @@ export default function MarketsFintechPage() {
                 desc: "Multi-jurisdiction operations need unified compliance and coordinated corporate structure. We build that.",
               },
               {
-                title: "BACEN & Brazilian market entry",
-                desc: "Payment institutions, SCDs, SCFIs: regulatory structuring for the Brazilian financial market with local coordination.",
+                title: "Brazilian financial-market pathways",
+                desc: "Payment institutions and related BACEN-facing models: regulatory structuring and local-counsel coordination for Brazilian market entry. Authorisation is decided by the competent authority.",
               },
             ].map((item) => (
               <div key={item.title} className="card" style={{ padding: "28px" }}>
@@ -121,15 +121,15 @@ export default function MarketsFintechPage() {
             {[
               {
                 title: "Remittance platform across jurisdictions",
-                body: "Regulatory structuring across 3 jurisdictions. EMI licensing, compliance framework and banking coordination delivered as a single project.",
+                body: "Regulatory structuring across multiple jurisdictions. EMI licensing pathway, compliance framework and banking readiness delivered as a coordinated programme.",
               },
               {
-                title: "Payment institution. Brazil (BACEN)",
-                body: "Full regulatory dossier and corporate structuring for BACEN authorization. Direct coordination with local legal partners.",
+                title: "Payment institution · Brazil (BACEN-facing)",
+                body: "Regulatory dossier and corporate structuring to support BACEN authorisation pathways, coordinated with local counsel. Octus is not affiliated with BACEN.",
               },
               {
-                title: "Crypto-to-fiat bridge: banking recovery",
-                body: "Operator rejected by 4 banks. We restructured AML framework, realigned corporate layer and coordinated banking onboarding. Operational accounts restored.",
+                title: "Crypto-to-fiat bridge · banking recovery",
+                body: "Operator facing repeated banking declines. We restructured the AML framework, realigned the corporate layer and prepared onboarding materials. Banking outcomes remain institution-dependent.",
               },
             ].map((m, i) => (
               <div
@@ -151,8 +151,11 @@ export default function MarketsFintechPage() {
           <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             Active fintech jurisdictions.
           </h2>
+          <p className="body-sm" style={{ marginBottom: "16px" }}>
+            Primary landings have dedicated pages. Additional references may appear without a public jurisdiction page.
+          </p>
           <div className="chip-row" style={{ gap: "10px", flexWrap: "wrap" }}>
-            {["Brazil (BACEN)", "UK (FCA)", "Malta (MFSA)", "Portugal", "Curaçao", "Cyprus", "BVI", "Cayman Islands", "UAE"].map((j) => (
+            {["Brazil (BACEN)", "Malta (MFSA)", "Portugal", "UAE"].map((j) => (
               <span key={j} className="chip-juris">{j}</span>
             ))}
           </div>
@@ -165,7 +168,7 @@ export default function MarketsFintechPage() {
           <p className="label">Go deeper</p>
           <div className="grid-3">
             {[
-              { title: "iGaming Operations", desc: "Our largest sector by volume.", href: "/markets/igaming" },
+              { title: "iGaming Operations", desc: "Adjacent regulated-sector structuring.", href: "/markets/igaming" },
               { title: "AML & KYC Framework", desc: "Compliance that holds under scrutiny.", href: "/solutions/compliance/aml-kyc" },
               { title: "Corporate Structuring", desc: "Entity design for regulated operations.", href: "/solutions/corporate-structuring" },
             ].map((r) => (
@@ -189,11 +192,10 @@ export default function MarketsFintechPage() {
           <h2 className="heading-lg cta-block__title">
             Build the structure right. Then move fast.
           </h2>
-          <Link href="/diagnostic" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">
-            Start your fintech diagnostic →
-          </Link>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
-            We respond within 24 hours.
+            Prefer a structured assessment?{" "}
+            <Link href="/diagnostic" className="underline underline-offset-2" style={{ color: "var(--white-60)" }}>Open Diagnostic</Link>.
           </p>
         </div>
       </section>

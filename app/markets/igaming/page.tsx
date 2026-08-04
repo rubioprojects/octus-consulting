@@ -81,11 +81,11 @@ export default function MarketsIGamingPage() {
             {[
               {
                 title: "Licensing strategy & execution",
-                desc: "We select the jurisdiction, design the structure, prepare the dossier and coordinate with the regulator. From first filing to approved license.",
+                desc: "We help select the jurisdiction, design the structure and prepare the dossier so the operator can pursue authorisation with local counsel where required. From first filing readiness to post-submission support.",
               },
               {
-                title: "Banking & payment access",
-                desc: "Licensed but no bank account? We restructure AML documentation, align the corporate layer and coordinate directly with banks and PSPs.",
+                title: "Banking & payment readiness",
+                desc: "Licensed but no bank account? We restructure AML documentation, align the corporate layer and prepare materials for banks and PSPs. Banking access is never guaranteed.",
               },
               {
                 title: "Compliance that holds",
@@ -97,11 +97,11 @@ export default function MarketsIGamingPage() {
               },
               {
                 title: "Lab certification readiness",
-                desc: "GLI, BMM, iTech Labs: we prepare the operation for technical certification. Gap analysis, evidence register, audit coordination.",
+                desc: "We prepare operations for technical certification programmes commonly required by regulators (for example independent laboratory testing). Gap analysis, evidence register and audit coordination — Octus is not affiliated with any laboratory.",
               },
               {
                 title: "Stabilization after licensing",
-                desc: "License approved is not the end. We stabilize the operation across compliance cycles, banking maintenance and regulatory reporting.",
+                desc: "Authorisation is not the end. We help stabilize the operation across compliance cycles, banking maintenance and regulatory reporting.",
               },
             ].map((item) => (
               <div key={item.title} className="card" style={{ padding: "28px" }}>
@@ -123,20 +123,20 @@ export default function MarketsIGamingPage() {
           <div className="grid gap-6 md:grid-cols-2">
             {[
               {
-                title: "iGaming operator. Curaçao",
-                body: "Full licensing + corporate structuring + banking setup. Operational bank account open in 11 weeks after 6 months of failed attempts with previous advisors.",
+                title: "iGaming operator · Curaçao pathway",
+                body: "Licensing preparation, corporate structuring and banking readiness after prior advisory work left the operation without a workable banking path. Illustrative mandate pattern — outcomes and timelines vary.",
               },
               {
-                title: "Multi-brand sportsbook: 3 jurisdictions",
-                body: "Cross-border restructuring across Brazil, Curaçao and Malta. Entity realignment, compliance harmonization and unified banking strategy.",
+                title: "Multi-brand sportsbook · multi-jurisdiction",
+                body: "Cross-border restructuring across Brazil, Curaçao and Malta. Entity realignment, compliance harmonisation and coordinated banking strategy.",
               },
               {
                 title: "Affiliate-led betting operation",
-                body: "Compliance remediation after regulatory inquiry. AML framework rebuild, evidence register reconstruction and payment processor recovery.",
+                body: "Compliance remediation after regulatory inquiry. AML framework rebuild, evidence register reconstruction and payment-processor recovery support.",
               },
               {
-                title: "Sports betting operator. Brazil (SPA/MF)",
-                body: "Full regulatory dossier, corporate structuring and direct coordination with SPA/MF authorities for the Brazilian sports betting authorization process.",
+                title: "Sports betting operator · Brazil (SPA/MF)",
+                body: "Regulatory dossier preparation and corporate structuring to support the Brazilian fixed-odds authorisation pathway under Laws 13,756/2018 and 14,790/2023 and SPA/MF ordinances. Octus is not affiliated with SPA/MF.",
               },
             ].map((m, i) => (
               <div
@@ -162,8 +162,11 @@ export default function MarketsIGamingPage() {
             We don&apos;t list jurisdictions to impress. We work in the markets
             where iGaming operators actually build and scale.
           </p>
+          <p className="body-sm" style={{ marginBottom: "16px" }}>
+            Dedicated jurisdiction pages cover our primary landings. Additional markets may appear as advisory references without a dedicated public page.
+          </p>
           <div className="chip-row" style={{ gap: "10px", flexWrap: "wrap" }}>
-            {["Brazil (SPA/MF)", "Curaçao", "Malta (MGA)", "Anjouan", "Isle of Man", "Gibraltar", "Cyprus", "UK", "Portugal", "Cayman Islands", "BVI"].map((j) => (
+            {["Brazil (SPA/MF)", "Curaçao", "Malta (MGA)", "Anjouan", "Isle of Man", "Portugal"].map((j) => (
               <span key={j} className="chip-juris">{j}</span>
             ))}
           </div>
@@ -172,7 +175,7 @@ export default function MarketsIGamingPage() {
               href="/jurisdictions/curacao"
               className="inline-flex h-12 items-center justify-center rounded-sm border border-border bg-transparent px-10 text-base font-medium text-primary transition-colors hover:bg-secondary"
             >
-              Curaçao licensing →
+              Curaçao jurisdiction →
             </Link>
           </div>
         </div>
