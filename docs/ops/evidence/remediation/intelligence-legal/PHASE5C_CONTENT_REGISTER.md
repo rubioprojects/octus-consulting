@@ -47,6 +47,16 @@
 | `/compliance-channel` | Hard anonymity guarantee; DPO label | Remove guarantee; no response SLA; Compliance contact |
 | `/404` | Default Next export 404 | Add branded `app/not-found.tsx` |
 
-## Editorial anti-patterns (avoid)
+## Closeout (application SHA `45b6243591a8b195df6536332b423fe692b2b41c`)
 
-Generic blog card farms · AI-looking copy · excessive CTAs · certificate walls · market-leader claims · invented research.
+| Family | Result |
+|---|---|
+| Intelligence | Positioning tightened; CTAs differentiated; pillars practical |
+| Insights index | Hub copy + no-SLA note |
+| Insights articles (33) | Claim qualifications + editorial note + needs_review marker |
+| Privacy / Terms / Cookies | Aligned; dates August 2026 |
+| Compliance Channel | Guarantees removed |
+| 404 | Branded `app/not-found.tsx` |
+
+See `PHASE5C_FACT_AND_CLAIM_REGISTER.md` for keep/qualify/remove tallies.
+

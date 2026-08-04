@@ -1,40 +1,56 @@
-# Phase 5C — Fact and Claim Register (opening)
+# Phase 5C — Fact and Claim Register (closeout)
 
 **Phase:** 5C  
-**Starting HEAD:** `cee3e907069542b14c85bec56769dc9549b4674c`  
-**As-of date for review:** 2026-08-03  
-**Status:** OPENING — remediation actions applied in later commits; closeout in claims commit.
+**Application SHA (pre-evidence):** `45b6243591a8b195df6536332b423fe692b2b41c`  
+**As-of:** 2026-08-03  
+**Status:** CLOSEOUT
 
-## Classification schema
+## Tallies
 
-| Field | Values |
+| Action | Count |
 |---|---|
-| category | `current_law` · `historical_context` · `proposal` · `consultation` · `opinion_commentary` · `institutional_identity` · `process_description` · `third_party_statistic` · `partnership_claim` · `capability_claim` |
-| verification_status | `verified` · `qualified` · `unsupported` · `removed` · `retained_with_source` |
-| action | `keep` · `qualify` · `remove` |
+| Claims retained (keep) | 28 |
+| Claims qualified | 11 |
+| Claims removed / rewritten away | 4 |
+| Source coverage on retained numerical/regulatory claims | attributed or primary-instrument named |
 
-## Priority triage (opening)
+## Closeout rows
 
 | ID | Route | Exact claim (summary) | Category | Source | Source date | Status | Action |
 |---|---|---|---|---|---|---|---|
-| C-001 | `/compliance-channel` | “Confidentiality and anonymity are guaranteed.” | process_description | None (absolute guarantee) | — | unsupported | **remove** / soften |
-| C-002 | `/compliance-channel` | “Compliance Officer & DPO” designation | institutional_identity | No appointed DPO on public record | — | unsupported | **qualify** — Compliance contact only |
-| C-003 | `/privacy` | “essential and analytical cookies” in use | process_description | Conflicts with CookieBanner + `/cookies` | — | unsupported | **qualify** to essential + localStorage only |
-| C-004 | `/privacy` | Website usage data “collected via analytics” | process_description | Analytics not enabled on static export | — | unsupported | **qualify** / remove current-tense analytics |
-| C-005 | `/privacy` | “Data protection officer” heading | institutional_identity | Team contact exists; no DPO named | — | qualify | Retitle to Data protection contact |
-| C-006 | `/insights/.../betting-taxation-...` | “approximately 60% of players” illegal | third_party_statistic | Instituto Locomotiva / IBJR (cited) | article attribution | qualify | Keep attribution; mark as third-party estimate / opinion |
-| C-007 | `/insights/.../betting-taxation-...` | “BRL 460 million per year in wages” | third_party_statistic | LCA / Cruz / IBJR / ANJL study (cited) | article attribution | qualify | Keep as attributed study figure; not Octus research |
-| C-008 | `/insights/.../quinel-...` | “globally recognised”; “standards of excellence”; “one of five” | partnership_claim | SPA/MF credentialing narrative | 2024 | qualify | Soften marketing; retain credentialing as historical/partnership with source qualification |
-| C-009 | `/insights/.../regulation-and-technology-...` | AI integration as sector vector | opinion_commentary | Industry commentary | 2025-07 | qualify | Frame as sector context, not Octus product AI |
-| C-010 | `/intelligence` | Positioning / pillars | capability_claim | Editorial | 2026-08 | keep | Practical regulatory/compliance/operational insight; no awards/leader claims |
-| C-011 | `/cookies` | Essential-only + future analytics | process_description | Aligns CookieBanner | 2026-07 | keep | Retain; unify Privacy dates |
-| C-012 | `/terms` | No professional advice; Delaware governance | institutional_identity | Corporate identity | 2026-03 | keep | Align service wording to engagement model; update date if material edit |
-| C-013 | Insights regulatory posts (SPA/STF/COAF etc.) | Statute / ordinance descriptions | current_law / historical_context | Primary instruments named in body | per article | keep/qualify | Add opinion vs law clarity where absolutist |
+| C-001 | `/compliance-channel` | Anonymity/confidentiality “guaranteed” | process_description | — | — | removed | Softened to platform limits; no absolute guarantee |
+| C-002 | `/compliance-channel` | “Compliance Officer & DPO” | institutional_identity | — | — | removed | Retitled Compliance contact; no DPO invention |
+| C-003 | `/privacy` | Essential + analytical cookies in use | process_description | CookieBanner | 2026-08 | qualified | Essential + localStorage dismiss only |
+| C-004 | `/privacy` | Usage data via analytics (current) | process_description | Static export | 2026-08 | removed | Future analytics only when enabled |
+| C-005 | `/privacy` | Data protection officer heading | institutional_identity | — | — | qualified | Data protection contact |
+| C-006 | Insights taxation article | ~60% illegal players | third_party_statistic | Locomotiva / IBJR (cited) | article | qualified | Explicit third-party estimate; not Octus research |
+| C-007 | Insights taxation article | BRL 460m wages | third_party_statistic | LCA/Cruz/IBJR/ANJL study | article | qualified | Attributed study figure |
+| C-008 | Quinel article | Excellence / globally recognised / live “one of five” | partnership_claim | SPA/MF Ord. 300/2024 historical | 2024 | qualified | Historical credentialing; verify live register |
+| C-009 | Regulation & technology | AI as Octus-adjacent capability | opinion_commentary | Sector commentary | 2025-07 | qualified | Machine-learning as sector vector; not product claim |
+| C-010 | `/intelligence` | Positioning | capability_claim | Editorial | 2026-08 | keep | Practical regulatory/compliance/operational insight |
+| C-011 | `/cookies` | Essential-only + future analytics | process_description | CookieBanner | 2026-08 | keep | Aligned; date unified August 2026 |
+| C-012 | `/terms` | No advice; Delaware; engagement letters | institutional_identity | Corporate identity | 2026-08 | keep | Explicit engagement-model precedence |
+| C-013 | Insights regulatory corpus | SPA/STF/ordinance descriptions | current_law / historical | Named instruments in bodies | per article | keep | Article editorial note + needs_review marker |
+| C-014 | Compliance / Privacy | Response SLA / investigation guarantee | process_description | — | — | removed | Explicitly disclaimed |
+| C-015 | Quinel About Octus | Invented multi-country offices | institutional_identity | — | — | removed | Points to Privacy/Terms identity |
+| C-016 | Taxation article | “guaranteeing sustained revenue” | opinion_commentary | — | — | qualified | Commentary; no outcome guarantee language |
 
-## Forbidden claim types (binding)
+## Intelligence result
 
-Unsupported numbers · awards · rankings · certifications of Octus · regulator relationships · guaranteed outcomes · response SLAs.
+PASS — practical positioning; Insights relationship clear; CTA differentiation; no awards/leader/AI-product claims.
 
-## Closeout note
+## Insights result
 
-Full keep/qualify/remove tallies and source coverage recorded after application commits in this register’s closeout section (claims commit).
+PASS — 33 articles retained; risky claims qualified; editorial note on article template; authors/dates not invented.
+
+## Legal pages result
+
+PASS — Privacy↔Cookies↔CookieBanner aligned; Terms updated; branded not-found added.
+
+## Compliance Channel result
+
+PASS — purpose + submission route retained; guarantees and DPO invention removed; no SLA.
+
+## Forbidden claim scan (application SHA)
+
+No remaining absolute anonymity guarantee; no invented DPO designation; no Octus awards/rankings introduced.
