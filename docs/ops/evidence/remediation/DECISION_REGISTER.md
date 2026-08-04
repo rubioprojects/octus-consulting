@@ -84,7 +84,7 @@
 | P2 | Global visual system / shell fidelity | 2 — ACCEPTED |
 | P3 | Homepage remediation | 3 — ACCEPTED_WITH_RESIDUAL |
 | P4 | Services families | 4 — ACCEPTED_WITH_BOUND_RESIDUALS |
-| P5A | Institutional / engagement | 5A — IN PROGRESS |
+| P5A | Institutional / engagement | 5A — READY_FOR_SOL_AUDIT |
 | P5B | Markets / jurisdictions | 5B — BLOCKED |
 | P5C | Intelligence / legal | 5C — BLOCKED |
 | P6 | Full regression (bound residuals) | 6 — BLOCKED |
@@ -225,7 +225,7 @@
 | accepted_phase4_application_sha | `eac4e514ea751314774f3e69f71ebd52245d2534` |
 | immutable_preview | https://octus-consulting-beqxfdqrk-axle1.vercel.app |
 | Bound residuals | `HOME_PUNCTUATION_RESIDUAL_001` · `GLOBAL_A11Y_REGION_RESIDUAL_001` · `AXE_INCOMPLETE_REVIEW_001` |
-| PHASE_5A | AUTHORIZED / IN PROGRESS |
+| PHASE_5A | AUTHORIZED · application closed for Sol audit |
 | PHASE_5B / 5C / 6 | BLOCKED |
 | Rubio rescreen | BLOCKED |
 | Merge / production / rebase | forbidden |
@@ -238,3 +238,17 @@
 | Allowed | Page-scoped copy/metadata under the six institutional/engagement routes |
 | Stop | Undocumented shared-component mutation → BLOCKED |
 | Status | BINDING |
+
+## D-021 — Phase 5A institutional/engagement gate ready for Sol audit
+
+| Field | Value |
+|---|---|
+| application_code_sha | `951513c16c45eae06b269b15f9ae77c50c625f0f` |
+| immutable_preview | https://octus-consulting-mfiprgbua-axle1.vercel.app |
+| deployment_id | `dpl_EZQJJFTUEXBM1xBtT5mQUuasBNyu` |
+| validation | PASS · Axe critical 0 · serious 0 |
+| screenshots | 144 provenance-bound |
+| Bound residuals | retained · Phase 6 |
+| terminal | `OCTUS_INSTITUTIONAL_ENGAGEMENT_GATE_READY_FOR_SOL_AUDIT` |
+| PHASE_5B / 5C / 6 / Rubio | BLOCKED |
+| Merge / production / rebase | forbidden |

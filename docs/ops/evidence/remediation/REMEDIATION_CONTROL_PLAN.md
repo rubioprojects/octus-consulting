@@ -26,7 +26,7 @@ PR #17 — seven-area architecture, current routes, evidence-safe editorial rule
 | 2 | Global visual system | **ACCEPTED by Sol** | Global system gate PASS |
 | 3 | Homepage | **ACCEPTED_WITH_RESIDUAL** | Closeout accepted · residual `HOME_PUNCTUATION_RESIDUAL_001` → Phase 6 |
 | 4 | Services and service families | **ACCEPTED_WITH_BOUND_RESIDUALS** | Phase 4 a11y accepted · residuals bound |
-| 5A | Institutional and engagement | **IN PROGRESS** | `OCTUS_INSTITUTIONAL_ENGAGEMENT_GATE_READY_FOR_SOL_AUDIT` |
+| 5A | Institutional and engagement | **READY_FOR_SOL_AUDIT** | `OCTUS_INSTITUTIONAL_ENGAGEMENT_GATE_READY_FOR_SOL_AUDIT` |
 | 5B | Markets / jurisdictions | **BLOCKED** | — |
 | 5C | Intelligence / legal content | **BLOCKED** | — |
 | 6 | Full regression | BLOCKED | Residuals + final candidate audit |
@@ -105,7 +105,7 @@ Impact matrix: `services/PHASE4_SERVICES_IMPACT_MATRIX.md`
 | Bound residuals | `HOME_PUNCTUATION_RESIDUAL_001` · `GLOBAL_A11Y_REGION_RESIDUAL_001` · `AXE_INCOMPLETE_REVIEW_001` → Phase 6 |
 | Services lock | Do not modify `app/solutions/**`, hubs, catalogue, or service shared components in Phase 5A |
 
-### Phase 5A stamp (IN PROGRESS)
+### Phase 5A stamp (READY FOR SOL AUDIT)
 
 | Field | Value |
 |---|---|
@@ -113,9 +113,14 @@ Impact matrix: `services/PHASE4_SERVICES_IMPACT_MATRIX.md`
 | Inventory | `institutional/PHASE5A_ROUTE_INVENTORY.md` |
 | Impact matrix | `institutional/PHASE5A_IMPACT_MATRIX.md` |
 | Fact register | `institutional/PHASE5A_FACT_AND_CLAIM_REGISTER.md` |
+| application_code_sha | `951513c16c45eae06b269b15f9ae77c50c625f0f` |
+| immutable_preview | https://octus-consulting-mfiprgbua-axle1.vercel.app |
+| deployment_id | `dpl_EZQJJFTUEXBM1xBtT5mQUuasBNyu` |
+| terminal | `OCTUS_INSTITUTIONAL_ENGAGEMENT_GATE_READY_FOR_SOL_AUDIT` |
 | Phase 5B / 5C / 6 | BLOCKED |
 | Rubio rescreen | BLOCKED |
 | Merge / production / rebase | forbidden |
+| Bound residuals | unchanged · Phase 6 owners |
 
 ## Intentional differences (binding)
 
