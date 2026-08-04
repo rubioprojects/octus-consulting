@@ -86,8 +86,8 @@
 | P4 | Services families | 4 — ACCEPTED_WITH_BOUND_RESIDUALS |
 | P5A | Institutional / engagement | 5A — ACCEPTED_WITH_BOUND_RESIDUALS |
 | P5B | Markets / jurisdictions / Brazil | 5B — ACCEPTED_WITH_BOUND_RESIDUALS |
-| P5C | Intelligence / Insights / Legal | 5C — READY_FOR_SOL_AUDIT |
-| P6 | Full regression (bound residuals) | 6 — BLOCKED |
+| P5C | Intelligence / Insights / Legal | 5C — ACCEPTED_WITH_BOUND_RESIDUALS |
+| P6 | Full regression (bound residuals) | 6 — IN_PROGRESS |
 
 ## D-009 — Phase 2 global system accepted
 
@@ -332,5 +332,37 @@
 | Decision | Do not edit PageHero, Nav, layout, CookieBanner, WhatsApp, global tokens, Homepage, Team, Services, Phase 5A, or Phase 5B pages |
 | Allowed | `app/intelligence/**`, `app/insights/**`, legal utility pages, `app/not-found.tsx`, Insights SoT `lib/posts.ts` (+ Insights-only enrichment libs), Phase 5C evidence |
 | Stop | Undocumented shared-component mutation → BLOCKED |
+| Status | BINDING |
+
+## D-028 — Phase 5C Intelligence/Insights/Legal gate ready for Sol audit (historical)
+
+| Field | Value |
+|---|---|
+| application_code_sha | `c467ccf0bfa3a8a2df1ac7a58c7b29c8c169d62b` |
+| evidence_head | `b617338510c030dccc6eac0f03d01e4042ca5532` |
+| immutable_preview | https://octus-consulting-84n1zaqys-axle1.vercel.app |
+| deployment_id | `dpl_8q5VbqyqV5vZxazerUKHco7VFCiW` |
+| terminal | `OCTUS_INTELLIGENCE_LEGAL_GATE_READY_FOR_SOL_AUDIT` |
+
+## D-029 — Phase 5C accepted with bound residuals; Phase 6 authorized
+
+| Field | Value |
+|---|---|
+| PHASE_5C | ACCEPTED_WITH_BOUND_RESIDUALS |
+| accepted_phase5c_evidence_head | `b617338510c030dccc6eac0f03d01e4042ca5532` |
+| accepted_phase5c_application_sha | `c467ccf0bfa3a8a2df1ac7a58c7b29c8c169d62b` |
+| PHASE_6 | AUTHORIZED · IN_PROGRESS |
+| Rubio rescreen | BLOCKED until final Sol audit |
+| Merge / production / rebase | forbidden |
+| Inventory | `final/PHASE6_CONTROL_INVENTORY.md` |
+
+## D-030 — Phase 6 residual closure authorization
+
+| Field | Value |
+|---|---|
+| HOME_PUNCTUATION_RESIDUAL_001 | Authorized: D-014 final text only |
+| GLOBAL_A11Y_REGION_RESIDUAL_001 | Authorized: landmark wrapper; preserve WA geometry |
+| AXE_INCOMPLETE_REVIEW_001 | Authorized: disposition register; remediate only if required |
+| Redesign / architecture reopen | FORBIDDEN → BLOCKED |
 | Status | BINDING |
 

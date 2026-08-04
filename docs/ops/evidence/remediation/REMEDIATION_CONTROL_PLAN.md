@@ -28,8 +28,8 @@ PR #17 — seven-area architecture, current routes, evidence-safe editorial rule
 | 4 | Services and service families | **ACCEPTED_WITH_BOUND_RESIDUALS** | Phase 4 a11y accepted · residuals bound |
 | 5A | Institutional and engagement | **ACCEPTED_WITH_BOUND_RESIDUALS** | Phase 5A accepted by Sol |
 | 5B | Markets / jurisdictions / Brazil | **ACCEPTED_WITH_BOUND_RESIDUALS** | Accepted by Sol |
-| 5C | Intelligence / Insights / Legal utility | **READY_FOR_SOL_AUDIT** | `OCTUS_INTELLIGENCE_LEGAL_GATE_READY_FOR_SOL_AUDIT` |
-| 6 | Full regression | BLOCKED | Residuals + final candidate audit |
+| 5C | Intelligence / Insights / Legal utility | **ACCEPTED_WITH_BOUND_RESIDUALS** | Accepted by Sol |
+| 6 | Full regression | **IN_PROGRESS** | `OCTUS_FINAL_SITE_CANDIDATE_READY_FOR_SOL_AUDIT` (target) |
 
 ### Phase 1 acceptance stamp
 
@@ -130,19 +130,28 @@ Impact matrix: `services/PHASE4_SERVICES_IMPACT_MATRIX.md`
 | Bound residuals | `HOME_PUNCTUATION_RESIDUAL_001` · `GLOBAL_A11Y_REGION_RESIDUAL_001` · `AXE_INCOMPLETE_REVIEW_001` → Phase 6 |
 | Phase 5B lock | Do not modify markets/jurisdictions/brazil application files in Phase 5C |
 
-### Phase 5C stamp (READY FOR SOL AUDIT)
+### Phase 5C stamp (ACCEPTED_WITH_BOUND_RESIDUALS)
 
 | Field | Value |
 |---|---|
-| Status | `OCTUS_INTELLIGENCE_LEGAL_GATE_READY_FOR_SOL_AUDIT` |
-| starting_HEAD | `cee3e907069542b14c85bec56769dc9549b4674c` |
-| application_code_sha | `c467ccf0bfa3a8a2df1ac7a58c7b29c8c169d62b` |
+| Status | **ACCEPTED_WITH_BOUND_RESIDUALS** by Sol |
+| accepted Phase 5C evidence HEAD | `b617338510c030dccc6eac0f03d01e4042ca5532` |
+| accepted Phase 5C application SHA | `c467ccf0bfa3a8a2df1ac7a58c7b29c8c169d62b` |
 | immutable_preview | https://octus-consulting-84n1zaqys-axle1.vercel.app |
 | deployment_id | `dpl_8q5VbqyqV5vZxazerUKHco7VFCiW` |
-| screenshots | 360 · validation PASS |
-| Axe critical/serious | 0 / 0 |
-| Phase 6 | BLOCKED |
-| Rubio rescreen | BLOCKED |
+| Bound residuals | → Phase 6 closure |
+| Phase 5C lock | Do not reopen Intelligence/Insights/Legal redesign in Phase 6 |
+
+### Phase 6 stamp (IN_PROGRESS)
+
+| Field | Value |
+|---|---|
+| Status | **IN_PROGRESS** — authorized by Sol |
+| starting_HEAD | `b617338510c030dccc6eac0f03d01e4042ca5532` |
+| Inventory | `final/PHASE6_CONTROL_INVENTORY.md` |
+| Residual plan | `final/PHASE6_RESIDUAL_CLOSURE_PLAN.md` |
+| Axe incomplete register | `final/AXE_INCOMPLETE_DISPOSITION_REGISTER.md` |
+| Rubio rescreen | BLOCKED until final Sol audit |
 | Merge / production / rebase | forbidden |
 
 ## Intentional differences (binding)
@@ -168,8 +177,7 @@ Impact matrix: `services/PHASE4_SERVICES_IMPACT_MATRIX.md`
 - No merge · no production · no rebase · no new PR  
 - No preview return to Rubio  
 - No `READY_FOR_RUBIO_RESCREEN`  
-- No Phase 6 until Sol accepts Phase 5C  
-- Do not resolve bound residuals in Phase 5C  
-- Do not claim `READY_FOR_RUBIO_RESCREEN`  
+- No Phase 6 reopen of prior phase architecture  
+- Do not claim `READY_FOR_RUBIO_RESCREEN` until Sol accepts Phase 6  
 - Do not send preview to Rubio  
 
