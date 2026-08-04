@@ -57,14 +57,15 @@ export default function CareersPage() {
             actually holds under real conditions.
           </p>
           <p className="body-text">
-            Engagements are distributed across time zones, with client work spanning
-            Europe, LATAM, Middle East and Asia when mandates require it.
+            Collaboration is remote-capable. Client mandates may involve work connected to
+            Europe, LATAM, the Middle East or Asia when scope requires it. This describes
+            mandate geography, not a claim of permanent offices in each region.
           </p>
 
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px", marginTop: "40px" }}>
             {[
               "Remote-capable collaboration",
-              "International mandate exposure",
+              "International mandate exposure when scoped",
               "Multi-disciplinary coordination",
               "High-scrutiny regulated environments",
             ].map((item) => (
@@ -127,7 +128,11 @@ export default function CareersPage() {
       {/* ─── PROCESS ──────────────────────────────────────────────── */}
       <section className="surface-elevated py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
-          <span className="label">Our recruitment process</span>
+          <span className="label">Indicative recruitment stages</span>
+          <p className="body-text" style={{ marginBottom: "28px" }}>
+            The stages below describe a typical sequence Octus may use. They are indicative,
+            not a guaranteed process for every hire or role.
+          </p>
           <div style={{ display: "flex", flexDirection: "column" }}>
             {[
               { step: "01", title: "Initial interview", body: "First conversation to understand your background, what you have built and how you work." },
