@@ -25,5 +25,7 @@
     "HOLD_NOT_PUBLIC": 17,
     "public": 16,
     "sitemap": 16
-  }
+  },
+  "evidence_commit": "401be8d6a2fa16f343fb854d8c06268dbcc69ac8",
+  "final_head": "401be8d6a2fa16f343fb854d8c06268dbcc69ac8"
 }

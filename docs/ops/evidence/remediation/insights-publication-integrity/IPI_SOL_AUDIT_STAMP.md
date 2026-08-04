@@ -12,6 +12,7 @@
 | article_integrity_commit | `38511221a7fffb0ba8745e04ebb4df814b01eeb3` |
 | validation_commit | `b19dea96b868e017ac0033761dd596afdd46dbcb` |
 | source_link_hardening_commits | `bfbe1895ae9868932177e3b013e3417f9f6c6282`, `eace7f4ab7aeee324b874502a8ee0f870ca6ad25` |
+| evidence_commit | `401be8d6a2fa16f343fb854d8c06268dbcc69ac8` |
 | application_sha | `eace7f4ab7aeee324b874502a8ee0f870ca6ad25` |
 | immutable_preview | https://octus-consulting-otlkpv2ds-axle1.vercel.app |
 | deployment_id | `dpl_2dvgYCq5ML6puF2EBV7yDpiMjxQ2` |
