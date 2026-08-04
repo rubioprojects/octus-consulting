@@ -1,10 +1,5 @@
 import Link from "next/link";
-import {
-  CTA_DISCUSS_LABEL,
-  CTA_EMAIL_LABEL,
-  MAILTO_DISCUSS,
-  WHATSAPP_DISCUSS_URL,
-} from "../../lib/cta";
+import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 import DarkHeroAtmosphere from "../../components/system/DarkHeroAtmosphere";
 import { pageSocialMeta } from "../../lib/pageMeta";
 
@@ -64,6 +59,9 @@ const coreSpecialists: Member[] = [
     linkedin: null,
   },
   {
+    // PORTRAIT_SOURCE_REQUIRED: claudia-nery.jpg is the lowest-resolution source
+    // in public/team (smallest file, 600x600). No better approved asset exists in
+    // the repository. Replace with a higher-resolution original when supplied.
     name: "Claudia Nery",
     title: "Chief Financial Officer",
     photo: "/team/claudia-nery.jpg",
@@ -151,7 +149,9 @@ function MemberCard({
 
   const inner = (
     <article className={`team-card team-card--${tier}`}>
-      <div className={`team-card-photo-wrap ${photoClass}`}>
+      <div
+        className={`team-card-photo-wrap team-portrait team-portrait--${tier} ${photoClass}`}
+      >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={member.photo} alt="" className="team-card-photo" aria-hidden="true" />
       </div>
@@ -226,7 +226,7 @@ export default function TeamPage() {
             We work with operators who need regulatory clarity, operational discipline and
             structures that survive scrutiny.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
               href={WHATSAPP_DISCUSS_URL}
               target="_blank"
@@ -235,17 +235,11 @@ export default function TeamPage() {
             >
               {CTA_DISCUSS_LABEL}
             </a>
-            <a
-              href={MAILTO_DISCUSS}
-              className="inline-flex h-12 items-center justify-center rounded-sm border border-white/25 px-10 text-base font-medium text-white/85 transition-colors hover:border-white/50 hover:text-white"
-            >
-              {CTA_EMAIL_LABEL}
-            </a>
             <Link
               href="/careers"
-              className="inline-flex h-12 items-center justify-center rounded-sm border border-white/25 px-10 text-base font-medium text-white/85 transition-colors hover:border-white/50 hover:text-white"
+              className="inline-flex min-h-11 items-center font-sans text-sm text-white/70 no-underline transition-colors hover:text-white"
             >
-              See careers →
+              Explore careers →
             </Link>
           </div>
         </div>

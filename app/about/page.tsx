@@ -1,12 +1,6 @@
 import Link from "next/link";
-import {
-  CTA_DISCUSS_LABEL,
-  CTA_EMAIL_LABEL,
-  MAILTO_DISCUSS,
-  WHATSAPP_DISCUSS_URL,
-} from "../../lib/cta";
+import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 import PageHero from "../../components/system/PageHero";
-import OctusEditorialDivider from "../../components/system/OctusEditorialDivider";
 import OctusChapterTransition from "../../components/system/OctusChapterTransition";
 import { pageSocialMeta } from "../../lib/pageMeta";
 
@@ -16,6 +10,21 @@ export const metadata = pageSocialMeta({
     "Octus structures, coordinates and operates the work behind regulated businesses across regulatory, compliance, banking and corporate layers.",
   path: "/about",
 });
+
+/**
+ * Jurisdiction chips. `href` is set only where a public jurisdiction route
+ * already exists; the remaining markets stay as plain labels rather than
+ * linking to a generic index.
+ */
+const JURISDICTION_CHIPS: { label: string; href: string }[] = [
+  { label: "Brazil", href: "/brazil" },
+  { label: "Malta", href: "/jurisdictions/malta" },
+  { label: "Isle of Man", href: "/jurisdictions/isle-of-man" },
+  { label: "Curaçao", href: "/jurisdictions/curacao" },
+  { label: "Anjouan", href: "/jurisdictions/anjouan" },
+  { label: "Portugal", href: "/jurisdictions/portugal" },
+  { label: "UAE", href: "/jurisdictions/uae" },
+];
 
 export default function AboutPage() {
   return (
@@ -30,11 +39,6 @@ export default function AboutPage() {
             required across regulatory, compliance, banking and corporate layers.
           </>
         }
-        primaryCta={{
-          href: WHATSAPP_DISCUSS_URL,
-          label: CTA_DISCUSS_LABEL,
-          external: true,
-        }}
       />
 
       {/* ─── WHAT OCTUS IS ────────────────────────────────────────── */}
@@ -46,8 +50,8 @@ export default function AboutPage() {
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
             Octus acts as the central coordination and execution layer behind regulated
-            businesses. We enter the structure, coordinate the required workstreams and remain
-            accountable for the work within our mandate.
+            businesses. We enter the structure, coordinate the required workstreams and stay
+            with the work until it holds within our mandate.
           </p>
           <p className="body-text" style={{ marginBottom: "20px" }}>
             Clients bring us in when licensing is stuck, banking is blocked,
@@ -61,12 +65,9 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <OctusChapterTransition />
-
       {/* ─── HOW WE WORK ──────────────────────────────────────────── */}
       <section className="surface-elevated py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
-          <OctusEditorialDivider className="mb-10 ml-0 mr-auto" />
           <span className="label">How we work</span>
           <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             We act as lead contractor.
@@ -87,8 +88,8 @@ export default function AboutPage() {
             architecture, as a single execution layer.
           </p>
           <p className="body-text">
-            Operators work with one point of contact accountable for the structure
-            that needs to hold.
+            Operators work with a single point of contact for the structure that
+            needs to hold.
           </p>
         </div>
       </section>
@@ -163,45 +164,51 @@ export default function AboutPage() {
           </h2>
           <div className="grid-2">
             <div>
-              <div
-                className="about-authority-panel"
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "minmax(0, 0.9fr) minmax(0, 1.1fr)",
-                  gap: "1px",
-                  background: "var(--border-solid)",
-                  borderRadius: "12px",
-                  overflow: "hidden",
-                  marginBottom: "24px",
-                }}
-              >
-                <div className="card" style={{ borderRadius: "0", border: "none" }}>
-                  <p className="stat-num">2019</p>
-                  <p className="stat-label">Operating since</p>
-                </div>
-                <div style={{ position: "relative", minHeight: "140px", background: "#0B1220" }}>
+              {/*
+                Editorial team photograph. The source asset has a black field
+                baked around a dome, so the shape is resolved in CSS with a
+                single fitted curve instead of a navy tile that read as a
+                half-moon. No crop, no scaling, no face touched. See
+                .about-team-editorial in globals.css.
+              */}
+              <div className="about-team-editorial">
+                <figure className="about-team-editorial__figure">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/team-group.jpg"
-                    alt="Octus team at work"
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "cover",
-                      objectPosition: "center 30%",
-                      filter: "grayscale(1) contrast(1.05)",
-                      display: "block",
-                    }}
+                    alt="The Octus team together at an offsite"
+                    className="about-team-editorial__img"
                   />
+                  <span className="about-team-editorial__fade" aria-hidden="true" />
+                </figure>
+                <div className="about-team-editorial__meta">
+                  <p className="editorial-numeral editorial-numeral--sm editorial-numeral--year">
+                    2019
+                  </p>
+                  <p className="stat-label">Operating since</p>
                 </div>
               </div>
               <div className="juris-strip">
-                <p className="juris-strip-label">Markets and jurisdictions where Octus has coordinated work</p>
+                <p className="juris-strip-label">Selected jurisdictions</p>
+                <p className="body-sm" style={{ marginBottom: "16px" }}>
+                  Markets where Octus has coordinated work.
+                </p>
                 <div className="chip-row">
-                  {["Brazil (SPA/MF)", "UK", "Malta (MGA)", "UAE", "Curaçao", "Cyprus", "BVI", "Cayman", "Portugal", "Italy"].map((j) => (
-                    <span key={j} className="chip-juris">{j}</span>
-                  ))}
+                  {JURISDICTION_CHIPS.map((j) =>
+                    j.href ? (
+                      <Link key={j.label} href={j.href} className="chip-juris chip-juris-link">
+                        {j.label}
+                      </Link>
+                    ) : (
+                      <span key={j.label} className="chip-juris">
+                        {j.label}
+                      </span>
+                    )
+                  )}
                 </div>
+                <Link href="/jurisdictions" className="about-juris-strip__all">
+                  Explore all jurisdictions →
+                </Link>
               </div>
             </div>
             <div>
@@ -329,8 +336,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <OctusChapterTransition />
-
       {/* ─── CTA FINAL ────────────────────────────────────────────── */}
       <section className="cta-block">
         <div className="cta-block__bg" />
@@ -342,24 +347,21 @@ export default function AboutPage() {
           <h2 className="heading-lg cta-block__title">
             Build a structure that works under scrutiny.
           </h2>
-          <div className="flex flex-wrap justify-center gap-4" style={{ marginBottom: "16px" }}>
+          <div
+            className="flex flex-col items-center justify-center gap-4 sm:flex-row"
+            style={{ marginBottom: "16px" }}
+          >
             <a
               href={WHATSAPP_DISCUSS_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90"
             >
-              Continue on WhatsApp →
-            </a>
-            <a
-              href={MAILTO_DISCUSS}
-              className="inline-flex h-12 items-center justify-center rounded-sm border border-white/25 px-10 text-base font-medium text-white/85 transition-colors hover:border-white/50 hover:text-white"
-            >
-              {CTA_EMAIL_LABEL}
+              {CTA_DISCUSS_LABEL}
             </a>
             <Link
               href="/how-we-engage"
-              className="inline-flex h-12 items-center justify-center rounded-sm border border-white/25 px-10 text-base font-medium text-white/85 transition-colors hover:border-white/50 hover:text-white"
+              className="inline-flex min-h-11 items-center font-sans text-sm text-white/65 no-underline transition-colors hover:text-white"
             >
               How we engage →
             </Link>

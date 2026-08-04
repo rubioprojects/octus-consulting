@@ -45,7 +45,9 @@ export default function HomeLeadershipTrust() {
               className="home-leadership-trust__card no-underline"
               aria-label={`${l.name}, ${l.title}`}
             >
-              <div className={`home-leadership-trust__photo-wrap ${l.photoClass}`}>
+              <div
+                className={`home-leadership-trust__photo-wrap team-portrait team-portrait--leadership ${l.photoClass}`}
+              >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={l.photo}
