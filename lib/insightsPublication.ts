@@ -51,7 +51,7 @@ export const INSIGHTS_PUBLICATION: Record<string, InsightsPublicationEntry> = {
     currentLawDependency: true,
     primarySources: [
       {
-        label: "Regulation (EU) 2023/1114 (MiCA) — EUR-Lex",
+        label: "Regulation (EU) 2023/1114 (MiCA), EUR-Lex",
         href: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R1114",
         date: "2023-06-09",
       },
@@ -134,12 +134,12 @@ export const INSIGHTS_PUBLICATION: Record<string, InsightsPublicationEntry> = {
     currentLawDependency: true,
     primarySources: [
       {
-        label: "SPA/MF — Secretaria de Prêmios e Apostas (gov.br)",
+        label: "SPA/MF, Secretaria de Prêmios e Apostas (gov.br)",
         href: "https://www.gov.br/fazenda/pt-br/composicao/orgaos/secretaria-de-premios-e-apostas",
         date: "2026-08-04",
       },
       {
-        label: "Brasil Participativo — SPA public consultations",
+        label: "Brasil Participativo, SPA public consultations",
         href: "https://brasilparticipativo.presidencia.gov.br/",
         date: "2026-03-23",
       },
@@ -272,7 +272,7 @@ export const INSIGHTS_PUBLICATION: Record<string, InsightsPublicationEntry> = {
     currentLawDependency: true,
     primarySources: [
       {
-        label: "SPA/MF — Secretaria de Prêmios e Apostas (gov.br)",
+        label: "SPA/MF, Secretaria de Prêmios e Apostas (gov.br)",
         href: "https://www.gov.br/fazenda/pt-br/composicao/orgaos/secretaria-de-premios-e-apostas",
         date: "2026-08-04",
       },
@@ -403,7 +403,7 @@ export const INSIGHTS_PUBLICATION: Record<string, InsightsPublicationEntry> = {
     requiredCorrection: "Historical commentary label",
     finalDisposition: "PUBLISH_HISTORICAL_WITH_UPDATE",
   },
-  // HOLD — unresolved temporal or absolute legal risk without verified primary-source rewrite this pass
+  // HOLD: unresolved temporal or absolute legal risk without verified primary-source rewrite this pass
   "stf-suspends-blocking-of-bolsa-familia-bpc-betting-accounts": {
     slug: "stf-suspends-blocking-of-bolsa-familia-bpc-betting-accounts",
     publicationStatus: "HOLD_NOT_PUBLIC",

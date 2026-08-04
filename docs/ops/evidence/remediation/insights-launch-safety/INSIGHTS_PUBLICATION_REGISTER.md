@@ -73,7 +73,7 @@ Generated from lib/insightsPublication.ts + lib/posts.ts
 - current public route: /insights/betting-taxation-risks-senate-legal-certainty-regulated-market
 - factual category: historical_legislative
 - current-law dependency: no
-- primary sources: Lei Complementar nº 224/2025 (Planalto) (2025-12-26) — https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp224.htm
+- primary sources: Lei Complementar nº 224/2025 (Planalto) (2025-12-26) - https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp224.htm
 - primary-source date: 2025-12-26
 - last reviewed date: 2026-08-04
 - temporal status: Pre-vote commentary dated 2025-12-17; law later enacted
@@ -89,7 +89,7 @@ Generated from lib/insightsPublication.ts + lib/posts.ts
 - current public route: /insights/brazil-b2b-registration-requirement-betting-igaming
 - factual category: current_law
 - current-law dependency: yes
-- primary sources: SPA/MF — Secretaria de Prêmios e Apostas (gov.br) (2026-08-04) — https://www.gov.br/fazenda/pt-br/composicao/orgaos/secretaria-de-premios-e-apostas; Brasil Participativo — SPA public consultations (2026-03-23) — https://brasilparticipativo.presidencia.gov.br/
+- primary sources: SPA/MF, Secretaria de Prêmios e Apostas (gov.br) (2026-08-04) - https://www.gov.br/fazenda/pt-br/composicao/orgaos/secretaria-de-premios-e-apostas; Brasil Participativo, SPA public consultations (2026-03-23) - https://brasilparticipativo.presidencia.gov.br/
 - primary-source date: 2026-08-04; 2026-03-23
 - last reviewed date: 2026-08-04
 - temporal status: Draft ordinance consultation closed Mar 2026; final rule not confirmed published as of review
@@ -121,7 +121,7 @@ Generated from lib/insightsPublication.ts + lib/posts.ts
 - current public route: /insights/coaf-crisis-aml-obligations-online-gaming-operators
 - factual category: institutional_commentary
 - current-law dependency: yes
-- primary sources: Lei nº 9.613/1998 (Planalto) (1998-03-03) — https://www.planalto.gov.br/ccivil_03/leis/l9613.htm; COAF institutional page (Ministry of Finance) (2026-08-04) — https://www.gov.br/fazenda/pt-br/orgaos/coaf
+- primary sources: Lei nº 9.613/1998 (Planalto) (1998-03-03) - https://www.planalto.gov.br/ccivil_03/leis/l9613.htm; COAF institutional page (Ministry of Finance) (2026-08-04) - https://www.gov.br/fazenda/pt-br/orgaos/coaf
 - primary-source date: 1998-03-03; 2026-08-04
 - last reviewed date: 2026-08-04
 - temporal status: Institutional AML framing; staffing claims removed or sourced
@@ -153,7 +153,7 @@ Generated from lib/insightsPublication.ts + lib/posts.ts
 - current public route: /insights/curacao-reform-what-changes
 - factual category: current_law
 - current-law dependency: yes
-- primary sources: Curaçao Gaming Authority / Gaming Control Board portal (2026-08-04) — https://www.gamingcontrolcuracao.org/
+- primary sources: Curaçao Gaming Authority / Gaming Control Board portal (2026-08-04) - https://www.gamingcontrolcuracao.org/
 - primary-source date: 2026-08-04
 - last reviewed date: 2026-08-04
 - temporal status: Post-transition LOK/CGA direct licence regime; orange-seal transition ended 2025-10-15 per CGA communications reported in industry sources
@@ -185,7 +185,7 @@ Generated from lib/insightsPublication.ts + lib/posts.ts
 - current public route: /insights/games-not-classified-as-fixed-odds-betting-brazil
 - factual category: historical_legislative
 - current-law dependency: yes
-- primary sources: SPA/MF — Secretaria de Prêmios e Apostas (gov.br) (2026-08-04) — https://www.gov.br/fazenda/pt-br/composicao/orgaos/secretaria-de-premios-e-apostas
+- primary sources: SPA/MF, Secretaria de Prêmios e Apostas (gov.br) (2026-08-04) - https://www.gov.br/fazenda/pt-br/composicao/orgaos/secretaria-de-premios-e-apostas
 - primary-source date: 2026-08-04
 - last reviewed date: 2026-08-04
 - temporal status: Ordinance SPA/MF 1.207/2024 analysis; absolute licence-exemption language removed
@@ -233,7 +233,7 @@ Generated from lib/insightsPublication.ts + lib/posts.ts
 - current public route: /insights/mica-what-operators-need-to-do
 - factual category: current_law
 - current-law dependency: yes
-- primary sources: Regulation (EU) 2023/1114 (MiCA) — EUR-Lex (2023-06-09) — https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R1114; ESMA statement on the end of transitional periods under MiCA (2026-04-17) — https://www.esma.europa.eu/sites/default/files/2026-04/ESMA75-113276571-1679_Statement_on_the_end_of_transitional_periods_under_MiCA.pdf; ESMA list of Member State grandfathering periods (Art. 143) (2024-12) — https://www.esma.europa.eu/sites/default/files/2024-12/List_of_MiCA_grandfathering_periods_art._143_3.pdf
+- primary sources: Regulation (EU) 2023/1114 (MiCA), EUR-Lex (2023-06-09) - https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R1114; ESMA statement on the end of transitional periods under MiCA (2026-04-17) - https://www.esma.europa.eu/sites/default/files/2026-04/ESMA75-113276571-1679_Statement_on_the_end_of_transitional_periods_under_MiCA.pdf; ESMA list of Member State grandfathering periods (Art. 143) (2024-12) - https://www.esma.europa.eu/sites/default/files/2024-12/List_of_MiCA_grandfathering_periods_art._143_3.pdf
 - primary-source date: 2023-06-09; 2026-04-17; 2024-12
 - last reviewed date: 2026-08-04
 - temporal status: Post-1 July 2026 outer transitional limit; Member State periods varied
@@ -393,7 +393,7 @@ Generated from lib/insightsPublication.ts + lib/posts.ts
 - current public route: /insights/senate-approves-plp-128-2025-tightens-fiscal-policy-bets-fintechs
 - factual category: current_law
 - current-law dependency: yes
-- primary sources: Lei Complementar nº 224/2025 (Planalto) (2025-12-26) — https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp224.htm
+- primary sources: Lei Complementar nº 224/2025 (Planalto) (2025-12-26) - https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp224.htm
 - primary-source date: 2025-12-26
 - last reviewed date: 2026-08-04
 - temporal status: PLP 128/2025 enacted as LC 224/2025; GGR schedule in force with anterioridade
@@ -547,12 +547,12 @@ Generated from lib/insightsPublication.ts + lib/posts.ts
 
 ## HOLD_NOT_PUBLIC (preserved, not public)
 
-- stf-suspends-blocking-of-bolsa-familia-bpc-betting-accounts — Verify post-hearing STF outcome before republication
-- intellectual-property-igaming-trademark-registration-brazil — Remove or source 'systematically rejects' and similar absolutes
-- why-your-international-licence-may-not-protect-you-in-brazil — Scope jurisdiction-by-jurisdiction with primary sources
-- risk-management-software-igaming-regulatory-compliance — Map each requirement to instrument and jurisdiction
-- customised-studies-international-expansion-brazil — Rewrite as institutional non-promotional analysis or keep hold
-- senate-commission-approves-casino-bingo-gaming-bill-brazil — Verify PL 2234/22 current status before republication
+- stf-suspends-blocking-of-bolsa-familia-bpc-betting-accounts - Verify post-hearing STF outcome before republication
+- intellectual-property-igaming-trademark-registration-brazil - Remove or source 'systematically rejects' and similar absolutes
+- why-your-international-licence-may-not-protect-you-in-brazil - Scope jurisdiction-by-jurisdiction with primary sources
+- risk-management-software-igaming-regulatory-compliance - Map each requirement to instrument and jurisdiction
+- customised-studies-international-expansion-brazil - Rewrite as institutional non-promotional analysis or keep hold
+- senate-commission-approves-casino-bingo-gaming-bill-brazil - Verify PL 2234/22 current status before republication
 
 ## Notes
 
