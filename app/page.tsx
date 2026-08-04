@@ -86,14 +86,6 @@ export default function HomePage() {
             >
               {CTA_DISCUSS_LABEL}
             </CtaLink>
-            <CtaLink
-              href={WHATSAPP_ASSESS_URL}
-              variant="on-dark-secondary"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {CTA_ASSESS_LABEL}
-            </CtaLink>
           </div>
         </div>
       </section>
@@ -121,15 +113,15 @@ export default function HomePage() {
         <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 md:gap-0">
             <div className="flex flex-col items-center text-center sm:border-r sm:border-border">
-              <span className="font-heading text-3xl font-bold text-primary md:text-4xl">15+</span>
+              <span className="font-heading text-3xl font-bold text-primary md:text-4xl num-figure">15+</span>
               <span className="mt-2 font-sans text-sm text-muted-foreground">jurisdictions</span>
             </div>
             <div className="flex flex-col items-center text-center sm:border-r sm:border-border">
-              <span className="font-heading text-3xl font-bold text-primary md:text-4xl">2019</span>
+              <span className="font-heading text-3xl font-bold text-primary md:text-4xl num-figure">2019</span>
               <span className="mt-2 font-sans text-sm text-muted-foreground">Operating since</span>
             </div>
             <div className="flex flex-col items-center text-center">
-              <span className="font-heading text-3xl font-bold text-primary md:text-4xl">6</span>
+              <span className="font-heading text-3xl font-bold text-primary md:text-4xl num-figure">6</span>
               <span className="mt-2 font-sans text-sm text-muted-foreground">solutions</span>
             </div>
           </div>

@@ -85,13 +85,11 @@ export default function SolutionsPage() {
       <section className="surface-elevated py-16 md:py-20">
         <div className="mx-auto flex max-w-7xl flex-col gap-6 px-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
           <div>
-            <p className="section-label mb-2 block">How we engage</p>
-            <p className="body-large max-w-xl">
-              Lead Contractor Programme and engagement models built for accountability.
-            </p>
+            <p className="section-label mb-2 block">Next step</p>
+            <p className="body-large max-w-xl">Ready to discuss your operation.</p>
           </div>
-          <CtaLink href="/how-we-engage" variant="primary">
-            How we engage →
+          <CtaLink href={WHATSAPP_DISCUSS_URL} variant="primary" target="_blank" rel="noopener noreferrer">
+            {CTA_DISCUSS_LABEL}
           </CtaLink>
         </div>
       </section>

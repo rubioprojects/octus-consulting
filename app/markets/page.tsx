@@ -3,95 +3,95 @@ import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 import PageHero from "../../components/system/PageHero";
 
 export const metadata = {
-  title: "Markets — Regulated Sectors We Structure",
+  title: "Industries — High-Risk Regulated Sectors We Structure",
   description:
-    "We structure operations in iGaming, fintech, crypto and high-risk digital sectors. Licensing, compliance and corporate architecture for regulated markets.",
+    "iGaming, fintech, crypto and other high-risk sectors fail for the same structural reason. Octus structures licensing, compliance and banking so the operation holds under scrutiny.",
 };
+
+const INDUSTRIES = [
+  {
+    title: "iGaming & Betting",
+    desc: "Licensing, compliance and banking for online gambling and sports betting operators — from Curaçao to Brazil, Malta to Isle of Man.",
+    tags: ["Licensing", "Banking", "GLI", "Compliance"],
+    href: "/markets/igaming",
+  },
+  {
+    title: "Fintech & Payments",
+    desc: "Regulatory structuring for payment institutions, EMIs and fintech operators — banking access, payment infrastructure and cross-border compliance.",
+    tags: ["EMI", "Payments", "Banking", "Cross-border"],
+    href: "/markets/fintech",
+  },
+  {
+    title: "Crypto & Digital Assets",
+    desc: "VASP/CASP registration, MiCA positioning and compliance architecture for exchanges, custodians and token issuers.",
+    tags: ["VASP", "MiCA", "AML", "Custody"],
+    href: "/markets/crypto",
+  },
+  {
+    title: "High-Risk Operations",
+    desc: "Banking resilience and enhanced compliance for operations that banks and regulators classify as high-risk. We make the structure work — not the label go away.",
+    tags: ["Banking", "Risk", "Structure", "Access"],
+    href: "/markets/high-risk",
+  },
+];
 
 export default function MarketsPage() {
   return (
     <main>
       <PageHero
-        eyebrow="Markets"
-        title="Different industries."
-        titleSecondLine="Same structural problem."
+        eyebrow="Industries"
+        title="High-risk sectors."
+        titleSecondLine="One structural discipline."
         description={
           <>
-            Whether it&apos;s iGaming, fintech or crypto, regulated operations fail for the same
-            reason: the structure doesn&apos;t hold. We don&apos;t specialize in industries. We
-            specialize in fixing regulated operations.
+            iGaming, fintech and crypto sit among the most heavily scrutinised sectors in the world.
+            They don&apos;t fail because of regulation — they fail because the structure underneath
+            doesn&apos;t hold. We specialise in fixing regulated operations, across every high-risk
+            industry we work in.
           </>
         }
+        primaryCta={{ href: WHATSAPP_DISCUSS_URL, label: CTA_DISCUSS_LABEL, external: true }}
       />
 
-      {/* ─── ACTIVE MARKETS (linkable) ─── */}
+      {/* ─── INDUSTRIES GRID (home-consistent, with brand iconography) ─── */}
       <section className="bg-background py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <p className="label">Active markets</p>
-          <h2 className="heading-section" style={{ marginBottom: "40px" }}>
-            Deep expertise, not broad coverage.
-          </h2>
-          <div className="grid-auto-lg">
-            {[
-              {
-                title: "iGaming & Betting",
-                desc: "Licensing, compliance and banking for online gambling and sports betting operators. From Curaçao to Brazil, Malta to Isle of Man.",
-                tags: ["Licensing", "Banking", "GLI", "Compliance"],
-                href: "/markets/igaming",
-              },
-              {
-                title: "Fintech & Payments",
-                desc: "Regulatory structuring for payment institutions, EMIs and fintech operators. Banking access, compliance frameworks and cross-border licensing.",
-                tags: ["EMI", "Payments", "Banking", "Cross-border"],
-                href: "/markets/fintech",
-              },
-            ].map((m) => (
-              <Link key={m.title} href={m.href} className="card-grid" style={{ padding: "32px" }}>
-                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>{m.title}</h3>
-                <p className="body-sm" style={{ marginBottom: "16px" }}>{m.desc}</p>
-                <div className="chip-row" style={{ marginBottom: "16px" }}>
-                  {m.tags.map((t) => (
-                    <span key={t} className="chip">{t}</span>
-                  ))}
-                </div>
-                <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Learn more →</span>
-              </Link>
-            ))}
+          <div className="mb-12 max-w-2xl md:mb-16">
+            <p className="section-label mb-4 block">Where we operate</p>
+            <h2 className="heading-section mb-6">The industries we structure.</h2>
+            <p className="body-large text-muted-foreground">
+              Deep expertise in a few high-risk sectors — not broad coverage of many. Each one
+              carries its own regulatory expectations, banking requirements and compliance standards.
+            </p>
           </div>
-        </div>
-      </section>
-
-      {/* ─── ADDITIONAL MARKETS ─── */}
-      <section className="surface-elevated py-24 md:py-32">
-        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <p className="label">Also active in</p>
-          <h2 className="heading-section" style={{ marginBottom: "32px" }}>
-            Expanding coverage.
-          </h2>
-          <div className="grid-auto-lg">
-            {[
-              {
-                title: "Crypto & Digital Assets",
-                desc: "VASP registration, regulatory positioning and compliance architecture for crypto exchanges, custodians and token issuers.",
-                tags: ["VASP", "MiCA", "AML", "Custody"],
-                href: "/markets/crypto",
-              },
-              {
-                title: "High-Risk Digital Businesses",
-                desc: "Structural and compliance solutions for businesses that banks and regulators classify as high-risk. We make the structure work — not the label go away.",
-                tags: ["Banking", "Risk", "Structure", "Compliance"],
-                href: "/markets/high-risk",
-              },
-            ].map((m) => (
-              <Link key={m.title} href={m.href} className="card-grid" style={{ padding: "32px" }}>
-                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>{m.title}</h3>
-                <p className="body-sm" style={{ marginBottom: "16px" }}>{m.desc}</p>
-                <div className="chip-row" style={{ marginBottom: "16px" }}>
+          <div className="grid gap-6 md:grid-cols-2 md:gap-8">
+            {INDUSTRIES.map((m) => (
+              <Link
+                key={m.title}
+                href={m.href}
+                className="group relative block rounded-lg border border-transparent bg-background p-6 transition-all duration-300 hover:border-border md:p-8"
+              >
+                <svg
+                  className="absolute right-6 top-6 h-5 w-5 shrink-0 text-muted-foreground transition-colors group-hover:text-primary"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  aria-hidden
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+                <h3 className="mb-3 pr-10 font-sans text-lg font-semibold text-primary transition-colors group-hover:text-primary/80">
+                  {m.title}
+                </h3>
+                <p className="body-text mb-4">{m.desc}</p>
+                <div className="mb-4 flex flex-wrap gap-2">
                   {m.tags.map((t) => (
                     <span key={t} className="chip">{t}</span>
                   ))}
                 </div>
-                <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Learn more →</span>
+                <span className="font-sans text-sm text-primary">Explore →</span>
               </Link>
             ))}
           </div>
@@ -99,40 +99,43 @@ export default function MarketsPage() {
       </section>
 
       {/* ─── WHY SECTOR MATTERS ─── */}
-      <section className="bg-background py-24 md:py-32">
+      <section className="surface-elevated py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
+          <p className="section-label mb-4 block">Why the sector matters</p>
           <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             Sector expertise is not optional.
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
-            A compliance framework built for fintech will fail under iGaming
-            audit. A corporate structure designed for crypto won&apos;t satisfy
-            a payment institution regulator. Every sector has specific
-            regulatory expectations, banking requirements and compliance
+            A compliance framework built for fintech will fail under iGaming audit. A corporate
+            structure designed for crypto won&apos;t satisfy a payment institution regulator. Every
+            sector has specific regulatory expectations, banking requirements and compliance
             standards.
           </p>
           <p className="body-text">
-            We don&apos;t adapt generic solutions. We build structures designed
-            for the specific regulatory and banking environment your sector
-            operates in.
+            We don&apos;t adapt generic solutions. We build structures designed for the specific
+            regulatory and banking environment your sector operates in.
           </p>
         </div>
       </section>
 
       {/* ─── CROSS-LINKS ─── */}
-      <section className="surface-elevated py-24 md:py-32">
+      <section className="bg-background py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <p className="label">Go deeper</p>
-          <div className="grid-3">
+          <p className="section-label mb-4 block">Go deeper</p>
+          <div className="grid gap-6 md:grid-cols-3 md:gap-8">
             {[
               { title: "Jurisdictions", desc: "Where we operate and how.", href: "/jurisdictions" },
-              { title: "Solutions", desc: "Full service architecture.", href: "/solutions" },
-              { title: "Start a Diagnostic", desc: "Identify what's broken.", href: "/contact" },
+              { title: "Solutions", desc: "Full execution architecture.", href: "/solutions" },
+              { title: "How we engage", desc: "The way we take on a mandate.", href: "/how-we-engage" },
             ].map((r) => (
-              <Link key={r.title} href={r.href} className="card-grid" style={{ padding: "28px" }}>
-                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{r.title}</h3>
-                <p className="body-sm" style={{ marginBottom: "12px" }}>{r.desc}</p>
-                <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Explore →</span>
+              <Link
+                key={r.title}
+                href={r.href}
+                className="group block rounded-lg border border-border bg-background p-6 transition-colors hover:border-primary/50 md:p-8"
+              >
+                <h3 className="mb-2 font-sans text-lg font-semibold text-primary">{r.title}</h3>
+                <p className="body-text mb-3">{r.desc}</p>
+                <span className="font-sans text-sm text-primary">Explore →</span>
               </Link>
             ))}
           </div>
@@ -155,7 +158,6 @@ export default function MarketsPage() {
           </p>
         </div>
       </section>
-
     </main>
   );
 }

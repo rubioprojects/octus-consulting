@@ -156,7 +156,7 @@ export default function AboutPage() {
                   { num: "2019", label: "Operating since" },
                 ].map((s) => (
                   <div key={s.num} className="card" style={{ borderRadius: "0", border: "none" }}>
-                    <p className="stat-num">{s.num}</p>
+                    <p className="stat-num num-figure">{s.num}</p>
                     <p className="stat-label">{s.label}</p>
                   </div>
                 ))}
@@ -164,10 +164,27 @@ export default function AboutPage() {
               <div className="juris-strip">
                 <p className="juris-strip-label">Active jurisdictions</p>
                 <div className="chip-row">
-                  {["Brazil (SPA/MF)", "UK", "Malta (MGA)", "UAE", "Curaçao", "Cyprus", "BVI", "Cayman", "Portugal", "Italy"].map((j) => (
-                    <span key={j} className="chip-juris">{j}</span>
+                  {[
+                    { label: "Brazil", href: "/brazil" },
+                    { label: "Malta", href: "/jurisdictions/malta" },
+                    { label: "Portugal", href: "/jurisdictions/portugal" },
+                    { label: "UAE", href: "/jurisdictions/uae" },
+                    { label: "Curaçao", href: "/jurisdictions/curacao" },
+                    { label: "Isle of Man", href: "/jurisdictions/isle-of-man" },
+                    { label: "Anjouan", href: "/jurisdictions/anjouan" },
+                    { label: "UK", href: "/jurisdictions" },
+                    { label: "Cyprus", href: "/jurisdictions" },
+                    { label: "BVI", href: "/jurisdictions" },
+                    { label: "Cayman", href: "/jurisdictions" },
+                    { label: "Italy", href: "/jurisdictions" },
+                  ].map((j) => (
+                    <Link key={j.label} href={j.href} className="chip-juris chip-juris-link">
+                      {j.label}
+                    </Link>
                   ))}
-                  <span className="chip-juris-more">+more</span>
+                  <Link href="/jurisdictions" className="chip-juris-more chip-juris-link">
+                    All jurisdictions →
+                  </Link>
                 </div>
               </div>
             </div>

@@ -35,7 +35,7 @@ export default function WhatWeDoPage() {
       </section>
       <section className="bg-background py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          {services.map((s, i) => (
+          {services.slice(0, 6).map((s) => (
             <Link key={s.href} href={s.href} style={{ textDecoration: "none", display: "block" }}>
               <div style={{ display: "grid", gridTemplateColumns: "48px 1fr 40px", gap: "32px", alignItems: "center", padding: "32px 0", borderBottom: "1px solid var(--border-solid)", cursor: "pointer" }}>
                 <span style={{ fontFamily: "var(--font-unigeo), Unigeo64, sans-serif", fontSize: "11px", fontWeight: 700, letterSpacing: "0.1em", color: "var(--blue-light)" }}>{s.num}</span>
@@ -44,6 +44,21 @@ export default function WhatWeDoPage() {
                   <p className="body-sm" style={{ color: "var(--white-40)" }}>{s.desc}</p>
                 </div>
                 <span style={{ color: "var(--white-25)", fontSize: "18px" }}>↗</span>
+              </div>
+            </Link>
+          ))}
+
+          {/* SOL: o 7º módulo (International Hub) fecha a sequência — centralizado e destacado */}
+          {services.slice(6).map((s) => (
+            <Link key={s.href} href={s.href} style={{ textDecoration: "none", display: "block" }}>
+              <div
+                className="mx-auto mt-16 max-w-xl rounded-lg border border-border text-center transition-colors hover:border-primary/50"
+                style={{ padding: "40px 32px", cursor: "pointer" }}
+              >
+                <span style={{ fontFamily: "var(--font-unigeo), Unigeo64, sans-serif", fontSize: "11px", fontWeight: 700, letterSpacing: "0.1em", color: "var(--blue-light)" }}>{s.num}</span>
+                <h2 className="heading-sm" style={{ margin: "12px 0 8px" }}>{s.title}</h2>
+                <p className="body-sm" style={{ color: "var(--white-40)", marginBottom: "16px" }}>{s.desc}</p>
+                <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Explore International Hub →</span>
               </div>
             </Link>
           ))}

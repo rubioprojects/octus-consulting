@@ -1,8 +1,8 @@
 import {
-  CTA_DIAGNOSTIC_LABEL,
+  CTA_ASSESS_LABEL,
   CTA_DISCUSS_LABEL,
   MAILTO_INFO,
-  WHATSAPP_DIAGNOSTIC_URL,
+  WHATSAPP_ASSESS_URL,
   WHATSAPP_DISCUSS_URL,
 } from "../../lib/cta";
 
@@ -25,7 +25,7 @@ export default function ContactPage() {
             Octus is a high-ticket consultancy. We prioritize qualified conversations — not mass lead
             capture. Reach us on WhatsApp or email.
           </p>
-          <div className="mt-12 flex flex-wrap gap-4">
+          <div className="mt-12">
             <a
               href={WHATSAPP_DISCUSS_URL}
               target="_blank"
@@ -34,12 +34,15 @@ export default function ContactPage() {
             >
               {CTA_DISCUSS_LABEL}
             </a>
-            <a
-              href={MAILTO_INFO}
-              className="inline-flex h-12 items-center justify-center rounded-sm border border-white/20 bg-transparent px-10 text-base font-medium text-white/80 transition-colors hover:border-white/40 hover:text-white"
-            >
-              info@octusconsulting.com
-            </a>
+            <p className="mt-6 text-sm text-white/50">
+              Or email{" "}
+              <a
+                href={MAILTO_INFO}
+                className="text-white/80 underline underline-offset-4 transition-colors hover:text-white"
+              >
+                info@octusconsulting.com
+              </a>
+            </p>
           </div>
         </div>
       </section>
@@ -77,12 +80,12 @@ export default function ContactPage() {
           </ol>
           <div className="mt-12 flex flex-wrap gap-4">
             <a
-              href={WHATSAPP_DIAGNOSTIC_URL}
+              href={WHATSAPP_ASSESS_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium text-primary-foreground transition-colors hover:bg-primary/90"
             >
-              {CTA_DIAGNOSTIC_LABEL}
+              {CTA_ASSESS_LABEL}
             </a>
           </div>
         </div>

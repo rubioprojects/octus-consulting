@@ -1,4 +1,3 @@
-import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 import { INTELLIGENCE_PILLARS } from "../../lib/commercial";
 import PageHero from "../../components/system/PageHero";
 import { CtaLink } from "../../components/system/CtaButton";
@@ -16,9 +15,8 @@ export default function IntelligencePage() {
         eyebrow="Intelligence"
         title="Intelligence for regulated operations."
         titleSecondLine="Signals that inform execution."
-        description="Public analysis covering regulatory developments, market signals, operational risk and executive decision-making in highly regulated markets."
+        description="Regulatory developments, market signals and operational insight — published in our Insights library."
         primaryCta={{ href: "/insights", label: "Explore Insights →" }}
-        secondaryCta={{ href: WHATSAPP_DISCUSS_URL, label: CTA_DISCUSS_LABEL, external: true }}
       />
 
       <section className="bg-background py-20 md:py-28">

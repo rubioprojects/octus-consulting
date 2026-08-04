@@ -629,6 +629,14 @@ body {
 
 .stat-num .accent { color: var(--blue-light); }
 
+/* SOL: Unigeo aperta demais os dígitos (o "1" e o "9" de 2019 quase encostam).
+   Abre levemente o tracking e usa figuras tabulares/alinhadas só nos números. */
+.num-figure {
+  letter-spacing: 0.03em;
+  font-variant-numeric: tabular-nums lining-nums;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+}
+
 .stat-label {
   font-size: 13px;
   color: var(--white-40);
