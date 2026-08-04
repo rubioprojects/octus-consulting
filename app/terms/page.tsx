@@ -13,7 +13,7 @@ const sections = [
   },
   {
     title: "Services",
-    body: `Octus Consulting provides regulatory structuring, compliance coordination, legal architecture, corporate structuring, audit readiness and related advisory services to businesses operating in regulated markets.\n\nAll services are subject to separate engagement letters or service agreements, which take precedence over these Terms in the event of any conflict. Nothing on this website constitutes legal, regulatory or financial advice, and no client relationship is established until a formal engagement is confirmed in writing.`,
+    body: `Octus Consulting provides regulatory structuring, compliance coordination, legal architecture, corporate structuring, audit readiness and related advisory services to businesses operating in regulated markets, as described on this website and in engagement materials.\n\nAll services are subject to separate engagement letters or service agreements, which take precedence over these Terms in the event of any conflict. Nothing on this website constitutes legal, regulatory or financial advice, and no client relationship is established until a formal engagement is confirmed in writing. Website marketing copy does not override the engagement model described under How we engage.`,
   },
   {
     title: "Website use",
@@ -58,9 +58,9 @@ export default function TermsPage() {
     <main>
       <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
-          <span className="label">Legal</span>
+          <span className="label text-white/65">Legal</span>
           <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline">Terms & Conditions</h1>
-          <p className="text-lg leading-relaxed text-white/60 max-w-2xl">Last updated: March 2026</p>
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl">Last updated: August 2026</p>
         </div>
       </section>
       <section className="bg-background py-24 md:py-32">

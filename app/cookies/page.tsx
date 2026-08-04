@@ -10,9 +10,9 @@ export default function CookiesPage() {
     <main>
       <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
-          <span className="label">Legal</span>
+          <span className="label text-white/65">Legal</span>
           <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline">Cookie Policy</h1>
-          <p className="text-lg leading-relaxed text-white/75 max-w-2xl">Last updated: July 2026</p>
+          <p className="text-lg leading-relaxed text-white/75 max-w-2xl">Last updated: August 2026</p>
         </div>
       </section>
       <section className="bg-background py-24 md:py-32">
@@ -24,15 +24,15 @@ export default function CookiesPage() {
             },
             {
               title: "What we use today",
-              body: "As of this update, the public site is a static export. The only first-party preference we set in the browser is a localStorage flag recording that you dismissed the essential-cookie notice. We do not load Meta Pixel, advertising SDKs, or other advertising trackers on this site.",
+              body: "As of this update, the public site is a static export. The only first-party preference we set in the browser is a localStorage flag recording that you dismissed the essential-cookie notice (aligned with the on-site CookieBanner). We do not load Meta Pixel, advertising SDKs, or other advertising trackers on this site.",
             },
             {
               title: "Analytics preparation",
-              body: "We intend to enable Vercel Web Analytics and Google Search Console for aggregate performance and indexing. When those tools are activated in production, this policy will be updated to describe any cookies or similar technologies they set. This page does not invent legal conclusions about consent regimes; operators should confirm applicability for their jurisdictions before go-live.",
+              body: "We may enable aggregate performance and indexing tools (such as Vercel Web Analytics and Google Search Console) in production later. When those tools are activated, this policy and the Privacy Policy will be updated to describe any cookies or similar technologies they set. This page does not invent consent conclusions for every jurisdiction.",
             },
             {
               title: "Managing preferences",
-              body: "You can clear site data through your browser settings. Disabling storage may cause the cookie notice to reappear. Essential site pages remain available without advertising cookies.",
+              body: "You can clear site data through your browser settings. Disabling storage may cause the cookie notice to reappear. Essential site pages remain available without advertising cookies. Persistence of the dismiss flag depends on your browser storage remaining available.",
             },
             {
               title: "Contact",

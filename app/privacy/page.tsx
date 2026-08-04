@@ -13,7 +13,7 @@ const sections = [
   },
   {
     title: "What data we collect",
-    body: `We collect personal data you provide directly when interacting with our website or contacting us:\n\n• Identification and contact information: name, company name, job title, email address, phone number.\n• Operational context: jurisdiction of operation, type of regulated business, and any information you choose to share in a diagnostic request or enquiry form.\n• Website usage data: pages visited, browser type, device information, referral source and session behaviour, collected via analytics.\n• Communications: the content of emails, messages or form submissions you send to us.\n\nWe do not collect sensitive personal data (such as health information, racial or ethnic origin, or biometric data) in the ordinary course of our business.`,
+    body: `We collect personal data you provide directly when interacting with our website or contacting us:\n\n• Identification and contact information: name, company name, job title, email address, phone number.\n• Operational context: jurisdiction of operation, type of regulated business, and any information you choose to share in a diagnostic request or enquiry form.\n• Communications: the content of emails, messages or form submissions you send to us.\n\nAs of this update, the public site does not load third-party analytics cookies. We do not invent website usage analytics collection that is not active on the current static export. If analytics tools are enabled later, this policy and the Cookie Policy will be updated.\n\nWe do not collect sensitive personal data (such as health information, racial or ethnic origin, or biometric data) in the ordinary course of our business.`,
   },
   {
     title: "How we use your data",
@@ -25,11 +25,11 @@ const sections = [
   },
   {
     title: "Data sharing and disclosure",
-    body: `We do not sell, rent or trade personal data. We may share data in the following limited circumstances:\n\n• Service providers: third parties who assist us in operating our business (such as hosting providers, analytics tools or communication platforms), bound by confidentiality obligations.\n• Legal requirements: where disclosure is required by applicable law, regulation, court order or regulatory authority.\n• Business transfers: in connection with a merger, acquisition or transfer of assets, subject to standard confidentiality protections.\n\nWhere we engage jurisdiction-specific partners in the execution of client mandates, data sharing is governed by appropriate agreements and applicable data protection law.`,
+    body: `We do not sell, rent or trade personal data. We may share data in the following limited circumstances:\n\n• Service providers: third parties who assist us in operating our business (such as hosting or communication platforms), bound by confidentiality obligations.\n• Legal requirements: where disclosure is required by applicable law, regulation, court order or regulatory authority.\n• Business transfers: in connection with a merger, acquisition or transfer of assets, subject to standard confidentiality protections.\n\nWhere we engage jurisdiction-specific partners in the execution of client mandates, data sharing is governed by appropriate agreements and applicable data protection law. This policy does not invent a list of subprocessors.`,
   },
   {
     title: "International data transfers",
-    body: `Octus Consulting operates across multiple jurisdictions. Personal data may be transferred to and processed in countries outside your country of residence, including the United States. Where such transfers occur, we ensure appropriate safeguards are in place in accordance with applicable data protection law, including GDPR where relevant.`,
+    body: `Octus Consulting operates across multiple jurisdictions. Personal data may be transferred to and processed in countries outside your country of residence, including the United States. Where such transfers occur, we apply safeguards required by applicable data protection law. References to GDPR or LGPD describe regimes that may apply depending on your location and the processing context; they are not a claim of certification.`,
   },
   {
     title: "Data retention",
@@ -41,11 +41,11 @@ const sections = [
   },
   {
     title: "Cookies",
-    body: `Our website uses essential and analytical cookies to support functionality and understand aggregate usage patterns. No personally identifiable information is collected through analytical cookies. You may manage cookie preferences through your browser settings. For full details, see our Cookie Policy.`,
+    body: `Our website uses essential site functions only as of this update. The public site sets a first-party localStorage flag when you dismiss the essential-cookie notice. We do not currently load advertising SDKs or Meta Pixel. For full details, see our Cookie Policy, which is aligned with the on-site CookieBanner.`,
   },
   {
-    title: "Data protection officer",
-    body: `For data protection enquiries, including requests to exercise your rights or lodge a complaint, contact our Data Protection team at:\n\nEmail: compliance@octusconsulting.com\nPostal: Octus Technology LLC, 900 Foulk Rd Suite 201, Wilmington, DE 19803, United States\n\nIf you are located in the European Union or United Kingdom, you also have the right to lodge a complaint with your local supervisory authority.`,
+    title: "Data protection contact",
+    body: `For data protection enquiries, including requests to exercise your rights or lodge a complaint, contact:\n\nEmail: compliance@octusconsulting.com\nPostal: Octus Technology LLC, 900 Foulk Rd Suite 201, Wilmington, DE 19803, United States\n\nThis page does not invent a named Data Protection Officer appointment. If you are located in the European Union or United Kingdom, you also have the right to lodge a complaint with your local supervisory authority.`,
   },
   {
     title: "Changes to this policy",
@@ -58,9 +58,9 @@ export default function PrivacyPage() {
     <main>
       <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
-          <span className="label">Legal</span>
+          <span className="label text-white/65">Legal</span>
           <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline">Privacy Policy</h1>
-          <p className="text-lg leading-relaxed text-white/60 max-w-2xl">Last updated: March 2026</p>
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl">Last updated: August 2026</p>
         </div>
       </section>
       <section className="bg-background py-24 md:py-32">
