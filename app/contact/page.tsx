@@ -106,7 +106,7 @@ export default function ContactPage() {
 
           <p className="mt-12 border-t border-border pt-10 font-sans text-sm text-muted-foreground">
             Looking to join Octus rather than engage us?{" "}
-            <Link href="/careers" className="text-primary no-underline hover:underline">
+            <Link href="/careers" className="font-medium text-foreground underline underline-offset-4">
               Explore careers →
             </Link>
           </p>
