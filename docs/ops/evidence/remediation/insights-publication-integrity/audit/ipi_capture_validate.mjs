@@ -13,6 +13,7 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import { createRequire } from "module";
+import { spawnSync } from "child_process";
 
 const require = createRequire(import.meta.url);
 const axeCoreVersion = require("axe-core/package.json").version;
@@ -248,15 +249,14 @@ async function main() {
       }
       for (const href of evaled.sourceLinks) {
         try {
-          const r = await fetch(href, {
-            method: "GET",
-            redirect: "follow",
-            headers: { "user-agent": "OctusPublicationIntegrityBot/1.0" },
-          });
-          // 403 from bot protection on gov portals is not treated as a broken link;
-          // 404/410 are hard failures.
-          if (r.status === 404 || r.status === 410 || r.status >= 500) {
-            source_link_failures.push({ slug, href, status: r.status });
+          const out = spawnSync(
+            "curl",
+            ["-sI", "-L", "-A", "Mozilla/5.0", "--max-time", "25", "-o", "/dev/null", "-w", "%{http_code}", href],
+            { encoding: "utf8" }
+          );
+          const code = parseInt(String(out.stdout || "").trim(), 10);
+          if (!code || code === 404 || code === 410 || code >= 500) {
+            source_link_failures.push({ slug, href, status: code || "unreachable" });
           }
         } catch (e) {
           source_link_failures.push({ slug, href, error: String(e).slice(0, 120) });

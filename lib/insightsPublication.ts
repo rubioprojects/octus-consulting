@@ -1,5 +1,5 @@
 /**
- * Insights publication governance — integrity repair (2026-08-04).
+ * Insights publication governance , integrity repair (2026-08-04).
  * Binding rules:
  * - currentLawDependency && primarySources.length === 0 → HOLD_NOT_PUBLIC
  * - historical regulatory without exact primary sources → HOLD_NOT_PUBLIC
@@ -150,7 +150,7 @@ const RAW_PUBLICATION: Record<string, InsightsPublicationEntry> = {
     currentLawDependency: true,
     primarySources: [
       src({
-        label: "Lei Complementar nº 224/2025 (Planalto) — subsequent enactment",
+        label: "Lei Complementar nº 224/2025 (Planalto) , subsequent enactment",
         href: "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp224.htm",
         date: "2025-12-26",
         authority: "Presidência da República / Planalto",
@@ -177,7 +177,7 @@ const RAW_PUBLICATION: Record<string, InsightsPublicationEntry> = {
         href: "https://www.planalto.gov.br/ccivil_03/leis/l9613.htm",
         date: "1998-03-03",
         authority: "Presidência da República / Planalto",
-        instrumentTitle: "Lei nº 9.613/1998 — lavagem de dinheiro",
+        instrumentTitle: "Lei nº 9.613/1998 , lavagem de dinheiro",
         instrumentNumber: "Lei 9.613/1998",
         claimsSupported: "COAF statutory basis and AML reporting framework",
       }),
@@ -186,7 +186,7 @@ const RAW_PUBLICATION: Record<string, InsightsPublicationEntry> = {
         href: "https://www.gov.br/fazenda/pt-br/orgaos/coaf",
         date: "2026-08-04",
         authority: "Ministério da Fazenda / COAF",
-        instrumentTitle: "Conselho de Controle de Atividades Financeiras — institutional page",
+        instrumentTitle: "Conselho de Controle de Atividades Financeiras , institutional page",
         claimsSupported: "Official institutional name and FIU role",
       }),
     ],
@@ -208,10 +208,10 @@ const RAW_PUBLICATION: Record<string, InsightsPublicationEntry> = {
         authority: "SPA/MF via Imprensa Nacional (DOU)",
         instrumentTitle: "Aviso de Consulta Pública SPA/MF nº 1/2026",
         instrumentNumber: "Aviso SPA/MF 1/2026",
-        claimsSupported: "Consultation window 4 Feb–23 Mar 2026 for B2B supplier recognition ordinance",
+        claimsSupported: "Consultation window 4 Feb,23 Mar 2026 for B2B supplier recognition ordinance",
       }),
       src({
-        label: "Brasil Participativo — B2B consultation process page",
+        label: "Brasil Participativo , B2B consultation process page",
         href: "https://brasilparticipativo.presidencia.gov.br/processes/B2B",
         date: "2026-03-23",
         authority: "SPA/MF via Brasil Participativo",
@@ -233,11 +233,11 @@ const RAW_PUBLICATION: Record<string, InsightsPublicationEntry> = {
     currentLawDependency: true,
     primarySources: [
       src({
-        label: "CGA Announcement 25 September 2025 — End of Orange Digital Seal (15 Oct 2025)",
+        label: "CGA Announcement 25 September 2025 , End of Orange Digital Seal (15 Oct 2025)",
         href: "https://portal.gamingcontrolcuracao.org/uploads/publications/NOCNJ5XSLZW5KgABubppi8TCImmzPs7sARsLN6XT.pdf",
         date: "2025-09-25",
         authority: "Curaçao Gaming Authority (CGA)",
-        instrumentTitle: "Announcement: End of Orange Digital Seal Usage – Effective October 15, 2025",
+        instrumentTitle: "Announcement: End of Orange Digital Seal Usage , Effective October 15, 2025",
         claimsSupported: "Orange seal transition end date 15 October 2025",
       }),
       src({
@@ -265,7 +265,7 @@ const RAW_PUBLICATION: Record<string, InsightsPublicationEntry> = {
         href: "https://www.in.gov.br/en/web/dou/-/portaria-spa/mf-n-722-de-2-de-maio-de-2024-557715851",
         date: "2024-05-03",
         authority: "SPA/MF via Imprensa Nacional (DOU)",
-        instrumentTitle: "Portaria SPA/MF nº 722/2024 — requisitos técnicos e de segurança dos sistemas de apostas",
+        instrumentTitle: "Portaria SPA/MF nº 722/2024 , requisitos técnicos e de segurança dos sistemas de apostas",
         instrumentNumber: "Portaria SPA/MF 722/2024",
         claimsSupported: "Technical and security requirements for betting systems and online platforms",
       }),
@@ -288,7 +288,7 @@ const RAW_PUBLICATION: Record<string, InsightsPublicationEntry> = {
         href: "https://in.gov.br/en/web/dou/-/portaria-spa/mf-n-1.207-de-29-de-julho-de-2024-575312304",
         date: "2024-07-29",
         authority: "SPA/MF via Imprensa Nacional (DOU)",
-        instrumentTitle: "Portaria SPA/MF nº 1.207/2024 — requisitos técnicos dos jogos on-line",
+        instrumentTitle: "Portaria SPA/MF nº 1.207/2024 , requisitos técnicos dos jogos on-line",
         instrumentNumber: "Portaria SPA/MF 1.207/2024",
         claimsSupported: "Online games / live studio technical requirements referenced in historical analysis",
       }),
@@ -311,7 +311,7 @@ const RAW_PUBLICATION: Record<string, InsightsPublicationEntry> = {
         href: "https://noticias.stf.jus.br/postsnoticias/stf-determina-suspensao-dos-servicos-de-loteria-e-apostas-esportivas-autorizados-por-leis-municipais/",
         date: "2025-12-03",
         authority: "Supremo Tribunal Federal",
-        instrumentTitle: "ADPF 1212 — liminar (Min. Nunes Marques) suspending municipal lottery/betting acts",
+        instrumentTitle: "ADPF 1212 , liminar (Min. Nunes Marques) suspending municipal lottery/betting acts",
         instrumentNumber: "ADPF 1212",
         claimsSupported: "Nationwide interim suspension of municipal lottery/betting authorisations as reported by STF",
       }),
@@ -334,7 +334,7 @@ const RAW_PUBLICATION: Record<string, InsightsPublicationEntry> = {
         href: "https://www.in.gov.br/en/web/dou/-/portaria-mf-spa/mf-n-300-de-23-de-fevereiro-de-2024-544802087",
         date: "2024-02-26",
         authority: "SPA/MF via Imprensa Nacional (DOU)",
-        instrumentTitle: "Portaria MF-SPA/MF nº 300/2024 — reconhecimento de entidades certificadoras",
+        instrumentTitle: "Portaria MF-SPA/MF nº 300/2024 , reconhecimento de entidades certificadoras",
         instrumentNumber: "Portaria MF-SPA/MF 300/2024",
         claimsSupported: "Legal framework for certifying-entity recognition underlying the historical Quinel milestone",
       }),
@@ -353,11 +353,11 @@ const RAW_PUBLICATION: Record<string, InsightsPublicationEntry> = {
     currentLawDependency: true,
     primarySources: [
       src({
-        label: "Portaria SPA/MF nº 817, de 15 de abril de 2025 — Agenda Regulatória 2025/2026 (DOU)",
+        label: "Portaria SPA/MF nº 817, de 15 de abril de 2025 , Agenda Regulatória 2025/2026 (DOU)",
         href: "https://www.in.gov.br/en/web/dou/-/portaria-spa/mf-n-817-de-15-de-abril-de-2025-624258870",
         date: "2025-04-15",
         authority: "SPA/MF via Imprensa Nacional (DOU)",
-        instrumentTitle: "Portaria SPA/MF nº 817/2025 — Agenda Regulatória para o biênio 2025/2026",
+        instrumentTitle: "Portaria SPA/MF nº 817/2025 , Agenda Regulatória para o biênio 2025/2026",
         instrumentNumber: "Portaria SPA/MF 817/2025",
         claimsSupported: "SPA regulatory agenda items for 2025/2026 as published",
       }),
@@ -427,7 +427,7 @@ const RAW_PUBLICATION: Record<string, InsightsPublicationEntry> = {
     finalDisposition: "EDITORIAL_COMMENTARY",
   },
 
-  // HOLD — prior unresolved + NONE_REGISTERED regulatory without exact primary source this pass
+  // HOLD , prior unresolved + NONE_REGISTERED regulatory without exact primary source this pass
   "stf-suspends-blocking-of-bolsa-familia-bpc-betting-accounts": {
     slug: "stf-suspends-blocking-of-bolsa-familia-bpc-betting-accounts",
     publicationStatus: "HOLD_NOT_PUBLIC",
@@ -503,7 +503,7 @@ const RAW_PUBLICATION: Record<string, InsightsPublicationEntry> = {
     lastReviewed: INSIGHTS_REVIEW_DATE,
     temporalStatus: "Exact IN/Portaria number not bound to DOU URL this pass",
     requiredCorrection: "Add exact DOU instrument URL and re-verify claims",
-    finalDisposition: "HOLD_NOT_PUBLIC — NONE_REGISTERED regulatory",
+    finalDisposition: "HOLD_NOT_PUBLIC , NONE_REGISTERED regulatory",
   },
   "centralised-self-exclusion-platform-key-changes-operators-bettors": {
     slug: "centralised-self-exclusion-platform-key-changes-operators-bettors",
@@ -514,7 +514,7 @@ const RAW_PUBLICATION: Record<string, InsightsPublicationEntry> = {
     lastReviewed: INSIGHTS_REVIEW_DATE,
     temporalStatus: "Exact ordinance/IN for self-exclusion not bound this pass",
     requiredCorrection: "Add exact DOU instrument URL",
-    finalDisposition: "HOLD_NOT_PUBLIC — NONE_REGISTERED regulatory",
+    finalDisposition: "HOLD_NOT_PUBLIC , NONE_REGISTERED regulatory",
   },
   "annual-recertification-betting-platforms-spa-mf-new-guidelines": {
     slug: "annual-recertification-betting-platforms-spa-mf-new-guidelines",
@@ -525,7 +525,7 @@ const RAW_PUBLICATION: Record<string, InsightsPublicationEntry> = {
     lastReviewed: INSIGHTS_REVIEW_DATE,
     temporalStatus: "Exact guidance instrument not bound this pass",
     requiredCorrection: "Add exact DOU/SPA instrument URL",
-    finalDisposition: "HOLD_NOT_PUBLIC — NONE_REGISTERED regulatory",
+    finalDisposition: "HOLD_NOT_PUBLIC , NONE_REGISTERED regulatory",
   },
   "rio-de-janeiro-regulates-vlts-lottery-equipment-decree": {
     slug: "rio-de-janeiro-regulates-vlts-lottery-equipment-decree",
@@ -536,7 +536,7 @@ const RAW_PUBLICATION: Record<string, InsightsPublicationEntry> = {
     lastReviewed: INSIGHTS_REVIEW_DATE,
     temporalStatus: "Exact state decree URL not bound this pass",
     requiredCorrection: "Add exact DOE/RJ decree URL",
-    finalDisposition: "HOLD_NOT_PUBLIC — NONE_REGISTERED regulatory",
+    finalDisposition: "HOLD_NOT_PUBLIC , NONE_REGISTERED regulatory",
   },
   "bet-br-domain-extension-to-states-brazil": {
     slug: "bet-br-domain-extension-to-states-brazil",
@@ -547,7 +547,7 @@ const RAW_PUBLICATION: Record<string, InsightsPublicationEntry> = {
     lastReviewed: INSIGHTS_REVIEW_DATE,
     temporalStatus: "Proposal status without exact SPA instrument URL",
     requiredCorrection: "Add exact proposal/consultation/DOU source",
-    finalDisposition: "HOLD_NOT_PUBLIC — NONE_REGISTERED regulatory",
+    finalDisposition: "HOLD_NOT_PUBLIC , NONE_REGISTERED regulatory",
   },
   "national-betting-system-sinapo-brazil": {
     slug: "national-betting-system-sinapo-brazil",
@@ -558,7 +558,7 @@ const RAW_PUBLICATION: Record<string, InsightsPublicationEntry> = {
     lastReviewed: INSIGHTS_REVIEW_DATE,
     temporalStatus: "Initiative reporting without exact primary instrument",
     requiredCorrection: "Add exact SPA/federal instrument URL",
-    finalDisposition: "HOLD_NOT_PUBLIC — NONE_REGISTERED regulatory",
+    finalDisposition: "HOLD_NOT_PUBLIC , NONE_REGISTERED regulatory",
   },
   "iof-update-financial-market-brazil-2025": {
     slug: "iof-update-financial-market-brazil-2025",
@@ -569,7 +569,7 @@ const RAW_PUBLICATION: Record<string, InsightsPublicationEntry> = {
     lastReviewed: INSIGHTS_REVIEW_DATE,
     temporalStatus: "Exact Decreto/IN for IOF update not bound this pass",
     requiredCorrection: "Add exact Planalto/DOU instrument",
-    finalDisposition: "HOLD_NOT_PUBLIC — NONE_REGISTERED regulatory",
+    finalDisposition: "HOLD_NOT_PUBLIC , NONE_REGISTERED regulatory",
   },
   "spa-ordinance-banks-refuse-illegal-betting-operators": {
     slug: "spa-ordinance-banks-refuse-illegal-betting-operators",
@@ -580,7 +580,7 @@ const RAW_PUBLICATION: Record<string, InsightsPublicationEntry> = {
     lastReviewed: INSIGHTS_REVIEW_DATE,
     temporalStatus: "Exact Portaria number/URL not bound this pass",
     requiredCorrection: "Add exact DOU Portaria URL",
-    finalDisposition: "HOLD_NOT_PUBLIC — NONE_REGISTERED regulatory",
+    finalDisposition: "HOLD_NOT_PUBLIC , NONE_REGISTERED regulatory",
   },
   "youtube-tightens-rules-illegal-betting-sites-impact-influencers": {
     slug: "youtube-tightens-rules-illegal-betting-sites-impact-influencers",
@@ -591,7 +591,7 @@ const RAW_PUBLICATION: Record<string, InsightsPublicationEntry> = {
     lastReviewed: INSIGHTS_REVIEW_DATE,
     temporalStatus: "Platform policy without exact YouTube policy URL",
     requiredCorrection: "Add exact YouTube policy URL or keep hold",
-    finalDisposition: "HOLD_NOT_PUBLIC — NONE_REGISTERED",
+    finalDisposition: "HOLD_NOT_PUBLIC , NONE_REGISTERED",
   },
   "spa-mf-position-brazilian-partner-20-percent-share-capital": {
     slug: "spa-mf-position-brazilian-partner-20-percent-share-capital",
@@ -602,7 +602,7 @@ const RAW_PUBLICATION: Record<string, InsightsPublicationEntry> = {
     lastReviewed: INSIGHTS_REVIEW_DATE,
     temporalStatus: "FAQ clarification without exact SPA FAQ URL this pass",
     requiredCorrection: "Add exact SPA FAQ/DOU source",
-    finalDisposition: "HOLD_NOT_PUBLIC — NONE_REGISTERED regulatory",
+    finalDisposition: "HOLD_NOT_PUBLIC , NONE_REGISTERED regulatory",
   },
   "new-rules-sports-betting-online-games-brazil-portaria-827-2024": {
     slug: "new-rules-sports-betting-online-games-brazil-portaria-827-2024",
@@ -613,7 +613,7 @@ const RAW_PUBLICATION: Record<string, InsightsPublicationEntry> = {
     lastReviewed: INSIGHTS_REVIEW_DATE,
     temporalStatus: "Portaria 827/2024 exact DOU URL not confirmed this pass",
     requiredCorrection: "Bind exact DOU URL for Portaria SPA/MF 827/2024 and re-verify claims",
-    finalDisposition: "HOLD_NOT_PUBLIC — NONE_REGISTERED regulatory",
+    finalDisposition: "HOLD_NOT_PUBLIC , NONE_REGISTERED regulatory",
   },
 };
 
@@ -628,7 +628,7 @@ function enforcePublicationGate(
       return {
         ...next,
         publicationStatus: "HOLD_NOT_PUBLIC",
-        finalDisposition: "HOLD_NOT_PUBLIC — editorial flagged with currentLawDependency",
+        finalDisposition: "HOLD_NOT_PUBLIC , editorial flagged with currentLawDependency",
         requiredCorrection: "Remove current-law dependency or add exact sources",
       };
     }
@@ -648,7 +648,7 @@ function enforcePublicationGate(
       ...next,
       publicationStatus: "HOLD_NOT_PUBLIC",
       primarySources: [],
-      finalDisposition: "HOLD_NOT_PUBLIC — source gate (current-law/historical without exact primary sources)",
+      finalDisposition: "HOLD_NOT_PUBLIC , source gate (current-law/historical without exact primary sources)",
       requiredCorrection:
         next.requiredCorrection ||
         "Add exact primary sources or reclassify as EDITORIAL_COMMENTARY if non-legal",
@@ -680,9 +680,9 @@ function buildRegistry(): Record<string, InsightsPublicationEntry> {
         currentLawDependency: true,
         primarySources: [],
         lastReviewed: INSIGHTS_REVIEW_DATE,
-        temporalStatus: "Unregistered slug — fail closed",
+        temporalStatus: "Unregistered slug , fail closed",
         requiredCorrection: "Register publication decision",
-        finalDisposition: "HOLD_NOT_PUBLIC — unregistered",
+        finalDisposition: "HOLD_NOT_PUBLIC , unregistered",
       } as InsightsPublicationEntry);
     out[post.slug] = enforcePublicationGate(raw);
   }
