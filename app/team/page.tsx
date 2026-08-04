@@ -130,7 +130,7 @@ const coreSpecialists: Member[] = [
     photoKey: "luciana",
     capability: "Operations",
     focus:
-      "Operational delivery support — workflows, client documentation and cross-functional coordination.",
+      "Operational delivery support: workflows, client documentation and cross-functional coordination.",
     linkedin: null,
   },
 ];

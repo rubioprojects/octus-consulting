@@ -34,7 +34,7 @@ export default function HomeLeadershipTrust() {
             </h2>
           </div>
           <p className="body-large max-w-xl">
-            Trust starts with clear accountability — not a directory of faces.
+            Trust starts with clear accountability, not a directory of faces.
           </p>
         </div>
         <div className="home-leadership-trust__grid">

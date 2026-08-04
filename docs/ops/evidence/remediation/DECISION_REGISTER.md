@@ -154,12 +154,12 @@
 | Field | Value |
 |---|---|
 | RESIDUAL_ID | `HOME_PUNCTUATION_RESIDUAL_001` |
-| CURRENT_TEXT | Trust starts with clear accountability — not a directory of faces. |
+| CURRENT_TEXT | Trust starts with clear accountability, not a directory of faces. |
 | REQUIRED_FINAL_TEXT | Trust starts with clear accountability, not a directory of faces. |
 | OWNER | Phase 6 full regression |
-| Location | `components/system/HomeLeadershipTrust.tsx` (frozen) |
-| Phase 4 action | Do not fix · do not mark resolved · do not remove ALLOWED_DASH_SNIPPETS |
-| Validator note | Temporary exemption only; not proof of zero Homepage em dashes site-wide |
+| Location | `components/system/HomeLeadershipTrust.tsx` |
+| Phase 6 action | CLOSED — em dash removed per required final text |
+| Status | CLOSED |
 
 ## D-015 — Phase 4 Services file and architecture isolation
 
