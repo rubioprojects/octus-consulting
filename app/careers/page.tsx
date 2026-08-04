@@ -43,9 +43,8 @@ export default function CareersPage() {
             Serious operations require serious people.
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
-            We are not a traditional advisory firm. We enter operations, design
-            structures and coordinate execution across multiple regulatory and
-            corporate layers simultaneously.
+            We work inside operating mandates, design structures and coordinate execution across
+            regulatory, compliance, legal and corporate layers when that scope is agreed.
           </p>
           <p className="body-text" style={{ marginBottom: "20px" }}>
             The work is complex, international and requires people who
@@ -53,18 +52,16 @@ export default function CareersPage() {
             actually holds under real conditions.
           </p>
           <p className="body-text">
-            We work remotely across multiple time zones, with clients across
-            Europe, LATAM, Middle East and Asia.
+            Engagements are distributed across time zones, with client work spanning
+            Europe, LATAM, Middle East and Asia when mandates require it.
           </p>
 
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px", marginTop: "40px" }}>
             {[
-              "Remote-first",
-              "International scope",
-              "Continuous development",
-              "Industry events & conferences",
-              "International work across multiple languages",
-              "Collaborative and multidisciplinary team",
+              "Remote-capable collaboration",
+              "International mandate exposure",
+              "Multi-disciplinary coordination",
+              "High-scrutiny regulated environments",
             ].map((item) => (
               <div
                 key={item}
@@ -90,7 +87,7 @@ export default function CareersPage() {
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Who we look for</span>
           <h2 className="heading-section" style={{ marginBottom: "48px" }}>
-            Across four operational areas.
+            Capability profiles we look for.
           </h2>
           <div className="grid-auto-lg">
             {[

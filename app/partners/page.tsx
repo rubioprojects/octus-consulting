@@ -73,7 +73,7 @@ export default function PartnersPage() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {CTA_PARTNERSHIP_LABEL}
+            Continue partnership discussion →
           </CtaLink>
           <p className="mt-6">
             <Link href="/how-we-engage" className="font-sans text-sm text-primary no-underline hover:text-primary/80">
