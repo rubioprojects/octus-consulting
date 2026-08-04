@@ -18,14 +18,23 @@ export function pageSocialMeta(opts: {
   robots?: Metadata["robots"];
   /** Intentional social share image path under the production origin. */
   image?: string;
+  /**
+   * When true, set metadata.title as absolute so the root layout template
+   * ("%s | Octus Consulting") does not append a second brand suffix.
+   * Pass a fully branded title (exactly one "| Octus Consulting").
+   */
+  absoluteTitle?: boolean;
 }): Metadata {
   const path = opts.path.startsWith("/") ? opts.path : `/${opts.path}`;
   // Homepage canonical matches sitemap (no trailing slash).
   const canonical = path === "/" ? SITE : `${SITE}${path}`;
   const imageUrl = absoluteImageUrl(opts.image ?? DEFAULT_OG_IMAGE);
+  const titleValue: Metadata["title"] = opts.absoluteTitle
+    ? { absolute: opts.title }
+    : opts.title;
 
   return {
-    title: opts.title,
+    title: titleValue,
     description: opts.description,
     alternates: { canonical },
     ...(opts.robots !== undefined ? { robots: opts.robots } : {}),

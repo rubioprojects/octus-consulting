@@ -3,8 +3,11 @@ import { getPost } from "../../../lib/posts";
 import {
   enrichPostForPublic,
   getPublicPosts,
+  isEditorialCommentary,
+  isHistoricalInsight,
   isPublicInsight,
 } from "../../../lib/insightsPublication";
+import { brandedDocumentTitle, normalizeEditorialTitle } from "../../../lib/insightTitles";
 import {
   resolveIndustryLinks,
   resolveJurisdictionLinks,
@@ -30,10 +33,13 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   if (!isPublicInsight(params.slug)) return {};
   const post = getPost(params.slug);
   if (!post) return {};
+  const clean = normalizeEditorialTitle(post.title);
+  const branded = brandedDocumentTitle(clean);
   return pageSocialMeta({
-    title: `${post.title} | Octus Consulting`,
+    title: branded,
     description: post.excerpt,
     path: `/insights/${params.slug}`,
+    absoluteTitle: true,
   });
 }
 
@@ -45,7 +51,13 @@ export default function PostPage({ params }: { params: { slug: string } }) {
   const post = enrichPostForPublic(raw);
   const published = fmtDate(post.date);
   const lastReviewed = fmtDate(post.lastReviewed);
-  const isHistorical = post.publicationStatus === "PUBLISH_HISTORICAL_WITH_UPDATE";
+  const isHistorical = isHistoricalInsight(params.slug);
+  const isEditorial = isEditorialCommentary(params.slug);
+  const statusLabel = isHistorical
+    ? "Historical analysis"
+    : isEditorial
+      ? "Editorial commentary"
+      : "Current analysis";
   const contentBlocks = post.content
     .replace(/^###\s+.+\n\n/, "")
     .split("\n\n");
@@ -64,11 +76,9 @@ export default function PostPage({ params }: { params: { slug: string } }) {
             <span className="mb-0 block text-xs font-medium uppercase tracking-[0.12em] text-white/65">
               {post.category}
             </span>
-            {isHistorical && (
-              <span className="mb-0 block text-xs font-medium uppercase tracking-[0.12em] text-white/80">
-                Historical analysis
-              </span>
-            )}
+            <span className="mb-0 block text-xs font-medium uppercase tracking-[0.12em] text-white/80">
+              {statusLabel}
+            </span>
           </div>
           <h1
             className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline"
@@ -88,12 +98,22 @@ export default function PostPage({ params }: { params: { slug: string } }) {
               style={{ color: "rgba(255, 255, 255, 0.72)" }}
             >
               Historical analysis. This article records the regulatory position as of its original
-              publication date. It was last reviewed on {lastReviewed}. Current requirements may
-              have changed; consult the cited primary sources and obtain advice for the specific
-              operation.
+              publication date. It was last reviewed on {lastReviewed}.{" "}
+              {post.currentStatusNote ||
+                "Current requirements may have changed; consult the cited primary sources and obtain advice for the specific operation."}
             </p>
           )}
-          {!isHistorical && (
+          {isEditorial && (
+            <p
+              className="mt-4 max-w-2xl text-sm leading-relaxed"
+              style={{ color: "rgba(255, 255, 255, 0.72)" }}
+            >
+              Editorial commentary. This article presents Octus operational analysis rather than a
+              statement of current law. Where a mandate depends on regulatory requirements, the
+              applicable primary instruments must be verified separately.
+            </p>
+          )}
+          {!isHistorical && !isEditorial && (
             <p
               className="mt-4 max-w-2xl text-sm leading-relaxed"
               style={{ color: "rgba(255, 255, 255, 0.72)" }}
@@ -140,7 +160,26 @@ export default function PostPage({ params }: { params: { slug: string } }) {
             );
           })}
 
-          {post.primarySources.length > 0 && (
+          {isEditorial && (
+            <div
+              style={{
+                marginTop: "48px",
+                paddingTop: "32px",
+                borderTop: "1px solid var(--border-solid)",
+              }}
+            >
+              <h2 className="heading-sm" style={{ marginBottom: "16px" }}>
+                Editorial basis
+              </h2>
+              <p className="body-text" style={{ marginBottom: "20px", lineHeight: 1.8 }}>
+                This article presents Octus operational analysis rather than a statement of current
+                law. Where a mandate depends on regulatory requirements, the applicable primary
+                instruments must be verified separately.
+              </p>
+            </div>
+          )}
+
+          {!isEditorial && post.primarySources.length > 0 && (
             <div
               style={{
                 marginTop: "48px",
