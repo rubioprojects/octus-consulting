@@ -85,7 +85,7 @@ export default function MarketsIGamingPage() {
               },
               {
                 title: "Banking & payment readiness",
-                desc: "Licensed but no bank account? We restructure AML documentation, align the corporate layer and prepare materials for banks and PSPs. Banking access is never guaranteed.",
+                desc: "Licensed but no bank account? We restructure AML documentation, align the corporate layer and prepare materials for banks and PSPs. Banking access is never promised.",
               },
               {
                 title: "Compliance that holds",
@@ -97,7 +97,7 @@ export default function MarketsIGamingPage() {
               },
               {
                 title: "Lab certification readiness",
-                desc: "We prepare operations for technical certification programmes commonly required by regulators (for example independent laboratory testing). Gap analysis, evidence register and audit coordination — Octus is not affiliated with any laboratory.",
+                desc: "We prepare operations for technical certification programmes commonly required by regulators (for example independent laboratory testing). Gap analysis, evidence register and audit coordination - Octus is not affiliated with any laboratory.",
               },
               {
                 title: "Stabilization after licensing",
@@ -124,7 +124,7 @@ export default function MarketsIGamingPage() {
             {[
               {
                 title: "iGaming operator · Curaçao pathway",
-                body: "Licensing preparation, corporate structuring and banking readiness after prior advisory work left the operation without a workable banking path. Illustrative mandate pattern — outcomes and timelines vary.",
+                body: "Licensing preparation, corporate structuring and banking readiness after prior advisory work left the operation without a workable banking path. Illustrative mandate pattern - outcomes and timelines vary.",
               },
               {
                 title: "Multi-brand sportsbook · multi-jurisdiction",

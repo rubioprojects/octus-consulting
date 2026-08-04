@@ -78,7 +78,7 @@ export default function MarketsFintechPage() {
             {[
               {
                 title: "EMI & payment institution licensing",
-                desc: "We design the regulatory strategy and prepare the dossier so operators can pursue authorisation with local counsel where required — onshore and offshore.",
+                desc: "We design the regulatory strategy and prepare the dossier so operators can pursue authorisation with local counsel where required - onshore and offshore.",
               },
               {
                 title: "Banking & PSP readiness",

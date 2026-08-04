@@ -49,4 +49,5 @@
 
 ## Closeout status
 
-Opening register only. Final dispositions recorded in `PHASE5B_CLAIM_REGISTER.md` after application remediation (fact/claim closeout commit).
+**CLOSED 2026-08-03** against application SHA `2b062cca23419a65f620a9d547f90da1ecefdedc`.  
+See `PHASE5B_CLAIM_REGISTER.md` for final dispositions. Brazil regulatory **as-of: 2026-08-03**.

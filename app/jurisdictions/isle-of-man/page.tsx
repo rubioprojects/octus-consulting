@@ -259,7 +259,7 @@ export default function JurisdictionsIsleOfManPage() {
             {[
               { label: "Gambling duty", value: "Official schedules currently use tiered rates in the 0.1% to 1.5% range. Verify the current duty schedule and operator-specific treatment." },
               { label: "Corporate tax", value: "Tax treatment depends on current law and operator facts. Obtain current Isle of Man tax advice." },
-              { label: "Processing time", value: "The GSC describes 10-12 weeks as a typical processing period after an acceptance letter. This is not a guarantee and may vary materially." },
+              { label: "Processing time", value: "The GSC describes 10-12 weeks as a typical processing period after an acceptance letter. This is not an assured timeline and may vary materially." },
             ].map((item) => (
               <div key={item.label} className="card" style={{ padding: "24px" }}>
                 <p className="label" style={{ marginBottom: "8px", fontSize: "10px" }}>{item.label}</p>

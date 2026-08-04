@@ -42,11 +42,11 @@ const brazilInsights = [
 const pathwayCards = [
   {
     title: "Operator authorisation",
-    body: "Pathway design for operators seeking Ministry of Finance / SPA authorisation under Laws 13,756/2018 and 14,790/2023 and Portaria SPA/MF nº 827/2024 and related norms. Authorisation is granted solely by the competent authority — Octus does not issue licences and does not guarantee market access.",
+    body: "Pathway design for operators seeking Ministry of Finance / SPA authorisation under Laws 13,756/2018 and 14,790/2023 and Portaria SPA/MF nº 827/2024 and related norms. Authorisation is granted solely by the competent authority - Octus does not issue licences and does not promise market access.",
   },
   {
     title: "B2B and supplier framework",
-    body: "Platform providers, laboratories and B2B suppliers prepare for recognition and registration pathways as published by SPA/MF, sequenced with operator programmes. Where frameworks remain under development, programmes are prepared against published drafts and effective norms only — not anticipated future law.",
+    body: "Platform providers, laboratories and B2B suppliers prepare for recognition and registration pathways as published by SPA/MF, sequenced with operator programmes. Where frameworks remain under development, programmes are prepared against published drafts and effective norms only - not anticipated future law.",
   },
   {
     title: "Technical and certification dependencies",

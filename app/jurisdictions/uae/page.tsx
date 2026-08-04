@@ -88,7 +88,7 @@ export default function JurisdictionsUaePage() {
             {[
               "Not every activity fits every authority",
               "Not every licence supports real operations",
-              "Authority approval does not guarantee banking access",
+              "Authority approval does not assure banking access",
               "Free zone vs mainland creates operational scope limitations most operators discover too late",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>

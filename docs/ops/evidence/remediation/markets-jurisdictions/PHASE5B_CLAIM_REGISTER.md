@@ -1,63 +1,72 @@
-# Phase 5B — Claim Register (opening)
+# Phase 5B — Claim Register (closeout)
 
 **Phase:** 5B Markets, Jurisdictions and Brazil  
-**Starting HEAD:** `9b5ce63501e48e4da0440ae5f3f59f776d2bf955`  
-**Retrieval / as-of:** 2026-08-03  
-**Status:** OPENING — dispositions execute in application commits; final closeout in fact/claim commit.
+**Application SHA:** `2b062cca23419a65f620a9d547f90da1ecefdedc`  
+**Retrieval / Brazil as-of:** 2026-08-03  
+**Status:** CLOSEOUT
 
-## Bound residuals (carry forward — do not resolve)
+## Bound residuals (preserved)
 
 | ID | Status in Phase 5B |
 |---|---|
-| `HOME_PUNCTUATION_RESIDUAL_001` | PRESERVE OPEN |
-| `GLOBAL_A11Y_REGION_RESIDUAL_001` | PRESERVE OPEN |
-| `AXE_INCOMPLETE_REVIEW_001` | PRESERVE OPEN |
+| `HOME_PUNCTUATION_RESIDUAL_001` | PRESERVED OPEN |
+| `GLOBAL_A11Y_REGION_RESIDUAL_001` | PRESERVED OPEN |
+| `AXE_INCOMPLETE_REVIEW_001` | PRESERVED OPEN |
 
-## Opening claim matrix (high-priority)
+## Disposition summary
 
-| Claim ID | Route | Exact / paraphrased current public claim | Category | Opening disposition | Final public wording (target) |
-|---|---|---|---|---|---|
-| C-SLA-24H | multi | “We respond within 24 hours.” | SLA | REMOVE | (omit) |
-| C-IG-11W | /markets/igaming | Bank account open in 11 weeks after 6 months | Mandate KPI | REMOVE | Drop numeric outcome; keep structural narrative |
-| C-CU-11W | /jurisdictions/curacao | Operational account open in 11 weeks | Mandate KPI | REMOVE | Same |
-| C-CU-6W | /jurisdictions/curacao | Remediation in 6 weeks | Mandate KPI | REMOVE | Same |
-| C-FT-4BANKS | /markets/fintech | Rejected by 4 banks | Mandate KPI | REMOVE | Qualify banking friction without count |
-| C-REG-DIRECT | igaming/curacao | Direct coordination with regulator / SPA/MF | Partnership-like | QUALIFY | Client-side regulatory programme support; no formal partnership claim |
-| C-IOM-FEES | /jurisdictions/isle-of-man | £5,250 / £36,750 / £52,500 | Fees | RETAIN+SOURCE | Retain with GSC/Treasury source + as-of |
-| C-IOM-DUTY | /jurisdictions/isle-of-man | Duty 0.1%–1.5% | Taxation | QUALIFY | Point to official duty schedule; avoid unsourced band detail if schedule not cited |
-| C-IOM-10-12W | /jurisdictions/isle-of-man | Processing 10–12 weeks | Timeline | QUALIFY | “GSC guidance notes a typical 10–12 weeks after application acceptance” — not a guarantee |
-| C-MICA-GF | /markets/crypto | Grandfathering ends July 2026 | Transitional status | UPDATE | As of 2026-08-03: MiCA transitional period ended 1 July 2026 (ESMA) |
-| C-MICA-CAP | /markets/crypto | Capital €50k–€150k | Capital | QUALIFY/REMOVE | Only retain with precise MiCA citation; else remove |
-| C-MICA-27 | /markets/crypto | Passporting across 27 member states | Passport | QUALIFY | Authorised CASP passporting under MiCA — not automatic for all models |
-| C-PT-GGR | /jurisdictions/portugal | Online GGR exceeds EUR300 million | Market statistic | REMOVE | Unsourced → remove |
-| C-PT-OPS | /jurisdictions/portugal | 18 operators / 31 licences | Market statistic | REMOVE | Unsourced → remove |
-| C-PT-DEP | /jurisdictions/portugal | Guarantee deposits EUR500k + EUR100k | Fees | QUALIFY/REMOVE | Retain only with primary statute/regulator cite |
-| C-AJ-850 | /jurisdictions/anjouan | Over 850 licences / 2000+ websites | Market statistic | REMOVE | Unsourced → remove |
-| C-AJ-FEE | /jurisdictions/anjouan | ~EUR17,800 / 2–6 weeks | Fees/timeline | QUALIFY/REMOVE | Remove fixed fee/timeline without primary cite |
-| C-BR-LAWS | /brazil | Laws 13,756/2018 and 14,790/2023 | Statute | RETAIN | Retain with as-of 2026-08-03 |
-| C-BR-SPA | /brazil | SPA/MF licensing pathways | Regulator | RETAIN+QUALIFY | Authorisation by MF/SPA under current ordinances; no guaranteed access |
-| C-HUB-UKGI | /jurisdictions | UK/Gibraltar/Cyprus cards | Footprint | QUALIFY | Non-landing references; no dedicated pages in Phase 5B |
+| Metric | Count |
+|---|---|
+| Claims retained (with source / as-of) | 8 |
+| Claims qualified | 18 |
+| Claims updated | 3 |
+| Claims removed | 22 |
+| Claims lacking authoritative sources on public pages | 0 |
 
-## CTA opening audit targets
+## Closed claim matrix (selected)
 
-For every route record (filled at closeout): label · target · section · priority · desktop · mobile.
+| Claim ID | Route | Disposition | Final public treatment |
+|---|---|---|---|
+| C-SLA-24H | multi | REMOVED | Omitted; WhatsApp/Contact note instead |
+| C-IG-11W | /markets/igaming | REMOVED | Illustrative mandate without numeric KPI |
+| C-CU-11W / C-CU-6W | /jurisdictions/curacao | REMOVED | No fixed banking/remediation timelines |
+| C-FT-4BANKS | /markets/fintech | REMOVED | Banking-decline pattern without count |
+| C-REG-DIRECT | igaming/curacao/malta | QUALIFIED | Client programme support; no regulator affiliation |
+| C-IOM-FEES | /jurisdictions/isle-of-man | RETAINED | Fees cited to SD 2023/0148 / GSC fee sheet (eff. 6 Jul 2023; sheet Oct 2025) |
+| C-IOM-DUTY | /jurisdictions/isle-of-man | QUALIFIED | Official duty schedules must be verified |
+| C-IOM-10-12W | /jurisdictions/isle-of-man | QUALIFIED | GSC typical after acceptance letter; not assured |
+| C-MICA-GF | /markets/crypto | UPDATED | Transitional period ended 1 Jul 2026 (ESMA Apr 2026); as of 2026-08-03 |
+| C-MICA-CAP | /markets/crypto | REMOVED | Capital band removed; service-class requirements under MiCA |
+| C-MICA-27 | /markets/crypto | QUALIFIED | Passporting for authorised CASPs under MiCA |
+| C-PT-GGR / C-PT-OPS / C-PT-DEP | /jurisdictions/portugal | REMOVED | Unsourced stats and fixed deposits removed |
+| C-AJ-850 / C-AJ-FEE | /jurisdictions/anjouan | REMOVED | Unsourced volume/fee/timeline removed |
+| C-BR-LAWS / C-BR-SPA | /brazil | RETAINED+QUALIFIED | Laws + Portaria 827/2024; as-of 2026-08-03; no market-access promise |
+| C-HUB-UKGI | /jurisdictions | QUALIFIED | Non-landing references only |
 
-Rules enforced in application commits:
-- WhatsApp primary strategic intake
-- Contact non-WhatsApp alternative
-- Diagnostic only for genuine structured assessment
-- No repeated identical commercial label in same main content
-- No adjacent indistinguishable CTAs
-- No dead links
-- No jurisdiction-specific promise in CTA text
+## CTA closeout (all 13 routes)
 
-## Closeout counters (to be filled in fact/claim commit)
+| Route | Primary | Secondary | Diagnostic | Notes |
+|---|---|---|---|---|
+| /markets | Final WA Discuss | Contact + Diagnostic notes | Link in note only | No 24h SLA |
+| /markets/igaming | Hero + final WA | Licensing process / Curaçao jurisdiction | — | No licensing promise in CTA |
+| /markets/fintech | Hero + final WA | Solutions; Diagnostic note | Secondary note | Primary is WA |
+| /markets/crypto | Hero + final WA | Contact note | — | — |
+| /markets/high-risk | Hero + final WA | Contact note | — | — |
+| /jurisdictions | Hero + final WA | Contact note | — | Hub cards to landings |
+| /jurisdictions/* | Hero + final WA | Related internal | — | No “get licensed in X” |
+| /brazil | Hero CtaLink WA | Contact note in footer | — | Soft footer Discuss |
 
-| Metric | Opening | Closeout |
-|---|---|---|
-| Claims retained | — | TBD |
-| Claims qualified | — | TBD |
-| Claims updated | — | TBD |
-| Claims removed | — | TBD |
-| Primary-source coverage | Opening library seeded | TBD |
-| Claims lacking authoritative sources | Triaged above | Must be 0 on public pages |
+## Market statistics retained
+
+| Statistic | Route | Source / period | Status |
+|---|---|---|---|
+| IoM application £5,250; full/software £36,750; network/token £52,500 | /jurisdictions/isle-of-man | Online Gambling (Licence Fees) Regulations 2023; GSC fee sheet Oct 2025 | RETAINED |
+| Other GGR / operator-count / licence-volume stats | portugal, anjouan, crypto capital bands | — | REMOVED |
+
+## Brazil regulatory as-of
+
+**2026-08-03** — Laws 13,756/2018 and 14,790/2023; Portaria SPA/MF nº 827/2024; official SPA/MF technical Q&A and gov.br authorisation service.
+
+## Primary-source coverage
+
+Opening library in `PHASE5B_FACT_AND_SOURCE_REGISTER.md` applied. Public pages no longer carry claims that lack authoritative sources or explicit qualification.

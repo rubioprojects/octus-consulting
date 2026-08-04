@@ -210,7 +210,7 @@ export default function JurisdictionsCuracaoPage() {
             {[
               {
                 title: "Banking-readiness remediation",
-                body: "Review of corporate structure, AML policies and UBO disclosures before provider outreach. Account opening is never guaranteed and remains subject to each provider\u2019s due diligence.",
+                body: "Review of corporate structure, AML policies and UBO disclosures before provider outreach. Account opening is never promised and remains subject to each provider\u2019s due diligence.",
               },
               {
                 title: "New operator readiness",

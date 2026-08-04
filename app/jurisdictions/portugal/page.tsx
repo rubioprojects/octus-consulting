@@ -45,7 +45,7 @@ export default function JurisdictionsPortugalPage() {
               "Regulator: SRIJ (Servico de Regulacao e Inspecao de Jogos), under Turismo de Portugal.",
               "Legal framework: Decree-Law 66/2015 (RJO).",
               "Mandatory local incorporation (Portuguese entity or EU/EEA branch).",
-              "Financial guarantees, fees and tax-security requirements must be verified against current SRIJ rules.",
+              "Bond, fee and tax-security requirements must be verified against current SRIJ rules.",
               "Processing time varies with application scope, completeness, technical review and regulator workload.",
               "Licensing does not provide EU-wide passporting or authorise activity outside approved markets.",
               "Payment methods, including any virtual-asset use, must be checked against current law and provider requirements.",
@@ -111,7 +111,7 @@ export default function JurisdictionsPortugalPage() {
             {[
               "They underestimate timelines and regulatory depth.",
               "They treat EU licensing as a checkbox.",
-              "They assume approval guarantees operational readiness.",
+              "They assume approval means the operation is ready to run.",
               "They ignore ongoing compliance burden.",
               "They build for approval, not for operation.",
             ].map((item) => (
@@ -145,7 +145,7 @@ export default function JurisdictionsPortugalPage() {
               ["Operational model", "Clear definition of regulated vs non-regulated activities. Flow of funds, responsibilities and risk allocation."],
               ["Compliance infrastructure", "AML/KYC, responsible gambling, advertising compliance, self-exclusion integration. Aligned with SRIJ and EU standards. Ongoing, not static."],
               ["Banking and payments", "Banking and payment-provider readiness for the Portuguese market. Permitted methods, including treatment of virtual assets, must be verified under current rules and provider policies."],
-              ["Technical certification", "Client-authorised coordination with independent testing laboratories where accepted by SRIJ. Certification and regulator acceptance are not guaranteed."],
+              ["Technical certification", "Client-authorised coordination with independent testing laboratories where accepted by SRIJ. Certification and regulator acceptance are not promised."],
             ].map(([title, body]) => (
               <div key={title}>
                 <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{title}</h3>
@@ -169,7 +169,7 @@ export default function JurisdictionsPortugalPage() {
                   "You want a credible EU-regulated operation.",
                   "You are building for long-term scale, not short-term entry.",
                   "You have defined the specific markets in which you intend to operate and understand that permissions are territorial.",
-                  "You have capital for the guarantees and operational setup required under current SRIJ rules.",
+                  "You have capital for the security deposits and operational setup required under current SRIJ rules.",
                   "You understand regulatory burden is part of the model.",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>

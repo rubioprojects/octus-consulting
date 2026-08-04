@@ -144,7 +144,7 @@ export default function MarketsHighRiskPage() {
             sensitivity, transaction complexity and institutional caution:
           </p>
           <p className="body-text" style={{ marginBottom: "24px" }}>
-            Institutions commonly apply enhanced scrutiny to sectors such as iGaming and betting, crypto and digital assets, and certain fintech or payment models. Other verticals may also trigger high-risk treatment depending on the institution&apos;s policy — classification is institution-specific, not a guarantee of coverage by Octus.
+            Institutions commonly apply enhanced scrutiny to sectors such as iGaming and betting, crypto and digital assets, and certain fintech or payment models. Other verticals may also trigger high-risk treatment depending on the institution&apos;s policy - classification is institution-specific, not an assurance of coverage by Octus.
           </p>
           <p className="body-sm italic text-muted-foreground">
             The sector varies. The structural problem is the same: institutional

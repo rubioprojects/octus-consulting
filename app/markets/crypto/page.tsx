@@ -123,7 +123,7 @@ export default function MarketsCryptoPage() {
             Fragmented regulation. Structural consequences.
           </h2>
           <p className="body-sm" style={{ marginBottom: "12px", color: "var(--muted-foreground)" }}>
-            Landscape notes as of 2026-08-03. Status changes by Member State and competent authority — verify before relying on any date.
+            Landscape notes as of 2026-08-03. Status changes by Member State and competent authority - verify before relying on any date.
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
             {[
