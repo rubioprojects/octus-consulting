@@ -84,8 +84,8 @@
 | P2 | Global visual system / shell fidelity | 2 — ACCEPTED |
 | P3 | Homepage remediation | 3 — ACCEPTED_WITH_RESIDUAL |
 | P4 | Services families | 4 — ACCEPTED_WITH_BOUND_RESIDUALS |
-| P5A | Institutional / engagement | 5A — READY_FOR_SOL_AUDIT |
-| P5B | Markets / jurisdictions | 5B — BLOCKED |
+| P5A | Institutional / engagement | 5A — ACCEPTED_WITH_BOUND_RESIDUALS |
+| P5B | Markets / jurisdictions / Brazil | 5B — IN_PROGRESS |
 | P5C | Intelligence / legal | 5C — BLOCKED |
 | P6 | Full regression (bound residuals) | 6 — BLOCKED |
 
@@ -265,3 +265,30 @@
 | terminal | `OCTUS_PHASE5A_SOL_AUDIT_CLOSEOUT_READY` |
 | PHASE_5B / 5C / 6 / Rubio | BLOCKED |
 | Merge / production / rebase | forbidden |
+
+## D-023 — Phase 5A accepted with bound residuals; Phase 5B authorized
+
+| Field | Value |
+|---|---|
+| PHASE_5A | ACCEPTED_WITH_BOUND_RESIDUALS |
+| accepted_phase5a_evidence_head | `9b5ce63501e48e4da0440ae5f3f59f776d2bf955` |
+| accepted_phase5a_application_sha | `9e97c13e90ecc4165e969ee04181e8d2a3a9110c` |
+| immutable_preview | https://octus-consulting-nx5t8xtoo-axle1.vercel.app |
+| deployment_id | `dpl_C8Zt5mFCF6BaK165cKMt6ELBknKj` |
+| Bound residuals | `HOME_PUNCTUATION_RESIDUAL_001` · `GLOBAL_A11Y_REGION_RESIDUAL_001` · `AXE_INCOMPLETE_REVIEW_001` |
+| PHASE_5B | AUTHORIZED · IN_PROGRESS |
+| PHASE_5C / 6 | BLOCKED |
+| Rubio rescreen | BLOCKED |
+| Merge / production / rebase | forbidden |
+| Inventory | `markets-jurisdictions/PHASE5B_ROUTE_INVENTORY.md` |
+| Impact matrix | `markets-jurisdictions/PHASE5B_IMPACT_MATRIX.md` |
+
+## D-024 — Phase 5B shared-component freeze
+
+| Field | Value |
+|---|---|
+| Decision | Do not edit PageHero, DarkHeroAtmosphere, CtaLink, Nav, layout, global tokens, Homepage, Team, Services, or Phase 5A pages |
+| Allowed | Page-scoped copy/metadata under `app/markets/**`, `app/jurisdictions/**`, `app/brazil/**` |
+| Stop | Undocumented shared-component mutation → BLOCKED |
+| Status | BINDING |
+

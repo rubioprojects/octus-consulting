@@ -26,8 +26,8 @@ PR #17 — seven-area architecture, current routes, evidence-safe editorial rule
 | 2 | Global visual system | **ACCEPTED by Sol** | Global system gate PASS |
 | 3 | Homepage | **ACCEPTED_WITH_RESIDUAL** | Closeout accepted · residual `HOME_PUNCTUATION_RESIDUAL_001` → Phase 6 |
 | 4 | Services and service families | **ACCEPTED_WITH_BOUND_RESIDUALS** | Phase 4 a11y accepted · residuals bound |
-| 5A | Institutional and engagement | **SOL_AUDIT_CLOSEOUT_READY** | `OCTUS_PHASE5A_SOL_AUDIT_CLOSEOUT_READY` |
-| 5B | Markets / jurisdictions | **BLOCKED** | — |
+| 5A | Institutional and engagement | **ACCEPTED_WITH_BOUND_RESIDUALS** | Phase 5A accepted by Sol |
+| 5B | Markets / jurisdictions / Brazil | **IN_PROGRESS** | `OCTUS_MARKETS_JURISDICTIONS_GATE_*` |
 | 5C | Intelligence / legal content | **BLOCKED** | — |
 | 6 | Full regression | BLOCKED | Residuals + final candidate audit |
 
@@ -105,17 +105,30 @@ Impact matrix: `services/PHASE4_SERVICES_IMPACT_MATRIX.md`
 | Bound residuals | `HOME_PUNCTUATION_RESIDUAL_001` · `GLOBAL_A11Y_REGION_RESIDUAL_001` · `AXE_INCOMPLETE_REVIEW_001` → Phase 6 |
 | Services lock | Do not modify `app/solutions/**`, hubs, catalogue, or service shared components in Phase 5A |
 
-### Phase 5A stamp (SOL AUDIT CLOSEOUT READY)
+### Phase 5A stamp (ACCEPTED_WITH_BOUND_RESIDUALS)
 
 | Field | Value |
 |---|---|
-| Status | `OCTUS_PHASE5A_SOL_AUDIT_CLOSEOUT_READY` (awaiting Sol acceptance of closeout) |
-| application_code_sha | `87c62c2e99187a209e519c37f993493ef267f3b7` |
-| immutable_preview | https://octus-consulting-2dflp4hpy-axle1.vercel.app |
-| deployment_id | `dpl_6zhpEKuw1j94dVaeRSQ9pZuxU8Wu` |
-| preview noindex header | PASS |
-| baseline classification | all six `DIRECT_BASELINE_ROUTE` |
-| Phase 5B / 5C / 6 | BLOCKED |
+| Status | **ACCEPTED_WITH_BOUND_RESIDUALS** by Sol |
+| accepted Phase 5A evidence HEAD | `9b5ce63501e48e4da0440ae5f3f59f776d2bf955` |
+| accepted Phase 5A application SHA | `9e97c13e90ecc4165e969ee04181e8d2a3a9110c` |
+| immutable_preview | https://octus-consulting-nx5t8xtoo-axle1.vercel.app |
+| deployment_id | `dpl_C8Zt5mFCF6BaK165cKMt6ELBknKj` |
+| Bound residuals | `HOME_PUNCTUATION_RESIDUAL_001` · `GLOBAL_A11Y_REGION_RESIDUAL_001` · `AXE_INCOMPLETE_REVIEW_001` → Phase 6 |
+| Phase 5A lock | Do not modify Phase 5A application files in Phase 5B |
+
+### Phase 5B stamp (IN_PROGRESS)
+
+| Field | Value |
+|---|---|
+| Status | **IN_PROGRESS** — AUTHORIZED by Sol |
+| starting_HEAD | `9b5ce63501e48e4da0440ae5f3f59f776d2bf955` |
+| Inventory | `markets-jurisdictions/PHASE5B_ROUTE_INVENTORY.md` |
+| Impact matrix | `markets-jurisdictions/PHASE5B_IMPACT_MATRIX.md` |
+| Fact/source register | `markets-jurisdictions/PHASE5B_FACT_AND_SOURCE_REGISTER.md` |
+| Claim register | `markets-jurisdictions/PHASE5B_CLAIM_REGISTER.md` |
+| Mandatory routes | 13 (5 markets + 7 jurisdictions + Brazil) |
+| Phase 5C / 6 | BLOCKED |
 | Rubio rescreen | BLOCKED |
 | Merge / production / rebase | forbidden |
 
@@ -142,5 +155,6 @@ Impact matrix: `services/PHASE4_SERVICES_IMPACT_MATRIX.md`
 - No merge · no production · no rebase · no new PR  
 - No preview return to Rubio  
 - No `READY_FOR_RUBIO_RESCREEN`  
-- No Phase 5 until Sol accepts Phase 4  
-- Do not resolve `HOME_PUNCTUATION_RESIDUAL_001` in Phase 4  
+- No Phase 5C / 6 until Sol accepts Phase 5B  
+- Do not resolve bound residuals in Phase 5B  
+- Do not claim `READY_FOR_RUBIO_RESCREEN`  
