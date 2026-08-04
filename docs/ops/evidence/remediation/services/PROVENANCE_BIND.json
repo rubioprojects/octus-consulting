@@ -47,5 +47,18 @@
     "reconciled_metadata_gaps": 0,
     "a11y_residual": "PHASE4_A11Y_CONTRAST_LINK_RESIDUAL_001",
     "catalogue_status": "PASS"
+  },
+  "a11y_remediation": {
+    "immutable_preview_url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app",
+    "deployment_id": "dpl_Fx8deWwccpuH6U3WhWzpUWr5g5kT",
+    "deployed_git_sha": "3345f8b91923a66c0eb671786c3296ed9e9fc89a",
+    "application_code_sha": "eac4e514ea751314774f3e69f71ebd52245d2534",
+    "recaptured_at": "2026-08-04T00:05:05.495Z",
+    "affected_routes": [
+      "/solutions",
+      "/solutions/regulatory/fintech-licensing",
+      "/solutions/corporate/holding-design",
+      "/solutions/corporate/offshore-structuring"
+    ]
   }
 }
