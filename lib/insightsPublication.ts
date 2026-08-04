@@ -215,8 +215,8 @@ const RAW_PUBLICATION: Record<string, InsightsPublicationEntry> = {
     lastReviewed: INSIGHTS_REVIEW_DATE,
     temporalStatus: "Consultation completed; final ordinance not confirmed as of review",
     currentStatusNote:
-      "Public consultation under Aviso SPA/MF nº 1/2026 ran 4 February to 23 March 2026 and is completed. The Brasil Participativo process page was not retained as a linked primary source because the host was unreachable at review-time link checks. A final binding SPA/MF ordinance recognising B2B suppliers is not confirmed as published as of 2026-08-04.",
-    requiredCorrection: "Exact DOU Aviso for consultation; no generic SPA or Brasil Participativo homepage",
+      "Public consultation under Aviso SPA/MF nº 1/2026 ran 4 February to 23 March 2026 and is completed. A final binding SPA/MF ordinance recognising B2B suppliers is not confirmed as published as of 2026-08-04. January 2025 ICE Barcelona oral attribution and direct quotes are not retained; the 2026 DOU Aviso is not used as evidence for a 2025 event statement.",
+    requiredCorrection: "Exact DOU Aviso only for consultation claims; no unsourced 2025 event quote",
     finalDisposition: "PUBLISH_CURRENT",
   },
   "curacao-reform-what-changes": {
