@@ -1,7 +1,7 @@
 # Phase 5C — Fact and Claim Register (closeout)
 
 **Phase:** 5C  
-**Application SHA (pre-evidence):** `45b6243591a8b195df6536332b423fe692b2b41c`  
+**Application SHA (pre-evidence):** `c467ccf0bfa3a8a2df1ac7a58c7b29c8c169d62b`  
 **As-of:** 2026-08-03  
 **Status:** CLOSEOUT
 

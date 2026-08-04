@@ -86,7 +86,7 @@
 | P4 | Services families | 4 — ACCEPTED_WITH_BOUND_RESIDUALS |
 | P5A | Institutional / engagement | 5A — ACCEPTED_WITH_BOUND_RESIDUALS |
 | P5B | Markets / jurisdictions / Brazil | 5B — ACCEPTED_WITH_BOUND_RESIDUALS |
-| P5C | Intelligence / Insights / Legal | 5C — IN_PROGRESS |
+| P5C | Intelligence / Insights / Legal | 5C — READY_FOR_SOL_AUDIT |
 | P6 | Full regression (bound residuals) | 6 — BLOCKED |
 
 ## D-009 — Phase 2 global system accepted

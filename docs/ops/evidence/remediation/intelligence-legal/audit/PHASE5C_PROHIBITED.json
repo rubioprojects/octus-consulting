@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-08-04T03:36:08.038Z",
+  "patterns": [
+    "/—|–/",
+    "/\\bsix[-\\s]?area/i",
+    "/\\b06\\s+solutions/i",
+    "/not a law firm/i",
+    "/\\bare guaranteed\\b/i",
+    "/Confidentiality and anonymity are guaranteed/i"
+  ],
+  "hits": [],
+  "status": "PASS"
+}

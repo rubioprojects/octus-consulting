@@ -1,0 +1,1406 @@
+{
+  "generated_at": "2026-08-04T03:36:08.038Z",
+  "routes": [
+    {
+      "route": "/intelligence",
+      "canon": "https://octusconsulting.com/intelligence",
+      "title": "Intelligence | Octus Consulting",
+      "desc": "Practical regulatory, compliance and operational insight for operators in highly regulated markets: how Octus connects published analysis to executable structure.",
+      "og": "Intelligence",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "Explore Insights →",
+          "href": "/insights"
+        },
+        {
+          "text": "Discuss a specific issue →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Open Insights →",
+          "href": "/insights"
+        },
+        {
+          "text": "Read published Insights →",
+          "href": "/insights"
+        },
+        {
+          "text": "How we engage →",
+          "href": "/how-we-engage"
+        },
+        {
+          "text": "Read About →",
+          "href": "/about"
+        },
+        {
+          "text": "Open the Insights library →",
+          "href": "/insights"
+        },
+        {
+          "text": "Continue on WhatsApp →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights",
+      "canon": "https://octusconsulting.com/insights",
+      "title": "Insights | Octus Consulting",
+      "desc": "Published regulatory analysis, legal developments and operational insight from Octus: Brazil, iGaming, compliance and international regulated markets. Articles are commentary unless they cite a primary instrument.",
+      "og": "Insights",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "All",
+          "href": "/insights"
+        },
+        {
+          "text": "Regulatory Intelligence",
+          "href": "/insights?hub=regulatory"
+        },
+        {
+          "text": "Market Intelligence",
+          "href": "/insights?hub=market"
+        },
+        {
+          "text": "Operational Intelligence",
+          "href": "/insights?hub=operational"
+        },
+        {
+          "text": "Founder Intelligence",
+          "href": "/insights?hub=founder"
+        },
+        {
+          "text": "Regulatory30 March 2026Why Licensing Fails Post-Approval | Octus ConsultingMost ",
+          "href": "/insights/why-licensing-fails-post-approval"
+        },
+        {
+          "text": "Banking30 March 2026Banking for High-Risk Operations: Why Structure Matters More",
+          "href": "/insights/banking-for-high-risk-operations"
+        },
+        {
+          "text": "Crypto30 March 2026MiCA: What Crypto Operators Actually Need to Do | Octus Consu",
+          "href": "/insights/mica-what-operators-need-to-do"
+        },
+        {
+          "text": "Jurisdictions30 March 2026Curaçao Reform: What Actually Changes for Operators | ",
+          "href": "/insights/curacao-reform-what-changes"
+        },
+        {
+          "text": "Compliance30 March 2026Compliance-as-a-Service vs Internal Teams: When Outsourci",
+          "href": "/insights/compliance-as-a-service-vs-internal-teams"
+        },
+        {
+          "text": "Brazil Regulatory18 December 2025STF Suspends Compulsory Blocking of Bolsa Famíl",
+          "href": "/insights/stf-suspends-blocking-of-bolsa-familia-bpc-betting-accounts"
+        },
+        {
+          "text": "Brazil Regulatory18 December 2025Senate Approves PLP 128/2025: Fiscal Tightening",
+          "href": "/insights/senate-approves-plp-128-2025-tightens-fiscal-policy-bets-fintechs"
+        },
+        {
+          "text": "Regulatory Analysis16 December 2025Betting Sector Taxation: The Risks of Increas",
+          "href": "/insights/betting-taxation-risks-senate-legal-certainty-regulated-market"
+        },
+        {
+          "text": "Brazil Regulatory16 December 2025New SPA/MF Normative Instruction on Fixed-Odds ",
+          "href": "/insights/new-spa-mf-normative-instruction-fixed-odds-betting"
+        },
+        {
+          "text": "Brazil Regulatory14 December 2025Centralised Self-Exclusion Platform: Key Change",
+          "href": "/insights/centralised-self-exclusion-platform-key-changes-operators-bettors"
+        },
+        {
+          "text": "Brazil Regulatory3 December 2025STF Suspends Municipal Lottery Operations Nation",
+          "href": "/insights/stf-suspends-municipal-lottery-operations-nationwide"
+        },
+        {
+          "text": "Compliance2 October 2025The COAF Institutional Challenges and AML Obligations fo",
+          "href": "/insights/coaf-crisis-aml-obligations-online-gaming-operators"
+        },
+        {
+          "text": "Brazil Regulatory25 September 2025Annual Recertification of Betting Platforms: W",
+          "href": "/insights/annual-recertification-betting-platforms-spa-mf-new-guidelines"
+        },
+        {
+          "text": "Operations28 August 2025Risk Management Software in iGaming: Technology as a Reg",
+          "href": "/insights/risk-management-software-igaming-regulatory-compliance"
+        },
+        {
+          "text": "Corporate Structuring26 August 2025Customised Structural Studies for Internation",
+          "href": "/insights/customised-studies-international-expansion-brazil"
+        },
+        {
+          "text": "Regulatory Analysis19 August 2025Games Not Classified as Fixed-Odds Betting in B",
+          "href": "/insights/games-not-classified-as-fixed-odds-betting-brazil"
+        },
+        {
+          "text": "Brazil Regulatory18 August 2025Rio de Janeiro Regulates VLTs and Lottery Termina",
+          "href": "/insights/rio-de-janeiro-regulates-vlts-lottery-equipment-decree"
+        },
+        {
+          "text": "Brazil Regulatory14 August 2025Extension of the .bet.br Domain to Brazilian Stat",
+          "href": "/insights/bet-br-domain-extension-to-states-brazil"
+        },
+        {
+          "text": "Legal Architecture10 August 2025Intellectual Property in iGaming: Avoiding Criti",
+          "href": "/insights/intellectual-property-igaming-trademark-registration-brazil"
+        },
+        {
+          "text": "Brazil Regulatory6 August 2025The National Betting System (SINAPO): What It Is a",
+          "href": "/insights/national-betting-system-sinapo-brazil"
+        },
+        {
+          "text": "Regulatory Structuring23 July 2025Why Your International Licence May Not Protect",
+          "href": "/insights/why-your-international-licence-may-not-protect-you-in-brazil"
+        },
+        {
+          "text": "Regulatory Analysis21 July 2025Regulation and Technology: How Legal Keeps Pace w",
+          "href": "/insights/regulation-and-technology-legal-follows-igaming-evolution"
+        },
+        {
+          "text": "Regulatory Analysis17 July 2025IOF Update: Key Implications for the Financial Ma",
+          "href": "/insights/iof-update-financial-market-brazil-2025"
+        },
+        {
+          "text": "International Regulatory7 July 2025Trump Signs Tax Reform Imposing New Betting T",
+          "href": "/insights/trump-tax-reform-betting-operators-lessons-for-brazil"
+        },
+        {
+          "text": "Brazil Regulatory15 April 2025Regulatory Agenda 2025/2026: SPA/MF Sets the Cours",
+          "href": "/insights/regulatory-agenda-2025-2026-secretariat-prizes-betting"
+        },
+        {
+          "text": "Advertising & Compliance18 March 2025YouTube Tightens Rules Against Illegal Bett",
+          "href": "/insights/youtube-tightens-rules-illegal-betting-sites-impact-influencers"
+        },
+        {
+          "text": "Brazil Regulatory20 February 2025SPA Ordinance Requires Banks and Payment Instit",
+          "href": "/insights/spa-ordinance-banks-refuse-illegal-betting-operators"
+        },
+        {
+          "text": "Brazil Regulatory28 January 2025Brazil to Implement Registration Requirement for",
+          "href": "/insights/brazil-b2b-registration-requirement-betting-igaming"
+        },
+        {
+          "text": "Market & Industry22 July 2024Quinel Credentialed as Certifying Entity by Brazil'",
+          "href": "/insights/quinel-credentialed-certifying-entity-brazil-ministry-finance"
+        },
+        {
+          "text": "Brazil Regulatory18 June 2024Senate Commission Approves Bill to Legalise Casinos",
+          "href": "/insights/senate-commission-approves-casino-bingo-gaming-bill-brazil"
+        },
+        {
+          "text": "Brazil Regulatory5 June 2024SPA/MF Clarification: Brazilian Partner Requirement:",
+          "href": "/insights/spa-mf-position-brazilian-partner-20-percent-share-capital"
+        },
+        {
+          "text": "Brazil Regulatory21 May 2024New Rules for Sports Betting and Online Games in Bra",
+          "href": "/insights/new-rules-sports-betting-online-games-brazil-portaria-827-2024"
+        },
+        {
+          "text": "Brazil Regulatory2 May 2024New Regulation Establishes Technical Requirements for",
+          "href": "/insights/new-regulation-betting-online-game-systems-portaria-722-2024"
+        },
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/privacy",
+      "canon": "https://octusconsulting.com/privacy",
+      "title": "Privacy Policy | Octus Consulting",
+      "desc": "Privacy Policy for Octus Technology LLC, operating as Octus Consulting.",
+      "og": "Privacy Policy",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/terms",
+      "canon": "https://octusconsulting.com/terms",
+      "title": "Terms & Conditions | Octus Consulting",
+      "desc": "Terms and Conditions for Octus Technology LLC, operating as Octus Consulting.",
+      "og": "Terms & Conditions",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/cookies",
+      "canon": "https://octusconsulting.com/cookies",
+      "title": "Cookie Policy | Octus Consulting",
+      "desc": "Cookie and browser storage practices for the Octus Consulting public website.",
+      "og": "Cookie Policy",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/compliance-channel",
+      "canon": "https://octusconsulting.com/compliance-channel",
+      "title": "Compliance Channel | Octus Consulting",
+      "desc": "Octus Consulting compliance and ethics reporting channel. Confidential reporting options for internal and external stakeholders.",
+      "og": "Compliance Channel",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "Access the reporting platform →",
+          "href": "https://iratisantosadvocacia.becompliance.com/canal-etica/canal-denuncias"
+        },
+        {
+          "text": "compliance@octusconsulting.com",
+          "href": "mailto:compliance@octusconsulting.com"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/this-page-does-not-exist-phase5c",
+      "canon": "https://octusconsulting.com/404",
+      "title": "Page not found | Octus Consulting",
+      "desc": "The requested page could not be found on the Octus Consulting website.",
+      "og": "Page not found",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "Home →",
+          "href": "/"
+        },
+        {
+          "text": "Open Insights →",
+          "href": "/insights"
+        },
+        {
+          "text": "Intelligence →",
+          "href": "/intelligence"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 404
+    },
+    {
+      "route": "/insights/betting-taxation-risks-senate-legal-certainty-regulated-market",
+      "canon": "https://octusconsulting.com/insights/betting-taxation-risks-senate-legal-certainty-regulated-market",
+      "title": "Betting Sector Taxation: The Risks of Increased Tax Burden for Legal Certainty and the Regulated Market | Octus Consulting | Octus Consulting",
+      "desc": "A technical analysis of the risks posed by a sharp increase in the betting sector's tax burden: why higher taxation does not automatically translate to higher revenue, and what the international experience teaches about building a sustainable regulated market.",
+      "og": "Betting Sector Taxation: The Risks of Increased Tax Burden for Legal Certainty and the Regulated Market | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Regulatory Structuring",
+          "href": "/solutions/regulatory-structuring"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/quinel-credentialed-certifying-entity-brazil-ministry-finance",
+      "canon": "https://octusconsulting.com/insights/quinel-credentialed-certifying-entity-brazil-ministry-finance",
+      "title": "Quinel Credentialed as Certifying Entity by Brazil's Ministry of Finance, with Octus Legal Support | Octus Consulting | Octus Consulting",
+      "desc": "Historical note (2024): with Octus legal support, Quinel Limited was credentialed by Brazil's Ministry of Finance as a certifying entity for betting systems under Ordinance SPA/MF No. 300/2024. Credential counts change over time; verify current SPA/MF listings.",
+      "og": "Quinel Credentialed as Certifying Entity by Brazil's Ministry of Finance, with Octus Legal Support | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/why-licensing-fails-post-approval",
+      "canon": "https://octusconsulting.com/insights/why-licensing-fails-post-approval",
+      "title": "Why Licensing Fails Post-Approval | Octus Consulting | Octus Consulting | Octus Consulting",
+      "desc": "Most licensing failures are not rejections. They are approvals that cannot sustain operations. Banking, compliance and structural gaps surface after the licence is granted.",
+      "og": "Why Licensing Fails Post-Approval | Octus Consulting | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "iGaming Licensing",
+          "href": "/solutions/regulatory/igaming-licensing"
+        },
+        {
+          "text": "Fintech Licensing",
+          "href": "/solutions/regulatory/fintech-licensing"
+        },
+        {
+          "text": "iGaming Licensing",
+          "href": "/solutions/regulatory/igaming-licensing"
+        },
+        {
+          "text": "Fintech Licensing",
+          "href": "/solutions/regulatory/fintech-licensing"
+        },
+        {
+          "text": "Request assessment →",
+          "href": "/diagnostic"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/stf-suspends-blocking-of-bolsa-familia-bpc-betting-accounts",
+      "canon": "https://octusconsulting.com/insights/stf-suspends-blocking-of-bolsa-familia-bpc-betting-accounts",
+      "title": "STF Suspends Compulsory Blocking of Bolsa Família and BPC Beneficiaries' Betting Accounts | Octus Consulting | Octus Consulting",
+      "desc": "Justice Luiz Fux temporarily suspended the compulsory closure of existing betting accounts held by Bolsa Família and BPC beneficiaries, pending a conciliation hearing scheduled for February 2026.",
+      "og": "STF Suspends Compulsory Blocking of Bolsa Família and BPC Beneficiaries' Betting Accounts | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Regulatory Structuring",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        },
+        {
+          "text": "iGaming",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/senate-approves-plp-128-2025-tightens-fiscal-policy-bets-fintechs",
+      "canon": "https://octusconsulting.com/insights/senate-approves-plp-128-2025-tightens-fiscal-policy-bets-fintechs",
+      "title": "Senate Approves PLP 128/2025: Fiscal Tightening, Higher Taxation on Bets, Fintechs and JCP | Octus Consulting | Octus Consulting",
+      "desc": "The Brazilian Senate approved Complementary Bill 128/2025 by 62 to 6 votes, introducing a gradual increase in the betting sector tax rate from 12% to 15% by 2028, alongside higher CSLL rates for fintechs and joint liability for payment processors facilitating illegal operators.",
+      "og": "Senate Approves PLP 128/2025: Fiscal Tightening, Higher Taxation on Bets, Fintechs and JCP | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Regulatory Structuring",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        },
+        {
+          "text": "iGaming",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/new-spa-mf-normative-instruction-fixed-odds-betting",
+      "canon": "https://octusconsulting.com/insights/new-spa-mf-normative-instruction-fixed-odds-betting",
+      "title": "New SPA/MF Normative Instruction on Fixed-Odds Betting: Post-Licensing Obligations | Octus Consulting | Octus Consulting",
+      "desc": "The Secretariat of Prizes and Betting published a new Normative Instruction establishing the procedures for authorised fixed-odds betting operators to communicate changes to their licence conditions and notify the commencement of operational activities.",
+      "og": "New SPA/MF Normative Instruction on Fixed-Odds Betting: Post-Licensing Obligations | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Regulatory Structuring",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        },
+        {
+          "text": "iGaming",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/centralised-self-exclusion-platform-key-changes-operators-bettors",
+      "canon": "https://octusconsulting.com/insights/centralised-self-exclusion-platform-key-changes-operators-bettors",
+      "title": "Centralised Self-Exclusion Platform: Key Changes for Operators and Bettors | Octus Consulting | Octus Consulting",
+      "desc": "From 10 December 2025, the Centralised Self-Exclusion Platform entered into operation, enabling any person to block access to all authorised betting sites in Brazil through a single procedure at gov.br/autoexclusaoapostas.",
+      "og": "Centralised Self-Exclusion Platform: Key Changes for Operators and Bettors | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Regulatory Structuring",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        },
+        {
+          "text": "iGaming",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/stf-suspends-municipal-lottery-operations-nationwide",
+      "canon": "https://octusconsulting.com/insights/stf-suspends-municipal-lottery-operations-nationwide",
+      "title": "STF Suspends Municipal Lottery Operations Nationwide, Orders Immediate Cessation | Octus Consulting | Octus Consulting",
+      "desc": "Justice Kassio Nunes Marques suspended all municipal regulations authorising lottery and sports betting operations across Brazil, ordering immediate cessation and imposing daily fines of BRL 500,000 for non-compliant municipalities and companies.",
+      "og": "STF Suspends Municipal Lottery Operations Nationwide, Orders Immediate Cessation | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Regulatory Structuring",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        },
+        {
+          "text": "iGaming",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/coaf-crisis-aml-obligations-online-gaming-operators",
+      "canon": "https://octusconsulting.com/insights/coaf-crisis-aml-obligations-online-gaming-operators",
+      "title": "The COAF Institutional Challenges and AML Obligations for Online Gaming Operators | Octus Consulting | Octus Consulting",
+      "desc": "An analysis of Brazil's financial intelligence unit (COAF) institutional limitations and the practical steps gaming operators must take to maintain robust anti-money laundering compliance regardless of external pressures on the regulatory system.",
+      "og": "The COAF Institutional Challenges and AML Obligations for Online Gaming Operators | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Compliance & Risk",
+          "href": "/solutions/compliance-risk"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/annual-recertification-betting-platforms-spa-mf-new-guidelines",
+      "canon": "https://octusconsulting.com/insights/annual-recertification-betting-platforms-spa-mf-new-guidelines",
+      "title": "Annual Recertification of Betting Platforms: What Changes Under SPA/MF New Guidelines | Octus Consulting | Octus Consulting",
+      "desc": "SPA/MF has issued complementary guidance on the mandatory annual technical recertification of fixed-odds betting platforms, establishing binding rules for operators, suppliers and certifying entities.",
+      "og": "Annual Recertification of Betting Platforms: What Changes Under SPA/MF New Guidelines | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Regulatory Structuring",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        },
+        {
+          "text": "iGaming",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/risk-management-software-igaming-regulatory-compliance",
+      "canon": "https://octusconsulting.com/insights/risk-management-software-igaming-regulatory-compliance",
+      "title": "Risk Management Software in iGaming: Technology as a Regulatory Pillar | Octus Consulting | Octus Consulting",
+      "desc": "Risk management software has evolved from a best practice into an inescapable regulatory requirement for iGaming operators in Brazil. Understanding what the technology must do: and how it must be integrated with human expertise: is now central to compliance.",
+      "og": "Risk Management Software in iGaming: Technology as a Regulatory Pillar | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/customised-studies-international-expansion-brazil",
+      "canon": "https://octusconsulting.com/insights/customised-studies-international-expansion-brazil",
+      "title": "Customised Structural Studies for International Expansion into Brazil | Octus Consulting | Octus Consulting",
+      "desc": "International expansion into Brazil requires more than incorporating a local entity. Octus structures customised studies that analyse cross-border corporate architecture and present tailored strategic scenarios for Brazil entry.",
+      "og": "Customised Structural Studies for International Expansion into Brazil | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/rio-de-janeiro-regulates-vlts-lottery-equipment-decree",
+      "canon": "https://octusconsulting.com/insights/rio-de-janeiro-regulates-vlts-lottery-equipment-decree",
+      "title": "Rio de Janeiro Regulates VLTs and Lottery Terminals with New State Decree | Octus Consulting | Octus Consulting",
+      "desc": "Governor Cláudio Castro's Decree No. 49,804/2025 establishes requirements for Video Lottery Terminals and other lottery equipment in Rio de Janeiro, all under LOTERJ supervision, with potential for 65,000 direct and indirect jobs.",
+      "og": "Rio de Janeiro Regulates VLTs and Lottery Terminals with New State Decree | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Regulatory Structuring",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        },
+        {
+          "text": "iGaming",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/games-not-classified-as-fixed-odds-betting-brazil",
+      "canon": "https://octusconsulting.com/insights/games-not-classified-as-fixed-odds-betting-brazil",
+      "title": "Games Not Classified as Fixed-Odds Betting in Brazil: Understanding the Legal Distinctions | Octus Consulting | Octus Consulting",
+      "desc": "Ordinance SPA/MF No. 1,207/2024 establishes that certain online game modalities (skill games, fantasy sports, multiplayer games and P2P betting) fall outside the fixed-odds betting regime and therefore do not require a federal betting licence.",
+      "og": "Games Not Classified as Fixed-Odds Betting in Brazil: Understanding the Legal Distinctions | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Regulatory Structuring",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/bet-br-domain-extension-to-states-brazil",
+      "canon": "https://octusconsulting.com/insights/bet-br-domain-extension-to-states-brazil",
+      "title": "Extension of the .bet.br Domain to Brazilian States: Regulatory Trust Seal Expands | Octus Consulting | Octus Consulting",
+      "desc": "The SPA's proposed extension of the .bet.br domain to Brazilian states participating in the National Betting System (SINAPO) creates a digital trust seal differentiating authorised from illegal operators across the federal structure.",
+      "og": "Extension of the .bet.br Domain to Brazilian States: Regulatory Trust Seal Expands | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Regulatory Structuring",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        },
+        {
+          "text": "iGaming",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/intellectual-property-igaming-trademark-registration-brazil",
+      "canon": "https://octusconsulting.com/insights/intellectual-property-igaming-trademark-registration-brazil",
+      "title": "Intellectual Property in iGaming: Avoiding Critical Errors in Trademark Registration | Octus Consulting | Octus Consulting",
+      "desc": "Trademark registration in the betting sector is a specialised field. The INPI systematically rejects registrations linked to 'bet', 'casino' or 'aposta', and a poorly constructed defence in an appeal can mean the permanent loss of a valuable brand.",
+      "og": "Intellectual Property in iGaming: Avoiding Critical Errors in Trademark Registration | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/national-betting-system-sinapo-brazil",
+      "canon": "https://octusconsulting.com/insights/national-betting-system-sinapo-brazil",
+      "title": "The National Betting System (SINAPO): What It Is and Why It Could Change Brazilian Betting Regulation | Octus Consulting | Octus Consulting",
+      "desc": "The SPA/MF has initiated the creation of SINAPO, the National Betting System, a cooperative federal initiative to harmonise betting regulation across Brazil's 26 states and the Federal District through minimum national standards.",
+      "og": "The National Betting System (SINAPO): What It Is and Why It Could Change Brazilian Betting Regulation | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Regulatory Structuring",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        },
+        {
+          "text": "iGaming",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/why-your-international-licence-may-not-protect-you-in-brazil",
+      "canon": "https://octusconsulting.com/insights/why-your-international-licence-may-not-protect-you-in-brazil",
+      "title": "Why Your International Licence May Not Protect You in Brazil | Octus Consulting | Octus Consulting",
+      "desc": "Holding a licence from Malta, Curaçao or the Isle of Man is no longer sufficient for operators seeking to operate in Brazil. With Law 14,790/2023 fully in force, only operators with a federal SPA/MF authorisation may legally accept Brazilian players.",
+      "og": "Why Your International Licence May Not Protect You in Brazil | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        },
+        {
+          "text": "Malta",
+          "href": "/jurisdictions/malta"
+        },
+        {
+          "text": "Curaçao",
+          "href": "/jurisdictions/curacao"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/regulation-and-technology-legal-follows-igaming-evolution",
+      "canon": "https://octusconsulting.com/insights/regulation-and-technology-legal-follows-igaming-evolution",
+      "title": "Regulation and Technology: How Legal Keeps Pace with iGaming Innovation | Octus Consulting | Octus Consulting",
+      "desc": "The iGaming sector continues to change through new technology, business models and tools such as machine learning in product and risk workflows. Legal counsel must stay close to those operational shifts: this article is sector commentary, not an Octus product claim.",
+      "og": "Regulation and Technology: How Legal Keeps Pace with iGaming Innovation | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Regulatory Structuring",
+          "href": "/solutions/regulatory-structuring"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/iof-update-financial-market-brazil-2025",
+      "canon": "https://octusconsulting.com/insights/iof-update-financial-market-brazil-2025",
+      "title": "IOF Update: Key Implications for the Financial Market and Regulated Industries | Octus Consulting | Octus Consulting",
+      "desc": "The Brazilian Federal Revenue Service issued clarifications on the IOF following the suspension of temporary regulations, indicating that financial institutions are not required to collect retroactively: but a future direct charge on taxpayers remains possible.",
+      "og": "IOF Update: Key Implications for the Financial Market and Regulated Industries | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Regulatory Structuring",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/trump-tax-reform-betting-operators-lessons-for-brazil",
+      "canon": "https://octusconsulting.com/insights/trump-tax-reform-betting-operators-lessons-for-brazil",
+      "title": "Trump Signs Tax Reform Imposing New Betting Taxation in the US: Lessons for Brazil | Octus Consulting | Octus Consulting",
+      "desc": "The One Big Beautiful Bill Act limits the deduction of gambling losses to 90%, meaning US bettors may owe federal taxes even on net-loss years. The measure raises BRL 1.14 billion in revenue projections but risks driving players to offshore platforms: a lesson Brazil is simultaneously learning.",
+      "og": "Trump Signs Tax Reform Imposing New Betting Taxation in the US: Lessons for Brazil | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/regulatory-agenda-2025-2026-secretariat-prizes-betting",
+      "canon": "https://octusconsulting.com/insights/regulatory-agenda-2025-2026-secretariat-prizes-betting",
+      "title": "Regulatory Agenda 2025/2026: SPA/MF Sets the Course for Brazil's Betting Market | Octus Consulting | Octus Consulting",
+      "desc": "Ordinance SPA/MF No. 817/2025 establishes the regulatory agenda for Brazil's sports betting and online gaming market for the 2025-2026 biennium, including B2B regulation, a national trust seal, the SINAPO cooperative system and a revised authorisation procedure.",
+      "og": "Regulatory Agenda 2025/2026: SPA/MF Sets the Course for Brazil's Betting Market | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Regulatory Structuring",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        },
+        {
+          "text": "iGaming",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/spa-ordinance-banks-refuse-illegal-betting-operators",
+      "canon": "https://octusconsulting.com/insights/spa-ordinance-banks-refuse-illegal-betting-operators",
+      "title": "SPA Ordinance Requires Banks and Payment Institutions to Refuse Accounts for Illegal Betting Operators | Octus Consulting | Octus Consulting",
+      "desc": "The SPA/MF published an ordinance requiring financial institutions, payment institutions and payment scheme managers to refuse or terminate relationships with companies operating fixed-odds betting illegally, with a 24-hour notification obligation.",
+      "og": "SPA Ordinance Requires Banks and Payment Institutions to Refuse Accounts for Illegal Betting Operators | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Regulatory Structuring",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        },
+        {
+          "text": "iGaming",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/youtube-tightens-rules-illegal-betting-sites-impact-influencers",
+      "canon": "https://octusconsulting.com/insights/youtube-tightens-rules-illegal-betting-sites-impact-influencers",
+      "title": "YouTube Tightens Rules Against Illegal Betting Sites: Impact on Influencers and Content Creators | Octus Consulting | Octus Consulting",
+      "desc": "YouTube implemented new mechanisms to block content related to illegal online gambling sites from 19 March 2025, following denunciations of influencers promoting betting platforms with misleading profit guarantees.",
+      "og": "YouTube Tightens Rules Against Illegal Betting Sites: Impact on Influencers and Content Creators | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/brazil-b2b-registration-requirement-betting-igaming",
+      "canon": "https://octusconsulting.com/insights/brazil-b2b-registration-requirement-betting-igaming",
+      "title": "Brazil to Implement Registration Requirement for B2B Providers in the Betting and iGaming Market | Octus Consulting | Octus Consulting",
+      "desc": "Brazil's SPA Secretary announced at ICE Barcelona that a mandatory registration mechanism for B2B providers in the regulated market is being implemented: covering game providers, platforms, KYC tools and other essential services.",
+      "og": "Brazil to Implement Registration Requirement for B2B Providers in the Betting and iGaming Market | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Regulatory Structuring",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        },
+        {
+          "text": "iGaming",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/senate-commission-approves-casino-bingo-gaming-bill-brazil",
+      "canon": "https://octusconsulting.com/insights/senate-commission-approves-casino-bingo-gaming-bill-brazil",
+      "title": "Senate Commission Approves Bill to Legalise Casinos, Bingos, Jogo do Bicho and Online Games in Brazil | Octus Consulting | Octus Consulting",
+      "desc": "The Senate's Constitution and Justice Committee approved the rapporteur's report on PL 2234/22 by 14 votes to 12, advancing legislation to legalise casinos, bingos, jogo do bicho and online gaming in Brazil: the bill now proceeds to the full Senate.",
+      "og": "Senate Commission Approves Bill to Legalise Casinos, Bingos, Jogo do Bicho and Online Games in Brazil | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Regulatory Structuring",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        },
+        {
+          "text": "iGaming",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/spa-mf-position-brazilian-partner-20-percent-share-capital",
+      "canon": "https://octusconsulting.com/insights/spa-mf-position-brazilian-partner-20-percent-share-capital",
+      "title": "SPA/MF Clarification: Brazilian Partner Requirement: 20% Share Capital Threshold | Octus Consulting | Octus Consulting",
+      "desc": "The SPA/MF confirmed via its FAQ that the requirement for a Brazilian partner holding at least 20% of the applicant company's share capital may be met by either Brazilian natural persons or Brazilian legal entities incorporated under Brazilian law.",
+      "og": "SPA/MF Clarification: Brazilian Partner Requirement: 20% Share Capital Threshold | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Regulatory Structuring",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        },
+        {
+          "text": "iGaming",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/new-rules-sports-betting-online-games-brazil-portaria-827-2024",
+      "canon": "https://octusconsulting.com/insights/new-rules-sports-betting-online-games-brazil-portaria-827-2024",
+      "title": "New Rules for Sports Betting and Online Games in Brazil: Portaria SPA/MF 827/2024 | Octus Consulting | Octus Consulting",
+      "desc": "The SPA/MF published Ordinance No. 827/2024 defining the rules and conditions for obtaining authorisation to operate sports betting and online games in Brazil: covering a five-year licence, BRL 30 million capital requirement and comprehensive qualification criteria.",
+      "og": "New Rules for Sports Betting and Online Games in Brazil: Portaria SPA/MF 827/2024 | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Regulatory Structuring",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        },
+        {
+          "text": "iGaming",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/new-regulation-betting-online-game-systems-portaria-722-2024",
+      "canon": "https://octusconsulting.com/insights/new-regulation-betting-online-game-systems-portaria-722-2024",
+      "title": "New Regulation Establishes Technical Requirements for Betting and Online Game Systems | Octus Consulting | Octus Consulting",
+      "desc": "Ordinance SPA/MF No. 722/2024 defines new technical and security requirements for betting and gaming systems used by fixed-odds betting operators in Brazil, including annual certification, data localisation rules and supervision procedures.",
+      "og": "New Regulation Establishes Technical Requirements for Betting and Online Game Systems | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Regulatory Structuring",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        },
+        {
+          "text": "iGaming",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/banking-for-high-risk-operations",
+      "canon": "https://octusconsulting.com/insights/banking-for-high-risk-operations",
+      "title": "Banking for High-Risk Operations: Why Structure Matters More Than Relationships. Octus Consulting | Octus Consulting | Octus Consulting",
+      "desc": "High-risk banking failures are structural, not relational. The corporate design, compliance quality and jurisdiction determine banking access, not the introduction.",
+      "og": "Banking for High-Risk Operations: Why Structure Matters More Than Relationships. Octus Consulting | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Banking & Payments",
+          "href": "/solutions/banking-payments-infrastructure"
+        },
+        {
+          "text": "Corporate Structuring",
+          "href": "/solutions/corporate-structuring"
+        },
+        {
+          "text": "International Hub",
+          "href": "/international-hub"
+        },
+        {
+          "text": "Banking & Payments",
+          "href": "/solutions/banking-payments-infrastructure"
+        },
+        {
+          "text": "High-Risk Operations",
+          "href": "/markets/high-risk"
+        },
+        {
+          "text": "Request assessment →",
+          "href": "/diagnostic"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/mica-what-operators-need-to-do",
+      "canon": "https://octusconsulting.com/insights/mica-what-operators-need-to-do",
+      "title": "MiCA: What Crypto Operators Actually Need to Do | Octus Consulting | Octus Consulting | Octus Consulting",
+      "desc": "MiCA is fully applicable. The grandfathering period ends July 2026. This is what CASP authorisation requires in practice, not merely in theory.",
+      "og": "MiCA: What Crypto Operators Actually Need to Do | Octus Consulting | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Compliance-as-a-Service",
+          "href": "/solutions/compliance/compliance-as-a-service"
+        },
+        {
+          "text": "Crypto & Digital Assets",
+          "href": "/markets/crypto"
+        },
+        {
+          "text": "Compliance-as-a-Service",
+          "href": "/solutions/compliance/compliance-as-a-service"
+        },
+        {
+          "text": "Request assessment →",
+          "href": "/diagnostic"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/curacao-reform-what-changes",
+      "canon": "https://octusconsulting.com/insights/curacao-reform-what-changes",
+      "title": "Curaçao Reform: What Actually Changes for Operators | Octus Consulting | Octus Consulting | Octus Consulting",
+      "desc": "Curaçao's gambling regulation is reforming. The transition from master-sublicence to individual licensing changes everything about how operators structure, comply and bank.",
+      "og": "Curaçao Reform: What Actually Changes for Operators | Octus Consulting | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "iGaming Licensing",
+          "href": "/solutions/regulatory/igaming-licensing"
+        },
+        {
+          "text": "Curaçao",
+          "href": "/jurisdictions/curacao"
+        },
+        {
+          "text": "Curaçao",
+          "href": "/jurisdictions/curacao"
+        },
+        {
+          "text": "iGaming Licensing",
+          "href": "/solutions/regulatory/igaming-licensing"
+        },
+        {
+          "text": "Request assessment →",
+          "href": "/diagnostic"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    },
+    {
+      "route": "/insights/compliance-as-a-service-vs-internal-teams",
+      "canon": "https://octusconsulting.com/insights/compliance-as-a-service-vs-internal-teams",
+      "title": "Compliance-as-a-Service vs Internal Teams: When Outsourcing Makes Sense. Octus Consulting | Octus Consulting | Octus Consulting",
+      "desc": "Building an internal compliance team is not always the right answer. For regulated operations scaling across jurisdictions, an operational compliance layer may deliver more consistency at lower risk.",
+      "og": "Compliance-as-a-Service vs Internal Teams: When Outsourcing Makes Sense. Octus Consulting | Octus Consulting",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "← Insights",
+          "href": "/insights"
+        },
+        {
+          "text": "Compliance-as-a-Service",
+          "href": "/solutions/compliance/compliance-as-a-service"
+        },
+        {
+          "text": "DPO-as-a-Service",
+          "href": "/solutions/compliance/dpo-as-a-service"
+        },
+        {
+          "text": "Compliance & Risk",
+          "href": "/solutions/compliance-risk"
+        },
+        {
+          "text": "Compliance-as-a-Service",
+          "href": "/solutions/compliance/compliance-as-a-service"
+        },
+        {
+          "text": "DPO-as-a-Service",
+          "href": "/solutions/compliance/dpo-as-a-service"
+        },
+        {
+          "text": "Request assessment →",
+          "href": "/diagnostic"
+        }
+      ],
+      "header": true,
+      "footer": true,
+      "cookie": true,
+      "wa": true,
+      "http_status": 200
+    }
+  ]
+}

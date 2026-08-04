@@ -28,7 +28,7 @@ PR #17 — seven-area architecture, current routes, evidence-safe editorial rule
 | 4 | Services and service families | **ACCEPTED_WITH_BOUND_RESIDUALS** | Phase 4 a11y accepted · residuals bound |
 | 5A | Institutional and engagement | **ACCEPTED_WITH_BOUND_RESIDUALS** | Phase 5A accepted by Sol |
 | 5B | Markets / jurisdictions / Brazil | **ACCEPTED_WITH_BOUND_RESIDUALS** | Accepted by Sol |
-| 5C | Intelligence / Insights / Legal utility | **IN_PROGRESS** | `OCTUS_INTELLIGENCE_LEGAL_GATE_READY_FOR_SOL_AUDIT` (target) |
+| 5C | Intelligence / Insights / Legal utility | **READY_FOR_SOL_AUDIT** | `OCTUS_INTELLIGENCE_LEGAL_GATE_READY_FOR_SOL_AUDIT` |
 | 6 | Full regression | BLOCKED | Residuals + final candidate audit |
 
 ### Phase 1 acceptance stamp
@@ -130,16 +130,17 @@ Impact matrix: `services/PHASE4_SERVICES_IMPACT_MATRIX.md`
 | Bound residuals | `HOME_PUNCTUATION_RESIDUAL_001` · `GLOBAL_A11Y_REGION_RESIDUAL_001` · `AXE_INCOMPLETE_REVIEW_001` → Phase 6 |
 | Phase 5B lock | Do not modify markets/jurisdictions/brazil application files in Phase 5C |
 
-### Phase 5C stamp (IN_PROGRESS)
+### Phase 5C stamp (READY FOR SOL AUDIT)
 
 | Field | Value |
 |---|---|
-| Status | **IN_PROGRESS** — authorized by Sol |
+| Status | `OCTUS_INTELLIGENCE_LEGAL_GATE_READY_FOR_SOL_AUDIT` |
 | starting_HEAD | `cee3e907069542b14c85bec56769dc9549b4674c` |
-| Inventory | `intelligence-legal/PHASE5C_ROUTE_INVENTORY.md` |
-| Impact matrix | `intelligence-legal/PHASE5C_IMPACT_MATRIX.md` |
-| Fact/claim register | `intelligence-legal/PHASE5C_FACT_AND_CLAIM_REGISTER.md` |
-| Content register | `intelligence-legal/PHASE5C_CONTENT_REGISTER.md` |
+| application_code_sha | `c467ccf0bfa3a8a2df1ac7a58c7b29c8c169d62b` |
+| immutable_preview | https://octus-consulting-84n1zaqys-axle1.vercel.app |
+| deployment_id | `dpl_8q5VbqyqV5vZxazerUKHco7VFCiW` |
+| screenshots | 360 · validation PASS |
+| Axe critical/serious | 0 / 0 |
 | Phase 6 | BLOCKED |
 | Rubio rescreen | BLOCKED |
 | Merge / production / rebase | forbidden |
