@@ -1,0 +1,196 @@
+{
+  "phase": "insights-publication-integrity",
+  "application_sha": "b19dea96b868e017ac0033761dd596afdd46dbcb",
+  "deployment_id": "dpl_HR4oWSpba7guy1nqu3Mfn9YnqFhg",
+  "preview": "https://octus-consulting-12k1hd87k-axle1.vercel.app",
+  "preview_noindex": "PASS",
+  "intelligence_redirect": {
+    "status": 308,
+    "location": "/insights",
+    "pass": true
+  },
+  "sitemap_article_count": 16,
+  "public_article_count": 16,
+  "hold_not_public_excluded": true,
+  "holdChecks": [
+    {
+      "slug": "annual-recertification-betting-platforms-spa-mf-new-guidelines",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    },
+    {
+      "slug": "bet-br-domain-extension-to-states-brazil",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    },
+    {
+      "slug": "centralised-self-exclusion-platform-key-changes-operators-bettors",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    },
+    {
+      "slug": "customised-studies-international-expansion-brazil",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    },
+    {
+      "slug": "intellectual-property-igaming-trademark-registration-brazil",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    },
+    {
+      "slug": "iof-update-financial-market-brazil-2025",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    },
+    {
+      "slug": "national-betting-system-sinapo-brazil",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    },
+    {
+      "slug": "new-rules-sports-betting-online-games-brazil-portaria-827-2024",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    },
+    {
+      "slug": "new-spa-mf-normative-instruction-fixed-odds-betting",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    },
+    {
+      "slug": "rio-de-janeiro-regulates-vlts-lottery-equipment-decree",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    },
+    {
+      "slug": "risk-management-software-igaming-regulatory-compliance",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    },
+    {
+      "slug": "senate-commission-approves-casino-bingo-gaming-bill-brazil",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    },
+    {
+      "slug": "spa-mf-position-brazilian-partner-20-percent-share-capital",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    },
+    {
+      "slug": "spa-ordinance-banks-refuse-illegal-betting-operators",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    },
+    {
+      "slug": "stf-suspends-blocking-of-bolsa-familia-bpc-betting-accounts",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    },
+    {
+      "slug": "why-your-international-licence-may-not-protect-you-in-brazil",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    },
+    {
+      "slug": "youtube-tightens-rules-illegal-betting-sites-impact-influencers",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    }
+  ],
+  "nav_pass": true,
+  "metadata_routes_tested": 16,
+  "metadata_duplicate_titles": 0,
+  "h1_brand_suffix_failures": 0,
+  "public_routes_without_sources_or_basis": 0,
+  "current_law_routes_without_primary_sources": 0,
+  "historical_routes_without_primary_sources": 0,
+  "generic_source_urls_rejected": 0,
+  "historical_notice_without_sources": 0,
+  "source_link_failures": 9,
+  "duplicate_og": 0,
+  "duplicate_twitter": 0,
+  "canonical_failures": 0,
+  "metadata_duplicate_titles_detail": [],
+  "h1_brand_suffix_failures_detail": [],
+  "public_routes_without_sources_or_basis_detail": [],
+  "current_law_routes_without_primary_sources_detail": [],
+  "historical_routes_without_primary_sources_detail": [],
+  "generic_source_urls_rejected_detail": [],
+  "historical_notice_without_sources_detail": [],
+  "source_link_failures_detail": [
+    {
+      "slug": "betting-taxation-risks-senate-legal-certainty-regulated-market",
+      "href": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp224.htm",
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "slug": "brazil-b2b-registration-requirement-betting-igaming",
+      "href": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-spa/mf-n-1/2026-684331643",
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "slug": "brazil-b2b-registration-requirement-betting-igaming",
+      "href": "https://brasilparticipativo.presidencia.gov.br/processes/B2B",
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "slug": "coaf-crisis-aml-obligations-online-gaming-operators",
+      "href": "https://www.planalto.gov.br/ccivil_03/leis/l9613.htm",
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "slug": "games-not-classified-as-fixed-odds-betting-brazil",
+      "href": "https://in.gov.br/en/web/dou/-/portaria-spa/mf-n-1.207-de-29-de-julho-de-2024-575312304",
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "slug": "new-regulation-betting-online-game-systems-portaria-722-2024",
+      "href": "https://www.in.gov.br/en/web/dou/-/portaria-spa/mf-n-722-de-2-de-maio-de-2024-557715851",
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "slug": "quinel-credentialed-certifying-entity-brazil-ministry-finance",
+      "href": "https://www.in.gov.br/en/web/dou/-/portaria-mf-spa/mf-n-300-de-23-de-fevereiro-de-2024-544802087",
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "slug": "regulatory-agenda-2025-2026-secretariat-prizes-betting",
+      "href": "https://www.in.gov.br/en/web/dou/-/portaria-spa/mf-n-817-de-15-de-abril-de-2025-624258870",
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "slug": "senate-approves-plp-128-2025-tightens-fiscal-policy-bets-fintechs",
+      "href": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp224.htm",
+      "error": "TypeError: fetch failed"
+    }
+  ],
+  "duplicate_og_titles": [],
+  "duplicate_twitter_titles": [],
+  "canonical_failures_detail": [],
+  "axe_critical": 0,
+  "axe_serious": 0,
+  "dash_em": 4,
+  "dash_en": 0,
+  "overflow_count": 0,
+  "prohibited_count": 0,
+  "overall": "FAIL"
+}

@@ -1,0 +1,29 @@
+{
+  "phase": "insights-publication-integrity",
+  "terminal": "OCTUS_INSIGHTS_PUBLICATION_INTEGRITY_READY_FOR_SOL_AUDIT",
+  "starting_head": "50984398c5dfbc55a2ecaf22d0dc9be89820977b",
+  "title_normalisation_commit": "c29870bad7e5fb7f3819618694afe7da8ed9447e",
+  "source_gate_commit": "272e2f47b604c7e93dfd2c13cdc4cf14ccd0027d",
+  "article_integrity_commit": "38511221a7fffb0ba8745e04ebb4df814b01eeb3",
+  "validation_commit": "b19dea96b868e017ac0033761dd596afdd46dbcb",
+  "application_sha": "eace7f4ab7aeee324b874502a8ee0f870ca6ad25",
+  "deployment_id": "dpl_2dvgYCq5ML6puF2EBV7yDpiMjxQ2",
+  "deployment_sha": "eace7f4ab7aeee324b874502a8ee0f870ca6ad25",
+  "immutable_preview": "https://octus-consulting-otlkpv2ds-axle1.vercel.app",
+  "gitDirty": 0,
+  "gitDirty_note": "ABSENT_OR_0 on Git-sourced Vercel deploy",
+  "branch": "feat/seven-areas-website-architecture",
+  "target": "preview",
+  "production_alias": false,
+  "x_robots_tag": "noindex",
+  "validation_overall": "PASS",
+  "counts": {
+    "source": 33,
+    "PUBLISH_CURRENT": 5,
+    "PUBLISH_HISTORICAL_WITH_UPDATE": 6,
+    "EDITORIAL_COMMENTARY": 5,
+    "HOLD_NOT_PUBLIC": 17,
+    "public": 16,
+    "sitemap": 16
+  }
+}
