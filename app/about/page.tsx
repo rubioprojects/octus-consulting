@@ -349,7 +349,7 @@ export default function AboutPage() {
               rel="noopener noreferrer"
               className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90"
             >
-              {CTA_DISCUSS_LABEL}
+              Continue on WhatsApp →
             </a>
             <a
               href={MAILTO_DISCUSS}
