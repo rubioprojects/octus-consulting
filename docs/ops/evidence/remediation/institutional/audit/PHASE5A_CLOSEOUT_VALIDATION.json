@@ -1,0 +1,250 @@
+{
+  "generated_at": "2026-08-04T01:05:13.942Z",
+  "phase": "5A_SOL_AUDIT_CLOSEOUT",
+  "terminal_target": "OCTUS_PHASE5A_SOL_AUDIT_CLOSEOUT_READY",
+  "immutable_preview_url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app",
+  "deployment_id": "dpl_6zhpEKuw1j94dVaeRSQ9pZuxU8Wu",
+  "application_code_sha": "87c62c2e99187a209e519c37f993493ef267f3b7",
+  "deployed_git_sha": "87c62c2e99187a209e519c37f993493ef267f3b7",
+  "axe_core_version": "4.12.1",
+  "checks": {
+    "canonical_meta_robots_clean": "PASS",
+    "preview_x_robots_noindex": "PASS",
+    "preview_noindex_header": "PASS",
+    "internal_link_crawl": "PASS",
+    "external_rel_audit": "PASS",
+    "heading_hierarchy": "PASS",
+    "accessible_names": "PASS",
+    "alias_probes": "PASS",
+    "homepage_full_regression": "PASS",
+    "team_full_regression": "PASS",
+    "services_20_39_34_11": "PASS",
+    "global_system_regression": "PASS",
+    "axe_critical_serious": "PASS",
+    "frozen_files": "PASS",
+    "build": "PASS",
+    "typecheck": "PASS"
+  },
+  "failed_checks": [],
+  "overall": "PASS",
+  "preview_x_robots_routes": [
+    {
+      "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/about",
+      "status": 200,
+      "x_robots_tag": "noindex",
+      "location": "",
+      "preview_x_robots_noindex": "PASS"
+    },
+    {
+      "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/how-we-engage",
+      "status": 200,
+      "x_robots_tag": "noindex",
+      "location": "",
+      "preview_x_robots_noindex": "PASS"
+    },
+    {
+      "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/contact",
+      "status": 200,
+      "x_robots_tag": "noindex",
+      "location": "",
+      "preview_x_robots_noindex": "PASS"
+    },
+    {
+      "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/diagnostic",
+      "status": 200,
+      "x_robots_tag": "noindex",
+      "location": "",
+      "preview_x_robots_noindex": "PASS"
+    },
+    {
+      "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/partners",
+      "status": 200,
+      "x_robots_tag": "noindex",
+      "location": "",
+      "preview_x_robots_noindex": "PASS"
+    },
+    {
+      "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/careers",
+      "status": 200,
+      "x_robots_tag": "noindex",
+      "location": "",
+      "preview_x_robots_noindex": "PASS"
+    }
+  ],
+  "meta_robots_routes": [
+    {
+      "route": "/about",
+      "status": 200,
+      "meta_robots": "",
+      "accidental_canonical_noindex": false,
+      "result": "PASS"
+    },
+    {
+      "route": "/how-we-engage",
+      "status": 200,
+      "meta_robots": "",
+      "accidental_canonical_noindex": false,
+      "result": "PASS"
+    },
+    {
+      "route": "/contact",
+      "status": 200,
+      "meta_robots": "",
+      "accidental_canonical_noindex": false,
+      "result": "PASS"
+    },
+    {
+      "route": "/diagnostic",
+      "status": 200,
+      "meta_robots": "",
+      "accidental_canonical_noindex": false,
+      "result": "PASS"
+    },
+    {
+      "route": "/partners",
+      "status": 200,
+      "meta_robots": "",
+      "accidental_canonical_noindex": false,
+      "result": "PASS"
+    },
+    {
+      "route": "/careers",
+      "status": 200,
+      "meta_robots": "",
+      "accidental_canonical_noindex": false,
+      "result": "PASS"
+    }
+  ],
+  "violation_totals": {
+    "critical": 0,
+    "serious": 0,
+    "moderate": 12,
+    "incomplete": 18
+  },
+  "homepage_regression": {
+    "seven_peer_areas": "PASS",
+    "peer_modules": [
+      "01Regulatory Structuring",
+      "02Compliance & Risk",
+      "03Legal & Structural Architecture",
+      "04Corporate Structuring",
+      "05Private Clients",
+      "06Remediation & Readiness",
+      "07International Hub"
+    ],
+    "banking_not_peer_area": "PASS",
+    "distinct_diagnostic_labels": "PASS",
+    "diagnostic_labels": [
+      "Request a diagnostic →",
+      "Assess your situation →",
+      "Start remediation assessment →"
+    ],
+    "whatsapp_hero_cta": "PASS",
+    "whatsapp_final_cta": "PASS",
+    "home_punctuation_residual_exactly_one": "PASS",
+    "em_dash_count": 1,
+    "homepage_source_unchanged_in_phase5a": "PASS",
+    "homepage_source_hits": [],
+    "status": "PASS"
+  },
+  "team_regression": {
+    "profile_count_expected": 10,
+    "names_and_titles_present": "PASS",
+    "leadership_and_core_bands": "PASS",
+    "bands": [
+      "Leadership",
+      "Core Specialists"
+    ],
+    "portrait_hashes_match_phase1_lock": "PASS",
+    "portraits": {
+      "bianca.jpg": {
+        "sha256": "f923fd3591aaa68157d28591b88346ace4a515e6a11a6b516aa3c7888d5e9b64",
+        "match": true
+      },
+      "caroline-giovanetti.jpg": {
+        "sha256": "7e8f71eb5cc1b90eec048d4184b9b1a08f0d4900da84f1022d0394e855899eb9",
+        "match": true
+      },
+      "claudia-nery.jpg": {
+        "sha256": "344ea1734f68788244c6f71d5fd69972789b202c5f4e02b02af6941c7a1eeaa0",
+        "match": true
+      },
+      "esther-vendrami.jpg": {
+        "sha256": "10906673c848baed9e2f12c066c53691d2765ff207595cddbdb50c06d0970650",
+        "match": true
+      },
+      "larissa-carvalho.jpg": {
+        "sha256": "3dadbb3cebebd945700a737ed4eeff244cb102e9aed68564f2c12cfb39131fb7",
+        "match": true
+      },
+      "luciana-santos-veloso.jpg": {
+        "sha256": "bb6fcc97ea426bebc0856d1e4df49c8aea6d5db36ce35eb7cfab1f6ce3b0749d",
+        "match": true
+      },
+      "maria-cristina.jpg": {
+        "sha256": "4fe097595ed6753e8df9cc3208fd78993a69a7b645d332af25b449116ebbfe26",
+        "match": true
+      },
+      "milla-ludovico.jpg": {
+        "sha256": "0d46dff8ede1d046cb053d6be038deba141ef78788c064863794f58002025c4a",
+        "match": true
+      },
+      "rodrigo-lopes.jpg": {
+        "sha256": "82833b9103a0053dceae774a82da20a6e4c9692ff4bd7fbe9eabf0d3cf8ceaaf",
+        "match": true
+      },
+      "rubio-teixeira.jpg": {
+        "sha256": "28d61e59f013debc140e6684b3783c4a8bb426a24ddbdf3dbdb45922b9fee200",
+        "match": true
+      }
+    },
+    "team_files_unchanged": "PASS",
+    "team_file_hits": [],
+    "status": "PASS"
+  },
+  "services_regression": {
+    "status": "PASS",
+    "catalogue_status": "PASS",
+    "catalogue_computed": {
+      "areas": 7,
+      "services_publicAreas": 39,
+      "services_catalog": 39,
+      "services_register": 39,
+      "services_architecture": 39,
+      "families": 34,
+      "deep_routes_architecture": 11,
+      "deep_routes_register": 11,
+      "deep_routes_inventory": 11,
+      "orphans": 0,
+      "unintentional_duplicates": 0
+    },
+    "axe_critical": 0,
+    "axe_serious": 0,
+    "mandatory_http": "PASS"
+  },
+  "global_regression": {
+    "header_and_lockup": "PASS",
+    "footer": "PASS",
+    "whatsapp_geometry": "PASS",
+    "whatsapp": {
+      "w": 199,
+      "h": 48,
+      "bottom": 976,
+      "right": 1416
+    },
+    "favicon": "PASS",
+    "desktop_overflow": "PASS",
+    "mobile_overflow": "PASS",
+    "mobile_nav": {
+      "open": true,
+      "close": true
+    },
+    "cookie_banner": {
+      "initial_visible": true,
+      "dismissed": false,
+      "persistence": "FAIL_STILL_VISIBLE"
+    },
+    "status": "PASS"
+  },
+  "frozen_hits": []
+}

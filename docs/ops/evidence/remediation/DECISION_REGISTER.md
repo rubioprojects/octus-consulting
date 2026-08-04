@@ -243,12 +243,25 @@
 
 | Field | Value |
 |---|---|
-| application_code_sha | `951513c16c45eae06b269b15f9ae77c50c625f0f` |
+| application_code_sha (pre-closeout) | `951513c16c45eae06b269b15f9ae77c50c625f0f` |
 | immutable_preview | https://octus-consulting-mfiprgbua-axle1.vercel.app |
 | deployment_id | `dpl_EZQJJFTUEXBM1xBtT5mQUuasBNyu` |
-| validation | PASS · Axe critical 0 · serious 0 |
-| screenshots | 144 provenance-bound |
-| Bound residuals | retained · Phase 6 |
-| terminal | `OCTUS_INSTITUTIONAL_ENGAGEMENT_GATE_READY_FOR_SOL_AUDIT` |
+| Sol verdict | BLOCKED_PENDING_NARROW_CLOSEOUT |
+| terminal (superseded for closeout) | prior `OCTUS_INSTITUTIONAL_ENGAGEMENT_GATE_READY_FOR_SOL_AUDIT` |
+| PHASE_5B / 5C / 6 / Rubio | BLOCKED |
+| Merge / production / rebase | forbidden |
+
+## D-022 — Phase 5A Sol audit narrow closeout
+
+| Field | Value |
+|---|---|
+| application_code_sha | `87c62c2e99187a209e519c37f993493ef267f3b7` |
+| immutable_preview | https://octus-consulting-2dflp4hpy-axle1.vercel.app |
+| deployment_id | `dpl_6zhpEKuw1j94dVaeRSQ9pZuxU8Wu` |
+| preview noindex header | PASS |
+| validation coverage | PASS (closeout packet) |
+| evidence provenance | PASS (baseline SHA corrected; Careers reconciled recaptured) |
+| fact/claim coverage | PASS (Careers process + regional qualified) |
+| terminal | `OCTUS_PHASE5A_SOL_AUDIT_CLOSEOUT_READY` |
 | PHASE_5B / 5C / 6 / Rubio | BLOCKED |
 | Merge / production / rebase | forbidden |

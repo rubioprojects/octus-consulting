@@ -1,0 +1,392 @@
+{
+  "generated_at": "2026-08-04T01:05:13.942Z",
+  "homepage": {
+    "seven_peer_areas": "PASS",
+    "peer_modules": [
+      "01Regulatory Structuring",
+      "02Compliance & Risk",
+      "03Legal & Structural Architecture",
+      "04Corporate Structuring",
+      "05Private Clients",
+      "06Remediation & Readiness",
+      "07International Hub"
+    ],
+    "banking_not_peer_area": "PASS",
+    "distinct_diagnostic_labels": "PASS",
+    "diagnostic_labels": [
+      "Request a diagnostic →",
+      "Assess your situation →",
+      "Start remediation assessment →"
+    ],
+    "whatsapp_hero_cta": "PASS",
+    "whatsapp_final_cta": "PASS",
+    "home_punctuation_residual_exactly_one": "PASS",
+    "em_dash_count": 1,
+    "homepage_source_unchanged_in_phase5a": "PASS",
+    "homepage_source_hits": [],
+    "status": "PASS"
+  },
+  "team": {
+    "profile_count_expected": 10,
+    "names_and_titles_present": "PASS",
+    "leadership_and_core_bands": "PASS",
+    "bands": [
+      "Leadership",
+      "Core Specialists"
+    ],
+    "portrait_hashes_match_phase1_lock": "PASS",
+    "portraits": {
+      "bianca.jpg": {
+        "sha256": "f923fd3591aaa68157d28591b88346ace4a515e6a11a6b516aa3c7888d5e9b64",
+        "match": true
+      },
+      "caroline-giovanetti.jpg": {
+        "sha256": "7e8f71eb5cc1b90eec048d4184b9b1a08f0d4900da84f1022d0394e855899eb9",
+        "match": true
+      },
+      "claudia-nery.jpg": {
+        "sha256": "344ea1734f68788244c6f71d5fd69972789b202c5f4e02b02af6941c7a1eeaa0",
+        "match": true
+      },
+      "esther-vendrami.jpg": {
+        "sha256": "10906673c848baed9e2f12c066c53691d2765ff207595cddbdb50c06d0970650",
+        "match": true
+      },
+      "larissa-carvalho.jpg": {
+        "sha256": "3dadbb3cebebd945700a737ed4eeff244cb102e9aed68564f2c12cfb39131fb7",
+        "match": true
+      },
+      "luciana-santos-veloso.jpg": {
+        "sha256": "bb6fcc97ea426bebc0856d1e4df49c8aea6d5db36ce35eb7cfab1f6ce3b0749d",
+        "match": true
+      },
+      "maria-cristina.jpg": {
+        "sha256": "4fe097595ed6753e8df9cc3208fd78993a69a7b645d332af25b449116ebbfe26",
+        "match": true
+      },
+      "milla-ludovico.jpg": {
+        "sha256": "0d46dff8ede1d046cb053d6be038deba141ef78788c064863794f58002025c4a",
+        "match": true
+      },
+      "rodrigo-lopes.jpg": {
+        "sha256": "82833b9103a0053dceae774a82da20a6e4c9692ff4bd7fbe9eabf0d3cf8ceaaf",
+        "match": true
+      },
+      "rubio-teixeira.jpg": {
+        "sha256": "28d61e59f013debc140e6684b3783c4a8bb426a24ddbdf3dbdb45922b9fee200",
+        "match": true
+      }
+    },
+    "team_files_unchanged": "PASS",
+    "team_file_hits": [],
+    "status": "PASS"
+  },
+  "services": {
+    "catalogue_status": "PASS",
+    "catalogue_computed": {
+      "areas": 7,
+      "services_publicAreas": 39,
+      "services_catalog": 39,
+      "services_register": 39,
+      "services_architecture": 39,
+      "families": 34,
+      "deep_routes_architecture": 11,
+      "deep_routes_register": 11,
+      "deep_routes_inventory": 11,
+      "orphans": 0,
+      "unintentional_duplicates": 0
+    },
+    "mandatory_routes_http_200": "PASS",
+    "service_http": [
+      {
+        "route": "/solutions",
+        "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/solutions",
+        "status": 200,
+        "x_robots_tag": "noindex",
+        "location": ""
+      },
+      {
+        "route": "/solutions/regulatory-structuring",
+        "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/solutions/regulatory-structuring",
+        "status": 200,
+        "x_robots_tag": "noindex",
+        "location": ""
+      },
+      {
+        "route": "/solutions/compliance-risk",
+        "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/solutions/compliance-risk",
+        "status": 200,
+        "x_robots_tag": "noindex",
+        "location": ""
+      },
+      {
+        "route": "/solutions/legal-structural-architecture",
+        "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/solutions/legal-structural-architecture",
+        "status": 200,
+        "x_robots_tag": "noindex",
+        "location": ""
+      },
+      {
+        "route": "/solutions/corporate-structuring",
+        "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/solutions/corporate-structuring",
+        "status": 200,
+        "x_robots_tag": "noindex",
+        "location": ""
+      },
+      {
+        "route": "/private-clients",
+        "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/private-clients",
+        "status": 200,
+        "x_robots_tag": "noindex",
+        "location": ""
+      },
+      {
+        "route": "/solutions/remediation-readiness",
+        "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/solutions/remediation-readiness",
+        "status": 200,
+        "x_robots_tag": "noindex",
+        "location": ""
+      },
+      {
+        "route": "/international-hub",
+        "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/international-hub",
+        "status": 200,
+        "x_robots_tag": "noindex",
+        "location": ""
+      },
+      {
+        "route": "/solutions/banking-payments-infrastructure",
+        "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/solutions/banking-payments-infrastructure",
+        "status": 200,
+        "x_robots_tag": "noindex",
+        "location": ""
+      },
+      {
+        "route": "/solutions/regulatory/igaming-licensing",
+        "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/solutions/regulatory/igaming-licensing",
+        "status": 200,
+        "x_robots_tag": "noindex",
+        "location": ""
+      },
+      {
+        "route": "/solutions/regulatory/fintech-licensing",
+        "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/solutions/regulatory/fintech-licensing",
+        "status": 200,
+        "x_robots_tag": "noindex",
+        "location": ""
+      },
+      {
+        "route": "/solutions/regulatory/market-entry",
+        "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/solutions/regulatory/market-entry",
+        "status": 200,
+        "x_robots_tag": "noindex",
+        "location": ""
+      },
+      {
+        "route": "/solutions/compliance/aml-kyc",
+        "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/solutions/compliance/aml-kyc",
+        "status": 200,
+        "x_robots_tag": "noindex",
+        "location": ""
+      },
+      {
+        "route": "/solutions/compliance/compliance-as-a-service",
+        "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/solutions/compliance/compliance-as-a-service",
+        "status": 200,
+        "x_robots_tag": "noindex",
+        "location": ""
+      },
+      {
+        "route": "/solutions/compliance/dpo-as-a-service",
+        "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/solutions/compliance/dpo-as-a-service",
+        "status": 200,
+        "x_robots_tag": "noindex",
+        "location": ""
+      },
+      {
+        "route": "/solutions/compliance/gli-readiness",
+        "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/solutions/compliance/gli-readiness",
+        "status": 200,
+        "x_robots_tag": "noindex",
+        "location": ""
+      },
+      {
+        "route": "/solutions/compliance/internal-controls",
+        "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/solutions/compliance/internal-controls",
+        "status": 200,
+        "x_robots_tag": "noindex",
+        "location": ""
+      },
+      {
+        "route": "/solutions/corporate/company-formation",
+        "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/solutions/corporate/company-formation",
+        "status": 200,
+        "x_robots_tag": "noindex",
+        "location": ""
+      },
+      {
+        "route": "/solutions/corporate/holding-design",
+        "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/solutions/corporate/holding-design",
+        "status": 200,
+        "x_robots_tag": "noindex",
+        "location": ""
+      },
+      {
+        "route": "/solutions/corporate/offshore-structuring",
+        "url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/solutions/corporate/offshore-structuring",
+        "status": 200,
+        "x_robots_tag": "noindex",
+        "location": ""
+      }
+    ],
+    "axe_critical": 0,
+    "axe_serious": 0,
+    "axe_desktop_mandatory": [
+      {
+        "route": "/solutions",
+        "critical": 0,
+        "serious": 0,
+        "status": "PASS"
+      },
+      {
+        "route": "/solutions/regulatory-structuring",
+        "critical": 0,
+        "serious": 0,
+        "status": "PASS"
+      },
+      {
+        "route": "/solutions/compliance-risk",
+        "critical": 0,
+        "serious": 0,
+        "status": "PASS"
+      },
+      {
+        "route": "/solutions/legal-structural-architecture",
+        "critical": 0,
+        "serious": 0,
+        "status": "PASS"
+      },
+      {
+        "route": "/solutions/corporate-structuring",
+        "critical": 0,
+        "serious": 0,
+        "status": "PASS"
+      },
+      {
+        "route": "/private-clients",
+        "critical": 0,
+        "serious": 0,
+        "status": "PASS"
+      },
+      {
+        "route": "/solutions/remediation-readiness",
+        "critical": 0,
+        "serious": 0,
+        "status": "PASS"
+      },
+      {
+        "route": "/international-hub",
+        "critical": 0,
+        "serious": 0,
+        "status": "PASS"
+      },
+      {
+        "route": "/solutions/banking-payments-infrastructure",
+        "critical": 0,
+        "serious": 0,
+        "status": "PASS"
+      },
+      {
+        "route": "/solutions/regulatory/igaming-licensing",
+        "critical": 0,
+        "serious": 0,
+        "status": "PASS"
+      },
+      {
+        "route": "/solutions/regulatory/fintech-licensing",
+        "critical": 0,
+        "serious": 0,
+        "status": "PASS"
+      },
+      {
+        "route": "/solutions/regulatory/market-entry",
+        "critical": 0,
+        "serious": 0,
+        "status": "PASS"
+      },
+      {
+        "route": "/solutions/compliance/aml-kyc",
+        "critical": 0,
+        "serious": 0,
+        "status": "PASS"
+      },
+      {
+        "route": "/solutions/compliance/compliance-as-a-service",
+        "critical": 0,
+        "serious": 0,
+        "status": "PASS"
+      },
+      {
+        "route": "/solutions/compliance/dpo-as-a-service",
+        "critical": 0,
+        "serious": 0,
+        "status": "PASS"
+      },
+      {
+        "route": "/solutions/compliance/gli-readiness",
+        "critical": 0,
+        "serious": 0,
+        "status": "PASS"
+      },
+      {
+        "route": "/solutions/compliance/internal-controls",
+        "critical": 0,
+        "serious": 0,
+        "status": "PASS"
+      },
+      {
+        "route": "/solutions/corporate/company-formation",
+        "critical": 0,
+        "serious": 0,
+        "status": "PASS"
+      },
+      {
+        "route": "/solutions/corporate/holding-design",
+        "critical": 0,
+        "serious": 0,
+        "status": "PASS"
+      },
+      {
+        "route": "/solutions/corporate/offshore-structuring",
+        "critical": 0,
+        "serious": 0,
+        "status": "PASS"
+      }
+    ],
+    "status": "PASS"
+  },
+  "global": {
+    "header_and_lockup": "PASS",
+    "footer": "PASS",
+    "whatsapp_geometry": "PASS",
+    "whatsapp": {
+      "w": 199,
+      "h": 48,
+      "bottom": 976,
+      "right": 1416
+    },
+    "favicon": "PASS",
+    "desktop_overflow": "PASS",
+    "mobile_overflow": "PASS",
+    "mobile_nav": {
+      "open": true,
+      "close": true
+    },
+    "cookie_banner": {
+      "initial_visible": true,
+      "dismissed": false,
+      "persistence": "FAIL_STILL_VISIBLE"
+    },
+    "status": "PASS"
+  }
+}

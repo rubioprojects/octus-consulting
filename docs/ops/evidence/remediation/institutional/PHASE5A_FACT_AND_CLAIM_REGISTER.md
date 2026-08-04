@@ -39,6 +39,8 @@
 - How We Engage models → operating modes, not guaranteed product outcomes
 - Careers capability profiles → recruiting profiles, not seven/six-area IA framing
 - Careers working posture language → evidence-safe; no invented benefit package
+- Careers recruitment five-stage list → indicative, not guaranteed process
+- Careers Europe/LATAM/Middle East/Asia language → mandate geography when scoped, not office footprint
 
 ## Factual claims removed or rewritten
 
@@ -61,6 +63,30 @@
 ## Careers vacancy status
 
 **No open vacancies published.** EOI-only model (`mailto:talentos@octusconsulting.com`).
+
+## Careers recruitment process (Sol closeout disposition)
+
+**Decision:** B — not independently verified as a guaranteed public process → **QUALIFIED** on-page (app SHA `87c62c2`) as indicative stages.
+
+| Stage | Publication status | Source / approval | Owner | Evidence date | Guaranteed vs indicative |
+|---|---|---|---|---|---|
+| Initial interview | Published (qualified) | Page copy only; no separate HR policy evidence package | Careers page / Sol closeout | 2026-08-03 | **Indicative** |
+| Assignment | Published (qualified) | Same | Careers page / Sol closeout | 2026-08-03 | **Indicative** |
+| Second interview | Published (qualified) | Same | Careers page / Sol closeout | 2026-08-03 | **Indicative** |
+| Behavioural assessment | Published (qualified) | Same | Careers page / Sol closeout | 2026-08-03 | **Indicative** |
+| Offer | Published (qualified) | Same | Careers page / Sol closeout | 2026-08-03 | **Indicative** |
+
+On-page heading: “Indicative recruitment stages” with explicit non-guarantee language.
+
+## Careers distributed / regional claims (Sol closeout disposition)
+
+**Decision:** B — permanent regional footprint not verified → **QUALIFIED**.
+
+| Claim | Disposition | Approved wording / evidence |
+|---|---|---|
+| Remote-capable / distributed posture | QUALIFIED · retained as remote-capable collaboration | Chip + body: remote-capable; not “always remote” employment terms |
+| Europe / LATAM / Middle East / Asia | QUALIFIED · mandate geography when scope requires | Body clarifies mandate geography, not permanent offices in each region |
+| International mandate exposure | QUALIFIED | Chip text: “International mandate exposure when scoped” |
 
 ## Contact destination verification
 

@@ -1,26 +1,21 @@
-# Phase 5A — Baseline route mapping
+# Phase 5A — Baseline route mapping (FINAL)
 
+**Status:** ACTIVE — supersedes preliminary inventory classifications where they conflict.  
 Visual source of truth: https://octus-consulting-9q798dbg2-axle1.vercel.app  
-Deployment: `dpl_437tawkoMDv7sqxW6NzPzTegj1Lq`
+Baseline deployment: `dpl_437tawkoMDv7sqxW6NzPzTegj1Lq`  
+Baseline GitHub commit: `8b12fcc88922e6ed07b98dd40da0a27bde71bbf9`
 
-| Phase 5A route | Baseline equivalent | Mapping |
+| Phase 5A route | Final classification | Closest-template rationale (only if NO_DIRECT) |
 |---|---|---|
-| `/about` | `/about` | Direct |
-| `/how-we-engage` | `/how-we-engage` | Direct |
-| `/contact` | `/contact` | Direct |
-| `/diagnostic` | `/diagnostic` (or assessment CTA surfaces) | Direct if present; else closest commercial intake dark/light rhythm from Contact |
-| `/partners` | `/partners` | Direct |
-| `/careers` | `/careers` | Direct |
+| `/about` | `DIRECT_BASELINE_ROUTE` | — |
+| `/how-we-engage` | `DIRECT_BASELINE_ROUTE` | — |
+| `/contact` | `DIRECT_BASELINE_ROUTE` | — |
+| `/diagnostic` | `DIRECT_BASELINE_ROUTE` | — |
+| `/partners` | `DIRECT_BASELINE_ROUTE` | — |
+| `/careers` | `DIRECT_BASELINE_ROUTE` | — |
 
-Aliases derived from app routing + redirects during Phase 5A inventory: **none** for the six mandatory paths (no next.config / middleware / vercel.json redirect into these routes from alternate institutional slugs). Nav/footer labels resolve to the same pathnames.
+Evidence: baseline screenshots were captured successfully for all six paths under `institutional/baseline/` against 9q798dbg2.
 
-`NO_DIRECT_BASELINE_ROUTE`: none for the six mandatory paths.
+`NO_DIRECT_BASELINE_ROUTE` does **not** apply to any mandatory Phase 5A route.
 
-Closest-template rationale for composition (not factual copy):
-
-- Institutional authority (About) ↔ Homepage editorial denseness + PageHero dark rhythm
-- Engagement model (How We Engage) ↔ Services chapter cards without restoring service catalogue facts
-- Commercial intake (Contact / Diagnostic) ↔ WhatsApp-primary CTA hierarchy from accepted Homepage/Services
-- Network / talent (Partners / Careers) ↔ elevated surface cards + honest EOI posture
-
-Stale baseline facts are not restored.
+Preliminary notes in `PHASE5A_ROUTE_INVENTORY.md` that marked any of these as `NO_DIRECT_BASELINE_ROUTE` are **superseded** by this file.

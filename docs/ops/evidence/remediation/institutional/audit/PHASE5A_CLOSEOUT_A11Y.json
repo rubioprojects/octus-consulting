@@ -1,0 +1,236 @@
+{
+  "generated_at": "2026-08-04T01:05:13.942Z",
+  "axe_core_version": "4.12.1",
+  "phase5a_routes": [
+    {
+      "route": "/about",
+      "viewport": "desktop",
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "incomplete": 2,
+      "status": "PASS"
+    },
+    {
+      "route": "/about",
+      "viewport": "mobile",
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "incomplete": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/how-we-engage",
+      "viewport": "desktop",
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "incomplete": 2,
+      "status": "PASS"
+    },
+    {
+      "route": "/how-we-engage",
+      "viewport": "mobile",
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "incomplete": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/contact",
+      "viewport": "desktop",
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "incomplete": 2,
+      "status": "PASS"
+    },
+    {
+      "route": "/contact",
+      "viewport": "mobile",
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "incomplete": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/diagnostic",
+      "viewport": "desktop",
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "incomplete": 2,
+      "status": "PASS"
+    },
+    {
+      "route": "/diagnostic",
+      "viewport": "mobile",
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "incomplete": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/partners",
+      "viewport": "desktop",
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "incomplete": 2,
+      "status": "PASS"
+    },
+    {
+      "route": "/partners",
+      "viewport": "mobile",
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "incomplete": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/careers",
+      "viewport": "desktop",
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "incomplete": 2,
+      "status": "PASS"
+    },
+    {
+      "route": "/careers",
+      "viewport": "mobile",
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "incomplete": 1,
+      "status": "PASS"
+    }
+  ],
+  "services_desktop": [
+    {
+      "route": "/solutions",
+      "critical": 0,
+      "serious": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/regulatory-structuring",
+      "critical": 0,
+      "serious": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/compliance-risk",
+      "critical": 0,
+      "serious": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/legal-structural-architecture",
+      "critical": 0,
+      "serious": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/corporate-structuring",
+      "critical": 0,
+      "serious": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/private-clients",
+      "critical": 0,
+      "serious": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/remediation-readiness",
+      "critical": 0,
+      "serious": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/international-hub",
+      "critical": 0,
+      "serious": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/banking-payments-infrastructure",
+      "critical": 0,
+      "serious": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/regulatory/igaming-licensing",
+      "critical": 0,
+      "serious": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/regulatory/fintech-licensing",
+      "critical": 0,
+      "serious": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/regulatory/market-entry",
+      "critical": 0,
+      "serious": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/compliance/aml-kyc",
+      "critical": 0,
+      "serious": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/compliance/compliance-as-a-service",
+      "critical": 0,
+      "serious": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/compliance/dpo-as-a-service",
+      "critical": 0,
+      "serious": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/compliance/gli-readiness",
+      "critical": 0,
+      "serious": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/compliance/internal-controls",
+      "critical": 0,
+      "serious": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/corporate/company-formation",
+      "critical": 0,
+      "serious": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/corporate/holding-design",
+      "critical": 0,
+      "serious": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/corporate/offshore-structuring",
+      "critical": 0,
+      "serious": 0,
+      "status": "PASS"
+    }
+  ]
+}

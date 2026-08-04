@@ -403,8 +403,10 @@ async function main() {
     canonicals: meta.every((m) => m.canon && m.canon.includes(m.route === "/" ? "" : m.route.replace(/^\//, "") || true) || m.canon.includes(routeSlug(m.route).replace(/-/g, "/")) || m.canon.endsWith(m.route))
       ? "PASS"
       : "FAIL",
+    canonical_meta_robots_clean: meta.every((m) => !/noindex/i.test(m.robots || "")) ? "PASS" : "FAIL",
+    preview_noindex_header: "SEE_CLOSEOUT",
+    // retired misleading label: noindex_absent
     metadata: meta.every((m) => m.title && m.desc && m.og) ? "PASS" : "FAIL",
-    noindex_absent: meta.every((m) => !/noindex/i.test(m.robots || "")) ? "PASS" : "FAIL",
     prohibited_copy: prohibitedHits.length === 0 ? "PASS" : "FAIL",
     overflow: Object.values(overflow).every((o) => !o.overflowX) ? "PASS" : "FAIL",
     axe_critical_serious: critical === 0 && serious === 0 && a11yResults.every((r) => !r.execution_error && !r.unavailable)

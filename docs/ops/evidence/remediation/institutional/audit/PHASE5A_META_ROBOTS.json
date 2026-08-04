@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-08-04T01:05:13.942Z",
+  "check": "canonical_meta_robots_clean",
+  "overall": "PASS",
+  "routes": [
+    {
+      "route": "/about",
+      "status": 200,
+      "meta_robots": "",
+      "accidental_canonical_noindex": false,
+      "result": "PASS"
+    },
+    {
+      "route": "/how-we-engage",
+      "status": 200,
+      "meta_robots": "",
+      "accidental_canonical_noindex": false,
+      "result": "PASS"
+    },
+    {
+      "route": "/contact",
+      "status": 200,
+      "meta_robots": "",
+      "accidental_canonical_noindex": false,
+      "result": "PASS"
+    },
+    {
+      "route": "/diagnostic",
+      "status": 200,
+      "meta_robots": "",
+      "accidental_canonical_noindex": false,
+      "result": "PASS"
+    },
+    {
+      "route": "/partners",
+      "status": 200,
+      "meta_robots": "",
+      "accidental_canonical_noindex": false,
+      "result": "PASS"
+    },
+    {
+      "route": "/careers",
+      "status": 200,
+      "meta_robots": "",
+      "accidental_canonical_noindex": false,
+      "result": "PASS"
+    }
+  ]
+}

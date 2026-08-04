@@ -8,14 +8,16 @@
 
 ## Mandatory routes
 
-| Route | Template family | File | Baseline mapping | Notes |
+| Route | Template family | File | Baseline classification (FINAL) | Notes |
 |---|---|---|---|---|
-| `/about` | Institutional authority | `app/about/page.tsx` | Closest: baseline About if present; else institutional long-form | Uses PageHero (shared; page-only edits) |
-| `/how-we-engage` | Engagement model | `app/how-we-engage/page.tsx` | `NO_DIRECT_BASELINE_ROUTE` → closest engagement / How we work chapter | Uses PageHero + CtaLink |
-| `/contact` | Commercial intake | `app/contact/page.tsx` + `layout.tsx` | Closest: baseline Contact | Custom dark hero; no site form |
-| `/diagnostic` | Structured assessment intake | `app/diagnostic/page.tsx` | `NO_DIRECT_BASELINE_ROUTE` → Remediation / crisis-assessment pattern | WA + mailto; not a lead form |
-| `/partners` | Network positioning | `app/partners/page.tsx` | `NO_DIRECT_BASELINE_ROUTE` → institutional card grid | Classes only; no named partners |
-| `/careers` | Employer / talent EOI | `app/careers/page.tsx` | Closest: baseline Careers if present | Local markup only; mailto EOI |
+| `/about` | Institutional authority | `app/about/page.tsx` | `DIRECT_BASELINE_ROUTE` | Uses PageHero (shared; page-only edits) |
+| `/how-we-engage` | Engagement model | `app/how-we-engage/page.tsx` | `DIRECT_BASELINE_ROUTE` | Uses PageHero + CtaLink |
+| `/contact` | Commercial intake | `app/contact/page.tsx` | `DIRECT_BASELINE_ROUTE` | Custom dark hero; no site form; layout.tsx removed |
+| `/diagnostic` | Structured assessment intake | `app/diagnostic/page.tsx` | `DIRECT_BASELINE_ROUTE` | WA + mailto; not a lead form |
+| `/partners` | Network positioning | `app/partners/page.tsx` | `DIRECT_BASELINE_ROUTE` | Classes only; no named partners |
+| `/careers` | Employer / talent EOI | `app/careers/page.tsx` | `DIRECT_BASELINE_ROUTE` | Local markup only; mailto EOI |
+
+> Preliminary inventory rows that previously said `NO_DIRECT_BASELINE_ROUTE` for How We Engage / Diagnostic / Partners are **superseded**. Canonical: `shared/PHASE5A_BASELINE_ROUTE_MAPPING.md`.
 
 ## Aliases / redirects (derived)
 

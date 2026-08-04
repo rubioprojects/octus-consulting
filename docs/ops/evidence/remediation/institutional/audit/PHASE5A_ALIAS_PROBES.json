@@ -1,0 +1,105 @@
+{
+  "generated_at": "2026-08-04T01:05:13.942Z",
+  "overall": "PASS",
+  "probes": [
+    {
+      "probe": "/about-us",
+      "status": 404,
+      "location": "",
+      "x_robots_tag": "noindex",
+      "redirects_to_phase5a_route": false,
+      "result": "NO_ALIAS_AS_EXPECTED",
+      "expect": "no_alias_or_404_or_non_redirect_to_about"
+    },
+    {
+      "probe": "/about-octus",
+      "status": 404,
+      "location": "",
+      "x_robots_tag": "noindex",
+      "redirects_to_phase5a_route": false,
+      "result": "NO_ALIAS_AS_EXPECTED",
+      "expect": "no_alias"
+    },
+    {
+      "probe": "/engagement",
+      "status": 404,
+      "location": "",
+      "x_robots_tag": "noindex",
+      "redirects_to_phase5a_route": false,
+      "result": "NO_ALIAS_AS_EXPECTED",
+      "expect": "no_alias"
+    },
+    {
+      "probe": "/how-we-work",
+      "status": 404,
+      "location": "",
+      "x_robots_tag": "noindex",
+      "redirects_to_phase5a_route": false,
+      "result": "NO_ALIAS_AS_EXPECTED",
+      "expect": "no_alias_to_how_we_engage"
+    },
+    {
+      "probe": "/contact-us",
+      "status": 404,
+      "location": "",
+      "x_robots_tag": "noindex",
+      "redirects_to_phase5a_route": false,
+      "result": "NO_ALIAS_AS_EXPECTED",
+      "expect": "no_alias"
+    },
+    {
+      "probe": "/get-in-touch",
+      "status": 404,
+      "location": "",
+      "x_robots_tag": "noindex",
+      "redirects_to_phase5a_route": false,
+      "result": "NO_ALIAS_AS_EXPECTED",
+      "expect": "no_alias"
+    },
+    {
+      "probe": "/diagnostics",
+      "status": 404,
+      "location": "",
+      "x_robots_tag": "noindex",
+      "redirects_to_phase5a_route": false,
+      "result": "NO_ALIAS_AS_EXPECTED",
+      "expect": "no_alias"
+    },
+    {
+      "probe": "/assessment",
+      "status": 404,
+      "location": "",
+      "x_robots_tag": "noindex",
+      "redirects_to_phase5a_route": false,
+      "result": "NO_ALIAS_AS_EXPECTED",
+      "expect": "no_alias"
+    },
+    {
+      "probe": "/partners-network",
+      "status": 404,
+      "location": "",
+      "x_robots_tag": "noindex",
+      "redirects_to_phase5a_route": false,
+      "result": "NO_ALIAS_AS_EXPECTED",
+      "expect": "no_alias"
+    },
+    {
+      "probe": "/jobs",
+      "status": 404,
+      "location": "",
+      "x_robots_tag": "noindex",
+      "redirects_to_phase5a_route": false,
+      "result": "NO_ALIAS_AS_EXPECTED",
+      "expect": "no_alias"
+    },
+    {
+      "probe": "/careers-octus",
+      "status": 404,
+      "location": "",
+      "x_robots_tag": "noindex",
+      "redirects_to_phase5a_route": false,
+      "result": "NO_ALIAS_AS_EXPECTED",
+      "expect": "no_alias"
+    }
+  ]
+}

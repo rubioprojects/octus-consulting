@@ -1260,6 +1260,36 @@ async function main() {
   console.log("Catalogue integrity (five independent sources)...");
   const catalogue = catalogueIntegrity();
 
+  if (process.env.PHASE4_CATALOGUE_ONLY === "1") {
+    fs.writeFileSync(
+      path.join(AUDIT, "PHASE4_CATALOGUE_INTEGRITY.json"),
+      JSON.stringify(
+        {
+          generated_at: new Date().toISOString(),
+          bound_preview: PREVIEW,
+          bound_application_sha: APPLICATION_SHA,
+          bound_deployment_id: DEPLOYMENT_ID,
+          catalogue,
+        },
+        null,
+        2
+      ) + "\n"
+    );
+    console.log(
+      JSON.stringify(
+        {
+          mode: "catalogue_only",
+          status: catalogue.status,
+          services: catalogue.unique_services ?? catalogue.expected?.services,
+          summary: catalogue.summary || catalogue,
+        },
+        null,
+        2
+      )
+    );
+    process.exit(catalogue.status === "PASS" ? 0 : 1);
+  }
+
   console.log("Alias audit (strict 301/308)...");
   const aliasResults = [];
   for (const spec of ALIAS_CHECKS) {

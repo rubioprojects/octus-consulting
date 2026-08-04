@@ -1,0 +1,96 @@
+{
+  "generated_at": "2026-08-04T01:05:13.942Z",
+  "overall": "PASS",
+  "links": [
+    {
+      "route": "/about",
+      "href": "/how-we-engage",
+      "label": "How we engage →",
+      "final_status": 200,
+      "final_url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/how-we-engage",
+      "redirect_hops": 0,
+      "result": "PASS"
+    },
+    {
+      "route": "/how-we-engage",
+      "href": "/solutions/remediation-readiness",
+      "label": "Remediation →",
+      "final_status": 200,
+      "final_url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/solutions/remediation-readiness",
+      "redirect_hops": 0,
+      "result": "PASS"
+    },
+    {
+      "route": "/how-we-engage",
+      "href": "/partners",
+      "label": "Partner with Octus →",
+      "final_status": 200,
+      "final_url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/partners",
+      "redirect_hops": 0,
+      "result": "PASS"
+    },
+    {
+      "route": "/contact",
+      "href": "/diagnostic",
+      "label": "Assess your situation →",
+      "final_status": 200,
+      "final_url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/diagnostic",
+      "redirect_hops": 0,
+      "result": "PASS"
+    },
+    {
+      "route": "/contact",
+      "href": "/about",
+      "label": "About Octus →",
+      "final_status": 200,
+      "final_url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/about",
+      "redirect_hops": 0,
+      "result": "PASS"
+    },
+    {
+      "route": "/contact",
+      "href": "/how-we-engage",
+      "label": "How we engage →",
+      "final_status": 200,
+      "final_url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/how-we-engage",
+      "redirect_hops": 0,
+      "result": "PASS"
+    },
+    {
+      "route": "/contact",
+      "href": "/diagnostic",
+      "label": "Diagnostic assessment →",
+      "final_status": 200,
+      "final_url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/diagnostic",
+      "redirect_hops": 0,
+      "result": "PASS"
+    },
+    {
+      "route": "/diagnostic",
+      "href": "/solutions/remediation-readiness",
+      "label": "Remediation & Readiness",
+      "final_status": 200,
+      "final_url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/solutions/remediation-readiness",
+      "redirect_hops": 0,
+      "result": "PASS"
+    },
+    {
+      "route": "/diagnostic",
+      "href": "/solutions/remediation-readiness",
+      "label": "Operational Remediation & Readiness",
+      "final_status": 200,
+      "final_url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/solutions/remediation-readiness",
+      "redirect_hops": 0,
+      "result": "PASS"
+    },
+    {
+      "route": "/partners",
+      "href": "/how-we-engage",
+      "label": "How we engage →",
+      "final_status": 200,
+      "final_url": "https://octus-consulting-2dflp4hpy-axle1.vercel.app/how-we-engage",
+      "redirect_hops": 0,
+      "result": "PASS"
+    }
+  ]
+}

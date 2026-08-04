@@ -1,0 +1,126 @@
+{
+  "generated_at": "2026-08-04T01:05:13.942Z",
+  "destinations": [
+    {
+      "route": "/about",
+      "type": "whatsapp",
+      "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+      "label": "Discuss your operation →"
+    },
+    {
+      "route": "/about",
+      "type": "whatsapp",
+      "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+      "label": "Continue on WhatsApp →"
+    },
+    {
+      "route": "/about",
+      "type": "mailto",
+      "href": "mailto:info@octusconsulting.com",
+      "label": "Email Octus →"
+    },
+    {
+      "route": "/how-we-engage",
+      "type": "whatsapp",
+      "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+      "label": "Discuss your operation →"
+    },
+    {
+      "route": "/how-we-engage",
+      "type": "whatsapp",
+      "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20assess%20my%20regulated%20operation%20and%20understand%20how%20you%20can%20help.",
+      "label": "Assess your situation →"
+    },
+    {
+      "route": "/contact",
+      "type": "whatsapp",
+      "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+      "label": "Discuss your operation →"
+    },
+    {
+      "route": "/contact",
+      "type": "mailto",
+      "href": "mailto:info@octusconsulting.com",
+      "label": "Email Octus →"
+    },
+    {
+      "route": "/contact",
+      "type": "mailto",
+      "href": "mailto:info@octusconsulting.com",
+      "label": "info@octusconsulting.com"
+    },
+    {
+      "route": "/contact",
+      "type": "whatsapp",
+      "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+      "label": "Continue on WhatsApp →"
+    },
+    {
+      "route": "/contact",
+      "type": "mailto",
+      "href": "mailto:info@octusconsulting.com",
+      "label": "Write to info@octusconsulting.com"
+    },
+    {
+      "route": "/contact",
+      "type": "whatsapp",
+      "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20assess%20my%20regulated%20operation%20and%20understand%20how%20you%20can%20help.",
+      "label": "WhatsApp assessment →"
+    },
+    {
+      "route": "/contact",
+      "type": "whatsapp",
+      "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+      "label": "WhatsApp →"
+    },
+    {
+      "route": "/contact",
+      "type": "mailto",
+      "href": "mailto:info@octusconsulting.com",
+      "label": "Write by email →"
+    },
+    {
+      "route": "/diagnostic",
+      "type": "whatsapp",
+      "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20assess%20my%20regulated%20operation%20and%20understand%20how%20you%20can%20help.",
+      "label": "Assess your situation →"
+    },
+    {
+      "route": "/diagnostic",
+      "type": "whatsapp",
+      "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+      "label": "Discuss your operation →"
+    },
+    {
+      "route": "/diagnostic",
+      "type": "mailto",
+      "href": "mailto:info@octusconsulting.com",
+      "label": "info@octusconsulting.com"
+    },
+    {
+      "route": "/partners",
+      "type": "whatsapp",
+      "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team.%20I%20would%20like%20to%20discuss%20a%20potential%20partnership%20or%20collaboration%20on%20regulated%20operations.",
+      "label": "Discuss partnership →"
+    },
+    {
+      "route": "/partners",
+      "type": "whatsapp",
+      "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+      "label": "Discuss your operation →"
+    },
+    {
+      "route": "/partners",
+      "type": "whatsapp",
+      "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team.%20I%20would%20like%20to%20discuss%20a%20potential%20partnership%20or%20collaboration%20on%20regulated%20operations.",
+      "label": "Continue partnership discussion →"
+    },
+    {
+      "route": "/careers",
+      "type": "mailto",
+      "href": "mailto:talentos@octusconsulting.com?subject=Octus Careers",
+      "label": "Send your profile →"
+    }
+  ],
+  "note": "Recorded without opening client applications"
+}
