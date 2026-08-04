@@ -1,0 +1,13 @@
+{
+  "phase": "6",
+  "immutable_preview_url": "https://octus-consulting-3lhtpxjer-axle1.vercel.app",
+  "deployment_id": "dpl_GothRo9ojcDZZH9SiU46xSFVRaS7",
+  "application_code_sha": "84ecb6aff383060088a6185384ff5b9f5ba307e9",
+  "deployed_git_sha": "84ecb6aff383060088a6185384ff5b9f5ba307e9",
+  "baseline_url": "https://octus-consulting-9q798dbg2-axle1.vercel.app",
+  "baseline_deployment_id": "dpl_437tawkoMDv7sqxW6NzPzTegj1Lq",
+  "before_preview_url": "https://octus-consulting-84n1zaqys-axle1.vercel.app",
+  "before_commit": "c467ccf0bfa3a8a2df1ac7a58c7b29c8c169d62b",
+  "before_deployment_id": "dpl_8q5VbqyqV5vZxazerUKHco7VFCiW",
+  "phase6_start": "b617338510c030dccc6eac0f03d01e4042ca5532"
+}
