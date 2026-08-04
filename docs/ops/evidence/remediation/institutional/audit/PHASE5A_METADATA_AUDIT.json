@@ -1,0 +1,197 @@
+{
+  "generated_at": "2026-08-04T00:41:04.863Z",
+  "routes": [
+    {
+      "route": "/about",
+      "canon": "https://octusconsulting.com/about",
+      "title": "About | Octus Consulting",
+      "desc": "Octus structures, coordinates and operates the work behind regulated businesses across regulatory, compliance, banking and corporate layers.",
+      "og": "About",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Continue on WhatsApp →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Email Octus →",
+          "href": "mailto:info@octusconsulting.com"
+        },
+        {
+          "text": "How we engage →",
+          "href": "/how-we-engage"
+        }
+      ],
+      "http_status": 200
+    },
+    {
+      "route": "/how-we-engage",
+      "canon": "https://octusconsulting.com/how-we-engage",
+      "title": "How We Engage | Octus Consulting",
+      "desc": "Lead Contractor programme and engagement models for regulated operations: accountability, coordination and execution.",
+      "og": "How We Engage",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Assess your situation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20assess%20my%20regulated%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Remediation →",
+          "href": "/solutions/remediation-readiness"
+        },
+        {
+          "text": "Partner with Octus →",
+          "href": "/partners"
+        }
+      ],
+      "http_status": 200
+    },
+    {
+      "route": "/contact",
+      "canon": "https://octusconsulting.com/contact",
+      "title": "Contact | Octus Consulting",
+      "desc": "Start a conversation with Octus about licensing, compliance, banking, legal and corporate workstreams via WhatsApp or email.",
+      "og": "Contact",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Email Octus →",
+          "href": "mailto:info@octusconsulting.com"
+        },
+        {
+          "text": "info@octusconsulting.com",
+          "href": "mailto:info@octusconsulting.com"
+        },
+        {
+          "text": "Continue on WhatsApp →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Write to info@octusconsulting.com",
+          "href": "mailto:info@octusconsulting.com"
+        },
+        {
+          "text": "Assess your situation →",
+          "href": "/diagnostic"
+        },
+        {
+          "text": "WhatsApp assessment →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20assess%20my%20regulated%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "WhatsApp →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Write by email →",
+          "href": "mailto:info@octusconsulting.com"
+        },
+        {
+          "text": "About Octus →",
+          "href": "/about"
+        },
+        {
+          "text": "How we engage →",
+          "href": "/how-we-engage"
+        },
+        {
+          "text": "Diagnostic assessment →",
+          "href": "/diagnostic"
+        }
+      ],
+      "http_status": 200
+    },
+    {
+      "route": "/diagnostic",
+      "canon": "https://octusconsulting.com/diagnostic",
+      "title": "Diagnostic assessment | Octus Consulting",
+      "desc": "Start with a diagnostic assessment for licensing delays, banking rejection, compliance gaps, audit readiness and blocked market entry.",
+      "og": "Diagnostic assessment",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "Remediation & Readiness",
+          "href": "/solutions/remediation-readiness"
+        },
+        {
+          "text": "Assess your situation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20assess%20my%20regulated%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Operational Remediation & Readiness",
+          "href": "/solutions/remediation-readiness"
+        },
+        {
+          "text": "info@octusconsulting.com",
+          "href": "mailto:info@octusconsulting.com"
+        }
+      ],
+      "http_status": 200
+    },
+    {
+      "route": "/partners",
+      "canon": "https://octusconsulting.com/partners",
+      "title": "International Partners | Octus Consulting",
+      "desc": "Collaborate with Octus as lead contractor for regulated operations. CSPs, counsel, advisors and specialists.",
+      "og": "International Partners",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "Discuss partnership →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team.%20I%20would%20like%20to%20discuss%20a%20potential%20partnership%20or%20collaboration%20on%20regulated%20operations."
+        },
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Continue partnership discussion →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team.%20I%20would%20like%20to%20discuss%20a%20potential%20partnership%20or%20collaboration%20on%20regulated%20operations."
+        },
+        {
+          "text": "How we engage →",
+          "href": "/how-we-engage"
+        }
+      ],
+      "http_status": 200
+    },
+    {
+      "route": "/careers",
+      "canon": "https://octusconsulting.com/careers",
+      "title": "Careers | Octus Consulting",
+      "desc": "Join Octus. We work at the intersection of regulatory structuring, compliance operations, legal architecture and corporate design. Built for people with operational depth.",
+      "og": "Careers",
+      "tw": "summary_large_image",
+      "robots": "",
+      "links": [
+        {
+          "text": "Send your profile →",
+          "href": "mailto:talentos@octusconsulting.com?subject=Octus Careers"
+        }
+      ],
+      "http_status": 200
+    }
+  ]
+}

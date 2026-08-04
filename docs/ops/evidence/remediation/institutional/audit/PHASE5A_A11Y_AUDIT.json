@@ -1,0 +1,318 @@
+{
+  "generated_at": "2026-08-04T00:41:04.863Z",
+  "axe_core_version": "4.12.1",
+  "results": [
+    {
+      "route": "/about",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 2,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/about",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/how-we-engage",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 2,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/how-we-engage",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/contact",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 2,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/contact",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/diagnostic",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 2,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/diagnostic",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/partners",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 2,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/partners",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/careers",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 2,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/careers",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    }
+  ]
+}
