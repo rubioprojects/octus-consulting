@@ -733,7 +733,6 @@ This development has significant implications for how licensed operators structu
 The extension of responsibility to advertising agents and influencers: already signalled in PLP 128/2025's joint liability provisions: makes this a strategic compliance area, not merely an advertising management question.`,
   },
   {
-  {
     slug: "brazil-b2b-registration-requirement-betting-igaming",
     title: "Brazil B2B Provider Registration: Consultation Status and What Remains Unconfirmed",
     date: "2025-01-29",
