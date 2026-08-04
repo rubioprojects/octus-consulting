@@ -51,7 +51,7 @@ export default function HowWeEngagePage() {
           <h2 className="heading-section mb-4 max-w-2xl">How engagement scales</h2>
           <p className="body-text mb-12 max-w-2xl text-muted-foreground">
             These are operating models for coordination and accountability. They are not packaged
-            products and do not guarantee regulatory, banking or audit outcomes.
+            products and do not promise regulatory, banking or audit outcomes.
           </p>
           <div className="grid gap-6 md:grid-cols-2">
             {ENGAGEMENT_MODELS.map((m) => (
