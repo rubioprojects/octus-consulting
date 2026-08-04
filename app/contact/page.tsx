@@ -146,7 +146,7 @@ export default function ContactPage() {
                 href={MAILTO_DISCUSS}
                 className="font-sans text-sm font-medium text-primary no-underline hover:underline"
               >
-                {OCTUS_EMAIL}
+                {CTA_EMAIL_LABEL}
               </a>
             </div>
           </article>
