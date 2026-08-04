@@ -1,0 +1,589 @@
+{
+  "phase": "insights-launch-safety",
+  "preview": "https://octus-consulting-dx4biu3kx-axle1.vercel.app",
+  "application_sha": "f4fb171eaf01c497796a1acaea253a1bd30f4d4d",
+  "deployment_id": "dpl_4HGy36KkLKdC3icNSgh91p3x663L",
+  "axe_core": "4.12.1",
+  "captured_at": "2026-08-04T18:28:25.301Z",
+  "screenshots": [
+    {
+      "route": "/",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/desktop/home__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/markets",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/desktop/industries__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/markets/igaming",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/desktop/industry-igaming__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/markets/technology",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/desktop/industry-technology__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/markets/forex",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/desktop/industry-forex__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/how-we-engage",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/desktop/how-we-engage__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/insights",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/desktop/insights__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/insights/mica-what-operators-need-to-do",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/desktop/insight-mica__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/insights/senate-approves-plp-128-2025-tightens-fiscal-policy-bets-fintechs",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/desktop/insight-lc224__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/insights/coaf-crisis-aml-obligations-online-gaming-operators",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/desktop/insight-coaf__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/insights/brazil-b2b-registration-requirement-betting-igaming",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/desktop/insight-b2b__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/insights/curacao-reform-what-changes",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/desktop/insight-curacao__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/about",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/desktop/about__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/team",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/desktop/team__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/solutions",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/desktop/services__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/international-hub",
+      "viewport": "desktop",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/desktop/service-hub__desktop__full.png",
+      "status": 200
+    },
+    {
+      "route": "/",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/mobile/home__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/markets",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/mobile/industries__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/markets/igaming",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/mobile/industry-igaming__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/markets/technology",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/mobile/industry-technology__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/markets/forex",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/mobile/industry-forex__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/how-we-engage",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/mobile/how-we-engage__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/insights",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/mobile/insights__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/insights/mica-what-operators-need-to-do",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/mobile/insight-mica__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/insights/senate-approves-plp-128-2025-tightens-fiscal-policy-bets-fintechs",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/mobile/insight-lc224__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/insights/coaf-crisis-aml-obligations-online-gaming-operators",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/mobile/insight-coaf__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/insights/brazil-b2b-registration-requirement-betting-igaming",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/mobile/insight-b2b__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/insights/curacao-reform-what-changes",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/mobile/insight-curacao__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/about",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/mobile/about__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/team",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/mobile/team__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/solutions",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/mobile/services__mobile__full.png",
+      "status": 200
+    },
+    {
+      "route": "/international-hub",
+      "viewport": "mobile",
+      "file": "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/remediation/insights-launch-safety/mobile/service-hub__mobile__full.png",
+      "status": 200
+    }
+  ],
+  "axe": {
+    "critical": 0,
+    "serious": 0,
+    "byRoute": [
+      {
+        "route": "/",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 2
+      },
+      {
+        "route": "/markets",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 2
+      },
+      {
+        "route": "/markets/igaming",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 2
+      },
+      {
+        "route": "/markets/technology",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 2
+      },
+      {
+        "route": "/markets/forex",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 2
+      },
+      {
+        "route": "/how-we-engage",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 2
+      },
+      {
+        "route": "/insights",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 2
+      },
+      {
+        "route": "/insights/mica-what-operators-need-to-do",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 1
+      },
+      {
+        "route": "/insights/senate-approves-plp-128-2025-tightens-fiscal-policy-bets-fintechs",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 1
+      },
+      {
+        "route": "/insights/coaf-crisis-aml-obligations-online-gaming-operators",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 1
+      },
+      {
+        "route": "/insights/brazil-b2b-registration-requirement-betting-igaming",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 1
+      },
+      {
+        "route": "/insights/curacao-reform-what-changes",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 1
+      },
+      {
+        "route": "/about",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 2
+      },
+      {
+        "route": "/team",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 2
+      },
+      {
+        "route": "/solutions",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 2
+      },
+      {
+        "route": "/international-hub",
+        "critical": 0,
+        "serious": 0,
+        "incomplete": 2
+      }
+    ]
+  },
+  "overflow": [],
+  "dash": {
+    "em": 0,
+    "en": 0,
+    "byRoute": [
+      {
+        "route": "/",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/markets",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/markets/igaming",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/markets/technology",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/markets/forex",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/how-we-engage",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/insights",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/insights/mica-what-operators-need-to-do",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/insights/senate-approves-plp-128-2025-tightens-fiscal-policy-bets-fintechs",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/insights/coaf-crisis-aml-obligations-online-gaming-operators",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/insights/brazil-b2b-registration-requirement-betting-igaming",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/insights/curacao-reform-what-changes",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/about",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/team",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/solutions",
+        "em": 0,
+        "en": 0
+      },
+      {
+        "route": "/international-hub",
+        "em": 0,
+        "en": 0
+      }
+    ]
+  },
+  "prohibited": [],
+  "nav": {
+    "desktop_labels": [
+      "Services",
+      "Industries",
+      "How we engage",
+      "Insights",
+      "About",
+      "Discuss your operation →"
+    ]
+  },
+  "metadata": [
+    {
+      "route": "/",
+      "title": "Octus Consulting | Regulatory, Compliance and International Structuring",
+      "description": "Octus structures, coordinates and operates the work behind regulated businesses across licensing, compliance, corporate structure, remediation and specialist networks.",
+      "ogTitle": "Octus Consulting | Regulatory, Compliance and International Structuring",
+      "twitterTitle": "Octus Consulting | Regulatory, Compliance and International Structuring",
+      "canonical": "https://octusconsulting.com/",
+      "robots": ""
+    },
+    {
+      "route": "/markets",
+      "title": "Industries: regulated sectors we structure | Octus Consulting",
+      "description": "Six industries, one structural discipline: iGaming, fintech and payments, digital assets, technology and B2B infrastructure, forex and regulated financial services, and high-risk cross-border operations.",
+      "ogTitle": "Industries: regulated sectors we structure",
+      "twitterTitle": "Industries: regulated sectors we structure",
+      "canonical": "https://octusconsulting.com/markets",
+      "robots": ""
+    },
+    {
+      "route": "/markets/igaming",
+      "title": "iGaming Licensing & Regulatory Structuring | Octus | Octus Consulting",
+      "description": "End-to-end regulatory structuring, licensing execution and banking coordination for iGaming and betting operators across jurisdictions.",
+      "ogTitle": "iGaming Licensing & Regulatory Structuring | Octus",
+      "twitterTitle": "iGaming Licensing & Regulatory Structuring | Octus",
+      "canonical": "https://octusconsulting.com/markets/igaming",
+      "robots": ""
+    },
+    {
+      "route": "/markets/technology",
+      "title": "Technology & B2B Infrastructure | Octus Consulting",
+      "description": "Platforms, software suppliers and infrastructure providers serving regulated operators carry regulatory exposure through their clients. Octus structures ownership, contracting, compliance and cross-border operations.",
+      "ogTitle": "Technology & B2B Infrastructure",
+      "twitterTitle": "Technology & B2B Infrastructure",
+      "canonical": "https://octusconsulting.com/markets/technology",
+      "robots": ""
+    },
+    {
+      "route": "/markets/forex",
+      "title": "Forex & Regulated Financial Services | Octus Consulting",
+      "description": "Brokerage, dealing and investment service models operate under supervision. Octus structures licensing pathways, conduct frameworks, banking readiness and cross-border operations for regulated financial services.",
+      "ogTitle": "Forex & Regulated Financial Services",
+      "twitterTitle": "Forex & Regulated Financial Services",
+      "canonical": "https://octusconsulting.com/markets/forex",
+      "robots": ""
+    },
+    {
+      "route": "/how-we-engage",
+      "title": "How We Engage | Octus Consulting",
+      "description": "Lead Contractor programme and engagement models for regulated operations: coordination and execution across jurisdictions.",
+      "ogTitle": "How We Engage",
+      "twitterTitle": "How We Engage",
+      "canonical": "https://octusconsulting.com/how-we-engage",
+      "robots": ""
+    },
+    {
+      "route": "/insights",
+      "title": "Insights | Octus Consulting",
+      "description": "One destination for Octus analysis: regulatory developments, market movement and operational perspectives for regulated operations, with webinars and invited expert contributions published here as they are scheduled.",
+      "ogTitle": "Insights",
+      "twitterTitle": "Insights",
+      "canonical": "https://octusconsulting.com/insights",
+      "robots": ""
+    },
+    {
+      "route": "/insights/mica-what-operators-need-to-do",
+      "title": "MiCA: What Crypto Operators Actually Need to Do | Octus Consulting | Octus Consulting | Octus Consulting",
+      "description": "Review date 4 August 2026. The outer limit of the MiCA Article 143 transitional regime fell on 1 July 2026 and has passed. That regime was optional for Member States and never applied identically across the EU, so exposure now has to be assessed by activity, authorisation status and jurisdiction.",
+      "ogTitle": "MiCA: What Crypto Operators Actually Need to Do | Octus Consulting | Octus Consulting",
+      "twitterTitle": "MiCA: What Crypto Operators Actually Need to Do | Octus Consulting | Octus Consulting",
+      "canonical": "https://octusconsulting.com/insights/mica-what-operators-need-to-do",
+      "robots": ""
+    },
+    {
+      "route": "/insights/senate-approves-plp-128-2025-tightens-fiscal-policy-bets-fintechs",
+      "title": "PLP 128/2025 Sanctioned as Complementary Law 224/2025: Fiscal Tightening and Higher Taxation on Bets, Fintechs and JCP | Octus Consulting | Octus Consulting",
+      "description": "Complementary Bill 128/2025 was approved by the Senate by 62 to 6 votes and sanctioned as Complementary Law No. 224 of 26 December 2025. It raises the fixed-odds betting rate to 13% in 2026, 14% in 2027 and 15% from 2028, alongside higher CSLL for parts of the financial sector and joint liability provisions reaching intermediaries of unauthorised operators.",
+      "ogTitle": "PLP 128/2025 Sanctioned as Complementary Law 224/2025: Fiscal Tightening and Higher Taxation on Bets, Fintechs and JCP | Octus Consulting",
+      "twitterTitle": "PLP 128/2025 Sanctioned as Complementary Law 224/2025: Fiscal Tightening and Higher Taxation on Bets, Fintechs and JCP | Octus Consulting",
+      "canonical": "https://octusconsulting.com/insights/senate-approves-plp-128-2025-tightens-fiscal-policy-bets-fintechs",
+      "robots": ""
+    },
+    {
+      "route": "/insights/coaf-crisis-aml-obligations-online-gaming-operators",
+      "title": "The COAF Institutional Challenges and AML Obligations for Online Gaming Operators | Octus Consulting | Octus Consulting",
+      "description": "An analysis of the institutional pressures on Brazil's financial intelligence unit, the Conselho de Controle de Atividades Financeiras (COAF), and the practical steps gaming operators should take to maintain robust anti-money laundering compliance regardless of those pressures.",
+      "ogTitle": "The COAF Institutional Challenges and AML Obligations for Online Gaming Operators | Octus Consulting",
+      "twitterTitle": "The COAF Institutional Challenges and AML Obligations for Online Gaming Operators | Octus Consulting",
+      "canonical": "https://octusconsulting.com/insights/coaf-crisis-aml-obligations-online-gaming-operators",
+      "robots": ""
+    },
+    {
+      "route": "/insights/brazil-b2b-registration-requirement-betting-igaming",
+      "title": "Brazil to Implement Registration Requirement for B2B Providers in the Betting and iGaming Market | Octus Consulting | Octus Consulting",
+      "description": "Brazil's SPA Secretary signalled at ICE Barcelona in January 2025 that a mandatory registration mechanism for B2B providers was intended. The measure has since moved through the regulatory agenda to a public consultation on a draft ordinance that closed on 23 March 2026. As at the 4 August 2026 review of this article, publication of a final ordinance is not confirmed here.",
+      "ogTitle": "Brazil to Implement Registration Requirement for B2B Providers in the Betting and iGaming Market | Octus Consulting",
+      "twitterTitle": "Brazil to Implement Registration Requirement for B2B Providers in the Betting and iGaming Market | Octus Consulting",
+      "canonical": "https://octusconsulting.com/insights/brazil-b2b-registration-requirement-betting-igaming",
+      "robots": ""
+    },
+    {
+      "route": "/insights/curacao-reform-what-changes",
+      "title": "Curaçao Reform: What Actually Changes for Operators | Octus Consulting | Octus Consulting | Octus Consulting",
+      "description": "Curaçao's move from the master and sublicence model to direct licensing under the LOK and the Curaçao Gaming Authority is now the operating framework. Transitional arrangements were reported to have ended in October 2025. This is what direct licensing means for structure, compliance and banking.",
+      "ogTitle": "Curaçao Reform: What Actually Changes for Operators | Octus Consulting | Octus Consulting",
+      "twitterTitle": "Curaçao Reform: What Actually Changes for Operators | Octus Consulting | Octus Consulting",
+      "canonical": "https://octusconsulting.com/insights/curacao-reform-what-changes",
+      "robots": ""
+    },
+    {
+      "route": "/about",
+      "title": "About | Octus Consulting",
+      "description": "Octus structures, coordinates and operates the work behind regulated businesses across regulatory, compliance, banking and corporate layers.",
+      "ogTitle": "About",
+      "twitterTitle": "About",
+      "canonical": "https://octusconsulting.com/about",
+      "robots": ""
+    },
+    {
+      "route": "/team",
+      "title": "Team | Octus Consulting",
+      "description": "Octus leadership and core specialists across regulatory, compliance, legal, corporate and international workstreams.",
+      "ogTitle": "Team",
+      "twitterTitle": "Team",
+      "canonical": "https://octusconsulting.com/team",
+      "robots": ""
+    },
+    {
+      "route": "/solutions",
+      "title": "Services. Execution for regulated operations | Octus Consulting",
+      "description": "Seven coordinated service areas for regulated operations: Regulatory Structuring, Compliance & Risk, Legal & Structural Architecture, Corporate Structuring, Private Clients, Remediation & Readiness, and International Hub.",
+      "ogTitle": "Services. Execution for regulated operations",
+      "twitterTitle": "Services. Execution for regulated operations",
+      "canonical": "https://octusconsulting.com/solutions",
+      "robots": ""
+    },
+    {
+      "route": "/international-hub",
+      "title": "International Hub | Octus Consulting",
+      "description": "Banks, PSPs, CSPs, labs, counsel and specialists, coordinated as one network.",
+      "ogTitle": "International Hub",
+      "twitterTitle": "International Hub",
+      "canonical": "https://octusconsulting.com/international-hub",
+      "robots": ""
+    }
+  ],
+  "holdChecks": [
+    {
+      "slug": "stf-suspends-blocking-of-bolsa-familia-bpc-betting-accounts",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    },
+    {
+      "slug": "intellectual-property-igaming-trademark-registration-brazil",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    },
+    {
+      "slug": "why-your-international-licence-may-not-protect-you-in-brazil",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    },
+    {
+      "slug": "risk-management-software-igaming-regulatory-compliance",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    },
+    {
+      "slug": "customised-studies-international-expansion-brazil",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    },
+    {
+      "slug": "senate-commission-approves-casino-bingo-gaming-bill-brazil",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    }
+  ],
+  "sitemapArticleCount": 27,
+  "insights_index_status": 200,
+  "insights_card_count": 27
+}
