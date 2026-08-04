@@ -1,0 +1,531 @@
+{
+  "generated_at": "2026-08-04T02:32:45.802Z",
+  "routes": [
+    {
+      "route": "/markets",
+      "links": [
+        {
+          "text": "iGaming & BettingLicensing preparation, compliance and banking readiness for onl",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Fintech & PaymentsRegulatory structuring for payment institutions, EMIs and fint",
+          "href": "/markets/fintech"
+        },
+        {
+          "text": "Crypto & Digital AssetsVASP registration, regulatory positioning and compliance ",
+          "href": "/markets/crypto"
+        },
+        {
+          "text": "High-Risk Digital BusinessesStructural and compliance solutions for businesses t",
+          "href": "/markets/high-risk"
+        },
+        {
+          "text": "JurisdictionsRegulatory locations we work across.Explore →",
+          "href": "/jurisdictions"
+        },
+        {
+          "text": "SolutionsSeven peer service areas.Explore →",
+          "href": "/solutions"
+        },
+        {
+          "text": "ContactNon-WhatsApp intake alternative.Explore →",
+          "href": "/contact"
+        },
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Diagnostic",
+          "href": "/diagnostic"
+        }
+      ],
+      "duplicate_labels": []
+    },
+    {
+      "route": "/markets/fintech",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "See our solutions →",
+          "href": "/solutions"
+        },
+        {
+          "text": "iGaming OperationsAdjacent regulated-sector structuring.Learn more →",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "AML & KYC FrameworkCompliance that holds under scrutiny.Learn more →",
+          "href": "/solutions/compliance/aml-kyc"
+        },
+        {
+          "text": "Corporate StructuringEntity design for regulated operations.Learn more →",
+          "href": "/solutions/corporate-structuring"
+        },
+        {
+          "text": "Continue on WhatsApp →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Open Diagnostic",
+          "href": "/diagnostic"
+        }
+      ],
+      "duplicate_labels": []
+    },
+    {
+      "route": "/markets/igaming",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "See full licensing process →",
+          "href": "/solutions/regulatory/igaming-licensing"
+        },
+        {
+          "text": "Curaçao jurisdiction →",
+          "href": "/jurisdictions/curacao"
+        },
+        {
+          "text": "Curaçao LicensingHow we structure iGaming operations in Curaçao.Learn more →",
+          "href": "/jurisdictions/curacao"
+        },
+        {
+          "text": "Full Licensing ProcessEnd-to-end licensing execution across jurisdictions.Learn ",
+          "href": "/solutions/regulatory/igaming-licensing"
+        },
+        {
+          "text": "Compliance & RiskThe compliance framework that supports your license.Learn more ",
+          "href": "/solutions/compliance-risk"
+        },
+        {
+          "text": "Continue on WhatsApp →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        }
+      ],
+      "duplicate_labels": []
+    },
+    {
+      "route": "/markets/crypto",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Compliance-as-a-ServiceContinuous compliance for regulated operationsLearn more ",
+          "href": "/solutions/compliance/compliance-as-a-service"
+        },
+        {
+          "text": "AML/KYCCompliance architecture for licensing and banking accessLearn more →",
+          "href": "/solutions/compliance/aml-kyc"
+        },
+        {
+          "text": "Licensing StrategyThe same structural logic, proven in regulated sectorsLearn mo",
+          "href": "/solutions/regulatory/igaming-licensing"
+        },
+        {
+          "text": "Company FormationCorporate structuring across jurisdictionsLearn more →",
+          "href": "/solutions/corporate/company-formation"
+        },
+        {
+          "text": "High-Risk OperationsWhen the classification creates structural consequencesLearn",
+          "href": "/markets/high-risk"
+        },
+        {
+          "text": "Fintech & PaymentsAdjacent regulatory landscapeLearn more →",
+          "href": "/markets/fintech"
+        },
+        {
+          "text": "Continue on WhatsApp →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        }
+      ],
+      "duplicate_labels": []
+    },
+    {
+      "route": "/markets/high-risk",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "iGaming & BettingWhere Octus built its high-risk expertiseLearn more →",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Crypto & Digital AssetsEvolving regulation, structural consequencesLearn more →",
+          "href": "/markets/crypto"
+        },
+        {
+          "text": "Fintech & PaymentsAdjacent regulatory and banking landscapeLearn more →",
+          "href": "/markets/fintech"
+        },
+        {
+          "text": "Compliance-as-a-ServiceContinuous compliance for operations under scrutinyLearn ",
+          "href": "/solutions/compliance/compliance-as-a-service"
+        },
+        {
+          "text": "AML/KYCCompliance architecture for enhanced due diligenceLearn more →",
+          "href": "/solutions/compliance/aml-kyc"
+        },
+        {
+          "text": "iGaming LicensingLicensing for regulated high-risk sectorsLearn more →",
+          "href": "/solutions/regulatory/igaming-licensing"
+        },
+        {
+          "text": "Continue on WhatsApp →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        }
+      ],
+      "duplicate_labels": []
+    },
+    {
+      "route": "/jurisdictions",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "BrazilSPA/MF · BACENSports betting authorization, payment institutions and finte",
+          "href": "/brazil"
+        },
+        {
+          "text": "CuraçaoGCBAdvisory support for iGaming licensing under the current framework, in",
+          "href": "/jurisdictions/curacao"
+        },
+        {
+          "text": "MaltaMGA · MFSAAdvisory support for B2C and B2B licensing, corporate substance, ",
+          "href": "/jurisdictions/malta"
+        },
+        {
+          "text": "Isle of ManGSCLicensing framework for operators and suppliers seeking institutio",
+          "href": "/jurisdictions/isle-of-man"
+        },
+        {
+          "text": "UAERegulatory landscape for crypto and fintech spanning ADGM, DIFC, VARA, SCA an",
+          "href": "/jurisdictions/uae"
+        },
+        {
+          "text": "PortugalSRIJ-regulated iGaming market with local licensing requirements. A Portu",
+          "href": "/jurisdictions/portugal"
+        },
+        {
+          "text": "AnjouanAlternative licensing framework used in specific scenarios requiring flex",
+          "href": "/jurisdictions/anjouan"
+        },
+        {
+          "text": "MarketsSector context, not a statement of geographic service coverage.Explore →",
+          "href": "/markets"
+        },
+        {
+          "text": "SolutionsFull service architecture.Explore →",
+          "href": "/solutions"
+        },
+        {
+          "text": "ContactA non-WhatsApp way to discuss your requirements.Explore →",
+          "href": "/contact"
+        },
+        {
+          "text": "Continue on WhatsApp →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Contact us here.",
+          "href": "/contact"
+        }
+      ],
+      "duplicate_labels": []
+    },
+    {
+      "route": "/jurisdictions/malta",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "iGaming operations →",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Curaçao LicensingStructured entry framework for mid-market operations.Learn more",
+          "href": "/jurisdictions/curacao"
+        },
+        {
+          "text": "Full Licensing ProcessEnd-to-end licensing execution.Learn more →",
+          "href": "/solutions/regulatory/igaming-licensing"
+        },
+        {
+          "text": "Compliance & RiskThe framework that supports your license.Learn more →",
+          "href": "/solutions/compliance-risk"
+        },
+        {
+          "text": "Continue on WhatsApp →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Contact us here.",
+          "href": "/contact"
+        }
+      ],
+      "duplicate_labels": []
+    },
+    {
+      "route": "/jurisdictions/isle-of-man",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Full licensing process →",
+          "href": "/solutions/regulatory/igaming-licensing"
+        },
+        {
+          "text": "Assess your situation →",
+          "href": "/diagnostic"
+        },
+        {
+          "text": "Malta (MGA)EU-regulated alternative with high compliance requirementsLearn more ",
+          "href": "/jurisdictions/malta"
+        },
+        {
+          "text": "CuraçaoOffshore licensing pathway often used before higher-scrutiny jurisdiction",
+          "href": "/jurisdictions/curacao"
+        },
+        {
+          "text": "iGaming LicensingFull licensing strategy across jurisdictionsLearn more →",
+          "href": "/solutions/regulatory/igaming-licensing"
+        },
+        {
+          "text": "AML/KYCCompliance architecture for regulated operationsLearn more →",
+          "href": "/solutions/compliance/aml-kyc"
+        },
+        {
+          "text": "Continue on WhatsApp →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Contact us here.",
+          "href": "/contact"
+        }
+      ],
+      "duplicate_labels": []
+    },
+    {
+      "route": "/jurisdictions/curacao",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "iGaming operations →",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Malta LicensingEU framework for higher regulatory positioning.Learn more →",
+          "href": "/jurisdictions/malta"
+        },
+        {
+          "text": "iGaming OperationsMarket-level view of how we work with operators.Learn more →",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Company FormationEntity design for regulated operations.Learn more →",
+          "href": "/solutions/corporate/company-formation"
+        },
+        {
+          "text": "Continue on WhatsApp →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Contact us here.",
+          "href": "/contact"
+        }
+      ],
+      "duplicate_labels": []
+    },
+    {
+      "route": "/jurisdictions/anjouan",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Offshore StructuringHow offshore fits into the groupLearn more →",
+          "href": "/solutions/corporate/offshore-structuring"
+        },
+        {
+          "text": "Banking & PaymentsThe real constraint of offshore operationsLearn more →",
+          "href": "/solutions/banking-payments-infrastructure"
+        },
+        {
+          "text": "iGaming LicensingHow licensing strategy evolvesLearn more →",
+          "href": "/solutions/regulatory/igaming-licensing"
+        },
+        {
+          "text": "Isle of ManThe Tier-1 upgrade pathLearn more →",
+          "href": "/jurisdictions/isle-of-man"
+        },
+        {
+          "text": "CuraçaoEstablished offshore with higher acceptanceLearn more →",
+          "href": "/jurisdictions/curacao"
+        },
+        {
+          "text": "Continue on WhatsApp →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Contact us here.",
+          "href": "/contact"
+        }
+      ],
+      "duplicate_labels": []
+    },
+    {
+      "route": "/jurisdictions/portugal",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Fintech LicensingHow EU licensing paths are structuredLearn more →",
+          "href": "/solutions/regulatory/fintech-licensing"
+        },
+        {
+          "text": "Banking & PaymentsWhy banking defines operational viabilityLearn more →",
+          "href": "/solutions/banking-payments-infrastructure"
+        },
+        {
+          "text": "Holding DesignHow EU operations fit into group structureLearn more →",
+          "href": "/solutions/corporate/holding-design"
+        },
+        {
+          "text": "iGamingSector overviewLearn more →",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Continue on WhatsApp →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Contact us here.",
+          "href": "/contact"
+        }
+      ],
+      "duplicate_labels": []
+    },
+    {
+      "route": "/jurisdictions/uae",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Fintech LicensingHow the licensing process is structuredLearn more →",
+          "href": "/solutions/regulatory/fintech-licensing"
+        },
+        {
+          "text": "Banking & PaymentsWhy banking defines viabilityLearn more →",
+          "href": "/solutions/banking-payments-infrastructure"
+        },
+        {
+          "text": "Offshore StructuringHow the UAE fits within a broader groupLearn more →",
+          "href": "/solutions/corporate/offshore-structuring"
+        },
+        {
+          "text": "CryptoVASP regulation and structural consequencesLearn more →",
+          "href": "/markets/crypto"
+        },
+        {
+          "text": "Continue on WhatsApp →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Contact us here.",
+          "href": "/contact"
+        }
+      ],
+      "duplicate_labels": []
+    },
+    {
+      "route": "/brazil",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "RegulatoryPathway design, Brazil-facing filings and counsel coordination for SPA",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "CorporateLocal entities, holdings and group coherence.",
+          "href": "/solutions/corporate-structuring"
+        },
+        {
+          "text": "Compliance and AMLLGPD, AML/KYC and operable compliance controls.",
+          "href": "/solutions/compliance-risk"
+        },
+        {
+          "text": "Banking and PaymentsPayment infrastructure and institutional onboarding readines",
+          "href": "/solutions/banking-payments-infrastructure"
+        },
+        {
+          "text": "Tax and FinanceCorporate tax and finance coordination integrated with structurin",
+          "href": "/solutions/corporate-structuring"
+        },
+        {
+          "text": "New SPA/MF Normative Instruction on Fixed-Odds Betting: Post-Licensing Obligatio",
+          "href": "/insights/new-spa-mf-normative-instruction-fixed-odds-betting"
+        },
+        {
+          "text": "Senate Approves PLP 128/2025: Fiscal Tightening, Higher Taxation on Bets, Fintec",
+          "href": "/insights/senate-approves-plp-128-2025-tightens-fiscal-policy-bets-fintechs"
+        },
+        {
+          "text": "Centralised Self-Exclusion Platform: Key Changes for Operators and Bettors15 Dec",
+          "href": "/insights/centralised-self-exclusion-platform-key-changes-operators-bettors"
+        },
+        {
+          "text": "Annual Recertification of Betting Platforms: What Changes Under SPA/MF New Guide",
+          "href": "/insights/annual-recertification-betting-platforms-spa-mf-new-guidelines"
+        },
+        {
+          "text": "STF Suspends Compulsory Blocking of Bolsa Família and BPC Beneficiaries' Betting",
+          "href": "/insights/stf-suspends-blocking-of-bolsa-familia-bpc-betting-accounts"
+        },
+        {
+          "text": "Continue on WhatsApp →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        }
+      ],
+      "duplicate_labels": []
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "generated_at": "2026-08-04T02:33:22.428Z",
+  "preview": "https://octus-consulting-jhedve7t0-axle1.vercel.app",
+  "overall": "PASS",
+  "results": [
+    {
+      "route": "/markets",
+      "focusTrail": [
+        {
+          "tag": "A",
+          "name": "Octus Consulting home",
+          "href": "/",
+          "outline": "solid:2px",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "name": "Services",
+          "href": null,
+          "outline": "solid:2px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "name": "Industries",
+          "href": "/markets",
+          "outline": "solid:2px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "name": "How we engage",
+          "href": "/how-we-engage",
+          "outline": "solid:2px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "name": "Intelligence",
+          "href": "/intelligence",
+          "outline": "solid:2px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "name": "About",
+          "href": "/about",
+          "outline": "solid:2px",
+          "visible": true
+        }
+      ],
+      "wa_named": true,
+      "status": "PASS"
+    },
+    {
+      "route": "/markets/igaming",
+      "focusTrail": [
+        {
+          "tag": "A",
+          "name": "Octus Consulting home",
+          "href": "/",
+          "outline": "solid:2px",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "name": "Services",
+          "href": null,
+          "outline": "solid:2px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "name": "Industries",
+          "href": "/markets",
+          "outline": "solid:2px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "name": "How we engage",
+          "href": "/how-we-engage",
+          "outline": "solid:2px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "name": "Intelligence",
+          "href": "/intelligence",
+          "outline": "solid:2px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "name": "About",
+          "href": "/about",
+          "outline": "solid:2px",
+          "visible": true
+        }
+      ],
+      "wa_named": true,
+      "status": "PASS"
+    },
+    {
+      "route": "/jurisdictions",
+      "focusTrail": [
+        {
+          "tag": "A",
+          "name": "Octus Consulting home",
+          "href": "/",
+          "outline": "solid:2px",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "name": "Services",
+          "href": null,
+          "outline": "solid:2px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "name": "Industries",
+          "href": "/markets",
+          "outline": "solid:2px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "name": "How we engage",
+          "href": "/how-we-engage",
+          "outline": "solid:2px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "name": "Intelligence",
+          "href": "/intelligence",
+          "outline": "solid:2px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "name": "About",
+          "href": "/about",
+          "outline": "solid:2px",
+          "visible": true
+        }
+      ],
+      "wa_named": true,
+      "status": "PASS"
+    },
+    {
+      "route": "/jurisdictions/malta",
+      "focusTrail": [
+        {
+          "tag": "A",
+          "name": "Octus Consulting home",
+          "href": "/",
+          "outline": "solid:2px",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "name": "Services",
+          "href": null,
+          "outline": "solid:2px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "name": "Industries",
+          "href": "/markets",
+          "outline": "solid:2px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "name": "How we engage",
+          "href": "/how-we-engage",
+          "outline": "solid:2px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "name": "Intelligence",
+          "href": "/intelligence",
+          "outline": "solid:2px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "name": "About",
+          "href": "/about",
+          "outline": "solid:2px",
+          "visible": true
+        }
+      ],
+      "wa_named": true,
+      "status": "PASS"
+    },
+    {
+      "route": "/brazil",
+      "focusTrail": [
+        {
+          "tag": "A",
+          "name": "Octus Consulting home",
+          "href": "/",
+          "outline": "solid:2px",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "name": "Services",
+          "href": null,
+          "outline": "solid:2px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "name": "Industries",
+          "href": "/markets",
+          "outline": "solid:2px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "name": "How we engage",
+          "href": "/how-we-engage",
+          "outline": "solid:2px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "name": "Intelligence",
+          "href": "/intelligence",
+          "outline": "solid:2px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "name": "About",
+          "href": "/about",
+          "outline": "solid:2px",
+          "visible": true
+        }
+      ],
+      "wa_named": true,
+      "status": "PASS"
+    }
+  ]
+}

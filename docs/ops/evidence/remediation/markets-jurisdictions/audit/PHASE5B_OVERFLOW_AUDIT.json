@@ -1,0 +1,135 @@
+{
+  "generated_at": "2026-08-04T02:32:45.802Z",
+  "overflow": {
+    "/markets:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/markets:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/markets/fintech:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/markets/fintech:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/markets/igaming:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/markets/igaming:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/markets/crypto:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/markets/crypto:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/markets/high-risk:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/markets/high-risk:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/jurisdictions:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/jurisdictions:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/jurisdictions/malta:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/jurisdictions/malta:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/jurisdictions/isle-of-man:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/jurisdictions/isle-of-man:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/jurisdictions/curacao:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/jurisdictions/curacao:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/jurisdictions/anjouan:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/jurisdictions/anjouan:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/jurisdictions/portugal:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/jurisdictions/portugal:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/jurisdictions/uae:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/jurisdictions/uae:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/brazil:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/brazil:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    }
+  }
+}

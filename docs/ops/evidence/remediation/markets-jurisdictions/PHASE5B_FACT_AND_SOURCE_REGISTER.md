@@ -49,5 +49,5 @@
 
 ## Closeout status
 
-**CLOSED 2026-08-03** against application SHA `553746ce71cda886f030a34d072e3df42c07cb38`.  
+**CLOSED 2026-08-03** against application SHA `eb37d6f96db6bda418e4f8132cbcda6b6731deaf`.  
 See `PHASE5B_CLAIM_REGISTER.md` for final dispositions. Brazil regulatory **as-of: 2026-08-03**.

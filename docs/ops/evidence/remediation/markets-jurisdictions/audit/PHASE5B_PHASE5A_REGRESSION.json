@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-08-04T02:33:16.662Z",
+  "preview": "https://octus-consulting-jhedve7t0-axle1.vercel.app",
+  "routes": [
+    {
+      "path": "/about",
+      "status": 200,
+      "location": "",
+      "xRobots": "noindex"
+    },
+    {
+      "path": "/how-we-engage",
+      "status": 200,
+      "location": "",
+      "xRobots": "noindex"
+    },
+    {
+      "path": "/contact",
+      "status": 200,
+      "location": "",
+      "xRobots": "noindex"
+    },
+    {
+      "path": "/diagnostic",
+      "status": 200,
+      "location": "",
+      "xRobots": "noindex"
+    },
+    {
+      "path": "/partners",
+      "status": 200,
+      "location": "",
+      "xRobots": "noindex"
+    },
+    {
+      "path": "/careers",
+      "status": 200,
+      "location": "",
+      "xRobots": "noindex"
+    }
+  ],
+  "status": "PASS"
+}

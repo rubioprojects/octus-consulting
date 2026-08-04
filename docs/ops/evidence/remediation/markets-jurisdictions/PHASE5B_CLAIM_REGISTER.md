@@ -1,7 +1,7 @@
 # Phase 5B — Claim Register (closeout)
 
 **Phase:** 5B Markets, Jurisdictions and Brazil  
-**Application SHA:** `553746ce71cda886f030a34d072e3df42c07cb38`  
+**Application SHA:** `eb37d6f96db6bda418e4f8132cbcda6b6731deaf`  
 **Retrieval / Brazil as-of:** 2026-08-03  
 **Status:** CLOSEOUT
 
