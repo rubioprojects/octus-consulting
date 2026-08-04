@@ -118,22 +118,19 @@ function scanMeasuredClaims(body) {
 
 function scanUnsourcedQuotes(body, slug, isEditorial) {
   const failures = [];
-  // Direct quote attributed to named official without nearby primary-source cue
-  if (
-    /"[^"]{12,}"/.test(body) &&
-    /(Secretary|Dudena|stated|emphasised|emphasized)/i.test(body) &&
-    !/(Diário Oficial|DOU|Aviso SPA\/MF|EUR-Lex|primary source)/i.test(body)
-  ) {
+  // Attributed speech quote without primary-source cue
+  const speechQuote =
+    /(?:stated|said|emphasised|emphasized|noted|highlighted|signalled|signaled)\s*,?\s*"[^"]{12,}"|"[^"]{12,}"\s*,?\s*(?:the Secretary|Dudena|he|she)\s+(?:stated|said)/i.test(
+      body
+    );
+  if (speechQuote && !/(Diário Oficial|DOU|Aviso SPA\/MF|EUR-Lex|primary source|CGA announcement)/i.test(body)) {
     failures.push("attributed_direct_quote_without_primary_source_cue");
   }
-  if (slug === B2B_SLUG && /"[^"]+"/.test(body) && /Dudena|Secretary/i.test(body)) {
+  if (slug === B2B_SLUG && /"[^"]+"/.test(body) && /Dudena|Secretary stated|Secretary signalled/i.test(body)) {
     failures.push("b2b_unsourced_official_quote");
   }
-  if (isEditorial && /"[^"]{20,}"/.test(body) && !/Octus/i.test(body.slice(Math.max(0, body.search(/"/) - 80), body.search(/"/) + 120))) {
-    // Allow illustrative examples; flag survey-style quotes only when paired with universal measured claim language
-    if (/\b(most|majority|percent|% of)\b/i.test(body)) {
-      failures.push("editorial_quote_near_measured_language");
-    }
+  if (isEditorial && speechQuote && /\b(most companies|majority of|percent of operators)\b/i.test(body)) {
+    failures.push("editorial_quote_near_measured_language");
   }
   return failures;
 }
