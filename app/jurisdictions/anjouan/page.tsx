@@ -5,7 +5,7 @@ import { pageSocialMeta } from "../../../lib/pageMeta";
 export const metadata = pageSocialMeta({
   title: "Anjouan",
   description:
-    "Anjouan is fast and affordable. That is also the risk. Octus structures offshore operations that work beyond the licence: banking, payments and transition to stronger jurisdictions.",
+    "Anjouan is an accessible alternative framework with material limits. Octus advises on structure, compliance, banking readiness and potential transition paths.",
   path: "/jurisdictions/anjouan",
 });
 
@@ -16,12 +16,12 @@ export default function JurisdictionsAnjouanPage() {
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Jurisdictions · Anjouan</span>
           <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline">
-            Anjouan is fast and affordable.
+            Anjouan is accessible.
             <br />
             <span style={{ color: "var(--white-40)" }}>That is also the risk.</span>
           </h1>
           <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "620px" }}>
-            Most operators choose Anjouan for speed. Few understand what they
+            Many operators consider Anjouan for accessibility. Few understand what they
             are actually building.
           </p>
           <div style={{ marginTop: "32px" }}>
@@ -42,13 +42,12 @@ export default function JurisdictionsAnjouanPage() {
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginBottom: "24px" }}>
             {[
-              "Licensed through AOFA (Anjouan Offshore Finance Authority) and ALSI.",
-              "Single licence covering casino, sports, poker, lottery, B2C and B2B.",
-              "Annual fee approximately EUR17,800. No GGR tax. No corporate income tax on IBCs.",
-              "Processing: 2-6 weeks with complete documentation.",
-              "Crypto payments permitted.",
-              "B2B Recognition Certificates introduced in 2025.",
-              "Over 850 licences issued, supporting 2,000+ active websites.",
+              "An alternative licensing framework administered through the relevant Anjouan authorities.",
+              "Activity scope must be confirmed against current licence terms and target-market law.",
+              "Fees, taxes and renewal obligations must be verified against current authority schedules and qualified tax advice.",
+              "Processing time varies with documentation, due diligence and authority review.",
+              "Any use of virtual assets depends on current rules, provider policies and target-market restrictions.",
+              "Recognition and B2B use must be assessed for each counterparty and market.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
@@ -57,7 +56,7 @@ export default function JurisdictionsAnjouanPage() {
             ))}
           </div>
           <p className="body-text">
-            Speed and cost are real advantages. But they do not eliminate the
+            Accessibility and cost can be advantages. But they do not eliminate the
             structural work. They reduce the regulatory barrier to entry. The
             operational barriers: banking, payments, compliance quality,
             institutional credibility: remain exactly the same.
@@ -73,10 +72,10 @@ export default function JurisdictionsAnjouanPage() {
           <p className="body-text mb-4 font-semibold text-primary">Anjouan enables:</p>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginBottom: "28px" }}>
             {[
-              "iGaming licensing with fast turnaround.",
+              "A potentially accessible iGaming application pathway, subject to review.",
               "Entry into operations without high upfront regulatory burden.",
               "Flexible structuring for early-stage and crypto-native operators.",
-              "B2C and B2B operations under a single authorisation.",
+              "Potential B2C and B2B scope where expressly permitted by current licence terms.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
@@ -88,8 +87,8 @@ export default function JurisdictionsAnjouanPage() {
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {[
               "Recognition is limited compared to Tier-1 jurisdictions.",
-              "Banking access is restricted. Tier-1 acquirers generally do not accept Anjouan.",
-              "Restricted territories: EU, UK, US, Australia and others.",
+              "Banking and acquiring options may be limited and always depend on provider risk appetite and due diligence.",
+              "Target-market restrictions must be verified and enforced; a licence does not authorise unrestricted international use.",
               "Long-term scalability depends entirely on how the structure evolves.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
@@ -166,10 +165,10 @@ export default function JurisdictionsAnjouanPage() {
               <p className="label" style={{ marginBottom: "16px", color: "var(--blue-light)" }}>Makes sense</p>
               <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
                 {[
-                  "You need a fast entry point with a roadmap to grow.",
+                  "You need an alternative entry point with a roadmap to grow.",
                   "Crypto-native operation where alternative payment rails are primary.",
                   "Early-stage operator with budget constraints and a transition plan.",
-                  "B2B supplier needing recognised authorisation.",
+                  "B2B supplier prepared to verify counterparty and market recognition.",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                     <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
@@ -209,7 +208,7 @@ export default function JurisdictionsAnjouanPage() {
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {[
-              "Licensed in weeks. Banking blocked for months.",
+              "Licensing progresses while banking remains unavailable or delayed.",
               "Payment processors decline because compliance documentation is insufficient.",
               "Operating in restricted jurisdictions because geoblocking was not implemented.",
               "Locked into an offshore structure with no pathway to Tier-1.",
@@ -256,9 +255,8 @@ export default function JurisdictionsAnjouanPage() {
           </h2>
           <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           <p className="body-sm" style={{ color: "var(--white-25)", marginTop: "16px" }}>
-            We assess whether Anjouan fits your strategy, define how it should
-            be structured and map the steps beyond licensing. If it is not the
-            right path, we will tell you upfront.
+            WhatsApp is the primary strategic intake. Prefer another channel?{" "}
+            <Link href="/contact" className="underline underline-offset-4">Contact us here.</Link>
           </p>
         </div>
       </section>

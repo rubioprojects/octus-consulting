@@ -5,7 +5,7 @@ import { pageSocialMeta } from "../../../lib/pageMeta";
 export const metadata = pageSocialMeta({
   title: "Isle of Man",
   description:
-    "Isle of Man licensing through the GSC is a Tier-1 credential. Octus structures the corporate, compliance and banking architecture required to reach approval and sustain operations.",
+    "Isle of Man licensing advisory covering corporate, compliance, application-readiness and banking-readiness considerations under the GSC framework.",
   path: "/jurisdictions/isle-of-man",
 });
 
@@ -25,10 +25,11 @@ export default function JurisdictionsIsleOfManPage() {
             </span>
           </h1>
           <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "620px" }}>
-            A GSC licence is recognised globally as Tier-1. Banks trust it.
-            Payment processors accept it. Regulators in other jurisdictions
-            respect it. But the standard required to obtain and maintain it is
-            high: and the margin for structural error is narrow.
+            The GSC framework is commonly considered an institutional licensing
+            option. Recognition, market permissions, banking and payment access
+            remain subject to the rules and independent decisions of each
+            regulator, market and provider. The standard required to apply and
+            maintain a licence is high.
           </p>
           <div style={{ marginTop: "32px", display: "flex", gap: "16px", flexWrap: "wrap" }}>
             <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
@@ -50,25 +51,23 @@ export default function JurisdictionsIsleOfManPage() {
             This is not the jurisdiction you choose to save time.
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
-            The Isle of Man Gambling Supervision Commission has regulated gambling
-            since 1962. The jurisdiction sits on the OECD whitelist and is
-            recognised by the UK Gambling Commission, giving licensed operators
-            access to advertise in the UK market. The licensing framework covers
-            all forms of online gambling under a single licence. Corporate tax on
-            gaming profits is 0%. Gambling duty is tiered between 0.1% and 1.5% of
-            gross gaming yield.
+            The Isle of Man Gambling Supervision Commission has regulated
+            gambling since 1962. The framework supports multiple online gambling
+            activities, but licence scope and activity in any target market must
+            be verified under current rules. Tax treatment and gambling duty are
+            governed by official schedules and depend on the operator&apos;s facts;
+            current rates must be confirmed with the relevant authorities and
+            qualified tax advisers.
           </p>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
             None of this makes it easy. It makes it valuable.
           </p>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
-            Operators who reach this jurisdiction with the wrong corporate
-            structure, incomplete compliance architecture or misaligned banking
-            arrangements do not get approved. The GSC&apos;s fit-and-proper
-            assessment is continuous, not just at application: and with the
-            MONEYVAL on-site review expected in late 2026, enforcement expectations
-            are increasing, particularly around AML controls, beneficial ownership
-            transparency and source of funds.
+            Corporate structure, compliance architecture, source-of-funds
+            evidence and banking readiness can materially affect an application.
+            The GSC applies fit-and-proper and ongoing supervisory requirements;
+            applicants should verify the current standards and guidance before
+            relying on a proposed structure.
           </p>
         </div>
       </section>
@@ -85,12 +84,12 @@ export default function JurisdictionsIsleOfManPage() {
               <p className="label" style={{ marginBottom: "16px", color: "var(--blue-light)" }}>When it makes sense</p>
               <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
                 {[
-                  "You need a Tier-1 licence that banks and payment processors recognise without friction.",
-                  "You plan to operate in or advertise to the UK market.",
+                  "You are considering an institutional framework and accept that banks and payment processors conduct independent due diligence.",
+                  "You have identified target markets and will obtain separate advice on local operating and advertising permissions.",
                   "Your operation requires institutional credibility for investor, partner or white-label relationships.",
                   "You are scaling from an offshore licence (Curaçao, Anjouan) to a regulated European framework.",
-                  "You want a single licence covering multiple verticals: casino, sports, poker, crypto.",
-                  "You are building a B2B platform and need a network services licence with foreign player acceptance.",
+                  "You need a framework capable of covering relevant approved gambling activities.",
+                  "You are building a B2B platform and need to assess the network services framework and player-location rules.",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                     <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
@@ -106,7 +105,7 @@ export default function JurisdictionsIsleOfManPage() {
                   "You need the cheapest or fastest path to market. Isle of Man is neither.",
                   "Your corporate structure cannot support two resident directors and a designated official on the island.",
                   "You have no clear plan for local banking, server hosting or ongoing compliance staffing.",
-                  "Your AML programme is not yet operational. The GSC does not approve operators who plan to build compliance after licensing.",
+                  "Your AML programme is not yet operational or application-ready.",
                   "You expect to launch and leave. The GSC\u2019s supervision is continuous, risk-based and increasingly enforcement-oriented.",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
@@ -165,10 +164,10 @@ export default function JurisdictionsIsleOfManPage() {
             <div>
               <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "10px" }}>Banking and payments</h3>
               <p className="body-text">
-                Corporate bank account in the Isle of Man for player fund
-                segregation. Operational accounts. Payment processor onboarding
-                aligned to the licence type. Coordination with island-based
-                banking partners familiar with gaming operations.
+                Banking and payment-provider readiness for operational and
+                player-fund arrangements. Introductions and onboarding support
+                may be available, but every account and processor relationship is
+                subject to provider eligibility, risk appetite and due diligence.
               </p>
             </div>
             <div>
@@ -183,10 +182,11 @@ export default function JurisdictionsIsleOfManPage() {
             <div>
               <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "10px" }}>Application management</h3>
               <p className="body-text">
-                Full licensing dossier preparation. Business plan aligned to GSC
-                expectations. Regulatory form completion. Direct coordination with
-                the GSC inspectorate. Response management throughout typical review
-                timelines, subject to regulatory complexity.
+                Licensing dossier preparation, business-plan review and
+                regulatory form support. Octus advises the client and supports
+                authorised communications with the GSC; it is not affiliated
+                with or acting on behalf of the regulator. Review timing and
+                outcomes remain solely within the regulator&apos;s control.
               </p>
             </div>
           </div>
@@ -198,26 +198,22 @@ export default function JurisdictionsIsleOfManPage() {
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Current regulatory environment</p>
           <h2 className="heading-section" style={{ marginBottom: "24px" }}>
-            The GSC is tightening. Not loosening.
+            Current requirements require active verification.
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
-            The Isle of Man is actively reforming its gambling legislation. The
-            Gambling Legislation Amendment Bill 2025 introduces enhanced
-            fit-and-proper tests, expanded inspection powers, and harmonised
-            regulatory authority across all gambling Acts. In early 2026, the
-            GSC published draft fitness and propriety guidance, with a public
-            consultation running through May 2026, replacing the existing patchwork
-            of suitability rules with a unified standard.
+            Isle of Man gambling legislation and GSC guidance continue to
+            evolve. Applicants should check the current status of proposed
+            legislation, consultations, fitness and propriety guidance,
+            inspection powers and application requirements before proceeding.
           </p>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
-            The jurisdiction is preparing for a MONEYVAL on-site evaluation
-            expected in late 2026, driving heightened enforcement activity and
-            stricter AML compliance expectations.
+            AML/CFT, beneficial-ownership and source-of-funds controls should be
+            designed against the law and official guidance in force at the time
+            of application and throughout operations.
           </p>
           <p className="body-text">
-            For operators applying now: the regulatory bar is moving upward.
-            Applications submitted with yesterday&apos;s compliance standards will
-            face tomorrow&apos;s review criteria.
+            Historical summaries are not a substitute for current legal and
+            regulatory review.
           </p>
         </div>
       </section>
@@ -230,26 +226,27 @@ export default function JurisdictionsIsleOfManPage() {
             One framework. Multiple licence categories.
           </h2>
           <p className="body-text mb-8 max-w-[760px]">
-            All licences are issued under the Online Gambling Regulation Act 2001
-            (OGRA). Each has a five-year validity period.
+            Licence categories and validity are governed by OGRA and current GSC
+            rules. Applicants should verify the category, scope and term that
+            apply to their proposed activity.
           </p>
           <div className="grid-auto-lg" style={{ marginBottom: "32px" }}>
             {[
               {
                 title: "Full Licence (B2C)",
-                body: "Direct-to-player operations: casino, sportsbook, poker, bingo, lottery, crypto. Application fee: £5,250. Annual fee: £36,750.",
+                body: "Direct-to-player operations within the approved scope. As of the Online Gambling (Licence Fees) Regulations 2023, effective 6 July 2023, and the GSC fee sheet dated October 2025: application fee £5,250 and annual fee £36,750. Verify the current schedule before relying on these figures.",
               },
               {
                 title: "Sub-Licence",
-                body: "Operates under an existing full licensee\u2019s framework. Application fee: £5,250. Annual fee: £5,250.",
+                body: "Operates within an eligible full licensee\u2019s framework. As of the Online Gambling (Licence Fees) Regulations 2023, effective 6 July 2023, and the GSC fee sheet dated October 2025: application fee £5,250 and annual fee £5,250. Verify the current schedule.",
               },
               {
                 title: "Network Services Licence",
-                body: "B2C and B2B platform provision. Permits acceptance of foreign-registered players without re-registration. Application fee: £5,250. Annual fee: £52,500.",
+                body: "B2C and B2B platform provision within the approved scope. Player acceptance remains subject to licence conditions and target-market law. As of the Online Gambling (Licence Fees) Regulations 2023, effective 6 July 2023, and the GSC fee sheet dated October 2025: application fee £5,250 and annual fee £52,500. Verify the current schedule.",
               },
               {
                 title: "Software Supplier Licence (B2B)",
-                body: "Games content or gambling software supply to licensed operators. Application fee: £5,250. Annual fee: £36,750.",
+                body: "Games content or gambling software supply within the approved scope. As of the Online Gambling (Licence Fees) Regulations 2023, effective 6 July 2023, and the GSC fee sheet dated October 2025: application fee £5,250 and annual fee £36,750. Verify the current schedule.",
               },
             ].map((item) => (
               <div key={item.title} className="card" style={{ padding: "24px" }}>
@@ -260,9 +257,9 @@ export default function JurisdictionsIsleOfManPage() {
           </div>
           <div className="grid-3">
             {[
-              { label: "Gambling duty", value: "1.5% on the first £20m GGY. 0.5% on £20m: £40m. 0.1% above £40m." },
-              { label: "Corporate tax", value: "0% on gaming profits." },
-              { label: "Processing time", value: "10: 12 weeks from file-complete acceptance by the inspectorate." },
+              { label: "Gambling duty", value: "Official schedules currently use tiered rates in the 0.1% to 1.5% range. Verify the current duty schedule and operator-specific treatment." },
+              { label: "Corporate tax", value: "Tax treatment depends on current law and operator facts. Obtain current Isle of Man tax advice." },
+              { label: "Processing time", value: "The GSC describes 10-12 weeks as a typical processing period after an acceptance letter. This is not a guarantee and may vary materially." },
             ].map((item) => (
               <div key={item.label} className="card" style={{ padding: "24px" }}>
                 <p className="label" style={{ marginBottom: "8px", fontSize: "10px" }}>{item.label}</p>
@@ -337,7 +334,7 @@ export default function JurisdictionsIsleOfManPage() {
           </h2>
           <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
-            Diagnostic call. We assess operational fit before recommending a jurisdiction or engagement model.
+            WhatsApp is the primary strategic intake. Prefer another channel? <Link href="/contact" className="underline underline-offset-4">Contact us here.</Link>
           </p>
         </div>
       </section>

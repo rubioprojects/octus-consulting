@@ -5,7 +5,7 @@ import { pageSocialMeta } from "../../../lib/pageMeta";
 export const metadata = pageSocialMeta({
   title: "Portugal",
   description:
-    "Portugal is not fast. It is defensible. Octus structures EU-ready operations that survive the SRIJ licensing process and sustain operations under European regulatory oversight.",
+    "Portugal licensing advisory for application readiness, operating structure and ongoing compliance under SRIJ and applicable European requirements.",
   path: "/jurisdictions/portugal",
 });
 
@@ -45,11 +45,10 @@ export default function JurisdictionsPortugalPage() {
               "Regulator: SRIJ (Servico de Regulacao e Inspecao de Jogos), under Turismo de Portugal.",
               "Legal framework: Decree-Law 66/2015 (RJO).",
               "Mandatory local incorporation (Portuguese entity or EU/EEA branch).",
-              "Guarantee deposits: EUR500,000 (compliance) + EUR100,000 (tax).",
-              "Processing time: 9-15 months.",
-              "18 licensed operators currently hold 31 licences.",
-              "Online GGR exceeds EUR300 million annually.",
-              "Virtual assets not permitted for gambling activities.",
+              "Financial guarantees, fees and tax-security requirements must be verified against current SRIJ rules.",
+              "Processing time varies with application scope, completeness, technical review and regulator workload.",
+              "Licensing does not provide EU-wide passporting or authorise activity outside approved markets.",
+              "Payment methods, including any virtual-asset use, must be checked against current law and provider requirements.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
@@ -74,8 +73,8 @@ export default function JurisdictionsPortugalPage() {
             {[
               "Licensed iGaming operations under national regulation.",
               "Fintech and payment structures aligned with EU frameworks.",
-              "Access to European banking infrastructure.",
-              "Credibility with institutional partners and investors.",
+              "Potential access to banking providers, subject to independent eligibility and due diligence.",
+              "A nationally regulated framework for counterparties to assess independently.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
@@ -135,8 +134,9 @@ export default function JurisdictionsPortugalPage() {
             What we actually structure.
           </h2>
           <p className="body-text" style={{ marginBottom: "28px" }}>
-            We do not apply for licences in Portugal. We build EU-ready
-            operations that survive regulatory oversight.
+            Octus advises clients on application readiness and operating
+            structures for Portuguese regulatory oversight. Licence decisions
+            remain solely with SRIJ.
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
             {[
@@ -144,8 +144,8 @@ export default function JurisdictionsPortugalPage() {
               ["Entity and group architecture", "Portuguese company or EU/EEA branch. Governance aligned with SRIJ expectations. Structures that support EU operations."],
               ["Operational model", "Clear definition of regulated vs non-regulated activities. Flow of funds, responsibilities and risk allocation."],
               ["Compliance infrastructure", "AML/KYC, responsible gambling, advertising compliance, self-exclusion integration. Aligned with SRIJ and EU standards. Ongoing, not static."],
-              ["Banking and payments", "Local banking arrangements. Payment methods aligned to Portuguese market (Multibanco, MB Way, cards). Fiat only: no crypto."],
-              ["Technical certification", "Coordination with independent testing laboratories recognised by SRIJ. Platform certification, RNG validation."],
+              ["Banking and payments", "Banking and payment-provider readiness for the Portuguese market. Permitted methods, including treatment of virtual assets, must be verified under current rules and provider policies."],
+              ["Technical certification", "Client-authorised coordination with independent testing laboratories where accepted by SRIJ. Certification and regulator acceptance are not guaranteed."],
             ].map(([title, body]) => (
               <div key={title}>
                 <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{title}</h3>
@@ -168,8 +168,8 @@ export default function JurisdictionsPortugalPage() {
                 {[
                   "You want a credible EU-regulated operation.",
                   "You are building for long-term scale, not short-term entry.",
-                  "You need access to European markets and banking infrastructure.",
-                  "You have capital for EUR600,000+ in guarantee deposits and operational setup.",
+                  "You have defined the specific markets in which you intend to operate and understand that permissions are territorial.",
+                  "You have capital for the guarantees and operational setup required under current SRIJ rules.",
                   "You understand regulatory burden is part of the model.",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
@@ -210,8 +210,8 @@ export default function JurisdictionsPortugalPage() {
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {[
-              "EUR600,000+ committed before discovering the structure does not qualify.",
-              "Application rejected after 12+ months of process.",
+              "Capital committed before discovering the structure does not meet current requirements.",
+              "An extended application process without a favourable regulator decision.",
               "Licensed but unable to connect to Portuguese payment methods.",
               "Compliance failures discovered during SRIJ supervisory review.",
               "Advertising sanctions because marketing was not aligned with SRIJ rules.",
@@ -223,7 +223,8 @@ export default function JurisdictionsPortugalPage() {
             ))}
           </div>
           <p className="body-text" style={{ marginTop: "20px" }}>
-            Most failures in Portugal happen after approval. Not before.
+            Structural and compliance gaps can create problems before or after
+            any licence decision.
           </p>
         </div>
       </section>
@@ -256,9 +257,8 @@ export default function JurisdictionsPortugalPage() {
           </h2>
           <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           <p className="body-sm" style={{ color: "var(--white-25)", marginTop: "16px" }}>
-            We evaluate your intended operation, define whether Portugal is the
-            right jurisdiction and structure the path accordingly. If it is not
-            the right fit, we will tell you upfront.
+            WhatsApp is the primary strategic intake. Prefer another channel?{" "}
+            <Link href="/contact" className="underline underline-offset-4">Contact us here.</Link>
           </p>
         </div>
       </section>
