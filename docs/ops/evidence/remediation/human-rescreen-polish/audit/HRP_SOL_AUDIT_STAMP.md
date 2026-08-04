@@ -16,6 +16,7 @@
 | deployment SHA | `d78272e4d9e2b6fbd2dab8836f323888ca39e6c2` (local deploy of application tip) |
 | prior accepted Phase 6 app SHA | `84ecb6aff383060088a6185384ff5b9f5ba307e9` |
 | prior accepted preview | https://octus-consulting-3lhtpxjer-axle1.vercel.app |
+| evidence tip HEAD | `191f3820b75ca57f4cc1e46e1c5ea33ac59ffca4` |
 
 ## Validation snapshot
 
