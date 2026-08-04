@@ -9,7 +9,7 @@ import {
   type IntelligenceCategoryId,
 } from "../../lib/intelligence";
 import ContentCard from "./ContentCard";
-import InsightCategoryRail, { INTELLIGENCE_CATEGORIES } from "./InsightCategoryRail";
+import InsightCategoryRail, { INSIGHT_CATEGORIES } from "./InsightCategoryRail";
 
 function fmt(d: string) {
   return new Date(d).toLocaleDateString("en-GB", {
@@ -34,7 +34,7 @@ export default function InsightsHubClient({ posts }: { posts: Post[] }) {
   const activeLabel =
     hub === "all"
       ? null
-      : INTELLIGENCE_CATEGORIES.find((c) => c.id === hub)?.label;
+      : INSIGHT_CATEGORIES.find((c) => c.id === hub)?.label;
 
   return (
     <>

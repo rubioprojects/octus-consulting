@@ -59,6 +59,16 @@
       "source": "/solutions/regulatory/banking-payments",
       "destination": "/solutions/banking-payments-infrastructure",
       "permanent": true
+    },
+    {
+      "source": "/intelligence",
+      "destination": "/insights",
+      "permanent": true
+    },
+    {
+      "source": "/intelligence/:path*",
+      "destination": "/insights",
+      "permanent": true
     }
   ]
 }
