@@ -1684,11 +1684,11 @@ footer .heading-lg,
   transform: scale(1.02);
   transform-origin: center 35%;
 }
-/* Esther: same source, face-focused plate — light polish only. */
+/* Esther: same-source face-focused plate — light pull-back keeps crown. */
 .team-photo--esther .team-card-photo {
-  object-position: 50% 40%;
-  transform: scale(1.04);
-  transform-origin: center 36%;
+  object-position: 50% 38%;
+  transform: scale(0.98);
+  transform-origin: center 32%;
 }
 /* Caroline: light-plate cutout; keep curls and glasses fully inside the frame. */
 .team-photo--caroline .team-card-photo {
