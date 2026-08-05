@@ -35,8 +35,22 @@ export default function CareersPage() {
       <section className="bg-background py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "1000px" }}>
           <span className="label">Life at Octus</span>
-          <div className="careers-culture-visual">
-            <img src="/team-group.jpg" alt="Octus team culture" className="careers-culture-image" />
+          {/*
+            Editorial group photograph. Source /team-group.jpg has a baked black
+            field around a dome. Shape is resolved with an antialiased ellipse
+            clip (same geometry as About), not a rectangular black tile. No AI
+            cutout of people; no face editing.
+          */}
+          <div className="careers-editorial">
+            <figure className="careers-editorial__figure">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/team-group.jpg"
+                alt="Octus team culture"
+                className="careers-editorial__img"
+              />
+              <span className="careers-editorial__fade" aria-hidden="true" />
+            </figure>
           </div>
         </div>
       </section>

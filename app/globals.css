@@ -1655,7 +1655,7 @@ footer .heading-lg,
   height: 100%;
   object-fit: cover;
   object-position: center 40%;
-  filter: grayscale(1) contrast(1.1) brightness(0.97);
+  filter: grayscale(1) contrast(1.08) brightness(1.01);
 }
 .team-photo--rubio .home-leadership-trust__photo,
 .team-photo--rubio-home .home-leadership-trust__photo {
@@ -1678,14 +1678,39 @@ footer .heading-lg,
 }
 .team-photo--maria .team-card-photo,
 .team-photo--maria .home-leadership-trust__photo { object-position: 56% 30%; }
-.team-photo--rodrigo .team-card-photo { object-position: 50% 40%; }
-.team-photo--esther .team-card-photo { object-position: 50% 42%; }
-.team-photo--caroline .team-card-photo { object-position: 50% 40%; }
-.team-photo--larissa .team-card-photo { object-position: 50% 36%; }
+/* Rodrigo: light neutral plate after source equalisation; keep face centred. */
+.team-photo--rodrigo .team-card-photo {
+  object-position: 50% 38%;
+  transform: scale(1.02);
+  transform-origin: center 35%;
+}
+/* Esther: source has excess headroom — zoom into the face without cutting crown. */
+.team-photo--esther .team-card-photo {
+  object-position: 50% 68%;
+  transform: scale(1.28);
+  transform-origin: center 42%;
+}
+/* Caroline: light-plate cutout; keep curls and glasses fully inside the frame. */
+.team-photo--caroline .team-card-photo {
+  object-position: 50% 36%;
+  transform: scale(1.04);
+  transform-origin: center 32%;
+}
+/* Larissa: source crown was tight — padded plate + slight pull-back. */
+.team-photo--larissa .team-card-photo {
+  object-position: 50% 34%;
+  transform: scale(0.96);
+  transform-origin: center 30%;
+}
 .team-photo--milla .team-card-photo { object-position: 50% 40%; }
 .team-photo--bianca .team-card-photo { object-position: 50% 40%; }
 .team-photo--claudia .team-card-photo { object-position: 49% 40%; }
-.team-photo--luciana .team-card-photo { object-position: 50% 38%; }
+/* Luciana: source crown flat-cut — padded headroom + mild pull-back. */
+.team-photo--luciana .team-card-photo {
+  object-position: 50% 36%;
+  transform: scale(0.96);
+  transform-origin: center 30%;
+}
 .team-photo--daniel .team-card-photo { object-position: 50% 38%; }
 .team-grid--commercial {
   max-width: 20rem;
@@ -1745,6 +1770,48 @@ footer .heading-lg,
   display: block;
   width: 100%;
   height: auto;
+}
+
+/* Careers editorial group photo — antialiased half-moon / upper arc.
+   Same ellipse geometry proven on About: clips just inside the baked black
+   dome of /team-group.jpg. No AI cutout; no rectangular black plate. */
+.careers-editorial {
+  margin-top: 8px;
+}
+.careers-editorial__figure {
+  position: relative;
+  margin: 0 auto;
+  max-width: 920px;
+  aspect-ratio: 1024 / 555;
+  background: transparent;
+  /* Soft premium lift without a rectangular black plate. */
+  filter: drop-shadow(0 18px 36px rgba(11, 18, 32, 0.12));
+  /* Baked edge ≈ circle r~520 at (511.5, 510). Clip at 50%/92.25% stays inside. */
+  clip-path: ellipse(50% 92.25% at 50% 91.9%);
+}
+.careers-editorial__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  filter: grayscale(1) contrast(1.04);
+}
+.careers-editorial__fade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to top,
+    rgba(11, 18, 32, 0.3) 0%,
+    rgba(11, 18, 32, 0.11) 26%,
+    rgba(11, 18, 32, 0) 52%
+  );
+}
+@media (max-width: 768px) {
+  .careers-editorial__figure {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
