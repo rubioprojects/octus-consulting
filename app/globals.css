@@ -1686,9 +1686,9 @@ footer .heading-lg,
 }
 /* Esther: face more central / prominent — tighter zoom, crown kept. */
 .team-photo--esther .team-card-photo {
-  object-position: 50% 70%;
-  transform: scale(1.58);
-  transform-origin: center 42%;
+  object-position: 50% 62%;
+  transform: scale(1.48);
+  transform-origin: center 38%;
 }
 /* Caroline: light-plate cutout; keep curls and glasses fully inside the frame. */
 .team-photo--caroline .team-card-photo {
@@ -1698,23 +1698,23 @@ footer .heading-lg,
 }
 /* Larissa: restored original studio portrait — slight pull-back so crown clears frame. */
 .team-photo--larissa .team-card-photo {
-  object-position: 50% 36%;
-  transform: scale(0.96);
-  transform-origin: center 28%;
+  object-position: 50% 34%;
+  transform: scale(0.95);
+  transform-origin: center 26%;
 }
 .team-photo--milla .team-card-photo { object-position: 50% 40%; }
 .team-photo--bianca .team-card-photo { object-position: 50% 40%; }
-/* Claudia: source kept; background neutralized in asset — keep face centred. */
+/* Claudia: source kept; mid-grey plate in asset — mild face presence, crown clear. */
 .team-photo--claudia .team-card-photo {
-  object-position: 50% 32%;
-  transform: scale(1.06);
-  transform-origin: center 30%;
+  object-position: 50% 28%;
+  transform: scale(1.14);
+  transform-origin: center 26%;
 }
-/* Luciana: restored original tall studio portrait — frame upper body, keep full head. */
+/* Luciana: restored original tall studio portrait — bias top so crown clears cover crop. */
 .team-photo--luciana .team-card-photo {
-  object-position: 50% 22%;
-  transform: scale(1.02);
-  transform-origin: center 20%;
+  object-position: 50% 8%;
+  transform: scale(0.98);
+  transform-origin: center 10%;
 }
 .team-photo--daniel .team-card-photo { object-position: 50% 38%; }
 .team-grid--commercial {
