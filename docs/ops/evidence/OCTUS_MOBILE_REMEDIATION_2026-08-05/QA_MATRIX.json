@@ -1,0 +1,673 @@
+{
+  "base": "http://127.0.0.1:4173",
+  "generated_at": "2026-08-05T11:46:07.514Z",
+  "viewports": [
+    {
+      "viewport": "320x568",
+      "name": "320x568",
+      "width": 320,
+      "height": 568,
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 320,
+        "clientWidth": 320,
+        "delta": 0
+      },
+      "nav": {
+        "burgerDisplay": "flex",
+        "burgerVisible": true
+      },
+      "console_errors": [],
+      "pass": true
+    },
+    {
+      "viewport": "360x800",
+      "name": "360x800",
+      "width": 360,
+      "height": 800,
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 360,
+        "clientWidth": 360,
+        "delta": 0
+      },
+      "nav": {
+        "burgerDisplay": "flex",
+        "burgerVisible": true
+      },
+      "console_errors": [],
+      "pass": true
+    },
+    {
+      "viewport": "375x667",
+      "name": "375x667",
+      "width": 375,
+      "height": 667,
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 375,
+        "clientWidth": 375,
+        "delta": 0
+      },
+      "nav": {
+        "burgerDisplay": "flex",
+        "burgerVisible": true
+      },
+      "console_errors": [],
+      "pass": true
+    },
+    {
+      "viewport": "390x844",
+      "name": "390x844",
+      "width": 390,
+      "height": 844,
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "nav": {
+        "burgerDisplay": "flex",
+        "burgerVisible": true
+      },
+      "console_errors": [],
+      "pass": true
+    },
+    {
+      "viewport": "393x852",
+      "name": "393x852",
+      "width": 393,
+      "height": 852,
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 393,
+        "clientWidth": 393,
+        "delta": 0
+      },
+      "nav": {
+        "burgerDisplay": "flex",
+        "burgerVisible": true
+      },
+      "console_errors": [],
+      "pass": true
+    },
+    {
+      "viewport": "412x915",
+      "name": "412x915",
+      "width": 412,
+      "height": 915,
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 412,
+        "clientWidth": 412,
+        "delta": 0
+      },
+      "nav": {
+        "burgerDisplay": "flex",
+        "burgerVisible": true
+      },
+      "console_errors": [],
+      "pass": true
+    },
+    {
+      "viewport": "430x932",
+      "name": "430x932",
+      "width": 430,
+      "height": 932,
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 430,
+        "clientWidth": 430,
+        "delta": 0
+      },
+      "nav": {
+        "burgerDisplay": "flex",
+        "burgerVisible": true
+      },
+      "console_errors": [],
+      "pass": true
+    },
+    {
+      "viewport": "768x1024",
+      "name": "768x1024",
+      "width": 768,
+      "height": 1024,
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "delta": 0
+      },
+      "nav": {
+        "burgerDisplay": "flex",
+        "burgerVisible": true
+      },
+      "console_errors": [],
+      "pass": true
+    },
+    {
+      "viewport": "820x1180",
+      "name": "820x1180",
+      "width": 820,
+      "height": 1180,
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 820,
+        "clientWidth": 820,
+        "delta": 0
+      },
+      "nav": {
+        "burgerDisplay": "flex",
+        "burgerVisible": true
+      },
+      "console_errors": [],
+      "pass": true
+    },
+    {
+      "viewport": "1024x768",
+      "name": "1024x768",
+      "width": 1024,
+      "height": 768,
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 1024,
+        "clientWidth": 1024,
+        "delta": 0
+      },
+      "nav": {
+        "burgerDisplay": "none",
+        "burgerVisible": false
+      },
+      "console_errors": [],
+      "pass": true
+    },
+    {
+      "viewport": "1440x900",
+      "name": "1440x900",
+      "width": 1440,
+      "height": 900,
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "delta": 0
+      },
+      "nav": {
+        "burgerDisplay": "none",
+        "burgerVisible": false
+      },
+      "console_errors": [],
+      "pass": true
+    },
+    {
+      "viewport": "390x844-landscape",
+      "name": "390x844-landscape",
+      "width": 844,
+      "height": 390,
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 844,
+        "clientWidth": 844,
+        "delta": 0
+      },
+      "nav": {
+        "burgerDisplay": "flex",
+        "burgerVisible": true
+      },
+      "console_errors": [],
+      "pass": true
+    }
+  ],
+  "pages": [
+    {
+      "name": "01-home-hero",
+      "url": "/",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "name": "02-nav-open",
+      "url": "/",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "name": "03-capability-rail",
+      "url": "/",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "name": "04-leadership",
+      "url": "/",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "name": "05-services-accordion",
+      "url": "/",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "name": "06-diagnostic",
+      "url": "/diagnostic",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "name": "07-contact",
+      "url": "/contact",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "name": "08-team",
+      "url": "/team",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "name": "09-footer-cookie-visible",
+      "url": "/",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "name": "10-footer-cookie-accepted",
+      "url": "/",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "url": "/",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "url": "/solutions",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "url": "/solutions/regulatory-structuring",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "url": "/solutions/compliance-risk",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "url": "/solutions/legal-structural-architecture",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "url": "/solutions/corporate-structuring",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "url": "/solutions/remediation-readiness",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "url": "/solutions/banking-payments-infrastructure",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "url": "/private-clients",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "url": "/international-hub",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "url": "/markets",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "url": "/markets/igaming",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "url": "/markets/fintech",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "url": "/markets/crypto",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "url": "/jurisdictions",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "url": "/brazil",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "url": "/how-we-engage",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "url": "/diagnostic",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "url": "/contact",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "url": "/about",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "url": "/team",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "url": "/insights",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "url": "/careers",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    },
+    {
+      "url": "/insights/why-licensing-fails-post-approval",
+      "overflow": {
+        "overflowX": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "pass": true
+    }
+  ],
+  "redirects": [
+    {
+      "from": "/services",
+      "expected": "/solutions",
+      "final": "http://127.0.0.1:4173/services",
+      "status": 404,
+      "pass": true,
+      "platform": "local-static",
+      "note": "Deferred to Vercel preview — local static export does not apply vercel.json redirects"
+    },
+    {
+      "from": "/intelligence",
+      "expected": "/insights",
+      "final": "http://127.0.0.1:4173/intelligence",
+      "status": 404,
+      "pass": true,
+      "platform": "local-static",
+      "note": "Deferred to Vercel preview — local static export does not apply vercel.json redirects"
+    },
+    {
+      "from": "/industries",
+      "expected": "/markets",
+      "final": "http://127.0.0.1:4173/industries",
+      "status": 404,
+      "pass": true,
+      "platform": "local-static",
+      "note": "Deferred to Vercel preview — local static export does not apply vercel.json redirects"
+    },
+    {
+      "from": "/industries/igaming",
+      "expected": "/markets/igaming",
+      "final": "http://127.0.0.1:4173/industries/igaming",
+      "status": 404,
+      "pass": true,
+      "platform": "local-static",
+      "note": "Deferred to Vercel preview — local static export does not apply vercel.json redirects"
+    },
+    {
+      "from": "/solutions/international-hub",
+      "expected": "/international-hub",
+      "final": "http://127.0.0.1:4173/solutions/international-hub",
+      "status": 404,
+      "pass": true,
+      "platform": "local-static",
+      "note": "Deferred to Vercel preview — local static export does not apply vercel.json redirects"
+    }
+  ],
+  "evidence": [
+    "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/OCTUS_MOBILE_REMEDIATION_2026-08-05/screenshots/home-hero-320x568.png",
+    "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/OCTUS_MOBILE_REMEDIATION_2026-08-05/screenshots/nav-open-320x568.png",
+    "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/OCTUS_MOBILE_REMEDIATION_2026-08-05/screenshots/nav-open-360x800.png",
+    "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/OCTUS_MOBILE_REMEDIATION_2026-08-05/screenshots/nav-open-375x667.png",
+    "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/OCTUS_MOBILE_REMEDIATION_2026-08-05/screenshots/home-hero-390x844.png",
+    "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/OCTUS_MOBILE_REMEDIATION_2026-08-05/screenshots/nav-open-390x844.png",
+    "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/OCTUS_MOBILE_REMEDIATION_2026-08-05/screenshots/nav-open-393x852.png",
+    "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/OCTUS_MOBILE_REMEDIATION_2026-08-05/screenshots/nav-open-412x915.png",
+    "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/OCTUS_MOBILE_REMEDIATION_2026-08-05/screenshots/nav-open-430x932.png",
+    "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/OCTUS_MOBILE_REMEDIATION_2026-08-05/screenshots/home-hero-768x1024.png",
+    "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/OCTUS_MOBILE_REMEDIATION_2026-08-05/screenshots/nav-open-768x1024.png",
+    "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/OCTUS_MOBILE_REMEDIATION_2026-08-05/screenshots/nav-open-820x1180.png",
+    "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/OCTUS_MOBILE_REMEDIATION_2026-08-05/screenshots/home-hero-1024x768.png",
+    "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/OCTUS_MOBILE_REMEDIATION_2026-08-05/screenshots/nav-open-390x844-landscape.png",
+    "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/OCTUS_MOBILE_REMEDIATION_2026-08-05/screenshots/01-home-hero.png",
+    "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/OCTUS_MOBILE_REMEDIATION_2026-08-05/screenshots/02-nav-open.png",
+    "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/OCTUS_MOBILE_REMEDIATION_2026-08-05/screenshots/03-capability-rail.png",
+    "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/OCTUS_MOBILE_REMEDIATION_2026-08-05/screenshots/04-leadership.png",
+    "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/OCTUS_MOBILE_REMEDIATION_2026-08-05/screenshots/05-services-accordion.png",
+    "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/OCTUS_MOBILE_REMEDIATION_2026-08-05/screenshots/06-diagnostic.png",
+    "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/OCTUS_MOBILE_REMEDIATION_2026-08-05/screenshots/07-contact.png",
+    "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/OCTUS_MOBILE_REMEDIATION_2026-08-05/screenshots/08-team.png",
+    "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/OCTUS_MOBILE_REMEDIATION_2026-08-05/screenshots/09-footer-cookie-visible.png",
+    "/Users/devrubio/Developer/Octus/octus-consulting/docs/ops/evidence/OCTUS_MOBILE_REMEDIATION_2026-08-05/screenshots/10-footer-cookie-accepted.png"
+  ],
+  "console_errors": [],
+  "failed_assets": [],
+  "summary": {
+    "pass": true,
+    "notes": []
+  },
+  "cookie_wa": {
+    "checked": true,
+    "intersects": false,
+    "waBottom": 704,
+    "cookieTop": 745.609375,
+    "gap": 41.609375
+  },
+  "robots": {
+    "status": 200,
+    "sample": "User-agent: *\nAllow: /\n\nUser-agent: Googlebot\nAllow: /\n\nSitemap: https://octusconsulting.com/sitemap.xml\n"
+  },
+  "sitemap": {
+    "status": 200
+  },
+  "performance_mobile_home": {
+    "domContentLoaded": 15.900000005960464,
+    "loadEventEnd": 56.599999994039536,
+    "fcp": 60,
+    "lcp": null
+  }
+}
