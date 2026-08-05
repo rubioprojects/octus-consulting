@@ -1696,11 +1696,11 @@ footer .heading-lg,
   transform: scale(1.04);
   transform-origin: center 32%;
 }
-/* Larissa: source crown flat-cut — padded plate + pull-back so flat edge is not flush. */
+/* Larissa: source crown flat-cut — padded plate + mild pull-back. */
 .team-photo--larissa .team-card-photo {
-  object-position: 50% 28%;
-  transform: scale(0.88);
-  transform-origin: center 18%;
+  object-position: 50% 30%;
+  transform: scale(0.94);
+  transform-origin: center 24%;
 }
 .team-photo--milla .team-card-photo { object-position: 50% 40%; }
 .team-photo--bianca .team-card-photo { object-position: 50% 40%; }
