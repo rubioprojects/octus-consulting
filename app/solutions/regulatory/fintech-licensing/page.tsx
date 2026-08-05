@@ -178,7 +178,8 @@ export default function FintechLicensingPage() {
             We do not submit applications built on assumptions. We design regulatory-ready operations and take them through authorisation.
           </p>
           <p className="body-text" style={{ marginBottom: "24px" }}>
-            If your objective is "get a licence fast", "test and see if it passes", or "use a template and adapt later": this is not for you.
+            If your objective is &ldquo;get a licence fast&rdquo;, &ldquo;test and see if it
+            passes&rdquo;, or &ldquo;use a template and adapt later&rdquo;: this is not for you.
           </p>
           <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>Who this is for</h3>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
