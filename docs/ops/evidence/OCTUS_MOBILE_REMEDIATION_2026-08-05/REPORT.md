@@ -1,61 +1,48 @@
 # Octus Mobile Remediation — Relatório QA (2026-08-05)
 
 **Status técnico:** `MOBILE_REMEDIATION_PASS`  
-**Merge gate:** `AWAITING_RUBIO_EXPLICIT_APPROVAL`  
-**Produção tocada:** NÃO  
-**Merge executado:** NÃO
+**Merge gate:** Rubio authorized — evidence correction then squash-merge  
+**Produção tocada (pré-merge):** NÃO  
 
 | Campo | Valor |
 |-------|-------|
-| Branch HEAD | `9fb4fff229b9915f9fb8f9b919c23399654d340d` |
-| Preview | https://octus-consulting-mobqz674u-axle1.vercel.app |
+| APP_QA_SHA | `9fb4fff229b9915f9fb8f9b919c23399654d340d` |
+| CURRENT_BRANCH_HEAD | `7c4f4373061abadb05aa774eeb89fe6a57b50895` |
+| App QA Preview | https://octus-consulting-mobqz674u-axle1.vercel.app |
 | Preview deployment | `dpl_BAJ4Dju9yefNLgJFo8cEDuEduGzt` |
-| CI | PASS — https://github.com/rubioprojects/octus-consulting/actions/runs/31002872157 |
-| Produção viva | SHA `28eb2ec` · `dpl_EJ7fPhWXFKLN9wEfU5N8dSiZpEP3` |
+| Produção viva (pré-release) | SHA `28eb2ec` · `dpl_EJ7fPhWXFKLN9wEfU5N8dSiZpEP3` |
+
+## Cookie consent evidence correction (2026-08-05)
+
+Recaptured from APP_QA preview at `390×844`:
+
+| Assertion | Result |
+|-----------|--------|
+| COOKIE_VISIBLE_SCREENSHOT | banner visible |
+| COOKIE_ACCEPTED_SCREENSHOT | banner absent |
+| WHATSAPP_OVERLAP | false (gap ≈ 41.6px; WA `bottom: 140px` elevated) |
+| SCREENSHOT_HASHES_DIFFERENT | true |
+| hash 09 visible | `09fcd3760dfd3f218d96a796fc028a433d56571e92d52966f9c4a86e7f884e5e` |
+| hash 10 accepted | `a34ef0621ab551f953cb4e8f0cf1e89069a023dabd4a1a3731a117d987ddbca4` |
+| WA resting after accept | `bottom: 24px` |
 
 ## Gates
 
 | Gate | Resultado |
 |------|-----------|
-| `npm run lint` | PASS |
-| `npm run build` | PASS |
-| GitHub Actions lint+build | PASS |
-| Vercel preview READY | PASS |
-| Playwright matrix (local + preview) | PASS |
-| Overflow horizontal páginas críticas | PASS |
-| Cookie × WhatsApp overlap | PASS (gap ≈ 41px @ 390×844) |
-| Redirects no preview (`vercel.json`) | PASS (308) |
-| Preview `X-Robots-Tag: noindex` | PASS |
-| Regressão desktop @ 1024 | PASS (nav desktop) |
+| Playwright matrix | PASS |
+| Overflow horizontal | PASS |
+| Cookie × WhatsApp overlap | PASS |
+| Redirects no preview | PASS (308) |
+| Preview `noindex` | PASS |
+| Desktop @ 1024 | PASS |
 
-## Causas raiz
+## Terminology
 
-1. Cascata CSS acumulada com breakpoints conflitantes (639/640/767/768/1024).
-2. Nav desktop em `md` (768) — tablet via desktop comprimido.
-3. `MobileRemediation.module.css` órfão (não importado).
-4. Hero com `min-height: 880px` no mobile.
-5. Rail em grid 2 colunas denso.
-6. Leadership forçado a 1 coluna ≤640px.
-7. WhatsApp `z-index` acima do cookie sem lift espacial.
-8. Fonte Unigeo duplicada (`@font-face` + `next/font`).
-
-## SoT responsivo
-
-Opção A: bloco **OCTUS FINAL MOBILE REMEDIATION** no fim de `app/globals.css`. Módulo órfão removido.
+- `APP_QA_SHA` = application tip used for visual QA (`9fb4fff`) — **not** current branch HEAD after docs/evidence stamps.
+- `CURRENT_BRANCH_HEAD` = tip after this evidence correction commit.
 
 ## Evidência
 
 `docs/ops/evidence/OCTUS_MOBILE_REMEDIATION_2026-08-05/screenshots/`  
 `QA_MATRIX.json`
-
-## Dependências externas (não bloqueiam mobile)
-
-GTM/GA4 IDs, Search Console, Consent Mode v2 — ver `ANALYTICS_INSERTION_POINTS.md`.
-
-## Recomendação
-
-```text
-TECHNICAL PASS — READY FOR RUBIO MERGE AUTHORIZATION
-```
-
-Não fazer merge/prod/DNS sem autorização explícita do Rubio.

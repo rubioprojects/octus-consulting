@@ -643,14 +643,17 @@
   "failed_assets": [],
   "summary": {
     "pass": true,
-    "notes": []
+    "notes": [
+      "cookie evidence corrected \u2014 hashes differ"
+    ]
   },
   "cookie_wa": {
     "checked": true,
     "intersects": false,
     "waBottom": 704,
     "cookieTop": 745.609375,
-    "gap": 41.609375
+    "gap": 41.609375,
+    "accepted_banner_absent": true
   },
   "robots": {
     "status": 200,
@@ -669,5 +672,20 @@
   "preview_url": "https://octus-consulting-mobqz674u-axle1.vercel.app",
   "head_sha": "9fb4fff229b9915f9fb8f9b919c23399654d340d",
   "ci_url": "https://github.com/rubioprojects/octus-consulting/actions/runs/31002872157",
-  "redirects_verified_on_preview": true
+  "redirects_verified_on_preview": true,
+  "cookie_evidence_correction": {
+    "corrected_at": "2026-08-05T13:33:04.228940+00:00",
+    "preview": "https://octus-consulting-mobqz674u-axle1.vercel.app",
+    "preview_deployment": "dpl_BAJ4Dju9yefNLgJFo8cEDuEduGzt",
+    "APP_QA_SHA": "9fb4fff229b9915f9fb8f9b919c23399654d340d",
+    "COOKIE_VISIBLE_SCREENSHOT": "banner visible",
+    "COOKIE_ACCEPTED_SCREENSHOT": "banner absent",
+    "WHATSAPP_OVERLAP": false,
+    "SCREENSHOT_HASHES_DIFFERENT": true,
+    "hash_visible": "09fcd3760dfd3f218d96a796fc028a433d56571e92d52966f9c4a86e7f884e5e",
+    "hash_accepted": "a34ef0621ab551f953cb4e8f0cf1e89069a023dabd4a1a3731a117d987ddbca4",
+    "visible_gap_px": 41.609375,
+    "wa_bottom_elevated": "140px",
+    "wa_bottom_resting": "24px"
+  }
 }
