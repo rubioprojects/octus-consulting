@@ -1,38 +1,5 @@
-@font-face {
-  font-family: 'Unigeo64';
-  src: url('/fonts/Unigeo64-Regular.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Unigeo64';
-  src: url('/fonts/Unigeo64-Medium.otf') format('opentype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Unigeo64';
-  src: url('/fonts/Unigeo64-Semibold.otf') format('opentype');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Unigeo64';
-  src: url('/fonts/Unigeo64-Bold.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Unigeo64';
-  src: url('/fonts/Unigeo64-Extrabold.otf') format('opentype');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
+/* Unigeo64 is loaded once via next/font/local in app/layout.tsx (--font-unigeo).
+   Manual @font-face duplicates removed to cut mobile font payload / LCP pressure. */
 
 @tailwind base;
 @tailwind components;
@@ -1935,39 +1902,32 @@ p.text-pretty {
   margin-top: 0.25rem;
 }
 
-/* Phase 2: match baseline 9q798dbg2 WhatsApp geometry (24×24 resting; no cookie lift). */
+/* WhatsApp float — resting geometry; cookie-visible lift lives in FINAL MOBILE block. */
 .wa-float {
-  z-index: 110 !important;
-  bottom: calc(24px + env(safe-area-inset-bottom, 0px)) !important;
-  right: calc(24px + env(safe-area-inset-right, 0px)) !important;
+  z-index: 90;
+  bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+  right: calc(24px + env(safe-area-inset-right, 0px));
   min-height: 48px;
   min-width: 48px;
   box-shadow: 0 8px 28px rgba(11, 18, 32, 0.28);
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
-body.cookie-banner-visible .wa-float {
-  /* Baseline does not lift the float while the essential cookie bar is visible. */
-  bottom: calc(24px + env(safe-area-inset-bottom, 0px)) !important;
-}
 @media (max-width: 768px) {
   .wa-float {
-    bottom: calc(24px + env(safe-area-inset-bottom, 0px)) !important;
-    right: calc(16px + env(safe-area-inset-right, 0px)) !important;
-    padding: 14px !important;
-  }
-  body.cookie-banner-visible .wa-float {
-    bottom: calc(24px + env(safe-area-inset-bottom, 0px)) !important;
+    bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+    right: calc(16px + env(safe-area-inset-right, 0px));
+    padding: 14px;
   }
   .wa-float__label { display: none; }
 }
 .cookie-banner {
-  z-index: 100 !important;
+  z-index: 100;
   padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px));
   background: #0B1220 !important;
   border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
 }
 .cookie-banner button {
-  min-height: 40px;
+  min-height: 44px;
   min-width: 6.5rem;
   flex-shrink: 0;
 }
@@ -2057,7 +2017,7 @@ body.cookie-banner-visible .wa-float {
 .octus-dark-hero__mark {
   display: none;
 }
-/* Phase 3: match baseline 9q798dbg2 hero geometry (computed ≈880px, centered). */
+/* Home hero — desktop keeps tall composition; mobile min-height softened in FINAL MOBILE. */
 .home-hero__h1 {
   max-width: none;
 }
@@ -2067,18 +2027,18 @@ body.cookie-banner-visible .wa-float {
   padding-bottom: 0;
   align-items: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .home-hero {
     min-height: 880px;
     padding-top: 8rem;
   }
 }
-@media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .home-hero {
-    min-height: min(880px, 100svh);
-    padding-top: 5.75rem;
-    padding-bottom: 2rem;
-    align-items: center;
+    min-height: min(760px, 100svh);
+    padding-top: 6.5rem;
+    padding-bottom: 2.5rem;
+    align-items: flex-start;
   }
 }
 .site-header--on-dark .site-header__brand-rule {
@@ -2368,12 +2328,7 @@ body.cookie-banner-visible .wa-float {
   gap: 2.5rem 3rem;
   max-width: 36rem;
 }
-@media (max-width: 640px) {
-  .home-leadership-trust__grid {
-    grid-template-columns: 1fr;
-    max-width: 14rem;
-  }
-}
+/* One-column leadership only on very narrow screens — see FINAL MOBILE @359px. */
 .home-leadership-trust__card {
   color: inherit;
   text-align: left;
@@ -2457,16 +2412,20 @@ body.cookie-banner-visible .wa-float {
   }
 }
 
-/* Capability rail — mobile static grid; desktop slow marquee */
-.capability-rail,
-.capability-rail__viewport {
+/* Capability rail — mobile/tablet swipe list; desktop (≥1024) slow marquee */
+.capability-rail {
   position: relative;
   overflow: hidden;
 }
 .capability-rail__viewport {
+  position: relative;
+  overflow: hidden;
   height: 100%;
 }
 .capability-rail__track {
+  display: none;
+}
+.capability-rail__swipe-hint {
   display: none;
 }
 .capability-rail__static-grid {
@@ -2496,12 +2455,13 @@ body.cookie-banner-visible .wa-float {
 .capability-rail__fade {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .capability-rail {
     height: 4.25rem;
   }
-  .capability-rail__static-grid {
-    display: none;
+  .capability-rail__static-grid,
+  .capability-rail__swipe-hint {
+    display: none !important;
   }
   .capability-rail__track {
     display: flex;
@@ -2548,7 +2508,7 @@ body.cookie-banner-visible .wa-float {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
-@media (min-width: 768px) and (prefers-reduced-motion: reduce) {
+@media (min-width: 1024px) and (prefers-reduced-motion: reduce) {
   .capability-rail__track {
     animation: none;
     width: 100%;
@@ -2797,5 +2757,404 @@ body.cookie-banner-visible .wa-float {
 @media (min-width: 1024px) {
   .solutions-area-grid > :last-child:nth-child(odd) {
     width: min(100%, calc(50% - 0.75rem));
+  }
+}
+
+/* =============================================================================
+   OCTUS FINAL MOBILE REMEDIATION (single source of truth)
+   Breakpoints: handheld ≤767 · tablet ≤1023 · desktop ≥1024
+   Do not add a competing MobileRemediation CSS module.
+   ============================================================================= */
+
+html {
+  max-width: 100%;
+  overflow-x: clip;
+}
+body {
+  max-width: 100%;
+  overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+img,
+svg,
+video {
+  max-width: 100%;
+}
+
+/* Mobile menu owns the viewport — hide floating WA while open. */
+body.mobile-nav-open .wa-float {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media (max-width: 1023px) {
+  .site-header {
+    min-height: 4.25rem;
+  }
+  #mobile-nav {
+    overscroll-behavior: contain;
+  }
+  #mobile-nav a,
+  #mobile-nav summary {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@media (max-width: 1023px) {
+  /* Capability rail: one readable card per snap unit (no cramped 2-col). */
+  .capability-rail {
+    height: auto;
+    padding-bottom: 0.35rem;
+  }
+  .capability-rail__viewport {
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .capability-rail__viewport::-webkit-scrollbar {
+    display: none;
+  }
+  .capability-rail__static-grid {
+    display: flex !important;
+    width: max-content;
+    min-width: 100%;
+    grid-template-columns: none !important;
+    gap: 0.75rem;
+    padding: 0.9rem 1rem 0.35rem;
+  }
+  .capability-rail__grid-item {
+    width: min(78vw, 18rem);
+    min-height: 3.5rem;
+    flex: 0 0 auto;
+    align-items: center;
+    padding: 0.75rem 0.85rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.375rem;
+    background: rgba(255, 255, 255, 0.035);
+    font-size: 0.6875rem;
+    letter-spacing: 0.045em;
+    line-height: 1.35;
+    scroll-snap-align: start;
+  }
+  .capability-rail__swipe-hint {
+    display: block;
+    margin: 0;
+    padding: 0 1rem 0.65rem;
+    font-family: var(--font-inter), Inter, system-ui, sans-serif;
+    font-size: 0.625rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.38);
+  }
+}
+
+@media (max-width: 767px) {
+  main {
+    width: 100%;
+    overflow-x: clip;
+  }
+
+  main > section.py-32,
+  main > section.py-24 {
+    padding-top: 4.25rem !important;
+    padding-bottom: 4.25rem !important;
+  }
+  main > section.py-20 {
+    padding-top: 3.75rem !important;
+    padding-bottom: 3.75rem !important;
+  }
+  main > section.py-16,
+  main > section.py-14 {
+    padding-top: 3.25rem !important;
+    padding-bottom: 3.25rem !important;
+  }
+
+  .section,
+  .section-sm,
+  .section-dark,
+  .section-blue,
+  .section-padded,
+  .operate-section,
+  .speed-section,
+  .trust-section,
+  .why-fail-wrap,
+  .wwd-modules-section,
+  .authority-section,
+  .insights-section,
+  .post-body-section,
+  .certifications-block {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+
+  .page-hero {
+    min-height: auto !important;
+    padding: 7rem 1.25rem 3.75rem !important;
+  }
+
+  .home-hero {
+    min-height: auto !important;
+    align-items: flex-start !important;
+    padding-top: calc(4.25rem + 3.5rem) !important;
+    padding-bottom: 3.5rem !important;
+  }
+  .home-hero .octus-hero-copy {
+    margin-inline: 0 !important;
+    max-width: 42rem !important;
+  }
+  .home-hero__h1 {
+    max-width: 18ch;
+    font-size: clamp(2rem, 9.6vw, 2.65rem) !important;
+    line-height: 1.1 !important;
+    letter-spacing: -0.018em !important;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+  .home-hero .octus-hero-copy > p {
+    max-width: 35rem;
+    font-size: 1rem !important;
+    line-height: 1.65 !important;
+  }
+  .home-hero .octus-hero-copy > div:last-of-type {
+    align-items: stretch;
+  }
+  .home-hero .octus-hero-copy > div:last-of-type > a:first-child {
+    width: 100%;
+    min-height: 2.75rem;
+    justify-content: center;
+  }
+
+  .heading-section {
+    font-size: clamp(1.75rem, 7.8vw, 2.25rem) !important;
+    line-height: 1.12 !important;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+  .heading-lg,
+  .heading-md,
+  .page-hero-title,
+  .home-modules-accordion__title {
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+  .body-large,
+  .body-lg {
+    font-size: 1.0625rem !important;
+    line-height: 1.65 !important;
+  }
+  .body-text,
+  .body {
+    font-size: 0.9375rem !important;
+    line-height: 1.7 !important;
+  }
+
+  /* Authority strip stays compact three-up on normal phones. */
+  .home-authority {
+    padding-top: 2.75rem !important;
+    padding-bottom: 3rem !important;
+  }
+  .home-authority .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 0 !important;
+  }
+  .home-authority .grid > div {
+    min-width: 0;
+    padding-inline: 0.55rem;
+    border-right: 1px solid hsl(var(--border));
+  }
+  .home-authority .grid > div:last-child {
+    border-right: 0;
+  }
+  .home-authority .editorial-numeral--sm {
+    font-size: clamp(1.35rem, 6.5vw, 1.8rem) !important;
+    letter-spacing: 0.025em !important;
+  }
+  .home-authority .grid span:last-child {
+    font-size: 0.7rem !important;
+    line-height: 1.35;
+  }
+  .home-authority p:last-child {
+    margin-top: 1.75rem !important;
+  }
+
+  /* Leadership: two columns on normal phones. */
+  .home-leadership-trust {
+    padding-top: 3.75rem !important;
+    padding-bottom: 3.75rem !important;
+  }
+  .home-leadership-trust__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    max-width: 100% !important;
+    gap: 2rem 1rem !important;
+  }
+  .home-leadership-trust__card {
+    min-width: 0;
+    text-align: center !important;
+  }
+  .home-leadership-trust__photo-wrap.team-portrait--leadership,
+  .home-leadership-trust__photo-wrap {
+    width: clamp(7rem, 34vw, 9.25rem) !important;
+    height: clamp(7rem, 34vw, 9.25rem) !important;
+    margin-inline: auto;
+  }
+  .home-leadership-trust__name {
+    font-size: 1rem !important;
+    line-height: 1.25;
+  }
+  .home-leadership-trust__role {
+    font-size: 0.625rem !important;
+    line-height: 1.45;
+    letter-spacing: 0.08em !important;
+  }
+
+  /* Resting card boundaries for touch (hover is not available). */
+  main .border-transparent.bg-background,
+  main a.border-transparent.bg-background {
+    border-color: hsl(var(--border)) !important;
+    box-shadow: 0 8px 24px -22px rgba(11, 18, 32, 0.45);
+  }
+
+  .home-modules-accordion__trigger {
+    min-height: 4.25rem;
+  }
+  .home-modules-accordion__panel {
+    padding-bottom: 1.5rem;
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .grid-auto,
+  .grid-auto-lg {
+    min-width: 0;
+  }
+
+  /* Controlled scroll for any future / residual wide tables. */
+  .table-scroll,
+  main .overflow-x-auto {
+    max-width: 100%;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .chip-row {
+    gap: 0.625rem !important;
+  }
+  .chip-juris {
+    min-height: 2.75rem;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  /* Footer action stack — leave room for WA float (+ cookie when visible). */
+  .site-footer {
+    padding-top: 3.5rem !important;
+    padding-bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px)) !important;
+  }
+  body.cookie-banner-visible .site-footer {
+    padding-bottom: calc(9.5rem + env(safe-area-inset-bottom, 0px)) !important;
+  }
+  .site-footer__brand-close {
+    margin-bottom: 1.5rem !important;
+    padding-bottom: 2rem !important;
+  }
+  .site-footer__brand-close__line {
+    font-size: 0.9375rem !important;
+  }
+  .site-footer__cta-row {
+    display: grid !important;
+    grid-template-columns: 1fr auto;
+    align-items: center !important;
+    gap: 0.75rem 1rem !important;
+  }
+  .site-footer__cta-row > a:first-child {
+    grid-column: 1 / -1;
+    justify-content: center;
+    width: 100%;
+    min-height: 2.75rem;
+  }
+  .site-footer__cta-row > div a {
+    width: 2.75rem;
+    height: 2.75rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .site-footer__acc-summary {
+    min-height: 3rem !important;
+  }
+  .site-footer__bar {
+    margin-top: 2.5rem !important;
+    padding-top: 1.5rem !important;
+  }
+
+  /* Cookie + WhatsApp: lift float above banner; cookie stays clickable (z 100 > 90). */
+  body.cookie-banner-visible .wa-float {
+    bottom: calc(5.75rem + env(safe-area-inset-bottom, 0px)) !important;
+  }
+  .cookie-banner {
+    gap: 0.75rem !important;
+    padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom, 0px)) !important;
+  }
+  .cookie-banner p {
+    font-size: 0.75rem !important;
+    line-height: 1.45 !important;
+  }
+  .cookie-banner button {
+    min-height: 2.75rem !important;
+  }
+
+  /* Forms / sticky cards become static on handheld. */
+  .contact-form-card {
+    position: static !important;
+    top: auto !important;
+  }
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .cookie-banner {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  .cookie-banner button {
+    width: 100%;
+  }
+  body.cookie-banner-visible .wa-float {
+    bottom: calc(8.75rem + env(safe-area-inset-bottom, 0px)) !important;
+  }
+  main .h-12.px-10 {
+    width: 100%;
+    max-width: 100%;
+    padding-inline: 1.25rem !important;
+    text-align: center;
+  }
+}
+
+@media (max-width: 359px) {
+  .home-leadership-trust__grid {
+    grid-template-columns: 1fr !important;
+    max-width: 13rem !important;
+    margin-inline: auto;
+  }
+  .home-authority .grid {
+    gap: 1.25rem !important;
+    grid-template-columns: 1fr !important;
+  }
+  .home-authority .grid > div {
+    padding-bottom: 1.25rem;
+    border-right: 0;
+    border-bottom: 1px solid hsl(var(--border));
+  }
+  .home-authority .grid > div:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
   }
 }
