@@ -1696,10 +1696,8 @@ footer .heading-lg,
   transform: scale(1.04);
   transform-origin: center 32%;
 }
-/* Larissa: studio source crown sits on file edge — match wrap plate + pull back so hair clears frame. */
-.team-card-photo-wrap.team-photo--larissa {
-  background: rgb(219, 215, 219);
-}
+/* Larissa: studio source crown sits on file edge — pull back so hair clears frame.
+   Wrap plate color is set later (after .team-portrait gradient) for specificity. */
 .team-photo--larissa .team-card-photo {
   object-position: 50% 34%;
   transform: scale(0.84);
