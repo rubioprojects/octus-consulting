@@ -1,6 +1,6 @@
 /**
- * Lead-path static validation — does not open WhatsApp or send email.
- * Asserts destinations, encoding, safe attributes, and tracking readiness markers.
+ * Lead-path static validation — destinations, encoding, markers.
+ * Classification behavior is covered by clickClassification.test.ts.
  */
 
 const { describe, it } = require("node:test");
@@ -21,6 +21,7 @@ const diagnostic = read("app/diagnostic/page.tsx");
 const careers = read("app/careers/page.tsx");
 const compliance = read("app/compliance-channel/page.tsx");
 const clickTracker = read("components/analytics/ClickEventTracker.tsx");
+const clickClass = read("lib/analytics/clickClassification.ts");
 
 const E164 = "5511974273000";
 
@@ -42,12 +43,23 @@ describe("lead path matrix", () => {
     assert.match(contact, /data-cta-location="contact_email"/);
   });
 
-  it("diagnostic page exposes primary/secondary WhatsApp + email without forms", () => {
+  it("diagnostic primary alone carries explicit diagnostic_click marker", () => {
     assert.match(diagnostic, /WHATSAPP_ASSESS_URL/);
     assert.match(diagnostic, /WHATSAPP_DISCUSS_URL/);
     assert.match(diagnostic, /MAILTO_INFO/);
     assert.doesNotMatch(diagnostic, /<form[\s>]/i);
     assert.match(diagnostic, /octusEvent: "diagnostic_click"/);
+    // Secondary discuss CTA must not carry the diagnostic marker in the same object literal.
+    const primaryBlock = diagnostic.match(
+      /primaryCta=\{\{[\s\S]*?\}\}/
+    )?.[0];
+    const secondaryBlock = diagnostic.match(
+      /secondaryCta=\{\{[\s\S]*?\}\}/
+    )?.[0];
+    assert.ok(primaryBlock);
+    assert.ok(secondaryBlock);
+    assert.match(primaryBlock, /octusEvent:\s*"diagnostic_click"/);
+    assert.doesNotMatch(secondaryBlock, /octusEvent/);
   });
 
   it("global float and footer CTAs use safe external attributes", () => {
@@ -62,9 +74,10 @@ describe("lead path matrix", () => {
     assert.match(compliance, /mailto:|@octusconsulting\.com/i);
   });
 
-  it("click tracker prepares whatsapp_click, email_click, diagnostic_click", () => {
-    assert.match(clickTracker, /whatsapp_click/);
-    assert.match(clickTracker, /email_click/);
-    assert.match(clickTracker, /diagnostic_click/);
+  it("click tracker uses explicit marker classification only", () => {
+    assert.match(clickTracker, /classifyCtaClick/);
+    assert.doesNotMatch(clickTracker, /isDiagnosticWhatsApp/);
+    assert.match(clickClass, /hasExplicitDiagnosticMarker/);
+    assert.doesNotMatch(clickClass, /pathname\s*===\s*["']\/diagnostic["']/);
   });
 });

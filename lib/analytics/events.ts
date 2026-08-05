@@ -1,9 +1,10 @@
 /**
  * Single reusable tracking layer — no scattered raw gtag calls.
  * Events only fire when: production host + GTM configured + analytics consent granted.
+ * Returns whether the event was actually enqueued to dataLayer.
  */
 
-import { analyticsConfigured, GA4_MEASUREMENT_ID, hasGa4Id } from "./config";
+import { analyticsConfigured } from "./config";
 import {
   preferencesToConsentMode,
   readConsentPreferences,
@@ -66,7 +67,6 @@ export function pushDataLayer(payload: Record<string, unknown>): void {
 export function applyDefaultConsentMode(): void {
   if (typeof window === "undefined") return;
   window.dataLayer = window.dataLayer || [];
-  // gtag stub for consent commands before GTM loads
   if (!window.gtag) {
     window.gtag = function gtag(...args: unknown[]) {
       window.dataLayer!.push(args as unknown as Record<string, unknown>);
@@ -95,12 +95,15 @@ export function updateConsentMode(prefs: ConsentPreferences): void {
   window.gtag("consent", "update", mode);
 }
 
+/**
+ * @returns true when the event was enqueued to dataLayer (all gates passed).
+ */
 export function trackEvent(
   name: OctusEventName,
   params: OctusEventParams = {},
   prefs?: ConsentPreferences | null
-): void {
-  if (!canTrack(prefs)) return;
+): boolean {
+  if (!canTrack(prefs)) return false;
 
   const consent = preferencesToConsentMode(prefs ?? readConsentPreferences());
   const page_path =
@@ -118,12 +121,8 @@ export function trackEvent(
     ...params,
   };
 
-  // Optional measurement id context for GTM variables — never invent.
-  if (hasGa4Id()) {
-    payload.ga4_measurement_id = GA4_MEASUREMENT_ID;
-  }
-
   pushDataLayer(payload);
+  return true;
 }
 
 /** Classify view event from pathname. */

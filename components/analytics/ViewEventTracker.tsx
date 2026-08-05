@@ -6,39 +6,42 @@ import {
   contentMetaForPath,
   trackEvent,
   viewEventForPath,
+  type OctusEventName,
 } from "../../lib/analytics/events";
 import { readConsentPreferences } from "../../lib/analytics/consent";
+import { createViewEventDispatcher } from "../../lib/analytics/viewDispatch";
 
 /**
- * Fires content view events once per path (hydration + client navigations).
- * Dedupes Strict Mode double-mount and same-path re-renders.
+ * Fires content view events once per path after successful enqueue.
+ * Re-evaluates when analytics consent flips denied → granted on the same page.
  */
 export default function ViewEventTracker() {
   const pathname = usePathname();
-  const lastFired = useRef<string | null>(null);
+  const dispatcherRef = useRef(
+    createViewEventDispatcher({
+      viewEventForPath: (p) => viewEventForPath(p),
+      trackEvent: (name, params) =>
+        trackEvent(name as OctusEventName, params, readConsentPreferences()),
+      contentMetaForPath,
+      getPageTitle: () =>
+        typeof document !== "undefined" ? document.title : undefined,
+    })
+  );
 
   useEffect(() => {
-    if (!pathname) return;
-    const eventName = viewEventForPath(pathname);
-    if (!eventName) {
-      lastFired.current = pathname;
-      return;
-    }
-    const key = `${eventName}:${pathname}`;
-    if (lastFired.current === key) return;
-    lastFired.current = key;
+    const run = () => {
+      dispatcherRef.current.evaluate(pathname);
+    };
 
-    const prefs = readConsentPreferences();
-    const meta = contentMetaForPath(pathname);
-    trackEvent(
-      eventName,
-      {
-        page_path: pathname,
-        page_title: typeof document !== "undefined" ? document.title : undefined,
-        ...meta,
-      },
-      prefs
-    );
+    run();
+
+    const onConsentUpdated = () => {
+      run();
+    };
+    window.addEventListener("octus:consent-updated", onConsentUpdated);
+    return () => {
+      window.removeEventListener("octus:consent-updated", onConsentUpdated);
+    };
   }, [pathname]);
 
   return null;

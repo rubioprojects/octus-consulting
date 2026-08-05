@@ -4,9 +4,10 @@ import { useEffect } from "react";
 import { trackEvent } from "../../lib/analytics/events";
 import { readConsentPreferences } from "../../lib/analytics/consent";
 import {
-  WHATSAPP_ASSESS_URL,
-  WHATSAPP_DIAGNOSTIC_URL,
-} from "../../lib/cta";
+  classifyCtaClick,
+  isMailtoHref,
+  isWhatsAppHref,
+} from "../../lib/analytics/clickClassification";
 
 function closestAnchor(target: EventTarget | null): HTMLAnchorElement | null {
   if (!(target instanceof Element)) return null;
@@ -23,30 +24,10 @@ function inferCtaLocation(anchor: HTMLAnchorElement): string {
   return "unknown";
 }
 
-function isWhatsAppHref(href: string): boolean {
-  return /wa\.me\//i.test(href) || /api\.whatsapp\.com/i.test(href);
-}
-
-function isMailtoHref(href: string): boolean {
-  return href.toLowerCase().startsWith("mailto:");
-}
-
-function isDiagnosticWhatsApp(href: string, pathname: string): boolean {
-  if (pathname === "/diagnostic" && isWhatsAppHref(href)) return true;
-  const assess = WHATSAPP_ASSESS_URL.split("?")[0];
-  const diag = WHATSAPP_DIAGNOSTIC_URL.split("?")[0];
-  const base = href.split("?")[0];
-  if (base === assess || base === diag) return true;
-  return (
-    href.includes(encodeURIComponent("assess my regulated")) ||
-    href.includes(encodeURIComponent("diagnostic"))
-  );
-}
-
 /**
  * Document-level CTA capture — single layer for wa.me / mailto.
- * diagnostic_click may fire alongside whatsapp_click when definitions match
- * (documented in EVENT_DICTIONARY.md).
+ * diagnostic_click fires only with data-octus-event="diagnostic_click"
+ * (see EVENT_DICTIONARY.md). Pathname / shared wa.me base never imply it.
  */
 export default function ClickEventTracker() {
   useEffect(() => {
@@ -67,7 +48,12 @@ export default function ClickEventTracker() {
       const location = inferCtaLocation(anchor);
       const destination = href.split("?")[0];
 
-      if (isWhatsAppHref(href)) {
+      const classified = classifyCtaClick({
+        href,
+        getAttribute: (name) => anchor.getAttribute(name),
+      });
+
+      if (classified.whatsapp_click && isWhatsAppHref(href)) {
         trackEvent(
           "whatsapp_click",
           {
@@ -79,9 +65,7 @@ export default function ClickEventTracker() {
           prefs
         );
 
-        const explicitDiag =
-          anchor.getAttribute("data-octus-event") === "diagnostic_click";
-        if (explicitDiag || isDiagnosticWhatsApp(href, pathname)) {
+        if (classified.diagnostic_click) {
           trackEvent(
             "diagnostic_click",
             {
@@ -93,8 +77,7 @@ export default function ClickEventTracker() {
             prefs
           );
         }
-      } else if (isMailtoHref(href)) {
-        // Destination is scheme + mailbox only — never message body.
+      } else if (classified.email_click && isMailtoHref(href)) {
         const mailbox = href.replace(/^mailto:/i, "").split("?")[0];
         trackEvent(
           "email_click",

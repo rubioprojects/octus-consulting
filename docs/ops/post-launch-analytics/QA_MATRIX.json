@@ -2,6 +2,7 @@
   "pack": "POST_LAUNCH_ANALYTICS_CONSENT",
   "baseline_main_sha": "1c022f8490ba9ec359850d3d606b03ab165b54dd",
   "branch": "feat/post-launch-analytics-consent",
+  "correction_gate": "ANALYTICS_ARCHITECTURE_CORRECTION_GATE",
   "assertions": [
     {
       "id": "gtm_absent_without_env",
@@ -16,6 +17,14 @@
       "command": "node --test lib/analytics/hostGate.test.cjs"
     },
     {
+      "id": "click_classification_behavior",
+      "command": "node --test --experimental-strip-types lib/analytics/clickClassification.test.ts"
+    },
+    {
+      "id": "post_consent_view_behavior",
+      "command": "node --test --experimental-strip-types lib/analytics/viewDispatch.test.ts"
+    },
+    {
       "id": "lead_paths",
       "command": "node --test scripts/lead-path-validate.test.cjs"
     },
@@ -28,8 +37,12 @@
       "expect": "No Meta/LinkedIn advertising tags"
     },
     {
-      "id": "gsc_meta_gated",
-      "expect": "verification meta only when env set"
+      "id": "gsc_domain_dns_preferred",
+      "expect": "SEARCH_CONSOLE_DNS_VERIFICATION_REQUIRED=true; META token not required"
+    },
+    {
+      "id": "gsc_meta_optional",
+      "expect": "verification meta only when optional env set"
     },
     {
       "id": "robots_sitemap_prod",
@@ -41,11 +54,12 @@
     }
   ],
   "human_gate": {
-    "terminal": "POST_LAUNCH_ANALYTICS_ARCHITECTURE_READY",
-    "awaiting": "AWAITING_RUBIO_CREDENTIAL_INPUT",
-    "gtm_id_required": true,
-    "ga4_id_required": true,
-    "search_console_token_required": true,
+    "terminal": "POST_LAUNCH_ANALYTICS_ARCHITECTURE_READY_FOR_CREDENTIALS",
+    "awaiting": "AWAITING_SOL_REVIEW",
+    "gtm_runtime_id_required": true,
+    "ga4_id_configured_inside_gtm": true,
+    "search_console_dns_verification_required": true,
+    "search_console_meta_token_required": false,
     "production_touched": false,
     "dns_touched": false,
     "merge_performed": false

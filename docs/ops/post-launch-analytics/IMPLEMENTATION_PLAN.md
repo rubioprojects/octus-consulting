@@ -2,15 +2,15 @@
 
 **Branch:** `feat/post-launch-analytics-consent`  
 **Baseline main:** `1c022f8490ba9ec359850d3d606b03ab165b54dd`  
-**Status:** Architecture ready — awaiting Rubio credential input (no invented IDs).
+**Status:** Architecture ready for credentials — Sol classification/view corrections applied.
 
 ## Goals
 
 1. GTM as orchestration layer  
-2. GA4 through GTM only (no direct gtag)  
+2. GA4 through GTM only (no direct gtag; GA4 ID configured inside GTM)  
 3. Consent Mode v2 preference UI  
 4. Commercial conversion events  
-5. Search Console verification readiness (meta token env)  
+5. Search Console Domain Property readiness (DNS TXT — manual)  
 6. Lead-path validation (WhatsApp / email; no forms)
 
 ## Non-goals / hard stops
@@ -29,25 +29,26 @@
 | Config | `lib/analytics/config.ts` | Tracking inert |
 | Host gate | `lib/analytics/hostGate.ts` | Non-prod hosts never track |
 | Consent | `lib/analytics/consent.ts` + `CookieBanner` | Preference model; analytics default denied |
-| Events | `lib/analytics/events.ts` + trackers | No `dataLayer` push without gates |
+| Events | `lib/analytics/events.ts` + trackers | No `dataLayer` push without gates; `trackEvent` returns enqueue boolean |
+| Classification | `lib/analytics/clickClassification.ts` | `diagnostic_click` only via `data-octus-event` |
+| View dispatch | `lib/analytics/viewDispatch.ts` | Dedupe only after successful enqueue; consent-updated re-eval |
 | GTM load | `components/analytics/GtmBootstrap.tsx` | Script inject only after analytics consent + prod host + `NEXT_PUBLIC_GTM_ID` |
-| GSC meta | `app/layout.tsx` metadata.verification | Only if `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` set |
+| GSC meta | `app/layout.tsx` metadata.verification | Optional URL-prefix only when env set |
 
-## Env vars (Rubio-supplied)
+## Env vars
 
 ```text
-NEXT_PUBLIC_GTM_ID
-NEXT_PUBLIC_GA4_MEASUREMENT_ID
-NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+NEXT_PUBLIC_GTM_ID                 # required by application to load GTM
+# GA4 Measurement ID               # configured inside GTM — not an app env
+NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION  # optional HTML meta; Domain Property uses DNS TXT
 ```
 
 ## Rollout sequence (after credentials)
 
 1. Rubio creates GTM + GA4; maps GA4 via GTM (not direct site gtag)  
-2. Rubio supplies IDs to Vercel **production** env only (preview may stay empty)  
-3. Rubio completes Search Console DNS verification (see SEARCH_CONSOLE_RUNBOOK.md)  
-4. Preview QA with temporary preview env **only if** host gate temporarily tested via unit tests (preview hosts must remain tracking-off)  
-5. Human approve → merge → production deploy (separate mandate)  
+2. Rubio supplies `NEXT_PUBLIC_GTM_ID` to Vercel **production** env only  
+3. Rubio completes Search Console **Domain Property DNS TXT** (see SEARCH_CONSOLE_RUNBOOK.md)  
+4. Human approve → merge → production deploy (separate mandate)  
 
 ## Phase audit (pre-change on main)
 
