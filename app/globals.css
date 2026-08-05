@@ -1684,11 +1684,11 @@ footer .heading-lg,
   transform: scale(1.02);
   transform-origin: center 35%;
 }
-/* Esther: source has excess headroom — zoom into the face without cutting crown. */
+/* Esther: face more central / prominent — tighter zoom, crown kept. */
 .team-photo--esther .team-card-photo {
-  object-position: 50% 72%;
-  transform: scale(1.42);
-  transform-origin: center 45%;
+  object-position: 50% 70%;
+  transform: scale(1.58);
+  transform-origin: center 42%;
 }
 /* Caroline: light-plate cutout; keep curls and glasses fully inside the frame. */
 .team-photo--caroline .team-card-photo {
@@ -1696,20 +1696,25 @@ footer .heading-lg,
   transform: scale(1.04);
   transform-origin: center 32%;
 }
-/* Larissa: source crown flat-cut — padded plate + mild pull-back. */
+/* Larissa: restored original studio portrait — slight pull-back so crown clears frame. */
 .team-photo--larissa .team-card-photo {
-  object-position: 50% 30%;
-  transform: scale(0.94);
-  transform-origin: center 24%;
+  object-position: 50% 36%;
+  transform: scale(0.96);
+  transform-origin: center 28%;
 }
 .team-photo--milla .team-card-photo { object-position: 50% 40%; }
 .team-photo--bianca .team-card-photo { object-position: 50% 40%; }
-.team-photo--claudia .team-card-photo { object-position: 49% 40%; }
-/* Luciana: source crown flat-cut — padded headroom + mild pull-back. */
-.team-photo--luciana .team-card-photo {
+/* Claudia: source kept; background neutralized in asset — keep face centred. */
+.team-photo--claudia .team-card-photo {
   object-position: 50% 32%;
-  transform: scale(0.9);
-  transform-origin: center 22%;
+  transform: scale(1.06);
+  transform-origin: center 30%;
+}
+/* Luciana: restored original tall studio portrait — frame upper body, keep full head. */
+.team-photo--luciana .team-card-photo {
+  object-position: 50% 22%;
+  transform: scale(1.02);
+  transform-origin: center 20%;
 }
 .team-photo--daniel .team-card-photo { object-position: 50% 38%; }
 .team-grid--commercial {
