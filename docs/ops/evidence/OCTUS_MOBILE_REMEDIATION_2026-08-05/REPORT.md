@@ -7,7 +7,7 @@
 | Campo | Valor |
 |-------|-------|
 | APP_QA_SHA | `9fb4fff229b9915f9fb8f9b919c23399654d340d` |
-| CURRENT_BRANCH_HEAD | `7c4f4373061abadb05aa774eeb89fe6a57b50895` |
+| CURRENT_BRANCH_HEAD | `664742c6539199ed9929670f8a8c8b13ad7ecbc0` |
 | App QA Preview | https://octus-consulting-mobqz674u-axle1.vercel.app |
 | Preview deployment | `dpl_BAJ4Dju9yefNLgJFo8cEDuEduGzt` |
 | Produção viva (pré-release) | SHA `28eb2ec` · `dpl_EJ7fPhWXFKLN9wEfU5N8dSiZpEP3` |
@@ -40,7 +40,8 @@ Recaptured from APP_QA preview at `390×844`:
 ## Terminology
 
 - `APP_QA_SHA` = application tip used for visual QA (`9fb4fff`) — **not** current branch HEAD after docs/evidence stamps.
-- `CURRENT_BRANCH_HEAD` = tip after this evidence correction commit.
+- `CURRENT_BRANCH_HEAD` = evidence correction tip `664742c` (docs/evidence only).
+- Do not describe `9fb4fff` as the current branch HEAD.
 
 ## Evidência
 
