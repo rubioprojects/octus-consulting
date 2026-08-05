@@ -1684,11 +1684,11 @@ footer .heading-lg,
   transform: scale(1.02);
   transform-origin: center 35%;
 }
-/* Esther: face more central / prominent — tighter zoom, crown kept. */
+/* Esther: same source, face-focused plate — light polish only. */
 .team-photo--esther .team-card-photo {
-  object-position: 50% 62%;
-  transform: scale(1.48);
-  transform-origin: center 38%;
+  object-position: 50% 40%;
+  transform: scale(1.04);
+  transform-origin: center 36%;
 }
 /* Caroline: light-plate cutout; keep curls and glasses fully inside the frame. */
 .team-photo--caroline .team-card-photo {
@@ -1696,11 +1696,11 @@ footer .heading-lg,
   transform: scale(1.04);
   transform-origin: center 32%;
 }
-/* Larissa: restored original studio portrait — slight pull-back so crown clears frame. */
+/* Larissa: restored original studio portrait — pull-back so crown clears frame. */
 .team-photo--larissa .team-card-photo {
-  object-position: 50% 34%;
-  transform: scale(0.95);
-  transform-origin: center 26%;
+  object-position: 50% 32%;
+  transform: scale(0.92);
+  transform-origin: center 24%;
 }
 .team-photo--milla .team-card-photo { object-position: 50% 40%; }
 .team-photo--bianca .team-card-photo { object-position: 50% 40%; }
