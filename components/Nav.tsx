@@ -22,6 +22,9 @@ const mobilePrimaryLinks = [
   { label: "About", href: "/about" },
 ];
 
+/** Mobile/tablet chrome below lg (1024px); desktop nav from 1024px upward. */
+const DESKTOP_NAV_MQ = "(min-width: 1024px)";
+
 export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -31,8 +34,10 @@ export default function Nav() {
 
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
+    document.body.classList.toggle("mobile-nav-open", mobileOpen);
     return () => {
       document.body.style.overflow = "";
+      document.body.classList.remove("mobile-nav-open");
     };
   }, [mobileOpen]);
 
@@ -45,6 +50,19 @@ export default function Nav() {
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
+  }, []);
+
+  useEffect(() => {
+    const mq = window.matchMedia(DESKTOP_NAV_MQ);
+    const closeOnDesktop = () => {
+      if (mq.matches) {
+        setMobileOpen(false);
+        setServicesOpen(false);
+      }
+    };
+    closeOnDesktop();
+    mq.addEventListener("change", closeOnDesktop);
+    return () => mq.removeEventListener("change", closeOnDesktop);
   }, []);
 
   useEffect(() => {
@@ -78,19 +96,19 @@ export default function Nav() {
   }, []);
 
   const linkClass = overDarkHero
-    ? "font-sans text-[12px] tracking-[0.02em] text-[color:var(--text-secondary-on-dark)] no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white md:text-[12.5px]"
-    : "font-sans text-[12px] tracking-[0.02em] text-[color:var(--text-secondary)] no-underline transition-colors hover:text-[color:var(--text-link)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary md:text-[12.5px]";
+    ? "font-sans text-[12px] tracking-[0.02em] text-[color:var(--text-secondary-on-dark)] no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white lg:text-[12.5px]"
+    : "font-sans text-[12px] tracking-[0.02em] text-[color:var(--text-secondary)] no-underline transition-colors hover:text-[color:var(--text-link)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary lg:text-[12.5px]";
 
   const ctaClass =
-    "inline-flex items-center rounded-sm bg-primary px-4 py-2 font-sans text-[12px] font-medium tracking-[0.03em] text-primary-foreground no-underline transition-colors hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary md:px-5 md:text-[12.5px] min-h-11";
+    "inline-flex items-center rounded-sm bg-primary px-4 py-2 font-sans text-[12px] font-medium tracking-[0.03em] text-primary-foreground no-underline transition-colors hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary lg:px-5 lg:text-[12.5px] min-h-11";
 
   return (
     <>
       <nav
         className={
           overDarkHero
-            ? "site-header site-header--on-dark fixed left-0 right-0 top-0 z-50 flex h-[4.75rem] items-center border-b border-white/10 bg-[#0B1220] md:h-[5.25rem]"
-            : "site-header fixed left-0 right-0 top-0 z-50 flex h-[4.75rem] items-center border-b border-border/50 bg-background md:h-[5.25rem]"
+            ? "site-header site-header--on-dark fixed left-0 right-0 top-0 z-50 flex h-[4.75rem] items-center border-b border-white/10 bg-[#0B1220] lg:h-[5.25rem]"
+            : "site-header fixed left-0 right-0 top-0 z-50 flex h-[4.75rem] items-center border-b border-border/50 bg-background lg:h-[5.25rem]"
         }
         aria-label="Main"
         data-over-dark-hero={overDarkHero ? "true" : "false"}
@@ -103,19 +121,20 @@ export default function Nav() {
               overDarkHero ? "focus-visible:outline-white" : "focus-visible:outline-primary"
             }`}
             aria-label="Octus Consulting home"
+            onClick={() => setMobileOpen(false)}
           >
             <BrandLockup
               variant={overDarkHero ? "on-dark" : "on-light"}
-              className="site-header__logo h-8 w-auto md:h-9"
+              className="site-header__logo h-8 w-auto lg:h-9"
               priority
             />
           </Link>
 
-          <div className="hidden items-center gap-5 lg:gap-6 md:flex">
+          <div className="hidden items-center gap-5 lg:flex lg:gap-6">
             <div className="relative" ref={servicesRef}>
               <button
                 type="button"
-                className={linkClass + " inline-flex items-center gap-1.5"}
+                className={linkClass + " inline-flex min-h-11 items-center gap-1.5"}
                 aria-expanded={servicesOpen}
                 aria-controls={menuId}
                 aria-haspopup="true"
@@ -176,7 +195,7 @@ export default function Nav() {
 
           <button
             type="button"
-            className={`flex rounded-md border-0 bg-transparent p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 md:hidden ${
+            className={`inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-md border-0 bg-transparent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 lg:hidden ${
               overDarkHero
                 ? "text-white focus-visible:outline-white"
                 : "text-foreground focus-visible:outline-primary"
@@ -202,12 +221,12 @@ export default function Nav() {
       {mobileOpen && (
         <div
           id="mobile-nav"
-          className="fixed inset-0 z-40 bg-background pt-[4.75rem] md:hidden"
+          className="fixed inset-0 z-[120] bg-background pt-[4.75rem] lg:hidden"
           role="dialog"
           aria-modal="true"
           aria-label="Mobile navigation"
         >
-          <div className="flex h-full flex-col gap-1 overflow-y-auto px-4 pb-10">
+          <div className="flex h-[calc(100dvh-4.75rem)] flex-col gap-1 overflow-y-auto overscroll-contain px-4 pb-[calc(2.5rem+env(safe-area-inset-bottom,0px))]">
             <p className="mb-2 mt-2 font-sans text-xs font-medium uppercase tracking-[0.15em] text-muted-foreground">
               Services
             </p>

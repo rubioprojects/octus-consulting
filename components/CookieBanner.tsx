@@ -6,8 +6,8 @@ import { useState, useEffect } from "react";
  * Essential-cookie notice only.
  * Current site: static export + localStorage preference for this banner.
  * No advertising pixels or Meta trackers are loaded by this component.
- * Body class `cookie-banner-visible` is retained for diagnostics; Phase 2
- * WhatsApp geometry matches baseline 9q798dbg2 (no cookie-driven lift).
+ * Body class `cookie-banner-visible` lifts `.wa-float` above this bar on
+ * narrow viewports so Continue remains reachable (mobile remediation).
  */
 export default function CookieBanner() {
   const [show, setShow] = useState(false);

@@ -34,8 +34,8 @@ export default function BrandLockup({
   const resolvedClass =
     className ??
     (surface === "footer"
-      ? "site-footer__lockup h-9 w-auto max-w-[min(100%,17rem)] object-contain object-left md:h-12 md:max-w-none"
-      : "site-header__logo h-8 w-auto md:h-9");
+      ? "site-footer__lockup h-9 w-auto max-w-[min(100%,17rem)] object-contain object-left lg:h-12 lg:max-w-none"
+      : "site-header__logo h-8 w-auto lg:h-9");
 
   return (
     // eslint-disable-next-line @next/next/no-img-element

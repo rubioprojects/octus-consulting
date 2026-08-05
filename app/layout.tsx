@@ -157,7 +157,7 @@ export default function RootLayout({
               </div>
             </div>
 
-            <div className="site-footer__acc-stack mt-8 space-y-0 md:hidden">
+            <div className="site-footer__acc-stack mt-8 space-y-0 lg:hidden">
               {(
                 [
                   {
@@ -233,7 +233,7 @@ export default function RootLayout({
               ))}
             </div>
 
-            <div className="mt-12 hidden grid-cols-2 gap-8 md:grid lg:grid-cols-3 xl:grid-cols-5">
+            <div className="mt-12 hidden grid-cols-2 gap-8 lg:grid lg:grid-cols-3 xl:grid-cols-5">
               <div>
                 <p className="site-footer__nav-label">Services</p>
                 <ul className="flex list-none flex-col gap-2.5">
