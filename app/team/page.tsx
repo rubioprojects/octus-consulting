@@ -21,7 +21,7 @@ type Member = {
 };
 
 /**
- * Approved public roster — exactly 10.
+ * Approved public roster — Leadership + Core Specialists.
  * Bands: Leadership + Core Specialists only (baseline composition).
  * Titles: verified current (Founder & CEO / Operations Coordination locked).
  */
@@ -90,6 +90,16 @@ const coreSpecialists: Member[] = [
     focus:
       "Brazil regulatory processes and SPA/MF licensing support for Brazil-facing mandates.",
     linkedin: "https://www.linkedin.com/in/caroline-cubas-giovanetti-400820144/",
+  },
+  {
+    name: "Eduardo Maciel",
+    title: "Brazil Legal & Regulatory Specialist",
+    photo: "/team/eduardo-maciel.jpg",
+    photoKey: "eduardo",
+    capability: "Brazil legal & regulatory",
+    focus:
+      "Supports Brazil-facing mandates through contract structuring, regulatory documentation and coordination of legal requirements for regulated operations.",
+    linkedin: null,
   },
   {
     name: "Larissa Carvalho",

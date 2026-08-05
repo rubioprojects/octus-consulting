@@ -128,7 +128,7 @@ export default function RootLayout({
                 </a>
                 <div className="flex gap-3">
                   <a
-                    href="https://www.linkedin.com/company/octusconsulting/"
+                    href="https://www.linkedin.com/company/octusonsulting/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center text-white/65 transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
@@ -366,7 +366,7 @@ export default function RootLayout({
                   </a>{" "}
                   ·{" "}
                   <a
-                    href="https://www.linkedin.com/company/octusconsulting/"
+                    href="https://www.linkedin.com/company/octusonsulting/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline text-white/70 no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"

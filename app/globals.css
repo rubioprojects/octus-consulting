@@ -1696,8 +1696,11 @@ footer .heading-lg,
   transform: scale(1.04);
   transform-origin: center 32%;
 }
-/* Larissa: headroom baked into asset (studio plate above crown). Peer-normal crop. */
+/* Larissa: approved source with natural headroom — peer-normal crop. */
 .team-photo--larissa .team-card-photo {
+  object-position: 50% 32%;
+}
+.team-photo--eduardo .team-card-photo {
   object-position: 50% 36%;
 }
 .team-photo--milla .team-card-photo { object-position: 50% 40%; }
@@ -2682,10 +2685,6 @@ body.cookie-banner-visible .wa-float {
 }
 
 /* Larissa only: solid studio-wall plate behind scaled photo (overrides portrait gradient). */
-.team-card-photo-wrap.team-portrait.team-photo--larissa {
-  background: rgb(219, 215, 219);
-}
-
 /* Leadership: larger presence, Octus-branded backdrop plate, subtle halo. */
 .team-card-photo-wrap.team-portrait--leadership,
 .home-leadership-trust__photo-wrap.team-portrait--leadership {
