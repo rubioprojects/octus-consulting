@@ -22,11 +22,14 @@
 
 | Check | Result |
 |-------|--------|
-| `npm run test:analytics` | PASS |
+| `npm run test:analytics` | PASS (25) |
 | `npm run lint` | PASS (pre-existing img warnings only) |
 | `npm run build` | PASS |
-| Exact-head preview | see stamp below after deploy |
-| Consent screenshots | retained from prior architecture commit (CookieBanner layout unchanged in correction) |
+| CI | https://github.com/rubioprojects/octus-consulting/actions/runs/31020597592 success @ `6ebd78c` |
+| Exact-head preview | `dpl_AxK6oM5zVPSUnQ5bVQAx1DGbJsa9` · https://octus-consulting-ne3m23zxt-axle1.vercel.app · source SHA `6ebd78c65aa87a1c7208a33fe84e263ebc312dfd` |
+| Preview noindex | PASS (`X-Robots-Tag: noindex, nofollow`) |
+| Preview GTM without env | PASS (absent) |
+| Consent screenshots | retained (`docs/ops/evidence/OCTUS_POST_LAUNCH_ANALYTICS_2026-08-05/screenshots/`) — CookieBanner layout unchanged in correction |
 | Production / DNS / merge | not touched |
 
 ## Human gate
