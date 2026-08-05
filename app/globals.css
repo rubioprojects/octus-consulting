@@ -1686,9 +1686,9 @@ footer .heading-lg,
 }
 /* Esther: source has excess headroom — zoom into the face without cutting crown. */
 .team-photo--esther .team-card-photo {
-  object-position: 50% 68%;
-  transform: scale(1.28);
-  transform-origin: center 42%;
+  object-position: 50% 72%;
+  transform: scale(1.42);
+  transform-origin: center 45%;
 }
 /* Caroline: light-plate cutout; keep curls and glasses fully inside the frame. */
 .team-photo--caroline .team-card-photo {
@@ -1696,20 +1696,20 @@ footer .heading-lg,
   transform: scale(1.04);
   transform-origin: center 32%;
 }
-/* Larissa: source crown was tight — padded plate + slight pull-back. */
+/* Larissa: source crown flat-cut — padded plate + pull-back so flat edge is not flush. */
 .team-photo--larissa .team-card-photo {
-  object-position: 50% 34%;
-  transform: scale(0.96);
-  transform-origin: center 30%;
+  object-position: 50% 28%;
+  transform: scale(0.88);
+  transform-origin: center 18%;
 }
 .team-photo--milla .team-card-photo { object-position: 50% 40%; }
 .team-photo--bianca .team-card-photo { object-position: 50% 40%; }
 .team-photo--claudia .team-card-photo { object-position: 49% 40%; }
 /* Luciana: source crown flat-cut — padded headroom + mild pull-back. */
 .team-photo--luciana .team-card-photo {
-  object-position: 50% 36%;
-  transform: scale(0.96);
-  transform-origin: center 30%;
+  object-position: 50% 32%;
+  transform: scale(0.9);
+  transform-origin: center 22%;
 }
 .team-photo--daniel .team-card-photo { object-position: 50% 38%; }
 .team-grid--commercial {
