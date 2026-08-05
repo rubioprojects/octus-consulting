@@ -1,0 +1,973 @@
+{
+  "generated_at": "2026-08-04T04:01:18.951Z",
+  "status": "DISPOSITION_PENDING",
+  "count": 138,
+  "rows": [
+    {
+      "route": "/",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 13
+    },
+    {
+      "route": "/",
+      "rule": "link-in-text-block",
+      "impact": "serious",
+      "reason": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "nodes": 1
+    },
+    {
+      "route": "/",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 7
+    },
+    {
+      "route": "/team",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/team",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 7
+    },
+    {
+      "route": "/team",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 7
+    },
+    {
+      "route": "/solutions",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/solutions",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 15
+    },
+    {
+      "route": "/solutions",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 15
+    },
+    {
+      "route": "/solutions/regulatory-structuring",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/solutions/regulatory-structuring",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 5
+    },
+    {
+      "route": "/solutions/regulatory-structuring",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 5
+    },
+    {
+      "route": "/solutions/banking-payments-infrastructure",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/solutions/banking-payments-infrastructure",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 5
+    },
+    {
+      "route": "/solutions/banking-payments-infrastructure",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 5
+    },
+    {
+      "route": "/solutions/compliance/aml-kyc",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/solutions/compliance/aml-kyc",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 14
+    },
+    {
+      "route": "/solutions/compliance/aml-kyc",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 14
+    },
+    {
+      "route": "/about",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/about",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 9
+    },
+    {
+      "route": "/about",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 9
+    },
+    {
+      "route": "/how-we-engage",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/how-we-engage",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 5
+    },
+    {
+      "route": "/how-we-engage",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 5
+    },
+    {
+      "route": "/contact",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/contact",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 6
+    },
+    {
+      "route": "/contact",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 6
+    },
+    {
+      "route": "/diagnostic",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/diagnostic",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 6
+    },
+    {
+      "route": "/diagnostic",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 6
+    },
+    {
+      "route": "/partners",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/partners",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 5
+    },
+    {
+      "route": "/partners",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 5
+    },
+    {
+      "route": "/careers",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/careers",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 3
+    },
+    {
+      "route": "/careers",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 3
+    },
+    {
+      "route": "/markets",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/markets",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 8
+    },
+    {
+      "route": "/markets",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 8
+    },
+    {
+      "route": "/jurisdictions",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/jurisdictions",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 9
+    },
+    {
+      "route": "/jurisdictions",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 9
+    },
+    {
+      "route": "/brazil",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/brazil",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 4
+    },
+    {
+      "route": "/brazil",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 4
+    },
+    {
+      "route": "/intelligence",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/intelligence",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 24
+    },
+    {
+      "route": "/intelligence",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 22
+    },
+    {
+      "route": "/insights",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 4
+    },
+    {
+      "route": "/insights",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 4
+    },
+    {
+      "route": "/insights/why-licensing-fails-post-approval",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/privacy",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/terms",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/cookies",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/compliance-channel",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/this-page-does-not-exist-phase6",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/solutions/corporate-structuring",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/solutions/corporate-structuring",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 5
+    },
+    {
+      "route": "/solutions/corporate-structuring",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 5
+    },
+    {
+      "route": "/solutions/compliance-risk",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/solutions/compliance-risk",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 5
+    },
+    {
+      "route": "/solutions/compliance-risk",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 5
+    },
+    {
+      "route": "/solutions/remediation-readiness",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/solutions/remediation-readiness",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 5
+    },
+    {
+      "route": "/solutions/remediation-readiness",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 5
+    },
+    {
+      "route": "/solutions/legal-structural-architecture",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/solutions/legal-structural-architecture",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 5
+    },
+    {
+      "route": "/solutions/legal-structural-architecture",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 6
+    },
+    {
+      "route": "/private-clients",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/private-clients",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 5
+    },
+    {
+      "route": "/private-clients",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 5
+    },
+    {
+      "route": "/international-hub",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/international-hub",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 5
+    },
+    {
+      "route": "/international-hub",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 5
+    },
+    {
+      "route": "/markets/fintech",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/markets/fintech",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 4
+    },
+    {
+      "route": "/markets/fintech",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 4
+    },
+    {
+      "route": "/markets/igaming",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/markets/igaming",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 3
+    },
+    {
+      "route": "/markets/igaming",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 3
+    },
+    {
+      "route": "/markets/crypto",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/markets/crypto",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 21
+    },
+    {
+      "route": "/markets/crypto",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 21
+    },
+    {
+      "route": "/markets/high-risk",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/markets/high-risk",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 16
+    },
+    {
+      "route": "/markets/high-risk",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 16
+    },
+    {
+      "route": "/jurisdictions/malta",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/jurisdictions/malta",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 15
+    },
+    {
+      "route": "/jurisdictions/malta",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 15
+    },
+    {
+      "route": "/jurisdictions/isle-of-man",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/jurisdictions/isle-of-man",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 11
+    },
+    {
+      "route": "/jurisdictions/isle-of-man",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 11
+    },
+    {
+      "route": "/jurisdictions/curacao",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/jurisdictions/curacao",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 10
+    },
+    {
+      "route": "/jurisdictions/curacao",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 10
+    },
+    {
+      "route": "/jurisdictions/anjouan",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/jurisdictions/anjouan",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 22
+    },
+    {
+      "route": "/jurisdictions/anjouan",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 22
+    },
+    {
+      "route": "/jurisdictions/portugal",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/jurisdictions/portugal",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 24
+    },
+    {
+      "route": "/jurisdictions/portugal",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 24
+    },
+    {
+      "route": "/jurisdictions/uae",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/jurisdictions/uae",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 21
+    },
+    {
+      "route": "/jurisdictions/uae",
+      "rule": "color-contrast",
+      "impact": "serious",
+      "reason": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": 21
+    },
+    {
+      "route": "/insights/stf-suspends-blocking-of-bolsa-familia-bpc-betting-accounts",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/senate-approves-plp-128-2025-tightens-fiscal-policy-bets-fintechs",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/betting-taxation-risks-senate-legal-certainty-regulated-market",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/new-spa-mf-normative-instruction-fixed-odds-betting",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/centralised-self-exclusion-platform-key-changes-operators-bettors",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/stf-suspends-municipal-lottery-operations-nationwide",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/coaf-crisis-aml-obligations-online-gaming-operators",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/annual-recertification-betting-platforms-spa-mf-new-guidelines",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/risk-management-software-igaming-regulatory-compliance",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/customised-studies-international-expansion-brazil",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/rio-de-janeiro-regulates-vlts-lottery-equipment-decree",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/games-not-classified-as-fixed-odds-betting-brazil",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/bet-br-domain-extension-to-states-brazil",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/intellectual-property-igaming-trademark-registration-brazil",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/national-betting-system-sinapo-brazil",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/why-your-international-licence-may-not-protect-you-in-brazil",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/regulation-and-technology-legal-follows-igaming-evolution",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/iof-update-financial-market-brazil-2025",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/trump-tax-reform-betting-operators-lessons-for-brazil",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/regulatory-agenda-2025-2026-secretariat-prizes-betting",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/spa-ordinance-banks-refuse-illegal-betting-operators",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/youtube-tightens-rules-illegal-betting-sites-impact-influencers",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/brazil-b2b-registration-requirement-betting-igaming",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/quinel-credentialed-certifying-entity-brazil-ministry-finance",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/senate-commission-approves-casino-bingo-gaming-bill-brazil",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/spa-mf-position-brazilian-partner-20-percent-share-capital",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/new-rules-sports-betting-online-games-brazil-portaria-827-2024",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/new-regulation-betting-online-game-systems-portaria-722-2024",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/banking-for-high-risk-operations",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/mica-what-operators-need-to-do",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/curacao-reform-what-changes",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    },
+    {
+      "route": "/insights/compliance-as-a-service-vs-internal-teams",
+      "rule": "aria-valid-attr-value",
+      "impact": "critical",
+      "reason": "Ensure all ARIA attributes have valid values",
+      "nodes": 1
+    }
+  ]
+}

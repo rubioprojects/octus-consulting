@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 import PageHero from "../../components/system/PageHero";
+import { pageSocialMeta } from "../../lib/pageMeta";
 
-export const metadata = {
-  title: "Jurisdictions — Where We Structure Operations",
+export const metadata = pageSocialMeta({
+  title: "Jurisdictions. Where We Structure Operations",
   description:
-    "Active across 15+ jurisdictions. Licensing, compliance and corporate structuring in Brazil, Curaçao, Malta, Isle of Man, UAE and more.",
-};
+    "Jurisdiction selection and structuring for regulated operations across markets including Brazil, Curaçao, Malta, Isle of Man, UAE and more.",
+  path: "/jurisdictions",
+});
 
 export default function JurisdictionsPage() {
   return (
@@ -41,7 +43,7 @@ export default function JurisdictionsPage() {
             {[
               { tier: "Institutional", focus: "Credibility, banking alignment, long-term positioning", examples: "Isle of Man · Malta", profile: "Established operators, B2B providers, institutional growth" },
               { tier: "Structured", focus: "Operational balance, regulatory framework, scalability", examples: "Curaçao · Brazil · Portugal · UAE", profile: "Growing operators, mid-market, regulated market entry" },
-              { tier: "Tactical", focus: "Speed, flexibility, transitional entry", examples: "Anjouan", profile: "Early-stage or fast-moving operations" },
+              { tier: "Tactical", focus: "Flexibility and transitional entry", examples: "Anjouan", profile: "Early-stage operations with a defined transition plan" },
             ].map((t, i) => (
               <div key={t.tier} style={{ display: "grid", gridTemplateColumns: "120px 1fr", gap: "24px", padding: "24px 0", borderBottom: i < 2 ? "1px solid var(--border-solid)" : "none", alignItems: "start" }}>
                 <span className="text-lg font-semibold text-primary font-sans" style={{ fontSize: "13px", color: "var(--blue-light)", paddingTop: "2px" }}>{t.tier}</span>
@@ -64,9 +66,9 @@ export default function JurisdictionsPage() {
             Active execution, established processes.
           </h2>
           <p className="body-text mb-10 max-w-[620px]">
-            Primary jurisdictions represent the core licensing frameworks
-            currently supported with active execution, established processes
-            and ongoing mandates.
+            Primary jurisdictions represent licensing frameworks in which Octus
+            advises on strategy, structure, application readiness and
+            implementation. Engagement scope depends on the client and framework.
           </p>
           <div className="grid-3">
             {[
@@ -81,21 +83,21 @@ export default function JurisdictionsPage() {
                 name: "Curaçao",
                 regulator: "GCB",
                 sectors: "iGaming, Betting",
-                desc: "iGaming licensing under the new regulatory framework. Entity, compliance and banking in one coordinated process.",
+                desc: "Advisory support for iGaming licensing under the current framework, including entity, compliance and banking-readiness work.",
                 href: "/jurisdictions/curacao",
               },
               {
                 name: "Malta",
                 regulator: "MGA · MFSA",
                 sectors: "iGaming, Fintech, Crypto",
-                desc: "B2C and B2B licensing. Tier-1 European jurisdiction with full regulatory and banking infrastructure.",
+                desc: "Advisory support for B2C and B2B licensing, corporate substance, compliance and banking readiness in a European framework.",
                 href: "/jurisdictions/malta",
               },
               {
                 name: "Isle of Man",
                 regulator: "GSC",
                 sectors: "iGaming, B2B, Tier-1",
-                desc: "Institutional licensing framework for operators and suppliers needing stronger banking alignment and long-term credibility.",
+                desc: "Licensing framework for operators and suppliers seeking institutional positioning and stronger banking readiness.",
                 href: "/jurisdictions/isle-of-man",
               },
             ].map((j) => (
@@ -123,38 +125,34 @@ export default function JurisdictionsPage() {
             Selected frameworks for specific requirements.
           </h2>
           <p className="body-text mb-8 max-w-[680px]">
-            Octus supports selected strategic jurisdictions for clients
-            requiring higher regulatory positioning or specific market access,
-            depending on scale, structure and objectives.
+            Octus advises on selected strategic jurisdictions where the
+            framework may fit a client&apos;s scale, structure and objectives.
+            UK, Gibraltar and Cyprus are landscape references on this page, not
+            dedicated Octus jurisdiction landing pages.
           </p>
           <div className="grid-auto-lg">
             {[
               {
-                name: "Isle of Man",
-                desc: "Tier-1 jurisdiction for operators and B2B providers prioritizing regulatory credibility, institutional positioning and long-term banking stability. Typically suitable for well-capitalized operations with a long-term market strategy.",
-                href: "/jurisdictions/isle-of-man",
-              },
-              {
                 name: "UK",
-                desc: "Gambling Commission and FCA-regulated markets. High compliance bar, strong banking infrastructure and institutional credibility.",
+                desc: "Landscape reference only. Gambling Commission and FCA-regulated activities carry distinct requirements and require current specialist analysis.",
               },
               {
                 name: "Gibraltar",
-                desc: "B2B and B2C licensing for operators with European and UK-facing operations. Strong regulatory reputation.",
+                desc: "Landscape reference only. B2B and B2C licensing suitability and permitted market activity require current specialist analysis.",
               },
               {
                 name: "UAE",
-                desc: "Emerging regulatory hub for crypto and fintech. ADGM, DFSA and VARA frameworks with growing international recognition.",
+                desc: "Regulatory landscape for crypto and fintech spanning ADGM, DIFC, VARA, SCA and other activity-specific authorities.",
                 href: "/jurisdictions/uae",
               },
               {
                 name: "Portugal",
-                desc: "SRIJ-regulated iGaming market with local licensing requirements and EU market access.",
+                desc: "SRIJ-regulated iGaming market with local licensing requirements. A Portuguese licence does not create EU-wide passporting.",
                 href: "/jurisdictions/portugal",
               },
               {
                 name: "Cyprus",
-                desc: "EU jurisdiction with growing regulatory infrastructure for fintech and gaming operations.",
+                desc: "Landscape reference only. Fintech and gaming activities require separate, current analysis of the applicable Cypriot and EU frameworks.",
               },
             ].map((j) =>
               "href" in j && j.href ? (
@@ -174,7 +172,7 @@ export default function JurisdictionsPage() {
         </div>
       </section>
 
-      {/* ─── ALTERNATIVE FRAMEWORKS (Anjouan — separate tier) ─── */}
+      {/* ─── ALTERNATIVE FRAMEWORKS (Anjouan: separate tier) ─── */}
       <section className="surface-elevated py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">Alternative frameworks</p>
@@ -183,15 +181,16 @@ export default function JurisdictionsPage() {
           </h2>
           <p className="body-text mb-8">
             Alternative frameworks are used selectively in scenarios where
-            speed, flexibility or transitional strategies are prioritized over
-            institutional positioning.
+            flexibility or transitional strategies are prioritized over
+            institutional positioning. Availability and permitted use depend on
+            current law, target markets, counterparties and operator profile.
           </p>
           <Link href="/jurisdictions/anjouan" className="card-grid" style={{ padding: "28px" }}>
             <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>Anjouan</h3>
             <p className="body-sm mb-3 text-muted-foreground">
               Alternative licensing framework used in specific scenarios
-              requiring speed and flexibility, often as a transitional solution
-              where regulatory flexibility outweighs institutional positioning.
+              requiring flexibility, often as a transitional solution where
+              regulatory accessibility outweighs institutional positioning.
             </p>
             <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Learn more →</span>
           </Link>
@@ -224,9 +223,9 @@ export default function JurisdictionsPage() {
           <p className="label">Go deeper</p>
           <div className="grid-3">
             {[
-              { title: "Markets", desc: "Sectors we specialize in.", href: "/markets" },
+              { title: "Markets", desc: "Sector context, not a statement of geographic service coverage.", href: "/markets" },
               { title: "Solutions", desc: "Full service architecture.", href: "/solutions" },
-              { title: "Start a Diagnostic", desc: "Identify what's broken.", href: "/contact" },
+              { title: "Contact", desc: "A non-WhatsApp way to discuss your requirements.", href: "/contact" },
             ].map((r) => (
               <Link key={r.title} href={r.href} className="card-grid" style={{ padding: "28px" }}>
                 <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{r.title}</h3>
@@ -250,9 +249,9 @@ export default function JurisdictionsPage() {
             A structured assessment is required{" "}
             <span style={{ color: "var(--blue-light)" }}>before any decision.</span>
           </h2>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{"Continue on WhatsApp →"}</a>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
-            We respond within 24 hours.
+            Prefer not to use WhatsApp? <Link href="/contact" className="underline underline-offset-4">Contact us here.</Link>
           </p>
         </div>
       </section>

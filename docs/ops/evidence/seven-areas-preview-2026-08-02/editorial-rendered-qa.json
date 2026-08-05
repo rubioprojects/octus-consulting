@@ -1,0 +1,27 @@
+{
+  "agg": {
+    "space_colon": 3,
+    "space_comma": 0,
+    "space_semi": 0,
+    "colon_with": 0,
+    "colon_without": 0,
+    "colon_not": 0,
+    "colon_for_example": 0,
+    "double_colon": 0,
+    "em_dash": 0,
+    "we_dont_produce": 0,
+    "managing_director": 0,
+    "gli_authority_lump": 0,
+    "selected_certs": 0,
+    "incomplete_operational": 0
+  },
+  "pages": [
+    {
+      "path": "/solutions/compliance/dpo-as-a-service",
+      "hits": {
+        "space_colon": 3
+      }
+    }
+  ],
+  "urls": 81
+}

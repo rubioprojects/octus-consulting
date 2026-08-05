@@ -1,0 +1,383 @@
+# Decision Register — Controlled remediation PR #17
+
+**Starting HEAD:** `bc40c2ae376867af1ba68ae3a8124d23c70f33c3`  
+**Baseline:** https://octus-consulting-9q798dbg2-axle1.vercel.app (`dpl_437tawkoMDv7sqxW6NzPzTegj1Lq`)
+
+## D-001 — Public Team roster size and membership
+
+| Field | Value |
+|---|---|
+| Decision | Public Team = exactly **10** named people (mandate, 2026-08-03) |
+| Supersedes | Prior “7 verified / 3 held” and “Larissa/Bianca/Luciana internal-only” gates |
+| Authority | Rubio mandate Phase 1 Team hard gate |
+| Status | ACCEPTED for Phase 1 |
+
+## D-002 — Public hierarchy bands
+
+| Field | Value |
+|---|---|
+| Decision | Render only **Leadership** + **Core Specialists** |
+| Forbidden bands | Leadership Support · Operational Leadership · Practice Leads |
+| Visual SoT | Baseline 9q798dbg2 composition |
+| Status | ACCEPTED |
+
+## D-003 — Titles
+
+| Person | Title used | Source |
+|---|---|---|
+| Rubio Teixeira | Founder & CEO | Current verified lock |
+| Maria Cristina | Operations Coordination | Current verified lock |
+| Rodrigo Coelho Lopes | Legal Architecture Lead | Current verified |
+| Claudia Nery | Chief Financial Officer | Current verified |
+| Esther Vendrami | International Regulatory & Compliance Lead | Current verified |
+| Caroline Giovanetti | Brazil Regulatory Lead | Current verified |
+| Larissa Carvalho | Regulatory & Compliance Specialist | Verified public roster validation 2026-08-02 |
+| Milla Ludovico | Business Development Lead | Current verified |
+| Bianca Carolina Oliveira Andrade | People & Operations | Verified public roster validation 2026-08-02 |
+| Luciana Santos Veloso | Operations Coordinator | Verified public roster validation 2026-08-02 |
+
+## D-004 — Luciana portrait recovery
+
+| Field | Value |
+|---|---|
+| Decision | Restore `public/team/luciana-santos-veloso.jpg` from historical commit `dc5862d` |
+| Status | EXECUTED in Phase 1 |
+| Note | File was absent at recovery HEAD; required for portrait completeness gate |
+
+## D-005 — Phase 1 file isolation
+
+| Field | Value |
+|---|---|
+| Decision | Touch only Team-allowed paths; do not edit Nav/layout/Home/PageHero/tokens |
+| Global change needed? | No (as of Phase 1) |
+| Status | ACCEPTED |
+
+## D-006 — Phase sequencing
+
+| Field | Value |
+|---|---|
+| Decision | Stop after Phase 1 for Sol audit; do not start Phase 2 |
+| Status | BINDING |
+
+## D-007 — Evidence provenance repair (2026-08-03)
+
+| Field | Value |
+|---|---|
+| Decision | Sol blocked Phase 1 on unauditable SHA in reconciled manifests |
+| Repair | Recapture reconciled shots from immutable preview `bvvs2ue51` @ `f5be0d8` |
+| Preserve | `team_implementation_commit=3fb56fc…` separate from `capture_code_head=f5be0d8…` |
+| Status | ACCEPTED by Sol |
+
+## D-008 — Phase 1 accepted; Phase 2 authorized
+
+| Field | Value |
+|---|---|
+| accepted_phase1_head | `0654dc1247967bcc36d760f47ae0654ff3814aa3` |
+| Phase 2 | ACCEPTED by Sol |
+| Terminology | `final_phase1_head` → `evidence_content_head` for `d9c58c5…`; authoritative tip = `accepted_phase1_head` |
+| Status | BINDING |
+
+## Open / deferred to later phases
+
+| ID | Item | Phase |
+|---|---|---|
+| P2 | Global visual system / shell fidelity | 2 — ACCEPTED |
+| P3 | Homepage remediation | 3 — ACCEPTED_WITH_RESIDUAL |
+| P4 | Services families | 4 — ACCEPTED_WITH_BOUND_RESIDUALS |
+| P5A | Institutional / engagement | 5A — ACCEPTED_WITH_BOUND_RESIDUALS |
+| P5B | Markets / jurisdictions / Brazil | 5B — ACCEPTED_WITH_BOUND_RESIDUALS |
+| P5C | Intelligence / Insights / Legal | 5C — ACCEPTED_WITH_BOUND_RESIDUALS |
+| P6 | Full regression (bound residuals) | 6 — READY_FOR_SOL_AUDIT |
+
+## D-009 — Phase 2 global system accepted
+
+| Field | Value |
+|---|---|
+| Phase 2 | ACCEPTED by Sol |
+| accepted_phase2_head | `4a4687134156dce4e5892552a049ff00747d1172` |
+| implementation | `ef0d9465f07993c811144291d0da0371d12e7229` |
+| immutable_preview | https://octus-consulting-kovk3ad1l-axle1.vercel.app |
+| deployment_id | `dpl_4pDMJNttdiwdLJmkyBbSffxBqDWK` |
+| Global system lock | Nav/header/footer/WhatsApp/cookies/tokens frozen |
+
+## D-010 — Phase 3 Homepage authorized
+
+| Field | Value |
+|---|---|
+| Phase 3 | AUTHORIZED / IN PROGRESS |
+| Scope | Homepage composition only |
+| Impact matrix | `homepage/PHASE3_HOME_IMPACT_MATRIX.md` |
+| Phases 4–6 | BLOCKED |
+| Merge / production / Rubio preview | forbidden |
+
+## D-011 — Phase 3 Homepage returned for Sol audit
+
+| Field | Value |
+|---|---|
+| Phase 3 | READY_FOR_SOL_AUDIT |
+| control | `98125861a4c2ea5ff659d7da0c513490a2329d32` |
+| implementation | `47db576145b80f7c232b0d31c3372247a6f538fc` |
+| evidence | `9435d9bec86fde156d52bb13bfd57e06c210d9e3` |
+| immutable_preview | https://octus-consulting-l79bo9vrg-axle1.vercel.app |
+| deployment_id | `dpl_FCywMhkUrBatkqCH4t3s7izYvUYE` |
+| Phase 4–6 | remain BLOCKED |
+| Merge / production / Rubio preview | forbidden |
+
+## D-012 — Phase 3 Homepage closeout repair authorized
+
+| Field | Value |
+|---|---|
+| Sol | HOME composition/file/deployment/Team/global PASS; CTA + prohibited copy + PR governance FAIL |
+| Allowed app file | `app/page.tsx` only |
+| Fix | Unique /diagnostic labels; remove em dash; gate validator on duplicates + punctuation |
+| WhatsApp allowlist | `Discuss your operation →` may appear twice only (hero + final CTA bookend) |
+| Phase 4 | NOT AUTHORIZED |
+| closeout_application_commit | `11c0f9da74408f270a22c23b5b2903ce45f5e33c` |
+| closeout_preview | https://octus-consulting-7yzcy4yif-axle1.vercel.app · `dpl_ALymSbjVv45GWXdeFuYrPBXMN88w` |
+| closeout_validation | duplicate_commercial_labels PASS · prohibited_punctuation PASS · overall PASS |
+| terminal | `OCTUS_HOME_CLOSEOUT_READY_FOR_SOL_AUDIT` |
+
+## D-013 — Phase 3 Homepage accepted with residual; Phase 4 authorized
+
+| Field | Value |
+|---|---|
+| PHASE_3_HOMEPAGE_HARD_GATE | ACCEPTED_WITH_RESIDUAL |
+| accepted_phase3_head | `620b725d613fba4ff4a062477c1110e453a4eb63` |
+| accepted Homepage application commit | `11c0f9da74408f270a22c23b5b2903ce45f5e33c` |
+| Phase 4 | AUTHORIZED → completed implementation; see D-016 |
+| Phase 5–6 | BLOCKED |
+| Rubio rescreen | BLOCKED |
+| Merge / production / rebase | forbidden |
+
+## D-014 — HOME_PUNCTUATION_RESIDUAL_001 (unresolved)
+
+| Field | Value |
+|---|---|
+| RESIDUAL_ID | `HOME_PUNCTUATION_RESIDUAL_001` |
+| CURRENT_TEXT | Trust starts with clear accountability, not a directory of faces. |
+| REQUIRED_FINAL_TEXT | Trust starts with clear accountability, not a directory of faces. |
+| OWNER | Phase 6 full regression |
+| Location | `components/system/HomeLeadershipTrust.tsx` |
+| Phase 6 action | CLOSED — em dash removed per required final text |
+| Status | CLOSED |
+
+## D-015 — Phase 4 Services file and architecture isolation
+
+| Field | Value |
+|---|---|
+| Decision | Reconcile Services architecture vs baseline while preserving seven-area IA and 39 public services |
+| Banking | Cross-cutting supporting only — never 8th peer area |
+| Shared PageHero | Prefer services-specific variant/wrapper if institutional consumers would change |
+| Status | BINDING |
+
+## D-016 — Phase 4 Services returned for Sol audit
+
+| Field | Value |
+|---|---|
+| Phase 4 | READY_FOR_SOL_AUDIT |
+| implementation | `8228e342cfc9d3830b4f4a414f2a93ae208e5be1` |
+| immutable_preview | https://octus-consulting-6dof5kn4k-axle1.vercel.app |
+| deployment_id | `dpl_Ewm6SFyGB5wkkDefAAMnBs27bMfZ` |
+| validation | overall PASS · 162 screenshots |
+| residual | HOME_PUNCTUATION_RESIDUAL_001 still OPEN |
+| Phase 5–6 | BLOCKED |
+| terminal | `OCTUS_SERVICES_GATE_READY_FOR_SOL_AUDIT` |
+
+## D-017 — Phase 4 Services closeout returned for Sol audit
+
+| Field | Value |
+|---|---|
+| Prior gate | NOT ACCEPTED (visual compare stale / CTA / editorial / validator / catalogue) |
+| Closeout | CLOSEOUT READY FOR SOL AUDIT |
+| application_commit | `e72d3902670de83573bc32674c3cd02e036b787e` |
+| evidence_commit | `3215152b63d73d7e618d2ad83865d83e30b7c0fc` |
+| immutable_preview | https://octus-consulting-eyjy9sxq7-axle1.vercel.app |
+| deployment_id | `dpl_4mRS5vF2QSS34aJkip3Zn56cUUa5` |
+| validation | overall PASS · 272 screenshots · missing metadata 5 baseline-only |
+| residual | HOME_PUNCTUATION_RESIDUAL_001 still OPEN · exactly one |
+| Phase 5 | BLOCKED |
+| Rubio rescreen | BLOCKED |
+| terminal | `OCTUS_SERVICES_CLOSEOUT_READY_FOR_SOL_AUDIT` |
+
+## D-018 — Phase 4 Services validation closeout returned for Sol audit
+
+| Field | Value |
+|---|---|
+| Prior closeout | NOT ACCEPTED (accessibility gate / catalogue proof / documentary) |
+| Validation closeout | READY FOR SOL AUDIT |
+| accessibility tooling | `@axe-core/playwright` + `axe-core` 4.12.1 mandatory |
+| catalogue | derived PASS · 39/34/7/11 · orphans 0 |
+| a11y residual | `PHASE4_A11Y_CONTRAST_LINK_RESIDUAL_001` — serious color-contrast / link-in-text-block under visual freeze |
+| claim register | rewritten count corrected to 7 |
+| immutable_preview | https://octus-consulting-eyjy9sxq7-axle1.vercel.app |
+| deployed_sha | `ee8f1d0f7d442482eee99cef927a3389892617b4` |
+| Phase 5 | BLOCKED |
+| Rubio rescreen | BLOCKED |
+| terminal | `OCTUS_SERVICES_VALIDATION_CLOSEOUT_READY_FOR_SOL_AUDIT` |
+
+
+## D-019 — Phase 4 Services accepted with bound residuals; Phase 5A authorized
+
+| Field | Value |
+|---|---|
+| PHASE_4_SERVICES | ACCEPTED_WITH_BOUND_RESIDUALS |
+| accepted_phase4_evidence_head | `15df1e82c5ccd3dfb47d83dda30805fbd55b5497` |
+| accepted_phase4_application_sha | `eac4e514ea751314774f3e69f71ebd52245d2534` |
+| immutable_preview | https://octus-consulting-beqxfdqrk-axle1.vercel.app |
+| Bound residuals | `HOME_PUNCTUATION_RESIDUAL_001` · `GLOBAL_A11Y_REGION_RESIDUAL_001` · `AXE_INCOMPLETE_REVIEW_001` |
+| PHASE_5A | AUTHORIZED · application closed for Sol audit |
+| PHASE_5B / 5C / 6 | BLOCKED |
+| Rubio rescreen | BLOCKED |
+| Merge / production / rebase | forbidden |
+
+## D-020 — Phase 5A shared-component freeze
+
+| Field | Value |
+|---|---|
+| Decision | Do not edit PageHero, DarkHeroAtmosphere, CtaLink, Nav, layout, or global tokens for Phase 5A |
+| Allowed | Page-scoped copy/metadata under the six institutional/engagement routes |
+| Stop | Undocumented shared-component mutation → BLOCKED |
+| Status | BINDING |
+
+## D-021 — Phase 5A institutional/engagement gate ready for Sol audit
+
+| Field | Value |
+|---|---|
+| application_code_sha (pre-closeout) | `951513c16c45eae06b269b15f9ae77c50c625f0f` |
+| immutable_preview | https://octus-consulting-mfiprgbua-axle1.vercel.app |
+| deployment_id | `dpl_EZQJJFTUEXBM1xBtT5mQUuasBNyu` |
+| Sol verdict | BLOCKED_PENDING_NARROW_CLOSEOUT |
+| terminal (superseded for closeout) | prior `OCTUS_INSTITUTIONAL_ENGAGEMENT_GATE_READY_FOR_SOL_AUDIT` |
+| PHASE_5B / 5C / 6 / Rubio | BLOCKED |
+| Merge / production / rebase | forbidden |
+
+## D-022 — Phase 5A Sol audit narrow closeout
+
+| Field | Value |
+|---|---|
+| application_code_sha | `87c62c2e99187a209e519c37f993493ef267f3b7` |
+| immutable_preview | https://octus-consulting-2dflp4hpy-axle1.vercel.app |
+| deployment_id | `dpl_6zhpEKuw1j94dVaeRSQ9pZuxU8Wu` |
+| preview noindex header | PASS |
+| validation coverage | PASS (closeout packet) |
+| evidence provenance | PASS (baseline SHA corrected; Careers reconciled recaptured) |
+| fact/claim coverage | PASS (Careers process + regional qualified) |
+| terminal | `OCTUS_PHASE5A_SOL_AUDIT_CLOSEOUT_READY` |
+| PHASE_5B / 5C / 6 / Rubio | BLOCKED |
+| Merge / production / rebase | forbidden |
+
+## D-023 — Phase 5A accepted with bound residuals; Phase 5B authorized
+
+| Field | Value |
+|---|---|
+| PHASE_5A | ACCEPTED_WITH_BOUND_RESIDUALS |
+| accepted_phase5a_evidence_head | `9b5ce63501e48e4da0440ae5f3f59f776d2bf955` |
+| accepted_phase5a_application_sha | `9e97c13e90ecc4165e969ee04181e8d2a3a9110c` |
+| immutable_preview | https://octus-consulting-nx5t8xtoo-axle1.vercel.app |
+| deployment_id | `dpl_C8Zt5mFCF6BaK165cKMt6ELBknKj` |
+| Bound residuals | `HOME_PUNCTUATION_RESIDUAL_001` · `GLOBAL_A11Y_REGION_RESIDUAL_001` · `AXE_INCOMPLETE_REVIEW_001` |
+| PHASE_5B | AUTHORIZED · IN_PROGRESS |
+| PHASE_5C / 6 | BLOCKED |
+| Rubio rescreen | BLOCKED |
+| Merge / production / rebase | forbidden |
+| Inventory | `markets-jurisdictions/PHASE5B_ROUTE_INVENTORY.md` |
+| Impact matrix | `markets-jurisdictions/PHASE5B_IMPACT_MATRIX.md` |
+
+## D-024 — Phase 5B shared-component freeze
+
+| Field | Value |
+|---|---|
+| Decision | Do not edit PageHero, DarkHeroAtmosphere, CtaLink, Nav, layout, global tokens, Homepage, Team, Services, or Phase 5A pages |
+| Allowed | Page-scoped copy/metadata under `app/markets/**`, `app/jurisdictions/**`, `app/brazil/**` |
+| Stop | Undocumented shared-component mutation → BLOCKED |
+| Status | BINDING |
+
+## D-025 — Phase 5B Markets/Jurisdictions/Brazil gate ready for Sol audit
+
+| Field | Value |
+|---|---|
+| application_code_sha | `eb37d6f96db6bda418e4f8132cbcda6b6731deaf` |
+| evidence_commit | `97e5e048fe50f4e30ef3236e022bf51b29cb7549` |
+| immutable_preview | https://octus-consulting-jhedve7t0-axle1.vercel.app |
+| deployment_id | `dpl_HpNbyjdhxuLLrrcpitB4DA1EJ2TX` |
+| validation | PASS (`PHASE5B_VALIDATION.json`) |
+| screenshots | 312 |
+| Axe critical/serious | 0 / 0 |
+| Bound residuals | preserved |
+| terminal | `OCTUS_MARKETS_JURISDICTIONS_GATE_READY_FOR_SOL_AUDIT` |
+| PHASE_5C / 6 / Rubio | BLOCKED (at 5B closeout) |
+| Merge / production / rebase | forbidden |
+
+## D-026 — Phase 5B accepted with bound residuals; Phase 5C authorized
+
+| Field | Value |
+|---|---|
+| PHASE_5B | ACCEPTED_WITH_BOUND_RESIDUALS |
+| accepted_phase5b_evidence_head | `cee3e907069542b14c85bec56769dc9549b4674c` |
+| accepted_phase5b_application_sha | `eb37d6f96db6bda418e4f8132cbcda6b6731deaf` |
+| immutable_preview | https://octus-consulting-jhedve7t0-axle1.vercel.app |
+| deployment_id | `dpl_HpNbyjdhxuLLrrcpitB4DA1EJ2TX` |
+| Bound residuals | `HOME_PUNCTUATION_RESIDUAL_001` · `GLOBAL_A11Y_REGION_RESIDUAL_001` · `AXE_INCOMPLETE_REVIEW_001` |
+| PHASE_5C | AUTHORIZED · IN_PROGRESS |
+| PHASE_6 | BLOCKED |
+| Rubio rescreen | BLOCKED |
+| Merge / production / rebase | forbidden |
+| Inventory | `intelligence-legal/PHASE5C_ROUTE_INVENTORY.md` |
+| Impact matrix | `intelligence-legal/PHASE5C_IMPACT_MATRIX.md` |
+
+## D-027 — Phase 5C shared-component freeze
+
+| Field | Value |
+|---|---|
+| Decision | Do not edit PageHero, Nav, layout, CookieBanner, WhatsApp, global tokens, Homepage, Team, Services, Phase 5A, or Phase 5B pages |
+| Allowed | `app/intelligence/**`, `app/insights/**`, legal utility pages, `app/not-found.tsx`, Insights SoT `lib/posts.ts` (+ Insights-only enrichment libs), Phase 5C evidence |
+| Stop | Undocumented shared-component mutation → BLOCKED |
+| Status | BINDING |
+
+## D-028 — Phase 5C Intelligence/Insights/Legal gate ready for Sol audit (historical)
+
+| Field | Value |
+|---|---|
+| application_code_sha | `c467ccf0bfa3a8a2df1ac7a58c7b29c8c169d62b` |
+| evidence_head | `b617338510c030dccc6eac0f03d01e4042ca5532` |
+| immutable_preview | https://octus-consulting-84n1zaqys-axle1.vercel.app |
+| deployment_id | `dpl_8q5VbqyqV5vZxazerUKHco7VFCiW` |
+| terminal | `OCTUS_INTELLIGENCE_LEGAL_GATE_READY_FOR_SOL_AUDIT` |
+
+## D-029 — Phase 5C accepted with bound residuals; Phase 6 authorized
+
+| Field | Value |
+|---|---|
+| PHASE_5C | ACCEPTED_WITH_BOUND_RESIDUALS |
+| accepted_phase5c_evidence_head | `b617338510c030dccc6eac0f03d01e4042ca5532` |
+| accepted_phase5c_application_sha | `c467ccf0bfa3a8a2df1ac7a58c7b29c8c169d62b` |
+| PHASE_6 | AUTHORIZED · IN_PROGRESS |
+| Rubio rescreen | BLOCKED until final Sol audit |
+| Merge / production / rebase | forbidden |
+| Inventory | `final/PHASE6_CONTROL_INVENTORY.md` |
+
+## D-030 — Phase 6 residual closure authorization
+
+| Field | Value |
+|---|---|
+| HOME_PUNCTUATION_RESIDUAL_001 | Authorized: D-014 final text only |
+| GLOBAL_A11Y_REGION_RESIDUAL_001 | Authorized: landmark wrapper; preserve WA geometry |
+| AXE_INCOMPLETE_REVIEW_001 | Authorized: disposition register; remediate only if required |
+| Status | BINDING |
+
+## D-031 — Phase 6 final site candidate ready for Sol audit
+
+| Field | Value |
+|---|---|
+| application_code_sha | `84ecb6aff383060088a6185384ff5b9f5ba307e9` |
+| immutable_preview | https://octus-consulting-3lhtpxjer-axle1.vercel.app |
+| deployment_id | `dpl_GothRo9ojcDZZH9SiU46xSFVRaS7` |
+| validation | PASS |
+| screenshots | 552 |
+| HOME_PUNCTUATION_RESIDUAL_001 | CLOSED |
+| GLOBAL_A11Y_REGION_RESIDUAL_001 | CLOSED |
+| AXE_INCOMPLETE_REVIEW_001 | CLOSED (138 dispositions) |
+| terminal | `OCTUS_FINAL_SITE_CANDIDATE_READY_FOR_SOL_AUDIT` |
+| Rubio rescreen | BLOCKED until Sol accepts |
+| Merge / production / rebase | forbidden |
+

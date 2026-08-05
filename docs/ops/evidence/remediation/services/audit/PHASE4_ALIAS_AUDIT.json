@@ -1,0 +1,260 @@
+{
+  "generated_at": "2026-08-04T01:34:02.080Z",
+  "origin": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
+  "rule": "require_301_308_location_follow_canonical_tag",
+  "aliases": [
+    {
+      "alias": "/solutions/regulatory-strategy-licensing",
+      "canonical": "/solutions/regulatory-structuring",
+      "origin": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
+      "manualStatus": 308,
+      "location": "/solutions/regulatory-structuring",
+      "locationResolvedPath": "/solutions/regulatory-structuring",
+      "locationMatchesCanonical": true,
+      "followStatus": 200,
+      "resolvedPath": "/solutions/regulatory-structuring",
+      "canonicalPath": "/solutions/regulatory-structuring",
+      "destination_canonical": {
+        "ok": true,
+        "canonical": "https://octusconsulting.com/solutions/regulatory-structuring",
+        "pathName": "/solutions/regulatory-structuring",
+        "reason": "ok"
+      },
+      "retained_public_page": false,
+      "status": "PASS",
+      "rule": "require_301_308_location_follow_canonical_tag"
+    },
+    {
+      "alias": "/solutions/compliance-risk-systems",
+      "canonical": "/solutions/compliance-risk",
+      "origin": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
+      "manualStatus": 308,
+      "location": "/solutions/compliance-risk",
+      "locationResolvedPath": "/solutions/compliance-risk",
+      "locationMatchesCanonical": true,
+      "followStatus": 200,
+      "resolvedPath": "/solutions/compliance-risk",
+      "canonicalPath": "/solutions/compliance-risk",
+      "destination_canonical": {
+        "ok": true,
+        "canonical": "https://octusconsulting.com/solutions/compliance-risk",
+        "pathName": "/solutions/compliance-risk",
+        "reason": "ok"
+      },
+      "retained_public_page": false,
+      "status": "PASS",
+      "rule": "require_301_308_location_follow_canonical_tag"
+    },
+    {
+      "alias": "/solutions/legal-contractual-architecture",
+      "canonical": "/solutions/legal-structural-architecture",
+      "origin": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
+      "manualStatus": 308,
+      "location": "/solutions/legal-structural-architecture",
+      "locationResolvedPath": "/solutions/legal-structural-architecture",
+      "locationMatchesCanonical": true,
+      "followStatus": 200,
+      "resolvedPath": "/solutions/legal-structural-architecture",
+      "canonicalPath": "/solutions/legal-structural-architecture",
+      "destination_canonical": {
+        "ok": true,
+        "canonical": "https://octusconsulting.com/solutions/legal-structural-architecture",
+        "pathName": "/solutions/legal-structural-architecture",
+        "reason": "ok"
+      },
+      "retained_public_page": false,
+      "status": "PASS",
+      "rule": "require_301_308_location_follow_canonical_tag"
+    },
+    {
+      "alias": "/solutions/corporate-cross-border",
+      "canonical": "/solutions/corporate-structuring",
+      "origin": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
+      "manualStatus": 308,
+      "location": "/solutions/corporate-structuring",
+      "locationResolvedPath": "/solutions/corporate-structuring",
+      "locationMatchesCanonical": true,
+      "followStatus": 200,
+      "resolvedPath": "/solutions/corporate-structuring",
+      "canonicalPath": "/solutions/corporate-structuring",
+      "destination_canonical": {
+        "ok": true,
+        "canonical": "https://octusconsulting.com/solutions/corporate-structuring",
+        "pathName": "/solutions/corporate-structuring",
+        "reason": "ok"
+      },
+      "retained_public_page": false,
+      "status": "PASS",
+      "rule": "require_301_308_location_follow_canonical_tag"
+    },
+    {
+      "alias": "/solutions/operational-remediation-readiness",
+      "canonical": "/solutions/remediation-readiness",
+      "origin": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
+      "manualStatus": 308,
+      "location": "/solutions/remediation-readiness",
+      "locationResolvedPath": "/solutions/remediation-readiness",
+      "locationMatchesCanonical": true,
+      "followStatus": 200,
+      "resolvedPath": "/solutions/remediation-readiness",
+      "canonicalPath": "/solutions/remediation-readiness",
+      "destination_canonical": {
+        "ok": true,
+        "canonical": "https://octusconsulting.com/solutions/remediation-readiness",
+        "pathName": "/solutions/remediation-readiness",
+        "reason": "ok"
+      },
+      "retained_public_page": false,
+      "status": "PASS",
+      "rule": "require_301_308_location_follow_canonical_tag"
+    },
+    {
+      "alias": "/solutions/regulatory/banking-payments",
+      "canonical": "/solutions/banking-payments-infrastructure",
+      "origin": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
+      "manualStatus": 308,
+      "location": "/solutions/banking-payments-infrastructure",
+      "locationResolvedPath": "/solutions/banking-payments-infrastructure",
+      "locationMatchesCanonical": true,
+      "followStatus": 200,
+      "resolvedPath": "/solutions/banking-payments-infrastructure",
+      "canonicalPath": "/solutions/banking-payments-infrastructure",
+      "destination_canonical": {
+        "ok": true,
+        "canonical": "https://octusconsulting.com/solutions/banking-payments-infrastructure",
+        "pathName": "/solutions/banking-payments-infrastructure",
+        "reason": "ok"
+      },
+      "retained_public_page": false,
+      "status": "PASS",
+      "rule": "require_301_308_location_follow_canonical_tag"
+    },
+    {
+      "alias": "/services",
+      "canonical": "/solutions",
+      "origin": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
+      "manualStatus": 308,
+      "location": "/solutions",
+      "locationResolvedPath": "/solutions",
+      "locationMatchesCanonical": true,
+      "followStatus": 200,
+      "resolvedPath": "/solutions",
+      "canonicalPath": "/solutions",
+      "destination_canonical": {
+        "ok": true,
+        "canonical": "https://octusconsulting.com/solutions",
+        "pathName": "/solutions",
+        "reason": "ok"
+      },
+      "retained_public_page": false,
+      "status": "PASS",
+      "rule": "require_301_308_location_follow_canonical_tag"
+    },
+    {
+      "alias": "/regulatory",
+      "canonical": "/solutions/regulatory-structuring",
+      "origin": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
+      "manualStatus": 308,
+      "location": "/solutions/regulatory-structuring",
+      "locationResolvedPath": "/solutions/regulatory-structuring",
+      "locationMatchesCanonical": true,
+      "followStatus": 200,
+      "resolvedPath": "/solutions/regulatory-structuring",
+      "canonicalPath": "/solutions/regulatory-structuring",
+      "destination_canonical": {
+        "ok": true,
+        "canonical": "https://octusconsulting.com/solutions/regulatory-structuring",
+        "pathName": "/solutions/regulatory-structuring",
+        "reason": "ok"
+      },
+      "retained_public_page": false,
+      "status": "PASS",
+      "rule": "require_301_308_location_follow_canonical_tag"
+    },
+    {
+      "alias": "/compliance",
+      "canonical": "/solutions/compliance-risk",
+      "origin": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
+      "manualStatus": 308,
+      "location": "/solutions/compliance-risk",
+      "locationResolvedPath": "/solutions/compliance-risk",
+      "locationMatchesCanonical": true,
+      "followStatus": 200,
+      "resolvedPath": "/solutions/compliance-risk",
+      "canonicalPath": "/solutions/compliance-risk",
+      "destination_canonical": {
+        "ok": true,
+        "canonical": "https://octusconsulting.com/solutions/compliance-risk",
+        "pathName": "/solutions/compliance-risk",
+        "reason": "ok"
+      },
+      "retained_public_page": false,
+      "status": "PASS",
+      "rule": "require_301_308_location_follow_canonical_tag"
+    },
+    {
+      "alias": "/corporate",
+      "canonical": "/solutions/corporate-structuring",
+      "origin": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
+      "manualStatus": 308,
+      "location": "/solutions/corporate-structuring",
+      "locationResolvedPath": "/solutions/corporate-structuring",
+      "locationMatchesCanonical": true,
+      "followStatus": 200,
+      "resolvedPath": "/solutions/corporate-structuring",
+      "canonicalPath": "/solutions/corporate-structuring",
+      "destination_canonical": {
+        "ok": true,
+        "canonical": "https://octusconsulting.com/solutions/corporate-structuring",
+        "pathName": "/solutions/corporate-structuring",
+        "reason": "ok"
+      },
+      "retained_public_page": false,
+      "status": "PASS",
+      "rule": "require_301_308_location_follow_canonical_tag"
+    },
+    {
+      "alias": "/audit",
+      "canonical": "/solutions/remediation-readiness",
+      "origin": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
+      "manualStatus": 308,
+      "location": "/solutions/remediation-readiness",
+      "locationResolvedPath": "/solutions/remediation-readiness",
+      "locationMatchesCanonical": true,
+      "followStatus": 200,
+      "resolvedPath": "/solutions/remediation-readiness",
+      "canonicalPath": "/solutions/remediation-readiness",
+      "destination_canonical": {
+        "ok": true,
+        "canonical": "https://octusconsulting.com/solutions/remediation-readiness",
+        "pathName": "/solutions/remediation-readiness",
+        "reason": "ok"
+      },
+      "retained_public_page": false,
+      "status": "PASS",
+      "rule": "require_301_308_location_follow_canonical_tag"
+    },
+    {
+      "alias": "/legal-architecture",
+      "canonical": "/solutions/legal-structural-architecture",
+      "origin": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
+      "manualStatus": 308,
+      "location": "/solutions/legal-structural-architecture",
+      "locationResolvedPath": "/solutions/legal-structural-architecture",
+      "locationMatchesCanonical": true,
+      "followStatus": 200,
+      "resolvedPath": "/solutions/legal-structural-architecture",
+      "canonicalPath": "/solutions/legal-structural-architecture",
+      "destination_canonical": {
+        "ok": true,
+        "canonical": "https://octusconsulting.com/solutions/legal-structural-architecture",
+        "pathName": "/solutions/legal-structural-architecture",
+        "reason": "ok"
+      },
+      "retained_public_page": false,
+      "status": "PASS",
+      "rule": "require_301_308_location_follow_canonical_tag"
+    }
+  ],
+  "overall": "PASS"
+}

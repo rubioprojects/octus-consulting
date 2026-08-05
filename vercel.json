@@ -1,0 +1,106 @@
+{
+  "redirects": [
+    {
+      "source": "/solutions/regulatory-strategy-licensing",
+      "destination": "/solutions/regulatory-structuring",
+      "permanent": true
+    },
+    {
+      "source": "/solutions/compliance-risk-systems",
+      "destination": "/solutions/compliance-risk",
+      "permanent": true
+    },
+    {
+      "source": "/solutions/legal-contractual-architecture",
+      "destination": "/solutions/legal-structural-architecture",
+      "permanent": true
+    },
+    {
+      "source": "/solutions/corporate-cross-border",
+      "destination": "/solutions/corporate-structuring",
+      "permanent": true
+    },
+    {
+      "source": "/solutions/operational-remediation-readiness",
+      "destination": "/solutions/remediation-readiness",
+      "permanent": true
+    },
+    {
+      "source": "/regulatory",
+      "destination": "/solutions/regulatory-structuring",
+      "permanent": true
+    },
+    {
+      "source": "/compliance",
+      "destination": "/solutions/compliance-risk",
+      "permanent": true
+    },
+    {
+      "source": "/corporate",
+      "destination": "/solutions/corporate-structuring",
+      "permanent": true
+    },
+    {
+      "source": "/audit",
+      "destination": "/solutions/remediation-readiness",
+      "permanent": true
+    },
+    {
+      "source": "/legal-architecture",
+      "destination": "/solutions/legal-structural-architecture",
+      "permanent": true
+    },
+    {
+      "source": "/services",
+      "destination": "/solutions",
+      "permanent": true
+    },
+    {
+      "source": "/solutions/regulatory/banking-payments",
+      "destination": "/solutions/banking-payments-infrastructure",
+      "permanent": true
+    },
+    {
+      "source": "/intelligence",
+      "destination": "/insights",
+      "permanent": true
+    },
+    {
+      "source": "/intelligence/:path*",
+      "destination": "/insights",
+      "permanent": true
+    },
+    {
+      "source": "/industries",
+      "destination": "/markets",
+      "permanent": true
+    },
+    {
+      "source": "/industries/:path*",
+      "destination": "/markets/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/solutions/international-hub",
+      "destination": "/international-hub",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": ".*\\.vercel\\.app"
+        }
+      ],
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    }
+  ]
+}

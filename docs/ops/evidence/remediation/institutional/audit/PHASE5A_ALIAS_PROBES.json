@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-08-04T01:35:30.096Z",
+  "overall": "PASS",
+  "probes": [
+    {
+      "probe": "/about-us",
+      "status": 404,
+      "location": "",
+      "result": "NO_ALIAS_AS_EXPECTED"
+    },
+    {
+      "probe": "/about-octus",
+      "status": 404,
+      "location": "",
+      "result": "NO_ALIAS_AS_EXPECTED"
+    },
+    {
+      "probe": "/engagement",
+      "status": 404,
+      "location": "",
+      "result": "NO_ALIAS_AS_EXPECTED"
+    },
+    {
+      "probe": "/how-we-work",
+      "status": 404,
+      "location": "",
+      "result": "NO_ALIAS_AS_EXPECTED"
+    },
+    {
+      "probe": "/contact-us",
+      "status": 404,
+      "location": "",
+      "result": "NO_ALIAS_AS_EXPECTED"
+    },
+    {
+      "probe": "/get-in-touch",
+      "status": 404,
+      "location": "",
+      "result": "NO_ALIAS_AS_EXPECTED"
+    },
+    {
+      "probe": "/diagnostics",
+      "status": 404,
+      "location": "",
+      "result": "NO_ALIAS_AS_EXPECTED"
+    },
+    {
+      "probe": "/assessment",
+      "status": 404,
+      "location": "",
+      "result": "NO_ALIAS_AS_EXPECTED"
+    },
+    {
+      "probe": "/partners-network",
+      "status": 404,
+      "location": "",
+      "result": "NO_ALIAS_AS_EXPECTED"
+    },
+    {
+      "probe": "/jobs",
+      "status": 404,
+      "location": "",
+      "result": "NO_ALIAS_AS_EXPECTED"
+    },
+    {
+      "probe": "/careers-octus",
+      "status": 404,
+      "location": "",
+      "result": "NO_ALIAS_AS_EXPECTED"
+    }
+  ]
+}

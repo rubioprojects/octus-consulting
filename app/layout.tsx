@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import Nav from "../components/Nav";
 import CookieBanner from "../components/CookieBanner";
+import BrandLockup from "../components/BrandLockup";
+import OrganizationJsonLd from "../components/seo/OrganizationJsonLd";
 import { CTA_DISCUSS_LABEL, MAILTO_INFO, WHATSAPP_DISCUSS_URL } from "../lib/cta";
 import "./globals.css";
 
@@ -26,29 +28,47 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Octus Consulting — Regulatory & Operational Structuring",
-    template: "%s — Octus Consulting",
+    default: "Octus Consulting | Regulatory, Compliance and International Structuring",
+    template: "%s | Octus Consulting",
   },
   description:
-    "Regulated operations don't fail randomly. They fail structurally. Octus identifies what is broken — and fixes it.",
+    "Octus structures regulated operations across licensing, compliance, corporate architecture, remediation and international coordination.",
   metadataBase: new URL("https://octusconsulting.com"),
   icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    icon: [
+      { url: "/brand/favicons/octus-favicon-blue.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-48.png", sizes: "48x48", type: "image/png" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: "/favicon-32.png",
   },
   openGraph: {
-    title: "Octus Consulting — Regulatory & Operational Structuring",
-    description: "Regulated operations don't fail randomly. They fail structurally. Octus identifies what is broken — and fixes it.",
+    title: "Octus Consulting | Regulatory, Compliance and International Structuring",
+    description:
+      "Octus structures regulated operations across licensing, compliance, corporate architecture, remediation and international coordination.",
     url: "https://octusconsulting.com",
     siteName: "Octus Consulting",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Octus Consulting" }],
+    images: [
+      {
+        url: "https://octusconsulting.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Octus Consulting",
+      },
+    ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Octus Consulting",
-    description: "Regulated operations don't fail randomly. They fail structurally.",
-    images: ["/og-image.png"],
+    title: "Octus Consulting | Regulatory, Compliance and International Structuring",
+    description:
+      "Octus structures regulated operations across licensing, compliance, corporate architecture, remediation and international coordination.",
+    images: ["https://octusconsulting.com/og-image.png"],
   },
 };
 
@@ -60,44 +80,59 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${unigeo.variable} ${inter.variable}`}>
       <body>
+        <OrganizationJsonLd />
         <Nav />
         {children}
 
         {/* ─── WHATSAPP FLOATING CTA ─── */}
-        <a
-          href={WHATSAPP_DISCUSS_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="wa-float"
-          aria-label={CTA_DISCUSS_LABEL}
-        >
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style={{ flexShrink: 0 }}>
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-          </svg>
-          <span className="wa-float__label">Discuss on WhatsApp</span>
-        </a>
+        <aside aria-label="WhatsApp contact">
+          <a
+            href={WHATSAPP_DISCUSS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="wa-float"
+            aria-label={CTA_DISCUSS_LABEL}
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style={{ flexShrink: 0 }}>
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            <span className="wa-float__label">Discuss on WhatsApp</span>
+          </a>
+        </aside>
 
         <CookieBanner />
-        <footer className="surface-dark py-16 md:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:gap-8 lg:grid-cols-3 xl:grid-cols-6">
-              <div className="flex flex-col gap-3 xl:col-span-1">
-                <a href="/" className="inline-flex items-center no-underline" aria-label="Octus Consulting">
-                  <img
-                    src="/logo-nav.png"
-                    alt="Octus Consulting"
-                    width={200}
-                    height={40}
-                    decoding="async"
-                    className="h-8 w-auto"
-                  />
+        <footer className="site-footer surface-dark py-10 md:py-20">
+          <div className="site-footer__mark" aria-hidden="true" />
+          <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="site-footer__brand-close">
+              <a
+                href="/"
+                className="site-footer__lockup-link inline-flex max-w-full items-center no-underline"
+                aria-label="Octus Consulting"
+              >
+                <BrandLockup variant="on-dark" surface="footer" />
+              </a>
+              <p className="site-footer__brand-close__line">
+                International structuring and execution for regulated and high-risk operations.
+              </p>
+              <div className="site-footer__cta-row mt-5 flex flex-wrap items-center gap-3 md:mt-8">
+                <a
+                  href={WHATSAPP_DISCUSS_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex h-10 items-center rounded-sm bg-primary px-5 font-sans text-[13px] font-medium text-primary-foreground no-underline transition-colors hover:bg-primary/90"
+                >
+                  {CTA_DISCUSS_LABEL}
                 </a>
-                <p className="max-w-xs text-sm font-normal leading-relaxed text-white/70">
-                  Premium international execution partner for highly regulated operations.
-                </p>
-                <div className="mt-2 flex gap-3">
+                <a
+                  href={MAILTO_INFO}
+                  className="font-sans text-[13px] font-medium text-white/70 no-underline underline-offset-4 transition-colors hover:text-white hover:underline"
+                >
+                  Email Octus
+                </a>
+                <div className="flex gap-3">
                   <a
-                    href="https://www.linkedin.com/company/octusconsulting/"
+                    href="https://www.linkedin.com/company/octusonsulting/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center text-white/65 transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
@@ -120,24 +155,101 @@ export default function RootLayout({
                   </a>
                 </div>
               </div>
+            </div>
 
+            <div className="site-footer__acc-stack mt-8 space-y-0 lg:hidden">
+              {(
+                [
+                  {
+                    label: "Services",
+                    links: [
+                      { label: "Regulatory Structuring", href: "/solutions/regulatory-structuring" },
+                      { label: "Compliance & Risk", href: "/solutions/compliance-risk" },
+                      { label: "Legal & Structural Architecture", href: "/solutions/legal-structural-architecture" },
+                      { label: "Corporate Structuring", href: "/solutions/corporate-structuring" },
+                      { label: "Private Clients", href: "/private-clients" },
+                      { label: "Remediation & Readiness", href: "/solutions/remediation-readiness" },
+                      { label: "International Hub", href: "/international-hub" },
+                    ],
+                  },
+                  {
+                    label: "Industries",
+                    links: [
+                      { label: "iGaming", href: "/markets/igaming" },
+                      { label: "Fintech", href: "/markets/fintech" },
+                      { label: "Digital Assets", href: "/markets/crypto" },
+                      { label: "Technology", href: "/markets/technology" },
+                      { label: "Forex", href: "/markets/forex" },
+                      { label: "High-Risk Operations", href: "/markets/high-risk" },
+                    ],
+                  },
+                  {
+                    label: "Engage",
+                    links: [
+                      { label: "How we engage", href: "/how-we-engage" },
+                      { label: "Insights", href: "/insights" },
+                      { label: "Partners", href: "/partners" },
+                      { label: "Diagnostic assessment", href: "/diagnostic" },
+                    ],
+                  },
+                  {
+                    label: "Company",
+                    links: [
+                      { label: "About", href: "/about" },
+                      { label: "Team", href: "/team" },
+                      { label: "Careers", href: "/careers" },
+                      { label: "Jurisdictions", href: "/jurisdictions" },
+                      { label: "Contact", href: "/contact" },
+                    ],
+                  },
+                  {
+                    label: "Legal",
+                    links: [
+                      { label: "Privacy Policy", href: "/privacy" },
+                      { label: "Terms of Use", href: "/terms" },
+                      { label: "Cookie Policy", href: "/cookies" },
+                      { label: "Compliance Channel", href: "/compliance-channel" },
+                    ],
+                  },
+                ] as const
+              ).map((group) => (
+                <details key={group.label} className="site-footer__acc">
+                  <summary className="site-footer__acc-summary">{group.label}</summary>
+                  <div className="pb-3 pl-1 pt-1">
+                    <ul className="flex list-none flex-col gap-2.5">
+                      {group.links.map((l) => (
+                        <li key={l.href}>
+                          <a
+                            href={l.href}
+                            className="site-footer__nav-link font-sans no-underline transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                          >
+                            {l.label}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </details>
+              ))}
+            </div>
+
+            <div className="mt-12 hidden grid-cols-2 gap-8 lg:grid lg:grid-cols-3 xl:grid-cols-5">
               <div>
-                <p className="mb-5 font-sans text-xs font-medium uppercase tracking-[0.15em] text-white/75">
-                  Solutions
-                </p>
+                <p className="site-footer__nav-label">Services</p>
                 <ul className="flex list-none flex-col gap-2.5">
                   {[
-                    { label: "Regulatory Strategy & Licensing", href: "/solutions/regulatory-strategy-licensing" },
-                    { label: "Banking & Payments", href: "/solutions/banking-payments-infrastructure" },
-                    { label: "Compliance & Risk", href: "/solutions/compliance-risk-systems" },
-                    { label: "Corporate & Cross-Border", href: "/solutions/corporate-cross-border" },
-                    { label: "Legal & Contractual Architecture", href: "/solutions/legal-contractual-architecture" },
-                    { label: "Remediation & Readiness", href: "/solutions/operational-remediation-readiness" },
+                    { label: "Regulatory Structuring", href: "/solutions/regulatory-structuring" },
+                    { label: "Compliance & Risk", href: "/solutions/compliance-risk" },
+                    { label: "Legal & Structural Architecture", href: "/solutions/legal-structural-architecture" },
+                    { label: "Corporate Structuring", href: "/solutions/corporate-structuring" },
+                    { label: "Private Clients", href: "/private-clients" },
+                    { label: "Remediation & Readiness", href: "/solutions/remediation-readiness" },
+                    { label: "International Hub", href: "/international-hub" },
                   ].map((l) => (
                     <li key={l.href}>
                       <a
                         href={l.href}
-                        className="font-sans text-sm text-white/65 no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                        className="site-footer__nav-link font-sans no-underline transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                       >
                         {l.label}
                       </a>
@@ -147,20 +259,20 @@ export default function RootLayout({
               </div>
 
               <div>
-                <p className="mb-5 font-sans text-xs font-medium uppercase tracking-[0.15em] text-white/75">
-                  Markets
-                </p>
+                <p className="site-footer__nav-label">Industries</p>
                 <ul className="flex list-none flex-col gap-2.5">
                   {[
                     { label: "iGaming", href: "/markets/igaming" },
                     { label: "Fintech", href: "/markets/fintech" },
                     { label: "Digital Assets", href: "/markets/crypto" },
+                    { label: "Technology", href: "/markets/technology" },
+                    { label: "Forex", href: "/markets/forex" },
                     { label: "High-Risk Operations", href: "/markets/high-risk" },
                   ].map((l) => (
                     <li key={l.href}>
                       <a
                         href={l.href}
-                        className="font-sans text-sm text-white/65 no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                        className="site-footer__nav-link font-sans no-underline transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                       >
                         {l.label}
                       </a>
@@ -170,21 +282,18 @@ export default function RootLayout({
               </div>
 
               <div>
-                <p className="mb-5 font-sans text-xs font-medium uppercase tracking-[0.15em] text-white/75">
-                  Engage
-                </p>
+                <p className="site-footer__nav-label">Engage</p>
                 <ul className="flex list-none flex-col gap-2.5">
                   {[
                     { label: "How we engage", href: "/how-we-engage" },
-                    { label: "Intelligence", href: "/intelligence" },
                     { label: "Insights", href: "/insights" },
                     { label: "Partners", href: "/partners" },
-                    { label: "Remediation assess", href: "/diagnostic" },
+                    { label: "Diagnostic assessment", href: "/diagnostic" },
                   ].map((l) => (
                     <li key={l.href}>
                       <a
                         href={l.href}
-                        className="font-sans text-sm text-white/65 no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                        className="site-footer__nav-link font-sans no-underline transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                       >
                         {l.label}
                       </a>
@@ -194,9 +303,7 @@ export default function RootLayout({
               </div>
 
               <div>
-                <p className="mb-5 font-sans text-xs font-medium uppercase tracking-[0.15em] text-white/75">
-                  Company
-                </p>
+                <p className="site-footer__nav-label">Company</p>
                 <ul className="flex list-none flex-col gap-2.5">
                   {[
                     { label: "About", href: "/about" },
@@ -208,7 +315,7 @@ export default function RootLayout({
                     <li key={l.href}>
                       <a
                         href={l.href}
-                        className="font-sans text-sm text-white/65 no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                        className="site-footer__nav-link font-sans no-underline transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                       >
                         {l.label}
                       </a>
@@ -218,7 +325,7 @@ export default function RootLayout({
               </div>
 
               <div>
-                <p className="mb-5 font-sans text-xs font-medium uppercase tracking-[0.15em] text-white/75">Legal</p>
+                <p className="site-footer__nav-label">Legal</p>
                 <ul className="flex list-none flex-col gap-2.5">
                   {[
                     { label: "Privacy Policy", href: "/privacy" },
@@ -229,7 +336,7 @@ export default function RootLayout({
                     <li key={l.href}>
                       <a
                         href={l.href}
-                        className="font-sans text-sm text-white/65 no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                        className="site-footer__nav-link font-sans no-underline transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                       >
                         {l.label}
                       </a>
@@ -239,7 +346,7 @@ export default function RootLayout({
               </div>
             </div>
 
-            <div className="mt-16 border-t border-white/10 pt-8">
+            <div className="site-footer__bar mt-16 border-t border-white/10 pt-8">
               <div className="font-sans">
                 <p className="text-xs text-white/55">© 2026 Octus Consulting. All rights reserved.</p>
                 <p className="mt-1 text-xs text-white/55">
@@ -263,7 +370,7 @@ export default function RootLayout({
                   </a>{" "}
                   ·{" "}
                   <a
-                    href="https://www.linkedin.com/company/octusconsulting/"
+                    href="https://www.linkedin.com/company/octusonsulting/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline text-white/70 no-underline transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"

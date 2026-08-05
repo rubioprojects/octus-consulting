@@ -1,19 +1,23 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
+import DarkHeroAtmosphere from "../../../../components/system/DarkHeroAtmosphere";
+import { pageSocialMeta } from "../../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Holding Design",
   description:
     "Holding structures for regulated operations require architecture that separates risk, aligns governance and satisfies institutional scrutiny across jurisdictions.",
-};
+  path: "/solutions/corporate/holding-design",
+});
 
 export default function HoldingDesignPage() {
   return (
     <main>
-      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
-        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <span className="label">Solutions · Corporate · Holding Design</span>
-          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
+      <section className="octus-dark-hero surface-dark relative flex min-h-[70vh] flex-col justify-center overflow-hidden pt-28 pb-16 md:min-h-[80vh] md:pt-32 md:pb-24">
+        <DarkHeroAtmosphere />
+        <div className="relative z-10 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+          <span className="label">Services · Corporate · Holding Design</span>
+          <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline">
             A holding structure is not an org chart.
             <br />
             <span style={{ color: "var(--white-40)" }}>It is risk architecture.</span>
@@ -28,6 +32,7 @@ export default function HoldingDesignPage() {
             <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           </div>
         </div>
+        <div className="octus-dark-hero__seam" aria-hidden="true" />
       </section>
 
       <section className="bg-background py-24 md:py-32">
@@ -38,7 +43,7 @@ export default function HoldingDesignPage() {
               "Operating entities, licensing entities and holding entities are conflated. A regulatory issue in one contaminates the group.",
               "Inter-company agreements are missing or generic. Decision authority is unclear.",
               "Payments between entities have no contractual basis. An audit exposes structural weakness.",
-              "What works at one-entity scale breaks at multi-jurisdiction group level.",
+              "What works at one-entity scale breaks at group level across jurisdictions.",
             ].map((item) => (
               <div key={item} className="card" style={{ padding: "20px 24px" }}>
                 <p className="body-text">{item}</p>
@@ -60,7 +65,7 @@ export default function HoldingDesignPage() {
               ["Flow of funds", "Treasury management, transfer pricing and payment flows designed for compliance and audit readiness."],
             ].map(([title, body]) => (
               <div key={title}>
-                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{title}</h3>
+                <h2 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{title}</h2>
                 <p className="body-text">{body}</p>
               </div>
             ))}
@@ -106,14 +111,14 @@ export default function HoldingDesignPage() {
               </div>
             ))}
           </div>
-          <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>Not relevant if</h3>
+          <h2 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>Not relevant if</h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {[
               "Single entity, single jurisdiction, no group complexity.",
               "Looking for incorporation without structural depth.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                <span className="mt-0.5 shrink-0 text-muted-foreground" aria-hidden="true">•</span>
                 <p className="body-text text-muted-foreground">{item}</p>
               </div>
             ))}
@@ -126,19 +131,19 @@ export default function HoldingDesignPage() {
           <p className="label">Related</p>
           <p className="body-sm text-muted-foreground mb-5">
             Where group structures are typically anchored:{" "}
-            <Link href="/jurisdictions/portugal" style={{ color: "var(--blue-light)" }}>Portugal</Link>
+            <Link href="/jurisdictions/portugal" className="underline underline-offset-2" style={{ color: "var(--blue-light)" }}>Portugal</Link>
             {" · "}
-            <Link href="/jurisdictions/uae" style={{ color: "var(--blue-light)" }}>UAE</Link>
+            <Link href="/jurisdictions/uae" className="underline underline-offset-2" style={{ color: "var(--blue-light)" }}>UAE</Link>
           </p>
           <div className="grid-auto-lg">
             {[
               { title: "Offshore Structuring", desc: "Offshore Structuring", href: "/solutions/corporate/offshore-structuring" },
               { title: "Company Formation", desc: "Company Formation", href: "/solutions/corporate/company-formation" },
-              { title: "Ownership & UBO Architecture", desc: "Ownership & UBO Architecture", href: "/private-clients" },
-              { title: "Banking & Payments", desc: "Banking & Payments", href: "/solutions/regulatory/banking-payments" },
+              { title: "Private Clients", desc: "Ownership and UBO architecture for founders and operators.", href: "/private-clients" },
+              { title: "Banking & Payments", desc: "Banking & Payments", href: "/solutions/banking-payments-infrastructure" },
             ].map((item) => (
               <Link key={item.href} href={item.href} className="card-grid" style={{ padding: "28px" }}>
-                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{item.title}</h3>
+                <h2 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{item.title}</h2>
                 <p className="body-sm" style={{ marginBottom: "12px" }}>{item.desc}</p>
                 <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Learn more →</span>
               </Link>
@@ -153,7 +158,7 @@ export default function HoldingDesignPage() {
           <h2 className="heading-lg cta-block__title">
             Design the group for regulation. Not for convenience.
           </h2>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">Continue this discussion →</a>
         </div>
       </section>
     </main>

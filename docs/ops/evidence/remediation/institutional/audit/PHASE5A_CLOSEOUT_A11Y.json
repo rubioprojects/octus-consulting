@@ -1,0 +1,113 @@
+{
+  "axe_core_version": "4.12.1",
+  "phase5a_routes": [
+    {
+      "route": "/about",
+      "viewport": "desktop",
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "incomplete": 2,
+      "status": "PASS"
+    },
+    {
+      "route": "/about",
+      "viewport": "mobile",
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "incomplete": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/how-we-engage",
+      "viewport": "desktop",
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "incomplete": 2,
+      "status": "PASS"
+    },
+    {
+      "route": "/how-we-engage",
+      "viewport": "mobile",
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "incomplete": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/contact",
+      "viewport": "desktop",
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "incomplete": 2,
+      "status": "PASS"
+    },
+    {
+      "route": "/contact",
+      "viewport": "mobile",
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "incomplete": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/diagnostic",
+      "viewport": "desktop",
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "incomplete": 2,
+      "status": "PASS"
+    },
+    {
+      "route": "/diagnostic",
+      "viewport": "mobile",
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "incomplete": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/partners",
+      "viewport": "desktop",
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "incomplete": 2,
+      "status": "PASS"
+    },
+    {
+      "route": "/partners",
+      "viewport": "mobile",
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "incomplete": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/careers",
+      "viewport": "desktop",
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "incomplete": 2,
+      "status": "PASS"
+    },
+    {
+      "route": "/careers",
+      "viewport": "mobile",
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "incomplete": 1,
+      "status": "PASS"
+    }
+  ]
+}

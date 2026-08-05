@@ -1,0 +1,10 @@
+Capturing baseline + before + reconciled...
+{
+  "overall": "PASS",
+  "failed": [],
+  "critical": 0,
+  "serious": 0,
+  "moderate": 26,
+  "incomplete": 39,
+  "screenshots": 312
+}

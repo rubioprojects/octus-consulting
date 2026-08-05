@@ -5,7 +5,7 @@
 | **Status** | `REQUIRES_RUBIO_REVIEW` |
 | **Date** | 2026-08-02 |
 | **Stance** | Blog / Insights is an approved valuable asset — preserve, do not broadly rewrite or restructure |
-| **SoT** | `lib/posts.ts` (38 posts; no MDX/CMS) |
+| **SoT** | `lib/posts.ts` (33 posts; no MDX/CMS) |
 | **Routes** | `/insights`, `/insights/[slug]`, related `/intelligence` |
 
 ## 1. Preservation rules
@@ -20,7 +20,7 @@
 
 | Metric | Value |
 |--------|------:|
-| Published posts | 38 |
+| Published posts | 33 |
 | Missing `author` | 25 |
 | Missing `date` | 0 |
 | `last-reviewed` field | **Absent** from schema |

@@ -1,0 +1,217 @@
+{
+  "generated_at": "2026-08-03T17:25:49.272Z",
+  "head": "ffa5c8899b00278b952d329d9d6d129385dc2dc2",
+  "checks": [
+    {
+      "id": "build",
+      "command": "npm run build",
+      "date": "2026-08-03T17:25:49.279Z",
+      "exit_code": 0,
+      "status": "PASS",
+      "stdout_tail": "      267 B          94.1 kB\n├ ○ /solutions/compliance/compliance-as-a-service  267 B          94.1 kB\n├ ○ /solutions/compliance/dpo-as-a-service         267 B          94.1 kB\n├ ○ /solutions/compliance/gli-readiness            267 B          94.1 kB\n├ ○ /solutions/compliance/internal-controls        267 B          94.1 kB\n├ ○ /solutions/corporate-cross-border              463 B          87.6 kB\n├ ○ /solutions/corporate-structuring               1.53 kB        95.4 kB\n├ ○ /solutions/corporate/company-formation         267 B          94.1 kB\n├ ○ /solutions/corporate/holding-design            267 B          94.1 kB\n├ ○ /solutions/corporate/offshore-structuring      267 B          94.1 kB\n├ ○ /solutions/legal-contractual-architecture      463 B          87.6 kB\n├ ○ /solutions/legal-structural-architecture       1.53 kB        95.4 kB\n├ ○ /solutions/operational-remediation-readiness   463 B          87.6 kB\n├ ○ /solutions/regulatory-strategy-licensing       463 B          87.6 kB\n├ ○ /solutions/regulatory-structuring              1.53 kB        95.4 kB\n├ ○ /solutions/regulatory/banking-payments         164 B          87.3 kB\n├ ○ /solutions/regulatory/fintech-licensing        267 B          94.1 kB\n├ ○ /solutions/regulatory/igaming-licensing        270 B          94.1 kB\n├ ○ /solutions/regulatory/market-entry             267 B          94.1 kB\n├ ○ /solutions/remediation-readiness               1.53 kB        95.4 kB\n├ ○ /team                                          267 B          94.1 kB\n├ ○ /terms                                         164 B          87.3 kB\n└ ○ /what-we-do                                    268 B          94.1 kB\n+ First Load JS shared by all                      87.1 kB\n  ├ chunks/7023-aecd8cbddd9bcfb4.js                31.6 kB\n  ├ chunks/fd9d1056-7f8fa82e9b809390.js            53.6 kB\n  └ other shared chunks (total)                    1.9 kB\n\n\n○  (Static)  prerendered as static content\n●  (SSG)     prerendered as static HTML (uses getStaticProps)\n\n",
+      "stderr_tail": ""
+    },
+    {
+      "id": "typecheck",
+      "command": "npx tsc --noEmit",
+      "date": "2026-08-03T17:26:00.283Z",
+      "exit_code": 0,
+      "status": "PASS",
+      "stdout_tail": "",
+      "stderr_tail": ""
+    },
+    {
+      "id": "route_crawl",
+      "command": "node scripts/sol-audit-closeout-validate.cjs (listHtml on out/)",
+      "date": "2026-08-03T17:25:49.272Z",
+      "status": "PASS",
+      "html_routes": 93,
+      "sample": [
+        "/.",
+        "/404",
+        "/about",
+        "/audit",
+        "/brazil",
+        "/careers",
+        "/compliance",
+        "/compliance-channel",
+        "/contact",
+        "/cookies",
+        "/corporate",
+        "/diagnostic",
+        "/how-we-engage",
+        "/insights",
+        "/insights/annual-recertification-betting-platforms-spa-mf-new-guidelines",
+        "/insights/banking-for-high-risk-operations",
+        "/insights/bet-br-domain-extension-to-states-brazil",
+        "/insights/betting-taxation-risks-senate-legal-certainty-regulated-market",
+        "/insights/brazil-b2b-registration-requirement-betting-igaming",
+        "/insights/centralised-self-exclusion-platform-key-changes-operators-bettors"
+      ]
+    },
+    {
+      "id": "metadata",
+      "command": "grep meta/title in out/index.html",
+      "date": "2026-08-03T17:25:49.272Z",
+      "status": "PASS",
+      "has_title": true,
+      "has_description": true
+    },
+    {
+      "id": "canonical",
+      "command": "grep rel=canonical in out/index.html",
+      "date": "2026-08-03T17:25:49.272Z",
+      "status": "PASS",
+      "found": "https://octusconsulting.com"
+    },
+    {
+      "id": "redirects",
+      "command": "inspect /Users/devrubio/Developer/Octus/octus-consulting/next.config.js + out routes",
+      "date": "2026-08-03T17:25:49.272Z",
+      "status": "PASS",
+      "notes": "config=next.config.js; has_redirects=false"
+    },
+    {
+      "id": "internal_links",
+      "command": "parse page href=/ from out/index.html against out/*.html (exclude assets)",
+      "date": "2026-08-03T17:25:49.272Z",
+      "status": "PASS",
+      "home_internal_page_hrefs": 30,
+      "missing": []
+    },
+    {
+      "id": "prohibited_copy",
+      "command": "scan out/**/*.html for prohibited phrases + word-boundary EXIN",
+      "date": "2026-08-03T17:25:49.272Z",
+      "status": "PASS",
+      "phrase_hits": [],
+      "exin_word_hits": []
+    },
+    {
+      "id": "favicon_assets",
+      "command": "fs.existsSync public favicon suite",
+      "date": "2026-08-03T17:25:49.272Z",
+      "status": "PASS",
+      "missing": [],
+      "hashes": [
+        {
+          "file": "public/favicon.ico",
+          "sha256": "ed1a5cd2fb54d7273e768683f6e1af9c1e6f004f1765dcfccb4379175298581a"
+        },
+        {
+          "file": "public/favicon-32.png",
+          "sha256": "a3395d2351822b1d1099e0be0086c7b9ede9fa8a7f614faa1f94fea824d5af9b"
+        },
+        {
+          "file": "public/brand/favicons/octus-favicon-blue.svg",
+          "sha256": "019e42153b72313a2f50323c240076ef80e4ebd671e407d57c8b829059c45bc9"
+        }
+      ]
+    },
+    {
+      "id": "portrait_assets",
+      "command": "hash public/**/{rubio,maria}* images",
+      "date": "2026-08-03T17:25:49.272Z",
+      "status": "PASS",
+      "portraits": [
+        {
+          "file": "public/team/maria-cristina.jpg",
+          "sha256": "4fe097595ed6753e8df9cc3208fd78993a69a7b645d332af25b449116ebbfe26",
+          "bytes": 50903
+        },
+        {
+          "file": "public/team/rubio-teixeira.jpg",
+          "sha256": "28d61e59f013debc140e6684b3783c4a8bb426a24ddbdf3dbdb45922b9fee200",
+          "bytes": 166318
+        }
+      ]
+    },
+    {
+      "id": "preview_noindex",
+      "command": "curl -sI https://octus-consulting-4lpoce2i8-axle1.vercel.app/ | check x-robots-tag: noindex",
+      "date": "2026-08-03T17:25:49.272Z",
+      "status": "PASS",
+      "preview_url": "https://octus-consulting-4lpoce2i8-axle1.vercel.app/",
+      "curl_exit": 0,
+      "x_robots_tag": "noindex",
+      "note": "Static robots.txt Allow is production SoT; preview isolation is via Vercel x-robots-tag"
+    },
+    {
+      "id": "horizontal_overflow_desktop",
+      "command": "playwright measure documentElement.scrollWidth vs clientWidth @1440x1000 /",
+      "date": "2026-08-03T17:25:49.272Z",
+      "status": "PASS",
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflow": false
+    },
+    {
+      "id": "accessibility_desktop",
+      "command": "playwright a11y basics (alt/lang/h1) @desktop",
+      "date": "2026-08-03T17:25:49.272Z",
+      "status": "PASS",
+      "missingAlt": 0,
+      "has_main_or_h1": true,
+      "lang": "en"
+    },
+    {
+      "id": "whatsapp_overlap_desktop",
+      "command": "playwright elementFromPoint center of .wa-float @desktop",
+      "date": "2026-08-03T17:25:49.272Z",
+      "status": "PASS",
+      "present": true,
+      "rect": {
+        "x": 1221.09375,
+        "y": 932,
+        "w": 198.90625,
+        "h": 48
+      },
+      "topIsFloat": true
+    },
+    {
+      "id": "horizontal_overflow_mobile",
+      "command": "playwright measure documentElement.scrollWidth vs clientWidth @390x844 /",
+      "date": "2026-08-03T17:25:49.272Z",
+      "status": "PASS",
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflow": false
+    },
+    {
+      "id": "accessibility_mobile",
+      "command": "playwright a11y basics (alt/lang/h1) @mobile",
+      "date": "2026-08-03T17:25:49.272Z",
+      "status": "PASS",
+      "missingAlt": 0,
+      "has_main_or_h1": true,
+      "lang": "en"
+    },
+    {
+      "id": "whatsapp_overlap_mobile",
+      "command": "playwright elementFromPoint center of .wa-float @mobile",
+      "date": "2026-08-03T17:25:49.272Z",
+      "status": "PASS",
+      "present": true,
+      "rect": {
+        "x": 326,
+        "y": 780,
+        "w": 48,
+        "h": 48
+      },
+      "topIsFloat": true
+    },
+    {
+      "id": "cookie_behavior",
+      "command": "playwright show banner → Continue → hidden + localStorage",
+      "date": "2026-08-03T17:25:49.272Z",
+      "status": "PASS",
+      "before": 1,
+      "after": 0,
+      "stored": "true",
+      "reject_preferences_ui": "NOT_IMPLEMENTED"
+    }
+  ],
+  "pass": 18,
+  "fail": 0,
+  "overall": "PASS"
+}

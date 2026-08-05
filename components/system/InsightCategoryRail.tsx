@@ -4,25 +4,26 @@ import {
   type IntelligenceCategoryId,
 } from "../../lib/intelligence";
 
-export const INTELLIGENCE_CATEGORIES = [
+/** Hub ids stay stable: they drive the /insights?hub= query params. */
+export const INSIGHT_CATEGORIES = [
   {
     id: "regulatory" as const,
-    label: "Regulatory Intelligence",
+    label: "Regulatory",
     description: "Rules, authorities, jurisdiction shifts",
   },
   {
     id: "market" as const,
-    label: "Market Intelligence",
+    label: "Market",
     description: "Sector dynamics and industry movement",
   },
   {
     id: "operational" as const,
-    label: "Operational Intelligence",
+    label: "Operational",
     description: "Failure modes and execution patterns",
   },
   {
     id: "founder" as const,
-    label: "Founder Intelligence",
+    label: "Founder",
     description: "Ownership, governance, expansion",
   },
 ];
@@ -37,8 +38,8 @@ export default function InsightCategoryRail({
 }) {
   const current = active || "all";
   return (
-    <nav aria-label="Intelligence categories" className="mb-10">
-      <p className="section-label mb-4 block">Intelligence Hub</p>
+    <nav aria-label="Insights categories" className="mb-10">
+      <p className="section-label mb-4 block">Insights categories</p>
       <ul className="flex list-none flex-wrap gap-2 border-b border-border pb-4">
         <li>
           <Link
@@ -52,7 +53,7 @@ export default function InsightCategoryRail({
             All
           </Link>
         </li>
-        {INTELLIGENCE_CATEGORIES.map((cat) => (
+        {INSIGHT_CATEGORIES.map((cat) => (
           <li key={cat.id}>
             <Link
               href={`/insights?hub=${cat.id}`}

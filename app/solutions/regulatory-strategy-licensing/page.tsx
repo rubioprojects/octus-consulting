@@ -1,13 +1,14 @@
-import { SOLUTION_HUBS } from "../../../lib/commercial";
-import SolutionHubPage from "../../../components/system/SolutionHubPage";
+import StaticRedirect from "../../../components/StaticRedirect";
+import { pageSocialMeta } from "../../../lib/pageMeta";
 
-const hub = SOLUTION_HUBS.find((h) => h.slug === "regulatory-strategy-licensing")!;
-
-export const metadata = {
-  title: hub.title,
-  description: hub.summary,
-};
+export const metadata = pageSocialMeta({
+  title: "Redirecting…",
+  description:
+    "This URL redirects to /solutions/regulatory-structuring on the Octus Consulting production site.",
+  path: "/solutions/regulatory-structuring",
+  robots: { index: false, follow: true },
+});
 
 export default function Page() {
-  return <SolutionHubPage hub={hub} />;
+  return <StaticRedirect to="/solutions/regulatory-structuring" />;
 }

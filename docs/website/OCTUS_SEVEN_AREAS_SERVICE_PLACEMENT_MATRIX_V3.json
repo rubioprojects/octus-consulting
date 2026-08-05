@@ -1,0 +1,668 @@
+{
+  "version": "V3",
+  "date": "2026-08-03",
+  "revision": "client_facing_integrity_2026-08-03",
+  "supersedes": "OCTUS_SEVEN_AREAS_SERVICE_PLACEMENT_MATRIX_V2",
+  "family_architecture": "OCTUS_SERVICE_FAMILY_ARCHITECTURE_V1.json",
+  "family_count": 34,
+  "service_count": 39,
+  "services": [
+    {
+      "id": "SVC-REG-01",
+      "exact_public_name": "Licensing strategy and pathway design",
+      "primary_area": "Regulatory Structuring",
+      "primary_area_id": "AREA-REG",
+      "service_family_id": "REG-F1",
+      "service_family_name": "Jurisdiction and pathway strategy",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (strategic oversight) Esther Vendrami (international regulatory and licensing) Caroline Giovanetti (Brazil regulatory)",
+      "current_route": "/solutions/regulatory/market-entry",
+      "recommended_route": "/solutions/regulatory/market-entry",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-REG-05",
+      "exact_public_name": "Jurisdiction selection and risk mapping",
+      "primary_area": "Regulatory Structuring",
+      "primary_area_id": "AREA-REG",
+      "service_family_id": "REG-F1",
+      "service_family_name": "Jurisdiction and pathway strategy",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (strategic oversight) Esther Vendrami (international regulatory and licensing) Caroline Giovanetti (Brazil regulatory)",
+      "current_route": "/solutions/regulatory/market-entry",
+      "recommended_route": "/solutions/regulatory/market-entry",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-REG-02",
+      "exact_public_name": "iGaming licensing programme",
+      "primary_area": "Regulatory Structuring",
+      "primary_area_id": "AREA-REG",
+      "service_family_id": "REG-F2",
+      "service_family_name": "iGaming licensing programmes",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (strategic oversight) Esther Vendrami (international regulatory and licensing) Caroline Giovanetti (Brazil regulatory)",
+      "current_route": "/solutions/regulatory/igaming-licensing",
+      "recommended_route": "/solutions/regulatory/igaming-licensing",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-REG-03",
+      "exact_public_name": "Fintech, EMI and crypto licensing",
+      "primary_area": "Regulatory Structuring",
+      "primary_area_id": "AREA-REG",
+      "service_family_id": "REG-F3",
+      "service_family_name": "Fintech, payments and digital-assets authorisations",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (strategic oversight) Esther Vendrami (international regulatory and licensing) Caroline Giovanetti (Brazil regulatory)",
+      "current_route": "/solutions/regulatory/fintech-licensing",
+      "recommended_route": "/solutions/regulatory/fintech-licensing",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-REG-04",
+      "exact_public_name": "Brazil SPA/MF regulatory support",
+      "primary_area": "Regulatory Structuring",
+      "primary_area_id": "AREA-REG",
+      "service_family_id": "REG-F4",
+      "service_family_name": "Brazil regulatory and SPA/MF",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (strategic oversight) Esther Vendrami (international regulatory and licensing) Caroline Giovanetti (Brazil regulatory)",
+      "current_route": "/brazil",
+      "recommended_route": "/brazil",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-CMP-01",
+      "exact_public_name": "AML / KYC / CDD frameworks",
+      "primary_area": "Compliance & Risk",
+      "primary_area_id": "AREA-CMP",
+      "service_family_id": "CMP-F1",
+      "service_family_name": "AML, KYC, CDD and onboarding",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (governance) Irati (compliance substance and delivery) Maria Cristina (operational coordination where applicable)",
+      "current_route": "/solutions/compliance/aml-kyc",
+      "recommended_route": "/solutions/compliance/aml-kyc",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-CMP-06",
+      "exact_public_name": "Policies and due diligence packs",
+      "primary_area": "Compliance & Risk",
+      "primary_area_id": "AREA-CMP",
+      "service_family_id": "CMP-F2",
+      "service_family_name": "Policies, governance and due diligence",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (governance) Irati (compliance substance and delivery) Maria Cristina (operational coordination where applicable)",
+      "current_route": null,
+      "recommended_route": "/solutions/compliance-risk",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-CMP-04",
+      "exact_public_name": "Internal controls and governance",
+      "primary_area": "Compliance & Risk",
+      "primary_area_id": "AREA-CMP",
+      "service_family_id": "CMP-F3",
+      "service_family_name": "Internal controls and monitoring",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (governance) Irati (compliance substance and delivery) Maria Cristina (operational coordination where applicable)",
+      "current_route": "/solutions/compliance/internal-controls",
+      "recommended_route": "/solutions/compliance/internal-controls",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-CMP-02",
+      "exact_public_name": "Compliance-as-a-Service",
+      "primary_area": "Compliance & Risk",
+      "primary_area_id": "AREA-CMP",
+      "service_family_id": "CMP-F4",
+      "service_family_name": "Compliance operations and Compliance-as-a-Service",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (governance) Irati (compliance substance and delivery) Maria Cristina (operational coordination where applicable)",
+      "current_route": "/solutions/compliance/compliance-as-a-service",
+      "recommended_route": "/solutions/compliance/compliance-as-a-service",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-CMP-03",
+      "exact_public_name": "DPO-as-a-Service",
+      "primary_area": "Compliance & Risk",
+      "primary_area_id": "AREA-CMP",
+      "service_family_id": "CMP-F5",
+      "service_family_name": "Privacy, data protection and DPO",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (governance) Irati (compliance substance and delivery) Maria Cristina (operational coordination where applicable)",
+      "current_route": "/solutions/compliance/dpo-as-a-service",
+      "recommended_route": "/solutions/compliance/dpo-as-a-service",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-CMP-05",
+      "exact_public_name": "Certification and lab readiness",
+      "primary_area": "Compliance & Risk",
+      "primary_area_id": "AREA-CMP",
+      "service_family_id": "CMP-F6",
+      "service_family_name": "Certification, audit and laboratory readiness",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (governance) Irati (compliance substance and delivery) Maria Cristina (operational coordination where applicable)",
+      "current_route": "/solutions/compliance/gli-readiness",
+      "recommended_route": "/solutions/compliance/gli-readiness",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-LEG-01",
+      "exact_public_name": "Contractual architecture",
+      "primary_area": "Legal & Structural Architecture",
+      "primary_area_id": "AREA-LEG",
+      "service_family_id": "LEG-F1",
+      "service_family_name": "Contractual architecture",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira Rodrigo Coelho Lopes",
+      "current_route": null,
+      "recommended_route": "/solutions/legal-structural-architecture",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-LEG-04",
+      "exact_public_name": "Legal opinions and certifications support",
+      "primary_area": "Legal & Structural Architecture",
+      "primary_area_id": "AREA-LEG",
+      "service_family_id": "LEG-F2",
+      "service_family_name": "Regulatory opinions and legal analysis",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira Rodrigo Coelho Lopes",
+      "current_route": null,
+      "recommended_route": "/solutions/legal-structural-architecture",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-LEG-02",
+      "exact_public_name": "Multi-jurisdiction legal frameworks",
+      "primary_area": "Legal & Structural Architecture",
+      "primary_area_id": "AREA-LEG",
+      "service_family_id": "LEG-F3",
+      "service_family_name": "Local-counsel and multi-jurisdiction coordination",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira Rodrigo Coelho Lopes",
+      "current_route": null,
+      "recommended_route": "/solutions/legal-structural-architecture",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-LEG-03",
+      "exact_public_name": "Counsel coordination",
+      "primary_area": "Legal & Structural Architecture",
+      "primary_area_id": "AREA-LEG",
+      "service_family_id": "LEG-F3",
+      "service_family_name": "Local-counsel and multi-jurisdiction coordination",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira Rodrigo Coelho Lopes",
+      "current_route": null,
+      "recommended_route": "/solutions/legal-structural-architecture",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-CORP-01",
+      "exact_public_name": "Entity and holding architecture",
+      "primary_area": "Corporate Structuring",
+      "primary_area_id": "AREA-CORP",
+      "service_family_id": "CORP-F1",
+      "service_family_name": "Holding and ownership design",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (structural strategy) Claudia Nery (corporate and financial architecture) Esther Vendrami (international formation and operational coordination where applicable) Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)",
+      "current_route": "/solutions/corporate/holding-design",
+      "recommended_route": "/solutions/corporate/holding-design",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-CORP-02",
+      "exact_public_name": "Company formation",
+      "primary_area": "Corporate Structuring",
+      "primary_area_id": "AREA-CORP",
+      "service_family_id": "CORP-F2",
+      "service_family_name": "Entity formation and market-entry vehicles",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (structural strategy) Claudia Nery (corporate and financial architecture) Esther Vendrami (international formation and operational coordination where applicable) Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)",
+      "current_route": "/solutions/corporate/company-formation",
+      "recommended_route": "/solutions/corporate/company-formation",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-CORP-03",
+      "exact_public_name": "Cross-border structuring",
+      "primary_area": "Corporate Structuring",
+      "primary_area_id": "AREA-CORP",
+      "service_family_id": "CORP-F3",
+      "service_family_name": "Cross-border architecture and reorganisation",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (structural strategy) Claudia Nery (corporate and financial architecture) Esther Vendrami (international formation and operational coordination where applicable) Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)",
+      "current_route": "/solutions/corporate/offshore-structuring",
+      "recommended_route": "/solutions/corporate/offshore-structuring",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-CORP-04",
+      "exact_public_name": "Corporate reorganisation",
+      "primary_area": "Corporate Structuring",
+      "primary_area_id": "AREA-CORP",
+      "service_family_id": "CORP-F3",
+      "service_family_name": "Cross-border architecture and reorganisation",
+      "supporting_areas": [
+        "Remediation & Readiness"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (structural strategy) Claudia Nery (corporate and financial architecture) Esther Vendrami (international formation and operational coordination where applicable) Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)",
+      "current_route": null,
+      "recommended_route": "/solutions/corporate-structuring",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-CORP-05",
+      "exact_public_name": "Banking readiness",
+      "primary_area": "Corporate Structuring",
+      "primary_area_id": "AREA-CORP",
+      "service_family_id": "CORP-F4",
+      "service_family_name": "Banking and institutional onboarding readiness",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": "Banking & Payments",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (structural strategy) Claudia Nery (corporate and financial architecture) Esther Vendrami (international formation and operational coordination where applicable) Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)",
+      "current_route": "/solutions/banking-payments-infrastructure",
+      "recommended_route": "/solutions/banking-payments-infrastructure",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-CORP-06",
+      "exact_public_name": "Accounting and finance coordination",
+      "primary_area": "Corporate Structuring",
+      "primary_area_id": "AREA-CORP",
+      "service_family_id": "CORP-F5",
+      "service_family_name": "Accounting, reporting and finance coordination",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (structural strategy) Claudia Nery (corporate and financial architecture) Esther Vendrami (international formation and operational coordination where applicable) Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)",
+      "current_route": null,
+      "recommended_route": "/solutions/corporate-structuring",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-CORP-07",
+      "exact_public_name": "Corporate tax planning",
+      "primary_area": "Corporate Structuring",
+      "primary_area_id": "AREA-CORP",
+      "service_family_id": "CORP-F6",
+      "service_family_name": "Corporate tax planning",
+      "supporting_areas": [
+        "Private Clients"
+      ],
+      "cross_cutting_capability": "Tax coordination",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira (structural strategy) Claudia Nery (corporate and financial architecture) Esther Vendrami (international formation and operational coordination where applicable) Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)",
+      "current_route": null,
+      "recommended_route": "/solutions/corporate-structuring",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-PC-01",
+      "exact_public_name": "Ownership and UBO architecture",
+      "primary_area": "Private Clients",
+      "primary_area_id": "AREA-PC",
+      "service_family_id": "PC-F1",
+      "service_family_name": "UBO and ownership architecture",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira Claudia Nery Rodrigo Coelho Lopes (where legal architecture is required)",
+      "current_route": null,
+      "recommended_route": "/private-clients",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-PC-02",
+      "exact_public_name": "Personal holding and asset organisation",
+      "primary_area": "Private Clients",
+      "primary_area_id": "AREA-PC",
+      "service_family_id": "PC-F2",
+      "service_family_name": "Personal and family holdings",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira Claudia Nery Rodrigo Coelho Lopes (where legal architecture is required)",
+      "current_route": null,
+      "recommended_route": "/private-clients",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-PC-03",
+      "exact_public_name": "Residency and personal international structuring",
+      "primary_area": "Private Clients",
+      "primary_area_id": "AREA-PC",
+      "service_family_id": "PC-F3",
+      "service_family_name": "Residence and personal international structuring",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira Claudia Nery Rodrigo Coelho Lopes (where legal architecture is required)",
+      "current_route": null,
+      "recommended_route": "/private-clients",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-PC-04",
+      "exact_public_name": "Personal banking and individual KYC readiness",
+      "primary_area": "Private Clients",
+      "primary_area_id": "AREA-PC",
+      "service_family_id": "PC-F4",
+      "service_family_name": "Personal banking and KYC readiness",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": "Banking & Payments",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira Claudia Nery Rodrigo Coelho Lopes (where legal architecture is required)",
+      "current_route": null,
+      "recommended_route": "/private-clients",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-PC-05",
+      "exact_public_name": "Personal tax coordination",
+      "primary_area": "Private Clients",
+      "primary_area_id": "AREA-PC",
+      "service_family_id": "PC-F5",
+      "service_family_name": "Personal tax coordination",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": "Tax coordination",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira Claudia Nery Rodrigo Coelho Lopes (where legal architecture is required)",
+      "current_route": null,
+      "recommended_route": "/private-clients",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-REM-01",
+      "exact_public_name": "Crisis entry and structural assessment",
+      "primary_area": "Remediation & Readiness",
+      "primary_area_id": "AREA-REM",
+      "service_family_id": "REM-F1",
+      "service_family_name": "Diagnostic and root-cause assessment",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira Maria Cristina Relevant area specialist according to root cause",
+      "current_route": "/diagnostic",
+      "recommended_route": "/diagnostic",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-REM-02",
+      "exact_public_name": "Licensing delay remediation",
+      "primary_area": "Remediation & Readiness",
+      "primary_area_id": "AREA-REM",
+      "service_family_id": "REM-F2",
+      "service_family_name": "Regulatory remediation",
+      "supporting_areas": [
+        "Regulatory Structuring"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira Maria Cristina Relevant area specialist according to root cause",
+      "current_route": null,
+      "recommended_route": "/solutions/remediation-readiness",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-REM-03",
+      "exact_public_name": "Banking or compliance gap remediation",
+      "primary_area": "Remediation & Readiness",
+      "primary_area_id": "AREA-REM",
+      "service_family_id": "REM-F3",
+      "service_family_name": "Banking, payments and compliance remediation",
+      "supporting_areas": [
+        "Compliance & Risk"
+      ],
+      "cross_cutting_capability": "Banking & Payments",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira Maria Cristina Relevant area specialist according to root cause",
+      "current_route": "/solutions/banking-payments-infrastructure",
+      "recommended_route": "/solutions/banking-payments-infrastructure",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-REM-05",
+      "exact_public_name": "Financial infrastructure remediation",
+      "primary_area": "Remediation & Readiness",
+      "primary_area_id": "AREA-REM",
+      "service_family_id": "REM-F3",
+      "service_family_name": "Banking, payments and compliance remediation",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": "Banking & Payments",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira Maria Cristina Relevant area specialist according to root cause",
+      "current_route": null,
+      "recommended_route": "/solutions/remediation-readiness",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-REM-04",
+      "exact_public_name": "Audit and readiness remediation",
+      "primary_area": "Remediation & Readiness",
+      "primary_area_id": "AREA-REM",
+      "service_family_id": "REM-F4",
+      "service_family_name": "Audit, certification and inspection readiness",
+      "supporting_areas": [
+        "Compliance & Risk"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira Maria Cristina Relevant area specialist according to root cause",
+      "current_route": null,
+      "recommended_route": "/solutions/remediation-readiness",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-REM-06",
+      "exact_public_name": "Tax and finance problem remediation",
+      "primary_area": "Remediation & Readiness",
+      "primary_area_id": "AREA-REM",
+      "service_family_id": "REM-F5",
+      "service_family_name": "Tax and finance remediation",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": "Tax coordination",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira Maria Cristina Relevant area specialist according to root cause",
+      "current_route": null,
+      "recommended_route": "/solutions/remediation-readiness",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-HUB-01",
+      "exact_public_name": "Market entry coordination",
+      "primary_area": "International Hub",
+      "primary_area_id": "AREA-HUB",
+      "service_family_id": "HUB-F1",
+      "service_family_name": "Multi-country market-entry coordination",
+      "supporting_areas": [
+        "Regulatory Structuring"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira Milla Ludovico Esther Vendrami (international providers and corporate dependencies) Claudia Nery (banking and financial infrastructure)",
+      "current_route": null,
+      "recommended_route": "/international-hub",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-HUB-02",
+      "exact_public_name": "Bank and PSP introductions",
+      "primary_area": "International Hub",
+      "primary_area_id": "AREA-HUB",
+      "service_family_id": "HUB-F2",
+      "service_family_name": "Banking, PSP and payment-provider coordination",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": "Banking & Payments",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira Milla Ludovico Esther Vendrami (international providers and corporate dependencies) Claudia Nery (banking and financial infrastructure)",
+      "current_route": "/solutions/banking-payments-infrastructure",
+      "recommended_route": "/solutions/banking-payments-infrastructure",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-HUB-03",
+      "exact_public_name": "Payment and PSP architecture",
+      "primary_area": "International Hub",
+      "primary_area_id": "AREA-HUB",
+      "service_family_id": "HUB-F2",
+      "service_family_name": "Banking, PSP and payment-provider coordination",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": "Banking & Payments",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira Milla Ludovico Esther Vendrami (international providers and corporate dependencies) Claudia Nery (banking and financial infrastructure)",
+      "current_route": "/solutions/banking-payments-infrastructure",
+      "recommended_route": "/solutions/banking-payments-infrastructure",
+      "display_depth": "deep-service page"
+    },
+    {
+      "id": "SVC-HUB-04",
+      "exact_public_name": "CSP, local director and formation partners",
+      "primary_area": "International Hub",
+      "primary_area_id": "AREA-HUB",
+      "service_family_id": "HUB-F3",
+      "service_family_name": "CSP, entity and local-director network",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira Milla Ludovico Esther Vendrami (international providers and corporate dependencies) Claudia Nery (banking and financial infrastructure)",
+      "current_route": null,
+      "recommended_route": "/international-hub",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-HUB-05",
+      "exact_public_name": "Lab, certification and specialist network coordination",
+      "primary_area": "International Hub",
+      "primary_area_id": "AREA-HUB",
+      "service_family_id": "HUB-F4",
+      "service_family_name": "Laboratories, certification and technical vendors",
+      "supporting_areas": [
+        "Compliance & Risk"
+      ],
+      "cross_cutting_capability": null,
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira Milla Ludovico Esther Vendrami (international providers and corporate dependencies) Claudia Nery (banking and financial infrastructure)",
+      "current_route": null,
+      "recommended_route": "/international-hub",
+      "display_depth": "family module"
+    },
+    {
+      "id": "SVC-HUB-06",
+      "exact_public_name": "Counsel and tax specialist coordination",
+      "primary_area": "International Hub",
+      "primary_area_id": "AREA-HUB",
+      "service_family_id": "HUB-F5",
+      "service_family_name": "Counsel and tax-specialist coordination",
+      "supporting_areas": [
+        "Legal & Structural Architecture"
+      ],
+      "cross_cutting_capability": "Tax coordination",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "responsible_substantive_owner": "Rubio Teixeira Milla Ludovico Esther Vendrami (international providers and corporate dependencies) Claudia Nery (banking and financial infrastructure)",
+      "current_route": null,
+      "recommended_route": "/international-hub",
+      "display_depth": "family module"
+    }
+  ],
+  "tax_services": [
+    "SVC-CORP-07",
+    "SVC-PC-05",
+    "SVC-REM-06",
+    "SVC-HUB-06"
+  ],
+  "banking_cross_cutting_services": [
+    "SVC-CORP-05",
+    "SVC-PC-04",
+    "SVC-REM-03",
+    "SVC-REM-05",
+    "SVC-HUB-02",
+    "SVC-HUB-03"
+  ]
+}

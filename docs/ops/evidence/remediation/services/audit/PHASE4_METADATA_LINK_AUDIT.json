@@ -1,0 +1,1642 @@
+{
+  "generated_at": "2026-08-03T22:15:31.893Z",
+  "metadata": [
+    {
+      "route": "/solutions/compliance-risk",
+      "classification": "reconciled",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/compliance-risk",
+      "title": "Compliance & Risk | Octus Consulting",
+      "metaDescription": "AML, KYC, DPO and controls that hold under real scrutiny.",
+      "canonical": "https://octusconsulting.com/solutions/compliance-risk",
+      "ogTitle": "Compliance & Risk",
+      "ogDescription": "AML, KYC, DPO and controls that hold under real scrutiny.",
+      "robots": "",
+      "h1": "Compliance & Risk AML, KYC, DPO and controls that hold under real scrutiny.",
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/regulatory-structuring",
+      "classification": "reconciled",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/regulatory-structuring",
+      "title": "Regulatory Structuring | Octus Consulting",
+      "metaDescription": "Jurisdiction fit and licensing pathways for regulated operations.",
+      "canonical": "https://octusconsulting.com/solutions/regulatory-structuring",
+      "ogTitle": "Regulatory Structuring",
+      "ogDescription": "Jurisdiction fit and licensing pathways for regulated operations.",
+      "robots": "",
+      "h1": "Regulatory Structuring Jurisdiction fit and licensing pathways for regulated operations.",
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions",
+      "classification": "reconciled",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions",
+      "title": "Services. Execution for regulated operations | Octus Consulting",
+      "metaDescription": "Seven coordinated service areas for regulated operations: Regulatory Structuring, Compliance & Risk, Legal & Structural Architecture, Corporate Structuring, Private Clients, Remediation & Readiness, and International Hub.",
+      "canonical": "https://octusconsulting.com/solutions",
+      "ogTitle": "Services. Execution for regulated operations",
+      "ogDescription": "Seven coordinated service areas for regulated operations: Regulatory Structuring, Compliance & Risk, Legal & Structural Architecture, Corporate Structuring, Private Clients, Remediation & Readiness, and International Hub.",
+      "robots": "",
+      "h1": "You don't need a catalogue of services. You need seven areas under one mandate.",
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/legal-structural-architecture",
+      "classification": "reconciled",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/legal-structural-architecture",
+      "title": "Legal & Structural Architecture | Octus Consulting",
+      "metaDescription": "Contractual and legal frameworks, coordinated with counsel.",
+      "canonical": "https://octusconsulting.com/solutions/legal-structural-architecture",
+      "ogTitle": "Legal & Structural Architecture",
+      "ogDescription": "Contractual and legal frameworks, coordinated with counsel.",
+      "robots": "",
+      "h1": "Legal & Structural Architecture Contractual and legal frameworks, coordinated with counsel.",
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/corporate-structuring",
+      "classification": "reconciled",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/corporate-structuring",
+      "title": "Corporate Structuring | Octus Consulting",
+      "metaDescription": "Companies, holdings and group design for onshore, offshore and cross-border regulated operations.",
+      "canonical": "https://octusconsulting.com/solutions/corporate-structuring",
+      "ogTitle": "Corporate Structuring",
+      "ogDescription": "Companies, holdings and group design for onshore, offshore and cross-border regulated operations.",
+      "robots": "",
+      "h1": "Corporate Structuring Companies, holdings and group design for onshore, offshore and cross-border regulated operations.",
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/private-clients",
+      "classification": "reconciled",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/private-clients",
+      "title": "Private Clients | Octus Consulting",
+      "metaDescription": "Personal and ownership structuring for founders, UBOs, executives and families tied to regulated operations.",
+      "canonical": "https://octusconsulting.com/private-clients",
+      "ogTitle": "Private Clients",
+      "ogDescription": "Personal and ownership structuring for founders, UBOs, executives and families tied to regulated operations.",
+      "robots": "",
+      "h1": "Private Clients Personal and ownership structuring for founders, UBOs, executives and families tied to regulated operations.",
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/remediation-readiness",
+      "classification": "reconciled",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/remediation-readiness",
+      "title": "Remediation & Readiness | Octus Consulting",
+      "metaDescription": "Diagnosis and repair when licensing, banking or compliance is already blocked.",
+      "canonical": "https://octusconsulting.com/solutions/remediation-readiness",
+      "ogTitle": "Remediation & Readiness",
+      "ogDescription": "Diagnosis and repair when licensing, banking or compliance is already blocked.",
+      "robots": "",
+      "h1": "Remediation & Readiness Diagnosis and repair when licensing, banking or compliance is already blocked.",
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/international-hub",
+      "classification": "reconciled",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/international-hub",
+      "title": "International Hub | Octus Consulting",
+      "metaDescription": "Banks, PSPs, CSPs, labs, counsel and specialists, coordinated as one network.",
+      "canonical": "https://octusconsulting.com/international-hub",
+      "ogTitle": "International Hub",
+      "ogDescription": "Banks, PSPs, CSPs, labs, counsel and specialists, coordinated as one network.",
+      "robots": "",
+      "h1": "International Hub Banks, PSPs, CSPs, labs, counsel and specialists, coordinated as one network.",
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/banking-payments-infrastructure",
+      "classification": "reconciled",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/banking-payments-infrastructure",
+      "title": "Banking & Payments | Octus Consulting",
+      "metaDescription": "Octus coordinates the corporate, compliance, provider and remediation workstreams required for banking and payment operations in regulated markets.",
+      "canonical": "https://octusconsulting.com/solutions/banking-payments-infrastructure",
+      "ogTitle": "Banking & Payments",
+      "ogDescription": "Octus coordinates the corporate, compliance, provider and remediation workstreams required for banking and payment operations in regulated markets.",
+      "robots": "",
+      "h1": "Banking & Payments Prepare the structure, identify providers and resolve existing constraints.",
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/regulatory/igaming-licensing",
+      "classification": "reconciled",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/regulatory/igaming-licensing",
+      "title": "iGaming Licensing | Octus Consulting",
+      "metaDescription": "iGaming licensing strategy across jurisdictions. Octus structures the regulatory, corporate and compliance architecture that determines whether a licence gets approved, not merely submitted.",
+      "canonical": "https://octusconsulting.com/solutions/regulatory/igaming-licensing",
+      "ogTitle": "iGaming Licensing",
+      "ogDescription": "iGaming licensing strategy across jurisdictions. Octus structures the regulatory, corporate and compliance architecture that determines whether a licence gets approved, not merely submitted.",
+      "robots": "",
+      "h1": "Licensing does not fail at submission. It fails before the application starts.",
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/regulatory/fintech-licensing",
+      "classification": "reconciled",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/regulatory/fintech-licensing",
+      "title": "Fintech Licensing | Octus Consulting",
+      "metaDescription": "EMI and Payment Institution licensing is not a filing exercise. Octus structures fintech operations so they can be authorised, operated and sustained under regulatory scrutiny.",
+      "canonical": "https://octusconsulting.com/solutions/regulatory/fintech-licensing",
+      "ogTitle": "Fintech Licensing",
+      "ogDescription": "EMI and Payment Institution licensing is not a filing exercise. Octus structures fintech operations so they can be authorised, operated and sustained under regulatory scrutiny.",
+      "robots": "",
+      "h1": "A fintech licence is not a product launch. It is a regulatory build.",
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/regulatory/market-entry",
+      "classification": "reconciled",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/regulatory/market-entry",
+      "title": "Market Entry | Octus Consulting",
+      "metaDescription": "Market entry is not a business decision. It is a structural project. Octus coordinates jurisdiction, corporate, licensing and banking for regulated market entry.",
+      "canonical": "https://octusconsulting.com/solutions/regulatory/market-entry",
+      "ogTitle": "Market Entry",
+      "ogDescription": "Market entry is not a business decision. It is a structural project. Octus coordinates jurisdiction, corporate, licensing and banking for regulated market entry.",
+      "robots": "",
+      "h1": "Market entry is not a business decision. It is a structural project.",
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/compliance/aml-kyc",
+      "classification": "reconciled",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/compliance/aml-kyc",
+      "title": "AML & KYC Framework. Compliance That Holds | Octus | Octus Consulting",
+      "metaDescription": "AML/KYC compliance frameworks for regulated operations. Built to survive real audit, not to sit in a folder. Transaction monitoring, risk assessment and regulatory reporting.",
+      "canonical": "https://octusconsulting.com/solutions/compliance/aml-kyc",
+      "ogTitle": "AML & KYC Framework. Compliance That Holds | Octus",
+      "ogDescription": "AML/KYC compliance frameworks for regulated operations. Built to survive real audit, not to sit in a folder. Transaction monitoring, risk assessment and regulatory reporting.",
+      "robots": "",
+      "h1": "Your AML framework looks good on paper. The question is whether it survives an audit.",
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/compliance/dpo-as-a-service",
+      "classification": "reconciled",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/compliance/dpo-as-a-service",
+      "title": "DPO-as-a-Service | Octus Consulting",
+      "metaDescription": "Outsourced DPO support and privacy programme coordination for LGPD and GDPR contexts: incident response, regulatory interaction and operational data protection. Designation and scope are subject to engagement.",
+      "canonical": "https://octusconsulting.com/solutions/compliance/dpo-as-a-service",
+      "ogTitle": "DPO-as-a-Service",
+      "ogDescription": "Outsourced DPO support and privacy programme coordination for LGPD and GDPR contexts: incident response, regulatory interaction and operational data protection. Designation and scope are subject to engagement.",
+      "robots": "",
+      "h1": "Appointing a DPO is easy. Operating the function is not.",
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/compliance/compliance-as-a-service",
+      "classification": "reconciled",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/compliance/compliance-as-a-service",
+      "title": "Compliance-as-a-Service | Octus Consulting",
+      "metaDescription": "Compliance is not a document. Octus builds and operates compliance as a continuous function: AML/KYC, controls, monitoring and regulatory alignment embedded in the business.",
+      "canonical": "https://octusconsulting.com/solutions/compliance/compliance-as-a-service",
+      "ogTitle": "Compliance-as-a-Service",
+      "ogDescription": "Compliance is not a document. Octus builds and operates compliance as a continuous function: AML/KYC, controls, monitoring and regulatory alignment embedded in the business.",
+      "robots": "",
+      "h1": "Compliance is not documentation. It is an operational system.",
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/compliance/gli-readiness",
+      "classification": "reconciled",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/compliance/gli-readiness",
+      "title": "GLI & Certification Readiness | Octus Consulting",
+      "metaDescription": "The audit does not find problems. It confirms they were always there. Octus prepares operations for certification and regulatory review before the auditor arrives.",
+      "canonical": "https://octusconsulting.com/solutions/compliance/gli-readiness",
+      "ogTitle": "GLI & Certification Readiness",
+      "ogDescription": "The audit does not find problems. It confirms they were always there. Octus prepares operations for certification and regulatory review before the auditor arrives.",
+      "robots": "",
+      "h1": "The audit does not find problems. It confirms they were always there.",
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/compliance/internal-controls",
+      "classification": "reconciled",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/compliance/internal-controls",
+      "title": "Internal Controls & Governance | Octus Consulting",
+      "metaDescription": "Controls that exist on paper do not exist at all. Octus designs governance frameworks and control systems that function under real operational pressure.",
+      "canonical": "https://octusconsulting.com/solutions/compliance/internal-controls",
+      "ogTitle": "Internal Controls & Governance",
+      "ogDescription": "Controls that exist on paper do not exist at all. Octus designs governance frameworks and control systems that function under real operational pressure.",
+      "robots": "",
+      "h1": "Controls that exist on paper do not exist at all.",
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/corporate/company-formation",
+      "classification": "reconciled",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/corporate/company-formation",
+      "title": "Company Formation & Corporate Structuring | Octus | Octus Consulting",
+      "metaDescription": "Company incorporation, offshore structuring and corporate design for regulated operations. Entity setup that satisfies regulators, banks and payment processors.",
+      "canonical": "https://octusconsulting.com/solutions/corporate/company-formation",
+      "ogTitle": "Company Formation & Corporate Structuring | Octus",
+      "ogDescription": "Company incorporation, offshore structuring and corporate design for regulated operations. Entity setup that satisfies regulators, banks and payment processors.",
+      "robots": "",
+      "h1": "The entity is not administrative. It's the foundation of the entire operation.",
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/corporate/holding-design",
+      "classification": "reconciled",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/corporate/holding-design",
+      "title": "Holding Design | Octus Consulting",
+      "metaDescription": "Holding structures for regulated operations require architecture that separates risk, aligns governance and satisfies institutional scrutiny across jurisdictions.",
+      "canonical": "https://octusconsulting.com/solutions/corporate/holding-design",
+      "ogTitle": "Holding Design",
+      "ogDescription": "Holding structures for regulated operations require architecture that separates risk, aligns governance and satisfies institutional scrutiny across jurisdictions.",
+      "robots": "",
+      "h1": "A holding structure is not an org chart. It is risk architecture.",
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/corporate/offshore-structuring",
+      "classification": "reconciled",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/solutions/corporate/offshore-structuring",
+      "title": "Offshore Structuring | Octus Consulting",
+      "metaDescription": "Offshore structuring for regulated operations is not about tax. It is about corporate architecture that passes regulatory, banking and institutional scrutiny.",
+      "canonical": "https://octusconsulting.com/solutions/corporate/offshore-structuring",
+      "ogTitle": "Offshore Structuring",
+      "ogDescription": "Offshore structuring for regulated operations is not about tax. It is about corporate architecture that passes regulatory, banking and institutional scrutiny.",
+      "robots": "",
+      "h1": "Offshore is not a destination. It is an architectural decision.",
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions",
+      "classification": "baseline",
+      "origin": "https://octus-consulting-9q798dbg2-axle1.vercel.app",
+      "url": "https://octus-consulting-9q798dbg2-axle1.vercel.app/solutions",
+      "title": "Solutions — Execution for Regulated Operations — Octus Consulting",
+      "metaDescription": "Six solutions for regulated operations: licensing, banking, compliance, corporate structure, legal architecture and operational remediation.",
+      "canonical": "",
+      "ogTitle": "Octus Consulting — Regulatory & Operational Structuring",
+      "ogDescription": "Regulated operations don't fail randomly. They fail structurally. Octus identifies what is broken — and fixes it.",
+      "robots": "",
+      "h1": "You don't need a catalogue of services. You need accountable execution.",
+      "missing_fields": [
+        "canonical"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "route": "/solutions/regulatory-structuring",
+      "classification": "baseline",
+      "origin": "https://octus-consulting-9q798dbg2-axle1.vercel.app",
+      "url": "https://octus-consulting-9q798dbg2-axle1.vercel.app/solutions/regulatory-structuring",
+      "title": "Solutions — Execution for Regulated Operations — Octus Consulting",
+      "metaDescription": "Six solutions for regulated operations: licensing, banking, compliance, corporate structure, legal architecture and operational remediation.",
+      "canonical": "",
+      "ogTitle": "Octus Consulting — Regulatory & Operational Structuring",
+      "ogDescription": "Regulated operations don't fail randomly. They fail structurally. Octus identifies what is broken — and fixes it.",
+      "robots": "",
+      "h1": "You don't need a catalogue of services. You need accountable execution.",
+      "missing_fields": [],
+      "status": "PASS",
+      "baseline_mapping": "NO_DIRECT_BASELINE_ROUTE",
+      "baseline_capture_route": "/solutions"
+    },
+    {
+      "route": "/private-clients",
+      "classification": "baseline",
+      "origin": "https://octus-consulting-9q798dbg2-axle1.vercel.app",
+      "url": "https://octus-consulting-9q798dbg2-axle1.vercel.app/private-clients",
+      "title": "Ownership & UBO Architecture — Octus Consulting",
+      "metaDescription": "Ownership architecture for individuals behind regulated operations. The individual is part of the regulated structure — not separate from it. Octus structures UBO frameworks, personal holding design and individual compliance exposure.",
+      "canonical": "",
+      "ogTitle": "Octus Consulting — Regulatory & Operational Structuring",
+      "ogDescription": "Regulated operations don't fail randomly. They fail structurally. Octus identifies what is broken — and fixes it.",
+      "robots": "",
+      "h1": "The individual behind the operation is part of the regulated structure.",
+      "missing_fields": [
+        "canonical"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "route": "/solutions",
+      "classification": "before",
+      "origin": "https://octus-consulting-6dof5kn4k-axle1.vercel.app",
+      "url": "https://octus-consulting-6dof5kn4k-axle1.vercel.app/solutions",
+      "title": "Services. Execution for regulated operations | Octus Consulting",
+      "metaDescription": "Seven coordinated service areas for regulated operations: Regulatory Structuring, Compliance & Risk, Legal & Structural Architecture, Corporate Structuring, Private Clients, Remediation & Readiness, and International Hub.",
+      "canonical": "https://octusconsulting.com/solutions",
+      "ogTitle": "Services. Execution for regulated operations",
+      "ogDescription": "Seven coordinated service areas for regulated operations: Regulatory Structuring, Compliance & Risk, Legal & Structural Architecture, Corporate Structuring, Private Clients, Remediation & Readiness, and International Hub.",
+      "robots": "",
+      "h1": "You don't need a catalogue of services. You need seven areas under one mandate.",
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/regulatory-structuring",
+      "classification": "before",
+      "origin": "https://octus-consulting-6dof5kn4k-axle1.vercel.app",
+      "url": "https://octus-consulting-6dof5kn4k-axle1.vercel.app/solutions/regulatory-structuring",
+      "title": "Regulatory Structuring | Octus Consulting",
+      "metaDescription": "Jurisdiction fit and licensing pathways for regulated operations.",
+      "canonical": "https://octusconsulting.com/solutions/regulatory-structuring",
+      "ogTitle": "Regulatory Structuring",
+      "ogDescription": "Jurisdiction fit and licensing pathways for regulated operations.",
+      "robots": "",
+      "h1": "Regulatory Structuring Jurisdiction fit and licensing pathways for regulated operations.",
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/private-clients",
+      "classification": "before",
+      "origin": "https://octus-consulting-6dof5kn4k-axle1.vercel.app",
+      "url": "https://octus-consulting-6dof5kn4k-axle1.vercel.app/private-clients",
+      "title": "Private Clients | Octus Consulting",
+      "metaDescription": "Personal and ownership structuring for founders, UBOs, executives and families tied to regulated operations.",
+      "canonical": "https://octusconsulting.com/private-clients",
+      "ogTitle": "Private Clients",
+      "ogDescription": "Personal and ownership structuring for founders, UBOs, executives and families tied to regulated operations.",
+      "robots": "",
+      "h1": "Private Clients Personal and ownership structuring for founders, UBOs, executives and families tied to regulated operations.",
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/remediation-readiness",
+      "classification": "baseline",
+      "origin": "https://octus-consulting-9q798dbg2-axle1.vercel.app",
+      "url": "https://octus-consulting-9q798dbg2-axle1.vercel.app/solutions/remediation-readiness",
+      "title": "Solutions — Execution for Regulated Operations — Octus Consulting",
+      "metaDescription": "Six solutions for regulated operations: licensing, banking, compliance, corporate structure, legal architecture and operational remediation.",
+      "canonical": "",
+      "ogTitle": "Octus Consulting — Regulatory & Operational Structuring",
+      "ogDescription": "Regulated operations don't fail randomly. They fail structurally. Octus identifies what is broken — and fixes it.",
+      "robots": "",
+      "h1": "You don't need a catalogue of services. You need accountable execution.",
+      "missing_fields": [],
+      "status": "PASS",
+      "baseline_mapping": "NO_DIRECT_BASELINE_ROUTE",
+      "baseline_capture_route": "/solutions"
+    },
+    {
+      "route": "/international-hub",
+      "classification": "baseline",
+      "origin": "https://octus-consulting-9q798dbg2-axle1.vercel.app",
+      "url": "https://octus-consulting-9q798dbg2-axle1.vercel.app/international-hub",
+      "title": "Market Entry — Octus Consulting",
+      "metaDescription": "Market entry is not a business decision. It is a structural project. Octus coordinates jurisdiction, corporate, licensing and banking for regulated market entry.",
+      "canonical": "",
+      "ogTitle": "Octus Consulting — Regulatory & Operational Structuring",
+      "ogDescription": "Regulated operations don't fail randomly. They fail structurally. Octus identifies what is broken — and fixes it.",
+      "robots": "",
+      "h1": "Market entry is not a business decision. It is a structural project.",
+      "missing_fields": [
+        "canonical"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "route": "/solutions/banking-payments-infrastructure",
+      "classification": "baseline",
+      "origin": "https://octus-consulting-9q798dbg2-axle1.vercel.app",
+      "url": "https://octus-consulting-9q798dbg2-axle1.vercel.app/solutions/banking-payments-infrastructure",
+      "title": "Banking, Payments & Financial Infrastructure — Octus Consulting",
+      "metaDescription": "Banking readiness, payment architecture, PSP strategy and financial infrastructure designed to survive real onboarding scrutiny.",
+      "canonical": "",
+      "ogTitle": "Octus Consulting — Regulatory & Operational Structuring",
+      "ogDescription": "Regulated operations don't fail randomly. They fail structurally. Octus identifies what is broken — and fixes it.",
+      "robots": "",
+      "h1": "Banking, Payments & Financial Infrastructure Operations stall when banking and payments reject a structure that looked fine on paper.",
+      "missing_fields": [
+        "canonical"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "route": "/solutions/remediation-readiness",
+      "classification": "before",
+      "origin": "https://octus-consulting-6dof5kn4k-axle1.vercel.app",
+      "url": "https://octus-consulting-6dof5kn4k-axle1.vercel.app/solutions/remediation-readiness",
+      "title": "Remediation & Readiness | Octus Consulting",
+      "metaDescription": "Diagnosis and repair when licensing, banking or compliance is already blocked.",
+      "canonical": "https://octusconsulting.com/solutions/remediation-readiness",
+      "ogTitle": "Remediation & Readiness",
+      "ogDescription": "Diagnosis and repair when licensing, banking or compliance is already blocked.",
+      "robots": "",
+      "h1": "Remediation & Readiness Diagnosis and repair when licensing, banking or compliance is already blocked.",
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/banking-payments-infrastructure",
+      "classification": "before",
+      "origin": "https://octus-consulting-6dof5kn4k-axle1.vercel.app",
+      "url": "https://octus-consulting-6dof5kn4k-axle1.vercel.app/solutions/banking-payments-infrastructure",
+      "title": "Banking & Payments | Octus Consulting",
+      "metaDescription": "Octus coordinates the corporate, compliance, provider and remediation workstreams required for banking and payment operations in regulated markets.",
+      "canonical": "https://octusconsulting.com/solutions/banking-payments-infrastructure",
+      "ogTitle": "Banking & Payments",
+      "ogDescription": "Octus coordinates the corporate, compliance, provider and remediation workstreams required for banking and payment operations in regulated markets.",
+      "robots": "",
+      "h1": "Banking & Payments Prepare the structure, identify providers and resolve existing constraints.",
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/international-hub",
+      "classification": "before",
+      "origin": "https://octus-consulting-6dof5kn4k-axle1.vercel.app",
+      "url": "https://octus-consulting-6dof5kn4k-axle1.vercel.app/international-hub",
+      "title": "International Hub | Octus Consulting",
+      "metaDescription": "Banks, PSPs, CSPs, labs, counsel and specialists, coordinated as one network.",
+      "canonical": "https://octusconsulting.com/international-hub",
+      "ogTitle": "International Hub",
+      "ogDescription": "Banks, PSPs, CSPs, labs, counsel and specialists, coordinated as one network.",
+      "robots": "",
+      "h1": "International Hub Banks, PSPs, CSPs, labs, counsel and specialists, coordinated as one network.",
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/regulatory/igaming-licensing",
+      "classification": "baseline",
+      "origin": "https://octus-consulting-9q798dbg2-axle1.vercel.app",
+      "url": "https://octus-consulting-9q798dbg2-axle1.vercel.app/solutions/regulatory/igaming-licensing",
+      "title": "iGaming Licensing — Octus Consulting",
+      "metaDescription": "iGaming licensing strategy across jurisdictions. Octus structures the regulatory, corporate and compliance architecture that determines whether a licence gets approved — not just submitted.",
+      "canonical": "",
+      "ogTitle": "Octus Consulting — Regulatory & Operational Structuring",
+      "ogDescription": "Regulated operations don't fail randomly. They fail structurally. Octus identifies what is broken — and fixes it.",
+      "robots": "",
+      "h1": "Licensing does not fail at submission. It fails before the application starts.",
+      "missing_fields": [
+        "canonical"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "route": "/solutions/regulatory/igaming-licensing",
+      "classification": "before",
+      "origin": "https://octus-consulting-6dof5kn4k-axle1.vercel.app",
+      "url": "https://octus-consulting-6dof5kn4k-axle1.vercel.app/solutions/regulatory/igaming-licensing",
+      "title": "iGaming Licensing | Octus Consulting",
+      "metaDescription": "iGaming licensing strategy across jurisdictions. Octus structures the regulatory, corporate and compliance architecture that determines whether a licence gets approved, not merely submitted.",
+      "canonical": "https://octusconsulting.com/solutions/regulatory/igaming-licensing",
+      "ogTitle": "iGaming Licensing",
+      "ogDescription": "iGaming licensing strategy across jurisdictions. Octus structures the regulatory, corporate and compliance architecture that determines whether a licence gets approved, not merely submitted.",
+      "robots": "",
+      "h1": "Licensing does not fail at submission. It fails before the application starts.",
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/",
+      "classification": "reconciled",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/",
+      "title": "Premium Execution for Regulated Operations",
+      "metaDescription": "Octus structures, coordinates and operates the work behind regulated businesses across licensing, compliance, corporate structure, remediation and specialist networks.",
+      "canonical": "https://octusconsulting.com",
+      "ogTitle": "Premium Execution for Regulated Operations",
+      "ogDescription": "Octus structures, coordinates and operates the work behind regulated businesses across licensing, compliance, corporate structure, remediation and specialist networks.",
+      "robots": "",
+      "h1": "Regulated operations don't fail randomly. They fail structurally.",
+      "missing_fields": [],
+      "status": "PASS"
+    }
+  ],
+  "metadata_missing_count": 5,
+  "metadata_missing_by_classification": {
+    "baseline": 5,
+    "before": 0,
+    "reconciled": 0
+  },
+  "metadata_missing_reconciled_count": 0,
+  "links": [
+    {
+      "route": "/solutions/regulatory-structuring",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "links": [
+        {
+          "text": "Discuss this workstream →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "All services →",
+          "href": "/solutions"
+        },
+        {
+          "text": "Licensing strategy and pathway design · Jurisdiction selection and risk mapping →",
+          "href": "/solutions/regulatory/market-entry"
+        },
+        {
+          "text": "Corporate Structuring →Entity design must match what regulators expect before approval.",
+          "href": "/solutions/corporate-structuring"
+        },
+        {
+          "text": "Compliance & Risk →AML and controls are evaluated alongside the licence application.",
+          "href": "/solutions/compliance-risk"
+        },
+        {
+          "text": "International Hub →Market entry requires coordinated specialist and provider introductions.",
+          "href": "/international-hub"
+        },
+        {
+          "text": "Brazil →Brazil SPA/MF workstreams need dedicated national coordination.",
+          "href": "/brazil"
+        },
+        {
+          "text": "iGaming",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Fintech",
+          "href": "/markets/fintech"
+        },
+        {
+          "text": "Digital Assets",
+          "href": "/markets/crypto"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        },
+        {
+          "text": "Malta",
+          "href": "/jurisdictions/malta"
+        },
+        {
+          "text": "Curaçao",
+          "href": "/jurisdictions/curacao"
+        },
+        {
+          "text": "Isle of Man",
+          "href": "/jurisdictions/isle-of-man"
+        },
+        {
+          "text": "Portugal",
+          "href": "/jurisdictions/portugal"
+        },
+        {
+          "text": "Meet the team →",
+          "href": "/team"
+        },
+        {
+          "text": "How we engage →",
+          "href": "/how-we-engage"
+        },
+        {
+          "text": "View all services",
+          "href": "/solutions"
+        }
+      ],
+      "broken": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/compliance-risk",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "links": [
+        {
+          "text": "Discuss this workstream →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "All services →",
+          "href": "/solutions"
+        },
+        {
+          "text": "AML / KYC / CDD frameworks →",
+          "href": "/solutions/compliance/aml-kyc"
+        },
+        {
+          "text": "Regulatory Structuring →Compliance evidence is part of the licensing pathway.",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Corporate Structuring →Internal controls tie to group governance and ownership.",
+          "href": "/solutions/corporate-structuring"
+        },
+        {
+          "text": "Remediation & Readiness →When compliance gaps block banking or licensing.",
+          "href": "/solutions/remediation-readiness"
+        },
+        {
+          "text": "International Hub →Lab, certification and KYC specialist coordination.",
+          "href": "/international-hub"
+        },
+        {
+          "text": "iGaming",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Fintech",
+          "href": "/markets/fintech"
+        },
+        {
+          "text": "Digital Assets",
+          "href": "/markets/crypto"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        },
+        {
+          "text": "Malta",
+          "href": "/jurisdictions/malta"
+        },
+        {
+          "text": "Portugal",
+          "href": "/jurisdictions/portugal"
+        },
+        {
+          "text": "Meet the team →",
+          "href": "/team"
+        },
+        {
+          "text": "How we engage →",
+          "href": "/how-we-engage"
+        },
+        {
+          "text": "View all services",
+          "href": "/solutions"
+        }
+      ],
+      "broken": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "How we engage →",
+          "href": "/how-we-engage"
+        },
+        {
+          "text": "Regulatory Structuring",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Open Regulatory Structuring →",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Compliance & Risk",
+          "href": "/solutions/compliance-risk"
+        },
+        {
+          "text": "Open Compliance & Risk →",
+          "href": "/solutions/compliance-risk"
+        },
+        {
+          "text": "Legal & Structural Architecture",
+          "href": "/solutions/legal-structural-architecture"
+        },
+        {
+          "text": "Open Legal & Structural Architecture →",
+          "href": "/solutions/legal-structural-architecture"
+        },
+        {
+          "text": "Corporate Structuring",
+          "href": "/solutions/corporate-structuring"
+        },
+        {
+          "text": "Open Corporate Structuring →",
+          "href": "/solutions/corporate-structuring"
+        },
+        {
+          "text": "Private Clients",
+          "href": "/private-clients"
+        },
+        {
+          "text": "Open Private Clients →",
+          "href": "/private-clients"
+        },
+        {
+          "text": "Remediation & Readiness",
+          "href": "/solutions/remediation-readiness"
+        },
+        {
+          "text": "Open Remediation & Readiness →",
+          "href": "/solutions/remediation-readiness"
+        },
+        {
+          "text": "International Hub",
+          "href": "/international-hub"
+        },
+        {
+          "text": "Open International Hub →",
+          "href": "/international-hub"
+        },
+        {
+          "text": "Open Banking & Payments guidance →",
+          "href": "/solutions/banking-payments-infrastructure"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        },
+        {
+          "text": "All jurisdictions",
+          "href": "/jurisdictions"
+        },
+        {
+          "text": "International Hub",
+          "href": "/international-hub"
+        },
+        {
+          "text": "iGaming",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Fintech",
+          "href": "/markets/fintech"
+        },
+        {
+          "text": "Digital Assets",
+          "href": "/markets/crypto"
+        },
+        {
+          "text": "High-Risk Operations",
+          "href": "/markets/high-risk"
+        },
+        {
+          "text": "How we engage →",
+          "href": "/how-we-engage"
+        },
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Contact Octus",
+          "href": "/contact"
+        }
+      ],
+      "broken": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/legal-structural-architecture",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "links": [
+        {
+          "text": "Discuss this workstream →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "All services →",
+          "href": "/solutions"
+        },
+        {
+          "text": "Contractual architecture →",
+          "href": "/solutions/legal-structural-architecture"
+        },
+        {
+          "text": "Corporate Structuring →Holdings and governance must match contractual layers.",
+          "href": "/solutions/corporate-structuring"
+        },
+        {
+          "text": "Regulatory Structuring →Licence conditions shape contractual obligations.",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Private Clients →Personal and group legal layers intersect for UBOs and founders.",
+          "href": "/private-clients"
+        },
+        {
+          "text": "International Hub →Local counsel identification and coordination.",
+          "href": "/international-hub"
+        },
+        {
+          "text": "iGaming",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Fintech",
+          "href": "/markets/fintech"
+        },
+        {
+          "text": "High-Risk Operations",
+          "href": "/markets/high-risk"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        },
+        {
+          "text": "UAE",
+          "href": "/jurisdictions/uae"
+        },
+        {
+          "text": "Portugal",
+          "href": "/jurisdictions/portugal"
+        },
+        {
+          "text": "Meet the team →",
+          "href": "/team"
+        },
+        {
+          "text": "How we engage →",
+          "href": "/how-we-engage"
+        },
+        {
+          "text": "View all services",
+          "href": "/solutions"
+        }
+      ],
+      "broken": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/corporate-structuring",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "links": [
+        {
+          "text": "Discuss this workstream →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "All services →",
+          "href": "/solutions"
+        },
+        {
+          "text": "Entity and holding architecture →",
+          "href": "/solutions/corporate/holding-design"
+        },
+        {
+          "text": "Regulatory Structuring →Entity design gates licensing approval.",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Banking & Payments →Banking readiness is a structural constraint.",
+          "href": "/solutions/banking-payments-infrastructure"
+        },
+        {
+          "text": "Private Clients →UBO and personal holdings align with group architecture.",
+          "href": "/private-clients"
+        },
+        {
+          "text": "International Hub →Formation partners and CSP coordination.",
+          "href": "/international-hub"
+        },
+        {
+          "text": "iGaming",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Fintech",
+          "href": "/markets/fintech"
+        },
+        {
+          "text": "High-Risk Operations",
+          "href": "/markets/high-risk"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        },
+        {
+          "text": "Malta",
+          "href": "/jurisdictions/malta"
+        },
+        {
+          "text": "Anjouan",
+          "href": "/jurisdictions/anjouan"
+        },
+        {
+          "text": "Meet the team →",
+          "href": "/team"
+        },
+        {
+          "text": "How we engage →",
+          "href": "/how-we-engage"
+        },
+        {
+          "text": "View all services",
+          "href": "/solutions"
+        }
+      ],
+      "broken": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/private-clients",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "links": [
+        {
+          "text": "Discuss this workstream →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "All services →",
+          "href": "/solutions"
+        },
+        {
+          "text": "Ownership and UBO architecture →",
+          "href": "/private-clients"
+        },
+        {
+          "text": "Corporate Structuring →Personal and group ownership must align.",
+          "href": "/solutions/corporate-structuring"
+        },
+        {
+          "text": "Legal & Structural Architecture →Personal legal frameworks and counsel coordination.",
+          "href": "/solutions/legal-structural-architecture"
+        },
+        {
+          "text": "International Hub →Residency and personal international structuring support.",
+          "href": "/international-hub"
+        },
+        {
+          "text": "High-Risk Operations",
+          "href": "/markets/high-risk"
+        },
+        {
+          "text": "iGaming",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        },
+        {
+          "text": "Portugal",
+          "href": "/jurisdictions/portugal"
+        },
+        {
+          "text": "UAE",
+          "href": "/jurisdictions/uae"
+        },
+        {
+          "text": "Meet the team →",
+          "href": "/team"
+        },
+        {
+          "text": "How we engage →",
+          "href": "/how-we-engage"
+        },
+        {
+          "text": "View all services",
+          "href": "/solutions"
+        }
+      ],
+      "broken": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/remediation-readiness",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "links": [
+        {
+          "text": "Assess your situation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20assess%20my%20regulated%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "All services →",
+          "href": "/solutions"
+        },
+        {
+          "text": "Crisis entry and structural assessment →",
+          "href": "/diagnostic"
+        },
+        {
+          "text": "Regulatory Structuring →Licensing delay remediation.",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Compliance & Risk →Compliance gap and audit readiness fixes.",
+          "href": "/solutions/compliance-risk"
+        },
+        {
+          "text": "Banking & Payments →Financial infrastructure recovery.",
+          "href": "/solutions/banking-payments-infrastructure"
+        },
+        {
+          "text": "Corporate Structuring →Structural fixes when the group blocks progress.",
+          "href": "/solutions/corporate-structuring"
+        },
+        {
+          "text": "High-Risk Operations",
+          "href": "/markets/high-risk"
+        },
+        {
+          "text": "iGaming",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Fintech",
+          "href": "/markets/fintech"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        },
+        {
+          "text": "High-risk operations",
+          "href": "/markets/high-risk"
+        },
+        {
+          "text": "Meet the team →",
+          "href": "/team"
+        },
+        {
+          "text": "How we engage →",
+          "href": "/how-we-engage"
+        },
+        {
+          "text": "View all services",
+          "href": "/solutions"
+        }
+      ],
+      "broken": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/banking-payments-infrastructure",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Contact Octus →",
+          "href": "/contact"
+        },
+        {
+          "text": "Corporate Structuring",
+          "href": "/solutions/corporate-structuring"
+        },
+        {
+          "text": "Open Corporate Structuring →",
+          "href": "/solutions/corporate-structuring"
+        },
+        {
+          "text": "International Hub",
+          "href": "/international-hub"
+        },
+        {
+          "text": "Open International Hub →",
+          "href": "/international-hub"
+        },
+        {
+          "text": "Remediation & Readiness",
+          "href": "/solutions/remediation-readiness"
+        },
+        {
+          "text": "Open Remediation & Readiness →",
+          "href": "/solutions/remediation-readiness"
+        },
+        {
+          "text": "Explore related services →",
+          "href": "/solutions"
+        }
+      ],
+      "broken": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/international-hub",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "links": [
+        {
+          "text": "Discuss this workstream →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "All services →",
+          "href": "/solutions"
+        },
+        {
+          "text": "Market entry coordination →",
+          "href": "/international-hub"
+        },
+        {
+          "text": "Regulatory Structuring →Market entry programmes require provider sequencing.",
+          "href": "/solutions/regulatory-structuring"
+        },
+        {
+          "text": "Corporate Structuring →Formation and banking readiness before introductions.",
+          "href": "/solutions/corporate-structuring"
+        },
+        {
+          "text": "Compliance & Risk →Lab and certification coordination.",
+          "href": "/solutions/compliance-risk"
+        },
+        {
+          "text": "Banking & Payments →Bank and PSP architecture.",
+          "href": "/solutions/banking-payments-infrastructure"
+        },
+        {
+          "text": "iGaming",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Fintech",
+          "href": "/markets/fintech"
+        },
+        {
+          "text": "Digital Assets",
+          "href": "/markets/crypto"
+        },
+        {
+          "text": "High-Risk Operations",
+          "href": "/markets/high-risk"
+        },
+        {
+          "text": "Malta",
+          "href": "/jurisdictions/malta"
+        },
+        {
+          "text": "Curaçao",
+          "href": "/jurisdictions/curacao"
+        },
+        {
+          "text": "UAE",
+          "href": "/jurisdictions/uae"
+        },
+        {
+          "text": "Brazil",
+          "href": "/brazil"
+        },
+        {
+          "text": "Meet the team →",
+          "href": "/team"
+        },
+        {
+          "text": "How we engage →",
+          "href": "/how-we-engage"
+        },
+        {
+          "text": "View all services",
+          "href": "/solutions"
+        }
+      ],
+      "broken": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/regulatory/igaming-licensing",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "iGaming operations →",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Isle of Man (GSC)Tier-1 credential with continuous regulatory scrutinyLearn more →",
+          "href": "/jurisdictions/isle-of-man"
+        },
+        {
+          "text": "Malta (MGA)EU-regulated framework with high compliance standardsLearn more →",
+          "href": "/jurisdictions/malta"
+        },
+        {
+          "text": "CuraçaoEstablished offshore framework undergoing reformLearn more →",
+          "href": "/jurisdictions/curacao"
+        },
+        {
+          "text": "Compliance-as-a-ServiceWhat keeps the operation compliant after licensingLearn more →",
+          "href": "/solutions/compliance/compliance-as-a-service"
+        },
+        {
+          "text": "AML/KYCCompliance architecture for licensing and bankingLearn more →",
+          "href": "/solutions/compliance/aml-kyc"
+        },
+        {
+          "text": "iGaming MarketSector overview and Octus positioningLearn more →",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Continue this discussion →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        }
+      ],
+      "broken": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/regulatory/market-entry",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Fintech LicensingEMI/PI authorisationLearn more →",
+          "href": "/solutions/regulatory/fintech-licensing"
+        },
+        {
+          "text": "iGaming LicensingGaming market entryLearn more →",
+          "href": "/solutions/regulatory/igaming-licensing"
+        },
+        {
+          "text": "Banking & PaymentsAccess as entry constraintLearn more →",
+          "href": "/solutions/banking-payments-infrastructure"
+        },
+        {
+          "text": "Company FormationJurisdiction-aligned entitiesLearn more →",
+          "href": "/solutions/corporate/company-formation"
+        },
+        {
+          "text": "JurisdictionsWhere we structure operationsLearn more →",
+          "href": "/jurisdictions"
+        },
+        {
+          "text": "Continue this discussion →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        }
+      ],
+      "broken": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/regulatory/fintech-licensing",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "UAE",
+          "href": "/jurisdictions/uae"
+        },
+        {
+          "text": "Portugal",
+          "href": "/jurisdictions/portugal"
+        },
+        {
+          "text": "iGaming LicensingSame structural logic, different regulatory frameworkLearn more →",
+          "href": "/solutions/regulatory/igaming-licensing"
+        },
+        {
+          "text": "Banking & PaymentsThe layer that fails most often post-authorisationLearn more →",
+          "href": "/solutions/banking-payments-infrastructure"
+        },
+        {
+          "text": "Market EntryJurisdiction selection as structural projectLearn more →",
+          "href": "/solutions/regulatory/market-entry"
+        },
+        {
+          "text": "Compliance-as-a-ServiceWhat keeps the licence operationalLearn more →",
+          "href": "/solutions/compliance/compliance-as-a-service"
+        },
+        {
+          "text": "AML/KYCCompliance architecture for licensing and bankingLearn more →",
+          "href": "/solutions/compliance/aml-kyc"
+        },
+        {
+          "text": "Fintech & PaymentsSector overviewLearn more →",
+          "href": "/markets/fintech"
+        },
+        {
+          "text": "Continue this discussion →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        }
+      ],
+      "broken": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/compliance/aml-kyc",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Full compliance services →",
+          "href": "/solutions/compliance-risk"
+        },
+        {
+          "text": "Compliance & RiskFull compliance services beyond AML.Learn more →",
+          "href": "/solutions/compliance-risk"
+        },
+        {
+          "text": "Remediation & ReadinessPrepared for scrutiny before it arrives.Learn more →",
+          "href": "/solutions/remediation-readiness"
+        },
+        {
+          "text": "iGaming OperationsCompliance in the iGaming context.Learn more →",
+          "href": "/markets/igaming"
+        },
+        {
+          "text": "Continue this discussion →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        }
+      ],
+      "broken": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/compliance/dpo-as-a-service",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Compliance-as-a-Service →",
+          "href": "/solutions/compliance/compliance-as-a-service"
+        },
+        {
+          "text": "Compliance-as-a-ServiceThe broader compliance operating layerLearn more →",
+          "href": "/solutions/compliance/compliance-as-a-service"
+        },
+        {
+          "text": "AML/KYCOnboarding, monitoring and reporting architectureLearn more →",
+          "href": "/solutions/compliance/aml-kyc"
+        },
+        {
+          "text": "iGaming LicensingLicensing strategy across jurisdictionsLearn more →",
+          "href": "/solutions/regulatory/igaming-licensing"
+        },
+        {
+          "text": "High-Risk OperationsCompliance for sectors under pressureLearn more →",
+          "href": "/markets/high-risk"
+        },
+        {
+          "text": "Crypto & Digital AssetsRegulatory structuring for digital operationsLearn more →",
+          "href": "/markets/crypto"
+        },
+        {
+          "text": "Continue this discussion →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        }
+      ],
+      "broken": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/compliance/compliance-as-a-service",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "DPO-as-a-Service →",
+          "href": "/solutions/compliance/dpo-as-a-service"
+        },
+        {
+          "text": "AML/KYCOnboarding, monitoring and reporting architectureLearn more →",
+          "href": "/solutions/compliance/aml-kyc"
+        },
+        {
+          "text": "DPO-as-a-ServiceData protection as an operational functionLearn more →",
+          "href": "/solutions/compliance/dpo-as-a-service"
+        },
+        {
+          "text": "iGaming LicensingLicensing strategy across jurisdictionsLearn more →",
+          "href": "/solutions/regulatory/igaming-licensing"
+        },
+        {
+          "text": "High-Risk OperationsCompliance for sectors under pressureLearn more →",
+          "href": "/markets/high-risk"
+        },
+        {
+          "text": "Crypto & Digital AssetsRegulatory structuring for digital operationsLearn more →",
+          "href": "/markets/crypto"
+        },
+        {
+          "text": "Continue this discussion →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        }
+      ],
+      "broken": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/compliance/gli-readiness",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Compliance-as-a-ServicePrevents audit gapsLearn more →",
+          "href": "/solutions/compliance/compliance-as-a-service"
+        },
+        {
+          "text": "Internal ControlsGovernance that supports readinessLearn more →",
+          "href": "/solutions/compliance/internal-controls"
+        },
+        {
+          "text": "AML/KYCWhat auditors evaluate firstLearn more →",
+          "href": "/solutions/compliance/aml-kyc"
+        },
+        {
+          "text": "Remediation & ReadinessFull pillarLearn more →",
+          "href": "/solutions/remediation-readiness"
+        },
+        {
+          "text": "Continue this discussion →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        }
+      ],
+      "broken": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/compliance/internal-controls",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Compliance-as-a-ServiceOperational layerLearn more →",
+          "href": "/solutions/compliance/compliance-as-a-service"
+        },
+        {
+          "text": "GLI ReadinessDepends on controlsLearn more →",
+          "href": "/solutions/compliance/gli-readiness"
+        },
+        {
+          "text": "AML/KYCControls regulators evaluate firstLearn more →",
+          "href": "/solutions/compliance/aml-kyc"
+        },
+        {
+          "text": "Compliance & RiskFull pillarLearn more →",
+          "href": "/solutions/compliance-risk"
+        },
+        {
+          "text": "Continue this discussion →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        }
+      ],
+      "broken": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/corporate/company-formation",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Full corporate services →",
+          "href": "/solutions/corporate-structuring"
+        },
+        {
+          "text": "Corporate StructuringFull corporate services overview.Learn more →",
+          "href": "/solutions/corporate-structuring"
+        },
+        {
+          "text": "Curaçao LicensingEntity design for Curaçao operations.Learn more →",
+          "href": "/jurisdictions/curacao"
+        },
+        {
+          "text": "Malta LicensingCorporate substance for MGA requirements.Learn more →",
+          "href": "/jurisdictions/malta"
+        },
+        {
+          "text": "Continue this discussion →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        }
+      ],
+      "broken": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/corporate/holding-design",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Portugal",
+          "href": "/jurisdictions/portugal"
+        },
+        {
+          "text": "UAE",
+          "href": "/jurisdictions/uae"
+        },
+        {
+          "text": "Offshore StructuringOffshore StructuringLearn more →",
+          "href": "/solutions/corporate/offshore-structuring"
+        },
+        {
+          "text": "Company FormationCompany FormationLearn more →",
+          "href": "/solutions/corporate/company-formation"
+        },
+        {
+          "text": "Private ClientsOwnership and UBO architecture for founders and operators.Learn more →",
+          "href": "/private-clients"
+        },
+        {
+          "text": "Banking & PaymentsBanking & PaymentsLearn more →",
+          "href": "/solutions/banking-payments-infrastructure"
+        },
+        {
+          "text": "Continue this discussion →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        }
+      ],
+      "broken": [],
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/corporate/offshore-structuring",
+      "origin": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        },
+        {
+          "text": "Anjouan",
+          "href": "/jurisdictions/anjouan"
+        },
+        {
+          "text": "UAE",
+          "href": "/jurisdictions/uae"
+        },
+        {
+          "text": "Company FormationCompany FormationLearn more →",
+          "href": "/solutions/corporate/company-formation"
+        },
+        {
+          "text": "Holding DesignHolding DesignLearn more →",
+          "href": "/solutions/corporate/holding-design"
+        },
+        {
+          "text": "Banking & PaymentsBanking & PaymentsLearn more →",
+          "href": "/solutions/banking-payments-infrastructure"
+        },
+        {
+          "text": "Market EntryMarket EntryLearn more →",
+          "href": "/solutions/regulatory/market-entry"
+        },
+        {
+          "text": "High-Risk OperationsHigh-Risk OperationsLearn more →",
+          "href": "/markets/high-risk"
+        },
+        {
+          "text": "Continue this discussion →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+        }
+      ],
+      "broken": [],
+      "status": "PASS"
+    }
+  ],
+  "overall": "PASS"
+}

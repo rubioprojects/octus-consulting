@@ -1,10 +1,12 @@
 import Link from "next/link";
+import { pageSocialMeta } from "../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Careers",
   description:
-    "Join Octus. We work at the intersection of regulatory structuring, compliance operations, legal architecture and corporate design. Built for people with operational depth.",
-};
+    "Join Octus teams working on regulatory structuring, compliance and operational execution for regulated businesses.",
+  path: "/careers",
+});
 
 export default function CareersPage() {
   return (
@@ -13,14 +15,19 @@ export default function CareersPage() {
       {/* ─── HERO ─────────────────────────────────────────────────── */}
       <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <span className="label">Careers</span>
-          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
+          <span
+            className="mb-5 block font-sans text-[12px] font-medium uppercase tracking-[0.12em]"
+            style={{ color: "rgba(247, 248, 250, 0.78)" }}
+          >
+            Careers
+          </span>
+          <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline">
             Built for people who know how regulated operations actually work.
           </h1>
           <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "580px" }}>
             Octus operates at the intersection of regulatory structuring,
             compliance, legal architecture and corporate design. We look for
-            people with operational depth — not just credentials.
+                people with operational depth, not just credentials.
           </p>
         </div>
       </section>
@@ -28,8 +35,22 @@ export default function CareersPage() {
       <section className="bg-background py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "1000px" }}>
           <span className="label">Life at Octus</span>
-          <div className="careers-culture-visual">
-            <img src="/team-group.jpg" alt="Octus team culture" className="careers-culture-image" />
+          {/*
+            Editorial group photograph. Source /team-group.jpg has a baked black
+            field around a dome. Shape is resolved with an antialiased ellipse
+            clip (same geometry as About), not a rectangular black tile. No AI
+            cutout of people; no face editing.
+          */}
+          <div className="careers-editorial">
+            <figure className="careers-editorial__figure">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/team-group.jpg"
+                alt="Octus team culture"
+                className="careers-editorial__img"
+              />
+              <span className="careers-editorial__fade" aria-hidden="true" />
+            </figure>
           </div>
         </div>
       </section>
@@ -41,9 +62,8 @@ export default function CareersPage() {
             Serious operations require serious people.
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
-            We are not a traditional advisory firm. We enter operations, design
-            structures and coordinate execution across multiple regulatory and
-            corporate layers simultaneously.
+            We work inside operating mandates, design structures and coordinate execution across
+            regulatory, compliance, legal and corporate layers when that scope is agreed.
           </p>
           <p className="body-text" style={{ marginBottom: "20px" }}>
             The work is complex, international and requires people who
@@ -51,18 +71,17 @@ export default function CareersPage() {
             actually holds under real conditions.
           </p>
           <p className="body-text">
-            We work remotely across multiple time zones, with clients across
-            Europe, LATAM, Middle East and Asia.
+            Collaboration is remote-capable. Client mandates may involve work connected to
+            Europe, LATAM, the Middle East or Asia when scope requires it. This describes
+            mandate geography, not a claim of permanent offices in each region.
           </p>
 
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px", marginTop: "40px" }}>
             {[
-              "Remote-first",
-              "International scope",
-              "Continuous development",
-              "Industry events & conferences",
-              "International work across multiple languages",
-              "Collaborative and multidisciplinary team",
+              "Remote-capable collaboration",
+              "International mandate exposure when scoped",
+              "Multi-disciplinary coordination",
+              "High-scrutiny regulated environments",
             ].map((item) => (
               <div
                 key={item}
@@ -88,13 +107,13 @@ export default function CareersPage() {
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <span className="label">Who we look for</span>
           <h2 className="heading-section" style={{ marginBottom: "48px" }}>
-            Across four operational areas.
+            Capability profiles we look for.
           </h2>
           <div className="grid-auto-lg">
             {[
               {
                 area: "Regulatory & Licensing",
-                desc: "Experience with regulated market entry, licensing processes and jurisdictional structuring. Ability to manage complex multi-jurisdiction regulatory processes end-to-end.",
+                desc: "Experience with regulated market entry, licensing processes and jurisdictional structuring. Ability to manage complex regulatory processes across jurisdictions end-to-end.",
               },
               {
                 area: "Compliance & Risk",
@@ -123,11 +142,15 @@ export default function CareersPage() {
       {/* ─── PROCESS ──────────────────────────────────────────────── */}
       <section className="surface-elevated py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
-          <span className="label">Our recruitment process</span>
+          <span className="label">Indicative recruitment stages</span>
+          <p className="body-text" style={{ marginBottom: "28px" }}>
+            The stages below describe a typical sequence Octus may use. They are indicative,
+            not a guaranteed process for every hire or role.
+          </p>
           <div style={{ display: "flex", flexDirection: "column" }}>
             {[
               { step: "01", title: "Initial interview", body: "First conversation to understand your background, what you have built and how you work." },
-              { step: "02", title: "Assignment", body: "A practical exercise relevant to the role. Not theoretical — an actual situation from our work." },
+              { step: "02", title: "Assignment", body: "A practical exercise relevant to the role. Not theoretical: an actual situation from our work." },
               { step: "03", title: "Second interview", body: "Deeper conversation about approach, judgment and how you handle complexity." },
               { step: "04", title: "Behavioural assessment", body: "Short structured assessment to understand how you operate in teams and under pressure." },
               { step: "05", title: "Offer", body: "Direct conversation about expectations, scope and what working together will look like." },
@@ -172,7 +195,7 @@ export default function CareersPage() {
             No open positions listed? Send your profile anyway.
           </p>
           <h2 className="heading-lg cta-block__title">
-            If you are the right person, we will find the right role.
+            Share your profile for future opportunities.
           </h2>
           <a
             href="mailto:talentos@octusconsulting.com?subject=Octus Careers"

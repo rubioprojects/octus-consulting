@@ -9,7 +9,7 @@ import {
   type IntelligenceCategoryId,
 } from "../../lib/intelligence";
 import ContentCard from "./ContentCard";
-import InsightCategoryRail, { INTELLIGENCE_CATEGORIES } from "./InsightCategoryRail";
+import InsightCategoryRail, { INSIGHT_CATEGORIES } from "./InsightCategoryRail";
 
 function fmt(d: string) {
   return new Date(d).toLocaleDateString("en-GB", {
@@ -34,15 +34,14 @@ export default function InsightsHubClient({ posts }: { posts: Post[] }) {
   const activeLabel =
     hub === "all"
       ? null
-      : INTELLIGENCE_CATEGORIES.find((c) => c.id === hub)?.label;
+      : INSIGHT_CATEGORIES.find((c) => c.id === hub)?.label;
 
   return (
     <>
       <InsightCategoryRail active={hub === "all" ? "all" : hub} />
       {activeLabel && (
         <p className="mb-8 text-sm text-muted-foreground">
-          Showing <span className="text-foreground">{activeLabel}</span> — mapped from
-          existing article categories (full Hub taxonomy ships in Wave 4).
+          Showing <span className="text-foreground">{activeLabel}</span> articles.
         </p>
       )}
 

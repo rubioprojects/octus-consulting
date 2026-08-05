@@ -1,0 +1,694 @@
+{
+  "baseline_url": "https://octus-consulting-9q798dbg2-axle1.vercel.app",
+  "current_url": "https://octus-consulting-kovk3ad1l-axle1.vercel.app",
+  "baseline": {
+    "hero": {
+      "h": 880,
+      "w": 1440,
+      "top": 0,
+      "padT": "128px",
+      "padB": "0px",
+      "bg": "rgb(7, 11, 20)",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "26.4px",
+      "maxWidth": "none",
+      "display": "flex"
+    },
+    "h1": {
+      "text": "Regulated operations don't fail randomly. They fail structurally.",
+      "h": 186,
+      "w": 896,
+      "top": 261,
+      "padT": "0px",
+      "padB": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fontSize": "53.6px",
+      "fontWeight": "600",
+      "lineHeight": "62.176px",
+      "maxWidth": "none",
+      "display": "block"
+    },
+    "rail": {
+      "h": 68,
+      "w": 1440,
+      "top": 880,
+      "padT": "0px",
+      "padB": "0px",
+      "bg": "rgb(11, 18, 32)",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "26.4px",
+      "maxWidth": "none",
+      "display": "block"
+    },
+    "leadership": {
+      "h": 654,
+      "w": 1440,
+      "top": 1271,
+      "padT": "96px",
+      "padB": "96px",
+      "bg": "rgb(250, 250, 249)",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "26.4px",
+      "maxWidth": "none",
+      "display": "block"
+    },
+    "photos": [
+      {
+        "src": "/team/rubio-teixeira.jpg",
+        "w": 168,
+        "h": 168,
+        "objectPosition": "50% 38%",
+        "filter": "grayscale(1) contrast(1.1) brightness(0.97)"
+      },
+      {
+        "src": "/team/maria-cristina.jpg",
+        "w": 168,
+        "h": 168,
+        "objectPosition": "56% 30%",
+        "filter": "grayscale(1) contrast(1.1) brightness(0.97)"
+      }
+    ],
+    "wraps": [
+      {
+        "w": 168,
+        "h": 168
+      },
+      {
+        "w": 168,
+        "h": 168
+      }
+    ],
+    "sectionBrief": [
+      {
+        "i": 0,
+        "cls": "home-hero relative flex min-h-[88vh] items-center overflow-hidden pt-28 surface-dark px-4 sm:px-6 lg:px-8 md:pt-32",
+        "hText": "Regulated operations don't fail randomly. They fail structurally.",
+        "label": "",
+        "h": 880,
+        "top": 0
+      },
+      {
+        "i": 1,
+        "cls": "border-b border-white/[0.06] bg-[#0B1220] px-4 py-5 sm:hidden",
+        "hText": "",
+        "label": "",
+        "h": 0,
+        "top": 0
+      },
+      {
+        "i": 2,
+        "cls": "capability-rail authority-strip w-full border-b border-white/[0.06]",
+        "hText": "",
+        "label": "",
+        "h": 68,
+        "top": 880
+      },
+      {
+        "i": 3,
+        "cls": "border-b border-border bg-background py-14 md:py-16",
+        "hText": "",
+        "label": "",
+        "h": 323,
+        "top": 948
+      },
+      {
+        "i": 4,
+        "cls": "home-leadership-trust bg-background py-20 md:py-24",
+        "hText": "Leadership who own the structure.",
+        "label": "Accountability",
+        "h": 654,
+        "top": 1271
+      },
+      {
+        "i": 5,
+        "cls": "surface-elevated py-24 md:py-32",
+        "hText": "What we fix.",
+        "label": "The regulated problem",
+        "h": 1279,
+        "top": 1981
+      },
+      {
+        "i": 6,
+        "cls": "bg-background py-24 md:py-32",
+        "hText": "A structural approach to regulated operations.",
+        "label": "How we work",
+        "h": 755,
+        "top": 3259
+      },
+      {
+        "i": 7,
+        "cls": "surface-elevated py-24 md:py-32",
+        "hText": "Where we operate.",
+        "label": "Industries",
+        "h": 757,
+        "top": 4014
+      },
+      {
+        "i": 8,
+        "cls": "bg-background py-24 md:py-32",
+        "hText": "Where regulated operations stall.",
+        "label": "Pressure patterns",
+        "h": 745,
+        "top": 4771
+      },
+      {
+        "i": 9,
+        "cls": "surface-dark py-24 md:py-32",
+        "hText": "If your operation is stuck, blocked or exposed, we can fix it.",
+        "label": "",
+        "h": 507,
+        "top": 5516
+      },
+      {
+        "i": 10,
+        "cls": "surface-elevated py-24 md:py-32",
+        "hText": "Six solutions. One execution partner.",
+        "label": "Solutions",
+        "h": 1111,
+        "top": 6022
+      },
+      {
+        "i": 11,
+        "cls": "border-y border-border bg-background py-20 md:py-24",
+        "hText": "Operational Remediation & Readiness",
+        "label": "Crisis entry",
+        "h": 518,
+        "top": 7133
+      },
+      {
+        "i": 12,
+        "cls": "operate-section",
+        "hText": "Accountable execution.",
+        "label": "How we operate",
+        "h": 452,
+        "top": 7651
+      },
+      {
+        "i": 13,
+        "cls": "border-y border-border bg-background py-16 md:py-20",
+        "hText": "Accountability scales with the mandate.",
+        "label": "How we engage",
+        "h": 341,
+        "top": 8102
+      },
+      {
+        "i": 14,
+        "cls": "bg-background py-20 md:py-24",
+        "hText": "Authority for operators who need structure.",
+        "label": "Intelligence",
+        "h": 419,
+        "top": 8443
+      },
+      {
+        "i": 15,
+        "cls": "bg-background py-20 md:py-24",
+        "hText": "This is not for everyone.",
+        "label": "",
+        "h": 439,
+        "top": 8861
+      }
+    ],
+    "sectionCount": 16,
+    "scrollH": 10359,
+    "bodyCopy": {
+      "h": 112,
+      "w": 640,
+      "top": 487,
+      "padT": "0px",
+      "padB": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fontSize": "18px",
+      "fontWeight": "400",
+      "lineHeight": "28px",
+      "maxWidth": "640px",
+      "display": "block"
+    },
+    "ctaRow": {
+      "h": 48,
+      "w": 896,
+      "top": 723,
+      "padT": "0px",
+      "padB": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "26.4px",
+      "maxWidth": "none",
+      "display": "flex"
+    },
+    "ctas": [
+      {
+        "text": "Discuss your operation →",
+        "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+      },
+      {
+        "text": "Assess your situation →",
+        "href": "/diagnostic"
+      },
+      {
+        "text": "Assess your situation →",
+        "href": "/diagnostic"
+      },
+      {
+        "text": "Meet the team →",
+        "href": "/team"
+      },
+      {
+        "text": "iGaming & BettingLicensing, compliance, banking, post-licens",
+        "href": "/markets/igaming"
+      },
+      {
+        "text": "Fintech & PaymentsEMI licensing, payment infrastructure, cro",
+        "href": "/markets/fintech"
+      },
+      {
+        "text": "Crypto & Digital AssetsCASP/VASP licensing, MiCA compliance,",
+        "href": "/markets/crypto"
+      },
+      {
+        "text": "High-Risk OperationsBanking resilience, enhanced compliance,",
+        "href": "/markets/high-risk"
+      },
+      {
+        "text": "Discuss your operation →",
+        "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+      },
+      {
+        "text": "Markets →",
+        "href": "/markets"
+      },
+      {
+        "text": "How we engage →",
+        "href": "/how-we-engage"
+      },
+      {
+        "text": "Discuss your operation →",
+        "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+      },
+      {
+        "text": "Open remediation hub →",
+        "href": "/solutions/operational-remediation-readiness"
+      },
+      {
+        "text": "How we engage →",
+        "href": "/how-we-engage"
+      },
+      {
+        "text": "Markets →",
+        "href": "/markets"
+      },
+      {
+        "text": "How we engage →",
+        "href": "/how-we-engage"
+      },
+      {
+        "text": "Open Intelligence",
+        "href": "/intelligence"
+      },
+      {
+        "text": "Browse Insights →",
+        "href": "/insights"
+      },
+      {
+        "text": "Discuss your operation →",
+        "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+      },
+      {
+        "text": "Assess your situation →",
+        "href": "/diagnostic"
+      }
+    ]
+  },
+  "current": {
+    "hero": {
+      "h": 1000,
+      "w": 1440,
+      "top": 0,
+      "padT": "128px",
+      "padB": "48px",
+      "bg": "rgb(7, 11, 20)",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "26.4px",
+      "maxWidth": "none",
+      "display": "flex"
+    },
+    "h1": {
+      "text": "Regulated operations don't fail randomly. They fail structurally.",
+      "h": 186,
+      "w": 557,
+      "top": 192,
+      "padT": "0px",
+      "padB": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fontSize": "53.6px",
+      "fontWeight": "600",
+      "lineHeight": "62.176px",
+      "maxWidth": "556.69px",
+      "display": "block"
+    },
+    "rail": {
+      "h": 68,
+      "w": 1440,
+      "top": 1000,
+      "padT": "0px",
+      "padB": "0px",
+      "bg": "rgb(11, 18, 32)",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "26.4px",
+      "maxWidth": "none",
+      "display": "block"
+    },
+    "leadership": {
+      "h": 654,
+      "w": 1440,
+      "top": 1265,
+      "padT": "96px",
+      "padB": "96px",
+      "bg": "rgb(250, 250, 249)",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "26.4px",
+      "maxWidth": "none",
+      "display": "block"
+    },
+    "photos": [
+      {
+        "src": "/team/rubio-teixeira.jpg",
+        "w": 168,
+        "h": 168,
+        "objectPosition": "50% 38%",
+        "filter": "grayscale(1) contrast(1.1) brightness(0.97)"
+      },
+      {
+        "src": "/team/maria-cristina.jpg",
+        "w": 168,
+        "h": 168,
+        "objectPosition": "56% 30%",
+        "filter": "grayscale(1) contrast(1.1) brightness(0.97)"
+      }
+    ],
+    "wraps": [
+      {
+        "w": 168,
+        "h": 168
+      },
+      {
+        "w": 168,
+        "h": 168
+      }
+    ],
+    "sectionBrief": [
+      {
+        "i": 0,
+        "cls": "home-hero relative flex min-h-[100svh] items-start overflow-hidden surface-dark px-4 pt-[5.75rem] pb-12 sm:px-6 lg:px-8 ",
+        "hText": "Regulated operations don't fail randomly. They fail structurally.",
+        "label": "",
+        "h": 1000,
+        "top": 0
+      },
+      {
+        "i": 1,
+        "cls": "capability-rail authority-strip w-full border-b border-white/[0.06]",
+        "hText": "",
+        "label": "",
+        "h": 68,
+        "top": 1000
+      },
+      {
+        "i": 2,
+        "cls": "border-b border-border bg-background py-14 md:py-16",
+        "hText": "",
+        "label": "",
+        "h": 197,
+        "top": 1068
+      },
+      {
+        "i": 3,
+        "cls": "home-leadership-trust bg-background py-20 md:py-24",
+        "hText": "Leadership who own the structure.",
+        "label": "Accountability",
+        "h": 654,
+        "top": 1265
+      },
+      {
+        "i": 4,
+        "cls": "surface-elevated py-24 md:py-32",
+        "hText": "What we fix.",
+        "label": "The regulated problem",
+        "h": 1344,
+        "top": 1975
+      },
+      {
+        "i": 5,
+        "cls": "bg-background py-24 md:py-32",
+        "hText": "A structural approach to regulated operations.",
+        "label": "How we work",
+        "h": 810,
+        "top": 3319
+      },
+      {
+        "i": 6,
+        "cls": "surface-elevated py-24 md:py-32",
+        "hText": "Where we operate.",
+        "label": "Industries",
+        "h": 757,
+        "top": 4129
+      },
+      {
+        "i": 7,
+        "cls": "bg-background py-24 md:py-32",
+        "hText": "Where regulated operations stall.",
+        "label": "Pressure patterns",
+        "h": 745,
+        "top": 4886
+      },
+      {
+        "i": 8,
+        "cls": "surface-dark py-24 md:py-32",
+        "hText": "If your operation is stuck, blocked or exposed, we can fix it.",
+        "label": "",
+        "h": 507,
+        "top": 5631
+      },
+      {
+        "i": 9,
+        "cls": "surface-elevated py-24 md:py-32",
+        "hText": "Seven areas. One execution partner.",
+        "label": "Services",
+        "h": 1316,
+        "top": 6137
+      },
+      {
+        "i": 10,
+        "cls": "border-y border-border bg-background py-20 md:py-24",
+        "hText": "Remediation & Readiness",
+        "label": "Crisis entry",
+        "h": 442,
+        "top": 7453
+      },
+      {
+        "i": 11,
+        "cls": "operate-section",
+        "hText": "Accountable execution.",
+        "label": "How we operate",
+        "h": 499,
+        "top": 7895
+      },
+      {
+        "i": 12,
+        "cls": "border-y border-border bg-background py-16 md:py-20",
+        "hText": "Accountability scales with the mandate.",
+        "label": "How we engage",
+        "h": 301,
+        "top": 8393
+      },
+      {
+        "i": 13,
+        "cls": "bg-background py-20 md:py-24",
+        "hText": "Authority for operators who need structure.",
+        "label": "Intelligence",
+        "h": 419,
+        "top": 8694
+      },
+      {
+        "i": 14,
+        "cls": "bg-background py-20 md:py-24",
+        "hText": "Mandates Octus accepts.",
+        "label": "",
+        "h": 496,
+        "top": 9168
+      }
+    ],
+    "sectionCount": 15,
+    "scrollH": 10555,
+    "bodyCopy": {
+      "h": 84,
+      "w": 640,
+      "top": 418,
+      "padT": "0px",
+      "padB": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fontSize": "18px",
+      "fontWeight": "400",
+      "lineHeight": "28px",
+      "maxWidth": "640px",
+      "display": "block"
+    },
+    "ctaRow": {
+      "h": 48,
+      "w": 896,
+      "top": 534,
+      "padT": "0px",
+      "padB": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "26.4px",
+      "maxWidth": "none",
+      "display": "flex"
+    },
+    "ctas": [
+      {
+        "text": "Discuss your operation →",
+        "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+      },
+      {
+        "text": "Explore services",
+        "href": "/solutions"
+      },
+      {
+        "text": "Assess your situation →",
+        "href": "/diagnostic"
+      },
+      {
+        "text": "Meet the team →",
+        "href": "/team"
+      },
+      {
+        "text": "Remediation & Readiness →",
+        "href": "/solutions/remediation-readiness"
+      },
+      {
+        "text": "iGaming & BettingLicensing, compliance, banking, post-licens",
+        "href": "/markets/igaming"
+      },
+      {
+        "text": "Fintech & PaymentsEMI licensing, payment infrastructure, cro",
+        "href": "/markets/fintech"
+      },
+      {
+        "text": "Crypto & Digital AssetsCASP/VASP licensing, MiCA compliance,",
+        "href": "/markets/crypto"
+      },
+      {
+        "text": "High-Risk OperationsBanking resilience, enhanced compliance,",
+        "href": "/markets/high-risk"
+      },
+      {
+        "text": "Assess your situation →",
+        "href": "/diagnostic"
+      },
+      {
+        "text": "All services →",
+        "href": "/solutions"
+      },
+      {
+        "text": "Markets →",
+        "href": "/markets"
+      },
+      {
+        "text": "How we engage →",
+        "href": "/how-we-engage"
+      },
+      {
+        "text": "Open Regulatory Structuring →",
+        "href": "/solutions/regulatory-structuring"
+      },
+      {
+        "text": "Assess your situation →",
+        "href": "/diagnostic"
+      },
+      {
+        "text": "Open remediation hub →",
+        "href": "/solutions/remediation-readiness"
+      },
+      {
+        "text": "How we engage →",
+        "href": "/how-we-engage"
+      },
+      {
+        "text": "Markets →",
+        "href": "/markets"
+      },
+      {
+        "text": "How we engage →",
+        "href": "/how-we-engage"
+      },
+      {
+        "text": "Open Intelligence",
+        "href": "/intelligence"
+      },
+      {
+        "text": "Read Insights",
+        "href": "/insights"
+      },
+      {
+        "text": "Discuss your operation →",
+        "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help."
+      }
+    ]
+  },
+  "diffs": {
+    "heroH": [
+      880,
+      1000
+    ],
+    "h1Size": [
+      "53.6px",
+      "53.6px"
+    ],
+    "h1MaxW": [
+      "none",
+      "556.69px"
+    ],
+    "railH": [
+      68,
+      68
+    ],
+    "photoW": [
+      [
+        {
+          "w": 168,
+          "h": 168
+        },
+        {
+          "w": 168,
+          "h": 168
+        }
+      ],
+      [
+        {
+          "w": 168,
+          "h": 168
+        },
+        {
+          "w": 168,
+          "h": 168
+        }
+      ]
+    ],
+    "sectionCount": [
+      16,
+      15
+    ],
+    "scrollH": [
+      10359,
+      10555
+    ]
+  }
+}

@@ -1,21 +1,25 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
+import DarkHeroAtmosphere from "../../../../components/system/DarkHeroAtmosphere";
+import { pageSocialMeta } from "../../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Company Formation & Corporate Structuring | Octus",
   description:
     "Company incorporation, offshore structuring and corporate design for regulated operations. Entity setup that satisfies regulators, banks and payment processors.",
-};
+  path: "/solutions/corporate/company-formation",
+});
 
 export default function SolutionsCompanyFormationPage() {
   return (
     <main>
 
       {/* ─── HERO ─── */}
-      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
-        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <span className="label">Solutions · Corporate · Company Formation</span>
-          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
+      <section className="octus-dark-hero surface-dark relative flex min-h-[70vh] flex-col justify-center overflow-hidden pt-28 pb-16 md:min-h-[80vh] md:pt-32 md:pb-24">
+        <DarkHeroAtmosphere />
+        <div className="relative z-10 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+          <span className="label">Services · Corporate · Company Formation</span>
+          <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline">
             The entity is not administrative.
             <br />
             <span style={{ color: "var(--white-40)" }}>
@@ -31,13 +35,14 @@ export default function SolutionsCompanyFormationPage() {
           <div style={{ marginTop: "32px", display: "flex", gap: "16px", flexWrap: "wrap" }}>
             <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
             <Link
-              href="/corporate"
+              href="/solutions/corporate-structuring"
               className="inline-flex h-12 items-center justify-center rounded-sm border border-white/20 bg-transparent px-10 text-base font-medium text-white/80 transition-colors hover:border-white/40 hover:text-white"
             >
               Full corporate services →
             </Link>
           </div>
         </div>
+        <div className="octus-dark-hero__seam" aria-hidden="true" />
       </section>
 
       {/* ─── THE REAL PROBLEM ─── */}
@@ -121,15 +126,15 @@ export default function SolutionsCompanyFormationPage() {
           <div className="grid gap-6 md:grid-cols-1">
             {[
               {
-                title: "iGaming group — multi-entity restructuring",
-                body: "3 operating entities across Curaçao and Malta with holding in BVI. Restructured ownership chain, governance framework and banking documentation. All entities operational within 90 days.",
+                title: "iGaming group: multi-entity restructuring",
+                body: "3 operating entities across Curaçao and Malta with holding in BVI. Restructured ownership chain, governance framework and banking documentation so the group could operate under a coherent corporate and banking readiness design.",
               },
               {
-                title: "Fintech — Brazil + offshore dual structure",
+                title: "Fintech. Brazil + offshore dual structure",
                 body: "Brazilian operational entity (LTDA) connected to offshore holding. Structured for BACEN requirements and international banking simultaneously.",
               },
               {
-                title: "Crypto exchange — entity migration",
+                title: "Crypto exchange: entity migration",
                 body: "Migrated corporate structure from incompatible jurisdiction to one aligned with VASP registration requirements. Banking restored after restructuring.",
               },
             ].map((m, i) => (
@@ -166,7 +171,7 @@ export default function SolutionsCompanyFormationPage() {
           <p className="label">Related</p>
           <div className="grid-3">
             {[
-              { title: "Corporate Structuring", desc: "Full corporate services overview.", href: "/corporate" },
+              { title: "Corporate Structuring", desc: "Full corporate services overview.", href: "/solutions/corporate-structuring" },
               { title: "Curaçao Licensing", desc: "Entity design for Curaçao operations.", href: "/jurisdictions/curacao" },
               { title: "Malta Licensing", desc: "Corporate substance for MGA requirements.", href: "/jurisdictions/malta" },
             ].map((r) => (
@@ -190,9 +195,9 @@ export default function SolutionsCompanyFormationPage() {
           <h2 className="heading-lg cta-block__title">
             Build the structure. Not just the entity.
           </h2>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">Continue this discussion →</a>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
-            We respond within 24 hours.
+            Reach us on WhatsApp. We assess operational fit before recommending a path.
           </p>
         </div>
       </section>

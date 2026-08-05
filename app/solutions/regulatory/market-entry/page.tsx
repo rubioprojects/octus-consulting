@@ -1,19 +1,23 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
+import DarkHeroAtmosphere from "../../../../components/system/DarkHeroAtmosphere";
+import { pageSocialMeta } from "../../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Market Entry",
   description:
     "Market entry is not a business decision. It is a structural project. Octus coordinates jurisdiction, corporate, licensing and banking for regulated market entry.",
-};
+  path: "/solutions/regulatory/market-entry",
+});
 
 export default function MarketEntryPage() {
   return (
     <main>
-      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
-        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <span className="label">Solutions · Regulatory · Market Entry</span>
-          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
+      <section className="octus-dark-hero surface-dark relative flex min-h-[70vh] flex-col justify-center overflow-hidden pt-28 pb-16 md:min-h-[80vh] md:pt-32 md:pb-24">
+        <DarkHeroAtmosphere />
+        <div className="relative z-10 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+          <span className="label">Services · Regulatory · Market Entry</span>
+          <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline">
             Market entry is not a business decision.
             <br />
             <span style={{ color: "var(--white-40)" }}>It is a structural project.</span>
@@ -30,6 +34,7 @@ export default function MarketEntryPage() {
             <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           </div>
         </div>
+        <div className="octus-dark-hero__seam" aria-hidden="true" />
       </section>
 
       <section className="bg-background py-24 md:py-32">
@@ -64,7 +69,7 @@ export default function MarketEntryPage() {
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
             {[
-              ["Jurisdiction assessment", "Regulatory fit, banking access, cost structure, substance requirements. Not preference — operational logic."],
+              ["Jurisdiction assessment", "Regulatory fit, banking access, cost structure, substance requirements. Not preference: operational logic."],
               ["Corporate design", "Entity formation aligned to licensing and banking requirements. Governance, directors, substance."],
               ["Licensing coordination", "Application strategy, regulatory pathway, documentation, regulator interaction."],
               ["Compliance build", "AML/CFT, KYC, internal controls designed for the target jurisdiction from day one. Not retrofitted."],
@@ -134,7 +139,7 @@ export default function MarketEntryPage() {
               "Expecting to launch without building compliance.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                <span className="mt-0.5 shrink-0 text-muted-foreground" aria-hidden="true">•</span>
                 <p className="body-text text-muted-foreground">{item}</p>
               </div>
             ))}
@@ -149,7 +154,7 @@ export default function MarketEntryPage() {
             {[
               { title: "Fintech Licensing", desc: "EMI/PI authorisation", href: "/solutions/regulatory/fintech-licensing" },
               { title: "iGaming Licensing", desc: "Gaming market entry", href: "/solutions/regulatory/igaming-licensing" },
-              { title: "Banking & Payments", desc: "Access as entry constraint", href: "/solutions/regulatory/banking-payments" },
+              { title: "Banking & Payments", desc: "Access as entry constraint", href: "/solutions/banking-payments-infrastructure" },
               { title: "Company Formation", desc: "Jurisdiction-aligned entities", href: "/solutions/corporate/company-formation" },
               { title: "Jurisdictions", desc: "Where we structure operations", href: "/jurisdictions" },
             ].map((item) => (
@@ -172,7 +177,7 @@ export default function MarketEntryPage() {
           <h2 className="heading-lg cta-block__title">
             Design the entry around the regulation. Not around the product.
           </h2>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">Continue this discussion →</a>
         </div>
       </section>
     </main>

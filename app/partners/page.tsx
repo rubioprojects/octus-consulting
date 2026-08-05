@@ -8,12 +8,14 @@ import { PARTNER_CLASSES } from "../../lib/commercial";
 import PageHero from "../../components/system/PageHero";
 import { CtaLink } from "../../components/system/CtaButton";
 import Link from "next/link";
+import { pageSocialMeta } from "../../lib/pageMeta";
 
-export const metadata = {
-  title: "International Partners",
+export const metadata = pageSocialMeta({
+  title: "Partners",
   description:
-    "Collaborate with Octus as lead contractor for regulated operations — CSPs, counsel, advisors and specialists.",
-};
+    "Collaborate with Octus as lead contractor for regulated operations, compliance programmes and multi-jurisdiction mandates.",
+  path: "/partners",
+});
 
 export default function PartnersPage() {
   return (
@@ -22,7 +24,7 @@ export default function PartnersPage() {
         eyebrow="Partners"
         title="Collaboration infrastructure."
         titleSecondLine="Not competition. Not a staff directory."
-        description="Octus works with counsel, CSPs, advisors and specialists as an execution partner for highly regulated operations — with clear accountability when we lead."
+        description="Octus works with counsel, CSPs, advisors and specialists as an execution partner for highly regulated operations, with clear accountability when we lead."
         primaryCta={{
           href: WHATSAPP_PARTNERSHIP_URL,
           label: CTA_PARTNERSHIP_LABEL,
@@ -71,7 +73,7 @@ export default function PartnersPage() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {CTA_PARTNERSHIP_LABEL}
+            Continue partnership discussion →
           </CtaLink>
           <p className="mt-6">
             <Link href="/how-we-engage" className="font-sans text-sm text-primary no-underline hover:text-primary/80">

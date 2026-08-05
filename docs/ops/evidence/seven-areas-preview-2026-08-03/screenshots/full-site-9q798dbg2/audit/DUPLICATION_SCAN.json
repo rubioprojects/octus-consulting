@@ -1,0 +1,9 @@
+{
+  "http_status": 200,
+  "doubleArrow": 0,
+  "assessDup": 0,
+  "assessOk": 3,
+  "minHDup": 0,
+  "discussMinHCount": 1,
+  "discussClassSample": "inline-flex items-center rounded-sm bg-primary px-4 py-2 font-sans text-[12px] font-medium tracking-[0.03em] text-primary-foreground no-underline transition-colors hover:bg-primary/90 focus-visible:ou"
+}

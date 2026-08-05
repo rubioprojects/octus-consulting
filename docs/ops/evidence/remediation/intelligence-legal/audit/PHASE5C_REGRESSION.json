@@ -1,0 +1,178 @@
+{
+  "generated_at": "2026-08-04T03:36:08.038Z",
+  "regression": {
+    "homepage": {
+      "seven_area_signals": "PASS",
+      "banking_not_peer": "PASS",
+      "peer_modules": [
+        "01Regulatory Structuring",
+        "02Compliance & Risk",
+        "03Legal & Structural Architecture",
+        "04Corporate Structuring",
+        "05Private Clients",
+        "06Remediation & Readiness",
+        "07International Hub"
+      ],
+      "distinct_diagnostic_labels": "PASS",
+      "diagnostic_labels": [
+        "Request a diagnostic →",
+        "Assess your situation →",
+        "Start remediation assessment →"
+      ],
+      "whatsapp": "PASS",
+      "home_punctuation_exactly_one": "PASS",
+      "home_residual_count": 1
+    },
+    "team": {
+      "team_exact_10": "PASS",
+      "band_labels": [
+        "Leadership",
+        "Core Specialists"
+      ]
+    },
+    "services": {
+      "solutions_200": "PASS",
+      "routes": [
+        {
+          "route": "/solutions",
+          "status": 200,
+          "location": "",
+          "xRobots": "noindex"
+        }
+      ]
+    },
+    "phase5a": {
+      "routes_200": "PASS",
+      "routes": [
+        {
+          "route": "/about",
+          "status": 200,
+          "location": "",
+          "xRobots": "noindex"
+        },
+        {
+          "route": "/contact",
+          "status": 200,
+          "location": "",
+          "xRobots": "noindex"
+        },
+        {
+          "route": "/how-we-engage",
+          "status": 200,
+          "location": "",
+          "xRobots": "noindex"
+        },
+        {
+          "route": "/diagnostic",
+          "status": 200,
+          "location": "",
+          "xRobots": "noindex"
+        },
+        {
+          "route": "/partners",
+          "status": 200,
+          "location": "",
+          "xRobots": "noindex"
+        },
+        {
+          "route": "/careers",
+          "status": 200,
+          "location": "",
+          "xRobots": "noindex"
+        }
+      ]
+    },
+    "phase5b": {
+      "routes_200": "PASS",
+      "routes": [
+        {
+          "route": "/markets",
+          "status": 200,
+          "location": "",
+          "xRobots": "noindex"
+        },
+        {
+          "route": "/markets/fintech",
+          "status": 200,
+          "location": "",
+          "xRobots": "noindex"
+        },
+        {
+          "route": "/markets/igaming",
+          "status": 200,
+          "location": "",
+          "xRobots": "noindex"
+        },
+        {
+          "route": "/markets/crypto",
+          "status": 200,
+          "location": "",
+          "xRobots": "noindex"
+        },
+        {
+          "route": "/markets/high-risk",
+          "status": 200,
+          "location": "",
+          "xRobots": "noindex"
+        },
+        {
+          "route": "/jurisdictions",
+          "status": 200,
+          "location": "",
+          "xRobots": "noindex"
+        },
+        {
+          "route": "/jurisdictions/malta",
+          "status": 200,
+          "location": "",
+          "xRobots": "noindex"
+        },
+        {
+          "route": "/jurisdictions/isle-of-man",
+          "status": 200,
+          "location": "",
+          "xRobots": "noindex"
+        },
+        {
+          "route": "/jurisdictions/curacao",
+          "status": 200,
+          "location": "",
+          "xRobots": "noindex"
+        },
+        {
+          "route": "/jurisdictions/anjouan",
+          "status": 200,
+          "location": "",
+          "xRobots": "noindex"
+        },
+        {
+          "route": "/jurisdictions/portugal",
+          "status": 200,
+          "location": "",
+          "xRobots": "noindex"
+        },
+        {
+          "route": "/jurisdictions/uae",
+          "status": 200,
+          "location": "",
+          "xRobots": "noindex"
+        },
+        {
+          "route": "/brazil",
+          "status": 200,
+          "location": "",
+          "xRobots": "noindex"
+        }
+      ]
+    },
+    "global": {
+      "header_present": "PASS",
+      "footer_present": "PASS",
+      "cookie_surface_present": "PASS",
+      "whatsapp_float_or_cta": "PASS",
+      "preview_noindex_header": "PASS",
+      "preview_x_robots_tag": "noindex"
+    }
+  },
+  "status": "PASS"
+}

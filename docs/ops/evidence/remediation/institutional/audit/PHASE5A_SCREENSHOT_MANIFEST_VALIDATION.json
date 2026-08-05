@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-08-04T01:35:45.091Z",
+  "top_level_binding": {
+    "generated_at": "2026-08-04T01:20:40.929Z",
+    "current_application_commit": "9e97c13e90ecc4165e969ee04181e8d2a3a9110c",
+    "current_deployment_id": "dpl_C8Zt5mFCF6BaK165cKMt6ELBknKj",
+    "current_preview_url": "https://octus-consulting-nx5t8xtoo-axle1.vercel.app",
+    "screenshot_count": 144
+  },
+  "counts": {
+    "baseline": 48,
+    "before": 48,
+    "reconciled": 48
+  },
+  "careers_screenshots_recaptured": 8,
+  "reconciled_screenshots_recaptured": 48,
+  "hashes_changed": 6,
+  "hashes_unchanged": 42,
+  "top_level_checks": [
+    {
+      "k": "current_application_commit",
+      "ok": true
+    },
+    {
+      "k": "current_deployment_id",
+      "ok": true
+    },
+    {
+      "k": "current_preview_url",
+      "ok": true
+    },
+    {
+      "k": "screenshot_count",
+      "ok": true
+    },
+    {
+      "k": "counts",
+      "ok": true
+    }
+  ],
+  "provenance_conflicts": 0,
+  "conflicts": [],
+  "missing_metadata": 0,
+  "missing": [],
+  "status": "PASS"
+}

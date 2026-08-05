@@ -1,0 +1,25 @@
+{
+  "phase": "human-rescreen-polish",
+  "application_sha": "d78272e4d9e2b6fbd2dab8836f323888ca39e6c2",
+  "deployment_id": "dpl_A6hCiAjUqmARxLfeChMXWCpg4Q2m",
+  "preview": "https://octus-consulting-qzpw83axo-axle1.vercel.app",
+  "preview_noindex": "PASS",
+  "intelligence_redirect": {
+    "status": 308,
+    "location": "/insights",
+    "pass": true
+  },
+  "new_routes": {
+    "technology": 200,
+    "forex": 200
+  },
+  "screenshot_count": 71,
+  "axe_critical": 0,
+  "axe_serious": 0,
+  "dash_em": 0,
+  "dash_en": 0,
+  "overflow_count": 0,
+  "prohibited_count": 0,
+  "article_count": 33,
+  "overall": "PASS"
+}

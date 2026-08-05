@@ -1,0 +1,32 @@
+[
+  {
+    "path": "desktop.wa",
+    "baseline": {
+      "h": 47.4,
+      "w": 204.9,
+      "bottom": "24px",
+      "right": "24px"
+    },
+    "current": {
+      "h": 48,
+      "w": 198.9,
+      "bottom": "92px",
+      "right": "20px"
+    }
+  },
+  {
+    "path": "mobileOpen",
+    "baseline": {
+      "cls": "home-hero__mesh",
+      "h": 979,
+      "w": 452.4,
+      "top": -67.5
+    },
+    "current": {
+      "cls": "home-hero__mesh",
+      "h": 979,
+      "w": 452.4,
+      "top": -67.2
+    }
+  }
+]

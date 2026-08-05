@@ -1,21 +1,25 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
+import DarkHeroAtmosphere from "../../../../components/system/DarkHeroAtmosphere";
+import { pageSocialMeta } from "../../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "iGaming Licensing",
   description:
-    "iGaming licensing strategy across jurisdictions. Octus structures the regulatory, corporate and compliance architecture that determines whether a licence gets approved — not just submitted.",
-};
+    "iGaming licensing strategy across jurisdictions. Octus structures the pathway before filings and banking pressure arrive.",
+  path: "/solutions/regulatory/igaming-licensing",
+});
 
 export default function SolutionsIGamingLicensingPage() {
   return (
     <main>
 
       {/* ─── HERO ─── */}
-      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
-        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <span className="label">Solutions · Regulatory · iGaming Licensing</span>
-          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
+      <section className="octus-dark-hero surface-dark relative flex min-h-[70vh] flex-col justify-center overflow-hidden pt-28 pb-16 md:min-h-[80vh] md:pt-32 md:pb-24">
+        <DarkHeroAtmosphere />
+        <div className="relative z-10 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+          <span className="label">Services · Regulatory · iGaming Licensing</span>
+          <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline">
             Licensing does not fail at submission.
             <br />
             <span style={{ color: "var(--white-40)" }}>
@@ -41,6 +45,7 @@ export default function SolutionsIGamingLicensingPage() {
             </Link>
           </div>
         </div>
+        <div className="octus-dark-hero__seam" aria-hidden="true" />
       </section>
 
       {/* ─── POV ─── */}
@@ -52,7 +57,7 @@ export default function SolutionsIGamingLicensingPage() {
           </p>
           <p className="body-lg">
             Choosing where to apply is easy. Designing how the operation will
-            function after approval — licensing, banking, compliance and scale —
+            function after approval across licensing, banking, compliance and scale
             is where most fail.
           </p>
         </div>
@@ -110,16 +115,16 @@ export default function SolutionsIGamingLicensingPage() {
           </h2>
           <p className="body-lg" style={{ marginBottom: "28px" }}>
             Jurisdiction is a strategic decision, not a checklist item. Every
-            licensing strategy starts here — as a decision that determines
+            licensing strategy starts here: as a decision that determines
             approval probability, banking access, payment processing, market
             reach and long-term viability.
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: "14px", marginBottom: "28px" }}>
             {[
-              "Isle of Man — Tier-1 regulatory credential for institutional operators and B2B providers",
-              "Malta — EU-regulated framework for scalable operations targeting regulated markets",
-              "Curaçao — Structured offshore framework for growth-stage operators",
-              "Brazil — Local regulatory pathway requiring direct alignment with SPA expectations",
+              "Isle of Man. Tier-1 regulatory credential for institutional operators and B2B providers",
+              "Malta. EU-regulated framework for scalable operations targeting regulated markets",
+              "Curaçao. Structured offshore framework for growth-stage operators",
+              "Brazil. Local regulatory pathway requiring direct alignment with SPA expectations",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
@@ -133,8 +138,8 @@ export default function SolutionsIGamingLicensingPage() {
           </p>
           <p className="body-sm italic text-muted-foreground">
             Octus does not recommend jurisdictions based on speed or cost. The
-            choice is driven by what allows the operation to function — not
-            just to launch.
+            choice is driven by what allows the operation to function, not
+            merely to launch.
           </p>
         </div>
       </section>
@@ -152,11 +157,11 @@ export default function SolutionsIGamingLicensingPage() {
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginBottom: "24px" }}>
             {[
-              "Jurisdiction strategy — regulatory path, risk matrix, cost and timeline modelling.",
-              "Corporate and operational architecture — entities, governance, UBO alignment, jurisdictional requirements.",
-              "Compliance systems — AML/CFT, KYC, responsible gambling, internal controls. Built for ongoing supervision.",
-              "Regulatory coordination — application, documentation, regulator interaction.",
-              "Banking and payment readiness — from day one, not after approval.",
+              "Jurisdiction strategy: regulatory path, risk matrix, cost and timeline modelling.",
+              "Corporate and operational architecture: entities, governance, UBO alignment, jurisdictional requirements.",
+              "Compliance systems. AML/CFT, KYC, responsible gambling, internal controls. Built for ongoing supervision.",
+              "Regulatory coordination: application, documentation, regulator interaction.",
+              "Banking and payment readiness: from day one, not after approval.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
@@ -183,17 +188,17 @@ export default function SolutionsIGamingLicensingPage() {
               {
                 tag: "Curaçao · iGaming",
                 title: "Licence active. No banking.",
-                body: "Compliance documentation did not meet banking standards. Octus restructured AML policies and coordinated with multiple institutions. Operational account secured within 11 weeks.",
+                body: "Compliance documentation did not meet banking standards. Octus restructured AML policies and coordinated banking readiness workstreams so the operation could reopen a sustainable account path.",
               },
               {
                 tag: "Brazil · Betting",
                 title: "Cross-border operator entering a regulated market.",
-                body: "Corporate structure redesigned for SPA compliance. Regulatory dossier prepared and submission coordinated. Authorization process managed end-to-end.",
+                body: "Corporate structure redesigned for SPA compliance. Regulatory dossier prepared and submission coordinated across the licensing pathway.",
               },
               {
                 tag: "iGaming · Certification",
                 title: "GLI audit scheduled. No evidence readiness.",
-                body: "Full compliance gap analysis and evidence framework delivered. Client entered audit with complete documentation and zero critical findings.",
+                body: "Full compliance gap analysis and evidence framework delivered so the client could enter audit with a complete documentation set.",
               },
             ].map((m, i) => (
               <div
@@ -217,16 +222,13 @@ export default function SolutionsIGamingLicensingPage() {
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "24px", marginBottom: "28px" }}>
             <p className="body-text">
-              <strong className="font-semibold text-foreground">Full execution</strong>
-              {" "}— End-to-end licensing and structuring. From jurisdiction selection to operational readiness.
+              <strong className="font-semibold text-foreground">Full execution</strong>. End-to-end licensing and structuring. From jurisdiction selection to operational readiness.
             </p>
             <p className="body-text">
-              <strong className="font-semibold text-foreground">Strategic intervention</strong>
-              {" "}— Correction of existing structures, licensing processes or regulatory misalignment.
+              <strong className="font-semibold text-foreground">Strategic intervention</strong>. Correction of existing structures, licensing processes or regulatory misalignment.
             </p>
             <p className="body-text">
-              <strong className="font-semibold text-foreground">Advisory and mapping</strong>
-              {" "}— Strategic assessment and regulatory pathway definition before execution.
+              <strong className="font-semibold text-foreground">Advisory and mapping</strong>. Strategic assessment and regulatory pathway definition before execution.
             </p>
           </div>
           <p className="body-sm mb-6 text-muted-foreground">
@@ -239,7 +241,6 @@ export default function SolutionsIGamingLicensingPage() {
             approaches without structural backing. If your objective is speed
             over sustainability, we are not the right partner.
           </p>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
         </div>
       </section>
 
@@ -316,7 +317,7 @@ export default function SolutionsIGamingLicensingPage() {
             Get the structure right{" "}
             <span style={{ color: "var(--blue-light)" }}>before the regulator sees it.</span>
           </h2>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">Continue this discussion →</a>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
             Diagnostic call. We assess model, jurisdiction fit and structural readiness before recommending a path.
           </p>

@@ -1,0 +1,168 @@
+{
+  "baseline": {
+    "routes": {
+      "/privacy": {
+        "overDark": "false",
+        "headerBg": "rgb(250, 250, 249)",
+        "logo": {
+          "h": 36,
+          "w": 171.4,
+          "src": "/brand/lockup/octus-lockup-nav-on-light.svg"
+        },
+        "footerLogo": {
+          "h": 48,
+          "w": 182.6,
+          "src": "/brand/lockup/octus-lockup-horizontal-primary-on-dark.svg"
+        },
+        "footerPadT": "80px",
+        "brandRule": true,
+        "brandRuleColor": "rgba(0, 0, 0, 0)"
+      },
+      "/contact": {
+        "overDark": "false",
+        "headerBg": "rgb(250, 250, 249)",
+        "logo": {
+          "h": 36,
+          "w": 171.4,
+          "src": "/brand/lockup/octus-lockup-nav-on-light.svg"
+        },
+        "footerLogo": {
+          "h": 48,
+          "w": 182.6,
+          "src": "/brand/lockup/octus-lockup-horizontal-primary-on-dark.svg"
+        },
+        "footerPadT": "80px",
+        "brandRule": true,
+        "brandRuleColor": "rgba(0, 0, 0, 0)"
+      },
+      "/brazil": {
+        "overDark": "false",
+        "headerBg": "rgb(250, 250, 249)",
+        "logo": {
+          "h": 36,
+          "w": 171.4,
+          "src": "/brand/lockup/octus-lockup-nav-on-light.svg"
+        },
+        "footerLogo": {
+          "h": 48,
+          "w": 182.6,
+          "src": "/brand/lockup/octus-lockup-horizontal-primary-on-dark.svg"
+        },
+        "footerPadT": "80px",
+        "brandRule": true,
+        "brandRuleColor": "rgba(0, 0, 0, 0)"
+      },
+      "/solutions": {
+        "overDark": "true",
+        "headerBg": "rgb(11, 18, 32)",
+        "logo": {
+          "h": 36,
+          "w": 171.4,
+          "src": "/brand/lockup/octus-lockup-nav-on-dark.svg"
+        },
+        "footerLogo": {
+          "h": 48,
+          "w": 182.6,
+          "src": "/brand/lockup/octus-lockup-horizontal-primary-on-dark.svg"
+        },
+        "footerPadT": "80px",
+        "brandRule": true,
+        "brandRuleColor": "rgba(0, 0, 0, 0)"
+      }
+    },
+    "beforeAccept": {
+      "bodyClass": "",
+      "waBottom": "24px",
+      "cookieVisible": true
+    },
+    "afterAccept": {
+      "bodyClass": "",
+      "waBottom": "24px",
+      "cookieVisible": false,
+      "overlap": true
+    }
+  },
+  "current": {
+    "routes": {
+      "/privacy": {
+        "overDark": "false",
+        "headerBg": "rgb(250, 250, 249)",
+        "logo": {
+          "h": 36,
+          "w": 171.4,
+          "src": "/brand/lockup/octus-lockup-nav-on-light.svg"
+        },
+        "footerLogo": {
+          "h": 48,
+          "w": 182.6,
+          "src": "/brand/lockup/octus-lockup-horizontal-primary-on-dark.svg"
+        },
+        "footerPadT": "80px",
+        "brandRule": true,
+        "brandRuleColor": "rgba(0, 0, 0, 0)"
+      },
+      "/contact": {
+        "overDark": "true",
+        "headerBg": "rgb(11, 18, 32)",
+        "logo": {
+          "h": 36,
+          "w": 171.4,
+          "src": "/brand/lockup/octus-lockup-nav-on-dark.svg"
+        },
+        "footerLogo": {
+          "h": 48,
+          "w": 182.6,
+          "src": "/brand/lockup/octus-lockup-horizontal-primary-on-dark.svg"
+        },
+        "footerPadT": "80px",
+        "brandRule": true,
+        "brandRuleColor": "rgba(0, 0, 0, 0)"
+      },
+      "/brazil": {
+        "overDark": "true",
+        "headerBg": "rgb(11, 18, 32)",
+        "logo": {
+          "h": 36,
+          "w": 171.4,
+          "src": "/brand/lockup/octus-lockup-nav-on-dark.svg"
+        },
+        "footerLogo": {
+          "h": 48,
+          "w": 182.6,
+          "src": "/brand/lockup/octus-lockup-horizontal-primary-on-dark.svg"
+        },
+        "footerPadT": "80px",
+        "brandRule": true,
+        "brandRuleColor": "rgba(0, 0, 0, 0)"
+      },
+      "/solutions": {
+        "overDark": "true",
+        "headerBg": "rgb(11, 18, 32)",
+        "logo": {
+          "h": 36,
+          "w": 171.4,
+          "src": "/brand/lockup/octus-lockup-nav-on-dark.svg"
+        },
+        "footerLogo": {
+          "h": 48,
+          "w": 182.6,
+          "src": "/brand/lockup/octus-lockup-horizontal-primary-on-dark.svg"
+        },
+        "footerPadT": "80px",
+        "brandRule": true,
+        "brandRuleColor": "rgba(0, 0, 0, 0)"
+      }
+    },
+    "beforeAccept": {
+      "bodyClass": "cookie-banner-visible",
+      "waBottom": "92px",
+      "cookieVisible": true
+    },
+    "afterAccept": {
+      "bodyClass": "",
+      "waBottom": "20px",
+      "cookieVisible": false,
+      "overlap": true
+    }
+  }
+}

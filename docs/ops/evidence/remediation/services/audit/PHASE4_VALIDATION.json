@@ -1,0 +1,3292 @@
+{
+  "generated_at": "2026-08-03T22:15:31.891Z",
+  "phase": 4,
+  "closeout": true,
+  "starting_head": "d618067150d2720e7c85ce387c1a02ba3168ae21",
+  "phase4_impl_commit": "ee8f1d0f7d442482eee99cef927a3389892617b4",
+  "phase4_impl_snapshot": "8228e342cfc9d3830b4f4a414f2a93ae208e5be1",
+  "immutable_preview_url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+  "before_preview_url": "https://octus-consulting-6dof5kn4k-axle1.vercel.app",
+  "baseline_url": "https://octus-consulting-9q798dbg2-axle1.vercel.app",
+  "deployment_id": "dpl_4mRS5vF2QSS34aJkip3Zn56cUUa5",
+  "before_deployment_id": "dpl_Ewm6SFyGB5wkkDefAAMnBs27bMfZ",
+  "baseline_deployment_id": "dpl_437tawkoMDv7sqxW6NzPzTegj1Lq",
+  "mandatory_route_count": 20,
+  "template_representatives": [
+    "/solutions",
+    "/solutions/regulatory-structuring",
+    "/private-clients",
+    "/international-hub",
+    "/solutions/remediation-readiness",
+    "/solutions/banking-payments-infrastructure",
+    "/solutions/regulatory/igaming-licensing"
+  ],
+  "screenshot_count": 272,
+  "capture_failures": 0,
+  "metadata_missing_count": 5,
+  "metadata_missing_by_classification": {
+    "baseline": 5,
+    "before": 0,
+    "reconciled": 0
+  },
+  "checks": {
+    "mandatory_routes_http_200": "PASS",
+    "seven_area_integrity": "PASS",
+    "banking_not_peer": "PASS",
+    "duplicate_commercial_labels": "PASS",
+    "duplicate_arrows": "PASS",
+    "deep_wa_after_hero": "PASS",
+    "editorial_punctuation": "PASS",
+    "prohibited_phrases": "PASS",
+    "service_em_en_dash": "PASS",
+    "overflow_desktop_mobile": "PASS",
+    "a11y_routes": "PASS",
+    "a11y_h1_per_route": "PASS",
+    "metadata_complete": "PASS",
+    "internal_links": "PASS",
+    "alias_canonicals": "PASS",
+    "frozen_files": "PASS",
+    "home_residual": "PASS",
+    "team_regression": "PASS",
+    "institutional_smoke": "PASS",
+    "noindex": "PASS",
+    "catalogue_integrity": "PASS",
+    "execution_build_typecheck": "PASS",
+    "capture_manifest_metadata": "PASS"
+  },
+  "failed_checks": [],
+  "overall": "PASS",
+  "results": {
+    "crawlStatus": {
+      "/private-clients": 200,
+      "/solutions/regulatory-structuring": 200,
+      "/solutions": 200,
+      "/solutions/banking-payments-infrastructure": 200,
+      "/international-hub": 200,
+      "/solutions/remediation-readiness": 200,
+      "/solutions/regulatory/igaming-licensing": 200,
+      "/solutions/compliance-risk": 200,
+      "/solutions/corporate-structuring": 200,
+      "/solutions/legal-structural-architecture": 200,
+      "/solutions/regulatory/fintech-licensing": 200,
+      "/solutions/regulatory/market-entry": 200,
+      "/solutions/compliance/aml-kyc": 200,
+      "/solutions/compliance/dpo-as-a-service": 200,
+      "/solutions/compliance/gli-readiness": 200,
+      "/solutions/compliance/compliance-as-a-service": 200,
+      "/solutions/compliance/internal-controls": 200,
+      "/solutions/corporate/company-formation": 200,
+      "/solutions/corporate/holding-design": 200,
+      "/solutions/corporate/offshore-structuring": 200
+    },
+    "routeAudits": {
+      "/solutions/compliance-risk": {
+        "route": "/solutions/compliance-risk",
+        "links": [
+          {
+            "text": "Discuss this workstream →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "All services →",
+            "href": "/solutions",
+            "section": "hero"
+          },
+          {
+            "text": "AML / KYC / CDD frameworks →",
+            "href": "/solutions/compliance/aml-kyc",
+            "section": "How Compliance & Risk is organised."
+          },
+          {
+            "text": "Regulatory Structuring →Compliance evidence is part of the licensing pathway.",
+            "href": "/solutions/regulatory-structuring",
+            "section": "Controls must hold for each supervisor in the stack"
+          },
+          {
+            "text": "Corporate Structuring →Internal controls tie to group governance and ownership.",
+            "href": "/solutions/corporate-structuring",
+            "section": "Controls must hold for each supervisor in the stack"
+          },
+          {
+            "text": "Remediation & Readiness →When compliance gaps block banking or licensing.",
+            "href": "/solutions/remediation-readiness",
+            "section": "Controls must hold for each supervisor in the stack"
+          },
+          {
+            "text": "International Hub →Lab, certification and KYC specialist coordination.",
+            "href": "/international-hub",
+            "section": "Controls must hold for each supervisor in the stack"
+          },
+          {
+            "text": "iGaming",
+            "href": "/markets/igaming",
+            "section": "other"
+          },
+          {
+            "text": "Fintech",
+            "href": "/markets/fintech",
+            "section": "other"
+          },
+          {
+            "text": "Digital Assets",
+            "href": "/markets/crypto",
+            "section": "other"
+          },
+          {
+            "text": "Brazil",
+            "href": "/brazil",
+            "section": "other"
+          },
+          {
+            "text": "Malta",
+            "href": "/jurisdictions/malta",
+            "section": "other"
+          },
+          {
+            "text": "Portugal",
+            "href": "/jurisdictions/portugal",
+            "section": "other"
+          },
+          {
+            "text": "Meet the team →",
+            "href": "/team",
+            "section": "How this workstream is owned."
+          },
+          {
+            "text": "How we engage →",
+            "href": "/how-we-engage",
+            "section": "How this workstream is owned."
+          },
+          {
+            "text": "View all services",
+            "href": "/solutions",
+            "section": "final_cta"
+          }
+        ],
+        "commercialLinks": [
+          {
+            "text": "Discuss this workstream →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "All services →",
+            "href": "/solutions",
+            "section": "hero"
+          },
+          {
+            "text": "AML / KYC / CDD frameworks →",
+            "href": "/solutions/compliance/aml-kyc",
+            "section": "How Compliance & Risk is organised."
+          },
+          {
+            "text": "Regulatory Structuring →Compliance evidence is part of the licensing pathway.",
+            "href": "/solutions/regulatory-structuring",
+            "section": "Controls must hold for each supervisor in the stack"
+          },
+          {
+            "text": "Corporate Structuring →Internal controls tie to group governance and ownership.",
+            "href": "/solutions/corporate-structuring",
+            "section": "Controls must hold for each supervisor in the stack"
+          },
+          {
+            "text": "Remediation & Readiness →When compliance gaps block banking or licensing.",
+            "href": "/solutions/remediation-readiness",
+            "section": "Controls must hold for each supervisor in the stack"
+          },
+          {
+            "text": "International Hub →Lab, certification and KYC specialist coordination.",
+            "href": "/international-hub",
+            "section": "Controls must hold for each supervisor in the stack"
+          },
+          {
+            "text": "Meet the team →",
+            "href": "/team",
+            "section": "How this workstream is owned."
+          },
+          {
+            "text": "How we engage →",
+            "href": "/how-we-engage",
+            "section": "How this workstream is owned."
+          }
+        ],
+        "labelCounts": {
+          "Discuss this workstream →": 1,
+          "All services →": 1,
+          "AML / KYC / CDD frameworks →": 1,
+          "Regulatory Structuring →Compliance evidence is part of the licensing pathway.": 1,
+          "Corporate Structuring →Internal controls tie to group governance and ownership.": 1,
+          "Remediation & Readiness →When compliance gaps block banking or licensing.": 1,
+          "International Hub →Lab, certification and KYC specialist coordination.": 1,
+          "Meet the team →": 1,
+          "How we engage →": 1
+        },
+        "arrowDupes": [],
+        "prohibitedFound": [],
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "overflow": false,
+        "punctuationIssues": [],
+        "homeResidualCount": 0,
+        "h1Count": 1,
+        "waCount": 0,
+        "waAfterHeroCount": 0,
+        "sevenGridCardCount": 0,
+        "sevenGridLabels": [],
+        "bankingInSevenGrid": false,
+        "lang": "en",
+        "title": "Compliance & Risk | Octus Consulting",
+        "metaDescription": "AML, KYC, DPO and controls that hold under real scrutiny.",
+        "canonical": "https://octusconsulting.com/solutions/compliance-risk",
+        "ogTitle": "Compliance & Risk",
+        "ogDescription": "AML, KYC, DPO and controls that hold under real scrutiny.",
+        "isDeep": false
+      },
+      "/solutions/regulatory-structuring": {
+        "route": "/solutions/regulatory-structuring",
+        "links": [
+          {
+            "text": "Discuss this workstream →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "All services →",
+            "href": "/solutions",
+            "section": "hero"
+          },
+          {
+            "text": "Licensing strategy and pathway design · Jurisdiction selection and risk mapping →",
+            "href": "/solutions/regulatory/market-entry",
+            "section": "How Regulatory Structuring is organised."
+          },
+          {
+            "text": "Corporate Structuring →Entity design must match what regulators expect before approval.",
+            "href": "/solutions/corporate-structuring",
+            "section": "Licensing pathways differ by venue"
+          },
+          {
+            "text": "Compliance & Risk →AML and controls are evaluated alongside the licence application.",
+            "href": "/solutions/compliance-risk",
+            "section": "Licensing pathways differ by venue"
+          },
+          {
+            "text": "International Hub →Market entry requires coordinated specialist and provider introductions.",
+            "href": "/international-hub",
+            "section": "Licensing pathways differ by venue"
+          },
+          {
+            "text": "Brazil →Brazil SPA/MF workstreams need dedicated national coordination.",
+            "href": "/brazil",
+            "section": "Licensing pathways differ by venue"
+          },
+          {
+            "text": "iGaming",
+            "href": "/markets/igaming",
+            "section": "other"
+          },
+          {
+            "text": "Fintech",
+            "href": "/markets/fintech",
+            "section": "other"
+          },
+          {
+            "text": "Digital Assets",
+            "href": "/markets/crypto",
+            "section": "other"
+          },
+          {
+            "text": "Brazil",
+            "href": "/brazil",
+            "section": "other"
+          },
+          {
+            "text": "Malta",
+            "href": "/jurisdictions/malta",
+            "section": "other"
+          },
+          {
+            "text": "Curaçao",
+            "href": "/jurisdictions/curacao",
+            "section": "other"
+          },
+          {
+            "text": "Isle of Man",
+            "href": "/jurisdictions/isle-of-man",
+            "section": "other"
+          },
+          {
+            "text": "Portugal",
+            "href": "/jurisdictions/portugal",
+            "section": "other"
+          },
+          {
+            "text": "Meet the team →",
+            "href": "/team",
+            "section": "How this workstream is owned."
+          },
+          {
+            "text": "How we engage →",
+            "href": "/how-we-engage",
+            "section": "How this workstream is owned."
+          },
+          {
+            "text": "View all services",
+            "href": "/solutions",
+            "section": "final_cta"
+          }
+        ],
+        "commercialLinks": [
+          {
+            "text": "Discuss this workstream →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "All services →",
+            "href": "/solutions",
+            "section": "hero"
+          },
+          {
+            "text": "Licensing strategy and pathway design · Jurisdiction selection and risk mapping →",
+            "href": "/solutions/regulatory/market-entry",
+            "section": "How Regulatory Structuring is organised."
+          },
+          {
+            "text": "Corporate Structuring →Entity design must match what regulators expect before approval.",
+            "href": "/solutions/corporate-structuring",
+            "section": "Licensing pathways differ by venue"
+          },
+          {
+            "text": "Compliance & Risk →AML and controls are evaluated alongside the licence application.",
+            "href": "/solutions/compliance-risk",
+            "section": "Licensing pathways differ by venue"
+          },
+          {
+            "text": "International Hub →Market entry requires coordinated specialist and provider introductions.",
+            "href": "/international-hub",
+            "section": "Licensing pathways differ by venue"
+          },
+          {
+            "text": "Brazil →Brazil SPA/MF workstreams need dedicated national coordination.",
+            "href": "/brazil",
+            "section": "Licensing pathways differ by venue"
+          },
+          {
+            "text": "Meet the team →",
+            "href": "/team",
+            "section": "How this workstream is owned."
+          },
+          {
+            "text": "How we engage →",
+            "href": "/how-we-engage",
+            "section": "How this workstream is owned."
+          }
+        ],
+        "labelCounts": {
+          "Discuss this workstream →": 1,
+          "All services →": 1,
+          "Licensing strategy and pathway design · Jurisdiction selection and risk mapping →": 1,
+          "Corporate Structuring →Entity design must match what regulators expect before approval.": 1,
+          "Compliance & Risk →AML and controls are evaluated alongside the licence application.": 1,
+          "International Hub →Market entry requires coordinated specialist and provider introductions.": 1,
+          "Brazil →Brazil SPA/MF workstreams need dedicated national coordination.": 1,
+          "Meet the team →": 1,
+          "How we engage →": 1
+        },
+        "arrowDupes": [],
+        "prohibitedFound": [],
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "overflow": false,
+        "punctuationIssues": [],
+        "homeResidualCount": 0,
+        "h1Count": 1,
+        "waCount": 0,
+        "waAfterHeroCount": 0,
+        "sevenGridCardCount": 0,
+        "sevenGridLabels": [],
+        "bankingInSevenGrid": false,
+        "lang": "en",
+        "title": "Regulatory Structuring | Octus Consulting",
+        "metaDescription": "Jurisdiction fit and licensing pathways for regulated operations.",
+        "canonical": "https://octusconsulting.com/solutions/regulatory-structuring",
+        "ogTitle": "Regulatory Structuring",
+        "ogDescription": "Jurisdiction fit and licensing pathways for regulated operations.",
+        "isDeep": false
+      },
+      "/solutions": {
+        "route": "/solutions",
+        "links": [
+          {
+            "text": "Discuss your operation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "How we engage →",
+            "href": "/how-we-engage",
+            "section": "hero"
+          },
+          {
+            "text": "Regulatory Structuring",
+            "href": "/solutions/regulatory-structuring",
+            "section": "Seven areas. One accountable layer."
+          },
+          {
+            "text": "Open Regulatory Structuring →",
+            "href": "/solutions/regulatory-structuring",
+            "section": "Seven areas. One accountable layer."
+          },
+          {
+            "text": "Compliance & Risk",
+            "href": "/solutions/compliance-risk",
+            "section": "Seven areas. One accountable layer."
+          },
+          {
+            "text": "Open Compliance & Risk →",
+            "href": "/solutions/compliance-risk",
+            "section": "Seven areas. One accountable layer."
+          },
+          {
+            "text": "Legal & Structural Architecture",
+            "href": "/solutions/legal-structural-architecture",
+            "section": "Seven areas. One accountable layer."
+          },
+          {
+            "text": "Open Legal & Structural Architecture →",
+            "href": "/solutions/legal-structural-architecture",
+            "section": "Seven areas. One accountable layer."
+          },
+          {
+            "text": "Corporate Structuring",
+            "href": "/solutions/corporate-structuring",
+            "section": "Seven areas. One accountable layer."
+          },
+          {
+            "text": "Open Corporate Structuring →",
+            "href": "/solutions/corporate-structuring",
+            "section": "Seven areas. One accountable layer."
+          },
+          {
+            "text": "Private Clients",
+            "href": "/private-clients",
+            "section": "Seven areas. One accountable layer."
+          },
+          {
+            "text": "Open Private Clients →",
+            "href": "/private-clients",
+            "section": "Seven areas. One accountable layer."
+          },
+          {
+            "text": "Remediation & Readiness",
+            "href": "/solutions/remediation-readiness",
+            "section": "Seven areas. One accountable layer."
+          },
+          {
+            "text": "Open Remediation & Readiness →",
+            "href": "/solutions/remediation-readiness",
+            "section": "Seven areas. One accountable layer."
+          },
+          {
+            "text": "International Hub",
+            "href": "/international-hub",
+            "section": "Seven areas. One accountable layer."
+          },
+          {
+            "text": "Open International Hub →",
+            "href": "/international-hub",
+            "section": "Seven areas. One accountable layer."
+          },
+          {
+            "text": "Open Banking & Payments guidance →",
+            "href": "/solutions/banking-payments-infrastructure",
+            "section": "Cross-cutting support. Not an eighth area."
+          },
+          {
+            "text": "Brazil",
+            "href": "/brazil",
+            "section": "Execution across jurisdictions."
+          },
+          {
+            "text": "All jurisdictions",
+            "href": "/jurisdictions",
+            "section": "Execution across jurisdictions."
+          },
+          {
+            "text": "International Hub",
+            "href": "/international-hub",
+            "section": "Execution across jurisdictions."
+          },
+          {
+            "text": "iGaming",
+            "href": "/markets/igaming",
+            "section": "other"
+          },
+          {
+            "text": "Fintech",
+            "href": "/markets/fintech",
+            "section": "other"
+          },
+          {
+            "text": "Digital Assets",
+            "href": "/markets/crypto",
+            "section": "other"
+          },
+          {
+            "text": "High-Risk Operations",
+            "href": "/markets/high-risk",
+            "section": "other"
+          },
+          {
+            "text": "How we engage →",
+            "href": "/how-we-engage",
+            "section": "How Octus engages."
+          },
+          {
+            "text": "Discuss your operation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "final_cta"
+          },
+          {
+            "text": "Contact Octus",
+            "href": "/contact",
+            "section": "final_cta"
+          }
+        ],
+        "commercialLinks": [
+          {
+            "text": "Discuss your operation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "How we engage →",
+            "href": "/how-we-engage",
+            "section": "hero"
+          },
+          {
+            "text": "Open Regulatory Structuring →",
+            "href": "/solutions/regulatory-structuring",
+            "section": "Seven areas. One accountable layer."
+          },
+          {
+            "text": "Open Compliance & Risk →",
+            "href": "/solutions/compliance-risk",
+            "section": "Seven areas. One accountable layer."
+          },
+          {
+            "text": "Open Legal & Structural Architecture →",
+            "href": "/solutions/legal-structural-architecture",
+            "section": "Seven areas. One accountable layer."
+          },
+          {
+            "text": "Open Corporate Structuring →",
+            "href": "/solutions/corporate-structuring",
+            "section": "Seven areas. One accountable layer."
+          },
+          {
+            "text": "Open Private Clients →",
+            "href": "/private-clients",
+            "section": "Seven areas. One accountable layer."
+          },
+          {
+            "text": "Open Remediation & Readiness →",
+            "href": "/solutions/remediation-readiness",
+            "section": "Seven areas. One accountable layer."
+          },
+          {
+            "text": "Open International Hub →",
+            "href": "/international-hub",
+            "section": "Seven areas. One accountable layer."
+          },
+          {
+            "text": "Open Banking & Payments guidance →",
+            "href": "/solutions/banking-payments-infrastructure",
+            "section": "Cross-cutting support. Not an eighth area."
+          },
+          {
+            "text": "How we engage →",
+            "href": "/how-we-engage",
+            "section": "How Octus engages."
+          },
+          {
+            "text": "Discuss your operation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "final_cta"
+          },
+          {
+            "text": "Contact Octus",
+            "href": "/contact",
+            "section": "final_cta"
+          }
+        ],
+        "labelCounts": {
+          "Discuss your operation →": 2,
+          "How we engage →": 2,
+          "Open Regulatory Structuring →": 1,
+          "Open Compliance & Risk →": 1,
+          "Open Legal & Structural Architecture →": 1,
+          "Open Corporate Structuring →": 1,
+          "Open Private Clients →": 1,
+          "Open Remediation & Readiness →": 1,
+          "Open International Hub →": 1,
+          "Open Banking & Payments guidance →": 1,
+          "Contact Octus": 1
+        },
+        "arrowDupes": [],
+        "prohibitedFound": [],
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "overflow": false,
+        "punctuationIssues": [],
+        "homeResidualCount": 0,
+        "h1Count": 1,
+        "waCount": 2,
+        "waAfterHeroCount": 1,
+        "sevenGridCardCount": 7,
+        "sevenGridLabels": [
+          "Regulatory Structuring",
+          "Compliance & Risk",
+          "Legal & Structural Architecture",
+          "Corporate Structuring",
+          "Private Clients",
+          "Remediation & Readiness",
+          "International Hub"
+        ],
+        "bankingInSevenGrid": false,
+        "lang": "en",
+        "title": "Services. Execution for regulated operations | Octus Consulting",
+        "metaDescription": "Seven coordinated service areas for regulated operations: Regulatory Structuring, Compliance & Risk, Legal & Structural Architecture, Corporate Structuring, Private Clients, Remediation & Readiness, and International Hub.",
+        "canonical": "https://octusconsulting.com/solutions",
+        "ogTitle": "Services. Execution for regulated operations",
+        "ogDescription": "Seven coordinated service areas for regulated operations: Regulatory Structuring, Compliance & Risk, Legal & Structural Architecture, Corporate Structuring, Private Clients, Remediation & Readiness, and International Hub.",
+        "isDeep": false
+      },
+      "/solutions/legal-structural-architecture": {
+        "route": "/solutions/legal-structural-architecture",
+        "links": [
+          {
+            "text": "Discuss this workstream →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "All services →",
+            "href": "/solutions",
+            "section": "hero"
+          },
+          {
+            "text": "Contractual architecture →",
+            "href": "/solutions/legal-structural-architecture",
+            "section": "How Legal & Structural Architecture is organised."
+          },
+          {
+            "text": "Corporate Structuring →Holdings and governance must match contractual layers.",
+            "href": "/solutions/corporate-structuring",
+            "section": "final_cta"
+          },
+          {
+            "text": "Regulatory Structuring →Licence conditions shape contractual obligations.",
+            "href": "/solutions/regulatory-structuring",
+            "section": "final_cta"
+          },
+          {
+            "text": "Private Clients →Personal and group legal layers intersect for UBOs and founders.",
+            "href": "/private-clients",
+            "section": "final_cta"
+          },
+          {
+            "text": "International Hub →Local counsel identification and coordination.",
+            "href": "/international-hub",
+            "section": "final_cta"
+          },
+          {
+            "text": "iGaming",
+            "href": "/markets/igaming",
+            "section": "other"
+          },
+          {
+            "text": "Fintech",
+            "href": "/markets/fintech",
+            "section": "other"
+          },
+          {
+            "text": "High-Risk Operations",
+            "href": "/markets/high-risk",
+            "section": "other"
+          },
+          {
+            "text": "Brazil",
+            "href": "/brazil",
+            "section": "other"
+          },
+          {
+            "text": "UAE",
+            "href": "/jurisdictions/uae",
+            "section": "other"
+          },
+          {
+            "text": "Portugal",
+            "href": "/jurisdictions/portugal",
+            "section": "other"
+          },
+          {
+            "text": "Meet the team →",
+            "href": "/team",
+            "section": "How this workstream is owned."
+          },
+          {
+            "text": "How we engage →",
+            "href": "/how-we-engage",
+            "section": "How this workstream is owned."
+          },
+          {
+            "text": "View all services",
+            "href": "/solutions",
+            "section": "final_cta"
+          }
+        ],
+        "commercialLinks": [
+          {
+            "text": "Discuss this workstream →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "All services →",
+            "href": "/solutions",
+            "section": "hero"
+          },
+          {
+            "text": "Contractual architecture →",
+            "href": "/solutions/legal-structural-architecture",
+            "section": "How Legal & Structural Architecture is organised."
+          },
+          {
+            "text": "Corporate Structuring →Holdings and governance must match contractual layers.",
+            "href": "/solutions/corporate-structuring",
+            "section": "final_cta"
+          },
+          {
+            "text": "Regulatory Structuring →Licence conditions shape contractual obligations.",
+            "href": "/solutions/regulatory-structuring",
+            "section": "final_cta"
+          },
+          {
+            "text": "Private Clients →Personal and group legal layers intersect for UBOs and founders.",
+            "href": "/private-clients",
+            "section": "final_cta"
+          },
+          {
+            "text": "International Hub →Local counsel identification and coordination.",
+            "href": "/international-hub",
+            "section": "final_cta"
+          },
+          {
+            "text": "Meet the team →",
+            "href": "/team",
+            "section": "How this workstream is owned."
+          },
+          {
+            "text": "How we engage →",
+            "href": "/how-we-engage",
+            "section": "How this workstream is owned."
+          }
+        ],
+        "labelCounts": {
+          "Discuss this workstream →": 1,
+          "All services →": 1,
+          "Contractual architecture →": 1,
+          "Corporate Structuring →Holdings and governance must match contractual layers.": 1,
+          "Regulatory Structuring →Licence conditions shape contractual obligations.": 1,
+          "Private Clients →Personal and group legal layers intersect for UBOs and founders.": 1,
+          "International Hub →Local counsel identification and coordination.": 1,
+          "Meet the team →": 1,
+          "How we engage →": 1
+        },
+        "arrowDupes": [],
+        "prohibitedFound": [],
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "overflow": false,
+        "punctuationIssues": [],
+        "homeResidualCount": 0,
+        "h1Count": 1,
+        "waCount": 0,
+        "waAfterHeroCount": 0,
+        "sevenGridCardCount": 0,
+        "sevenGridLabels": [],
+        "bankingInSevenGrid": false,
+        "lang": "en",
+        "title": "Legal & Structural Architecture | Octus Consulting",
+        "metaDescription": "Contractual and legal frameworks, coordinated with counsel.",
+        "canonical": "https://octusconsulting.com/solutions/legal-structural-architecture",
+        "ogTitle": "Legal & Structural Architecture",
+        "ogDescription": "Contractual and legal frameworks, coordinated with counsel.",
+        "isDeep": false
+      },
+      "/solutions/corporate-structuring": {
+        "route": "/solutions/corporate-structuring",
+        "links": [
+          {
+            "text": "Discuss this workstream →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "All services →",
+            "href": "/solutions",
+            "section": "hero"
+          },
+          {
+            "text": "Entity and holding architecture →",
+            "href": "/solutions/corporate/holding-design",
+            "section": "How Corporate Structuring is organised."
+          },
+          {
+            "text": "Regulatory Structuring →Entity design gates licensing approval.",
+            "href": "/solutions/regulatory-structuring",
+            "section": "Group structure must stay explainable in every venue"
+          },
+          {
+            "text": "Banking & Payments →Banking readiness is a structural constraint.",
+            "href": "/solutions/banking-payments-infrastructure",
+            "section": "Group structure must stay explainable in every venue"
+          },
+          {
+            "text": "Private Clients →UBO and personal holdings align with group architecture.",
+            "href": "/private-clients",
+            "section": "Group structure must stay explainable in every venue"
+          },
+          {
+            "text": "International Hub →Formation partners and CSP coordination.",
+            "href": "/international-hub",
+            "section": "Group structure must stay explainable in every venue"
+          },
+          {
+            "text": "iGaming",
+            "href": "/markets/igaming",
+            "section": "other"
+          },
+          {
+            "text": "Fintech",
+            "href": "/markets/fintech",
+            "section": "other"
+          },
+          {
+            "text": "High-Risk Operations",
+            "href": "/markets/high-risk",
+            "section": "other"
+          },
+          {
+            "text": "Brazil",
+            "href": "/brazil",
+            "section": "other"
+          },
+          {
+            "text": "Malta",
+            "href": "/jurisdictions/malta",
+            "section": "other"
+          },
+          {
+            "text": "Anjouan",
+            "href": "/jurisdictions/anjouan",
+            "section": "other"
+          },
+          {
+            "text": "Meet the team →",
+            "href": "/team",
+            "section": "How this workstream is owned."
+          },
+          {
+            "text": "How we engage →",
+            "href": "/how-we-engage",
+            "section": "How this workstream is owned."
+          },
+          {
+            "text": "View all services",
+            "href": "/solutions",
+            "section": "final_cta"
+          }
+        ],
+        "commercialLinks": [
+          {
+            "text": "Discuss this workstream →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "All services →",
+            "href": "/solutions",
+            "section": "hero"
+          },
+          {
+            "text": "Entity and holding architecture →",
+            "href": "/solutions/corporate/holding-design",
+            "section": "How Corporate Structuring is organised."
+          },
+          {
+            "text": "Regulatory Structuring →Entity design gates licensing approval.",
+            "href": "/solutions/regulatory-structuring",
+            "section": "Group structure must stay explainable in every venue"
+          },
+          {
+            "text": "Banking & Payments →Banking readiness is a structural constraint.",
+            "href": "/solutions/banking-payments-infrastructure",
+            "section": "Group structure must stay explainable in every venue"
+          },
+          {
+            "text": "Private Clients →UBO and personal holdings align with group architecture.",
+            "href": "/private-clients",
+            "section": "Group structure must stay explainable in every venue"
+          },
+          {
+            "text": "International Hub →Formation partners and CSP coordination.",
+            "href": "/international-hub",
+            "section": "Group structure must stay explainable in every venue"
+          },
+          {
+            "text": "Meet the team →",
+            "href": "/team",
+            "section": "How this workstream is owned."
+          },
+          {
+            "text": "How we engage →",
+            "href": "/how-we-engage",
+            "section": "How this workstream is owned."
+          }
+        ],
+        "labelCounts": {
+          "Discuss this workstream →": 1,
+          "All services →": 1,
+          "Entity and holding architecture →": 1,
+          "Regulatory Structuring →Entity design gates licensing approval.": 1,
+          "Banking & Payments →Banking readiness is a structural constraint.": 1,
+          "Private Clients →UBO and personal holdings align with group architecture.": 1,
+          "International Hub →Formation partners and CSP coordination.": 1,
+          "Meet the team →": 1,
+          "How we engage →": 1
+        },
+        "arrowDupes": [],
+        "prohibitedFound": [],
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "overflow": false,
+        "punctuationIssues": [],
+        "homeResidualCount": 0,
+        "h1Count": 1,
+        "waCount": 0,
+        "waAfterHeroCount": 0,
+        "sevenGridCardCount": 0,
+        "sevenGridLabels": [],
+        "bankingInSevenGrid": false,
+        "lang": "en",
+        "title": "Corporate Structuring | Octus Consulting",
+        "metaDescription": "Companies, holdings and group design for onshore, offshore and cross-border regulated operations.",
+        "canonical": "https://octusconsulting.com/solutions/corporate-structuring",
+        "ogTitle": "Corporate Structuring",
+        "ogDescription": "Companies, holdings and group design for onshore, offshore and cross-border regulated operations.",
+        "isDeep": false
+      },
+      "/private-clients": {
+        "route": "/private-clients",
+        "links": [
+          {
+            "text": "Discuss this workstream →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "All services →",
+            "href": "/solutions",
+            "section": "hero"
+          },
+          {
+            "text": "Ownership and UBO architecture →",
+            "href": "/private-clients",
+            "section": "How Private Clients is organised."
+          },
+          {
+            "text": "Corporate Structuring →Personal and group ownership must align.",
+            "href": "/solutions/corporate-structuring",
+            "section": "Personal structure travels with the regulated operation"
+          },
+          {
+            "text": "Legal & Structural Architecture →Personal legal frameworks and counsel coordination.",
+            "href": "/solutions/legal-structural-architecture",
+            "section": "Personal structure travels with the regulated operation"
+          },
+          {
+            "text": "International Hub →Residency and personal international structuring support.",
+            "href": "/international-hub",
+            "section": "Personal structure travels with the regulated operation"
+          },
+          {
+            "text": "High-Risk Operations",
+            "href": "/markets/high-risk",
+            "section": "other"
+          },
+          {
+            "text": "iGaming",
+            "href": "/markets/igaming",
+            "section": "other"
+          },
+          {
+            "text": "Brazil",
+            "href": "/brazil",
+            "section": "other"
+          },
+          {
+            "text": "Portugal",
+            "href": "/jurisdictions/portugal",
+            "section": "other"
+          },
+          {
+            "text": "UAE",
+            "href": "/jurisdictions/uae",
+            "section": "other"
+          },
+          {
+            "text": "Meet the team →",
+            "href": "/team",
+            "section": "How this workstream is owned."
+          },
+          {
+            "text": "How we engage →",
+            "href": "/how-we-engage",
+            "section": "How this workstream is owned."
+          },
+          {
+            "text": "View all services",
+            "href": "/solutions",
+            "section": "final_cta"
+          }
+        ],
+        "commercialLinks": [
+          {
+            "text": "Discuss this workstream →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "All services →",
+            "href": "/solutions",
+            "section": "hero"
+          },
+          {
+            "text": "Ownership and UBO architecture →",
+            "href": "/private-clients",
+            "section": "How Private Clients is organised."
+          },
+          {
+            "text": "Corporate Structuring →Personal and group ownership must align.",
+            "href": "/solutions/corporate-structuring",
+            "section": "Personal structure travels with the regulated operation"
+          },
+          {
+            "text": "Legal & Structural Architecture →Personal legal frameworks and counsel coordination.",
+            "href": "/solutions/legal-structural-architecture",
+            "section": "Personal structure travels with the regulated operation"
+          },
+          {
+            "text": "International Hub →Residency and personal international structuring support.",
+            "href": "/international-hub",
+            "section": "Personal structure travels with the regulated operation"
+          },
+          {
+            "text": "Meet the team →",
+            "href": "/team",
+            "section": "How this workstream is owned."
+          },
+          {
+            "text": "How we engage →",
+            "href": "/how-we-engage",
+            "section": "How this workstream is owned."
+          }
+        ],
+        "labelCounts": {
+          "Discuss this workstream →": 1,
+          "All services →": 1,
+          "Ownership and UBO architecture →": 1,
+          "Corporate Structuring →Personal and group ownership must align.": 1,
+          "Legal & Structural Architecture →Personal legal frameworks and counsel coordination.": 1,
+          "International Hub →Residency and personal international structuring support.": 1,
+          "Meet the team →": 1,
+          "How we engage →": 1
+        },
+        "arrowDupes": [],
+        "prohibitedFound": [],
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "overflow": false,
+        "punctuationIssues": [],
+        "homeResidualCount": 0,
+        "h1Count": 1,
+        "waCount": 0,
+        "waAfterHeroCount": 0,
+        "sevenGridCardCount": 0,
+        "sevenGridLabels": [],
+        "bankingInSevenGrid": false,
+        "lang": "en",
+        "title": "Private Clients | Octus Consulting",
+        "metaDescription": "Personal and ownership structuring for founders, UBOs, executives and families tied to regulated operations.",
+        "canonical": "https://octusconsulting.com/private-clients",
+        "ogTitle": "Private Clients",
+        "ogDescription": "Personal and ownership structuring for founders, UBOs, executives and families tied to regulated operations.",
+        "isDeep": false
+      },
+      "/solutions/remediation-readiness": {
+        "route": "/solutions/remediation-readiness",
+        "links": [
+          {
+            "text": "Assess your situation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20assess%20my%20regulated%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "All services →",
+            "href": "/solutions",
+            "section": "hero"
+          },
+          {
+            "text": "Crisis entry and structural assessment →",
+            "href": "/diagnostic",
+            "section": "How remediation is organised."
+          },
+          {
+            "text": "Regulatory Structuring →Licensing delay remediation.",
+            "href": "/solutions/regulatory-structuring",
+            "section": "final_cta"
+          },
+          {
+            "text": "Compliance & Risk →Compliance gap and audit readiness fixes.",
+            "href": "/solutions/compliance-risk",
+            "section": "final_cta"
+          },
+          {
+            "text": "Banking & Payments →Financial infrastructure recovery.",
+            "href": "/solutions/banking-payments-infrastructure",
+            "section": "final_cta"
+          },
+          {
+            "text": "Corporate Structuring →Structural fixes when the group blocks progress.",
+            "href": "/solutions/corporate-structuring",
+            "section": "final_cta"
+          },
+          {
+            "text": "High-Risk Operations",
+            "href": "/markets/high-risk",
+            "section": "other"
+          },
+          {
+            "text": "iGaming",
+            "href": "/markets/igaming",
+            "section": "other"
+          },
+          {
+            "text": "Fintech",
+            "href": "/markets/fintech",
+            "section": "other"
+          },
+          {
+            "text": "Brazil",
+            "href": "/brazil",
+            "section": "other"
+          },
+          {
+            "text": "High-risk operations",
+            "href": "/markets/high-risk",
+            "section": "other"
+          },
+          {
+            "text": "Meet the team →",
+            "href": "/team",
+            "section": "How this workstream is owned."
+          },
+          {
+            "text": "How we engage →",
+            "href": "/how-we-engage",
+            "section": "How this workstream is owned."
+          },
+          {
+            "text": "View all services",
+            "href": "/solutions",
+            "section": "final_cta"
+          }
+        ],
+        "commercialLinks": [
+          {
+            "text": "Assess your situation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20assess%20my%20regulated%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "All services →",
+            "href": "/solutions",
+            "section": "hero"
+          },
+          {
+            "text": "Crisis entry and structural assessment →",
+            "href": "/diagnostic",
+            "section": "How remediation is organised."
+          },
+          {
+            "text": "Regulatory Structuring →Licensing delay remediation.",
+            "href": "/solutions/regulatory-structuring",
+            "section": "final_cta"
+          },
+          {
+            "text": "Compliance & Risk →Compliance gap and audit readiness fixes.",
+            "href": "/solutions/compliance-risk",
+            "section": "final_cta"
+          },
+          {
+            "text": "Banking & Payments →Financial infrastructure recovery.",
+            "href": "/solutions/banking-payments-infrastructure",
+            "section": "final_cta"
+          },
+          {
+            "text": "Corporate Structuring →Structural fixes when the group blocks progress.",
+            "href": "/solutions/corporate-structuring",
+            "section": "final_cta"
+          },
+          {
+            "text": "Meet the team →",
+            "href": "/team",
+            "section": "How this workstream is owned."
+          },
+          {
+            "text": "How we engage →",
+            "href": "/how-we-engage",
+            "section": "How this workstream is owned."
+          }
+        ],
+        "labelCounts": {
+          "Assess your situation →": 1,
+          "All services →": 1,
+          "Crisis entry and structural assessment →": 1,
+          "Regulatory Structuring →Licensing delay remediation.": 1,
+          "Compliance & Risk →Compliance gap and audit readiness fixes.": 1,
+          "Banking & Payments →Financial infrastructure recovery.": 1,
+          "Corporate Structuring →Structural fixes when the group blocks progress.": 1,
+          "Meet the team →": 1,
+          "How we engage →": 1
+        },
+        "arrowDupes": [],
+        "prohibitedFound": [],
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "overflow": false,
+        "punctuationIssues": [],
+        "homeResidualCount": 0,
+        "h1Count": 1,
+        "waCount": 0,
+        "waAfterHeroCount": 0,
+        "sevenGridCardCount": 0,
+        "sevenGridLabels": [],
+        "bankingInSevenGrid": false,
+        "lang": "en",
+        "title": "Remediation & Readiness | Octus Consulting",
+        "metaDescription": "Diagnosis and repair when licensing, banking or compliance is already blocked.",
+        "canonical": "https://octusconsulting.com/solutions/remediation-readiness",
+        "ogTitle": "Remediation & Readiness",
+        "ogDescription": "Diagnosis and repair when licensing, banking or compliance is already blocked.",
+        "isDeep": false
+      },
+      "/international-hub": {
+        "route": "/international-hub",
+        "links": [
+          {
+            "text": "Discuss this workstream →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "All services →",
+            "href": "/solutions",
+            "section": "hero"
+          },
+          {
+            "text": "Market entry coordination →",
+            "href": "/international-hub",
+            "section": "How the network is organised."
+          },
+          {
+            "text": "Regulatory Structuring →Market entry programmes require provider sequencing.",
+            "href": "/solutions/regulatory-structuring",
+            "section": "Providers evaluate structure before accepting an introductio"
+          },
+          {
+            "text": "Corporate Structuring →Formation and banking readiness before introductions.",
+            "href": "/solutions/corporate-structuring",
+            "section": "Providers evaluate structure before accepting an introductio"
+          },
+          {
+            "text": "Compliance & Risk →Lab and certification coordination.",
+            "href": "/solutions/compliance-risk",
+            "section": "Providers evaluate structure before accepting an introductio"
+          },
+          {
+            "text": "Banking & Payments →Bank and PSP architecture.",
+            "href": "/solutions/banking-payments-infrastructure",
+            "section": "Providers evaluate structure before accepting an introductio"
+          },
+          {
+            "text": "iGaming",
+            "href": "/markets/igaming",
+            "section": "other"
+          },
+          {
+            "text": "Fintech",
+            "href": "/markets/fintech",
+            "section": "other"
+          },
+          {
+            "text": "Digital Assets",
+            "href": "/markets/crypto",
+            "section": "other"
+          },
+          {
+            "text": "High-Risk Operations",
+            "href": "/markets/high-risk",
+            "section": "other"
+          },
+          {
+            "text": "Malta",
+            "href": "/jurisdictions/malta",
+            "section": "other"
+          },
+          {
+            "text": "Curaçao",
+            "href": "/jurisdictions/curacao",
+            "section": "other"
+          },
+          {
+            "text": "UAE",
+            "href": "/jurisdictions/uae",
+            "section": "other"
+          },
+          {
+            "text": "Brazil",
+            "href": "/brazil",
+            "section": "other"
+          },
+          {
+            "text": "Meet the team →",
+            "href": "/team",
+            "section": "How this workstream is owned."
+          },
+          {
+            "text": "How we engage →",
+            "href": "/how-we-engage",
+            "section": "How this workstream is owned."
+          },
+          {
+            "text": "View all services",
+            "href": "/solutions",
+            "section": "final_cta"
+          }
+        ],
+        "commercialLinks": [
+          {
+            "text": "Discuss this workstream →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "All services →",
+            "href": "/solutions",
+            "section": "hero"
+          },
+          {
+            "text": "Market entry coordination →",
+            "href": "/international-hub",
+            "section": "How the network is organised."
+          },
+          {
+            "text": "Regulatory Structuring →Market entry programmes require provider sequencing.",
+            "href": "/solutions/regulatory-structuring",
+            "section": "Providers evaluate structure before accepting an introductio"
+          },
+          {
+            "text": "Corporate Structuring →Formation and banking readiness before introductions.",
+            "href": "/solutions/corporate-structuring",
+            "section": "Providers evaluate structure before accepting an introductio"
+          },
+          {
+            "text": "Compliance & Risk →Lab and certification coordination.",
+            "href": "/solutions/compliance-risk",
+            "section": "Providers evaluate structure before accepting an introductio"
+          },
+          {
+            "text": "Banking & Payments →Bank and PSP architecture.",
+            "href": "/solutions/banking-payments-infrastructure",
+            "section": "Providers evaluate structure before accepting an introductio"
+          },
+          {
+            "text": "Meet the team →",
+            "href": "/team",
+            "section": "How this workstream is owned."
+          },
+          {
+            "text": "How we engage →",
+            "href": "/how-we-engage",
+            "section": "How this workstream is owned."
+          }
+        ],
+        "labelCounts": {
+          "Discuss this workstream →": 1,
+          "All services →": 1,
+          "Market entry coordination →": 1,
+          "Regulatory Structuring →Market entry programmes require provider sequencing.": 1,
+          "Corporate Structuring →Formation and banking readiness before introductions.": 1,
+          "Compliance & Risk →Lab and certification coordination.": 1,
+          "Banking & Payments →Bank and PSP architecture.": 1,
+          "Meet the team →": 1,
+          "How we engage →": 1
+        },
+        "arrowDupes": [],
+        "prohibitedFound": [],
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "overflow": false,
+        "punctuationIssues": [],
+        "homeResidualCount": 0,
+        "h1Count": 1,
+        "waCount": 0,
+        "waAfterHeroCount": 0,
+        "sevenGridCardCount": 0,
+        "sevenGridLabels": [],
+        "bankingInSevenGrid": false,
+        "lang": "en",
+        "title": "International Hub | Octus Consulting",
+        "metaDescription": "Banks, PSPs, CSPs, labs, counsel and specialists, coordinated as one network.",
+        "canonical": "https://octusconsulting.com/international-hub",
+        "ogTitle": "International Hub",
+        "ogDescription": "Banks, PSPs, CSPs, labs, counsel and specialists, coordinated as one network.",
+        "isDeep": false
+      },
+      "/solutions/banking-payments-infrastructure": {
+        "route": "/solutions/banking-payments-infrastructure",
+        "links": [
+          {
+            "text": "Discuss your operation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "Contact Octus →",
+            "href": "/contact",
+            "section": "hero"
+          },
+          {
+            "text": "Corporate Structuring",
+            "href": "/solutions/corporate-structuring",
+            "section": "Choose the support path"
+          },
+          {
+            "text": "Open Corporate Structuring →",
+            "href": "/solutions/corporate-structuring",
+            "section": "Choose the support path"
+          },
+          {
+            "text": "International Hub",
+            "href": "/international-hub",
+            "section": "Choose the support path"
+          },
+          {
+            "text": "Open International Hub →",
+            "href": "/international-hub",
+            "section": "Choose the support path"
+          },
+          {
+            "text": "Remediation & Readiness",
+            "href": "/solutions/remediation-readiness",
+            "section": "Choose the support path"
+          },
+          {
+            "text": "Open Remediation & Readiness →",
+            "href": "/solutions/remediation-readiness",
+            "section": "Choose the support path"
+          },
+          {
+            "text": "Explore related services →",
+            "href": "/solutions",
+            "section": "Choose the support path"
+          }
+        ],
+        "commercialLinks": [
+          {
+            "text": "Discuss your operation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "Contact Octus →",
+            "href": "/contact",
+            "section": "hero"
+          },
+          {
+            "text": "Open Corporate Structuring →",
+            "href": "/solutions/corporate-structuring",
+            "section": "Choose the support path"
+          },
+          {
+            "text": "Open International Hub →",
+            "href": "/international-hub",
+            "section": "Choose the support path"
+          },
+          {
+            "text": "Open Remediation & Readiness →",
+            "href": "/solutions/remediation-readiness",
+            "section": "Choose the support path"
+          },
+          {
+            "text": "Explore related services →",
+            "href": "/solutions",
+            "section": "Choose the support path"
+          }
+        ],
+        "labelCounts": {
+          "Discuss your operation →": 1,
+          "Contact Octus →": 1,
+          "Open Corporate Structuring →": 1,
+          "Open International Hub →": 1,
+          "Open Remediation & Readiness →": 1,
+          "Explore related services →": 1
+        },
+        "arrowDupes": [],
+        "prohibitedFound": [],
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "overflow": false,
+        "punctuationIssues": [],
+        "homeResidualCount": 0,
+        "h1Count": 1,
+        "waCount": 1,
+        "waAfterHeroCount": 0,
+        "sevenGridCardCount": 0,
+        "sevenGridLabels": [],
+        "bankingInSevenGrid": false,
+        "lang": "en",
+        "title": "Banking & Payments | Octus Consulting",
+        "metaDescription": "Octus coordinates the corporate, compliance, provider and remediation workstreams required for banking and payment operations in regulated markets.",
+        "canonical": "https://octusconsulting.com/solutions/banking-payments-infrastructure",
+        "ogTitle": "Banking & Payments",
+        "ogDescription": "Octus coordinates the corporate, compliance, provider and remediation workstreams required for banking and payment operations in regulated markets.",
+        "isDeep": false
+      },
+      "/solutions/regulatory/igaming-licensing": {
+        "route": "/solutions/regulatory/igaming-licensing",
+        "links": [
+          {
+            "text": "Discuss your operation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "iGaming operations →",
+            "href": "/markets/igaming",
+            "section": "hero"
+          },
+          {
+            "text": "Isle of Man (GSC)Tier-1 credential with continuous regulatory scrutinyLearn more →",
+            "href": "/jurisdictions/isle-of-man",
+            "section": "other"
+          },
+          {
+            "text": "Malta (MGA)EU-regulated framework with high compliance standardsLearn more →",
+            "href": "/jurisdictions/malta",
+            "section": "other"
+          },
+          {
+            "text": "CuraçaoEstablished offshore framework undergoing reformLearn more →",
+            "href": "/jurisdictions/curacao",
+            "section": "other"
+          },
+          {
+            "text": "Compliance-as-a-ServiceWhat keeps the operation compliant after licensingLearn more →",
+            "href": "/solutions/compliance/compliance-as-a-service",
+            "section": "other"
+          },
+          {
+            "text": "AML/KYCCompliance architecture for licensing and bankingLearn more →",
+            "href": "/solutions/compliance/aml-kyc",
+            "section": "other"
+          },
+          {
+            "text": "iGaming MarketSector overview and Octus positioningLearn more →",
+            "href": "/markets/igaming",
+            "section": "other"
+          },
+          {
+            "text": "Continue this discussion →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "final_cta"
+          }
+        ],
+        "commercialLinks": [
+          {
+            "text": "Discuss your operation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "iGaming operations →",
+            "href": "/markets/igaming",
+            "section": "hero"
+          },
+          {
+            "text": "Isle of Man (GSC)Tier-1 credential with continuous regulatory scrutinyLearn more →",
+            "href": "/jurisdictions/isle-of-man",
+            "section": "other"
+          },
+          {
+            "text": "Malta (MGA)EU-regulated framework with high compliance standardsLearn more →",
+            "href": "/jurisdictions/malta",
+            "section": "other"
+          },
+          {
+            "text": "CuraçaoEstablished offshore framework undergoing reformLearn more →",
+            "href": "/jurisdictions/curacao",
+            "section": "other"
+          },
+          {
+            "text": "Compliance-as-a-ServiceWhat keeps the operation compliant after licensingLearn more →",
+            "href": "/solutions/compliance/compliance-as-a-service",
+            "section": "other"
+          },
+          {
+            "text": "AML/KYCCompliance architecture for licensing and bankingLearn more →",
+            "href": "/solutions/compliance/aml-kyc",
+            "section": "other"
+          },
+          {
+            "text": "iGaming MarketSector overview and Octus positioningLearn more →",
+            "href": "/markets/igaming",
+            "section": "other"
+          },
+          {
+            "text": "Continue this discussion →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "final_cta"
+          }
+        ],
+        "labelCounts": {
+          "Discuss your operation →": 1,
+          "iGaming operations →": 1,
+          "Isle of Man (GSC)Tier-1 credential with continuous regulatory scrutinyLearn more →": 1,
+          "Malta (MGA)EU-regulated framework with high compliance standardsLearn more →": 1,
+          "CuraçaoEstablished offshore framework undergoing reformLearn more →": 1,
+          "Compliance-as-a-ServiceWhat keeps the operation compliant after licensingLearn more →": 1,
+          "AML/KYCCompliance architecture for licensing and bankingLearn more →": 1,
+          "iGaming MarketSector overview and Octus positioningLearn more →": 1,
+          "Continue this discussion →": 1
+        },
+        "arrowDupes": [],
+        "prohibitedFound": [],
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "overflow": false,
+        "punctuationIssues": [],
+        "homeResidualCount": 0,
+        "h1Count": 1,
+        "waCount": 1,
+        "waAfterHeroCount": 0,
+        "sevenGridCardCount": 0,
+        "sevenGridLabels": [],
+        "bankingInSevenGrid": false,
+        "lang": "en",
+        "title": "iGaming Licensing | Octus Consulting",
+        "metaDescription": "iGaming licensing strategy across jurisdictions. Octus structures the regulatory, corporate and compliance architecture that determines whether a licence gets approved, not merely submitted.",
+        "canonical": "https://octusconsulting.com/solutions/regulatory/igaming-licensing",
+        "ogTitle": "iGaming Licensing",
+        "ogDescription": "iGaming licensing strategy across jurisdictions. Octus structures the regulatory, corporate and compliance architecture that determines whether a licence gets approved, not merely submitted.",
+        "isDeep": true
+      },
+      "/solutions/regulatory/fintech-licensing": {
+        "route": "/solutions/regulatory/fintech-licensing",
+        "links": [
+          {
+            "text": "Discuss your operation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "UAE",
+            "href": "/jurisdictions/uae",
+            "section": "other"
+          },
+          {
+            "text": "Portugal",
+            "href": "/jurisdictions/portugal",
+            "section": "other"
+          },
+          {
+            "text": "iGaming LicensingSame structural logic, different regulatory frameworkLearn more →",
+            "href": "/solutions/regulatory/igaming-licensing",
+            "section": "other"
+          },
+          {
+            "text": "Banking & PaymentsThe layer that fails most often post-authorisationLearn more →",
+            "href": "/solutions/banking-payments-infrastructure",
+            "section": "other"
+          },
+          {
+            "text": "Market EntryJurisdiction selection as structural projectLearn more →",
+            "href": "/solutions/regulatory/market-entry",
+            "section": "other"
+          },
+          {
+            "text": "Compliance-as-a-ServiceWhat keeps the licence operationalLearn more →",
+            "href": "/solutions/compliance/compliance-as-a-service",
+            "section": "other"
+          },
+          {
+            "text": "AML/KYCCompliance architecture for licensing and bankingLearn more →",
+            "href": "/solutions/compliance/aml-kyc",
+            "section": "other"
+          },
+          {
+            "text": "Fintech & PaymentsSector overviewLearn more →",
+            "href": "/markets/fintech",
+            "section": "other"
+          },
+          {
+            "text": "Continue this discussion →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "final_cta"
+          }
+        ],
+        "commercialLinks": [
+          {
+            "text": "Discuss your operation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "iGaming LicensingSame structural logic, different regulatory frameworkLearn more →",
+            "href": "/solutions/regulatory/igaming-licensing",
+            "section": "other"
+          },
+          {
+            "text": "Banking & PaymentsThe layer that fails most often post-authorisationLearn more →",
+            "href": "/solutions/banking-payments-infrastructure",
+            "section": "other"
+          },
+          {
+            "text": "Market EntryJurisdiction selection as structural projectLearn more →",
+            "href": "/solutions/regulatory/market-entry",
+            "section": "other"
+          },
+          {
+            "text": "Compliance-as-a-ServiceWhat keeps the licence operationalLearn more →",
+            "href": "/solutions/compliance/compliance-as-a-service",
+            "section": "other"
+          },
+          {
+            "text": "AML/KYCCompliance architecture for licensing and bankingLearn more →",
+            "href": "/solutions/compliance/aml-kyc",
+            "section": "other"
+          },
+          {
+            "text": "Fintech & PaymentsSector overviewLearn more →",
+            "href": "/markets/fintech",
+            "section": "other"
+          },
+          {
+            "text": "Continue this discussion →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "final_cta"
+          }
+        ],
+        "labelCounts": {
+          "Discuss your operation →": 1,
+          "iGaming LicensingSame structural logic, different regulatory frameworkLearn more →": 1,
+          "Banking & PaymentsThe layer that fails most often post-authorisationLearn more →": 1,
+          "Market EntryJurisdiction selection as structural projectLearn more →": 1,
+          "Compliance-as-a-ServiceWhat keeps the licence operationalLearn more →": 1,
+          "AML/KYCCompliance architecture for licensing and bankingLearn more →": 1,
+          "Fintech & PaymentsSector overviewLearn more →": 1,
+          "Continue this discussion →": 1
+        },
+        "arrowDupes": [],
+        "prohibitedFound": [],
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "overflow": false,
+        "punctuationIssues": [],
+        "homeResidualCount": 0,
+        "h1Count": 1,
+        "waCount": 1,
+        "waAfterHeroCount": 0,
+        "sevenGridCardCount": 0,
+        "sevenGridLabels": [],
+        "bankingInSevenGrid": false,
+        "lang": "en",
+        "title": "Fintech Licensing | Octus Consulting",
+        "metaDescription": "EMI and Payment Institution licensing is not a filing exercise. Octus structures fintech operations so they can be authorised, operated and sustained under regulatory scrutiny.",
+        "canonical": "https://octusconsulting.com/solutions/regulatory/fintech-licensing",
+        "ogTitle": "Fintech Licensing",
+        "ogDescription": "EMI and Payment Institution licensing is not a filing exercise. Octus structures fintech operations so they can be authorised, operated and sustained under regulatory scrutiny.",
+        "isDeep": true
+      },
+      "/solutions/regulatory/market-entry": {
+        "route": "/solutions/regulatory/market-entry",
+        "links": [
+          {
+            "text": "Discuss your operation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "Fintech LicensingEMI/PI authorisationLearn more →",
+            "href": "/solutions/regulatory/fintech-licensing",
+            "section": "other"
+          },
+          {
+            "text": "iGaming LicensingGaming market entryLearn more →",
+            "href": "/solutions/regulatory/igaming-licensing",
+            "section": "other"
+          },
+          {
+            "text": "Banking & PaymentsAccess as entry constraintLearn more →",
+            "href": "/solutions/banking-payments-infrastructure",
+            "section": "other"
+          },
+          {
+            "text": "Company FormationJurisdiction-aligned entitiesLearn more →",
+            "href": "/solutions/corporate/company-formation",
+            "section": "other"
+          },
+          {
+            "text": "JurisdictionsWhere we structure operationsLearn more →",
+            "href": "/jurisdictions",
+            "section": "other"
+          },
+          {
+            "text": "Continue this discussion →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "final_cta"
+          }
+        ],
+        "commercialLinks": [
+          {
+            "text": "Discuss your operation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "Fintech LicensingEMI/PI authorisationLearn more →",
+            "href": "/solutions/regulatory/fintech-licensing",
+            "section": "other"
+          },
+          {
+            "text": "iGaming LicensingGaming market entryLearn more →",
+            "href": "/solutions/regulatory/igaming-licensing",
+            "section": "other"
+          },
+          {
+            "text": "Banking & PaymentsAccess as entry constraintLearn more →",
+            "href": "/solutions/banking-payments-infrastructure",
+            "section": "other"
+          },
+          {
+            "text": "Company FormationJurisdiction-aligned entitiesLearn more →",
+            "href": "/solutions/corporate/company-formation",
+            "section": "other"
+          },
+          {
+            "text": "JurisdictionsWhere we structure operationsLearn more →",
+            "href": "/jurisdictions",
+            "section": "other"
+          },
+          {
+            "text": "Continue this discussion →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "final_cta"
+          }
+        ],
+        "labelCounts": {
+          "Discuss your operation →": 1,
+          "Fintech LicensingEMI/PI authorisationLearn more →": 1,
+          "iGaming LicensingGaming market entryLearn more →": 1,
+          "Banking & PaymentsAccess as entry constraintLearn more →": 1,
+          "Company FormationJurisdiction-aligned entitiesLearn more →": 1,
+          "JurisdictionsWhere we structure operationsLearn more →": 1,
+          "Continue this discussion →": 1
+        },
+        "arrowDupes": [],
+        "prohibitedFound": [],
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "overflow": false,
+        "punctuationIssues": [],
+        "homeResidualCount": 0,
+        "h1Count": 1,
+        "waCount": 1,
+        "waAfterHeroCount": 0,
+        "sevenGridCardCount": 0,
+        "sevenGridLabels": [],
+        "bankingInSevenGrid": false,
+        "lang": "en",
+        "title": "Market Entry | Octus Consulting",
+        "metaDescription": "Market entry is not a business decision. It is a structural project. Octus coordinates jurisdiction, corporate, licensing and banking for regulated market entry.",
+        "canonical": "https://octusconsulting.com/solutions/regulatory/market-entry",
+        "ogTitle": "Market Entry",
+        "ogDescription": "Market entry is not a business decision. It is a structural project. Octus coordinates jurisdiction, corporate, licensing and banking for regulated market entry.",
+        "isDeep": true
+      },
+      "/solutions/compliance/aml-kyc": {
+        "route": "/solutions/compliance/aml-kyc",
+        "links": [
+          {
+            "text": "Discuss your operation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "Full compliance services →",
+            "href": "/solutions/compliance-risk",
+            "section": "hero"
+          },
+          {
+            "text": "Compliance & RiskFull compliance services beyond AML.Learn more →",
+            "href": "/solutions/compliance-risk",
+            "section": "other"
+          },
+          {
+            "text": "Remediation & ReadinessPrepared for scrutiny before it arrives.Learn more →",
+            "href": "/solutions/remediation-readiness",
+            "section": "other"
+          },
+          {
+            "text": "iGaming OperationsCompliance in the iGaming context.Learn more →",
+            "href": "/markets/igaming",
+            "section": "other"
+          },
+          {
+            "text": "Continue this discussion →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "final_cta"
+          }
+        ],
+        "commercialLinks": [
+          {
+            "text": "Discuss your operation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "Full compliance services →",
+            "href": "/solutions/compliance-risk",
+            "section": "hero"
+          },
+          {
+            "text": "Compliance & RiskFull compliance services beyond AML.Learn more →",
+            "href": "/solutions/compliance-risk",
+            "section": "other"
+          },
+          {
+            "text": "Remediation & ReadinessPrepared for scrutiny before it arrives.Learn more →",
+            "href": "/solutions/remediation-readiness",
+            "section": "other"
+          },
+          {
+            "text": "iGaming OperationsCompliance in the iGaming context.Learn more →",
+            "href": "/markets/igaming",
+            "section": "other"
+          },
+          {
+            "text": "Continue this discussion →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "final_cta"
+          }
+        ],
+        "labelCounts": {
+          "Discuss your operation →": 1,
+          "Full compliance services →": 1,
+          "Compliance & RiskFull compliance services beyond AML.Learn more →": 1,
+          "Remediation & ReadinessPrepared for scrutiny before it arrives.Learn more →": 1,
+          "iGaming OperationsCompliance in the iGaming context.Learn more →": 1,
+          "Continue this discussion →": 1
+        },
+        "arrowDupes": [],
+        "prohibitedFound": [],
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "overflow": false,
+        "punctuationIssues": [],
+        "homeResidualCount": 0,
+        "h1Count": 1,
+        "waCount": 1,
+        "waAfterHeroCount": 0,
+        "sevenGridCardCount": 0,
+        "sevenGridLabels": [],
+        "bankingInSevenGrid": false,
+        "lang": "en",
+        "title": "AML & KYC Framework. Compliance That Holds | Octus | Octus Consulting",
+        "metaDescription": "AML/KYC compliance frameworks for regulated operations. Built to survive real audit, not to sit in a folder. Transaction monitoring, risk assessment and regulatory reporting.",
+        "canonical": "https://octusconsulting.com/solutions/compliance/aml-kyc",
+        "ogTitle": "AML & KYC Framework. Compliance That Holds | Octus",
+        "ogDescription": "AML/KYC compliance frameworks for regulated operations. Built to survive real audit, not to sit in a folder. Transaction monitoring, risk assessment and regulatory reporting.",
+        "isDeep": true
+      },
+      "/solutions/compliance/dpo-as-a-service": {
+        "route": "/solutions/compliance/dpo-as-a-service",
+        "links": [
+          {
+            "text": "Discuss your operation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "Compliance-as-a-Service →",
+            "href": "/solutions/compliance/compliance-as-a-service",
+            "section": "The DPO function does not operate in isolation."
+          },
+          {
+            "text": "Compliance-as-a-ServiceThe broader compliance operating layerLearn more →",
+            "href": "/solutions/compliance/compliance-as-a-service",
+            "section": "other"
+          },
+          {
+            "text": "AML/KYCOnboarding, monitoring and reporting architectureLearn more →",
+            "href": "/solutions/compliance/aml-kyc",
+            "section": "other"
+          },
+          {
+            "text": "iGaming LicensingLicensing strategy across jurisdictionsLearn more →",
+            "href": "/solutions/regulatory/igaming-licensing",
+            "section": "other"
+          },
+          {
+            "text": "High-Risk OperationsCompliance for sectors under pressureLearn more →",
+            "href": "/markets/high-risk",
+            "section": "other"
+          },
+          {
+            "text": "Crypto & Digital AssetsRegulatory structuring for digital operationsLearn more →",
+            "href": "/markets/crypto",
+            "section": "other"
+          },
+          {
+            "text": "Continue this discussion →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "final_cta"
+          }
+        ],
+        "commercialLinks": [
+          {
+            "text": "Discuss your operation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "Compliance-as-a-Service →",
+            "href": "/solutions/compliance/compliance-as-a-service",
+            "section": "The DPO function does not operate in isolation."
+          },
+          {
+            "text": "Compliance-as-a-ServiceThe broader compliance operating layerLearn more →",
+            "href": "/solutions/compliance/compliance-as-a-service",
+            "section": "other"
+          },
+          {
+            "text": "AML/KYCOnboarding, monitoring and reporting architectureLearn more →",
+            "href": "/solutions/compliance/aml-kyc",
+            "section": "other"
+          },
+          {
+            "text": "iGaming LicensingLicensing strategy across jurisdictionsLearn more →",
+            "href": "/solutions/regulatory/igaming-licensing",
+            "section": "other"
+          },
+          {
+            "text": "High-Risk OperationsCompliance for sectors under pressureLearn more →",
+            "href": "/markets/high-risk",
+            "section": "other"
+          },
+          {
+            "text": "Crypto & Digital AssetsRegulatory structuring for digital operationsLearn more →",
+            "href": "/markets/crypto",
+            "section": "other"
+          },
+          {
+            "text": "Continue this discussion →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "final_cta"
+          }
+        ],
+        "labelCounts": {
+          "Discuss your operation →": 1,
+          "Compliance-as-a-Service →": 1,
+          "Compliance-as-a-ServiceThe broader compliance operating layerLearn more →": 1,
+          "AML/KYCOnboarding, monitoring and reporting architectureLearn more →": 1,
+          "iGaming LicensingLicensing strategy across jurisdictionsLearn more →": 1,
+          "High-Risk OperationsCompliance for sectors under pressureLearn more →": 1,
+          "Crypto & Digital AssetsRegulatory structuring for digital operationsLearn more →": 1,
+          "Continue this discussion →": 1
+        },
+        "arrowDupes": [],
+        "prohibitedFound": [],
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "overflow": false,
+        "punctuationIssues": [],
+        "homeResidualCount": 0,
+        "h1Count": 1,
+        "waCount": 1,
+        "waAfterHeroCount": 0,
+        "sevenGridCardCount": 0,
+        "sevenGridLabels": [],
+        "bankingInSevenGrid": false,
+        "lang": "en",
+        "title": "DPO-as-a-Service | Octus Consulting",
+        "metaDescription": "Outsourced DPO support and privacy programme coordination for LGPD and GDPR contexts: incident response, regulatory interaction and operational data protection. Designation and scope are subject to engagement.",
+        "canonical": "https://octusconsulting.com/solutions/compliance/dpo-as-a-service",
+        "ogTitle": "DPO-as-a-Service",
+        "ogDescription": "Outsourced DPO support and privacy programme coordination for LGPD and GDPR contexts: incident response, regulatory interaction and operational data protection. Designation and scope are subject to engagement.",
+        "isDeep": true
+      },
+      "/solutions/compliance/compliance-as-a-service": {
+        "route": "/solutions/compliance/compliance-as-a-service",
+        "links": [
+          {
+            "text": "Discuss your operation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "DPO-as-a-Service →",
+            "href": "/solutions/compliance/dpo-as-a-service",
+            "section": "other"
+          },
+          {
+            "text": "AML/KYCOnboarding, monitoring and reporting architectureLearn more →",
+            "href": "/solutions/compliance/aml-kyc",
+            "section": "other"
+          },
+          {
+            "text": "DPO-as-a-ServiceData protection as an operational functionLearn more →",
+            "href": "/solutions/compliance/dpo-as-a-service",
+            "section": "other"
+          },
+          {
+            "text": "iGaming LicensingLicensing strategy across jurisdictionsLearn more →",
+            "href": "/solutions/regulatory/igaming-licensing",
+            "section": "other"
+          },
+          {
+            "text": "High-Risk OperationsCompliance for sectors under pressureLearn more →",
+            "href": "/markets/high-risk",
+            "section": "other"
+          },
+          {
+            "text": "Crypto & Digital AssetsRegulatory structuring for digital operationsLearn more →",
+            "href": "/markets/crypto",
+            "section": "other"
+          },
+          {
+            "text": "Continue this discussion →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "final_cta"
+          }
+        ],
+        "commercialLinks": [
+          {
+            "text": "Discuss your operation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "DPO-as-a-Service →",
+            "href": "/solutions/compliance/dpo-as-a-service",
+            "section": "other"
+          },
+          {
+            "text": "AML/KYCOnboarding, monitoring and reporting architectureLearn more →",
+            "href": "/solutions/compliance/aml-kyc",
+            "section": "other"
+          },
+          {
+            "text": "DPO-as-a-ServiceData protection as an operational functionLearn more →",
+            "href": "/solutions/compliance/dpo-as-a-service",
+            "section": "other"
+          },
+          {
+            "text": "iGaming LicensingLicensing strategy across jurisdictionsLearn more →",
+            "href": "/solutions/regulatory/igaming-licensing",
+            "section": "other"
+          },
+          {
+            "text": "High-Risk OperationsCompliance for sectors under pressureLearn more →",
+            "href": "/markets/high-risk",
+            "section": "other"
+          },
+          {
+            "text": "Crypto & Digital AssetsRegulatory structuring for digital operationsLearn more →",
+            "href": "/markets/crypto",
+            "section": "other"
+          },
+          {
+            "text": "Continue this discussion →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "final_cta"
+          }
+        ],
+        "labelCounts": {
+          "Discuss your operation →": 1,
+          "DPO-as-a-Service →": 1,
+          "AML/KYCOnboarding, monitoring and reporting architectureLearn more →": 1,
+          "DPO-as-a-ServiceData protection as an operational functionLearn more →": 1,
+          "iGaming LicensingLicensing strategy across jurisdictionsLearn more →": 1,
+          "High-Risk OperationsCompliance for sectors under pressureLearn more →": 1,
+          "Crypto & Digital AssetsRegulatory structuring for digital operationsLearn more →": 1,
+          "Continue this discussion →": 1
+        },
+        "arrowDupes": [],
+        "prohibitedFound": [],
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "overflow": false,
+        "punctuationIssues": [],
+        "homeResidualCount": 0,
+        "h1Count": 1,
+        "waCount": 1,
+        "waAfterHeroCount": 0,
+        "sevenGridCardCount": 0,
+        "sevenGridLabels": [],
+        "bankingInSevenGrid": false,
+        "lang": "en",
+        "title": "Compliance-as-a-Service | Octus Consulting",
+        "metaDescription": "Compliance is not a document. Octus builds and operates compliance as a continuous function: AML/KYC, controls, monitoring and regulatory alignment embedded in the business.",
+        "canonical": "https://octusconsulting.com/solutions/compliance/compliance-as-a-service",
+        "ogTitle": "Compliance-as-a-Service",
+        "ogDescription": "Compliance is not a document. Octus builds and operates compliance as a continuous function: AML/KYC, controls, monitoring and regulatory alignment embedded in the business.",
+        "isDeep": true
+      },
+      "/solutions/compliance/gli-readiness": {
+        "route": "/solutions/compliance/gli-readiness",
+        "links": [
+          {
+            "text": "Discuss your operation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "Compliance-as-a-ServicePrevents audit gapsLearn more →",
+            "href": "/solutions/compliance/compliance-as-a-service",
+            "section": "Compliance-as-a-Service"
+          },
+          {
+            "text": "Internal ControlsGovernance that supports readinessLearn more →",
+            "href": "/solutions/compliance/internal-controls",
+            "section": "Compliance-as-a-Service"
+          },
+          {
+            "text": "AML/KYCWhat auditors evaluate firstLearn more →",
+            "href": "/solutions/compliance/aml-kyc",
+            "section": "Compliance-as-a-Service"
+          },
+          {
+            "text": "Remediation & ReadinessFull pillarLearn more →",
+            "href": "/solutions/remediation-readiness",
+            "section": "Compliance-as-a-Service"
+          },
+          {
+            "text": "Continue this discussion →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "final_cta"
+          }
+        ],
+        "commercialLinks": [
+          {
+            "text": "Discuss your operation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "Compliance-as-a-ServicePrevents audit gapsLearn more →",
+            "href": "/solutions/compliance/compliance-as-a-service",
+            "section": "Compliance-as-a-Service"
+          },
+          {
+            "text": "Internal ControlsGovernance that supports readinessLearn more →",
+            "href": "/solutions/compliance/internal-controls",
+            "section": "Compliance-as-a-Service"
+          },
+          {
+            "text": "AML/KYCWhat auditors evaluate firstLearn more →",
+            "href": "/solutions/compliance/aml-kyc",
+            "section": "Compliance-as-a-Service"
+          },
+          {
+            "text": "Remediation & ReadinessFull pillarLearn more →",
+            "href": "/solutions/remediation-readiness",
+            "section": "Compliance-as-a-Service"
+          },
+          {
+            "text": "Continue this discussion →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "final_cta"
+          }
+        ],
+        "labelCounts": {
+          "Discuss your operation →": 1,
+          "Compliance-as-a-ServicePrevents audit gapsLearn more →": 1,
+          "Internal ControlsGovernance that supports readinessLearn more →": 1,
+          "AML/KYCWhat auditors evaluate firstLearn more →": 1,
+          "Remediation & ReadinessFull pillarLearn more →": 1,
+          "Continue this discussion →": 1
+        },
+        "arrowDupes": [],
+        "prohibitedFound": [],
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "overflow": false,
+        "punctuationIssues": [],
+        "homeResidualCount": 0,
+        "h1Count": 1,
+        "waCount": 1,
+        "waAfterHeroCount": 0,
+        "sevenGridCardCount": 0,
+        "sevenGridLabels": [],
+        "bankingInSevenGrid": false,
+        "lang": "en",
+        "title": "GLI & Certification Readiness | Octus Consulting",
+        "metaDescription": "The audit does not find problems. It confirms they were always there. Octus prepares operations for certification and regulatory review before the auditor arrives.",
+        "canonical": "https://octusconsulting.com/solutions/compliance/gli-readiness",
+        "ogTitle": "GLI & Certification Readiness",
+        "ogDescription": "The audit does not find problems. It confirms they were always there. Octus prepares operations for certification and regulatory review before the auditor arrives.",
+        "isDeep": true
+      },
+      "/solutions/compliance/internal-controls": {
+        "route": "/solutions/compliance/internal-controls",
+        "links": [
+          {
+            "text": "Discuss your operation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "Compliance-as-a-ServiceOperational layerLearn more →",
+            "href": "/solutions/compliance/compliance-as-a-service",
+            "section": "Compliance-as-a-Service"
+          },
+          {
+            "text": "GLI ReadinessDepends on controlsLearn more →",
+            "href": "/solutions/compliance/gli-readiness",
+            "section": "Compliance-as-a-Service"
+          },
+          {
+            "text": "AML/KYCControls regulators evaluate firstLearn more →",
+            "href": "/solutions/compliance/aml-kyc",
+            "section": "Compliance-as-a-Service"
+          },
+          {
+            "text": "Compliance & RiskFull pillarLearn more →",
+            "href": "/solutions/compliance-risk",
+            "section": "Compliance-as-a-Service"
+          },
+          {
+            "text": "Continue this discussion →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "final_cta"
+          }
+        ],
+        "commercialLinks": [
+          {
+            "text": "Discuss your operation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "Compliance-as-a-ServiceOperational layerLearn more →",
+            "href": "/solutions/compliance/compliance-as-a-service",
+            "section": "Compliance-as-a-Service"
+          },
+          {
+            "text": "GLI ReadinessDepends on controlsLearn more →",
+            "href": "/solutions/compliance/gli-readiness",
+            "section": "Compliance-as-a-Service"
+          },
+          {
+            "text": "AML/KYCControls regulators evaluate firstLearn more →",
+            "href": "/solutions/compliance/aml-kyc",
+            "section": "Compliance-as-a-Service"
+          },
+          {
+            "text": "Compliance & RiskFull pillarLearn more →",
+            "href": "/solutions/compliance-risk",
+            "section": "Compliance-as-a-Service"
+          },
+          {
+            "text": "Continue this discussion →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "final_cta"
+          }
+        ],
+        "labelCounts": {
+          "Discuss your operation →": 1,
+          "Compliance-as-a-ServiceOperational layerLearn more →": 1,
+          "GLI ReadinessDepends on controlsLearn more →": 1,
+          "AML/KYCControls regulators evaluate firstLearn more →": 1,
+          "Compliance & RiskFull pillarLearn more →": 1,
+          "Continue this discussion →": 1
+        },
+        "arrowDupes": [],
+        "prohibitedFound": [],
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "overflow": false,
+        "punctuationIssues": [],
+        "homeResidualCount": 0,
+        "h1Count": 1,
+        "waCount": 1,
+        "waAfterHeroCount": 0,
+        "sevenGridCardCount": 0,
+        "sevenGridLabels": [],
+        "bankingInSevenGrid": false,
+        "lang": "en",
+        "title": "Internal Controls & Governance | Octus Consulting",
+        "metaDescription": "Controls that exist on paper do not exist at all. Octus designs governance frameworks and control systems that function under real operational pressure.",
+        "canonical": "https://octusconsulting.com/solutions/compliance/internal-controls",
+        "ogTitle": "Internal Controls & Governance",
+        "ogDescription": "Controls that exist on paper do not exist at all. Octus designs governance frameworks and control systems that function under real operational pressure.",
+        "isDeep": true
+      },
+      "/solutions/corporate/company-formation": {
+        "route": "/solutions/corporate/company-formation",
+        "links": [
+          {
+            "text": "Discuss your operation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "Full corporate services →",
+            "href": "/solutions/corporate-structuring",
+            "section": "hero"
+          },
+          {
+            "text": "Corporate StructuringFull corporate services overview.Learn more →",
+            "href": "/solutions/corporate-structuring",
+            "section": "other"
+          },
+          {
+            "text": "Curaçao LicensingEntity design for Curaçao operations.Learn more →",
+            "href": "/jurisdictions/curacao",
+            "section": "other"
+          },
+          {
+            "text": "Malta LicensingCorporate substance for MGA requirements.Learn more →",
+            "href": "/jurisdictions/malta",
+            "section": "other"
+          },
+          {
+            "text": "Continue this discussion →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "final_cta"
+          }
+        ],
+        "commercialLinks": [
+          {
+            "text": "Discuss your operation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "Full corporate services →",
+            "href": "/solutions/corporate-structuring",
+            "section": "hero"
+          },
+          {
+            "text": "Corporate StructuringFull corporate services overview.Learn more →",
+            "href": "/solutions/corporate-structuring",
+            "section": "other"
+          },
+          {
+            "text": "Curaçao LicensingEntity design for Curaçao operations.Learn more →",
+            "href": "/jurisdictions/curacao",
+            "section": "other"
+          },
+          {
+            "text": "Malta LicensingCorporate substance for MGA requirements.Learn more →",
+            "href": "/jurisdictions/malta",
+            "section": "other"
+          },
+          {
+            "text": "Continue this discussion →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "final_cta"
+          }
+        ],
+        "labelCounts": {
+          "Discuss your operation →": 1,
+          "Full corporate services →": 1,
+          "Corporate StructuringFull corporate services overview.Learn more →": 1,
+          "Curaçao LicensingEntity design for Curaçao operations.Learn more →": 1,
+          "Malta LicensingCorporate substance for MGA requirements.Learn more →": 1,
+          "Continue this discussion →": 1
+        },
+        "arrowDupes": [],
+        "prohibitedFound": [],
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "overflow": false,
+        "punctuationIssues": [],
+        "homeResidualCount": 0,
+        "h1Count": 1,
+        "waCount": 1,
+        "waAfterHeroCount": 0,
+        "sevenGridCardCount": 0,
+        "sevenGridLabels": [],
+        "bankingInSevenGrid": false,
+        "lang": "en",
+        "title": "Company Formation & Corporate Structuring | Octus | Octus Consulting",
+        "metaDescription": "Company incorporation, offshore structuring and corporate design for regulated operations. Entity setup that satisfies regulators, banks and payment processors.",
+        "canonical": "https://octusconsulting.com/solutions/corporate/company-formation",
+        "ogTitle": "Company Formation & Corporate Structuring | Octus",
+        "ogDescription": "Company incorporation, offshore structuring and corporate design for regulated operations. Entity setup that satisfies regulators, banks and payment processors.",
+        "isDeep": true
+      },
+      "/solutions/corporate/holding-design": {
+        "route": "/solutions/corporate/holding-design",
+        "links": [
+          {
+            "text": "Discuss your operation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "Portugal",
+            "href": "/jurisdictions/portugal",
+            "section": "Offshore Structuring"
+          },
+          {
+            "text": "UAE",
+            "href": "/jurisdictions/uae",
+            "section": "Offshore Structuring"
+          },
+          {
+            "text": "Offshore StructuringOffshore StructuringLearn more →",
+            "href": "/solutions/corporate/offshore-structuring",
+            "section": "Offshore Structuring"
+          },
+          {
+            "text": "Company FormationCompany FormationLearn more →",
+            "href": "/solutions/corporate/company-formation",
+            "section": "Offshore Structuring"
+          },
+          {
+            "text": "Private ClientsOwnership and UBO architecture for founders and operators.Learn more →",
+            "href": "/private-clients",
+            "section": "Offshore Structuring"
+          },
+          {
+            "text": "Banking & PaymentsBanking & PaymentsLearn more →",
+            "href": "/solutions/banking-payments-infrastructure",
+            "section": "Offshore Structuring"
+          },
+          {
+            "text": "Continue this discussion →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "final_cta"
+          }
+        ],
+        "commercialLinks": [
+          {
+            "text": "Discuss your operation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "Offshore StructuringOffshore StructuringLearn more →",
+            "href": "/solutions/corporate/offshore-structuring",
+            "section": "Offshore Structuring"
+          },
+          {
+            "text": "Company FormationCompany FormationLearn more →",
+            "href": "/solutions/corporate/company-formation",
+            "section": "Offshore Structuring"
+          },
+          {
+            "text": "Private ClientsOwnership and UBO architecture for founders and operators.Learn more →",
+            "href": "/private-clients",
+            "section": "Offshore Structuring"
+          },
+          {
+            "text": "Banking & PaymentsBanking & PaymentsLearn more →",
+            "href": "/solutions/banking-payments-infrastructure",
+            "section": "Offshore Structuring"
+          },
+          {
+            "text": "Continue this discussion →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "final_cta"
+          }
+        ],
+        "labelCounts": {
+          "Discuss your operation →": 1,
+          "Offshore StructuringOffshore StructuringLearn more →": 1,
+          "Company FormationCompany FormationLearn more →": 1,
+          "Private ClientsOwnership and UBO architecture for founders and operators.Learn more →": 1,
+          "Banking & PaymentsBanking & PaymentsLearn more →": 1,
+          "Continue this discussion →": 1
+        },
+        "arrowDupes": [],
+        "prohibitedFound": [],
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "overflow": false,
+        "punctuationIssues": [],
+        "homeResidualCount": 0,
+        "h1Count": 1,
+        "waCount": 1,
+        "waAfterHeroCount": 0,
+        "sevenGridCardCount": 0,
+        "sevenGridLabels": [],
+        "bankingInSevenGrid": false,
+        "lang": "en",
+        "title": "Holding Design | Octus Consulting",
+        "metaDescription": "Holding structures for regulated operations require architecture that separates risk, aligns governance and satisfies institutional scrutiny across jurisdictions.",
+        "canonical": "https://octusconsulting.com/solutions/corporate/holding-design",
+        "ogTitle": "Holding Design",
+        "ogDescription": "Holding structures for regulated operations require architecture that separates risk, aligns governance and satisfies institutional scrutiny across jurisdictions.",
+        "isDeep": true
+      },
+      "/solutions/corporate/offshore-structuring": {
+        "route": "/solutions/corporate/offshore-structuring",
+        "links": [
+          {
+            "text": "Discuss your operation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "Anjouan",
+            "href": "/jurisdictions/anjouan",
+            "section": "Company Formation"
+          },
+          {
+            "text": "UAE",
+            "href": "/jurisdictions/uae",
+            "section": "Company Formation"
+          },
+          {
+            "text": "Company FormationCompany FormationLearn more →",
+            "href": "/solutions/corporate/company-formation",
+            "section": "Company Formation"
+          },
+          {
+            "text": "Holding DesignHolding DesignLearn more →",
+            "href": "/solutions/corporate/holding-design",
+            "section": "Company Formation"
+          },
+          {
+            "text": "Banking & PaymentsBanking & PaymentsLearn more →",
+            "href": "/solutions/banking-payments-infrastructure",
+            "section": "Company Formation"
+          },
+          {
+            "text": "Market EntryMarket EntryLearn more →",
+            "href": "/solutions/regulatory/market-entry",
+            "section": "Company Formation"
+          },
+          {
+            "text": "High-Risk OperationsHigh-Risk OperationsLearn more →",
+            "href": "/markets/high-risk",
+            "section": "Company Formation"
+          },
+          {
+            "text": "Continue this discussion →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "final_cta"
+          }
+        ],
+        "commercialLinks": [
+          {
+            "text": "Discuss your operation →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "hero"
+          },
+          {
+            "text": "Company FormationCompany FormationLearn more →",
+            "href": "/solutions/corporate/company-formation",
+            "section": "Company Formation"
+          },
+          {
+            "text": "Holding DesignHolding DesignLearn more →",
+            "href": "/solutions/corporate/holding-design",
+            "section": "Company Formation"
+          },
+          {
+            "text": "Banking & PaymentsBanking & PaymentsLearn more →",
+            "href": "/solutions/banking-payments-infrastructure",
+            "section": "Company Formation"
+          },
+          {
+            "text": "Market EntryMarket EntryLearn more →",
+            "href": "/solutions/regulatory/market-entry",
+            "section": "Company Formation"
+          },
+          {
+            "text": "High-Risk OperationsHigh-Risk OperationsLearn more →",
+            "href": "/markets/high-risk",
+            "section": "Company Formation"
+          },
+          {
+            "text": "Continue this discussion →",
+            "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+            "section": "final_cta"
+          }
+        ],
+        "labelCounts": {
+          "Discuss your operation →": 1,
+          "Company FormationCompany FormationLearn more →": 1,
+          "Holding DesignHolding DesignLearn more →": 1,
+          "Banking & PaymentsBanking & PaymentsLearn more →": 1,
+          "Market EntryMarket EntryLearn more →": 1,
+          "High-Risk OperationsHigh-Risk OperationsLearn more →": 1,
+          "Continue this discussion →": 1
+        },
+        "arrowDupes": [],
+        "prohibitedFound": [],
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "overflow": false,
+        "punctuationIssues": [],
+        "homeResidualCount": 0,
+        "h1Count": 1,
+        "waCount": 1,
+        "waAfterHeroCount": 0,
+        "sevenGridCardCount": 0,
+        "sevenGridLabels": [],
+        "bankingInSevenGrid": false,
+        "lang": "en",
+        "title": "Offshore Structuring | Octus Consulting",
+        "metaDescription": "Offshore structuring for regulated operations is not about tax. It is about corporate architecture that passes regulatory, banking and institutional scrutiny.",
+        "canonical": "https://octusconsulting.com/solutions/corporate/offshore-structuring",
+        "ogTitle": "Offshore Structuring",
+        "ogDescription": "Offshore structuring for regulated operations is not about tax. It is about corporate architecture that passes regulatory, banking and institutional scrutiny.",
+        "isDeep": true
+      }
+    },
+    "overflowResults": {
+      "/solutions/regulatory-structuring:desktop": false,
+      "/solutions/compliance-risk:desktop": false,
+      "/solutions:desktop": false,
+      "/solutions/regulatory-structuring:mobile": false,
+      "/solutions/compliance-risk:mobile": false,
+      "/solutions:mobile": false,
+      "/solutions/legal-structural-architecture:desktop": false,
+      "/solutions/corporate-structuring:desktop": false,
+      "/private-clients:desktop": false,
+      "/solutions/legal-structural-architecture:mobile": false,
+      "/solutions/corporate-structuring:mobile": false,
+      "/private-clients:mobile": false,
+      "/solutions/remediation-readiness:desktop": false,
+      "/solutions/banking-payments-infrastructure:desktop": false,
+      "/international-hub:desktop": false,
+      "/solutions/remediation-readiness:mobile": false,
+      "/solutions/banking-payments-infrastructure:mobile": false,
+      "/international-hub:mobile": false,
+      "/solutions/regulatory/igaming-licensing:desktop": false,
+      "/solutions/regulatory/market-entry:desktop": false,
+      "/solutions/regulatory/fintech-licensing:desktop": false,
+      "/solutions/regulatory/igaming-licensing:mobile": false,
+      "/solutions/regulatory/fintech-licensing:mobile": false,
+      "/solutions/regulatory/market-entry:mobile": false,
+      "/solutions/compliance/aml-kyc:desktop": false,
+      "/solutions/compliance/dpo-as-a-service:desktop": false,
+      "/solutions/compliance/compliance-as-a-service:desktop": false,
+      "/solutions/compliance/aml-kyc:mobile": false,
+      "/solutions/compliance/dpo-as-a-service:mobile": false,
+      "/solutions/compliance/compliance-as-a-service:mobile": false,
+      "/solutions/compliance/gli-readiness:desktop": false,
+      "/solutions/compliance/internal-controls:desktop": false,
+      "/solutions/corporate/company-formation:desktop": false,
+      "/solutions/compliance/gli-readiness:mobile": false,
+      "/solutions/compliance/internal-controls:mobile": false,
+      "/solutions/corporate/company-formation:mobile": false,
+      "/solutions/corporate/holding-design:desktop": false,
+      "/solutions/corporate/offshore-structuring:desktop": false,
+      "/solutions/corporate/holding-design:mobile": false,
+      "/solutions/corporate/offshore-structuring:mobile": false
+    },
+    "homeAudit": {
+      "route": "/",
+      "links": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+          "section": "final_cta"
+        },
+        {
+          "text": "Explore services →",
+          "href": "/solutions",
+          "section": "final_cta"
+        },
+        {
+          "text": "See how we work →",
+          "href": "/how-we-engage",
+          "section": "final_cta"
+        },
+        {
+          "text": "Request a diagnostic →",
+          "href": "/diagnostic",
+          "section": "final_cta"
+        },
+        {
+          "text": "Rubio TeixeiraFounder & CEO",
+          "href": "/team",
+          "section": "Leadership who own the structure."
+        },
+        {
+          "text": "Maria CristinaOperations Coordination",
+          "href": "/team",
+          "section": "Leadership who own the structure."
+        },
+        {
+          "text": "Meet the team →",
+          "href": "/team",
+          "section": "Leadership who own the structure."
+        },
+        {
+          "text": "Regulatory Structuring →",
+          "href": "/solutions/regulatory-structuring",
+          "section": "A structural approach to regulated operations."
+        },
+        {
+          "text": "Corporate Structuring →",
+          "href": "/solutions/corporate-structuring",
+          "section": "A structural approach to regulated operations."
+        },
+        {
+          "text": "Private Clients →",
+          "href": "/private-clients",
+          "section": "A structural approach to regulated operations."
+        },
+        {
+          "text": "Compliance & Risk →",
+          "href": "/solutions/compliance-risk",
+          "section": "A structural approach to regulated operations."
+        },
+        {
+          "text": "Legal & Structural Architecture →",
+          "href": "/solutions/legal-structural-architecture",
+          "section": "A structural approach to regulated operations."
+        },
+        {
+          "text": "Banking & Payments →",
+          "href": "/solutions/banking-payments-infrastructure",
+          "section": "A structural approach to regulated operations."
+        },
+        {
+          "text": "Remediation & Readiness →",
+          "href": "/solutions/remediation-readiness",
+          "section": "A structural approach to regulated operations."
+        },
+        {
+          "text": "International Hub →",
+          "href": "/international-hub",
+          "section": "A structural approach to regulated operations."
+        },
+        {
+          "text": "iGaming & BettingLicensing, compliance, banking, post-license operationsExplore →",
+          "href": "/markets/igaming",
+          "section": "Where we operate."
+        },
+        {
+          "text": "Fintech & PaymentsEMI licensing, payment infrastructure, cross-border complianceExplore →",
+          "href": "/markets/fintech",
+          "section": "Where we operate."
+        },
+        {
+          "text": "Crypto & Digital AssetsCASP/VASP licensing, MiCA compliance, banking accessExplore →",
+          "href": "/markets/crypto",
+          "section": "Where we operate."
+        },
+        {
+          "text": "High-Risk OperationsBanking resilience, enhanced compliance, institutional accessExplore →",
+          "href": "/markets/high-risk",
+          "section": "Where we operate."
+        },
+        {
+          "text": "Assess your situation →",
+          "href": "/diagnostic",
+          "section": "final_cta"
+        },
+        {
+          "text": "All services →",
+          "href": "/solutions",
+          "section": "Seven areas. One execution partner."
+        },
+        {
+          "text": "Markets →",
+          "href": "/markets",
+          "section": "Seven areas. One execution partner."
+        },
+        {
+          "text": "How we engage →",
+          "href": "/how-we-engage",
+          "section": "Seven areas. One execution partner."
+        },
+        {
+          "text": "Licensing strategy and pathway design",
+          "href": "/solutions/regulatory-structuring",
+          "section": "Seven areas. One execution partner."
+        },
+        {
+          "text": "iGaming licensing programme",
+          "href": "/solutions/regulatory-structuring",
+          "section": "Seven areas. One execution partner."
+        },
+        {
+          "text": "Fintech, EMI and crypto licensing",
+          "href": "/solutions/regulatory-structuring",
+          "section": "Seven areas. One execution partner."
+        },
+        {
+          "text": "Open Regulatory Structuring →",
+          "href": "/solutions/regulatory-structuring",
+          "section": "Seven areas. One execution partner."
+        },
+        {
+          "text": "Start remediation assessment →",
+          "href": "/diagnostic",
+          "section": "Remediation & Readiness"
+        },
+        {
+          "text": "Open remediation hub →",
+          "href": "/solutions/remediation-readiness",
+          "section": "Remediation & Readiness"
+        },
+        {
+          "text": "How we engage →",
+          "href": "/how-we-engage",
+          "section": "Accountable execution."
+        },
+        {
+          "text": "Markets →",
+          "href": "/markets",
+          "section": "Accountable execution."
+        },
+        {
+          "text": "Jurisdictions →",
+          "href": "/jurisdictions",
+          "section": "Accountable execution."
+        },
+        {
+          "text": "Brazil →",
+          "href": "/brazil",
+          "section": "Accountable execution."
+        },
+        {
+          "text": "Explore engagement models →",
+          "href": "/how-we-engage",
+          "section": "Accountability scales with the mandate."
+        },
+        {
+          "text": "Open Intelligence",
+          "href": "/intelligence",
+          "section": "Authority for operators who need structure."
+        },
+        {
+          "text": "Read Insights",
+          "href": "/insights",
+          "section": "Authority for operators who need structure."
+        },
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+          "section": "Mandates Octus accepts."
+        }
+      ],
+      "commercialLinks": [
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+          "section": "final_cta"
+        },
+        {
+          "text": "Explore services →",
+          "href": "/solutions",
+          "section": "final_cta"
+        },
+        {
+          "text": "See how we work →",
+          "href": "/how-we-engage",
+          "section": "final_cta"
+        },
+        {
+          "text": "Request a diagnostic →",
+          "href": "/diagnostic",
+          "section": "final_cta"
+        },
+        {
+          "text": "Meet the team →",
+          "href": "/team",
+          "section": "Leadership who own the structure."
+        },
+        {
+          "text": "Regulatory Structuring →",
+          "href": "/solutions/regulatory-structuring",
+          "section": "A structural approach to regulated operations."
+        },
+        {
+          "text": "Corporate Structuring →",
+          "href": "/solutions/corporate-structuring",
+          "section": "A structural approach to regulated operations."
+        },
+        {
+          "text": "Private Clients →",
+          "href": "/private-clients",
+          "section": "A structural approach to regulated operations."
+        },
+        {
+          "text": "Compliance & Risk →",
+          "href": "/solutions/compliance-risk",
+          "section": "A structural approach to regulated operations."
+        },
+        {
+          "text": "Legal & Structural Architecture →",
+          "href": "/solutions/legal-structural-architecture",
+          "section": "A structural approach to regulated operations."
+        },
+        {
+          "text": "Banking & Payments →",
+          "href": "/solutions/banking-payments-infrastructure",
+          "section": "A structural approach to regulated operations."
+        },
+        {
+          "text": "Remediation & Readiness →",
+          "href": "/solutions/remediation-readiness",
+          "section": "A structural approach to regulated operations."
+        },
+        {
+          "text": "International Hub →",
+          "href": "/international-hub",
+          "section": "A structural approach to regulated operations."
+        },
+        {
+          "text": "iGaming & BettingLicensing, compliance, banking, post-license operationsExplore →",
+          "href": "/markets/igaming",
+          "section": "Where we operate."
+        },
+        {
+          "text": "Fintech & PaymentsEMI licensing, payment infrastructure, cross-border complianceExplore →",
+          "href": "/markets/fintech",
+          "section": "Where we operate."
+        },
+        {
+          "text": "Crypto & Digital AssetsCASP/VASP licensing, MiCA compliance, banking accessExplore →",
+          "href": "/markets/crypto",
+          "section": "Where we operate."
+        },
+        {
+          "text": "High-Risk OperationsBanking resilience, enhanced compliance, institutional accessExplore →",
+          "href": "/markets/high-risk",
+          "section": "Where we operate."
+        },
+        {
+          "text": "Assess your situation →",
+          "href": "/diagnostic",
+          "section": "final_cta"
+        },
+        {
+          "text": "All services →",
+          "href": "/solutions",
+          "section": "Seven areas. One execution partner."
+        },
+        {
+          "text": "Markets →",
+          "href": "/markets",
+          "section": "Seven areas. One execution partner."
+        },
+        {
+          "text": "How we engage →",
+          "href": "/how-we-engage",
+          "section": "Seven areas. One execution partner."
+        },
+        {
+          "text": "Open Regulatory Structuring →",
+          "href": "/solutions/regulatory-structuring",
+          "section": "Seven areas. One execution partner."
+        },
+        {
+          "text": "Start remediation assessment →",
+          "href": "/diagnostic",
+          "section": "Remediation & Readiness"
+        },
+        {
+          "text": "Open remediation hub →",
+          "href": "/solutions/remediation-readiness",
+          "section": "Remediation & Readiness"
+        },
+        {
+          "text": "How we engage →",
+          "href": "/how-we-engage",
+          "section": "Accountable execution."
+        },
+        {
+          "text": "Markets →",
+          "href": "/markets",
+          "section": "Accountable execution."
+        },
+        {
+          "text": "Jurisdictions →",
+          "href": "/jurisdictions",
+          "section": "Accountable execution."
+        },
+        {
+          "text": "Brazil →",
+          "href": "/brazil",
+          "section": "Accountable execution."
+        },
+        {
+          "text": "Explore engagement models →",
+          "href": "/how-we-engage",
+          "section": "Accountability scales with the mandate."
+        },
+        {
+          "text": "Discuss your operation →",
+          "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+          "section": "Mandates Octus accepts."
+        }
+      ],
+      "labelCounts": {
+        "Discuss your operation →": 2,
+        "Explore services →": 1,
+        "See how we work →": 1,
+        "Request a diagnostic →": 1,
+        "Meet the team →": 1,
+        "Regulatory Structuring →": 1,
+        "Corporate Structuring →": 1,
+        "Private Clients →": 1,
+        "Compliance & Risk →": 1,
+        "Legal & Structural Architecture →": 1,
+        "Banking & Payments →": 1,
+        "Remediation & Readiness →": 1,
+        "International Hub →": 1,
+        "iGaming & BettingLicensing, compliance, banking, post-license operationsExplore →": 1,
+        "Fintech & PaymentsEMI licensing, payment infrastructure, cross-border complianceExplore →": 1,
+        "Crypto & Digital AssetsCASP/VASP licensing, MiCA compliance, banking accessExplore →": 1,
+        "High-Risk OperationsBanking resilience, enhanced compliance, institutional accessExplore →": 1,
+        "Assess your situation →": 1,
+        "All services →": 1,
+        "Markets →": 2,
+        "How we engage →": 2,
+        "Open Regulatory Structuring →": 1,
+        "Start remediation assessment →": 1,
+        "Open remediation hub →": 1,
+        "Jurisdictions →": 1,
+        "Brazil →": 1,
+        "Explore engagement models →": 1
+      },
+      "arrowDupes": [],
+      "prohibitedFound": [],
+      "emDashCount": 1,
+      "enDashCount": 0,
+      "overflow": false,
+      "punctuationIssues": [],
+      "homeResidualCount": 1,
+      "h1Count": 1,
+      "waCount": 2,
+      "waAfterHeroCount": 2,
+      "sevenGridCardCount": 0,
+      "sevenGridLabels": [],
+      "bankingInSevenGrid": false,
+      "lang": "en",
+      "title": "Premium Execution for Regulated Operations",
+      "metaDescription": "Octus structures, coordinates and operates the work behind regulated businesses across licensing, compliance, corporate structure, remediation and specialist networks.",
+      "canonical": "https://octusconsulting.com",
+      "ogTitle": "Premium Execution for Regulated Operations",
+      "ogDescription": "Octus structures, coordinates and operates the work behind regulated businesses across licensing, compliance, corporate structure, remediation and specialist networks.",
+      "isDeep": false
+    },
+    "teamData": {
+      "names": [
+        "Rubio Teixeira",
+        "Maria Cristina",
+        "Rodrigo Coelho Lopes",
+        "Claudia Nery",
+        "Esther Vendrami",
+        "Caroline Giovanetti",
+        "Larissa Carvalho",
+        "Milla Ludovico",
+        "Bianca Carolina Oliveira Andrade",
+        "Luciana Santos Veloso"
+      ],
+      "count": 10,
+      "exact": true
+    },
+    "institutionalCrawl": {
+      "/about": {
+        "status": 200,
+        "xRobots": "noindex",
+        "finalUrl": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/about",
+        "location": ""
+      },
+      "/contact": {
+        "status": 200,
+        "xRobots": "noindex",
+        "finalUrl": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/contact",
+        "location": ""
+      },
+      "/brazil": {
+        "status": 200,
+        "xRobots": "noindex",
+        "finalUrl": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/brazil",
+        "location": ""
+      },
+      "/intelligence": {
+        "status": 200,
+        "xRobots": "noindex",
+        "finalUrl": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app/intelligence",
+        "location": ""
+      }
+    },
+    "frozen": {
+      "status": "PASS",
+      "diffNames": [
+        "app/solutions/compliance/aml-kyc/page.tsx",
+        "app/solutions/compliance/compliance-as-a-service/page.tsx",
+        "app/solutions/compliance/dpo-as-a-service/page.tsx",
+        "app/solutions/corporate/company-formation/page.tsx",
+        "app/solutions/regulatory/fintech-licensing/page.tsx",
+        "app/solutions/regulatory/igaming-licensing/page.tsx",
+        "docs/ops/evidence/remediation/services/PHASE4_CLAIM_EVIDENCE_REGISTER.md",
+        "docs/ops/evidence/remediation/services/PHASE4_PUBLIC_SERVICE_REGISTER.md",
+        "docs/ops/evidence/remediation/services/audit/phase4_closeout_capture_validate.mjs"
+      ],
+      "hits": []
+    },
+    "catalogue": {
+      "expected": {
+        "areas": 7,
+        "services": 39,
+        "families": 34,
+        "deep": 11,
+        "orphans": 0
+      },
+      "actual": {
+        "areas": 7,
+        "services": 39,
+        "families": 34,
+        "deep": 11,
+        "orphans": 0
+      },
+      "status": "PASS",
+      "sources": {
+        "areasFile": "/Users/devrubio/Developer/Octus/octus-consulting/lib/publicAreas.ts",
+        "familyFile": "/Users/devrubio/Developer/Octus/octus-consulting/docs/website/OCTUS_SERVICE_FAMILY_ARCHITECTURE_V1.json",
+        "catalogFile": "/Users/devrubio/Developer/Octus/octus-consulting/docs/commercial/public-catalog/OCTUS_PUBLIC_SERVICE_CATALOG_V1.json"
+      }
+    },
+    "orphan404": []
+  }
+}

@@ -1,161 +1,264 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 import PageHero from "../../components/system/PageHero";
+import OctusIcon, { type OctusIconName } from "../../components/icons/OctusIcon";
+import OctusSymbolMarker from "../../components/system/OctusSymbolMarker";
+import OctusEditorialDivider from "../../components/system/OctusEditorialDivider";
+import { CtaLink } from "../../components/system/CtaButton";
+import { pageSocialMeta } from "../../lib/pageMeta";
+import "./markets.css";
 
-export const metadata = {
-  title: "Markets — Regulated Sectors We Structure",
+export const metadata = pageSocialMeta({
+  title: "Industries",
   description:
-    "We structure operations in iGaming, fintech, crypto and high-risk digital sectors. Licensing, compliance and corporate architecture for regulated markets.",
-};
+    "Structural discipline across iGaming, fintech, crypto, technology, forex and high-risk regulated industry operations.",
+  path: "/markets",
+});
+
+const INDUSTRIES: {
+  title: string;
+  href: string;
+  icon: OctusIconName;
+  desc: string;
+  pressures: string[];
+}[] = [
+  {
+    title: "iGaming & Betting",
+    href: "/markets/igaming",
+    icon: "licensing",
+    desc: "Licensing pathways, compliance frameworks and banking readiness for online gambling and betting operations across selected jurisdictions.",
+    pressures: ["Licensing", "Compliance", "Banking", "Payments"],
+  },
+  {
+    title: "Fintech & Payments",
+    href: "/markets/fintech",
+    icon: "banking",
+    desc: "Structural work for payment and e-money models: authorisation pathways, compliance architecture and readiness for institutional counterparts.",
+    pressures: ["EMI/licensing pathways", "Payments", "Banking", "Cross-border"],
+  },
+  {
+    title: "Digital Assets & Crypto",
+    href: "/markets/crypto",
+    icon: "compliance",
+    desc: "Regulatory positioning, AML architecture and corporate design for exchanges, custodians, token models and digital payment rails.",
+    pressures: ["CASP/VASP positioning", "AML", "Banking access", "Controls"],
+  },
+  {
+    title: "Technology & B2B Infrastructure",
+    href: "/markets/technology",
+    icon: "corporate",
+    desc: "Ownership, contracting and cross-border structure for platforms, software suppliers and infrastructure providers serving regulated operators.",
+    pressures: ["Ownership", "Cross-border ops", "Contracting", "Compliance"],
+  },
+  {
+    title: "Forex & Regulated Financial Services",
+    href: "/markets/forex",
+    icon: "regulatory",
+    desc: "Licensing pathways, conduct frameworks and banking readiness for brokerage, dealing and investment service models under supervision.",
+    pressures: ["Licensing", "Conduct", "Banking", "Cross-border"],
+  },
+  {
+    title: "High-Risk & Cross-Border Operations",
+    href: "/markets/high-risk",
+    icon: "remediation",
+    desc: "Banking resilience, enhanced compliance and structural separation for operations that institutions classify as high risk.",
+    pressures: [
+      "Banking resilience",
+      "Enhanced compliance",
+      "Structure",
+      "Institutional access",
+    ],
+  },
+];
+
+const SHARED_LAYERS = [
+  {
+    name: "Licensing",
+    body: "Authorisation pathways, filings and fit-and-proper preparation with local counsel where required.",
+  },
+  {
+    name: "Compliance",
+    body: "AML, KYC, monitoring, reporting and controls that must function, not only exist on paper.",
+  },
+  {
+    name: "Banking & payments",
+    body: "Documentation, structure and redundancy that institutional onboarding conversations depend on.",
+  },
+  {
+    name: "Ownership & technology",
+    body: "Corporate design, ownership presentation, contracting and cross-border operating reality.",
+  },
+];
 
 export default function MarketsPage() {
   return (
     <main>
       <PageHero
         eyebrow="Markets"
-        title="Different industries."
-        titleSecondLine="Same structural problem."
+        title="Six industries."
+        titleSecondLine="One structural discipline."
         description={
           <>
-            Whether it&apos;s iGaming, fintech or crypto, regulated operations fail for the same
-            reason: the structure doesn&apos;t hold. We don&apos;t specialize in industries. We
-            specialize in fixing regulated operations.
+            These sectors differ commercially, but they share structural pressure involving
+            licensing, compliance, banking, payments, ownership, technology and cross-border
+            operations. Octus works those layers as one programme rather than as separate
+            projects.
           </>
         }
       />
 
-      {/* ─── ACTIVE MARKETS (linkable) ─── */}
-      <section className="bg-background py-24 md:py-32">
-        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <p className="label">Active markets</p>
-          <h2 className="heading-section" style={{ marginBottom: "40px" }}>
-            Deep expertise, not broad coverage.
-          </h2>
-          <div className="grid-auto-lg">
-            {[
-              {
-                title: "iGaming & Betting",
-                desc: "Licensing, compliance and banking for online gambling and sports betting operators. From Curaçao to Brazil, Malta to Isle of Man.",
-                tags: ["Licensing", "Banking", "GLI", "Compliance"],
-                href: "/markets/igaming",
-              },
-              {
-                title: "Fintech & Payments",
-                desc: "Regulatory structuring for payment institutions, EMIs and fintech operators. Banking access, compliance frameworks and cross-border licensing.",
-                tags: ["EMI", "Payments", "Banking", "Cross-border"],
-                href: "/markets/fintech",
-              },
-            ].map((m) => (
-              <Link key={m.title} href={m.href} className="card-grid" style={{ padding: "32px" }}>
-                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>{m.title}</h3>
-                <p className="body-sm" style={{ marginBottom: "16px" }}>{m.desc}</p>
-                <div className="chip-row" style={{ marginBottom: "16px" }}>
-                  {m.tags.map((t) => (
-                    <span key={t} className="chip">{t}</span>
-                  ))}
-                </div>
-                <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Learn more →</span>
-              </Link>
-            ))}
+      {/* Shared structural pressure: the thesis before the sector list */}
+      <section className="bg-background py-20 md:py-28">
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-10 max-w-2xl md:mb-12">
+            <OctusSymbolMarker size={18} />
+            <p className="section-label mb-4 block">The shared pressure</p>
+            <h2 className="heading-section mb-6">
+              The sector changes. The structural layers do not.
+            </h2>
+            <p className="body-large text-muted-foreground">
+              A licence without banking is not an operation. Compliance that cannot be evidenced
+              does not survive scrutiny. Ownership and technology decisions taken early decide what
+              is possible later. Every industry below meets the same four layers in a different
+              order.
+            </p>
           </div>
+          <ul className="markets-layers">
+            {SHARED_LAYERS.map((layer) => (
+              <li key={layer.name} className="markets-layer">
+                <span className="markets-layer__name">{layer.name}</span>
+                {layer.body}
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
-      {/* ─── ADDITIONAL MARKETS ─── */}
+      {/* Six industries as one architecture */}
       <section className="surface-elevated py-24 md:py-32">
-        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <p className="label">Also active in</p>
-          <h2 className="heading-section" style={{ marginBottom: "32px" }}>
-            Expanding coverage.
-          </h2>
-          <div className="grid-auto-lg">
-            {[
-              {
-                title: "Crypto & Digital Assets",
-                desc: "VASP registration, regulatory positioning and compliance architecture for crypto exchanges, custodians and token issuers.",
-                tags: ["VASP", "MiCA", "AML", "Custody"],
-                href: "/markets/crypto",
-              },
-              {
-                title: "High-Risk Digital Businesses",
-                desc: "Structural and compliance solutions for businesses that banks and regulators classify as high-risk. We make the structure work — not the label go away.",
-                tags: ["Banking", "Risk", "Structure", "Compliance"],
-                href: "/markets/high-risk",
-              },
-            ].map((m) => (
-              <Link key={m.title} href={m.href} className="card-grid" style={{ padding: "32px" }}>
-                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>{m.title}</h3>
-                <p className="body-sm" style={{ marginBottom: "16px" }}>{m.desc}</p>
-                <div className="chip-row" style={{ marginBottom: "16px" }}>
-                  {m.tags.map((t) => (
-                    <span key={t} className="chip">{t}</span>
-                  ))}
-                </div>
-                <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Learn more →</span>
-              </Link>
-            ))}
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-10 max-w-2xl md:mb-12">
+            <p className="section-label mb-4 block">Industries</p>
+            <h2 className="heading-section mb-6">Where Octus operates.</h2>
+            <p className="body-large text-muted-foreground">
+              Each industry page describes the structural pressures of that sector and the work
+              Octus coordinates inside it.
+            </p>
           </div>
+          <ul className="markets-grid">
+            {INDUSTRIES.map((industry) => (
+              <li key={industry.href}>
+                <Link href={industry.href} className="markets-card">
+                  <span className="markets-card__mark">
+                    <OctusIcon name={industry.icon} size={18} />
+                  </span>
+                  <h3 className="mb-3 font-sans text-lg font-semibold text-primary">
+                    {industry.title}
+                  </h3>
+                  <p className="body-text">{industry.desc}</p>
+                  <ul className="markets-card__pressures">
+                    {industry.pressures.map((pressure) => (
+                      <li key={pressure} className="markets-card__pressure">
+                        {pressure}
+                      </li>
+                    ))}
+                  </ul>
+                  <span className="markets-card__more">Explore {industry.title} →</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
-      {/* ─── WHY SECTOR MATTERS ─── */}
+      {/* Why sector-specific structure matters */}
       <section className="bg-background py-24 md:py-32">
-        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
-          <h2 className="heading-section" style={{ marginBottom: "24px" }}>
-            Sector expertise is not optional.
-          </h2>
-          <p className="body-lg" style={{ marginBottom: "20px" }}>
-            A compliance framework built for fintech will fail under iGaming
-            audit. A corporate structure designed for crypto won&apos;t satisfy
-            a payment institution regulator. Every sector has specific
-            regulatory expectations, banking requirements and compliance
-            standards.
+        <div className="mx-auto w-full max-w-3xl px-4 sm:px-6 lg:px-8">
+          <OctusEditorialDivider className="mb-12 ml-0 mr-auto" />
+          <p className="section-label mb-4 block">Why the sector matters</p>
+          <h2 className="heading-section mb-6">One discipline, adapted to the sector.</h2>
+          <p className="body-large mb-5">
+            A compliance framework designed for a payment model will not answer the questions an
+            iGaming supervisor asks. A corporate structure built for a technology supplier will not
+            carry a regulated financial services application. The layers are shared. The evidence,
+            sequencing and thresholds are not.
           </p>
           <p className="body-text">
-            We don&apos;t adapt generic solutions. We build structures designed
-            for the specific regulatory and banking environment your sector
-            operates in.
+            Octus does not adapt a generic template. We build the structure for the regulatory,
+            banking and operating environment the business actually works in, and we keep the
+            workstreams coordinated under one point of accountability.
           </p>
         </div>
       </section>
 
-      {/* ─── CROSS-LINKS ─── */}
-      <section className="surface-elevated py-24 md:py-32">
-        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <p className="label">Go deeper</p>
-          <div className="grid-3">
+      {/* Quiet wayfinding */}
+      <section className="surface-elevated py-20 md:py-24">
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+          <p className="section-label mb-6 block">Continue</p>
+          <div className="grid gap-6 md:grid-cols-3">
             {[
-              { title: "Jurisdictions", desc: "Where we operate and how.", href: "/jurisdictions" },
-              { title: "Solutions", desc: "Full service architecture.", href: "/solutions" },
-              { title: "Start a Diagnostic", desc: "Identify what's broken.", href: "/contact" },
-            ].map((r) => (
-              <Link key={r.title} href={r.href} className="card-grid" style={{ padding: "28px" }}>
-                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{r.title}</h3>
-                <p className="body-sm" style={{ marginBottom: "12px" }}>{r.desc}</p>
-                <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Explore →</span>
+              {
+                title: "Solutions",
+                desc: "Seven service areas that carry the work across every industry.",
+                href: "/solutions",
+                icon: "corporate" as OctusIconName,
+              },
+              {
+                title: "Jurisdictions",
+                desc: "Regulatory locations where Octus can take operational accountability.",
+                href: "/jurisdictions",
+                icon: "jurisdictions" as OctusIconName,
+              },
+              {
+                title: "How we engage",
+                desc: "Engagement models and where accountability sits inside a mandate.",
+                href: "/how-we-engage",
+                icon: "contact" as OctusIconName,
+              },
+            ].map((item) => (
+              <Link key={item.href} href={item.href} className="markets-card">
+                <span className="markets-card__mark">
+                  <OctusIcon name={item.icon} size={18} />
+                </span>
+                <h3 className="mb-2 font-sans text-base font-semibold text-primary">
+                  {item.title}
+                </h3>
+                <p className="body-text">{item.desc}</p>
+                <span className="markets-card__more">Open {item.title} →</span>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ─── CTA FINAL ─── */}
-      <section className="cta-block">
-        <div className="cta-block__bg" />
-        <div className="cta-block__inner">
-          <p className="body-text" style={{ color: "var(--white-40)", marginBottom: "16px" }}>
-            Operating in a regulated sector without the right structure
-          </p>
-          <h2 className="heading-lg cta-block__title">
-            is not a risk. It&apos;s a countdown.
+      {/* Final CTA: one primary, one quiet link */}
+      <section className="surface-dark py-24 md:py-32">
+        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
+          <h2 className="mb-6 font-heading text-3xl font-semibold leading-[1.12] tracking-tight text-white md:text-4xl">
+            The sector is the context. The structure is the work.
           </h2>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
-          <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
-            We respond within 24 hours.
+          <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-white/75">
+            If licensing, compliance, banking or ownership is holding the operation back, describe
+            the situation and we will tell you how it is usually structured.
           </p>
+          <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+            <CtaLink
+              href={WHATSAPP_DISCUSS_URL}
+              variant="on-dark"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {CTA_DISCUSS_LABEL}
+            </CtaLink>
+            <Link
+              href="/solutions"
+              className="inline-flex min-h-11 items-center font-sans text-sm text-white/65 no-underline transition-colors hover:text-white"
+            >
+              Explore services →
+            </Link>
+          </div>
         </div>
       </section>
-
     </main>
   );
 }

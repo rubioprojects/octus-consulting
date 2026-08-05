@@ -1,0 +1,44 @@
+{
+  "home_rubio_img": 1,
+  "home_maria_img": 1,
+  "home_roles": 1,
+  "ops_coord": 1,
+  "cris_copy": 1,
+  "cookie_banner": 1,
+  "body_cookie_class": true,
+  "wa_box": {
+    "x": 1221.09375,
+    "y": 760,
+    "width": 198.90625,
+    "height": 48
+  },
+  "cookie_box": {
+    "x": 0,
+    "y": 835,
+    "width": 1440,
+    "height": 65
+  },
+  "wa_cookie_overlap": false,
+  "wa_bottom": 808,
+  "cookie_top": 835,
+  "after_accept_banner": 0,
+  "after_accept_body_class": false,
+  "localStorage": "true",
+  "after_reload_banner": 0,
+  "after_reload_ls": "true",
+  "discuss_visible": true,
+  "diagnostic_links": 1,
+  "about_team_img": 1,
+  "about_beyond": 1,
+  "about_no_reports": 0,
+  "about_caps": 1,
+  "mobile_discuss_count": 3,
+  "mobile_discuss_visible": true,
+  "mobile_wa": true,
+  "mobile_wa_box": {
+    "x": 326,
+    "y": 780,
+    "width": 48,
+    "height": 48
+  }
+}

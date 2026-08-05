@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-08-04T01:34:02.036Z",
+  "evidence_reused": false,
+  "tested_repository_head": "9e97c13e90ecc4165e969ee04181e8d2a3a9110c",
+  "deployed_application_sha": "9e97c13e90ecc4165e969ee04181e8d2a3a9110c",
+  "application_code_sha": "9e97c13e90ecc4165e969ee04181e8d2a3a9110c",
+  "validator_sha": "(uncommitted-or-tip)",
+  "phase4_impl_snapshot_reference_only": "8228e342cfc9d3830b4f4a414f2a93ae208e5be1",
+  "note": "Build/typecheck run against local repository HEAD for validation closeout.",
+  "commands": [
+    {
+      "command": "npm run build",
+      "started_at": "2026-08-04T01:33:51.375Z",
+      "finished_at": "2026-08-04T01:34:01.037Z",
+      "exit_code": 0,
+      "status": "PASS",
+      "stdout_tail": "mpany-formation         267 B          94.1 kB\n├ ○ /solutions/corporate/holding-design            267 B          94.1 kB\n├ ○ /solutions/corporate/offshore-structuring      267 B          94.1 kB\n├ ○ /solutions/legal-contractual-architecture      463 B          87.6 kB\n├ ○ /solutions/legal-structural-architecture       1.53 kB        95.4 kB\n├ ○ /solutions/operational-remediation-readiness   463 B          87.6 kB\n├ ○ /solutions/regulatory-strategy-licensing       463 B          87.6 kB\n├ ○ /solutions/regulatory-structuring              1.53 kB        95.4 kB\n├ ○ /solutions/regulatory/banking-payments         161 B          87.3 kB\n├ ○ /solutions/regulatory/fintech-licensing        267 B          94.1 kB\n├ ○ /solutions/regulatory/igaming-licensing        269 B          94.2 kB\n├ ○ /solutions/regulatory/market-entry             267 B          94.1 kB\n├ ○ /solutions/remediation-readiness               1.53 kB        95.4 kB\n├ ○ /team                                          267 B          94.1 kB\n├ ○ /terms                                         161 B          87.3 kB\n└ ○ /what-we-do                                    267 B          94.1 kB\n+ First Load JS shared by all                      87.1 kB\n  ├ chunks/7023-aecd8cbddd9bcfb4.js                31.6 kB\n  ├ chunks/fd9d1056-7f8fa82e9b809390.js            53.6 kB\n  └ other shared chunks (total)                    1.9 kB\n\n\n○  (Static)  prerendered as static content\n●  (SSG)     prerendered as static HTML (uses getStaticProps)\n\n",
+      "stderr_tail": ""
+    },
+    {
+      "command": "npx tsc --noEmit",
+      "started_at": "2026-08-04T01:34:01.037Z",
+      "finished_at": "2026-08-04T01:34:02.036Z",
+      "exit_code": 0,
+      "status": "PASS",
+      "stdout_tail": "",
+      "stderr_tail": ""
+    }
+  ],
+  "overall": "PASS"
+}

@@ -1,19 +1,23 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
+import DarkHeroAtmosphere from "../../../../components/system/DarkHeroAtmosphere";
+import { pageSocialMeta } from "../../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Fintech Licensing",
   description:
     "EMI and Payment Institution licensing is not a filing exercise. Octus structures fintech operations so they can be authorised, operated and sustained under regulatory scrutiny.",
-};
+  path: "/solutions/regulatory/fintech-licensing",
+});
 
 export default function FintechLicensingPage() {
   return (
     <main>
-      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
-        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <span className="label">Solutions · Regulatory · Fintech Licensing</span>
-          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
+      <section className="octus-dark-hero surface-dark relative flex min-h-[70vh] flex-col justify-center overflow-hidden pt-28 pb-16 md:min-h-[80vh] md:pt-32 md:pb-24">
+        <DarkHeroAtmosphere />
+        <div className="relative z-10 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+          <span className="label">Services · Regulatory · Fintech Licensing</span>
+          <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline">
             A fintech licence is not a product launch.
             <br />
             <span style={{ color: "var(--white-40)" }}>It is a regulatory build.</span>
@@ -26,6 +30,7 @@ export default function FintechLicensingPage() {
             <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           </div>
         </div>
+        <div className="octus-dark-hero__seam" aria-hidden="true" />
       </section>
 
       <section className="bg-background py-24 md:py-32">
@@ -102,9 +107,9 @@ export default function FintechLicensingPage() {
             PI or EMI. The licence type determines everything.
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "18px" }}>
-            <p className="body-text"><strong className="text-primary">Payment Institution (PI)</strong> — Payment processing, transfers, account services. No e-money issuance. Capital: EUR20k-EUR125k depending on scope.</p>
-            <p className="body-text"><strong className="text-primary">Electronic Money Institution (EMI)</strong> — All PI services plus e-money issuance, IBANs, wallets, prepaid. Client fund safeguarding mandatory. Capital: minimum EUR350k.</p>
-            <p className="body-text"><strong className="text-primary">Jurisdictions</strong> — Lithuania leads volume. Ireland and Malta established. Each regulator interprets PSD2/EMD2 differently.</p>
+            <p className="body-text"><strong className="text-primary">Payment Institution (PI)</strong>. Payment processing, transfers, account services. No e-money issuance. Capital: EUR20k-EUR125k depending on scope.</p>
+            <p className="body-text"><strong className="text-primary">Electronic Money Institution (EMI)</strong>. All PI services plus e-money issuance, IBANs, wallets, prepaid. Client fund safeguarding mandatory. Capital: minimum EUR350k.</p>
+            <p className="body-text"><strong className="text-primary">Jurisdictions</strong>. Lithuania leads volume. Ireland and Malta established. Each regulator interprets PSD2/EMD2 differently.</p>
           </div>
           <p className="body-text" style={{ marginTop: "24px" }}>
             Octus does not recommend a jurisdiction based on speed or cost. The choice is driven by where the operation can sustain substance, compliance and banking long-term.
@@ -144,7 +149,7 @@ export default function FintechLicensingPage() {
           <div className="grid gap-6 md:grid-cols-1">
             {[
               ["Case 1 · Fintech · EU", "EMI application rejected. Structure rebuilt.", "Initial application failed due to insufficient substance and safeguarding gaps. Octus redesigned corporate structure, rebuilt compliance documentation and coordinated resubmission. Authorisation granted on second application."],
-              ["Case 2 · Payments · Cross-border", "Licensed but unable to bank.", "PI licence active but no banking partner would onboard. AML documentation did not meet banking standards. Octus restructured compliance and coordinated with specialist institutions. Account operational within 10 weeks."],
+              ["Case 2 · Payments · Cross-border", "Licensed but unable to bank.", "PI licence active but no banking partner would onboard. AML documentation did not meet banking standards. Octus restructured compliance and coordinated specialist banking readiness workstreams so the operation could reopen an account path."],
               ["Case 3 · Fintech · Passporting", "Authorised but blocked in target markets.", "EMI licence granted but passporting notifications rejected due to substance concerns. Octus restructured local presence, governance and operational controls. Passporting restored across 4 EU markets."],
             ].map(([tag, title, body]) => (
               <div
@@ -173,7 +178,8 @@ export default function FintechLicensingPage() {
             We do not submit applications built on assumptions. We design regulatory-ready operations and take them through authorisation.
           </p>
           <p className="body-text" style={{ marginBottom: "24px" }}>
-            If your objective is "get a licence fast", "test and see if it passes", or "use a template and adapt later" — this is not for you.
+            If your objective is &ldquo;get a licence fast&rdquo;, &ldquo;test and see if it
+            passes&rdquo;, or &ldquo;use a template and adapt later&rdquo;: this is not for you.
           </p>
           <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>Who this is for</h3>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -197,14 +203,14 @@ export default function FintechLicensingPage() {
           <p className="label">Related</p>
           <p className="body-sm text-muted-foreground mb-5">
             Where this is typically structured:{" "}
-            <Link href="/jurisdictions/uae" style={{ color: "var(--blue-light)" }}>UAE</Link>
+            <Link href="/jurisdictions/uae" className="underline underline-offset-2" style={{ color: "var(--blue-light)" }}>UAE</Link>
             {" · "}
-            <Link href="/jurisdictions/portugal" style={{ color: "var(--blue-light)" }}>Portugal</Link>
+            <Link href="/jurisdictions/portugal" className="underline underline-offset-2" style={{ color: "var(--blue-light)" }}>Portugal</Link>
           </p>
           <div className="grid-auto-lg">
             {[
               { title: "iGaming Licensing", desc: "Same structural logic, different regulatory framework", href: "/solutions/regulatory/igaming-licensing" },
-              { title: "Banking & Payments", desc: "The layer that fails most often post-authorisation", href: "/solutions/regulatory/banking-payments" },
+              { title: "Banking & Payments", desc: "The layer that fails most often post-authorisation", href: "/solutions/banking-payments-infrastructure" },
               { title: "Market Entry", desc: "Jurisdiction selection as structural project", href: "/solutions/regulatory/market-entry" },
               { title: "Compliance-as-a-Service", desc: "What keeps the licence operational", href: "/solutions/compliance/compliance-as-a-service" },
               { title: "AML/KYC", desc: "Compliance architecture for licensing and banking", href: "/solutions/compliance/aml-kyc" },
@@ -229,7 +235,7 @@ export default function FintechLicensingPage() {
           <h2 className="heading-lg cta-block__title">
             The regulator does not stop watching after authorisation.
           </h2>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">Continue this discussion →</a>
           <p className="body-sm" style={{ color: "var(--white-25)", marginTop: "16px" }}>
             We review your current setup, identify structural gaps and define what needs to be built before any application is submitted. If there is no viable path, we will tell you upfront.
           </p>

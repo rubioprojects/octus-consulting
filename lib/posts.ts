@@ -43,36 +43,48 @@ The decision does not resolve the debate, but temporarily redefines its contours
   },
   {
     slug: "senate-approves-plp-128-2025-tightens-fiscal-policy-bets-fintechs",
-    title: "Senate Approves PLP 128/2025: Fiscal Tightening, Higher Taxation on Bets, Fintechs and JCP",
+    title: "PLP 128/2025 Sanctioned as Complementary Law 224/2025: Fiscal Tightening and Higher Taxation on Bets, Fintechs and JCP",
     date: "2025-12-19",
     category: "Brazil Regulatory",
     author: "Larissa Carvalho",
-    excerpt: "The Brazilian Senate approved Complementary Bill 128/2025 by 62 to 6 votes, introducing a gradual increase in the betting sector tax rate from 12% to 15% by 2028, alongside higher CSLL rates for fintechs and joint liability for payment processors facilitating illegal operators.",
-    content: `The Senate plenary approved, on the evening of 17 December, the bill reducing federal tax incentives by 10% across various economic sectors while simultaneously increasing taxation on betting operators (bets), fintechs and interest on net equity (JCP). The approved text now proceeds to presidential assent. Complementary Bill No. 128/2025 was approved by a wide margin — 62 votes in favour and 6 against — with Senator Randolfe Rodrigues (PT-AP) as rapporteur.
+    excerpt: "Complementary Bill 128/2025 was approved by the Senate by 62 to 6 votes and sanctioned as Complementary Law No. 224 of 26 December 2025. It raises the fixed-odds betting rate to 13% in 2026, 14% in 2027 and 15% from 2028, alongside higher CSLL for parts of the financial sector and joint liability provisions reaching intermediaries of unauthorised operators.",
+    content: `The Senate plenary approved, on the evening of 17 December 2025, the bill reducing federal tax incentives by 10% across various economic sectors while increasing taxation on betting operators (bets), fintechs and interest on net equity (JCP). Complementary Bill No. 128/2025 passed by 62 votes in favour and 6 against, with Senator Randolfe Rodrigues (PT-AP) as rapporteur.
+
+**Note on status (updated)**
+
+PLP 128/2025 was subsequently sanctioned and became **Complementary Law No. 224 of 26 December 2025 (LC 224/2025)**. The official text is available on the Planalto site at https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp224.htm and should be treated as the controlling source, including for any provisions that were vetoed, amended in the final text or later regulated. The description below reflects the enacted narrative and the position as reported at enactment; where a figure or mechanism matters to a decision, confirm it directly against the statute.
 
 **Structural changes to fiscal policy**
 
-PLP 128/2025 introduces significant changes to the Fiscal Responsibility Law (LC No. 101/2000), establishing stricter criteria for granting, expanding and extending tax, financial and credit incentives. Under the new Article 14-A of the LRF, any legislative proposal implying tax revenue waiver in favour of legal entities must include an estimate of the number of beneficiaries, a validity period (as a rule limited to five years), objective and measurable performance targets, and monitoring and evaluation mechanisms.
+LC 224/2025 introduces changes to the Fiscal Responsibility Law (LC No. 101/2000), establishing stricter criteria for granting, expanding and extending tax, financial and credit incentives. Under the new Article 14-A of the LRF, a legislative proposal implying tax revenue waiver in favour of legal entities must include an estimate of the number of beneficiaries, a validity period (as a rule limited to five years), objective and measurable performance targets, and monitoring and evaluation mechanisms.
 
 The main overall impact is a **linear 10% reduction of federal tax incentives and benefits**, affecting PIS/Pasep, Cofins, IPI, IRPJ, CSLL, Import Tax and employer social security contributions.
 
 **Impact on the betting sector**
 
-For the **fixed-odds betting sector**, PLP 128/2025 represents one of the most significant fiscal and regulatory tightenings approved to date. The current rate of **12%** will be gradually increased to **13% in 2026**, **14% in 2027** and **15% from 2028 onwards**. The additional revenue is split: 50% directed to social security and 50% to public health actions.
+For the **fixed-odds betting sector**, LC 224/2025 is one of the most significant fiscal tightenings enacted since the market was regulated. The rate applied to the operator's gross gaming revenue moves from **12%** on the following path: **13% in 2026**, **14% in 2027** and **15% from 2028 onwards**. As enacted, the additional revenue is allocated between social security and public health actions.
 
-Beyond the rate increase, the bill significantly tightens enforcement mechanisms by establishing **joint and several tax liability**. Financial institutions, payment institutions, fintechs, payment service providers and other intermediaries may be held jointly liable for taxes on bets and prizes if they continue facilitating transactions with **unauthorised operators** after formal notification by the competent authority. The same liability applies to individuals or entities engaged in advertising or promotion of illegal betting operations, extending legal risk to digital platforms, influencers, marketing agencies and media outlets.
+**Timing and anterioridade**
+
+Increases of this kind do not take effect on publication. Brazilian constitutional law requires deferral before an increased charge may be demanded, and for social contributions the ninety day rule (anterioridade nonagesimal) applies counted from publication of the law, with the annual anterioridade rule applying to taxes to which it is applicable. The practical start date for each increased charge therefore depends on the nature of the charge, the effectiveness clause of LC 224/2025 and any implementing regulation from the Federal Revenue Service or the Secretariat of Prizes and Betting. Operators should map effective dates charge by charge rather than assuming a single commencement date.
+
+**Joint liability**
+
+LC 224/2025 contains joint liability provisions directed at intermediaries in the payment chain. As enacted, financial institutions, payment institutions, fintechs, payment service providers and other intermediaries may be held liable in respect of amounts connected to bets and prizes where they continue to facilitate transactions with **unauthorised operators** after formal notification by the competent authority. Provisions of this nature were also discussed in relation to parties engaged in advertising or promoting illegal betting. The scope of each liability rule, the trigger for it and the defences available depend on the wording of the enacted articles and on subsequent regulation, so the statute text should be read before assessing exposure for any specific intermediary, platform, agency or media counterparty.
 
 **Impact on fintechs and financial institutions**
 
-For **fintechs, payment institutions and other financial sector entities**, the principal negative impact is the **increase in the Social Contribution on Net Income (CSLL)**. Credit, financing and investment companies (fintechs) and capitalisation companies, currently paying **15%**, will move to **17.5% until 31 December 2027** and **20% from 1 January 2028**. Entities currently paying **9%** CSLL will move to **12% until 2027** and **15% from 2028**.
+For **fintechs, payment institutions and other financial sector entities**, the principal impact reported at enactment is an **increase in the Social Contribution on Net Income (CSLL)**. As reported at enactment, credit, financing and investment companies and capitalisation companies move from **15%** to **17.5% until 31 December 2027** and **20% from 1 January 2028**, while entities at **9%** CSLL move to **12% until 2027** and **15% from 2028**. Applicability turns on the precise classification of the entity under the statute, and readers should confirm the rate and the effective date for their own classification against the LC 224/2025 text on Planalto.
 
 **JCP taxation**
 
-The bill also raises the **withholding income tax rate on Interest on Net Equity (JCP)** from **15% to 17.5%**, reducing the tax advantage of this instrument widely used by companies to remunerate shareholders.
+Also as reported at enactment, the withholding income tax rate on Interest on Net Equity (JCP) rises from **15% to 17.5%**, reducing the tax advantage of an instrument widely used to remunerate shareholders. Again, confirm the final wording and the effective date in the statute.
 
 **Summary**
 
-PLP 128/2025 consolidates a structural shift in Brazilian fiscal policy, combining **reduced tax incentives, direct rate increases and expanded legal liabilities**. For bets, fintechs and financial institutions, the new landscape implies greater tax burden, increased regulatory risk exposure and elevated compliance requirements. Companies in these segments should review business models, corporate structures, advertising policies and control systems to mitigate impacts and avoid material liabilities in a significantly more rigorous legal and fiscal environment from 2026 onwards.`,
+LC 224/2025 consolidates a structural shift in Brazilian fiscal policy, combining reduced tax incentives, direct rate increases and expanded liability provisions. For bets, fintechs and financial institutions the effect is a heavier tax burden, greater regulatory risk exposure and higher compliance demands from 2026 onwards. Companies in these segments should review business models, corporate structures, advertising policies and control systems against the enacted text rather than against reporting of the bill as approved.
+
+For the pre-enactment policy analysis published before the Senate vote, see the companion article at /insights/betting-taxation-risks-senate-legal-certainty-regulated-market.`,
   },
   {
     slug: "betting-taxation-risks-senate-legal-certainty-regulated-market",
@@ -80,16 +92,18 @@ PLP 128/2025 consolidates a structural shift in Brazilian fiscal policy, combini
     date: "2025-12-17",
     category: "Regulatory Analysis",
     author: "Daniel Cruz Fonseca",
-    excerpt: "A technical analysis of the risks posed by a sharp increase in the betting sector's tax burden — why higher taxation does not automatically translate to higher revenue, and what the international experience teaches about building a sustainable regulated market.",
-    content: `The Federal Senate was set to analyse, on 17 December 2025, Bill No. 128/2025, proposing a gradual increase in the taxation applied to Brazil's regulated betting sector. Currently set at 12% — close to the global standard — the rate could reach significantly higher levels by 2028, with discussions pointing toward 15%.
+    excerpt: "Commentary published on 17 December 2025, before the Senate's final vote and before enactment of Complementary Law 224/2025. A technical analysis of the risks posed by a sharp increase in the betting sector's tax burden, and what international experience suggests about building a sustainable regulated market.",
+    content: `**Historical note.** This article was published on 17 December 2025, before the Federal Senate's final approval of Complementary Bill No. 128/2025 and before the bill was sanctioned as Complementary Law No. 224 of 26 December 2025. It is retained as a record of the policy debate as it stood at that date. It is commentary and forecasting from before the vote, not a description of the law in force. For the enacted position, including the rate path and the effective dates governed by constitutional anterioridade, see the companion article at /insights/senate-approves-plp-128-2025-tightens-fiscal-policy-bets-fintechs and the statute text at https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp224.htm.
+
+The Federal Senate was scheduled to analyse, on 17 December 2025, Bill No. 128/2025, which proposed a gradual increase in the taxation applied to Brazil's regulated betting sector. The rate then in force was 12%, and discussion at the time pointed toward 15% by 2028. The Senate approved the bill that evening, and the rate path was subsequently enacted in LC 224/2025.
 
 The debate on taxation is legitimate and necessary. However, when dealing with a recently regulated sector that is investment-intensive and still in its consolidation phase, the choice of path demands caution, technical analysis and long-term vision.
 
 **Higher taxation does not automatically mean higher revenue**
 
-One of the principal challenges facing the Brazilian betting market is the significant presence of illegal platforms. It is estimated that approximately 60% of players still use unauthorised operators that operate outside the regulatory framework, pay no taxes, adopt no responsible gambling policies and offer no consumer protection — according to data from Instituto Locomotiva and Instituto Brasileiro de Jogo Responsável (IBJR).
+One of the challenges commonly identified in the Brazilian betting market is the presence of illegal platforms. Third-party estimates cited by Instituto Locomotiva and Instituto Brasileiro de Jogo Responsável (IBJR) suggested at the time that a substantial share of players, reported in some coverage at around 60%, still used unauthorised operators outside the regulatory framework. Estimates of illegal market share are inherently difficult to measure, vary considerably by methodology and source, and are frequently produced by parties with an interest in the policy outcome. These figures are not Octus primary research and are not independently verified by Octus. They are reproduced as attributed context for the argument, not as established fact.
 
-In this context, raising the tax burden on operators who have already regularised their position may produce the opposite of the intended effect. Rather than expanding the contributor base, an abrupt tax increase tends to reduce the competitiveness of the legal market, discourage new investments and strengthen the illegal ecosystem — which operates with no regulatory costs, no oversight and no institutional accountability.
+In this context, raising the tax burden on operators who have already regularised their position may produce the opposite of the intended effect. Rather than expanding the contributor base, an abrupt tax increase tends to reduce the competitiveness of the legal market, discourage new investments and strengthen the illegal ecosystem: which operates with no regulatory costs, no oversight and no institutional accountability.
 
 International experience demonstrates that efficient taxation is not the same as maximum taxation. Countries that successfully consolidated regulated betting markets opted for balanced models capable of raising revenue, protecting consumers and, above all, structurally reducing the space occupied by illegal operators.
 
@@ -97,19 +111,19 @@ International experience demonstrates that efficient taxation is not the same as
 
 Regulatory predictability is one of the pillars of legal certainty. Operators who entered the Brazilian market did so on the basis of a recently established regulatory framework that demanded significant investments in technology, compliance, anti-money laundering, governance, data protection and local operational structures.
 
-When this environment undergoes abrupt changes — particularly in the tax field, without a proportional and previously signalled transition — the logic of confidence that underpins long-term investment decisions is ruptured. The immediate effect is not only economic but institutional: investors begin pricing regulatory risk as a central factor, making operations more expensive, restraining new capital and reducing the willingness of companies to expand or even maintain local structures.
+When this environment undergoes abrupt changes: particularly in the tax field, without a proportional and previously signalled transition: the logic of confidence that underpins long-term investment decisions is ruptured. The immediate effect is not only economic but institutional: investors begin pricing regulatory risk as a central factor, making operations more expensive, restraining new capital and reducing the willingness of companies to expand or even maintain local structures.
 
 **Employment and economic impact**
 
 The gaming and betting industry in Brazil is no longer a marginal phenomenon. Today it sustains a broad and cross-sectoral economic chain involving technology, payment systems, marketing, advertising, sport, consumer services and specialised legal and regulatory services.
 
-According to the study *Panorama do Mercado de Apostas de Quota Fixa* by LCA Consultores Econômica and Cruz Consulting — commissioned by IBJR and ANJL — direct employment in legalised betting generates approximately BRL 460 million per year in wages, plus BRL 87 million in social security contributions.
+According to the study *Panorama do Mercado de Apostas de Quota Fixa* by LCA Consultores Econômica and Cruz Consulting (commissioned by IBJR and ANJL), direct employment in legalised betting was reported as generating approximately BRL 460 million per year in wages, plus BRL 87 million in social security contributions. Octus cites these study figures as third-party economic estimates; they are not Octus-produced statistics.
 
 **The path to strengthening the legal market**
 
 Strengthening the regulated market does not mean penalising those who chose legality. On the contrary: it requires a balanced tax environment capable of stimulating regularisation, expanding the contributor base and structurally reducing the attractiveness of the illegal market.
 
-An intelligent regulation combines revenue collection, legal certainty, consumer protection and incentives for responsible investment. International models demonstrate that moderate rates, combined with rigorous oversight, effective sanctions and technological monitoring, are far more efficient at guaranteeing sustained revenue collection, combating illegality and protecting consumers.
+A balanced regulation combines revenue collection, legal certainty, consumer protection and incentives for responsible investment. International models commonly show that moderate rates, combined with rigorous oversight, effective sanctions and technological monitoring, are more effective at sustaining revenue collection, reducing illegality and protecting consumers than maximum rates alone. This paragraph is commentary, not a prediction of Brazilian fiscal outcomes.
 
 **Octus position**
 
@@ -136,7 +150,7 @@ The Normative Instruction classifies communications into two broad groups:
 
 **Timelines and documentation**
 
-Objective deadlines for notification to SPA/MF are established — as a rule, between ten and thirty days, depending on the nature of the change. The instruction specifies in detail the documents required for each type of communication, including standardised forms, system technical certifications, compliance reports, migration and business continuity plans, data preservation confirmations, and corporate and governance documentation.
+Objective deadlines for notification to SPA/MF are established: as a rule, between ten and thirty days, depending on the nature of the change. The instruction specifies in detail the documents required for each type of communication, including standardised forms, system technical certifications, compliance reports, migration and business continuity plans, data preservation confirmations, and corporate and governance documentation.
 
 Communications must be submitted through the Electronic Information System (SEI), with planned future migration to the Betting Management System (SIGAP). SPA/MF analysis may extend up to 150 days, with the deadline suspended if additional documentation is requested.
 
@@ -153,7 +167,7 @@ This is a central regulatory instrument for the consolidation of the post-licens
     category: "Brazil Regulatory",
     author: "Larissa Carvalho",
     excerpt: "From 10 December 2025, the Centralised Self-Exclusion Platform entered into operation, enabling any person to block access to all authorised betting sites in Brazil through a single procedure at gov.br/autoexclusaoapostas.",
-    content: `From **10 December 2025**, the **Centralised Self-Exclusion Platform** officially entered operation — a system created by the Secretariat of Prizes and Betting (SPA-MF) enabling any person to block, in a single step, access to **all authorised betting sites in Brazil**.
+    content: `From **10 December 2025**, the **Centralised Self-Exclusion Platform** officially entered operation: a system created by the Secretariat of Prizes and Betting (SPA-MF) enabling any person to block, in a single step, access to **all authorised betting sites in Brazil**.
 
 **Regulatory background**
 
@@ -165,13 +179,13 @@ Simultaneously, **Normative Instruction SPA/MF No. 31 of 7 November 2025** was p
 
 **How the system works**
 
-Operators must consult the **Betting Management System (SIGAP)** to verify — whenever a new registration is opened or on a user's first login of the day — whether the user's CPF appears in the centralised self-exclusion database. This consultation is **mandatory** and must block access automatically for those flagged. Periodic cross-checks (at least every fifteen days) of all registered users against the self-exclusion database are also required.
+Operators must consult the **Betting Management System (SIGAP)** to verify: whenever a new registration is opened or on a user's first login of the day: whether the user's CPF appears in the centralised self-exclusion database. This consultation is **mandatory** and must block access automatically for those flagged. Periodic cross-checks (at least every fifteen days) of all registered users against the self-exclusion database are also required.
 
 **For bettors**, the platform is accessible via **gov.br/autoexclusaoapostas** using a Gov.br Silver or Gold level account. Available options include self-exclusion periods from **1 to 12 months** (irrevocable until expiry) or **indefinite self-exclusion** (reversible within 30 days of registration). Upon completion, the bettor receives a confirmation document and all authorised operators are automatically notified. Operators have **up to 72 hours** to implement the technical block.
 
 **Mandatory self-limits at registration**
 
-Ordinance No. 2,579/2025 also requires operators to implement, **at the point of registration**, mandatory self-limits — bettors must define **usage time limits** and **wagering value limits** as a preventive measure before any betting activity begins.
+Ordinance No. 2,579/2025 also requires operators to implement, **at the point of registration**, mandatory self-limits: bettors must define **usage time limits** and **wagering value limits** as a preventive measure before any betting activity begins.
 
 **Compliance timeline**
 
@@ -179,7 +193,7 @@ Operators received a **30-day period** to adjust mandatory verification and bloc
 
 **Significance**
 
-The centralised platform represents a meaningful advancement in responsible gambling policy, offering a simple and reliable tool to reduce addiction risks and control spending — while eliminating the need to apply individually at each platform. For the market, it means heightened technical responsibility and more rigorous user protection standards.`,
+The centralised platform represents a meaningful advancement in responsible gambling policy, offering a simple and reliable tool to reduce addiction risks and control spending: while eliminating the need to apply individually at each platform. For the market, it means heightened technical responsibility and more rigorous user protection standards.`,
   },
   {
     slug: "stf-suspends-municipal-lottery-operations-nationwide",
@@ -190,17 +204,17 @@ The centralised platform represents a meaningful advancement in responsible gamb
     excerpt: "Justice Kassio Nunes Marques suspended all municipal regulations authorising lottery and sports betting operations across Brazil, ordering immediate cessation and imposing daily fines of BRL 500,000 for non-compliant municipalities and companies.",
     content: `On 3 December 2025, Supreme Court Justice Kassio Nunes Marques suspended all municipal regulations across Brazil that create lotteries or authorise the exploitation of lottery services and municipal sports betting, in a preliminary injunction under Fundamental Rights Breach Claim (ADPF) No. 1212, brought by the Solidariedade party.
 
-The decision orders the **immediate cessation of any operations** derived from municipal acts — extending beyond the suspension of tender procedures to encompass operations already underway. It also prohibits any new acts aimed at implementing, continuing or resuming this type of service, under penalty of substantial daily fines.
+The decision orders the **immediate cessation of any operations** derived from municipal acts: extending beyond the suspension of tender procedures to encompass operations already underway. It also prohibits any new acts aimed at implementing, continuing or resuming this type of service, under penalty of substantial daily fines.
 
 **Legal basis**
 
-Law No. 14,790/2023, amending Law No. 13,756/2018, designated the Ministry of Finance — through the Secretariat of Prizes and Betting (SPA) — as the competent authority to regulate and credential companies authorised to operate betting at the national level. The legislation expressly recognises that lottery exploitation also falls to States and the Federal District, but is silent on municipalities.
+Law No. 14,790/2023, amending Law No. 13,756/2018, designated the Ministry of Finance: through the Secretariat of Prizes and Betting (SPA): as the competent authority to regulate and credential companies authorised to operate betting at the national level. The legislation expressly recognises that lottery exploitation also falls to States and the Federal District, but is silent on municipalities.
 
-The injunction highlights that the proliferation of municipal regulations created a fragmented regulatory landscape, weakening federal oversight, distorting revenue collection parameters and relaxing consumer protection standards — creating a systemic risk to federal balance.
+The injunction highlights that the proliferation of municipal regulations created a fragmented regulatory landscape, weakening federal oversight, distorting revenue collection parameters and relaxing consumer protection standards: creating a systemic risk to federal balance.
 
 **Three central rationales**
 
-The rapporteur's opinion identifies three core grounds for suspension: (i) lottery activity cannot be treated as a matter of local interest, given its national ramifications; (ii) the technical, fiscal and regulatory complexity of modern modalities — particularly fixed-odds betting and online operations — requires centralised oversight; and (iii) the socioeconomic and public order risks arising from dispersed control, including fiscal competition, reduced consumer protection standards and the entry of unauthorised operators.
+The rapporteur's opinion identifies three core grounds for suspension: (i) lottery activity cannot be treated as a matter of local interest, given its national ramifications; (ii) the technical, fiscal and regulatory complexity of modern modalities: particularly fixed-odds betting and online operations: requires centralised oversight; and (iii) the socioeconomic and public order risks arising from dispersed control, including fiscal competition, reduced consumer protection standards and the entry of unauthorised operators.
 
 **Scope and enforcement**
 
@@ -210,37 +224,43 @@ Daily fines of **BRL 500,000** are established for non-compliant municipalities 
 
 **Significance for operators**
 
-The decision creates a material risk point for any operation relying on a municipal lottery or sports betting authorisation, directly or indirectly. The injunction applies nationally and requires immediate action. The SPA/MF federal licensing regime is the only valid path for regulated sports betting in Brazil. Any structure that attempted to operate under municipal frameworks — whether as a transitional or parallel route — is now directly exposed.
+As reported at the time, the decision created a material risk point for any operation relying on a municipal lottery or sports betting authorisation, directly or indirectly. The injunction was described as applying nationally. Under the federal statute framing cited in the decision, SPA/MF authorisation is the principal federal route for regulated fixed-odds sports betting. Structures that attempted to operate under municipal frameworks, whether as a transitional or parallel route, were directly exposed by the interim measure as reported.
 
-Although the decision is still subject to full plenary review, the groundwork and its alignment with the federal regulatory framework indicate a strong tendency toward confirmation.`,
+This article records the interim posture as of December 2025. Plenary review outcomes and later procedural developments must be verified against the STF docket and primary sources before any current operational conclusion is drawn.`,
   },
   {
     slug: "coaf-crisis-aml-obligations-online-gaming-operators",
     title: "The COAF Institutional Challenges and AML Obligations for Online Gaming Operators",
     date: "2025-10-03",
     category: "Compliance",
-    excerpt: "An analysis of Brazil's financial intelligence unit (COAF) institutional limitations and the practical steps gaming operators must take to maintain robust anti-money laundering compliance regardless of external pressures on the regulatory system.",
-    content: `Brazil's financial intelligence unit (COAF — Conselho de Controle e Administração Financeira) has functioned as a Financial Intelligence Unit since Law 9,613 of 1998, which regulates anti-money laundering practices. Its primary objective is to receive, analyse and forward reports of suspicious transactions to competent authorities. As the regulated gaming market has expanded significantly, COAF has faced structural challenges that have direct implications for operators.
+    excerpt: "An analysis of the institutional pressures on Brazil's financial intelligence unit, the Conselho de Controle de Atividades Financeiras (COAF), and the practical steps gaming operators should take to maintain robust anti-money laundering compliance regardless of those pressures.",
+    content: `Brazil's financial intelligence unit is the Conselho de Controle de Atividades Financeiras (COAF). It has operated as a Financial Intelligence Unit since Law No. 9,613 of 1998, the statute governing anti-money laundering, and its function is to receive, analyse and forward reports of suspicious transactions to the competent authorities. As the regulated gaming market has expanded, commentary on COAF's institutional capacity has become a recurring theme in the sector, with implications operators should understand.
 
-**COAF's structural limitations**
+**Institutional pressures discussed in public debate**
 
-Several operational constraints have been identified:
+The points in this section are commentary drawn from public debate and press reporting. They are **not verified institutional facts**, Octus has not audited COAF's internal capacity, and readers should not rely on them as findings.
 
-**1. Staffing levels**: The operation relies on a notably reduced team of civil servants relative to the high volume of suspicious transaction reports being received. In the gaming and betting sector, the number of communications to COAF is substantial, while the group of analysts responsible for reviewing them remains limited. A reduced team compromises the effectiveness of referrals and makes it difficult to take appropriate action in all suspicious transaction cases.
+**1. Staffing levels (unverified)**: Public commentary has repeatedly suggested that the analyst headcount is small relative to the volume of suspicious transaction reports received. Octus has not verified staffing figures and does not reproduce a specific number here. Any figure quoted elsewhere should be traced to an official source such as COAF's own reporting on gov.br before being relied upon.
 
-**2. Technology**: The systems used for initial triage of suspicious transaction reports lack effective artificial intelligence and automation tools for faster processing. The unit requires modernisation of its screening and analysis systems to improve the effectiveness of referrals to competent authorities.
+**2. Technology (unverified)**: Public reporting has described triage systems said to lack modern automation. Commentary on public-sector tooling, including whether automated or machine-learning triage would improve throughput, is opinion. It is neither an Octus finding nor an Octus product claim.
 
-**3. Volume growth**: An expressive increase in suspicious transaction communications has created overload, set against a reduced team of analysts.
+**3. Volume growth (unverified)**: Reporting has described a marked increase in suspicious transaction communications following regulation of the betting market. The direction of travel is widely accepted; the magnitude is not something Octus has independently confirmed.
 
-**4. Regulatory non-compliance consequences**: Operators that fail to implement preventive measures face sanctions under applicable law, which may reach fines of up to BRL 20 million and licence cancellation.
+**Institutional facts, by contrast**, are the ones that follow from the statutes and instruments themselves: COAF's mandate under Law No. 9,613/1998, the reporting duties that attach to obliged entities, and the supervisory and sanctioning powers of the Secretariat of Prizes and Betting (SPA/MF) over authorised betting operators. Those are the parts of this article an operator can plan against.
+
+**Consequences of non-compliance**
+
+Operators that fail to implement adequate preventive measures are exposed to administrative sanction. Subject to applicable law and to the specific instrument invoked, the available measures range from warnings and pecuniary penalties through to restriction or withdrawal of authorisation. The applicable ceiling, the calculation basis and the availability of the more severe measures depend on which statute and which regulatory instrument the authority relies on, on the conduct in question and on aggravating or mitigating circumstances. Operators should not plan against a single headline maximum figure. The exposure should be assessed against the specific provision that would apply to the conduct concerned.
 
 **Operator responsibilities**
 
-Portaria SPA/MF 11.43/2024 reinforces that gaming operators must adopt policies, procedures and internal controls covering user identification requirements, monitoring of gaming operations and user transactions, and staff training to identify risks and report suspicious transactions to COAF.
+An earlier version of this article cited an SPA/MF ordinance in a malformed form ("Portaria SPA/MF 11.43/2024"). That citation was not a valid instrument reference and has been withdrawn rather than replaced with a corrected number, because Octus has not verified which instrument was intended. Operators must confirm the specific SPA/MF instrument currently in force that governs AML obligations for fixed-odds betting, together with the applicable COAF regulations, on the official gov.br channels for the Secretariat of Prizes and Betting and for COAF before relying on any citation.
+
+The substance of the obligations is nonetheless well established across the AML framework applicable to obliged entities. Gaming operators are required to adopt policies, procedures and internal controls covering user identification, monitoring of gaming operations and user transactions, and staff training sufficient to identify risk indicators and report suspicious transactions to COAF.
 
 Three key areas of operator obligation stand out:
 
-**1. Rigorous user identification**: At registration, operators must assess whether the individual's declared income is consistent with the volume of bets, and whether the person holds political connections. This requires documentation including tax returns and bank statements, plus consultation of public databases — in particular the Federal Comptroller General (CGU) database — for politically exposed persons (PEPs).
+**1. Rigorous user identification**: At registration, operators must assess whether the individual's declared income is consistent with the volume of bets, and whether the person holds political connections. This requires documentation including tax returns and bank statements, plus consultation of public databases: in particular the Federal Comptroller General (CGU) database: for politically exposed persons (PEPs).
 
 **2. Robust record-keeping**: Maintaining comprehensive internal records of users, including documentation, financial transaction history and internal audit procedures to verify the regularity of financial flows.
 
@@ -248,7 +268,7 @@ Three key areas of operator obligation stand out:
 
 **Conclusion**
 
-For an effective system, COAF requires strengthening — including increased analyst headcount, better AI infrastructure for triage automation, public-private collaboration and clearer regulatory standards. But operators cannot wait for institutional improvement. The strength of their own compliance structures is what determines their regulatory posture in an environment where the external oversight system operates under pressure. Our team is available to support operators with compliance training, technical reviews and implementation of best practices.`,
+A frequent view in public debate, which Octus shares as commentary rather than as a finding, is that the system would benefit from institutional strengthening: adequate analyst capacity, modern triage tooling, structured public and private collaboration, and clearer regulatory standards. Whatever happens on that front, operators cannot make their own compliance contingent on it. The strength of an operator's own controls is what determines its regulatory posture, and the obligations described above apply irrespective of how much scrutiny the operator expects to receive. Our team is available to support operators with compliance training, technical reviews and implementation of documented controls.`,
   },
   {
     slug: "annual-recertification-betting-platforms-spa-mf-new-guidelines",
@@ -260,19 +280,19 @@ For an effective system, COAF requires strengthening — including increased ana
 
 **Why this matters**
 
-The objective is to strengthen technological conformity, operational security and betting integrity — fundamental pillars for the sustainable development of the regulated market.
+The objective is to strengthen technological conformity, operational security and betting integrity: fundamental pillars for the sustainable development of the regulated market.
 
 **Key provisions**
 
 - All Account Management Platforms (PAM), Sportsbook systems, Remote Gaming Servers (RGS) and Aggregators are subject to mandatory annual recertification, covering all brands operated.
-- Critical changes — such as authentication, APIs, settlement, cryptographic security and audit trails — require immediate recertification, not deferred to the annual cycle.
+- Critical changes: such as authentication, APIs, settlement, cryptographic security and audit trails: require immediate recertification, not deferred to the annual cycle.
 - Certificates for B2B solutions (Sportsbook and RGS/Aggregators) must be accompanied by integration certifications and addressed to the Operator directly.
-- Validity is always one year from the certificate's date of issuance. Testing may be initiated up to 90 days before expiry.
+- Validity is typically one year from the certificate's date of issuance under the guidance then published. Testing may be initiated up to 90 days before expiry. Confirm the current SPA/MF instrument before relying on the period.
 - Non-compliance may result in suspension of operating authorisation and the imposition of administrative penalties.
 
 **Practical impact**
 
-Operators and certifying entities will need to adopt proactive management of deadlines and reporting, as well as plan intermediate recertifications in cases of critical changes. The regulation also requires greater integration between operators, suppliers and certifying bodies — making coordination across the technical and compliance functions essential.
+Operators and certifying entities will need to adopt proactive management of deadlines and reporting, as well as plan intermediate recertifications in cases of critical changes. The regulation also requires greater integration between operators, suppliers and certifying bodies, making coordination across the technical and compliance functions essential.
 
 Octus monitors the regulatory evolution of the betting sector in Brazil closely and is positioned to support companies and partners in meeting the requirements of Ordinance SPA/MF No. 722/2024 and related instruments.`,
   },
@@ -281,7 +301,7 @@ Octus monitors the regulatory evolution of the betting sector in Brazil closely 
     title: "Risk Management Software in iGaming: Technology as a Regulatory Pillar",
     date: "2025-08-29",
     category: "Operations",
-    excerpt: "Risk management software has evolved from a best practice into an inescapable regulatory requirement for iGaming operators in Brazil. Understanding what the technology must do — and how it must be integrated with human expertise — is now central to compliance.",
+    excerpt: "Risk management software has evolved from a best practice into an inescapable regulatory requirement for iGaming operators in Brazil. Understanding what the technology must do: and how it must be integrated with human expertise: is now central to compliance.",
     content: `The debate around Law 14,790/2023 is well established among iGaming professionals in Brazil: compliance, KYC and anti-money laundering ceased to be best practices and became non-negotiable regulatory requirements. What receives less attention, however, is how technology can maximise adherence to these requirements.
 
 Risk management software has evolved substantially in recent years, enabling the automation of critical processes, reducing human error and bringing speed to analyses that, if performed manually, would be slow and inefficient. But technology alone does not resolve the challenge: it requires a trained team capable of extracting maximum value from these tools, translating data into strategic decisions aligned with the law.
@@ -301,15 +321,15 @@ Well-applied technology means efficiency, transparency and operational security.
 
 The legislation makes regulatory risk management requirements explicit:
 
-- **Art. 7, §1, VII** — operators must meet technical and cybersecurity requirements with nationally or internationally recognised certification. Systems must be certified and audited — their mere existence is insufficient.
-- **Art. 23** — operators must implement KYC (Know Your Client) procedures with facial recognition technology to confirm bettor identity.
-- **Art. 25** — operators are required to implement betting monitoring mechanisms and report to COAF any suspicious transactions related to money laundering or terrorism financing.
+- **Art. 7, §1, VII**: operators must meet technical and cybersecurity requirements with nationally or internationally recognised certification. Systems must be certified and audited: their mere existence is insufficient.
+- **Art. 23**: operators must implement KYC (Know Your Client) procedures with facial recognition technology to confirm bettor identity.
+- **Art. 25**: operators are required to implement betting monitoring mechanisms and report to COAF any suspicious transactions related to money laundering or terrorism financing.
 
 These provisions make clear that the law treats risk management not as a best practice but as a regulatory pillar.
 
 **The human dimension**
 
-Technology alone does not suffice. For risk management software to deliver its full potential, a capable team behind its operation is essential. Without human preparation, the tool risks being under-utilised, failing to generate real value. This is where an organisational culture oriented toward compliance becomes critical — where legal knowledge, strategic vision and technology work together.
+Technology alone does not suffice. For risk management software to deliver its full potential, a capable team behind its operation is essential. Without human preparation, the tool risks being under-utilised, failing to generate real value. This is where an organisational culture oriented toward compliance becomes critical: where legal knowledge, strategic vision and technology work together.
 
 **Conclusion**
 
@@ -338,11 +358,11 @@ The result is a strategic roadmap that transforms complexity into clarity, orien
 
 **Why this matters for regulated industries**
 
-For companies operating in regulated markets — betting, fintech, payments, compliance-intensive industries — the stakes of an incorrectly structured Brazil entry are significant. The wrong holding structure, an inadequate financial flow design or an incomplete understanding of Brazilian regulatory requirements can create operational, tax and reputational exposure that is costly to unwind.
+For companies operating in regulated markets: betting, fintech, payments, compliance-intensive industries: the stakes of an incorrectly structured Brazil entry are significant. The wrong holding structure, an inadequate financial flow design or an incomplete understanding of Brazilian regulatory requirements can create operational, tax and reputational exposure that is costly to unwind.
 
 An entry study conducted before commitments are made is consistently less expensive than a restructuring exercise after problems have emerged.
 
-Octus structures these engagements with strategy, practical viability and legal certainty at the centre — supporting global companies in their Brazil expansion challenges from the earliest planning stages.`,
+Octus structures these engagements with strategy, practical viability and legal certainty at the centre: supporting global companies in their Brazil expansion challenges from the earliest planning stages.`,
   },
   {
     slug: "rio-de-janeiro-regulates-vlts-lottery-equipment-decree",
@@ -358,7 +378,7 @@ A Video Lottery Terminal is an individual electronic betting terminal connected 
 
 **Scope of the decree**
 
-The decree covers not only VLTs but also totems, betting terminals and Smart POS — all subject to LOTERJ supervision. Authorisation for operation will be granted onerously, conditional on stringent security, financial traceability and consumer protection requirements, including multifactor authentication (including facial recognition) and mandatory integration with the Player Registry (KYC) to prevent participation by minors, combat money laundering and terrorism financing, and support problem gambling controls.
+The decree covers not only VLTs but also totems, betting terminals and Smart POS: all subject to LOTERJ supervision. Authorisation for operation will be granted onerously, conditional on stringent security, financial traceability and consumer protection requirements, including multifactor authentication (including facial recognition) and mandatory integration with the Player Registry (KYC) to prevent participation by minors, combat money laundering and terrorism financing, and support problem gambling controls.
 
 **Establishment categories**
 
@@ -373,7 +393,7 @@ Operation can only commence after a Proof of Concept (PoC), submission of comple
 
 **Regulatory basis and economic projections**
 
-The regulation is grounded in Laws No. 13,756/2018 and 14,790/2023, plus STF decisions recognising state autonomy in lottery services (ADPFs 492 and 493 and ADI 4986). With this framework, Rio de Janeiro inaugurates a modern regulatory framework for the lottery sector — with expectations of generating up to 65,000 direct and indirect jobs.
+The regulation is grounded in Laws No. 13,756/2018 and 14,790/2023, plus STF decisions recognising state autonomy in lottery services (ADPFs 492 and 493 and ADI 4986). With this framework, Rio de Janeiro inaugurates a modern regulatory framework for the lottery sector, with expectations of generating up to 65,000 direct and indirect jobs.
 
 Octus supports operators through the entire VLT authorisation process, from technical certification to LOTERJ licence applications.`,
   },
@@ -382,19 +402,19 @@ Octus supports operators through the entire VLT authorisation process, from tech
     title: "Games Not Classified as Fixed-Odds Betting in Brazil: Understanding the Legal Distinctions",
     date: "2025-08-20",
     category: "Regulatory Analysis",
-    excerpt: "Ordinance SPA/MF No. 1,207/2024 establishes that certain online game modalities — skill games, fantasy sports, multiplayer games and P2P betting — fall outside the fixed-odds betting regime and therefore do not require a federal betting licence.",
+    excerpt: "Historical analysis of Ordinance SPA/MF No. 1,207/2024 on skill, fantasy, multiplayer and P2P modalities outside the fixed-odds regime then described. Classification is product-specific and is not a universal licensing safe harbour.",
     content: `When discussing the regulation of online games in Brazil, it is common for all modalities to be grouped under the "fixed-odds betting" umbrella. However, Ordinance SPA/MF No. 1,207/2024 makes clear that certain modalities do not fall within that regime and therefore receive different legal treatment.
 
 **What is fixed-odds betting?**
 
-In the fixed-odds lottery modality, the bettor knows, at the moment of placing the bet, exactly how much they could win if their prediction is correct. The prize amount is defined by the odds or multiplication factor applied to each unit wagered. The result is determined by a future random event — such as the score of a football match — or by a random number generator.
+In the fixed-odds lottery modality, the bettor knows, at the moment of placing the bet, exactly how much they could win if their prediction is correct. The prize amount is defined by the odds or multiplication factor applied to each unit wagered. The result is determined by a future random event: such as the score of a football match: or by a random number generator.
 
 **Modalities not classified as fixed-odds betting**
 
 According to Art. 3, sole paragraph, of Ordinance SPA/MF No. 1,207/2024, the following do not qualify as "virtual fixed-odds betting online game events":
 
 **1. Skill Games**
-Results determined predominantly by the participant's mental or motor skill — dexterity, strategy, intelligence, knowledge. Chance may be present but is not the predominant factor. Examples: online chess tournaments, quiz games.
+Results determined predominantly by the participant's mental or motor skill: dexterity, strategy, intelligence, knowledge. Chance may be present but is not the predominant factor. Examples: online chess tournaments, quiz games.
 
 **2. Fantasy Sports**
 Virtual contests based on the real performance of athletes or persons, with pre-defined rules, where the prize is independent of the number of participants or total amounts wagered. Requires statistical analysis, strategy and knowledge. Examples: virtual team formation based on actual football league rounds.
@@ -411,9 +431,9 @@ While fixed-odds betting depends predominantly on chance with pre-defined prize 
 
 **Licensing implications**
 
-Games listed in Art. 3, sole paragraph — skill games, fantasy sports, multiplayer and P2P games — are not classified as fixed-odds betting and therefore do not require a federal fixed-odds betting licence for operation. They are often treated as tolerated games under Brazilian law. However, a thorough legal analysis of the specific product is always recommended, given the complexity and evolution of the regulatory framework.
+Games listed in Art. 3, sole paragraph of the ordinance then analysed: skill games, fantasy sports, multiplayer and P2P games: were described as not classified as fixed-odds betting under that instrument. Classification is product-specific and can change with later instruments, enforcement practice and judicial interpretation. Some market commentary has labelled certain skill or P2P products as tolerated; that label is not a licence, not a universal safe harbour, and should not be treated as a free pass to operate. A product-level legal analysis against current SPA/MF materials and applicable law is required before any licensing conclusion.
 
-Octus can assist as a strategic partner in assessing the legal viability, structuring and expansion of gaming projects in both Brazil and internationally.`,
+This article is historical analysis of the ordinance posture as published. It is not current licensing advice.`,
   },
   {
     slug: "bet-br-domain-extension-to-states-brazil",
@@ -429,7 +449,7 @@ The initiative, developed by the Secretariat of Prizes and Betting (SPA), aims t
 
 Access to the domain is currently exclusive to federal operators meeting a series of requirements. The proposed extension to states will require: membership of the National Betting System (SINAPO), inclusion of operators on the SPA website, integration with the prohibited persons platform, registration on consumidor.gov, and technical certification of the betting system by a laboratory recognised by the SPA or the state.
 
-The benefit will be granted to states that are members of SINAPO — a cooperation model between the federal government and federated entities seeking to harmonise oversight and strengthen consumer protection.
+The benefit will be granted to states that are members of SINAPO: a cooperation model between the federal government and federated entities seeking to harmonise oversight and strengthen consumer protection.
 
 The proposed domain model for state use is **operador.uf.bet.br**, where "uf" is replaced by the abbreviation of each federative unit.
 
@@ -453,13 +473,13 @@ Next steps require validation by the Attorney General of the National Treasury (
     category: "Legal Architecture",
     author: "Daniel Cruz Fonseca",
     excerpt: "Trademark registration in the betting sector is a specialised field. The INPI systematically rejects registrations linked to 'bet', 'casino' or 'aposta', and a poorly constructed defence in an appeal can mean the permanent loss of a valuable brand.",
-    content: `Intellectual property in the betting sector is not a generic subject — it is a minefield. Traditional law firms, however reputable, often lack familiarity with the regulatory specificities, ethical codes and legal risks of the iGaming universe.
+    content: `Intellectual property in the betting sector is not a generic subject: it is a minefield. Traditional law firms, however reputable, often lack familiarity with the regulatory specificities, ethical codes and legal risks of the iGaming universe.
 
-The INPI (Brazil's National Industrial Property Institute) systematically rejects registrations linked to "bet", "casino" or "aposta" — even when the operation is entirely legitimate. An error in the description of the activity, the classification of goods or services, or a poorly constructed appeal defence can mean the permanent loss of a valuable brand. There are no second chances.
+The INPI (Brazil's National Industrial Property Institute) systematically rejects registrations linked to "bet", "casino" or "aposta": even when the operation is entirely legitimate. An error in the description of the activity, the classification of goods or services, or a poorly constructed appeal defence can mean the permanent loss of a valuable brand. There are no second chances.
 
 **Why sector expertise matters**
 
-Registering trademarks in the betting space requires knowing exactly which arguments the INPI accepts, which terms it rejects, and how to navigate legally between legality and institutional scepticism. This is not knowledge acquired from academic papers — it comes from building contracts with operators, defending marks under challenge, and registering software that processes millions of reals per month.
+Registering trademarks in the betting space requires knowing exactly which arguments the INPI accepts, which terms it rejects, and how to navigate legally between legality and institutional scepticism. This is not knowledge acquired from academic papers: it comes from building contracts with operators, defending marks under challenge, and registering software that processes millions of reals per month.
 
 Beyond trademark registration, iGaming companies face IP challenges across multiple fronts:
 
@@ -470,17 +490,17 @@ Beyond trademark registration, iGaming companies face IP challenges across multi
 
 **The strategic dimension**
 
-In intellectual property, as in betting, having the right cards is not enough — you need to know how to play them. Making registrations with counsel who understands the market means avoiding expensive errors, saving time, protecting assets with precise language and staying one step ahead in a competitive, regulated environment.
+In intellectual property, as in betting, having the right cards is not enough: you need to know how to play them. Making registrations with counsel who understands the market means avoiding expensive errors, saving time, protecting assets with precise language and staying one step ahead in a competitive, regulated environment.
 
-At Octus, we have built this expertise through direct engagement with the sector — not through theoretical knowledge of it.`,
+At Octus, we have built this expertise through direct engagement with the sector, not through theoretical knowledge of it.`,
   },
   {
     slug: "national-betting-system-sinapo-brazil",
     title: "The National Betting System (SINAPO): What It Is and Why It Could Change Brazilian Betting Regulation",
     date: "2025-08-07",
     category: "Brazil Regulatory",
-    excerpt: "The SPA/MF has initiated the creation of SINAPO — the National Betting System — a cooperative federal initiative to harmonise betting regulation across Brazil's 26 states and the Federal District through minimum national standards.",
-    content: `The Brazilian sports betting market is advancing toward a new phase of integration between federated entities. The Secretariat of Prizes and Betting of the Ministry of Finance (SPA/MF) has initiated the creation of the **National Betting System (SINAPO)** — an initiative aimed at building a cooperative regulatory environment among federative entities.
+    excerpt: "The SPA/MF has initiated the creation of SINAPO, the National Betting System, a cooperative federal initiative to harmonise betting regulation across Brazil's 26 states and the Federal District through minimum national standards.",
+    content: `The Brazilian sports betting market is advancing toward a new phase of integration between federated entities. The Secretariat of Prizes and Betting of the Ministry of Finance (SPA/MF) has initiated the creation of the **National Betting System (SINAPO)**: an initiative aimed at building a cooperative regulatory environment among federative entities.
 
 **SINAPO's objectives**
 
@@ -492,11 +512,11 @@ SINAPO's structuring began in July 2025, with the first two meetings of the Work
 
 Initial discussions addressed: authorisation and oversight criteria for operators; the application of administrative sanctions; anti-money laundering mechanisms; and practical guidelines for responsible gambling policy.
 
-Upcoming sessions are planned to address states' accession to the National Self-Exclusion Platform — enabling bettors to voluntarily request temporary or permanent exclusion from all authorised platforms as a mental health and financial protection tool.
+Upcoming sessions are planned to address states' accession to the National Self-Exclusion Platform: enabling bettors to voluntarily request temporary or permanent exclusion from all authorised platforms as a mental health and financial protection tool.
 
 **Regulatory agenda context**
 
-SINAPO is one of the SPA/MF's priorities for the 2025-2026 regulatory agenda. The initiative sits within Project No. 8 of the agenda — encompassing 13 strategic initiatives for the development of fixed-odds betting regulation. The roadmap includes public consultations and successive stakeholder engagement stages.
+SINAPO is one of the SPA/MF's priorities for the 2025-2026 regulatory agenda. The initiative sits within Project No. 8 of the agenda, encompassing 13 strategic initiatives for the development of fixed-odds betting regulation. The roadmap includes public consultations and successive stakeholder engagement stages.
 
 **Significance for operators**
 
@@ -510,7 +530,7 @@ For operators with multi-state operations or planning state-level entry, underst
     date: "2025-07-24",
     category: "Regulatory Structuring",
     excerpt: "Holding a licence from Malta, Curaçao or the Isle of Man is no longer sufficient for operators seeking to operate in Brazil. With Law 14,790/2023 fully in force, only operators with a federal SPA/MF authorisation may legally accept Brazilian players.",
-    content: `In recent years, many iGaming operators placed their trust in international licences — such as those issued by Malta, Curaçao or the Isle of Man — as a passport to operate across multiple markets. However, with the entry into force of Brazil's new fixed-odds betting regulation, this strategy requires urgent review: relying solely on an international licence is no longer sufficient to operate legally and safely in Brazil.
+    content: `In recent years, many iGaming operators placed their trust in international licences: such as those issued by Malta, Curaçao or the Isle of Man: as a passport to operate across multiple markets. However, with the entry into force of Brazil's new fixed-odds betting regulation, this strategy requires urgent review: relying solely on an international licence is no longer sufficient to operate legally and safely in Brazil.
 
 **Brazil's new regulatory landscape**
 
@@ -524,10 +544,10 @@ The requirements for obtaining a federal licence are stringent and encompass: le
 Each country has sovereignty to define its own market rules. A licence valid in another territory has no automatic legal effect in Brazil. The new regulatory framework makes clear that only operators authorised by the SPA may legally operate.
 
 **2. Risk of sanctions**
-Companies operating in Brazil without authorisation are subject to administrative sanctions including website blocking, substantial fines and advertising restrictions. Third-party operators — such as payment processors and affiliate platforms — may also be held liable.
+Companies operating in Brazil without authorisation are subject to administrative sanctions including website blocking, substantial fines and advertising restrictions. Third-party operators: such as payment processors and affiliate platforms: may also be held liable.
 
 **3. Limited legal protection**
-In disputes with consumers, partners or Brazilian authorities, a company without legal presence in Brazil will be at a disadvantage — without competent jurisdiction, without structure to defend itself or comply with judicial decisions.
+In disputes with consumers, partners or Brazilian authorities, a company without legal presence in Brazil will be at a disadvantage, without competent jurisdiction and without structure to defend itself or comply with judicial decisions.
 
 **4. Reputation and credibility**
 Compliance with local legislation communicates security to consumers, strengthens brand reputation and opens doors with institutional and commercial partners.
@@ -548,20 +568,20 @@ Brazil's new iGaming phase brings real opportunities but also demands responsibi
     title: "Regulation and Technology: How Legal Keeps Pace with iGaming Innovation",
     date: "2025-07-22",
     category: "Regulatory Analysis",
-    excerpt: "The iGaming sector is undergoing accelerated transformation driven by technological innovation, new business models and AI integration. The role of legal counsel has evolved from compliance guardian to strategic partner in this rapidly shifting landscape.",
-    content: `The iGaming sector is undergoing accelerated transformation, driven by technological innovation, new business models and a significant increase in interest from both investors and consumers. In this dynamic landscape, the role of legal counsel goes well beyond compliance — it becomes strategic, adaptable and closely integrated with the evolution of the sector itself.
+    excerpt: "The iGaming sector continues to change through new technology, business models and tools such as machine learning in product and risk workflows. Legal counsel must stay close to those operational shifts: this article is sector commentary, not an Octus product claim.",
+    content: `The iGaming sector continues to change through technological innovation, new business models and increased interest from investors and consumers. In that landscape, legal counsel must stay close to operations: this article is sector commentary and opinion, not a claim about Octus proprietary technology products.
 
 **A sector in constant motion**
 
-The digitisation of games, integration with fintechs, the use of artificial intelligence for personalised user experiences, and new crypto-asset payment modalities are among the vectors shaping the future of iGaming globally. These developments bring new legal challenges: from data protection to anti-money laundering, through the need to regulate previously entirely informal environments.
+Digitisation of games, fintech integrations, machine-learning tools used by some operators for personalisation or risk workflows, and crypto-asset payment experiments are among the vectors shaping iGaming globally. These developments bring legal challenges: from data protection to anti-money laundering, through the need to regulate previously informal environments.
 
-The global market demonstrates different approaches: countries like the United Kingdom and Malta maintain more stable and mature regulations, having been in force longer; while regions like Latin America — with Brazil as a standout example — are in full normative structuring and regulatory consolidation.
+The global market demonstrates different approaches: countries like the United Kingdom and Malta maintain more stable and mature regulations, having been in force longer; while regions like Latin America, with Brazil as a standout example, are in full normative structuring and regulatory consolidation.
 
 **Brazil's new iGaming phase**
 
 Brazil is today one of the most closely watched markets in the global iGaming context. After years of anticipation, 2023 and 2024 marked the effective regulation of fixed-odds betting, with the enactment of Law No. 14,790/23 and subsequent ordinances from the Secretariat of Prizes and Betting (SPA). The new framework regulates not only the operation of betting platforms but also requires a robust compliance structure, responsible gambling policies, clear advertising rules and technical and financial criteria for authorisation.
 
-Brazil has also signalled it will advance regulation of other iGaming verticals, including technology providers — which will bring additional complexity and opportunity to the legal-regulatory ecosystem.
+Brazil has also signalled it will advance regulation of other iGaming verticals, including technology providers: which will bring additional complexity and opportunity to the legal-regulatory ecosystem.
 
 **Legal as a strategic function**
 
@@ -574,23 +594,23 @@ In this challenging environment, legal counsel must be more than a regulatory gu
 
 **Regulation as competitive advantage**
 
-Companies that integrate legal counsel strategically into their innovation processes tend to gain a differentiating advantage. Regulation, far from being viewed as a constraint, can become a competitive edge — conveying confidence to the market, investors and users. In iGaming, where trust is essential, operating within clear, ethical and transparent rules is a fundamental part of the user experience.`,
+Companies that integrate legal counsel into product and compliance design often reduce remediations later. Regulation is not only a constraint; it can support clearer operating standards for counterparties and users. In iGaming, operating within clear, ethical and transparent rules is part of a durable user and banking posture. This is commentary, not a guarantee of commercial outcomes.`,
   },
   {
     slug: "iof-update-financial-market-brazil-2025",
     title: "IOF Update: Key Implications for the Financial Market and Regulated Industries",
     date: "2025-07-18",
     category: "Regulatory Analysis",
-    excerpt: "The Brazilian Federal Revenue Service issued clarifications on the IOF following the suspension of temporary regulations, indicating that financial institutions are not required to collect retroactively — but a future direct charge on taxpayers remains possible.",
+    excerpt: "The Brazilian Federal Revenue Service issued clarifications on the IOF following the suspension of temporary regulations, indicating that financial institutions are not required to collect retroactively: but a future direct charge on taxpayers remains possible.",
     content: `The Brazilian Federal Revenue Service issued important updates on the Financial Transactions Tax (IOF) with direct implications for the corporate credit landscape and fiscal dynamics.
 
 **The clarification**
 
-A note published on 17 July 2025 indicates that financial institutions and other tax-responsible parties that did not collect IOF during the period of suspended regulations are **not required to do so retroactively**. However, the Federal Revenue Service will evaluate the situation and may issue further guidance — indicating a potential direct charge on taxpayers at a future date.
+A note published on 17 July 2025 indicates that financial institutions and other tax-responsible parties that did not collect IOF during the period of suspended regulations are **not required to do so retroactively**. However, the Federal Revenue Service will evaluate the situation and may issue further guidance: indicating a potential direct charge on taxpayers at a future date.
 
 **Implications for regulated industries**
 
-For businesses — including in regulated sectors such as iGaming following its recent regulation in Brazil — changes to the IOF, whether ratified or rectified, directly influence:
+For businesses: including in regulated sectors such as iGaming following its recent regulation in Brazil: changes to the IOF, whether ratified or rectified, directly influence:
 
 - **Cash flow management**: IOF rates affect the cost of borrowing and financial planning across payment cycles;
 - **Tax compensation strategies**: Any potential retroactive obligation requires provisions and restructured fiscal positions;
@@ -598,9 +618,9 @@ For businesses — including in regulated sectors such as iGaming following its 
 
 **The need for proactive planning**
 
-Companies must revise their financial projections and tax strategies to prepare for possible future charges — even if retroactive obligations for institutions have been waived. This is a moment of vigilance and proactive planning to mitigate risks and capture opportunities in a potentially more accessible credit environment.
+Companies must revise their financial projections and tax strategies to prepare for possible future charges: even if retroactive obligations for institutions have been waived. This is a moment of vigilance and proactive planning to mitigate risks and capture opportunities in a potentially more accessible credit environment.
 
-The instability of the regulatory environment around IOF also reinforces a broader point: in Brazil's currently active regulatory development phase, operating without real-time regulatory monitoring creates material exposure — whether in tax, compliance or operational planning.
+The instability of the regulatory environment around IOF also reinforces a broader point: in Brazil's currently active regulatory development phase, operating without real-time regulatory monitoring creates material exposure: whether in tax, compliance or operational planning.
 
 Octus maintains a team of specialists positioned to support companies with regulatory analysis across Brazil's complex fiscal and legal landscape.`,
   },
@@ -609,30 +629,26 @@ Octus maintains a team of specialists positioned to support companies with regul
     title: "Trump Signs Tax Reform Imposing New Betting Taxation in the US: Lessons for Brazil",
     date: "2025-07-08",
     category: "International Regulatory",
-    excerpt: "The One Big Beautiful Bill Act limits the deduction of gambling losses to 90%, meaning US bettors may owe federal taxes even on net-loss years. The measure raises BRL 1.14 billion in revenue projections but risks driving players to offshore platforms — a lesson Brazil is simultaneously learning.",
-    content: `President Donald Trump recently signed the controversial "One Big Beautiful Bill Act", bringing significant changes to US tax policy — with particular attention to a new fiscal approach to the betting sector.
+    excerpt: "The One Big Beautiful Bill Act limits the deduction of gambling losses to 90%, meaning US bettors may owe federal taxes even on net-loss years. The comparative lesson for Brazil is about balancing revenue design with illegal-market risk. This article is editorial commentary, not primary-source tax advice.",
+    content: `President Donald Trump signed the "One Big Beautiful Bill Act", bringing significant changes to US tax policy, with particular attention to a new fiscal approach to the betting sector. The comparative reflections below are Octus editorial commentary. Exact statutory text and revenue estimates should be verified against primary US legislative and Treasury materials before any planning decision.
 
-**The change**
+**The change described in secondary coverage**
 
-Previously, American bettors could fully deduct losses against winnings, protecting themselves against taxation when there was no net profit. Under the new rule, from 2026, only deductions of **up to 90% of losses** will be permitted. This means that even bettors who end the year at a loss may owe tax.
+Previously, American bettors could fully deduct losses against winnings, protecting themselves against taxation when there was no net profit. Under the new rule, from 2026, only deductions of **up to 90% of losses** have been reported as permitted. This means that even bettors who end the year at a loss may owe tax.
 
-Example: A bettor who wins and loses USD 100,000 in a year with zero net profit will still be taxed on USD 10,000 — resulting in approximately USD 2,400 in federal taxes.
+Illustrative example only: a bettor who wins and loses USD 100,000 in a year with zero net profit would still be taxed on USD 10,000 if the 90% limitation applies as described. Confirm the actual statutory computation against the enacted text.
 
 **A fiscal boost with collateral risk**
 
-The US government estimates the change will generate an additional USD 1.14 billion in revenue between 2026 and 2034. However, the measure has been sharply criticised by industry representatives who warn of a key collateral effect: the migration of bettors to offshore or illegal platforms, undermining the advances achieved through the legalisation and regulation of online betting.
-
-The legal US betting market moved approximately USD 115 billion in 2024, according to industry data.
+Public commentary has cited additional federal revenue projections for the measure. Octus does not independently verify those projections here. Industry representatives have also warned of a collateral effect: migration of bettors to offshore or illegal platforms. That risk argument is reported commentary, not an Octus empirical finding.
 
 **Reflections and lessons for Brazil**
 
-In Brazil, the Ministry of Finance was pursuing an increase in betting sector taxation — with the IOF alternative raising the rate from 12% to 18% from October. However, the Chamber of Deputies signalled limited appetite to approve this measure following the government's prior defeat in attempting to increase IOF by decree.
+In Brazil, the Ministry of Finance has at times pursued higher betting-sector taxation, including IOF-related proposals. Chamber of Deputies appetite for such measures has varied. Exact rates and legislative status must be verified against current DOU and congressional records rather than against this commentary.
 
-Brazil's scenario reinforces the need to balance revenue collection with sector viability. The risk of aggressive taxation producing the opposite of its intended effect — driving players to illegal platforms and reducing overall revenue — is the central lesson the US experience offers.
+Brazil's scenario reinforces the need to balance revenue collection with sector viability. The risk that aggressive or unpredictable taxation can weaken the incentive to remain in the legal channel is a comparative planning consideration, not a measured proof that any specific Brazilian rate produces a defined illegal-market outcome.
 
-International experience consistently demonstrates: when the cost of operating within the law is disproportionate and unpredictable, the incentive to regularise weakens and the illegal market gains structural space. Taxation, oversight and predictability must work in concert.
-
-For operators planning their regulatory and fiscal positioning in Brazil, this is a moment to observe international precedents, anticipate risks and structure operations that can withstand regulatory volatility.`,
+For operators planning regulatory and fiscal positioning in Brazil, this is a moment to observe international precedents, anticipate risks and structure operations that can withstand regulatory volatility. Verify primary instruments before relying on any rate, deadline or deduction rule.`,
   },
   {
     slug: "regulatory-agenda-2025-2026-secretariat-prizes-betting",
@@ -646,7 +662,7 @@ For operators planning their regulatory and fiscal positioning in Brazil, this i
 
 **Regulation of B2B providers**
 
-Among the initiatives outlined, one highlight is the regulation of the economic chain associated with betting operators, scheduled for the third quarter of 2025. This initiative aims to encourage the national positioning of foreign companies operating within Brazil's iGaming ecosystem — a significant development for technology suppliers, platform providers, certification laboratories and other service providers currently operating in an undefined regulatory space.
+Among the initiatives outlined, one highlight is the regulation of the economic chain associated with betting operators, scheduled for the third quarter of 2025. This initiative aims to encourage the national positioning of foreign companies operating within Brazil's iGaming ecosystem: a significant development for technology suppliers, platform providers, certification laboratories and other service providers currently operating in an undefined regulatory space.
 
 **Distinctive trust seal**
 
@@ -658,18 +674,18 @@ The establishment of a National Betting System will support cooperative federali
 
 **Revised authorisation procedure**
 
-The agenda includes a revision of the authorisation procedure for betting operators — incorporating lessons from the first authorisation cycle and improving the process defined in Ordinance SPA/MF No. 827/2024.
+The agenda includes a revision of the authorisation procedure for betting operators, incorporating lessons from the first authorisation cycle and improving the process defined in Ordinance SPA/MF No. 827/2024.
 
 **Strategic significance**
 
-These initiatives are expected to position Brazil as one of the world's leading regulated jurisdictions, fostering a more transparent, competitive and stakeholder-aligned industry. With the consolidation of this regulatory agenda, Brazil is set to take a sustainable leap forward in building a modern, responsible betting industry aligned with international best practices.`,
+These initiatives were presented at the time as intended to strengthen Brazil's position among regulated jurisdictions. Whether individual agenda items were completed, deferred or superseded must be verified against later SPA/MF publications. This article records the agenda as announced, not a current status list.`,
   },
   {
     slug: "spa-ordinance-banks-refuse-illegal-betting-operators",
     title: "SPA Ordinance Requires Banks and Payment Institutions to Refuse Accounts for Illegal Betting Operators",
     date: "2025-02-21",
     category: "Brazil Regulatory",
-    excerpt: "The SPA/MF published an ordinance requiring financial institutions, payment institutions and payment scheme managers to refuse or terminate relationships with companies operating fixed-odds betting illegally — with a 24-hour notification obligation.",
+    excerpt: "The SPA/MF published an ordinance requiring financial institutions, payment institutions and payment scheme managers to refuse or terminate relationships with companies operating fixed-odds betting illegally, with a 24-hour notification obligation.",
     content: `The Secretariat of Prizes and Betting of the Ministry of Finance (SPA-MF) published an ordinance establishing guidelines requiring financial institutions (FIs), payment institutions (PIs) and payment scheme managers to refuse or terminate relationships with companies operating fixed-odds betting illegally.
 
 **Key provisions**
@@ -680,7 +696,7 @@ These initiatives are expected to position Brazil as one of the world's leading 
 
 **Significance**
 
-This measure reinforces the Brazilian government's commitment to combating illegal betting operations, protecting bettors and ensuring the integrity of the regulated market. The Secretary of SPA-MF, Regis Dudena, highlighted that beyond blocking illegal websites and advertising, this action is fundamental to preventing unauthorised operators from moving financial resources — closing the net against illegal activity and protecting citizens' finances and economic interests.
+This measure reinforces the Brazilian government's commitment to combating illegal betting operations, protecting bettors and ensuring the integrity of the regulated market. The Secretary of SPA-MF, Regis Dudena, highlighted that beyond blocking illegal websites and advertising, this action is fundamental to preventing unauthorised operators from moving financial resources: closing the net against illegal activity and protecting citizens' finances and economic interests.
 
 Institutions failing to comply with the established guidelines will be subject to oversight proceedings and possible sanctions. This ordinance complements other regulatory initiatives aimed at organising and supervising Brazil's fixed-odds betting market.
 
@@ -694,7 +710,7 @@ This ordinance creates direct operational obligations for banks, payment process
     date: "2025-03-19",
     category: "Advertising & Compliance",
     excerpt: "YouTube implemented new mechanisms to block content related to illegal online gambling sites from 19 March 2025, following denunciations of influencers promoting betting platforms with misleading profit guarantees.",
-    content: `YouTube implemented, from 19 March 2025, new mechanisms to block content related to illegal online gambling sites — following denunciations by Brazil's Ministry of Sport regarding digital influencers promoting betting with misleading promises of easy profit.
+    content: `YouTube implemented, from 19 March 2025, new mechanisms to block content related to illegal online gambling sites: following denunciations by Brazil's Ministry of Sport regarding digital influencers promoting betting with misleading promises of easy profit.
 
 **New guidelines and restrictions**
 
@@ -714,80 +730,82 @@ This development has significant implications for how licensed operators structu
 - Affiliate agreements require explicit compliance clauses aligned with both YouTube's new standards and SPA/MF advertising rules;
 - The convergence of platform-level enforcement and regulatory-level enforcement creates compound liability risk for operators whose marketing network includes non-compliant content.
 
-The extension of responsibility to advertising agents and influencers — already signalled in PLP 128/2025's joint liability provisions — makes this a strategic compliance area, not merely an advertising management question.`,
+The extension of responsibility to advertising agents and influencers: already signalled in PLP 128/2025's joint liability provisions: makes this a strategic compliance area, not merely an advertising management question.`,
   },
   {
     slug: "brazil-b2b-registration-requirement-betting-igaming",
-    title: "Brazil to Implement Registration Requirement for B2B Providers in the Betting and iGaming Market",
+    title: "Brazil B2B Provider Registration: Consultation Status and What Remains Unconfirmed",
     date: "2025-01-29",
     category: "Brazil Regulatory",
-    excerpt: "Brazil's SPA Secretary announced at ICE Barcelona that a mandatory registration mechanism for B2B providers in the regulated market is being implemented — covering game providers, platforms, KYC tools and other essential services.",
-    content: `During the ICE Barcelona roundtable — a leading iGaming industry event — Regis Dudena, Secretary of Prizes and Betting at the Ministry of Finance, announced the implementation of a **mandatory registration mechanism for B2B providers** in Brazil's regulated market.
+    excerpt:
+      "Public consultation under Aviso de Consulta Pública SPA/MF nº 1/2026 on a draft B2B supplier ordinance ran from 4 February to 23 March 2026 and is completed. As at the 4 August 2026 review, a final binding ordinance is not confirmed as published.",
+    content: `**Status note, reviewed 4 August 2026.** This article records the confirmed consultation posture for a proposed B2B supplier recognition mechanism. It does not assert that a final rule is in force.
 
-**What will be covered**
+**What the DOU Aviso supports**
 
-The registration is expected to encompass game providers, betting platforms, KYC (Know Your Customer) tools and other essential services for the functioning of the betting and iGaming market.
+Under **Aviso de Consulta Pública SPA/MF nº 1/2026**, published in the Diário Oficial da União, the Secretariat of Prizes and Betting opened a public consultation on a draft ordinance covering B2B suppliers. The consultation window ran from **4 February 2026 to 23 March 2026** and is **completed**. A draft under consultation is a proposal and may change materially or be withdrawn.
 
-While full licensing for providers is not planned in the near term, Dudena emphasised the importance of introducing specific certification for online gaming systems. "Increasingly, this type of registration is necessary," the Secretary stated, highlighting that the process will be essential for increasing transparency and ensuring regulatory compliance.
+**What remains unconfirmed**
 
-**Market context**
+As at the 4 August 2026 review of this article, a **final binding ordinance is not confirmed as published**, and no commencement or transition dates are confirmed here. Octus has not verified a publication date and does not assert one.
 
-Brazil's regulated iGaming market is still in its initial phase but already faces significant challenges. Licensed operators have been pressing the government to adopt measures to combat offshore operators who continue to operate outside the country's regulatory framework.
+**Sources and verification**
 
-The introduction of a B2B provider registry represents an important step in this context, providing an additional layer of control and reliability to the market as it prepares to consolidate its position as one of the most promising in the global betting and online gaming landscape.
+Providers should verify the current position directly against primary sources: Aviso SPA/MF nº 1/2026 in the Diário Oficial da União for the consultation opening and window, and subsequent DOU publications for any final ordinance. Generic SPA landing pages are not a substitute for the exact instrument.
 
-**Strategic implications for B2B providers**
+**Planning implications (commentary, not a rule)**
 
-For international B2B providers already serving or planning to serve the Brazilian market, this development is significant:
+For international B2B providers already serving or planning to serve the Brazilian market:
 
-- Companies providing technology, games, platforms, KYC systems or compliance tools to Brazilian licensed operators will likely be required to register with SPA/MF;
-- The registration requirement creates a market differentiation opportunity — registered providers signal legitimacy and regulatory acceptance;
-- Operators should begin mapping their B2B supply chain to identify which partners will be affected and ensure they are able to meet future requirements;
-- The regulatory timeline for implementation has not yet been confirmed, making early engagement with the process strategically advantageous.`,
+- Companies providing technology, games, platforms, KYC systems or compliance tools to Brazilian licensed operators are the population a supplier-recognition draft is typically aimed at, and would be the ones required to register if a final ordinance is published in a form similar to the consulted draft;
+- Operators may usefully map their B2B supply chain to identify which partners would be affected if a final rule is published;
+- Because a closed public consultation has not been followed by a confirmed final rule as at this review, the practical posture is to track SPA/MF publication channels rather than to assume either that the requirement is already in force or that it has been abandoned.
+
+Earlier industry-event attribution for January 2025 oral remarks is not retained here. The 2026 consultation notice is not evidence for a 2025 oral statement, speaker quote or event-specific claim.`,
   },
   {
     slug: "quinel-credentialed-certifying-entity-brazil-ministry-finance",
     title: "Quinel Credentialed as Certifying Entity by Brazil's Ministry of Finance, with Octus Legal Support",
     date: "2024-07-23",
     category: "Market & Industry",
-    excerpt: "With Octus's legal advisory, Quinel Limited has been credentialed by Brazil's Ministry of Finance as a certifying entity for betting systems — becoming one of five recognised laboratories authorised to certify platforms in Brazil under Ordinance SPA/MF No. 300/2024.",
-    content: `With the legal advisory of Octus, Quinel Limited has been credentialed by Brazil's Ministry of Finance as a certifying entity for betting systems — including live gaming studios and online games — under the strategic support of Octus. With this step, Quinel becomes one of five laboratories recognised to certify in Brazil, as established by Ordinance SPA/MF No. 300/2024.
+    excerpt: "Historical note (2024): with Octus legal support, Quinel Limited was credentialed by Brazil's Ministry of Finance as a certifying entity for betting systems under Ordinance SPA/MF No. 300/2024. Credential counts change over time; verify current SPA/MF listings.",
+    content: `Historical context (published 2024): with Octus legal support, Quinel Limited was credentialed by Brazil's Ministry of Finance as a certifying entity for betting systems, including live gaming studios and online games, under Ordinance SPA/MF No. 300/2024. Coverage at the time described Quinel among laboratories then recognised to certify in Brazil. Credential lists change; operators should verify the current SPA/MF register rather than treat this article as a live roster.
 
-**The significance**
+**What this meant operationally**
 
-The credentialing of Quinel marks a significant advance in the regulation of sports betting and online games in Brazil. By combining Octus's legal expertise with Quinel's international certification experience, the collaboration facilitates legal and operational compliance for gaming platforms and strengthens the sector's integrity and security.
+Credentialing expanded available laboratory options for operators seeking technical certification under Brazilian fixed-odds rules. Octus supported Quinel on the legal and institutional pathway required for that credentialing process. This article records a partnership milestone; it does not claim an Octus regulator relationship, ranking, award or ongoing exclusive status.
 
-"We are excited to contribute to a more transparent and robust market, which will benefit both operators and players," noted Rubio Teixeira, Founder of Octus.
+"We are glad to support clearer certification pathways for operators who must meet Brazilian technical requirements," noted Rubio Teixeira, Founder of Octus.
 
-"Our accreditation in Brazil represents a significant milestone, reflecting our commitment to establishing new standards of excellence in gaming certification," stated Pietro Fiorito, Quinel's GMO.
+"Our accreditation in Brazil is an important step in serving operators that need certification aligned to local rules," stated Pietro Fiorito, Quinel's GMO.
 
 **Context**
 
-Quinel is positioned to offer certifications meeting the standards established by Brazilian legislation, ensuring that sports betting and online gaming operators have systems in full compliance with current regulation. The accreditation process demanded a joint effort to meet all requirements of the Ministry of Finance — navigating a rigorous technical, legal and institutional review.
+Quinel offers testing and certification services intended to align gaming systems with applicable Brazilian technical requirements. The credentialing process required meeting Ministry of Finance requirements through a technical, legal and institutional review. Certification outcomes remain the responsibility of the laboratory and the operator's compliance programme.
 
 **About Quinel**
 
-Quinel Limited is a globally recognised and accredited gaming certification laboratory. With over a decade of experience, Quinel provides comprehensive testing, certification and inspection services, ensuring gaming systems meet rigorous international standards.
+Quinel Limited is a gaming certification laboratory that provides testing, certification and inspection services for gaming systems against applicable standards. Descriptions of international recognition are Quinel's commercial positioning and are not Octus rankings or awards.
 
 **About Octus**
 
-Octus was founded in 2019 in Portugal by Rubio Teixeira and operates across regulated markets internationally, with offices in the United States, Portugal, the United Kingdom and Brazil. The firm supports clients in navigating complex regulatory environments with a specialised and proactive approach.`,
+Octus Technology LLC (operating as Octus Consulting) supports clients navigating regulated markets through regulatory structuring, compliance coordination and related advisory work. Company identification for website legal purposes is set out in the Privacy Policy and Terms.`,
   },
   {
     slug: "senate-commission-approves-casino-bingo-gaming-bill-brazil",
     title: "Senate Commission Approves Bill to Legalise Casinos, Bingos, Jogo do Bicho and Online Games in Brazil",
     date: "2024-06-19",
     category: "Brazil Regulatory",
-    excerpt: "The Senate's Constitution and Justice Committee approved the rapporteur's report on PL 2234/22 by 14 votes to 12, advancing legislation to legalise casinos, bingos, jogo do bicho and online gaming in Brazil — the bill now proceeds to the full Senate.",
+    excerpt: "The Senate's Constitution and Justice Committee approved the rapporteur's report on PL 2234/22 by 14 votes to 12, advancing legislation to legalise casinos, bingos, jogo do bicho and online gaming in Brazil: the bill now proceeds to the full Senate.",
     content: `The Senate's Constitution, Justice and Citizenship Committee (CCJ) approved the report by Senator Irajá Silvestre on PL 2234/22. The proposal now proceeds to the full Senate floor, with its scheduling dependent on Senate President Rodrigo Pacheco. While awaiting scheduling, the bill may receive amendments modifying the text.
 
-If approved without amendments in the full Senate, the bill requires Presidential assent. If the text is amended, it returns to the Chamber of Deputies. After the Deputies' vote — agreeing or disagreeing with amendments — PL 2234/22 proceeds to Presidential assent.
+If approved without amendments in the full Senate, the bill requires Presidential assent. If the text is amended, it returns to the Chamber of Deputies. After the Deputies' vote: agreeing or disagreeing with amendments. PL 2234/22 proceeds to Presidential assent.
 
 Following Presidential signature, the text becomes law, creating the definitive Regulatory Framework for Gambling in Brazil. For actual operation, regulation must be published within 12 months.
 
 **What PL 2234/22 provides**
 
-The bill provides for the installation of casinos in tourist areas or integrated leisure complexes — such as luxury hotels with at least 100 rooms, plus restaurants, bars and spaces for meetings and cultural events. A limit of one casino per state and in the Federal District is established, with exceptions: São Paulo (up to three), Minas Gerais, Rio de Janeiro, Amazonas and Pará (up to two each), due to population or territory size.
+The bill provides for the installation of casinos in tourist areas or integrated leisure complexes: such as luxury hotels with at least 100 rooms, plus restaurants, bars and spaces for meetings and cultural events. A limit of one casino per state and in the Federal District is established, with exceptions: São Paulo (up to three), Minas Gerais, Rio de Janeiro, Amazonas and Pará (up to two each), due to population or territory size.
 
 Bingo operation is limited to one venue per 150,000 inhabitants per municipality, with draws permitted at stadiums with capacity above 15,000. Jogo do bicho is permitted at a rate of one operation per 700,000 inhabitants per State or Federal District.
 
@@ -797,7 +815,7 @@ The proposal defines guidelines for gambling operation, including taxation of be
   },
   {
     slug: "spa-mf-position-brazilian-partner-20-percent-share-capital",
-    title: "SPA/MF Clarification: Brazilian Partner Requirement — 20% Share Capital Threshold",
+    title: "SPA/MF Clarification: Brazilian Partner Requirement: 20% Share Capital Threshold",
     date: "2024-06-06",
     category: "Brazil Regulatory",
     excerpt: "The SPA/MF confirmed via its FAQ that the requirement for a Brazilian partner holding at least 20% of the applicant company's share capital may be met by either Brazilian natural persons or Brazilian legal entities incorporated under Brazilian law.",
@@ -809,7 +827,7 @@ The SPA/MF confirmed: *"The requirement to have a Brazilian partner holding at l
 
 For this purpose, a Brazilian legal entity is defined as one incorporated under Brazilian law with its registered office and administration in Brazil.
 
-The requirement derives from Art. 7, §1, IX of Law No. 14,790 and can therefore be met through a Brazilian holding company, subsidiary or other locally incorporated vehicle — not exclusively through individual Brazilian shareholders.
+The requirement derives from Art. 7, §1, IX of Law No. 14,790 and can therefore be met through a Brazilian holding company, subsidiary or other locally incorporated vehicle, not exclusively through individual Brazilian shareholders.
 
 **Practical implications**
 
@@ -817,7 +835,7 @@ This clarification has significant structuring implications for international op
 
 - International groups may use a Brazilian subsidiary or incorporated holding structure to satisfy the 20% requirement, rather than needing to bring in individual Brazilian shareholders;
 - This provides flexibility in ownership architecture, particularly for groups where dispersing equity to natural persons creates governance or commercial complexity;
-- The Brazilian entity used to satisfy the requirement must genuinely have its registered office and administration in Brazil — not a shell entity registered locally but managed abroad.
+- The Brazilian entity used to satisfy the requirement must genuinely have its registered office and administration in Brazil, not a shell entity registered locally but managed abroad.
 
 Operators in the licensing process or planning to apply should assess how their current or intended corporate structure meets this requirement and seek specific legal advice on their structuring options.`,
   },
@@ -826,7 +844,7 @@ Operators in the licensing process or planning to apply should assess how their 
     title: "New Rules for Sports Betting and Online Games in Brazil: Portaria SPA/MF 827/2024",
     date: "2024-05-22",
     category: "Brazil Regulatory",
-    excerpt: "The SPA/MF published Ordinance No. 827/2024 defining the rules and conditions for obtaining authorisation to operate sports betting and online games in Brazil — covering a five-year licence, BRL 30 million capital requirement and comprehensive qualification criteria.",
+    excerpt: "The SPA/MF published Ordinance No. 827/2024 defining the rules and conditions for obtaining authorisation to operate sports betting and online games in Brazil: covering a five-year licence, BRL 30 million capital requirement and comprehensive qualification criteria.",
     content: `The Secretariat of Prizes and Betting of the Ministry of Finance published Ordinance SPA/MF No. 827, defining the rules and conditions for obtaining authorisation to exploit sports betting and online games in Brazil.
 
 **Licence timeline**
@@ -835,7 +853,7 @@ The licence may be requested at any time. Applicants submitting a request within
 
 **Brazilian partner requirement**
 
-The ordinance requires a Brazilian partner holding at least 20% of the share capital — fulfillable by Brazilian natural persons or Brazilian legal entities incorporated and administered in Brazil.
+The ordinance requires a Brazilian partner holding at least 20% of the share capital: fulfillable by Brazilian natural persons or Brazilian legal entities incorporated and administered in Brazil.
 
 **Corporate structure**
 
@@ -891,52 +909,50 @@ The SPA is responsible for supervising and overseeing betting systems, and platf
 
 **Online game rules**
 
-For online games, the ordinance requires the definition of multiplication factors on wagered amounts and the use of random generators to determine results — ensuring game integrity and predictability.
+For online games, the ordinance requires the definition of multiplication factors on wagered amounts and the use of random generators to determine results: ensuring game integrity and predictability.
 
 **Physical terminal rules**
 
-Rules for betting at physical terminals are also established, covering bettor identification procedures and payment transaction rules — aimed at ensuring operational security and integrity while protecting bettor interests.
+Rules for betting at physical terminals are also established, covering bettor identification procedures and payment transaction rules: aimed at ensuring operational security and integrity while protecting bettor interests.
 
 **Significance**
 
-This regulation represents a significant advance in the structuring and security of betting and online games in Brazil, establishing rigorous standards for the operation and oversight of the sector. Operators must treat technical certification as a continuous compliance function — not a one-time administrative step.`,
+This regulation represents a significant advance in the structuring and security of betting and online games in Brazil, establishing rigorous standards for the operation and oversight of the sector. Operators must treat technical certification as a continuous compliance function, not a one-time administrative step.`,
   },
   {
     slug: "why-licensing-fails-post-approval",
-    title: "Why Licensing Fails Post-Approval — Octus Consulting",
+    title: "Why Licensing Fails Post-Approval",
     date: "2026-03-31",
     category: "Regulatory",
     excerpt:
-      "Most licensing failures are not rejections. They are approvals that cannot sustain operations. Banking, compliance and structural gaps surface after the licence is granted.",
+      "In Octus engagements, material licensing problems often emerge after approval rather than as rejections. Banking, compliance and structural gaps can surface once the licence is granted.",
     content: `### Why Licensing Fails Post-Approval
 
-Most licensing failures do not happen at approval. They happen in the first six months of operation.
+In Octus engagements, material licensing problems often emerge during the early operational period rather than during the approval process. That observation is drawn from our casework. It is not a measured industry rate, and Octus does not publish a methodology claiming universal frequency or timing.
 
-The assumption is that once a licence is approved, the operation is ready. It is not.
+The assumption that once a licence is approved the operation is ready is often wrong. Licensing authorities evaluate whether the applicant meets the requirements for authorisation. They do not evaluate whether the operation will function in practice. In our experience, that distinction is where many of the hardest post-approval issues arise.
 
-Licensing authorities evaluate whether the applicant meets the requirements for authorisation. They do not evaluate whether the operation will function in practice. That distinction is where most failures occur.
+**The licence is granted. Then operational scrutiny arrives.**
 
-**The licence is granted. Then reality arrives.**
-
-Banking partners conduct their own assessment. They evaluate the compliance documentation, the corporate structure, the jurisdiction and the UBO chain independently. A licence from Curaçao, Malta or Isle of Man does not guarantee banking access. If the AML framework was built to satisfy the regulator but not the bank, the account does not open.
+Banking partners conduct their own assessment. They evaluate the compliance documentation, the corporate structure, the jurisdiction and the UBO chain independently. A licence from Curaçao, Malta or Isle of Man does not guarantee banking access. If the AML framework was built to satisfy the regulator but not the bank, the account may not open.
 
 Payment processors apply the same logic. PSPs and acquirers evaluate compliance quality, transaction patterns and risk exposure. An operation that passes regulatory review can still fail payment onboarding because the compliance layer was designed for the application, not for operations.
 
-Compliance frameworks that satisfied the licensing checklist fail under real transaction volumes. Transaction monitoring that worked in theory generates false positives or misses actual risk indicators when live traffic begins. Responsible gambling tools exist in policy but are not implemented in the platform. Internal controls are documented but nobody follows the escalation path.
+Compliance frameworks that satisfied the licensing checklist can fail under real transaction volumes. Transaction monitoring that worked in theory may generate false positives or miss actual risk indicators when live traffic begins. Responsible gambling tools may exist in policy but not be implemented in the platform. Internal controls may be documented while escalation paths remain unused.
 
-**The pattern is consistent.**
+**A recurring pattern in Octus work.**
 
-The operation invested months and significant capital into the licensing process. The licence was granted. But the structure behind it was built for approval, not for operation. The compliance framework was designed for submission, not for supervision. The corporate design was optimised for the application, not for what banks and payment partners require.
+In files we have worked on, the operation often invested months and significant capital into the licensing process. The licence was granted. But the structure behind it was built for approval, not for operation. The compliance framework was designed for submission, not for supervision. The corporate design was optimised for the application, not for what banks and payment partners require.
 
 **What this means in practice:**
 
-Operations that fail post-approval face a specific set of consequences. Banking is blocked or terminated. Payment processing is restricted or unavailable. The first supervisory review by the regulator reveals gaps that did not exist in the application. The operation is licensed but not operational.
+Where post-approval problems do arise in our engagements, the consequences tend to be concrete. Banking may be blocked or terminated. Payment processing may be restricted or unavailable. The first supervisory review by the regulator may reveal gaps that did not surface in the application. The operation can be licensed but not operational.
 
-**What most people get wrong:** They treat the licence as the finish line. In practice, the licence is where operational exposure begins. Banking, compliance supervision and payment onboarding all happen after approval — and all depend on structural decisions made before submission.
+**A common planning error:** treating the licence as the finish line. In practice, the licence is where operational exposure begins. Banking, compliance supervision and payment onboarding typically happen after approval, and they tend to depend on structural decisions made before submission.
 
-**The structural lesson is straightforward.**
+**The structural lesson.**
 
-Licensing is an outcome, not a destination. The structure behind the licence — corporate design, compliance architecture, banking strategy, operational readiness — determines whether the operation survives its first year. Building that structure for the application instead of for the operation is the most expensive mistake in regulated markets.
+Licensing is an outcome, not a destination. The structure behind the licence: corporate design, compliance architecture, banking strategy, operational readiness: determines whether the operation can sustain itself after authorisation. Building that structure for the application instead of for the operation is among the most expensive mistakes we see in Octus engagements in regulated markets.
 
 The licence gets you through the door. The structure determines whether you stay.`,
     related: [
@@ -945,41 +961,40 @@ The licence gets you through the door. The structure determines whether you stay
     ],
     cta: {
       label:
-        "If your licensed operation is facing banking, compliance or operational challenges — request a structural assessment.",
+        "If your licensed operation is facing banking, compliance or operational challenges: request a structural assessment.",
       href: "/diagnostic",
     },
   },
   {
     slug: "banking-for-high-risk-operations",
-    title:
-      "Banking for High-Risk Operations: Why Structure Matters More Than Relationships — Octus Consulting",
+    title: "Banking for High-Risk Operations: Why Structure Matters More Than Relationships",
     date: "2026-03-31",
     category: "Banking",
     excerpt:
-      "High-risk banking failures are structural, not relational. The corporate design, compliance quality and jurisdiction determine banking access — not the introduction.",
+      "High-risk banking refusals are often structural rather than relational. In Octus engagements, corporate design, compliance quality and jurisdiction tend to matter more than introductions.",
     content: `### Banking for High-Risk Operations: Why Structure Matters More Than Relationships
 
-The bank is not the problem. Your structure is. Every declined account, every terminated PSP, every failed onboarding traces back to the same cause.
+In Octus engagements, declined accounts, terminated PSP relationships and failed onboardings frequently trace back to structure rather than to the absence of an introduction. That is operational observation from our casework, not a measured industry rate.
 
-The most common response to a banking refusal in high-risk sectors is to look for another bank. The second bank declines for the same reasons. Then the third.
+A common first response to a banking refusal in high-risk sectors is to look for another bank. The second bank may decline for similar reasons. Then the third.
 
-The problem is never the bank. It is the structure the bank is evaluating.
+In these cases the problem is often not "the bank" in isolation. It is the structure the bank is evaluating.
 
-**Banks assess structure, not business quality.**
+**Banks assess structure, not business quality alone.**
 
-A profitable, well-managed iGaming operator with an active licence can be declined by every banking partner it approaches. Not because the business is bad. Because the corporate structure, AML documentation and compliance framework do not meet the bank's internal risk threshold.
+A profitable, well-managed iGaming operator with an active licence can be declined by one banking partner after another. Not because the business is bad. Because the corporate structure, AML documentation and compliance framework do not meet the bank's internal risk threshold.
 
 Banking compliance teams evaluate independently from regulators. A licence satisfies regulatory requirements. Banking requires a separate standard: clean UBO chains, AML policies that match operational reality, transaction monitoring that actually functions, and a corporate structure that does not trigger enhanced due diligence at every touchpoint.
 
-**The high-risk classification compounds everything.**
+**The high-risk classification compounds scrutiny.**
 
-When a business operates in a sector classified as high-risk — iGaming, crypto, payments, forex, adult content — every structural weakness is amplified. Offshore incorporation triggers questions. Nominee directors create flags. Complex UBO chains demand explanation. AML policies that read like templates are immediately identified.
+When a business operates in a sector classified as high-risk: iGaming, crypto, payments, forex, adult content: structural weaknesses are amplified. Offshore incorporation triggers questions. Nominee directors create flags. Complex UBO chains demand explanation. AML policies that read like templates tend to be identified quickly.
 
-Standard banks decline outright. Specialist banks require a level of compliance documentation that most operations cannot produce. The gap between what the operation has and what the bank requires is the gap that keeps the account closed.
+Standard banks commonly decline outright. Specialist banks require a level of compliance documentation that many operations cannot produce. The gap between what the operation has and what the bank requires is the gap that keeps the account closed.
 
-**Single-provider dependency is the hidden risk.**
+**Single-provider dependency is a material continuity risk.**
 
-Operations that do secure banking often depend on a single institution. One bank, one PSP, one acquirer. When that provider exits — and in high-risk sectors, exits happen — the operation stops. There is no contingency, no redundancy, no continuity plan.
+Operations that do secure banking often depend on a single institution. One bank, one PSP, one acquirer. When that provider exits, the operation can stop. In Octus work we treat single-provider dependency as a structural risk in high-risk sectors; we do not claim a measured exit rate across the market. Continuity planning still matters.
 
 Building banking resilience means structuring for multiple providers across multiple jurisdictions from the start. Not as a backup plan. As the primary architecture.
 
@@ -987,11 +1002,11 @@ Building banking resilience means structuring for multiple providers across mult
 
 Banking access for high-risk operations is a design problem. The corporate structure, jurisdiction, compliance framework and licensing status must be designed with banking scrutiny in mind from day one. Not optimised for the regulator and then adapted for the bank. Designed for both simultaneously.
 
-**What most people get wrong:** They treat banking as a relationship problem. They look for introductions, referrals, "friendly banks." But every new bank runs the same assessment on the same structure. Without changing the structure, the result does not change.
+**A common planning error:** treating banking as a relationship problem and looking only for introductions, referrals or "friendly banks." Each new bank tends to run a similar assessment on the same structure. Without changing the structure, the result is unlikely to change.
 
-When the structure is right, banking follows. When it is not, no introduction or relationship fixes the problem.`,
+When the structure is sound, banking becomes a realistic conversation. When it is not, an introduction or a relationship rarely fixes the underlying problem.`,
     related: [
-      { label: "Banking & Payments", href: "/solutions/regulatory/banking-payments" },
+      { label: "Banking & Payments", href: "/solutions/banking-payments-infrastructure" },
       { label: "High-Risk Operations", href: "/markets/high-risk" },
     ],
     cta: {
@@ -1001,129 +1016,142 @@ When the structure is right, banking follows. When it is not, no introduction or
   },
   {
     slug: "mica-what-operators-need-to-do",
-    title: "MiCA: What Crypto Operators Actually Need to Do — Octus Consulting",
+    title: "MiCA: What Crypto Operators Actually Need to Do",
     date: "2026-03-31",
     category: "Crypto",
     excerpt:
-      "MiCA is fully applicable. The grandfathering period ends July 2026. This is what CASP authorisation requires in practice — not in theory.",
+      "Review date 4 August 2026. The outer limit of the MiCA Article 143 transitional regime fell on 1 July 2026 and has passed. That regime was optional for Member States and never applied identically across the EU, so exposure now has to be assessed by activity, authorisation status and jurisdiction.",
     content: `### MiCA: What Crypto Operators Actually Need to Do
 
-The grandfathering period ends 1 July 2026. After that, operating without CASP authorisation in the EU is not a compliance gap. It is illegal.
+Review date: 4 August 2026. The outer limit of the transitional regime in Article 143 of MiCA fell on 1 July 2026 and has passed. Firms still providing crypto-asset services to clients in the EU should now be reading their position against the authorisation they actually hold, not against a transitional window.
 
-MiCA is no longer upcoming regulation. It is fully applicable across the EU since December 2024. The grandfathering period — which allows existing operators to continue under national regimes — ends on 1 July 2026 in most member states. After that date, operating without CASP authorisation is not a compliance gap. It is illegal.
+Regulation (EU) 2023/1114 (MiCA) applies across the EU, with the title governing crypto-asset service providers (CASPs) applicable from 30 December 2024. The consolidated text on EUR-Lex, at https://eur-lex.europa.eu/eli/reg/2023/1114/oj, is the controlling reference for everything summarised below, and it should be read alongside the national implementing measure in the relevant Member State.
 
-Over 40 CASP licences have been issued across the Netherlands, Germany, Malta and Luxembourg. The operators who moved early are already authorised. The operators who waited are now under pressure.
+**The transitional regime was optional, and it was not uniform.**
+
+Article 143 permitted, but did not oblige, Member States to allow firms that were lawfully providing crypto-asset services under national law before 30 December 2024 to continue doing so for a limited period, with 1 July 2026 as the outer limit. Member States were free to shorten that period or to decline to apply it at all, and the transitional entitlement could also end earlier for an individual firm on the date its CASP authorisation was granted or refused. ESMA issued statements and Q&A material on the transitional arrangements and on the risks of relying on them; these are published at https://www.esma.europa.eu.
+
+Two points follow. There was no single grandfathering rule that applied identically in every Member State, so any statement of the form "the deadline was X across the EU" is inaccurate. And an assessment of a firm's current position has to begin with the national implementing measure in its home Member State, not with the 1 July 2026 date on its own.
+
+**What the current posture looks like.**
+
+Where a firm provides crypto-asset services covered by MiCA to clients in the EU, in circumstances that require authorisation, and holds neither a CASP authorisation nor another permission that allows the activity, it is in breach of EU law. That statement is scoped deliberately. Whether it applies to a given firm depends on which services are actually provided, on whether the firm solicits or serves EU clients or falls within the narrow reverse solicitation limits, on the authorisation or exemption status of the entity (credit institutions and certain other regulated firms are treated differently), and on the position taken by the competent authority in the relevant jurisdiction. This is general commentary and not legal advice on any specific structure.
 
 **What CASP authorisation actually requires.**
 
-The application is not a registration form. It is a comprehensive regulatory submission that evaluates corporate governance, capital adequacy, compliance infrastructure, IT security and consumer protection. Minimum capital requirements range from EUR50,000 for advisory services to EUR150,000 for trading platforms.
+The application is not a registration form. It is a regulatory submission that is assessed on corporate governance, capital adequacy, compliance infrastructure, IT security and consumer protection.
 
-The corporate entity must be established in an EU member state with effective management and decision-making on-site. Governance structures must be defined, with clear reporting lines and accountability. The compliance function must be operational, not documented — regulators are explicitly evaluating whether AML/KYC, transaction monitoring and suspicious activity reporting function in practice.
+Minimum own funds are set by class in Annex IV of the Regulation rather than as one figure for all applicants. Annex IV sets Class 1 at EUR 50,000 for services such as reception and transmission of orders, execution of orders, placing, transfer services, advice and portfolio management; Class 2 at EUR 125,000 for custody and administration on behalf of clients and for exchange of crypto-assets for funds or for other crypto-assets; and Class 3 at EUR 150,000 for operating a trading platform. Article 67 then requires prudential safeguards of at least the higher of the applicable Annex IV amount or one quarter of the preceding year's fixed overheads, so the Annex figure is a floor rather than the full calculation. Confirm the applicable class against the current Annex IV text on EUR-Lex before budgeting.
+
+Establishment is governed by Article 59 of the Regulation, which sets three conditions on the applicant entity: a registered office in a Member State in which it carries out at least part of its crypto-asset services; a place of effective management in the Union; and at least one director resident in the Union. Those are the conditions in the text on EUR-Lex and they should be read there rather than in summaries. There is no MiCA-wide requirement that all decision-making be conducted on-site in the home Member State. Individual competent authorities may apply their own local substance expectations to an application, but that is national add-on commentary rather than a condition of the Regulation, and it has to be confirmed against the position of the specific authority. Governance structures must be defined, with clear reporting lines and accountability. The compliance function must be operational rather than merely documented: supervisors examine whether AML and KYC controls, transaction monitoring and suspicious activity reporting function in practice.
 
 **The fragmentation problem.**
 
-Despite MiCA's harmonisation goals, implementation varies across member states. Transitional periods differ. Regulatory interpretation differs. Application processing speed differs. An operator that qualifies in Lithuania may face different expectations in Germany. The choice of home member state is not administrative. It is strategic.
+Despite MiCA's harmonisation objective, implementation varies across Member States. Transitional measures differed. Regulatory interpretation differs. Application processing speed differs. An applicant that satisfies one national authority may face different expectations from another. The choice of home Member State is strategic rather than administrative.
 
-Passporting — the ability to operate across all 27 EU member states from a single authorisation — is the key advantage. But passporting only works if the home state authorisation is robust. Weak applications in permissive jurisdictions create problems when operating across stricter markets.
+Passporting, the ability to operate across the EU from a single authorisation, is the principal advantage, and it runs from the authorisation granted by the home competent authority.
+
+**Octus operational commentary, not empirical evidence.** In the files we have worked on, an application that is thinly evidenced in a more permissive jurisdiction has tended to generate further questions when the firm subsequently operates into stricter markets. That is a description of our own casework and not a measured effect. We are not aware of published data establishing that jurisdiction choice produces defined supervisory outcomes, and we do not assert one.
 
 **What most operators get wrong.**
 
-They treat CASP authorisation as an extension of VASP registration. It is not. VASP registration was an AML-only process. MiCA authorisation is a full financial services licensing regime with prudential requirements, consumer protection obligations, and ongoing supervisory expectations.
+They treat CASP authorisation as an extension of VASP registration. VASP registration under the national regimes was largely an AML process. MiCA authorisation is a financial services licensing regime with prudential requirements, consumer protection obligations and ongoing supervisory expectations.
 
-Operators who approach MiCA with a compliance-light mindset — retrofit AML, minimal governance, template policies — will either fail the application or face enforcement within the first supervisory cycle.
+**Octus operational commentary, not empirical evidence.** Where we have seen MiCA approached with retrofitted AML, minimal governance and template policies, those submissions are the ones that have absorbed the most remediation work before they could be filed with any confidence. That is our own experience of preparing applications. Octus holds no dataset on application outcomes across Member States and makes no general claim about whether such firms fail applications or draw supervisory attention.
 
-**The deadline is not theoretical.**
+**Where this leaves firms now.**
 
-July 2026 is not a target. It is a hard stop. ESMA has warned that last-minute applications will face heightened scrutiny. The window for orderly preparation is closing.`,
+The transitional route has closed at its outer limit. The remaining questions are narrower and firm-specific: whether an application is pending and what the competent authority has said about continued activity while it is assessed, whether the services provided fall inside or outside the MiCA perimeter, and whether EU clients are being served in a way that requires authorisation at all. Each of those has to be answered against the Regulation, the national measure and the supervisor's published position, and documented.`,
     related: [
       { label: "Crypto & Digital Assets", href: "/markets/crypto" },
       { label: "Compliance-as-a-Service", href: "/solutions/compliance/compliance-as-a-service" },
     ],
     cta: {
       label:
-        "If your crypto operation serves EU users and is not yet MiCA-authorised — request a structural assessment.",
+        "If your crypto operation serves EU users and is not yet MiCA-authorised: request a structural assessment.",
       href: "/diagnostic",
     },
   },
   {
     slug: "curacao-reform-what-changes",
-    title: "Curaçao Reform: What Actually Changes for Operators — Octus Consulting",
+    title: "Curaçao Reform: What Actually Changes for Operators",
     date: "2026-03-31",
     category: "Jurisdictions",
     excerpt:
-      "Curaçao's gambling regulation is reforming. The transition from master-sublicence to individual licensing changes everything about how operators structure, comply and bank.",
+      "Curaçao's move from the master and sublicence model to direct licensing under the LOK and the Curaçao Gaming Authority is now the operating framework. The CGA announcement of 25 September 2025, End of Orange Digital Seal Usage, set the end of orange digital seal usage as effective 15 October 2025. This is what direct licensing means for structure, compliance and banking.",
     content: `### Curaçao Reform: What Actually Changes for Operators
 
-The master-sublicence model is ending. If your Curaçao operation was built under it, everything about how you structure, comply and bank is about to change.
+Direct licensing is the framework operators are working within. The master and sublicence model is history, and structures built for it do not carry over.
 
-Curaçao has operated under a master-sublicence system for over two decades. That system is ending. The transition to individual operator licensing under the new Gambling Control Board (GCB) framework changes the structural requirements for every operator on the island.
+Curaçao operated under a master and sublicence system for roughly two decades. Under the Landsverordening op de kansspelen (LOK), the national gambling ordinance that replaced the previous regime, operators are licensed directly by the regulator rather than through an intermediate master licence holder. The regulator, historically the Gaming Control Board, has been reconstituted as the Curaçao Gaming Authority (CGA) under the new framework, and market materials use both names depending on the period they describe.
 
-This is not a cosmetic update. It is a fundamental shift in how Curaçao-licensed operations must be structured, governed and supervised.
+This was not a cosmetic update. It changed how Curaçao-licensed operations are structured, governed and supervised.
 
-**What the reform introduces.**
+**Note on transitional arrangements.** The end date for the orange digital seal is stated by the regulator itself. The Curaçao Gaming Authority published an announcement dated 25 September 2025, End of Orange Digital Seal Usage, which set the end of orange digital seal usage as effective 15 October 2025. That announcement is published by the CGA on its licensee portal at portal.gamingcontrolcuracao.org, and the date is attributed to that publication rather than to industry reporting. Operators should confirm the current position, and their own status, on the CGA portal and in direct correspondence with the regulator. Specific article numbers of the LOK are not cited here, and any provision relied on should be read in the official text rather than in secondary summaries.
 
-The new framework requires each operator to hold an individual licence directly from the GCB. The master-sublicence model — where operators operated under another entity's licence — is being phased out. Individual licensing means individual accountability: each operator is directly responsible for its compliance, governance and operational standards.
+**What the framework requires.**
 
-The regulatory expectations are increasing across AML/KYC, responsible gambling, player protection, technical standards and financial reporting. Operators that functioned under a sublicence with minimal compliance are now required to build the same infrastructure that individually licensed operators in other jurisdictions maintain.
+Each operator holds a licence issued directly by the regulator. Direct licensing carries direct accountability: the operator itself is responsible for its compliance, governance and operational standards, with no master licence holder standing between it and the authority.
 
-**What this means for existing operators.**
+Expectations are higher across AML and KYC, responsible gambling, player protection, technical standards and financial reporting. Operators that functioned under a sublicence with light compliance now have to build the kind of infrastructure that individually licensed operators maintain in other jurisdictions.
 
-Operators currently holding sublicences face a transition period. They must apply for individual licences, meet the new compliance requirements, and demonstrate operational substance. Those who cannot meet the standard will lose authorisation.
+**What this means for former sublicensees.**
 
-For operators who built their Curaçao presence as a low-cost, low-compliance entry point, the reform creates a structural problem. The compliance framework, corporate governance and operational substance that were sufficient under a sublicence are not sufficient under individual licensing.
+Legacy sublicensees were required to apply in their own name, meet the compliance requirements and demonstrate operational substance. Those that did not complete the process are outside the regime, and continuing to present a legacy sublicence as current authorisation is a material misstatement to banks, payment partners and players.
 
-**The banking implication is significant.**
+For operators that built their Curaçao presence as a low-cost, low-compliance entry point, this is a structural problem rather than a paperwork one. The compliance framework, corporate governance and operational substance that were sufficient under a sublicence are not sufficient under direct licensing.
 
-Banking partners have historically been cautious with Curaçao-licensed operators. The reform changes this dynamic in two directions. Operators who meet the new GCB standards may find banking access improves as the jurisdiction's credibility rises. Operators who fail to transition will find banking access disappears entirely.
+**The banking implication.**
 
-The reform also affects payment processing. PSPs and acquirers will reassess their risk appetite for Curaçao as the regulatory standard changes. Operators without clean compliance documentation and individual licensing will face onboarding refusal.
+Banking partners have historically been cautious with Curaçao-licensed operators. The reform may change that dynamic over time, though the effect is not automatic and will vary by institution. Operators meeting the current standard, with clean documentation and a verifiable licence in their own name, are in a better position to make their case than they were under the sublicence model. Whether any given bank's risk appetite actually shifts is a matter for that institution, and jurisdictional reputation tends to move slowly.
+
+Operators that did not transition face the harder version of the same conversation. Without a licence held in their own name, the documentation that banks and payment partners request is difficult to produce, and onboarding refusal or account termination becomes the likely outcome.
+
+The reform also affects payment processing. PSPs and acquirers reassess their risk appetite as a jurisdiction's regulatory standard changes, in either direction.
 
 **The strategic question for operators.**
 
-The reform forces a decision. Invest in bringing the Curaçao operation up to the new standard. Or use the transition as the trigger to move to a different jurisdiction entirely.
+The framework forces a decision that has not gone away for operators still holding legacy structures. Bring the Curaçao operation up to the current standard, or treat this as the trigger to move to a different jurisdiction.
 
-Both are valid strategic paths. Neither works without structural preparation. Upgrading within Curaçao requires compliance investment, governance changes and possibly corporate restructuring. Moving to another jurisdiction requires the same structural build in a new regulatory environment.
+Both are legitimate paths. Neither works without structural preparation. Upgrading within Curaçao requires compliance investment, governance changes and possibly corporate restructuring. Moving elsewhere requires the same structural build in a new regulatory environment.
 
-**What most operators get wrong:** They assume the transition period will extend. It will not. And they underestimate the gap between what a sublicence required and what individual licensing demands.
-
-The worst option is doing nothing and hoping the transition period extends.`,
+**What most operators got wrong:** they assumed the transitional arrangements would keep being extended, and they underestimated the gap between what a sublicence required and what direct licensing demands. Both assumptions have proved expensive.`,
     related: [
       { label: "Curaçao", href: "/jurisdictions/curacao" },
       { label: "iGaming Licensing", href: "/solutions/regulatory/igaming-licensing" },
     ],
     cta: {
       label:
-        "If your Curaçao operation needs to transition to the new framework — request an assessment.",
+        "If your Curaçao operation needs to transition to the new framework: request an assessment.",
       href: "/diagnostic",
     },
   },
   {
     slug: "compliance-as-a-service-vs-internal-teams",
-    title:
-      "Compliance-as-a-Service vs Internal Teams: When Outsourcing Makes Sense — Octus Consulting",
+    title: "Compliance-as-a-Service vs Internal Teams: When Outsourcing Makes Sense",
     date: "2026-03-31",
     category: "Compliance",
     excerpt:
-      "Building an internal compliance team is not always the right answer. For regulated operations scaling across jurisdictions, an operational compliance layer may deliver more consistency at lower risk.",
+      "Building an internal compliance team is not always the right answer. For regulated operations scaling across jurisdictions, an operational compliance layer may deliver more consistency. This is Octus operational commentary, not a measured industry survey.",
     content: `### Compliance-as-a-Service vs Internal Teams: When Outsourcing Makes Sense
 
-Most companies have compliance on paper. Few have compliance that actually functions under pressure.
+In Octus engagements, many companies have compliance documented on paper while fewer have compliance that functions under pressure. That is an observation from our work, not a measured industry share, and Octus does not claim a published methodology for those proportions.
 
-The default assumption in regulated businesses is that compliance belongs in-house. Hire a compliance officer, build a team, develop policies, manage reporting internally. For large, stable operations in a single jurisdiction, this works. For most others, it does not.
+The default assumption in regulated businesses is that compliance belongs in-house. Hire a compliance officer, build a team, develop policies, manage reporting internally. For large, stable operations in a single jurisdiction, this can work. For many others we advise, it does not hold under multi-jurisdiction pressure.
 
-**Where internal compliance breaks.**
+**Where internal compliance breaks in practice.**
 
-Internal compliance teams typically face three structural constraints. First, depth: a compliance officer hired for one jurisdiction rarely has expertise across multiple regulatory frameworks. When the operation expands, the internal team's knowledge does not expand with it. Second, consistency: compliance is not a project. It is a continuous function. Internal teams face competing priorities, resource constraints and turnover. When the compliance officer leaves, institutional knowledge leaves with them. Third, objectivity: internal compliance is subject to internal pressure. The team responsible for compliance reports to the same leadership that drives commercial targets.
+Internal compliance teams typically face three structural constraints. First, depth: a compliance officer hired for one jurisdiction rarely has expertise across multiple regulatory frameworks. When the operation expands, the internal team's knowledge does not usually expand with it at the same pace. Second, consistency: compliance is not a project. It is a continuous function. Internal teams face competing priorities, resource constraints and turnover. When the compliance officer leaves, institutional knowledge often leaves with them. Third, objectivity: internal compliance is subject to internal pressure. The team responsible for compliance reports to the same leadership that drives commercial targets.
 
 **The scaling problem.**
 
-A single-jurisdiction operation with stable transaction volumes can maintain compliance internally. The moment the operation expands — new markets, new jurisdictions, increased volumes, additional regulatory requirements — the internal model strains. Each new jurisdiction adds compliance obligations. Each increase in volume adds monitoring requirements. Each regulatory change requires policy updates, system adjustments and reporting changes.
+A single-jurisdiction operation with stable transaction volumes can maintain compliance internally. The moment the operation expands: new markets, new jurisdictions, increased volumes, additional regulatory requirements: the internal model strains. Each new jurisdiction adds compliance obligations. Each increase in volume adds monitoring requirements. Each regulatory change requires policy updates, system adjustments and reporting changes.
 
-Building an internal team that can handle this means hiring multiple specialists across multiple domains: AML, data protection, responsible gambling, regulatory reporting, internal audit. The cost and management overhead grow faster than the compliance benefit.
+Building an internal team that can handle this means hiring multiple specialists across multiple domains: AML, data protection, responsible gambling, regulatory reporting, internal audit. In many cases the cost and management overhead grow faster than the compliance benefit.
 
 **What Compliance-as-a-Service actually replaces.**
 
-CAS does not replace the compliance officer role. It replaces the fragmented, under-resourced, inconsistent compliance function that most regulated operations actually have.
+CAS does not replace the compliance officer role. It replaces the fragmented, under-resourced, inconsistent compliance function that many regulated operations we review actually have.
 
 An operational CAS model provides: AML/KYC that functions under real transaction volumes, not just in policy documents. Transaction monitoring calibrated to the operation's actual risk profile. Regulatory interaction managed by specialists who understand what supervisors expect. Internal controls that are monitored, not just documented. Reporting cycles that happen on schedule, not when someone remembers.
 
@@ -1133,9 +1161,9 @@ The decision is not ideological. It is practical. CAS typically makes sense when
 
 **When it does not.**
 
-Large operations with established, well-funded compliance departments in a stable regulatory environment may not need external operational support. The decision depends on whether the internal function actually operates consistently — not whether it exists on paper.
+Large operations with established, well-funded compliance departments in a stable regulatory environment may not need external operational support. The decision depends on whether the internal function actually operates consistently, not whether it exists on paper.
 
-**What most companies get wrong:** They equate having a compliance officer with having a compliance function. These are not the same thing. A person can be designated. A function must be built, resourced, monitored and held accountable. When the regulator asks how compliance operates — not who is responsible for it — most internal teams cannot answer.
+**A common planning error:** equating having a compliance officer with having a compliance function. These are not the same thing. A person can be designated. A function must be built, resourced, monitored and held accountable. When the regulator asks how compliance operates, rather than who is responsible for it, many internal teams we review cannot answer that question with operational evidence.
 
 The question is not whether compliance should be internal or external. It is whether the compliance function actually works. If it does not, the label does not matter.`,
     related: [
@@ -1144,7 +1172,7 @@ The question is not whether compliance should be internal or external. It is whe
     ],
     cta: {
       label:
-        "If your compliance function is not operating consistently — request a compliance assessment.",
+        "If your compliance function is not operating consistently: request a compliance assessment.",
       href: "/diagnostic",
     },
   },

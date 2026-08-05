@@ -1,45 +1,12 @@
-@font-face {
-  font-family: 'Unigeo64';
-  src: url('/fonts/Unigeo64-Regular.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Unigeo64';
-  src: url('/fonts/Unigeo64-Medium.otf') format('opentype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Unigeo64';
-  src: url('/fonts/Unigeo64-Semibold.otf') format('opentype');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Unigeo64';
-  src: url('/fonts/Unigeo64-Bold.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Unigeo64';
-  src: url('/fonts/Unigeo64-Extrabold.otf') format('opentype');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
+/* Unigeo64 is loaded once via next/font/local in app/layout.tsx (--font-unigeo).
+   Manual @font-face duplicates removed to cut mobile font payload / LCP pressure. */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  :root {
+:root {
     /* Octus premium light mode (design system 1.1) */
     --background: 50 10% 98%;
     --foreground: 220 14% 11%;
@@ -50,50 +17,71 @@
     --popover: 50 10% 98%;
     --popover-foreground: 220 14% 11%;
 
-    --primary: 213 64% 25%;
+    --primary: 215 100% 38%; /* official deep blue #0052C4 */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 40 13% 94%;
-    --secondary-foreground: 220 14% 11%;
+    /* Cream reserved for strategic highlight — not section chrome */
+    --secondary: 48 69% 90%;
+    --secondary-foreground: 0 0% 17%;
 
-    --muted: 40 13% 94%;
-    --muted-foreground: 215 10% 37%;
+    --muted: 220 16% 94%;
+    /* Institutional deepening — charcoal body authority */
+    --muted-foreground: 220 10% 40%;
+    --body-secondary: 220 12% 32%;
 
-    --accent: 0 50% 37%;
+    --accent: 0 99% 37%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 50% 37%;
+    --destructive: 0 99% 37%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 40 8% 88%;
+    --border: 220 14% 88%;
     /* Resolved border color for inline styles in TSX */
     --border-solid: hsl(var(--border));
-    --input: 40 8% 88%;
-    --ring: 213 64% 25%;
+    --input: 220 14% 88%;
+    --ring: 215 100% 38%;
 
     --radius: 0.5rem;
 
-    --brand-blue: 213 64% 25%;
-    --brand-blue-light: 212 100% 63%;
-    --brand-blue-deep: 215 100% 38%;
-    --brand-red: 0 50% 37%;
-    --brand-cream: 40 13% 94%;
-    --brand-dark: 220 14% 11%;
+    /* Official Brand Kit OCTUS CONSULTING (Canva kAG50O4qY6Q) — HEX locked 2026-07-21 */
+    --brand-mark: 216 100% 50%; /* #0065FF symbol blue */
+    --brand-blue: 215 100% 38%; /* #0052C4 deep / primary chrome */
+    --brand-blue-light: 210 100% 63%; /* #42A1FF */
+    --brand-blue-mid: 212 100% 49%; /* #0074F8 */
+    --brand-blue-deep: 214 100% 44%; /* #0062DE royal */
+    --brand-red: 0 99% 37%; /* definitive baseline computed */
+    --brand-cream: 48 69% 90%; /* #F7F0D4 — strategic highlight only */
+    --brand-dark: 0 0% 21%; /* definitive baseline charcoal */
+    --brand-off-white: 0 0% 98%; /* #FAFAFA */
+    --brand-navy: 220 48% 8%; /* #0B1220 primary environment */
 
-    --surface-elevated: 40 13% 94%;
-    --surface-dark: 220 14% 11%;
+    /* Elevated sections: cool navy-tinted light — not cream blocks */
+    --surface-elevated: 220 28% 96%;
+    --surface-dark: 220 48% 8%; /* navy primary environment */
 
     --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.06), 0 1px 2px -1px rgb(0 0 0 / 0.06);
     --shadow-card-hover: 0 4px 12px -2px rgb(0 0 0 / 0.08), 0 2px 6px -2px rgb(0 0 0 / 0.04);
+
+    /* Text tokens from definitive deployment 9q798dbg2 */
+    --text-primary: #0b1220;
+    --text-secondary: #3d4654;
+    --text-muted: #5c6573;
+    --text-label: #be0100;
+    --text-link: #0052c4;
+    --text-accent: #0052c4;
+    --text-inverse: #fafafa;
+    --text-primary-on-dark: #f7f8fa;
+    --text-secondary-on-dark: rgba(247, 248, 250, 0.84);
+    --text-muted-on-dark: rgba(247, 248, 250, 0.66);
+    --text-label-on-dark: rgba(247, 248, 250, 0.55);
+    --text-link-on-dark: #9ec5ff;
 
     /* Existing site aliases (components, inline styles) */
     --bg-base: hsl(var(--background));
     --surface-1: hsl(var(--surface-elevated));
     --surface-2: #ecefea;
     --surface-card: #ffffff;
-    --text-primary: hsl(var(--foreground));
-    --text-muted: hsl(var(--muted-foreground));
-    --text-soft: rgba(26, 29, 33, 0.55);
+    --text-soft: var(--text-muted);
     --primary-blue: hsl(var(--primary));
     --primary-blue-hover: #214c82;
     --accent-red: hsl(var(--accent));
@@ -101,14 +89,14 @@
     --off-black: hsl(var(--surface-elevated));
     --card-hover: #f5f6f3;
     --card-bg: #ffffff;
-    --border-light: rgba(26, 29, 33, 0.06);
+    --border-light: rgba(11, 18, 32, 0.08);
     --blue: hsl(var(--primary));
     --blue-light: hsl(var(--primary));
     --blue-dim: hsl(var(--primary) / 0.07);
     --blue-border: hsl(var(--primary) / 0.14);
-    --white: hsl(var(--foreground));
-    --white-60: hsl(var(--muted-foreground));
-    --white-40: rgba(26, 29, 33, 0.55);
+    --white: var(--text-primary);
+    --white-60: var(--text-secondary);
+    --white-40: var(--text-muted);
     --white-25: rgba(26, 29, 33, 0.42);
     --white-10: rgba(26, 29, 33, 0.12);
     --white-05: rgba(26, 29, 33, 0.05);
@@ -128,6 +116,7 @@
     --oct-radius: 0.375rem;
   }
 }
+
 
 @layer utilities {
   .surface-elevated {
@@ -1097,13 +1086,12 @@ body {
 }
 @media (max-width: 768px) {
   .wa-float {
-    bottom: 88px; /* clear essential-cookie bar when visible */
+    bottom: 24px;
     right: 16px;
     padding: 14px;
   }
   .wa-float__label { display: none; }
 }
-/* When cookie banner dismissed, mobile float can sit lower via body attribute if needed later */
 
 /* ─── CONTACT GRID ─── */
 .contact-grid {
@@ -1540,40 +1528,209 @@ footer .heading-lg,
   gap: 40px 32px;
 }
 
+/* Closed-model Team composition hierarchy (8b12fcc shell). */
+.team-grid--leadership {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 52rem;
+  margin-inline: auto;
+  gap: 48px 40px;
+  margin-bottom: 3.5rem;
+}
+@media (max-width: 640px) {
+  .team-grid--leadership {
+    grid-template-columns: 1fr;
+    max-width: 20rem;
+  }
+}
+.team-grid--leadership-support {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 18rem;
+  margin-inline: auto;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid hsl(var(--border));
+}
+.team-grid--operational-leadership {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 18rem;
+  margin-inline: auto;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+.team-grid--core {
+  margin-bottom: 1rem;
+}
+.team-grid--operations {
+  max-width: 40rem;
+  margin-inline: auto;
+}
+.team-card--leadership .team-card-photo-wrap {
+  width: 196px;
+  height: 196px;
+}
+.team-card--leadership-support .team-card-photo-wrap {
+  width: 148px;
+  height: 148px;
+}
+.team-card--operational-leadership .team-card-photo-wrap {
+  width: 140px;
+  height: 140px;
+}
+.team-card--specialist .team-card-photo-wrap {
+  width: 140px;
+  height: 140px;
+}
+.team-card--operations .team-card-photo-wrap {
+  width: 120px;
+  height: 120px;
+}
+.team-card--operations-featured .team-card-photo-wrap {
+  width: 136px;
+  height: 136px;
+}
 .team-card-link {
   text-decoration: none;
   color: inherit;
 }
-
 .team-card {
   text-align: center;
-  padding: 24px 12px;
+  padding: 20px 12px;
   height: 100%;
 }
-
 .team-card-photo-wrap {
   width: 140px;
   height: 140px;
-  margin: 0 auto 24px;
-  border-radius: 50%;
+  border-radius: 9999px;
   overflow: hidden;
-  background: var(--surface-2);
+  background: hsl(220 18% 93%);
+  margin-inline: auto;
+  margin-bottom: 1.25rem;
+  box-shadow:
+    0 0 0 2px hsl(var(--background)),
+    0 0 0 3px rgba(0, 101, 255, 0.35);
 }
-
+.team-card--leadership .team-card-photo-wrap {
+  box-shadow:
+    0 0 0 3px hsl(var(--background)),
+    0 0 0 4.5px rgba(0, 101, 255, 0.42);
+}
 .team-card-photo {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
-  filter: saturate(0.75);
+  object-position: center 40%;
+  filter: grayscale(1) contrast(1.08) brightness(1.01);
 }
-
-.team-card-role {
-  font-size: 13px;
-  color: var(--primary-blue);
+.team-photo--rubio .home-leadership-trust__photo,
+.team-photo--rubio-home .home-leadership-trust__photo {
+  object-fit: cover;
+  object-position: 50% 38%;
+  transform: none;
+}
+.team-photo--rubio .team-card-photo,
+.team-photo--rubio-team .team-card-photo {
+  object-fit: cover;
+  object-position: 50% 38%;
+  transform: none;
+}
+@media (max-width: 639px) {
+  .team-photo--rubio .team-card-photo,
+  .team-photo--rubio-team .team-card-photo {
+    object-position: 50% 38%;
+    transform: none;
+  }
+}
+.team-photo--maria .team-card-photo,
+.team-photo--maria .home-leadership-trust__photo { object-position: 56% 30%; }
+/* Rodrigo: light neutral plate after source equalisation; keep face centred. */
+.team-photo--rodrigo .team-card-photo {
+  object-position: 50% 38%;
+  transform: scale(1.02);
+  transform-origin: center 35%;
+}
+/* Esther: same-source face-focused plate — light pull-back keeps crown. */
+.team-photo--esther .team-card-photo {
+  object-position: 50% 38%;
+  transform: scale(0.98);
+  transform-origin: center 32%;
+}
+/* Caroline: light-plate cutout; keep curls and glasses fully inside the frame. */
+.team-photo--caroline .team-card-photo {
+  object-position: 50% 36%;
+  transform: scale(1.04);
+  transform-origin: center 32%;
+}
+/* Larissa: approved source with natural headroom — peer-normal crop. */
+.team-photo--larissa .team-card-photo {
+  object-position: 50% 32%;
+}
+.team-photo--eduardo .team-card-photo {
+  object-position: 50% 36%;
+}
+.team-photo--milla .team-card-photo { object-position: 50% 40%; }
+.team-photo--bianca .team-card-photo { object-position: 50% 40%; }
+/* Claudia: source kept; mid-grey plate in asset — mild face presence, crown clear. */
+.team-photo--claudia .team-card-photo {
+  object-position: 50% 28%;
+  transform: scale(1.14);
+  transform-origin: center 26%;
+}
+/* Luciana: restored original tall studio portrait — bias top so crown clears cover crop. */
+.team-photo--luciana .team-card-photo {
+  object-position: 50% 8%;
+  transform: scale(0.98);
+  transform-origin: center 10%;
+}
+.team-photo--daniel .team-card-photo { object-position: 50% 38%; }
+.team-grid--commercial {
+  max-width: 20rem;
+}
+.team-card--commercial .team-card-photo-wrap {
+  width: 120px;
+  height: 120px;
+}
+.team-capability {
+  font-size: 11px;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  margin-bottom: 14px;
+  color: hsl(var(--brand-blue));
+  margin-bottom: 8px;
+}
+.team-card--leadership .heading-sm {
+  font-size: 1.3rem;
+}
+.team-card--leadership-support .heading-sm {
+  font-size: 1.05rem;
+}
+.team-roster-gate {
+  max-width: 40rem;
+  margin-inline: auto;
+  margin-top: 2.5rem;
+  text-align: center;
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
+}
+.team-card-role {
+  color: hsl(220 14% 26%);
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  font-size: 0.8125rem;
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+@media (max-width: 768px) {
+  .team-card--leadership .team-card-photo-wrap {
+    width: 168px;
+    height: 168px;
+  }
+  .team-grid {
+    grid-template-columns: 1fr;
+    max-width: 22rem;
+    margin-inline: auto;
+  }
 }
 
 .careers-culture-visual {
@@ -1586,6 +1743,48 @@ footer .heading-lg,
   display: block;
   width: 100%;
   height: auto;
+}
+
+/* Careers editorial group photo — antialiased half-moon / upper arc.
+   Same ellipse geometry proven on About: clips just inside the baked black
+   dome of /team-group.jpg. No AI cutout; no rectangular black plate. */
+.careers-editorial {
+  margin-top: 8px;
+}
+.careers-editorial__figure {
+  position: relative;
+  margin: 0 auto;
+  max-width: 920px;
+  aspect-ratio: 1024 / 555;
+  background: transparent;
+  /* Soft premium lift without a rectangular black plate. */
+  filter: drop-shadow(0 18px 36px rgba(11, 18, 32, 0.12));
+  /* Baked edge ≈ circle r~520 at (511.5, 510). Clip at 50%/92.25% stays inside. */
+  clip-path: ellipse(50% 92.25% at 50% 91.9%);
+}
+.careers-editorial__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  filter: grayscale(1) contrast(1.04);
+}
+.careers-editorial__fade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to top,
+    rgba(11, 18, 32, 0.3) 0%,
+    rgba(11, 18, 32, 0.11) 26%,
+    rgba(11, 18, 32, 0) 52%
+  );
+}
+@media (max-width: 768px) {
+  .careers-editorial__figure {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1648,5 +1847,1314 @@ footer .heading-lg,
 
   .cert-modal {
     padding: 28px;
+  }
+}
+
+/* ── Rubio video refinement: typography, cookie/WA (leadership cards finalised below) ── */
+
+.team-photo--rubio .home-leadership-trust__photo,
+.team-photo--rubio-home .home-leadership-trust__photo { object-position: 50% 38%; transform: none; }
+.team-photo--maria .home-leadership-trust__photo { object-position: 56% 30%; }
+.home-leadership-trust__line {
+  margin-top: 0.75rem;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: hsl(var(--muted-foreground));
+  text-wrap: pretty;
+  max-width: 22rem;
+}
+
+.heading-section,
+.heading-lg,
+h1.font-heading,
+.page-hero-title {
+  text-wrap: balance;
+}
+.body-large,
+.body-text,
+.body-lg,
+p.text-pretty {
+  text-wrap: pretty;
+}
+
+.area-closing-section {
+  padding-top: 3.5rem;
+  padding-bottom: 4rem;
+}
+@media (min-width: 768px) {
+  .area-closing-section {
+    padding-top: 4.5rem;
+    padding-bottom: 5rem;
+  }
+}
+.area-closing-section__row {
+  display: grid;
+  gap: 2.5rem;
+}
+@media (min-width: 1024px) {
+  .area-closing-section__row {
+    grid-template-columns: 1.15fr 1fr;
+    align-items: start;
+    gap: 3.5rem;
+  }
+}
+.area-closing-section__all {
+  margin-top: 0.25rem;
+}
+
+/* WhatsApp float — resting geometry; cookie-visible lift lives in FINAL MOBILE block. */
+.wa-float {
+  z-index: 90;
+  bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+  right: calc(24px + env(safe-area-inset-right, 0px));
+  min-height: 48px;
+  min-width: 48px;
+  box-shadow: 0 8px 28px rgba(11, 18, 32, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+@media (max-width: 768px) {
+  .wa-float {
+    bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+    right: calc(16px + env(safe-area-inset-right, 0px));
+    padding: 14px;
+  }
+  .wa-float__label { display: none; }
+}
+.cookie-banner {
+  z-index: 100;
+  padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+  background: #0B1220 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+.cookie-banner button {
+  min-height: 44px;
+  min-width: 6.5rem;
+  flex-shrink: 0;
+}
+
+/* === OCTUS VISUAL REBASE SUPPLEMENT (8b12fcc, brace-safe) === */
+
+/* Editorial numerals: optical spacing for years/service indices (avoids collapsed 1/9). */
+.editorial-numeral {
+  font-family: var(--font-inter), Inter, system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(2.75rem, 5vw, 4rem);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1, "kern" 1;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  color: hsl(var(--brand-navy));
+}
+.editorial-numeral--sm {
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  letter-spacing: 0.06em;
+}
+.editorial-numeral--year {
+  letter-spacing: 0.08em;
+}
+.editorial-numeral--on-dark {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+
+/* from 8b12fcc 1514-1673 */
+.home-hero,
+.octus-dark-hero {
+  background-color: #070b14;
+}
+.home-hero__atmosphere,
+.octus-dark-hero__atmosphere {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  /* Hero B — architectural depth, fewer competing radials */
+  background:
+    radial-gradient(ellipse 58% 52% at 78% 28%, rgba(0, 101, 255, 0.2) 0%, transparent 58%),
+    radial-gradient(ellipse 42% 40% at 12% 88%, rgba(0, 82, 196, 0.22) 0%, transparent 52%),
+    linear-gradient(172deg, #05080f 0%, #0b1220 42%, #0e1624 100%);
+}
+.home-hero__mesh,
+.octus-dark-hero__mesh {
+  position: absolute;
+  inset: -8%;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.72;
+  background-image:
+    repeating-linear-gradient(
+      -32deg,
+      transparent 0,
+      transparent 14px,
+      rgba(66, 161, 255, 0.038) 14px,
+      rgba(66, 161, 255, 0.038) 15px
+    ),
+    repeating-linear-gradient(
+      58deg,
+      transparent 0,
+      transparent 28px,
+      rgba(11, 18, 32, 0.15) 28px,
+      rgba(11, 18, 32, 0.15) 29px
+    );
+  mask-image: radial-gradient(ellipse 82% 72% at 55% 38%, #000 12%, transparent 78%);
+  animation: octus-mesh-drift 56s linear infinite;
+}
+/* Definitive 9q798dbg2 dark-hero motif: faint structural pattern, not large arcs/symbol */
+.octus-dark-hero__structure {
+  position: absolute;
+  right: -4%;
+  top: -6%;
+  width: min(48vw, 420px);
+  height: min(48vw, 320px);
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.022;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+}
+.octus-dark-hero__arcs,
+.octus-dark-hero__mark {
+  display: none;
+}
+/* Home hero — desktop keeps tall composition; mobile min-height softened in FINAL MOBILE. */
+.home-hero__h1 {
+  max-width: none;
+}
+.home-hero {
+  min-height: 880px;
+  padding-top: 5.75rem;
+  padding-bottom: 0;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .home-hero {
+    min-height: 880px;
+    padding-top: 8rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .home-hero {
+    min-height: min(760px, 100svh);
+    padding-top: 6.5rem;
+    padding-bottom: 2.5rem;
+    align-items: flex-start;
+  }
+}
+.site-header--on-dark .site-header__brand-rule {
+  background: linear-gradient(90deg, transparent 0%, rgba(0, 101, 255, 0.55) 18%, rgba(0, 101, 255, 0.55) 82%, transparent 100%);
+}
+
+/* Light-section restrained arcs (Solutions / Markets / Jurisdictions / Intelligence) */
+.octus-section-motif {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.octus-section-motif__arcs {
+  position: absolute;
+  right: -12%;
+  top: 8%;
+  width: min(55vw, 520px);
+  height: min(55vw, 520px);
+  opacity: 0.42;
+  background-image: url("/brand/motifs/octus-arc-primary.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  mask-image: linear-gradient(135deg, transparent 15%, #000 50%, transparent 88%);
+  animation: octus-arc-breathe 28s ease-in-out infinite;
+  transform-origin: center;
+}
+.octus-section-motif__mark {
+  position: absolute;
+  left: 4%;
+  bottom: 10%;
+  width: min(12vw, 88px);
+  height: min(12vw, 88px);
+  opacity: 0.04;
+  background-image: url("/brand/symbol/octus-symbol-blue.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.octus-section-motif--start .octus-section-motif__arcs {
+  right: auto;
+  left: -14%;
+  top: auto;
+  bottom: -8%;
+}
+.octus-section-motif--center .octus-section-motif__arcs {
+  right: 18%;
+  top: 20%;
+  opacity: 0.28;
+}
+.octus-section-motif--navy .octus-section-motif__arcs {
+  background-image: url("/brand/motifs/octus-arc-secondary.svg");
+  opacity: 0.5;
+}
+.octus-section-motif--navy .octus-section-motif__mark {
+  background-image: url("/brand/symbol/octus-symbol-white.svg");
+  opacity: 0.06;
+}
+.octus-section-relative {
+  position: relative;
+  isolation: isolate;
+}
+.octus-section-relative > *:not(.octus-section-motif) {
+  position: relative;
+  z-index: 1;
+}
+.octus-dark-hero__seam {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 48px;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, rgba(248, 250, 252, 0.06));
+}
+
+/* Institutional motion keyframes */
+@keyframes octus-mesh-drift {
+  0% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(-1.2%, 1%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes octus-arc-breathe {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.035) rotate(1.2deg); }
+}
+@keyframes octus-mark-fade {
+  0%, 100% { opacity: 0.055; }
+  50% { opacity: 0.09; }
+}
+
+/* from 8b12fcc 1674-1695 */
+@keyframes octus-hero-enter {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.octus-hero-copy {
+  animation: octus-hero-enter 0.95s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.octus-reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.octus-reveal--in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Six-solution identity mark */
+
+/* from 8b12fcc 1863-1948 */
+.site-footer {
+  position: relative;
+  overflow: hidden;
+}
+.site-footer__brand-close {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 3.25rem;
+  margin-bottom: 2.75rem;
+}
+.site-footer__brand-close__wordmark {
+  font-family: var(--font-unigeo), "Unigeo64", sans-serif;
+  font-size: clamp(1.5rem, 2.6vw, 1.875rem);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #fff;
+  margin-top: 1.35rem;
+  line-height: 1.1;
+}
+.site-footer__brand-close__line {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.86);
+  max-width: 30rem;
+  margin-top: 0.85rem;
+}
+.site-footer__nav-label {
+  font-family: var(--font-inter), Inter, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.72);
+  margin-bottom: 1.25rem;
+}
+.site-footer__nav-link {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+.site-footer__nav-link:hover {
+  color: #fff !important;
+}
+.site-footer__mark {
+  position: absolute;
+  right: -2%;
+  bottom: 8%;
+  width: min(18vw, 120px);
+  height: min(18vw, 90px);
+  opacity: 0.018;
+  background-image: url("/brand/patterns/octus-pattern-structure.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+.site-footer__legal {
+  opacity: 0.62;
+}
+.site-footer__legal .site-footer__nav-label {
+  color: rgba(255, 255, 255, 0.36);
+  font-weight: 500;
+}
+.site-footer__legal a {
+  color: rgba(255, 255, 255, 0.32) !important;
+  font-size: 0.75rem !important;
+}
+.site-footer__legal a:hover {
+  color: rgba(255, 255, 255, 0.58) !important;
+}
+.site-footer__bar {
+  opacity: 1;
+}
+.site-footer__bar p,
+.site-footer__bar a {
+  /* WCAG AA on surface-dark (#0b111e): ≥4.5:1 for 11px meta / contact links */
+  color: rgba(255, 255, 255, 0.72) !important;
+  font-size: 0.6875rem !important;
+}
+
+.team-band-label {
+  font-family: var(--font-inter), Inter, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: hsl(var(--brand-red));
+  margin-bottom: 1.5rem;
+}
+
+/* from 8b12fcc 2112-2186 */
+.octus-symbol-marker {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+.octus-symbol-marker img {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+.octus-editorial-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 28rem;
+  margin: 0 auto 2rem;
+}
+.octus-editorial-divider__line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 101, 255, 0.45) 40%,
+    rgba(0, 101, 255, 0.45) 60%,
+    transparent 100%
+  );
+}
+.octus-editorial-divider--dark .octus-editorial-divider__line {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.28) 40%,
+    rgba(255, 255, 255, 0.28) 60%,
+    transparent 100%
+  );
+}
+.octus-editorial-divider__mark {
+  flex-shrink: 0;
+  opacity: 0.85;
+}
+
+.octus-chapter-transition {
+  position: relative;
+  height: 3.5rem;
+  overflow: hidden;
+  pointer-events: none;
+}
+.octus-chapter-transition__mark {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 48px;
+  height: 36px;
+  transform: translate(-50%, -50%);
+  opacity: 0.07;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.octus-chapter-transition__rule {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 50%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 101, 255, 0.22) 30%,
+    rgba(0, 101, 255, 0.22) 70%,
+    transparent
+  );
+}
+
+/* Leadership cards — exact treatment from commit 8b12fcc / reference deployment */
+.home-leadership-trust__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.5rem 3rem;
+  max-width: 36rem;
+}
+/* One-column leadership only on very narrow screens — see FINAL MOBILE @359px. */
+.home-leadership-trust__card {
+  color: inherit;
+  text-align: left;
+}
+.home-leadership-trust__photo-wrap {
+  width: 148px;
+  height: 148px;
+  border-radius: 9999px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  background: hsl(220 18% 93%);
+  box-shadow:
+    0 0 0 2px hsl(var(--background)),
+    0 0 0 3.5px rgba(0, 101, 255, 0.38);
+}
+@media (min-width: 768px) {
+  .home-leadership-trust__photo-wrap {
+    width: 168px;
+    height: 168px;
+  }
+}
+.home-leadership-trust__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+  filter: grayscale(1) contrast(1.1) brightness(0.97);
+}
+.home-leadership-trust__name {
+  font-family: var(--font-unigeo), "Unigeo64", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: hsl(var(--brand-navy));
+}
+.home-leadership-trust__role {
+  margin-top: 0.25rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: hsl(var(--brand-blue));
+}
+
+/* Markets — symbol separator strip (editorial, light) */
+.markets-symbol-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.75rem 1.25rem;
+  margin-bottom: 2rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: hsl(var(--brand-navy));
+}
+
+/* from 8b12fcc 2416-2530 */
+.site-header__brand-rule {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, rgba(0, 101, 255, 0.5) 18%, rgba(0, 101, 255, 0.5) 82%, transparent 100%);
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+.site-header__logo {
+  max-height: 2.75rem; /* ~44px optical balance — not endless growth */
+  width: auto;
+}
+.site-header__brand {
+  margin-right: 0.25rem;
+}
+@media (min-width: 768px) {
+  .site-header__logo {
+    max-height: 2.75rem;
+  }
+}
+
+/* Capability rail — mobile/tablet swipe list; desktop (≥1024) slow marquee */
+.capability-rail {
+  position: relative;
+  overflow: hidden;
+}
+.capability-rail__viewport {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+.capability-rail__track {
+  display: none;
+}
+.capability-rail__swipe-hint {
+  display: none;
+}
+.capability-rail__static-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem 1rem;
+  padding: 1.1rem 1.25rem 1.25rem;
+  list-style: none;
+  margin: 0;
+}
+.capability-rail__grid-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: var(--font-inter), Inter, system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.35;
+}
+.capability-rail__grid-item svg {
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+.capability-rail__fade {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .capability-rail {
+    height: 4.25rem;
+  }
+  .capability-rail__static-grid,
+  .capability-rail__swipe-hint {
+    display: none !important;
+  }
+  .capability-rail__track {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    height: 100%;
+    width: max-content;
+    padding-inline: 2.75rem;
+    font-family: var(--font-inter), Inter, system-ui, sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.78);
+    animation: octus-capability-marquee 72s linear infinite;
+  }
+  .capability-rail__item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    white-space: nowrap;
+    user-select: none;
+    pointer-events: none;
+  }
+  .capability-rail__fade {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 3.5rem;
+    z-index: 2;
+    pointer-events: none;
+  }
+  .capability-rail__fade--left {
+    left: 0;
+    background: linear-gradient(90deg, #0b1220 0%, transparent 100%);
+  }
+  .capability-rail__fade--right {
+    right: 0;
+    background: linear-gradient(270deg, #0b1220 0%, transparent 100%);
+  }
+}
+@keyframes octus-capability-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (min-width: 1024px) and (prefers-reduced-motion: reduce) {
+  .capability-rail__track {
+    animation: none;
+    width: 100%;
+    max-width: 72rem;
+    margin-inline: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 4.25rem;
+    padding-block: 0.75rem;
+  }
+  .capability-rail {
+    height: auto;
+  }
+  .capability-rail__fade {
+    display: none;
+  }
+}
+
+/* Official SVG lockups — image asset, not HTML wordmark */
+.site-header__logo {
+  max-height: 2.75rem;
+  width: auto;
+}
+.site-header__brand {
+  margin-right: 0.25rem;
+}
+@media (min-width: 768px) {
+  .site-header__logo {
+    max-height: 2.75rem;
+  }
+}
+.site-footer__lockup-link {
+  max-width: 100%;
+  overflow: visible;
+}
+.site-footer__lockup {
+  display: block;
+  height: auto;
+}
+.site-footer__acc {
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.08);
+}
+.site-footer__acc-summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 2.75rem;
+  padding: 0.85rem 0;
+  font-family: var(--font-inter), Inter, system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: hsla(0, 0%, 100%, 0.78);
+}
+.site-footer__acc-summary::-webkit-details-marker {
+  display: none;
+}
+.site-footer__acc-summary::after {
+  content: "+";
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: hsla(0, 0%, 100%, 0.55);
+}
+.site-footer__acc[open] > .site-footer__acc-summary::after {
+  content: "−";
+}
+
+/* legacy HTML wordmark styles kept inert (no longer rendered) */
+.brand-lockup {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* -------------------------------------------------------------------------
+   Phase 4 — Services overview cards only (`.solution-card*`)
+   Scoped selectors for /solutions editorial density. Do not use on hubs.
+--------------------------------------------------------------------------- */
+.solution-card {
+  position: relative;
+  overflow: hidden;
+  background: var(--background, #fff);
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+.solution-card:hover {
+  border-color: color-mix(in srgb, var(--primary, #2563eb) 45%, transparent);
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
+}
+.solution-card--crisis {
+  background: linear-gradient(180deg, rgba(220, 38, 38, 0.03), transparent 42%);
+}
+.solution-card--motif-regulatory::before,
+.solution-card--motif-compliance::before,
+.solution-card--motif-legal::before,
+.solution-card--motif-corporate::before,
+.solution-card--motif-banking::before,
+.solution-card--motif-remediation::before {
+  content: "";
+  position: absolute;
+  inset: auto -20% -40% auto;
+  width: 220px;
+  height: 220px;
+  border-radius: 999px;
+  opacity: 0.05;
+  pointer-events: none;
+  background: radial-gradient(circle, var(--primary, #2563eb) 0%, transparent 70%);
+}
+.solution-card--motif-remediation::before {
+  background: radial-gradient(circle, #dc2626 0%, transparent 70%);
+  opacity: 0.07;
+}
+
+/* ---------------------------------------------------------------------------
+   HUMAN RESCREEN POLISH
+   Portrait system, About editorial photograph, seven-area grid placement.
+--------------------------------------------------------------------------- */
+
+/* Portrait system. Shared between /team cards and the homepage leadership
+   band so both surfaces speak the same portrait language.
+
+   Frames stay 1:1 so the per-person `object-position` tuning already approved
+   for each source keeps its face height and head/shoulder scale intact. What
+   changes is the shape: one restrained Octus curve on the lower-left corner
+   instead of a generic circular avatar. Sources are untouched: no cutouts, no
+   background removal, no change to facial characteristics. */
+.team-card-photo-wrap.team-portrait,
+.home-leadership-trust__photo-wrap.team-portrait {
+  border-radius: 3px 3px 3px 28px;
+  background: linear-gradient(165deg, rgba(0, 101, 255, 0.09), rgba(11, 18, 32, 0.05));
+}
+
+/* Larissa only: solid studio-wall plate behind scaled photo (overrides portrait gradient). */
+/* Leadership: larger presence, Octus-branded backdrop plate, subtle halo. */
+.team-card-photo-wrap.team-portrait--leadership,
+.home-leadership-trust__photo-wrap.team-portrait--leadership {
+  width: 176px;
+  height: 176px;
+  border-radius: 3px 3px 3px 36px;
+  box-shadow:
+    -14px 14px 0 0 rgba(0, 101, 255, 0.07),
+    0 0 0 1px rgba(0, 101, 255, 0.22),
+    0 20px 44px -22px rgba(11, 18, 32, 0.38);
+}
+@media (min-width: 768px) {
+  .team-card-photo-wrap.team-portrait--leadership,
+  .home-leadership-trust__photo-wrap.team-portrait--leadership {
+    width: 228px;
+    height: 228px;
+    border-radius: 4px 4px 4px 44px;
+  }
+}
+
+/* Core specialists: consistent portrait height, restrained branded shape. */
+.team-card-photo-wrap.team-portrait--specialist {
+  width: 152px;
+  height: 152px;
+  box-shadow:
+    0 0 0 1px rgba(11, 18, 32, 0.1),
+    0 12px 26px -16px rgba(11, 18, 32, 0.28);
+}
+@media (min-width: 768px) {
+  .team-card-photo-wrap.team-portrait--specialist {
+    width: 164px;
+    height: 164px;
+  }
+}
+
+/* About: editorial team photograph.
+
+   ASSET CONSTRAINT: /team-group.jpg (1024x555) has a solid black field baked
+   around a dome that was flattened into the source. Every rectangular crop that
+   excludes that black also cuts a face, so the black is removed with a single
+   clip-path ellipse fitted just inside the baked edge. The frame keeps the
+   native ratio, so nothing is scaled, stretched or re-cropped: no face is
+   touched, and the curve becomes the one controlled Octus shape on the page.
+   A rectangular original would allow a true rectangular editorial crop. */
+.about-team-editorial {
+  margin-bottom: 32px;
+}
+.about-team-editorial__figure {
+  position: relative;
+  margin: 0 0 4px;
+  aspect-ratio: 1024 / 555;
+  /* The baked edge is a circle of radius ~520 centred at (511.5, 510) in source
+     pixels. Clipping at radius 512 lands just inside it, so no black survives
+     and no face is reached. Radii are expressed against the box, which carries
+     the native ratio, so the circle stays a circle at every width. */
+  clip-path: ellipse(50% 92.25% at 50% 91.9%);
+}
+.about-team-editorial__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  filter: grayscale(1) contrast(1.04);
+}
+/* Subtle navy fade grounding the lower edge. */
+.about-team-editorial__fade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to top,
+    rgba(11, 18, 32, 0.3) 0%,
+    rgba(11, 18, 32, 0.11) 26%,
+    rgba(11, 18, 32, 0) 52%
+  );
+}
+.about-team-editorial__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 14px;
+}
+.about-team-editorial__meta .stat-label {
+  padding-bottom: 2px;
+}
+.about-juris-strip__all {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  margin-top: 12px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: hsl(var(--primary));
+  text-decoration: none;
+}
+.about-juris-strip__all:hover {
+  text-decoration: underline;
+}
+
+/* Seven areas: centre the odd last card (07) on desktop rather than leaving it
+   stranded in the first column. Mobile keeps the natural single-column order. */
+@media (min-width: 768px) {
+  .solutions-area-grid > :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    margin-inline: auto;
+    width: min(100%, calc(50% - 0.625rem));
+  }
+}
+@media (min-width: 1024px) {
+  .solutions-area-grid > :last-child:nth-child(odd) {
+    width: min(100%, calc(50% - 0.75rem));
+  }
+}
+
+/* =============================================================================
+   OCTUS FINAL MOBILE REMEDIATION (single source of truth)
+   Breakpoints: handheld ≤767 · tablet ≤1023 · desktop ≥1024
+   Do not add a competing MobileRemediation CSS module.
+   ============================================================================= */
+
+html {
+  max-width: 100%;
+  overflow-x: clip;
+}
+body {
+  max-width: 100%;
+  overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+img,
+svg,
+video {
+  max-width: 100%;
+}
+
+/* Mobile menu owns the viewport — hide floating WA while open. */
+body.mobile-nav-open .wa-float {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media (max-width: 1023px) {
+  .site-header {
+    min-height: 4.25rem;
+  }
+  #mobile-nav {
+    overscroll-behavior: contain;
+  }
+  #mobile-nav a,
+  #mobile-nav summary {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@media (max-width: 1023px) {
+  /* Capability rail: one readable card per snap unit (no cramped 2-col). */
+  .capability-rail {
+    height: auto;
+    padding-bottom: 0.35rem;
+  }
+  .capability-rail__viewport {
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .capability-rail__viewport::-webkit-scrollbar {
+    display: none;
+  }
+  .capability-rail__static-grid {
+    display: flex !important;
+    width: max-content;
+    min-width: 100%;
+    grid-template-columns: none !important;
+    gap: 0.75rem;
+    padding: 0.9rem 1rem 0.35rem;
+  }
+  .capability-rail__grid-item {
+    width: min(78vw, 18rem);
+    min-height: 3.5rem;
+    flex: 0 0 auto;
+    align-items: center;
+    padding: 0.75rem 0.85rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.375rem;
+    background: rgba(255, 255, 255, 0.035);
+    font-size: 0.6875rem;
+    letter-spacing: 0.045em;
+    line-height: 1.35;
+    scroll-snap-align: start;
+  }
+  .capability-rail__swipe-hint {
+    display: block;
+    margin: 0;
+    padding: 0 1rem 0.65rem;
+    font-family: var(--font-inter), Inter, system-ui, sans-serif;
+    font-size: 0.625rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.38);
+  }
+}
+
+@media (max-width: 767px) {
+  main {
+    width: 100%;
+    overflow-x: clip;
+  }
+
+  main > section.py-32,
+  main > section.py-24 {
+    padding-top: 4.25rem !important;
+    padding-bottom: 4.25rem !important;
+  }
+  main > section.py-20 {
+    padding-top: 3.75rem !important;
+    padding-bottom: 3.75rem !important;
+  }
+  main > section.py-16,
+  main > section.py-14 {
+    padding-top: 3.25rem !important;
+    padding-bottom: 3.25rem !important;
+  }
+
+  .section,
+  .section-sm,
+  .section-dark,
+  .section-blue,
+  .section-padded,
+  .operate-section,
+  .speed-section,
+  .trust-section,
+  .why-fail-wrap,
+  .wwd-modules-section,
+  .authority-section,
+  .insights-section,
+  .post-body-section,
+  .certifications-block {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+
+  .page-hero {
+    min-height: auto !important;
+    padding: 7rem 1.25rem 3.75rem !important;
+  }
+
+  .home-hero {
+    min-height: auto !important;
+    align-items: flex-start !important;
+    padding-top: calc(4.25rem + 3.5rem) !important;
+    padding-bottom: 3.5rem !important;
+  }
+  .home-hero .octus-hero-copy {
+    margin-inline: 0 !important;
+    max-width: 42rem !important;
+  }
+  .home-hero__h1 {
+    max-width: 18ch;
+    font-size: clamp(2rem, 9.6vw, 2.65rem) !important;
+    line-height: 1.1 !important;
+    letter-spacing: -0.018em !important;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+  .home-hero .octus-hero-copy > p {
+    max-width: 35rem;
+    font-size: 1rem !important;
+    line-height: 1.65 !important;
+  }
+  .home-hero .octus-hero-copy > div:last-of-type {
+    align-items: stretch;
+  }
+  .home-hero .octus-hero-copy > div:last-of-type > a:first-child {
+    width: 100%;
+    min-height: 2.75rem;
+    justify-content: center;
+  }
+
+  .heading-section {
+    font-size: clamp(1.75rem, 7.8vw, 2.25rem) !important;
+    line-height: 1.12 !important;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+  .heading-lg,
+  .heading-md,
+  .page-hero-title,
+  .home-modules-accordion__title {
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+  .body-large,
+  .body-lg {
+    font-size: 1.0625rem !important;
+    line-height: 1.65 !important;
+  }
+  .body-text,
+  .body {
+    font-size: 0.9375rem !important;
+    line-height: 1.7 !important;
+  }
+
+  /* Authority strip stays compact three-up on normal phones. */
+  .home-authority {
+    padding-top: 2.75rem !important;
+    padding-bottom: 3rem !important;
+  }
+  .home-authority .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 0 !important;
+  }
+  .home-authority .grid > div {
+    min-width: 0;
+    padding-inline: 0.55rem;
+    border-right: 1px solid hsl(var(--border));
+  }
+  .home-authority .grid > div:last-child {
+    border-right: 0;
+  }
+  .home-authority .editorial-numeral--sm {
+    font-size: clamp(1.35rem, 6.5vw, 1.8rem) !important;
+    letter-spacing: 0.025em !important;
+  }
+  .home-authority .grid span:last-child {
+    font-size: 0.7rem !important;
+    line-height: 1.35;
+  }
+  .home-authority p:last-child {
+    margin-top: 1.75rem !important;
+  }
+
+  /* Leadership: two columns on normal phones. */
+  .home-leadership-trust {
+    padding-top: 3.75rem !important;
+    padding-bottom: 3.75rem !important;
+  }
+  .home-leadership-trust__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    max-width: 100% !important;
+    gap: 2rem 1rem !important;
+  }
+  .home-leadership-trust__card {
+    min-width: 0;
+    text-align: center !important;
+  }
+  .home-leadership-trust__photo-wrap.team-portrait--leadership,
+  .home-leadership-trust__photo-wrap {
+    width: clamp(7rem, 34vw, 9.25rem) !important;
+    height: clamp(7rem, 34vw, 9.25rem) !important;
+    margin-inline: auto;
+  }
+  .home-leadership-trust__name {
+    font-size: 1rem !important;
+    line-height: 1.25;
+  }
+  .home-leadership-trust__role {
+    font-size: 0.625rem !important;
+    line-height: 1.45;
+    letter-spacing: 0.08em !important;
+  }
+
+  /* Resting card boundaries for touch (hover is not available). */
+  main .border-transparent.bg-background,
+  main a.border-transparent.bg-background {
+    border-color: hsl(var(--border)) !important;
+    box-shadow: 0 8px 24px -22px rgba(11, 18, 32, 0.45);
+  }
+
+  .home-modules-accordion__trigger {
+    min-height: 4.25rem;
+  }
+  .home-modules-accordion__panel {
+    padding-bottom: 1.5rem;
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .grid-auto,
+  .grid-auto-lg {
+    min-width: 0;
+  }
+
+  /* Controlled scroll for any future / residual wide tables. */
+  .table-scroll,
+  main .overflow-x-auto {
+    max-width: 100%;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .chip-row {
+    gap: 0.625rem !important;
+  }
+  .chip-juris {
+    min-height: 2.75rem;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  /* Footer action stack — leave room for WA float (+ cookie when visible). */
+  .site-footer {
+    padding-top: 3.5rem !important;
+    padding-bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px)) !important;
+  }
+  body.cookie-banner-visible .site-footer {
+    padding-bottom: calc(9.5rem + env(safe-area-inset-bottom, 0px)) !important;
+  }
+  .site-footer__brand-close {
+    margin-bottom: 1.5rem !important;
+    padding-bottom: 2rem !important;
+  }
+  .site-footer__brand-close__line {
+    font-size: 0.9375rem !important;
+  }
+  .site-footer__cta-row {
+    display: grid !important;
+    grid-template-columns: 1fr auto;
+    align-items: center !important;
+    gap: 0.75rem 1rem !important;
+  }
+  .site-footer__cta-row > a:first-child {
+    grid-column: 1 / -1;
+    justify-content: center;
+    width: 100%;
+    min-height: 2.75rem;
+  }
+  .site-footer__cta-row > div a {
+    width: 2.75rem;
+    height: 2.75rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .site-footer__acc-summary {
+    min-height: 3rem !important;
+  }
+  .site-footer__bar {
+    margin-top: 2.5rem !important;
+    padding-top: 1.5rem !important;
+  }
+
+  /* Cookie + WhatsApp: lift float above banner; cookie stays clickable (z 100 > 90). */
+  body.cookie-banner-visible .wa-float {
+    bottom: calc(5.75rem + env(safe-area-inset-bottom, 0px)) !important;
+  }
+  .cookie-banner {
+    gap: 0.75rem !important;
+    padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom, 0px)) !important;
+  }
+  .cookie-banner p {
+    font-size: 0.75rem !important;
+    line-height: 1.45 !important;
+  }
+  .cookie-banner button {
+    min-height: 2.75rem !important;
+  }
+
+  /* Forms / sticky cards become static on handheld. */
+  .contact-form-card {
+    position: static !important;
+    top: auto !important;
+  }
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .cookie-banner {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  .cookie-banner button {
+    width: 100%;
+  }
+  body.cookie-banner-visible .wa-float {
+    bottom: calc(8.75rem + env(safe-area-inset-bottom, 0px)) !important;
+  }
+  main .h-12.px-10 {
+    width: 100%;
+    max-width: 100%;
+    padding-inline: 1.25rem !important;
+    text-align: center;
+  }
+}
+
+@media (max-width: 359px) {
+  .home-leadership-trust__grid {
+    grid-template-columns: 1fr !important;
+    max-width: 13rem !important;
+    margin-inline: auto;
+  }
+  .home-authority .grid {
+    gap: 1.25rem !important;
+    grid-template-columns: 1fr !important;
+  }
+  .home-authority .grid > div {
+    padding-bottom: 1.25rem;
+    border-right: 0;
+    border-bottom: 1px solid hsl(var(--border));
+  }
+  .home-authority .grid > div:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
   }
 }

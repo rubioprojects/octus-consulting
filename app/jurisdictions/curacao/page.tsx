@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
+import { pageSocialMeta } from "../../../lib/pageMeta";
 
-export const metadata = {
-  title: "Curaçao Gaming License — Structured Entry Framework | Octus",
+export const metadata = pageSocialMeta({
+  title: "Curaçao Gaming License. Structured Entry Framework | Octus",
   description:
     "Licensing, corporate structuring and banking coordination for iGaming operators in Curaçao. Structured framework under the evolving regulatory landscape.",
-};
+  path: "/jurisdictions/curacao",
+});
 
 export default function JurisdictionsCuracaoPage() {
   return (
@@ -14,8 +16,8 @@ export default function JurisdictionsCuracaoPage() {
       {/* ─── HERO ─── */}
       <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <span className="label">Jurisdictions · Curaçao</span>
-          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
+          <span className="mb-5 block text-xs font-medium uppercase tracking-[0.12em] text-white/65">Jurisdictions · Curaçao</span>
+          <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline">
             Curaçao Gaming License.
             <br />
             <span style={{ color: "var(--white-40)" }}>
@@ -24,7 +26,7 @@ export default function JurisdictionsCuracaoPage() {
           </h1>
           <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "620px" }}>
             A structured and evolving licensing framework for operators seeking
-            a balance between speed, cost and regulatory positioning. Not a
+            a balance between accessibility, cost and regulatory positioning. Not a
             shortcut. A strategic entry point.
           </p>
           <div style={{ marginTop: "32px", display: "flex", gap: "16px", flexWrap: "wrap" }}>
@@ -75,7 +77,7 @@ export default function JurisdictionsCuracaoPage() {
               <p className="label" style={{ marginBottom: "16px", color: "var(--blue-light)" }}>When Curaçao makes sense</p>
               <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
                 {[
-                  "Speed to market is important, but not the only priority",
+                  "Operational accessibility is important, but not the only priority",
                   "The operation requires a structured licensing environment",
                   "Budget constraints exist, but credibility still matters",
                   "The business is in a growth or scaling phase",
@@ -98,7 +100,7 @@ export default function JurisdictionsCuracaoPage() {
                   "The strategy requires maximum credibility and regulatory depth",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                    <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                    <span className="mt-0.5 shrink-0 text-muted-foreground" aria-hidden="true">•</span>
                     <p className="body-sm text-muted-foreground">{item}</p>
                   </div>
                 ))}
@@ -113,7 +115,7 @@ export default function JurisdictionsCuracaoPage() {
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <p className="label">Octus role</p>
           <h2 className="heading-section" style={{ marginBottom: "12px" }}>
-            From application to operational bank account.
+            From assessment to operational readiness.
           </h2>
           <p className="body-text mb-10 max-w-[620px]">
             Engagements are structured based on scope and operational complexity.
@@ -123,7 +125,7 @@ export default function JurisdictionsCuracaoPage() {
               {
                 step: "01",
                 title: "Strategic assessment",
-                body: "We assess the operation, target markets and regulatory requirements. If Curaçao isn\u2019t the right jurisdiction, we tell you before you waste six months.",
+                body: "We assess the operation, target markets and regulatory requirements. If Curaçao is not the right jurisdiction, we identify that before substantive implementation work begins.",
               },
               {
                 step: "02",
@@ -133,7 +135,7 @@ export default function JurisdictionsCuracaoPage() {
               {
                 step: "03",
                 title: "Licensing under the updated framework",
-                body: "Full application package: regulatory documentation, compliance framework, AML policies, technical requirements. Coordinated directly with the regulator.",
+                body: "Application-readiness support covering regulatory documentation, compliance, AML policies and technical requirements. Octus advises the client and supports authorised regulator communications; it is not affiliated with the regulator.",
               },
               {
                 step: "04",
@@ -143,12 +145,12 @@ export default function JurisdictionsCuracaoPage() {
               {
                 step: "05",
                 title: "Banking & payment coordination",
-                body: "We align the corporate and compliance structure with bank requirements and coordinate directly with banking partners and PSPs.",
+                body: "We align the corporate and compliance structure with stated provider requirements and support client-authorised communications with banks and PSPs. Onboarding remains subject to independent due diligence.",
               },
               {
                 step: "06",
                 title: "Post-license stabilization",
-                body: "License granted is the beginning. We stabilize compliance cycles, banking relationships and regulatory reporting.",
+                body: "After any licence is granted, ongoing work may include compliance cycles, provider relationships and regulatory reporting.",
               },
             ].map((s, i) => (
               <div
@@ -185,8 +187,8 @@ export default function JurisdictionsCuracaoPage() {
               { label: "License types", value: "iGaming, sports betting, lottery, games of chance" },
               { label: "Entity required", value: "Curaçao-registered N.V. or B.V." },
               { label: "Compliance", value: "Full AML/KYC, responsible gaming, DPO mandatory" },
-              { label: "Banking", value: "Operational accounts available — requires aligned structure" },
-              { label: "Timeline", value: "3\u20136 months (application to license, structure-dependent)" },
+              { label: "Banking", value: "Account availability is provider-dependent and requires due diligence" },
+              { label: "Timeline", value: "Variable by application completeness, complexity and regulator review" },
             ].map((item) => (
               <div key={item.label} className="card" style={{ padding: "24px" }}>
                 <p className="label" style={{ marginBottom: "8px", fontSize: "10px" }}>{item.label}</p>
@@ -200,23 +202,23 @@ export default function JurisdictionsCuracaoPage() {
       {/* ─── SELECTED MANDATES ─── */}
       <section className="bg-background py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
-          <p className="label">Selected mandates — Curaçao</p>
+          <p className="label">Illustrative advisory scopes. Curaçao</p>
           <h2 className="heading-section" style={{ marginBottom: "32px" }}>
-            Real operations. Real outcomes.
+            Common structural and compliance work.
           </h2>
           <div className="grid gap-6 md:grid-cols-1">
             {[
               {
-                title: "Licensed for 6 months. No bank account.",
-                body: "Active Curaçao license, rejected by three banks. We restructured the corporate layer, rebuilt AML policies, aligned UBO disclosure and coordinated with three banks simultaneously. Operational account open in 11 weeks.",
+                title: "Banking-readiness remediation",
+                body: "Review of corporate structure, AML policies and UBO disclosures before provider outreach. Account opening is never promised and remains subject to each provider\u2019s due diligence.",
               },
               {
-                title: "New operator — full setup from zero",
-                body: "Entity formation, licensing dossier, compliance framework and banking, delivered as a single coordinated project. License granted, bank account operational before launch.",
+                title: "New operator readiness",
+                body: "Coordinated entity, application-dossier, compliance and banking-readiness work. Licence and banking decisions remain with the regulator and independent providers.",
               },
               {
-                title: "Compliance remediation under regulatory pressure",
-                body: "Existing operator flagged by the regulator for compliance gaps. Full KYC/AML rebuild, responsible gaming framework and evidence register delivered in 6 weeks.",
+                title: "Compliance remediation",
+                body: "KYC/AML, responsible-gaming and evidence-register remediation scoped to identified gaps and current requirements. Timing varies with complexity and available evidence.",
               },
             ].map((m, i) => (
               <div
@@ -286,9 +288,9 @@ export default function JurisdictionsCuracaoPage() {
             The right approach depends on where{" "}
             <span style={{ color: "var(--blue-light)" }}>your operation is heading.</span>
           </h2>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{"Continue on WhatsApp →"}</a>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
-            We respond within 24 hours.
+            Prefer not to use WhatsApp? <Link href="/contact" className="underline underline-offset-4">Contact us here.</Link>
           </p>
         </div>
       </section>

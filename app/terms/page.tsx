@@ -1,7 +1,11 @@
-export const metadata = {
+import { pageSocialMeta } from "../../lib/pageMeta";
+export const metadata = pageSocialMeta({
   title: "Terms & Conditions",
-  description: "Terms and Conditions for Octus Technology LLC, operating as Octus Consulting.",
-};
+  description:
+    
+    "Terms governing use of the Octus Consulting website and engagement of services provided by Octus Technology LLC.",
+  path: "/terms",
+});
 
 const sections = [
   {
@@ -10,7 +14,7 @@ const sections = [
   },
   {
     title: "Services",
-    body: `Octus Consulting provides regulatory structuring, compliance coordination, legal architecture, corporate structuring, audit readiness and related advisory services to businesses operating in regulated markets.\n\nAll services are subject to separate engagement letters or service agreements, which take precedence over these Terms in the event of any conflict. Nothing on this website constitutes legal, regulatory or financial advice, and no client relationship is established until a formal engagement is confirmed in writing.`,
+    body: `Octus Consulting provides regulatory structuring, compliance coordination, legal architecture, corporate structuring, audit readiness and related advisory services to businesses operating in regulated markets, as described on this website and in engagement materials.\n\nAll services are subject to separate engagement letters or service agreements, which take precedence over these Terms in the event of any conflict. Nothing on this website constitutes legal, regulatory or financial advice, and no client relationship is established until a formal engagement is confirmed in writing. Website marketing copy does not override the engagement model described under How we engage.`,
   },
   {
     title: "Website use",
@@ -18,7 +22,7 @@ const sections = [
   },
   {
     title: "Intellectual property",
-    body: `All content on this website — including text, copy, structure, design, logos, graphics and brand assets — is the property of Octus Technology LLC and is protected by applicable intellectual property law.\n\nNo content may be copied, reproduced, republished, uploaded, posted, transmitted or distributed in any form without our prior written permission. The Octus name, logo and symbol are trademarks of Octus Technology LLC.`,
+    body: `All content on this website: including text, copy, structure, design, logos, graphics and brand assets: is the property of Octus Technology LLC and is protected by applicable intellectual property law.\n\nNo content may be copied, reproduced, republished, uploaded, posted, transmitted or distributed in any form without our prior written permission. The Octus name, logo and symbol are trademarks of Octus Technology LLC.`,
   },
   {
     title: "No professional advice",
@@ -55,9 +59,9 @@ export default function TermsPage() {
     <main>
       <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
-          <span className="label">Legal</span>
-          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">Terms & Conditions</h1>
-          <p className="text-lg leading-relaxed text-white/60 max-w-2xl">Last updated: March 2026</p>
+          <span className="mb-5 block text-xs font-medium uppercase tracking-[0.12em] text-white/65">Legal</span>
+          <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline">Terms & Conditions</h1>
+          <p className="text-lg leading-relaxed text-white/60 max-w-2xl">Last updated: August 2026</p>
         </div>
       </section>
       <section className="bg-background py-24 md:py-32">

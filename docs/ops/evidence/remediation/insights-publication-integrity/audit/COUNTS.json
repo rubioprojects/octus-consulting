@@ -1,0 +1,9 @@
+{
+  "source": 33,
+  "registered": 33,
+  "PUBLISH_CURRENT": 5,
+  "PUBLISH_HISTORICAL_WITH_UPDATE": 6,
+  "EDITORIAL_COMMENTARY": 5,
+  "HOLD_NOT_PUBLIC": 17,
+  "public": 16
+}

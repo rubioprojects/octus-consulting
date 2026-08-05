@@ -1,0 +1,171 @@
+{
+  "baseline_url": "https://octus-consulting-9q798dbg2-axle1.vercel.app",
+  "current_url": "https://octus-consulting-2dz7kf23q-axle1.vercel.app",
+  "baseline": {
+    "desktop": {
+      "headerH": 84,
+      "logo": {
+        "h": 36,
+        "w": 171.4,
+        "src": "/brand/lockup/octus-lockup-nav-on-dark.svg"
+      },
+      "footerLogo": {
+        "h": 48,
+        "w": 182.6,
+        "src": "/brand/lockup/octus-lockup-horizontal-primary-on-dark.svg"
+      },
+      "footerPadT": "80px",
+      "footerPadB": "80px",
+      "h1": {
+        "fontSize": "53.6px",
+        "weight": "600",
+        "lh": "62.176px",
+        "family": "Unigeo64"
+      },
+      "body": {
+        "fontSize": "18px",
+        "lh": "28px",
+        "color": "rgba(247, 248, 250, 0.84)"
+      },
+      "btn": {
+        "h": 44,
+        "fontSize": "12.5px",
+        "bg": "rgb(0, 81, 194)",
+        "radius": "2px"
+      },
+      "wa": {
+        "h": 47.4,
+        "w": 204.9,
+        "bottom": "24px",
+        "right": "24px"
+      },
+      "cookie": {
+        "h": 147.9,
+        "w": 320,
+        "display": "flex"
+      },
+      "containerMax": "1280px",
+      "containerPad": "32px",
+      "tokens": {
+        "primary": "215 100% 38%",
+        "navy": "220 48% 8%",
+        "red": "0 99% 37%",
+        "bg": "50 10% 98%",
+        "elevated": "220 28% 96%",
+        "textPrimary": "#0b1220",
+        "textSecondary": "#3d4654"
+      },
+      "overflow": false
+    },
+    "lightHeader": {
+      "headerH": 84,
+      "headerBg": "rgb(11, 18, 32)",
+      "logo": {
+        "h": 36,
+        "w": 171.4,
+        "src": "/brand/lockup/octus-lockup-nav-on-dark.svg"
+      },
+      "border": "rgba(255, 255, 255, 0.1)"
+    },
+    "mobileClosed": {
+      "headerH": 76,
+      "logo": {
+        "h": 32,
+        "w": 152.4,
+        "src": "/brand/lockup/octus-lockup-nav-on-dark.svg"
+      },
+      "burgerFound": true,
+      "overflow": false
+    },
+    "mobileOpen": {
+      "cls": "home-hero__mesh",
+      "h": 979,
+      "w": 452.4,
+      "top": -67.5
+    }
+  },
+  "current": {
+    "desktop": {
+      "headerH": 84,
+      "logo": {
+        "h": 36,
+        "w": 171.4,
+        "src": "/brand/lockup/octus-lockup-nav-on-dark.svg"
+      },
+      "footerLogo": {
+        "h": 48,
+        "w": 182.6,
+        "src": "/brand/lockup/octus-lockup-horizontal-primary-on-dark.svg"
+      },
+      "footerPadT": "80px",
+      "footerPadB": "80px",
+      "h1": {
+        "fontSize": "53.6px",
+        "weight": "600",
+        "lh": "62.176px",
+        "family": "Unigeo64"
+      },
+      "body": {
+        "fontSize": "18px",
+        "lh": "28px",
+        "color": "rgba(247, 248, 250, 0.84)"
+      },
+      "btn": {
+        "h": 44,
+        "fontSize": "12.5px",
+        "bg": "rgb(0, 81, 194)",
+        "radius": "2px"
+      },
+      "wa": {
+        "h": 48,
+        "w": 198.9,
+        "bottom": "92px",
+        "right": "20px"
+      },
+      "cookie": {
+        "h": 65,
+        "w": 1440,
+        "display": "flex"
+      },
+      "containerMax": "1280px",
+      "containerPad": "32px",
+      "tokens": {
+        "primary": "215 100% 38%",
+        "navy": "220 48% 8%",
+        "red": "0 99% 37%",
+        "bg": "50 10% 98%",
+        "elevated": "220 28% 96%",
+        "textPrimary": "#0b1220",
+        "textSecondary": "#3d4654"
+      },
+      "overflow": false
+    },
+    "lightHeader": {
+      "headerH": 84,
+      "headerBg": "rgb(11, 18, 32)",
+      "logo": {
+        "h": 36,
+        "w": 171.4,
+        "src": "/brand/lockup/octus-lockup-nav-on-dark.svg"
+      },
+      "border": "rgba(255, 255, 255, 0.1)"
+    },
+    "mobileClosed": {
+      "headerH": 76,
+      "logo": {
+        "h": 32,
+        "w": 152.4,
+        "src": "/brand/lockup/octus-lockup-nav-on-dark.svg"
+      },
+      "burgerFound": true,
+      "overflow": false
+    },
+    "mobileOpen": {
+      "cls": "home-hero__mesh",
+      "h": 979,
+      "w": 452.4,
+      "top": -67.2
+    }
+  },
+  "generated_at": "2026-08-03T19:11:30.272Z"
+}

@@ -1,20 +1,24 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
+import DarkHeroAtmosphere from "../../../../components/system/DarkHeroAtmosphere";
+import { pageSocialMeta } from "../../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Compliance-as-a-Service",
   description:
     "Compliance is not a document. Octus builds and operates compliance as a continuous function: AML/KYC, controls, monitoring and regulatory alignment embedded in the business.",
-};
+  path: "/solutions/compliance/compliance-as-a-service",
+});
 
 export default function ComplianceAsAServicePage() {
   return (
     <main>
 
-      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
-        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <span className="label">Solutions · Compliance · Compliance-as-a-Service</span>
-          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
+      <section className="octus-dark-hero surface-dark relative flex min-h-[70vh] flex-col justify-center overflow-hidden pt-28 pb-16 md:min-h-[80vh] md:pt-32 md:pb-24">
+        <DarkHeroAtmosphere />
+        <div className="relative z-10 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+          <span className="label">Services · Compliance · Compliance-as-a-Service</span>
+          <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline">
             Compliance is not documentation.
             <br />
             <span style={{ color: "var(--white-40)" }}>
@@ -30,6 +34,7 @@ export default function ComplianceAsAServicePage() {
             <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           </div>
         </div>
+        <div className="octus-dark-hero__seam" aria-hidden="true" />
       </section>
 
       <section className="bg-background py-24 md:py-32">
@@ -66,8 +71,8 @@ export default function ComplianceAsAServicePage() {
             Embedded into your operation, not external to it.
           </p>
           <p className="body-text">
-            Once implemented, compliance becomes part of how the business operates
-            — not something that can be turned off.
+            Once implemented, compliance becomes part of how the business operates,
+            not something that can be turned off.
           </p>
         </div>
       </section>
@@ -105,7 +110,7 @@ export default function ComplianceAsAServicePage() {
                   "There is no internal ownership or accountability for compliance.",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                    <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                    <span className="mt-0.5 shrink-0 text-muted-foreground" aria-hidden="true">•</span>
                     <p className="body-sm text-muted-foreground">{item}</p>
                   </div>
                 ))}
@@ -128,11 +133,11 @@ export default function ComplianceAsAServicePage() {
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {[
-              "AML/KYC — onboarding flows, transaction monitoring, SAR processes.",
-              "Policies and controls — aligned with regulatory and banking expectations.",
-              "Ongoing monitoring — risk indicators, alerts, reporting cycles.",
-              "Regulatory interaction — responses, audits, documentation requests.",
-              "Internal governance — roles, responsibilities, escalation frameworks.",
+              "AML/KYC: onboarding flows, transaction monitoring, SAR processes.",
+              "Policies and controls: aligned with regulatory and banking expectations.",
+              "Ongoing monitoring: risk indicators, alerts, reporting cycles.",
+              "Regulatory interaction: responses, audits, documentation requests.",
+              "Internal governance: roles, responsibilities, escalation frameworks.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
@@ -212,7 +217,6 @@ export default function ComplianceAsAServicePage() {
             jurisdictions and operational complexity. This is not a one-time
             delivery. It is a continuous function embedded in the business.
           </p>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
         </div>
       </section>
 
@@ -271,9 +275,9 @@ export default function ComplianceAsAServicePage() {
           <h2 className="heading-lg cta-block__title">
             Build it before it is tested.
           </h2>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">Continue this discussion →</a>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
-            We respond within 24 hours.
+            Reach us on WhatsApp. We assess operational fit before recommending a path.
           </p>
         </div>
       </section>

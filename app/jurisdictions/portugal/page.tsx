@@ -1,19 +1,21 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
+import { pageSocialMeta } from "../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Portugal",
   description:
-    "Portugal is not fast. It is defensible. Octus structures EU-ready operations that survive the SRIJ licensing process and sustain operations under European regulatory oversight.",
-};
+    "Portugal licensing advisory for application readiness, operating structure and ongoing compliance under SRIJ and applicable European requirements.",
+  path: "/jurisdictions/portugal",
+});
 
 export default function JurisdictionsPortugalPage() {
   return (
     <main>
       <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <span className="label">Jurisdictions · Portugal</span>
-          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
+          <span className="mb-5 block text-xs font-medium uppercase tracking-[0.12em] text-white/65">Jurisdictions · Portugal</span>
+          <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline">
             Portugal is not fast.
             <br />
             <span style={{ color: "var(--white-40)" }}>It is defensible.</span>
@@ -43,11 +45,10 @@ export default function JurisdictionsPortugalPage() {
               "Regulator: SRIJ (Servico de Regulacao e Inspecao de Jogos), under Turismo de Portugal.",
               "Legal framework: Decree-Law 66/2015 (RJO).",
               "Mandatory local incorporation (Portuguese entity or EU/EEA branch).",
-              "Guarantee deposits: EUR500,000 (compliance) + EUR100,000 (tax).",
-              "Processing time: 9-15 months.",
-              "18 licensed operators currently hold 31 licences.",
-              "Online GGR exceeds EUR300 million annually.",
-              "Virtual assets not permitted for gambling activities.",
+              "Bond, fee and tax-security requirements must be verified against current SRIJ rules.",
+              "Processing time varies with application scope, completeness, technical review and regulator workload.",
+              "Licensing does not provide EU-wide passporting or authorise activity outside approved markets.",
+              "Payment methods, including any virtual-asset use, must be checked against current law and provider requirements.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
@@ -72,8 +73,8 @@ export default function JurisdictionsPortugalPage() {
             {[
               "Licensed iGaming operations under national regulation.",
               "Fintech and payment structures aligned with EU frameworks.",
-              "Access to European banking infrastructure.",
-              "Credibility with institutional partners and investors.",
+              "Potential access to banking providers, subject to independent eligibility and due diligence.",
+              "A nationally regulated framework for counterparties to assess independently.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
@@ -81,16 +82,16 @@ export default function JurisdictionsPortugalPage() {
               </div>
             ))}
           </div>
-          <p className="body-text mb-4 font-semibold text-primary">But:</p>
+          <p className="body-text mb-4 font-semibold text-primary">Constraints</p>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {[
               "Licensing is slow and documentation-heavy.",
               "Compliance is ongoing, not a one-off.",
               "Banking access depends on structure, not licence alone.",
-              "SRIJ licences cover Portugal only — no EU-wide passporting.",
+              "SRIJ licences cover Portugal only: no EU-wide passporting.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                <span className="mt-0.5 shrink-0 text-muted-foreground" aria-hidden="true">•</span>
                 <p className="body-text text-muted-foreground">{item}</p>
               </div>
             ))}
@@ -110,7 +111,7 @@ export default function JurisdictionsPortugalPage() {
             {[
               "They underestimate timelines and regulatory depth.",
               "They treat EU licensing as a checkbox.",
-              "They assume approval guarantees operational readiness.",
+              "They assume approval means the operation is ready to run.",
               "They ignore ongoing compliance burden.",
               "They build for approval, not for operation.",
             ].map((item) => (
@@ -133,8 +134,9 @@ export default function JurisdictionsPortugalPage() {
             What we actually structure.
           </h2>
           <p className="body-text" style={{ marginBottom: "28px" }}>
-            We do not apply for licences in Portugal. We build EU-ready
-            operations that survive regulatory oversight.
+            Octus advises clients on application readiness and operating
+            structures for Portuguese regulatory oversight. Licence decisions
+            remain solely with SRIJ.
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
             {[
@@ -142,8 +144,8 @@ export default function JurisdictionsPortugalPage() {
               ["Entity and group architecture", "Portuguese company or EU/EEA branch. Governance aligned with SRIJ expectations. Structures that support EU operations."],
               ["Operational model", "Clear definition of regulated vs non-regulated activities. Flow of funds, responsibilities and risk allocation."],
               ["Compliance infrastructure", "AML/KYC, responsible gambling, advertising compliance, self-exclusion integration. Aligned with SRIJ and EU standards. Ongoing, not static."],
-              ["Banking and payments", "Local banking arrangements. Payment methods aligned to Portuguese market (Multibanco, MB Way, cards). Fiat only — no crypto."],
-              ["Technical certification", "Coordination with independent testing laboratories recognised by SRIJ. Platform certification, RNG validation."],
+              ["Banking and payments", "Banking and payment-provider readiness for the Portuguese market. Permitted methods, including treatment of virtual assets, must be verified under current rules and provider policies."],
+              ["Technical certification", "Client-authorised coordination with independent testing laboratories where accepted by SRIJ. Certification and regulator acceptance are not promised."],
             ].map(([title, body]) => (
               <div key={title}>
                 <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{title}</h3>
@@ -166,8 +168,8 @@ export default function JurisdictionsPortugalPage() {
                 {[
                   "You want a credible EU-regulated operation.",
                   "You are building for long-term scale, not short-term entry.",
-                  "You need access to European markets and banking infrastructure.",
-                  "You have capital for EUR600,000+ in guarantee deposits and operational setup.",
+                  "You have defined the specific markets in which you intend to operate and understand that permissions are territorial.",
+                  "You have capital for the security deposits and operational setup required under current SRIJ rules.",
                   "You understand regulatory burden is part of the model.",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
@@ -188,7 +190,7 @@ export default function JurisdictionsPortugalPage() {
                   "You expect approval to solve operational gaps.",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                    <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                    <span className="mt-0.5 shrink-0 text-muted-foreground" aria-hidden="true">•</span>
                     <p className="body-sm text-muted-foreground">{item}</p>
                   </div>
                 ))}
@@ -208,8 +210,8 @@ export default function JurisdictionsPortugalPage() {
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {[
-              "EUR600,000+ committed before discovering the structure does not qualify.",
-              "Application rejected after 12+ months of process.",
+              "Capital committed before discovering the structure does not meet current requirements.",
+              "An extended application process without a favourable regulator decision.",
               "Licensed but unable to connect to Portuguese payment methods.",
               "Compliance failures discovered during SRIJ supervisory review.",
               "Advertising sanctions because marketing was not aligned with SRIJ rules.",
@@ -221,7 +223,8 @@ export default function JurisdictionsPortugalPage() {
             ))}
           </div>
           <p className="body-text" style={{ marginTop: "20px" }}>
-            Most failures in Portugal happen after approval. Not before.
+            Structural and compliance gaps can create problems before or after
+            any licence decision.
           </p>
         </div>
       </section>
@@ -232,7 +235,7 @@ export default function JurisdictionsPortugalPage() {
           <div className="grid-auto-lg">
             {[
               { title: "Fintech Licensing", desc: "How EU licensing paths are structured", href: "/solutions/regulatory/fintech-licensing" },
-              { title: "Banking & Payments", desc: "Why banking defines operational viability", href: "/solutions/regulatory/banking-payments" },
+              { title: "Banking & Payments", desc: "Why banking defines operational viability", href: "/solutions/banking-payments-infrastructure" },
               { title: "Holding Design", desc: "How EU operations fit into group structure", href: "/solutions/corporate/holding-design" },
               { title: "iGaming", desc: "Sector overview", href: "/markets/igaming" },
             ].map((item) => (
@@ -252,11 +255,10 @@ export default function JurisdictionsPortugalPage() {
           <h2 className="heading-lg cta-block__title">
             Build for the regulator&apos;s standard. Not for your timeline.
           </h2>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{"Continue on WhatsApp →"}</a>
           <p className="body-sm" style={{ color: "var(--white-25)", marginTop: "16px" }}>
-            We evaluate your intended operation, define whether Portugal is the
-            right jurisdiction and structure the path accordingly. If it is not
-            the right fit, we will tell you upfront.
+            WhatsApp is the primary strategic intake. Prefer another channel?{" "}
+            <Link href="/contact" className="underline underline-offset-4">Contact us here.</Link>
           </p>
         </div>
       </section>

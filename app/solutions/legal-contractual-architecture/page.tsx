@@ -1,13 +1,14 @@
-import { SOLUTION_HUBS } from "../../../lib/commercial";
-import SolutionHubPage from "../../../components/system/SolutionHubPage";
+import StaticRedirect from "../../../components/StaticRedirect";
+import { pageSocialMeta } from "../../../lib/pageMeta";
 
-const hub = SOLUTION_HUBS.find((h) => h.slug === "legal-contractual-architecture")!;
-
-export const metadata = {
-  title: hub.title,
-  description: hub.summary,
-};
+export const metadata = pageSocialMeta({
+  title: "Redirecting…",
+  description:
+    "This URL redirects to /solutions/legal-structural-architecture on the Octus Consulting production site.",
+  path: "/solutions/legal-structural-architecture",
+  robots: { index: false, follow: true },
+});
 
 export default function Page() {
-  return <SolutionHubPage hub={hub} />;
+  return <StaticRedirect to="/solutions/legal-structural-architecture" />;
 }

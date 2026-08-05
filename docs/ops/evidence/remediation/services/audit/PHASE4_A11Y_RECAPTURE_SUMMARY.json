@@ -1,0 +1,218 @@
+{
+  "updated_count": 36,
+  "changed_hash_count": 34,
+  "screenshot_count": 272,
+  "preview": "https://octus-consulting-beqxfdqrk-axle1.vercel.app",
+  "commit": "eac4e514ea751314774f3e69f71ebd52245d2534",
+  "deployment_id": "dpl_Fx8deWwccpuH6U3WhWzpUWr5g5kT",
+  "changedHashes": [
+    {
+      "file": "reconciled/solutions__desktop__full.png",
+      "before": "1d6636e520a082b1ee4e60df5418ce4a4e6da0c0a3c711863ec30d28b5327f75",
+      "after": "aa2529f7107c5255a0c1f36d1cc55e1f05d9ca748371518c8d3487e8b6f95f7e"
+    },
+    {
+      "file": "reconciled/solutions__desktop__hero.png",
+      "before": "c3eb98af97040eda757f7125b2cf2af9e92c4ada4b0d1bb45bedd87426bef72a",
+      "after": "3b85c26794a04da826129c3154c175eb30395ce3870d321b5b8955e70e0eb6e3"
+    },
+    {
+      "file": "reconciled/solutions__desktop__content.png",
+      "before": "c01080070888b2666b694963f18c52101ff6b8f45bcda3cff0ce5d9a1c74adf9",
+      "after": "36f2da786af755e286e3df05c4a30578497f8ce68328af0de3f375f34138aec1"
+    },
+    {
+      "file": "reconciled/solutions__desktop__cta.png",
+      "before": "f181706e2652f54f0568b2f7682d255ff2aabee3dcefce110802904aff985a62",
+      "after": "99c8c36fc728b162fcbab430662a5370836fab18a9c14787847fb758258416a3"
+    },
+    {
+      "file": "reconciled/solutions__mobile__full.png",
+      "before": "0f08cc9e2cf7dc1d38a5ce30a8d41fc8d40c5abb93efeefaef06c0b0a15d4dbe",
+      "after": "7084685e01f21a481fa790d6559532a57f79533229c82ce2378723ecb7fabe61"
+    },
+    {
+      "file": "reconciled/solutions__mobile__hero.png",
+      "before": "c06a216efd11bdd2c9bcb12f679fc0865785fe0d119a5cd53696a550e0d9d689",
+      "after": "d3c3f0c7b19bb9cec8594eaafe92afa7dfee42388b7734e42bea16b86cb4f6b2"
+    },
+    {
+      "file": "reconciled/solutions__mobile__content.png",
+      "before": "fbcc3b5298c9d127358d32fdec8c8ab2a796e98f8df6fafe4cff603ea07188a5",
+      "after": "8d4ba12133ed0a9b84ebedaf35118fa8d9397f7b69e067808f63552cbbe55fa2"
+    },
+    {
+      "file": "reconciled/solutions__mobile__cta.png",
+      "before": "7a8d04434b86c592e8ceff35568dbbf9c7a830f25f06284790a9f0687aae747a",
+      "after": "edd2ca14b21ead360c9c74fada39fd7f1d105fcc89b306f7a8a37c891126b1f1"
+    },
+    {
+      "file": "reconciled/solutions-regulatory-fintech-licensing__desktop__full.png",
+      "before": "bc9c1d5a069190a5b1edcc2a6e74b15139624b46c0986e499a303ea9b82383f4",
+      "after": "0695d599bdfb99798bb0edb29015c71a09885e261a5c94ba7cd85d8d4b906cf5"
+    },
+    {
+      "file": "reconciled/solutions-regulatory-fintech-licensing__desktop__hero.png",
+      "before": "47937fa3fbed09f13684bbf81c28be9b37937748d4b5e316667b944185523997",
+      "after": "376bee138dae7ee1c9b0440d861bad6664633e85e7084518b664856a71fe9674"
+    },
+    {
+      "file": "reconciled/solutions-regulatory-fintech-licensing__desktop__content.png",
+      "before": "2236282ef61da1ae4444ec59791507ee08562ccbe22e6af23d42e8f1ad6844e2",
+      "after": "208b8ba7775e48f6ee46818935050afa3be305f0998007a35aabfbb135e377bc"
+    },
+    {
+      "file": "reconciled/solutions-regulatory-fintech-licensing__desktop__cta.png",
+      "before": "16b37f99591875b7447a15b3d3328214787c863cb466fa441e52debb86f80b5a",
+      "after": "28911670de13267b846557317c0576a16d95570238ff4dbd8c8b37abd6c7fa8d"
+    },
+    {
+      "file": "reconciled/solutions-regulatory-fintech-licensing__mobile__full.png",
+      "before": "3a32c0b155ed3ad7dd35e7443e092ce708c51461aa45930548c42be1d803cc2f",
+      "after": "4add1db05d673f19c3d03ce7659de5c8f922cf3c5dd388873b6c0421ac5dae4a"
+    },
+    {
+      "file": "reconciled/solutions-regulatory-fintech-licensing__mobile__hero.png",
+      "before": "fe61960e5513a1e6a585ebc2f8e453a8a9c714ff1b6140a9172de3996599c72a",
+      "after": "39ba6b857d8ca51751bdf2287c946dbb839d4aba1e2527c2d98b6e7c2a813f5b"
+    },
+    {
+      "file": "reconciled/solutions-regulatory-fintech-licensing__mobile__content.png",
+      "before": "f588d9ad4c1ae7e82daebd762815e365cccbf0eed1523fea00d9cb0bfb01f9e3",
+      "after": "704cd9aa4f8b9e5f5daeb9dada28c5dfadd3e09cc052dc7fcafc5a9590f8a78d"
+    },
+    {
+      "file": "reconciled/solutions-regulatory-fintech-licensing__mobile__cta.png",
+      "before": "9b21b1be4a14e2853aff611311412f70ad5806244d1174b7dcb0e097323b5e49",
+      "after": "547c8f3f351d1b43137a2b2f74c599f98397b66a67d2b7b83109befe7bf085ba"
+    },
+    {
+      "file": "reconciled/solutions-corporate-holding-design__desktop__full.png",
+      "before": "d1ea01e52f2a48adf044b22a0f4ccbecf87a27b3cfea1e3cb18b47506e1458bc",
+      "after": "89950a23e5f25a9b084a9d469377531ee7dc21aa240592d74f47bdc27df3a11c"
+    },
+    {
+      "file": "reconciled/solutions-corporate-holding-design__desktop__hero.png",
+      "before": "6ee92d0d9e207362ec42b91e445933e6d4cc52e0217910c3e221141567c25257",
+      "after": "ef3c0c818cefef0aeb1ad4b01ed170cf1ef8acb794cfec8e409f41878f2d8dc6"
+    },
+    {
+      "file": "reconciled/solutions-corporate-holding-design__desktop__content.png",
+      "before": "bad96ddf7c48c2a6cccaa7f645977505fa395a8de4da07aefeebb08060bf23e8",
+      "after": "560934b9e621c07644d133904e4f26fedfbec18768194a29c87fc43de6573466"
+    },
+    {
+      "file": "reconciled/solutions-corporate-holding-design__desktop__cta.png",
+      "before": "a6ed6fab3a9333080195d862ebde4525e319f2e41c6a0eaf5ebe0eaef426115f",
+      "after": "9e1297a3ba32b43e51d57408693a85470ca5df2d26c6acceb1913ca93a511185"
+    },
+    {
+      "file": "reconciled/solutions-corporate-holding-design__mobile__full.png",
+      "before": "857bf66f727883a89921ddee800a6aaede3e30e651a6c7c3f709b0e375baf4eb",
+      "after": "66df165ba599308b3fb9a872541dd6eb0eac37a554357a6a2057931ce6f80bd4"
+    },
+    {
+      "file": "reconciled/solutions-corporate-holding-design__mobile__hero.png",
+      "before": "6f446ea3fb1ac1b86ce617d4d7425d5bc800fbdd9fa4d9986b7e87fc8e6b94b0",
+      "after": "1ab46d9c2ec43a4fd0369e4de273ce5c19c0878a3db0430771de3920073fe77f"
+    },
+    {
+      "file": "reconciled/solutions-corporate-holding-design__mobile__content.png",
+      "before": "e2bb40e7c09746720d8c3ae50dd36365dc539e16c082067f30ebfad5680b97c6",
+      "after": "5fcc5808c97ca5f71bed8071f6e681eab527bea81c4e8728146eb42180036561"
+    },
+    {
+      "file": "reconciled/solutions-corporate-holding-design__mobile__cta.png",
+      "before": "3e2df216ca3c90806e0c797368c936710781aa024728d8a8f86c19ee0bb22029",
+      "after": "58d69417559196373decfe40b38b098869848b6169be471818099e8ff940a80e"
+    },
+    {
+      "file": "reconciled/solutions-corporate-offshore-structuring__desktop__full.png",
+      "before": "6af790ede8b938e036e0e63947a920a46bcdf9f917ee51b688b84491f82b73f2",
+      "after": "cab99e0030bd29169ec87dbc44886caa92b2a76fd43c41be75370e6fc95a7817"
+    },
+    {
+      "file": "reconciled/solutions-corporate-offshore-structuring__desktop__hero.png",
+      "before": "190da57da47a981a624a328623980bfc7caba1511092d71c2d3e04f6cb9bebc6",
+      "after": "0a35de6e48a8889c50ad26ebfefcaebc734b0474a52bd4f6b6891d42de1d298c"
+    },
+    {
+      "file": "reconciled/solutions-corporate-offshore-structuring__desktop__content.png",
+      "before": "21cf35dc6ce28ef15e8918b6935085d6905f70da709b21d6a27e6fe20b9a39b5",
+      "after": "09e17fea8583f5de1c4e4b0c4c9f3123f753e600b6e8e52ed2b43b545058e243"
+    },
+    {
+      "file": "reconciled/solutions-corporate-offshore-structuring__desktop__cta.png",
+      "before": "506372f48b76dc3ef2e5dff14c4639e7565149cb47541f8910610630c19be38f",
+      "after": "0335d801a91bc7bd94749a9996814e29c2a44bd686d275fe78a674947bdd6ee6"
+    },
+    {
+      "file": "reconciled/solutions-corporate-offshore-structuring__mobile__full.png",
+      "before": "5f30d4e6430a6ea80d6d13e1dfb38a698517db02335d8c529c9b796dec9f8432",
+      "after": "a2614bf03c9dfee9726a2ceca28d81a2ea079f2f1e2e2f8d30a3130244c513a6"
+    },
+    {
+      "file": "reconciled/solutions-corporate-offshore-structuring__mobile__hero.png",
+      "before": "a544f8586fdf7cacac90d9c52611b6c4768cbab6bf8738c89d13c5b52a250245",
+      "after": "6186c520481c20f6cfa6273e6ddec3d27f534059fdb198e720196f8164c0ccca"
+    },
+    {
+      "file": "reconciled/solutions-corporate-offshore-structuring__mobile__content.png",
+      "before": "2004a6d26f4cb30317072160576f683cf18333136477426339ba63295bf3db84",
+      "after": "7ac7a7a1793bfc1ab909dd8d94429ec2e3c3bba110522c8f112dfbb42690d392"
+    },
+    {
+      "file": "reconciled/solutions-corporate-offshore-structuring__mobile__cta.png",
+      "before": "d8d86a918cad92e0dd123032aa1c1622e4e71f43a38434ce7edf37797d45df70",
+      "after": "360a18e32b457d1d6c6ad37a0003be7871936bf1f7ccaeb7aad74e88008fab52"
+    },
+    {
+      "file": "homepage/reconciled/desktop-full.png",
+      "before": "a5e13d7224e53cd9c9c9c88b266833c475990f3df4158476d2e5c49d54359dd8",
+      "after": "d95aa5a59131923fa4f7958ba1d03dbba5d101d783f0026034e01be9156e32af"
+    },
+    {
+      "file": "homepage/reconciled/mobile-full.png",
+      "before": "304d9564978d97d9ade460c635b212616f2098df0211b22c54e807ce64473213",
+      "after": "707b0b3243087106d13fbe26d1790a6836761b71bbf8e7328ffaa33049342d93"
+    }
+  ],
+  "updated": [
+    "reconciled/solutions__desktop__full.png",
+    "reconciled/solutions__desktop__hero.png",
+    "reconciled/solutions__desktop__content.png",
+    "reconciled/solutions__desktop__cta.png",
+    "reconciled/solutions__mobile__full.png",
+    "reconciled/solutions__mobile__hero.png",
+    "reconciled/solutions__mobile__content.png",
+    "reconciled/solutions__mobile__cta.png",
+    "reconciled/solutions-regulatory-fintech-licensing__desktop__full.png",
+    "reconciled/solutions-regulatory-fintech-licensing__desktop__hero.png",
+    "reconciled/solutions-regulatory-fintech-licensing__desktop__content.png",
+    "reconciled/solutions-regulatory-fintech-licensing__desktop__cta.png",
+    "reconciled/solutions-regulatory-fintech-licensing__mobile__full.png",
+    "reconciled/solutions-regulatory-fintech-licensing__mobile__hero.png",
+    "reconciled/solutions-regulatory-fintech-licensing__mobile__content.png",
+    "reconciled/solutions-regulatory-fintech-licensing__mobile__cta.png",
+    "reconciled/solutions-corporate-holding-design__desktop__full.png",
+    "reconciled/solutions-corporate-holding-design__desktop__hero.png",
+    "reconciled/solutions-corporate-holding-design__desktop__content.png",
+    "reconciled/solutions-corporate-holding-design__desktop__cta.png",
+    "reconciled/solutions-corporate-holding-design__mobile__full.png",
+    "reconciled/solutions-corporate-holding-design__mobile__hero.png",
+    "reconciled/solutions-corporate-holding-design__mobile__content.png",
+    "reconciled/solutions-corporate-holding-design__mobile__cta.png",
+    "reconciled/solutions-corporate-offshore-structuring__desktop__full.png",
+    "reconciled/solutions-corporate-offshore-structuring__desktop__hero.png",
+    "reconciled/solutions-corporate-offshore-structuring__desktop__content.png",
+    "reconciled/solutions-corporate-offshore-structuring__desktop__cta.png",
+    "reconciled/solutions-corporate-offshore-structuring__mobile__full.png",
+    "reconciled/solutions-corporate-offshore-structuring__mobile__hero.png",
+    "reconciled/solutions-corporate-offshore-structuring__mobile__content.png",
+    "reconciled/solutions-corporate-offshore-structuring__mobile__cta.png",
+    "homepage/reconciled/home__desktop__how-we-work.png",
+    "homepage/reconciled/desktop-full.png",
+    "homepage/reconciled/home__mobile__how-we-work.png",
+    "homepage/reconciled/mobile-full.png"
+  ]
+}

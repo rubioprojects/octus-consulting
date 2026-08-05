@@ -1,0 +1,523 @@
+{
+  "route_count": 81,
+  "family_counts": {
+    "core-home": 1,
+    "company": 6,
+    "core-services-index": 1,
+    "core-seven-area": 7,
+    "core-banking-supporting": 1,
+    "engagement-authority": 3,
+    "markets-index": 1,
+    "markets-detail": 4,
+    "jurisdiction-detail": 7,
+    "core-service-detail": 12,
+    "insights": 34,
+    "legal": 4
+  },
+  "routes": [
+    {
+      "route": "/",
+      "family": "core-home",
+      "current_file": "app/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/about",
+      "family": "company",
+      "current_file": "app/about/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/solutions",
+      "family": "core-services-index",
+      "current_file": "app/solutions/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/solutions/regulatory-structuring",
+      "family": "core-seven-area",
+      "current_file": "app/solutions/regulatory-structuring/page.tsx",
+      "notes": "current AreaHubPage vs old six-area solution hubs"
+    },
+    {
+      "route": "/solutions/compliance-risk",
+      "family": "core-seven-area",
+      "current_file": "app/solutions/compliance-risk/page.tsx",
+      "notes": "current AreaHubPage vs old six-area solution hubs"
+    },
+    {
+      "route": "/solutions/legal-structural-architecture",
+      "family": "core-seven-area",
+      "current_file": "app/solutions/legal-structural-architecture/page.tsx",
+      "notes": "current AreaHubPage vs old six-area solution hubs"
+    },
+    {
+      "route": "/solutions/corporate-structuring",
+      "family": "core-seven-area",
+      "current_file": "app/solutions/corporate-structuring/page.tsx",
+      "notes": "current AreaHubPage vs old six-area solution hubs"
+    },
+    {
+      "route": "/solutions/remediation-readiness",
+      "family": "core-seven-area",
+      "current_file": "app/solutions/remediation-readiness/page.tsx",
+      "notes": "current AreaHubPage vs old six-area solution hubs"
+    },
+    {
+      "route": "/private-clients",
+      "family": "core-seven-area",
+      "current_file": "app/private-clients/page.tsx",
+      "notes": "current AreaHubPage vs old six-area solution hubs"
+    },
+    {
+      "route": "/international-hub",
+      "family": "core-seven-area",
+      "current_file": "app/international-hub/page.tsx",
+      "notes": "current AreaHubPage vs old six-area solution hubs"
+    },
+    {
+      "route": "/solutions/banking-payments-infrastructure",
+      "family": "core-banking-supporting",
+      "current_file": "app/solutions/banking-payments-infrastructure/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/how-we-engage",
+      "family": "engagement-authority",
+      "current_file": "app/how-we-engage/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/partners",
+      "family": "company",
+      "current_file": "app/partners/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/intelligence",
+      "family": "engagement-authority",
+      "current_file": "app/intelligence/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/markets",
+      "family": "markets-index",
+      "current_file": "app/markets/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/markets/fintech",
+      "family": "markets-detail",
+      "current_file": "app/markets/fintech/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/markets/igaming",
+      "family": "markets-detail",
+      "current_file": "app/markets/igaming/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/markets/crypto",
+      "family": "markets-detail",
+      "current_file": "app/markets/crypto/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/markets/high-risk",
+      "family": "markets-detail",
+      "current_file": "app/markets/high-risk/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/jurisdictions",
+      "family": "company",
+      "current_file": "app/jurisdictions/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/jurisdictions/malta",
+      "family": "jurisdiction-detail",
+      "current_file": "app/jurisdictions/malta/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/jurisdictions/isle-of-man",
+      "family": "jurisdiction-detail",
+      "current_file": "app/jurisdictions/isle-of-man/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/jurisdictions/curacao",
+      "family": "jurisdiction-detail",
+      "current_file": "app/jurisdictions/curacao/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/jurisdictions/anjouan",
+      "family": "jurisdiction-detail",
+      "current_file": "app/jurisdictions/anjouan/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/jurisdictions/portugal",
+      "family": "jurisdiction-detail",
+      "current_file": "app/jurisdictions/portugal/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/jurisdictions/uae",
+      "family": "jurisdiction-detail",
+      "current_file": "app/jurisdictions/uae/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/solutions/compliance/aml-kyc",
+      "family": "core-service-detail",
+      "current_file": "app/solutions/compliance/aml-kyc/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/solutions/compliance/compliance-as-a-service",
+      "family": "core-service-detail",
+      "current_file": "app/solutions/compliance/compliance-as-a-service/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/solutions/compliance/dpo-as-a-service",
+      "family": "core-service-detail",
+      "current_file": "app/solutions/compliance/dpo-as-a-service/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/solutions/compliance/gli-readiness",
+      "family": "core-service-detail",
+      "current_file": "app/solutions/compliance/gli-readiness/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/solutions/compliance/internal-controls",
+      "family": "core-service-detail",
+      "current_file": "app/solutions/compliance/internal-controls/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/solutions/corporate/company-formation",
+      "family": "core-service-detail",
+      "current_file": "app/solutions/corporate/company-formation/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/solutions/corporate/offshore-structuring",
+      "family": "core-service-detail",
+      "current_file": "app/solutions/corporate/offshore-structuring/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/solutions/corporate/holding-design",
+      "family": "core-service-detail",
+      "current_file": "app/solutions/corporate/holding-design/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/solutions/regulatory/igaming-licensing",
+      "family": "core-service-detail",
+      "current_file": "app/solutions/regulatory/igaming-licensing/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/solutions/regulatory/fintech-licensing",
+      "family": "core-service-detail",
+      "current_file": "app/solutions/regulatory/fintech-licensing/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/solutions/regulatory/market-entry",
+      "family": "core-service-detail",
+      "current_file": "app/solutions/regulatory/market-entry/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/solutions/regulatory/banking-payments",
+      "family": "core-service-detail",
+      "current_file": "app/solutions/regulatory/banking-payments/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/diagnostic",
+      "family": "engagement-authority",
+      "current_file": "app/diagnostic/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/contact",
+      "family": "company",
+      "current_file": "app/contact/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/team",
+      "family": "company",
+      "current_file": "app/team/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/careers",
+      "family": "company",
+      "current_file": "app/careers/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights",
+      "family": "insights",
+      "current_file": "app/insights/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/brazil",
+      "family": "jurisdiction-detail",
+      "current_file": "app/brazil/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/privacy",
+      "family": "legal",
+      "current_file": "app/privacy/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/terms",
+      "family": "legal",
+      "current_file": "app/terms/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/cookies",
+      "family": "legal",
+      "current_file": "app/cookies/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/compliance-channel",
+      "family": "legal",
+      "current_file": "app/compliance-channel/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/stf-suspends-blocking-of-bolsa-familia-bpc-betting-accounts",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/senate-approves-plp-128-2025-tightens-fiscal-policy-bets-fintechs",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/betting-taxation-risks-senate-legal-certainty-regulated-market",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/new-spa-mf-normative-instruction-fixed-odds-betting",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/centralised-self-exclusion-platform-key-changes-operators-bettors",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/stf-suspends-municipal-lottery-operations-nationwide",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/coaf-crisis-aml-obligations-online-gaming-operators",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/annual-recertification-betting-platforms-spa-mf-new-guidelines",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/risk-management-software-igaming-regulatory-compliance",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/customised-studies-international-expansion-brazil",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/rio-de-janeiro-regulates-vlts-lottery-equipment-decree",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/games-not-classified-as-fixed-odds-betting-brazil",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/bet-br-domain-extension-to-states-brazil",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/intellectual-property-igaming-trademark-registration-brazil",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/national-betting-system-sinapo-brazil",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/why-your-international-licence-may-not-protect-you-in-brazil",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/regulation-and-technology-legal-follows-igaming-evolution",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/iof-update-financial-market-brazil-2025",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/trump-tax-reform-betting-operators-lessons-for-brazil",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/regulatory-agenda-2025-2026-secretariat-prizes-betting",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/spa-ordinance-banks-refuse-illegal-betting-operators",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/youtube-tightens-rules-illegal-betting-sites-impact-influencers",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/brazil-b2b-registration-requirement-betting-igaming",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/quinel-credentialed-certifying-entity-brazil-ministry-finance",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/senate-commission-approves-casino-bingo-gaming-bill-brazil",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/spa-mf-position-brazilian-partner-20-percent-share-capital",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/new-rules-sports-betting-online-games-brazil-portaria-827-2024",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/new-regulation-betting-online-game-systems-portaria-722-2024",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/why-licensing-fails-post-approval",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/banking-for-high-risk-operations",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/mica-what-operators-need-to-do",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/curacao-reform-what-changes",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    },
+    {
+      "route": "/insights/compliance-as-a-service-vs-internal-teams",
+      "family": "insights",
+      "current_file": "app/insights/[slug]/page.tsx",
+      "notes": ""
+    }
+  ],
+  "old_only_notable": [
+    "/resources/igaming-operator-readiness",
+    "/solutions/compliance-risk-systems",
+    "/solutions/corporate-cross-border",
+    "/solutions/legal-contractual-architecture",
+    "/solutions/operational-remediation-readiness",
+    "/solutions/regulatory-strategy-licensing",
+    "/what-octus-does"
+  ],
+  "current_only_notable": [
+    "/international-hub",
+    "/private-clients",
+    "/solutions/compliance-risk",
+    "/solutions/corporate-structuring",
+    "/solutions/legal-structural-architecture",
+    "/solutions/regulatory-structuring",
+    "/solutions/remediation-readiness"
+  ]
+}

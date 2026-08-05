@@ -1,19 +1,23 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
+import DarkHeroAtmosphere from "../../../../components/system/DarkHeroAtmosphere";
+import { pageSocialMeta } from "../../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "GLI & Certification Readiness",
   description:
     "The audit does not find problems. It confirms they were always there. Octus prepares operations for certification and regulatory review before the auditor arrives.",
-};
+  path: "/solutions/compliance/gli-readiness",
+});
 
 export default function GliReadinessPage() {
   return (
     <main>
-      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
-        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <span className="label">Solutions · Compliance · GLI & Certification Readiness</span>
-          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
+      <section className="octus-dark-hero surface-dark relative flex min-h-[70vh] flex-col justify-center overflow-hidden pt-28 pb-16 md:min-h-[80vh] md:pt-32 md:pb-24">
+        <DarkHeroAtmosphere />
+        <div className="relative z-10 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+          <span className="label">Services · Compliance · GLI & Certification Readiness</span>
+          <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline">
             The audit does not find problems.
             <br />
             <span style={{ color: "var(--white-40)" }}>It confirms they were always there.</span>
@@ -30,6 +34,7 @@ export default function GliReadinessPage() {
             <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           </div>
         </div>
+        <div className="octus-dark-hero__seam" aria-hidden="true" />
       </section>
 
       <section className="bg-background py-24 md:py-32">
@@ -62,11 +67,11 @@ export default function GliReadinessPage() {
               ["Evidence framework", "Structured register, version control, document mapping aligned to audit criteria."],
               ["Remediation", "Closing gaps with operational changes, not documentation updates."],
               ["Mock audit", "Internal stress test simulating the formal review. Weaknesses found before they become findings."],
-              ["Coordination", "Direct coordination with GLI, certification bodies and regulatory authorities."],
+              ["Coordination", "Direct coordination with laboratories and certification providers such as GLI, sequenced with the relevant regulatory authorities."],
               ["Team preparation", "Key personnel understand the process, respond to questions, demonstrate competence."],
             ].map(([title, body]) => (
               <div key={title}>
-                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{title}</h3>
+                <h2 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{title}</h2>
                 <p className="body-text">{body}</p>
               </div>
             ))}
@@ -114,14 +119,14 @@ export default function GliReadinessPage() {
               </div>
             ))}
           </div>
-          <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>Not for you if</h3>
+          <h2 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "12px" }}>Not for you if</h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {[
               "Looking for someone to conduct the formal audit itself.",
               "Compliance maturity is already confirmed and tested.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                <span className="mt-0.5 shrink-0 text-muted-foreground" aria-hidden="true">•</span>
                 <p className="body-text text-muted-foreground">{item}</p>
               </div>
             ))}
@@ -137,10 +142,10 @@ export default function GliReadinessPage() {
               { title: "Compliance-as-a-Service", desc: "Prevents audit gaps", href: "/solutions/compliance/compliance-as-a-service" },
               { title: "Internal Controls", desc: "Governance that supports readiness", href: "/solutions/compliance/internal-controls" },
               { title: "AML/KYC", desc: "What auditors evaluate first", href: "/solutions/compliance/aml-kyc" },
-              { title: "Audit & Readiness", desc: "Full pillar", href: "/audit" },
+              { title: "Remediation & Readiness", desc: "Full pillar", href: "/solutions/remediation-readiness" },
             ].map((item) => (
               <Link key={item.href} href={item.href} className="card-grid" style={{ padding: "28px" }}>
-                <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{item.title}</h3>
+                <h2 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{item.title}</h2>
                 <p className="body-sm" style={{ marginBottom: "12px" }}>{item.desc}</p>
                 <span style={{ color: "var(--blue-light)", fontSize: "13px" }}>Learn more →</span>
               </Link>
@@ -158,7 +163,7 @@ export default function GliReadinessPage() {
           <h2 className="heading-lg cta-block__title">
             Prepare before scrutiny arrives.
           </h2>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">Continue this discussion →</a>
         </div>
       </section>
     </main>

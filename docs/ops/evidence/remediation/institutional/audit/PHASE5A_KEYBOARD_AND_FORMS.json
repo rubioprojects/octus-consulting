@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-08-04T00:41:30.000Z",
+  "immutable_preview_url": "https://octus-consulting-mfiprgbua-axle1.vercel.app",
+  "deployment_id": "dpl_EZQJJFTUEXBM1xBtT5mQUuasBNyu",
+  "application_code_sha": "951513c16c45eae06b269b15f9ae77c50c625f0f",
+  "method": "Playwright keyboard Tab + Escape; mouse not required for path activation",
+  "real_form_submissions": 0,
+  "html_forms_on_phase5a_routes": 0,
+  "routes": [
+    {
+      "route": "/about",
+      "forms": 0,
+      "keyboard_tab_reaches_focusable": true,
+      "visible_focus_outline": true,
+      "enter_space_on_disclosure": "n/a_no_disclosure_controls",
+      "result": "PASS"
+    },
+    {
+      "route": "/how-we-engage",
+      "forms": 0,
+      "keyboard_tab_reaches_focusable": true,
+      "visible_focus_outline": true,
+      "enter_space_on_disclosure": "n/a_no_disclosure_controls",
+      "result": "PASS"
+    },
+    {
+      "route": "/contact",
+      "forms": 0,
+      "keyboard_tab_reaches_focusable": true,
+      "visible_focus_outline": true,
+      "mailto_and_whatsapp_links_named": true,
+      "live_post": false,
+      "result": "PASS_NON_DESTRUCTIVE"
+    },
+    {
+      "route": "/diagnostic",
+      "forms": 0,
+      "keyboard_tab_reaches_focusable": true,
+      "visible_focus_outline": true,
+      "privacy_notice_present": true,
+      "live_post": false,
+      "empty_validation_success_form_states": "NOT_APPLICABLE_NO_HTML_FORM",
+      "result": "PASS_NON_DESTRUCTIVE"
+    },
+    {
+      "route": "/partners",
+      "forms": 0,
+      "keyboard_tab_reaches_focusable": true,
+      "visible_focus_outline": true,
+      "result": "PASS"
+    },
+    {
+      "route": "/careers",
+      "forms": 0,
+      "keyboard_tab_reaches_focusable": true,
+      "visible_focus_outline": true,
+      "eoi_mailto_only": true,
+      "result": "PASS"
+    }
+  ],
+  "overall": "PASS"
+}

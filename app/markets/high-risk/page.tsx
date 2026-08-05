@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
+import { pageSocialMeta } from "../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "High-Risk Operations",
   description:
-    "High-risk is not a business problem. It is a classification that creates structural consequences for licensing, banking, compliance and partnerships. Octus structures operations to function within that classification.",
-};
+    "High-risk classification creates structural pressure. Octus designs operations that hold under licensing and banking scrutiny.",
+  path: "/markets/high-risk",
+});
 
 export default function MarketsHighRiskPage() {
   return (
@@ -13,8 +15,8 @@ export default function MarketsHighRiskPage() {
 
       <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <span className="label">Markets · High-Risk Operations</span>
-          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
+          <span className="mb-5 block text-xs font-medium uppercase tracking-[0.12em] text-white/65">Markets · High-Risk Operations</span>
+          <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline">
             High-risk is not a problem to solve.
             <br />
             <span style={{ color: "var(--white-40)" }}>
@@ -117,7 +119,7 @@ export default function MarketsHighRiskPage() {
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {[
               "Jurisdictional design aligned with risk classification and banking access.",
-              "Multi-layer banking and payment resilience — not one provider, not one jurisdiction, not one point of failure.",
+              "Multi-layer banking and payment resilience across providers, jurisdictions and rails, so there is no single point of failure.",
               "Regulatory positioning across fragmented frameworks.",
               "Operational compliance that withstands scrutiny, not just satisfies onboarding.",
               "Risk containment across entities and flows.",
@@ -142,10 +144,7 @@ export default function MarketsHighRiskPage() {
             sensitivity, transaction complexity and institutional caution:
           </p>
           <p className="body-text" style={{ marginBottom: "24px" }}>
-            iGaming and betting. Crypto and digital assets. Fintech and payments.
-            Forex and CFDs. Adult content and entertainment. Nutraceuticals and
-            supplements. Travel and timeshare. Debt collection and financial
-            intermediation.
+            Institutions commonly apply enhanced scrutiny to sectors such as iGaming and betting, crypto and digital assets, and certain fintech or payment models. Other verticals may also trigger high-risk treatment depending on the institution&apos;s policy - classification is institution-specific, not an assurance of coverage by Octus.
           </p>
           <p className="body-sm italic text-muted-foreground">
             The sector varies. The structural problem is the same: institutional
@@ -184,7 +183,7 @@ export default function MarketsHighRiskPage() {
               "The operation has no substance, no product and no real users.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                <span className="mt-0.5 shrink-0 text-muted-foreground" aria-hidden="true">•</span>
                 <p className="body-sm text-muted-foreground">{item}</p>
               </div>
             ))}
@@ -233,9 +232,10 @@ export default function MarketsHighRiskPage() {
             Build for the scrutiny.{" "}
             <span style={{ color: "var(--blue-light)" }}>Not around it.</span>
           </h2>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{"Continue on WhatsApp →"}</a>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
-            We respond within 24 hours.
+            Strategic intake via WhatsApp. Alternative:{" "}
+            <Link href="/contact" className="underline underline-offset-2" style={{ color: "var(--white-60)" }}>Contact</Link>.
           </p>
         </div>
       </section>

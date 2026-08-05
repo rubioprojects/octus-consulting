@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-08-04T02:32:45.802Z",
+  "phase": "5B",
+  "immutable_preview_url": "https://octus-consulting-jhedve7t0-axle1.vercel.app",
+  "deployment_id": "dpl_HpNbyjdhxuLLrrcpitB4DA1EJ2TX",
+  "deployed_git_sha": "eb37d6f96db6bda418e4f8132cbcda6b6731deaf",
+  "application_code_sha": "eb37d6f96db6bda418e4f8132cbcda6b6731deaf",
+  "axe_core_version": "4.12.1",
+  "routes": [
+    "/markets",
+    "/markets/fintech",
+    "/markets/igaming",
+    "/markets/crypto",
+    "/markets/high-risk",
+    "/jurisdictions",
+    "/jurisdictions/malta",
+    "/jurisdictions/isle-of-man",
+    "/jurisdictions/curacao",
+    "/jurisdictions/anjouan",
+    "/jurisdictions/portugal",
+    "/jurisdictions/uae",
+    "/brazil"
+  ],
+  "viewports": [
+    "desktop",
+    "mobile"
+  ],
+  "violation_totals": {
+    "critical": 0,
+    "serious": 0,
+    "moderate": 26,
+    "incomplete": 39,
+    "minor": 0
+  },
+  "crawl": {
+    "/markets": 200,
+    "/markets/fintech": 200,
+    "/markets/igaming": 200,
+    "/markets/crypto": 200,
+    "/markets/high-risk": 200,
+    "/jurisdictions": 200,
+    "/jurisdictions/malta": 200,
+    "/jurisdictions/isle-of-man": 200,
+    "/jurisdictions/curacao": 200,
+    "/jurisdictions/anjouan": 200,
+    "/jurisdictions/portugal": 200,
+    "/jurisdictions/uae": 200,
+    "/brazil": 200
+  },
+  "checks": {
+    "build": "PASS",
+    "typecheck": "PASS",
+    "crawl_200": "PASS",
+    "canonicals": "PASS",
+    "canonical_meta_robots_clean": "PASS",
+    "preview_noindex_header": "PASS",
+    "metadata": "PASS",
+    "prohibited_copy": "PASS",
+    "overflow": "PASS",
+    "axe_critical_serious": "PASS",
+    "frozen_files": "PASS",
+    "home_residual_exactly_one": "PASS",
+    "home_regression_surface": "PASS",
+    "team_regression": "PASS",
+    "services_spotcheck": "PASS",
+    "screenshot_metadata": "PASS",
+    "duplicate_commercial_labels": "PASS"
+  },
+  "failed_checks": [],
+  "overall": "PASS",
+  "bound_residuals": {
+    "HOME_PUNCTUATION_RESIDUAL_001": {
+      "count": 1,
+      "status": "OPEN_EXACTLY_ONE"
+    },
+    "GLOBAL_A11Y_REGION_RESIDUAL_001": {
+      "status": "OPEN_BOUND",
+      "note": "Axe moderate region on .wa-float recorded; not treated as Phase 5B failure"
+    },
+    "AXE_INCOMPLETE_REVIEW_001": {
+      "status": "OPEN_BOUND",
+      "incomplete_total": 39
+    }
+  },
+  "screenshot_count": 312,
+  "missing_metadata": 0,
+  "frozen_diff": [
+    "app/brazil/page.tsx",
+    "app/jurisdictions/anjouan/page.tsx",
+    "app/jurisdictions/curacao/page.tsx",
+    "app/jurisdictions/isle-of-man/page.tsx",
+    "app/jurisdictions/malta/page.tsx",
+    "app/jurisdictions/page.tsx",
+    "app/jurisdictions/portugal/page.tsx",
+    "app/jurisdictions/uae/page.tsx",
+    "app/markets/crypto/page.tsx",
+    "app/markets/fintech/page.tsx",
+    "app/markets/high-risk/page.tsx",
+    "app/markets/igaming/page.tsx",
+    "app/markets/page.tsx",
+    "docs/ops/evidence/remediation/DECISION_REGISTER.md",
+    "docs/ops/evidence/remediation/REMEDIATION_CONTROL_PLAN.md",
+    "docs/ops/evidence/remediation/markets-jurisdictions/PHASE5B_CLAIM_REGISTER.md",
+    "docs/ops/evidence/remediation/markets-jurisdictions/PHASE5B_FACT_AND_SOURCE_REGISTER.md",
+    "docs/ops/evidence/remediation/markets-jurisdictions/PHASE5B_IMPACT_MATRIX.md",
+    "docs/ops/evidence/remediation/markets-jurisdictions/PHASE5B_ROUTE_INVENTORY.md",
+    "docs/ops/evidence/remediation/markets-jurisdictions/audit/phase5b_capture_validate.mjs"
+  ],
+  "frozen_hits": [],
+  "prohibited_hits": [],
+  "real_form_submissions": 0,
+  "diagnostic_data_flow": "whatsapp_and_mailto_only_no_html_form_post"
+}

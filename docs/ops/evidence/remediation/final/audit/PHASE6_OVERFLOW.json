@@ -1,0 +1,715 @@
+{
+  "generated_at": "2026-08-04T04:01:18.951Z",
+  "overflow": {
+    "/:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/team:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/team:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/solutions:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/solutions:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/solutions/regulatory-structuring:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/solutions/regulatory-structuring:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/solutions/banking-payments-infrastructure:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/solutions/banking-payments-infrastructure:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/solutions/compliance/aml-kyc:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/solutions/compliance/aml-kyc:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/about:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/about:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/how-we-engage:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/how-we-engage:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/contact:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/contact:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/diagnostic:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/diagnostic:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/partners:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/partners:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/careers:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/careers:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/markets:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/markets:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/jurisdictions:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/jurisdictions:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/brazil:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/brazil:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/intelligence:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/intelligence:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/why-licensing-fails-post-approval:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/why-licensing-fails-post-approval:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/privacy:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/privacy:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/terms:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/terms:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/cookies:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/cookies:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/compliance-channel:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/compliance-channel:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/this-page-does-not-exist-phase6:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/this-page-does-not-exist-phase6:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/solutions/corporate-structuring:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/solutions/corporate-structuring:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/solutions/compliance-risk:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/solutions/compliance-risk:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/solutions/remediation-readiness:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/solutions/remediation-readiness:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/solutions/legal-structural-architecture:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/solutions/legal-structural-architecture:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/private-clients:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/private-clients:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/international-hub:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/international-hub:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/markets/fintech:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/markets/fintech:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/markets/igaming:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/markets/igaming:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/markets/crypto:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/markets/crypto:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/markets/high-risk:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/markets/high-risk:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/jurisdictions/malta:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/jurisdictions/malta:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/jurisdictions/isle-of-man:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/jurisdictions/isle-of-man:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/jurisdictions/curacao:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/jurisdictions/curacao:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/jurisdictions/anjouan:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/jurisdictions/anjouan:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/jurisdictions/portugal:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/jurisdictions/portugal:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/jurisdictions/uae:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/jurisdictions/uae:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/stf-suspends-blocking-of-bolsa-familia-bpc-betting-accounts:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/stf-suspends-blocking-of-bolsa-familia-bpc-betting-accounts:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/senate-approves-plp-128-2025-tightens-fiscal-policy-bets-fintechs:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/senate-approves-plp-128-2025-tightens-fiscal-policy-bets-fintechs:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/betting-taxation-risks-senate-legal-certainty-regulated-market:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/betting-taxation-risks-senate-legal-certainty-regulated-market:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/new-spa-mf-normative-instruction-fixed-odds-betting:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/new-spa-mf-normative-instruction-fixed-odds-betting:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/centralised-self-exclusion-platform-key-changes-operators-bettors:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/centralised-self-exclusion-platform-key-changes-operators-bettors:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/stf-suspends-municipal-lottery-operations-nationwide:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/stf-suspends-municipal-lottery-operations-nationwide:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/coaf-crisis-aml-obligations-online-gaming-operators:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/coaf-crisis-aml-obligations-online-gaming-operators:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/annual-recertification-betting-platforms-spa-mf-new-guidelines:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/annual-recertification-betting-platforms-spa-mf-new-guidelines:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/risk-management-software-igaming-regulatory-compliance:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/risk-management-software-igaming-regulatory-compliance:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/customised-studies-international-expansion-brazil:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/customised-studies-international-expansion-brazil:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/rio-de-janeiro-regulates-vlts-lottery-equipment-decree:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/rio-de-janeiro-regulates-vlts-lottery-equipment-decree:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/games-not-classified-as-fixed-odds-betting-brazil:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/games-not-classified-as-fixed-odds-betting-brazil:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/bet-br-domain-extension-to-states-brazil:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/bet-br-domain-extension-to-states-brazil:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/intellectual-property-igaming-trademark-registration-brazil:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/intellectual-property-igaming-trademark-registration-brazil:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/national-betting-system-sinapo-brazil:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/national-betting-system-sinapo-brazil:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/why-your-international-licence-may-not-protect-you-in-brazil:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/why-your-international-licence-may-not-protect-you-in-brazil:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/regulation-and-technology-legal-follows-igaming-evolution:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/regulation-and-technology-legal-follows-igaming-evolution:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/iof-update-financial-market-brazil-2025:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/iof-update-financial-market-brazil-2025:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/trump-tax-reform-betting-operators-lessons-for-brazil:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/trump-tax-reform-betting-operators-lessons-for-brazil:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/regulatory-agenda-2025-2026-secretariat-prizes-betting:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/regulatory-agenda-2025-2026-secretariat-prizes-betting:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/spa-ordinance-banks-refuse-illegal-betting-operators:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/spa-ordinance-banks-refuse-illegal-betting-operators:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/youtube-tightens-rules-illegal-betting-sites-impact-influencers:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/youtube-tightens-rules-illegal-betting-sites-impact-influencers:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/brazil-b2b-registration-requirement-betting-igaming:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/brazil-b2b-registration-requirement-betting-igaming:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/quinel-credentialed-certifying-entity-brazil-ministry-finance:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/quinel-credentialed-certifying-entity-brazil-ministry-finance:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/senate-commission-approves-casino-bingo-gaming-bill-brazil:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/senate-commission-approves-casino-bingo-gaming-bill-brazil:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/spa-mf-position-brazilian-partner-20-percent-share-capital:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/spa-mf-position-brazilian-partner-20-percent-share-capital:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/new-rules-sports-betting-online-games-brazil-portaria-827-2024:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/new-rules-sports-betting-online-games-brazil-portaria-827-2024:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/new-regulation-betting-online-game-systems-portaria-722-2024:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/new-regulation-betting-online-game-systems-portaria-722-2024:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/banking-for-high-risk-operations:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/banking-for-high-risk-operations:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/mica-what-operators-need-to-do:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/mica-what-operators-need-to-do:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/curacao-reform-what-changes:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/curacao-reform-what-changes:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    },
+    "/insights/compliance-as-a-service-vs-internal-teams:desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "/insights/compliance-as-a-service-vs-internal-teams:mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false
+    }
+  }
+}

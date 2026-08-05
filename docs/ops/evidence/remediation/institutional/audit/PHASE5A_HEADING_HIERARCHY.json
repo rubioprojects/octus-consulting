@@ -1,0 +1,265 @@
+{
+  "generated_at": "2026-08-04T01:35:30.096Z",
+  "overall": "PASS",
+  "routes": [
+    {
+      "route": "/about",
+      "h1_count": 1,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Octus structures, coordinates and operatesthe work behind regulated businesses."
+        },
+        {
+          "level": 2,
+          "text": "Structuring, coordinating and operating what others only advise on."
+        },
+        {
+          "level": 2,
+          "text": "We act as lead contractor.One accountable execution layer."
+        },
+        {
+          "level": 2,
+          "text": "Often when the structure can no longer hold under pressure."
+        },
+        {
+          "level": 3,
+          "text": "The operation is licensed but not running"
+        },
+        {
+          "level": 3,
+          "text": "The process is stuck mid-way"
+        },
+        {
+          "level": 3,
+          "text": "The expansion is structurally unprepared"
+        },
+        {
+          "level": 2,
+          "text": "Built inside complexity. Applied across regulated sectors."
+        },
+        {
+          "level": 2,
+          "text": "Real operations under real pressure."
+        },
+        {
+          "level": 2,
+          "text": "Operators building serious businesses in regulated environments."
+        },
+        {
+          "level": 3,
+          "text": "Companies entering regulated markets"
+        },
+        {
+          "level": 3,
+          "text": "Operations under regulatory or banking pressure"
+        },
+        {
+          "level": 3,
+          "text": "Groups restructuring for compliance or scale"
+        },
+        {
+          "level": 3,
+          "text": "Businesses expanding across jurisdictions"
+        },
+        {
+          "level": 2,
+          "text": "One point of responsibility.Coordinated execution across jurisdictions."
+        },
+        {
+          "level": 2,
+          "text": "Environments and disciplines Octus coordinates in regulated work."
+        },
+        {
+          "level": 3,
+          "text": "Data protection coordination (GDPR contexts)"
+        },
+        {
+          "level": 3,
+          "text": "Data protection coordination (LGPD contexts)"
+        },
+        {
+          "level": 3,
+          "text": "Governance and accountability design"
+        },
+        {
+          "level": 3,
+          "text": "Certification and laboratory readiness"
+        },
+        {
+          "level": 2,
+          "text": "Build a structure that works under scrutiny."
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "route": "/how-we-engage",
+      "h1_count": 1,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Lead contractor.Not one more provider."
+        },
+        {
+          "level": 2,
+          "text": "What lead contractor means"
+        },
+        {
+          "level": 2,
+          "text": "How engagement scales"
+        },
+        {
+          "level": 3,
+          "text": "Lead Contractor Programme"
+        },
+        {
+          "level": 3,
+          "text": "Managed Project"
+        },
+        {
+          "level": 3,
+          "text": "Strategic Mandate"
+        },
+        {
+          "level": 3,
+          "text": "Embedded Capability"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "route": "/contact",
+      "h1_count": 1,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Discuss your operation."
+        },
+        {
+          "level": 2,
+          "text": "Clear paths. Same standard."
+        },
+        {
+          "level": 3,
+          "text": "Discuss your operation"
+        },
+        {
+          "level": 3,
+          "text": "Start a diagnostic"
+        },
+        {
+          "level": 3,
+          "text": "Continue an active mandate"
+        },
+        {
+          "level": 3,
+          "text": "You reach out"
+        },
+        {
+          "level": 3,
+          "text": "We assess fit"
+        },
+        {
+          "level": 3,
+          "text": "Scope with clarity"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "route": "/diagnostic",
+      "h1_count": 1,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Assess the failure mode.Then sequence remediation."
+        },
+        {
+          "level": 2,
+          "text": "Situations we help operators recognize"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "route": "/partners",
+      "h1_count": 1,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Collaboration infrastructure.Not competition. Not a staff directory."
+        },
+        {
+          "level": 2,
+          "text": "Referral and co-delivery"
+        },
+        {
+          "level": 2,
+          "text": "Who this is for"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "route": "/careers",
+      "h1_count": 1,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Built for people who know how regulated operations actually work."
+        },
+        {
+          "level": 2,
+          "text": "Serious operations require serious people."
+        },
+        {
+          "level": 2,
+          "text": "Capability profiles we look for."
+        },
+        {
+          "level": 3,
+          "text": "Regulatory & Licensing"
+        },
+        {
+          "level": 3,
+          "text": "Compliance & Risk"
+        },
+        {
+          "level": 3,
+          "text": "Legal & Corporate Architecture"
+        },
+        {
+          "level": 3,
+          "text": "Operations & Coordination"
+        },
+        {
+          "level": 3,
+          "text": "Initial interview"
+        },
+        {
+          "level": 3,
+          "text": "Assignment"
+        },
+        {
+          "level": 3,
+          "text": "Second interview"
+        },
+        {
+          "level": 3,
+          "text": "Behavioural assessment"
+        },
+        {
+          "level": 3,
+          "text": "Offer"
+        },
+        {
+          "level": 2,
+          "text": "Share your profile for future opportunities."
+        }
+      ],
+      "status": "PASS"
+    }
+  ],
+  "accessible_name_fails": []
+}

@@ -1,0 +1,70 @@
+{
+  "phase": "insights-launch-safety",
+  "application_sha": "f4fb171eaf01c497796a1acaea253a1bd30f4d4d",
+  "deployment_id": "dpl_4HGy36KkLKdC3icNSgh91p3x663L",
+  "preview": "https://octus-consulting-dx4biu3kx-axle1.vercel.app",
+  "preview_noindex": "PASS",
+  "intelligence_redirect": {
+    "status": 308,
+    "location": "/insights",
+    "pass": true
+  },
+  "sitemap_article_count": 27,
+  "hold_not_public_excluded": true,
+  "holdChecks": [
+    {
+      "slug": "stf-suspends-blocking-of-bolsa-familia-bpc-betting-accounts",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    },
+    {
+      "slug": "intellectual-property-igaming-trademark-registration-brazil",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    },
+    {
+      "slug": "why-your-international-licence-may-not-protect-you-in-brazil",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    },
+    {
+      "slug": "risk-management-software-igaming-regulatory-compliance",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    },
+    {
+      "slug": "customised-studies-international-expansion-brazil",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    },
+    {
+      "slug": "senate-commission-approves-casino-bingo-gaming-bill-brazil",
+      "status": 404,
+      "pass": true,
+      "inSitemap": false
+    }
+  ],
+  "nav_pass": true,
+  "nav_labels": [
+    "Services",
+    "Industries",
+    "How we engage",
+    "Insights",
+    "About",
+    "Discuss your operation →"
+  ],
+  "insights_card_count": 27,
+  "screenshot_count": 32,
+  "axe_critical": 0,
+  "axe_serious": 0,
+  "dash_em": 0,
+  "dash_en": 0,
+  "overflow_count": 0,
+  "prohibited_count": 0,
+  "overall": "PASS"
+}

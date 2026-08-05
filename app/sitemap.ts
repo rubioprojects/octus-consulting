@@ -1,27 +1,31 @@
 import { MetadataRoute } from "next";
-import { posts } from "../lib/posts";
+import { getPublicPosts } from "../lib/insightsPublication";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://octusconsulting.com";
   const now = new Date().toISOString();
+  const publicInsights = getPublicPosts();
 
   const staticPages = [
     { url: `${base}`, priority: 1.0, changeFrequency: "weekly" as const },
     { url: `${base}/about`, priority: 0.8, changeFrequency: "monthly" as const },
     { url: `${base}/solutions`, priority: 0.9, changeFrequency: "monthly" as const },
-    { url: `${base}/solutions/regulatory-strategy-licensing`, priority: 0.9, changeFrequency: "monthly" as const },
-    { url: `${base}/solutions/banking-payments-infrastructure`, priority: 0.9, changeFrequency: "monthly" as const },
-    { url: `${base}/solutions/compliance-risk-systems`, priority: 0.9, changeFrequency: "monthly" as const },
-    { url: `${base}/solutions/corporate-cross-border`, priority: 0.9, changeFrequency: "monthly" as const },
-    { url: `${base}/solutions/legal-contractual-architecture`, priority: 0.9, changeFrequency: "monthly" as const },
-    { url: `${base}/solutions/operational-remediation-readiness`, priority: 0.9, changeFrequency: "monthly" as const },
+    { url: `${base}/solutions/regulatory-structuring`, priority: 0.9, changeFrequency: "monthly" as const },
+    { url: `${base}/solutions/compliance-risk`, priority: 0.9, changeFrequency: "monthly" as const },
+    { url: `${base}/solutions/legal-structural-architecture`, priority: 0.9, changeFrequency: "monthly" as const },
+    { url: `${base}/solutions/corporate-structuring`, priority: 0.9, changeFrequency: "monthly" as const },
+    { url: `${base}/solutions/remediation-readiness`, priority: 0.9, changeFrequency: "monthly" as const },
+    { url: `${base}/private-clients`, priority: 0.9, changeFrequency: "monthly" as const },
+    { url: `${base}/international-hub`, priority: 0.9, changeFrequency: "monthly" as const },
+    { url: `${base}/solutions/banking-payments-infrastructure`, priority: 0.5, changeFrequency: "monthly" as const },
     { url: `${base}/how-we-engage`, priority: 0.9, changeFrequency: "monthly" as const },
     { url: `${base}/partners`, priority: 0.8, changeFrequency: "monthly" as const },
-    { url: `${base}/intelligence`, priority: 0.8, changeFrequency: "weekly" as const },
     { url: `${base}/markets`, priority: 0.9, changeFrequency: "monthly" as const },
     { url: `${base}/markets/fintech`, priority: 0.8, changeFrequency: "monthly" as const },
     { url: `${base}/markets/igaming`, priority: 0.8, changeFrequency: "monthly" as const },
     { url: `${base}/markets/crypto`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${base}/markets/technology`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${base}/markets/forex`, priority: 0.8, changeFrequency: "monthly" as const },
     { url: `${base}/markets/high-risk`, priority: 0.8, changeFrequency: "monthly" as const },
     { url: `${base}/jurisdictions`, priority: 0.9, changeFrequency: "monthly" as const },
     { url: `${base}/jurisdictions/malta`, priority: 0.8, changeFrequency: "monthly" as const },
@@ -41,7 +45,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/solutions/regulatory/igaming-licensing`, priority: 0.8, changeFrequency: "monthly" as const },
     { url: `${base}/solutions/regulatory/fintech-licensing`, priority: 0.8, changeFrequency: "monthly" as const },
     { url: `${base}/solutions/regulatory/market-entry`, priority: 0.8, changeFrequency: "monthly" as const },
-    { url: `${base}/solutions/regulatory/banking-payments`, priority: 0.8, changeFrequency: "monthly" as const },
     { url: `${base}/diagnostic`, priority: 0.7, changeFrequency: "monthly" as const },
     { url: `${base}/contact`, priority: 0.8, changeFrequency: "monthly" as const },
     { url: `${base}/team`, priority: 0.7, changeFrequency: "monthly" as const },
@@ -54,7 +57,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/compliance-channel`, priority: 0.3, changeFrequency: "yearly" as const },
   ];
 
-  const insightPages = posts.map((p) => ({
+  const insightPages = publicInsights.map((p) => ({
     url: `${base}/insights/${p.slug}`,
     priority: 0.6,
     changeFrequency: "monthly" as const,

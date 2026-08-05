@@ -1,19 +1,21 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
+import { pageSocialMeta } from "../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "UAE / Dubai",
   description:
-    "Most companies fail in the UAE before they even choose the right authority. Octus structures operations aligned with the correct regulator, entity type and activity from day one.",
-};
+    "UAE market entry for regulated operators: authority fit, licensing pathway and structural readiness before commitment.",
+  path: "/jurisdictions/uae",
+});
 
 export default function JurisdictionsUaePage() {
   return (
     <main>
       <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <span className="label">Jurisdictions · UAE / Dubai</span>
-          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
+          <span className="mb-5 block text-xs font-medium uppercase tracking-[0.12em] text-white/65">Jurisdictions · UAE / Dubai</span>
+          <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline">
             Most companies fail in the UAE before they even choose the right authority.
           </h1>
           <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ maxWidth: "620px" }}>
@@ -30,6 +32,10 @@ export default function JurisdictionsUaePage() {
           <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             The UAE is not one licensing regime. It is a landscape of overlapping authorities.
           </h2>
+          <p className="body-text" style={{ marginBottom: "20px" }}>
+            This authority map is a high-level landscape overview. Octus is not
+            affiliated with, or acting on behalf of, any UAE authority.
+          </p>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginBottom: "24px" }}>
             {[
               "VARA (Dubai) for virtual assets",
@@ -45,7 +51,12 @@ export default function JurisdictionsUaePage() {
             ))}
           </div>
           <p className="body-text">
-            Each comes with different expectations, different timelines and different levels of scrutiny. Corporate tax at 9% on profits above AED 375,000. Free zone entities may qualify for 0% on qualifying income. No personal income tax.
+            Each comes with different expectations, timelines and levels of
+            scrutiny. As a general UAE federal corporate-tax framing, a 9% rate
+            may apply above AED 375,000, while qualifying free-zone income and
+            other exceptions involve detailed conditions, substance and
+            eligibility tests. This is not tax advice; verify current treatment
+            against MOF and FTA guidance with a qualified adviser.
           </p>
           <p className="body-text" style={{ marginTop: "20px" }}>
             Choosing wrong does not delay your operation. It breaks it.
@@ -64,7 +75,7 @@ export default function JurisdictionsUaePage() {
               "Regulated crypto and virtual asset operations (VARA, ADGM FSRA)",
               "Payment, fintech and financial services structures",
               "International group structuring with operational presence",
-              "Access to Middle East, Africa and Asia markets",
+              "A regional base from which separately authorised market strategies may be developed",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
@@ -72,16 +83,16 @@ export default function JurisdictionsUaePage() {
               </div>
             ))}
           </div>
-          <p className="body-text mb-4 font-semibold text-primary">But:</p>
+          <p className="body-text mb-4 font-semibold text-primary">Constraints</p>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {[
               "Not every activity fits every authority",
               "Not every licence supports real operations",
-              "Not every approved structure is bankable",
+              "Authority approval does not assure banking access",
               "Free zone vs mainland creates operational scope limitations most operators discover too late",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                <span className="mt-0.5 shrink-0 text-muted-foreground" aria-hidden="true">•</span>
                 <p className="body-text text-muted-foreground">{item}</p>
               </div>
             ))}
@@ -111,7 +122,9 @@ export default function JurisdictionsUaePage() {
             ))}
           </div>
           <p className="body-text" style={{ marginTop: "24px" }}>
-            The result: wrong regulator, misaligned structure, delayed or rejected applications. Or worse: approved but non-operational entities.
+            The result can be a wrong authority, misaligned structure, delayed
+            or rejected application, or an approved entity that remains
+            operationally constrained.
           </p>
         </div>
       </section>
@@ -123,8 +136,9 @@ export default function JurisdictionsUaePage() {
             What we actually structure.
           </h2>
           <p className="body-text" style={{ marginBottom: "28px" }}>
-            We do not set up companies in the UAE. We design regulatory-ready
-            operations aligned with the correct authority from day one.
+            Octus advises on regulatory-ready operating structures and the
+            authority that appears applicable to the proposed activity. The
+            relevant authority alone determines classification and approval.
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
             {[
@@ -132,7 +146,7 @@ export default function JurisdictionsUaePage() {
               ["Entity and group architecture", "HoldCo / OpCo structuring where required. Separation of risk, ownership and operations. Free zone vs mainland aligned to operational scope."],
               ["Operational model", "Where the activity actually sits. How funds move. What is regulated and where."],
               ["Compliance infrastructure", "AML/KYC frameworks aligned with UAE Federal AML Law and authority-specific requirements. Governance that survives regulatory scrutiny."],
-              ["Banking and payments strategy", "Designed in parallel, not after approval. Avoiding the most common failure: licensed but unbanked."],
+              ["Banking and payments strategy", "Designed in parallel with licensing readiness. Account access remains subject to each provider\u2019s eligibility rules, risk appetite and due diligence."],
             ].map(([title, body]) => (
               <div key={title}>
                 <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{title}</h3>
@@ -175,7 +189,7 @@ export default function JurisdictionsUaePage() {
                   "Expect the licence to solve structural problems.",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                    <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                    <span className="mt-0.5 shrink-0 text-muted-foreground" aria-hidden="true">•</span>
                     <p className="body-sm text-muted-foreground">{item}</p>
                   </div>
                 ))}
@@ -197,7 +211,7 @@ export default function JurisdictionsUaePage() {
             {[
               "Apply to the wrong authority and restart the process.",
               "Build an entity that cannot support the activity.",
-              "Secure a licence but fail to obtain banking.",
+              "Receive authority approval but fail independent banking due diligence.",
               "Face regulatory friction before or after approval.",
               "Forced into costly restructures under pressure.",
             ].map((item) => (
@@ -219,7 +233,7 @@ export default function JurisdictionsUaePage() {
           <div className="grid-auto-lg">
             {[
               { title: "Fintech Licensing", desc: "How the licensing process is structured", href: "/solutions/regulatory/fintech-licensing" },
-              { title: "Banking & Payments", desc: "Why banking defines viability", href: "/solutions/regulatory/banking-payments" },
+              { title: "Banking & Payments", desc: "Why banking defines viability", href: "/solutions/banking-payments-infrastructure" },
               { title: "Offshore Structuring", desc: "How the UAE fits within a broader group", href: "/solutions/corporate/offshore-structuring" },
               { title: "Crypto", desc: "VASP regulation and structural consequences", href: "/markets/crypto" },
             ].map((item) => (
@@ -239,11 +253,10 @@ export default function JurisdictionsUaePage() {
           <h2 className="heading-lg cta-block__title">
             Design for the right authority. Not for the right postcode.
           </h2>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{"Continue on WhatsApp →"}</a>
           <p className="body-sm" style={{ color: "var(--white-25)", marginTop: "16px" }}>
-            We review your intended operation, map the correct regulatory path
-            and define what needs to be built. If there is no viable structure,
-            we will tell you upfront.
+            WhatsApp is the primary strategic intake. Prefer another channel?{" "}
+            <Link href="/contact" className="underline underline-offset-4">Contact us here.</Link>
           </p>
         </div>
       </section>

@@ -1,0 +1,25 @@
+{
+  "phase": "insights-launch-safety",
+  "terminal": "OCTUS_LAUNCH_SAFETY_REPAIR_READY_FOR_SOL_AUDIT",
+  "starting_head": "086c28a6358ee602205cc14893e9a9cd034b0e2e",
+  "application_sha": "f4fb171eaf01c497796a1acaea253a1bd30f4d4d",
+  "deployment_id": "dpl_4HGy36KkLKdC3icNSgh91p3x663L",
+  "deployment_sha": "f4fb171eaf01c497796a1acaea253a1bd30f4d4d",
+  "immutable_preview": "https://octus-consulting-dx4biu3kx-axle1.vercel.app",
+  "gitDirty": 0,
+  "gitDirty_note": "Git-sourced GitHub deployment; meta.gitDirty absent (not dirty local CLI deploy)",
+  "source": "git",
+  "branch": "feat/seven-areas-website-architecture",
+  "target": "preview",
+  "x_robots_tag": "noindex",
+  "validation": "PASS",
+  "insights": {
+    "source": 33,
+    "PUBLISH_CURRENT": 8,
+    "PUBLISH_HISTORICAL_WITH_UPDATE": 19,
+    "HOLD_NOT_PUBLIC": 6,
+    "public": 27,
+    "sitemap": 27
+  },
+  "bound_residual": "TEAM_PORTRAIT_SOURCE_RESIDUAL_001 OPEN Claudia Nery"
+}

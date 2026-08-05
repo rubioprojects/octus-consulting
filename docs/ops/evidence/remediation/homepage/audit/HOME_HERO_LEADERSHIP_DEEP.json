@@ -1,0 +1,253 @@
+{
+  "baseline": {
+    "hero": {
+      "h": 880,
+      "minH": "880px",
+      "padT": "128px",
+      "padB": "0px",
+      "justify": "normal",
+      "align": "center",
+      "display": "flex"
+    },
+    "h1": {
+      "fs": "53.6px",
+      "fw": "600",
+      "lh": "62.176px",
+      "mw": "none",
+      "w": 896,
+      "h": 186,
+      "text": "Regulated operations don't fail randomly. They fail structurally."
+    },
+    "copy": {
+      "fs": "18px",
+      "mw": "640px",
+      "w": 640,
+      "text": "Octus helps regulated companies — betting, fintech and similar sectors — enter markets, get licensed, bank, stay compliant and fix structura"
+    },
+    "ctas": [
+      {
+        "t": "Discuss your operation →",
+        "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+        "h": 48,
+        "w": 258,
+        "fs": "14px",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "t": "Email Octus →",
+        "href": "mailto:info@octusconsulting.com?subject=Discuss%20operation%20with%20Octus",
+        "h": 48,
+        "w": 179,
+        "fs": "14px",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "t": "See how we work →",
+        "href": "/how-we-engage",
+        "h": 48,
+        "w": 220,
+        "fs": "14px",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "t": "Assess your situation →",
+        "href": "/diagnostic",
+        "h": 17,
+        "w": 160,
+        "fs": "14px",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "t": "What Octus does →",
+        "href": "/what-octus-does",
+        "h": 17,
+        "w": 133,
+        "fs": "14px",
+        "bg": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "nums": [
+      {
+        "t": "Multi",
+        "fs": "36px",
+        "h": 36
+      },
+      {
+        "t": "2019",
+        "fs": "36px",
+        "h": 36
+      },
+      {
+        "t": "06",
+        "fs": "36px",
+        "h": 36
+      }
+    ],
+    "cards": [
+      {
+        "cls": "home-leadership-trust__card no-underline",
+        "w": 264,
+        "h": 236
+      },
+      {
+        "cls": "home-leadership-trust__card no-underline",
+        "w": 264,
+        "h": 236
+      },
+      {
+        "cls": "font-sans text-sm font-medium text-primary no-underline hover:text-primary/80",
+        "w": 115,
+        "h": 17
+      },
+      {
+        "cls": "site-footer__nav-link font-sans no-underline transition-colors focus-visible:out",
+        "w": 0,
+        "h": 0
+      }
+    ],
+    "leadInner": "ACCOUNTABILITY\n\nLeadership who own the structure.\n\nTrust starts with clear accountability — not a directory of faces.\n\nRubio Teixeira\n\nFOUNDER\n\nMaria Cristina\n\nMANAGING DIRECTOR\n\nMeet the team →",
+    "headings": [
+      "Leadership who own the structure.",
+      "What we fix.",
+      "A structural approach to regulated operations.",
+      "Where we operate.",
+      "Where regulated operations stall.",
+      "If your operation is stuck, blocked or exposed, we can fix it.",
+      "Six solutions. One execution partner.",
+      "Operational Remediation & Readiness",
+      "Accountable execution.",
+      "Accountability scales with the mandate.",
+      "Authority for operators who need structure.",
+      "This is not for everyone."
+    ]
+  },
+  "current": {
+    "hero": {
+      "h": 1000,
+      "minH": "1000px",
+      "padT": "128px",
+      "padB": "48px",
+      "justify": "normal",
+      "align": "flex-start",
+      "display": "flex"
+    },
+    "h1": {
+      "fs": "53.6px",
+      "fw": "600",
+      "lh": "62.176px",
+      "mw": "556.69px",
+      "w": 557,
+      "h": 186,
+      "text": "Regulated operations don't fail randomly. They fail structurally."
+    },
+    "copy": {
+      "fs": "18px",
+      "mw": "640px",
+      "w": 640,
+      "text": "When licensing, banking, compliance or corporate structure breaks under pressure, the cost is real. Octus diagnoses the failure and rebuilds"
+    },
+    "ctas": [
+      {
+        "t": "Discuss your operation →",
+        "href": "https://wa.me/5511974273000?text=Hello%20Octus%20team%2C%20I%20would%20like%20to%20discuss%20my%20operation%20and%20understand%20how%20you%20can%20help.",
+        "h": 48,
+        "w": 258,
+        "fs": "14px",
+        "bg": "rgb(255, 255, 255)"
+      },
+      {
+        "t": "Explore services",
+        "href": "/solutions",
+        "h": 48,
+        "w": 194,
+        "fs": "14px",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "t": "See how we work →",
+        "href": "/how-we-engage",
+        "h": 48,
+        "w": 220,
+        "fs": "14px",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "t": "Assess your situation →",
+        "href": "/diagnostic",
+        "h": 17,
+        "w": 160,
+        "fs": "14px",
+        "bg": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "nums": [
+      {
+        "t": "2019",
+        "fs": "36px",
+        "h": 36
+      },
+      {
+        "t": "07",
+        "fs": "36px",
+        "h": 36
+      },
+      {
+        "t": "01",
+        "fs": "36px",
+        "h": 36
+      },
+      {
+        "t": "02",
+        "fs": "36px",
+        "h": 36
+      },
+      {
+        "t": "03",
+        "fs": "36px",
+        "h": 36
+      },
+      {
+        "t": "04",
+        "fs": "36px",
+        "h": 36
+      }
+    ],
+    "cards": [
+      {
+        "cls": "home-leadership-trust__card no-underline",
+        "w": 264,
+        "h": 236
+      },
+      {
+        "cls": "home-leadership-trust__card no-underline",
+        "w": 264,
+        "h": 236
+      },
+      {
+        "cls": "font-sans text-sm font-medium text-primary no-underline hover:text-primary/80",
+        "w": 115,
+        "h": 17
+      },
+      {
+        "cls": "site-footer__nav-link font-sans no-underline transition-colors focus-visible:out",
+        "w": 0,
+        "h": 0
+      }
+    ],
+    "leadInner": "ACCOUNTABILITY\n\nLeadership who own the structure.\n\nTrust starts with clear accountability — not a directory of faces.\n\nRubio Teixeira\n\nFOUNDER & CEO\n\nMaria Cristina\n\nOPERATIONS COORDINATION\n\nMeet the team →",
+    "headings": [
+      "Leadership who own the structure.",
+      "What we fix.",
+      "A structural approach to regulated operations.",
+      "Where we operate.",
+      "Where regulated operations stall.",
+      "If your operation is stuck, blocked or exposed, we can fix it.",
+      "Seven areas. One execution partner.",
+      "Remediation & Readiness",
+      "Accountable execution.",
+      "Accountability scales with the mandate.",
+      "Authority for operators who need structure.",
+      "Mandates Octus accepts."
+    ]
+  }
+}

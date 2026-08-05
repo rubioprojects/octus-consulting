@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
+import { pageSocialMeta } from "../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "iGaming Licensing & Regulatory Structuring | Octus",
   description:
     "End-to-end regulatory structuring, licensing execution and banking coordination for iGaming and betting operators across jurisdictions.",
-};
+  path: "/markets/igaming",
+});
 
 export default function MarketsIGamingPage() {
   return (
@@ -14,8 +16,8 @@ export default function MarketsIGamingPage() {
       {/* ─── HERO ─── */}
       <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <span className="label">Markets · iGaming & Betting</span>
-          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
+          <span className="mb-5 block text-xs font-medium uppercase tracking-[0.12em] text-white/65">Markets · iGaming & Betting</span>
+          <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline">
             Most iGaming operations don&apos;t fail
             <br />
             <span style={{ color: "var(--white-40)" }}>
@@ -49,7 +51,7 @@ export default function MarketsIGamingPage() {
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
             Operators spend months chasing licenses in the wrong jurisdiction.
-            They get licensed — then can&apos;t open a bank account. They build
+            They get licensed: then can&apos;t open a bank account. They build
             compliance frameworks that collapse under the first real audit.
           </p>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
@@ -79,27 +81,27 @@ export default function MarketsIGamingPage() {
             {[
               {
                 title: "Licensing strategy & execution",
-                desc: "We select the jurisdiction, design the structure, prepare the dossier and coordinate with the regulator. From first filing to approved license.",
+                desc: "We help select the jurisdiction, design the structure and prepare the dossier so the operator can pursue authorisation with local counsel where required. From first filing readiness to post-submission support.",
               },
               {
-                title: "Banking & payment access",
-                desc: "Licensed but no bank account? We restructure AML documentation, align the corporate layer and coordinate directly with banks and PSPs.",
+                title: "Banking & payment readiness",
+                desc: "Licensed but no bank account? We restructure AML documentation, align the corporate layer and prepare materials for banks and PSPs. Banking access is never promised.",
               },
               {
                 title: "Compliance that holds",
-                desc: "KYC, AML, responsible gaming, DPO — built to survive real scrutiny. Not a policies folder. A working compliance structure.",
+                desc: "KYC, AML, responsible gaming, DPO: built to survive real scrutiny. Not a policies folder. A working compliance structure.",
               },
               {
                 title: "Corporate & entity design",
-                desc: "Onshore, offshore, holding structures — designed for the operation, not for the accountant. Defensible under regulatory and banking review.",
+                desc: "Onshore, offshore, holding structures: designed for the operation, not for the accountant. Defensible under regulatory and banking review.",
               },
               {
                 title: "Lab certification readiness",
-                desc: "GLI, BMM, iTech Labs — we prepare the operation for technical certification. Gap analysis, evidence register, audit coordination.",
+                desc: "We prepare operations for technical certification programmes commonly required by regulators (for example independent laboratory testing). Gap analysis, evidence register and audit coordination - Octus is not affiliated with any laboratory.",
               },
               {
-                title: "Post-license stabilization",
-                desc: "License approved is not the end. We stabilize the operation — compliance cycles, banking maintenance, regulatory reporting.",
+                title: "Stabilization after licensing",
+                desc: "Authorisation is not the end. We help stabilize the operation across compliance cycles, banking maintenance and regulatory reporting.",
               },
             ].map((item) => (
               <div key={item.title} className="card" style={{ padding: "28px" }}>
@@ -121,20 +123,20 @@ export default function MarketsIGamingPage() {
           <div className="grid gap-6 md:grid-cols-2">
             {[
               {
-                title: "iGaming operator — Curaçao",
-                body: "Full licensing + corporate structuring + banking setup. Operational bank account open in 11 weeks after 6 months of failed attempts with previous advisors.",
+                title: "iGaming operator · Curaçao pathway",
+                body: "Licensing preparation, corporate structuring and banking readiness after prior advisory work left the operation without a workable banking path. Illustrative mandate pattern - outcomes and timelines vary.",
               },
               {
-                title: "Multi-brand sportsbook — 3 jurisdictions",
-                body: "Cross-border restructuring across Brazil, Curaçao and Malta. Entity realignment, compliance harmonization and unified banking strategy.",
+                title: "Multi-brand sportsbook · multi-jurisdiction",
+                body: "Cross-border restructuring across Brazil, Curaçao and Malta. Entity realignment, compliance harmonisation and coordinated banking strategy.",
               },
               {
                 title: "Affiliate-led betting operation",
-                body: "Compliance remediation after regulatory inquiry. AML framework rebuild, evidence register reconstruction and payment processor recovery.",
+                body: "Compliance remediation after regulatory inquiry. AML framework rebuild, evidence register reconstruction and payment-processor recovery support.",
               },
               {
-                title: "Sports betting operator — Brazil (SPA/MF)",
-                body: "Full regulatory dossier, corporate structuring and direct coordination with SPA/MF authorities for the Brazilian sports betting authorization process.",
+                title: "Sports betting operator · Brazil (SPA/MF)",
+                body: "Regulatory dossier preparation and corporate structuring to support the Brazilian fixed-odds authorisation pathway under Laws 13,756/2018 and 14,790/2023 and SPA/MF ordinances. Octus is not affiliated with SPA/MF.",
               },
             ].map((m, i) => (
               <div
@@ -160,8 +162,11 @@ export default function MarketsIGamingPage() {
             We don&apos;t list jurisdictions to impress. We work in the markets
             where iGaming operators actually build and scale.
           </p>
+          <p className="body-sm" style={{ marginBottom: "16px" }}>
+            Dedicated jurisdiction pages cover our primary landings. Additional markets may appear as advisory references without a dedicated public page.
+          </p>
           <div className="chip-row" style={{ gap: "10px", flexWrap: "wrap" }}>
-            {["Brazil (SPA/MF)", "Curaçao", "Malta (MGA)", "Anjouan", "Isle of Man", "Gibraltar", "Cyprus", "UK", "Portugal", "Cayman Islands", "BVI"].map((j) => (
+            {["Brazil (SPA/MF)", "Curaçao", "Malta (MGA)", "Anjouan", "Isle of Man", "Portugal"].map((j) => (
               <span key={j} className="chip-juris">{j}</span>
             ))}
           </div>
@@ -170,7 +175,7 @@ export default function MarketsIGamingPage() {
               href="/jurisdictions/curacao"
               className="inline-flex h-12 items-center justify-center rounded-sm border border-border bg-transparent px-10 text-base font-medium text-primary transition-colors hover:bg-secondary"
             >
-              Curaçao licensing →
+              Curaçao jurisdiction →
             </Link>
           </div>
         </div>
@@ -188,7 +193,7 @@ export default function MarketsIGamingPage() {
               {
                 tag: "Licensing",
                 title: "License stuck for months",
-                body: "Application filed, no movement. Usually a structural gap in the dossier or entity setup — not regulatory hostility.",
+                body: "Application filed, no movement. Usually a structural gap in the dossier or entity setup, rather than regulatory hostility.",
               },
               {
                 tag: "Banking",
@@ -222,7 +227,7 @@ export default function MarketsIGamingPage() {
             {[
               { title: "Curaçao Licensing", desc: "How we structure iGaming operations in Curaçao.", href: "/jurisdictions/curacao" },
               { title: "Full Licensing Process", desc: "End-to-end licensing execution across jurisdictions.", href: "/solutions/regulatory/igaming-licensing" },
-              { title: "Compliance & Risk", desc: "The compliance framework that supports your license.", href: "/compliance" },
+              { title: "Compliance & Risk", desc: "The compliance framework that supports your license.", href: "/solutions/compliance-risk" },
             ].map((r) => (
               <Link key={r.title} href={r.href} className="card-grid" style={{ padding: "28px" }}>
                 <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{r.title}</h3>
@@ -244,9 +249,9 @@ export default function MarketsIGamingPage() {
           <h2 className="heading-lg cta-block__title">
             Fix the structure before you scale.
           </h2>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{"Continue on WhatsApp →"}</a>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
-            Diagnostic call — not a sales pitch. We start by identifying where your structure breaks.
+            Diagnostic call, not a sales pitch. We start by identifying where your structure breaks.
           </p>
         </div>
       </section>

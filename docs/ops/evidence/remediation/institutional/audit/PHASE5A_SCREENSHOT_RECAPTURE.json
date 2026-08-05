@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-08-04T01:20:40.929Z",
+  "careers_screenshots_recaptured": 8,
+  "reconciled_screenshots_recaptured": 48,
+  "hashes_changed": 6,
+  "hashes_unchanged": 42,
+  "changed_files": [
+    "reconciled/careers__desktop__full.png",
+    "reconciled/careers__desktop__hero.png",
+    "reconciled/careers__desktop__cta.png",
+    "reconciled/careers__mobile__full.png",
+    "reconciled/careers__mobile__content.png",
+    "reconciled/careers__mobile__cta.png"
+  ]
+}

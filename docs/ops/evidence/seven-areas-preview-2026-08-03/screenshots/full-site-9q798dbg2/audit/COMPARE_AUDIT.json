@@ -1,0 +1,610 @@
+{
+  "baseline": {
+    "brandMark": "216 100% 50%",
+    "brandBlue": "215 100% 38%",
+    "brandRed": "0 99% 37%",
+    "brandDark": "0 0% 21%",
+    "brandNavy": "220 48% 8%",
+    "surfaceElevated": "220 28% 96%",
+    "primary": "215 100% 38%",
+    "background": "50 10% 98%",
+    "logoSrc": "/brand/lockup/octus-lockup-nav-on-dark.svg",
+    "logoH": "36px",
+    "headerH": "84px",
+    "rubioSrc": "/team/rubio-teixeira.jpg",
+    "rubioObjectPosition": "50% 38%",
+    "rubioTransform": "none"
+  },
+  "local": {
+    "brandMark": "216 100% 50%",
+    "brandBlue": "215 100% 38%",
+    "brandRed": "0 99% 37%",
+    "brandDark": "0 0% 21%",
+    "brandNavy": "220 48% 8%",
+    "surfaceElevated": "220 28% 96%",
+    "primary": "215 100% 38%",
+    "background": "50 10% 98%",
+    "logoSrc": "/brand/lockup/octus-lockup-nav-on-dark.svg",
+    "logoH": "36px",
+    "headerH": "84px",
+    "rubioSrc": "/team/rubio-teixeira.jpg",
+    "rubioObjectPosition": "50% 38%",
+    "rubioTransform": "none"
+  },
+  "routes": [
+    {
+      "label": "baseline",
+      "route": "/",
+      "vp": "desktop",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/team",
+      "vp": "desktop",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/solutions",
+      "vp": "desktop",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/solutions/regulatory-structuring",
+      "vp": "desktop",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/solutions/compliance-risk",
+      "vp": "desktop",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/solutions/legal-structural-architecture",
+      "vp": "desktop",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/solutions/corporate-structuring",
+      "vp": "desktop",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/private-clients",
+      "vp": "desktop",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/solutions/remediation-readiness",
+      "vp": "desktop",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/international-hub",
+      "vp": "desktop",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/solutions/banking-payments-infrastructure",
+      "vp": "desktop",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/brazil",
+      "vp": "desktop",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/about",
+      "vp": "desktop",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/contact",
+      "vp": "desktop",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/how-we-engage",
+      "vp": "desktop",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/intelligence",
+      "vp": "desktop",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/insights",
+      "vp": "desktop",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/markets",
+      "vp": "desktop",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/jurisdictions",
+      "vp": "desktop",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/partners",
+      "vp": "desktop",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/diagnostic",
+      "vp": "desktop",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/careers",
+      "vp": "desktop",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/",
+      "vp": "mobile",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/team",
+      "vp": "mobile",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/solutions",
+      "vp": "mobile",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/solutions/regulatory-structuring",
+      "vp": "mobile",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/solutions/compliance-risk",
+      "vp": "mobile",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/solutions/legal-structural-architecture",
+      "vp": "mobile",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/solutions/corporate-structuring",
+      "vp": "mobile",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/private-clients",
+      "vp": "mobile",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/solutions/remediation-readiness",
+      "vp": "mobile",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/international-hub",
+      "vp": "mobile",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/solutions/banking-payments-infrastructure",
+      "vp": "mobile",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/brazil",
+      "vp": "mobile",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/about",
+      "vp": "mobile",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/contact",
+      "vp": "mobile",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/how-we-engage",
+      "vp": "mobile",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/intelligence",
+      "vp": "mobile",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/insights",
+      "vp": "mobile",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/markets",
+      "vp": "mobile",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/jurisdictions",
+      "vp": "mobile",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/partners",
+      "vp": "mobile",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/diagnostic",
+      "vp": "mobile",
+      "ok": true
+    },
+    {
+      "label": "baseline",
+      "route": "/careers",
+      "vp": "mobile",
+      "ok": true
+    },
+    {
+      "label": "local",
+      "route": "/",
+      "vp": "desktop",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/\nCall log:\n  - navigating to \"http://127.0.0.1:3110/\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/team",
+      "vp": "desktop",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/team\nCall log:\n  - navigating to \"http://127.0.0.1:3110/team\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/solutions",
+      "vp": "desktop",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/solutions\nCall log:\n  - navigating to \"http://127.0.0.1:3110/solutions\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/solutions/regulatory-structuring",
+      "vp": "desktop",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/solutions/regulatory-structuring\nCall log:\n  - navigating to \"http://127.0.0.1:3110/solutions/regulatory-structuring\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/solutions/compliance-risk",
+      "vp": "desktop",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/solutions/compliance-risk\nCall log:\n  - navigating to \"http://127.0.0.1:3110/solutions/compliance-risk\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/solutions/legal-structural-architecture",
+      "vp": "desktop",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/solutions/legal-structural-architecture\nCall log:\n  - navigating to \"http://127.0.0.1:3110/solutions/legal-structural-architecture\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/solutions/corporate-structuring",
+      "vp": "desktop",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/solutions/corporate-structuring\nCall log:\n  - navigating to \"http://127.0.0.1:3110/solutions/corporate-structuring\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/private-clients",
+      "vp": "desktop",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/private-clients\nCall log:\n  - navigating to \"http://127.0.0.1:3110/private-clients\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/solutions/remediation-readiness",
+      "vp": "desktop",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/solutions/remediation-readiness\nCall log:\n  - navigating to \"http://127.0.0.1:3110/solutions/remediation-readiness\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/international-hub",
+      "vp": "desktop",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/international-hub\nCall log:\n  - navigating to \"http://127.0.0.1:3110/international-hub\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/solutions/banking-payments-infrastructure",
+      "vp": "desktop",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/solutions/banking-payments-infrastructure\nCall log:\n  - navigating to \"http://127.0.0.1:3110/solutions/banking-payments-infrastructure\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/brazil",
+      "vp": "desktop",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/brazil\nCall log:\n  - navigating to \"http://127.0.0.1:3110/brazil\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/about",
+      "vp": "desktop",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/about\nCall log:\n  - navigating to \"http://127.0.0.1:3110/about\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/contact",
+      "vp": "desktop",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/contact\nCall log:\n  - navigating to \"http://127.0.0.1:3110/contact\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/how-we-engage",
+      "vp": "desktop",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/how-we-engage\nCall log:\n  - navigating to \"http://127.0.0.1:3110/how-we-engage\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/intelligence",
+      "vp": "desktop",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/intelligence\nCall log:\n  - navigating to \"http://127.0.0.1:3110/intelligence\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/insights",
+      "vp": "desktop",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/insights\nCall log:\n  - navigating to \"http://127.0.0.1:3110/insights\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/markets",
+      "vp": "desktop",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/markets\nCall log:\n  - navigating to \"http://127.0.0.1:3110/markets\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/jurisdictions",
+      "vp": "desktop",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/jurisdictions\nCall log:\n  - navigating to \"http://127.0.0.1:3110/jurisdictions\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/partners",
+      "vp": "desktop",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/partners\nCall log:\n  - navigating to \"http://127.0.0.1:3110/partners\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/diagnostic",
+      "vp": "desktop",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/diagnostic\nCall log:\n  - navigating to \"http://127.0.0.1:3110/diagnostic\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/careers",
+      "vp": "desktop",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/careers\nCall log:\n  - navigating to \"http://127.0.0.1:3110/careers\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/",
+      "vp": "mobile",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/\nCall log:\n  - navigating to \"http://127.0.0.1:3110/\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/team",
+      "vp": "mobile",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/team\nCall log:\n  - navigating to \"http://127.0.0.1:3110/team\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/solutions",
+      "vp": "mobile",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/solutions\nCall log:\n  - navigating to \"http://127.0.0.1:3110/solutions\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/solutions/regulatory-structuring",
+      "vp": "mobile",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/solutions/regulatory-structuring\nCall log:\n  - navigating to \"http://127.0.0.1:3110/solutions/regulatory-structuring\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/solutions/compliance-risk",
+      "vp": "mobile",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/solutions/compliance-risk\nCall log:\n  - navigating to \"http://127.0.0.1:3110/solutions/compliance-risk\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/solutions/legal-structural-architecture",
+      "vp": "mobile",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/solutions/legal-structural-architecture\nCall log:\n  - navigating to \"http://127.0.0.1:3110/solutions/legal-structural-architecture\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/solutions/corporate-structuring",
+      "vp": "mobile",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/solutions/corporate-structuring\nCall log:\n  - navigating to \"http://127.0.0.1:3110/solutions/corporate-structuring\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/private-clients",
+      "vp": "mobile",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/private-clients\nCall log:\n  - navigating to \"http://127.0.0.1:3110/private-clients\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/solutions/remediation-readiness",
+      "vp": "mobile",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/solutions/remediation-readiness\nCall log:\n  - navigating to \"http://127.0.0.1:3110/solutions/remediation-readiness\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/international-hub",
+      "vp": "mobile",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/international-hub\nCall log:\n  - navigating to \"http://127.0.0.1:3110/international-hub\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/solutions/banking-payments-infrastructure",
+      "vp": "mobile",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/solutions/banking-payments-infrastructure\nCall log:\n  - navigating to \"http://127.0.0.1:3110/solutions/banking-payments-infrastructure\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/brazil",
+      "vp": "mobile",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/brazil\nCall log:\n  - navigating to \"http://127.0.0.1:3110/brazil\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/about",
+      "vp": "mobile",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/about\nCall log:\n  - navigating to \"http://127.0.0.1:3110/about\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/contact",
+      "vp": "mobile",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/contact\nCall log:\n  - navigating to \"http://127.0.0.1:3110/contact\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/how-we-engage",
+      "vp": "mobile",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/how-we-engage\nCall log:\n  - navigating to \"http://127.0.0.1:3110/how-we-engage\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/intelligence",
+      "vp": "mobile",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/intelligence\nCall log:\n  - navigating to \"http://127.0.0.1:3110/intelligence\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/insights",
+      "vp": "mobile",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/insights\nCall log:\n  - navigating to \"http://127.0.0.1:3110/insights\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/markets",
+      "vp": "mobile",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/markets\nCall log:\n  - navigating to \"http://127.0.0.1:3110/markets\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/jurisdictions",
+      "vp": "mobile",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/jurisdictions\nCall log:\n  - navigating to \"http://127.0.0.1:3110/jurisdictions\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/partners",
+      "vp": "mobile",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/partners\nCall log:\n  - navigating to \"http://127.0.0.1:3110/partners\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/diagnostic",
+      "vp": "mobile",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/diagnostic\nCall log:\n  - navigating to \"http://127.0.0.1:3110/diagnostic\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "label": "local",
+      "route": "/careers",
+      "vp": "mobile",
+      "ok": false,
+      "err": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3110/careers\nCall log:\n  - navigating to \"http://127.0.0.1:3110/careers\", waiting until \"domcontentloaded\"\n"
+    }
+  ],
+  "reconciled_ok": 44,
+  "reconciled_fail": 0
+}

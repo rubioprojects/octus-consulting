@@ -1,0 +1,2086 @@
+{
+  "generated_at": "2026-08-04T03:36:08.038Z",
+  "axe_core_version": "4.12.1",
+  "results": [
+    {
+      "route": "/intelligence",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 2,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/intelligence",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 2,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/privacy",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/privacy",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/terms",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/terms",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/cookies",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/cookies",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/compliance-channel",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/compliance-channel",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/this-page-does-not-exist-phase5c",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/this-page-does-not-exist-phase5c",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/betting-taxation-risks-senate-legal-certainty-regulated-market",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/betting-taxation-risks-senate-legal-certainty-regulated-market",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/quinel-credentialed-certifying-entity-brazil-ministry-finance",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/quinel-credentialed-certifying-entity-brazil-ministry-finance",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/why-licensing-fails-post-approval",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/why-licensing-fails-post-approval",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/stf-suspends-blocking-of-bolsa-familia-bpc-betting-accounts",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/stf-suspends-blocking-of-bolsa-familia-bpc-betting-accounts",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/senate-approves-plp-128-2025-tightens-fiscal-policy-bets-fintechs",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/senate-approves-plp-128-2025-tightens-fiscal-policy-bets-fintechs",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/new-spa-mf-normative-instruction-fixed-odds-betting",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/new-spa-mf-normative-instruction-fixed-odds-betting",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/centralised-self-exclusion-platform-key-changes-operators-bettors",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/centralised-self-exclusion-platform-key-changes-operators-bettors",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/stf-suspends-municipal-lottery-operations-nationwide",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/stf-suspends-municipal-lottery-operations-nationwide",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/coaf-crisis-aml-obligations-online-gaming-operators",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/coaf-crisis-aml-obligations-online-gaming-operators",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/annual-recertification-betting-platforms-spa-mf-new-guidelines",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/annual-recertification-betting-platforms-spa-mf-new-guidelines",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/risk-management-software-igaming-regulatory-compliance",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/risk-management-software-igaming-regulatory-compliance",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/customised-studies-international-expansion-brazil",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/customised-studies-international-expansion-brazil",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/rio-de-janeiro-regulates-vlts-lottery-equipment-decree",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/rio-de-janeiro-regulates-vlts-lottery-equipment-decree",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/games-not-classified-as-fixed-odds-betting-brazil",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/games-not-classified-as-fixed-odds-betting-brazil",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/bet-br-domain-extension-to-states-brazil",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/bet-br-domain-extension-to-states-brazil",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/intellectual-property-igaming-trademark-registration-brazil",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/intellectual-property-igaming-trademark-registration-brazil",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/national-betting-system-sinapo-brazil",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/national-betting-system-sinapo-brazil",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/why-your-international-licence-may-not-protect-you-in-brazil",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/why-your-international-licence-may-not-protect-you-in-brazil",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/regulation-and-technology-legal-follows-igaming-evolution",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/regulation-and-technology-legal-follows-igaming-evolution",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/iof-update-financial-market-brazil-2025",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/iof-update-financial-market-brazil-2025",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/trump-tax-reform-betting-operators-lessons-for-brazil",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/trump-tax-reform-betting-operators-lessons-for-brazil",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/regulatory-agenda-2025-2026-secretariat-prizes-betting",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/regulatory-agenda-2025-2026-secretariat-prizes-betting",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/spa-ordinance-banks-refuse-illegal-betting-operators",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/spa-ordinance-banks-refuse-illegal-betting-operators",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/youtube-tightens-rules-illegal-betting-sites-impact-influencers",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/youtube-tightens-rules-illegal-betting-sites-impact-influencers",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/brazil-b2b-registration-requirement-betting-igaming",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/brazil-b2b-registration-requirement-betting-igaming",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/senate-commission-approves-casino-bingo-gaming-bill-brazil",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/senate-commission-approves-casino-bingo-gaming-bill-brazil",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/spa-mf-position-brazilian-partner-20-percent-share-capital",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/spa-mf-position-brazilian-partner-20-percent-share-capital",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/new-rules-sports-betting-online-games-brazil-portaria-827-2024",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/new-rules-sports-betting-online-games-brazil-portaria-827-2024",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/new-regulation-betting-online-game-systems-portaria-722-2024",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/new-regulation-betting-online-game-systems-portaria-722-2024",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/banking-for-high-risk-operations",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/banking-for-high-risk-operations",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/mica-what-operators-need-to-do",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/mica-what-operators-need-to-do",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/curacao-reform-what-changes",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/curacao-reform-what-changes",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/compliance-as-a-service-vs-internal-teams",
+      "viewport": "desktop",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 1,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/compliance-as-a-service-vs-internal-teams",
+      "viewport": "mobile",
+      "axe_core_version": "4.12.1",
+      "unavailable": false,
+      "execution_error": false,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0,
+      "incomplete": 0,
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "targets": [
+            [
+              ".wa-float"
+            ]
+          ]
+        }
+      ],
+      "global_region_residual_nodes": 1,
+      "status": "PASS"
+    }
+  ]
+}

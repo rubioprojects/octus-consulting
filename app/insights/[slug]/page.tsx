@@ -1,61 +1,137 @@
 import Link from "next/link";
-import { getAllPosts, getPost } from "../../../lib/posts";
+import { getPost } from "../../../lib/posts";
+import {
+  enrichPostForPublic,
+  getPublicPosts,
+  isEditorialCommentary,
+  isHistoricalInsight,
+  isPublicInsight,
+} from "../../../lib/insightsPublication";
+import { brandedDocumentTitle, normalizeEditorialTitle } from "../../../lib/insightTitles";
+import {
+  resolveIndustryLinks,
+  resolveJurisdictionLinks,
+  resolvePostAuthor,
+  resolveServiceAreaLinks,
+} from "../../../lib/insightEnrichment";
 import { notFound } from "next/navigation";
+import { pageSocialMeta } from "../../../lib/pageMeta";
+import ArticleJsonLd from "../../../components/seo/ArticleJsonLd";
+
+function fmtDate(d: string) {
+  return new Date(d).toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+}
 
 export async function generateStaticParams() {
-  return getAllPosts().map((p) => ({ slug: p.slug }));
+  return getPublicPosts().map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
+  if (!isPublicInsight(params.slug)) return {};
   const post = getPost(params.slug);
   if (!post) return {};
-  return {
-    title: `${post.title} — Octus Consulting`,
+  const clean = normalizeEditorialTitle(post.title);
+  const branded = brandedDocumentTitle(clean);
+  return pageSocialMeta({
+    title: branded,
     description: post.excerpt,
-  };
+    path: `/insights/${params.slug}`,
+    absoluteTitle: true,
+    ogType: "article",
+  });
 }
 
 export default function PostPage({ params }: { params: { slug: string } }) {
-  const post = getPost(params.slug);
-  if (!post) notFound();
+  if (!isPublicInsight(params.slug)) notFound();
+  const raw = getPost(params.slug);
+  if (!raw) notFound();
 
-  const date = new Date(post.date).toLocaleDateString("en-GB", {
-    day: "numeric", month: "long", year: "numeric",
-  });
+  const post = enrichPostForPublic(raw);
+  const published = fmtDate(post.date);
+  const lastReviewed = fmtDate(post.lastReviewed);
+  const isHistorical = isHistoricalInsight(params.slug);
+  const isEditorial = isEditorialCommentary(params.slug);
+  const statusLabel = isHistorical
+    ? "Historical analysis"
+    : isEditorial
+      ? "Editorial commentary"
+      : "Current analysis";
   const contentBlocks = post.content
     .replace(/^###\s+.+\n\n/, "")
     .split("\n\n");
 
   return (
     <main>
+      <ArticleJsonLd
+        headline={normalizeEditorialTitle(post.title)}
+        description={post.excerpt}
+        path={`/insights/${params.slug}`}
+        datePublished={post.date}
+        dateModified={post.lastReviewed || post.date}
+        authorName={resolvePostAuthor(post)}
+      />
       <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "800px" }}>
           <div style={{ display: "flex", gap: "16px", alignItems: "center", marginBottom: "32px", flexWrap: "wrap" }}>
             <Link
               href="/insights"
-              style={{
-                fontFamily: "var(--font-unigeo), 'Unigeo64', sans-serif",
-                fontSize: "10px",
-                fontWeight: 700,
-                letterSpacing: "0.12em",
-                textTransform: "uppercase",
-                color: "var(--white-40)",
-                textDecoration: "none",
-              }}
+              className="font-sans text-[10px] font-bold uppercase tracking-[0.12em] text-white/70 no-underline hover:text-white"
             >
               ← Insights
             </Link>
-            <span className="label">{post.category}</span>
+            <span className="mb-0 block text-xs font-medium uppercase tracking-[0.12em] text-white/65">
+              {post.category}
+            </span>
+            <span className="mb-0 block text-xs font-medium uppercase tracking-[0.12em] text-white/80">
+              {statusLabel}
+            </span>
           </div>
           <h1
-            className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline"
+            className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline"
             style={{ fontSize: "clamp(24px, 3.5vw, 44px)", lineHeight: 1.2 }}
           >
             {post.title}
           </h1>
-          <p className="text-lg leading-relaxed text-white/60 max-w-2xl" style={{ color: "var(--white-40)" }}>
-            {date}{post.author ? ` · ${post.author}` : ""}
+          <p
+            className="mt-6 max-w-2xl text-base leading-relaxed"
+            style={{ color: "rgba(255, 255, 255, 0.78)" }}
+          >
+            Published {published} · Last reviewed {lastReviewed} · {resolvePostAuthor(post)}
           </p>
+          {isHistorical && (
+            <p
+              className="mt-4 max-w-2xl text-sm leading-relaxed"
+              style={{ color: "rgba(255, 255, 255, 0.72)" }}
+            >
+              Historical analysis. This article records the regulatory position as of its original
+              publication date. It was last reviewed on {lastReviewed}.{" "}
+              {post.currentStatusNote ||
+                "Current requirements may have changed; consult the cited primary sources and obtain advice for the specific operation."}
+            </p>
+          )}
+          {isEditorial && (
+            <p
+              className="mt-4 max-w-2xl text-sm leading-relaxed"
+              style={{ color: "rgba(255, 255, 255, 0.72)" }}
+            >
+              Editorial commentary. This article presents Octus operational analysis rather than a
+              statement of current law. Where a mandate depends on regulatory requirements, the
+              applicable primary instruments must be verified separately.
+            </p>
+          )}
+          {!isHistorical && !isEditorial && (
+            <p
+              className="mt-4 max-w-2xl text-sm leading-relaxed"
+              style={{ color: "rgba(255, 255, 255, 0.72)" }}
+            >
+              Editorial note: unless a primary statute or ordinance is cited, treat analysis as
+              commentary. Verify current primary sources before relying on regulatory statements.
+            </p>
+          )}
         </div>
       </section>
 
@@ -93,50 +169,109 @@ export default function PostPage({ params }: { params: { slug: string } }) {
               />
             );
           })}
+
+          {isEditorial && (
+            <div
+              style={{
+                marginTop: "48px",
+                paddingTop: "32px",
+                borderTop: "1px solid var(--border-solid)",
+              }}
+            >
+              <h2 className="heading-sm" style={{ marginBottom: "16px" }}>
+                Editorial basis
+              </h2>
+              <p className="body-text" style={{ marginBottom: "20px", lineHeight: 1.8 }}>
+                This article presents Octus operational analysis rather than a statement of current
+                law. Where a mandate depends on regulatory requirements, the applicable primary
+                instruments must be verified separately.
+              </p>
+            </div>
+          )}
+
+          {!isEditorial && post.primarySources.length > 0 && (
+            <div
+              style={{
+                marginTop: "48px",
+                paddingTop: "32px",
+                borderTop: "1px solid var(--border-solid)",
+              }}
+            >
+              <h2 className="heading-sm" style={{ marginBottom: "16px" }}>
+                Sources
+              </h2>
+              <ul style={{ paddingLeft: "24px" }}>
+                {post.primarySources.map((src) => (
+                  <li key={src.href} className="body-text" style={{ marginBottom: "8px" }}>
+                    <a href={src.href} target="_blank" rel="noopener noreferrer">
+                      {src.label}
+                    </a>
+                    {src.date ? ` (${src.date})` : ""}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
 
-        {(post.related || post.cta) && (
-          <div
-            className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8"
-            style={{
-              maxWidth: "800px",
-              marginTop: "64px",
-              paddingTop: "40px",
-              borderTop: "1px solid var(--border-solid)",
-            }}
-          >
-            {post.related && post.related.length > 0 && (
-              <div style={{ marginBottom: post.cta ? "32px" : "0" }}>
-                <p className="body-sm mb-3.5 text-muted-foreground">
-                  Related
-                </p>
-                <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
-                  {post.related.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className="chip-juris-link"
-                      style={{ textDecoration: "none" }}
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            )}
+        {(() => {
+          const serviceLinks = resolveServiceAreaLinks(post);
+          const industryLinks = resolveIndustryLinks(post);
+          const jurisdictionLinks = resolveJurisdictionLinks(post);
+          const related = post.related || [];
+          const show =
+            related.length > 0 ||
+            serviceLinks.length > 0 ||
+            industryLinks.length > 0 ||
+            jurisdictionLinks.length > 0 ||
+            post.cta;
+          if (!show) return null;
+          return (
+            <div
+              className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8"
+              style={{
+                maxWidth: "800px",
+                marginTop: "64px",
+                paddingTop: "40px",
+                borderTop: "1px solid var(--border-solid)",
+              }}
+            >
+              {[
+                { title: "Service areas", items: serviceLinks },
+                { title: "Industries", items: industryLinks },
+                { title: "Jurisdictions", items: jurisdictionLinks },
+                { title: "Related", items: related },
+              ]
+                .filter((g) => g.items.length > 0)
+                .map((group) => (
+                  <div key={group.title} style={{ marginBottom: "24px" }}>
+                    <p className="body-sm mb-3.5 text-muted-foreground">{group.title}</p>
+                    <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
+                      {group.items.map((item) => (
+                        <Link
+                          key={`${group.title}-${item.href}`}
+                          href={item.href}
+                          className="chip-juris-link"
+                          style={{ textDecoration: "none" }}
+                        >
+                          {item.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ))}
 
-            {post.cta && (
-              <>
-                <p className="body-sm mb-4 text-muted-foreground">
-                  {post.cta.label}
-                </p>
-                <Link href={post.cta.href} className="btn-primary">
-                  Request assessment →
-                </Link>
-              </>
-            )}
-          </div>
-        )}
+              {post.cta && (
+                <>
+                  <p className="body-sm mb-4 text-muted-foreground">{post.cta.label}</p>
+                  <Link href={post.cta.href} className="btn-primary">
+                    Request assessment →
+                  </Link>
+                </>
+              )}
+            </div>
+          );
+        })()}
       </section>
     </main>
   );

@@ -1,0 +1,1137 @@
+{
+  "version": "V2",
+  "date": "2026-08-03",
+  "public_areas": [
+    {
+      "id": "AREA-REG",
+      "name": "Regulatory Structuring",
+      "hub": "/solutions/regulatory-structuring",
+      "owners": [
+        "Rubio Teixeira (strategic oversight)",
+        "Esther Vendrami (international regulatory and licensing)",
+        "Caroline Giovanetti (Brazil regulatory)"
+      ]
+    },
+    {
+      "id": "AREA-CMP",
+      "name": "Compliance & Risk",
+      "hub": "/solutions/compliance-risk",
+      "owners": [
+        "Rubio Teixeira (governance)",
+        "Irati (compliance substance and delivery)",
+        "Maria Cristina (operational coordination where applicable)"
+      ]
+    },
+    {
+      "id": "AREA-LEG",
+      "name": "Legal & Structural Architecture",
+      "hub": "/solutions/legal-structural-architecture",
+      "owners": [
+        "Rubio Teixeira",
+        "Rodrigo Coelho Lopes"
+      ]
+    },
+    {
+      "id": "AREA-CORP",
+      "name": "Corporate Structuring",
+      "hub": "/solutions/corporate-structuring",
+      "owners": [
+        "Rubio Teixeira (structural strategy)",
+        "Claudia Nery (corporate and financial architecture)",
+        "Esther Vendrami (international formation and operational coordination where applicable)",
+        "Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)"
+      ]
+    },
+    {
+      "id": "AREA-PC",
+      "name": "Private Clients",
+      "hub": "/private-clients",
+      "owners": [
+        "Rubio Teixeira",
+        "Claudia Nery",
+        "Rodrigo Coelho Lopes (where legal architecture is required)"
+      ]
+    },
+    {
+      "id": "AREA-REM",
+      "name": "Remediation & Readiness",
+      "hub": "/solutions/remediation-readiness",
+      "owners": [
+        "Rubio Teixeira",
+        "Maria Cristina",
+        "Relevant area specialist according to root cause"
+      ]
+    },
+    {
+      "id": "AREA-HUB",
+      "name": "International Hub",
+      "hub": "/international-hub",
+      "owners": [
+        "Rubio Teixeira",
+        "Milla Ludovico",
+        "Esther Vendrami (international providers and corporate dependencies)",
+        "Claudia Nery (banking and financial infrastructure)"
+      ]
+    }
+  ],
+  "service_count": 39,
+  "service_families": {
+    "SVC-REG": [
+      "SVC-REG-01",
+      "SVC-REG-02",
+      "SVC-REG-03",
+      "SVC-REG-04",
+      "SVC-REG-05"
+    ],
+    "SVC-CMP": [
+      "SVC-CMP-01",
+      "SVC-CMP-02",
+      "SVC-CMP-03",
+      "SVC-CMP-04",
+      "SVC-CMP-05",
+      "SVC-CMP-06"
+    ],
+    "SVC-LEG": [
+      "SVC-LEG-01",
+      "SVC-LEG-02",
+      "SVC-LEG-03",
+      "SVC-LEG-04"
+    ],
+    "SVC-CORP": [
+      "SVC-CORP-01",
+      "SVC-CORP-02",
+      "SVC-CORP-03",
+      "SVC-CORP-04",
+      "SVC-CORP-05",
+      "SVC-CORP-06",
+      "SVC-CORP-07"
+    ],
+    "SVC-PC": [
+      "SVC-PC-01",
+      "SVC-PC-02",
+      "SVC-PC-03",
+      "SVC-PC-04",
+      "SVC-PC-05"
+    ],
+    "SVC-REM": [
+      "SVC-REM-01",
+      "SVC-REM-02",
+      "SVC-REM-03",
+      "SVC-REM-04",
+      "SVC-REM-05",
+      "SVC-REM-06"
+    ],
+    "SVC-HUB": [
+      "SVC-HUB-01",
+      "SVC-HUB-02",
+      "SVC-HUB-03",
+      "SVC-HUB-04",
+      "SVC-HUB-05",
+      "SVC-HUB-06"
+    ]
+  },
+  "services": [
+    {
+      "id": "SVC-REG-01",
+      "exact_service_name": "Licensing strategy and pathway design",
+      "primary_area": "Regulatory Structuring",
+      "service_family": "SVC-REG",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira (strategic oversight); Esther Vendrami (international regulatory and licensing); Caroline Giovanetti (Brazil regulatory)",
+      "current_route": "/solutions/regulatory/market-entry",
+      "recommended_route": "/solutions/regulatory/market-entry",
+      "page_depth": "family module",
+      "commercial_priority": "P1",
+      "seo_priority": "high",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-REG-02",
+      "exact_service_name": "iGaming licensing programme",
+      "primary_area": "Regulatory Structuring",
+      "service_family": "SVC-REG",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira (strategic oversight); Esther Vendrami (international regulatory and licensing); Caroline Giovanetti (Brazil regulatory)",
+      "current_route": "/solutions/regulatory/igaming-licensing",
+      "recommended_route": "/solutions/regulatory/igaming-licensing",
+      "page_depth": "deep-service page",
+      "commercial_priority": "P1",
+      "seo_priority": "high",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-REG-03",
+      "exact_service_name": "Fintech, EMI and crypto licensing",
+      "primary_area": "Regulatory Structuring",
+      "service_family": "SVC-REG",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira (strategic oversight); Esther Vendrami (international regulatory and licensing); Caroline Giovanetti (Brazil regulatory)",
+      "current_route": "/solutions/regulatory/fintech-licensing",
+      "recommended_route": "/solutions/regulatory/fintech-licensing",
+      "page_depth": "deep-service page",
+      "commercial_priority": "P1",
+      "seo_priority": "high",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-REG-04",
+      "exact_service_name": "Brazil SPA / MF regulatory support",
+      "primary_area": "Regulatory Structuring",
+      "service_family": "SVC-REG",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira (strategic oversight); Esther Vendrami (international regulatory and licensing); Caroline Giovanetti (Brazil regulatory)",
+      "current_route": null,
+      "recommended_route": "/solutions/regulatory-structuring",
+      "page_depth": "family module",
+      "commercial_priority": "P2",
+      "seo_priority": "medium",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-REG-05",
+      "exact_service_name": "Jurisdiction selection and risk mapping",
+      "primary_area": "Regulatory Structuring",
+      "service_family": "SVC-REG",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira (strategic oversight); Esther Vendrami (international regulatory and licensing); Caroline Giovanetti (Brazil regulatory)",
+      "current_route": "/solutions/regulatory/market-entry",
+      "recommended_route": "/solutions/regulatory/market-entry",
+      "page_depth": "family module",
+      "commercial_priority": "P1",
+      "seo_priority": "high",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-CMP-01",
+      "exact_service_name": "AML / KYC / CDD frameworks",
+      "primary_area": "Compliance & Risk",
+      "service_family": "SVC-CMP",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira (governance); Irati (compliance substance and delivery); Maria Cristina (operational coordination where applicable)",
+      "current_route": "/solutions/compliance/aml-kyc",
+      "recommended_route": "/solutions/compliance/aml-kyc",
+      "page_depth": "deep-service page",
+      "commercial_priority": "P1",
+      "seo_priority": "high",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-CMP-02",
+      "exact_service_name": "Compliance-as-a-Service",
+      "primary_area": "Compliance & Risk",
+      "service_family": "SVC-CMP",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira (governance); Irati (compliance substance and delivery); Maria Cristina (operational coordination where applicable)",
+      "current_route": "/solutions/compliance/compliance-as-a-service",
+      "recommended_route": "/solutions/compliance/compliance-as-a-service",
+      "page_depth": "deep-service page",
+      "commercial_priority": "P1",
+      "seo_priority": "high",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-CMP-03",
+      "exact_service_name": "DPO-as-a-Service",
+      "primary_area": "Compliance & Risk",
+      "service_family": "SVC-CMP",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira (governance); Irati (compliance substance and delivery); Maria Cristina (operational coordination where applicable)",
+      "current_route": "/solutions/compliance/dpo-as-a-service",
+      "recommended_route": "/solutions/compliance/dpo-as-a-service",
+      "page_depth": "deep-service page",
+      "commercial_priority": "P1",
+      "seo_priority": "high",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-CMP-04",
+      "exact_service_name": "Internal controls and governance",
+      "primary_area": "Compliance & Risk",
+      "service_family": "SVC-CMP",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira (governance); Irati (compliance substance and delivery); Maria Cristina (operational coordination where applicable)",
+      "current_route": "/solutions/compliance/internal-controls",
+      "recommended_route": "/solutions/compliance/internal-controls",
+      "page_depth": "deep-service page",
+      "commercial_priority": "P1",
+      "seo_priority": "high",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-CMP-05",
+      "exact_service_name": "Certification and lab readiness",
+      "primary_area": "Compliance & Risk",
+      "service_family": "SVC-CMP",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira (governance); Irati (compliance substance and delivery); Maria Cristina (operational coordination where applicable)",
+      "current_route": "/solutions/compliance/gli-readiness",
+      "recommended_route": "/solutions/compliance/gli-readiness",
+      "page_depth": "deep-service page",
+      "commercial_priority": "P1",
+      "seo_priority": "high",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-CMP-06",
+      "exact_service_name": "Policies and due diligence packs",
+      "primary_area": "Compliance & Risk",
+      "service_family": "SVC-CMP",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira (governance); Irati (compliance substance and delivery); Maria Cristina (operational coordination where applicable)",
+      "current_route": null,
+      "recommended_route": "/solutions/compliance-risk",
+      "page_depth": "family module",
+      "commercial_priority": "P2",
+      "seo_priority": "medium",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-LEG-01",
+      "exact_service_name": "Contractual architecture",
+      "primary_area": "Legal & Structural Architecture",
+      "service_family": "SVC-LEG",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira; Rodrigo Coelho Lopes",
+      "current_route": null,
+      "recommended_route": "/solutions/legal-structural-architecture",
+      "page_depth": "family module",
+      "commercial_priority": "P2",
+      "seo_priority": "medium",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-LEG-02",
+      "exact_service_name": "Multi-jurisdiction legal frameworks",
+      "primary_area": "Legal & Structural Architecture",
+      "service_family": "SVC-LEG",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira; Rodrigo Coelho Lopes",
+      "current_route": null,
+      "recommended_route": "/solutions/legal-structural-architecture",
+      "page_depth": "family module",
+      "commercial_priority": "P2",
+      "seo_priority": "medium",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-LEG-03",
+      "exact_service_name": "Counsel coordination",
+      "primary_area": "Legal & Structural Architecture",
+      "service_family": "SVC-LEG",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira; Rodrigo Coelho Lopes",
+      "current_route": null,
+      "recommended_route": "/solutions/legal-structural-architecture",
+      "page_depth": "family module",
+      "commercial_priority": "P2",
+      "seo_priority": "medium",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-LEG-04",
+      "exact_service_name": "Legal opinions and certifications support",
+      "primary_area": "Legal & Structural Architecture",
+      "service_family": "SVC-LEG",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira; Rodrigo Coelho Lopes",
+      "current_route": null,
+      "recommended_route": "/solutions/legal-structural-architecture",
+      "page_depth": "family module",
+      "commercial_priority": "P2",
+      "seo_priority": "medium",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-CORP-01",
+      "exact_service_name": "Entity and holding architecture",
+      "primary_area": "Corporate Structuring",
+      "service_family": "SVC-CORP",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira (structural strategy); Claudia Nery (corporate and financial architecture); Esther Vendrami (international formation and operational coordination where applicable); Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)",
+      "current_route": null,
+      "recommended_route": "/solutions/corporate-structuring",
+      "page_depth": "family module",
+      "commercial_priority": "P2",
+      "seo_priority": "medium",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-CORP-02",
+      "exact_service_name": "Company formation",
+      "primary_area": "Corporate Structuring",
+      "service_family": "SVC-CORP",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira (structural strategy); Claudia Nery (corporate and financial architecture); Esther Vendrami (international formation and operational coordination where applicable); Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)",
+      "current_route": null,
+      "recommended_route": "/solutions/corporate-structuring",
+      "page_depth": "family module",
+      "commercial_priority": "P2",
+      "seo_priority": "medium",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-CORP-03",
+      "exact_service_name": "Cross-border structuring",
+      "primary_area": "Corporate Structuring",
+      "service_family": "SVC-CORP",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira (structural strategy); Claudia Nery (corporate and financial architecture); Esther Vendrami (international formation and operational coordination where applicable); Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)",
+      "current_route": null,
+      "recommended_route": "/solutions/corporate-structuring",
+      "page_depth": "family module",
+      "commercial_priority": "P2",
+      "seo_priority": "medium",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-CORP-04",
+      "exact_service_name": "Corporate reorganisation",
+      "primary_area": "Corporate Structuring",
+      "service_family": "SVC-CORP",
+      "supporting_areas": [
+        "Remediation & Readiness"
+      ],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira (structural strategy); Claudia Nery (corporate and financial architecture); Esther Vendrami (international formation and operational coordination where applicable); Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)",
+      "current_route": null,
+      "recommended_route": "/solutions/corporate-structuring",
+      "page_depth": "family module",
+      "commercial_priority": "P2",
+      "seo_priority": "medium",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-CORP-05",
+      "exact_service_name": "Banking readiness",
+      "primary_area": "Corporate Structuring",
+      "service_family": "SVC-CORP",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": "Banking & Payments",
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira (structural strategy); Claudia Nery (corporate and financial architecture); Esther Vendrami (international formation and operational coordination where applicable); Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)",
+      "current_route": "/solutions/banking-payments-infrastructure",
+      "recommended_route": "/solutions/banking-payments-infrastructure",
+      "page_depth": "deep-service page",
+      "commercial_priority": "P1",
+      "seo_priority": "high",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-CORP-06",
+      "exact_service_name": "Accounting and finance coordination",
+      "primary_area": "Corporate Structuring",
+      "service_family": "SVC-CORP",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira (structural strategy); Claudia Nery (corporate and financial architecture); Esther Vendrami (international formation and operational coordination where applicable); Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)",
+      "current_route": null,
+      "recommended_route": "/solutions/corporate-structuring",
+      "page_depth": "family module",
+      "commercial_priority": "P2",
+      "seo_priority": "medium",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-CORP-07",
+      "exact_service_name": "Corporate tax planning",
+      "primary_area": "Corporate Structuring",
+      "service_family": "SVC-CORP",
+      "supporting_areas": [
+        "Private Clients"
+      ],
+      "cross_cutting_capability": "Tax",
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira (structural strategy); Claudia Nery (corporate and financial architecture); Esther Vendrami (international formation and operational coordination where applicable); Caroline Giovanetti (Brazil-facing regulatory dependencies where applicable)",
+      "current_route": null,
+      "recommended_route": "/solutions/corporate-structuring",
+      "page_depth": "family module",
+      "commercial_priority": "P2",
+      "seo_priority": "medium",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": true
+    },
+    {
+      "id": "SVC-PC-01",
+      "exact_service_name": "Ownership and UBO architecture",
+      "primary_area": "Private Clients",
+      "service_family": "SVC-PC",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira; Claudia Nery; Rodrigo Coelho Lopes (where legal architecture is required)",
+      "current_route": null,
+      "recommended_route": "/private-clients",
+      "page_depth": "family module",
+      "commercial_priority": "P2",
+      "seo_priority": "medium",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-PC-02",
+      "exact_service_name": "Personal holding and asset organisation",
+      "primary_area": "Private Clients",
+      "service_family": "SVC-PC",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira; Claudia Nery; Rodrigo Coelho Lopes (where legal architecture is required)",
+      "current_route": null,
+      "recommended_route": "/private-clients",
+      "page_depth": "family module",
+      "commercial_priority": "P2",
+      "seo_priority": "medium",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-PC-03",
+      "exact_service_name": "Residency and personal international structuring",
+      "primary_area": "Private Clients",
+      "service_family": "SVC-PC",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira; Claudia Nery; Rodrigo Coelho Lopes (where legal architecture is required)",
+      "current_route": null,
+      "recommended_route": "/private-clients",
+      "page_depth": "family module",
+      "commercial_priority": "P2",
+      "seo_priority": "medium",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-PC-04",
+      "exact_service_name": "Personal banking and individual KYC readiness",
+      "primary_area": "Private Clients",
+      "service_family": "SVC-PC",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": "Banking & Payments",
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira; Claudia Nery; Rodrigo Coelho Lopes (where legal architecture is required)",
+      "current_route": "/solutions/banking-payments-infrastructure",
+      "recommended_route": "/solutions/banking-payments-infrastructure",
+      "page_depth": "deep-service page",
+      "commercial_priority": "P1",
+      "seo_priority": "high",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-PC-05",
+      "exact_service_name": "Personal tax coordination",
+      "primary_area": "Private Clients",
+      "service_family": "SVC-PC",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": "Tax",
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira; Claudia Nery; Rodrigo Coelho Lopes (where legal architecture is required)",
+      "current_route": null,
+      "recommended_route": "/private-clients",
+      "page_depth": "family module",
+      "commercial_priority": "P2",
+      "seo_priority": "medium",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": true
+    },
+    {
+      "id": "SVC-REM-01",
+      "exact_service_name": "Crisis entry and structural assessment",
+      "primary_area": "Remediation & Readiness",
+      "service_family": "SVC-REM",
+      "supporting_areas": [],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira; Maria Cristina; Relevant area specialist according to root cause",
+      "current_route": null,
+      "recommended_route": "/solutions/remediation-readiness",
+      "page_depth": "family module",
+      "commercial_priority": "P2",
+      "seo_priority": "medium",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-REM-02",
+      "exact_service_name": "Licensing delay remediation",
+      "primary_area": "Remediation & Readiness",
+      "service_family": "SVC-REM",
+      "supporting_areas": [
+        "Regulatory Structuring"
+      ],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira; Maria Cristina; Relevant area specialist according to root cause",
+      "current_route": null,
+      "recommended_route": "/solutions/remediation-readiness",
+      "page_depth": "family module",
+      "commercial_priority": "P2",
+      "seo_priority": "medium",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-REM-03",
+      "exact_service_name": "Banking or compliance gap remediation",
+      "primary_area": "Remediation & Readiness",
+      "service_family": "SVC-REM",
+      "supporting_areas": [
+        "Compliance & Risk"
+      ],
+      "cross_cutting_capability": "Banking & Payments",
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira; Maria Cristina; Relevant area specialist according to root cause",
+      "current_route": "/solutions/banking-payments-infrastructure",
+      "recommended_route": "/solutions/banking-payments-infrastructure",
+      "page_depth": "deep-service page",
+      "commercial_priority": "P1",
+      "seo_priority": "high",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-REM-04",
+      "exact_service_name": "Audit and readiness remediation",
+      "primary_area": "Remediation & Readiness",
+      "service_family": "SVC-REM",
+      "supporting_areas": [
+        "Compliance & Risk"
+      ],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira; Maria Cristina; Relevant area specialist according to root cause",
+      "current_route": null,
+      "recommended_route": "/solutions/remediation-readiness",
+      "page_depth": "family module",
+      "commercial_priority": "P2",
+      "seo_priority": "medium",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-REM-05",
+      "exact_service_name": "Financial infrastructure remediation",
+      "primary_area": "Remediation & Readiness",
+      "service_family": "SVC-REM",
+      "supporting_areas": [
+        "International Hub"
+      ],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira; Maria Cristina; Relevant area specialist according to root cause",
+      "current_route": null,
+      "recommended_route": "/solutions/remediation-readiness",
+      "page_depth": "family module",
+      "commercial_priority": "P2",
+      "seo_priority": "medium",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-REM-06",
+      "exact_service_name": "Tax and finance problem remediation",
+      "primary_area": "Remediation & Readiness",
+      "service_family": "SVC-REM",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": "Tax",
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira; Maria Cristina; Relevant area specialist according to root cause",
+      "current_route": null,
+      "recommended_route": "/solutions/remediation-readiness",
+      "page_depth": "family module",
+      "commercial_priority": "P2",
+      "seo_priority": "medium",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": true
+    },
+    {
+      "id": "SVC-HUB-01",
+      "exact_service_name": "Market entry coordination",
+      "primary_area": "International Hub",
+      "service_family": "SVC-HUB",
+      "supporting_areas": [
+        "Regulatory Structuring"
+      ],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira; Milla Ludovico; Esther Vendrami (international providers and corporate dependencies); Claudia Nery (banking and financial infrastructure)",
+      "current_route": null,
+      "recommended_route": "/international-hub",
+      "page_depth": "family module",
+      "commercial_priority": "P2",
+      "seo_priority": "medium",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-HUB-02",
+      "exact_service_name": "Bank and PSP introductions",
+      "primary_area": "International Hub",
+      "service_family": "SVC-HUB",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": "Banking & Payments",
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira; Milla Ludovico; Esther Vendrami (international providers and corporate dependencies); Claudia Nery (banking and financial infrastructure)",
+      "current_route": null,
+      "recommended_route": "/international-hub",
+      "page_depth": "family module",
+      "commercial_priority": "P2",
+      "seo_priority": "medium",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-HUB-03",
+      "exact_service_name": "Payment and PSP architecture",
+      "primary_area": "International Hub",
+      "service_family": "SVC-HUB",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": "Banking & Payments",
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira; Milla Ludovico; Esther Vendrami (international providers and corporate dependencies); Claudia Nery (banking and financial infrastructure)",
+      "current_route": "/solutions/banking-payments-infrastructure",
+      "recommended_route": "/solutions/banking-payments-infrastructure",
+      "page_depth": "deep-service page",
+      "commercial_priority": "P1",
+      "seo_priority": "high",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-HUB-04",
+      "exact_service_name": "CSP, local director and formation partners",
+      "primary_area": "International Hub",
+      "service_family": "SVC-HUB",
+      "supporting_areas": [
+        "Corporate Structuring"
+      ],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira; Milla Ludovico; Esther Vendrami (international providers and corporate dependencies); Claudia Nery (banking and financial infrastructure)",
+      "current_route": null,
+      "recommended_route": "/international-hub",
+      "page_depth": "family module",
+      "commercial_priority": "P2",
+      "seo_priority": "medium",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-HUB-05",
+      "exact_service_name": "Lab, certification and specialist network coordination",
+      "primary_area": "International Hub",
+      "service_family": "SVC-HUB",
+      "supporting_areas": [
+        "Compliance & Risk"
+      ],
+      "cross_cutting_capability": null,
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira; Milla Ludovico; Esther Vendrami (international providers and corporate dependencies); Claudia Nery (banking and financial infrastructure)",
+      "current_route": null,
+      "recommended_route": "/international-hub",
+      "page_depth": "family module",
+      "commercial_priority": "P2",
+      "seo_priority": "medium",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": false
+    },
+    {
+      "id": "SVC-HUB-06",
+      "exact_service_name": "Counsel and tax specialist coordination",
+      "primary_area": "International Hub",
+      "service_family": "SVC-HUB",
+      "supporting_areas": [
+        "Legal & Structural Architecture"
+      ],
+      "cross_cutting_capability": "Tax",
+      "industry_applicability": [
+        "iGaming",
+        "Fintech",
+        "Digital Assets",
+        "High-Risk"
+      ],
+      "jurisdiction_applicability": "multi-jurisdiction where licensing/corporate/compliance paths require it",
+      "responsible_owner": "Rubio Teixeira; Milla Ludovico; Esther Vendrami (international providers and corporate dependencies); Claudia Nery (banking and financial infrastructure)",
+      "current_route": null,
+      "recommended_route": "/international-hub",
+      "page_depth": "family module",
+      "commercial_priority": "P2",
+      "seo_priority": "medium",
+      "evidence_source": "OCTUS_PUBLIC_SERVICE_CATALOG_V1.json",
+      "status": "HUMAN_APPROVED",
+      "tax_explicit": true
+    }
+  ],
+  "banking_payments_rule": "cross_cutting_infrastructure_not_eighth_area",
+  "tax_services": [
+    "SVC-CORP-07",
+    "SVC-PC-05",
+    "SVC-REM-06",
+    "SVC-HUB-06"
+  ],
+  "single_primary_area_enforced": true
+}

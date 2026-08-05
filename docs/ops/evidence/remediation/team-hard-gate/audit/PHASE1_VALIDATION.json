@@ -1,0 +1,234 @@
+{
+  "commit": "f5be0d87aeaa09a17864da9d7563e435b3746fe9",
+  "capture_code_head": "f5be0d87aeaa09a17864da9d7563e435b3746fe9",
+  "team_implementation_commit": "3fb56fcb3cff41d43d3d40b09757a9771e59844b",
+  "deployment_id": "dpl_7TfPfQnGjCHYsGGkExngEMwUJ8CH",
+  "source_url": "https://octus-consulting-bvvs2ue51-axle1.vercel.app/team",
+  "origin": "https://octus-consulting-bvvs2ue51-axle1.vercel.app",
+  "capture_origin": "immutable_vercel_preview",
+  "captured_at": "2026-08-03T18:53:04.134Z",
+  "checks": {
+    "roster_count": "PASS",
+    "band_count": "PASS",
+    "duplicate_name_scan": "PASS",
+    "missing_image_scan": "PASS",
+    "linkedin_link_scan": "PASS",
+    "desktop_overflow": "PASS",
+    "mobile_overflow": "PASS",
+    "accessibility_desktop": "PASS",
+    "accessibility_mobile": "PASS",
+    "prohibited_copy_scan": "PASS",
+    "x_robots_tag_noindex": "PASS"
+  },
+  "results": {
+    "desktop": {
+      "viewport": "1440x1000",
+      "http_status": 200,
+      "x_robots_tag": "noindex",
+      "noindex": true,
+      "roster_count": 10,
+      "roster_names": [
+        "Rubio Teixeira",
+        "Maria Cristina",
+        "Rodrigo Coelho Lopes",
+        "Claudia Nery",
+        "Esther Vendrami",
+        "Caroline Giovanetti",
+        "Larissa Carvalho",
+        "Milla Ludovico",
+        "Bianca Carolina Oliveira Andrade",
+        "Luciana Santos Veloso"
+      ],
+      "roster_exact_10": true,
+      "missing_approved": [],
+      "extras": [],
+      "duplicate_names": [],
+      "bands": [
+        "Leadership",
+        "Core Specialists"
+      ],
+      "band_count": 2,
+      "bands_ok": true,
+      "missing_images": [],
+      "linkedin_links": [
+        {
+          "href": "https://www.linkedin.com/in/rubioteixeiraoctus/",
+          "label": "Rubio Teixeira on LinkedIn"
+        },
+        {
+          "href": "https://www.linkedin.com/in/maria-cristina-060241b6/",
+          "label": "Maria Cristina on LinkedIn"
+        },
+        {
+          "href": "https://www.linkedin.com/in/claudia-nery/",
+          "label": "Claudia Nery on LinkedIn"
+        },
+        {
+          "href": "https://www.linkedin.com/in/esthervendrami/",
+          "label": "Esther Vendrami on LinkedIn"
+        },
+        {
+          "href": "https://www.linkedin.com/in/caroline-cubas-giovanetti-400820144/",
+          "label": "Caroline Giovanetti on LinkedIn"
+        },
+        {
+          "href": "https://www.linkedin.com/in/larissaocarvalho/",
+          "label": "Larissa Carvalho on LinkedIn"
+        },
+        {
+          "href": "https://www.linkedin.com/in/milla-ludovico-6a9945a2/",
+          "label": "Milla Ludovico on LinkedIn"
+        },
+        {
+          "href": "https://www.linkedin.com/in/rh2463365recursoshumanos/",
+          "label": "Bianca Carolina Oliveira Andrade on LinkedIn"
+        }
+      ],
+      "linkedin_count": 8,
+      "overflow": false,
+      "a11y": {
+        "h1_count": 1,
+        "lang": "en",
+        "h1_ok": true,
+        "lang_ok": true
+      },
+      "prohibited_copy_hits": []
+    },
+    "mobile": {
+      "viewport": "390x844",
+      "http_status": 200,
+      "x_robots_tag": "noindex",
+      "noindex": true,
+      "roster_count": 10,
+      "roster_names": [
+        "Rubio Teixeira",
+        "Maria Cristina",
+        "Rodrigo Coelho Lopes",
+        "Claudia Nery",
+        "Esther Vendrami",
+        "Caroline Giovanetti",
+        "Larissa Carvalho",
+        "Milla Ludovico",
+        "Bianca Carolina Oliveira Andrade",
+        "Luciana Santos Veloso"
+      ],
+      "roster_exact_10": true,
+      "missing_approved": [],
+      "extras": [],
+      "duplicate_names": [],
+      "bands": [
+        "Leadership",
+        "Core Specialists"
+      ],
+      "band_count": 2,
+      "bands_ok": true,
+      "missing_images": [],
+      "linkedin_links": [
+        {
+          "href": "https://www.linkedin.com/in/rubioteixeiraoctus/",
+          "label": "Rubio Teixeira on LinkedIn"
+        },
+        {
+          "href": "https://www.linkedin.com/in/maria-cristina-060241b6/",
+          "label": "Maria Cristina on LinkedIn"
+        },
+        {
+          "href": "https://www.linkedin.com/in/claudia-nery/",
+          "label": "Claudia Nery on LinkedIn"
+        },
+        {
+          "href": "https://www.linkedin.com/in/esthervendrami/",
+          "label": "Esther Vendrami on LinkedIn"
+        },
+        {
+          "href": "https://www.linkedin.com/in/caroline-cubas-giovanetti-400820144/",
+          "label": "Caroline Giovanetti on LinkedIn"
+        },
+        {
+          "href": "https://www.linkedin.com/in/larissaocarvalho/",
+          "label": "Larissa Carvalho on LinkedIn"
+        },
+        {
+          "href": "https://www.linkedin.com/in/milla-ludovico-6a9945a2/",
+          "label": "Milla Ludovico on LinkedIn"
+        },
+        {
+          "href": "https://www.linkedin.com/in/rh2463365recursoshumanos/",
+          "label": "Bianca Carolina Oliveira Andrade on LinkedIn"
+        }
+      ],
+      "linkedin_count": 8,
+      "overflow": false,
+      "a11y": {
+        "h1_count": 1,
+        "lang": "en",
+        "h1_ok": true,
+        "lang_ok": true
+      },
+      "prohibited_copy_hits": []
+    }
+  },
+  "portraits": {
+    "bianca.jpg": {
+      "sha256": "f923fd3591aaa68157d28591b88346ace4a515e6a11a6b516aa3c7888d5e9b64",
+      "bytes": 45206
+    },
+    "caroline-giovanetti.jpg": {
+      "sha256": "7e8f71eb5cc1b90eec048d4184b9b1a08f0d4900da84f1022d0394e855899eb9",
+      "bytes": 87124
+    },
+    "claudia-nery.jpg": {
+      "sha256": "344ea1734f68788244c6f71d5fd69972789b202c5f4e02b02af6941c7a1eeaa0",
+      "bytes": 34089
+    },
+    "esther-vendrami.jpg": {
+      "sha256": "10906673c848baed9e2f12c066c53691d2765ff207595cddbdb50c06d0970650",
+      "bytes": 50687
+    },
+    "larissa-carvalho.jpg": {
+      "sha256": "3dadbb3cebebd945700a737ed4eeff244cb102e9aed68564f2c12cfb39131fb7",
+      "bytes": 53037
+    },
+    "luciana-santos-veloso.jpg": {
+      "sha256": "bb6fcc97ea426bebc0856d1e4df49c8aea6d5db36ce35eb7cfab1f6ce3b0749d",
+      "bytes": 639892
+    },
+    "maria-cristina.jpg": {
+      "sha256": "4fe097595ed6753e8df9cc3208fd78993a69a7b645d332af25b449116ebbfe26",
+      "bytes": 50903
+    },
+    "milla-ludovico.jpg": {
+      "sha256": "0d46dff8ede1d046cb053d6be038deba141ef78788c064863794f58002025c4a",
+      "bytes": 52499
+    },
+    "rodrigo-lopes.jpg": {
+      "sha256": "82833b9103a0053dceae774a82da20a6e4c9692ff4bd7fbe9eabf0d3cf8ceaaf",
+      "bytes": 39700
+    },
+    "rubio-teixeira.jpg": {
+      "sha256": "28d61e59f013debc140e6684b3783c4a8bb426a24ddbdf3dbdb45922b9fee200",
+      "bytes": 166318
+    }
+  },
+  "crop_values": {
+    "rubio": "50% 38%",
+    "maria": "56% 30%",
+    "rodrigo": "50% 40%",
+    "esther": "50% 42%",
+    "caroline": "50% 40%",
+    "larissa": "50% 36%",
+    "milla": "50% 40%",
+    "bianca": "50% 40%",
+    "claudia": "49% 40%",
+    "luciana": "50% 38%",
+    "daniel": "50% 38%"
+  },
+  "overall": "PASS",
+  "immutable_preview_url": "https://octus-consulting-bvvs2ue51-axle1.vercel.app",
+  "invalid_sha_removed_count": 17,
+  "note": "evidence_repair_commit=content tip with screenshots; evidence_content_head=previous tip before this scrub commit",
+  "evidence_repair_commit": "3c462b9ef3b367520b0f3ea8f8fefc7bbc3aa44e",
+  "invalid_sha_note": "scrubbed orphaned amend tip previously embedded as capture commit",
+  "evidence_content_head": "d9c58c56fa6a18d05907972916db54adb2cc6965",
+  "accepted_phase1_head": "0654dc1247967bcc36d760f47ae0654ff3814aa3"
+}

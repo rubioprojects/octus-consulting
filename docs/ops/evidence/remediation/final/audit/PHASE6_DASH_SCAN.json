@@ -1,0 +1,650 @@
+{
+  "generated_at": "2026-08-04T04:01:03.198Z",
+  "routes_scanned": 71,
+  "em_dash_total": 0,
+  "en_dash_total": 0,
+  "dash_total": 0,
+  "allowlists": "none",
+  "status": "PASS",
+  "rows": [
+    {
+      "route": "/",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/team",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/regulatory-structuring",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/banking-payments-infrastructure",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/compliance/aml-kyc",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/about",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/how-we-engage",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/contact",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/diagnostic",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/partners",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/careers",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/markets",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/jurisdictions",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/brazil",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/intelligence",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/why-licensing-fails-post-approval",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/privacy",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/terms",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/cookies",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/compliance-channel",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/this-page-does-not-exist-phase6",
+      "http_status": 404,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/corporate-structuring",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/compliance-risk",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/remediation-readiness",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/solutions/legal-structural-architecture",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/private-clients",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/international-hub",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/markets/fintech",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/markets/igaming",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/markets/crypto",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/markets/high-risk",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/jurisdictions/malta",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/jurisdictions/isle-of-man",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/jurisdictions/curacao",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/jurisdictions/anjouan",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/jurisdictions/portugal",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/jurisdictions/uae",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/stf-suspends-blocking-of-bolsa-familia-bpc-betting-accounts",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/senate-approves-plp-128-2025-tightens-fiscal-policy-bets-fintechs",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/betting-taxation-risks-senate-legal-certainty-regulated-market",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/new-spa-mf-normative-instruction-fixed-odds-betting",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/centralised-self-exclusion-platform-key-changes-operators-bettors",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/stf-suspends-municipal-lottery-operations-nationwide",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/coaf-crisis-aml-obligations-online-gaming-operators",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/annual-recertification-betting-platforms-spa-mf-new-guidelines",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/risk-management-software-igaming-regulatory-compliance",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/customised-studies-international-expansion-brazil",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/rio-de-janeiro-regulates-vlts-lottery-equipment-decree",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/games-not-classified-as-fixed-odds-betting-brazil",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/bet-br-domain-extension-to-states-brazil",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/intellectual-property-igaming-trademark-registration-brazil",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/national-betting-system-sinapo-brazil",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/why-your-international-licence-may-not-protect-you-in-brazil",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/regulation-and-technology-legal-follows-igaming-evolution",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/iof-update-financial-market-brazil-2025",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/trump-tax-reform-betting-operators-lessons-for-brazil",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/regulatory-agenda-2025-2026-secretariat-prizes-betting",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/spa-ordinance-banks-refuse-illegal-betting-operators",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/youtube-tightens-rules-illegal-betting-sites-impact-influencers",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/brazil-b2b-registration-requirement-betting-igaming",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/quinel-credentialed-certifying-entity-brazil-ministry-finance",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/senate-commission-approves-casino-bingo-gaming-bill-brazil",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/spa-mf-position-brazilian-partner-20-percent-share-capital",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/new-rules-sports-betting-online-games-brazil-portaria-827-2024",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/new-regulation-betting-online-game-systems-portaria-722-2024",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/banking-for-high-risk-operations",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/mica-what-operators-need-to-do",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/curacao-reform-what-changes",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    },
+    {
+      "route": "/insights/compliance-as-a-service-vs-internal-teams",
+      "http_status": 200,
+      "text_source": "main",
+      "em_dash": 0,
+      "en_dash": 0,
+      "total": 0,
+      "status": "PASS"
+    }
+  ]
+}

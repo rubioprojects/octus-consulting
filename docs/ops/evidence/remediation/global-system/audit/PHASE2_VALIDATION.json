@@ -1,0 +1,386 @@
+{
+  "generated_at": "2026-08-03T19:22:50.827Z",
+  "starting_head": "0654dc1247967bcc36d760f47ae0654ff3814aa3",
+  "phase2_impl_commit": "ef0d9465f07993c811144291d0da0371d12e7229",
+  "immutable_preview_url": "https://octus-consulting-kovk3ad1l-axle1.vercel.app",
+  "deployment_id": "dpl_4pDMJNttdiwdLJmkyBbSffxBqDWK",
+  "checks": {
+    "logo_assets": "PASS",
+    "favicon": "PASS",
+    "header_height_desktop": "PASS",
+    "header_logo": "PASS",
+    "footer_logo": "PASS",
+    "footer_padT": "PASS",
+    "whatsapp_bottom_24": "PASS",
+    "services_dropdown": "PASS",
+    "mobile_menu": "PASS",
+    "focus_basics": "PASS",
+    "desktop_overflow_home": "PASS",
+    "mobile_overflow_home": "PASS",
+    "x_robots_noindex": "PASS",
+    "team_roster_desktop": "PASS",
+    "team_roster_mobile": "PASS",
+    "team_overflow_desktop": "PASS",
+    "team_overflow_mobile": "PASS",
+    "portrait_hashes": "PASS",
+    "crawl_all_200": "PASS",
+    "a11y_team_h1": "PASS",
+    "prohibited_files_unchanged": "PASS"
+  },
+  "results": {
+    "desktop": {
+      "headerH": 84,
+      "logo": {
+        "h": 36,
+        "w": 171.4,
+        "src": "/brand/lockup/octus-lockup-nav-on-dark.svg"
+      },
+      "footerPadT": "80px",
+      "footerLogo": {
+        "h": 48,
+        "w": 182.6,
+        "src": "/brand/lockup/octus-lockup-horizontal-primary-on-dark.svg"
+      },
+      "wa": {
+        "bottom": "24px",
+        "right": "24px",
+        "position": "fixed",
+        "h": 48,
+        "w": 198.9
+      },
+      "h1": {
+        "fontSize": "53.6px",
+        "weight": "600",
+        "lh": "62.176px",
+        "family": "Unigeo64, __unigeo_5d9596, __unigeo_Fallback_5d9596, system-ui, sans-serif"
+      },
+      "body": {
+        "fontSize": "16px",
+        "lh": "26.4px",
+        "family": "__Inter_f367f3, __Inter_Fallback_f367f3, Inter, sans-serif",
+        "color": "rgb(11, 18, 32)"
+      },
+      "btn": {
+        "h": 20.6,
+        "fontSize": "12.5px",
+        "bg": "rgba(0, 0, 0, 0)",
+        "radius": "0px"
+      },
+      "containerMax": "1280px",
+      "containerPad": "32px",
+      "tokens": {
+        "primary": "215 100% 38%",
+        "navy": "220 48% 8%",
+        "red": "0 99% 37%",
+        "bg": "50 10% 98%",
+        "elevated": "220 28% 96%",
+        "textPrimary": "#0b1220",
+        "textSecondary": "#3d4654"
+      },
+      "overflow": false
+    },
+    "about": {
+      "headerH": 84,
+      "logo": null,
+      "footerPadT": "80px",
+      "footerLogo": {
+        "h": 48,
+        "w": 182.6,
+        "src": "/brand/lockup/octus-lockup-horizontal-primary-on-dark.svg"
+      },
+      "wa": {
+        "bottom": "24px",
+        "right": "24px",
+        "position": "fixed",
+        "h": 48,
+        "w": 198.9
+      },
+      "h1": {
+        "fontSize": "53.6px",
+        "weight": "600",
+        "lh": "60.032px",
+        "family": "Unigeo64, __unigeo_5d9596, __unigeo_Fallback_5d9596, system-ui, sans-serif"
+      },
+      "body": {
+        "fontSize": "16px",
+        "lh": "26.4px",
+        "family": "__Inter_f367f3, __Inter_Fallback_f367f3, Inter, sans-serif",
+        "color": "rgb(11, 18, 32)"
+      },
+      "btn": {
+        "h": 20.6,
+        "fontSize": "12.5px",
+        "bg": "rgba(0, 0, 0, 0)",
+        "radius": "0px"
+      },
+      "containerMax": "1280px",
+      "containerPad": "32px",
+      "tokens": {
+        "primary": "215 100% 38%",
+        "navy": "220 48% 8%",
+        "red": "0 99% 37%",
+        "bg": "50 10% 98%",
+        "elevated": "220 28% 96%",
+        "textPrimary": "#0b1220",
+        "textSecondary": "#3d4654"
+      },
+      "overflow": false
+    },
+    "waWithCookie": {
+      "bottom": "24px",
+      "right": "24px",
+      "cookieVisible": true,
+      "bodyClass": "cookie-banner-visible"
+    },
+    "teamDesk": {
+      "roster_names": [
+        "Rubio Teixeira",
+        "Maria Cristina",
+        "Rodrigo Coelho Lopes",
+        "Claudia Nery",
+        "Esther Vendrami",
+        "Caroline Giovanetti",
+        "Larissa Carvalho",
+        "Milla Ludovico",
+        "Bianca Carolina Oliveira Andrade",
+        "Luciana Santos Veloso"
+      ],
+      "roster_count": 10,
+      "roster_exact": true,
+      "bands": [
+        "Leadership",
+        "Core Specialists"
+      ],
+      "band_count": 2,
+      "bands_ok": true,
+      "img_count": 10,
+      "missing_images": [],
+      "titles": [
+        "Founder & CEO",
+        "Operations Coordination",
+        "Strategic legal architecture",
+        "Financial continuity",
+        "International regulatory",
+        "Brazil regulatory",
+        "Regulatory & compliance",
+        "Commercial intake",
+        "People & delivery",
+        "Operations"
+      ],
+      "overflow": false,
+      "a11y": {
+        "h1_count": 1,
+        "lang": "en"
+      }
+    },
+    "teamMob": {
+      "roster_names": [
+        "Rubio Teixeira",
+        "Maria Cristina",
+        "Rodrigo Coelho Lopes",
+        "Claudia Nery",
+        "Esther Vendrami",
+        "Caroline Giovanetti",
+        "Larissa Carvalho",
+        "Milla Ludovico",
+        "Bianca Carolina Oliveira Andrade",
+        "Luciana Santos Veloso"
+      ],
+      "roster_count": 10,
+      "roster_exact": true,
+      "bands": [
+        "Leadership",
+        "Core Specialists"
+      ],
+      "band_count": 2,
+      "bands_ok": true,
+      "img_count": 10,
+      "missing_images": [],
+      "titles": [
+        "Founder & CEO",
+        "Operations Coordination",
+        "Strategic legal architecture",
+        "Financial continuity",
+        "International regulatory",
+        "Brazil regulatory",
+        "Regulatory & compliance",
+        "Commercial intake",
+        "People & delivery",
+        "Operations"
+      ],
+      "overflow": false,
+      "a11y": {
+        "h1_count": 1,
+        "lang": "en"
+      }
+    },
+    "crawl": {
+      "/": {
+        "status": 200,
+        "xRobots": "noindex"
+      },
+      "/team": {
+        "status": 200,
+        "xRobots": "noindex"
+      },
+      "/solutions": {
+        "status": 200,
+        "xRobots": "noindex"
+      },
+      "/solutions/regulatory-structuring": {
+        "status": 200,
+        "xRobots": "noindex"
+      },
+      "/solutions/regulatory/fintech-licensing": {
+        "status": 200,
+        "xRobots": "noindex"
+      },
+      "/brazil": {
+        "status": 200,
+        "xRobots": "noindex"
+      },
+      "/about": {
+        "status": 200,
+        "xRobots": "noindex"
+      },
+      "/contact": {
+        "status": 200,
+        "xRobots": "noindex"
+      },
+      "/how-we-engage": {
+        "status": 200,
+        "xRobots": "noindex"
+      },
+      "/intelligence": {
+        "status": 200,
+        "xRobots": "noindex"
+      },
+      "/insights": {
+        "status": 200,
+        "xRobots": "noindex"
+      },
+      "/insights/stf-suspends-blocking-of-bolsa-familia-bpc-betting-accounts": {
+        "status": 200,
+        "xRobots": "noindex"
+      },
+      "/markets": {
+        "status": 200,
+        "xRobots": "noindex"
+      },
+      "/markets/crypto": {
+        "status": 200,
+        "xRobots": "noindex"
+      },
+      "/jurisdictions": {
+        "status": 200,
+        "xRobots": "noindex"
+      },
+      "/jurisdictions/malta": {
+        "status": 200,
+        "xRobots": "noindex"
+      },
+      "/careers": {
+        "status": 200,
+        "xRobots": "noindex"
+      },
+      "/privacy": {
+        "status": 200,
+        "xRobots": "noindex"
+      }
+    },
+    "logoAudit": {
+      "public/brand/lockup/octus-lockup-nav-on-dark.svg": "PASS",
+      "public/brand/lockup/octus-lockup-nav-on-light.svg": "PASS",
+      "public/brand/lockup/octus-lockup-horizontal-primary-on-dark.svg": "PASS",
+      "public/brand/favicons/octus-favicon-blue.svg": "PASS"
+    },
+    "portraits": {
+      "bianca.jpg": {
+        "expected": "f923fd3591aaa68157d28591b88346ace4a515e6a11a6b516aa3c7888d5e9b64",
+        "actual": "f923fd3591aaa68157d28591b88346ace4a515e6a11a6b516aa3c7888d5e9b64",
+        "status": "PASS"
+      },
+      "caroline-giovanetti.jpg": {
+        "expected": "7e8f71eb5cc1b90eec048d4184b9b1a08f0d4900da84f1022d0394e855899eb9",
+        "actual": "7e8f71eb5cc1b90eec048d4184b9b1a08f0d4900da84f1022d0394e855899eb9",
+        "status": "PASS"
+      },
+      "claudia-nery.jpg": {
+        "expected": "344ea1734f68788244c6f71d5fd69972789b202c5f4e02b02af6941c7a1eeaa0",
+        "actual": "344ea1734f68788244c6f71d5fd69972789b202c5f4e02b02af6941c7a1eeaa0",
+        "status": "PASS"
+      },
+      "esther-vendrami.jpg": {
+        "expected": "10906673c848baed9e2f12c066c53691d2765ff207595cddbdb50c06d0970650",
+        "actual": "10906673c848baed9e2f12c066c53691d2765ff207595cddbdb50c06d0970650",
+        "status": "PASS"
+      },
+      "larissa-carvalho.jpg": {
+        "expected": "3dadbb3cebebd945700a737ed4eeff244cb102e9aed68564f2c12cfb39131fb7",
+        "actual": "3dadbb3cebebd945700a737ed4eeff244cb102e9aed68564f2c12cfb39131fb7",
+        "status": "PASS"
+      },
+      "luciana-santos-veloso.jpg": {
+        "expected": "bb6fcc97ea426bebc0856d1e4df49c8aea6d5db36ce35eb7cfab1f6ce3b0749d",
+        "actual": "bb6fcc97ea426bebc0856d1e4df49c8aea6d5db36ce35eb7cfab1f6ce3b0749d",
+        "status": "PASS"
+      },
+      "maria-cristina.jpg": {
+        "expected": "4fe097595ed6753e8df9cc3208fd78993a69a7b645d332af25b449116ebbfe26",
+        "actual": "4fe097595ed6753e8df9cc3208fd78993a69a7b645d332af25b449116ebbfe26",
+        "status": "PASS"
+      },
+      "milla-ludovico.jpg": {
+        "expected": "0d46dff8ede1d046cb053d6be038deba141ef78788c064863794f58002025c4a",
+        "actual": "0d46dff8ede1d046cb053d6be038deba141ef78788c064863794f58002025c4a",
+        "status": "PASS"
+      },
+      "rodrigo-lopes.jpg": {
+        "expected": "82833b9103a0053dceae774a82da20a6e4c9692ff4bd7fbe9eabf0d3cf8ceaaf",
+        "actual": "82833b9103a0053dceae774a82da20a6e4c9692ff4bd7fbe9eabf0d3cf8ceaaf",
+        "status": "PASS"
+      },
+      "rubio-teixeira.jpg": {
+        "expected": "28d61e59f013debc140e6684b3783c4a8bb426a24ddbdf3dbdb45922b9fee200",
+        "actual": "28d61e59f013debc140e6684b3783c4a8bb426a24ddbdf3dbdb45922b9fee200",
+        "status": "PASS"
+      }
+    },
+    "focusStrict": {
+      "ok": true,
+      "outline": "rgb(0, 95, 204) auto 1px",
+      "tag": "A",
+      "cls": "mb-1 block rounded-sm px-3 py-2 font-sans text-sm font-medium text-foreground no-underline hover:bg-secondary"
+    },
+    "servicesDropdownOk": true,
+    "mobileMenuOk": true,
+    "diffNames": [
+      "app/globals.css",
+      "components/CookieBanner.tsx",
+      "docs/ops/evidence/remediation/DECISION_REGISTER.md",
+      "docs/ops/evidence/remediation/REMEDIATION_CONTROL_PLAN.md",
+      "docs/ops/evidence/remediation/global-system/PHASE2_IMPACT_MATRIX.md",
+      "docs/ops/evidence/remediation/global-system/audit/GLOBAL_COMPUTED_COMPARE.json",
+      "docs/ops/evidence/remediation/global-system/audit/GLOBAL_COMPUTED_DIFFS.json",
+      "docs/ops/evidence/remediation/global-system/audit/GLOBAL_ROUTE_SHELL_PROBE.json",
+      "docs/ops/evidence/remediation/global-system/baseline/footer-desktop-baseline.png",
+      "docs/ops/evidence/remediation/global-system/baseline/header-dark-home-baseline.png",
+      "docs/ops/evidence/remediation/global-system/baseline/header-light-about-baseline.png",
+      "docs/ops/evidence/remediation/global-system/baseline/mobile-menu-closed-baseline.png",
+      "docs/ops/evidence/remediation/global-system/baseline/mobile-menu-open-baseline.png",
+      "docs/ops/evidence/remediation/global-system/before/footer-desktop-before.png",
+      "docs/ops/evidence/remediation/global-system/before/header-dark-home-before.png",
+      "docs/ops/evidence/remediation/global-system/before/header-light-about-before.png",
+      "docs/ops/evidence/remediation/global-system/before/mobile-menu-closed-before.png",
+      "docs/ops/evidence/remediation/global-system/before/mobile-menu-open-before.png",
+      "docs/ops/evidence/remediation/global-system/before/services-dropdown-before.png",
+      "docs/ops/evidence/remediation/team-hard-gate/PHASE1_TEAM_HARD_GATE_REPORT.md",
+      "docs/ops/evidence/remediation/team-hard-gate/PROVENANCE_BIND.json",
+      "docs/ops/evidence/remediation/team-hard-gate/SCREENSHOT_MANIFEST.json",
+      "docs/ops/evidence/remediation/team-hard-gate/audit/PHASE1_VALIDATION.json"
+    ],
+    "prohibitedHits": []
+  },
+  "overall": "PASS",
+  "failed_checks": []
+}

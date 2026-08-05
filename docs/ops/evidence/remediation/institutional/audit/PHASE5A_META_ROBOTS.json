@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-08-04T01:35:30.096Z",
+  "overall": "PASS",
+  "routes": [
+    {
+      "route": "/about",
+      "status": 200,
+      "meta_robots": "",
+      "result": "PASS"
+    },
+    {
+      "route": "/how-we-engage",
+      "status": 200,
+      "meta_robots": "",
+      "result": "PASS"
+    },
+    {
+      "route": "/contact",
+      "status": 200,
+      "meta_robots": "",
+      "result": "PASS"
+    },
+    {
+      "route": "/diagnostic",
+      "status": 200,
+      "meta_robots": "",
+      "result": "PASS"
+    },
+    {
+      "route": "/partners",
+      "status": 200,
+      "meta_robots": "",
+      "result": "PASS"
+    },
+    {
+      "route": "/careers",
+      "status": 200,
+      "meta_robots": "",
+      "result": "PASS"
+    }
+  ]
+}

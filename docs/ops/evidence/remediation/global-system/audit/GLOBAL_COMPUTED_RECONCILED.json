@@ -1,0 +1,106 @@
+{
+  "desktop": {
+    "headerH": 84,
+    "logo": {
+      "h": 36,
+      "w": 171.4,
+      "src": "/brand/lockup/octus-lockup-nav-on-dark.svg"
+    },
+    "footerPadT": "80px",
+    "footerLogo": {
+      "h": 48,
+      "w": 182.6,
+      "src": "/brand/lockup/octus-lockup-horizontal-primary-on-dark.svg"
+    },
+    "wa": {
+      "bottom": "24px",
+      "right": "24px",
+      "position": "fixed",
+      "h": 48,
+      "w": 198.9
+    },
+    "h1": {
+      "fontSize": "53.6px",
+      "weight": "600",
+      "lh": "62.176px",
+      "family": "Unigeo64, __unigeo_5d9596, __unigeo_Fallback_5d9596, system-ui, sans-serif"
+    },
+    "body": {
+      "fontSize": "16px",
+      "lh": "26.4px",
+      "family": "__Inter_f367f3, __Inter_Fallback_f367f3, Inter, sans-serif",
+      "color": "rgb(11, 18, 32)"
+    },
+    "btn": {
+      "h": 20.6,
+      "fontSize": "12.5px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "radius": "0px"
+    },
+    "containerMax": "1280px",
+    "containerPad": "32px",
+    "tokens": {
+      "primary": "215 100% 38%",
+      "navy": "220 48% 8%",
+      "red": "0 99% 37%",
+      "bg": "50 10% 98%",
+      "elevated": "220 28% 96%",
+      "textPrimary": "#0b1220",
+      "textSecondary": "#3d4654"
+    },
+    "overflow": false
+  },
+  "about": {
+    "headerH": 84,
+    "logo": null,
+    "footerPadT": "80px",
+    "footerLogo": {
+      "h": 48,
+      "w": 182.6,
+      "src": "/brand/lockup/octus-lockup-horizontal-primary-on-dark.svg"
+    },
+    "wa": {
+      "bottom": "24px",
+      "right": "24px",
+      "position": "fixed",
+      "h": 48,
+      "w": 198.9
+    },
+    "h1": {
+      "fontSize": "53.6px",
+      "weight": "600",
+      "lh": "60.032px",
+      "family": "Unigeo64, __unigeo_5d9596, __unigeo_Fallback_5d9596, system-ui, sans-serif"
+    },
+    "body": {
+      "fontSize": "16px",
+      "lh": "26.4px",
+      "family": "__Inter_f367f3, __Inter_Fallback_f367f3, Inter, sans-serif",
+      "color": "rgb(11, 18, 32)"
+    },
+    "btn": {
+      "h": 20.6,
+      "fontSize": "12.5px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "radius": "0px"
+    },
+    "containerMax": "1280px",
+    "containerPad": "32px",
+    "tokens": {
+      "primary": "215 100% 38%",
+      "navy": "220 48% 8%",
+      "red": "0 99% 37%",
+      "bg": "50 10% 98%",
+      "elevated": "220 28% 96%",
+      "textPrimary": "#0b1220",
+      "textSecondary": "#3d4654"
+    },
+    "overflow": false
+  },
+  "waWithCookie": {
+    "bottom": "24px",
+    "right": "24px",
+    "cookieVisible": true,
+    "bodyClass": "cookie-banner-visible"
+  }
+}

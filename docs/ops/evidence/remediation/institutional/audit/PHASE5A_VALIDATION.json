@@ -1,0 +1,90 @@
+{
+  "generated_at": "2026-08-04T00:41:04.863Z",
+  "phase": "5A",
+  "immutable_preview_url": "https://octus-consulting-mfiprgbua-axle1.vercel.app",
+  "deployment_id": "dpl_EZQJJFTUEXBM1xBtT5mQUuasBNyu",
+  "deployed_git_sha": "951513c16c45eae06b269b15f9ae77c50c625f0f",
+  "application_code_sha": "951513c16c45eae06b269b15f9ae77c50c625f0f",
+  "axe_core_version": "4.12.1",
+  "routes": [
+    "/about",
+    "/how-we-engage",
+    "/contact",
+    "/diagnostic",
+    "/partners",
+    "/careers"
+  ],
+  "viewports": [
+    "desktop",
+    "mobile"
+  ],
+  "violation_totals": {
+    "critical": 0,
+    "serious": 0,
+    "moderate": 12,
+    "incomplete": 18,
+    "minor": 0
+  },
+  "crawl": {
+    "/about": 200,
+    "/how-we-engage": 200,
+    "/contact": 200,
+    "/diagnostic": 200,
+    "/partners": 200,
+    "/careers": 200
+  },
+  "checks": {
+    "build": "PASS",
+    "typecheck": "PASS",
+    "crawl_200": "PASS",
+    "canonicals": "PASS",
+    "metadata": "PASS",
+    "noindex_absent": "PASS",
+    "prohibited_copy": "PASS",
+    "overflow": "PASS",
+    "axe_critical_serious": "PASS",
+    "frozen_files": "PASS",
+    "home_residual_exactly_one": "PASS",
+    "home_regression_surface": "PASS",
+    "team_regression": "PASS",
+    "services_spotcheck": "PASS",
+    "screenshot_metadata": "PASS",
+    "duplicate_commercial_labels": "PASS"
+  },
+  "failed_checks": [],
+  "overall": "PASS",
+  "bound_residuals": {
+    "HOME_PUNCTUATION_RESIDUAL_001": {
+      "count": 1,
+      "status": "OPEN_EXACTLY_ONE"
+    },
+    "GLOBAL_A11Y_REGION_RESIDUAL_001": {
+      "status": "OPEN_BOUND",
+      "note": "Axe moderate region on .wa-float recorded; not treated as Phase 5A failure"
+    },
+    "AXE_INCOMPLETE_REVIEW_001": {
+      "status": "OPEN_BOUND",
+      "incomplete_total": 18
+    }
+  },
+  "screenshot_count": 144,
+  "missing_metadata": 0,
+  "frozen_diff": [
+    "app/about/page.tsx",
+    "app/careers/page.tsx",
+    "app/contact/layout.tsx",
+    "app/contact/page.tsx",
+    "app/diagnostic/page.tsx",
+    "app/how-we-engage/page.tsx",
+    "app/partners/page.tsx",
+    "docs/ops/evidence/remediation/DECISION_REGISTER.md",
+    "docs/ops/evidence/remediation/REMEDIATION_CONTROL_PLAN.md",
+    "docs/ops/evidence/remediation/institutional/PHASE5A_FACT_AND_CLAIM_REGISTER.md",
+    "docs/ops/evidence/remediation/institutional/PHASE5A_IMPACT_MATRIX.md",
+    "docs/ops/evidence/remediation/institutional/PHASE5A_ROUTE_INVENTORY.md"
+  ],
+  "frozen_hits": [],
+  "prohibited_hits": [],
+  "real_form_submissions": 0,
+  "diagnostic_data_flow": "whatsapp_and_mailto_only_no_html_form_post"
+}

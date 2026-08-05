@@ -1,0 +1,64 @@
+{
+  "phase": 4,
+  "closeout": true,
+  "closeout_starting_head": "d618067150d2720e7c85ce387c1a02ba3168ae21",
+  "phase4_impl_snapshot": "8228e342cfc9d3830b4f4a414f2a93ae208e5be1",
+  "closeout_application_commit": "e72d3902670de83573bc32674c3cd02e036b787e",
+  "closeout_deploy_commit": "ee8f1d0f7d442482eee99cef927a3389892617b4",
+  "baseline_url": "https://octus-consulting-9q798dbg2-axle1.vercel.app",
+  "baseline_deployment_id": "dpl_437tawkoMDv7sqxW6NzPzTegj1Lq",
+  "phase4_before_url": "https://octus-consulting-6dof5kn4k-axle1.vercel.app",
+  "phase4_before_commit": "8228e342cfc9d3830b4f4a414f2a93ae208e5be1",
+  "phase4_before_deployment_id": "dpl_Ewm6SFyGB5wkkDefAAMnBs27bMfZ",
+  "phase4_closeout_url": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+  "phase4_closeout_deployment_id": "dpl_4mRS5vF2QSS34aJkip3Zn56cUUa5",
+  "accepted_phase3_head": "620b725d613fba4ff4a062477c1110e453a4eb63",
+  "accepted_homepage_application_commit": "11c0f9da74408f270a22c23b5b2903ce45f5e33c",
+  "terminal": "OCTUS_SERVICES_CLOSEOUT_READY_FOR_SOL_AUDIT",
+  "screenshot_count": 272,
+  "screenshot_counts": {
+    "baseline": 56,
+    "before": 56,
+    "reconciled": 160
+  },
+  "metadata_missing_count_all_classifications": 5,
+  "metadata_missing_by_classification": {
+    "baseline": 5,
+    "before": 0,
+    "reconciled": 0
+  },
+  "validation_overall": "PASS",
+  "residual_open": [
+    "HOME_PUNCTUATION_RESIDUAL_001"
+  ],
+  "note": "Final visual compare uses immutable closeout preview eyjy9sxq7 — not Phase 3 7yzcy4yif.",
+  "evidence_commit": "3215152b63d73d7e618d2ad83865d83e30b7c0fc",
+  "final_evidence_head": "3215152b63d73d7e618d2ad83865d83e30b7c0fc",
+  "final_head": "40f0a21faa4a61f624bf0c75fac924722db2703e",
+  "validation_closeout": {
+    "terminal": "OCTUS_SERVICES_VALIDATION_CLOSEOUT_READY_FOR_SOL_AUDIT",
+    "immutable_preview_tested": "https://octus-consulting-eyjy9sxq7-axle1.vercel.app",
+    "deployed_application_sha": "ee8f1d0f7d442482eee99cef927a3389892617b4",
+    "application_code_sha": "e72d3902670de83573bc32674c3cd02e036b787e",
+    "axe_core_version": "4.12.1",
+    "screenshot_count_unchanged": 272,
+    "screenshot_manifest_metadata_missing": 0,
+    "historical_baseline_canonical_gaps": 5,
+    "reconciled_metadata_gaps": 0,
+    "a11y_residual": "PHASE4_A11Y_CONTRAST_LINK_RESIDUAL_001",
+    "catalogue_status": "PASS"
+  },
+  "a11y_remediation": {
+    "immutable_preview_url": "https://octus-consulting-beqxfdqrk-axle1.vercel.app",
+    "deployment_id": "dpl_Fx8deWwccpuH6U3WhWzpUWr5g5kT",
+    "deployed_git_sha": "3345f8b91923a66c0eb671786c3296ed9e9fc89a",
+    "application_code_sha": "eac4e514ea751314774f3e69f71ebd52245d2534",
+    "recaptured_at": "2026-08-04T00:05:05.495Z",
+    "affected_routes": [
+      "/solutions",
+      "/solutions/regulatory/fintech-licensing",
+      "/solutions/corporate/holding-design",
+      "/solutions/corporate/offshore-structuring"
+    ]
+  }
+}

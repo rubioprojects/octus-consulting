@@ -1,0 +1,13 @@
+Running full Phase 4 validation closeout against Phase 5A preview...
+Reusing existing PHASE4_VALIDATION_CLOSEOUT.json (PHASE5A_REUSE_SERVICES=1)
+{
+  "overall": "PASS",
+  "failed": [],
+  "external": 13,
+  "whatsapp": 13,
+  "team": "PASS",
+  "services": "PASS",
+  "global": "PASS",
+  "cookie": "PASS",
+  "mobile_nav": "PASS"
+}

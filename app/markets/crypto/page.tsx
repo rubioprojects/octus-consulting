@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
+import { pageSocialMeta } from "../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "Crypto & Digital Assets",
   description:
     "Crypto operators build technology. Regulators see financial institutions. Octus structures the corporate, compliance and licensing architecture that bridges that gap.",
-};
+  path: "/markets/crypto",
+});
 
 export default function MarketsCryptoPage() {
   return (
@@ -13,8 +15,8 @@ export default function MarketsCryptoPage() {
 
       <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <span className="label">Markets · Crypto & Digital Assets</span>
-          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
+          <span className="mb-5 block text-xs font-medium uppercase tracking-[0.12em] text-white/65">Markets · Crypto & Digital Assets</span>
+          <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline">
             You built a technology company.
             <br />
             <span style={{ color: "var(--white-40)" }}>
@@ -100,10 +102,10 @@ export default function MarketsCryptoPage() {
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {[
               "Corporate and operational architecture aligned with regulatory exposure across jurisdictions.",
-              "Regulatory positioning — what requires licensing, what requires registration, what requires neither. Per jurisdiction.",
-              "Banking and payment continuity — not just onboarding, but resilience. Multiple rails, multiple institutions, structured redundancy.",
+              "Regulatory positioning: what requires licensing, what requires registration, what requires neither. Per jurisdiction.",
+              "Banking and payment continuity beyond onboarding, focused on resilience. Multiple rails, multiple institutions, structured redundancy.",
               "Compliance systems adapted to transaction-heavy, cross-border environments.",
-              "Separation between revenue, custody and risk exposure — the structural logic that banks and regulators evaluate.",
+              "Separation between revenue, custody and risk exposure: the structural logic that banks and regulators evaluate.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
@@ -120,13 +122,16 @@ export default function MarketsCryptoPage() {
           <h2 className="heading-section" style={{ marginBottom: "24px" }}>
             Fragmented regulation. Structural consequences.
           </h2>
+          <p className="body-sm" style={{ marginBottom: "12px", color: "var(--muted-foreground)" }}>
+            Landscape notes as of 2026-08-03. Status changes by Member State and competent authority - verify before relying on any date.
+          </p>
           <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
             {[
-              "EU (MiCA) — CASP authorisation mandatory. Grandfathering ends July 2026. Passporting across 27 member states. Capital requirements €50k–€150k.",
-              "UK — FCA crypto framework in development. New rules expected 2026.",
-              "UAE — VASP registration required. Evolving corporate structuring requirements.",
-              "Brazil — BACEN oversight. Integration with broader fintech regulation.",
-              "Offshore — Accessible but under increasing AML scrutiny. Not sustainable as sole regulatory base.",
+              "EU (MiCA). As of 1 July 2026, the MiCA transitional period ended EU-wide (ESMA statement, April 2026). Providing crypto-asset services to EU clients without MiCA authorisation is treated as a breach of EU law. Authorised CASPs may passport services under MiCA; capital and organisational requirements depend on the service class under Regulation (EU) 2023/1114.",
+              "UK. FCA continues to develop the cryptoasset regulatory framework. Treat UK rules as jurisdiction-specific and confirm current FCA publications before planning.",
+              "UAE. VASP and free-zone frameworks continue to evolve. Substance, licensing class and emirate or free-zone authority must be mapped carefully.",
+              "Brazil. Crypto activity sits under evolving BACEN and capital-markets oversight and often intersects with broader fintech regulation.",
+              "Offshore-only bases. Increasingly scrutinised under AML expectations and rarely sufficient as a sole regulatory posture for institutional banking.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
@@ -150,7 +155,7 @@ export default function MarketsCryptoPage() {
               "Token issuers navigating white paper requirements and issuer obligations.",
               "Payment infrastructure companies bridging crypto and fiat.",
               "Crypto-native businesses entering regulated markets for the first time.",
-              "Established operators restructuring for MiCA compliance or multi-jurisdiction alignment.",
+              "Established operators restructuring for MiCA compliance or alignment across jurisdictions.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
@@ -160,7 +165,7 @@ export default function MarketsCryptoPage() {
           </div>
           <p className="body-sm italic text-muted-foreground">
             <strong className="text-primary">Negative qualification:</strong>
-            {" "}This is not for early-stage experiments or token launches without operational depth. If you do not need banking stability, regulatory clarity or multi-jurisdiction structure, you do not need this.
+            {" "}This is not for early-stage experiments or token launches without operational depth. If you do not need banking stability, regulatory clarity or structure across jurisdictions, you do not need this.
           </p>
         </div>
       </section>
@@ -197,9 +202,10 @@ export default function MarketsCryptoPage() {
             Build the structure regulators expect.{" "}
             <span style={{ color: "var(--blue-light)" }}>Not the one you started with.</span>
           </h2>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{"Continue on WhatsApp →"}</a>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
-            We respond within 24 hours.
+            Strategic intake via WhatsApp. Alternative:{" "}
+            <Link href="/contact" className="underline underline-offset-2" style={{ color: "var(--white-60)" }}>Contact</Link>.
           </p>
         </div>
       </section>

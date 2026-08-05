@@ -8,7 +8,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        heading: ["Unigeo64", "var(--font-unigeo)", "system-ui", "sans-serif"],
+        /* Prefer next/font variable only — avoid duplicate @font-face Unigeo64 loads. */
+        heading: ["var(--font-unigeo)", "system-ui", "sans-serif"],
         sans: ["var(--font-inter)", "Inter", "system-ui", "sans-serif"],
       },
       colors: {

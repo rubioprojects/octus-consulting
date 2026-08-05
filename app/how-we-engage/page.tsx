@@ -1,19 +1,19 @@
 import {
-  CTA_ASSESS_LABEL,
   CTA_DISCUSS_LABEL,
-  WHATSAPP_ASSESS_URL,
   WHATSAPP_DISCUSS_URL,
 } from "../../lib/cta";
 import { ENGAGEMENT_MODELS } from "../../lib/commercial";
 import PageHero from "../../components/system/PageHero";
-import { CtaLink } from "../../components/system/CtaButton";
 import Link from "next/link";
+import { pageSocialMeta } from "../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "How We Engage",
   description:
-    "Lead Contractor programme and engagement models for regulated operations — accountability, coordination and execution.",
-};
+    
+    "How Octus engages on regulated mandates: diagnostic clarity, structured workstreams, accountable delivery and jurisdiction-aware execution.",
+  path: "/how-we-engage",
+});
 
 export default function HowWeEngagePage() {
   return (
@@ -22,31 +22,58 @@ export default function HowWeEngagePage() {
         eyebrow="How we engage"
         title="Lead contractor."
         titleSecondLine="Not one more provider."
-        description="Octus assumes coordination across regulatory, compliance, banking and corporate layers — so you are not managing a fragmented stack of advisors."
+        description="Octus assumes coordination across regulatory, compliance, banking and corporate layers: so you are not managing a fragmented stack of advisors."
         primaryCta={{ href: WHATSAPP_DISCUSS_URL, label: CTA_DISCUSS_LABEL, external: true }}
-        secondaryCta={{ href: WHATSAPP_ASSESS_URL, label: CTA_ASSESS_LABEL, external: true }}
+        secondaryCta={{ href: "/solutions", label: "Explore services", quiet: true }}
       />
 
       <section className="bg-background py-20 md:py-28">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <p className="section-label mb-4 block">Accountability</p>
+          <p className="section-label mb-4 block">Lead contractor</p>
           <h2 className="heading-section mb-6">What lead contractor means</h2>
           <p className="body-large mb-4">
             Most regulated operations fail because licensing, legal, compliance and banking move as
             separate workstreams with no single owner of the whole.
           </p>
           <p className="body-text mb-4">
-            As lead contractor, Octus coordinates the structure that needs to hold — and stays
-            accountable for the execution mandate you agree. We do not promise regulator approvals,
+            As lead contractor, Octus coordinates the structure that needs to hold and stays
+            responsible for the execution mandate you agree. We do not promise regulator approvals,
             bank decisions or outcomes outside that mandate.
           </p>
         </div>
       </section>
 
       <section className="surface-elevated py-20 md:py-28">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <p className="section-label mb-4 block">International hub</p>
+          <h2 className="heading-section mb-6">Local specialists. Central coordination.</h2>
+          <p className="body-large mb-4">
+            Cross-border mandates often require trusted local specialists and appropriate local
+            representation. Octus identifies those partners, helps select them, and designs the
+            international structure around the operating requirement.
+          </p>
+          <p className="body-text mb-4">
+            Octus remains the central coordination point across jurisdictions so regulatory,
+            compliance, corporate and banking workstreams stay sequenced under one operating
+            mandate.
+          </p>
+          <Link
+            href="/international-hub"
+            className="mt-2 inline-flex font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
+          >
+            Explore International Hub →
+          </Link>
+        </div>
+      </section>
+
+      <section className="bg-background py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="section-label mb-4 block">Engagement models</p>
-          <h2 className="heading-section mb-12 max-w-2xl">How engagement scales</h2>
+          <h2 className="heading-section mb-4 max-w-2xl">How engagement scales</h2>
+          <p className="body-text mb-12 max-w-2xl text-muted-foreground">
+            These are operating models for coordination. They are not packaged products and do not
+            promise regulatory, banking or audit outcomes.
+          </p>
           <div className="grid gap-6 md:grid-cols-2">
             {ENGAGEMENT_MODELS.map((m) => (
               <article key={m.num} className="rounded-sm border border-border bg-background p-6 md:p-8">
@@ -61,22 +88,29 @@ export default function HowWeEngagePage() {
         </div>
       </section>
 
-      <section className="bg-background py-16 md:py-20">
-        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
-          <p className="body-large max-w-xl">
-            Crisis or blocked operation? Start with Operational Remediation.
+      <section className="surface-elevated py-16 md:py-20">
+        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
+          <h2 className="heading-section mb-4">Ready to discuss your operation?</h2>
+          <p className="body-large mx-auto mb-8 max-w-xl text-muted-foreground">
+            If the mandate needs a single coordination point across jurisdictions, start a
+            conversation.
           </p>
-          <div className="flex flex-wrap gap-3">
-            <CtaLink href="/solutions/operational-remediation-readiness" variant="secondary">
-              Remediation →
-            </CtaLink>
+          <a
+            href={WHATSAPP_DISCUSS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90"
+          >
+            {CTA_DISCUSS_LABEL}
+          </a>
+          <p className="mt-6">
             <Link
-              href="/partners"
-              className="inline-flex items-center font-sans text-sm font-medium text-primary no-underline hover:text-primary/80"
+              href="/solutions/remediation-readiness"
+              className="font-sans text-sm font-medium text-primary no-underline hover:underline"
             >
-              Partner with Octus →
+              Crisis or blocked operation? Open Remediation →
             </Link>
-          </div>
+          </p>
         </div>
       </section>
     </main>

@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../lib/cta";
+import { pageSocialMeta } from "../../../lib/pageMeta";
 
-export const metadata = {
-  title: "Malta Gaming & Fintech License — EU Regulatory Framework | Octus",
+export const metadata = pageSocialMeta({
+  title: "Malta Gaming & Fintech License. EU Regulatory Framework | Octus",
   description:
     "MGA and MFSA licensing for iGaming, fintech and crypto operators. Corporate substance, compliance infrastructure and EU banking coordination.",
-};
+  path: "/jurisdictions/malta",
+});
 
 export default function JurisdictionsMaltaPage() {
   return (
@@ -14,8 +16,8 @@ export default function JurisdictionsMaltaPage() {
       {/* ─── HERO ─── */}
       <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <span className="label">Jurisdictions · Malta</span>
-          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
+          <span className="mb-5 block text-xs font-medium uppercase tracking-[0.12em] text-white/65">Jurisdictions · Malta</span>
+          <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline">
             Malta Gaming License.
             <br />
             <span style={{ color: "var(--white-40)" }}>
@@ -53,10 +55,11 @@ export default function JurisdictionsMaltaPage() {
             partnerships and scalable operations.
           </p>
           <p className="body-text" style={{ marginBottom: "20px" }}>
-            Malta gives you MGA credibility, serious banking infrastructure
-            and can support access to European markets within the right
-            regulatory and operational structure. It also demands real
-            compliance, real substance and real governance.
+            Malta can support a regulated European operating strategy when the
+            relevant permissions, target-market rules and operational structure
+            align. Banking and payment access remains subject to independent
+            provider due diligence. The framework demands substantive
+            compliance, governance and local arrangements.
           </p>
           <p
             className="heading-sm text-foreground"
@@ -76,11 +79,11 @@ export default function JurisdictionsMaltaPage() {
               <p className="label" style={{ marginBottom: "16px", color: "var(--blue-light)" }}>When Malta makes sense</p>
               <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
                 {[
-                  "Access to regulated European or international markets is required",
+                  "A regulated European framework is relevant to the intended market strategy",
                   "Credibility with partners, platforms and regulators is critical",
                   "The operation needs a structured and scalable framework",
                   "The business is preparing for long-term growth or institutional exposure",
-                  "Banking and payment stability are core requirements",
+                  "Banking and payment readiness are core requirements",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                     <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
@@ -99,7 +102,7 @@ export default function JurisdictionsMaltaPage() {
                   "The focus is short-term deployment or arbitrage",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                    <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                    <span className="mt-0.5 shrink-0 text-muted-foreground" aria-hidden="true">•</span>
                     <p className="body-sm text-muted-foreground">{item}</p>
                   </div>
                 ))}
@@ -125,7 +128,7 @@ export default function JurisdictionsMaltaPage() {
               "Corporate structure, governance and local substance requirements",
               "Compliance infrastructure, reporting obligations and ongoing supervision",
               "Technical certification, systems audits and platform requirements",
-              "Payment and banking relationships across EU markets",
+              "Payment and banking readiness for intended markets",
               "Key personnel requirements and operational readiness",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
@@ -142,7 +145,7 @@ export default function JurisdictionsMaltaPage() {
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <p className="label">Octus role</p>
           <h2 className="heading-section" style={{ marginBottom: "12px" }}>
-            From strategy to operational license.
+            From strategy to application readiness.
           </h2>
           <p className="body-text mb-10 max-w-[620px]">
             Engagements are structured as mandates due to regulatory complexity
@@ -168,7 +171,7 @@ export default function JurisdictionsMaltaPage() {
               {
                 step: "04",
                 title: "Regulatory documentation & submission",
-                body: "Complete MGA application: compliance framework, business plan, financial projections, systems documentation. Coordinated through Octus.",
+                body: "Application-readiness support covering the compliance framework, business plan, financial projections and systems documentation. Octus advises the client and supports authorised communications with the MGA; it is not affiliated with the regulator.",
               },
               {
                 step: "05",
@@ -178,7 +181,7 @@ export default function JurisdictionsMaltaPage() {
               {
                 step: "06",
                 title: "Banking & payment coordination",
-                body: "Malta-based banking, EU payment processors, multi-currency accounts. Structure aligned with banking requirements from day one.",
+                body: "Banking and payment-provider readiness, including multi-currency requirements where relevant. Account availability and onboarding remain subject to each provider\u2019s due diligence.",
               },
             ].map((s, i) => (
               <div
@@ -224,8 +227,8 @@ export default function JurisdictionsMaltaPage() {
               { label: "Financial regulator", value: "Malta Financial Services Authority (MFSA)" },
               { label: "License types", value: "B2C (Class 1-2), B2B (Class 3-4), VFA, EMI" },
               { label: "Substance", value: "Local key personnel, office, operational infrastructure" },
-              { label: "Banking", value: "Strong EU banking infrastructure — tier-1 access" },
-              { label: "Timeline", value: "6\u201312 months (MGA), 9\u201318 months (MFSA)" },
+              { label: "Banking", value: "Provider access is conditional on structure, risk appetite and due diligence" },
+              { label: "Timeline", value: "Variable by licence type, application completeness and regulator review" },
             ].map((item) => (
               <div key={item.label} className="card" style={{ padding: "24px" }}>
                 <p className="label" style={{ marginBottom: "8px", fontSize: "10px" }}>{item.label}</p>
@@ -239,23 +242,23 @@ export default function JurisdictionsMaltaPage() {
       {/* ─── SELECTED MANDATES ─── */}
       <section className="surface-elevated py-24 md:py-32">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
-          <p className="label">Selected mandates — Malta</p>
+          <p className="label">Selected mandates. Malta</p>
           <h2 className="heading-section" style={{ marginBottom: "32px" }}>
             Real operations. Real outcomes.
           </h2>
           <div className="grid gap-6 md:grid-cols-1">
             {[
               {
-                title: "B2C operator — full MGA licensing",
-                body: "Complete licensing process from jurisdiction assessment to operational license. Corporate substance, compliance framework and EU banking coordination.",
+                title: "B2C operator: full MGA licensing",
+                body: "Advisory work from jurisdiction assessment through application readiness, including corporate substance, compliance and banking-readiness coordination. Outcomes remain subject to regulator and provider decisions.",
               },
               {
-                title: "Multi-brand group — B2B platform licensing",
-                body: "Class 4 B2B license for platform provider serving multiple brands. Technical compliance, systems documentation and MGA coordination.",
+                title: "Multi-brand group. B2B platform licensing",
+                body: "B2B application-readiness work for a platform provider serving multiple brands, including technical compliance, systems documentation and support for authorised regulator communications.",
               },
               {
-                title: "Cross-jurisdiction — Malta + Curaçao dual structure",
-                body: "Malta for EU markets, Curaçao for non-EU. Unified compliance framework with jurisdiction-specific adaptations and centralized banking.",
+                title: "Cross-jurisdiction. Malta + Curaçao dual structure",
+                body: "Comparative Malta and Curaçao structuring for distinct permitted markets, with jurisdiction-specific compliance adaptations and banking-readiness planning.",
               },
             ].map((m, i) => (
               <div
@@ -300,7 +303,7 @@ export default function JurisdictionsMaltaPage() {
             {[
               { title: "Curaçao Licensing", desc: "Structured entry framework for mid-market operations.", href: "/jurisdictions/curacao" },
               { title: "Full Licensing Process", desc: "End-to-end licensing execution.", href: "/solutions/regulatory/igaming-licensing" },
-              { title: "Compliance & Risk", desc: "The framework that supports your license.", href: "/compliance" },
+              { title: "Compliance & Risk", desc: "The framework that supports your license.", href: "/solutions/compliance-risk" },
             ].map((r) => (
               <Link key={r.title} href={r.href} className="card-grid" style={{ padding: "28px" }}>
                 <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>{r.title}</h3>
@@ -323,9 +326,9 @@ export default function JurisdictionsMaltaPage() {
             A structured assessment is required{" "}
             <span style={{ color: "var(--blue-light)" }}>before proceeding.</span>
           </h2>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{"Continue on WhatsApp →"}</a>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
-            We respond within 24 hours.
+            Prefer not to use WhatsApp? <Link href="/contact" className="underline underline-offset-4">Contact us here.</Link>
           </p>
         </div>
       </section>

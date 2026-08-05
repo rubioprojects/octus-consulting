@@ -1,20 +1,24 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
+import DarkHeroAtmosphere from "../../../../components/system/DarkHeroAtmosphere";
+import { pageSocialMeta } from "../../../../lib/pageMeta";
 
-export const metadata = {
+export const metadata = pageSocialMeta({
   title: "DPO-as-a-Service",
   description:
-    "A DPO is not a contact point. Octus operates the Data Protection Officer function as a continuous regulatory role: incident response, regulatory interaction and operational data protection.",
-};
+    "Outsourced DPO support and privacy programme coordination for LGPD and GDPR-aligned regulated operations.",
+  path: "/solutions/compliance/dpo-as-a-service",
+});
 
 export default function DpoAsAServicePage() {
   return (
     <main>
 
-      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
-        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <span className="label">Solutions · Compliance · DPO-as-a-Service</span>
-          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
+      <section className="octus-dark-hero surface-dark relative flex min-h-[70vh] flex-col justify-center overflow-hidden pt-28 pb-16 md:min-h-[80vh] md:pt-32 md:pb-24">
+        <DarkHeroAtmosphere />
+        <div className="relative z-10 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+          <span className="label">Services · Compliance · DPO-as-a-Service</span>
+          <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline">
             Appointing a DPO is easy.
             <br />
             <span style={{ color: "var(--white-40)" }}>
@@ -31,6 +35,7 @@ export default function DpoAsAServicePage() {
             <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
           </div>
         </div>
+        <div className="octus-dark-hero__seam" aria-hidden="true" />
       </section>
 
       <section className="bg-background py-24 md:py-32">
@@ -40,13 +45,15 @@ export default function DpoAsAServicePage() {
             Most DPO structures fail when tested.
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
-            The DPO carries real accountability. Decisions impact regulatory
-            exposure. Poor execution creates legal and operational risk. Most
-            companies assign the role without building the function.
+            The DPO function carries real regulatory and operational
+            accountability. Decisions impact regulatory exposure. Poor execution
+            creates legal and operational risk. Most companies assign the role
+            without building the function.
           </p>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
-            In many jurisdictions, the DPO role carries personal accountability.
-            Poor execution is not just a business risk. It is a personal one.
+            DPO duties and accountability vary by jurisdiction. Weak execution
+            can nevertheless create material legal, regulatory and operational
+            exposure.
           </p>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
             A name is assigned, but no process exists. Policies are drafted, but
@@ -64,17 +71,18 @@ export default function DpoAsAServicePage() {
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "760px" }}>
           <p className="label">The model</p>
           <h2 className="heading-section" style={{ marginBottom: "16px" }}>
-            We do not provide a name. We operate the function.
+            We provide DPO support. We coordinate the programme.
           </h2>
           <p className="body-lg" style={{ marginBottom: "20px" }}>
-            DPO-as-a-Service is the ongoing execution of the Data Protection Officer
-            role. It ensures that data protection obligations are not only defined,
-            but continuously managed across operations, systems and external
-            interactions.
+            DPO-as-a-Service is outsourced DPO support and privacy programme
+            coordination. Specific designation, jurisdictional scope and
+            independence remain subject to the engagement. The work keeps data
+            protection obligations defined, documented and managed across
+            operations, systems and external interactions.
           </p>
           <p className="body-lg">
-            Acting as the interface between your operation, regulators and internal
-            teams.
+            Coordinating the interface between your operation, regulators and
+            internal teams where mandated.
           </p>
         </div>
       </section>
@@ -112,7 +120,7 @@ export default function DpoAsAServicePage() {
                   "The company is not prepared to implement internal processes aligned with the DPO function.",
                 ].map((item) => (
                   <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                    <span className="mt-0.5 shrink-0 text-muted-foreground">—</span>
+                    <span className="mt-0.5 shrink-0 text-muted-foreground" aria-hidden="true">•</span>
                     <p className="body-sm text-muted-foreground">{item}</p>
                   </div>
                 ))}
@@ -121,7 +129,7 @@ export default function DpoAsAServicePage() {
           </div>
           <p className="body-sm mt-7 max-w-[760px] italic text-muted-foreground">
             <strong className="text-primary">Hard filter:</strong>
-            {" "}This is not a formal appointment service. This is for companies that need real regulatory accountability.
+            {" "}Formal designation, where included, depends on the jurisdiction and agreed scope. The engagement focuses on practical privacy governance, documented responsibilities and operational support.
           </p>
         </div>
       </section>
@@ -134,12 +142,12 @@ export default function DpoAsAServicePage() {
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {[
-              "Data subject requests — intake, assessment, response and documentation.",
-              "Regulatory interaction — communication with authorities when required.",
-              "Incident response — coordination of data breaches and reporting obligations.",
-              "Internal alignment — guidance to teams handling personal data.",
-              "Policy enforcement — ensuring procedures are followed in practice.",
-              "Record keeping — documentation required under GDPR/LGPD accountability principles.",
+              "Data subject requests: intake, assessment, response and documentation.",
+              "Regulatory interaction: communication with authorities when required.",
+              "Incident response: coordination of data breaches and reporting obligations.",
+              "Internal alignment: guidance to teams handling personal data.",
+              "Policy enforcement: ensuring procedures are followed in practice.",
+              "Record keeping: documentation required under GDPR/LGPD accountability principles.",
             ].map((item) => (
               <div key={item} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
                 <span style={{ color: "var(--blue-light)", marginTop: "2px", flexShrink: 0 }}>→</span>
@@ -159,7 +167,7 @@ export default function DpoAsAServicePage() {
           {[
             { step: "1", title: "Assessment", body: "Review of data flows, risk exposure and current compliance gaps." },
             { step: "2", title: "Structuring", body: "Definition of processes, responsibilities and documentation aligned with regulatory requirements." },
-            { step: "3", title: "Ongoing operation", body: "Continuous execution of the DPO function, including monitoring, response and regulatory interaction." },
+            { step: "3", title: "Ongoing operation", body: "Ongoing privacy programme support, including monitoring, incident coordination and regulatory interaction within the agreed scope." },
           ].map((s) => (
             <div key={s.step} style={{ marginBottom: "24px" }}>
               <h3 className="text-lg font-semibold text-primary font-sans" style={{ marginBottom: "8px" }}>
@@ -169,7 +177,7 @@ export default function DpoAsAServicePage() {
             </div>
           ))}
           <p className="body-sm text-muted-foreground">
-            The DPO becomes part of the operational layer.
+            Privacy governance becomes part of the operational layer.
           </p>
         </div>
       </section>
@@ -205,10 +213,10 @@ export default function DpoAsAServicePage() {
           </h2>
           <p className="body-text" style={{ marginBottom: "28px" }}>
             Scope depends on data volume, jurisdictions, regulatory exposure and
-            operational complexity. This is not a one-time designation. It is a
-            continuous regulatory function.
+            operational complexity. This is structured as ongoing privacy and
+            data-protection support, rather than a one-off documentation
+            exercise.
           </p>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
         </div>
       </section>
 
@@ -220,16 +228,16 @@ export default function DpoAsAServicePage() {
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <p className="body-text">
-              <strong className="text-primary">Nominal DPO</strong>
-              {" "}— name assigned, limited involvement, no operational function.
+              <strong className="text-primary">Nominal DPO.</strong>
+              {" "}Name assigned, limited involvement, no operational function.
             </p>
             <p className="body-text">
-              <strong className="text-primary">Internal DPO</strong>
-              {" "}— constrained by internal structure and conflicting roles.
+              <strong className="text-primary">Internal DPO.</strong>
+              {" "}Constrained by internal structure and conflicting roles.
             </p>
             <p className="body-text">
-              <strong className="text-primary">Octus DPO</strong>
-              {" "}— independent function with execution capability and regulatory alignment.
+              <strong className="text-primary">Outsourced DPO support.</strong>
+              {" "}Defined scope, documented responsibilities, operational coordination and regulatory alignment, with formal designation and independence confirmed for each engagement.
             </p>
           </div>
         </div>
@@ -265,10 +273,7 @@ export default function DpoAsAServicePage() {
           <h2 className="heading-lg cta-block__title">
             Make it operational before it is tested.
           </h2>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
-          <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
-            We respond within 24 hours.
-          </p>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">Continue this discussion →</a>
         </div>
       </section>
 

@@ -1,21 +1,25 @@
 import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../../../lib/cta";
+import DarkHeroAtmosphere from "../../../../components/system/DarkHeroAtmosphere";
+import { pageSocialMeta } from "../../../../lib/pageMeta";
 
-export const metadata = {
-  title: "AML & KYC Framework — Compliance That Holds | Octus",
+export const metadata = pageSocialMeta({
+  title: "AML & KYC Framework. Compliance That Holds | Octus",
   description:
     "AML/KYC compliance frameworks for regulated operations. Built to survive real audit, not to sit in a folder. Transaction monitoring, risk assessment and regulatory reporting.",
-};
+  path: "/solutions/compliance/aml-kyc",
+});
 
 export default function SolutionsAMLKYCPage() {
   return (
     <main>
 
       {/* ─── HERO ─── */}
-      <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
-        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <span className="label">Solutions · Compliance · AML & KYC</span>
-          <h1 className="font-heading text-4xl font-bold leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem] sp-headline">
+      <section className="octus-dark-hero surface-dark relative flex min-h-[70vh] flex-col justify-center overflow-hidden pt-28 pb-16 md:min-h-[80vh] md:pt-32 md:pb-24">
+        <DarkHeroAtmosphere />
+        <div className="relative z-10 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+          <span className="label">Services · Compliance · AML & KYC</span>
+          <h1 className="font-heading text-[1.85rem] font-semibold leading-[1.18] tracking-[-0.005em] text-[color:var(--text-primary-on-dark)] sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.12] sp-headline">
             Your AML framework looks good on paper.
             <br />
             <span style={{ color: "var(--white-40)" }}>
@@ -30,13 +34,14 @@ export default function SolutionsAMLKYCPage() {
           <div style={{ marginTop: "32px", display: "flex", gap: "16px", flexWrap: "wrap" }}>
             <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
             <Link
-              href="/compliance"
+              href="/solutions/compliance-risk"
               className="inline-flex h-12 items-center justify-center rounded-sm border border-white/20 bg-transparent px-10 text-base font-medium text-white/80 transition-colors hover:border-white/40 hover:text-white"
             >
               Full compliance services →
             </Link>
           </div>
         </div>
+        <div className="octus-dark-hero__seam" aria-hidden="true" />
       </section>
 
       {/* ─── THE REAL PROBLEM ─── */}
@@ -118,20 +123,20 @@ export default function SolutionsAMLKYCPage() {
           <div className="grid gap-6 md:grid-cols-1">
             {[
               {
-                title: "iGaming operator — compliance remediation",
-                body: "Flagged by regulator for compliance gaps. Full AML/KYC rebuild: policies, procedures, monitoring rules, evidence register. Cleared within 8 weeks.",
+                title: "iGaming operator: compliance remediation",
+                body: "Flagged by regulator for compliance gaps. Full AML/KYC rebuild covering policies, procedures, monitoring rules and the evidence register so the programme could return to regulatory review.",
               },
               {
-                title: "Fintech — banking due diligence recovery",
+                title: "Fintech: banking due diligence recovery",
                 body: "Rejected by 3 banks for inadequate AML framework. We rebuilt the program, aligned it with banking risk requirements and coordinated re-application. Accounts opened.",
               },
               {
-                title: "Multi-jurisdiction operator — unified framework",
+                title: "Multi-jurisdiction operator: unified framework",
                 body: "Compliance framework harmonized across 3 jurisdictions with local adaptations. Single policy architecture, jurisdiction-specific procedures.",
               },
               {
                 title: "GLI audit preparation",
-                body: "Full evidence register, compliance documentation and readiness pack delivered in 6 weeks. Client entered audit with complete documentation and zero critical findings.",
+                body: "Full evidence register, compliance documentation and readiness pack prepared for audit entry with a complete documentation set.",
               },
             ].map((m, i) => (
               <div
@@ -177,8 +182,8 @@ export default function SolutionsAMLKYCPage() {
           <p className="label">Related</p>
           <div className="grid-3">
             {[
-              { title: "Compliance & Risk", desc: "Full compliance services beyond AML.", href: "/compliance" },
-              { title: "Audit & Readiness", desc: "Prepared for scrutiny before it arrives.", href: "/audit" },
+              { title: "Compliance & Risk", desc: "Full compliance services beyond AML.", href: "/solutions/compliance-risk" },
+              { title: "Remediation & Readiness", desc: "Prepared for scrutiny before it arrives.", href: "/solutions/remediation-readiness" },
               { title: "iGaming Operations", desc: "Compliance in the iGaming context.", href: "/markets/igaming" },
             ].map((r) => (
               <Link key={r.title} href={r.href} className="card-grid" style={{ padding: "28px" }}>
@@ -201,9 +206,9 @@ export default function SolutionsAMLKYCPage() {
           <h2 className="heading-lg cta-block__title">
             Build it to survive. Not to check a box.
           </h2>
-          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">{CTA_DISCUSS_LABEL}</a>
+          <a href={WHATSAPP_DISCUSS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-10 text-base font-medium tracking-wide text-primary-foreground transition-colors hover:bg-primary/90">Continue this discussion →</a>
           <p className="body-sm cta-block__note" style={{ color: "var(--white-25)" }}>
-            We respond within 24 hours.
+            Reach us on WhatsApp. We assess operational fit before recommending a path.
           </p>
         </div>
       </section>
