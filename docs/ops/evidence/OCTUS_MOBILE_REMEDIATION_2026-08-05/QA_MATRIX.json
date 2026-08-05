@@ -1,6 +1,6 @@
 {
-  "base": "http://127.0.0.1:4173",
-  "generated_at": "2026-08-05T11:46:07.514Z",
+  "base": "https://octus-consulting-mobqz674u-axle1.vercel.app",
+  "generated_at": "2026-08-05T11:51:47.290Z",
   "viewports": [
     {
       "viewport": "320x568",
@@ -575,47 +575,42 @@
     {
       "from": "/services",
       "expected": "/solutions",
-      "final": "http://127.0.0.1:4173/services",
-      "status": 404,
+      "final": "https://octus-consulting-mobqz674u-axle1.vercel.app/solutions",
+      "status": 200,
       "pass": true,
-      "platform": "local-static",
-      "note": "Deferred to Vercel preview — local static export does not apply vercel.json redirects"
+      "platform": "vercel"
     },
     {
       "from": "/intelligence",
       "expected": "/insights",
-      "final": "http://127.0.0.1:4173/intelligence",
-      "status": 404,
+      "final": "https://octus-consulting-mobqz674u-axle1.vercel.app/insights",
+      "status": 200,
       "pass": true,
-      "platform": "local-static",
-      "note": "Deferred to Vercel preview — local static export does not apply vercel.json redirects"
+      "platform": "vercel"
     },
     {
       "from": "/industries",
       "expected": "/markets",
-      "final": "http://127.0.0.1:4173/industries",
-      "status": 404,
+      "final": "https://octus-consulting-mobqz674u-axle1.vercel.app/markets",
+      "status": 200,
       "pass": true,
-      "platform": "local-static",
-      "note": "Deferred to Vercel preview — local static export does not apply vercel.json redirects"
+      "platform": "vercel"
     },
     {
       "from": "/industries/igaming",
       "expected": "/markets/igaming",
-      "final": "http://127.0.0.1:4173/industries/igaming",
-      "status": 404,
+      "final": "https://octus-consulting-mobqz674u-axle1.vercel.app/markets/igaming",
+      "status": 200,
       "pass": true,
-      "platform": "local-static",
-      "note": "Deferred to Vercel preview — local static export does not apply vercel.json redirects"
+      "platform": "vercel"
     },
     {
       "from": "/solutions/international-hub",
       "expected": "/international-hub",
-      "final": "http://127.0.0.1:4173/solutions/international-hub",
-      "status": 404,
+      "final": "https://octus-consulting-mobqz674u-axle1.vercel.app/international-hub",
+      "status": 200,
       "pass": true,
-      "platform": "local-static",
-      "note": "Deferred to Vercel preview — local static export does not apply vercel.json redirects"
+      "platform": "vercel"
     }
   ],
   "evidence": [
@@ -665,9 +660,14 @@
     "status": 200
   },
   "performance_mobile_home": {
-    "domContentLoaded": 15.900000005960464,
-    "loadEventEnd": 56.599999994039536,
-    "fcp": 60,
+    "domContentLoaded": 339,
+    "loadEventEnd": 588.5999999940395,
+    "fcp": 376,
     "lcp": null
-  }
+  },
+  "preview_deployment": "dpl_BAJ4Dju9yefNLgJFo8cEDuEduGzt",
+  "preview_url": "https://octus-consulting-mobqz674u-axle1.vercel.app",
+  "head_sha": "9fb4fff229b9915f9fb8f9b919c23399654d340d",
+  "ci_url": "https://github.com/rubioprojects/octus-consulting/actions/runs/31002872157",
+  "redirects_verified_on_preview": true
 }
