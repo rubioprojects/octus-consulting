@@ -7,7 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test:analytics": "node --test lib/analytics/hostGate.test.cjs scripts/lead-path-validate.test.cjs"
   },
   "dependencies": {
     "next": "14.2.3",
