@@ -2684,6 +2684,11 @@ body.cookie-banner-visible .wa-float {
   background: linear-gradient(165deg, rgba(0, 101, 255, 0.09), rgba(11, 18, 32, 0.05));
 }
 
+/* Larissa only: solid studio-wall plate behind scaled photo (overrides portrait gradient). */
+.team-card-photo-wrap.team-portrait.team-photo--larissa {
+  background: rgb(219, 215, 219);
+}
+
 /* Leadership: larger presence, Octus-branded backdrop plate, subtle halo. */
 .team-card-photo-wrap.team-portrait--leadership,
 .home-leadership-trust__photo-wrap.team-portrait--leadership {
