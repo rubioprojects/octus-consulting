@@ -1696,13 +1696,13 @@ footer .heading-lg,
   transform: scale(1.04);
   transform-origin: center 32%;
 }
-/* Larissa: studio source crown sits on file edge — pull back so hair clears frame.
-   Wrap plate color is set later (after .team-portrait gradient) for specificity.
-   Origin near center so scale-down creates headroom at the TOP (not only bottom). */
+/* Larissa: studio source crown sits on file edge — no in-file headroom.
+   Stronger pull-back + center origin so wrap plate reads clearly above crown.
+   Wrap plate color is set later (after .team-portrait gradient) for specificity. */
 .team-photo--larissa .team-card-photo {
-  object-position: 50% 42%;
-  transform: scale(0.82);
-  transform-origin: center 48%;
+  object-position: 50% 40%;
+  transform: scale(0.72) translateY(3%);
+  transform-origin: center center;
 }
 .team-photo--milla .team-card-photo { object-position: 50% 40%; }
 .team-photo--bianca .team-card-photo { object-position: 50% 40%; }
