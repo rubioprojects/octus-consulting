@@ -1696,13 +1696,9 @@ footer .heading-lg,
   transform: scale(1.04);
   transform-origin: center 32%;
 }
-/* Larissa: studio source crown sits on file edge — no in-file headroom.
-   Stronger pull-back + center origin so wrap plate reads clearly above crown.
-   Wrap plate color is set later (after .team-portrait gradient) for specificity. */
+/* Larissa: headroom baked into asset (studio plate above crown). Peer-normal crop. */
 .team-photo--larissa .team-card-photo {
-  object-position: 50% 40%;
-  transform: scale(0.72) translateY(3%);
-  transform-origin: center center;
+  object-position: 50% 36%;
 }
 .team-photo--milla .team-card-photo { object-position: 50% 40%; }
 .team-photo--bianca .team-card-photo { object-position: 50% 40%; }
