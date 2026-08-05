@@ -16,6 +16,7 @@ import {
 } from "../../../lib/insightEnrichment";
 import { notFound } from "next/navigation";
 import { pageSocialMeta } from "../../../lib/pageMeta";
+import ArticleJsonLd from "../../../components/seo/ArticleJsonLd";
 
 function fmtDate(d: string) {
   return new Date(d).toLocaleDateString("en-GB", {
@@ -40,6 +41,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     description: post.excerpt,
     path: `/insights/${params.slug}`,
     absoluteTitle: true,
+    ogType: "article",
   });
 }
 
@@ -64,6 +66,14 @@ export default function PostPage({ params }: { params: { slug: string } }) {
 
   return (
     <main>
+      <ArticleJsonLd
+        headline={normalizeEditorialTitle(post.title)}
+        description={post.excerpt}
+        path={`/insights/${params.slug}`}
+        datePublished={post.date}
+        dateModified={post.lastReviewed || post.date}
+        authorName={resolvePostAuthor(post)}
+      />
       <section className="surface-dark relative flex min-h-[70vh] flex-col justify-center pt-24 pb-16 md:min-h-[80vh] md:pt-28 md:pb-24">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8" style={{ maxWidth: "800px" }}>
           <div style={{ display: "flex", gap: "16px", alignItems: "center", marginBottom: "32px", flexWrap: "wrap" }}>

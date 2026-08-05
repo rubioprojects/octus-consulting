@@ -10,9 +10,10 @@ import PageHero from "../../components/system/PageHero";
 import { pageSocialMeta } from "../../lib/pageMeta";
 
 export const metadata = pageSocialMeta({
-  title: "Diagnostic assessment",
+  title: "Diagnostic",
   description:
-    "Start with a diagnostic assessment for licensing delays, banking rejection, compliance gaps, audit readiness and blocked market entry.",
+    
+    "Start with a diagnostic conversation on WhatsApp to assess regulatory fit, structural readiness and operational pressure points before committing.",
   path: "/diagnostic",
 });
 

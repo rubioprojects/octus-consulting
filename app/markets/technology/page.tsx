@@ -9,7 +9,7 @@ import "../markets.css";
 export const metadata = pageSocialMeta({
   title: "Technology & B2B Infrastructure",
   description:
-    "Platforms, software suppliers and infrastructure providers serving regulated operators carry regulatory exposure through their clients. Octus structures ownership, contracting, compliance and cross-border operations.",
+    "Platforms and software suppliers serving regulated markets need structure aligned to licensing, compliance and banking expectations.",
   path: "/markets/technology",
 });
 

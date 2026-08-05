@@ -4,7 +4,7 @@ import { pageSocialMeta } from "../../lib/pageMeta";
 export const metadata = pageSocialMeta({
   title: "Careers",
   description:
-    "Join Octus. We work at the intersection of regulatory structuring, compliance operations, legal architecture and corporate design. Built for people with operational depth.",
+    "Join Octus teams working on regulatory structuring, compliance and operational execution for regulated businesses.",
   path: "/careers",
 });
 

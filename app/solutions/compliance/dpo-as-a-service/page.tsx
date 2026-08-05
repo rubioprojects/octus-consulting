@@ -6,7 +6,7 @@ import { pageSocialMeta } from "../../../../lib/pageMeta";
 export const metadata = pageSocialMeta({
   title: "DPO-as-a-Service",
   description:
-    "Outsourced DPO support and privacy programme coordination for LGPD and GDPR contexts: incident response, regulatory interaction and operational data protection. Designation and scope are subject to engagement.",
+    "Outsourced DPO support and privacy programme coordination for LGPD and GDPR-aligned regulated operations.",
   path: "/solutions/compliance/dpo-as-a-service",
 });
 

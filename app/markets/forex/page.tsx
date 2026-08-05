@@ -9,7 +9,7 @@ import "../markets.css";
 export const metadata = pageSocialMeta({
   title: "Forex & Regulated Financial Services",
   description:
-    "Brokerage, dealing and investment service models operate under supervision. Octus structures licensing pathways, conduct frameworks, banking readiness and cross-border operations for regulated financial services.",
+    "Brokerage and investment service models under supervisory pressure need structure that survives licensing and banking scrutiny.",
   path: "/markets/forex",
 });
 

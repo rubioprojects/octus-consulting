@@ -51,9 +51,12 @@ export default function HomeLeadershipTrust() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={l.photo}
-                  alt=""
+                  alt={`${l.name}, ${l.title}`}
                   className="home-leadership-trust__photo"
-                  aria-hidden="true"
+                  width={600}
+                  height={600}
+                  loading="eager"
+                  decoding="async"
                 />
               </div>
               <p className="home-leadership-trust__name" aria-hidden="true">

@@ -10,9 +10,9 @@ import { CtaLink } from "../../components/system/CtaButton";
 import { pageSocialMeta } from "../../lib/pageMeta";
 
 export const metadata = pageSocialMeta({
-  title: "Services. Execution for regulated operations",
+  title: "Regulatory, Compliance and Corporate Structuring Services",
   description:
-    "Seven coordinated service areas for regulated operations: Regulatory Structuring, Compliance & Risk, Legal & Structural Architecture, Corporate Structuring, Private Clients, Remediation & Readiness, and International Hub.",
+    "Seven coordinated service areas for regulated operations: licensing, compliance, legal architecture, corporate structure, private clients, remediation and international coordination.",
   path: "/solutions",
 });
 

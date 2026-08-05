@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import Nav from "../components/Nav";
 import CookieBanner from "../components/CookieBanner";
 import BrandLockup from "../components/BrandLockup";
+import OrganizationJsonLd from "../components/seo/OrganizationJsonLd";
 import { CTA_DISCUSS_LABEL, MAILTO_INFO, WHATSAPP_DISCUSS_URL } from "../lib/cta";
 import "./globals.css";
 
@@ -27,11 +28,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Octus Consulting | Regulatory & Operational Structuring",
+    default: "Octus Consulting | Regulatory, Compliance and International Structuring",
     template: "%s | Octus Consulting",
   },
   description:
-    "Regulated operations don't fail randomly. They fail structurally. Octus identifies what is broken, and fixes it.",
+    "Octus structures regulated operations across licensing, compliance, corporate architecture, remediation and international coordination.",
   metadataBase: new URL("https://octusconsulting.com"),
   icons: {
     icon: [
@@ -47,8 +48,9 @@ export const metadata: Metadata = {
     shortcut: "/favicon-32.png",
   },
   openGraph: {
-    title: "Octus Consulting | Regulatory & Operational Structuring",
-    description: "Regulated operations don't fail randomly. They fail structurally. Octus identifies what is broken, and fixes it.",
+    title: "Octus Consulting | Regulatory, Compliance and International Structuring",
+    description:
+      "Octus structures regulated operations across licensing, compliance, corporate architecture, remediation and international coordination.",
     url: "https://octusconsulting.com",
     siteName: "Octus Consulting",
     images: [
@@ -63,8 +65,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Octus Consulting",
-    description: "Regulated operations don't fail randomly. They fail structurally.",
+    title: "Octus Consulting | Regulatory, Compliance and International Structuring",
+    description:
+      "Octus structures regulated operations across licensing, compliance, corporate architecture, remediation and international coordination.",
     images: ["https://octusconsulting.com/og-image.png"],
   },
 };
@@ -77,6 +80,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${unigeo.variable} ${inter.variable}`}>
       <body>
+        <OrganizationJsonLd />
         <Nav />
         {children}
 

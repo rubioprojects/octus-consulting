@@ -10,7 +10,8 @@ import { pageSocialMeta } from "../../lib/pageMeta";
 export const metadata = pageSocialMeta({
   title: "How We Engage",
   description:
-    "Lead Contractor programme and engagement models for regulated operations: coordination and execution across jurisdictions.",
+    
+    "How Octus engages on regulated mandates: diagnostic clarity, structured workstreams, accountable delivery and jurisdiction-aware execution.",
   path: "/how-we-engage",
 });
 

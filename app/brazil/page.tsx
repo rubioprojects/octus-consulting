@@ -5,9 +5,9 @@ import DarkHeroAtmosphere from "../../components/system/DarkHeroAtmosphere";
 import { pageSocialMeta } from "../../lib/pageMeta";
 
 export const metadata = pageSocialMeta({
-  title: "Brazil",
+  title: "Brazil Regulatory Structuring",
   description:
-    "Regulatory structuring, compliance and corporate architecture for regulated operations entering or operating in Brazil.",
+    "Regulatory structuring, compliance and corporate architecture for Brazil-facing betting, fintech and regulated operations.",
   path: "/brazil",
 });
 

@@ -12,7 +12,7 @@ import { pageSocialMeta } from "../../lib/pageMeta";
 export const metadata = pageSocialMeta({
   title: "Insights",
   description:
-    "One destination for Octus analysis: regulatory developments, market movement and operational perspectives for regulated operations, with webinars and invited expert contributions published here as they are scheduled.",
+    "Regulatory analysis, market developments and operational perspectives from Octus on licensing, compliance and structured operations.",
   path: "/insights",
 });
 

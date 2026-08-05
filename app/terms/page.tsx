@@ -2,7 +2,8 @@ import { pageSocialMeta } from "../../lib/pageMeta";
 export const metadata = pageSocialMeta({
   title: "Terms & Conditions",
   description:
-    "Terms and Conditions for Octus Technology LLC, operating as Octus Consulting.",
+    
+    "Terms governing use of the Octus Consulting website and engagement of services provided by Octus Technology LLC.",
   path: "/terms",
 });
 

@@ -7,7 +7,8 @@ import { pageSocialMeta } from "../../lib/pageMeta";
 export const metadata = pageSocialMeta({
   title: "About",
   description:
-    "Octus structures, coordinates and operates the work behind regulated businesses across regulatory, compliance, banking and corporate layers.",
+    
+    "Octus Consulting helps regulated operators build structures that survive licensing, banking scrutiny and cross-border operational pressure.",
   path: "/about",
 });
 

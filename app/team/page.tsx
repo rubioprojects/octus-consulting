@@ -2,11 +2,12 @@ import Link from "next/link";
 import { CTA_DISCUSS_LABEL, WHATSAPP_DISCUSS_URL } from "../../lib/cta";
 import DarkHeroAtmosphere from "../../components/system/DarkHeroAtmosphere";
 import { pageSocialMeta } from "../../lib/pageMeta";
+import TeamPersonsJsonLd from "../../components/seo/TeamPersonsJsonLd";
 
 export const metadata = pageSocialMeta({
   title: "Team",
   description:
-    "Octus leadership and core specialists across regulatory, compliance, legal, corporate and international workstreams.",
+    "Meet Octus leadership and core specialists across regulatory, compliance, legal, corporate and international workstreams.",
   path: "/team",
 });
 
@@ -99,7 +100,7 @@ const coreSpecialists: Member[] = [
     capability: "Brazil legal & regulatory",
     focus:
       "Supports Brazil-facing mandates through contract structuring, regulatory documentation and coordination of legal requirements for regulated operations.",
-    linkedin: null,
+    linkedin: "https://www.linkedin.com/in/eduardommp/",
   },
   {
     name: "Larissa Carvalho",
@@ -163,7 +164,15 @@ function MemberCard({
         className={`team-card-photo-wrap team-portrait team-portrait--${tier} ${photoClass}`}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={member.photo} alt="" className="team-card-photo" aria-hidden="true" />
+        <img
+          src={member.photo}
+          alt={`${member.name}, ${member.title}`}
+          className="team-card-photo"
+          width={600}
+          height={600}
+          loading={tier === "leadership" ? "eager" : "lazy"}
+          decoding="async"
+        />
       </div>
       {member.capability && <p className="team-capability">{member.capability}</p>}
       <h3 className="heading-sm" style={{ marginBottom: "6px" }}>
@@ -191,8 +200,17 @@ function MemberCard({
 }
 
 export default function TeamPage() {
+  const allMembers = [...leadership, ...coreSpecialists];
   return (
     <main>
+      <TeamPersonsJsonLd
+        people={allMembers.map((m) => ({
+          name: m.name,
+          title: m.title,
+          pathPhoto: m.photo,
+          linkedin: m.linkedin,
+        }))}
+      />
       <section className="octus-dark-hero surface-dark relative flex min-h-[70vh] flex-col justify-center overflow-hidden pt-28 pb-16 md:min-h-[80vh] md:pt-32 md:pb-24">
         <DarkHeroAtmosphere />
         <div className="octus-hero-copy relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">

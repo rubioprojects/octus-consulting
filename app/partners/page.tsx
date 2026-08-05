@@ -11,9 +11,9 @@ import Link from "next/link";
 import { pageSocialMeta } from "../../lib/pageMeta";
 
 export const metadata = pageSocialMeta({
-  title: "International Partners",
+  title: "Partners",
   description:
-    "Collaborate with Octus as lead contractor for regulated operations. CSPs, counsel, advisors and specialists.",
+    "Collaborate with Octus as lead contractor for regulated operations, compliance programmes and multi-jurisdiction mandates.",
   path: "/partners",
 });
 

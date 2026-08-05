@@ -2,7 +2,8 @@ import { pageSocialMeta } from "../../lib/pageMeta";
 export const metadata = pageSocialMeta({
   title: "Cookie Policy",
   description:
-    "Cookie and browser storage practices for the Octus Consulting public website.",
+    
+    "Cookie and browser storage practices for the Octus Consulting website, covering essential site functions and preference handling.",
   path: "/cookies",
 });
 export default function CookiesPage() {

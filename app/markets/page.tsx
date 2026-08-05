@@ -9,9 +9,9 @@ import { pageSocialMeta } from "../../lib/pageMeta";
 import "./markets.css";
 
 export const metadata = pageSocialMeta({
-  title: "Industries: regulated sectors we structure",
+  title: "Industries",
   description:
-    "Six industries, one structural discipline: iGaming, fintech and payments, digital assets, technology and B2B infrastructure, forex and regulated financial services, and high-risk cross-border operations.",
+    "Structural discipline across iGaming, fintech, crypto, technology, forex and high-risk regulated industry operations.",
   path: "/markets",
 });
 

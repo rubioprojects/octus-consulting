@@ -6,7 +6,7 @@ import { pageSocialMeta } from "../../../../lib/pageMeta";
 export const metadata = pageSocialMeta({
   title: "iGaming Licensing",
   description:
-    "iGaming licensing strategy across jurisdictions. Octus structures the regulatory, corporate and compliance architecture that determines whether a licence gets approved, not merely submitted.",
+    "iGaming licensing strategy across jurisdictions. Octus structures the pathway before filings and banking pressure arrive.",
   path: "/solutions/regulatory/igaming-licensing",
 });
 

@@ -5,7 +5,7 @@ import { pageSocialMeta } from "../../../lib/pageMeta";
 export const metadata = pageSocialMeta({
   title: "High-Risk Operations",
   description:
-    "High-risk is not a business problem. It is a classification that creates structural consequences for licensing, banking, compliance and partnerships. Octus structures operations to function within that classification.",
+    "High-risk classification creates structural pressure. Octus designs operations that hold under licensing and banking scrutiny.",
   path: "/markets/high-risk",
 });
 

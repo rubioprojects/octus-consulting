@@ -5,7 +5,7 @@ import { pageSocialMeta } from "../../../lib/pageMeta";
 export const metadata = pageSocialMeta({
   title: "UAE / Dubai",
   description:
-    "Most companies fail in the UAE before they even choose the right authority. Octus structures operations aligned with the correct regulator, entity type and activity from day one.",
+    "UAE market entry for regulated operators: authority fit, licensing pathway and structural readiness before commitment.",
   path: "/jurisdictions/uae",
 });
 

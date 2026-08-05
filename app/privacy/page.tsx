@@ -2,7 +2,8 @@ import { pageSocialMeta } from "../../lib/pageMeta";
 export const metadata = pageSocialMeta({
   title: "Privacy Policy",
   description:
-    "Privacy Policy for Octus Technology LLC, operating as Octus Consulting.",
+    
+    "How Octus Consulting collects and uses personal data when you contact us via WhatsApp or email through octusconsulting.com.",
   path: "/privacy",
 });
 
@@ -13,11 +14,11 @@ const sections = [
   },
   {
     title: "What data we collect",
-    body: `We collect personal data you provide directly when interacting with our website or contacting us:\n\n• Identification and contact information: name, company name, job title, email address, phone number.\n• Operational context: jurisdiction of operation, type of regulated business, and any information you choose to share in a diagnostic request or enquiry form.\n• Communications: the content of emails, messages or form submissions you send to us.\n\nAs of this update, the public site does not load third-party analytics cookies. We do not invent website usage analytics collection that is not active on the current static export. If analytics tools are enabled later, this policy and the Cookie Policy will be updated.\n\nWe do not collect sensitive personal data (such as health information, racial or ethnic origin, or biometric data) in the ordinary course of our business.`,
+    body: `We collect personal data you provide directly when interacting with our website or contacting us:\n\n• Identification and contact information: name, company name, job title, email address, phone number.\n• Operational context: jurisdiction of operation, type of regulated business, and any information you choose to share when you contact us.\n• Communications: the content of emails, WhatsApp messages or other messages you send to us.\n\nAs of this update, the public website does not host an HTML contact form that posts data to our servers. Primary contact channels are WhatsApp and email (mailto). We do not invent website usage analytics collection that is not active on the current static export. If analytics tools are enabled later, this policy and the Cookie Policy will be updated.\n\nWe do not collect sensitive personal data (such as health information, racial or ethnic origin, or biometric data) in the ordinary course of our business.`,
   },
   {
     title: "How we use your data",
-    body: `We use personal data for the following purposes:\n\n• To respond to enquiries and diagnostic requests submitted through our website.\n• To assess your operational situation and prepare for an initial consultation.\n• To fulfil our contractual obligations to clients.\n• To comply with applicable legal requirements.\n• To maintain and improve our website and services.\n• To send service-related communications where you have engaged with us.\n\nWe do not use your personal data for marketing purposes without your explicit consent. We do not sell personal data to third parties under any circumstances.`,
+    body: `We use personal data for the following purposes:\n\n• To respond to enquiries and diagnostic requests you send via WhatsApp, email or other channels we publish.\n• To assess your operational situation and prepare for an initial consultation.\n• To fulfil our contractual obligations to clients.\n• To comply with applicable legal requirements.\n• To maintain and improve our website and services.\n• To send service-related communications where you have engaged with us.\n\nWe do not use your personal data for marketing purposes without your explicit consent. We do not sell personal data to third parties under any circumstances.`,
   },
   {
     title: "Legal bases for processing",
@@ -33,7 +34,7 @@ const sections = [
   },
   {
     title: "Data retention",
-    body: `We retain personal data only for as long as necessary to fulfil the purposes for which it was collected, or as required by applicable law. Data submitted through diagnostic or enquiry forms is retained for the duration of any engagement and for a reasonable period thereafter for operational and legal record-keeping purposes. You may request deletion of your data at any time, subject to legal retention requirements.`,
+    body: `We retain personal data only for as long as necessary to fulfil the purposes for which it was collected, or as required by applicable law. Contact and diagnostic correspondence is retained for the duration of any engagement and for a reasonable period thereafter for operational and legal record-keeping purposes. You may request deletion of your data at any time, subject to legal retention requirements.`,
   },
   {
     title: "Your rights",

@@ -11,7 +11,8 @@ import { pageSocialMeta } from "../../lib/pageMeta";
 export const metadata = pageSocialMeta({
   title: "Contact",
   description:
-    "Start a conversation with Octus about licensing, compliance, banking, legal and corporate workstreams via WhatsApp or email.",
+    
+    "Contact Octus via WhatsApp or email to discuss regulatory structuring, compliance coordination and operational readiness for regulated businesses.",
   path: "/contact",
 });
 
