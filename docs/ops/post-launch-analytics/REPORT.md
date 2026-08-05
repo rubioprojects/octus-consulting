@@ -8,13 +8,13 @@
 **Base main:** `1c022f8490ba9ec359850d3d606b03ab165b54dd`  
 **Starting correction head:** `b3a25d659ac4959119b7be2b00bbb3aac4030855`
 
-## Sol correction gate (this commit)
+## Sol correction gate
 
 | Blocker | Result |
 |---------|--------|
 | Diagnostic overclassification | PASS — `diagnostic_click` only via `data-octus-event="diagnostic_click"` |
 | Post-consent view lost | PASS — dedupe after enqueue; re-eval on `octus:consent-updated` |
-| Behavioral tests | PASS — classification + view dispatch (suite > 11) |
+| Behavioral tests | PASS — classification + view dispatch (25 tests) |
 | GTM runtime SoT | `NEXT_PUBLIC_GTM_ID` only; GA4 inside GTM |
 | Search Console | Domain Property DNS TXT required; meta token not required |
 
@@ -25,11 +25,13 @@
 | `npm run test:analytics` | PASS (25) |
 | `npm run lint` | PASS (pre-existing img warnings only) |
 | `npm run build` | PASS |
-| CI | https://github.com/rubioprojects/octus-consulting/actions/runs/31020597592 success @ `6ebd78c` |
-| Exact-head preview | `dpl_AxK6oM5zVPSUnQ5bVQAx1DGbJsa9` · https://octus-consulting-ne3m23zxt-axle1.vercel.app · source SHA `6ebd78c65aa87a1c7208a33fe84e263ebc312dfd` |
+| CI (code correction `6ebd78c`) | https://github.com/rubioprojects/octus-consulting/actions/runs/31020597592 success |
+| CI (docs stamp `84ab496`) | https://github.com/rubioprojects/octus-consulting/actions/runs/31020874453 success |
+| Exact-head preview (`84ab496`) | `dpl_6aDiN7tibQZF2fHELMRCfJw594qV` · https://octus-consulting-64uzua7vq-axle1.vercel.app |
+| Code-correction preview (`6ebd78c`) | `dpl_AxK6oM5zVPSUnQ5bVQAx1DGbJsa9` · https://octus-consulting-ne3m23zxt-axle1.vercel.app |
 | Preview noindex | PASS (`X-Robots-Tag: noindex, nofollow`) |
 | Preview GTM without env | PASS (absent) |
-| Consent screenshots | retained (`docs/ops/evidence/OCTUS_POST_LAUNCH_ANALYTICS_2026-08-05/screenshots/`) — CookieBanner layout unchanged in correction |
+| Consent screenshots | `docs/ops/evidence/OCTUS_POST_LAUNCH_ANALYTICS_2026-08-05/screenshots/` (layout unchanged in correction) |
 | Production / DNS / merge | not touched |
 
 ## Human gate
