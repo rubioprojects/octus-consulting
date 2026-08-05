@@ -1,0 +1,415 @@
+.mobileRemediationRoot {
+  isolation: auto;
+}
+
+:global(html) {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+:global(body) {
+  max-width: 100%;
+  overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+:global(img),
+:global(svg),
+:global(video) {
+  max-width: 100%;
+}
+
+@media (max-width: 1023px) {
+  :global(.site-header) {
+    min-height: 4.25rem;
+  }
+
+  :global(#mobile-nav) {
+    overscroll-behavior: contain;
+  }
+
+  :global(#mobile-nav a),
+  :global(#mobile-nav summary) {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@media (max-width: 767px) {
+  :global(main) {
+    width: 100%;
+    overflow: clip;
+  }
+
+  /* Normalize desktop-sized Tailwind section rhythm on handheld screens. */
+  :global(main > section.py-32),
+  :global(main > section.py-24) {
+    padding-top: 4.25rem !important;
+    padding-bottom: 4.25rem !important;
+  }
+
+  :global(main > section.py-20) {
+    padding-top: 3.75rem !important;
+    padding-bottom: 3.75rem !important;
+  }
+
+  :global(main > section.py-16),
+  :global(main > section.py-14) {
+    padding-top: 3.25rem !important;
+    padding-bottom: 3.25rem !important;
+  }
+
+  :global(.section),
+  :global(.section-sm),
+  :global(.section-dark),
+  :global(.section-blue),
+  :global(.section-padded),
+  :global(.operate-section),
+  :global(.speed-section),
+  :global(.fix-section),
+  :global(.why-fail-wrap),
+  :global(.wwd-modules-section),
+  :global(.authority-section),
+  :global(.insights-section),
+  :global(.post-body-section),
+  :global(.certifications-block) {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+
+  :global(.page-hero) {
+    min-height: auto !important;
+    padding: 7rem 1.25rem 3.75rem !important;
+  }
+
+  :global(.home-hero) {
+    min-height: auto !important;
+    align-items: flex-start !important;
+    padding-top: calc(4.25rem + 3.75rem) !important;
+    padding-bottom: 4rem !important;
+  }
+
+  :global(.home-hero .octus-hero-copy) {
+    margin-inline: 0 !important;
+    max-width: 42rem !important;
+  }
+
+  :global(.home-hero__h1) {
+    max-width: 18ch;
+    font-size: clamp(2rem, 9.6vw, 2.65rem) !important;
+    line-height: 1.1 !important;
+    letter-spacing: -0.018em !important;
+    text-wrap: balance;
+  }
+
+  :global(.home-hero .octus-hero-copy > p) {
+    max-width: 35rem;
+    font-size: 1rem !important;
+    line-height: 1.65 !important;
+  }
+
+  :global(.home-hero .octus-hero-copy > div:last-of-type) {
+    align-items: stretch;
+  }
+
+  :global(.home-hero .octus-hero-copy > div:last-of-type > a:first-child) {
+    width: 100%;
+  }
+
+  :global(.heading-section) {
+    font-size: clamp(1.75rem, 7.8vw, 2.25rem) !important;
+    line-height: 1.12 !important;
+    text-wrap: balance;
+  }
+
+  :global(.heading-lg),
+  :global(.heading-md),
+  :global(.page-hero-title) {
+    text-wrap: balance;
+  }
+
+  :global(.body-large),
+  :global(.body-lg) {
+    font-size: 1.0625rem !important;
+    line-height: 1.65 !important;
+  }
+
+  :global(.body-text),
+  :global(.body) {
+    font-size: 0.9375rem !important;
+    line-height: 1.7 !important;
+  }
+
+  :global(main p),
+  :global(main li),
+  :global(main a),
+  :global(main h1),
+  :global(main h2),
+  :global(main h3) {
+    overflow-wrap: anywhere;
+  }
+
+  /* Service rail becomes a swipeable reading surface instead of a cramped 2-col grid. */
+  :global(.capability-rail__viewport) {
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+  }
+
+  :global(.capability-rail__viewport::-webkit-scrollbar) {
+    display: none;
+  }
+
+  :global(.capability-rail__static-grid) {
+    display: flex !important;
+    width: max-content;
+    min-width: 100%;
+    grid-template-columns: none !important;
+    gap: 0.75rem !important;
+    padding: 0.9rem 1rem 1rem !important;
+  }
+
+  :global(.capability-rail__grid-item) {
+    width: min(78vw, 18rem);
+    min-height: 3.5rem;
+    flex: 0 0 auto;
+    align-items: center;
+    padding: 0.75rem 0.85rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.375rem;
+    background: rgba(255, 255, 255, 0.035);
+    font-size: 0.6875rem !important;
+    letter-spacing: 0.045em !important;
+    line-height: 1.35 !important;
+    scroll-snap-align: start;
+  }
+
+  /* Keep authority proof visible without consuming an entire screen. */
+  :global(.home-authority) {
+    padding-top: 2.75rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  :global(.home-authority .grid) {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 0 !important;
+  }
+
+  :global(.home-authority .grid > div) {
+    min-width: 0;
+    padding-inline: 0.55rem;
+    border-right: 1px solid hsl(var(--border));
+  }
+
+  :global(.home-authority .grid > div:last-child) {
+    border-right: 0;
+  }
+
+  :global(.home-authority .editorial-numeral--sm) {
+    font-size: clamp(1.35rem, 6.5vw, 1.8rem) !important;
+    letter-spacing: 0.025em !important;
+  }
+
+  :global(.home-authority .grid span:last-child) {
+    font-size: 0.7rem !important;
+    line-height: 1.35;
+  }
+
+  :global(.home-authority p:last-child) {
+    margin-top: 1.75rem !important;
+  }
+
+  /* Leadership stays visual, but avoids a long one-person-per-screen stack. */
+  :global(.home-leadership-trust) {
+    padding-top: 3.75rem !important;
+    padding-bottom: 3.75rem !important;
+  }
+
+  :global(.home-leadership-trust__grid) {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    max-width: 100% !important;
+    gap: 2rem 1rem !important;
+  }
+
+  :global(.home-leadership-trust__card) {
+    min-width: 0;
+    text-align: center !important;
+  }
+
+  :global(.home-leadership-trust__photo-wrap.team-portrait--leadership) {
+    width: clamp(7rem, 34vw, 9.25rem) !important;
+    height: clamp(7rem, 34vw, 9.25rem) !important;
+    margin-inline: auto;
+    border-radius: 3px 3px 3px 1.75rem !important;
+  }
+
+  :global(.home-leadership-trust__name) {
+    font-size: 1rem !important;
+    line-height: 1.25;
+  }
+
+  :global(.home-leadership-trust__role) {
+    font-size: 0.625rem !important;
+    line-height: 1.45;
+    letter-spacing: 0.08em !important;
+  }
+
+  /* Touch devices do not expose hover, so cards need a resting boundary. */
+  :global(main .border-transparent.bg-background),
+  :global(main a.border-transparent.bg-background) {
+    border-color: hsl(var(--border)) !important;
+    box-shadow: 0 8px 24px -22px rgba(11, 18, 32, 0.45);
+  }
+
+  :global(.home-modules-accordion__trigger) {
+    min-height: 4.25rem;
+  }
+
+  :global(.home-modules-accordion__panel) {
+    padding-bottom: 1.5rem;
+  }
+
+  :global(.home-modules-accordion__tag) {
+    display: flex;
+    min-height: 2.75rem;
+    align-items: center;
+  }
+
+  :global(.grid-2),
+  :global(.grid-3),
+  :global(.grid-4),
+  :global(.grid-auto),
+  :global(.grid-auto-lg) {
+    min-width: 0;
+  }
+
+  :global(main table) {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  :global(.chip-row) {
+    gap: 0.625rem !important;
+  }
+
+  :global(.chip-juris) {
+    min-height: 2.75rem;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  /* Footer becomes a clear mobile action stack. */
+  :global(.site-footer) {
+    padding-top: 3.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+
+  :global(.site-footer__brand-close) {
+    margin-bottom: 1.5rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  :global(.site-footer__brand-close__line) {
+    font-size: 0.9375rem !important;
+  }
+
+  :global(.site-footer__cta-row) {
+    display: grid !important;
+    grid-template-columns: 1fr auto;
+    align-items: center !important;
+    gap: 0.75rem 1rem !important;
+  }
+
+  :global(.site-footer__cta-row > a:first-child) {
+    grid-column: 1 / -1;
+    justify-content: center;
+    width: 100%;
+    min-height: 2.75rem;
+  }
+
+  :global(.site-footer__cta-row > div a) {
+    width: 2.75rem;
+    height: 2.75rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  :global(.site-footer__acc-summary) {
+    min-height: 3rem !important;
+  }
+
+  :global(.site-footer__bar) {
+    margin-top: 2.5rem !important;
+    padding-top: 1.5rem !important;
+  }
+
+  /* Prevent the fixed WhatsApp control from covering the cookie notice. */
+  :global(body.cookie-banner-visible .wa-float) {
+    bottom: calc(5.75rem + env(safe-area-inset-bottom, 0px)) !important;
+  }
+
+  :global(.cookie-banner) {
+    gap: 0.75rem !important;
+    padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom, 0px)) !important;
+  }
+
+  :global(.cookie-banner p) {
+    font-size: 0.75rem !important;
+    line-height: 1.45 !important;
+  }
+
+  :global(.cookie-banner button) {
+    min-height: 2.75rem !important;
+  }
+}
+
+@media (max-width: 520px) {
+  :global(.cookie-banner) {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  :global(.cookie-banner button) {
+    width: 100%;
+  }
+
+  :global(body.cookie-banner-visible .wa-float) {
+    bottom: calc(8.75rem + env(safe-area-inset-bottom, 0px)) !important;
+  }
+
+  :global(main .h-12.px-10) {
+    width: 100%;
+    max-width: 100%;
+    padding-inline: 1.25rem !important;
+    text-align: center;
+  }
+}
+
+@media (max-width: 359px) {
+  :global(.home-leadership-trust__grid) {
+    grid-template-columns: 1fr !important;
+    max-width: 13rem !important;
+    margin-inline: auto;
+  }
+
+  :global(.home-authority .grid) {
+    gap: 1.25rem !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  :global(.home-authority .grid > div) {
+    padding-bottom: 1.25rem;
+    border-right: 0;
+    border-bottom: 1px solid hsl(var(--border));
+  }
+
+  :global(.home-authority .grid > div:last-child) {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+}
