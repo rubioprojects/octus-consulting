@@ -36,6 +36,8 @@
 | `npm run test:analytics` | PASS (11) |
 | `npm run lint` | PASS (pre-existing img warnings only) |
 | `npm run build` | PASS |
+| Preview | https://octus-consulting-f8jvyq0bs-axle1.vercel.app (`dpl_8RTMy6zmtSr53QMTut7Fnr5GBrEF`) Ready; `X-Robots-Tag: noindex`; no GTM/verification in HTML without env |
+| PR | https://github.com/rubioprojects/octus-consulting/pull/18 |
 | Production DNS | not modified |
 | Production deploy | not performed |
 | Merge | not performed |
