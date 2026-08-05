@@ -1696,11 +1696,10 @@ footer .heading-lg,
   transform: scale(1.04);
   transform-origin: center 32%;
 }
-/* Larissa: restored original studio portrait — pull-back so crown clears frame. */
+/* Larissa: studio source with padded headroom plate — keep crown clear of frame edge. */
 .team-photo--larissa .team-card-photo {
-  object-position: 50% 32%;
-  transform: scale(0.92);
-  transform-origin: center 24%;
+  object-position: 50% 40%;
+  transform: none;
 }
 .team-photo--milla .team-card-photo { object-position: 50% 40%; }
 .team-photo--bianca .team-card-photo { object-position: 50% 40%; }
