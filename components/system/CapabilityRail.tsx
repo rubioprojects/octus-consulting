@@ -11,8 +11,8 @@ export type CapabilityItem = {
 
 /**
  * Octus capability rail — signature brand element (not navigation).
- * Mobile: static two-column grid (accessible).
- * Desktop: slow continuous marquee; decorative track is aria-hidden.
+ * Mobile/tablet (<1024): horizontal swipe rail with snap (accessible list).
+ * Desktop (≥1024): slow continuous marquee; decorative track is aria-hidden.
  */
 export default function CapabilityRail({
   items,
@@ -32,7 +32,7 @@ export default function CapabilityRail({
       <div className="capability-rail__fade capability-rail__fade--left" aria-hidden="true" />
       <div className="capability-rail__fade capability-rail__fade--right" aria-hidden="true" />
       <div className="capability-rail__viewport">
-        <ul className="capability-rail__static-grid md:hidden">
+        <ul className="capability-rail__static-grid lg:hidden">
           {items.map((item) => (
             <li key={item.label} className="capability-rail__grid-item">
               <OctusIcon name={item.icon} size={14} className="text-white/55" />
@@ -40,6 +40,9 @@ export default function CapabilityRail({
             </li>
           ))}
         </ul>
+        <p className="capability-rail__swipe-hint lg:hidden" aria-hidden="true">
+          Swipe for more
+        </p>
         <div className="capability-rail__track" role="presentation" aria-hidden="true">
           {loop.map((item, i) => (
             <Fragment key={`${item.label}-${i}`}>
