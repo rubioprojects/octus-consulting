@@ -171,6 +171,7 @@ function MemberCard({
           width={600}
           height={600}
           loading={tier === "leadership" ? "eager" : "lazy"}
+          fetchPriority={tier === "leadership" ? "high" : "auto"}
           decoding="async"
         />
       </div>

@@ -69,6 +69,21 @@
       "source": "/intelligence/:path*",
       "destination": "/insights",
       "permanent": true
+    },
+    {
+      "source": "/industries",
+      "destination": "/markets",
+      "permanent": true
+    },
+    {
+      "source": "/industries/:path*",
+      "destination": "/markets/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/solutions/international-hub",
+      "destination": "/international-hub",
+      "permanent": true
     }
   ],
   "headers": [
