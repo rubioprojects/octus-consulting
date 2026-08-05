@@ -1696,10 +1696,14 @@ footer .heading-lg,
   transform: scale(1.04);
   transform-origin: center 32%;
 }
-/* Larissa: studio source with padded headroom plate — keep crown clear of frame edge. */
+/* Larissa: studio source crown sits on file edge — match wrap plate + pull back so hair clears frame. */
+.team-card-photo-wrap.team-photo--larissa {
+  background: rgb(219, 215, 219);
+}
 .team-photo--larissa .team-card-photo {
-  object-position: 50% 40%;
-  transform: none;
+  object-position: 50% 34%;
+  transform: scale(0.84);
+  transform-origin: center 22%;
 }
 .team-photo--milla .team-card-photo { object-position: 50% 40%; }
 .team-photo--bianca .team-card-photo { object-position: 50% 40%; }
