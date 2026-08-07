@@ -363,6 +363,59 @@ const RAW_PUBLICATION: Record<string, InsightsPublicationEntry> = {
     finalDisposition: "PUBLISH_HISTORICAL_WITH_UPDATE",
   },
 
+  // Institutional commentary republished from Octus LinkedIn (ongoing STF proceeding — not a final ruling)
+  "stf-games-of-chance-and-the-future-of-igaming-brazil": {
+    slug: "stf-games-of-chance-and-the-future-of-igaming-brazil",
+    publicationStatus: "EDITORIAL_COMMENTARY",
+    factualCategory: "institutional_commentary",
+    currentLawDependency: false,
+    primarySources: [
+      src({
+        label: "STF — RE 966177 theme (gamesos de azar / Lei das Contravenções Penais)",
+        href: "https://noticias.stf.jus.br/postsnoticias/stf-decidira-se-proibicao-de-jogos-de-azar-prevista-em-legislacao-de-1941-e-compativel-com-a-constituicao/",
+        authority: "STF",
+        instrumentTitle: "Recurso Extraordinário 966177 — repercussão geral (Tema 924)",
+        instrumentNumber: "RE 966177",
+        claimsSupported: "Case identity and constitutional controversy on art. 50 DL 3.688/1941",
+      }),
+      src({
+        label: "STF — August plenary agenda highlight: RE 966177 games of chance",
+        href: "https://noticias.stf.jus.br/postsnoticias/confira-destaques-da-pauta-do-mes-de-agosto-no-plenario-do-stf/",
+        date: "2026-08",
+        authority: "STF",
+        claimsSupported: "RE 966177 listed on August 2026 plenary agenda",
+      }),
+      src({
+        label: "Decreto-Lei nº 3.688/1941 (Lei das Contravenções Penais) — Planalto",
+        href: "https://www.planalto.gov.br/ccivil_03/decreto-lei/del3688.htm",
+        authority: "Presidência da República",
+        instrumentTitle: "Lei das Contravenções Penais",
+        instrumentNumber: "Decreto-Lei 3.688/1941",
+        claimsSupported: "Statutory text of art. 50 games-of-chance contravention",
+      }),
+      src({
+        label: "Lei nº 14.790/2023 — Planalto",
+        href: "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14790.htm",
+        date: "2023-12-29",
+        authority: "Presidência da República",
+        instrumentTitle: "Lei das apostas de quota fixa",
+        instrumentNumber: "Lei 14.790/2023",
+        claimsSupported: "Federal fixed-odds betting statute referenced in joint-analysis debate",
+      }),
+      src({
+        label: "Octus Consulting — LinkedIn original (7 Aug 2026)",
+        href: "https://www.linkedin.com/pulse/stf-jogos-de-azar-e-o-futuro-do-igaming-brasil-muito-al%C3%A9m-lbttf",
+        date: "2026-08-07",
+        authority: "Octus Consulting",
+        claimsSupported: "Original institutional commentary republished on Insights",
+      }),
+    ],
+    lastReviewed: "2026-08-07",
+    temporalStatus: "Institutional commentary on ongoing RE 966177; judgment not concluded",
+    requiredCorrection: "Replace with PUBLISH_CURRENT if/when STF publishes final judgment news URL; keep disclaimer until then",
+    finalDisposition: "EDITORIAL_COMMENTARY",
+  },
+
   // Editorial commentary (public; no current-law dependency)
   "why-licensing-fails-post-approval": {
     slug: "why-licensing-fails-post-approval",

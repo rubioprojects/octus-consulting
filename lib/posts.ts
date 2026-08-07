@@ -12,6 +12,72 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: "stf-games-of-chance-and-the-future-of-igaming-brazil",
+    title: "STF, Games of Chance and the Future of iGaming in Brazil: Beyond a Criminal-Law Debate",
+    date: "2026-08-07",
+    category: "Brazil Regulatory",
+    author: "Octus Consulting",
+    excerpt:
+      "The suspension of judgment in Extraordinary Appeal No. 966177 on 6 August 2026 shows that Brazil’s debate on games and betting is no longer only criminal: it is regulatory, constitutional and economic. The Court has not finished the case.",
+    content: `**Publication note.** This Insight republishes, in English, the Octus Consulting analysis first published on LinkedIn on 7 August 2026: [STF, jogos de azar e o futuro do iGaming no Brasil](https://www.linkedin.com/pulse/stf-jogos-de-azar-e-o-futuro-do-igaming-brasil-muito-al%C3%A9m-lbttf). It is institutional commentary on an ongoing Supreme Court (STF) proceeding. **The judgment is not concluded.** Nothing below should be read as a final constitutional ruling, as legal advice for a specific operation, or as a prediction of how the Court will vote.
+
+**What happened**
+
+The suspension of judgment in Extraordinary Appeal (RE) No. 966177 by the STF on 6 August 2026 goes beyond the constitutional review of a 1941 criminal-contravention rule. In practical terms, the Court opened a debate that may redefine the regulatory, economic and institutional boundaries of Brazil’s iGaming market.
+
+Although the case concerns the validity of Article 50 of the Criminal Contraventions Law (Decreto-Lei No. 3.688/1941), which criminalises the exploitation of games of chance, the request for further study (*pedido de vista*) by Justice Flávio Dino pointed to a broader concern: the need to reconcile traditional legal concepts with the technological and economic reality of digital betting.
+
+By proposing that the theme be examined together with Direct Unconstitutionality Actions addressing Law No. 14.790/2023, the Court recognises that the debate on games and betting can no longer be treated exclusively through a criminal lens. It is, above all, a regulatory, constitutional and economic question.
+
+**Innovation and social protection**
+
+The rapid growth of the betting market has forced Brazil to balance freedom of enterprise, technological innovation and consumer protection.
+
+In his vote, Justice Luiz Fux emphasised the risks inherent in games of chance, particularly those related to compulsive behaviour and social impacts. That line of reasoning reinforces that economic freedom is not absolute and may be limited when confronted with important collective interests.
+
+At the same time, the expansion of fixed-odds betting, electronic games and digital platforms requires a deeper reflection on whether legal concepts designed more than eighty years ago remain adequate for a highly technological and globalised market.
+
+The central question is no longer only “prohibit or permit”. It is “how to regulate adequately”.
+
+**Implications for operators, suppliers and investors**
+
+Regardless of the final outcome, the sector should follow the proceedings closely. A constitutional definition by the STF may influence strategic themes such as:
+
+- the extent of the Union’s regulatory competence;
+- the limits of State intervention in the betting market;
+- the legal differentiation between traditional games and fixed-odds betting;
+- legal certainty for operators and B2B suppliers;
+- the regulation of new digital products;
+- responsible gambling and consumer-protection policies;
+- criteria for advertising and commercial communications.
+
+For licensed operators, technology companies, investors and legal teams, regulatory predictability remains essential for investment decisions and long-term planning.
+
+**What is at stake**
+
+An STF decision may become a milestone in consolidating Brazil’s regulatory environment. More than comparing a 1941 norm with the 1988 Constitution, the Court is shaping the legal contours of a sector that moves substantial capital, creates jobs, attracts international investment and demands robust governance and compliance.
+
+The future of iGaming in Brazil will depend increasingly on building a regulatory model that reconciles economic development, technological innovation and social responsibility.
+
+The judgment is not finished. One conclusion already seems unavoidable: the debate on games and betting in Brazil has entered the country’s constitutional agenda for good.
+
+**What this Insight is not**
+
+- It is not a final description of STF case law after judgment.
+- It does not allege that any named operator is non-compliant.
+- It does not change licensed fixed-odds betting under Law No. 14.790/2023 by itself; the interaction between RE 966177 and the bets framework remains for the Court to articulate.
+
+Operators and suppliers should map litigation and regulatory exposure against primary STF materials and obtain advice for their specific perimeter.`,
+    related: [
+      { label: "Brazil", href: "/brazil" },
+      { label: "Regulatory readiness", href: "/solutions" },
+    ],
+    cta: {
+      label: "Request a diagnostic on regulatory exposure for your Brazil perimeter.",
+      href: "/diagnostic",
+    },
+  },
+  {
     slug: "stf-suspends-blocking-of-bolsa-familia-bpc-betting-accounts",
     title: "STF Suspends Compulsory Blocking of Bolsa Família and BPC Beneficiaries' Betting Accounts",
     date: "2025-12-19",
