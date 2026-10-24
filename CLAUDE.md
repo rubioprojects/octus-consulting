@@ -6,7 +6,7 @@ Site institucional da **Octus Consulting**, consultoria internacional focada em 
 
 - **Fundador**: Rubio Araujo Teixeira
 - **Stack**: Next.js (App Router) + TypeScript + React
-- **Hospedagem**: Netlify
+- **Hospedagem**: Vercel (fonte de verdade: `DEPLOY.md`; Netlify foi descontinuado)
 - **Fonte customizada**: Unigeo64 (5 pesos)
 
 ## Regras para o assistente
